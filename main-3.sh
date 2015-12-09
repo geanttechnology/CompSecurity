@@ -32,3 +32,9 @@ sh script.sh 3-FINE-LOC.txt weatherchannel-source/ 3-res-FINE-LOC.txt
 sh script.sh 3-FINE-LOC.txt wellfargo/ 3-res-FINE-LOC.txt
 sh script.sh 3-FINE-LOC.txt wish-source/ 3-res-FINE-LOC.txt
 sh script.sh 3-FINE-LOC.txt youtube-source/ 3-res-FINE-LOC.txt
+sh script.sh 3-FINE-LOC.txt GooglePlay_source/ 3-res-FINE-LOC_new.txt
+sh script.sh 3-FINE-LOC.txt NetFlix_source/ 3-res-FINE-LOC_new.txt
+sh script.sh 3-FINE-LOC.txt Pandora_source/ 3-res-FINE-LOC_new.txt
+sh script.sh 3-FINE-LOC.txt Spotify_source/ 3-res-FINE-LOC_new.txt
+sh script.sh 3-FINE-LOC.txt collage-source/ 3-res-FINE-LOC_new.txt
+sh script.sh 3-FINE-LOC.txt moments-source/ 3-res-FINE-LOC_new.txt
