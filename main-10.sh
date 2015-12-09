@@ -32,3 +32,9 @@ sh script.sh 10-WRITE_SETTING.txt weatherchannel-source/ 10-res-WRITE_SETTING.tx
 sh script.sh 10-WRITE_SETTING.txt wellfargo/ 10-res-WRITE_SETTING.txt
 sh script.sh 10-WRITE_SETTING.txt wish-source/ 10-res-WRITE_SETTING.txt
 sh script.sh 10-WRITE_SETTING.txt youtube-source/ 10-res-WRITE_SETTING.txt
+sh script.sh 10-WRITE_SETTING.txt GooglePlay_source/ 10-res-WRITE_SETTING_new.txt
+sh script.sh 10-WRITE_SETTING.txt NetFlix_source/ 10-res-WRITE_SETTING_new.txt
+sh script.sh 10-WRITE_SETTING.txt Pandora_source/ 10-res-WRITE_SETTING_new.txt
+sh script.sh 10-WRITE_SETTING.txt Spotify_source/ 10-res-WRITE_SETTING_new.txt
+sh script.sh 10-WRITE_SETTING.txt collage-source/ 10-res-WRITE_SETTING_new.txt
+sh script.sh 10-WRITE_SETTING.txt moments-source/ 10-res-WRITE_SETTING_new.txt

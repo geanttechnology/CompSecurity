@@ -32,3 +32,9 @@ sh script.sh 8-WRITE_CONTACT.txt weatherchannel-source/ 8-res-WRITE_CONTACT.txt
 sh script.sh 8-WRITE_CONTACT.txt wellfargo/ 8-res-WRITE_CONTACT.txt
 sh script.sh 8-WRITE_CONTACT.txt wish-source/ 8-res-WRITE_CONTACT.txt
 sh script.sh 8-WRITE_CONTACT.txt youtube-source/ 8-res-WRITE_CONTACT.txt
+sh script.sh 8-WRITE_CONTACT.txt GooglePlay_source/ 8-res-WRITE_CONTACT_new.txt
+sh script.sh 8-WRITE_CONTACT.txt NetFlix_source/ 8-res-WRITE_CONTACT_new.txt
+sh script.sh 8-WRITE_CONTACT.txt Pandora_source/ 8-res-WRITE_CONTACT_new.txt
+sh script.sh 8-WRITE_CONTACT.txt Spotify_source/ 8-res-WRITE_CONTACT_new.txt
+sh script.sh 8-WRITE_CONTACT.txt collage-source/ 8-res-WRITE_CONTACT_new.txt
+sh script.sh 8-WRITE_CONTACT.txt moments-source/ 8-res-WRITE_CONTACT_new.txt
