@@ -1,9 +1,9 @@
-#sh script.sh 2-COARSE-LOC.txt uber/ 2-res-COARSE-LOC.txt
-#sh script.sh 2-COARSE-LOC.txt alibaba/ 2-res-COARSE-LOC.txt
-#sh script.sh 2-COARSE-LOC.txt 360-security/ 2-res-COARSE-LOC.txt
-#sh script.sh 2-COARSE-LOC.txt facebook-messenger/ 2-res-COARSE-LOC.txt
-#sh script.sh 2-COARSE-LOC.txt facebook-app/ 2-res-COARSE-LOC.txt
-#sh script.sh 2-COARSE-LOC.txt whatsapp/ 2-res-COARSE-LOC.txt
+sh script.sh 2-COARSE-LOC.txt uber/ 2-res-COARSE-LOC.txt
+sh script.sh 2-COARSE-LOC.txt alibaba/ 2-res-COARSE-LOC.txt
+sh script.sh 2-COARSE-LOC.txt 360-security/ 2-res-COARSE-LOC.txt
+sh script.sh 2-COARSE-LOC.txt facebook-messenger/ 2-res-COARSE-LOC.txt
+sh script.sh 2-COARSE-LOC.txt facebook-app/ 2-res-COARSE-LOC.txt
+sh script.sh 2-COARSE-LOC.txt whatsapp/ 2-res-COARSE-LOC.txt
 sh script.sh 2-COARSE-LOC.txt QR-barcode-source/ 2-res-COARSE-LOC.txt
 sh script.sh 2-COARSE-LOC.txt accuweather-source/ 2-res-COARSE-LOC.txt
 sh script.sh 2-COARSE-LOC.txt emoji-source/ 2-res-COARSE-LOC.txt
@@ -32,3 +32,9 @@ sh script.sh 2-COARSE-LOC.txt weatherchannel-source/ 2-res-COARSE-LOC.txt
 sh script.sh 2-COARSE-LOC.txt wellfargo/ 2-res-COARSE-LOC.txt
 sh script.sh 2-COARSE-LOC.txt wish-source/ 2-res-COARSE-LOC.txt
 sh script.sh 2-COARSE-LOC.txt youtube-source/ 2-res-COARSE-LOC.txt
+sh script.sh 2-COARSE-LOC.txt GooglePlay_source/ 2-res-COARSE-LOC_new.txt
+sh script.sh 2-COARSE-LOC.txt NetFlix_source/ 2-res-COARSE-LOC_new.txt
+sh script.sh 2-COARSE-LOC.txt Pandora_source/ 2-res-COARSE-LOC_new.txt
+sh script.sh 2-COARSE-LOC.txt Spotify_source/ 2-res-COARSE-LOC_new.txt
+sh script.sh 2-COARSE-LOC.txt collage-source/ 2-res-COARSE-LOC_new.txt
+sh script.sh 2-COARSE-LOC.txt moments-source/ 2-res-COARSE-LOC_new.txt
