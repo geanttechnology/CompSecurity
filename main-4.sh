@@ -32,3 +32,9 @@ sh script.sh 4-GET_ACC.txt weatherchannel-source/ 4-res-GET_ACC.txt
 sh script.sh 4-GET_ACC.txt wellfargo/ 4-res-GET_ACC.txt
 sh script.sh 4-GET_ACC.txt wish-source/ 4-res-GET_ACC.txt
 sh script.sh 4-GET_ACC.txt youtube-source/ 4-res-GET_ACC.txt
+sh script.sh 4-GET_ACC.txt GooglePlay_source/ 4-res-GET_ACC_new.txt
+sh script.sh 4-GET_ACC.txt NetFlix_source/ 4-res-GET_ACC_new.txt
+sh script.sh 4-GET_ACC.txt Pandora_source/ 4-res-GET_ACC_new.txt
+sh script.sh 4-GET_ACC.txt Spotify_source/ 4-res-GET_ACC_new.txt
+sh script.sh 4-GET_ACC.txt collage-source/ 4-res-GET_ACC_new.txt
+sh script.sh 4-GET_ACC.txt moments-source/ 4-res-GET_ACC_new.txt
