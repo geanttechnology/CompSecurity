@@ -32,3 +32,9 @@ sh script.sh 9-WRITE_EXT_STORAGE.txt weatherchannel-source/ 9-res-WRITE_EXT_STOR
 sh script.sh 9-WRITE_EXT_STORAGE.txt wellfargo/ 9-res-WRITE_EXT_STORAGE.txt
 sh script.sh 9-WRITE_EXT_STORAGE.txt wish-source/ 9-res-WRITE_EXT_STORAGE.txt
 sh script.sh 9-WRITE_EXT_STORAGE.txt youtube-source/ 9-res-WRITE_EXT_STORAGE.txt
+sh script.sh 9-WRITE_EXT_STORAGE.txt GooglePlay_source/ 9-res-WRITE_EXT_STORAGE_new.txt
+sh script.sh 9-WRITE_EXT_STORAGE.txt NetFlix_source/ 9-res-WRITE_EXT_STORAGE_new.txt
+sh script.sh 9-WRITE_EXT_STORAGE.txt Pandora_source/ 9-res-WRITE_EXT_STORAGE_new.txt
+sh script.sh 9-WRITE_EXT_STORAGE.txt Spotify_source/ 9-res-WRITE_EXT_STORAGE_new.txt
+sh script.sh 9-WRITE_EXT_STORAGE.txt collage-source/ 9-res-WRITE_EXT_STORAGE_new.txt
+sh script.sh 9-WRITE_EXT_STORAGE.txt moments-source/ 9-res-WRITE_EXT_STORAGE_new.txt
