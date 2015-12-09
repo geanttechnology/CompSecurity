@@ -32,3 +32,9 @@ sh script.sh 5-READ_CONTACT.txt weatherchannel-source/ 5-res-READ_CONTACT.txt
 sh script.sh 5-READ_CONTACT.txt wellfargo/ 5-res-READ_CONTACT.txt
 sh script.sh 5-READ_CONTACT.txt wish-source/ 5-res-READ_CONTACT.txt
 sh script.sh 5-READ_CONTACT.txt youtube-source/ 5-res-READ_CONTACT.txt
+sh script.sh 5-READ_CONTACT.txt GooglePlay_source/ 5-res-READ_CONTACT_new.txt
+sh script.sh 5-READ_CONTACT.txt NetFlix_source/ 5-res-READ_CONTACT_new.txt
+sh script.sh 5-READ_CONTACT.txt Pandora_source/ 5-res-READ_CONTACT_new.txt
+sh script.sh 5-READ_CONTACT.txt Spotify_source/ 5-res-READ_CONTACT_new.txt
+sh script.sh 5-READ_CONTACT.txt collage-source/ 5-res-READ_CONTACT_new.txt
+sh script.sh 5-READ_CONTACT.txt moments-source/ 5-res-READ_CONTACT_new.txt
