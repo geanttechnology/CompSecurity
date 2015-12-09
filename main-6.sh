@@ -32,3 +32,9 @@ sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt weatherchannel-source/ 6-res-RECEIVE-BO
 sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt wellfargo/ 6-res-RECEIVE-BOOT-COMPLETE.txt
 sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt wish-source/ 6-res-RECEIVE-BOOT-COMPLETE.txt
 sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt youtube-source/ 6-res-RECEIVE-BOOT-COMPLETE.txt
+sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt GooglePlay_source/ 6-res-RECEIVE-BOOT-COMPLETE_new.txt
+sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt NetFlix_source/ 6-res-RECEIVE-BOOT-COMPLETE_new.txt
+sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt Pandora_source/ 6-res-RECEIVE-BOOT-COMPLETE_new.txt
+sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt Spotify_source/ 6-res-RECEIVE-BOOT-COMPLETE_new.txt
+sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt collage-source/ 6-res-RECEIVE-BOOT-COMPLETE_new.txt
+sh script.sh 6-RECEIVE-BOOT-COMPLETE.txt moments-source/ 6-res-RECEIVE-BOOT-COMPLETE_new.txt
