@@ -1,9 +1,9 @@
-#sh script.sh 1-CAMERA.txt uber/ 1-res-CAMERA.txt
-#sh script.sh 1-CAMERA.txt alibaba/ 1-res-CAMERA.txt
-#sh script.sh 1-CAMERA.txt 360-security/ 1-res-CAMERA.txt
-#sh script.sh 1-CAMERA.txt facebook-messenger/ 1-res-CAMERA.txt
-#sh script.sh 1-CAMERA.txt facebook-app/ 1-res-CAMERA.txt
-#sh script.sh 1-CAMERA.txt whatsapp/ 1-res-CAMERA.txt
+sh script.sh 1-CAMERA.txt uber/ 1-res-CAMERA.txt
+sh script.sh 1-CAMERA.txt alibaba/ 1-res-CAMERA.txt
+sh script.sh 1-CAMERA.txt 360-security/ 1-res-CAMERA.txt
+sh script.sh 1-CAMERA.txt facebook-messenger/ 1-res-CAMERA.txt
+sh script.sh 1-CAMERA.txt facebook-app/ 1-res-CAMERA.txt
+sh script.sh 1-CAMERA.txt whatsapp/ 1-res-CAMERA.txt
 sh script.sh 1-CAMERA.txt QR-barcode-source/ 1-res-CAMERA.txt
 sh script.sh 1-CAMERA.txt accuweather-source/ 1-res-CAMERA.txt
 sh script.sh 1-CAMERA.txt emoji-source/ 1-res-CAMERA.txt
@@ -32,3 +32,9 @@ sh script.sh 1-CAMERA.txt weatherchannel-source/ 1-res-CAMERA.txt
 sh script.sh 1-CAMERA.txt wellfargo/ 1-res-CAMERA.txt
 sh script.sh 1-CAMERA.txt wish-source/ 1-res-CAMERA.txt
 sh script.sh 1-CAMERA.txt youtube-source/ 1-res-CAMERA.txt
+sh script.sh 1-CAMERA.txt GooglePlay_source/ 1-res-CAMERA_new.txt
+sh script.sh 1-CAMERA.txt NetFlix_source/ 1-res-CAMERA_new.txt
+sh script.sh 1-CAMERA.txt Pandora_source/ 1-res-CAMERA_new.txt
+sh script.sh 1-CAMERA.txt Spotify_source/ 1-res-CAMERA_new.txt
+sh script.sh 1-CAMERA.txt collage-source/ 1-res-CAMERA_new.txt
+sh script.sh 1-CAMERA.txt moments-source/ 1-res-CAMERA_new.txt
