@@ -32,3 +32,9 @@ sh script.sh 7-RECORD-AUDIO.txt weatherchannel-source/ 7-res-RECORD-AUDIO.txt
 sh script.sh 7-RECORD-AUDIO.txt wellfargo/ 7-res-RECORD-AUDIO.txt
 sh script.sh 7-RECORD-AUDIO.txt wish-source/ 7-res-RECORD-AUDIO.txt
 sh script.sh 7-RECORD-AUDIO.txt youtube-source/ 7-res-RECORD-AUDIO.txt
+sh script.sh 7-RECORD-AUDIO.txt GooglePlay_source/ 7-res-RECORD-AUDIO_new.txt
+sh script.sh 7-RECORD-AUDIO.txt NetFlix_source/ 7-res-RECORD-AUDIO_new.txt
+sh script.sh 7-RECORD-AUDIO.txt Pandora_source/ 7-res-RECORD-AUDIO_new.txt
+sh script.sh 7-RECORD-AUDIO.txt Spotify_source/ 7-res-RECORD-AUDIO_new.txt
+sh script.sh 7-RECORD-AUDIO.txt collage-source/ 7-res-RECORD-AUDIO_new.txt
+sh script.sh 7-RECORD-AUDIO.txt moments-source/ 7-res-RECORD-AUDIO_new.txt
