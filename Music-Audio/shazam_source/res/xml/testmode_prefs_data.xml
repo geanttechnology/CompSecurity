@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/data_settings" android:key="@string/testmode_data_settings_category_key">
+        <Preference android:title="Add track" android:key="@string/testmode_data_add_track_key" android:summary="Adds a track to the my tags list" />
+    </PreferenceCategory>
+</PreferenceScreen>

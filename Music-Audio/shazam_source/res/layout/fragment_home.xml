@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.shazam.android.fragment.home.SimpleTaggingFragment" android:tag="TAGGING_FRAGMENT_SIMPLE" android:layout_width="fill_parent" android:layout_height="@dimen/tagging_home_height" />
+    <fragment android:name="com.shazam.android.fragment.news.NewsFeedFragment" android:id="@id/fragment_news_feed" android:tag="TAG_FRAGMENT_NEWS_FEED" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

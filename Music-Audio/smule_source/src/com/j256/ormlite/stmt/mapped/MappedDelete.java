@@ -1,0 +1,105 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.j256.ormlite.stmt.mapped;
+
+import com.j256.ormlite.dao.ObjectCache;
+import com.j256.ormlite.db.DatabaseType;
+import com.j256.ormlite.field.FieldType;
+import com.j256.ormlite.logger.Logger;
+import com.j256.ormlite.misc.SqlExceptionUtil;
+import com.j256.ormlite.support.DatabaseConnection;
+import com.j256.ormlite.table.TableInfo;
+import java.sql.SQLException;
+
+// Referenced classes of package com.j256.ormlite.stmt.mapped:
+//            BaseMappedStatement
+
+public class MappedDelete extends BaseMappedStatement
+{
+
+    private MappedDelete(TableInfo tableinfo, String s, FieldType afieldtype[])
+    {
+        super(tableinfo, s, afieldtype);
+    }
+
+    public static MappedDelete build(DatabaseType databasetype, TableInfo tableinfo)
+    {
+        FieldType fieldtype = tableinfo.getIdField();
+        if (fieldtype == null)
+        {
+            throw new SQLException((new StringBuilder()).append("Cannot delete from ").append(tableinfo.getDataClass()).append(" because it doesn't have an id field").toString());
+        } else
+        {
+            StringBuilder stringbuilder = new StringBuilder(64);
+            appendTableName(databasetype, stringbuilder, "DELETE FROM ", tableinfo.getTableName());
+            appendWhereId(databasetype, fieldtype, stringbuilder, null);
+            return new MappedDelete(tableinfo, stringbuilder.toString(), new FieldType[] {
+                fieldtype
+            });
+        }
+    }
+
+    public int delete(DatabaseConnection databaseconnection, Object obj, ObjectCache objectcache)
+    {
+        int i;
+        try
+        {
+            Object aobj[] = getFieldObjects(obj);
+            i = databaseconnection.delete(statement, aobj, argFieldTypes);
+            logger.debug("delete data with statement '{}' and {} args, changed {} rows", new Object[] {
+                statement, Integer.valueOf(aobj.length), Integer.valueOf(i)
+            });
+            if (aobj.length > 0)
+            {
+                logger.trace("delete arguments: {}", new Object[] {
+                    aobj
+                });
+            }
+        }
+        // Misplaced declaration of an exception variable
+        catch (DatabaseConnection databaseconnection)
+        {
+            throw SqlExceptionUtil.create((new StringBuilder()).append("Unable to run delete stmt on object ").append(obj).append(": ").append(statement).toString(), databaseconnection);
+        }
+        if (i <= 0 || objectcache == null)
+        {
+            break MISSING_BLOCK_LABEL_113;
+        }
+        databaseconnection = ((DatabaseConnection) (idField.extractJavaFieldToSqlArgValue(obj)));
+        objectcache.remove(clazz, databaseconnection);
+        return i;
+    }
+
+    public int deleteById(DatabaseConnection databaseconnection, Object obj, ObjectCache objectcache)
+    {
+        int i;
+        try
+        {
+            Object aobj[] = new Object[1];
+            aobj[0] = convertIdToFieldObject(obj);
+            i = databaseconnection.delete(statement, aobj, argFieldTypes);
+            logger.debug("delete data with statement '{}' and {} args, changed {} rows", new Object[] {
+                statement, Integer.valueOf(aobj.length), Integer.valueOf(i)
+            });
+            if (aobj.length > 0)
+            {
+                logger.trace("delete arguments: {}", new Object[] {
+                    aobj
+                });
+            }
+        }
+        // Misplaced declaration of an exception variable
+        catch (DatabaseConnection databaseconnection)
+        {
+            throw SqlExceptionUtil.create((new StringBuilder()).append("Unable to run deleteById stmt on id ").append(obj).append(": ").append(statement).toString(), databaseconnection);
+        }
+        if (i <= 0 || objectcache == null)
+        {
+            break MISSING_BLOCK_LABEL_112;
+        }
+        objectcache.remove(clazz, obj);
+        return i;
+    }
+}

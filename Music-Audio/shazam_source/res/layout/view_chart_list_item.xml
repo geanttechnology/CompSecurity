@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/charts_item_title" android:background="@null" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_toLeftOf="@id/charts_item_view_full_list" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/NewsCardText.Context" />
+    <View android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_alignLeft="@id/charts_item_view_full_list" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:id="@id/charts_item_view_full_list" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/view_full_list" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="?newsCardButtonGray" />
+    <View android:id="@id/charts_item_separator" android:layout_below="@id/charts_item_title" style="@style/NewsCardText.GreyLine" />
+    <com.shazam.android.widget.chart.ChartCardItemsContainerView android:orientation="horizontal" android:id="@id/charts_item_container" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_chard_chart" android:layout_below="@id/charts_item_separator" android:showDividers="middle" shazam:numberOfTracks="@integer/charts_list_item_container_tracks" />
+</merge>

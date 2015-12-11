@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/purchase_page_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/purchase_page_button_title_text_size" android:textColor="@color/gray_3" android:id="@id/offerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" app:font="Gotham-Medium" />
+        <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/purchase_page_button_subtitle_text_size" android:textColor="@color/gray_8" android:id="@id/offerDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:font="Gotham-Book" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/purchaseButton" android:background="@drawable/btn_purple" android:clickable="true" android:layout_width="@dimen/purchase_page_button_width" android:layout_height="@dimen/purchase_page_button_height" android:minWidth="140.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/icon" android:background="@drawable/icon_smoola_sm" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/purchase_page_small_margin" android:layout_centerVertical="true" />
+            <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/purchase_page_button_title_text_size" android:textColor="@color/white" android:id="@id/buttonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free" android:layout_centerVertical="true" app:font="Gotham-Bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

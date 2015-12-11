@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_post_unpublish" android:title="@string/post_unpublish" app:showAsAction="never" />
+    <item android:id="@id/menu_post_unpublish_and_delete" android:title="@string/post_unpublish_and_delete" app:showAsAction="never" />
+</menu>

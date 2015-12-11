@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+        <com.smule.pianoandroid.utils.FontTextView android:textSize="12.0dip" android:textColor="@color/gray_8" android:layout_gravity="center_horizontal" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_songbook" android:layout_below="@id/loading_spinner" android:layout_centerHorizontal="true" app:font="Gotham-Book" style="@style/pianoHeader" />
+    </RelativeLayout>
+    <com.foound.widget.AmazingListView android:id="@android:id/list" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.6700001dip" android:layout_weight="1.0" />
+    <com.smule.pianoandroid.utils.FontTextView android:textSize="12.0dip" android:textColor="@color/gray_8" android:gravity="center" android:layout_gravity="center" android:id="@id/emptySearchResults" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/empty_search_results" app:font="Gotham-Book" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tagging_button" />
+    <item android:left="41.0dip" android:top="41.5dip" android:right="41.0dip" android:bottom="41.0dip">
+        <selector android:exitFadeDuration="@integer/selector_fade_out_duration">
+            <item android:state_pressed="true" android:drawable="@drawable/bg_button_tagging_shape_pressed" />
+            <item>
+                <color android:color="@color/transparent" />
+            </item>
+        </selector>
+    </item>
+</layer-list>

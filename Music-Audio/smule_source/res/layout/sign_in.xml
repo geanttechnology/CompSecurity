@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mainContainer" android:layout_width="380.0dip" android:layout_height="300.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/topRow" android:background="@drawable/bubble_white_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:layout_gravity="center" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/logo_smule" android:layout_weight="0.7" />
+            <View android:id="@id/topDivider" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+            <TextView android:textColor="@color/gray_4" android:gravity="bottom|center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/great_job" android:layout_weight="0.3" style="@style/pianoTextLarge" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/gray_4" android:gravity="center" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/smule_register_message" android:layout_weight="0.6" android:layout_below="@id/title" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottomRow" android:background="@drawable/bubble_green_bottom" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.4">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lowerButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/facebookButtonHolder" android:background="@drawable/btn_facebook" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:minWidth="155.0dip">
+                    <ImageButton android:layout_gravity="center" android:id="@id/facebookButtonLogo" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_facebook" />
+                    <Button android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/facebookButton" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/facebook" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/googleButtonHolder" android:background="@drawable/btn_google" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:minWidth="155.0dip">
+                    <ImageButton android:layout_gravity="center" android:id="@id/googleButtonLogo" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_google" />
+                    <Button android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/googleButton" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/google" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/buttonDivider" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/dividerRight" android:background="@color/gray_8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/orText" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/gray_8" android:id="@id/orText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/or" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/pianoTextSmall" />
+                <View android:id="@id/dividerLeft" android:background="@color/gray_8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/orText" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lowerButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <Button android:textColor="@color/gray_4" android:id="@id/login_button" android:background="@drawable/btn_light_green_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:minWidth="155.0dip" android:text="@string/sign_in" />
+                <Button android:textColor="@color/gray_4" android:id="@id/register_button" android:background="@drawable/btn_white_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:minWidth="155.0dip" android:text="@string/new_account" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@id/close_btn" android:background="@drawable/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:layout_marginRight="-10.0dip" android:layout_alignTop="@id/mainContainer" android:layout_alignRight="@id/mainContainer" />
+</RelativeLayout>

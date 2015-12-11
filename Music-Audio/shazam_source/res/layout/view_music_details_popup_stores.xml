@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/popupLinearLayout" android:padding="@dimen/popup_stores_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.image.IntentUrlCachingImageView android:layout_gravity="left" android:id="@id/preferredStore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/bg_button_transparent_light" />
+    <com.shazam.android.widget.image.IntentUrlCachingImageView android:layout_gravity="left" android:id="@id/secondaryStore" android:paddingTop="@dimen/stores_popup_padding" android:paddingBottom="@dimen/stores_popup_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/bg_button_transparent_light" android:layout_below="@id/preferredStore" />
+    <com.shazam.android.widget.image.ForegroundImageView android:id="@id/buyOptionsSelectorClose" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/bg_button_transparent_dark" android:scaleType="fitCenter" android:layout_toRightOf="@id/preferredStore" android:layout_alignTop="@id/preferredStore" android:layout_alignBottom="@id/preferredStore" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/RelativeLayout1" android:layout_width="350.0dip" android:layout_height="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mainContainer" android:background="@drawable/pop_up" android:layout_width="350.0dip" android:layout_height="250.0dip" android:maxWidth="300.0dip" android:maxHeight="200.0dip" android:layout_centerInParent="true">
+=
+<ImageView android:layout_gravity="center" android:id="@id/smoola_coin_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/smoola_coin" android:scaleType="fitEnd" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/LinearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:id="@id/costContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/yellow" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/get" android:layout_weight="0.5" style="@style/pianoTextMedium" />
+                <TextView android:textColor="@color/yellow_text" android:id="@id/productCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cost_format" android:layout_weight="0.5" style="@style/pianoTextLarge" />
+                <TextView android:textColor="@color/yellow" android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/now" android:layout_weight="0.5" style="@style/pianoTextMedium" />
+            </LinearLayout>
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/need_more_smoola_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/need_more_smoola" android:layout_below="@id/costContainer" style="@style/pianoTextSmall" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/buttonContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textColor="@color/white" android:id="@id/ok_free_button" android:background="@drawable/bluebutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="140.0dip" android:text="@string/get_more_free_smoola" />
+            <Button android:textColor="@color/white" android:id="@id/ok_button" android:background="@drawable/bluebutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="140.0dip" android:text="@string/get_more_smoola" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:textColor="@color/black" android:id="@id/cancel_button" android:background="@drawable/close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/mainContainer" android:layout_alignRight="@id/mainContainer" />
+</RelativeLayout>

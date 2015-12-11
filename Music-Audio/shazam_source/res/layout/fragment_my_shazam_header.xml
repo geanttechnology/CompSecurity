@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/view_my_shazam_header_background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignTop="@id/view_my_shazam_header_content_wrapper" android:layout_alignBottom="@id/view_my_shazam_header_content_wrapper" />
+    <FrameLayout android:id="@id/view_my_shazam_header_content_wrapper" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/view_my_shazam_header_anonymous" />
+        <include layout="@layout/view_my_shazam_header_pending_email_validation" />
+        <include layout="@layout/view_my_shazam_header_logged_in" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/my_shazam_header_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:indeterminateProgressStyle" />
+    </FrameLayout>
+</RelativeLayout>

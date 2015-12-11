@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mainContainer" android:layout_width="380.0dip" android:layout_height="330.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/topRow" android:background="@drawable/bubble_white_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/logo_smule" />
+            <View android:id="@id/topDivider" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/found_account" style="@style/pianoTextLarge" />
+            <ImageView android:layout_gravity="center" android:id="@id/profile_pic" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/user_picture_none" />
+            <TextView android:textSize="24.0dip" android:textColor="@color/gray_6" android:gravity="center" android:id="@id/handle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="howdycloudylonger" style="@style/pianoTextLarge" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/gray_6" android:gravity="center" android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="calvin.lau@smule.com" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottomRow" android:background="@drawable/bubble_green_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.2">
+            <Button android:textColor="@color/gray_4" android:id="@id/nope_button" android:background="@drawable/btn_light_green_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="140.0dip" android:text="@string/nope" />
+            <Button android:textColor="@color/gray_4" android:id="@id/yes_button" android:background="@drawable/btn_white_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="140.0dip" android:text="@string/yes_me" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

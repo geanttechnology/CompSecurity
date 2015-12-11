@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.text.CustomFontTextView android:id="@id/music_details_metadatum_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Shazam.TextView.MusicDetails.Metadatum.Title" />
+    <com.shazam.android.widget.text.CustomFontTextView android:id="@id/music_details_metadatum_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Shazam.TextView.MusicDetails.Metadatum.Text" />
+</merge>

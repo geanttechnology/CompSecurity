@@ -1,0 +1,29 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.shazam.c.o;
+
+import com.shazam.b.a.a;
+import com.shazam.model.store.StoreChoice;
+
+public final class b
+    implements a
+{
+
+    public b()
+    {
+    }
+
+    public final volatile Object a(Object obj)
+    {
+        obj = (StoreChoice)obj;
+        if (obj == null)
+        {
+            return null;
+        } else
+        {
+            return ((StoreChoice) (obj)).newsFeedButtonUrl;
+        }
+    }
+}

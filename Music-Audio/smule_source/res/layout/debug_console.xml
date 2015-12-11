@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/upperLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/inputBox" android:background="@android:drawable/editbox_background_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/inputOKButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/sym_def_app_icon" />
+    </LinearLayout>
+    <com.smule.android.console.ConsoleScrollView android:id="@id/consoleScrollView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/verticalLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </com.smule.android.console.ConsoleScrollView>
+</LinearLayout>

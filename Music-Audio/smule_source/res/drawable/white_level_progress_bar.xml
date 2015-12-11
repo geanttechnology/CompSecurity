@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <nine-patch android:src="@drawable/level_bar_empty_off" android:dither="true" />
+            </item>
+            <item>
+                <shape
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <stroke android:width="2.0dip" android:color="#ffffffff" />
+                    <corners android:radius="5.0dip" />
+                    <solid android:color="#00000000" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5.0dip" />
+                <solid android:color="#ffffffff" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

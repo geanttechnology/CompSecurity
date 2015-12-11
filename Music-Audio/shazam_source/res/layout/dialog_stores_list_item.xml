@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/item_row" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.image.UrlCachingImageView android:layout_gravity="center_vertical" android:id="@id/stores_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="20.0dip" />
+    <include android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@android:layout/select_dialog_item" />
+    <RadioButton android:layout_gravity="center_vertical" android:id="@id/preferred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <com.shazam.android.widget.image.AccelerometerTransformedScaledImageView android:id="@id/lyrics_cover_art" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" shazam:maximumPixelsToScroll="@dimen/lyrics_max_dp_to_scroll" shazam:scaleFactor="@dimen/lyrics_background_scale_factor" shazam:compatAlpha="0.15" />
+    <com.shazam.android.widget.musicdetails.InteractiveInfoView android:id="@id/lyrics_interactive_info" android:background="?interactiveInfoBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" />
+    <FrameLayout android:id="@id/lyrics_fragment_place_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lyrics_interactive_info" android:layout_centerInParent="true" />
+</RelativeLayout>

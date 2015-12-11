@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/ic_empty_state_my_shazam" android:layout_width="@dimen/view_my_shazam_empty_tag_list_logo_size" android:layout_height="@dimen/view_my_shazam_empty_tag_list_logo_size" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/news_feed_loading_color" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/you_have_no_shazams_yet" android:lineSpacingMultiplier="1.22" />
+</LinearLayout>

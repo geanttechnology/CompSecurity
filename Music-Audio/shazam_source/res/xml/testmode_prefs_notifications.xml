@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/notification" android:key="@string/testmode_notification_category_key">
+        <PreferenceScreen android:title="@string/notifications" android:key="@string/testmode_nested_notification_preference_screen">
+            <Preference android:title="Launch Charts Notification" android:key="@string/testmode_notification_charts" />
+            <Preference android:title="Launch in-app web-page Notification" android:key="@string/testmode_notification_in_app_web" />
+            <Preference android:title="Launch fullscreen track v1 Notification" android:key="@string/testmode_notification_track_full_screen_web" />
+            <Preference android:title="Launch fullscreen track v2 Notification" android:key="@string/testmode_notification_track_full_screen_web_v2" />
+            <Preference android:title="Launch News feed Notification" android:key="@string/testmode_notification_news_feed" />
+            <Preference android:title="Launch unsubmitted (my tags) Notification" android:key="@string/testmode_notification_unsubmitted" />
+            <Preference android:title="Launch track v1 Notification" android:key="@string/testmode_notification_track" />
+            <Preference android:title="Launch track v2 Notification" android:key="@string/testmode_notification_track_v2" />
+            <Preference android:title="Launch artist profile Notification" android:key="@string/testmode_notification_artist_profile" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

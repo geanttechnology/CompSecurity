@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/cell_text_horizontal_offer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/left_spacer_offer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.75" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cell_text_offer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="6.5">
+        <View android:id="@id/top_spacer_offer" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="2.0" />
+        <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/offer_title_offer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="offer" android:shadowColor="#ff44386f" android:shadowDx="3.0" android:shadowDy="3.0" android:shadowRadius="1.0" android:layout_weight="1.0" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/pianoTextLarge" />
+        <View android:id="@id/mid_spacer_offer" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="22.0dip" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/offer_description_offer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="desc" android:maxLines="2" android:layout_weight="1.0" android:layout_alignParentTop="true" style="@style/pianoTextMedium" />
+        <View android:id="@id/bot_spacer_offer" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="4.0" />
+    </LinearLayout>
+    <View android:id="@id/right_spacer_offer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.75" />
+</LinearLayout>

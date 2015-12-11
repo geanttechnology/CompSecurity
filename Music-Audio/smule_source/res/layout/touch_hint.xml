@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/base" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mainContainer" android:background="@drawable/popup_box" android:padding="@dimen/modal_padding" android:layout_width="@dimen/modal_width" android:layout_height="@dimen/modal_height" android:layout_centerInParent="true">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/icon_piano_black" android:layout_above="@id/titleText" android:layout_alignParentTop="false" android:layout_centerHorizontal="true" />
+        <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_18" android:textColor="@color/gray_4" android:gravity="center" android:id="@id/titleText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/medium" android:layout_above="@id/touchHint" app:font="Gotham-Book" />
+        <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_16" android:textColor="@color/gray_8" android:gravity="top|center" android:id="@id/touchHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/medium_instruction" android:layout_alignParentRight="false" android:layout_centerInParent="true" android:lineSpacingExtra="2.0dip" app:font="Gotham-Medium" />
+        <Button android:textColor="@color/gray_4" android:id="@id/button" android:background="@drawable/btn_teal" android:layout_width="wrap_content" android:layout_height="@dimen/button_height" android:layout_marginTop="20.0dip" android:text="@string/okay" android:width="150.0dip" android:layout_below="@id/touchHint" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

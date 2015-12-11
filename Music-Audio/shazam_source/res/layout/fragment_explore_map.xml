@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:map="http://schemas.android.com/apk/res-auto">
+    <com.google.android.gms.maps.MapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" map:mapType="normal" map:uiCompass="false" map:uiRotateGestures="false" map:uiScrollGestures="true" map:uiTiltGestures="false" map:uiZoomControls="false" map:uiZoomGestures="true" map:zOrderOnTop="false" />
+    <com.shazam.android.widget.FakeDeterminateProgressBarView android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+    <FrameLayout android:id="@id/geochart_content" android:layout_width="@dimen/sliding_pane_width" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/geochart_popup_margin" android:layout_marginTop="@dimen/geochart_popup_top_margin" android:layout_marginRight="@dimen/geochart_popup_margin" android:layout_marginBottom="@dimen/geochart_popup_margin" />
+</FrameLayout>

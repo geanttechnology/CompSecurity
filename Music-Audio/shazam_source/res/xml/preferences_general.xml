@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="@string/settings_key_general"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general_preferences" android:key="@string/settings_category_general">
+        <com.shazam.android.preference.notification.NotificationPreference android:title="@string/notifications" android:key="@string/settings_key_notifications" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/tagstartup" android:key="@string/settings_key_tag_on_startup" android:summary="@string/tag_on_start" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/cinema_mode" android:key="@string/settings_key_auto_tag" android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/vibrate" android:key="@string/settings_key_vibrate" android:summary="@string/vibrate_once_tagging_finishes" android:defaultValue="true" />
+        <com.shazam.android.preference.UseLocationPreference android:persistent="true" android:title="@string/location_settings" android:key="@string/settings_key_location" android:summary="@string/location_description" android:defaultValue="true" />
+        <com.shazam.android.preference.DeleteAllTagsDialogPreference android:title="@string/clearall" android:key="@string/settings_key_delete_all_tags" android:summary="@string/all_tags_deleted" android:dialogMessage="@string/text_clearall_confirmation" />
+        <com.shazam.android.preference.UpgradePreference android:title="@string/upgrade_to_encore" android:key="@string/settings_key_upgrade_to_encore" android:summary="@string/upgrade_to_encore_summary" />
+        <com.shazam.android.preference.StoresPreference android:title="@string/stores_preference" android:key="@string/settings_key_stores_preference" />
+    </PreferenceCategory>
+</PreferenceScreen>

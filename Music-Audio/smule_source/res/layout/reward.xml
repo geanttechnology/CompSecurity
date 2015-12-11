@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="117.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/rewards_smoola_lrg" android:scaleType="centerInside" android:adjustViewBounds="true" android:contentDescription="XP" />
+    <com.smule.pianoandroid.utils.FontTextView android:textSize="12.0dip" android:textColor="@color/gray_4" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/label" android:layout_width="107.0dip" android:layout_height="fill_parent" android:text="+10 Smoola" android:maxLines="2" android:layout_below="@id/icon" android:layout_centerHorizontal="true" app:font="Gotham-Book" style="@style/pianoHeader" />
+    <com.smule.pianoandroid.utils.FontTextView android:textSize="10.0dip" android:textColor="@color/gray_4" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/sublabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="sublabel" android:layout_below="@id/icon" android:layout_centerHorizontal="true" app:font="Gotham-Book" style="@style/pianoHeader" />
+</LinearLayout>

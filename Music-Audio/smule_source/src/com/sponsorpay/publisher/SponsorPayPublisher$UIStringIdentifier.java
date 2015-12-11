@@ -1,0 +1,71 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.sponsorpay.publisher;
+
+
+public final class  extends Enum
+{
+
+    public static final MBE_FORFEIT_DIALOG_TITLE DISMISS_ERROR_DIALOG;
+    private static final MBE_FORFEIT_DIALOG_TITLE ENUM$VALUES[];
+    public static final MBE_FORFEIT_DIALOG_TITLE ERROR_DIALOG_TITLE;
+    public static final MBE_FORFEIT_DIALOG_TITLE ERROR_LOADING_OFFERWALL;
+    public static final MBE_FORFEIT_DIALOG_TITLE ERROR_LOADING_OFFERWALL_NO_INTERNET_CONNECTION;
+    public static final MBE_FORFEIT_DIALOG_TITLE ERROR_PLAY_STORE_UNAVAILABLE;
+    public static final MBE_FORFEIT_DIALOG_TITLE GENERIC_ERROR;
+    public static final MBE_FORFEIT_DIALOG_TITLE LOADING_INTERSTITIAL;
+    public static final MBE_FORFEIT_DIALOG_TITLE LOADING_OFFERWALL;
+    public static final MBE_FORFEIT_DIALOG_TITLE MBE_ERROR_DIALOG_BUTTON_TITLE_DISMISS;
+    public static final MBE_FORFEIT_DIALOG_TITLE MBE_ERROR_DIALOG_MESSAGE_DEFAULT;
+    public static final MBE_FORFEIT_DIALOG_TITLE MBE_ERROR_DIALOG_MESSAGE_OFFLINE;
+    public static final MBE_FORFEIT_DIALOG_TITLE MBE_ERROR_DIALOG_TITLE;
+    public static final MBE_FORFEIT_DIALOG_TITLE MBE_FORFEIT_DIALOG_TITLE;
+    public static final MBE_FORFEIT_DIALOG_TITLE MBE_REWARD_NOTIFICATION;
+    public static final MBE_FORFEIT_DIALOG_TITLE VCS_COINS_NOTIFICATION;
+    public static final MBE_FORFEIT_DIALOG_TITLE VCS_DEFAULT_CURRENCY;
+
+    public static  valueOf(String s)
+    {
+        return ()Enum.valueOf(com/sponsorpay/publisher/SponsorPayPublisher$UIStringIdentifier, s);
+    }
+
+    public static [] values()
+    {
+         a[] = ENUM$VALUES;
+        int i = a.length;
+         a1[] = new ENUM.VALUES[i];
+        System.arraycopy(a, 0, a1, 0, i);
+        return a1;
+    }
+
+    static 
+    {
+        ERROR_DIALOG_TITLE = new <init>("ERROR_DIALOG_TITLE", 0);
+        DISMISS_ERROR_DIALOG = new <init>("DISMISS_ERROR_DIALOG", 1);
+        GENERIC_ERROR = new <init>("GENERIC_ERROR", 2);
+        ERROR_LOADING_OFFERWALL = new <init>("ERROR_LOADING_OFFERWALL", 3);
+        ERROR_LOADING_OFFERWALL_NO_INTERNET_CONNECTION = new <init>("ERROR_LOADING_OFFERWALL_NO_INTERNET_CONNECTION", 4);
+        LOADING_INTERSTITIAL = new <init>("LOADING_INTERSTITIAL", 5);
+        LOADING_OFFERWALL = new <init>("LOADING_OFFERWALL", 6);
+        ERROR_PLAY_STORE_UNAVAILABLE = new <init>("ERROR_PLAY_STORE_UNAVAILABLE", 7);
+        MBE_REWARD_NOTIFICATION = new <init>("MBE_REWARD_NOTIFICATION", 8);
+        VCS_COINS_NOTIFICATION = new <init>("VCS_COINS_NOTIFICATION", 9);
+        VCS_DEFAULT_CURRENCY = new <init>("VCS_DEFAULT_CURRENCY", 10);
+        MBE_ERROR_DIALOG_TITLE = new <init>("MBE_ERROR_DIALOG_TITLE", 11);
+        MBE_ERROR_DIALOG_MESSAGE_DEFAULT = new <init>("MBE_ERROR_DIALOG_MESSAGE_DEFAULT", 12);
+        MBE_ERROR_DIALOG_MESSAGE_OFFLINE = new <init>("MBE_ERROR_DIALOG_MESSAGE_OFFLINE", 13);
+        MBE_ERROR_DIALOG_BUTTON_TITLE_DISMISS = new <init>("MBE_ERROR_DIALOG_BUTTON_TITLE_DISMISS", 14);
+        MBE_FORFEIT_DIALOG_TITLE = new <init>("MBE_FORFEIT_DIALOG_TITLE", 15);
+        ENUM$VALUES = (new ENUM.VALUES[] {
+            ERROR_DIALOG_TITLE, DISMISS_ERROR_DIALOG, GENERIC_ERROR, ERROR_LOADING_OFFERWALL, ERROR_LOADING_OFFERWALL_NO_INTERNET_CONNECTION, LOADING_INTERSTITIAL, LOADING_OFFERWALL, ERROR_PLAY_STORE_UNAVAILABLE, MBE_REWARD_NOTIFICATION, VCS_COINS_NOTIFICATION, 
+            VCS_DEFAULT_CURRENCY, MBE_ERROR_DIALOG_TITLE, MBE_ERROR_DIALOG_MESSAGE_DEFAULT, MBE_ERROR_DIALOG_MESSAGE_OFFLINE, MBE_ERROR_DIALOG_BUTTON_TITLE_DISMISS, MBE_FORFEIT_DIALOG_TITLE
+        });
+    }
+
+    private (String s, int i)
+    {
+        super(s, i);
+    }
+}

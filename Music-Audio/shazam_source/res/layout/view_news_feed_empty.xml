@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/empty_view" android:paddingTop="?android:actionBarSize" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/people_footer" />
+    <TextView android:gravity="center" android:id="@id/empty_news_feed_title" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_news_feed_title_margin_top" android:text="@string/shazam_friends_is_now_called_news" android:layout_centerInParent="true" />
+</RelativeLayout>

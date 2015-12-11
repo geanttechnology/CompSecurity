@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <at.markushi.ui.RevealColorView android:id="@id/view_artist_page_background" android:background="@color/shazam_dark_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/view_artist_page_space" android:layout_alignBottom="@id/view_artist_page_header" />
+    <Space android:id="@id/view_artist_page_space" android:layout_width="fill_parent" android:layout_height="64.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_artist_page_header" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_artist_page_space">
+        <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/view_artist_page_avatar" android:layout_width="@dimen/view_my_shazam_social_header_avatar_size" android:layout_height="@dimen/view_my_shazam_social_header_avatar_size" android:src="@drawable/ic_user_avatar" shazam:shape="round" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.shazam.android.widget.text.ArtistNameTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/view_artist_page_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="sans-serif-regular" shazam:badgeStyle="light" shazam:fontName="@string/roboto_regular" />
+            <com.shazam.android.widget.text.CustomFontTextView android:textSize="12.0sp" android:textColor="@color/translucent_white" android:id="@id/view_artist_page_followers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-regular" shazam:fontName="@string/roboto_regular" />
+        </LinearLayout>
+        <com.shazam.android.widget.button.follow.FollowButton android:id="@id/view_artist_page_follow_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.shazam.android.widget.text.ExpandableCustomFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/view_artist_page_bio" android:background="@color/white" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/view_artist_page_header" />
+</RelativeLayout>

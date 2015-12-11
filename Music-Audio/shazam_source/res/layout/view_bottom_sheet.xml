@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/paddedView" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="@style/TextAppearance.Shazam.BottomSheet.Title" android:gravity="center_vertical" android:id="@id/sheet_title" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/sheet_list" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/bg_button_transparent_dark_square" android:divider="@null" android:dividerHeight="0.0dip" />
+    </LinearLayout>
+</FrameLayout>

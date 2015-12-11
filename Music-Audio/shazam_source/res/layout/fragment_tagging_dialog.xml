@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <at.markushi.ui.RevealColorView android:id="@id/reveal_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.shazam.android.view.tagging.BlueCircleProtectionView android:id="@id/blue_protection" android:visibility="invisible" android:layout_width="@dimen/tagging_button_size_placeholder" android:layout_height="@dimen/tagging_button_size_placeholder" />
+    <FrameLayout android:id="@id/tagging_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.shazam.android.view.tagging.TaggingShardsView android:id="@id/tagging_shards_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.shazam.android.view.tagging.TaggingButtonView android:id="@id/view_tagging_button" android:layout_width="@dimen/tagging_button_size_placeholder" android:layout_height="@dimen/tagging_button_size_placeholder" />
+    <FrameLayout android:id="@id/crouton_content_tagging_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?android:actionBarSize" />
+</FrameLayout>

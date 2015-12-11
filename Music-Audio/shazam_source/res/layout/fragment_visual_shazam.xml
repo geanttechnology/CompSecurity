@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <at.markushi.ui.RevealColorView android:id="@id/reveal_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/education_interstitial" />
+    <include layout="@layout/visual_shazam_unsuccessful" />
+    <com.shazam.android.visual.VisualShazamSurfaceViewContainer android:id="@id/view_camera_surface" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/education_panel_height" />
+    <View android:id="@id/visual_shazam_sweep" android:background="@drawable/visual_shazam_sweep" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <View android:id="@id/education_panel_background" android:background="?colorPrimary" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewFlipper android:id="@id/education_panel" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/education_panel_height" android:inAnimation="@anim/slide_in_right" android:outAnimation="@anim/slide_out_left" android:flipInterval="6000" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/dark_panel" android:background="?colorPrimary" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/education_panel_height" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/dark_panel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/it_is_dark_turn_light_on" android:includeFontPadding="false" android:drawableRight="@drawable/ic_vs_light_on_large" android:drawablePadding="12.0dip" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/toolbar_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/view_toolbar" />
+    </FrameLayout>
+</RelativeLayout>

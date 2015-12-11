@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout1" android:background="@drawable/pop_up" android:padding="25.0dip" android:layout_width="500.0dip" android:layout_height="350.0dip" android:layout_margin="10.0dip" android:scaleType="fitCenter" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/smoola_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/smoola_coin" />
+            <TextView android:textColor="@color/yellow_text" android:id="@id/song_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="song title" style="@style/pianoTextLarge" />
+            <TextView android:textColor="@color/white" android:id="@id/original_and_sing_jam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/original_and_sing_jam" style="@style/pianoTextSmall" />
+        </LinearLayout>
+        <TextView android:textColor="@color/yellow" android:gravity="center_horizontal" android:id="@id/confirm_smoola_detail" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="alabala" android:layout_weight="1.5" style="@style/pianoTextMedium" />
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/buttonContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/black" android:id="@id/confirm_smoola_cancel" android:background="@drawable/greybutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="180.0dip" android:text="@string/no" />
+            <Button android:textColor="@color/white" android:id="@id/confirm_smoola_exchange" android:background="@drawable/bluebutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="180.0dip" android:text="@string/yes" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

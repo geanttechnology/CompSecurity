@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="@string/settings_key_social"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/category_sign_up" android:key="@string/settings_category_sign_up">
+        <com.shazam.android.preference.SignUpOrLogInPreference android:title="@string/sign_up_or_log_in" android:key="@string/settings_key_sing_up" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/category_social" android:key="@string/settings_category_social">
+        <com.shazam.android.preference.FacebookPreference android:key="@string/settings_key_facebook_setup" />
+        <com.shazam.android.preference.FacebookInviteFriendsPreference android:title="@string/invite_your_facebook_friends" android:key="@string/settings_key_facebook_invite_friends" />
+        <com.shazam.android.preference.GooglePlusPreference android:key="@string/settings_key_google_plus_setup" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/category_profile" android:key="@string/settings_category_profile">
+        <com.shazam.android.preference.ProfilePreference android:key="@string/settings_key_profile" android:dialogTitle="@string/your_name" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/category_music_streaming" android:key="@string/settings_category_streaming">
+        <com.shazam.android.preference.RdioPreference android:title="@string/connect_to_rdio" android:key="@string/settings_key_rdio_setup" android:dialogTitle="@string/disconnect_from_rdio" android:dialogMessage="@string/disconnect_from_streaming_prompt" />
+        <com.shazam.android.preference.SpotifyPreference android:title="@string/connect_to_spotify" android:key="@string/settings_key_spotify_setup" android:dialogTitle="@string/disconnect_from_spotify" android:dialogMessage="@string/disconnect_from_streaming_prompt" />
+    </PreferenceCategory>
+</PreferenceScreen>

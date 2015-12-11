@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fragment_chart_retry_list" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.player.PlayAllButton android:id="@id/play_all_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:layout_centerHorizontal="true" style="@style/Widget.Shazam.Button.Blue.PlayAll" />
+    <View android:id="@id/horizontal_divider" android:layout_below="@id/play_all_button" style="@style/NewsCardText.GreyLine" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progressContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/horizontal_divider">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+        <FrameLayout android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/retry_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/horizontal_divider" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shazam.android.widget.AnimatorViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/activity_post_editor_editor_details" android:background="@drawable/bg_post_editor_publisher_details" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/view_activity_post_user_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_user_avatar" shazam:shape="round" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/view_activity_post_user_name" android:background="@color/transparent" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_publish_track_info" android:layout_below="@id/activity_post_editor_editor_details">
+            <EditText android:textSize="14.0sp" android:textColorHint="@color/shazam_mid_grey" android:id="@id/caption_text_editor" android:background="@color/transparent" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:hint="@string/post_editor_caption_hint" android:inputType="textMultiLine" />
+        </ScrollView>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_publish_track_info" android:background="@color/shazam_light_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/view_publish_cover" android:background="@drawable/loading_placeholder" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="8.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/shazam_near_black" android:ellipsize="end" android:id="@id/view_publish_track_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/shazam_near_black" android:ellipsize="end" android:id="@id/view_publish_track_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.shazam.android.widget.AnimatorViewFlipper>

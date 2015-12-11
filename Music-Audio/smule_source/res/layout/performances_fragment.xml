@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/performanceContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/Header" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textColor="@color/light_blue_text" android:ellipsize="end" android:id="@id/headerText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="@string/created" android:maxLines="1" android:layout_toLeftOf="@id/performanceCount" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/pianoTextLarge" />
+            <TextView android:textColor="@color/light_blue_text" android:id="@id/performanceCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" android:text="124" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/pianoTextLarge" />
+        </RelativeLayout>
+        <ListView android:id="@id/performanceList" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:divider="@color/light_blue_text" android:dividerHeight="1.0dip" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/light_blue_text" android:gravity="center" android:id="@id/statusText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/loading_performances" style="@style/pianoTextLarge" />
+    </LinearLayout>
+</RelativeLayout>

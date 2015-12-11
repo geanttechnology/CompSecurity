@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout1" android:background="@color/translucent_8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mainContainer" android:layout_width="400.0dip" android:layout_height="380.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/topRow" android:background="@drawable/bubble_white_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="18.0dip" android:textColor="@color/gray_4" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/no_account_for_email" style="@style/pianoTextLarge" />
+            <TextView android:textSize="19.0dip" android:textColor="@color/gray_6" android:gravity="center" android:id="@id/email" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottomRow" android:background="@drawable/bubble_green_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.4">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lowerButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <Button android:textColor="@color/gray_4" android:id="@id/try_another" android:background="@drawable/btn_light_green_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="140.0dip" android:text="@string/try_another" />
+                <Button android:textColor="@color/gray_4" android:id="@id/new_account_button" android:background="@drawable/btn_white_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="140.0dip" android:text="@string/create_new_account" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

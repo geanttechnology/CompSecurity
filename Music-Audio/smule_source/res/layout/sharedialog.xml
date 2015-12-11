@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout1" android:background="@color/translucent_8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainContainer" android:background="@drawable/popup_box" android:layout_width="@dimen/share_modal_width" android:layout_height="@dimen/share_modal_height" android:layout_centerInParent="true">
+        <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_16" android:textColor="@color/gray_4" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/shareTitle" android:paddingTop="56.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginRight="26.0dip" android:text="Title " app:font="Gotham-Medium" style="@style/pianoHeader" />
+        <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_13" android:textColor="@color/gray_8" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/shareMsg" android:paddingTop="17.0dip" android:paddingBottom="36.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginRight="26.0dip" android:text="@string/share_msg_performance" app:font="Gotham-Book" style="@style/pianoHeader" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/ShareButtonLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_below="@id/YourPerf" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/shareSMS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@drawable/icon_share_sms" />
+            <ImageView android:id="@id/shareEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@drawable/icon_share_email" />
+            <ImageView android:id="@id/shareTwitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@drawable/icon_share_twitter" />
+            <ImageView android:id="@id/shareFB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@drawable/icon_share_facebook" />
+            <ImageView android:id="@id/shareOther" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_share_widget" />
+        </LinearLayout>
+        <CheckBox android:textSize="@dimen/text_12" android:textColor="@color/gray_4" android:id="@id/doNotShow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:button="@drawable/checkbox" android:text="@string/do_not_show_again" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>

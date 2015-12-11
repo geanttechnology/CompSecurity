@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/semi_transparent_grey_03" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_player_tutorial_hand" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="60.0dip" android:layout_marginBottom="24.0dip" android:text="@string/player_overlay_swipe_description" />
+        <com.shazam.android.widget.text.CustomFontTextView android:textSize="16.0sp" android:layout_gravity="center" android:id="@id/player_overlay_dismiss_button" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:minWidth="112.0dip" android:minHeight="48.0dip" android:text="@string/got_it" android:textAllCaps="true" style="@style/Widget.Shazam.Button.Blue" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,25 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.g.c;
+
+
+// Referenced classes of package com.g.c:
+//            u, x
+
+public static interface _cls1
+{
+
+    public static final ject a = new u.f() {
+
+        public final x a(x x)
+        {
+            return x;
+        }
+
+    };
+
+    public abstract x a(x x);
+
+}

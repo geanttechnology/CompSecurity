@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=no"/>
+        <style>
+            body {
+                margin    : 0;
+                padding   : 0;
+                text-align: center;
+                background: black;
+            }
+            #ytPlayerDiv{
+                border:0px;
+                margin:0px;
+                padding:0
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="ytPlayerDiv"></div>
+        
+        <script>
+
+            var YT_URL				= "//www.youtube.com/iframe_api";
+        	
+            var PLAYER_ORIGIN       = 'http://www.livapp.com';
+            var PLAYER_WIDTH        = '480';
+            var PLAYER_HEIGHT       = '360';
+            var YT_ERRCODE_RECOVERABLE = 5;
+
+            var tag = document.createElement('script');
+            tag.src = YT_URL; 
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                
+            var ytPlayer 		= null;
+            var isPlayerReady 	= false;
+            var shouldPlay 		= false;
+            var canEnded 		= false;
+			var timeMarker 		= 0;
+			var videoEnded 		= false;
+            var ytPlayerState 	= -1;
+            var curVideoId		= "";
+            
+            runWatchDog();
+            
+			function onYouTubeIframeAPIReady() {
+            	ytPlayer = null;	
+            	isYTScriptReady = true;
+            	shouldPlay = false;
+                ytPlayer = new YT.Player('ytPlayerDiv', { 
+                    height: PLAYER_HEIGHT,
+                    width: PLAYER_WIDTH,
+                    playerVars: {  
+                    	'enablejsapi': 1,
+                    	'playsinline': 1,
+                        'enablejsapi': 1,
+                        'autoplay'   : 0,
+                        'controls'   : 0,
+                        'showinfo'   : 0,
+                        'start'      : 0
+                    },
+                    events: {
+                        'onReady'      : onPlayerReady,
+                        'onStateChange': onPlayerStateChange,
+                        'onError'      : onPlayerError
+                    }
+                });
+            }       
+            
+            function onPlayerReady(event) {
+            	isPlayerReady = true;
+            	AndroidFunction.onPlayerReady();
+            }
+            
+            function onPlayerStateChange(event) {
+            	ytPlayerState = event.data;
+      		}
+      		
+      		function onPlayerError(event) {
+            	if (event.data != YT_ERRCODE_RECOVERABLE)
+            		AndroidFunction.playNext();
+            }
+      		
+      		function playVideo() {
+      			shouldPlay = true;
+            	ytPlayer.playVideo();
+      		}
+            
+            function pauseVideo() {
+            	shouldPlay = false;
+            	ytPlayer.pauseVideo();
+            }
+            
+            function runWatchDog() {
+            	setTimeout(runWatchDog, 1000);
+            	checkVideoState();
+            	updateVideoTime();
+            }
+            
+            function updateVideoTime() {
+            	if (isPlayerReady) {
+                	AndroidFunction.setCurrentTime(ytPlayer.getCurrentTime());
+		        }
+            }
+            
+            function loadVideoById(id, startTime) {
+                canEnded = false;
+            	timeMarker = 0;
+            	if (!startTime)
+            		startTime = 0;
+                shouldPlay		= true;
+                videoEnded      = false;
+                curVideoId		= id;
+                ytPlayer.setVolume(60);
+                ytPlayer.loadVideoById(curVideoId, startTime);
+            }
+            
+            function checkVideoState() {
+                if(!isPlayerReady) {
+                    return;
+                }
+                AndroidFunction.log("State = " + ytPlayerState);
+                if(ytPlayerState == YT.PlayerState.ENDED) {
+                	if (!videoEnded && ytPlayer.getCurrentTime()==0) {
+                        loadVideoById(curVideoId,0);
+                    }
+                    else if(!videoEnded && canEnded){
+                		videoEnded = true;
+                		AndroidFunction.playNext();
+                	}
+                	else if(!videoEnded){
+                		loadVideoById(curVideoId,timeMarker);
+                	}
+                } else if(shouldPlay && ytPlayerState != YT.PlayerState.PLAYING) {    
+                	if (ytPlayerState == YT_ST_PAUSED  && ytPlayer.getDuration() > 0 && (Math.abs(ytPlayer.getDuration() - ytPlayer.getCurrentTime()) < 1)){
+						videoEnded = true;
+                        AndroidFunction.playNext();
+                    }else {
+                		ytPlayer.playVideo();
+                    }         
+                } else if(!shouldPlay && ytPlayerState == YT.PlayerState.PLAYING) {
+                	ytPlayer.pauseVideo();
+                }
+                
+                if(Math.abs(ytPlayer.getDuration() - ytPlayer.getCurrentTime()) < 5){
+                	canEnded = true;
+                }
+                else{
+                	timeMarker = ytPlayer.getCurrentTime();
+                }                     
+            }
+            
+            
+            
+        </script>
+    </body>
+</html>

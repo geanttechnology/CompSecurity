@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/popup_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tooltip_container" android:background="@drawable/callout_background" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tooltip_up_arrow">
+        <ImageView android:id="@id/tooltip_icon" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/tooltip_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tooltip_icon" android:layout_centerInParent="true">
+            <com.shazam.android.widget.text.CustomFontTextView android:textSize="14.0sp" android:textColor="@color/official_grey_10" android:gravity="left" android:id="@id/tooltip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/tooltip_up_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:src="@drawable/callout_up_arrow" />
+    <ImageView android:id="@id/tooltip_down_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:src="@drawable/callout_down_arrow" android:layout_below="@id/tooltip_container" />
+</RelativeLayout>

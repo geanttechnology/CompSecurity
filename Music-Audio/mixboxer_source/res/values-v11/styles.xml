@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sherlock.__Theme" parent="@android:style/Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Sherlock.__Theme.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="AppTheme" parent="@style/Theme.Sherlock.Light" />
+    <style name="Theme.MixerBox.Default" parent="@style/Theme.Sherlock.Light">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:actionBarStyle">@style/MixerBox.SherlockActionBarStyle</item>
+        <item name="android:displayOptions">useLogo|showHome|showTitle</item>
+    </style>
+    <style name="MixerBox.SherlockActionBarStyle" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="android:background">@color/blue</item>
+        <item name="android:titleTextStyle">@style/MixerBox.ActionBar.TextAppearance</item>
+        <item name="background">@color/blue</item>
+    </style>
+    <style name="MixerBox.ActionBar.TextAppearance" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/actionbar_textsize</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="NotificationText" parent="@android:style/TextAppearance.StatusBar.EventContent" />
+    <style name="NotificationTitle" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+</resources>

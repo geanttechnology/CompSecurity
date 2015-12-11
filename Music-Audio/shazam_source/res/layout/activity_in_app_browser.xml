@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="4.0dip" android:progressDrawable="@drawable/progress" android:minHeight="4.0dip" android:layout_alignParentTop="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <WebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bar" android:layout_below="@id/progress_bar" />
+    <View android:id="@id/bar" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/ll" />
+    <LinearLayout android:id="@id/ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/open_browser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_upload" android:contentDescription="@string/open_browser" />
+        <ImageButton android:id="@id/browser_back" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" android:contentDescription="@string/back" />
+        <ImageButton android:id="@id/browser_forward" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@android:drawable/ic_media_play" android:layout_weight="2.0" android:contentDescription="@string/forward" />
+        <ImageButton android:id="@id/browser_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_rotate" android:contentDescription="@string/refresh" />
+    </LinearLayout>
+</RelativeLayout>

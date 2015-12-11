@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.text.TextAlignedLeftIconButton android:id="@id/view_facebook_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signup_facebook" style="@style/Widget.Shazam.Button.Large.Facebook" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" style="?android:indeterminateProgressStyle" />
+</merge>

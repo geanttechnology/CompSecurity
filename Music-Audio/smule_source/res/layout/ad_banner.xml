@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/bannerContainer" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentLeft="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.smule.pianoandroid.utils.FontTextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/songbook" android:layout_centerVertical="true" app:font="Gotham-Medium" style="@style/pianoHeader" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/flurryAd" android:layout_width="320.0dip" android:layout_height="40.0dip" android:minWidth="320.0dip" android:layout_centerHorizontal="true" />
+</RelativeLayout>

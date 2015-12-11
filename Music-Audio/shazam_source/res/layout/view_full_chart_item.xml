@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <com.shazam.android.widget.image.NumberedUrlCachingImageView android:id="@id/view_full_chart_item_cover" android:background="@drawable/loading_placeholder" android:layout_width="@dimen/view_full_chart_cover_side" android:layout_height="@dimen/view_full_chart_cover_side" android:layout_margin="@dimen/view_full_chart_item_margin_left_right" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/view_full_chart_item_preview" android:layout_toRightOf="@id/view_full_chart_item_cover" android:layout_centerVertical="true">
+        <com.shazam.android.widget.text.CustomFontTextView android:textSize="16.0sp" android:textColor="@color/official_grey_10" android:ellipsize="marquee" android:id="@id/view_full_chart_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" shazam:fontName="@string/roboto_medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/official_grey_04" android:ellipsize="marquee" android:id="@id/view_full_chart_item_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <com.shazam.android.widget.preview.PreviewButton android:gravity="center_vertical" android:id="@id/view_full_chart_item_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:minWidth="44.0dip" android:layout_toLeftOf="@id/view_full_chart_item_store" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" shazam:mainColor="black" />
+    <com.shazam.android.widget.image.IntentUrlCachingImageView android:id="@id/view_full_chart_item_store" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</merge>

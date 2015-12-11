@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="center" android:id="@id/lyrics_scroll_view" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.shazam.android.widget.text.CustomFontTextView android:id="@id/lyrics_lyrics" android:paddingTop="@dimen/lyrics_padding_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Shazam.TextView.Lyrics" />
+        <com.shazam.android.widget.text.CustomFontTextView android:id="@id/lyrics_writers" android:paddingTop="@dimen/lyrics_padding_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Shazam.TextView.Lyrics" />
+        <com.shazam.android.widget.text.CustomFontTextView android:id="@id/lyrics_copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Shazam.TextView.Lyrics" />
+        <com.shazam.android.widget.text.CustomFontTextView android:id="@id/lyrics_provider" android:paddingBottom="@dimen/lyrics_padding_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/provided_by_lyricfind" style="@style/Widget.Shazam.TextView.Lyrics" />
+    </LinearLayout>
+</ScrollView>

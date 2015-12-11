@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="vertical" android:id="@id/radio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <RadioButton android:textSize="@dimen/dialog_tv_size" android:textColor="@color/darker_blue" android:id="@id/radiobtn_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_tv_add_to_playlist" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="14.0sp" android:id="@id/dialog_et" android:paddingRight="35.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="15.0dip" android:hint="@string/enter_playlist_name" />
+                <ImageView android:id="@id/iv" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_close_blue" android:layout_alignRight="@id/dialog_et" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RadioGroup>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shazam.android.widget.AnimatorViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="@dimen/check_email_title_margin_bottom" android:text="@string/check_your_email" style="@style/Widget.Shazam.TextView.SignUp.CheckEmail.Title" />
+        <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/view_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:maxLines="1" android:scrollHorizontally="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center" android:id="@id/view_email_envelope_container" android:paddingTop="@dimen/check_email_envelope_container_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:alpha="0.0">
+                <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_envelope_back" />
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/view_envelope_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_envelope_middle" android:translationY="20.0dip" />
+                <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_envelope_front" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/check_email_icon_container_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.shazam.android.widget.text.CustomFontTextView android:textSize="16.0sp" android:textColor="@color/text_sign_up_secondary_note" android:gravity="center" android:id="@id/view_email_icon_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="24.0dip" android:text="@string/open_email_tap_confirm_thats_it" android:alpha="0.0" />
+                <ImageView android:id="@id/view_email_icon" android:clickable="false" android:layout_width="72.0dip" android:layout_height="72.0dip" android:scaleType="fitCenter" android:alpha="0.0" style="@style/Widget.Shazam.Button.Transparent.Dark" />
+            </LinearLayout>
+        </RelativeLayout>
+        <Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        <View android:background="?android:dividerHorizontal" android:layout_width="96.0dip" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/button_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/shazam_buttonbar_margin_small" android:layout_marginBottom="@dimen/shazam_buttonbar_margin_small">
+            <com.shazam.android.widget.text.CustomFontTextView android:id="@id/view_skip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/done" android:layout_weight="1.0" style="@style/Widget.Shazam.Button.Transparent.Dark.GreyText" />
+            <com.shazam.android.widget.text.CustomFontTextView android:id="@id/view_send_again" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/send_again" android:layout_weight="1.0" app:fontName="@string/roboto_medium" style="@style/Widget.Shazam.Button.Transparent.Dark.GreyText" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/view_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+</com.shazam.android.widget.AnimatorViewFlipper>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0dip" android:textColor="#ffffffff" android:gravity="bottom" android:id="@id/enter_performance_description" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="32.0dip" android:text="@string/enterPerformanceDescription" android:layout_weight="0.2" />
+    <EditText android:textColor="#ff000000" android:gravity="top" android:id="@id/edit_performance_description" android:background="#ffffffff" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_margin="8.0dip" android:hint="@string/enterPerformanceHint" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.2">
+        <Button android:id="@id/edit_performance_desc_cancel" android:background="@drawable/row_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/cancel" android:layout_weight="0.5" style="@style/pianoTextLarge" />
+        <Button android:textColor="@color/yellow_text" android:id="@id/edit_performance_desc_OK" android:background="@drawable/row_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/okay" android:layout_weight="0.5" style="@style/pianoTextLarge" />
+    </LinearLayout>
+</LinearLayout>

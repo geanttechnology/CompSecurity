@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/charts_list_explore_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/image_chart_map" android:adjustViewBounds="true" />
+    <com.shazam.android.widget.text.CustomFontTextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/charts_list_explore_button" android:background="@drawable/blue_button" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:minHeight="32.0dip" android:text="@string/explore_top_tracks" android:layout_above="@id/charts_list_explore_text" android:layout_centerHorizontal="true" shazam:fontName="@string/roboto_medium" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/charts_list_explore_text" android:paddingBottom="@dimen/charts_list_explore_text_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/from_around_the_world" android:layout_alignBottom="@id/charts_list_explore_image" android:layout_centerHorizontal="true" />
+</RelativeLayout>

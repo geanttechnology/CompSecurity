@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" style="?toolbarStyle">
+            <com.shazam.android.widget.slidingtabs.SlidingTabLayout android:id="@id/home_sliding_tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </android.support.v7.widget.Toolbar>
+        <com.shazam.android.widget.page.NotifyingViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?toolbarShadow" android:layout_below="@id/toolbar" />
+        <FrameLayout android:id="@id/crouton_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/video_content" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/shazam_light_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:id="@id/videoFlickerWorkaround" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/artist_feed_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+    <com.shazam.android.widget.feed.FeedRecyclerView android:id="@id/artist_feed_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" />
+    <ProgressBar android:enabled="false" android:gravity="center" android:layout_gravity="bottom" android:id="@id/artist_feed_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip" android:maxHeight="32.0dip" android:minHeight="32.0dip" />
+</FrameLayout>

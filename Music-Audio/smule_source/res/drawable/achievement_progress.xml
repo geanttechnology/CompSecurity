@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <rotate android:drawable="@drawable/ach_progress_mask" android:fromDegrees="0.0" android:toDegrees="270.0" android:pivotX="50.0%" android:pivotY="50.0%" />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:gravity="left" android:drawable="@drawable/ach_progress" android:clipOrientation="horizontal"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </item>
+</layer-list>

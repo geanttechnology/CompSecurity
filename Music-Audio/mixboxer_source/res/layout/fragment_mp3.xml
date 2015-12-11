@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabHost android:id="@id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/tab_playlists" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/mp3_lv_playlists" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/tab_artists" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/scrollbar" android:id="@id/mp3_lv_artists" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/lighter_gray" android:dividerHeight="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/tab_albums" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/scrollbar" android:id="@id/mp3_lv_albums" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/lighter_gray" android:dividerHeight="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/tab_songs" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/scrollbar" android:id="@id/mp3_lv_songs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/lighter_gray" android:dividerHeight="0.5dip" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

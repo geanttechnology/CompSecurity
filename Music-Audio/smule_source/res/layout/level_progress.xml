@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smule.pianoandroid.magicpiano.NavBarLayout_ android:orientation="vertical" android:id="@id/nav_bar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:hasDrawer="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.smule.pianoandroid.utils.FontTextView android:textSize="18.0dip" android:textColor="@color/gray_4" android:layout_gravity="center_horizontal" android:id="@id/level_text" android:paddingTop="27.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Level 2" app:font="Gotham-Medium" style="@style/pianoHeader" />
+            <FrameLayout android:layout_gravity="center_horizontal" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/level_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="600.0dip" android:maxHeight="40.0dip" android:max="1000" android:progress="340" android:progressDrawable="@drawable/level_progress_bar" android:minWidth="350.0dip" android:minHeight="35.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/level_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Test" app:font="Gotham-Bold" style="@style/pianoTextMedium" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <TextView android:textSize="13.0dip" android:textColor="@color/gray_4" android:layout_gravity="center_horizontal" android:paddingTop="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/next_level_rewards" app:font="Gotham-Medium" style="@style/pianoHeader" />
+            <LinearLayout android:gravity="top|center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/bottom_notes" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/BottomRelativeLayout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+            <fragment android:name="com.smule.pianoandroid.magicpiano.BottomUIFragment_" android:id="@id/bottomUIFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <ImageView android:id="@id/blur_image_level_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="48.0dip" android:src="@color/translucent_4" />
+    </LinearLayout>
+</com.smule.pianoandroid.magicpiano.NavBarLayout_>

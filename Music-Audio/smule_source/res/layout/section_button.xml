@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/songcategories" android:clickable="true" android:layout_width="wrap_content" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/jump_tab_text" android:textColor="@color/gray_5" android:layout_gravity="center" android:id="@id/section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:text="Label" android:layout_centerVertical="true" app:font="Gotham-Bold" />
+    <ImageView android:layout_gravity="center" android:background="@drawable/btn_section_div" android:layout_width="wrap_content" android:layout_height="55.0dip" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.flurry.org.apache.avro.io;
+
+import com.flurry.org.apache.avro.Schema;
+import java.io.IOException;
+
+// Referenced classes of package com.flurry.org.apache.avro.io:
+//            Encoder
+
+public interface DatumWriter
+{
+
+    public abstract void setSchema(Schema schema);
+
+    public abstract void write(Object obj, Encoder encoder)
+        throws IOException;
+}

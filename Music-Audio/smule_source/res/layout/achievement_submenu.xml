@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.smule.pianoandroid.utils.FontTextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/achievements" app:font="Gotham-Medium" style="@style/pianoHeader" />
+    <com.smule.pianoandroid.utils.FontTextView android:textSize="11.0dip" android:textColor="#ffdbdbdb" android:id="@id/sublabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="sublabel" android:layout_alignParentLeft="true" app:font="Gotham-Book" style="@style/pianoHeader" />
+</LinearLayout>

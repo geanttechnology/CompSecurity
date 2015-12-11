@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.text.CustomFontTextView android:id="@id/view_activity_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" style="?dialogTitleStyle" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/view_activity_dialog_content" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.shazam.android.widget.text.CustomFontTextView android:layout_gravity="right" android:id="@id/view_activity_dialog_positive_button" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="8.0dip" android:text="@string/ok" style="@style/Widget.Shazam.Button.Dialog.Stacked" />
+    <com.shazam.android.widget.text.CustomFontTextView android:layout_gravity="right" android:id="@id/view_activity_dialog_negative_button" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/cancel" style="@style/Widget.Shazam.Button.Dialog.Stacked.Secondary" />
+    <com.shazam.android.widget.text.CustomFontTextView android:layout_gravity="right" android:id="@id/view_activity_dialog_neutral_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" style="@style/Widget.Shazam.Button.Dialog.Stacked.Secondary" />
+</LinearLayout>

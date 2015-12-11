@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/view_dialog_streaming_provider_logo" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+    <com.shazam.android.widget.text.CustomFontTextView android:id="@id/view_dialog_streaming_provider_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" style="?dialogMessageStyle" />
+</LinearLayout>

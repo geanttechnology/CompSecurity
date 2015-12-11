@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/LinearLayout1" android:background="@color/translucent_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="4000.0dip" android:minHeight="4000.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mainContainer" android:layout_width="400.0dip" android:layout_height="320.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/topRow" android:background="@drawable/bubble_white_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/puppy" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sad_puppy" android:layout_centerInParent="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/gray_4" android:gravity="center" android:id="@id/error_messsage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="errormessage" android:minLines="4" style="@style/pianoTextLarge" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottomRow" android:background="@drawable/bubble_green_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3">
+            <Button android:textColor="@color/gray_4" android:id="@id/try_again" android:background="@drawable/btn_white_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="140.0dip" android:text="@string/try_again" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

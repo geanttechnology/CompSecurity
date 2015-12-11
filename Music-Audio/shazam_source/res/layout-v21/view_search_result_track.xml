@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/view_search_result_track_cover" android:layout_width="40.0dip" android:layout_height="40.0dip" android:transitionName="coverArt" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip">
+        <com.shazam.android.widget.text.CustomFontTextView android:textSize="16.0sp" android:textColor="@color/shazam_near_black" android:ellipsize="marquee" android:id="@id/view_search_result_track_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:maxLines="2" android:includeFontPadding="false" shazam:fontName="@string/roboto_medium" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/shazam_dark_grey" android:ellipsize="marquee" android:id="@id/view_search_result_track_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+    </LinearLayout>
+</merge>

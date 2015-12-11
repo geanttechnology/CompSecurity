@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/artist_feed_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/toolbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/toolbar" />
+        <FrameLayout android:id="@id/toolbar_anchor" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        </FrameLayout>
+        <include android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_below="@id/toolbar_anchor" layout="@layout/view_toolbar" />
+        <View android:id="@id/toolbar_shadow_legacy" android:background="?toolbarShadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/default_elevation" android:layout_below="@id/toolbar_background" />
+        <FrameLayout android:id="@id/crouton_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar_background" />
+    </RelativeLayout>
+</merge>

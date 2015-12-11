@@ -1,0 +1,87 @@
+{ "tutorial" :
+    { "tempo" : 60,
+      "events" : [
+
+      { "___COMMENT" : "The chord track sets up what notes are played when user taps background" },
+      { "time":0.0, "eventType" : "checkpoint", "id" : "hide_mtis" },
+      { "time":0.0, "eventType" : "checkpoint", "id" : "lock_to_hitline" },
+      { "time":0.0, "eventType" : "title", "msgid" : "tutorial_welcome_classic" },
+                  
+      { "___COMMENT" : "Wait for user to play a single note" },
+
+      { "time":2.0, "eventType" : "note", "pitch":65, "vel" : 108, "wait": "true", "tutorial_phase":1 },
+      { "time":0.0, "eventType" : "message", "msgid" : "tutorial_classic_play_this_note" },
+
+      { "___COMMENT" : "Play a two-note chord" },
+      { "time":2.0, "eventType" : "note", "pitch":65, "vel" : 108, "wait": "true", "tutorial_phase":2 },
+      { "time":0.0, "eventType" : "note", "pitch":69, "vel" : 108, "wait": "true", "tutorial_phase":2 },
+      { "time":0.0, "eventType" : "message", "msgid" : "tutorial_classic_play_two_chord" },
+      { "time":0.0, "eventType" : "title", "msgid" : "" },
+      { "time":0.0, "eventType" : "subtitle", "msgid" : "" },
+
+
+
+        { "___COMMENT" : "Play a three-note chord" },
+      { "time":2.0, "eventType" : "note", "pitch":65, "vel" : 108, "wait": "true", "tutorial_phase":3 },
+      { "time":0.0, "eventType" : "note", "pitch":69, "vel" : 108, "wait": "true", "tutorial_phase":3 },
+      { "time":0.0, "eventType" : "note", "pitch":72, "vel" : 108, "wait": "true", "tutorial_phase":3 },
+      { "time":0.0, "eventType" : "message", "msgid" : "tutorial_classic_play_three_chord" },
+
+
+       { "___COMMENT" : "More notes and slides (converted from midi with midi2tutorial script)" },
+
+      { "time":2.00, "eventType":"note", "pitch":72, "vel":101, "track":"MIDI Region" },
+      { "time":0.0, "eventType" : "message", "msgid" : "tutorial_now_try_tune" },
+      { "time":0.0, "eventType" : "checkpoint", "id" : "unlock_to_hitline" },
+      { "time":0.0, "eventType" : "checkpoint", "id" : "hide_mtis" },
+
+                  
+      { "time":1, "eventType":"note", "pitch":72, "vel":101, "track":"MIDI Region" },
+      { "time":1, "eventType":"note", "pitch":79, "vel":94, "track":"MIDI Region" },
+      { "time":0.0, "eventType" : "message", "msgid" : "" },
+      { "time":1, "eventType":"note", "pitch":79, "vel":101, "track":"MIDI Region" },
+      { "time":1, "eventType":"note", "pitch":81, "vel":94, "track":"MIDI Region" },
+      { "time":1, "eventType":"note", "pitch":81, "vel":101, "track":"MIDI Region" },
+      { "time":1, "eventType":"note", "pitch":79, "vel":78, "track":"MIDI Region" },
+                  
+      { "time":3.0, "eventType" : "message", "msgid" : "tutorial_get_ready_chords" },
+      { "time":0.0, "eventType" : "checkpoint", "id" : "lock_to_hitline" },
+
+        
+      { "___COMMENT" : "More notes and slides (converted from midi with midi2tutorial script)" },
+                  
+      { "time":3.0, "eventType":"note", "pitch":74, "vel":72, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":77, "vel":94, "track":"MIDI Region" },
+      { "time":0.0, "eventType" : "checkpoint", "id" : "show_mtis" },
+      { "time":0.0, "eventType" : "checkpoint", "id" : "unlock_to_hitline" },
+      { "time":1.0, "eventType":"note", "pitch":74, "vel":72, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":77, "vel":94, "track":"MIDI Region" },
+      { "time":1, "eventType":"note", "pitch":74, "vel":82, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":76, "vel":101, "track":"MIDI Region" },
+      { "time":1, "eventType":"note", "pitch":72, "vel":76, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":76, "vel":94, "track":"MIDI Region" },
+      { "time":0.0, "eventType" : "message", "msgid" : "" },
+      { "time":1, "eventType":"note", "pitch":69, "vel":88, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":72, "vel":88, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":74, "vel":101, "track":"MIDI Region" },
+      { "time":1, "eventType":"note", "pitch":65, "vel":82, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":71, "vel":82, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":74, "vel":94, "track":"MIDI Region" },
+      { "time":1, "eventType":"note", "pitch":64, "vel":91, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":67, "vel":91, "track":"MIDI Region" },
+      { "time":0.00, "eventType":"note", "pitch":72, "vel":101, "track":"MIDI Region" },
+
+                  
+       { "___COMMENT" : "Some empty space for improv" },
+                  
+       { "time":2.0, "eventType" : "title", "msgid" : "tutorial_done_title" },
+       { "time":0.0, "eventType" : "subtitle", "msgid" : "tutorial_done_subtitle" },
+
+       { "___COMMENT" : "End the tutorial" },
+       { "time":2.0, "eventType" : "checkpoint", "id" : "classic_tutorial_done" },
+
+       { "___COMMENT" : "Dummy note past the end of the tutorial to prevent running out of notes" },
+       { "time":30, "eventType" : "note", "pitch":48, "vel" : 0 }
+    ]
+  }
+}

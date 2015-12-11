@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/share_button" android:visible="false" android:title="@string/text_share" app:showAsAction="always" app:actionProviderClass="com.shazam.android.widget.share.BeaconingShareActionProvider" />
+    <item android:icon="?iconAdd" android:id="@id/menu_addtotags" android:title="@string/add_to_mytags" app:showAsAction="always" />
+    <item android:icon="?iconDelete" android:id="@id/menu_delete" android:title="@string/delete_tag" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,93 @@
+{ "tutorial" :
+    { "tempo" : 120,
+      "events" : [
+
+       { "___COMMENT" : "The chord track sets up what notes are played when user taps background" },
+
+       { "time":0, "eventType" : "note", "pitch":48, "vel" : 108, "track" : "chord" },
+       { "time":0, "eventType" : "note", "pitch":52, "vel" : 108, "track" : "chord" },       
+       { "time":0, "eventType" : "note", "pitch":55, "vel" : 108, "track" : "chord" },       
+
+       { "time":0.5, "eventType" : "title", "msgid" : "tutorial_welcome_singjams" },
+        { "time":0.0, "eventType" : "subtitle", "msgid" : "tutorial_message_singjams" },
+                 
+       { "___COMMENT" : "Wait for user to play a single note" },
+        { "time":2.5, "eventType" : "message", "msgid" : "tutorial_playthisnote" },
+        { "time":4.0, "eventType" : "note", "pitch":65, "vel" : 108, "wait": "true" },
+
+
+        { "___COMMENT" : "Play a chord in jams mode" },
+      { "time":0.5, "eventType" : "message", "msgid" : "tutorial_playthischord" },
+      { "time":2.0, "eventType" : "note", "pitch":65, "vel" : 108, "wait": "true" },
+      { "time":0.0, "eventType" : "note", "pitch":69, "vel" : 108, "wait": "true" },
+      { "time":0.0, "eventType" : "note", "pitch":72, "vel" : 108, "wait": "true" },
+                  
+                  
+       { "___COMMENT" : "A single note in the improv track triggers a slide" },
+       { "time":0.5, "eventType" : "message", "msgid" : "tutorial_playslide" },
+       { "time":3.0, "eventType" : "note", "pitch":72, "vel" : 108, "track" : "improv", "wait": "true" },
+       { "time":0.5, "eventType" : "message", "msgid" : "tutorial_playslide2" },
+       { "time":3.0, "eventType" : "note", "pitch":53, "vel" : 1, "track" : "improv", "wait": "true" },
+                  
+        { "time":0.5, "eventType" : "title", "msgid" : "" },
+        { "time":0.0, "eventType" : "subtitle", "msgid" : "" },
+
+       { "time":0.01, "eventType" : "message", "msgid" : "" },
+
+       { "___COMMENT" : "More notes and slides (converted from midi with midi2tutorial script)" },
+
+      { "time":3.72, "eventType":"note", "pitch":59, "vel":98, "track":"chord" },
+      { "time":0.00, "eventType":"note", "pitch":62, "vel":98, "track":"chord" },
+      { "time":0.00, "eventType":"note", "pitch":67, "vel":98, "track":"chord" },
+
+      { "time":1.00, "eventType":"note", "pitch":64, "vel":82 },
+      { "time":0.00, "eventType":"note", "pitch":72, "vel":95 },
+
+      { "time":0.00, "eventType":"note", "pitch":60, "vel":98, "track":"chord" },
+      { "time":0.00, "eventType":"note", "pitch":64, "vel":98, "track":"chord" },
+      { "time":0.00, "eventType":"note", "pitch":67, "vel":98, "track":"chord" },
+
+      { "time":0.50, "eventType":"note", "pitch":74, "vel":90 },
+
+      { "time":0.50, "eventType":"note", "pitch":76, "vel":96 },
+
+      { "time":1.00, "eventType":"note", "pitch":62, "vel":98 },      
+      { "time":0.00, "eventType":"note", "pitch":71, "vel":93 },
+      { "time":0.00, "eventType":"note", "pitch":79, "vel":105 },
+
+      { "time":0.00, "eventType":"note", "pitch":59, "vel":98, "track":"chord" },
+      { "time":0.00, "eventType":"note", "pitch":62, "vel":98, "track":"chord" },
+      { "time":0.00, "eventType":"note", "pitch":67, "vel":98, "track":"chord" },
+
+      { "time":1.00, "eventType":"note", "pitch":60, "vel":91 },
+      { "time":0.00, "eventType":"note", "pitch":72, "vel":93 },
+      { "time":0.00, "eventType":"note", "pitch":76, "vel":99 },
+      { "time":0.00, "eventType":"note", "pitch":84, "vel":107 },
+
+      { "time":0.00, "eventType":"note", "pitch":60, "vel":98, "track":"chord" },
+      { "time":0.00, "eventType":"note", "pitch":64, "vel":98, "track":"chord" },
+      { "time":0.00, "eventType":"note", "pitch":67, "vel":98, "track":"chord" },
+
+      { "time":2.00, "eventType":"note", "pitch":96, "vel":91, "track":"improv" },
+      { "time":2.00, "eventType":"note", "pitch":55, "vel":1, "track":"improv" },
+
+                  
+       { "___COMMENT" : "Some empty space for improv" },
+
+       { "time":1.0, "eventType" : "message", "msgid" : "tutorial_freestyle" },
+       { "time":0.0, "eventType" : "checkpoint", "id" : "reset_touchev" },
+                  
+       { "time":4.0, "eventType" : "checkpoint", "id" : "wait_touchev", "value" : 3 },
+       { "time":4.0, "eventType" : "message", "msgid" : "tutorial_notes_on_line_singjams" },
+    
+       { "time":5.0, "eventType" : "message", "msgid" : "tutorial_done" },
+       { "time":2.0, "eventType" : "message", "msgid" : "" },
+                  
+       { "___COMMENT" : "End the tutorial" },
+       { "time":2.0, "eventType" : "checkpoint", "id" : "tutorial_done" },
+
+       { "___COMMENT" : "Dummy note past the end of the tutorial to prevent running out of notes" },
+       { "time":20, "eventType" : "note", "pitch":48, "vel" : 108 }      
+    ]
+  }
+}

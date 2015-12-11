@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/social_avatar_size" android:layout_centerInParent="true">
+        <Button android:layout_gravity="center_vertical" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_in" style="@style/Widget.Shazam.Button.GooglePlus" />
+        <FrameLayout android:id="@id/avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/social_sign_in_avatar_offset">
+            <include layout="@layout/view_avatar_round_conditional" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

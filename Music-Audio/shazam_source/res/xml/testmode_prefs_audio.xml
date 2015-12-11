@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:testmode="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/audio_settings" android:key="@string/testmode_audio_settings_category_key">
+        <com.shazam.android.testmode.TestModeListPreference android:title="@string/sample_rate" android:key="@string/testmode_audio_sample_rate_key" testmode:entries="@array/sampleRates" testmode:entryValues="@array/sampleRates" />
+        <CheckBoxPreference android:persistent="true" android:title="Dump Audio Samples" android:key="@string/testmode_audio_dump_sig_key" android:summary="Dump audio samples to SD card" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

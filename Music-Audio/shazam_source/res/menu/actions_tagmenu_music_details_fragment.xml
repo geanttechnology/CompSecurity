@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?iconAdd" android:id="@id/menu_addtotags" android:visible="false" android:orderInCategory="11" android:title="@string/add_to" app:showAsAction="always" />
+    <item android:icon="?iconDelete" android:id="@id/menu_delete" android:visible="false" android:orderInCategory="10" android:title="@string/delete_tag" app:showAsAction="always" />
+</menu>

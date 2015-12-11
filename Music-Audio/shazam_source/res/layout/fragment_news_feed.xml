@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shazam.android.widget.feed.NoInterceptingTouchOnOffsetSwipeRefreshLayout android:id="@id/news_feed_swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" shazam:offsetY="@dimen/news_home_top_empty_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <VideoView android:id="@id/videoFlickerWorkaround" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/news_feed_loading" android:paddingTop="@dimen/news_home_top_empty_space" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+        <com.shazam.android.widget.feed.FeedRecyclerView android:id="@id/news_feed_list" android:paddingTop="@dimen/news_home_top_empty_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:overScrollMode="never" />
+        <ProgressBar android:enabled="false" android:gravity="center" android:layout_gravity="bottom" android:id="@id/news_feed_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip" android:maxHeight="32.0dip" android:minHeight="32.0dip" />
+        <com.shazam.android.widget.feed.NewsFeedScrollHint android:layout_gravity="bottom|center" android:id="@id/view_news_feed_scroll_hint" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.shazam.android.widget.text.CustomFontTextView android:id="@id/view_news_feed_scroll_hint_text" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32.0dip" android:drawableLeft="@drawable/ic_feed_down_arrow" android:drawablePadding="8.0dip" android:textAllCaps="true" style="@style/Widget.Shazam.TextView.RoundedToast" />
+        </com.shazam.android.widget.feed.NewsFeedScrollHint>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tagging_home_height" layout="@layout/view_news_feed_empty" />
+        <FrameLayout android:id="@id/retry_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/tagging_home_height" />
+    </FrameLayout>
+</com.shazam.android.widget.feed.NoInterceptingTouchOnOffsetSwipeRefreshLayout>

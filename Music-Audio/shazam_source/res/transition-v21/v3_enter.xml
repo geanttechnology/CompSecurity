@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:interpolator="@interpolator/v3_enter" android:transitionOrdering="0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fade android:duration="300" android:startDelay="500">
+        <targets>
+            <target android:targetName="top" />
+        </targets>
+    </fade>
+</transitionSet>

@@ -1,0 +1,15 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.shazam.android.aspects.activities;
+
+
+// Referenced classes of package com.shazam.android.aspects.activities:
+//            MiniTaggingController
+
+public interface MiniTaggingControllerReceiver
+{
+
+    public abstract void receiveMiniTaggingController(MiniTaggingController minitaggingcontroller);
+}

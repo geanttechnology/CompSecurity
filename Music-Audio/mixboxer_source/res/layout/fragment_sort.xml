@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobeta.android.dslv.DragSortListView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/scrollbar" android:id="@android:id/list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" dslv:collapsed_height="0.0dip" dslv:drag_scroll_start="0.33" dslv:max_drag_scroll_speed="0.5" dslv:track_drag_sort="false" dslv:float_alpha="0.6" dslv:slide_shuffle_speed="0.3" dslv:drag_enabled="true" dslv:use_default_controller="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dslv="http://schemas.android.com/apk/res/com.mixerbox.mixerbox3b" />

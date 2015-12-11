@@ -1,0 +1,477 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.j256.ormlite.field;
+
+import com.j256.ormlite.field.types.VoidType;
+import com.j256.ormlite.misc.SqlExceptionUtil;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.Writer;
+import java.sql.SQLException;
+
+// Referenced classes of package com.j256.ormlite.field:
+//            DataType, DatabaseFieldConfig, DataPersister
+
+public class DatabaseFieldConfigLoader
+{
+
+    private static final String CONFIG_FILE_END_MARKER = "# --field-end--";
+    private static final String CONFIG_FILE_START_MARKER = "# --field-start--";
+    private static final boolean DEFAULT_CAN_BE_NULL = true;
+    private static final DataPersister DEFAULT_DATA_PERSISTER;
+    private static final int DEFAULT_MAX_EAGER_FOREIGN_COLLECTION_LEVEL = 1;
+    private static final int DEFAULT_MAX_FOREIGN_AUTO_REFRESH_LEVEL = 2;
+    private static final Class DEFAULT_PERSISTER_CLASS = com/j256/ormlite/field/types/VoidType;
+    private static final String FIELD_NAME_ALLOW_GENERATED_ID_INSERT = "allowGeneratedIdInsert";
+    private static final String FIELD_NAME_CAN_BE_NULL = "canBeNull";
+    private static final String FIELD_NAME_COLUMN_DEFINITION = "columnDefinition";
+    private static final String FIELD_NAME_COLUMN_NAME = "columnName";
+    private static final String FIELD_NAME_DATA_PERSISTER = "dataPersister";
+    private static final String FIELD_NAME_DEFAULT_VALUE = "defaultValue";
+    private static final String FIELD_NAME_FIELD_NAME = "fieldName";
+    private static final String FIELD_NAME_FOREIGN = "foreign";
+    private static final String FIELD_NAME_FOREIGN_AUTO_REFRESH = "foreignAutoRefresh";
+    private static final String FIELD_NAME_FOREIGN_COLLECTION = "foreignCollection";
+    private static final String FIELD_NAME_FOREIGN_COLLECTION_EAGER = "foreignCollectionEager";
+    private static final String FIELD_NAME_FOREIGN_COLLECTION_ORDER_COLUMN = "foreignCollectionOrderColumn";
+    private static final String FIELD_NAME_FORMAT = "format";
+    private static final String FIELD_NAME_GENERATED_ID = "generatedId";
+    private static final String FIELD_NAME_GENERATED_ID_SEQUENCE = "generatedIdSequence";
+    private static final String FIELD_NAME_ID = "id";
+    private static final String FIELD_NAME_INDEX_NAME = "indexName";
+    private static final String FIELD_NAME_MAX_EAGER_FOREIGN_COLLECTION_LEVEL = "maxEagerForeignCollectionLevel";
+    private static final String FIELD_NAME_MAX_FOREIGN_AUTO_REFRESH_LEVEL = "maxForeignAutoRefreshLevel";
+    private static final String FIELD_NAME_PERSISTER_CLASS = "persisterClass";
+    private static final String FIELD_NAME_THROW_IF_NULL = "throwIfNull";
+    private static final String FIELD_NAME_UNIQUE = "unique";
+    private static final String FIELD_NAME_UNIQUE_COMBO = "uniqueCombo";
+    private static final String FIELD_NAME_UNIQUE_INDEX_NAME = "uniqueIndexName";
+    private static final String FIELD_NAME_UNKNOWN_ENUM_VALUE = "unknownEnumValue";
+    private static final String FIELD_NAME_USE_GET_SET = "useGetSet";
+    private static final String FIELD_NAME_WIDTH = "width";
+
+    public DatabaseFieldConfigLoader()
+    {
+    }
+
+    public static DatabaseFieldConfig fromReader(BufferedReader bufferedreader)
+    {
+        DatabaseFieldConfig databasefieldconfig = new DatabaseFieldConfig();
+        boolean flag = false;
+        do
+        {
+            do
+            {
+                String s;
+                try
+                {
+                    s = bufferedreader.readLine();
+                }
+                // Misplaced declaration of an exception variable
+                catch (BufferedReader bufferedreader)
+                {
+                    throw SqlExceptionUtil.create("Could not read DatabaseFieldConfig from stream", bufferedreader);
+                }
+                String as[];
+                while (s == null || s.equals("# --field-end--")) 
+                {
+                    if (flag)
+                    {
+                        return databasefieldconfig;
+                    } else
+                    {
+                        return null;
+                    }
+                }
+            } while (s.length() == 0 || s.startsWith("#") || s.equals("# --field-start--"));
+            as = s.split("=", -2);
+            if (as.length != 2)
+            {
+                throw new SQLException((new StringBuilder()).append("DatabaseFieldConfig reading from stream cannot parse line: ").append(s).toString());
+            }
+            readField(databasefieldconfig, as[0], as[1]);
+            flag = true;
+        } while (true);
+    }
+
+    private static void readField(DatabaseFieldConfig databasefieldconfig, String s, String s1)
+    {
+        boolean flag = false;
+        if (!s.equals("fieldName")) goto _L2; else goto _L1
+_L1:
+        databasefieldconfig.setFieldName(s1);
+_L4:
+        return;
+_L2:
+        if (s.equals("columnName"))
+        {
+            databasefieldconfig.setColumnName(s1);
+            return;
+        }
+        if (s.equals("dataPersister"))
+        {
+            databasefieldconfig.setDataPersister(DataType.valueOf(s1).getDataPersister());
+            return;
+        }
+        if (s.equals("defaultValue"))
+        {
+            databasefieldconfig.setDefaultValue(s1);
+            return;
+        }
+        if (s.equals("width"))
+        {
+            databasefieldconfig.setWidth(Integer.parseInt(s1));
+            return;
+        }
+        if (s.equals("canBeNull"))
+        {
+            databasefieldconfig.setCanBeNull(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("id"))
+        {
+            databasefieldconfig.setId(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("generatedId"))
+        {
+            databasefieldconfig.setGeneratedId(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("generatedIdSequence"))
+        {
+            databasefieldconfig.setGeneratedIdSequence(s1);
+            return;
+        }
+        if (s.equals("foreign"))
+        {
+            databasefieldconfig.setForeign(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("useGetSet"))
+        {
+            databasefieldconfig.setUseGetSet(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (!s.equals("unknownEnumValue"))
+        {
+            break; /* Loop/switch isn't completed */
+        }
+        s = s1.split("#", -2);
+        if (s.length != 2)
+        {
+            throw new IllegalArgumentException((new StringBuilder()).append("Invalid value for unknownEnumvalue which should be in class#name format: ").append(s1).toString());
+        }
+        Class class1;
+        Object aobj[];
+        try
+        {
+            class1 = Class.forName(s[0]);
+        }
+        // Misplaced declaration of an exception variable
+        catch (DatabaseFieldConfig databasefieldconfig)
+        {
+            throw new IllegalArgumentException((new StringBuilder()).append("Unknown class specified for unknownEnumvalue: ").append(s1).toString());
+        }
+        aobj = class1.getEnumConstants();
+        if (aobj == null)
+        {
+            throw new IllegalArgumentException((new StringBuilder()).append("Invalid class is not an Enum for unknownEnumvalue: ").append(s1).toString());
+        }
+        aobj = (Enum[])(Enum[])aobj;
+        int j = aobj.length;
+        for (int i = 0; i < j; i++)
+        {
+            Enum enum = aobj[i];
+            if (enum.name().equals(s[1]))
+            {
+                databasefieldconfig.setUnknownEnumValue(enum);
+                flag = true;
+            }
+        }
+
+        if (!flag)
+        {
+            throw new IllegalArgumentException((new StringBuilder()).append("Invalid enum value name for unknownEnumvalue: ").append(s1).toString());
+        }
+        if (true) goto _L4; else goto _L3
+_L3:
+        if (s.equals("throwIfNull"))
+        {
+            databasefieldconfig.setThrowIfNull(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("format"))
+        {
+            databasefieldconfig.setFormat(s1);
+            return;
+        }
+        if (s.equals("unique"))
+        {
+            databasefieldconfig.setUnique(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("uniqueCombo"))
+        {
+            databasefieldconfig.setUniqueCombo(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("indexName"))
+        {
+            databasefieldconfig.setIndexName(s1);
+            return;
+        }
+        if (s.equals("uniqueIndexName"))
+        {
+            databasefieldconfig.setUniqueIndexName(s1);
+            return;
+        }
+        if (s.equals("foreignAutoRefresh"))
+        {
+            databasefieldconfig.setForeignAutoRefresh(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("maxForeignAutoRefreshLevel"))
+        {
+            databasefieldconfig.setMaxForeignAutoRefreshLevel(Integer.parseInt(s1));
+            return;
+        }
+        if (s.equals("foreignCollection"))
+        {
+            databasefieldconfig.setForeignCollection(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("foreignCollectionEager"))
+        {
+            databasefieldconfig.setForeignCollectionEager(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("foreignCollectionOrderColumn"))
+        {
+            databasefieldconfig.setForeignCollectionOrderColumn(s1);
+            return;
+        }
+        if (s.equals("maxEagerForeignCollectionLevel"))
+        {
+            databasefieldconfig.setMaxEagerForeignCollectionLevel(Integer.parseInt(s1));
+            return;
+        }
+        if (s.equals("persisterClass"))
+        {
+            try
+            {
+                databasefieldconfig.setPersisterClass(Class.forName(s1));
+                return;
+            }
+            // Misplaced declaration of an exception variable
+            catch (DatabaseFieldConfig databasefieldconfig)
+            {
+                throw new IllegalArgumentException((new StringBuilder()).append("Could not find persisterClass: ").append(s1).toString());
+            }
+        }
+        if (s.equals("allowGeneratedIdInsert"))
+        {
+            databasefieldconfig.setAllowGeneratedIdInsert(Boolean.parseBoolean(s1));
+            return;
+        }
+        if (s.equals("columnDefinition"))
+        {
+            databasefieldconfig.setColumnDefinition(s1);
+            return;
+        }
+        if (true) goto _L4; else goto _L5
+_L5:
+    }
+
+    public static void write(BufferedWriter bufferedwriter, DatabaseFieldConfig databasefieldconfig)
+    {
+        try
+        {
+            writeConfig(bufferedwriter, databasefieldconfig);
+            return;
+        }
+        // Misplaced declaration of an exception variable
+        catch (BufferedWriter bufferedwriter)
+        {
+            throw SqlExceptionUtil.create("Could not write config to writer", bufferedwriter);
+        }
+    }
+
+    public static void writeConfig(BufferedWriter bufferedwriter, DatabaseFieldConfig databasefieldconfig)
+    {
+        boolean flag1 = false;
+        bufferedwriter.append("# --field-start--");
+        bufferedwriter.newLine();
+        if (databasefieldconfig.getFieldName() != null)
+        {
+            bufferedwriter.append("fieldName").append('=').append(databasefieldconfig.getFieldName());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getColumnName() != null)
+        {
+            bufferedwriter.append("columnName").append('=').append(databasefieldconfig.getColumnName());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getDataPersister() != DEFAULT_DATA_PERSISTER)
+        {
+            DataType adatatype[] = DataType.values();
+            int j = adatatype.length;
+            int i = 0;
+label0:
+            do
+            {
+label1:
+                {
+                    boolean flag = flag1;
+                    if (i < j)
+                    {
+                        DataType datatype = adatatype[i];
+                        if (datatype.getDataPersister() != databasefieldconfig.getDataPersister())
+                        {
+                            break label1;
+                        }
+                        bufferedwriter.append("dataPersister").append('=').append(datatype.name());
+                        bufferedwriter.newLine();
+                        flag = true;
+                    }
+                    if (!flag)
+                    {
+                        throw new IllegalArgumentException((new StringBuilder()).append("Unknown data persister field: ").append(databasefieldconfig.getDataPersister()).toString());
+                    }
+                    break label0;
+                }
+                i++;
+            } while (true);
+        }
+        if (databasefieldconfig.getDefaultValue() != null)
+        {
+            bufferedwriter.append("defaultValue").append('=').append(databasefieldconfig.getDefaultValue());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getWidth() != 0)
+        {
+            bufferedwriter.append("width").append('=').append(Integer.toString(databasefieldconfig.getWidth()));
+            bufferedwriter.newLine();
+        }
+        if (!databasefieldconfig.isCanBeNull())
+        {
+            bufferedwriter.append("canBeNull").append('=').append(Boolean.toString(databasefieldconfig.isCanBeNull()));
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isId())
+        {
+            bufferedwriter.append("id").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isGeneratedId())
+        {
+            bufferedwriter.append("generatedId").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getGeneratedIdSequence() != null)
+        {
+            bufferedwriter.append("generatedIdSequence").append('=').append(databasefieldconfig.getGeneratedIdSequence());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isForeign())
+        {
+            bufferedwriter.append("foreign").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isUseGetSet())
+        {
+            bufferedwriter.append("useGetSet").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getUnknownEnumValue() != null)
+        {
+            bufferedwriter.append("unknownEnumValue").append('=').append(databasefieldconfig.getUnknownEnumValue().getClass().getName()).append("#").append(databasefieldconfig.getUnknownEnumValue().name());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isThrowIfNull())
+        {
+            bufferedwriter.append("throwIfNull").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getFormat() != null)
+        {
+            bufferedwriter.append("format").append('=').append(databasefieldconfig.getFormat());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isUnique())
+        {
+            bufferedwriter.append("unique").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isUniqueCombo())
+        {
+            bufferedwriter.append("uniqueCombo").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getIndexName() != null)
+        {
+            bufferedwriter.append("indexName").append('=').append(databasefieldconfig.getIndexName());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getUniqueIndexName() != null)
+        {
+            bufferedwriter.append("uniqueIndexName").append('=').append(databasefieldconfig.getUniqueIndexName());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isForeignAutoRefresh())
+        {
+            bufferedwriter.append("foreignAutoRefresh").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getMaxForeignAutoRefreshLevel() != 2)
+        {
+            bufferedwriter.append("maxForeignAutoRefreshLevel").append('=').append(Integer.toString(databasefieldconfig.getMaxForeignAutoRefreshLevel()));
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isForeignCollection())
+        {
+            bufferedwriter.append("foreignCollection").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isForeignCollectionEager())
+        {
+            bufferedwriter.append("foreignCollectionEager").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getForeignCollectionOrderColumn() != null)
+        {
+            bufferedwriter.append("foreignCollectionOrderColumn").append('=').append(databasefieldconfig.getForeignCollectionOrderColumn());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getMaxEagerForeignCollectionLevel() != 1)
+        {
+            bufferedwriter.append("maxEagerForeignCollectionLevel").append('=').append(Integer.toString(databasefieldconfig.getMaxEagerForeignCollectionLevel()));
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getPersisterClass() != DEFAULT_PERSISTER_CLASS)
+        {
+            bufferedwriter.append("persisterClass").append('=').append(databasefieldconfig.getPersisterClass().getName());
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.isAllowGeneratedIdInsert())
+        {
+            bufferedwriter.append("allowGeneratedIdInsert").append('=').append("true");
+            bufferedwriter.newLine();
+        }
+        if (databasefieldconfig.getColumnDefinition() != null)
+        {
+            bufferedwriter.append("columnDefinition").append('=').append(databasefieldconfig.getColumnDefinition());
+            bufferedwriter.newLine();
+        }
+        bufferedwriter.append("# --field-end--");
+        bufferedwriter.newLine();
+    }
+
+    static 
+    {
+        DEFAULT_DATA_PERSISTER = DataType.UNKNOWN.getDataPersister();
+    }
+}

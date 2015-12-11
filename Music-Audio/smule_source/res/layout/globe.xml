@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smule.pianoandroid.magicpiano.NavBarLayout_ android:orientation="vertical" android:id="@id/nav_bar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.smule.pianoandroid.magicpiano.GlobeGLSurfaceView android:id="@id/globeGLSurfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/playBar" android:background="@drawable/bar_world" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="-10.0dip" android:layout_alignParentBottom="true">
+            <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:id="@id/performerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:font="Gotham-Medium" />
+            <RelativeLayout android:id="@id/nextButton" android:clickable="true" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <Button android:id="@id/nextButtonImage" android:background="@drawable/btn_next" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/loveContainer" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:textColor="@color/gray_a" android:id="@id/loveIcon" android:background="@drawable/icon_heart_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:id="@id/loveCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="" android:layout_toRightOf="@id/loveIcon" android:layout_centerVertical="true" app:font="Gotham-Medium" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/performerImage" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/profile_default_piano" android:layout_above="@id/playBar" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.smule.pianoandroid.magicpiano.NavBarLayout_>

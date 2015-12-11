@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta name="viewport" content="height=device-height, initial-scale=1, user-scalable=no"/>
+        <style>
+            body {
+                margin    : 0;
+                padding   : 0;
+                text-align: center;
+                background: black;
+            }
+            #ytPlayerDiv{
+                border:0px;
+                margin:0px;
+                padding:0
+            }
+        </style>
+    </head>
+    <body onload="pageLoaded()">
+
+        <div id="ytPlayerDiv"></div>
+         
+         <!--
+        <iframe id="ytPlayerDiv" type="text/html" width="100%" height="100%"
+  src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&autoplay=1
+  allowfullscreen
+  frameborder="0"></iframe>
+        -->
+        
+        <script>
+
+            var YT_URL							= "//www.youtube.com/iframe_api";  //For server version
+        	
+            var PLAYER_ORIGIN       = 'http://www.livapp.com';
+            var PLAYER_WIDTH        = '391';
+            var PLAYER_HEIGHT       = '220';
+
+            var UNINITIALIZED       = -99999;
+            
+        	var WATCHDOG_PERIOD     = 1000;
+            
+            var STUCK_TIMEOUT				= 40;
+            
+            var SMALL_TIME_DELTA 		= 0.9;
+            
+            var YT_ST_UNSTARTED 		= -1;
+            var YT_ST_ENDED				=  0;
+            var YT_ST_PLAYING			=  1;
+            var YT_ST_PAUSED			=  2;
+            var YT_ST_BUFFERING			=  3;
+            var YT_ST_CUED				=  5;
+            
+            //This is the only YouTube error code that might be recoverable.
+            //The network must also be down at the time of the error in order
+            //to have a chance of recovering
+            var YT_ERRCODE_RECOVERABLE = 5;
+
+            /**************************************
+             * Initialization
+             **************************************/
+						
+			//YouTube API Player Initialization
+            //Begin loading the YouTube IFrame Player API code asynchronously.
+            log("=== YouTube Player Begin ===");
+            var tag = document.createElement('script');
+            tag.src = YT_URL; 
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            
+            
+            var isYTScriptReady     = false;
+            var ytScriptStuckTime   = 0;
+                        
+            //Run the watchdog function to monitor player state
+            //runWatchDog();
+			runYTAPIWatchDog();
+
+            //The YouTube IFRAME API player
+            var ytPlayer 			= null;
+            
+            //Indicates whether the YT player has been loaded
+            var isPlayerReady	= false;
+            
+            //Indicates whether to auto-retry videos upon pauses and errors
+            var shouldPlay		= false;
+            
+            //Indicates the current YT player state
+            var ytPlayerState	= UNINITIALIZED;
+            
+            //The current video to be played
+    		var curVideoId		= null;
+            
+            //Indicates how many seconds the player has been stuck
+    		var stuckTime			= 0;
+            
+            //Temporary variable to store the player's previous time
+            //location, so that stuckTime can be calculated
+    		var preTime				= UNINITIALIZED;
+
+			var qua = "medium";
+			var ishq = false;
+			var videoEnded = false;
+			var canAuto = false;
+			var playTimeCount = 0;
+			var hasPosted = false;
+			var canEnded = false;
+			var timeMarker = 0;
+			
+			
+			/**************************************
+             * Public Functions
+             **************************************/
+			function setQuality(l,b) {
+				if(b)
+				{
+					ishq = true;
+					if(l<=320)
+						qua = "medium";
+					else if(l<=1080)
+						qua = "medium";
+					else
+						qua = "large";
+				}
+				else
+				{
+					ishq = false;
+					qua = "medium";
+				}			
+				if(isPlayerReady)
+					ytPlayer.setPlaybackQuality(qua);
+					//ytPlayer.loadVideoById(curVideoId, 0, qua);		
+				//ytPlayer.setPlaybackQuality(qua);	
+			}
+
+			function setScreenSize(w,h) {
+				w = w/window.devicePixelRatio;
+				h = h/window.devicePixelRatio;
+				if (isPlayerReady) {
+					ytPlayer.setSize(w,h);
+				}
+				PLAYER_WIDTH = w;
+				PLAYER_HEIGHT= h;
+				
+				AndroidFunction.log("Screen h = "+h+", w = "+w);
+				
+			}
+
+			function sendAndroidOnReady() {
+				AndroidFunction.onReadyV2();
+			}
+
+            function pauseVideo() {
+                log("pauseVideo()");
+                shouldPlay = false;
+                AndroidFunction.onShouldPlayChange(0);
+                checkVideoState();
+            }
+            
+            function playVideo() {
+                log("playVideo()");
+                shouldPlay = true;
+                AndroidFunction.onShouldPlayChange(1);
+                checkVideoState();
+            }
+                                      
+            function seekTo(seconds) {
+                if (isPlayerReady) {
+		                log("seekTo() with seconds = " + seconds);
+    		            ytPlayer.seekTo(seconds, true);
+    		        }
+            }
+            
+            function loadVideoById(id, startTime) {
+                log("loadVideoById() with id: " + id + "  and startTime: " + startTime);
+            	
+            	if (!startTime) {
+            		startTime = 0;
+            	}
+            	
+            	canEnded = false;
+            	timeMarker = 0;
+                
+                shouldPlay		= true;
+                AndroidFunction.onShouldPlayChange(1);
+                curVideoId		= id;
+                videoEnded      = false;
+                
+                if(canAuto)
+                {
+                	ytPlayer.setVolume(60);
+                	ytPlayer.loadVideoById(curVideoId, 0);
+                	log("canAuto = true");
+                }
+                else{
+                	log("canAuto = false");
+                	ytPlayer.destroy();
+                	ytPlayer = null;
+            		
+               	 	ytPlayer = new YT.Player('ytPlayerDiv', {          // Omit width
+                    	height: PLAYER_HEIGHT,
+                    	width: PLAYER_WIDTH,
+                    	videoId: curVideoId,
+                    	playerVars: {  
+                    		'enablejsapi': 1,
+                    		'playsinline': 1,
+                        	'autoplay'   : 0,
+                        	'controls'   : 0,
+                        	'showinfo'   : 0,
+                        	'start'      : 0
+                    	},
+                    	events: {
+                        	'onReady'      : onPlayerReady,
+                        	'onStateChange': onPlayerStateChange,
+                        	'onError'      : onPlayerError
+                    	}
+                	});
+                }
+                
+                hasPosted = false;
+                playTimeCount = 0;
+            }
+
+            /**************************************
+             * Local Functions
+             **************************************/
+             
+            function pageLoaded() {
+            	AndroidFunction.onPageLoaded();  
+          	}
+            
+            function log(_mssg){
+                AndroidFunction.log(_mssg);
+            }
+            
+            function updateVideoTime() {
+            	//log("abc abc abc abc abc");
+                if (isPlayerReady) {
+                	log(ytPlayer.getCurrentTime());
+                	AndroidFunction.showTime(ytPlayer.getCurrentTime());
+		        }
+            }
+            
+            
+            //Since the YouTube API code is loaded asynchronously, the YouTube API
+      			//code will call this function after the API code is loaded.
+      			//This function then creates an <iframe> (and YouTube player) and put
+      			//it into ytPlayerDiv
+            function onYouTubeIframeAPIReady() {
+            	
+            	log("onYouTubeIframeAPIReady() called");
+            		
+            	ytPlayer = null;
+            	
+            	isYTScriptReady = true;
+            		
+                //Initialize the ytPlayer without a videoId
+                ytPlayer = new YT.Player('ytPlayerDiv', {          // Omit width
+                    height: PLAYER_HEIGHT,
+                    width: PLAYER_WIDTH,
+                    playerVars: {  
+                    	'enablejsapi': 1,
+                    	//'origin': PLAYER_ORIGIN,
+                        'playsinline': 1,
+                        'autoplay'   : 0,
+                        'controls'   : 0,
+                        'showinfo'   : 0,
+                        'start'      : 0
+                    },
+                    events: {
+                        'onReady'      : onPlayerReady,
+                        'onStateChange': onPlayerStateChange,
+                        'onError'      : onPlayerError
+                    }
+                });
+            }
+            
+            
+            //The ytPlayer will call this function when the video player is ready.
+            function onPlayerReady(event) {
+            	isPlayerReady = true;
+            	ytPlayer.setVolume(60);
+            	ytPlayer.setSize(PLAYER_WIDTH,PLAYER_HEIGHT);
+                log("onPlayerReady()");
+                sendAndroidOnReady();
+            }
+            
+            
+            //The ytPlayer calls this function when the player's state changes.
+            function onPlayerStateChange(event) {
+            	//if (event.data == YT.PlayerState.BUFFERING)
+    			//	event.target.setPlaybackQuality(qua);
+                log("onPlayStateChange() - Play state: " + event.data);
+                ytPlayerState = event.data;
+                if(ytPlayerState==YT_ST_PLAYING)
+                	canAuto = true;
+                AndroidFunction.onStateChanged(ytPlayerState);
+                playTimeCount = 0;
+            }
+            
+            function onPlayerError(event) {
+            		log("onPlayerError() - Error code: " + event.data + "   navigator.Online: " + navigator.onLine);
+            		
+            		if ((event.data == YT_ERRCODE_RECOVERABLE) && !navigator.onLine) {
+            			//recoverable, so do nothing and let the watchdog take care of recovery
+            		} else {
+            			//not recoverable, so play next
+            			AndroidFunction.playNext();
+            			AndroidFunction.sendError();
+            			//sendToApp("ios-command-play-next", "");
+            		}
+            		
+            }
+            
+            function loadYouTubeAPI(){
+                log("loadYouTubeAPI() - Load YouTube API");
+                var tag = document.createElement('script');
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                tag.src = YT_URL;
+            }
+            
+            function runYTAPIWatchDog(){
+                if (isYTScriptReady){
+                    log("runYTAPIWatchDog() - YouTube API READY !");
+                    ytScriptStuckTime = 0;
+                    runWatchDog();
+                    
+                } else if (ytScriptStuckTime >= 20){
+                    log("runYTAPIWatchDog() - ytScriptStuckTime: "+ytScriptStuckTime);
+                    ytScriptStuckTime = 0;
+                    loadYouTubeAPI();
+                    setTimeout(runYTAPIWatchDog, WATCHDOG_PERIOD);
+
+                } else {
+                    ytScriptStuckTime++;
+                    log("runYTAPIWatchDog() - script not ready, ytScriptStuckTime: "+ytScriptStuckTime);
+                    setTimeout(runYTAPIWatchDog, WATCHDOG_PERIOD);
+                }
+            }
+            
+            //Watchdog (periodic timer) function to call checkVideoState() periodically
+            function runWatchDog() {
+            	setTimeout(runWatchDog, WATCHDOG_PERIOD);
+            	//log("aaa aaa aaa aaa aaa");
+                checkVideoState();
+                updateStuckTime();
+                updateVideoTime();
+                
+            }
+            
+            
+            //This is the main function that checks the status of the YouTube
+            //player, doing auto-resume and error handling automatically
+            function checkVideoState() {
+                log("checkVideoState() called.   isPlayerReady: " +isPlayerReady + "   shouldPlay: " + shouldPlay + "    ytPlayerState: " + ytPlayerState);
+                
+                if(!isPlayerReady) {
+                    return;
+                }
+                
+                //Check the player state
+                if(ytPlayerState == YT_ST_ENDED) {
+                	
+                	if (!videoEnded && ytPlayer.getCurrentTime()==0) {
+                        //videoEnded = true;
+                	  	//log("!isLoading && ytPlayerState == YT_ST_ENDED");
+                    	//AndroidFunction.playNext();
+                    	loadVideoById(curVideoId,0);
+                    }
+                    else if(!videoEnded && canEnded){
+                		videoEnded = true;
+                		AndroidFunction.playNext();
+                	}
+                	else if(!videoEnded){
+                		loadVideoById(curVideoId,timeMarker);
+                	}
+                	/*
+                    else if(!videoEnded){
+                    	videoEnded = true;
+                	  	log("!isLoading && ytPlayerState == YT_ST_ENDED");
+                    	AndroidFunction.playNext();
+                    }
+                    */
+                	
+                } else if(shouldPlay && ytPlayerState != YT_ST_PLAYING) {
+                    log("checkVideoState() auto-calling ytPlayer.playVideo()");
+                    if(canAuto)
+                    {
+                    	if (ytPlayerState == YT_ST_PAUSED  && ytPlayer.getDuration() > 0 && (Math.abs(ytPlayer.getDuration() - ytPlayer.getCurrentTime()) < SMALL_TIME_DELTA)){
+
+                        	log("checkVideoState() - PAUSE, but remain "+Math.abs(ytPlayer.getDuration() - ytPlayer.getCurrentTime())+", PLAY NEXT");
+                        	videoEnded = true;
+                        	AndroidFunction.playNext();
+                    	}else {
+                    		ytPlayer.playVideo();
+                    	}
+                    }
+                    
+                } else if(!shouldPlay && ytPlayerState == YT_ST_PLAYING) {
+                    log("checkVideoState() auto-calling ytPlayer.pauseVideo()");
+                    if(canAuto)
+                    	ytPlayer.pauseVideo();
+                }
+                
+                var qualityLevels = ytPlayer.getAvailableQualityLevels();
+                if(ytPlayerState == YT_ST_BUFFERING)
+                {
+                	if(qualityLevels.length >0 && qualityLevels.indexOf(qua)==-1)
+                	{
+                		if(ishq)
+                			ytPlayer.setPlaybackQuality(qualityLevels[0]);
+                		else
+                			ytPlayer.setPlaybackQuality(qualityLevels[qualityLevels.length-1]);
+                	}
+                	else
+                		ytPlayer.setPlaybackQuality(qua);
+                }
+                log("QUALITY = "+ ytPlayer.getPlaybackQuality());
+                
+                if(Math.abs(ytPlayer.getDuration() - ytPlayer.getCurrentTime()) < 5){
+                	canEnded = true;
+                }
+                else{
+                	timeMarker = ytPlayer.getCurrentTime();
+                }
+                
+                if(shouldPlay && ytPlayerState == YT_ST_PLAYING && !hasPosted)
+                	playTimeCount++;
+                if(playTimeCount>=30 && !hasPosted){
+                	hasPosted = true;
+                	playTimeCount = 0;
+                	AndroidFunction.postFBAction();
+                }
+                
+            }
+                  
+            function updateStuckTime() {
+                if(!isPlayerReady) {
+                    stuckTime++;
+                    recoverIfNeed(0);
+                } else {
+                    var curTime = ytPlayer.getCurrentTime();
+                    if(shouldPlay && Math.abs(curTime - preTime) < SMALL_TIME_DELTA) {
+                        stuckTime++;
+                        recoverIfNeed(curTime);
+                    } else {
+                        stuckTime = 0;
+                    }
+                    preTime = curTime;
+                }
+                log("curTime: " + curTime + "   stuckTime: " + stuckTime + "   ytPlayerState: " + ytPlayerState + "   isPlayerReady: " + isPlayerReady);
+            }
+            
+            function recoverIfNeed(curTime) {
+            
+                if(stuckTime >= STUCK_TIMEOUT) {
+                	
+                		var curTime = 0;
+                		if (isPlayerReady) {
+                			curTime = ytPlayer.getCurrentTime();
+                		}
+                	
+                		loadVideoById(curVideoId, curTime);
+                		stuckTime = 0;
+                }
+            
+            }
+              
+                
+            
+        </script>
+    </body>
+</html>

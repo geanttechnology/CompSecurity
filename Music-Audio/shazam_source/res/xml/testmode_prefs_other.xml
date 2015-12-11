@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:testmode="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/other" android:key="@string/testmode_other_category_key">
+        <CheckBoxPreference android:enabled="true" android:title="Strict Mode" android:key="@string/testmode_strictmode_key" android:summary="Only valid for android 2.3 and up." android:defaultValue="false" />
+        <CheckBoxPreference android:enabled="true" android:title="Stetho" android:key="@string/testmode_stetho_mode" android:summary="Enable Stetho (will restart the app)" android:defaultValue="false" />
+        <Preference android:title="Data Settings" android:key="@string/testmode_data_key" android:summary="Open System App info screen." />
+        <com.shazam.android.testmode.TestModeListPreference android:persistent="true" android:title="Auto Shazam" android:key="@string/testmode_autoshazam_key" android:summary="- unset -" android:defaultValue="false" testmode:entries="@array/autoShazamEndPointNames" testmode:entryValues="@array/autoShazamEndPointUrls" />
+        <com.shazam.android.testmode.TestModeEditListPreference android:title="@string/web_test_url" android:key="@string/testmode_webtesturl_key" android:summary="- unset -" testmode:entries="@array/webtest_endPointNames" testmode:entryValues="@array/webtest_endPointUrls" />
+        <Preference android:title="@string/web_test_launch" android:key="@string/testmode_webtestlaunch_key" android:dependency="@string/testmode_webtesturl_key" />
+        <CheckBoxPreference android:enabled="true" android:title="My Shazam Tabs" android:key="@string/testmode_my_shazam_tabs" android:summary="Display the My Shazam tabs whether you have any auto tags or not" android:defaultValue="false" />
+        <CheckBoxPreference android:enabled="true" android:title="Force Google Now cards" android:key="@string/testmode_force_google_now_cards" android:summary="Force Google Now cards to appear at all times of the day" android:defaultValue="false" />
+        <CheckBoxPreference android:enabled="true" android:title="Scan Memory Leaks" android:key="@string/testmode_scan_for_leaks" android:summary="Enable LeakCanary to scan for memory leaks" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

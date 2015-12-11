@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="15.0dip" android:paddingTop="11.0dip" android:paddingRight="17.5dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <com.shazam.android.widget.image.FastUrlCachingImageView android:id="@id/artwork" android:visibility="visible" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginRight="17.5dip" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" shazam:shape="round" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/artwork" android:layout_centerVertical="true">
+        <com.shazam.android.widget.text.CustomFontTextView android:textSize="15.0sp" android:id="@id/actorName" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentLeft="true" shazam:fontName="Lato-Bold.ttf" />
+        <com.shazam.android.widget.text.CustomFontTextView android:textSize="12.0sp" android:textColor="@color/official_grey_04" android:id="@id/characterName" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/actorName" android:layout_alignParentLeft="true" shazam:fontName="@string/shazam_regular_font" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Widget.AppCompat.ProgressBar.Small" />
+</RelativeLayout>

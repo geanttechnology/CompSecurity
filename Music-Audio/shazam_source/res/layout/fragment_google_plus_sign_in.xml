@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/shazam_friends_padding_left" android:paddingRight="@dimen/shazam_friends_padding_right" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.google.plus.GooglePlusButton android:layout_gravity="center_horizontal" android:id="@id/google_plus_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/social_sign_in_button_bottom_padding" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/official_grey_04" android:id="@id/register_welcome_text_body_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/googleplus_register_welcome_body_1" />
+</LinearLayout>

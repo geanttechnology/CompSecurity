@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/signup_ll_top" android:background="@drawable/bg_blue" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_indicator_2" android:scaleType="centerInside" android:adjustViewBounds="true" android:contentDescription="@string/img" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/signup_ll_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signup_tv" />
+        <com.mixerbox.mixerbox3b.classes.MyFbLoginButton android:id="@id/login_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

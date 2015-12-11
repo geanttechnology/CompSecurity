@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/visual_shazam_unsuccessful_container" android:background="?colorPrimary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.shazam.android.widget.text.CustomFontTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/visual_shazam_unsuccessful_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/visual_no_match_title" app:fontName="@string/roboto_medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/visual_shazam_unsuccessful_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visual_no_match_description" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/translucent_white" android:id="@id/visual_shazam_unsuccessful_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

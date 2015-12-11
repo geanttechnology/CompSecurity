@@ -1,0 +1,619 @@
+#
+# generated on 2013/09/12 09:12:09
+#
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.AchievementDefinition
+tableName=achievement_definition
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uid
+columnName=achievementId
+canBeNull=false
+uniqueIndexName=achievement_definition_achievementId_idx
+# --field-end--
+# --field-start--
+fieldName=order
+columnName=order
+# --field-end--
+# --field-start--
+fieldName=title
+columnName=title
+# --field-end--
+# --field-start--
+fieldName=badgeUrl
+columnName=badgeUrl
+# --field-end--
+# --field-start--
+fieldName=goals
+columnName=goals
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=awardXp
+columnName=xp
+# --field-end--
+# --field-start--
+fieldName=rewards
+columnName=rewards
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.AchievementGoal
+tableName=achievement_goal
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=eventType
+columnName=event_type
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=id
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=description
+columnName=description
+# --field-end--
+# --field-start--
+fieldName=threshold
+columnName=threshold
+# --field-end--
+# --field-start--
+fieldName=uniqueKey
+columnName=unique_key
+# --field-end--
+# --field-start--
+fieldName=url
+columnName=url
+# --field-end--
+# --field-start--
+fieldName=conditionJson
+columnName=condition
+# --field-end--
+# --field-start--
+fieldName=achievement
+columnName=achievement
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.AchievementGoalState
+tableName=achievement_goal_state
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=goalId
+columnName=goalId
+uniqueIndexName=achievement_goal_state_goalId_idx
+# --field-end--
+# --field-start--
+fieldName=completed
+columnName=completed
+# --field-end--
+# --field-start--
+fieldName=progress
+columnName=progress
+# --field-end--
+# --field-start--
+fieldName=uniques
+columnName=uniques
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=achievement
+columnName=achievement
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.AchievementState
+tableName=achievement_state
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=definitionId
+columnName=definitionId
+uniqueIndexName=achievement_state_definitionId_idx
+# --field-end--
+# --field-start--
+fieldName=started
+columnName=started
+# --field-end--
+# --field-start--
+fieldName=completed
+columnName=completed
+# --field-end--
+# --field-start--
+fieldName=claimed
+columnName=claimed
+# --field-end--
+# --field-start--
+fieldName=displayed
+columnName=displayed
+# --field-end--
+# --field-start--
+fieldName=goals
+columnName=goals
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.GameReward
+tableName=game_reward
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=amount
+columnName=amount
+# --field-end--
+# --field-start--
+fieldName=type
+columnName=type
+# --field-end--
+# --field-start--
+fieldName=value
+columnName=value
+# --field-end--
+# --field-start--
+fieldName=achievement
+columnName=achievement
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=level
+columnName=level
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.LevelConfig
+tableName=level_config
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=title
+columnName=title
+# --field-end--
+# --field-start--
+fieldName=level
+columnName=level
+uniqueIndexName=level_config_level_idx
+# --field-end--
+# --field-start--
+fieldName=xp
+columnName=xp
+# --field-end--
+# --field-start--
+fieldName=rewards
+columnName=rewards
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.Listing
+tableName=listing
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=coinPrice
+columnName=coin_price
+# --field-end--
+# --field-start--
+fieldName=displayName
+columnName=display_name
+# --field-end--
+# --field-start--
+fieldName=isFree
+columnName=is_free
+defaultValue=0
+# --field-end--
+# --field-start--
+fieldName=isNew
+columnName=is_new
+defaultValue=0
+# --field-end--
+# --field-start--
+fieldName=isOnSale
+columnName=is_on_sale
+defaultValue=0
+# --field-end--
+# --field-start--
+fieldName=sku
+columnName=sku
+# --field-end--
+# --field-start--
+fieldName=listingId
+columnName=listing_id
+# --field-end--
+# --field-start--
+fieldName=subscriberOnly
+columnName=subscriber_only
+# --field-end--
+# --field-start--
+fieldName=productType
+columnName=product_type
+# --field-end--
+# --field-start--
+fieldName=uid
+columnName=uid
+# --field-end--
+# --field-start--
+fieldName=product
+columnName=product
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=sections
+columnName=sections
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.OwnedProduct
+tableName=owned_product
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uid
+columnName=uid
+uniqueIndexName=owned_product_uid_idx
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.Product
+tableName=product
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=composer
+columnName=composer
+# --field-end--
+# --field-start--
+fieldName=displayName
+columnName=display_name
+# --field-end--
+# --field-start--
+fieldName=genre
+columnName=genre
+# --field-end--
+# --field-start--
+fieldName=uid
+columnName=uid
+uniqueIndexName=product_uid_idx
+# --field-end--
+# --field-start--
+fieldName=product_page_url
+columnName=product_page_url
+# --field-end--
+# --field-start--
+fieldName=parentPack
+columnName=parentPack
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=resources
+columnName=resources
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=eTag
+columnName=etag
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.Resource
+tableName=resource
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=contentType
+columnName=content_type
+# --field-end--
+# --field-start--
+fieldName=fileSize
+columnName=file_size
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=name
+# --field-end--
+# --field-start--
+fieldName=uid
+columnName=uid
+uniqueIndexName=resource_uid_idx
+# --field-end--
+# --field-start--
+fieldName=url
+columnName=url
+# --field-end--
+# --field-start--
+fieldName=urlExpiresAt
+columnName=url_expires_at
+# --field-end--
+# --field-start--
+fieldName=product
+columnName=product
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.ScoreInfo
+tableName=score_info
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=lastScore
+columnName=last_score
+# --field-end--
+# --field-start--
+fieldName=maxScore
+columnName=max_score
+# --field-end--
+# --field-start--
+fieldName=topScore
+columnName=top_score
+# --field-end--
+# --field-start--
+fieldName=songId
+columnName=song_id
+# --field-end--
+# --field-start--
+fieldName=synced
+columnName=synced
+# --field-end--
+# --field-start--
+fieldName=progress
+columnName=progress
+foreignCollection=true
+foreignCollectionEager=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.Section
+tableName=section
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uid
+columnName=uid
+# --field-end--
+# --field-start--
+fieldName=updatedAt
+columnName=updated_at
+# --field-end--
+# --field-start--
+fieldName=sectionListings
+columnName=listings
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.SectionListingLink
+tableName=section_listing_link
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=sectionOrder
+columnName=section_order
+# --field-end--
+# --field-start--
+fieldName=section
+columnName=section
+foreign=true
+uniqueCombo=true
+indexName=section_listing_link_section_idx
+foreignAutoRefresh=true
+maxForeignAutoRefreshLevel=1
+# --field-end--
+# --field-start--
+fieldName=listing
+columnName=listing
+foreign=true
+uniqueCombo=true
+indexName=section_listing_link_listing_idx
+foreignAutoRefresh=true
+maxForeignAutoRefreshLevel=1
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.SongProgress
+tableName=song_progress
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=difficulty
+columnName=difficulty
+# --field-end--
+# --field-start--
+fieldName=locked
+columnName=locked
+# --field-end--
+# --field-start--
+fieldName=stars
+columnName=stars
+# --field-end--
+# --field-start--
+fieldName=bestPartialSuccess
+columnName=partial_success
+# --field-end--
+# --field-start--
+fieldName=scoreInfo
+columnName=score_info
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.SongResource
+tableName=songresource
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=contentType
+columnName=content_type
+# --field-end--
+# --field-start--
+fieldName=fileSize
+columnName=file_size
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=name
+# --field-end--
+# --field-start--
+fieldName=uid
+columnName=uid
+uniqueIndexName=songresource_uid_idx
+# --field-end--
+# --field-start--
+fieldName=url
+columnName=url
+# --field-end--
+# --field-start--
+fieldName=urlExpiresAt
+columnName=url_expires_at
+# --field-end--
+# --field-start--
+fieldName=product
+columnName=product
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.smule.pianoandroid.data.model.StoreFrontItem
+tableName=storefront_item
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=displayName
+columnName=display_name
+# --field-end--
+# --field-start--
+fieldName=imageUrl
+columnName=image_url
+# --field-end--
+# --field-start--
+fieldName=order
+columnName=order
+# --field-end--
+# --field-start--
+fieldName=url
+columnName=url
+# --field-end--
+# --field-start--
+fieldName=itemType
+columnName=item_type
+# --field-end--
+# --field-start--
+fieldName=sectionUid
+columnName=section_uid
+# --field-end--
+# --field-start--
+fieldName=updatedAt
+columnName=updated_at
+# --field-end--
+# --field-start--
+fieldName=listingList
+columnName=listing_list
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

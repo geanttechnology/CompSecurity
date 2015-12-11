@@ -1,0 +1,18 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package org.simpleframework.xml.core;
+
+
+interface bq
+{
+
+    public abstract Object a();
+
+    public abstract Object a(Object obj);
+
+    public abstract Class b();
+
+    public abstract boolean c();
+}

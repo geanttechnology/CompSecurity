@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/next_button_container" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.Toolbar android:gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="226.0dip" android:layout_marginBottom="34.0dip" app:contentInsetLeft="0.0dip" style="?toolbarStyle">
+                <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:layout_marginBottom="28.0dip" android:text="@string/create_your_account" />
+            </android.support.v7.widget.Toolbar>
+            <com.shazam.android.widget.AnimatorViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar" android:layout_alignParentBottom="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/view_form_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+                    <com.shazam.android.widget.text.ValidationLabelContainerViewGroup android:label="@string/email" android:id="@id/view_validation_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="24.0dip" android:color="@color/text_signup_label">
+                        <com.shazam.android.widget.text.EmailValidEditText android:textColor="?android:textColorPrimary" android:textColorHint="@color/sign_up_email_neutral" android:id="@id/view_email" android:background="@drawable/textfield_default_mtrl_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email" android:color="@color/bg_edittext_signup_email" android:inputType="textEmailAddress" android:imeOptions="actionNext" />
+                    </com.shazam.android.widget.text.ValidationLabelContainerViewGroup>
+                    <com.shazam.android.widget.text.LabelContainerViewGroup android:label="@string/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="24.0dip" android:color="@color/text_signup_label">
+                        <com.shazam.android.widget.text.TintedBackgroundEditText android:textColor="?android:textColorPrimary" android:textColorHint="@color/sign_up_email_neutral" android:id="@id/view_name" android:background="@drawable/textfield_default_mtrl_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/name_optional" android:color="@color/bg_edittext_signup_name" android:inputType="textPersonName" android:imeOptions="actionNext" />
+                    </com.shazam.android.widget.text.LabelContainerViewGroup>
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center" android:id="@id/view_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:indeterminateProgressStyle" />
+            </com.shazam.android.widget.AnimatorViewFlipper>
+        </RelativeLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/next_button_container" android:background="#ffe3e7ea" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/text_signup_next" android:gravity="right|center" android:layout_gravity="right|center" android:id="@id/view_next_button" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:text="@string/next" android:drawableRight="@drawable/signup_arrow_right_selector" android:drawablePadding="16.0dip" style="@style/Widget.Shazam.Button.Transparent.Dark" />
+    </FrameLayout>
+</RelativeLayout>

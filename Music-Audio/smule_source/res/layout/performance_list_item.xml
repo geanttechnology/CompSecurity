@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/itemContainer" android:background="@drawable/myperf_row_off" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/textContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_toLeftOf="@id/loveButton1">
+        <TextView android:textColor="@color/gray_6" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="left|center" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cannot_connect_message" android:maxLines="1" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" style="@style/pianoTextMedium" />
+        <TextView android:textColor="@color/gray_6" android:layout_gravity="left|center" android:id="@id/composer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cannot_connect_message" android:maxLines="1" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" style="@style/pianoTextSmall" />
+    </LinearLayout>
+    <Button android:textColor="@color/gray_4" android:id="@id/loveButton1" android:background="@drawable/gray_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableLeft="@drawable/heart_icon" android:layout_toLeftOf="@id/commentsButton1" android:layout_centerVertical="true" />
+    <ProgressBar android:id="@id/spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

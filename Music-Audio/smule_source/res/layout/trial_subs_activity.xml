@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_trialpay_upsell" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/trial_subs_popup_margin" android:layout_marginBottom="@dimen/trial_subs_popup_icon_bottom_margin" android:src="@drawable/icon_wn_piano" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/trial_subs_popup_margin" android:src="@drawable/icn_vip_lrg" />
+        <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/trial_subs_popup_title_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trial_subs_7_days_trial" app:font="Gotham-Medium" />
+    </LinearLayout>
+    <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/trial_subs_popup_subtitle_text_size" android:textColor="#ff80ff95" android:id="@id/only_xxx_per_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/trial_subs_popup_margin" android:layout_marginBottom="@dimen/trial_subs_popup_margin" android:text="@string/trial_subs_only_xxx_per_week" app:font="Gotham-Book" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/trial_subs_popup_small_margin" android:src="@drawable/icn_noads" />
+            <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/trial_subs_popup_bullet_item_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trial_subs_no_ads" app:font="Gotham-Book" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/trial_subs_popup_small_margin" android:layout_marginBottom="@dimen/trial_subs_popup_small_margin">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/trial_subs_popup_small_margin" android:src="@drawable/icn_musicnote" />
+            <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/trial_subs_popup_bullet_item_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trial_subs_unlimited_access" app:font="Gotham-Book" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/trial_subs_popup_small_margin" android:src="@drawable/icn_okay" />
+            <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/trial_subs_popup_bullet_item_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trial_subs_cancel_anytime" app:font="Gotham-Book" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.smule.pianoandroid.utils.FontButton android:textSize="@dimen/trial_subs_popup_start_button_text_size" android:textColor="@color/gray_2" android:id="@id/start_button" android:background="@drawable/btn_light_green" android:layout_width="@dimen/trial_subs_popup_button_width" android:layout_height="@dimen/trial_subs_popup_button_height" android:layout_marginTop="@dimen/trial_subs_popup_margin" android:layout_marginBottom="@dimen/trial_subs_popup_small_margin" android:text="@string/trial_subs_start_free_trial" app:font="Gotham-Medium" />
+    <com.smule.pianoandroid.utils.FontButton android:textSize="@dimen/trial_subs_popup_cancel_button_text_size" android:textColor="@color/white" android:id="@id/cancel_button" android:background="#00000000" android:layout_width="@dimen/trial_subs_popup_button_width" android:layout_height="@dimen/trial_subs_popup_button_height" android:text="@string/trial_subs_no_thanks" app:font="Gotham-Book" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smule.pianoandroid.magicpiano.SubscriptionButton_ android:id="@id/RelativeLayout1" android:focusable="true" android:clickable="true" android:layout_width="@dimen/renew_subs_dialog_button_width" android:layout_height="wrap_content" android:scaleType="fitCenter"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_width="@dimen/renew_subs_dialog_button_width" android:layout_height="@dimen/renew_subs_dialog_button_hit_height">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cell_icon" android:background="@drawable/btn_blue" android:paddingLeft="@dimen/renew_subs_dialog_button_padding" android:paddingRight="@dimen/renew_subs_dialog_button_padding" android:duplicateParentState="true" android:layout_width="@dimen/renew_subs_dialog_button_width" android:layout_height="@dimen/renew_subs_dialog_button_height" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:id="@id/subscription_duration_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="month" android:maxLines="1" app:font="Gotham-Medium" style="@style/pianoHeader" />
+                <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_12" android:textColor="#ffbadcff" android:id="@id/subscription_subtitle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="month" android:maxLines="1" app:font="Gotham-Book" style="@style/pianoHeader" />
+            </LinearLayout>
+            <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:gravity="right" android:id="@id/subscription_price_text" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.99" android:layout_weight="0.5" app:font="Gotham-Medium" style="@style/pianoHeader" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.smule.pianoandroid.magicpiano.SubscriptionButton_>

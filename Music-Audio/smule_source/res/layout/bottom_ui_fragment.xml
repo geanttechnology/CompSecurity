@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bottomBar" android:background="@drawable/ab_bottom_solid" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_height" android:scaleType="centerCrop"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bottomBarContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/levelContainer" android:layout_width="260.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/trophy_button">
+            <ProgressBar android:id="@id/level_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="700" android:progress="-1" android:progressDrawable="@drawable/level_progress_bar" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+            <RelativeLayout android:id="@id/levelSection" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignLeft="@id/level_progress" android:layout_alignRight="@id/level_progress">
+                <TextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:id="@id/levelText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Level ?" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageButton android:id="@id/trophy_button" android:background="@drawable/icon_bottombar_crown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="-10.0dip" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/statusContainer" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+            <RelativeLayout android:id="@id/smoolaContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/smoola_bar" android:background="@drawable/progress_meter_empty" android:layout_width="@dimen/smoola_bar_width" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/smoola_icon" android:layout_alignParentRight="false" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:id="@id/smoolaText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12345" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    <ProgressBar android:id="@id/smoolaLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="17.0dip" android:indeterminate="true" android:minHeight="16.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/smoola_icon" android:background="@drawable/icon_bottombar_smoola" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/add_icon" android:background="@drawable/btn_bottombar_plus" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="28.0dip" android:layout_marginLeft="3.0dip" android:layout_alignParentRight="true" />
+            <RelativeLayout android:id="@id/vipContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/vipBar" android:background="@drawable/progress_meter_empty" android:layout_width="@dimen/vip_bar_width" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/icon" android:layout_alignParentRight="false" android:layout_centerVertical="true" android:layout_alignParentEnd="false">
+                    <TextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:id="@id/vipText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_access" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/icon" android:background="@drawable/icon_bottombar_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

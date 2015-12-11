@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/view_mini_tag_result_cover" android:background="@drawable/loading_placeholder" android:layout_width="@dimen/view_full_chart_cover_side" android:layout_height="@dimen/view_full_chart_cover_side" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="12.0dip" android:layout_centerVertical="true" android:transitionName="coverArt" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/view_mini_tag_result_store" android:layout_toRightOf="@id/view_mini_tag_result_cover" android:layout_centerVertical="true">
+        <com.shazam.android.widget.text.CustomFontTextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/view_mini_tag_result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" shazam:fontName="@string/roboto_medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/view_mini_tag_result_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <com.shazam.android.widget.image.IntentUrlCachingImageView android:id="@id/view_mini_tag_result_store" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</merge>

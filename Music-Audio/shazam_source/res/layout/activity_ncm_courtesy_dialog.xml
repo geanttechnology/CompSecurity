@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/courtesy_image" android:background="@android:color/white" android:layout_width="304.0dip" android:layout_height="234.0dip" android:scaleType="fitXY" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.shazam.android.widget.text.CustomFontTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/courtesy_dismiss_button" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/dismiss" shazam:fontName="@string/roboto_medium" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+{
+    "formatVersion" : "1.0.0",
+    "configuration" : {
+        "configVersion" : "2013093000",
+        "cache" : 86400,
+        "maxBulkEvents" : 20,
+        "activeEvents" : {
+            "view" : [ "appeared" , "refreshed" , "disappeared" ], 
+            "application" : [ "start" , "enterBackground" , "enterForeground" ]
+        }
+    }
+}

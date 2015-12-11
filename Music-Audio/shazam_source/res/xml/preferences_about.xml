@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="@string/settings_key_about"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/support">
+        <com.shazam.android.preference.VersionPreference android:title="@string/build_version" android:key="@string/settings_key_buildinfo" />
+        <com.shazam.android.preference.TermsOfUsePreference android:title="@string/view_terms_of_use" android:key="@string/settings_key_terms_of_use" />
+        <Preference android:title="@string/privacy_policy" android:key="@string/settings_key_privacy_policy">
+            <intent android:action="android.intent.action.VIEW" android:data="shazaminternal://www.shazam.com/tc?urlscheme=http#privacy_policy" />
+        </Preference>
+        <com.shazam.android.preference.LicensesPreference android:title="@string/open_source_licenses" />
+        <Preference android:title="@string/get_help" android:key="@string/settings_key_get_help">
+            <intent android:action="android.intent.action.VIEW" android:data="shazaminternal://support.shazam.com/hc/en-us/categories/200239877-Android?urlscheme=https" />
+        </Preference>
+        <com.shazam.android.preference.SupportPreference android:title="@string/email_shazam_support" android:key="@string/settings_key_support" />
+    </PreferenceCategory>
+</PreferenceScreen>

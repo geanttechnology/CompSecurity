@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.loading.ShazamSpinnyLoader android:id="@id/loading" android:layout_width="@dimen/loading_spinner_width" android:layout_height="@dimen/loading_spinner_width" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/details_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/view_toolbar" />
+    </FrameLayout>
+</RelativeLayout>

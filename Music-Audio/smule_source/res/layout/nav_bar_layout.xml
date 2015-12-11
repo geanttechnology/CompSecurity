@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_bar">
+            <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ListView android:layout_gravity="left" android:id="@id/left_drawer" android:background="@drawable/nav_menu" android:paddingLeft="15.0sp" android:paddingRight="15.0sp" android:layout_width="@dimen/nav_drawer_width" android:layout_height="fill_parent" android:divider="@null" android:choiceMode="singleChoice" />
+        </android.support.v4.widget.DrawerLayout>
+    </RelativeLayout>
+</merge>

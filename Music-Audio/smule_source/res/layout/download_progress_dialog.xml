@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/clickOutsideContainer" android:background="@color/translucent_8" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/mainContainer" android:background="@drawable/popup_box" android:clickable="true" android:layout_width="@dimen/modal_width" android:layout_height="@dimen/modal_height" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/downloadCloud" android:background="@drawable/dl_cloud_empty" android:layout_width="90.0dip" android:layout_height="60.0dip" android:layout_marginTop="41.0dip" android:layout_marginBottom="29.0dip" android:scaleType="centerInside" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/download_cloud" android:layout_centerHorizontal="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/textContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/downloadCloud" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+            <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_16" android:textColor="@color/gray_8" android:gravity="center_horizontal" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginBottom="40.0dip" android:text="Sorry Dave" android:layout_centerInParent="true" android:layout_alignParentEnd="true" style="@style/pianoHeader" />
+        </RelativeLayout>
+        <com.smule.pianoandroid.utils.FontTextView android:textColor="@color/gray_4" android:gravity="center" android:id="@id/cancel_button" android:background="@drawable/btn_gray" android:clickable="true" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height" android:text="@string/cancel" android:layout_below="@id/textContainer" android:layout_centerInParent="true" style="@style/pianoDarkGrayButtonTitle" />
+    </RelativeLayout>
+</RelativeLayout>

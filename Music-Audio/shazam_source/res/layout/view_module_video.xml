@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/module_video_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/module_image_background" style="@style/module_background" />
+    <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/module_video_cover" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <View android:id="@id/module_video_cover_gradient" android:background="@drawable/module_video_gradient" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.shazam.android.widget.text.CustomFontTextView android:id="@id/module_title" android:padding="@dimen/modules_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Shazam.Modules.Title" />
+    <ImageView android:id="@id/module_video_icon" android:visibility="invisible" android:src="@drawable/video_play_icon" style="@style/module_2x2_centered_icon" />
+</RelativeLayout>

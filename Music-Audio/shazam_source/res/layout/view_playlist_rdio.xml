@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.text.CustomFontTextView android:textSize="@dimen/playlist_title" android:textColor="@color/shazam_swatch_1" android:id="@id/playlist_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" fontName="@string/shazam_regular_font" />
+    <com.shazam.android.widget.text.CustomFontTextView android:textSize="9.0sp" android:textColor="@color/shazam_swatch_4" android:id="@id/playlist_number_of_songs" android:layout_width="wrap_content" android:layout_height="wrap_content" fontName="@string/shazam_regular_font" />
+</merge>

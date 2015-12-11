@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:testmode="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/app_info" android:key="@string/testmode_app_info_category_key">
+        <com.shazam.android.testmode.TestModeListPreference android:title="@string/endpoints" android:key="@string/testmode_endpoint_key" testmode:entries="@array/endPointNames" testmode:entryValues="@array/endPointUrls" testmode:prefix="@string/httpPrefix" />
+        <com.shazam.android.testmode.TestModeListPreference android:title="@string/imsi" android:key="@string/testmode_imsi_key" testmode:entries="@array/imsiNames" testmode:entryValues="@array/imsiNumbers" />
+        <com.shazam.android.testmode.ResetPreferenceDialog android:title="Delete all app data" android:key="@string/testmode_delete_all_key" android:summary="Delete all files from storage." />
+        <com.shazam.android.testmode.TestModeListPreference android:title="@string/channel" android:key="@string/testmode_channel_key" testmode:entries="@array/appChanelNames" testmode:entryValues="@array/appChanelIDs" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/override_version" android:key="@string/testmode_version_enabled_key" />
+        <EditTextPreference android:persistent="true" android:title="@string/version_number" android:key="@string/testmode_version_number_key" android:dependency="@string/testmode_version_enabled_key" android:dialogMessage="@string/testmode_version_dialog_message" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/force_config" android:key="@string/testmode_force_config_key" />
+    </PreferenceCategory>
+</PreferenceScreen>

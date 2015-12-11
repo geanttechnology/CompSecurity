@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="20.0sp" android:textColor="@color/white" android:orientation="horizontal" android:id="@id/ll" android:background="@drawable/setting_btn_blue" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_margin="10.0dip" android:text="@string/onboarding_fragment_lets_go" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/dark_gray" android:gravity="center_horizontal" android:id="@id/tv_des" android:paddingLeft="40.0dip" android:paddingTop="7.0dip" android:paddingRight="40.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/onboarding_fragment_page2_des" android:layout_above="@id/ll" />
+    <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="#ff555555" android:gravity="center_horizontal" android:id="@id/tv_title" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/onboarding_fragment_page2_title" android:layout_above="@id/tv_des" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tv_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="2.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="2.0" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_building" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_bubble_building" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/ic_bubble" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                    <ImageView android:id="@id/iv_building" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/ic_building" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_bubble_person" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/ic_bubble" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                    <ImageView android:id="@id/iv_person" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/ic_person" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="2.0" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_motor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_bubble_motor" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/ic_bubble" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                    <ImageView android:id="@id/iv_motor" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/ic_motor" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_bus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_bubble_bus" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/ic_bubble" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                    <ImageView android:id="@id/iv_bus" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/ic_bus" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

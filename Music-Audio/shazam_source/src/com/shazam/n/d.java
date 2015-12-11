@@ -1,0 +1,13 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.shazam.n;
+
+import java.net.InetAddress;
+
+public interface d
+{
+
+    public abstract org.a.a.b.a.d a(InetAddress inetaddress);
+}

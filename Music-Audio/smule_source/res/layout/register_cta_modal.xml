@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout1" android:background="@color/translucent_8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainContainer" android:background="@drawable/popup_box" android:layout_width="@dimen/modal_width" android:layout_height="@dimen/modal_height" android:layout_centerInParent="true">
+        <ImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/icon_modal_achievement" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/gray_4" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/achievement_unlocked" android:layout_below="@id/trophy_icon" android:layout_centerHorizontal="true" style="@style/pianoHeader" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/gray_8" android:layout_gravity="center_horizontal" android:id="@id/body" android:paddingTop="@dimen/game_rewards_info_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:text="Title" android:layout_centerHorizontal="true" style="@style/pianoHeader" />
+        <LinearLayout android:gravity="center" android:id="@id/buttonContainer" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.25">
+            <Button android:textColor="@color/blue_text" android:id="@id/register_btn" android:background="@drawable/whitebutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="160.0dip" android:text="@string/sign_in" style="@style/pianoTextMedium" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

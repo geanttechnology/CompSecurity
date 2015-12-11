@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/module_root" android:background="@color/white" android:padding="@dimen/modules_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.widget.image.UrlCachingImageView android:id="@id/module_image_background" style="@style/module_background" />
+    <com.shazam.android.widget.text.CustomFontTextView android:id="@id/module_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Shazam.Modules.Title" />
+    <com.shazam.android.widget.lyrics.DynamicLyricsScrollView android:id="@id/module_lyrics_dynamic_lyrics_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/module_lyrics_show_more" android:layout_below="@id/module_title" style="@style/module_lyrics_scroll_view" />
+    <com.shazam.android.widget.text.CustomFontTextView android:id="@id/module_lyrics_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/module_lyrics_show_more" android:layout_below="@id/module_title" style="@style/module_lyrics_content" />
+    <com.shazam.android.widget.text.CustomFontTextView android:id="@id/module_lyrics_show_more" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Modules.Action.Lyrics" />
+</RelativeLayout>

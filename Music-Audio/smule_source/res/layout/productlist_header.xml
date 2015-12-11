@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/root" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="@dimen/songbook_entry_section_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.smule.pianoandroid.utils.FontTextView android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="My songs (5)" android:layout_alignParentLeft="true" app:font="Gotham-Medium" style="@style/pianoSongbookHeader" />
+</RelativeLayout>

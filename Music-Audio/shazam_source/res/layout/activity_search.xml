@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:contentInsetStart="0.0dip" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" style="?toolbarStyle">
+        <android.support.v7.widget.SearchView android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?actionBarSize" android:imeOptions="flagNoExtractUi" />
+    </android.support.v7.widget.Toolbar>
+    <com.shazam.android.widget.AnimatorViewFlipper android:id="@id/search_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/search_results_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:scrollbarStyle="insideOverlay" android:id="@id/search_results_recyclerview" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" />
+            <ProgressBar android:enabled="false" android:gravity="center" android:layout_gravity="bottom" android:id="@id/search_results_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip" android:maxHeight="32.0dip" android:minHeight="32.0dip" />
+        </FrameLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:indeterminateProgressStyle" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/shazam_near_black" android:gravity="center" android:layout_gravity="center" android:id="@id/search_error_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="72.0dip" android:layout_marginRight="72.0dip" android:text="@string/sorry_there_was_a_problem" android:drawableTop="@drawable/ic_search_nomatch" android:drawablePadding="44.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/shazam_near_black" android:gravity="center" android:layout_gravity="center" android:id="@id/search_intro_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:layout_marginRight="38.0dip" android:text="@string/search_first_headline" android:drawableTop="@drawable/ic_search_empty_state" android:drawablePadding="20.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/shazam_near_black" android:gravity="center" android:layout_gravity="center" android:id="@id/search_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="72.0dip" android:layout_marginRight="72.0dip" android:text="@string/search_no_results" android:drawableTop="@drawable/ic_search_nomatch" android:drawablePadding="44.0dip" />
+    </com.shazam.android.widget.AnimatorViewFlipper>
+</LinearLayout>

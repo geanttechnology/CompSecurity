@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/row_rewards" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/unlock_btn" android:background="@drawable/btn_price" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" android:minWidth="70.0dip" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="15.0dip" android:textColor="@color/yellow_text" android:gravity="center" android:id="@id/price_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/unlock" style="@style/pianoTextMedium" />
+    </LinearLayout>
+    <ImageView android:id="@id/reward_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_xp" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="19.0dip" android:textColor="@color/black" android:gravity="left|center" android:id="@id/reward_text" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+20 XP" android:layout_toRightOf="@id/reward_icon" android:layout_alignTop="@id/reward_icon" android:layout_alignBottom="@id/reward_icon" />
+    <TextView android:textSize="@dimen/game_rewards_error_size" android:textColor="@color/black" android:gravity="left|center" android:id="@id/error_text" android:paddingLeft="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Error" android:layout_toRightOf="@id/reward_icon" android:layout_alignTop="@id/reward_icon" android:layout_alignBottom="@id/reward_icon" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/reward_icon" android:layout_alignTop="@id/reward_icon" android:layout_alignBottom="@id/reward_icon">
+        <TextView android:textSize="15.0dip" android:textColor="@color/yellow_text" android:gravity="center" android:id="@id/product_name" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Piano Man" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/product_artist" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Billy Joel" />
+    </LinearLayout>
+</RelativeLayout>

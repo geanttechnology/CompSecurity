@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="35.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.shazam.android.widget.text.CustomFontTextView android:textSize="20.0sp" android:textColor="@color/shazam_near_black" android:id="@id/view_title" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_exclamation" app:fontName="@string/roboto_medium" />
+        <FrameLayout android:id="@id/view_overlay_image_container" android:background="?selectableItemBackground" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_educational_overlay_image" />
+        </FrameLayout>
+        <com.shazam.android.widget.text.CustomFontTextView android:textSize="16.0sp" android:textColor="@color/shazam_dark_grey" android:id="@id/view_message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="24.0dip" android:text="@string/search_overlay_copy" app:fontName="@string/roboto_regular" />
+        <com.shazam.android.widget.text.CustomFontTextView android:layout_gravity="right" android:id="@id/view_got_it" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="25.0dip" android:text="@string/got_it" app:fontName="@string/roboto_medium" style="@style/Widget.Shazam.Button.Dialog.Stacked" />
+    </LinearLayout>
+</ScrollView>

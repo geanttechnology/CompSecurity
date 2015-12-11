@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/video_fragment_root" android:background="@color/shazam_light_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/video_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.shazam.android.widget.text.CustomFontTextView android:id="@id/video_no_videos_found" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/video_not_found" android:layout_centerInParent="true" style="@style/Widget.Shazam.TextView.Video" />
+    <ProgressBar android:id="@id/video_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar.Large" />
+    <ScrollView android:id="@id/video_scroll_view" android:background="@color/shazam_light_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/video_primary" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/video_info_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.shazam.android.widget.text.CustomFontTextView android:id="@id/video_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" style="@style/Widget.Shazam.TextView.Video.Title" />
+                <com.shazam.android.widget.text.CustomFontTextView android:id="@id/video_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="15.0dip" style="@style/Widget.Shazam.TextView.Video" />
+                <com.shazam.android.widget.text.CustomFontTextView android:id="@id/video_views_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="20.0dip" style="@style/Widget.Shazam.TextView.Video" />
+            </LinearLayout>
+            <com.shazam.android.widget.text.CustomFontTextView android:id="@id/video_related_videos_count" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:textAllCaps="true" style="@style/Widget.Shazam.TextView.Video" />
+            <com.shazam.android.widget.video.YoutubePlaylistListView android:id="@id/video_related_videos" android:background="@drawable/legacy_list_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

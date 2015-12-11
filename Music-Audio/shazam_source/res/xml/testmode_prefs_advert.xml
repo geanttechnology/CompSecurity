@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/advertising" android:key="@string/testmode_advertising_category_key">
+        <CheckBoxPreference android:title="Enable Static TestIDs and choice of providers" android:key="@string/testmode_enable_test_adverts_key" android:defaultValue="false" />
+        <EditTextPreference android:persistent="true" android:title="@string/advert_siteid" android:key="@string/testmode_advert_siteid_key" android:dependency="@string/testmode_enable_test_adverts_key" />
+    </PreferenceCategory>
+</PreferenceScreen>

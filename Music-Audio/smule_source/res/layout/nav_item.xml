@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="@dimen/nav_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/nav_item_icon_height" android:layout_height="@dimen/nav_item_icon_height" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iconBig" android:layout_width="@dimen/nav_item_profile_icon_height" android:layout_height="@dimen/nav_item_profile_icon_height" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/nav_text" android:gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/icon" />
+    <com.smule.pianoandroid.utils.FontTextView android:textSize="@dimen/text_11" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/notifications" android:background="@drawable/notification" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="0" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAlignment="4" app:font="Gotham-Medium" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shazam="http://schemas.android.com/apk/res-auto">
+    <item android:color="@color/sign_up_email_invalid_red" shazam:state_valid="false" />
+    <item android:state_focused="true" android:color="@color/shazam_blue_primary" />
+    <item android:color="@color/sign_up_email_neutral" />
+</selector>

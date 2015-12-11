@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_button_fab_shadow" />
+    <item android:left="1.0dip" android:top="4.0dip" android:right="1.0dip" android:bottom="4.0dip">
+        <selector android:exitFadeDuration="@integer/selector_fade_out_duration">
+            <item android:state_pressed="true" android:drawable="@drawable/bg_button_fab_shape_pressed" />
+            <item android:drawable="@drawable/bg_button_fab_shape" />
+        </selector>
+    </item>
+</layer-list>

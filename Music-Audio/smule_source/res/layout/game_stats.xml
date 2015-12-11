@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smule.pianoandroid.magicpiano.NavBarLayout_ android:orientation="vertical" android:id="@id/nav_bar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:customView="true" app:hasDrawer="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/achievements_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableLayout android:id="@id/achievements_table" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/no_achievements" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ach_empty" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_achievements" style="@style/achievementProgress" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.smule.pianoandroid.magicpiano.NavBarLayout_>

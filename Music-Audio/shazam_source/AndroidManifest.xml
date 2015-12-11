@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.shazam.android" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <permission android:name="com.shazam.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.shazam.android.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="com.shazam.android.preloadinfo.provider.ACCESS_DATA"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:backupAgent="com.shazam.backup.BackerUpper" android:hardwareAccelerated="true" android:icon="@drawable/icon_free" android:label="@string/app_name" android:name="com.shazam.android.ShazamApplication" android:restoreAnyVersion="false" android:theme="@style/Theme.Shazam.Launch">
+        <receiver android:name="com.shazam.android.service.gcm.ShazamGcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.shazam.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.AppUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="shazamLibraryFree" android:enabled="true" android:exported="false" android:multiprocess="true" android:name="com.shazam.android.persistence.LibraryDAO"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_application_id"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_api_key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="orientation" android:exported="true" android:launchMode="singleTask" android:name="com.shazam.android.activities.MainActivity" android:theme="@style/Theme.Shazam.MainActivity">
+            <intent-filter>
+                <action android:name="com.shazam.android.intent.actions.START_TAGGING"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.shazam.android.intent.actions.START_TAGGING"/>
+                <category android:name="com.shazam.intent.category.WIDGET_FEED"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.shazam.android.intent.actions.START_TAGGING"/>
+                <category android:name="com.shazam.intent.category.WIDGET"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="@string/shazam_library" android:mimeType="vnd.android.cursor.dir/vnd.shazam.library.mytags" android:scheme="content"/>
+                <data android:host="@string/shazam_library" android:mimeType="vnd.android.cursor.dir/vnd.shazam.library.charts" android:scheme="content"/>
+                <data android:host="@string/shazam_library" android:mimeType="vnd.android.cursor.dir/vnd.shazam.library.newsfeed" android:scheme="content"/>
+                <data android:host="@string/shazam_library" android:mimeType="vnd.android.cursor.dir/vnd.shazam.library.myshazam" android:scheme="content"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shazam.android.activities.SplashActivity" android:theme="@style/Theme.Shazam.Launch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:launchMode="singleTask" android:name="com.shazam.android.activities.account.SignUpActivity" android:theme="@style/Theme.Shazam.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="sign_up" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:exported="false" android:name="com.shazam.android.activities.WebActivity" android:theme="@style/Theme.Shazam" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.appnexus.opensdk.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.device.ads.AdActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MoPubActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidVideoPlayerActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.common.MoPubBrowser" android:theme="@style/Theme.Shazam"/>
+        <activity android:exported="true" android:name="com.shazam.android.activities.FacebookDeepLinkActivity" android:noHistory="true" android:theme="@style/Theme.Shazam"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/Theme.Shazam.Translucent"/>
+        <activity android:name="com.shazam.android.activities.GooglePlusDeepLinkActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="com.google.android.apps.plus.VIEW_DEEP_LINK"/>
+                <data android:scheme="vnd.google.deeplink"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.shazam.android.activities.GooglePlusResolutionActivity" android:theme="@style/Theme.Shazam.Transparent"/>
+        <activity android:exported="true" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.NcmCourtesyDialogActivity" android:theme="@style/Theme.Shazam.Dialog.SemiTransparentBlack"/>
+        <activity android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.streaming.RdioAuthFlowActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.streaming.SpotifyAuthFlowActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:name="com.spotify.sdk.android.authentication.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.streaming.StreamingProviderSubscriptionExpiredDialogActivity" android:theme="@style/Theme.Shazam.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="subscription_expired" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.streaming.StreamingProviderLogInSuccessDialogActivity" android:theme="@style/Theme.Shazam.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="streaming_logged_in" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.facebook.FacebookConnectPromptDialogActivity" android:theme="@style/Theme.Shazam.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="facebook_connect_prompt" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.facebook.FacebookInviteFriendsDialogActivity" android:theme="@style/Theme.Shazam.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="facebook_invite_friends" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.shazam.android.activities.streaming.StreamingProviderUpsellDialogActivity" android:theme="@android:style/Preference.Holo.CheckBoxPreference">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="streaming_upsell" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:name="com.shazam.android.activities.RdioSignInActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:name="com.shazam.android.activities.ShazamErrorHandlerActivity" android:theme="@style/Theme.Shazam.Transparent"/>
+        <activity android:name="com.shazam.android.activities.account.LegacyEmailRegistrationActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="legacy_email_registration" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shazam.android.activities.account.EmailRegistrationActivity" android:theme="@style/Theme.Shazam.Dark" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="email_registration" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.shazam.android.activities.account.EmailSignupActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="email_signup" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="email_signin" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/publish_shazam" android:name="com.shazam.android.activities.post.PostEditorActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="post_editor" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shazam.android.activities.account.CheckEmailActivity" android:parentActivityName="com.shazam.android.activities.account.EmailSignupActivity" android:theme="@style/Theme.Shazam">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.shazam.android.activities.account.EmailSignupActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="check_email" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/shazam_host" android:path="@string/web_validate_email_path" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/external_validate_email_host" android:scheme="@string/external_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shazam.android.activities.MainCompatActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.MusicDetailsActivity" android:theme="@style/Theme.Shazam.TranslucentToolBar.TranslucentStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="tag" android:path="/v2" android:scheme="@string/scheme_shazam_activity"/>
+                <data android:host="tag" android:path="/v2.1" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.shazam.android.activities.MainActivity"/>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.MusicDetailsV3Activity" android:theme="@style/Theme.Shazam.MusicDetails.V3">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="tag" android:path="/v3" android:scheme="@string/scheme_shazam_activity"/>
+                <data android:host="tag" android:path="/unknown" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.shazam.android.activities.MainActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:exported="false" android:finishOnTaskLaunch="true" android:launchMode="singleTop" android:name="com.shazam.android.activities.DetailsActivity" android:theme="@style/Theme.Shazam.TranslucentToolBar.TranslucentStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="details"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="product"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:label="@string/discography" android:name="com.shazam.android.activities.modules.DiscographyActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="discography"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.chart.FullChartActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="chart"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.shazam.android.activities.deeplink.DeepLinkActivity" android:theme="@style/Theme.Shazam.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/shazam_host" android:pathPattern="/discover/track/..*" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/shazam_host" android:pathPattern="/artist/..*" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/shazam_host" android:pathPattern="/discover/artist/..*" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/shazam_host" android:pathPattern="/discover/artist/..*" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/shazam_host" android:pathPattern="/discover/artist/..*/album/..*" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/shazam_host" android:pathPattern="/discover/artist/..*/album/..*" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/shazam_host" android:pathPattern="/myshazam" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/shazam_host" android:pathPattern="/track/..*" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="track" android:scheme="shazam"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="search" android:scheme="shazam"/>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/cast" android:name="com.shazam.android.activities.modules.CastActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="cast"/>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.modules.LyricsActivity" android:theme="@style/Theme.Shazam.Lyrics"/>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.StreamingPlaylistsActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="streaming_playlists" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/video" android:name="com.shazam.android.activities.modules.VideoActivity" android:theme="@style/Theme.Shazam.NoBackground"/>
+        <activity android:name="com.shazam.android.activities.ChartsListActivity" android:parentActivityName="com.shazam.android.activities.MainActivity" android:theme="@style/Theme.Shazam.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.shazam.android.activities.MainActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.shazam.android.activities.ExploreActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="@string/shazam_library" android:mimeType="vnd.android.cursor.dir/vnd.shazam.library.explore" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="explore" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.facebook.ads.InterstitialAdActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:name="net.hockeyapp.android.UpdateActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.VideoPlayerActivity" android:screenOrientation="landscape" android:theme="@style/Theme.Shazam.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="videoplayer"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shazam.android.activities.StubAccountActivity" android:theme="@style/Theme.Shazam.Transparent"/>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.sheet.ShareDataBottomSheetActivity" android:theme="@style/Theme.Shazam.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="share_data_bottom_sheet" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.sheet.ShareTagBottomSheetActivity" android:theme="@style/Theme.Shazam.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="share_tag_bottom_sheet" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.share.ShareTagDialogActivity" android:theme="@style/Theme.Shazam.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="share_tag_dialog" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleInstance" android:name="com.shazam.android.activities.player.PlayerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Shazam.Player">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="playlist_chart"/>
+                <data android:scheme="playlist_my_tags"/>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.search.SearchActivity" android:theme="@style/Theme.Shazam" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="search" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:name="com.shazam.android.activities.search.SearchMoreResultsActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="search_more_results" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/settings" android:name="com.shazam.android.activities.SettingsActivity" android:theme="@style/Theme.Shazam">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.shazam.android.activities.MainActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/connect_to_google_plus" android:name="com.shazam.android.activities.GooglePlusActivity" android:theme="@style/Theme.Shazam"/>
+        <activity android:name="com.shazam.android.activities.artist.ArtistProfileActivity" android:theme="@style/Theme.Shazam.TranslucentToolBar.TranslucentStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="artist_profile" android:scheme="@string/scheme_shazam_activity"/>
+                <data android:host="artist" android:pathPattern="/..*" android:scheme="@string/external_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/following" android:name="com.shazam.android.activities.follow.FollowingsActivity" android:theme="@style/Theme.Shazam">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="followings" android:scheme="@string/scheme_shazam_activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shazam.android.activities.VisualShazamActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Shazam.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="visualshazam" android:scheme="shazam"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.jirbo.adcolony.AdColonyOverlay" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.jirbo.adcolony.AdColonyFullscreen" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.jirbo.adcolony.AdColonyBrowser" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity-alias android:finishOnTaskLaunch="true" android:name="com.shazam.android.WebContent" android:targetActivity="com.shazam.android.activities.WebActivity"/>
+        <activity-alias android:exported="true" android:name="com.shazam.android.activities.Splash" android:targetActivity="com.shazam.android.activities.SplashActivity"/>
+        <activity-alias android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.alias.ShwebActivityDisplay" android:targetActivity="com.shazam.android.activities.WebActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.shazam.intent.category.FULL_SCREEN"/>
+                <category android:name="com.shazam.intent.category.PANEL"/>
+                <data android:scheme="shazaminternal"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:exported="false" android:finishOnTaskLaunch="true" android:name="com.shazam.android.alias.TagDetailsDisplay" android:targetActivity="com.shazam.android.activities.MusicDetailsV3Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="@string/shazam_library" android:mimeType="vnd.android.cursor.item/vnd.shazam.library" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.shazam.intent.category.PANEL"/>
+                <category android:name="com.shazam.intent.category.FULL_SCREEN"/>
+                <data android:host="@string/shazam_library" android:mimeType="vnd.android.cursor.item/vnd.shazam.library" android:scheme="content"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.shazam.android.activities.MainActivity"/>
+        </activity-alias>
+        <activity-alias android:name="com.shazam.android.Home" android:targetActivity="com.shazam.android.activities.MainCompatActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:finishOnTaskLaunch="true" android:name="com.shazam.activities.TagDetailsActivity" android:targetActivity="com.shazam.android.activities.MainCompatActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:exported="true" android:name="com.shazam.android.FacebookDeepLinkActivity" android:targetActivity="com.shazam.android.activities.FacebookDeepLinkActivity"/>
+        <receiver android:name="com.shazam.android.appwidget.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget"/>
+        </receiver>
+        <receiver android:name="com.shazam.android.service.player.PlayerMediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.shazam.android.receiver.ReferralTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.UnsubmittedTagMatchedNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.intent.actions.UNSUBMITTED_TAG_MATCHED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.UnsubmittedTagNotMatchedNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.intent.actions.UNSUBMITTED_TAG_NOT_MATCHED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.shazam.android.receiver.AutoTagMatchedReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.actions.AUTO_TAG_MATCHED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.ConfigUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.service.ACTION_ORBIT_CONFIG_UPDATED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.AgofSessionCleanerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.service.ACTION_ORBIT_CONFIG_UPDATED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.WearableTagMatchedReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.intent.actions.WEARABLE_TAG_MATCHED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.WearableTagNotMatchedReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.intent.actions.WEARABLE_TAG_NOT_MATCHED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.InidCookieAdderReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.service.ACTION_ORBIT_CONFIG_UPDATED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.shazam.android.service.ACTION_ORBIT_CONFIG_VALID"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.LastShazamReminderReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.receiver.LastShazamReminderReciever"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.NewsFeedCacheCleanerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.action.USER_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.UserDetailsCacheCleanerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.action.USER_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.ArtistFollowingUserStateChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.action.USER_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.LikeRepositoryCleanerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.action.USER_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shazam.android.receiver.GuaranteedHttpClientBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.shazam.android.guaranteedhttpclient.REGISTER_USER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.shazam.android.service.unsubmitted.UnsubmittedTagsSubmittingService"/>
+        <service android:name="com.shazam.android.service.tagging.AutoTaggingService"/>
+        <service android:name="com.shazam.android.service.gcm.GcmIntentService"/>
+        <service android:name="com.shazam.android.service.account.StubAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:name="com.shazam.android.service.player.MusicPlayerService"/>
+        <service android:name="com.shazam.android.service.wearable.ShazamWearableService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="android.app.default_searchable" android:value="com.shazam.android.TagTrackDetail"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <service android:name="com.shazam.android.wearcom.service.WearComIntentService"/>
+        <activity android:label="@string/title_activity_oauth2_web_view" android:name="com.rdio.android.sdk.activity.OAuth2WebViewActivity"/>
+        <meta-data android:name="com.google.android.wearable.beta.app" android:resource="@xml/android_wear_micro_apk"/>
+    </application>
+</manifest>

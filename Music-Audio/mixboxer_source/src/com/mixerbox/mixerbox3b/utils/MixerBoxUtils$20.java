@@ -1,0 +1,56 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.mixerbox.mixerbox3b.utils;
+
+import android.content.Context;
+import android.content.res.Resources;
+import com.flurry.android.FlurryAgent;
+import com.mixerbox.mixerbox3b.MainPage;
+import com.mixerbox.mixerbox3b.classes.MixerBoxAsyncHttpResponseHandler;
+import java.util.HashMap;
+import java.util.Map;
+
+// Referenced classes of package com.mixerbox.mixerbox3b.utils:
+//            MixerBoxUtils, MixerBoxSharedPreferences
+
+final class tpResponseHandler extends MixerBoxAsyncHttpResponseHandler
+{
+
+    final Context val$ctx;
+    final String val$pid;
+    final boolean val$shouldToast;
+
+    public final void onFailure(Throwable throwable, String s)
+    {
+        super.onFailure(throwable, s);
+        MixerBoxUtils.toastMsg(val$ctx, val$ctx.getResources().getString(0x7f080049), 1);
+    }
+
+    public final void onSuccess(String s)
+    {
+        super.onSuccess(s);
+        s = new HashMap();
+        s.put("id", val$pid);
+        s.put("sub", "1");
+        FlurryAgent.logEvent("action:subscribe", s);
+        if (val$shouldToast)
+        {
+            MixerBoxUtils.toastMsg(val$ctx, val$ctx.getResources().getString(0x7f0800e9), 1);
+            MixerBoxUtils.reloadMySubsPlaylist(val$ctx, false, true);
+            if (!MixerBoxSharedPreferences.getTipFirstSubscribe(val$ctx))
+            {
+                ((MainPage)val$ctx).setOnboardingGuide(7, new boolean[0]);
+            }
+        }
+    }
+
+    ferences(Context context1)
+    {
+        val$pid = s;
+        val$shouldToast = flag;
+        val$ctx = context1;
+        super(final_context);
+    }
+}

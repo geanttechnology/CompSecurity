@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shazam.android.preference.LogoutSettingsPreference android:title="@string/logout" android:key="@string/settings_key_logout" android:summary="@string/logout_of_shazam" android:dialogTitle="@string/logout_question" android:positiveButtonText="@string/yes" android:negativeButtonText="@string/no" android:dialogLayout="@layout/view_dialog_logout" />
+</PreferenceScreen>
