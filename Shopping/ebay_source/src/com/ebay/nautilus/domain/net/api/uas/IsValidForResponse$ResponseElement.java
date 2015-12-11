@@ -1,0 +1,55 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.ebay.nautilus.domain.net.api.uas;
+
+import com.ebay.nautilus.domain.net.AckElement;
+import com.ebay.nautilus.domain.net.ErrorMessageElement;
+import com.ebay.nautilus.domain.net.TimestampElement;
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
+
+// Referenced classes of package com.ebay.nautilus.domain.net.api.uas:
+//            IsValidForResponse
+
+private final class <init> extends com.ebay.nautilus.kernel.util.lement
+{
+
+    final IsValidForResponse this$0;
+
+    public com.ebay.nautilus.kernel.util.lement get(String s, String s1, String s2, Attributes attributes)
+        throws SAXException
+    {
+        if ("ack".equals(s1))
+        {
+            return new AckElement(IsValidForResponse.this);
+        }
+        if ("timestamp".equals(s1))
+        {
+            return new TimestampElement(IsValidForResponse.this);
+        }
+        if ("errorMessage".equals(s1))
+        {
+            return new ErrorMessageElement(IsValidForResponse.this, "http://www.ebay.com/marketplace/security/v1/services");
+        }
+        if ("status".equals(s1))
+        {
+            return new nit>(IsValidForResponse.this, null);
+        } else
+        {
+            return super._mth0(s, s1, s2, attributes);
+        }
+    }
+
+    private ()
+    {
+        this$0 = IsValidForResponse.this;
+        super();
+    }
+
+    this._cls0(this._cls0 _pcls0)
+    {
+        this();
+    }
+}

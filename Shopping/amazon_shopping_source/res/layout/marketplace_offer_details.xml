@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/marketplace_offer_details_header" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="@dimen/marketplace_offer_details_header_height">
+        <include layout="@layout/thumbnail" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/item_title_block" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/Separator" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left" android:id="@id/market_details_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Price" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/market_details_item_shipping_price" android:paddingLeft="@dimen/padding_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:id="@id/market_details_full_tax_include_text" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textStyle="bold" android:gravity="left" android:id="@id/market_details_offer_condition" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/offer_merchant_rating_message" android:padding="@dimen/padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/offer_comments" android:padding="@dimen/padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View style="@style/Separator" />
+    <TextView android:id="@id/add_on_detailed_message" android:padding="@dimen/padding" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/add_on_detailed_message_block_separator" style="@style/Separator" />
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:gravity="left" android:id="@id/market_details_merchant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/market_details_amazon_logo_stub" android:layout="@layout/amazon_logo" android:inflatedId="@id/amazon_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="left" android:id="@id/market_details_merchant_percent_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="left" android:id="@id/market_details_merchant_rating_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View style="@style/Separator" />
+    <TextView android:id="@id/market_details_availability" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/market_details_legal_information_link" android:padding="@dimen/padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legal_info_text" />
+    <TextView android:id="@id/add_on_prominent_message" android:padding="@dimen/padding" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/buy_box" />
+</LinearLayout>

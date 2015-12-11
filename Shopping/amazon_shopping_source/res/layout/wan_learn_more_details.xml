@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/WANLearnMoreImage" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wan_learn_more_details_item_paddingLeft" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wan_learn_more_details_item_spacing" android:text="@string/wan_learn_more_details_item1" style="@style/AVOD.TextAppearance.Light.Regular" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wan_learn_more_details_item_spacing" android:text="@string/wan_learn_more_details_item2" style="@style/AVOD.TextAppearance.Light.Regular" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wan_learn_more_details_item_spacing" android:text="@string/wan_learn_more_details_item3" style="@style/AVOD.TextAppearance.Light.Regular" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wan_learn_more_button_description" style="@style/AVOD.TextAppearance.Light.Regular" />
+            <Button android:id="@id/WANLearnMoreButton" android:paddingTop="@dimen/wan_learn_more_button_paddingTop" android:paddingBottom="@dimen/wan_learn_more_button_paddingBottom" android:layout_width="@dimen/wan_learn_more_button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wan_learn_more_button_marginTop" android:text="@string/wan_learn_more_button" style="@style/AVOD.Widget.Button" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

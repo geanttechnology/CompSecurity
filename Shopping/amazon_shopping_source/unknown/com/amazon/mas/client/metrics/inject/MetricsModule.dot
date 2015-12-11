@@ -1,0 +1,33 @@
+digraph G1 {
+  concentrate = true;
+  n2 [label="@Named SharedPreferences"];
+  n2 -> Context;
+  n2 -> Obfuscator;
+  AmazonDeviceTypeAnnotator -> HardwareEvaluator;
+  n3 [label="@Named Integer"];
+  BasicDeviceInspector -> n3;
+  BasicDeviceInspector -> Context;
+  BasicDeviceInspector -> HardwareEvaluator;
+  BasicDeviceInspector -> SoftwareEvaluator;
+  BasicHardwareEvaluator -> Context;
+  n4 [label="@Named Provider<android.content.SharedPreferences>"];
+  BasicSoftwareEvaluator -> n4;
+  n5 [label="Provider<com.amazon.mas.client.device.hardware.HardwareEvaluator>"];
+  BasicSoftwareEvaluator -> n5;
+  BasicSoftwareEvaluator -> Context;
+  BasicSoftwareEvaluator -> OpenGlExtensionsRetriever;
+  DeviceInspector -> BasicDeviceInspector;
+  GlobalValues -> DeviceInspector;
+  GlobalValues -> HardwareEvaluator;
+  GlobalValues -> SoftwareEvaluator;
+  HardwareEvaluator -> BasicHardwareEvaluator;
+  MASLogger -> MASLoggerAvailabilitySdk;
+  MASLoggerAvailabilitySdk -> AmazonDeviceTypeAnnotator;
+  MASLoggerAvailabilitySdk -> Context;
+  n6 [label="MASLoggerAvailabilitySdk$IdentityProvider"];
+  MASLoggerAvailabilitySdk -> n6;
+  OpenGlActivityInterrogator -> n2;
+  OpenGlExtensionsRetriever -> ActivityLaunchOpenGlExtensionsRetriever;
+  RetrieveOpenGlExtensionsActivity -> n2;
+  SoftwareEvaluator -> BasicSoftwareEvaluator;
+}

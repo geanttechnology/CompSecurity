@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="app_name">Amazon CA</string>
+    <string name="cc_scan_app_name">Scan your Card</string>
+    <string name="cc_scan_center_card">Line up your card with this frame</string>
+    <string name="cc_scan_amazon_secure">Amazon secure</string>
+    <string name="cc_scan_card_not_stored">Actual card image will not be stored.</string>
+    <string name="cc_scan_scanning">Scanning…</string>
+    <string name="cc_scan_success">Successfully scanned</string>
+    <string name="cc_scan_trouble">We are having trouble reading this card.</string>
+    <string name="cc_scan_rescan">Rescan</string>
+    <string name="cc_scan_manual">Type it in</string>
+    <string name="cc_scan_help_page_us">https://www.amazon.ca/ccscanhelpcaen</string>
+    <string name="yes">Yes</string>
+    <string name="search">Search Amazon.ca</string>
+    <string name="rs_results_error_try_again">Try again</string>
+    <string name="rs_results_error_connectivity">Please check your Internet connection and try again.</string>
+    <string name="rs_results_error_generic">"Sorry, there's a problem with this page right now. We're working on fixing it."</string>
+    <string name="rs_search">Search Amazon.ca</string>
+    <string name="rs_bc_search_button">Scan a barcode</string>
+    <string name="ok">OK</string>
+    <string name="loading">Loading …</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="opl_checkout_title">Checkout</string>
+    <string name="opl_cancel_button">Cancel</string>
+    <string name="opl_done_button">Done</string>
+    <string name="opl_save_button">Save</string>
+    <string name="opl_continue_button">Continue</string>
+    <string name="opl_please_select">Please select</string>
+    <string name="opl_please_select_different">%1$s Please select a different one.</string>
+    <string name="opl_order_status_error_address_needs_correcting">There is a problem with the address you entered. Make sure you have the correct city and post code.</string>
+    <string name="opl_order_status_error_invalid_billing_address">The address you selected is not the billing address for that credit card.</string>
+    <string name="opl_order_status_error_cannot_ship_to_address">Some items cannot be shipped to the address you selected.</string>
+    <string name="opl_order_status_error_quantity_unavailable">Some items are not available in the quantities you have selected. Please cancel your purchase and change quantities.</string>
+    <string name="opl_order_status_error_invalid_payment_plan">Please select a valid payment method.</string>
+    <string name="opl_order_status_error_purchase_error">There is a problem with your purchase that we cannot resolve.</string>
+    <string name="opl_order_status_error_state_unknown">An error occurred during purchase. Please check Your Account to confirm your purchase was completed.</string>
+    <string name="opl_review_order_building_your_order">Building your order...</string>
+    <string name="opl_review_order_updating_your_order">Updating your order...</string>
+    <string name="opl_review_order_place_order_button">Place Order</string>
+    <string name="opl_review_order_tend_to_errors">Please tend to the matters in red.</string>
+    <string name="opl_review_order_complete_checkout_within">To receive deal price, complete checkout within:</string>
+    <string name="opl_review_order_deal_time_expired">"Deal price has expired.
+Please review your Cart."</string>
+    <string name="opl_review_order_summary_header">Order Summary</string>
+    <string name="opl_review_order_payment_method_header">Payment Method</string>
+    <string name="opl_review_order_billing_address_label">Billing Address:</string>
+    <string name="opl_review_order_shipping_address_header">Ship to</string>
+    <string name="opl_review_order_shipment_x_of_y_header">Delivery %1$d of %2$d</string>
+    <string name="opl_review_order_extra_legal_title" />
+    <string name="opl_review_order_extra_legal_url" />
+    <string name="opl_review_order_legal_title">Legal Information</string>
+    <string name="opl_review_order_legal_url_android">https://www.amazon.ca/legal_information_mobile_en</string>
+    <string name="opl_review_order_footer">"By placing your order, you agree to Amazon.ca's Conditions of Use &amp; Sale and Privacy Notice.
+ 
+ We work to protect the security of your information during transmission by using Secure Socket Layer (SSL) software which encrypts information you input."</string>
+    <string name="opl_review_order_footer_conditions_of_use_text">Conditions of Use &amp; Sale</string>
+    <string name="opl_review_order_footer_conditions_of_use_url">https://www.amazon.ca/conditions_of_use_mobile_en</string>
+    <string name="opl_review_order_footer_privacy_notice_text">Privacy Notice</string>
+    <string name="opl_review_order_footer_privacy_notice_url">https://www.amazon.ca/privacy_policy_mobile_en</string>
+    <string name="opl_payment_picker_choose_header">Choose a Payment Method</string>
+    <string name="opl_new_payment_authorization_title">Account Authorization</string>
+    <string name="opl_new_payment_authorization_details">"• Because this is the first time you're shipping to this address, we want to make sure this is an authorized use of your account.
+
+• We won't bother you with this extra step next time you send something to this address."</string>
+    <string name="opl_new_payment_credit_card_type_title">Card Type</string>
+    <string name="opl_new_payment_credit_card_select_type">Select Card Type</string>
+    <string name="opl_new_payment_credit_card_number">Credit Card Number</string>
+    <string name="opl_new_payment_credit_card_number_empty_error">Please provide a credit card number</string>
+    <string name="opl_new_payment_credit_card_number_invalid_error">Invalid credit card number</string>
+    <string name="opl_new_payment_credit_card_number_type_error">"The card type doesn't match the number you have entered"</string>
+    <string name="opl_new_payment_credit_card_expiration_date">Expiry Date</string>
+    <string name="opl_new_payment_credit_card_expiration_date_month">Month</string>
+    <string name="opl_new_payment_credit_card_expiration_date_year">Year</string>
+    <string name="opl_new_payment_credit_card_expiration_date_expired_error">Expired</string>
+    <string name="opl_new_payment_credit_card_name">"Cardholder's Name"</string>
+    <string name="opl_new_payment_credit_card_name_empty_error">Please provide a cardholder name</string>
+    <string name="opl_new_payment_credit_card_save_button">Save Credit Card</string>
+    <string name="opl_new_payment_debit_bank_code">Bank Code</string>
+    <string name="opl_new_payment_debit_account_number">Account Number</string>
+    <string name="opl_new_payment_debit_account_name">Account Name</string>
+    <string name="opl_new_payment_debit_bank_code_empty_error">Please provide a direct debit bank code</string>
+    <string name="opl_new_payment_debit_bank_code_invalid_error">Invalid direct debit bank code</string>
+    <string name="opl_new_payment_debit_account_number_empty_error">Please provide a direct debit account number</string>
+    <string name="opl_new_payment_debit_account_number_invalid_error">Invalid direct debit account number</string>
+    <string name="opl_new_payment_debit_account_name_empty_error">Please provide an account name</string>
+    <string name="opl_new_payment_debit_account_save">Save Direct Debit Account</string>
+    <string name="opl_address_picker_choose_shipping_header">Choose a Delivery Address</string>
+    <string name="opl_address_picker_add_shipping">Add a delivery address</string>
+    <string name="opl_address_picker_choose_cvsd_header">Choose a convenience store</string>
+    <string name="opl_address_picker_add_cvsd">Add a Locker Address</string>
+    <string name="opl_address_picker_choose_billing_header">Choose a Billing Address</string>
+    <string name="opl_address_picker_add_billing">Add billing address</string>
+    <string name="opl_new_address_default_country_code">CA</string>
+    <string name="opl_new_address_title">New Address</string>
+    <string name="opl_new_address_title_shipping">Add a Delivery Address</string>
+    <string name="opl_new_address_title_billing">Add an Billing Address</string>
+    <string name="opl_new_address_enter_new">Enter new address</string>
+    <string name="opl_new_address_enter_new_international">Enter new international address</string>
+    <string name="opl_new_address_name">Full Name</string>
+    <string name="opl_new_address_name_empty_error">Please provide a name</string>
+    <string name="opl_new_address_street">Street</string>
+    <string name="opl_new_address_street_empty_error">Please provide an address</string>
+    <string name="opl_new_address_city">City</string>
+    <string name="opl_new_address_city_empty_error">Please provide a city</string>
+    <string name="opl_new_address_state">Province</string>
+    <string name="opl_new_address_zip">Postal Code</string>
+    <string name="opl_new_address_country">Country</string>
+    <string name="opl_new_address_select_country">Select Country</string>
+    <string name="opl_new_address_phone">Phone</string>
+    <string name="opl_new_address_phone_empty_error">Please provide a phone number</string>
+    <string name="opl_new_address_save">Save Address</string>
+    <string name="opl_new_address_jp_name" />
+    <string name="opl_new_address_jp_zip1" />
+    <string name="opl_new_address_jp_zip2" />
+    <string name="opl_new_address_jp_state" />
+    <string name="opl_new_address_jp_line1" />
+    <string name="opl_new_address_jp_line2" />
+    <string name="opl_new_address_jp_company" />
+    <string name="opl_new_address_jp_phone" />
+    <string name="opl_new_address_cn_province">State</string>
+    <string name="opl_new_address_cn_please_select_province">Select State</string>
+    <string name="opl_new_address_cn_city">City</string>
+    <string name="opl_new_address_cn_please_select_city">Select City</string>
+    <string name="opl_new_address_cn_district">District</string>
+    <string name="opl_new_address_cn_please_select_district">Select District</string>
+    <string name="opl_cvsd_search_store_button" />
+    <string name="opl_cvsd_search_address" />
+    <string name="opl_cvsd_search_zip" />
+    <string name="opl_cvsd_search_landmark" />
+    <string name="opl_cvsd_search_location" />
+    <string name="opl_cvsd_search_placeholder_address" />
+    <string name="opl_cvsd_search_placeholder_landmark" />
+    <string name="opl_cvsd_select_prefecture" />
+    <string name="opl_cvsd_use_current_location_confirm" />
+    <string name="opl_cvsd_ship_to_the_selected_store" />
+    <string name="opl_cvsd_search_for_a_convenience_store" />
+    <string name="opl_cvsd_enter_zip_code" />
+    <string name="opl_cvsd_search_by" />
+    <string name="opl_cvsd_location_settings_message" />
+    <string name="opl_cvsd_location_settings_title" />
+    <string name="opl_cvsd_manual_location_settings_message" />
+    <string name="opl_cvsd_manual_location_settings_title" />
+    <string name="opl_recipient_label" />
+    <string name="opl_recipient_instructions_header" />
+    <string name="opl_recipient_instructions_footer" />
+    <string name="opl_gift_card_promo_code_none">None</string>
+    <string name="opl_gift_card_promo_code_title">Gift/Promo Code</string>
+    <string name="opl_gift_card_promo_code_redeem_warning">Promotional gift certificates from Amazon.ca may only be redeemed when you place an order.</string>
+    <string name="opl_shipping_options_select_speed_header">Please Select a Shipping Speed</string>
+    <string name="opl_shipping_options_select_preference_header">Select a delivery preference</string>
+    <string name="opl_delivery_time_title">Preferred Delivery Time</string>
+    <string name="opl_delivery_time_select_error">Please select a delivery time</string>
+    <string name="opl_delivery_instructions_title">Delivery Instructions</string>
+    <string name="opl_delivery_instructions_label">Instructions: </string>
+    <string name="opl_delivery_instructions_none">None</string>
+    <string name="opl_gift_options_label">Gift Options: </string>
+    <string name="opl_gift_options_none">None</string>
+    <string name="opl_gift_options_gift_message">Gift message</string>
+    <string name="opl_gift_options_title">Gift Options</string>
+    <string name="opl_gift_options_gift_wrap_colon_label">Gift-wrap:</string>
+    <string name="opl_gift_options_gift_wrap_no_gift_wrap">No gift-wrap</string>
+    <string name="opl_gift_options_gift_wrap_colon_not_available">Gift-wrap: Not Available</string>
+    <string name="opl_gift_options_gift_wrap_price">%1$s (%2$s)</string>
+    <string name="opl_gift_options_gift_wrap_warning">Large or irregular-shaped items may be placed in a blue gift bag.</string>
+    <string name="opl_gift_options_gift_message_maximum">(max %1$d characters)</string>
+    <string name="opl_gift_options_dont_print_prices_checkbox">"Don't print prices on packing slips."</string>
+    <string name="opl_gift_options_dont_print_prices_warning">"Not all merchants are able to suppress prices in this way, so items not from Amazon.ca might ship with price information printed even if you choose \"Don't Print.\""</string>
+    <string name="opl_invoice_header">Invoice</string>
+    <string name="opl_invoice_explanation">For digital goods, mobile phones and small appliances, the full description of the items will be printed on the invoice. If your order contains other types of goods, please provide the following information</string>
+    <string name="opl_invoice_learn_more_link">Learn more</string>
+    <string name="opl_invoice_learn_more_title">Invoice help</string>
+    <string name="opl_invoice_learn_more_url">https://www.amazon.com/invoice_help_mobile</string>
+    <string name="opl_invoice_no_description_or_category_error">Please fill in the invoice description and content</string>
+    <string name="opl_invoice_description_title">Invoice description</string>
+    <string name="opl_invoice_category_title">Invoice content</string>
+    <string name="opl_invoice_category_choose_header">Choose invoice category</string>
+    <string name="opl_confirmation_order_in_progress_title">Order in progress...</string>
+    <string name="opl_confirmation_dismiss_order_warning">"We are unable to determine if your order will be placed or cancelled if you leave this screen now. To view order status, select Your Account from the device menu, then select View/Cancel Items or Orders.
+
+Are you sure you want to leave this screen?"</string>
+    <string name="opl_confirmation_dismiss_order_yes">Yes</string>
+    <string name="opl_confirmation_dismiss_order_no">No</string>
+    <string name="opl_confirmation_order_problem_title">Problems with your order</string>
+    <string name="opl_confirmation_unable_to_process_purchase">We were temporarily unable to process your purchase.</string>
+    <string name="opl_confirmation_thank_you_title">Thank You</string>
+    <string name="opl_confirmation_order_placed_header">Your order has been placed.</string>
+    <string name="opl_confirmation_cancel_order_button">Cancel This Order Now</string>
+    <string name="opl_confirmation_track_orders_button">View or track orders</string>
+    <string name="opl_confirmation_we_will_send_you_an_email">An e-mail confirmation has been sent to you.</string>
+    <string name="opl_confirmation_order_shipping_speed">Shipping Speed:</string>
+    <string name="opl_confirmation_order_shipments">Shipments</string>
+    <string name="opl_confirmation_order_orders">Orders</string>
+    <string name="opl_confirmation_order_x_of_y_header">Order %1$d of %2$d</string>
+    <string name="opl_confirmation_order_info">Order Info</string>
+    <string name="past_orders_order_date">Order Date:</string>
+    <string name="past_orders_order_number">Order #:</string>
+    <string name="past_orders_period_title">View Orders Placed in</string>
+    <string name="past_orders_period_header">View Order Period</string>
+    <string name="past_orders_summary_loading">Loading orders...</string>
+    <string name="past_orders_summary_no_orders">No orders</string>
+    <string name="past_orders_summary_order_status_open">Open Orders</string>
+    <string name="past_orders_summary_order_status_complete">Complete Orders</string>
+    <string name="past_orders_summary_order_status_needs_attention">Needs Your Attention</string>
+    <string name="past_orders_summary_recipient">Recipient:</string>
+    <string name="past_orders_summary_items_ordered">Items Ordered:</string>
+    <string name="past_orders_summary_view_change_track_order">View, change or track order</string>
+    <string name="past_orders_summary_view_track_order">View or track order</string>
+    <string name="past_orders_details_loading">Loading Order...</string>
+    <string name="past_orders_details_order_total">Order Total:</string>
+    <string name="past_orders_details_ship_to_colon">Ship To:</string>
+    <string name="past_orders_details_payment_method">Payment Method</string>
+    <string name="past_orders_details_billing_address">Billing Address</string>
+    <string name="past_orders_details_gc_promo_code">Gift Certificate/Promo Code:</string>
+    <string name="past_orders_details_gc_promo_code_none">None</string>
+    <string name="past_orders_details_payment_information">Payment Information</string>
+    <string name="past_orders_details_need_to_cancel">Need to cancel an item?</string>
+    <string name="past_orders_details_shipment_header">Delivery #%1$d: %2$s</string>
+    <string name="past_orders_details_invoice">Invoice</string>
+    <string name="past_orders_details_invoice_title">Invoice description:</string>
+    <string name="past_orders_details_invoice_category">Invoice content:</string>
+    <string name="past_orders_details_recipient_colon" />
+    <string name="past_orders_track_title">Track Package</string>
+    <string name="past_orders_track_header">Track Your Package</string>
+    <string name="past_orders_track_loading">Loading Delivery Tracking</string>
+    <string name="past_orders_track_shipment_date">Delivery Date:</string>
+    <string name="past_orders_track_destination">Destination:</string>
+    <string name="past_orders_track_ship_carrier">Carrier:</string>
+    <string name="past_orders_track_tracking_number">Tracking Number:</string>
+    <string name="past_orders_track_status">Status:</string>
+    <string name="past_orders_track_arrival_date">Arrival Date:</string>
+    <string name="past_orders_track_date">Date:</string>
+    <string name="past_orders_track_time">Time:</string>
+    <string name="past_orders_track_location">Location:</string>
+    <string name="past_orders_cancel_title">Cancel Items</string>
+    <string name="past_orders_cancel_select_header">Select item(s) you wish to cancel</string>
+    <string name="past_orders_cancel_qty">Qty:</string>
+    <string name="past_orders_cancel_optional">Optional</string>
+    <string name="past_orders_cancel_cancel_items_button">Cancel Item(s)</string>
+    <string name="past_orders_cancel_no_items_to_cancel">Please select the checkbox next to the item you wish to cancel.</string>
+    <string name="past_orders_cancel_updating_order">Updating order...</string>
+    <string name="past_orders_cancel_order_cancelled_title">Order Cancelled</string>
+    <string name="past_orders_cancel_this_order_cancelled">This order has been cancelled.</string>
+    <string name="past_orders_cancel_reason">Reason for Cancellation</string>
+    <string name="past_orders_cancel_your_order_no_longer_qualifies">Your order no longer qualifies for FREE Super Saver Delivery. Please choose another delivery speed below.</string>
+    <string name="shipping_speed_format_est_delivery">Est. Delivery: %1$s</string>
+    <string name="opl_address_name_rule">required maxlength:50</string>
+    <string name="opl_address_street_rule">required maxlength:60</string>
+    <string name="opl_address_city_rule">required maxlength:50</string>
+    <string name="opl_address_state_rule">maxlength:50</string>
+    <string name="opl_address_zip_rule">required maxlength:20</string>
+    <string name="opl_address_zip1_rule">numeric minlength:3 maxlength:3</string>
+    <string name="opl_address_zip2_rule">numeric minlength:4 maxlength:4</string>
+    <string name="opl_address_phone_rule">required maxlength:20</string>
+    <string name="opl_address_line1_rule">required maxlength:50</string>
+    <string name="opl_address_line2_rule">maxlength:50</string>
+    <string name="opl_credit_card_number_rule">numeric minLength:13 maxlength:19</string>
+    <string name="opl_credit_card_name_rule">required maxlength:40</string>
+    <string name="opl_direct_debit_de_bank_code_rule">numeric required maxlength:8</string>
+    <string name="opl_direct_debit_de_account_number_rule">numeric required maxlength:11</string>
+    <string name="opl_direct_debit_de_account_name_rule">required maxlength:50</string>
+    <string name="opl_direct_debit_at_bank_code_rule">numeric required maxlength:8</string>
+    <string name="opl_direct_debit_at_account_number_rule">numeric required maxlength:11</string>
+    <string name="opl_direct_debit_at_account_name_rule">required maxlength:50</string>
+    <string name="opl_gift_message_rule">maxlength:240</string>
+    <string name="opl_invoice_title_rule">required maxlength:21</string>
+    <string name="opl_delivery_instruction_rule">maxlength:15</string>
+    <string name="opl_total">Order Total:</string>
+    <string name="opl_review_order_footer_sales_tax_link_title" />
+    <string name="opl_review_order_footer_sales_tax_link_url" />
+    <string name="opl_review_order_item_edit">[Edit]</string>
+    <string name="opl_gift_card_promo_code_balance_label">Gift Card/Promo Code Balance Applied</string>
+    <string name="opl_gift_card_promo_code_redeemed_success">Gift card/promo code %1$s has been redeemed successfully.</string>
+    <string name="opl_gift_card_not_apply">Do not apply gift card</string>
+    <string name="opl_gift_card_promo_code_redeem_button_text">Redeem new gift card or promo</string>
+    <string name="opl_gift_card_promo_code_enter_hint">Enter new gift card or promo code</string>
+    <string name="opl_gift_card_promo_code_add_credit_card_to_not_apply_balance">If you do not want to apply this balance, add another payment option to your account.</string>
+    <string name="opl_promo_code_balance_label">Promo Code Balance Applied</string>
+    <string name="opl_gift_card_promo_code_balance_zero">None</string>
+    <string name="alert_dialog_ok_button">OK</string>
+    <string name="name_colon_value">%1$s: %2$s</string>
+    <string name="key_dot_value">%1$s. %2$s</string>
+    <string name="new_to_amazon_create_an_account">New to Amazon.ca? Create an account</string>
+    <string name="undo">Undo</string>
+    <string name="no">No</string>
+    <string name="refresh">Refresh</string>
+    <string name="eula_title">Amazon Application Terms of Use</string>
+    <string name="eula_version">1</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_dont_accept">"Don't accept"</string>
+    <string name="contact_us_title">Contact Us</string>
+    <string name="more_to_explore">More to Explore…</string>
+    <string name="home">Home</string>
+    <string name="home_title">Welcome</string>
+    <string name="home_sign_in_message_welcome">Hello, %1$s</string>
+    <string name="home_sign_in_message_youraccount">Your account</string>
+    <string name="home_sign_in">Sign In</string>
+    <string name="home_sign_out">Sign Out</string>
+    <string name="home_search_bar_hint_portrait">Amazon.ca</string>
+    <string name="smile_home_search_bar_hint_portrait">Amazon</string>
+    <string name="smile_search">Search Amazon</string>
+    <string name="home_promo_clickstream_prefix">Promo_</string>
+    <string name="home_promo0_action_android">open_url</string>
+    <string name="home_promo0_param_android">https://www.amazon.ca/gp/aw/gc</string>
+    <string name="home_promo1_action_android">wishlist</string>
+    <string name="home_promo1_param_android" />
+    <string name="recommendations_title">Your Recommendations</string>
+    <string name="recommendations_explanation">"Amazon recommends items that may interest you based on items you own, items you've rated, and more.
+
+Please sign in to see your personalized recommendations."</string>
+    <string name="recommendations_explanation_button">Already a customer? Sign In</string>
+    <string name="recommendations_item_ownit">I Own It</string>
+    <string name="recommendations_item_notinterest">Not Interested</string>
+    <string name="recommendations_fix_this">Fix this recommendation</string>
+    <string name="recommendations_ok">OK</string>
+    <string name="recommendations_alert_info">We were unable to send your ratings back to Amazon. You will need to re-do your changes. We apologize for the inconvenience.</string>
+    <string name="recommendations_no_recs_explanation">Sorry, we have no recommendations for you today.</string>
+    <string name="search_go_button">Go</string>
+    <string name="search_menu_item">Search</string>
+    <string name="search_results_title">Search Results</string>
+    <string name="search_refine_by_category">Select Department</string>
+    <string name="search_select_department">Select Department</string>
+    <string name="search_all_departments">All Departments</string>
+    <string name="search_refinement">%1$s (%2$s)</string>
+    <string name="search_your_search_did_not_match">Your search \"%1$s\" did not match any products.</string>
+    <string name="search_end_of_x_top_results_for_y">End of %1$d top results for \"%2$s\"</string>
+    <string name="search_end_of_x_results_for_y_in_z">End of %1$d top results for \"%2$s\" in %3$s</string>
+    <string name="search_end_of_results_sort_by_x_in_y">End of top results in %1$s, %2$s</string>
+    <string name="search_results_for">%1$s Results%2$s by %3$s</string>
+    <string name="search_sort_relevance">Relevance</string>
+    <string name="search_results_in_department"> in %1$s</string>
+    <string name="searching_for">Searching for \"%1$s\"</string>
+    <string name="search_for_more_results">For more results, select a department:</string>
+    <string name="points">Points:</string>
+    <string name="item_row_byline_format">%1$s</string>
+    <string name="item_row_byline_and_binding_format">%1$s (%2$s)</string>
+    <string name="item_row_x_new_and_used_from_y_format">%1$d New &amp; Used from %2$s</string>
+    <string name="item_row_new_and_used_from_y_format">New &amp; Used from %1$s</string>
+    <string name="search_no_match_message">We could not find this product.</string>
+    <string name="search_link_help">Help</string>
+    <string name="search_try_again">Search again</string>
+    <string name="search_error_message_cannot_open_camera">The camera could not open. Please try again.</string>
+    <string name="search_error_message_out_of_memory">Insufficient memory. Please try again.</string>
+    <string name="bc_searching_for">Searching…</string>
+    <string name="bc_search_button">Scan a barcode</string>
+    <string name="bc_search_bad_match">Report mismatch</string>
+    <string name="bc_search_bad_match_prompt">Not what you scanned?</string>
+    <string name="bc_search_bad_match_acknowledgement">Thank you for helping us improve this feature.</string>
+    <string name="bc_search_result">Item Found</string>
+    <string name="bc_search_result_plural">Items Found</string>
+    <string name="bc_search_no_result">Item Not Found</string>
+    <string name="bc_search_help_title">Scan a Barcode</string>
+    <string name="bc_search_help_getting_started_title">Getting Started</string>
+    <string name="bc_search_help_tips_title">Tips</string>
+    <string name="bc_search_help_tips_text_android">"Hold your device steady.
+ 
+ Try to avoid shadows or glare on the barcode.
+ 
+ The barcode will be read automatically. A beep will sound when the scan is complete.
+ 
+ If the barcode appears blurry, try moving your device closer or further away until it comes into focus."</string>
+    <string name="bc_search_help_info_title">Info</string>
+    <string name="bc_search_new_help_info_text">Barcodes supported by the Amazon App include UPC and EAN. Barcodes which are not currently supported may not scan successfully.</string>
+    <string name="bc_search_help_interstitial_scan_button">   Try it   </string>
+    <string name="bc_search_help_interstitial_text">A couple of tips to get you started:</string>
+    <string name="bc_search_help_bullet">•</string>
+    <string name="bc_search_new_help_text_line1">Hold your device in landscape mode. Centre the barcode so that fits inside the orange rectangle.</string>
+    <string name="bc_search_new_help_text_line2">If there are two barcodes, position the barcode in the viewfinder as shown below:</string>
+    <string name="bc_picture_format_unspport_message">"We're sorry. Barcode scanning by Amazon is not supported on your phone at this time."</string>
+    <string name="scanit_search_camera_overlay_info_text_line1">Barcode will scan automatically.</string>
+    <string name="scanit_search_camera_overlay_info_text_line2">Try to avoid shadows and glare.</string>
+    <string name="scanit_search_camera_overlay_scanning">Scanning…</string>
+    <string name="scanit_search_camera_overlay_steady">Hold steady…</string>
+    <string name="scanit_search_camera_overlay_start_text">Centre barcode between the arrows</string>
+    <string name="product_details">Product Details</string>
+    <string name="product_details_activity_name">Amazon App</string>
+    <string name="dp_show_price">Show Price</string>
+    <string name="dp_why_hide_price">"Why don't we show the price?"</string>
+    <string name="dp_add_to_cart_to_see_price">Add to cart to see price.</string>
+    <string name="dp_list_price">List Price</string>
+    <string name="dp_points">Points</string>
+    <string name="dp_price">Price</string>
+    <string name="dp_ppu_format_string">(%1$s/%2$s%3$s)</string>
+    <string name="dp_new_and_used">New &amp; Used (0)</string>
+    <string name="dp_plus_shipping">+ %1$s Shipping</string>
+    <string name="dp_eligible_free_super_saver_shipping">Eligible for FREE Super Saver Delivery</string>
+    <string name="dp_free_super_saver_shipping">Eligible for Free Super Saver Delivery</string>
+    <string name="dp_eligible_for_prime">Eligible for Prime</string>
+    <string name="dp_prime">Prime</string>
+    <string name="dp_all_prices_include_tax" />
+    <string name="dp_deal_row_title">Lightning Deal</string>
+    <string name="dp_select_x">Select %1$s</string>
+    <string name="elipsis">…</string>
+    <string name="dp_special_offer">** Special Offer **</string>
+    <string name="dp_details">Details</string>
+    <string name="details_features_and_more">Details, Features &amp; More</string>
+    <string name="dp_trackListHeader">Track Listings</string>
+    <string name="dp_discLabel">Disc %1$s</string>
+    <string name="customer_reviews">Customer Reviews</string>
+    <string name="customer_reviews_count"> (%1$s)</string>
+    <string name="average_customer_review">Average Customer Review</string>
+    <string name="customer_reviews_ordered_by">Ordered by most helpful</string>
+    <string name="customer_reviews_count_reviews">(%1$d reviews)</string>
+    <string name="customer_review_published_by_android">Published %1$te %2$tb %3$tY by %4$s</string>
+    <string name="customer_reviews_histogram_1_stars">1 star:</string>
+    <string name="customer_reviews_histogram_2_stars">2 star:</string>
+    <string name="customer_reviews_histogram_3_stars">3 star:</string>
+    <string name="customer_reviews_histogram_4_stars">4 star:</string>
+    <string name="customer_reviews_histogram_5_stars">5 star:</string>
+    <string name="mp_new_and_used_offers">New &amp; Used Offers</string>
+    <string name="mp_a_to_z_safe_buying_guarantee">A-to-Z Safe Buying Guarantee</string>
+    <string name="mp_a_to_z_safe_buying_guarantee_url">https://www.amazon.ca/atoz_guarantee_mobile_en</string>
+    <string name="mp_offers_from_before_price">%1$d offers from </string>
+    <string name="mp_offers_from_after_price" />
+    <string name="mp_sold_by">Sold by</string>
+    <string name="mp_percent_positive">%1$d%% positive</string>
+    <string name="mp_count_ratings">(%1$d ratings)</string>
+    <string name="mp_comments">Comments: %1$s</string>
+    <string name="sharing_email_subject">Check out this item at Amazon.ca</string>
+    <string name="sharing_sms_heading">Check this out on Amazon:</string>
+    <string name="sharing_share">Share Item</string>
+    <string name="sharing_see_all">See All...</string>
+    <string name="sharing_friends">Friends</string>
+    <string name="buy_box_order_within_hr_min_for">Order within %1$dhr %2$dmin for:</string>
+    <string name="buy_box_order_within_hr_for">Order within %1$dhr for:</string>
+    <string name="buy_box_order_within_min_for">Order within %1$dmin for:</string>
+    <string name="buy_box_1_click_prime_with_get_it_by_promise_android">Get it %1$ta %2$tb %3$te</string>
+    <string name="buy_box_buy_now">Buy Now</string>
+    <string name="buy_box_buy_now_with_one_click">Buy Now with 1–Click</string>
+    <string name="buy_box_pre_order">Pre-Order</string>
+    <string name="buy_box_pre_order_now">Pre-Order Now</string>
+    <string name="buy_box_preorder_with_one_click">Pre-Order with 1–Click</string>
+    <string name="buy_box_buy_now_from_amazon_appstore">Buy Now from Amazon Appstore</string>
+    <string name="buy_box_install_amazon_appstore_to_buy">Install Amazon Appstore to buy</string>
+    <string name="buy_box_add_to_cart">Add to cart</string>
+    <string name="buy_box_add_to_wishlist">Add to Wish List</string>
+    <string name="buy_box_see_all_buying_options">See all buying options</string>
+    <string name="buy_box_to_buy_select">To buy, select %1$s</string>
+    <string name="buy_box_to_buy_select_separator">/</string>
+    <string name="black_curtain_age_confirm" />
+    <string name="black_curtain_yes" />
+    <string name="black_curtain_no" />
+    <string name="age_verification_title" />
+    <string name="age_verification_explanation" />
+    <string name="age_verification_your_birthday" />
+    <string name="age_verification_please_enter" />
+    <string name="age_verification_privacy" />
+    <string name="age_verification_continue" />
+    <string name="age_verification_wrong_age" />
+    <string name="age_verification_edit_if_incorrect" />
+    <string name="age_verification_continue_shopping" />
+    <string name="about">About</string>
+    <string name="about_description">Amazon App for Android</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_build">Build %1$s</string>
+    <string name="about_missing_placeholder">-</string>
+    <string name="about_copyright">© 2008-2014, Amazon.com, Inc. or its affiliates</string>
+    <string name="wishlist_adding_to_wishlist">Adding to Wish List…</string>
+    <string name="wishlist_added_to_wishlist">Item was added to your Wish List</string>
+    <string name="wishlist_default_title">Your Wish List</string>
+    <string name="wishlist_getting_lists">Getting your wish lists…</string>
+    <string name="wishlist_add_dialog_title">Choose a Wish List to add to:</string>
+    <string name="more">More</string>
+    <string name="more_wishlist_button">Wish List</string>
+    <string name="more_recommendations_button">Recommendations</string>
+    <string name="more_your_account_button">Your Account</string>
+    <string name="more_help_button">Help</string>
+    <string name="more_about_button">About</string>
+    <string name="more_provide_feedback_button">Provide App Feedback</string>
+    <string name="more_privacy_notice_button">Privacy Notice</string>
+    <string name="more_get_amazon_android_apps" />
+    <string name="more_get_amazon_android_apps_url" />
+    <string name="more_email_gift_card">Gift Certificates</string>
+    <string name="more_email_gift_card_url">https://www.amazon.ca/gp/aw/gc</string>
+    <string name="youraccount">Your Account</string>
+    <string name="youraccount_your_orders">Your Orders</string>
+    <string name="youraccount_account_settings">Account Settings</string>
+    <string name="youraccount_one_click_button">View or Change 1–Click Settings</string>
+    <string name="ya_site_email_pref_button" />
+    <string name="ya_site_email_pref_url" />
+    <string name="ya_shipment_tracking">Delivery Tracking</string>
+    <string name="ya_points_title" />
+    <string name="ya_my_point_summary" />
+    <string name="ya_view_points_summary_and_learn_about_points" />
+    <string name="ya_sign_in_to_view_points_summary" />
+    <string name="ya_points_about_title" />
+    <string name="cart">Cart</string>
+    <string name="cart_loading">Loading…</string>
+    <string name="cart_adding_to_cart">Adding to cart…</string>
+    <string name="cart_added_to_cart">Item was added to cart</string>
+    <string name="cart_added_timed_to_cart">You have %1$d mins to proceed through checkout to receive deal price.</string>
+    <string name="cart_time_to_checkout_prompt">left to check-out</string>
+    <string name="cart_go_to_shopping_cart_button_dialog">"Go to
+Cart"</string>
+    <string name="cart_continue_shopping_button">Continue Shopping</string>
+    <string name="cart_continue_shopping_button_dialog">"Continue
+Shopping"</string>
+    <string name="cart_checkout_button">Checkout</string>
+    <string name="cart_sign_in_to_checkout_button">Sign in to check out</string>
+    <string name="cart_to_buy_now_label">To Buy Now</string>
+    <string name="cart_quantity_label">Qty</string>
+    <string name="cart_to_buy_later_label">Saved Items - To Buy Later</string>
+    <string name="cart_empty_details_android">Your Shopping Cart lives to serve. Give it purpose--fill it with books, CDs, videos, DVDs, electronics, and more.</string>
+    <string name="cart_sign_in_button">Already a customer? Sign in</string>
+    <string name="cart_cart_items_empty">"You saved the item(s) below to buy later.
+
+If you'd like to buy one--or more--now, just select the Move to Cart button next to the item(s) you're ready to buy."</string>
+    <string name="cart_saved_items_empty_android">Your Saved Items list is empty.</string>
+    <string name="cart_points_total">Points Subtotal = </string>
+    <string name="cart_change_any_quantities">Change any quantities above?</string>
+    <string name="cart_update_button">Update</string>
+    <string name="cart_updating_quantity">Updating quantity…</string>
+    <string name="cart_delete_button">Delete</string>
+    <string name="cart_save_for_later_button">Save for later</string>
+    <string name="cart_saving_for_later">Saving for later…</string>
+    <string name="cart_move_to_cart_button">Move to Cart</string>
+    <string name="cart_moving_to_cart">Moving to Cart…</string>
+    <string name="cart_deleting">Deleting…</string>
+    <string name="cart_cancel_warning">"Action interrupted.
+
+Please review your Cart to ensure your intended changes were made."</string>
+    <string name="cart_messages_title">Cart Alert</string>
+    <string name="cart_empty">Your Shopping Cart is empty.</string>
+    <string name="goldbox">"Today's Deals"</string>
+    <string name="goldbox_more">More %1$s</string>
+    <string name="goldbox_price_percent_off">%1$s (%2$d%% off)</string>
+    <string name="goldbox_check_out_before_we_run_out">Check out fast before we run out.</string>
+    <string name="deal_discount_applied_at_checkout">Discount applied at checkout. One per customer.</string>
+    <string name="deal_starts_in_h_m_s">Deal starts in %1$02d:%2$02d:%3$02d</string>
+    <string name="deal_h_m_s_remaining">%1$02d:%2$02d:%3$02d remaining</string>
+    <string name="deal_end_time_tz">Ends at %1$s %2$s</string>
+    <string name="deal_time_tz_upcoming_deal">Starts %1$s %2$s</string>
+    <string name="deal_percent_claimed">%1$d%% Claimed</string>
+    <string name="deal_select_an_option">Select options to see Lightning Deal price and availability</string>
+    <string name="privacy_notice_url">https://www.amazon.ca/privacy_policy_mobile_en</string>
+    <string name="send_email">Send E-mail</string>
+    <string name="legal_info_text">Legal Information</string>
+    <string name="legal_deal_term_and_use_string" />
+    <string name="legal_info_url_android_with_aiv">https://www.amazon.ca/legal_information_mobile_en</string>
+    <string name="legal_deal_term_and_use" />
+    <string name="legal_deal_help" />
+    <string name="digital_downlaod_extra_availability_message">This mobile application does not currently support digital downloads. Add this item to your WishList and you can view and purchase it from your computer.</string>
+    <string name="provide_feedback_to_address_android">feedback-amazon-app-android-ca@amazon.com</string>
+    <string name="provide_feedback_subject_android">Amazon App for Android</string>
+    <string name="do_not_remove_device_id">Please do not remove the following ID, we are using it to help us debug problems: %1$s. Sincerely, the Amazon Mobile Shopping Team.</string>
+    <string name="navigate_forward_to_uri">View Web Location</string>
+    <string name="web_view_loading">Loading …</string>
+    <string name="help_root_title">Help</string>
+    <string name="help_about">About Amazon App for Android</string>
+    <string name="help_and_about_title">Help &amp; About</string>
+    <string name="help_shopping_and_ordering_title">Shopping &amp; Ordering</string>
+    <string name="help_viewing_and_changing_orders_title">Viewing &amp; Changing Orders</string>
+    <string name="help_shipping_and_delivery_title">Dispatch &amp; Delivery</string>
+    <string name="help_your_account_and_settings_title">Your Account &amp; Settings</string>
+    <string name="help_using_amazon_remembers_title">Using Amazon Remembers</string>
+    <string name="help_eula_title">Amazon Application Terms of Use</string>
+    <string name="help_email_customer_service_title">E-mail Customer Service</string>
+    <string name="help_call_customer_service_title">Call Customer Service</string>
+    <string name="help_contact_us_title">Contact Us</string>
+    <string name="help_shopping_and_ordering_find_an_item_title">Find an Item</string>
+    <string name="help_shopping_and_ordering_find_an_item_content">"To find an item, enter your search term in the Search box on the Home page or select Search from the device Menu.
+ 
+ To view items within a specific category, select \"All Departments\" at the top of the search results screen and choose a department."</string>
+    <string name="help_shopping_and_ordering_buy_an_item_title">Buy an Item</string>
+    <string name="help_shopping_and_ordering_buy_an_item_content">"Once you find an item you wish to buy, you may purchase it by selecting either the Buy Now or Add to Cart button near the bottom of that item's screen.
+ 
+ If you are not currently signed in from your mobile device, you will be prompted to enter the e-mail address and password associated with your Amazon.ca account in order to complete your purchase.
+ 
+ Please Note: Items placed in your cart will also be visible on the Amazon.ca website and vice versa."</string>
+    <string name="help_shopping_and_ordering_view_or_edit_shopping_cart_title">View or Edit Shopping Cart</string>
+    <string name="help_shopping_and_ordering_view_or_edit_shopping_cart_content">"To view items placed in your shopping cart from your mobile device or computer, select Cart from the Home page or device Menu.
+ 
+ To purchase the items in your cart, select the Checkout button at the top or bottom of the Cart screen. To delete, edit quantities, or move items in your cart, highlight the item and select your desired option."</string>
+    <string name="help_shopping_and_ordering_view_or_edit_wish_list_title">View or Edit Wish List</string>
+    <string name="help_shopping_and_ordering_view_or_edit_wish_list_content">"To view items in any of your Wish Lists, select Wish List from More in the device Menu . If you have more than one Wish List, you may choose which one to view from the top of the Wish List page.
+ 
+ To delete items in your Wish List, highlight the item and select More options.
+ 
+ Please Note: Items placed in your Wish List will also be visible on the Amazon.ca website and vice versa."</string>
+    <string name="help_shopping_and_ordering_mobile_1click_ordering_title">Mobile 1–Click Ordering</string>
+    <string name="help_shopping_and_ordering_mobile_1click_ordering_content">"1–Click ordering makes buying from Amazon.ca on your mobile device fast and easy.
+ 
+ Turning on Mobile 1–Click allows you to skip the shopping cart and the checkout process. You simply select the Buy now with 1–Click button on any product page and have your order automatically charged to the default payment method on your account and shipped to the default address.
+ 
+ To turn Mobile 1–Click on or off from your mobile device, select Your Account from the Home page or device Menu, choose View or Change 1–Click Settings, and follow the instructions. You may also turn off Mobile 1–Click from your computer via Your Account | View or change your 1–Click Settings."</string>
+    <string name="help_shopping_and_ordering_add_new_address_title">Add New Address</string>
+    <string name="help_shopping_and_ordering_add_new_address_content">"You can add a new delivery or billing address during the checkout process by manually entering the address or selecting an existing one from your Amazon Address Book.
+ 
+ Please Note: As on the PC site, if you enter a new delivery address during the checkout process, you will be prompted to also provide your credit card information in order to confirm your identity."</string>
+    <string name="help_shopping_and_ordering_select_gift_options_title">Select Gift Options</string>
+    <string name="help_shopping_and_ordering_select_gift_options_content">"You can make your gift festive with gift-wrap, a printed gift card, and/or a free gift note to be included on the packing slip.
+ 
+ Gift-wrap prices vary according to the size of the item.
+ 
+ Items designated as gifts that are shipped from Amazon.ca to a single Canadian address will not display prices on their packing slips. Other sellers' gift policies may differ.
+ 
+ Please Note: Gift-wrap, and/or gift note options are not available for all items."</string>
+    <string name="help_viewing_and_changing_orders_cancel_an_item_or_order_title">Cancel an Item or Order</string>
+    <string name="help_viewing_and_changing_orders_cancel_an_item_or_order_content">"You may cancel your order for any item sold by Amazon.ca, provided that the order has not yet entered the shipping process. To cancel an order immediately after placing it on your mobile device, select Cancel This Order Now on the Thank You page. You may also cancel items or orders placed from your device by selecting Your Account from the device Menu, then View or Cancel Items/Orders.
+ 
+ If the item you want to cancel has already entered the shipping process, it cannot be canceled by you or by our customer service department. However, you can return the item for a refund.
+ 
+ Please Note: We cannot assist you in cancelling any orders you have placed from an Amazon Merchant. Instead, please contact the seller directly.
+ 
+ To change invoice or delivery information for an order, please visit Your Account on Amazon.ca from your computer."</string>
+    <string name="help_viewing_and_changing_orders_combine_orders_title">Combine Orders</string>
+    <string name="help_viewing_and_changing_orders_combine_orders_content">"If you place multiple mobile orders for items sold by Amazon.ca whenever we can we will combine the orders into as few deliveries as possible to reduce delivery costs.
+ 
+ Please Note: Orders placed through Amazon Marketplace, Amazon Merchants, or other third-party sellers cannot be combined."</string>
+    <string name="help_viewing_and_changing_orders_view_recent_orders_title">View Recent Order(s)</string>
+    <string name="help_viewing_and_changing_orders_view_recent_orders_content">To view the status of recent orders, select Your Account from the device menu, then select View/Cancel Items or Orders.</string>
+    <string name="help_shipping_and_delivery_shipping_rates_and_times_title">Canada Delivery Rates &amp; Times</string>
+    <string name="help_shipping_and_delivery_shipping_rates_and_times_url">https://www.amazon.ca/delivery_rates_mobile_en</string>
+    <string name="help_shipping_and_delivery_tracking_packages_title">Tracking Packages</string>
+    <string name="help_shipping_and_delivery_tracking_packages_content">To view the delivery status of recent orders, select Your Account from the device menu, then select Track Packages.</string>
+    <string name="help_shipping_and_delivery_free_super_saver_shipping_title">FREE Super Saver Delivery</string>
+    <string name="help_shipping_and_delivery_free_super_saver_shipping_url">https://www.amazon.ca/super_saver_mobile_en</string>
+    <string name="help_your_account_and_settings_access_your_account_title">Access Your Account</string>
+    <string name="help_your_account_and_settings_access_your_account_content">To access Your Account, first sign in from the Sign In area on the Home page. Once you are signed in, select Your Account from the device Menu.</string>
+    <string name="help_your_account_and_settings_get_password_help_title">Get Password Help</string>
+    <string name="help_your_account_and_settings_get_password_help_content">"If you have forgotten your Amazon.ca password, select the Forgot Your Password? button on the Sign In page and follow the instructions for entering the e-mail address associated with your Amazon.ca account. We'll e-mail you a link to a page where you can create a new password."</string>
+    <string name="help_your_account_and_settings_amazon_prime_membership_title">Amazon Prime Membership</string>
+    <string name="help_your_account_and_settings_amazon_prime_membership_content">"Amazon Prime customers can take advantage of all Prime shipping options when ordering from mobile devices. Prime customers receive FREE Two-Day Shipping on over millions of eligible items and the opportunity to get discounted One-Day Shipping. Prime also offers Express Shipping, Priority Shipping, or FREE Standard Shipping on eligible items when One-Day and Two-Day are unavailable.
+ 
+ To take full advantage of your Amazon Prime membership, please go to Your Account on Amazon.ca from your computer and ensure that your default shipping method is set to Two-Day.
+ 
+ Not yet a Prime member? Sign up for a new Prime membership by visiting www.amazon.ca/prime from your computer."</string>
+    <string name="help_using_amazon_remembers_help_with_barcode_scans_title">Help with Barcode Scans</string>
+    <string name="help_contact_us_feedback_header">Do you have comments or suggestions about this application?</string>
+    <string name="help_eula_url">XXX_TODO</string>
+    <string name="help_email_customer_service_url">https://www.amazon.ca/email_customer_service_mobile_en</string>
+    <string name="help_call_customer_service_url">tel:18775863230</string>
+    <string name="help_why_hide_price">"Manufacturers sometimes ask that retailers not display a price if it drops below a certain amount. The \"Show Price\" message indicates that the price of the item is so low that the manufacturer requested that it not be advertised (that is, displayed). In a brick-and-mortar store, you would probably have to ask a salesperson what the price of the product is.
+ 
+ At Amazon, by selecting \"Show Price\" you are essentially asking to see the price, at which point we show it to you."</string>
+    <string name="bullet">•</string>
+    <string name="exit">Exit</string>
+    <string name="exit_confirmation_dialog_title">Exit Confirmation</string>
+    <string name="exit_confirmation_dialog_message">Are you sure to exit Amazon?</string>
+    <string name="categroy_browse_department">Department</string>
+    <string name="shop_by_department_text">Shop by Department</string>
+    <string name="shop_by_text">"Shop by
+"</string>
+    <string name="category_top_product_gallery_title">Most Popular</string>
+    <string name="browse_search_sorted_by">By %1$s</string>
+    <string name="categroy_browse_all_in_department">All</string>
+    <string name="category_browse_search_in_department">Search in %1$s</string>
+    <string name="history_title">Your Recently Viewed Items</string>
+    <string name="history_item_was_removed">%1$s was removed.</string>
+    <string name="history_empty_message">"You don't have any recently viewed items."</string>
+    <string name="history_time_format">"'Viewed'
+dd/MM/yyyy
+hh:mm a"</string>
+    <string name="history_search_link">Search Amazon</string>
+    <string name="history_clear_all">Delete All</string>
+    <string name="history_confirm_clear_all">Do you really want to delete all the item(s)?</string>
+    <string name="notification_setting">Notifications</string>
+    <string name="notification_ok">OK</string>
+    <string name="notification_gcm_unavailable">"There's a problem with Google Service now. Please try again later."</string>
+    <string name="notification_google_account_error">"There's a problem with your Google Account. Please check it and try again."</string>
+    <string name="notification_turn_on_deal_notifications">Find Out When Deals Happen</string>
+    <string name="notification_deal_notifications_explanation">Turn on Lightning Deal notifications</string>
+    <string name="notification_turn_on_shipment_notifications">Find Out When packages Ship &amp; Arrive</string>
+    <string name="notification_shipment_notifications_explanation">Turn On Shipment Notifications</string>
+    <string name="notification_switch_locale_toast_text_for_deal">To see this deal, change your country to %1$s.</string>
+    <string name="notification_switch_locale_toast_text_for_order_details">To see order details, change your country to %1$s.</string>
+    <string name="notification_switch_locale_toast_text_for_deal_category">To see this deal category, change your country to %1$s.</string>
+    <string name="notification_switch_locale_toast_text_for_product">To see this product, change your country to %1$s.</string>
+    <string name="notification_currently_unavailable">Amazon notifications are currently unavailable. Please try again later.</string>
+    <string name="notification_sign_in_to_view_shipment_notifications">Sign in to receive shipment notifications</string>
+    <string name="notification_sign_in_to_view_deal_of_the_day_notifications">Sign in to receive Deal of the Day notifications</string>
+    <string name="notification_sign_in_to_view_sns_notifications">Sign in to receive Subscribe &amp; Save notifications</string>
+    <string name="notification_sign_in_to_view_pricealert_notifications">Sign in to receive Price Drop notifications</string>
+    <string name="notification_sign_in_to_receive_notification">Sign in to receive notifications</string>
+    <string name="notifications_us_marketplace">United States</string>
+    <string name="notifications_uk_marketplace">United Kingdom</string>
+    <string name="unavailablity_lack_rare_camera">This feature is only available on devices with a rear-facing camera.</string>
+    <string name="please_select">Please select</string>
+    <string name="copy">Copy</string>
+    <string name="error_box_try_again">Try again</string>
+    <string name="error_network_fail_access_amazon_message">"There's a problem connecting to Amazon right now. Please try again."</string>
+    <string name="error_network_no_connection_message">Please check your Internet connection and try again.</string>
+    <string name="error_something_wrong_will_fix_message">"Sorry, there's a problem with this page right now. We're working on fixing it."</string>
+    <string name="go_to_amazon_home">Go to Amazon home</string>
+    <string name="homeitems">Recommended For You</string>
+    <string name="search_suggestions_department_text">in %s</string>
+    <string name="search_refine_filter">Filter</string>
+    <string name="search_refine_sort">Sort</string>
+    <string name="search_refine_clear_all_refinements">Clear All Filters</string>
+    <string name="customer_reviews_vine">Review from the Amazon Vine™ Programme</string>
+    <string name="buy_box_buy_now_from_amazon_kindle">Buy Now from Amazon Kindle</string>
+    <string name="buy_box_install_amazon_kindle_to_buy">Install Amazon Kindle to buy</string>
+    <string name="buy_box_update_amazon_kindle_to_buy">Update Amazon Kindle to buy</string>
+    <string name="buy_box_buy_now_from_amazon_mp3">Buy Now from Amazon MP3</string>
+    <string name="buy_box_install_amazon_mp3_to_buy">Install Amazon MP3 to buy</string>
+    <string name="buy_box_update_amazon_mp3_to_buy">Update Amazon MP3 to buy</string>
+    <string name="buy_box_buy_now_from_amazon_video">Go To Amazon Instant Video App</string>
+    <string name="buy_box_install_amazon_video_to_buy">Install Amazon Video to buy</string>
+    <string name="buy_box_update_amazon_video_to_buy">Update Amazon Video to buy</string>
+    <string name="settings">Settings</string>
+    <string name="youraccount_view_modify_track_or_cancel_an_order">View, Modify, Track or Cancel an Order</string>
+    <string name="youraccount_ad_preference_button" />
+    <string name="youraccount_signin_title">You Are Signed In As: %1$s</string>
+    <string name="ya_copy_order_number_failed">Sorry. We were unable to copy the order number.</string>
+    <string name="ya_advertising_preferences_title">Advertising Preferences</string>
+    <string name="cart_subtotal_text">Subtotal</string>
+    <string name="cart_item_count_text">Item</string>
+    <string name="cart_item_count_plural_text">Items</string>
+    <string name="interstitial_cart_continue_to_checkout">Continue to Checkout</string>
+    <string name="interstitial_cart_valid_item_list_header">Continue to Checkout with these items</string>
+    <string name="deal_cannot_add_to_cart">There are no Lightning Deals available right now. Please check again later.</string>
+    <string name="amazon_appstore_info">You may need to install Amazon Appstore first in order to buy this app. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_appstore_learn_more_text">Learn more</string>
+    <string name="amazon_appstore_learn_more_url" />
+    <string name="amazon_appstore_package_name">com.amazon.venezia</string>
+    <string name="amazon_appstore_landing_page_url">https://www.amazon.ca/gp/mas/get/android</string>
+    <string name="amazon_appstore_browse_node">6386371011</string>
+    <string name="amazon_appstore_search_field">Apps for Android</string>
+    <string name="amazon_kindle_info">You may need to install Amazon Kindle first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_kindle_info_update">You may need to update Amazon Kindle first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_mp3_info">You may need to install Amazon MP3 first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_mp3_info_update">You may need to update Amazon MP3 first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_mp3_package_name">com.amazon.mp3</string>
+    <string name="amazon_video_info">You may need to install Amazon Video first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_video_info_update">You may need to update Amazon Video first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="help_subscribe_and_save_ordering_title">Subscribe &amp; Save Ordering</string>
+    <string name="help_subscribe_and_save_ordering_finding_eligible_products_title">Finding Eligible Products</string>
+    <string name="help_subscribe_and_save_ordering_finding_eligible_products_content">Eligible products will display a Subscribe &amp; Save Price and a Subscribe &amp; Save: Save X% button below the Buy Now button on the item.</string>
+    <string name="help_subscribe_and_save_ordering_placing_your_order_title">Placing Your Order</string>
+    <string name="help_subscribe_and_save_ordering_placing_your_order_content">"Select either the Subscribe and Save Price block or the Subscribe &amp; Save: Save X% button below the Buy Now button on the item. Then select the quantity and the frequency in which you'd like to receive this item from the drop-downs. To complete your order click Subscribe Now."</string>
+    <string name="help_subscribe_and_save_ordering_paying_for_your_subscription_title">Paying for Your Subscription</string>
+    <string name="help_subscribe_and_save_ordering_paying_for_your_subscription_content">"Credit and debit cards are the only forms of payment that can be used for Subscribe &amp; Save orders. However, to the extent applicable, we'll apply credit balances already on your account from Amazon.ca gift cards and eligible promotional codes before charging the remaining balance to your debit/credit card.
+
+ You pay for subscription items only as they are shipped. For each shipment, we will charge your credit card for the price of the item at the time the shipment is processed less the Subscribe &amp; Save discount, plus any applicable sales tax."</string>
+    <string name="help_subscribe_and_save_ordering_terms_and_conditions_title">Terms &amp; Conditions</string>
+    <string name="help_subscribe_and_save_ordering_terms_and_conditions_url">https://www.amazon.ca/mobile_sns_terms</string>
+    <string name="help_subscribe_and_save_subscriptions_title">Subscribe &amp; Save Subscriptions</string>
+    <string name="help_subscribe_and_save_subscriptions_managing_your_subscriptions_title">Managing Your Subscriptions</string>
+    <string name="help_subscribe_and_save_subscriptions_managing_your_subscriptions_content">"To manage your subscriptions (e.g., cancel or skip subscriptions, request an extra delivery) select \"More\" from the Amazon App's Menu, and then select \"Your Subscribe &amp; Save Items.\" If you have multiple addresses, you can select \"Change\" on the top row of the Your Subscribe &amp; Save items page to select the shipping address associated with the subscription you want to view. You'll then be able to view and modify the subscriptions listed under the selected shipping address."</string>
+    <string name="snapit">Snap It</string>
+    <string name="snapit_searching_for">Searching for photo…</string>
+    <string name="snapit_search_report_mismatch_prompt">Not your item?</string>
+    <string name="snapit_search_report_mismatch_button">Report mismatch</string>
+    <string name="snapit_search_report_mismatch_mail_recipient">report-mismatch-snapit@amazon.com</string>
+    <string name="snapit_search_report_mismatch_mail_subject">Image mismatch</string>
+    <string name="snapit_search_report_mismatch_mail_body">"Thank you for reporting a mismatch. Please submit this email and we will review to improve our match rate moving forward.
+
+"</string>
+    <string name="snapit_search_report_mismatch_item_description_with_byline_and_shortdesc">"Snap It match: %1$s by %2$s (%3$s)
+ASIN: %4$s"</string>
+    <string name="snapit_search_report_mismatch_item_description_with_byline">Snap It match: %1$s by %2$s (ASIN: %3$s)</string>
+    <string name="snapit_search_report_mismatch_item_description_with_shortdesc">"Snap It match: %1$s (%2$s)
+ASIN: %3$s"</string>
+    <string name="snapit_search_report_mismatch_item_description">Snap It match: %1$s (ASIN: %2$s)</string>
+    <string name="snapit_search_result_title_no_result">Item Not Found</string>
+    <string name="snapit_search_result_title_result">Item Found</string>
+    <string name="snapit_search_result_title_result_plural">Items Found</string>
+    <string name="snapit_search_result_title_searching_for">Searching…</string>
+    <string name="snapit_photo_capture_view_title">SnapIt - Take Photo</string>
+    <string name="snapit_help">"
+ Centre the item on a plain background.
+
+ Select Retake if the photo is blurry.
+
+ Snap It works best with books, DVDs, CDs and video games.
+
+ Try to avoid shadows and glare."</string>
+    <string name="snapit_help_title">Snap It Help</string>
+    <string name="sns_detail_webpage">https://www.amazon.ca/gp/subscribe-and-save/idp/</string>
+    <string name="sns_mys_page">https://www.amazon.ca/gp/subscribe-and-save/manage</string>
+    <string name="sns_dispatch_page">https://www.amazon.ca/gp/subscribe-and-save/mobile/dispatch.html</string>
+    <string name="menu_more_mys_description">Your Subscribe &amp; Save</string>
+    <string name="sns_dp_block_title">Subscribe &amp; Save</string>
+    <string name="sns_dp_button_prefix">Subscribe &amp; Save</string>
+    <string name="sns_dp_block_save">Save</string>
+    <string name="sns_dp_block_ppu">(%1$s)</string>
+    <string name="sns_dp_block_discount">%1$s%%</string>
+    <string name="sns_dp_block_price">%1$s %2$s %3$s</string>
+    <string name="sns_dp_subscribe_button">%1$s: %2$s %3$s%%</string>
+    <string name="sns_loading_dialog_title">%1$s …</string>
+    <string name="sns_url_with_refmarker">%1$s/ref=%2$s</string>
+    <string name="authportal">https://www.amazon.ca/ap/signin</string>
+    <string name="web_cart_page">https://www.amazon.ca/gp/cart/view.html</string>
+    <string name="product_details_web_page_url">https://www.amazon.ca/gp/aw/d/</string>
+    <string name="contact_us_web_page_url">https://www.amazon.ca/gp/aw/contact-us</string>
+    <string name="show_password"> Show password</string>
+    <string name="signout_progress_message">Logout in progress …</string>
+    <string name="variations_not_available_in_dimen_x_selection_y">Not available in \"%1$s: %2$s\"</string>
+    <string name="variations_not_available_with_selected_options">Not available with selected options</string>
+    <string name="wishlist_web_page_url">https://www.amazon.ca/gp/registry/mobile</string>
+    <string name="deals_web_page_url">https://www.amazon.ca/gp/mobile/deals</string>
+    <string name="error_message_switching_language">There was a problem changing your language right now. Please try again later.</string>
+    <string name="error_message_switching_country">There was a problem changing country right now. Please try again later.</string>
+    <string name="error_can_not_find_product">We are sorry. We can not find the product.</string>
+    <string name="web_check_out">https://www.amazon.ca/gp/checkoutportal/enter-checkout.html</string>
+    <string name="public_url_host_unavailable">Amazon Mobile is currently unavailable for %1$s.</string>
+    <string name="public_url_unavailable">We were unable to open this screen.</string>
+    <string name="public_url_switch_locale_title">Change country?</string>
+    <string name="public_url_switch_locale_message">This screen is available on %1$s. Change countries and continue?</string>
+    <string name="country_name_en_ca">Canada</string>
+    <string name="country_name_zh_cn">China</string>
+    <string name="country_name_de_de">Germany</string>
+    <string name="country_name_es_es">Spain</string>
+    <string name="country_name_fr_fr">France</string>
+    <string name="country_name_it_it">Italy</string>
+    <string name="country_name_ja_jp">Japan</string>
+    <string name="country_name_en_us">United States</string>
+    <string name="country_name_en_gb">United Kingdom</string>
+    <string name="country_name_en_in">India</string>
+    <string name="search_web_page_url">https://www.amazon.ca/gp/aw/s/%1$s?ie=UTF-8</string>
+    <string name="search_prefetch_web_page_url">https://www.amazon.ca/gp/search/bootstrap/</string>
+    <string name="map_auth_portal_authentication_error">The specific device could not be authenticated. Please try again.</string>
+    <string name="upgrade_dialog_title">Upgrade Amazon Mobile</string>
+    <string name="upgrade_dialog_message">Please upgrade to the latest version of Amazon Mobile to continue to use it.</string>
+    <string name="upgrade_dialog_visit_googleplay">Visit Google Play Store to begin upgrade.</string>
+    <string name="upgrade_dialog_visit_amazonappstore">Visit Amazon Appstore to begin upgrade.</string>
+    <string name="upgrade_dialog_general_store">Click upgrade to begin.</string>
+    <string name="upgrade_dialog_button_upgrade">Upgrade</string>
+    <string name="upgrade_notification_dialog_message">Upgrade the Amazon App now to get the latest features and enhancements.</string>
+    <string name="upgrade_remind_me_later">Remind Me Later</string>
+    <string name="upgrade_no_thanks">No Thanks</string>
+    <string name="upgrade_available_title">Upgrade Available</string>
+    <string name="upgrade_check_for_upgrade">Check For Upgrade</string>
+    <string name="checking_for_upgrade">Checking For Upgrade</string>
+    <string name="no_available_upgrade">No Upgrade Available</string>
+    <string name="your_account_web_page_url">https://www.amazon.ca/gp/aw/ya</string>
+    <string name="cancel_order_web_page_url">https://www.amazon.ca/gp/aw/ya?ie=UTF8&amp;ac=oc</string>
+    <string name="your_orders_web_page_url">https://www.amazon.ca/gp/aw/ya/or</string>
+    <string name="order_detail_web_page_url">https://www.amazon.ca/gp/aw/ya/?ac=od</string>
+    <string name="ship_track_order_web_page_url">https://www.amazon.ca/gp/aw/ya?ie=UTF8&amp;ac=st</string>
+    <string name="one_click_settings_web_page_url">https://www.amazon.ca/gp/aw/vsd.html</string>
+    <string name="gno_sign_in">Hello. Sign In</string>
+    <string name="gno_sign_out">Not %1$s? Sign out</string>
+    <string name="gno_sign_out_new_line">"Not %1$s…?
+Sign out"</string>
+    <string name="new_locale_available">Amazon App is now available for Amazon.in. Set Amazon.in as your default store.</string>
+    <string name="shortcut_install_title" />
+    <string name="shortcut_install_msg" />
+    <string name="app_start_indication_dialog_title">Warning</string>
+    <string name="app_start_indication_dialog_msg">This app will use data and will incur charge according to the data package you have bought. Please contact network operator for detail. Do you agree to this charge?</string>
+    <string name="app_start_indication_dialog_button_check">Do not remind me again</string>
+    <string name="app_start_indication_dialog_button_agree">Agree</string>
+    <string name="app_start_indication_dialog_button_disagree">Disagree</string>
+    <string name="view_it_flow_not_support">Flow is currently only available for customers in the United States.</string>
+    <string name="gateway_web_page_url">https://www.amazon.ca/gp/gw/ajax/mshop.html</string>
+    <string name="srds_categroy_url">http://www.amazon.ca/s/browse/categories/?dataVersion=v0.1&amp;format=json</string>
+    <string name="html_notifications_settings_web_page_url">https://www.amazon.ca/ss/mobile/services/subscriptions/</string>
+    <string name="html_recommendations_web_page_url">https://www.amazon.ca/gp/aw/recs/ys</string>
+    <string name="aiv_unavailable">Amazon Instant Video is unavailable on this device.</string>
+    <string name="aiv_companion_app_installation_button">Continue</string>
+    <string name="aiv_companion_app_not_installed_title">Install Prime Instant Video</string>
+    <string name="aiv_companion_app_not_installed">Watch videos with this app by installing the Prime Instant Video player.</string>
+    <string name="smile_url">https://www.amazon.ca/gp/aw/ch/change/</string>
+    <string name="your_charity">Your Charity</string>
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="view_your_wish_list">View your wish list</string>
+    <string name="find_and_reorder_past_purchases">Find &amp; reorder past purchases</string>
+    <string name="track_your_purchases">Track your purchases</string>
+    <string name="skip_sign_in">Skip sign in</string>
+    <string name="amazon_store_header">"Amazon provides the ability to shop in multiple regions. Please select a store to begin shopping. 
+
+When changing stores, items in your Shopping Cart and Wish List will be saved but will not transfer."</string>
+    <string name="amazon_store">Change Country</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_cancel_button">Cancel</string>
+    <string name="alert_one_click_change_button">Change</string>
+    <string name="alert_error_network_error">Network Error</string>
+    <string name="alert_error_client_problem">The Amazon App encountered a problem.</string>
+    <string name="alert_error_service_please_try_again">The Amazon.ca mobile service encountered a problem. Please try again shortly.</string>
+    <string name="sign_in_title">Sign In</string>
+    <string name="sign_in_email_hint">E-mail address</string>
+    <string name="sign_in_email_phone_number_hint">E-mail address</string>
+    <string name="sign_in_password_hint">Amazon.ca password</string>
+    <string name="sign_in_button">Sign in using our secure server</string>
+    <string name="sign_in_forgot_your_password">Forgot your password?</string>
+    <string name="sign_in_create_account_button">Create account</string>
+    <string name="sign_in_forgot_your_password_url">https://www.amazon.ca/forgot_password_mobile_en</string>
+    <string name="sign_in_in_progress">Signing in...</string>
+    <string name="sign_in_legal_link_url">https://www.amazon.ca/legal_information_mobile_en</string>
+    <string name="sso_welcome_user">Hello, %1$s</string>
+    <string name="sso_continue">Continue</string>
+    <string name="sso_use_different_account">Use a different account for this app</string>
+    <string name="sso_not_the_user">Not the account you want to use?</string>
+    <string name="sso_conditions_of_use">Conditions of Use</string>
+    <string name="sso_privacy_notice">Privacy Notice</string>
+    <string name="sso_conditions_of_use_link_url">https://www.amazon.ca/conditions_of_use_mobile_EN</string>
+    <string name="sso_privacy_notice_link_url">https://www.amazon.ca/privacy_notice_mobile_EN</string>
+    <string name="cna_title">Registration</string>
+    <string name="cna_header">New to Amazon.ca? Register below.</string>
+    <string name="cna_continue_button">Continue</string>
+    <string name="cna_name_hint">Full name</string>
+    <string name="cna_furigana_hint" />
+    <string name="cna_email_hint">E-mail address</string>
+    <string name="cna_email_phone_number_hint">E-mail address</string>
+    <string name="cna_password_hint">Enter a password</string>
+    <string name="cna_duplicate_password_hint">Re-enter password</string>
+    <string name="cna_no_passwords_not_same_error">The two passwords you entered do not match</string>
+    <string name="cna_password_requirement_error">Please enter a password that is at least 6 characters long.</string>
+    <string name="cna_email_requirement_error">Please enter an e-mail address that contains an \"at\" sign (@) and a period (.) somewhere to the right of the @, with no spaces or commas.</string>
+    <string name="cna_in_progress">Creating new account...</string>
+    <string name="cna_legal_text" />
+    <string name="cna_legal_link_url" />
+    <string name="cna_registration_agreement">"By creating an account, you agree to Amazon's Conditions of Use and Privacy Policy."</string>
+    <string name="cna_conditions_of_use_and_sale_text" />
+    <string name="cna_conditions_of_use_and_sale_url" />
+    <string name="cna_privacy_notice_text">"Amazon's Conditions of Use and Privacy Policy"</string>
+    <string name="cna_privacy_notice_url">https://www.amazon.ca/legal_information_mobile_en</string>
+    <string name="sign_out_title">Sign Out</string>
+    <string name="sign_out_button">Sign Out</string>
+    <string name="sign_out_you_are_signed_in_as">You are signed in as: &lt;b>%1$s&lt;/b></string>
+    <string name="sign_out_in_progress">Signing out...</string>
+    <string name="sign_out_confirm_title">Confirm Sign Out</string>
+    <string name="sign_out_confirm_message">%1$s, you are signing out of your Amazon apps on this device.</string>
+    <string name="sign_out_confirm_message_with_appstore_installed">"%1$s, you're signing out of your Amazon apps on this device. You won't have access to apps downloaded from Amazon Appstore while signed out."</string>
+    <string name="sign_out_your_app_confirm_message">%1$s, you will be signed out of the Amazon app.</string>
+    <string name="one_click_settings_loading">Loading...</string>
+    <string name="one_click_settings_loading_shipping_addresses">Loading addresses...</string>
+    <string name="one_click_settings_saving_shipping_payment_method">Saving address and payment method...</string>
+    <string name="one_click_settings_turning_on">Turning Mobile 1–Click on...</string>
+    <string name="one_click_settings_turning_off">Turning Mobile 1–Click off...</string>
+    <string name="one_click_settings_title">1–Click Settings</string>
+    <string name="one_click_settings_ordering_title">1–Click Ordering</string>
+    <string name="one_click_settings_mobile_one_click_title">Mobile 1–Click</string>
+    <string name="one_click_settings_device_name_title">Mobile Device Name</string>
+    <string name="one_click_settings_shipping_and_payments_title">Delivery Address and Payment</string>
+    <string name="one_click_settings_shipping_and_payments_empty">Set 1–Click Address</string>
+    <string name="one_click_settings_about_title">About Mobile 1–Click</string>
+    <string name="one_click_settings_continue_button">Continue</string>
+    <string name="one_click_settings_shipping_payment_method_title">Delivery Address &amp; Payment Method</string>
+    <string name="one_click_settings_shipping_payment_method_info">The address and payment method you choose will become your default shipping address and payment method for all 1–Click orders on the web or mobile. To add new address or payment method, please visit Amazon.ca from your browser.</string>
+    <string name="one_click_settings_shipping_payment_method_defaults_title">Choose Default Address &amp; Payment</string>
+    <string name="one_click_settings_payment_method_title">Payment Method</string>
+    <string name="one_click_settings_payment_method_defaults_title">Choose Default Payment</string>
+    <string name="one_click_settings_select_payment_method">Select payment method</string>
+    <string name="one_click_settings_about_text">"When you enable 1–Click ordering on Amazon Mobile, you will be able to purchase items from your mobile device with the click of only one button. You won't be required to sign in every time you make a purchase on Amazon Mobile. &lt;br> &lt;br> Mobile 1–Click on your phone is a separate feature from the 1–Click feature you use from your computer. Each setting may be turned on or off independent of the other. However, your default address and payment methods are the same for both Mobile 1–Click and the 1–Click feature you use with your computer. &lt;br> &lt;br> Mobile 1–Click may only be turned on from your mobile device. Your Mobile 1–Click settings are only viewable from your PC if you have Mobile 1–Click activated. &lt;br> &lt;br> You can turn off Mobile 1–Click from the Your Account feature on either your mobile device or your computer."</string>
+    <string name="payment_format_credit_card_expiration_date_addreviated">Exp</string>
+    <string name="locale_switch_select_country_below">Select a country below</string>
+    <string name="address_format_CN">"{name}
+{address1}
+{address2}
+{address3}
+{state} {city} {county}
+{zip}
+{country}
+{phone}"</string>
+    <string name="address_format_FR">"{name}
+{address1}
+{address2}
+{address3}
+{zip} {city} {county} {state}
+{country}
+{phone}"</string>
+    <string name="address_format_JP">"{name}
+{zip} {state} {county} {city}
+{address1}
+{address2}
+{address3}
+{country}
+{phone}"</string>
+    <string name="address_format_default">"{name}
+{address1}
+{address2}
+{address3}
+{city} {county}, {state} {zip}
+{country}
+{phone}"</string>
+    <string name="sign_in_email_rule">required maxlength:64</string>
+    <string name="sign_in_password_rule">required maxlength:512</string>
+    <string name="cna_name_rule">required maxlength:50</string>
+    <string name="cna_furigana_rule">required maxlength:50</string>
+    <string name="cna_email_rule">required maxlength:64</string>
+    <string name="cna_password_rule">required maxlength:20</string>
+    <string name="alert_error_network_error_socket_timeout">Request timeout, please try again later.</string>
+    <string name="alert_error_network_error_unknownhost">Network problem, please try again later</string>
+    <string name="alert_network_failure_title">No Internet Connection</string>
+    <string name="alert_network_failure_message">A network connection is required to complete this task. Please connect to a network.</string>
+    <string name="alert_network_failure_message_wifi">"A Wi-Fi network connection is required to complete this task.
+Please connect to a Wi-Fi network."</string>
+    <string name="sign_in_legal_text">"By signing in you agree to Amazon.ca's Conditions of Use and Privacy Policy."</string>
+    <string name="amazon_chooser_activity_no_application">No applications can perform this action.</string>
+    <string name="amazon_chooser_activity_choose_appliaction">Complete action using</string>
+    <string name="opengl_progress_text">Loading …</string>
+</resources>

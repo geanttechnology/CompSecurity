@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/cart_default_less_padding_margin" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_free_returns" style="@style/Target.TextView.CartFooter" />
+    <com.target.ui.view.TargetTextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_shop_safely" android:drawableLeft="@drawable/icon_shopesafely" android:drawablePadding="@dimen/cart_default_less_padding_margin" style="@style/Target.TextView.CartFooter" />
+</LinearLayout>

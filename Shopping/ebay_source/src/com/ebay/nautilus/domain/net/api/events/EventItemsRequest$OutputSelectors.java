@@ -1,0 +1,21 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.ebay.nautilus.domain.net.api.events;
+
+import java.util.List;
+
+// Referenced classes of package com.ebay.nautilus.domain.net.api.events:
+//            EventItemsRequest
+
+public static class 
+{
+
+    public List HISTOGRAMS;
+    public List OUTPUT_SELECTOR;
+
+    public ()
+    {
+    }
+}

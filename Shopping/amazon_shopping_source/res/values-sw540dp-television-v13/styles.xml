@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AVOD.Playback.Ads.Controls" parent="@style/AVOD.Playback.Ads">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="AVOD.Playback.Ads.CountdownMessage" parent="@style/AVOD.Widget.TextView.Shadow">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Regular</item>
+    </style>
+    <style name="AVOD.Widget.VideoSeekBar" parent="@style/AVOD.Widget">
+        <item name="android:progressDrawable">@drawable/seekbar_progress_thumb_leftof_playhead</item>
+        <item name="android:thumb">@drawable/invis</item>
+        <item name="adpod_height">@dimen/avod_spacing_xxsmall</item>
+        <item name="adpod_width">@dimen/avod_spacing_xsmall</item>
+    </style>
+</resources>

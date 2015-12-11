@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/add_item_card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetTextView android:id="@id/scan_add_an_item_text" android:paddingLeft="@dimen/default_3x_padding_margin" android:paddingTop="@dimen/default_3x_padding_margin" android:layout_width="fill_parent" android:layout_height="@dimen/list_add_item_edit_height" android:hint="@string/list_add_an_item" android:layout_centerVertical="true" style="@style/Target.AutoCompleteEditText" />
+</FrameLayout>

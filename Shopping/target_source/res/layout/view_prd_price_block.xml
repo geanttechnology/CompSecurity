@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/prd_price_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:id="@id/prd_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" app:fontStyle="medium" style="@style/Target.TextView.PdpPrice" />
+        <com.target.ui.view.TargetTextView android:id="@id/prd_price_strike_through" android:paddingLeft="@dimen/prd_pdp_price_and_strike_through_price_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" app:fontStyle="regular" style="@style/Target.TextView.PdpPriceStrikeThroughPrice" />
+    </LinearLayout>
+    <com.target.ui.view.TargetTextView android:id="@id/prd_price_store_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="regular" style="@style/Target.TextView.PdpPriceStoreInfo" />
+</merge>

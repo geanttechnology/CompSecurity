@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:theme="@style/AppTheme.RedAccent" android:layout_gravity="center" android:id="@id/pdp_fulfillment_pick_up_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@null" style="?android:attr/progressBarStyleSmall" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pdp_fulfillment_button_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/prd_pdp_fulfillment_card_button_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/prd_pdp_fulfillment_card_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="medium" style="@style/Target.FulfillmentTextTitle" />
+        <com.target.ui.view.TargetTextView android:gravity="top" android:id="@id/prd_pdp_fulfillment_card_button_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="medium" style="@style/Target.FulfillmentText.SubTitle" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/services_row" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/style_guide_light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+    <RadioButton android:id="@id/service_radio_button" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/service_cost" android:layout_below="@id/divider" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:id="@id/service_cost" android:paddingRight="@dimen/psl_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/service_radio_button" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="@dimen/collection_details_banner_image_height" android:scaleType="centerCrop" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+    <include layout="@layout/browse_item_details_header" />
+    <include android:id="@id/action_bar_user_icon_name" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/user_icon_name" />
+    <TextView android:textAppearance="@style/EbayTextAppearance.Title1" android:id="@id/headline" android:padding="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/EbayTextAppearance.Body2" android:id="@id/description" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/listContainerCaptionBottomMargin" android:layout_margin="@dimen/ebayMargin2x" layout="@layout/homescreen_card_horizontal_divider" />
+    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" layout="@layout/collection_header_action_bar" />
+</LinearLayout>

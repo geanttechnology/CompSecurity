@@ -1,0 +1,17 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.now.cart;
+
+
+// Referenced classes of package com.amazon.now.cart:
+//            CartController, CartResponse
+
+public static interface 
+{
+
+    public abstract void onFailure(CartResponse cartresponse, String s);
+
+    public abstract void onSuccess(CartResponse cartresponse);
+}

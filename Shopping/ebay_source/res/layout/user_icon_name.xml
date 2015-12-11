@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.mobile.widget.UserThumbnail android:id="@id/titleIcon" android:layout_width="@dimen/collection_details_user_icon_size" android:layout_height="@dimen/collection_details_user_icon_size" android:scaleType="centerCrop" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+    <TextView android:textAppearance="@android:style/TextAppearance" android:textSize="@dimen/ebayTextSizeBody2" android:textColor="@color/style_guide_black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:paddingStart="@dimen/ebayPadding" android:paddingEnd="0.0dip" />
+</LinearLayout>

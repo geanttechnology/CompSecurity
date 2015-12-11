@@ -1,0 +1,16 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.identity.auth.device.api;
+
+
+// Referenced classes of package com.amazon.identity.auth.device.api:
+//            CookieKeys
+
+public final class 
+{
+
+    public static final String KEY_FORCE_REFRESH = "com.amazon.identity.auth.device.api.cookiekeys.options.forcerefresh";
+    public static final String KEY_SIGN_IN_URL = "com.amazon.identity.auth.device.api.cookiekeys.options.SignInUrl";
+}

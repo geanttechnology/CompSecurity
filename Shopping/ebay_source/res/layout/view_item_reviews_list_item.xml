@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ebayTextSizeMedium" android:id="@id/review_title" android:layout_marginTop="@dimen/ebayMargin15" android:maxLines="2" style="@style/ItemView" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.mobile.common.eBayRating android:layout_gravity="left" android:id="@id/review_rating" android:layout_marginTop="@dimen/ebayMarginHalf" ebay:threshold="0" style="@style/ItemView.RatingStars.Reviews" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf">
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/review_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="24" />
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/review_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_marginTop="@dimen/ebayMargin2x" style="@style/ItemView">
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/review_text" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/expandImage" />
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/review_text_full" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/expandImage" />
+        <ImageView android:id="@id/expandImage" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin2x" android:src="@drawable/icon_arrowslidedown" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/black_friday_deal_product_view" android:padding="@dimen/default_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.BitmapImageView android:layout_gravity="center" android:id="@id/deal_product_image_view" android:layout_width="@dimen/black_friday_deal_image_size" android:layout_height="@dimen/black_friday_deal_image_size" android:layout_marginRight="@dimen/default_2x_padding_margin" android:contentDescription="@string/cd_expandable_image_view_pager_product" />
+    <com.target.ui.view.TargetTextView android:id="@id/deal_product_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/deal_product_image_view" app:fontStyle="light" style="@style/Target.TextView.ProductListTitle" />
+    <com.target.ui.view.TargetTextView android:id="@id/deal_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_padding_margin" android:layout_toRightOf="@id/deal_product_image_view" android:layout_below="@id/deal_product_title" app:fontStyle="medium" style="@style/Target.TextView.PdpPrice" />
+</RelativeLayout>

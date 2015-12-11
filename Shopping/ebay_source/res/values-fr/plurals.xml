@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="LEGAL_auto_relist_option_fees">
+        <item quantity="other">"Si cet objet n'est pas vendu, le remettre en vente automatiquement jusqu'à %d fois."</item>
+        <item quantity="one">"Si cet objet n'est pas vendu, le remettre automatiquement en vente %d fois."</item>
+    </plurals>
+    <plurals name="LEGAL_auto_relist_option_free">
+        <item quantity="other">"Si cet objet n'est pas vendu, le remettre automatiquement en vente un maximum de %d fois. La remise en vente est gratuite."</item>
+        <item quantity="one">"Si cet objet n'est pas vendu, le remettre automatiquement en vente %d fois. La remise en vente est gratuite."</item>
+    </plurals>
+    <plurals name="LEGAL_item_view_handling_time_days">
+        <item quantity="other">Envoyé sous %d jours ouvrables après la réception du paiement.</item>
+        <item quantity="one">Envoyé sous %d jour ouvrable après la réception du paiement.</item>
+    </plurals>
+    <plurals name="LOCKED_selling_card_unsold_relist">
+        <item quantity="other">%d pas encore remis en vente</item>
+        <item quantity="one">%d pas encore remis en vente</item>
+    </plurals>
+    <plurals name="accessibility_reviews_count">
+        <item quantity="other">%d avis</item>
+        <item quantity="one">%d avis</item>
+    </plurals>
+    <plurals name="available_at_n_argos">
+        <item quantity="other">Disponibles dans %1$d magasins Argos à proximité</item>
+        <item quantity="one">Disponible dans %1$d magasin Argos à proximité</item>
+    </plurals>
+    <plurals name="available_at_n_locations">
+        <item quantity="other">Disponible dans %1$d magasins à proximité</item>
+        <item quantity="one">Disponible dans %1$d magasin à proximité</item>
+    </plurals>
+    <plurals name="card_buyingoverview_bidding">
+        <item quantity="other">Enchères</item>
+        <item quantity="one">Enchère</item>
+    </plurals>
+    <plurals name="card_buyingoverview_counterofferformat">
+        <item quantity="other">%d contre-offres</item>
+        <item quantity="one">%d contre-offre</item>
+    </plurals>
+    <plurals name="card_buyingoverview_offers">
+        <item quantity="other">Offres</item>
+        <item quantity="one">Offre</item>
+    </plurals>
+    <plurals name="card_buyingoverview_outbidformat">
+        <item quantity="other">%d surenchères</item>
+        <item quantity="one">%d surenchère</item>
+    </plurals>
+    <plurals name="card_buyingoverview_paynowformat">
+        <item quantity="other">%d à payer maintenant</item>
+        <item quantity="one">%d à payer maintenant</item>
+    </plurals>
+    <plurals name="card_buyingoverview_purchases">
+        <item quantity="other">Objets achetés</item>
+        <item quantity="one">Objet acheté</item>
+    </plurals>
+    <plurals name="card_collection_statistics">
+        <item quantity="other">%1$d objets | %2$s et plus</item>
+        <item quantity="one">%1$d objet | %2$s et plus</item>
+    </plurals>
+    <plurals name="card_followingoverview_listingsformat">
+        <item quantity="other">%d objets en vente</item>
+        <item quantity="one">%d objet en vente</item>
+    </plurals>
+    <plurals name="card_sellingoverview_soldcount">
+        <item quantity="other">Vendus</item>
+        <item quantity="one">Vendu</item>
+    </plurals>
+    <plurals name="card_sellingoverview_unsoldcount">
+        <item quantity="other">Invendus</item>
+        <item quantity="one">Invendu</item>
+    </plurals>
+    <plurals name="characters_left">
+        <item quantity="other">%d caractères restants</item>
+        <item quantity="one">%d caractère restant</item>
+    </plurals>
+    <plurals name="collection_followers">
+        <item quantity="other">%d abonnés</item>
+        <item quantity="one">%d abonné</item>
+    </plurals>
+    <plurals name="common_number_bids">
+        <item quantity="other">%d enchères</item>
+        <item quantity="one">%d enchère</item>
+    </plurals>
+    <plurals name="common_number_items">
+        <item quantity="other">%d objets</item>
+        <item quantity="one">%d objet</item>
+    </plurals>
+    <plurals name="common_number_items_found">
+        <item quantity="other">%s objets</item>
+        <item quantity="one">%s objet</item>
+    </plurals>
+    <plurals name="givingworks_favorites_count">
+        <item quantity="other">Préférée par %1$d personnes</item>
+        <item quantity="one">Préférée par %1$d personne</item>
+    </plurals>
+    <plurals name="hotness_quantity_sold_24_hour">
+        <item quantity="other">%1$d vendus en 24 heures</item>
+        <item quantity="one">%1$d vendu en 24 heures</item>
+    </plurals>
+    <plurals name="hotness_quantity_sold_one_hour">
+        <item quantity="other">%1$d vendus en 1 heure</item>
+        <item quantity="one">%1$d vendu en 1 heure</item>
+    </plurals>
+    <plurals name="hotness_quantity_sold_total">
+        <item quantity="other">%1$d vendus</item>
+        <item quantity="one">%1$d vendu</item>
+    </plurals>
+    <plurals name="item_view_more_than_xx_available">
+        <item quantity="other">Plus de %d disponibles</item>
+        <item quantity="one">Plus de %d disponible</item>
+    </plurals>
+    <plurals name="item_view_num_bids">
+        <item quantity="other">%d enchères</item>
+        <item quantity="one">%d enchère</item>
+    </plurals>
+    <plurals name="item_view_quantity_available">
+        <item quantity="other">%d disponibles</item>
+        <item quantity="one">%d disponible</item>
+    </plurals>
+    <plurals name="item_view_quantity_sold">
+        <item quantity="other">%d vendus</item>
+        <item quantity="one">%d vendu</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">%d messages supprimés</item>
+        <item quantity="one">%d message supprimé</item>
+    </plurals>
+    <plurals name="messages_moved">
+        <item quantity="other">%d messages déplacés</item>
+        <item quantity="one">%d message déplacé</item>
+    </plurals>
+    <plurals name="messages_selection_count">
+        <item quantity="other">%d sélectionnés</item>
+        <item quantity="one">%d sélectionné</item>
+    </plurals>
+    <plurals name="nectar_booster_points">
+        <item quantity="other">+ %d points bonus</item>
+        <item quantity="one">+ %d point bonus</item>
+    </plurals>
+    <plurals name="nectar_points">
+        <item quantity="other">Gagnez %d points</item>
+        <item quantity="one">Gagnez %d point</item>
+    </plurals>
+    <plurals name="offer_shipping_for_multiple_items">
+        <item quantity="other">pour %1$d objets</item>
+        <item quantity="one">pour %1$d objet</item>
+    </plurals>
+    <plurals name="offer_you_have_x_offers">
+        <item quantity="other">Vous avez %1$s offres</item>
+        <item quantity="one">Vous avez %1$s offre</item>
+    </plurals>
+    <plurals name="offers_remaining_subtext">
+        <item quantity="other">Les acheteurs peuvent faire %1$d offres maximum par objet.</item>
+        <item quantity="one">Les acheteurs peuvent faire %1$d offre maximum par objet.</item>
+    </plurals>
+    <plurals name="photos_attached">
+        <item quantity="other">%d photos jointes</item>
+        <item quantity="one">%d photo jointe</item>
+    </plurals>
+    <plurals name="psl_format_days">
+        <item quantity="other">%1$s jours</item>
+        <item quantity="one">%1$s jour</item>
+    </plurals>
+    <plurals name="search_exp_title_cbt">
+        <item quantity="other">%d objets trouvés auprès de vendeurs eBay internationaux</item>
+        <item quantity="one">%d objet trouvé auprès de vendeurs eBay internationaux</item>
+    </plurals>
+    <plurals name="search_exp_title_keyword">
+        <item quantity="other">%1$d objets associés à« %2$s »</item>
+        <item quantity="one">%1$d objet associé à « %2$s »</item>
+    </plurals>
+    <plurals name="selected">
+        <item quantity="other">%d sélectionnés</item>
+        <item quantity="one">%d sélectionné</item>
+    </plurals>
+    <plurals name="sell_photos_added_qty">
+        <item quantity="other">%d photos ajoutées</item>
+        <item quantity="one">%d photo ajoutée</item>
+    </plurals>
+    <plurals name="selling_card_sold_total_duration">
+        <item quantity="other">%d jours</item>
+        <item quantity="one">%d jour</item>
+    </plurals>
+    <plurals name="status_bids">
+        <item quantity="other">ENCHERES RECUES</item>
+        <item quantity="one">ENCHERE RECUE</item>
+    </plurals>
+    <plurals name="status_offer">
+        <item quantity="other">%d NOUVELLES OFFRES</item>
+        <item quantity="one">NOUVELLE OFFRE</item>
+    </plurals>
+    <plurals name="store_picker_fulfillment_format_days">
+        <item quantity="other">Prêt dans %1$d jours ouvrables</item>
+        <item quantity="one">Prêt dans %1$d jour ouvrable</item>
+    </plurals>
+    <plurals name="store_picker_fulfillment_format_hours">
+        <item quantity="other">Prêt dans %1$d heures ouvrables</item>
+        <item quantity="one">Prêt dans %1$d heure ouvrable</item>
+    </plurals>
+    <plurals name="store_picker_fulfillment_format_minutes">
+        <item quantity="other">Prêt dans %1$d minutes</item>
+        <item quantity="one">Prêt dans %1$d minute</item>
+    </plurals>
+    <plurals name="time_duration_business_days">
+        <item quantity="other">%d jours ouvrables</item>
+        <item quantity="one">%d jour ouvrable</item>
+    </plurals>
+    <plurals name="time_duration_calendar_days">
+        <item quantity="other">%d jours</item>
+        <item quantity="one">%d jour</item>
+    </plurals>
+    <plurals name="time_duration_hours">
+        <item quantity="other">%d heures</item>
+        <item quantity="one">%d heure</item>
+    </plurals>
+    <plurals name="time_duration_minutes">
+        <item quantity="other">%d minutes</item>
+        <item quantity="one">%d minute</item>
+    </plurals>
+    <plurals name="time_duration_months">
+        <item quantity="other">%d mois</item>
+        <item quantity="one">%d mois</item>
+    </plurals>
+    <plurals name="time_duration_seconds">
+        <item quantity="other">%d secondes</item>
+        <item quantity="one">%d seconde</item>
+    </plurals>
+    <plurals name="time_duration_years">
+        <item quantity="other">%d ans</item>
+        <item quantity="one">%d an</item>
+    </plurals>
+    <plurals name="trending_clicks_count">
+        <item quantity="other">%1$,d clics</item>
+        <item quantity="one">%1$,d clic</item>
+    </plurals>
+    <plurals name="trending_views_count">
+        <item quantity="other">%1$,d visites</item>
+        <item quantity="one">%1$,d visite</item>
+    </plurals>
+    <plurals name="watchers">
+        <item quantity="other">Suivi par %1$d+ personnes</item>
+        <item quantity="one">Suivi par %1$d personne</item>
+    </plurals>
+    <plurals name="xo_cart_incentive_available">
+        <item quantity="other">%1$d disponibles</item>
+        <item quantity="one">%1$d disponible</item>
+    </plurals>
+    <plurals name="xo_delivery_scheduling_hour_estimate_format">
+        <item quantity="other">Environ %1$d heures</item>
+        <item quantity="one">Environ %1$d heure</item>
+    </plurals>
+    <plurals name="your_offer_with_remaining">
+        <item quantity="other">"Votre offre
+(%1$d restants)"</item>
+        <item quantity="one">"Votre offre
+(%1$d restant)"</item>
+    </plurals>
+</resources>

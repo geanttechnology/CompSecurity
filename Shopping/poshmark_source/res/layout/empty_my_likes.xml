@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_heart_red_outline_big" />
+    <com.poshmark.ui.customviews.PMTextView android:textSize="18.0sp" android:textColor="@color/textColorGray" android:layout_gravity="center_horizontal" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_personal_shopping_list" />
+    <com.poshmark.ui.customviews.PMTextView android:textSize="15.0sp" android:textColor="@color/textColorGray" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_items_to_shop_later" />
+</LinearLayout>

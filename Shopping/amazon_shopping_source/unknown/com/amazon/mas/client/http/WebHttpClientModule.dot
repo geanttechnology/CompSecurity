@@ -1,0 +1,29 @@
+digraph G1 {
+  concentrate = true;
+  n2 [label="@javax.inject.Named(value=authenticated)/com.amazon.mas.client.http.WebHttpClient"];
+  n3 [label="@Named DefaultHttpClientFactory"];
+  n2 -> n3;
+  n4 [label="@Named WebRequestFactory"];
+  n2 -> n4;
+  n5 [label="@javax.inject.Named(value=null)/com.amazon.mas.client.http.HttpRequestCache"];
+  n2 -> n5;
+  n6 [label="@javax.inject.Named(value=authenticatedNonSingleton)/com.amazon.mas.client.http.WebHttpClient"];
+  n6 -> n3;
+  n6 -> n4;
+  n6 -> n5;
+  n7 [label="@javax.inject.Named(value=disk)/com.amazon.mas.client.http.HttpRequestCache"];
+  n7 -> Context;
+  n8 [label="@javax.inject.Named(value=nonconsuming)/com.amazon.mas.client.http.WebHttpClient"];
+  n9 [label="@javax.inject.Named(value=notToBeUsedDirectly)/com.amazon.mas.client.http.WebHttpClient"];
+  n8 -> n9;
+  n9 -> n5;
+  n9 -> DefaultHttpClientFactory;
+  n9 -> WebRequestFactory;
+  n10 [label="@javax.inject.Named(value=notToBeUsedDirectlyCaching)/com.amazon.mas.client.http.WebHttpClient"];
+  n10 -> n7;
+  n10 -> DefaultHttpClientFactory;
+  n10 -> WebRequestFactory;
+  AuthenticatedWebRequest -> Context;
+  DiskCacheCleanService -> n7;
+  WebHttpClient -> n9;
+}

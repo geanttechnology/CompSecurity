@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pageIndicator="http://schemas.android.com/apk/res-auto">
+    <com.groupon.view.TwoTraitViewPager android:layout_gravity="left" android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="@dimen/goods_multi_option_traits_height" />
+    <com.groupon.view.PageIndicators android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" pageIndicator:activeColor="@color/grey_medium" pageIndicator:inactiveColor="@color/grey_light" pageIndicator:indicatorPadding="4.0dip" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/search_refine_header_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/search_refine_top_layout_height">
+        <Button android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/search_refine_back_parent_panel" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="5.0dip" android:visibility="invisible" android:layout_width="67.0dip" android:layout_height="fill_parent" android:drawableLeft="@drawable/ic_backarrow" android:contentDescription="@string/search_refinement_accessibility_back" style="@style/Refine.Button" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="145.0dip" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@id/search_refine_panel_title" android:paddingBottom="2.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/search_refinement_parent_panel" android:maxLines="1" android:layout_weight="1.0" style="@style/Refine.Text.Title" />
+        </LinearLayout>
+        <Button android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/style_guide_blue" android:layout_gravity="right|center" android:id="@id/search_refine_done" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/done" />
+    </FrameLayout>
+    <include layout="@layout/refine_panel_item_divider" />
+    <LinearLayout android:id="@id/search_refine_category_header_layout" android:background="@drawable/refine_panel_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?listPreferredItemHeightQuantized">
+        <TextView android:ellipsize="end" android:gravity="left|center" android:id="@id/search_refine_category_detail" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Refine.Text.Title" />
+    </LinearLayout>
+    <FrameLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/refine_custom" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:fillViewport="true" />
+        <ListView android:id="@id/refine_details" android:visibility="invisible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@color/search_carousel_divider_color" android:dividerHeight="1.0px" />
+        <include android:id="@id/refine_root" layout="@layout/search_refine_aspects" />
+    </FrameLayout>
+</LinearLayout>

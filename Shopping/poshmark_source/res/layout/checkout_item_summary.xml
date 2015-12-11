@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_actionbar_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMListingImageView android:id="@id/listingImageView" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/listingInfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:id="@id/listingTitleView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/textColorDarkGray" android:id="@id/listingSizeView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="Size: 8" android:layout_weight="0.5" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/textColorDarkGray" android:id="@id/sellerNameView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="Seller:" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

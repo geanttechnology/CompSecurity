@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/general_notification_tone" android:key="generaltone_uri" android:summary="" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true" />
+    <Preference android:title="@string/buying_notification_tone" android:key="buy_uri" android:summary="" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true" />
+    <Preference android:title="@string/selling_notification_tone" android:key="itemsold_uri" android:summary="" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true" />
+    <Preference android:title="@string/saved_searches" android:key="savedsearch_uri" android:summary="" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true" />
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.retailsearch.android.ui.results.views.Sims android:orientation="vertical" android:id="@id/rs_sim_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/pc_4px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/pc_2px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/aui_tertiary" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/rs_results_textsize_base" android:textStyle="bold" android:textColor="@color/aui_secondary" android:id="@id/rs_sim_store_name" android:paddingLeft="@dimen/pc_6px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/rs_results_textsize_base" android:textColor="@color/aui_secondary" android:gravity="center" android:paddingLeft="@dimen/pc_6px" android:paddingRight="@dimen/pc_6px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sims_message" />
+        <View android:background="@color/aui_tertiary" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/rs_sim_image_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</com.amazon.retailsearch.android.ui.results.views.Sims>

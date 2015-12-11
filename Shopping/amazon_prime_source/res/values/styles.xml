@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AmazonSpinnerTheme" parent="@android:style/Widget.ProgressBar.Large.Inverse">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="AmazonTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/background_default</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Results.Image.Gallery" parent="@style/Results.Image">
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Results.ImageWrapper.Gallery" parent="@style/Results.ImageWrapper">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/rs_results_gallery_image_padding_bottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/rs_results_image_height_gallery</item>
+    </style>
+    <style name="Results.ImageWrapper.List" parent="@style/Results.ImageWrapper">
+        <item name="android:paddingTop">@dimen/rs_results_list_image_padding_top</item>
+        <item name="android:layout_width">@dimen/rs_results_image_width_list</item>
+        <item name="android:layout_height">@dimen/rs_results_image_height_list</item>
+    </style>
+    <style name="Results.PriceText.Gallery" parent="@style/Results.PriceText" />
+    <style name="Results.ProductDescription.Immersive" parent="@style/Results.AdditionalMsgs.Immersive">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginBottom">@dimen/rs_results_immersive_section_spacing</item>
+        <item name="android:maxLines">5</item>
+    </style>
+    <style name="Results.Subtitle.Gallery" parent="@style/Results.Subtitle" />
+    <style name="Results.Title.Gallery" parent="@style/Results.Title">
+        <item name="android:textSize">@dimen/rs_results_textsize_xlarge</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingRight">@dimen/rs_results_padding_bottom_base</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_base</item>
+        <item name="android:maxLines">3</item>
+    </style>
+    <style name="Results.Title.Immersive" parent="@style/Results.Title">
+        <item name="android:textSize">@dimen/rs_results_textsize_xlarge</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_base</item>
+        <item name="android:maxLines">3</item>
+    </style>
+    <style name="PopupDialogFragmentAnimation">
+        <item name="android:windowEnterAnimation">@anim/grow_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/shrink_fade_out</item>
+    </style>
+    <style name="RefinementMenuClearAllActive">
+        <item name="android:textColor">@drawable/rs_refinement_menu_clear_all_text_color</item>
+    </style>
+    <style name="RefinementMenuClearAllInactive">
+        <item name="android:textColor">@color/rs_refinement_menu_clear_all_inactive_text_color</item>
+    </style>
+    <style name="RelatedSearches">
+        <item name="android:textSize">@dimen/pc_text_9px</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:padding">@dimen/pc_4px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results">
+        <item name="android:textColor">@color/rs_secondary_text</item>
+    </style>
+    <style name="Results.AdditionalMsgs" parent="@style/Results">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/rs_secondary_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.AdditionalMsgs.Gallery" parent="@style/Results.AdditionalMsgs">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+    </style>
+    <style name="Results.AdditionalMsgs.Grid" parent="@style/Results.AdditionalMsgs">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+    </style>
+    <style name="Results.AdditionalMsgs.Immersive" parent="@style/Results.AdditionalMsgs">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+    </style>
+    <style name="Results.AdditionalMsgs.List" parent="@style/Results.AdditionalMsgs">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+    </style>
+    <style name="Results.AdditionalMsgs.Split" parent="@style/Results.AdditionalMsgs">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+    </style>
+    <style name="Results.AgeRange" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.AgeRange.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.Availability" parent="@style/Results">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.Availability.Gallery" parent="@style/Results.Availability" />
+    <style name="Results.Availability.Grid" parent="@style/Results.Availability" />
+    <style name="Results.Availability.List" parent="@style/Results.Availability" />
+    <style name="Results.AvailabilityGeneral" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.AvailabilityGeneral.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.AvailabilityLowStock" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.AvailabilityLowStock.Gallery" parent="@style/Results.AdditionalMsgs.Gallery">
+        <item name="android:textColor">@color/rs_price_text</item>
+    </style>
+    <style name="Results.AvailabilityLowStock.Grid" parent="@style/Results.AdditionalMsgs.Grid">
+        <item name="android:textColor">@color/rs_price_text</item>
+    </style>
+    <style name="Results.AvailabilityLowStock.List" parent="@style/Results.AdditionalMsgs.List">
+        <item name="android:textColor">@color/rs_price_text</item>
+    </style>
+    <style name="Results.BestSeller" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.BestSeller.Gallery" parent="@style/Results.AdditionalMsgs.Gallery">
+        <item name="android:textSize">@dimen/rs_results_textsize_xsmall</item>
+        <item name="Rs.ImageHeight">@dimen/rs_results_best_seller_image_height</item>
+    </style>
+    <style name="Results.BestSeller.Grid" parent="@style/Results.AdditionalMsgs.Grid">
+        <item name="android:textSize">@dimen/rs_results_textsize_xsmall</item>
+        <item name="Rs.ImageHeight">@dimen/rs_results_best_seller_image_height</item>
+    </style>
+    <style name="Results.BestSeller.List" parent="@style/Results.AdditionalMsgs.List">
+        <item name="android:textSize">@dimen/rs_results_textsize_xsmall</item>
+        <item name="Rs.ImageHeight">@dimen/rs_results_best_seller_image_height</item>
+    </style>
+    <style name="Results.ByLine" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+        <item name="android:textColor">@color/rs_tertiary_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.ByLine.Gallery" parent="@style/Results.ByLine">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+    </style>
+    <style name="Results.ByLine.Grid" parent="@style/Results.ByLine">
+        <item name="android:paddingTop">@dimen/rs_results_padding_bottom_small</item>
+    </style>
+    <style name="Results.ByLine.List" parent="@style/Results.ByLine">
+        <item name="android:paddingTop">@dimen/rs_results_padding_bottom_small</item>
+    </style>
+    <style name="Results.ByLine.Split" parent="@style/Results.ByLine">
+        <item name="android:textSize">@dimen/rs_results_textsize_xsmall</item>
+        <item name="android:paddingTop">@dimen/rs_results_padding_bottom_small</item>
+    </style>
+    <style name="Results.ConsumableMessaging" parent="@style/Results">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.ConsumableMessaging.Badge" parent="@style/Results.ConsumableMessaging">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+    </style>
+    <style name="Results.ConsumableMessaging.Badge.WithText" parent="@style/Results.ConsumableMessaging.Badge">
+        <item name="Rs.ImageAlign">align_baseline</item>
+    </style>
+    <style name="Results.ConsumableMessaging.Label" parent="@style/Results.ConsumableMessaging">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+        <item name="android:textColor">@color/rs_secondary_text</item>
+        <item name="Rs.ImageAlign">align_baseline</item>
+    </style>
+    <style name="Results.ConsumableMessaging.Label.NoBadge" parent="@style/Results.ConsumableMessaging.Label">
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Results.ConsumableMessaging.Message" parent="@style/Results.ConsumableMessaging">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+        <item name="android:textColor">@color/rs_tertiary_text</item>
+        <item name="android:paddingTop">@dimen/rs_results_padding_bottom_small</item>
+    </style>
+    <style name="Results.Coupon" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+        <item name="android:textColor">@color/rs_tertiary_text</item>
+        <item name="android:paddingTop">@dimen/rs_results_padding_bottom_small</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_base</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.EditionLine" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.EditionLine.Gallery" parent="@style/Results.EditionLine">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+    </style>
+    <style name="Results.EditionLine.Grid" parent="@style/Results.EditionLine" />
+    <style name="Results.EditionLine.List" parent="@style/Results.EditionLine" />
+    <style name="Results.EditionPriceLabelSpan" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+        <item name="android:textColor">@color/rs_secondary_text</item>
+    </style>
+    <style name="Results.EditionPriceLabelSpan.Gallery" parent="@style/Results.EditionPriceLabelSpan">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+    </style>
+    <style name="Results.EsrbRating" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.EsrbRating.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.FastTrack" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.FastTrack.Gallery" parent="@style/Results.AdditionalMsgs.Gallery">
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_small</item>
+    </style>
+    <style name="Results.FastTrack.List" parent="@style/Results.AdditionalMsgs.List">
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_small</item>
+    </style>
+    <style name="Results.ForcedPrime" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.ForcedPrime.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.ForcedPrimeLowerPriceLink" parent="@style/Results">
+        <item name="android:textColor">@color/rs_link_text</item>
+    </style>
+    <style name="Results.ForcedPrimePrice" parent="@style/Results">
+        <item name="android:textColor">@color/rs_price_text</item>
+    </style>
+    <style name="Results.FreeRentalLine" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.FreeRentalLine.Gallery" parent="@style/Results.AdditionalMsgs.Gallery" />
+    <style name="Results.FreeRentalLine.Grid" parent="@style/Results.AdditionalMsgs.Grid" />
+    <style name="Results.FreeRentalLine.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.FreshPastPurchases" parent="@style/Results">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rs_fresh_past_purchase_badge</item>
+        <item name="android:layout_width">@dimen/rs_past_pur_header_badge_width</item>
+        <item name="android:layout_height">@dimen/rs_past_pur_header_badge_height</item>
+    </style>
+    <style name="Results.FreshPastPurchases.Text" parent="@style/Results.FreshPastPurchases">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.HeaderSection" parent="@style/Results">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_large</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.HeaderSection.Grid" parent="@style/Results.HeaderSection" />
+    <style name="Results.HeaderSection.List" parent="@style/Results.HeaderSection" />
+    <style name="Results.HeaderSection.Split" parent="@style/Results.HeaderSection" />
+    <style name="Results.Image" parent="@style/Results">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="Results.Image.Grid" parent="@style/Results.Image" />
+    <style name="Results.Image.List" parent="@style/Results.Image" />
+    <style name="Results.Image.Split" parent="@style/Results.Image" />
+    <style name="Results.ImageOverlayMessage" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:layout_marginRight">2.0dip</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="Rs.ImageAlign">align_baseline</item>
+    </style>
+    <style name="Results.ImageOverlayMessage.FreshCartQuantity" parent="@style/Results.ImageOverlayMessage">
+        <item name="android:textColor">@color/rs_white</item>
+        <item name="android:background">@drawable/rs_fresh_cart_quantity_overlay</item>
+    </style>
+    <style name="Results.ImageWrapper" parent="@style/Results">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="Results.ImageWrapper.Grid" parent="@style/Results.ImageWrapper">
+        <item name="android:paddingBottom">@dimen/rs_results_grid_image_padding_bottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/rs_results_image_height_grid</item>
+    </style>
+    <style name="Results.ImageWrapper.Sim" parent="@style/Results.ImageWrapper">
+        <item name="android:padding">@dimen/pc_1.5px</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">@dimen/rs_sim_image_height</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Results.ImageWrapper.Split" parent="@style/Results.ImageWrapper">
+        <item name="android:paddingTop">@dimen/rs_results_split_image_padding_top</item>
+        <item name="android:layout_width">@dimen/rs_results_image_width_split</item>
+        <item name="android:layout_height">@dimen/rs_results_image_height_split</item>
+    </style>
+    <style name="Results.InAppPurchase" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.InAppPurchase.Gallery" parent="@style/Results.AdditionalMsgs.Gallery" />
+    <style name="Results.InAppPurchase.Grid" parent="@style/Results.AdditionalMsgs.Grid" />
+    <style name="Results.InAppPurchase.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.InAppPurchaseHighlightSpan" parent="@style/Results">
+        <item name="android:textColor">@color/rs_price_text</item>
+    </style>
+    <style name="Results.InAppPurchasePlainSpan" parent="@style/Results">
+        <item name="android:textColor">@color/rs_primary_text</item>
+    </style>
+    <style name="Results.ListPriceSpan" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="Rs.IsStrikethroughSpan">true</item>
+    </style>
+    <style name="Results.LoyaltyPoints.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.LoyaltyPointsHighlight" parent="@style/Results">
+        <item name="android:textColor">@color/rs_price_text</item>
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Results.LoyaltyPointsHighlight2" parent="@style/Results" />
+    <style name="Results.LoyaltyPointsPlain" parent="@style/Results">
+        <item name="android:textColor">@color/rs_price_text</item>
+    </style>
+    <style name="Results.MapPriceSpan" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+    </style>
+    <style name="Results.MapPriceSpan.Gallery" parent="@style/Results.MapPriceSpan">
+        <item name="android:textSize">@dimen/rs_results_textsize_xlarge</item>
+    </style>
+    <style name="Results.NewerEditionAvailable" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.NewerEditionAvailable.Grid" parent="@style/Results.AdditionalMsgs.Grid">
+        <item name="android:textColor">@color/rs_link_text</item>
+    </style>
+    <style name="Results.NewerEditionAvailable.List" parent="@style/Results.AdditionalMsgs.List">
+        <item name="android:textColor">@color/rs_link_text</item>
+    </style>
+    <style name="Results.Offers" parent="@style/Results.AdditionalMsgs">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.Offers.Gallery" parent="@style/Results.AdditionalMsgs.Gallery">
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_small</item>
+    </style>
+    <style name="Results.Offers.Grid" parent="@style/Results.AdditionalMsgs.Grid">
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_base</item>
+    </style>
+    <style name="Results.Offers.List" parent="@style/Results.AdditionalMsgs.List">
+        <item name="android:textColor">@color/rs_primary_text</item>
+    </style>
+    <style name="Results.OffersPrice" parent="@style/Results">
+        <item name="android:textColor">@color/rs_price_text</item>
+    </style>
+    <style name="Results.Price" parent="@style/Results">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_base</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.Price.Gallery" parent="@style/Results.Price">
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_small</item>
+    </style>
+    <style name="Results.Price.Grid" parent="@style/Results.Price" />
+    <style name="Results.Price.List" parent="@style/Results.Price" />
+    <style name="Results.Price.Split" parent="@style/Results.Price" />
+    <style name="Results.PriceBadgeSpan" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+        <item name="Rs.ImageAlign">align_baseline</item>
+    </style>
+    <style name="Results.PriceSpan" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textColor">@color/rs_price_text</item>
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Results.PriceSpan.Gallery" parent="@style/Results.PriceSpan">
+        <item name="android:textSize">@dimen/rs_results_textsize_xlarge</item>
+        <item name="Rs.IsBoldSpan">false</item>
+    </style>
+    <style name="Results.PriceSpan.MultiStore" parent="@style/Results.PriceSpan">
+        <item name="android:textSize">@dimen/rs_results_textsize_xlarge</item>
+        <item name="Rs.IsBoldSpan">false</item>
+    </style>
+    <style name="Results.PriceText" parent="@style/Results">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">@dimen/pc_1.5px</item>
+    </style>
+    <style name="Results.PriceText.Grid" parent="@style/Results.PriceText" />
+    <style name="Results.PriceText.List" parent="@style/Results.PriceText" />
+    <style name="Results.PriceText.Split" parent="@style/Results.PriceText">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+    </style>
+    <style name="Results.PrimeOptions" parent="@style/Results">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.PrimeOptions.Header" parent="@style/Results.PrimeOptions">
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_small</item>
+    </style>
+    <style name="Results.PrimeOptions.Item" parent="@style/Results.PrimeOptions">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+        <item name="android:textColor">@color/rs_link_text</item>
+        <item name="android:paddingTop">@dimen/rs_results_padding_bottom_large</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_large</item>
+        <item name="Rs.ImageAlign">align_baseline</item>
+    </style>
+    <style name="Results.ProductDescription" parent="@style/Results.AdditionalMsgs" />
+    <style name="Results.Promotions" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.Promotions.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.Ratings" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.Ratings.Gallery" parent="@style/Results.AdditionalMsgs.Gallery">
+        <item name="android:textSize">@dimen/rs_results_textsize_xsmall</item>
+        <item name="android:layout_marginTop">@dimen/rs_results_stars_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/rs_results_stars_margin_bottom</item>
+        <item name="Rs.ImageHeight">@dimen/rs_results_stars_image_height</item>
+    </style>
+    <style name="Results.Ratings.Grid" parent="@style/Results.AdditionalMsgs.Grid">
+        <item name="android:textSize">@dimen/rs_results_textsize_xsmall</item>
+        <item name="android:layout_marginTop">@dimen/rs_results_stars_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/rs_results_stars_margin_bottom</item>
+        <item name="Rs.ImageHeight">@dimen/rs_results_stars_image_height</item>
+    </style>
+    <style name="Results.Ratings.Immersive" parent="@style/Results.AdditionalMsgs.Immersive">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+        <item name="android:layout_marginBottom">@dimen/rs_results_stars_margin_bottom</item>
+        <item name="Rs.ImageHeight">@dimen/rs_results_stars_image_height</item>
+    </style>
+    <style name="Results.Ratings.List" parent="@style/Results.AdditionalMsgs.List">
+        <item name="android:textSize">@dimen/rs_results_textsize_xsmall</item>
+        <item name="android:layout_marginTop">@dimen/rs_results_stars_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/rs_results_stars_margin_bottom</item>
+        <item name="Rs.ImageHeight">@dimen/rs_results_stars_image_height</item>
+    </style>
+    <style name="Results.Ratings.ListConsumable" parent="@style/Results.AdditionalMsgs.List">
+        <item name="android:textSize">@dimen/rs_results_textsize_xsmall</item>
+        <item name="android:layout_marginTop">@dimen/rs_results_stars_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/rs_results_stars_consumable_margin_bottom</item>
+        <item name="Rs.ImageHeight">@dimen/rs_results_stars_image_height</item>
+    </style>
+    <style name="Results.Ratings.Split" parent="@style/Results.AdditionalMsgs.Split">
+        <item name="android:textSize">@dimen/rs_results_textsize_xsmall</item>
+        <item name="android:layout_marginTop">@dimen/rs_results_stars_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/rs_results_stars_margin_bottom</item>
+        <item name="Rs.ImageHeight">@dimen/rs_results_stars_image_height</item>
+    </style>
+    <style name="Results.Savings" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.Savings.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.SavingsBoldHighlightSpan" parent="@style/Results">
+        <item name="android:textColor">@color/rs_price_text</item>
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Results.SavingsHighlightSpan" parent="@style/Results">
+        <item name="android:textColor">@color/rs_price_text</item>
+    </style>
+    <style name="Results.ShippingLine" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.ShippingLine.Gallery" parent="@style/Results.AdditionalMsgs.Gallery" />
+    <style name="Results.ShippingLine.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.ShippingLineHighlight" parent="@style/Results.AdditionalMsgs">
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Results.SomePrime" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.SomePrime.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.Sponsored" parent="@style/Results.AdditionalMsgs">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/sponsored_product_header</item>
+        <item name="android:paddingBottom">@dimen/pc_4px</item>
+    </style>
+    <style name="Results.Sponsored.Gallery" parent="@style/Results.Sponsored">
+        <item name="android:textSize">@dimen/rs_results_textsize_xlarge</item>
+    </style>
+    <style name="Results.Sponsored.Grid" parent="@style/Results.Sponsored" />
+    <style name="Results.Sponsored.List" parent="@style/Results.Sponsored" />
+    <style name="Results.Sponsored.Split" parent="@style/Results.Sponsored">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Results.SponsoredPriceMsg" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.SponsoredPriceMsg.Gallery" parent="@style/Results.AdditionalMsgs.Gallery" />
+    <style name="Results.SponsoredPriceMsg.Grid" parent="@style/Results.AdditionalMsgs.Grid" />
+    <style name="Results.SponsoredPriceMsg.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.StyledTextSpan_DATE_BY" parent="@style/Results">
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Results.StyledTextSpan_LINK" parent="@style/Results">
+        <item name="android:textColor">@color/rs_link_text</item>
+        <item name="Rs.IsLinkSpan">true</item>
+    </style>
+    <style name="Results.StyledTextSpan_STRIKETHROUGH" parent="@style/Results">
+        <item name="Rs.IsStrikethroughSpan">true</item>
+    </style>
+    <style name="Results.StyledTextSpan_TIME_LEFT" parent="@style/Results">
+        <item name="android:textColor">@color/aui_attainable</item>
+    </style>
+    <style name="Results.SubscribeAndSave" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.SubscribeAndSave.Gallery" parent="@style/Results.AdditionalMsgs.Gallery" />
+    <style name="Results.SubscribeAndSave.Grid" parent="@style/Results.AdditionalMsgs.Grid" />
+    <style name="Results.SubscribeAndSave.List" parent="@style/Results.AdditionalMsgs.List">
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_base</item>
+    </style>
+    <style name="Results.SubscribeAndSavePriceLabel" parent="@style/Results">
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Results.SubscribeAndSavePriceLabel.Gallery" parent="@style/Results.SubscribeAndSavePriceLabel">
+        <item name="Rs.IsBoldSpan">false</item>
+    </style>
+    <style name="Results.Subtitle" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textColor">@color/rs_secondary_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.Subtitle.Immersive" parent="@style/Results.Subtitle">
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_base</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="Results.ThumbSwitcher" parent="@style/Results">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.ThumbSwitcher.Gallery" parent="@style/Results.ThumbSwitcher">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingTop">8.0dip</item>
+    </style>
+    <style name="Results.Title" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="Results.Title.Grid" parent="@style/Results.Title" />
+    <style name="Results.Title.List" parent="@style/Results.Title">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Results.Title.Split" parent="@style/Results.Title">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+    </style>
+    <style name="Results.TradeIn" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.TradeIn.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Results.Twister" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.Twister.Gallery" parent="@style/Results.AdditionalMsgs.Gallery">
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:paddingTop">@dimen/rs_results_twister_padding_top</item>
+        <item name="android:paddingBottom">@dimen/rs_results_twister_padding_bottom</item>
+    </style>
+    <style name="Results.Twister.Grid" parent="@style/Results.AdditionalMsgs.Grid">
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:paddingTop">@dimen/rs_results_twister_padding_top</item>
+        <item name="android:paddingBottom">@dimen/rs_results_twister_padding_bottom</item>
+    </style>
+    <style name="Results.Twister.List" parent="@style/Results.AdditionalMsgs.List">
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:paddingTop">@dimen/rs_results_twister_padding_top</item>
+        <item name="android:paddingBottom">@dimen/rs_results_twister_padding_bottom</item>
+    </style>
+    <style name="Results.TwisterLink" parent="@style/Results">
+        <item name="android:textColor">@color/rs_link_text</item>
+    </style>
+    <style name="Results.UnitPriceSpan" parent="@style/Results">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+        <item name="android:textColor">@color/rs_price_text</item>
+    </style>
+    <style name="Results.UnitPriceSpan.Gallery" parent="@style/Results.UnitPriceSpan">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+    </style>
+    <style name="Results.Variations" parent="@style/Results.AdditionalMsgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Results.Variations.List" parent="@style/Results.AdditionalMsgs.List" />
+    <style name="Rs" />
+    <style name="Rs.Corrections" parent="@style/Rs">
+        <item name="android:textColor">@color/rs_secondary_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Rs.Corrections.FKMR" parent="@style/Rs.Corrections" />
+    <style name="Rs.Corrections.FKMR.Header" parent="@style/Rs.Corrections.FKMR">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:paddingTop">@dimen/pc_3px</item>
+        <item name="android:paddingBottom">@dimen/pc_3px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">3</item>
+    </style>
+    <style name="Rs.Corrections.FKMR.Header.Keywords" parent="@style/Rs.Corrections.FKMR.Header">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Rs.Corrections.FKMR.Header.Keywords.Span" parent="@style/Rs.Corrections.FKMR.Header.Keywords">
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Rs.Corrections.FKMR.Header.SeeAll" parent="@style/Rs.Corrections.FKMR.Header">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textColor">@color/rs_link_text</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginLeft">@dimen/pc_3px</item>
+        <item name="android:layout_weight">0.0</item>
+    </style>
+    <style name="Rs.Corrections.FKMR.NoResult" parent="@style/Rs.Corrections.FKMR">
+        <item name="android:textSize">@dimen/pc_text_8px</item>
+    </style>
+    <style name="Rs.Corrections.FKMR.NoResult.Highlight" parent="@style/Rs.Corrections.FKMR.NoResult">
+        <item name="android:textColor">@color/rs_primary_text</item>
+    </style>
+    <style name="Rs.Corrections.FKMR.NoResult.Layout" parent="@style/Rs.Corrections.FKMR.NoResult">
+        <item name="android:background">@drawable/results_header_bottom_border</item>
+        <item name="android:paddingLeft">@dimen/pc_4px</item>
+        <item name="android:paddingTop">@dimen/pc_6px</item>
+        <item name="android:paddingRight">@dimen/pc_4px</item>
+        <item name="android:paddingBottom">@dimen/pc_6px</item>
+    </style>
+    <style name="Rs.Corrections.FKMR.NoResult.Message1" parent="@style/Rs.Corrections.FKMR.NoResult" />
+    <style name="Rs.Corrections.FKMR.NoResult.Message2" parent="@style/Rs.Corrections.FKMR.NoResult">
+        <item name="android:paddingTop">@dimen/rs_corrections_line_spacing</item>
+    </style>
+    <style name="Rs.Corrections.Mixed" parent="@style/Rs.Corrections" />
+    <style name="Rs.Corrections.Mixed.DYM" parent="@style/Rs.Corrections.Mixed" />
+    <style name="Rs.Corrections.Mixed.DYM.Header" parent="@style/Rs.Corrections.Mixed.DYM">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+    </style>
+    <style name="Rs.Corrections.Mixed.DYM.SubHeader" parent="@style/Rs.Corrections.Mixed.DYM">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+        <item name="android:paddingTop">@dimen/rs_corrections_line_spacing</item>
+    </style>
+    <style name="Rs.Corrections.Mixed.Layout" parent="@style/Rs.Corrections.Mixed">
+        <item name="android:paddingLeft">@dimen/pc_4px</item>
+        <item name="android:paddingRight">@dimen/pc_4px</item>
+    </style>
+    <style name="Rs.Corrections.Mixed.Layout.DYM" parent="@style/Rs.Corrections.Mixed.Layout">
+        <item name="android:paddingTop">@dimen/rs_corrections_padding_top</item>
+        <item name="android:paddingBottom">@dimen/rs_corrections_padding_bottom</item>
+    </style>
+    <style name="Rs.Corrections.Mixed.Layout.QUARTZ" parent="@style/Rs.Corrections.Mixed.Layout">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:paddingTop">@dimen/rs_corrections_padding_top</item>
+        <item name="android:paddingBottom">@dimen/rs_corrections_padding_bottom</item>
+    </style>
+    <style name="Rs.Corrections.Mixed.Layout.QUARTZ.Secondary" parent="@style/Rs.Corrections.Mixed.Layout.QUARTZ">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+        <item name="android:paddingTop">@dimen/rs_corrections_line_spacing</item>
+    </style>
+    <style name="Rs.Corrections.NoResult" parent="@style/Rs.Corrections">
+        <item name="android:paddingLeft">@dimen/pc_4px</item>
+        <item name="android:paddingRight">@dimen/pc_4px</item>
+    </style>
+    <style name="Rs.Corrections.NoResult.Button" parent="@style/Rs.Corrections.NoResult">
+        <item name="android:textSize">@dimen/rs_results_textsize_xlarge</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:background">@drawable/rs_btn_add_to_cart</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/pc_30px</item>
+        <item name="android:layout_margin">@dimen/pc_8px</item>
+    </style>
+    <style name="Rs.Corrections.NoResult.Divider" parent="@style/Rs.Corrections.NoResult">
+        <item name="android:background">@color/rs_tertiary_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="Rs.Corrections.NoResult.Header" parent="@style/Rs.Corrections.NoResult">
+        <item name="android:textSize">@dimen/pc_text_8px</item>
+        <item name="android:paddingTop">@dimen/pc_6px</item>
+        <item name="android:paddingBottom">@dimen/pc_6px</item>
+    </style>
+    <style name="Rs.Corrections.NoResult.Label" parent="@style/Rs.Corrections.NoResult">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:paddingTop">@dimen/pc_3px</item>
+        <item name="android:paddingBottom">@dimen/pc_3px</item>
+    </style>
+    <style name="Rs.Corrections.Spell" parent="@style/Rs.Corrections" />
+    <style name="Rs.Corrections.Spell.Detail" parent="@style/Rs.Corrections.Spell">
+        <item name="android:textSize">@dimen/pc_text_8px</item>
+        <item name="android:paddingTop">@dimen/rs_corrections_line_spacing</item>
+    </style>
+    <style name="Rs.Corrections.Spell.Footer" parent="@style/Rs.Corrections.Spell">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:paddingLeft">@dimen/pc_4px</item>
+        <item name="android:paddingTop">@dimen/rs_corrections_padding_top</item>
+        <item name="android:paddingRight">@dimen/pc_4px</item>
+        <item name="android:paddingBottom">@dimen/rs_corrections_padding_bottom</item>
+    </style>
+    <style name="Rs.Corrections.Spell.Header" parent="@style/Rs.Corrections.Spell">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+    </style>
+    <style name="Rs.Corrections.Spell.Layout" parent="@style/Rs.Corrections.Spell">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/rs_secondary_background</item>
+        <item name="android:paddingLeft">@dimen/pc_4px</item>
+        <item name="android:paddingTop">@dimen/rs_corrections_padding_top</item>
+        <item name="android:paddingRight">@dimen/pc_4px</item>
+        <item name="android:paddingBottom">@dimen/rs_corrections_padding_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/rs_corrections_divider_width</item>
+    </style>
+    <style name="Rs.Header" parent="@style/Rs" />
+    <style name="Rs.Header.Department" parent="@style/Rs.Header">
+        <item name="android:textSize">@dimen/rs_results_header_department_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Rs.Header.Filter" parent="@style/Rs.Header">
+        <item name="android:textSize">@dimen/rs_results_header_filter_text_size</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:drawablePadding">@dimen/rs_results_header_filter_drawable_padding</item>
+    </style>
+    <style name="Rs.Header.Filter.Count" parent="@style/Rs.Header.Filter" />
+    <style name="Rs.Header.ResultsCountText" parent="@style/Rs.Header">
+        <item name="android:textSize">@dimen/rs_results_header_count_text_size</item>
+        <item name="android:textColor">@color/aui_secondary</item>
+        <item name="android:paddingLeft">@dimen/pc_4px</item>
+        <item name="android:paddingTop">@dimen/pc_6px</item>
+        <item name="android:paddingRight">@dimen/pc_4px</item>
+    </style>
+    <style name="Rs.Header.TextWidget" parent="@style/Rs.Header">
+        <item name="android:textSize">@dimen/rs_results_header_text_widget_font_size</item>
+        <item name="android:textColor">@color/rs_secondary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="Rs.Header.TextWidget.Highlight" parent="@style/Rs.Header.TextWidget">
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Rs.InlineActions" parent="@style/Rs">
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">75.0dip</item>
+    </style>
+    <style name="Rs.InlineActions.AddToCart" parent="@style/Rs.InlineActions">
+        <item name="android:background">@drawable/rs_btn_add_to_cart</item>
+        <item name="android:text">@string/rs_add_to_cart_long</item>
+        <item name="Rs.ShortText">@string/rs_add_to_cart_short</item>
+    </style>
+    <style name="Rs.InlineActions.AddToCart.Fresh" parent="@style/Rs.InlineActions.AddToCart">
+        <item name="android:background">@drawable/rs_btn_add_to_fresh_cart</item>
+        <item name="android:text">@string/rs_add_to_fresh_cart_long</item>
+    </style>
+    <style name="Rs.InlineActions.Button" parent="@style/Rs.InlineActions">
+        <item name="android:textSize">@dimen/rs_results_textsize_xlarge</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">75.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Rs.InlineActions.Immersive" parent="@style/Rs.InlineActions">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Rs.InlineActions.Message" parent="@style/Rs.InlineActions">
+        <item name="android:textSize">@dimen/rs_results_textsize_xlarge</item>
+        <item name="android:textColor">@color/aui_attainable</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:text">@string/rs_add_to_cart_success</item>
+        <item name="android:layout_weight">5.0</item>
+    </style>
+    <style name="Rs.InlineActions.Progress" parent="@style/Rs.InlineActions">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">3.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Rs.InlineActions.QuantitySwitcher" parent="@style/Rs.InlineActions">
+        <item name="android:background">@drawable/rs_btn_bg_view_options</item>
+    </style>
+    <style name="Rs.InlineActions.ViewOptions" parent="@style/Rs.InlineActions">
+        <item name="android:background">@drawable/rs_btn_view_options</item>
+        <item name="android:text">@string/rs_view_options_button_text</item>
+        <item name="Rs.ShortText">@string/rs_view_options_button_text</item>
+    </style>
+    <style name="Rs.Quantity" parent="@style/Rs" />
+    <style name="Rs.Quantity.Close" parent="@style/Rs.Quantity">
+        <item name="android:padding">@dimen/pc_6px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/rs_close</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Rs.Quantity.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/rs_dialog_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Rs.Quantity.Header" parent="@style/Rs.Quantity">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/rs_dialog_header</item>
+        <item name="android:paddingLeft">@dimen/pc_6px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Rs.Quantity.ItemInfo" parent="@style/Rs.Quantity">
+        <item name="android:textSize">@dimen/pc_text_7px</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">@dimen/pc_7px</item>
+        <item name="android:paddingBottom">@dimen/pc_7px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pc_4px</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Rs.Quantity.Title" parent="@style/Rs.Quantity">
+        <item name="android:textSize">@dimen/pc_text_10px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/quantity_changer_header_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_toLeftOf">@id/rs_quantity_dialog_close</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Rs.Refinement" parent="@style/Rs" />
+    <style name="Rs.Refinement.Background" parent="@style/Rs.Refinement">
+        <item name="android:background">@drawable/rs_popup_window_background_shadow</item>
+    </style>
+    <style name="Rs.Refinement.ChildPanel" parent="@style/Rs.Refinement">
+        <item name="android:background">@color/rs_refinement_child_background</item>
+    </style>
+    <style name="Rs.Refinement.ChildPanel.Header" parent="@style/Rs.Refinement.ChildPanel">
+        <item name="android:textSize">@dimen/rs_refinement_menu_text_size_header</item>
+        <item name="android:textColor">@color/rs_refinement_black</item>
+    </style>
+    <style name="Rs.Refinement.ChildPanel.Header.MultiText" parent="@style/Rs.Refinement.ChildPanel.Header">
+        <item name="Rs.ImageAlign">align_baseline</item>
+    </style>
+    <style name="Rs.Refinement.ChildPanel.SubHeader" parent="@style/Rs.Refinement.ChildPanel">
+        <item name="android:textSize">@dimen/rs_refinement_menu_text_size_subheader</item>
+        <item name="android:textColor">@color/rs_refinement_gray</item>
+    </style>
+    <style name="Rs.Refinement.FilterItem" parent="@style/Rs.Refinement">
+        <item name="android:background">@color/rs_refinement_group_background</item>
+    </style>
+    <style name="Rs.Refinement.FilterItem.Header" parent="@style/Rs.Refinement.FilterItem">
+        <item name="android:textSize">@dimen/rs_refinement_menu_text_size_header</item>
+        <item name="android:textColor">@color/rs_refinement_group_header</item>
+    </style>
+    <style name="Rs.Refinement.GroupPanel" parent="@style/Rs.Refinement">
+        <item name="android:background">@color/rs_refinement_group_background</item>
+    </style>
+    <style name="Rs.Refinement.GroupPanel.Header" parent="@style/Rs.Refinement.GroupPanel">
+        <item name="android:textSize">@dimen/rs_refinement_menu_text_size_header</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rs_refinement_group_header</item>
+    </style>
+    <style name="Rs.Refinement.GroupPanel.SubHeader" parent="@style/Rs.Refinement.GroupPanel">
+        <item name="android:textSize">@dimen/rs_refinement_menu_text_size_subheader</item>
+        <item name="android:textColor">@color/rs_refinement_group_subheader</item>
+    </style>
+    <style name="Rs.Refinement.Header" parent="@style/Rs.Refinement">
+        <item name="android:background">@color/rs_refinement_header_background</item>
+    </style>
+    <style name="Rs.Refinement.Header.ClearAll" parent="@style/Rs.Refinement.Header">
+        <item name="android:textSize">@dimen/rs_refinement_menu_text_size_subheader</item>
+        <item name="android:textColor">@color/rs_refinement_header_clearall</item>
+    </style>
+    <style name="Rs.Refinement.Header.Filter" parent="@style/Rs.Refinement.Header">
+        <item name="android:textSize">@dimen/rs_refinement_menu_text_size_header</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rs_refinement_header_filter</item>
+    </style>
+    <style name="Rs.ResultCloseSeparator" parent="@style/Rs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Rs.ResultCloseSeparator.Immersive" parent="@style/Rs.ResultCloseSeparator">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">35.0dip</item>
+        <item name="android:layout_marginBottom">@dimen/rs_results_immersive_section_spacing</item>
+    </style>
+    <style name="Rs.Twister" parent="@style/Rs" />
+    <style name="Rs.Twister.Close" parent="@style/Rs.Twister">
+        <item name="android:paddingLeft">@dimen/rs_twister_close_padding_left</item>
+        <item name="android:paddingTop">@dimen/rs_twister_header_padding_top_bottom</item>
+        <item name="android:paddingRight">@dimen/rs_twister_padding_left_right</item>
+        <item name="android:paddingBottom">@dimen/rs_twister_header_padding_top_bottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/rs_close</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Rs.Twister.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/rs_dialog_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Rs.Twister.Header" parent="@style/Rs.Twister">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/rs_dialog_header</item>
+        <item name="android:paddingLeft">@dimen/rs_twister_padding_left_right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Rs.Twister.Item" parent="@style/Rs.Twister">
+        <item name="android:paddingTop">@dimen/rs_twister_item_padding_top_bottom</item>
+        <item name="android:paddingBottom">@dimen/rs_twister_item_padding_top_bottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Rs.Twister.ItemChevron" parent="@style/Rs.Twister">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/rs_twister_chevron_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/rs_twister_padding_left_right</item>
+        <item name="android:src">@drawable/rs_carrot_right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Rs.Twister.ItemInfo" parent="@style/Rs.Twister">
+        <item name="android:textSize">@dimen/rs_twister_edition_text</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/rs_twister_padding_left_right</item>
+        <item name="android:layout_toLeftOf">@id/rs_twister_item_chevron</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Rs.Twister.ItemInfo.BadgeSpan" parent="@style/Rs.Twister.ItemInfo">
+        <item name="Rs.ImageAlign">align_baseline</item>
+    </style>
+    <style name="Rs.Twister.ItemInfo.PriceSpan" parent="@style/Rs.Twister.ItemInfo">
+        <item name="android:textColor">@color/rs_price_text</item>
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Rs.Twister.ItemInfo.TextSpan" parent="@style/Rs.Twister.ItemInfo">
+        <item name="android:textColor">@color/rs_secondary_text</item>
+    </style>
+    <style name="Rs.Twister.ItemInfo.TitleSpan" parent="@style/Rs.Twister.ItemInfo">
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Rs.Twister.List" parent="@style/Rs.Twister">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/rs_dialog_list</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Rs.Twister.Menu" parent="@style/Rs.Twister">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/rs_twister_menu_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/rs_twister_menu_side_margin</item>
+    </style>
+    <style name="Rs.Twister.Title" parent="@style/Rs.Twister">
+        <item name="android:textSize">@dimen/rs_twister_title_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rs_twister_title_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_toLeftOf">@id/rs_twister_menu_close</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Rs.Widget" parent="@style/Rs" />
+    <style name="Rs.Widget.BrandStrip" parent="@style/Rs.Widget" />
+    <style name="Rs.Widget.BrandStrip.Base" parent="@style/Rs.Widget.BrandStrip">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/rs_widgets_brand_strip_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:baselineAligned">false</item>
+    </style>
+    <style name="Rs.Widget.BrandStrip.Cell" parent="@style/Rs.Widget.BrandStrip">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/rs_brand_strip_icon_padding</item>
+        <item name="android:paddingRight">@dimen/rs_brand_strip_icon_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minWidth">100.0dip</item>
+    </style>
+    <style name="Rs.Widget.BrandStrip.Header" parent="@style/Rs.Widget.BrandStrip">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:paddingLeft">@dimen/rs_brand_strip_padding_left</item>
+        <item name="android:paddingRight">@dimen/rs_brand_strip_padding_right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/rs_brand_strip_title</item>
+    </style>
+    <style name="Rs.Widget.BrandStrip.HighLight" parent="@style/Rs.Widget.BrandStrip">
+        <item name="android:background">@color/rs_widgets_brand_strip_icon_unselected</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/rs_brand_strip_icon_bar_height_unselected</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="Rs.Widget.BrandStrip.Icon" parent="@style/Rs.Widget.BrandStrip">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/rs_brand_strip_icon_height</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="Rs.Widget.BrandStrip.ProgressBar" parent="@style/Rs.Widget.BrandStrip">
+        <item name="android:paddingLeft">@dimen/rs_brand_strip_padding_left</item>
+        <item name="android:paddingTop">@dimen/rs_brand_strip_padding_top</item>
+        <item name="android:paddingRight">@dimen/rs_brand_strip_padding_right</item>
+        <item name="android:paddingBottom">@dimen/rs_brand_strip_padding_bottom</item>
+        <item name="android:layout_width">24.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="Rs.Widget.BrandStrip.ScrollView" parent="@style/Rs.Widget.BrandStrip">
+        <item name="android:paddingLeft">@dimen/rs_brand_strip_padding_left</item>
+        <item name="android:paddingTop">@dimen/rs_brand_strip_padding_top</item>
+        <item name="android:paddingRight">@dimen/rs_brand_strip_padding_right</item>
+        <item name="android:paddingBottom">@dimen/rs_brand_strip_padding_bottom</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="Rs.Widget.ImageSparkle" parent="@style/Rs.Widget" />
+    <style name="Rs.Widget.ImageSparkle.Image" parent="@style/Rs.Widget.ImageSparkle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="Rs.Widget.PastPurchase" parent="@style/Rs.Widget" />
+    <style name="Rs.Widget.PastPurchase.Header" parent="@style/Rs.Widget.PastPurchase">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textColor">@color/rs_secondary_text</item>
+        <item name="android:paddingTop">@dimen/rs_results_padding_bottom_small</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Rs.Widget.PastPurchase.Image" parent="@style/Rs.Widget.PastPurchase">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="Rs.Widget.PastPurchase.ImageWrapper" parent="@style/Rs.Widget.PastPurchase">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">@dimen/rs_results_padding_bottom_small</item>
+        <item name="android:layout_width">@dimen/rs_past_purchases_image_width_list</item>
+        <item name="android:layout_height">@dimen/rs_past_purchases_image_height_list</item>
+    </style>
+    <style name="Rs.Widget.PastPurchase.PriceText" parent="@style/Rs.Widget.PastPurchase">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textColor">@color/rs_price_text</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">@dimen/pc_1.5px</item>
+        <item name="Rs.IsBoldSpan">true</item>
+    </style>
+    <style name="Rs.Widget.PastPurchase.SeeAllLink" parent="@style/Rs.Widget.PastPurchase">
+        <item name="android:background">@color/past_purchase_list_background</item>
+        <item name="android:padding">@dimen/rs_results_list_product_padding_top</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Rs.Widget.PastPurchase.Title" parent="@style/Rs.Widget.PastPurchase">
+        <item name="android:textSize">@dimen/rs_results_textsize_small</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Rs.Widget.Sparkle" parent="@style/Rs.Widget" />
+    <style name="Rs.Widget.Sparkle.Image" parent="@style/Rs.Widget.Sparkle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="Rs.Widget.Sparkle.ImageWrapper" parent="@style/Rs.Widget.Sparkle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">@dimen/rs_widget_sparkle_image_width</item>
+        <item name="android:layout_height">@dimen/rs_widget_sparkle_image_height</item>
+        <item name="android:layout_marginLeft">@dimen/rs_widget_sparkle_content_margin</item>
+        <item name="android:layout_marginTop">@dimen/rs_widget_divider_width</item>
+        <item name="android:layout_marginBottom">@dimen/rs_widget_divider_width</item>
+    </style>
+    <style name="Rs.Widget.Sparkle.Text" parent="@style/Rs.Widget.Sparkle">
+        <item name="android:textSize">@dimen/rs_results_textsize_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rs_secondary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/rs_widget_sparkle_content_margin</item>
+        <item name="android:layout_marginRight">@dimen/rs_widget_sparkle_content_margin</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Rs.Widget.Sparkle.indicator" parent="@style/Rs.Widget.Sparkle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/rs_widget_sparkle_content_margin</item>
+        <item name="android:layout_marginRight">@dimen/rs_widget_sparkle_indicator_margin_right</item>
+    </style>
+    <style name="Rs.Widget.TextSparkle" parent="@style/Rs.Widget" />
+    <style name="Rs.Widget.TextSparkle.Layout" parent="@style/Rs.Widget.TextSparkle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/rs_secondary_background</item>
+        <item name="android:paddingLeft">@dimen/rs_widget_sparkle_padding_left</item>
+        <item name="android:paddingRight">@dimen/rs_widget_sparkle_padding_right</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/rs_widget_divider_width</item>
+    </style>
+    <style name="Rs.Widget.TextSparkle.Text" parent="@style/Rs.Widget.TextSparkle">
+        <item name="android:textSize">@dimen/pc_text_8px</item>
+        <item name="android:textColor">@color/rs_primary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/pc_8px</item>
+        <item name="android:paddingBottom">@dimen/pc_8px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="SearchApp">
+        <item name="android:listViewStyle">@style/SearchResultListView</item>
+    </style>
+    <style name="SearchResultListView" parent="@android:style/Widget.ListView">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="VSActionButton" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/vs_action_btn_text_size</item>
+        <item name="android:textColor">@color/vs_dark_text</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/vs_action_button</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:minHeight">@dimen/vs_action_btn_min_height</item>
+        <item name="android:drawablePadding">9.0dip</item>
+    </style>
+    <style name="VSActionButton.VSRetryButton" parent="@style/VSActionButton">
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:text">@string/vs_try_again</item>
+        <item name="android:drawableLeft">@drawable/vs_btn_ic_modal_mic</item>
+    </style>
+    <style name="VSActionButton.VSTypeButton" parent="@style/VSActionButton">
+        <item name="android:text">@string/vs_type_your_search</item>
+        <item name="android:drawableLeft">@drawable/vs_btn_ic_modal_typesearch</item>
+    </style>
+    <style name="VSDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="VSDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/vs_slide_up_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/vs_slide_down_fade_out</item>
+    </style>
+    <style name="VSDialogSubTitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/vs_dark_text</item>
+    </style>
+    <style name="VSDialogText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/vs_dark_text</item>
+    </style>
+    <style name="VSDialogTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/vs_dark_text</item>
+    </style>
+    <style name="VSSmallDialogText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/vs_dark_text</item>
+    </style>
+    <style name="WalletFragmentDefaultButtonTextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:textColorLink">@color/wallet_link_text_light</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="@style/WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
+        <item name="android:textColorLink">@color/wallet_holo_blue_light</item>
+    </style>
+    <style name="WalletFragmentDefaultStyle">
+        <item name="buyButtonHeight">48.0dip</item>
+        <item name="buyButtonWidth">match_parent</item>
+        <item name="buyButtonText">buy_with_google</item>
+        <item name="buyButtonAppearance">classic</item>
+        <item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
+        <item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
+        <item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
+        <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
+        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+        <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
+        <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+</resources>

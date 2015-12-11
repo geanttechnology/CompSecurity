@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ebayMargin" card_view:cardBackgroundColor="@android:color/white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x">
+        <TextView android:text="@string/card_buyingoverview_title" style="@style/EbayTextAppearance.CardTitle" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin3x" android:layout_weight="1.0">
+            <include android:id="@id/buyingoverview_bidding" layout="@layout/homescreen_card_buyingoverview_item" />
+            <View android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMarginHalf" />
+            <include android:id="@id/buyingoverview_offers" layout="@layout/homescreen_card_buyingoverview_item" />
+            <View android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMarginHalf" />
+            <include android:id="@id/buyingoverview_purchases" layout="@layout/homescreen_card_buyingoverview_item" />
+        </LinearLayout>
+        <Button android:layout_gravity="center_horizontal" android:id="@id/see_all" android:layout_height="wrap_content" android:minWidth="@dimen/card_more_button_width" android:text="@string/card_buyingoverview_viewall" style="@style/EbayButton" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,75 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.groupon.service;
+
+import android.content.Context;
+import com.groupon.callbacks.QandARequestCallback;
+import com.groupon.http.Http;
+import com.groupon.models.qadiscussions.QaDiscussionPaginationWrapper;
+
+// Referenced classes of package com.groupon.service:
+//            QaDiscussionsService
+
+class val.callback extends Http
+{
+
+    final QaDiscussionsService this$0;
+    final QandARequestCallback val$callback;
+
+    protected void onException(Exception exception)
+    {
+        super.onException(exception);
+        if (val$callback != null)
+        {
+            val$callback.onException(exception);
+        }
+    }
+
+    protected void onFinally()
+    {
+        super.onFinally();
+        if (val$callback != null)
+        {
+            val$callback.onFinally();
+        }
+    }
+
+    protected void onSuccess(QaDiscussionPaginationWrapper qadiscussionpaginationwrapper)
+        throws Exception
+    {
+        super.onSuccess(qadiscussionpaginationwrapper);
+        if (val$callback != null)
+        {
+            val$callback.onDiscussionsSuccess(qadiscussionpaginationwrapper);
+        }
+    }
+
+    protected volatile void onSuccess(Object obj)
+        throws Exception
+    {
+        onSuccess((QaDiscussionPaginationWrapper)obj);
+    }
+
+    public void onUserCancelRetry()
+    {
+        super.onUserCancelRetry();
+        if (val$callback != null)
+        {
+            val$callback.onCancel();
+        }
+    }
+
+    protected boolean shouldRetry()
+    {
+        return true;
+    }
+
+    onPaginationWrapper(Class class1, String s, QandARequestCallback qandarequestcallback)
+    {
+        this$0 = final_qadiscussionsservice;
+        val$callback = qandarequestcallback;
+        super(Context.this, class1, s);
+    }
+}

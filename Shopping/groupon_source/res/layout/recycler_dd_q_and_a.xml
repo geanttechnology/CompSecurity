@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/qa_section" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/details_item_top_bottom_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/live_chat_title_text_size_deal_detials" android:textColor="@color/grey_dark" android:id="@id/qa_discussions_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qa" android:drawableLeft="@drawable/qa_icon" android:drawablePadding="@dimen/deal_details_component_padding_v2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/grey_medium" android:id="@id/qa_posts_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/qa_arrow_right" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/qa_arrow_right" android:paddingLeft="@dimen/deal_details_component_padding_v2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_redesign" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

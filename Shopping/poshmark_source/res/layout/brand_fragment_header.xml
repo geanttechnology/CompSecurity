@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <ImageView android:id="@id/bgCovershotImageView" android:layout_width="fill_parent" android:layout_height="120.0dip" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:background="@color/bgColorLightBurgundySemiTransparent" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/backgroundTableRowMiddle">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/brandHeaderButtonContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <com.poshmark.ui.customviews.PMButton android:id="@id/unknownBrandButton" android:visibility="invisible" android:layout_width="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="0.0dip" android:text="\?" android:layout_alignParentRight="true" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/borderedWhiteButton" />
+                    <LinearLayout android:id="@id/followFollowingButtonContainer" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true">
+                        <include android:id="@id/followFollowingButtonLayout" layout="@layout/brand_follow_button_layout" />
+                    </LinearLayout>
+                </FrameLayout>
+                <com.poshmark.ui.customviews.PMTextView android:textSize="20.0sp" android:textColor="@color/textColorWhite" android:ellipsize="end" android:id="@id/brandTitle" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_toLeftOf="@id/brandHeaderButtonContainer" android:layout_alignParentLeft="true" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+            </RelativeLayout>
+            <LinearLayout android:id="@id/sortWidgetContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <com.poshmark.ui.customviews.CollectionSortWidget android:orientation="horizontal" android:id="@id/sortWidget" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/filterWidgetLayout" android:background="@drawable/bg_fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.poshmark.ui.customviews.ListingsFilterWidget android:orientation="horizontal" android:id="@id/filterWidget" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:layoutType="2" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/brandShareTriggerLayout" android:background="@drawable/bg_fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/inviteIcon" android:background="@drawable/ic_share_social_network" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/cancelIcon" android:background="@drawable/ic_delete_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/share_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="@string/brand_share_banner_title" android:layout_toRightOf="@id/inviteIcon" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="15.0sp" android:textColor="@color/textColorDarkGray" android:id="@id/share_banner_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:text="@string/brand_share_banner_message" android:layout_toRightOf="@id/inviteIcon" android:layout_below="@id/share_banner_title" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        <com.poshmark.ui.customviews.PMButton android:id="@id/inviteFriendsButton" android:layout_width="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/brand_share_banner_button_title" android:layout_below="@id/share_banner_message" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/followFollowingButton" />
+    </RelativeLayout>
+</LinearLayout>

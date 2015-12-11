@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@android:style/Theme.Holo.Light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/feature_list_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:id="@id/feature_list_item_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_button_reset" />
+        <Switch android:id="@id/feature_list_item_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@string/debug_feature_switch_text_on" android:textOff="@string/debug_feature_switch_text_off" />
+    </LinearLayout>
+</RelativeLayout>

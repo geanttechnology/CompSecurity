@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/no_stores_msg_layout" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/black" android:background="#fff9f9f9" android:paddingTop="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scan_not_recognized" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="@color/black" android:background="#fff9f9f9" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tips_text" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/tips" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tips_text" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+</LinearLayout>

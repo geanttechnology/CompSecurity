@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/top_scrollview" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top|right|center" android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/channel_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/category_browse_fragment_spacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <FrameLayout android:id="@id/category_browse_fragment" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressContainer" android:visibility="gone" android:layout_width="@dimen/commonProgressSize" android:layout_height="@dimen/commonProgressSize" style="@style/Widget.AppCompat.ProgressBar" />
+</FrameLayout>

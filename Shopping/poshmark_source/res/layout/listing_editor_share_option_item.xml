@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contentTableRowMiddle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:layout_gravity="center_vertical" android:id="@id/shareOptionTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/shareOptionActionLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Switch android:layout_gravity="center_vertical" android:id="@id/shareOptionSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorLightBurgundy" android:layout_gravity="center_vertical" android:id="@id/shareOptionConnectTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/connect_now" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/shareOptionConnectIconView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_arrow" />
+    </LinearLayout>
+</RelativeLayout>

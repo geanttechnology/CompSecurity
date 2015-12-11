@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/recent_list_item_background" android:layout_width="fill_parent" android:layout_height="@dimen/global_search_list_item_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/grey50" android:gravity="center_vertical" android:id="@id/search_tag_item" android:paddingLeft="@dimen/keyline_1" android:paddingRight="@dimen/keyline_1" android:layout_width="wrap_content" android:layout_height="@dimen/global_search_list_item_row_height" android:singleLine="true" />
+    <View android:id="@id/divider" android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

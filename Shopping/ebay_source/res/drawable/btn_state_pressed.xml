@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/buttonMargin" android:insetRight="@dimen/buttonMargin" android:insetTop="@dimen/buttonMargin" android:insetBottom="@dimen/buttonMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <solid android:color="@color/style_guide_extra_light_gray" />
+        <corners android:radius="@dimen/buttonCornerRadius" />
+        <padding android:left="@dimen/buttonPaddingLeft" android:top="@dimen/buttonPaddingTop" android:right="@dimen/buttonPaddingRight" android:bottom="@dimen/buttonPaddingBottom" />
+        <stroke android:width="1.0dip" android:color="@color/style_guide_gray" android:dashWidth="0.0dip" android:dashGap="0.0dip" />
+    </shape>
+</inset>

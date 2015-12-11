@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/offer_shipping_details" android:layout_marginTop="20.0dip" style="@style/ItemView.ClickableLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/BestOfferSeparatorStyle.Top" />
+    <ImageView android:id="@id/shipping_payments_returns_arrow" android:layout_marginRight="@dimen/checkoutLargeMargin" android:contentDescription="@string/XYZZY_shipping_payments_returns" style="@style/ItemView.Chevron" />
+    <LinearLayout android:orientation="vertical" android:id="@id/shipping_payments_returns_text" android:layout_toLeftOf="@id/shipping_payments_returns_arrow" android:layout_centerVertical="true" style="@style/ItemStatLayout">
+        <TextView android:layout_gravity="left" android:paddingLeft="0.0dip" android:text="@string/XYZZY_shipping_payments_returns" style="@style/ItemStatValue.Bold" />
+        <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorSecondary" android:id="@id/shipping_payments_returns_subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/offer_price_does_not_include_shipping" />
+    </LinearLayout>
+    <View android:layout_below="@id/shipping_payments_returns_text" style="@style/BestOfferSeparatorStyle.Bottom" />
+</RelativeLayout>

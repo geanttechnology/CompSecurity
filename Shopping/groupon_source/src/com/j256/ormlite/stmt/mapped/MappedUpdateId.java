@@ -1,0 +1,94 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.j256.ormlite.stmt.mapped;
+
+import com.j256.ormlite.dao.ObjectCache;
+import com.j256.ormlite.db.DatabaseType;
+import com.j256.ormlite.field.FieldType;
+import com.j256.ormlite.logger.Logger;
+import com.j256.ormlite.misc.SqlExceptionUtil;
+import com.j256.ormlite.support.DatabaseConnection;
+import com.j256.ormlite.table.TableInfo;
+import java.sql.SQLException;
+
+// Referenced classes of package com.j256.ormlite.stmt.mapped:
+//            BaseMappedStatement
+
+public class MappedUpdateId extends BaseMappedStatement
+{
+
+    private MappedUpdateId(TableInfo tableinfo, String s, FieldType afieldtype[])
+    {
+        super(tableinfo, s, afieldtype);
+    }
+
+    public static MappedUpdateId build(DatabaseType databasetype, TableInfo tableinfo)
+        throws SQLException
+    {
+        FieldType fieldtype = tableinfo.getIdField();
+        if (fieldtype == null)
+        {
+            throw new SQLException((new StringBuilder()).append("Cannot update-id in ").append(tableinfo.getDataClass()).append(" because it doesn't have an id field").toString());
+        } else
+        {
+            StringBuilder stringbuilder = new StringBuilder(64);
+            appendTableName(databasetype, stringbuilder, "UPDATE ", tableinfo.getTableName());
+            stringbuilder.append("SET ");
+            appendFieldColumnName(databasetype, stringbuilder, fieldtype, null);
+            stringbuilder.append("= ? ");
+            appendWhereFieldEq(databasetype, fieldtype, stringbuilder, null);
+            return new MappedUpdateId(tableinfo, stringbuilder.toString(), new FieldType[] {
+                fieldtype, fieldtype
+            });
+        }
+    }
+
+    private Object extractIdToFieldObject(Object obj)
+        throws SQLException
+    {
+        return idField.extractJavaFieldToSqlArgValue(obj);
+    }
+
+    public int execute(DatabaseConnection databaseconnection, Object obj, Object obj1, ObjectCache objectcache)
+        throws SQLException
+    {
+        Object aobj[];
+        int i;
+        try
+        {
+            aobj = new Object[2];
+            aobj[0] = convertIdToFieldObject(obj1);
+            aobj[1] = extractIdToFieldObject(obj);
+            i = databaseconnection.update(statement, aobj, argFieldTypes);
+        }
+        // Misplaced declaration of an exception variable
+        catch (DatabaseConnection databaseconnection)
+        {
+            throw SqlExceptionUtil.create((new StringBuilder()).append("Unable to run update-id stmt on object ").append(obj).append(": ").append(statement).toString(), databaseconnection);
+        }
+        if (i <= 0)
+        {
+            break MISSING_BLOCK_LABEL_108;
+        }
+        if (objectcache == null)
+        {
+            break MISSING_BLOCK_LABEL_96;
+        }
+        databaseconnection = ((DatabaseConnection) (idField.extractJavaFieldValue(obj)));
+        databaseconnection = ((DatabaseConnection) (objectcache.updateId(clazz, databaseconnection, obj1)));
+        if (databaseconnection == null || databaseconnection == obj)
+        {
+            break MISSING_BLOCK_LABEL_96;
+        }
+        idField.assignField(databaseconnection, obj1, false, objectcache);
+        idField.assignField(obj, obj1, false, objectcache);
+        logger.debug("updating-id with statement '{}' and {} args, changed {} rows", statement, Integer.valueOf(aobj.length), Integer.valueOf(i));
+        if (aobj.length > 0)
+        {
+            logger.trace("updating-id arguments: {}", ((Object) (aobj)));
+        }
+        return i;
+    }
+}

@@ -1,0 +1,194 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.identity.platform.metric;
+
+import android.text.TextUtils;
+import com.amazon.identity.auth.device.utils.MAPLog;
+
+// Referenced classes of package com.amazon.identity.platform.metric:
+//            PlatformMetricsCollector
+
+public abstract class PlatformMetricsTimer
+{
+    static final class DCPMetricsTimer extends PlatformMetricsTimer
+    {
+
+        private static final String TAG = com/amazon/identity/platform/metric/PlatformMetricsTimer$DCPMetricsTimer.getName();
+        private final PlatformMetricsCollector mCollector;
+        private boolean mDiscard;
+        private long mEnd;
+        private final String mMetricComponent;
+        private long mStart;
+        private String mTimerName;
+
+        public void discard()
+        {
+            String s = TAG;
+            (new StringBuilder("Discarding timer: ")).append(mTimerName).toString();
+            mDiscard = true;
+        }
+
+        public String getTimerName()
+        {
+            return mTimerName;
+        }
+
+        public void setTimerName(String s)
+        {
+            mTimerName = s;
+        }
+
+        public void start()
+        {
+            String s = TAG;
+            (new StringBuilder("Starting timer: ")).append(mTimerName).append(" ").append(mMetricComponent).toString();
+            mStart = System.nanoTime();
+        }
+
+        public void stop()
+        {
+            String s;
+            if (TextUtils.isEmpty(mTimerName))
+            {
+                s = TAG;
+            } else
+            if (!mDiscard)
+            {
+                if (mStart < 0L)
+                {
+                    String s1 = TAG;
+                    (new StringBuilder("Timer not started: ")).append(mTimerName).toString();
+                    return;
+                }
+                String s2;
+                long l;
+                if (mEnd > 0L)
+                {
+                    l = (mEnd - mStart) / 0xf4240L;
+                } else
+                {
+                    l = (System.nanoTime() - mStart) / 0xf4240L;
+                }
+                s2 = TAG;
+                (new StringBuilder("Stopping timer: ")).append(mTimerName).toString();
+                mStart = -1L;
+                mEnd = -1L;
+                if (mCollector == null)
+                {
+                    MAPLog.w(TAG, "Could not record timer because no collector was set");
+                    return;
+                } else
+                {
+                    mCollector.recordMetricTimerEvent(mMetricComponent, mTimerName, l);
+                    return;
+                }
+            }
+        }
+
+        public void stopAndDiscard()
+        {
+            stop();
+            discard();
+        }
+
+        public void stopClock()
+        {
+            mEnd = System.nanoTime();
+        }
+
+
+        public DCPMetricsTimer(PlatformMetricsCollector platformmetricscollector, String s, String s1)
+        {
+            mDiscard = false;
+            mCollector = platformmetricscollector;
+            mMetricComponent = s;
+            mTimerName = s1;
+            mStart = -1L;
+            mEnd = -1L;
+        }
+    }
+
+    static final class FakeMetricsTimer extends PlatformMetricsTimer
+    {
+
+        public void discard()
+        {
+        }
+
+        public String getTimerName()
+        {
+            return null;
+        }
+
+        public void setTimerName(String s)
+        {
+        }
+
+        public void start()
+        {
+        }
+
+        public void stop()
+        {
+        }
+
+        public void stopAndDiscard()
+        {
+        }
+
+        public void stopClock()
+        {
+        }
+
+        FakeMetricsTimer()
+        {
+        }
+    }
+
+
+    public static final long MILLISECONDS_PER_NANOSECOND = 0xf4240L;
+    public static final PlatformMetricsTimer NULL_TIMER = new FakeMetricsTimer();
+
+    public PlatformMetricsTimer()
+    {
+    }
+
+    public static PlatformMetricsTimer createPeriodicTimer(PlatformMetricsCollector platformmetricscollector, String s)
+    {
+        if (platformmetricscollector != null)
+        {
+            return platformmetricscollector.createPeriodicTimer(s);
+        } else
+        {
+            return NULL_TIMER;
+        }
+    }
+
+    public static PlatformMetricsTimer getInstance(PlatformMetricsCollector platformmetricscollector, String s, String s1)
+    {
+        if (platformmetricscollector != null)
+        {
+            return new DCPMetricsTimer(platformmetricscollector, s, s1);
+        } else
+        {
+            return NULL_TIMER;
+        }
+    }
+
+    public abstract void discard();
+
+    public abstract String getTimerName();
+
+    public abstract void setTimerName(String s);
+
+    public abstract void start();
+
+    public abstract void stop();
+
+    public abstract void stopAndDiscard();
+
+    public abstract void stopClock();
+
+}

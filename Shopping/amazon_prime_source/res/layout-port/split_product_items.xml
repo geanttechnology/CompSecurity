@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sx="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/rs_split_product_linear_layout" android:layout_width="@dimen/rs_split_view_port_item_width" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/rs_results_split_product_padding_top_bottom" android:paddingBottom="@dimen/rs_results_split_product_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/gutter_small" android:layout_marginRight="@dimen/gutter_small" android:baselineAligned="false" android:layout_weight="1.0">
+            <include layout="@layout/rs_results_image_wrapper_split" />
+            <ScrollView android:paddingBottom="@dimen/rs_split_view_scroll_view_bottom_margin" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="@dimen/rs_split_view_port_layout_height" android:layout_weight="1.0" android:requiresFadingEdge="0x2000">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pc_4px">
+                    <LinearLayout style="@style/Results.HeaderSection.Split">
+                        <com.amazon.retailsearch.android.ui.results.views.messaging.Sponsored android:id="@id/rs_results_sponsored_message" style="@style/Results.Sponsored.Split" />
+                        <TextView android:id="@id/item_title" style="@style/Results.Title.Split" />
+                        <TextView android:id="@id/rs_item_byline" style="@style/Results.ByLine.Split" />
+                    </LinearLayout>
+                    <include layout="@layout/rs_results_price_split" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <ImageView android:id="@id/arrow_selection_indicator_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="center" android:adjustViewBounds="false" />
+    </LinearLayout>
+</merge>

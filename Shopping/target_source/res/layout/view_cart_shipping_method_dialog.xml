@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/target_stark_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/largeTextSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cart_dialog_title_margin" android:text="@string/cart_shipping_method" app:fontStyle="medium" style="@style/Target.TextView.DialogTitle" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/cart_ship_mode_chooser_content_height">
+            <com.target.ui.view.common.TargetErrorView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cart_shipping_method_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/cart_shipping_methods_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/cart_dialog_title_margin">
+                <com.target.ui.view.ScrollShadowListView android:id="@id/cart_shipping_method_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_above="@id/cart_shipping_done_button" android:layout_alignParentTop="true" />
+                <com.target.ui.view.TargetButton android:id="@id/cart_shipping_done_button" android:padding="@dimen/cart_default_less_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cart_dialog_title_margin" android:text="@string/cart_dialog_done" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:fontStyle="medium" style="@style/DialogButton.Red" />
+                <com.target.ui.view.TargetButton android:id="@id/cart_shipping_cancel_button" android:padding="@dimen/cart_default_less_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cart_dialog_title_margin" android:text="@string/cart_dialog_cancel" android:layout_toLeftOf="@id/cart_shipping_done_button" android:layout_alignParentBottom="true" app:fontStyle="medium" style="@style/DialogButton" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/view_dialog_progress_container" />
+</FrameLayout>

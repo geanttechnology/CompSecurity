@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/navigation_drawer_secondary_content_contact" android:background="@drawable/translucent_item_selector" android:paddingLeft="@dimen/navigation_padding_left" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_sub_item_height">
+        <ImageView android:id="@id/ivContact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_nav_contact" android:layout_centerVertical="true" android:contentDescription="@string/cd_contact_us_icon" />
+        <com.target.ui.view.TargetTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/navigation_padding_left" android:text="@string/nav_contact" android:layout_toRightOf="@id/ivContact" android:layout_centerVertical="true" style="@style/Target.TextView.NavigationDrawerSubItem" />
+        <com.target.ui.view.HelpNotificationBadgeView android:id="@id/badge_help_notification" android:visibility="gone" android:layout_width="@dimen/help_notification_badge_height" android:layout_height="@dimen/help_notification_badge_height" android:layout_marginRight="@dimen/help_notification_badge_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:badgeType="active" app:badgeSize="small" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/navigation_drawer_secondary_content_partners" android:background="@drawable/translucent_item_selector" android:paddingLeft="@dimen/navigation_padding_left" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_sub_item_height">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_nav_partners" android:contentDescription="@string/cd_partners_icon" />
+        <com.target.ui.view.TargetTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/navigation_padding_left" android:text="@string/nav_partners" style="@style/Target.TextView.NavigationDrawerSubItem" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/navigation_drawer_secondary_content_help" android:background="@drawable/translucent_item_selector" android:paddingLeft="@dimen/navigation_padding_left" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_sub_item_height">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_nav_help" android:contentDescription="@string/cd_help_icon" />
+        <com.target.ui.view.TargetTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/navigation_padding_left" android:text="@string/nav_help" style="@style/Target.TextView.NavigationDrawerSubItem" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/navigation_drawer_secondary_content_debug" android:background="@drawable/translucent_item_selector" android:paddingLeft="@dimen/navigation_padding_left" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_sub_item_height">
+        <ImageView android:layout_gravity="center" android:padding="@dimen/navigation_sub_item_icon_padding" android:layout_width="@dimen/navigation_icon_size" android:layout_height="@dimen/navigation_icon_size" android:src="@drawable/icon_noimage" android:contentDescription="@string/cd_help_icon" />
+        <com.target.ui.view.TargetTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/navigation_padding_left" android:text="@string/nav_debug" style="@style/Target.TextView.NavigationDrawerSubItem" />
+    </LinearLayout>
+</merge>

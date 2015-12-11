@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_text_weblab_override" />
+    <EditText android:typeface="sans" android:id="@id/webview_weblab_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/debug_edit_text_hint" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textUri" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_text_weblab_description" />
+    <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_text_current_weblabs" />
+    <TextView android:id="@id/weblab_override_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <CheckBox android:id="@id/clear_all_webview_weblabs_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:text="@string/debug_clear_all" />
+    <Button android:id="@id/debug_btn_launch_weblabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_set_launch_weblabs" />
+    <Button android:textStyle="bold" android:textColor="@color/asap_orange" android:layout_gravity="center_horizontal" android:id="@id/save_weblab_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_save_weblab_settings" />
+</LinearLayout>

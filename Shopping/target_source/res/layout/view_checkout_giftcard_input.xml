@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/gift_card_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_giftcard" android:layout_centerVertical="true" android:contentDescription="@string/cd_gift_card_image" />
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/gift_card_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_img_margin_left" android:layout_marginTop="@dimen/checkout_margin_medium" android:layout_toLeftOf="@id/action_frame" android:layout_toRightOf="@id/gift_card_img" app:viewId="@id/gift_card">
+        <com.target.ui.view.TargetEditText android:id="@id/gift_card" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_edit_text_width" android:hint="@string/checkout_add_gc_hint" android:maxLength="@integer/gift_card_edit_text_max_length" android:inputType="number" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <com.target.ui.view.CustomErrorViewWrapper android:gravity="center_vertical" android:id="@id/gift_card_edit_wrapper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_img_margin_left" android:layout_marginTop="@dimen/checkout_margin_medium" android:layout_toLeftOf="@id/action_frame" android:layout_toRightOf="@id/gift_card_img" app:viewId="@id/gc_view_group">
+        <LinearLayout android:orientation="horizontal" android:id="@id/gc_view_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetEditText android:id="@id/gc_last_digits" android:background="@null" android:layout_width="@dimen/checkout_gc_last_digits_width" android:layout_height="@dimen/checkout_edit_text_width" android:maxLength="@integer/gift_card_last_digits_max_length" android:inputType="number" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+            <com.target.ui.view.BackSpaceDetectorEditText android:id="@id/access_code" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_edit_text_width" android:hint="@string/checkout_gc_access_code_hint" android:maxLength="@integer/gift_card_access_code_max_length" android:inputType="number" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+        </LinearLayout>
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <FrameLayout android:id="@id/action_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/gift_card_scan" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:layout_marginLeft="@dimen/checkout_layout_padding" android:src="@drawable/icon_scan_color" android:scaleType="center" android:contentDescription="@string/cd_gift_card_image" style="@style/ScanButtonSelector" />
+        <com.target.ui.view.TargetButton android:enabled="false" android:id="@id/redeem_button" android:visibility="gone" android:layout_width="@dimen/checkout_default_button_width" android:layout_height="@dimen/checkout_img_dimens" android:layout_marginLeft="@dimen/checkout_margin_small" android:layout_marginRight="@dimen/checkout_margin_medium" android:text="@string/checkout_redeem" style="@style/CheckoutSmallButton" />
+    </FrameLayout>
+</merge>

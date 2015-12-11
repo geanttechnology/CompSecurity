@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_help_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_external_launch_item_height">
+        <com.target.ui.view.TargetTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/help_version" android:drawableLeft="@drawable/account_launch_left_image_with_blank_space" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.Title" />
+        <com.target.ui.view.TargetTextView android:gravity="right" android:id="@id/account_help_app_version_text" android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.HelpText.Version" />
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_help_copyright" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_external_launch_item_height">
+        <com.target.ui.view.TargetTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/help_copyright" android:drawableLeft="@drawable/account_launch_left_image_with_blank_space" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.Title" />
+        <TextView android:gravity="right" android:id="@id/account_help_copyright_target_brand_text" android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Target.TextView.HelpText.Copyright" />
+    </LinearLayout>
+</LinearLayout>

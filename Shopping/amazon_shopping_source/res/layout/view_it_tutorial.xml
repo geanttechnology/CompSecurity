@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/action_bar_background" android:layout_width="fill_parent" android:layout_height="@dimen/view_it_top_toolbar_height">
+        <TextView android:textStyle="bold" android:textColor="@color/gray_dark_text" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/view_it_tutorial_text" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/view_it_top_tool_bar_separator_height" android:src="@color/view_it_top_tool_bar_separator" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/view_it_tutorial_title_and_description" android:layout_width="fill_parent" android:layout_height="@dimen/view_it_tutorial_title_and_description_height">
+        <TextView android:textStyle="bold" android:textColor="@color/amazon_gold" android:gravity="center_horizontal" android:id="@id/view_it_tutorial_title" android:paddingTop="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/view_it_tutorial_title_1" />
+        <TextView android:textColor="@color/gray_text" android:gravity="center_horizontal" android:id="@id/view_it_tutorial_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/view_it_tutorial_description_margin" android:layout_marginRight="@dimen/view_it_tutorial_description_margin" android:text="@string/view_it_tutorial_description_1" />
+    </LinearLayout>
+    <FrameLayout android:paddingTop="@dimen/padding_extra_small" android:paddingBottom="@dimen/padding_extra_small" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/tutorial_animation_products_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_products" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/tutorial_animation_device_and_history_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/tutorial_history_bottom_tray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_history" android:scaleType="matrix" />
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/tutorial_history_scanned_item" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/tutorial_history_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_history_arrow" />
+            <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/tutorial_animation_history_tray_frame" android:background="@drawable/tutorial_history" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_history_barcode" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_history_jar" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_history_book" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_history_bottle" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/tutorial_animation_device_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_device" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/tutorial_animation_scanned_item_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_history_bottle" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/padding_double" android:paddingRight="@dimen/padding_double" android:paddingBottom="@dimen/padding_double" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textStyle="bold" android:gravity="center" android:id="@id/tutorial_skip_button" android:layout_width="fill_parent" android:layout_height="@dimen/view_it_tutorial_button_height" android:layout_marginRight="@dimen/padding" android:text="@string/view_it_tutorial_skip_button_text" android:layout_weight="1.0" style="@style/Button.Gray" />
+        <Button android:gravity="center" android:id="@id/tutorial_next_button" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/view_it_tutorial_button_height" android:layout_marginLeft="@dimen/padding" android:text="@string/view_it_tutorial_next_button_text" android:layout_weight="1.0" style="@style/Button.Gold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/opl_item_title" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    <TextView android:id="@id/opl_gift_wrap_not_available" android:visibility="gone" android:text="@string/opl_gift_options_gift_wrap_colon_not_available" style="@style/Header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_gift_wrap_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/opl_gift_options_gift_wrap_colon_label" style="@style/Header" />
+        <LinearLayout android:orientation="vertical" android:id="@id/opl_gift_wrap_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_small" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_gift_options_gift_wrap_warning" />
+    </LinearLayout>
+    <TextView android:text="@string/opl_gift_options_gift_message" style="@style/Header" />
+    <EditText android:gravity="top" android:id="@id/opl_gift_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding_double" android:layout_marginRight="@dimen/padding" android:minLines="2" />
+    <TextView android:textSize="@dimen/text_small" android:id="@id/opl_gift_message_maximum" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View style="@style/Separator" />
+</LinearLayout>

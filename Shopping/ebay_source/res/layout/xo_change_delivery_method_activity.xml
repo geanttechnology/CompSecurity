@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_container_light_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/xo_delivery_method_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ebay.android.widget.ButtonBar android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:positiveSide="right" ebay:positiveButtonText="@string/button_continue" ebay:negativeButtonText="@string/cancel" ebay:positiveButtonId="@id/button_continue" ebay:negativeButtonId="@id/button_cancel" ebay:showTopDivider="true" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

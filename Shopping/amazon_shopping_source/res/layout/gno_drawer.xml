@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.gno.AmazonDrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:layout_width="@dimen/gno_menu_width" android:layout_height="fill_parent">
+        <View android:background="@color/gno_menu_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/gno_menu_divider_height" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/more_amazon_apps_placeholder" android:background="@color/white" android:text="@string/more_amazon_apps_placeholder" android:layout_alignParentBottom="true" style="@style/MoreAmazonAppsDimen" />
+                <ListView android:id="@id/gno_drawer_list" android:background="@color/gno_menu_item_background" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="@dimen/gno_menu_width" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:layout_above="@id/more_amazon_apps_placeholder" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/app_drawer_frame_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/left_nav_app_drawer_fragment" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.amazon.mShop.gno.AmazonDrawerLayout>

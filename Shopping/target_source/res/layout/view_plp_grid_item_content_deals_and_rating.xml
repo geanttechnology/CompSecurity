@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/plp_grid_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.SquareBitmapImageView android:id="@id/prd_plp_grid_image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/plp_grid_item_divider" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+            <com.target.ui.view.product.PlpGridPriceViewLeftAligned android:id="@id/prd_plp_grid_price_view" android:paddingLeft="@dimen/default_2x_padding_margin" android:paddingTop="@dimen/default_padding_margin" android:paddingRight="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.target.ui.view.StarRatingView android:id="@id/prd_plp_star_rating_view" android:layout_width="fill_parent" android:layout_height="@dimen/prd_plp_grid_star_rating_height" android:layout_marginLeft="@dimen/default_2x_padding_margin" android:layout_marginTop="@dimen/default_padding_margin" android:layout_marginRight="@dimen/default_2x_padding_margin" android:layout_marginBottom="@dimen/default_2x_padding_margin" />
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/smallTextSize" android:textColor="@color/target_neutral_grey" android:gravity="left" android:id="@id/prd_plp_no_ratings_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/prd_plp_grid_star_rating_height" android:layout_marginLeft="@dimen/default_2x_padding_margin" android:layout_marginTop="@dimen/default_padding_margin" android:layout_marginRight="@dimen/default_2x_padding_margin" android:layout_marginBottom="@dimen/default_2x_padding_margin" android:text="@string/product_no_ratings" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|left|center" android:id="@id/prd_plp_deals_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_padding_margin" android:src="@drawable/icon_tag" android:contentDescription="@string/cd_offers_icon" />
+</merge>

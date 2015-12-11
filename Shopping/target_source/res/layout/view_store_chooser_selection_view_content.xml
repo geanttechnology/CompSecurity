@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/zip_code_chooser">
+        <com.target.ui.view.ScrollShadowListView android:id="@id/store_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+        <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/location_pending_warning" android:padding="@dimen/dialog_content_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/location_pending" app:fontStyle="light" style="@style/Target.TextView" />
+        <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/stores_updating_warning" android:padding="@dimen/dialog_content_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/store_database_update_pending" app:fontStyle="light" style="@style/Target.TextView" />
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:gravity="center" android:id="@id/store_search_error" android:padding="@dimen/dialog_content_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fontStyle="medium" style="@style/Target.TextView" />
+    </FrameLayout>
+    <com.target.ui.view.ZipCodeChooserView android:id="@id/zip_code_chooser" android:layout_width="fill_parent" android:layout_height="@dimen/store_chooser_button_height" android:layout_alignParentBottom="true" />
+</merge>

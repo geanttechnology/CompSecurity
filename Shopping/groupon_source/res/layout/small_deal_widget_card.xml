@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_frame_layout" android:background="@drawable/bg_deal_detail_widget_card" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/widget_card_container" android:paddingLeft="0.5dip" android:paddingTop="0.5dip" android:paddingBottom="0.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.groupon.view.UrlImageView android:id="@id/deal_image" android:layout_width="78.0dip" android:layout_height="78.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/deal_image">
+            <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/small_deal_list_widget_card_title" />
+            <TextView android:id="@id/deal_card_location_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_small_padding_15_12" android:layout_below="@id/title" style="@style/small_deal_list_widget_card_subtitle" />
+            <RelativeLayout android:id="@id/price_bought_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/deal_card_location_text">
+                <org.apmem.tools.layouts.FlowLayout android:id="@id/view_deal_card_price_value_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/view_deal_card_bought" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" f:horizontalSpacing="8.0dip" f:verticalSpacing="-2.0dip" xmlns:f="http://schemas.android.com/apk/res-auto">
+                    <TextView android:id="@id/deal_card_pitch_text_2" android:paddingTop="5.5999756dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/small_deal_list_widget_deal_card_old_price" />
+                    <TextView android:id="@id/deal_card_pitch_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/small_deal_list_widget_deal_card_new_price" />
+                </org.apmem.tools.layouts.FlowLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:id="@id/urgency_pricing_label" android:paddingTop="@dimen/widget_very_small_padding_0_12" android:paddingBottom="@dimen/widget_very_small_padding_12_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_medium_padding" android:layout_marginRight="@dimen/widget_medium_padding" android:layout_toRightOf="@id/deal_image" android:layout_below="@id/deal_image" style="@style/small_deal_list_widget_card_label_urgency_pricing" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/deal_card_sold_out_banner_container" android:background="@color/deal_card_sold_out_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:id="@id/deal_card_sold_out_banner_text" android:paddingTop="@dimen/widget_tiny_padding" android:paddingBottom="@dimen/widget_tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sold_out_caps" android:layout_centerInParent="true" style="@style/deal_card_sold_out_banner_text" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.view.GrouponSwipeRefreshLayout android:id="@id/swipe_container" android:background="@color/grey_radio_checked" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:gravity="center" android:id="@id/my_groupons_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/no_results_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_groupons" android:layout_centerInParent="true" />
+                    <TextView android:id="@id/empty_title" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_groupons" android:layout_below="@id/no_results_label" android:layout_centerHorizontal="true" style="@style/empty_text" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/grey72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/fill_account_with_great_deals" android:layout_below="@id/empty_title" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <ListView android:id="@android:id/list" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.groupon.view.GrouponSwipeRefreshLayout>
+</LinearLayout>

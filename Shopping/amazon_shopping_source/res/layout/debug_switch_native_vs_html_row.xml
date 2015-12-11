@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.web.MShopWebDebugSwitchNativeVSHTMLRow android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/web_debug_settings_item_feature_name" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/web_debug_settings_feature_name_weight" />
+    <CheckBox android:id="@id/web_debug_settings_item_use_native" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/web_debug_settings_checkbox_weight" />
+    <CheckBox android:id="@id/web_debug_settings_item_use_html" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/web_debug_settings_checkbox_weight" />
+    <CheckBox android:id="@id/web_debug_settings_item_use_weblab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/web_debug_settings_checkbox_weight" />
+</com.amazon.mShop.web.MShopWebDebugSwitchNativeVSHTMLRow>

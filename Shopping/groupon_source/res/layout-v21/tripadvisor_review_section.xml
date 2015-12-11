@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tripadvisor_header" android:background="@drawable/detail_box_selector" android:paddingLeft="@dimen/deal_details_component_padding_v2" android:paddingRight="@dimen/deal_details_component_padding_v2" android:layout_width="fill_parent" android:layout_height="@dimen/deal_reviews_header_height">
+        <TextView android:textSize="@dimen/deal_reviews_title_text_size" android:textColor="@color/grey_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/on_tripadvisor" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:paddingRight="@dimen/deal_details_section_header_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tripadvisor_owl" android:layout_toLeftOf="@id/tripadvisor_section_rating" android:layout_centerVertical="true" />
+        <com.groupon.view.TripAdvisorRatingBar android:id="@id/tripadvisor_section_rating" android:paddingRight="@dimen/deal_details_section_header_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tripadvisor_review_count" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/deal_details_text_size" android:textColor="@color/grey65" android:id="@id/tripadvisor_review_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tripadvisor_expand_button" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+        <ImageView android:id="@id/tripadvisor_expand_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/arrow_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/tripadvisor_content" android:background="@drawable/detail_screen_box_no_top_border" android:paddingLeft="@dimen/deal_reviews_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/deal_details_text_size" android:textColor="@color/grey_dark" android:gravity="center_vertical" android:id="@id/tripadvisor_most_recent_text" android:layout_width="fill_parent" android:layout_height="@dimen/deal_reviews_header_height" android:text="@string/x_most_recent" />
+        <com.groupon.v3.util.ScrollEventRecyclerView android:id="@id/tripadvisor_review_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</merge>

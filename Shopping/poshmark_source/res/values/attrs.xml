@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="adSize" format="string" />
+    <attr name="adSizes" format="string" />
+    <attr name="adUnitId" format="string" />
+    <attr name="buttonCount" format="integer" />
+    <attr name="widgetMode">
+        <enum name="ThreeButton" value="2" />
+        <enum name="TwoButton" value="1" />
+    </attr>
+    <attr name="layoutDirection">
+        <enum name="ltr" value="0" />
+        <enum name="rtl" value="1" />
+    </attr>
+    <attr name="debugDraw" format="boolean" />
+    <attr name="weightDefault" format="float" />
+    <attr name="layout_newLine" format="boolean" />
+    <attr name="layout_weight" format="float" />
+    <attr name="label" format="string" />
+    <attr name="labelWidth" format="dimension" />
+    <attr name="layoutType" format="integer" />
+    <attr name="mapType">
+        <enum name="hybrid" value="4" />
+        <enum name="none" value="0" />
+        <enum name="normal" value="1" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+    </attr>
+    <attr name="cameraBearing" format="float" />
+    <attr name="cameraTargetLat" format="float" />
+    <attr name="cameraTargetLng" format="float" />
+    <attr name="cameraTilt" format="float" />
+    <attr name="cameraZoom" format="float" />
+    <attr name="uiCompass" format="boolean" />
+    <attr name="uiRotateGestures" format="boolean" />
+    <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiTiltGestures" format="boolean" />
+    <attr name="uiZoomControls" format="boolean" />
+    <attr name="uiZoomGestures" format="boolean" />
+    <attr name="useViewLifecycle" format="boolean" />
+    <attr name="zOrderOnTop" format="boolean" />
+    <attr name="fontName" format="string" />
+    <attr name="fontSize" format="dimension" />
+    <attr name="imageLayoutType">
+        <enum name="Left" value="1" />
+        <enum name="MyBundlesRowImage1" value="5" />
+        <enum name="MyBundlesRowImage2" value="6" />
+        <enum name="MyBundlesRowImage3" value="7" />
+        <enum name="OneThird" value="4" />
+        <enum name="Quad" value="3" />
+        <enum name="Square" value="0" />
+        <enum name="Top" value="2" />
+    </attr>
+    <attr name="required" format="boolean" />
+    <attr name="keyboardInput" format="boolean" />
+    <attr name="mode">
+        <enum name="creditcard" value="7" />
+        <enum name="dob" value="6" />
+        <enum name="email" value="3" />
+        <enum name="password" value="2" />
+        <enum name="simple" value="1" />
+        <enum name="simpleNoSpace" value="9" />
+        <enum name="ssn" value="4" />
+        <enum name="userName" value="8" />
+        <enum name="zipcode" value="5" />
+    </attr>
+    <attr name="message" format="string" />
+    <attr name="clickable" format="boolean" />
+    <attr name="fragmentId" format="integer" />
+    <attr name="PMIcon" format="string" />
+    <attr name="selectedIcon" format="string" />
+    <attr name="clickEvent" format="string" />
+    <attr name="linkColor" format="color" />
+    <attr name="customSize" format="dimension" />
+    <attr name="hasBorder" format="boolean" />
+    <attr name="com_facebook_foreground_color" format="color" />
+    <attr name="com_facebook_object_id" format="string" />
+    <attr name="com_facebook_object_type">
+        <enum name="open_graph" value="1" />
+        <enum name="page" value="2" />
+        <enum name="unknown" value="0" />
+    </attr>
+    <attr name="com_facebook_style">
+        <enum name="box_count" value="2" />
+        <enum name="button" value="1" />
+        <enum name="standard" value="0" />
+    </attr>
+    <attr name="com_facebook_auxiliary_view_position">
+        <enum name="bottom" value="0" />
+        <enum name="inline" value="1" />
+        <enum name="top" value="2" />
+    </attr>
+    <attr name="com_facebook_horizontal_alignment">
+        <enum name="center" value="0" />
+        <enum name="left" value="1" />
+        <enum name="right" value="2" />
+    </attr>
+    <attr name="com_facebook_confirm_logout" format="boolean" />
+    <attr name="com_facebook_login_text" format="string" />
+    <attr name="com_facebook_logout_text" format="string" />
+    <attr name="com_facebook_tooltip_mode">
+        <enum name="automatic" value="0" />
+        <enum name="display_always" value="1" />
+        <enum name="never_display" value="2" />
+    </attr>
+    <attr name="com_facebook_preset_size">
+        <enum name="normal" value="-3" />
+        <enum name="large" value="-4" />
+        <enum name="small" value="-2" />
+    </attr>
+    <attr name="com_facebook_is_cropped" format="boolean" />
+</resources>

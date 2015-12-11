@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.maps.MapView android:id="@id/mapview" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:apiKey="04ZMq4EL4krhEMBLCJ2CxMzLKw9LZeDO0fYIhjQ" />
+    <RelativeLayout android:id="@id/cvsd_top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cvsd_current_location_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:drawableRight="@drawable/android_cvsd_centeronme" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/cvsd_search_option_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/opl_cvsd_search_store_button" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

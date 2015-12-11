@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_marginBottom="0.0dip" android:text="@string/psl_insurance_coverage" style="@style/Sell.Spoke.Title.Top" />
+        <TextView android:id="@id/insurance_message" android:visibility="gone" style="@style/Sell.Spoke.Subtitle" />
+        <com.ebay.android.widget.ContainerLayout style="@style/Sell.Layout.Container">
+            <RelativeLayout android:id="@id/shipping_declared_value_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                <TextView android:id="@id/shipping_declared_value_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psl_add_insurance" android:layout_alignBaseline="@id/shipping_declare_value_check" />
+                <CheckBox android:id="@id/shipping_declare_value_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_below="@id/shipping_declare_value_check">
+                    <TextView android:id="@id/shipping_pacakge_value_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_package_value" android:layout_weight="1.0" />
+                    <com.ebay.mobile.widget.PriceView android:textSize="@dimen/ebayTextSizeMediumSmall" android:id="@id/shipping_package_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="number" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.ebay.android.widget.ContainerLayout>
+    </LinearLayout>
+</merge>

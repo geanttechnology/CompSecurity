@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/groupon_checkmark_size" android:layout_height="@dimen/groupon_checkmark_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/checkmark_unchecked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gray_circle_checkmark" />
+    <ImageView android:layout_gravity="center" android:id="@id/checkmark_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/green_circle_checkmark" />
+    <ImageView android:layout_gravity="center" android:id="@id/checkmark_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkmark" />
+</FrameLayout>

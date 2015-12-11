@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_attributes="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMButton android:id="@id/designerReplicaButton" android:text="Designer Replica" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowTop" />
+    <com.poshmark.ui.customviews.PMButton android:id="@id/nonPMTransactionButton" android:text="Non-PM Transaction" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+    <com.poshmark.ui.customviews.PMButton android:id="@id/itemNotAllowedButton" android:text="Unsupported Items" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+    <com.poshmark.ui.customviews.PMButton android:id="@id/spamButton" android:text="Spam/Offensive Items" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+    <com.poshmark.ui.customviews.PMButton android:id="@id/harassmentButton" android:layout_marginBottom="20.0dip" android:text="Harrasment" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowBottom" />
+</LinearLayout>

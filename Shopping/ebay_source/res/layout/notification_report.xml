@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Notification type:" />
+    <Spinner android:id="@id/spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Expected time:" />
+    <TimePicker android:layout_gravity="center" android:id="@id/timePicker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Item ID:" />
+    <EditText android:id="@id/itemId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number">
+        <requestFocus />
+    </EditText>
+    <TextView android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ebay_motors_visual_search_additional_comments" />
+    <EditText android:id="@id/comments" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text">
+        <requestFocus />
+    </EditText>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.android.widget.ButtonBar android:id="@id/buttonBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" ebay:positiveSide="right" ebay:positiveButtonText="@string/SellerDetailActivity_Send" ebay:negativeButtonText="@string/cancel" ebay:positiveButtonId="@id/sendButton" ebay:negativeButtonId="@id/cancelButton" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+</LinearLayout>

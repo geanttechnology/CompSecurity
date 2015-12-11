@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:gravity="center_vertical" android:id="@id/awaitPaymentContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/homescreen_card_selling_utility_dashboard_item_height" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/sell_destination_title_fontsize" android:gravity="center_horizontal" android:id="@id/noOfAwaitingPayment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayPadding" android:layout_marginRight="@dimen/ebayPadding" android:minWidth="@dimen/card_selling_dashboard_stat_textsize" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sold_await_payment" />
+</com.ebay.mobile.widget.FLinearLayout>

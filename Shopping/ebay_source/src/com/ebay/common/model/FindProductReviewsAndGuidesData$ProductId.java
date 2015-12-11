@@ -1,0 +1,26 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.ebay.common.model;
+
+
+// Referenced classes of package com.ebay.common.model:
+//            FindProductReviewsAndGuidesData
+
+public static class type
+{
+
+    public String type;
+    public String value;
+
+    public ()
+    {
+    }
+
+    public (String s, String s1)
+    {
+        value = s;
+        type = s1;
+    }
+}

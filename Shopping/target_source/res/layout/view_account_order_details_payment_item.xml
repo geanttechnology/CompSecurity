@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_payment_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.BitmapImageView android:id="@id/account_order_details_payment_card_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_payment_margin" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    <com.target.ui.view.TargetTextView android:id="@id/account_order_details_payment_card_last_digits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.AccountProductDelivery" />
+    <com.target.ui.view.TargetTextView android:id="@id/account_order_details_payment_card_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/account_order_details_default_padding_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.AccountProductPrice" />
+</RelativeLayout>

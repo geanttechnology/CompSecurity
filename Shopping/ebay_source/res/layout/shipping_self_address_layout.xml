@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/self_address_layout" style="@style/ItemView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/ebay_text_color_header" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:layout_marginTop="@dimen/checkoutMediumMargin" android:text="@string/xo_cart_primary_address" style="@style/EbayHeader" />
+    <com.ebay.android.widget.ContainerLayout android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/ItemView.ContainerLayout">
+        <TextView android:textSize="@dimen/ebayTextSize" android:textStyle="normal" android:id="@id/self_address" android:paddingTop="@dimen/ebayMargin15" android:paddingBottom="@dimen/ebayMargin15" style="@style/ItemView.ClickableLayout.TextView" />
+    </com.ebay.android.widget.ContainerLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_less_padding_margin" android:layout_marginTop="@dimen/cart_banner_margin" android:layout_marginRight="@dimen/cart_default_less_padding_margin" android:layout_marginBottom="@dimen/cart_banner_margin" layout="@layout/view_cart_merge_banner" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_less_padding_margin" android:layout_marginTop="@dimen/cart_banner_margin" android:layout_marginRight="@dimen/cart_default_less_padding_margin" android:layout_marginBottom="@dimen/cart_banner_margin" layout="@layout/view_cart_full_banner" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_less_padding_margin" android:layout_marginTop="@dimen/cart_banner_margin" android:layout_marginRight="@dimen/cart_default_less_padding_margin" android:layout_marginBottom="@dimen/cart_banner_margin" layout="@layout/view_cart_shipping_banner" />
+</merge>

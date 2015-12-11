@@ -1,0 +1,16 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.android.webkit;
+
+
+public interface AmazonWebKitErrorListener
+{
+
+    public abstract void onBinderDeath();
+
+    public abstract void onBinderError(Exception exception);
+
+    public abstract void onLibraryMismatch(int i, int j);
+}

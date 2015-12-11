@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.mShop.ui.SelectableLayout android:id="@id/opl_order_confirmation_mobileads_banner" android:background="@drawable/orange_outline_sharp_corner_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ad_backup_image" android:background="@drawable/orange_outline_sharp_corner_selector" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ad_layout_height" android:src="@drawable/giftcard_backup_ad" />
+    </com.amazon.mShop.ui.SelectableLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/subheader_text_size" android:textColor="@color/amazon_black" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opl_confirmation_order_info" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/button_gray_text_selector" android:gravity="left" android:id="@id/opl_track_your_orders" android:background="@color/common_arrow_selector" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/subheader_text_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/youraccount_your_orders" />
+    </LinearLayout>
+    <View style="@style/Separator" />
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_order_successful" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/subheader_text_size" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_confirmation_order_placed_header" />
+        <TextView android:id="@id/opl_confirmation_send_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_confirmation_we_will_send_you_an_email" />
+    </LinearLayout>
+    <TextView android:id="@id/opl_order_unsuccessful" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_confirmation_unable_to_process_purchase" />
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_order_detail_info_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/opl_order_num" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/past_orders_order_number" />
+        <LinearLayout android:orientation="vertical" android:id="@id/opl_order_detail_info" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/opl_order_detail_info_slot" android:background="@color/common_arrow_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/opl_order_delivery_estimate" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/opl_order_shipping_speed_group" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:paddingRight="@dimen/padding_extra_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opl_confirmation_order_shipping_speed" />
+                    <TextView android:id="@id/opl_order_shipping_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_double" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/opl_order_ship_to_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/past_orders_details_ship_to_colon" />
+                    <TextView android:id="@id/opl_order_ship_to" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/Separator" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/opl_order_multiple_items" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/subheader_text_size" android:textColor="@color/amazon_black" android:id="@id/opl_shippments_sub_header" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opl_confirmation_order_shipments" />
+            <TextView android:textSize="@dimen/subheader_text_size" android:textColor="@color/amazon_black" android:id="@id/opl_orders_sub_header" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opl_confirmation_order_orders" />
+            <View style="@style/Separator" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/notifications_setting_block" />
+    <View android:id="@id/notifications_setting_separator" android:visibility="gone" style="@style/Separator" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/opl_order_process" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding">
+        <Button android:textStyle="bold" android:id="@id/opl_continue_shopping_button" android:layout_margin="@dimen/padding" android:text="@string/continue_shopping" style="@style/AUIButton.Gold" />
+        <Button android:textStyle="bold" android:id="@id/opl_track_orders_button" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/opl_confirmation_track_orders_button" style="@style/ArrowSelector.Link" />
+        <Button android:textStyle="bold" android:id="@id/opl_cancel_order_button" android:layout_margin="@dimen/padding" android:text="@string/opl_confirmation_cancel_order_button" style="@style/AUIButton.Silver" />
+    </LinearLayout>
+    <include android:id="@id/opl_order_confirmation_shoveler" layout="@layout/home_shoveler_view" />
+</LinearLayout>

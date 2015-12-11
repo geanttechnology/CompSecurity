@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:gravity="center" android:id="@id/confirmcreditcard_instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="@string/cc_reenter_dialog_text" android:minLines="2" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="left" android:id="@id/confirmcreditcard_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/breakdown_credit_card_icon" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/credit_card_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/confirmcreditcard_icon">
+            <EditText android:textSize="@dimen/confirm_credit_card_text_size" android:textColor="@color/grey_medium" android:gravity="right" android:id="@id/confirmcreditcard_billing_record" android:background="@drawable/ccbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true">
+                <requestFocus />
+            </EditText>
+            <TextView android:textSize="@dimen/confirm_credit_card_text_size" android:textColor="@color/grey_medium" android:id="@id/confirmcreditcard_four_digits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/orange_alert" android:gravity="center" android:id="@id/credit_card_error" android:paddingTop="11.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="2" android:singleLine="false" />
+</LinearLayout>

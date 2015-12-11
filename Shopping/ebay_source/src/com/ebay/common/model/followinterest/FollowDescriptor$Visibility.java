@@ -1,0 +1,41 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.ebay.common.model.followinterest;
+
+
+// Referenced classes of package com.ebay.common.model.followinterest:
+//            FollowDescriptor
+
+public static final class  extends Enum
+{
+
+    private static final PRIVATE $VALUES[];
+    public static final PRIVATE PRIVATE;
+    public static final PRIVATE PUBLIC;
+
+    public static  valueOf(String s)
+    {
+        return ()Enum.valueOf(com/ebay/common/model/followinterest/FollowDescriptor$Visibility, s);
+    }
+
+    public static [] values()
+    {
+        return ([])$VALUES.clone();
+    }
+
+    static 
+    {
+        PUBLIC = new <init>("PUBLIC", 0);
+        PRIVATE = new <init>("PRIVATE", 1);
+        $VALUES = (new .VALUES[] {
+            PUBLIC, PRIVATE
+        });
+    }
+
+    private (String s, int i)
+    {
+        super(s, i);
+    }
+}

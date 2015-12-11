@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/style_guide_black_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/selling_good_photos_chance_text" android:textColor="?selectableItemBackgroundBase" android:id="@id/good_photos_chance_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/blue_check" />
+    <TextView android:textColor="?selectableItemBackgroundBase" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

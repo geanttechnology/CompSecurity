@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/xo_address_list_layout" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+        <TextView android:id="@id/xo_address_list_notice" android:background="?listContainerBackground" android:paddingTop="@dimen/checkoutListContainerMargin" android:paddingBottom="@dimen/checkoutListContainerMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text.Callout" />
+        <ScrollView android:id="@id/xo_address_list_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Letterbox.Modal">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutListContainerMarginDouble">
+                    <com.ebay.android.widget.ContainerLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+                        <LinearLayout android:id="@id/xo_address_list_add_layout" android:background="@drawable/theme_list_selector_background" android:padding="@dimen/checkoutListContainerMargin" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:text="@string/xo_cart_add_new_address" android:layout_weight="1.0" style="@style/Checkout.Text" />
+                            <ImageView android:contentDescription="@null" style="@style/Checkout.Chevron" />
+                        </LinearLayout>
+                    </com.ebay.android.widget.ContainerLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/xo_address_list_addresses" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutListContainerMargin" android:layout_marginBottom="@dimen/checkoutListContainerMargin" />
+                <include layout="@layout/button_bar_placeholder" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bottom_action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/ebayTextSizeMedium" android:gravity="center" android:id="@id/xo_cart_change_address_done" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" android:text="@string/done" style="@style/EbayButton.White.Letterboxed.Modal" />
+    </LinearLayout>
+</RelativeLayout>

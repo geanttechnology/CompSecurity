@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/dialog_content_option_sides_padding" android:paddingTop="@dimen/dialog_content_option_spacing" android:paddingRight="@dimen/dialog_content_option_sides_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/btn_default_marginTop" android:layout_marginBottom="@dimen/btn_default_marginBottom" style="@style/AVOD.Widget.Button" />
+    <TextView android:gravity="center_horizontal" android:id="@id/description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AVOD.TextAppearance.Light.Regular" />
+</LinearLayout>

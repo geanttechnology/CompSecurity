@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="left|center" android:id="@id/done_text" android:background="?android:selectionDividerHeight" android:paddingLeft="@dimen/ebayPaddingHalf" android:paddingRight="@dimen/ebayPaddingHalf" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_checkmark_holo_light" />
+    <View android:background="@drawable/button_bar_divider" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_margin="@dimen/ebayStaticMargin" />
+    <TextView android:gravity="center_vertical" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/done" style="@style/EbayTextAppearanceMedium" />
+</LinearLayout>

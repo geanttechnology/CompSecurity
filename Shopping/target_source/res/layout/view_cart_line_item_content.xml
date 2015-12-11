@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/cart_item_border" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_cart_product_details" />
+    <include layout="@layout/view_cart_separator" />
+    <com.target.ui.view.cart.CartProductFulfillmentView android:id="@id/fulfillment_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

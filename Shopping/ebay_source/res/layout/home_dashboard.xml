@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/home_my_ebay" android:layout_marginRight="4.0dip" android:text="@string/my_ebay" android:drawableTop="@drawable/icon_homescreen_myebay" style="@style/HomeButtonContainer" />
+    <TextView android:id="@id/home_browse" android:layout_marginRight="4.0dip" android:text="@string/categories" android:drawableTop="@drawable/icon_homescreen_browsecategory" style="@style/HomeButtonContainer" />
+    <TextView android:id="@id/home_sell_item" android:text="@string/sell_an_item_short" android:drawableTop="@drawable/icon_homescreen_listanitem" style="@style/HomeButtonContainer" />
+</merge>

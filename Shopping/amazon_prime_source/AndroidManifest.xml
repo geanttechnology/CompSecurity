@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.amazon.now" platformBuildVersionCode="23" platformBuildVersionName="6.0-2166767">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" android:required="false"/>
+    <uses-permission android:name="com.amazon.dcp.settings.permission.READ_SETTINGS"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="false"/>
+    <compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"/>
+        <screen android:screenDensity="mdpi" android:screenSize="small"/>
+        <screen android:screenDensity="hdpi" android:screenSize="small"/>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"/>
+        <screen android:screenDensity="400" android:screenSize="small"/>
+        <screen android:screenDensity="480" android:screenSize="small"/>
+        <screen android:screenDensity="560" android:screenSize="small"/>
+        <screen android:screenDensity="640" android:screenSize="small"/>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"/>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"/>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"/>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"/>
+        <screen android:screenDensity="400" android:screenSize="normal"/>
+        <screen android:screenDensity="420" android:screenSize="normal"/>
+        <screen android:screenDensity="480" android:screenSize="normal"/>
+        <screen android:screenDensity="560" android:screenSize="normal"/>
+        <screen android:screenDensity="640" android:screenSize="normal"/>
+        <screen android:screenDensity="ldpi" android:screenSize="large"/>
+        <screen android:screenDensity="mdpi" android:screenSize="large"/>
+        <screen android:screenDensity="hdpi" android:screenSize="large"/>
+        <screen android:screenDensity="xhdpi" android:screenSize="large"/>
+        <screen android:screenDensity="400" android:screenSize="large"/>
+        <screen android:screenDensity="480" android:screenSize="large"/>
+        <screen android:screenDensity="560" android:screenSize="large"/>
+        <screen android:screenDensity="640" android:screenSize="large"/>
+    </compatible-screens>
+    <permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.account.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    <uses-permission android:name="com.amazon.identity.permission.GENERIC_IPC"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.account.changed"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_COR_PFM"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"/>
+    <uses-permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"/>
+    <uses-permission android:name="amazon.permission.COLLECT_METRICS"/>
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="Prime Now" android:name="com.amazon.now.AmazonApplication" android:theme="@style/AmazonTheme">
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.home.WelcomeScreen" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amazon.now.home.HomeActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.amazon.now.home.ZipCheckActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.web.YourAccountActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.orders.YourOrdersActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.web.ShopPastPurchaseActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.amazon.now.orders.OrderStatusActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.amazon.now.deeplink.DeepLinkActivity" android:noHistory="true" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="primenow"/>
+                <data android:host="primenow.amazon.com"/>
+                <data android:host="primenow.amazon.co.uk"/>
+                <data android:host="primenow.amazon.it"/>
+                <data android:host="primenow.amazon.co.jp"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.web.ContactUsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.web.HelpAndAboutActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.web.PrimeSignUpActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.web.CheckoutActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.web.WebActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.amazon.now.location.StorefrontWebActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.map.MapWebActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.map.DebugMapWebActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.search.SearchActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.cart.CartActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.media.FullScreenGalleryActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.browse.BrowseActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.detail.DetailsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.amazon.now.restaurants.RestaurantsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.debug.DebugActivity" android:noHistory="true" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.amazon.now.DEBUG"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.feature.DebugFeatureActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.cookie.DebugCookieActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.debug.DebugDetailPageActivity" android:noHistory="true" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.debug.DebugWebActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.now.debug.DebugSearchActivity" android:windowSoftInputMode="stateHidden"/>
+        <receiver android:name="com.amazon.now.account.SSOAccountListener" android:permission="com.amazon.dcp.sso.permission.account.changed">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.account.added"/>
+                <action android:name="com.amazon.dcp.sso.action.account.removed"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.device.ads.AmazonOOReferrerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.amazon.identity.auth.device.MapInfoProvider.NOW" android:enabled="true" android:exported="true" android:name="com.amazon.now.account.MAPInfoProvider" android:permission="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="locale|orientation" android:name="com.amazon.mobile.mash.embeddedbrowser.EmbeddedBrowserActivity"/>
+        <uses-library android:name="com.amazon.client.metrics.api" android:required="false"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="true" android:label="Amazon AuthPortal" android:launchMode="singleTop" android:name="com.amazon.identity.auth.device.AuthPortalUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DirtyDataSyncingService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.SYNC_DIRTY_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.CLEAN_DATA"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="false" android:name="com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="com.amazon.application.compatibility.enforcer" android:required="false"/>
+        <meta-data android:name="required_amazon_package:com.amazon.geo.mapsv2.services" android:value="@integer/amazon_maps_services_version"/>
+        <meta-data android:name="amazon_maps_services_required" android:value="true"/>
+    </application>
+</manifest>

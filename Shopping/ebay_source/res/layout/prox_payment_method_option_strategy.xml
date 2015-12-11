@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/prox_paypal_strategy" android:paddingTop="@dimen/checkoutListContainerMargin" android:paddingBottom="@dimen/checkoutListContainerMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/prox_option_strategy" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="left|center" android:id="@id/xo_payment_method_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/xo_cart_payment_method_cop" android:layout_weight="1.0" style="@style/Checkout.Text" />
+        <CheckBox android:layout_gravity="right|center" android:id="@id/xo_payment_method_checkbox" android:focusable="false" android:clickable="false" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorMultiple" />
+    </LinearLayout>
+    <TextView android:layout_gravity="left|center" android:id="@id/xo_payment_method_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutListContainerMargin" android:layout_below="@id/prox_option_strategy" style="@style/Checkout.Text.Callout" />
+</RelativeLayout>

@@ -1,0 +1,88 @@
+.class public Lcom/tencent/mm/sdk/modelmsg/SendMessageToWX$Resp;
+.super Lcom/tencent/mm/sdk/modelbase/BaseResp;
+.source "SendMessageToWX.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/mm/sdk/modelmsg/SendMessageToWX;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Resp"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 134
+    invoke-direct {p0}, Lcom/tencent/mm/sdk/modelbase/BaseResp;-><init>()V
+
+    .line 136
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/os/Bundle;)V
+    .locals 0
+    .param p1, "data"    # Landroid/os/Bundle;
+
+    .prologue
+    .line 146
+    invoke-direct {p0}, Lcom/tencent/mm/sdk/modelbase/BaseResp;-><init>()V
+
+    .line 147
+    invoke-virtual {p0, p1}, Lcom/tencent/mm/sdk/modelmsg/SendMessageToWX$Resp;->fromBundle(Landroid/os/Bundle;)V
+
+    .line 148
+    return-void
+.end method
+
+
+# virtual methods
+.method public checkArgs()Z
+    .locals 1
+
+    .prologue
+    .line 167
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public fromBundle(Landroid/os/Bundle;)V
+    .locals 0
+    .param p1, "data"    # Landroid/os/Bundle;
+
+    .prologue
+    .line 157
+    invoke-super {p0, p1}, Lcom/tencent/mm/sdk/modelbase/BaseResp;->fromBundle(Landroid/os/Bundle;)V
+
+    .line 158
+    return-void
+.end method
+
+.method public getType()I
+    .locals 1
+
+    .prologue
+    .line 152
+    const/4 v0, 0x2
+
+    return v0
+.end method
+
+.method public toBundle(Landroid/os/Bundle;)V
+    .locals 0
+    .param p1, "data"    # Landroid/os/Bundle;
+
+    .prologue
+    .line 162
+    invoke-super {p0, p1}, Lcom/tencent/mm/sdk/modelbase/BaseResp;->toBundle(Landroid/os/Bundle;)V
+
+    .line 163
+    return-void
+.end method

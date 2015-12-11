@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/Checkout.Divider" />
+    <LinearLayout android:id="@id/xo_item_logistics_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout.Item">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/xo_ebayplus_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pluslogo_xo" />
+                <TextView android:id="@id/xo_item_logistics_line_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:maxLines="@integer/checkoutItemMaxLines" style="@style/Checkout.Text" />
+                <TextView android:id="@id/xo_item_logistics_line_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text" />
+                <TextView android:id="@id/xo_item_logistics_line_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text.Secondary" />
+                <TextView android:id="@id/xo_item_logistics_line_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text.Secondary" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/xo_item_fast_n_free_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fast_and_free_truck" />
+                    <TextView android:textSize="@dimen/ebayTextSizeMedium" android:textColor="@color/FastAndFreeGreen" android:layout_gravity="center_vertical" android:id="@id/fast_and_free" style="@style/ItemStatValue" />
+                </LinearLayout>
+                <TextView android:id="@id/xo_item_promotion_treatment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin" style="@style/Checkout.Text.Callout" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_gravity="right|center" android:id="@id/xo_item_logistics_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginRight="@dimen/checkoutRightShiftRadioMargin" style="@style/Checkout.Text" />
+        <RadioButton android:id="@id/xo_item_logistics_radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/checkoutRightShiftRadioMargin" />
+    </LinearLayout>
+</LinearLayout>

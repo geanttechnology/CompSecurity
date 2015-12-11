@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/payment_card_static_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payment_default" android:contentDescription="@string/cd_credit_card_image" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/largeTextSize" android:layout_gravity="center" android:id="@id/payment_card_static_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_large" android:text="@string/common_payment_card_ends_in" app:fontStyle="light" style="@style/Target.TextView" />
+</merge>

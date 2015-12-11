@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/checkout_margin_medium" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.target.ui.view.checkout.PaymentCardEntryView android:id="@id/checkout_billing_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.target.ui.view.checkout.PaymentCardStaticView android:id="@id/checkout_billing_card_static" android:paddingRight="@dimen/checkout_margin_medium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_height_medium" />
+        <com.target.ui.view.checkout.AddressFormView android:id="@id/checkout_billing_address" android:paddingRight="@dimen/checkout_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_billing_address_margin_internal_left" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/checkout_billing_progress_bar" android:background="@color/target_aluminum_grey_at_40_percent_opacity" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:theme="@style/AppTheme.RedAccent" android:layout_gravity="center" android:layout_width="@dimen/dialog_progress_bar_width_height" android:layout_height="@dimen/dialog_progress_bar_width_height" style="?android:attr/progressBarStyleInverse" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/category_select_loading" layout="@layout/common_progress" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@android:id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/parent_category_is_empty" />
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" android:visibility="gone" style="@style/Sell.Layout.Scroll">
+        <LinearLayout android:id="@id/category_groups_parent" style="@style/Sell.Layout.ScrollChild">
+            <TextView android:id="@id/suggestions_label" android:visibility="gone" android:text="@string/suggested_categories" style="@style/Sell.Spoke.Title" />
+            <com.ebay.android.widget.ContainerLayout android:id="@id/suggestions_container" android:visibility="gone" style="@style/Sell.Layout.Container" />
+            <TextView android:id="@id/categories_label" android:visibility="gone" android:layout_marginBottom="0.0dip" android:text="@string/label_dialog_all_categories" style="@style/Sell.Spoke.Title" />
+            <com.ebay.android.widget.ContainerLayout android:id="@id/category_tree_container" android:background="@drawable/category_container_bg" android:layout_marginTop="10.0dip" style="@style/Sell.Layout.Container" />
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

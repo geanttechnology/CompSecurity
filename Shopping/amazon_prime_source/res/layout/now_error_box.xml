@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/error_box_action_box" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/error_box_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_box_unable_to_connect" />
+    <Button android:id="@id/error_box_action_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_box_try_again" android:layout_below="@id/error_box_message" android:layout_centerHorizontal="true" />
+</RelativeLayout>

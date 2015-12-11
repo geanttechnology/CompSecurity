@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_dialog_background" android:paddingLeft="@dimen/padding_large" android:paddingTop="20.0dip" android:paddingRight="@dimen/padding_large" android:paddingBottom="@dimen/padding_large" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/common_color_dark" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sign_up_add_image_dialog_title" />
+    <TextView android:textSize="@dimen/large_text_size" android:textColor="@color/text_color_quaternary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_large" android:text="@string/sign_up_add_image_dialog_message" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <Button android:id="@id/gallery_button" android:text="@string/image_source_option_gallery" style="@style/LeftAddButtonStyle" />
+        <Button android:id="@id/camera_button" android:text="@string/image_source_option_camera" style="@style/RightAddButtonStyle" />
+    </RelativeLayout>
+</LinearLayout>

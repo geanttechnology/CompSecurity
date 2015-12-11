@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_your_watchlist_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.mShop.InfoView android:textColor="@color/dark_text" android:layout_width="fill_parent" android:layout_height="wrap_content" amazon_htmlContentId="@string/help_your_watchlist_content" />
+        <Button android:textColor="@color/help_aiv_button_text" android:gravity="center" android:id="@id/help_aiv_your_watchlist_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/help_your_watchlist_button_text" android:onClick="aivGoldButtonsOnClick" style="@style/AUIButton.Gold.Fullscreen" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

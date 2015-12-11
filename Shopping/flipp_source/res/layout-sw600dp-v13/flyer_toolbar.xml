@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/navigation_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/sales_count_part" android:layout_width="96.0dip" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/backward_part" android:background="@drawable/action_button" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/action_back" android:contentDescription="@string/action_back" />
+        <ImageButton android:id="@id/forward_part" android:background="@drawable/action_button" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/action_forward" android:layout_toRightOf="@id/backward_part" android:contentDescription="@string/action_forward" />
+    </RelativeLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/navigation_container" layout="@layout/flyer_toolbar_seekbar" />
+    <Button android:textSize="16.0sp" android:textColor="@color/flyer_toolbar_coupon_button_text_color" android:gravity="center" android:id="@id/coupon_button_part" android:background="@drawable/flyer_toolbar_button_background" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:textAllCaps="true" />
+    <ProgressBar android:id="@id/progress_part" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small" />
+</RelativeLayout>

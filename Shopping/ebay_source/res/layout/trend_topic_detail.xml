@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?selectableItemBackgroundBase" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/trend_banner_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <include android:id="@id/trend_title" layout="@layout/trend_detail_title" />
+    <View android:id="@id/trend_divider" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" style="@style/TableViewDivider" />
+    <include android:id="@id/trend_description" layout="@layout/trend_detail_description" />
+</LinearLayout>

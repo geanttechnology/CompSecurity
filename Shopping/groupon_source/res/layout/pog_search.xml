@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.view.ClearableEditText android:id="@id/location_search_edittext" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" style="@style/global_search_location_box_style_ltr_rtl_2" />
+    <FrameLayout android:id="@id/location_search_edittext_divider" android:background="@color/deal_card_divider_top" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/location_search_edittext" />
+    <FrameLayout android:id="@id/pog_search_recommendation_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/pog_search_autocomplete_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/pog_search_location_autocomplete_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

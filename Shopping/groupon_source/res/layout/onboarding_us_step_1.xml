@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onboarding_where_would_you_like_to_save" style="@style/onboarding_input_section_title" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/onboarding_subtitle_text" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zip_code" />
+        <EditText android:id="@id/home" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/onboarding_zipcode_inputtext_v2" />
+    </LinearLayout>
+    <TextView android:id="@id/skip_onboarding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onSkipClicked" style="@style/onboarding_not_now_button" />
+</merge>

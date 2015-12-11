@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:target="http://schemas.android.com/apk/res-auto">
+    <ImageView android:paddingTop="@dimen/account_input_gfx_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/account_page_margin" android:src="@drawable/account_email" />
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/login_account_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" target:viewId="@id/login_account">
+        <com.target.ui.view.TargetEditText android:gravity="left|center" android:layout_gravity="bottom" android:id="@id/login_account" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/account_login_credentials_hint_email" android:inputType="textEmailAddress" style="@style/Target.TextView.EditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+</merge>

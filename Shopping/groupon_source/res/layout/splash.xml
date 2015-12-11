@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/splash_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:WobbleSpaceshipCatView="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/onboarding_main_text_size" android:typeface="sans" android:textStyle="normal" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/splash_welcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-55.0dip" android:text="@string/welcome_to" />
+    <ImageView android:layout_gravity="center" android:id="@id/groupon_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_groupon_logo" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/continue_button_container">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/city_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" style="@style/onboarding_city_image" />
+            <LinearLayout android:orientation="vertical" android:id="@id/division_chooser" android:background="@color/white" android:paddingLeft="40.0dip" android:paddingTop="@dimen/onboarding_container_padding_top" android:paddingRight="40.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/division_chooser_container_height" style="@style/country_selector_content">
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/error_first_time_choose_please" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/onboarding_title_margin_bottom" android:text="@string/error_first_time_choose_country" style="@style/country_selector_please_choose" />
+                <Button android:id="@id/try_another_city" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/try_another_city" style="@style/secondary_action_button" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/continue_button_container" android:layout_width="fill_parent" android:layout_height="@dimen/onboarding_action_button_height" android:layout_alignParentBottom="true">
+            <View android:background="@color/theme_primary_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <Button android:id="@id/continue_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/continue_step_text" style="@style/secondary_action_button_no_border" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.groupon.view.WobbleSpaceshipCatView android:gravity="bottom|center" android:id="@id/wobble_spaceship_cat_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/splash_cat_padding_bottom" WobbleSpaceshipCatView:wobbleSpaceshipCatImage="@drawable/spaceship_cat" WobbleSpaceshipCatView:wobbleSpaceshipCatLightColor="@color/primary_button_background_normal" WobbleSpaceshipCatView:wobbleSpaceshipCatLightDiameter="6.0dip" WobbleSpaceshipCatView:wobbleSpaceshipCatLightContainerPaddingTop="10.0dip" />
+</FrameLayout>

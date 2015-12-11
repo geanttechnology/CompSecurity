@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/bc_chat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bc_busy_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bc_form_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/bc_form" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bc_chat_main" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:layout_gravity="bottom" android:id="@id/bc_end_chat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/api_chat_end" style="@style/bc_end_button" />
+        <FrameLayout android:id="@id/bc_end_chat_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/bc_separator" />
+        <ViewStub android:id="@id/bc_history_stub_import" android:layout="@layout/bc_list_view_history" android:inflatedId="@id/bc_chat_history" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/bc_typing">
+            <TextView android:layout_gravity="center_vertical" android:id="@id/bc_typing_indicator" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/api_chat_is_typing" android:layout_weight="1.0" style="@style/bc_typing_indicator" />
+            <ImageView android:id="@id/bc_email_transcript" android:visibility="gone" style="@style/bc_email_transcript" />
+        </LinearLayout>
+        <View android:id="@id/instant_buy_separator" android:background="@color/grey75" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bc_message_area" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/bc_send_message_area">
+            <EditText android:layout_gravity="center_vertical" android:id="@id/bc_edit_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/api_chat_send_message" android:lines="1" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionDone" style="@style/bc_send_message" />
+            <Button android:id="@id/bc_send_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/api_chat_send" style="@style/primary_action_button" />
+            <Button android:id="@id/bc_close_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/api_chat_close" style="@style/bc_button" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

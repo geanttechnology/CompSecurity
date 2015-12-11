@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vs_no_speech" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vs_we_didnt_get_that" style="@style/VSDialogTitle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/vs_dialog_content_padding" android:layout_weight="1.0" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vs_say_something_like" style="@style/VSSmallDialogText" />
+            <TextView android:textStyle="italic" android:textColor="@color/vs_search_suggestions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vs_sample_phrases_left_margin" android:layout_marginTop="@dimen/vs_small_paragraph_margin" android:text="@string/vs_search_suggestions" style="@style/VSSmallDialogText" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/vs_rescue_buttons" />
+</LinearLayout>

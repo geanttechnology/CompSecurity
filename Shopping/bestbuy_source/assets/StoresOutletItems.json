@@ -1,0 +1,46 @@
+{
+    "cards": [
+	      {
+              "index": 1,
+              "key": "Pre-Owned",
+              "title": "Pre-Owned",
+              "type": "icon",
+              "targetView": �PLPFragment",
+              "icon": "store_preowned_icon",
+              "trackingTitle": "Pre-Owned",
+              "width": 122,
+              "height": 82,
+              "targetURL": "",
+              "jsContent": "",
+              "visibleWhen": ""
+              },
+              {
+              "index": 2,
+              "key": "Refurbished",
+              "title": "Refurbished",
+              "type": "icon",
+              "targetView": �PLPFragment",
+              "icon": "store_refurbished_icon",
+              "trackingTitle": "Refurbished",
+              "width": 122,
+              "height": 82,
+              "targetURL": "",
+              "jsContent": "",
+              "visibleWhen": ""
+              },
+	      {
+              "index": 3,
+              "key": "WeeklyAd",
+              "title": "Weekly Ad",
+              "type": "icon",
+              "targetView": "bbyWebViewController",
+              "icon": "store_weeklyad_icon",
+              "trackingTitle": "Weekly Deals",
+              "width": 122,
+              "height": 82,
+              "targetURL": "http://deals.bestbuy.com",
+              "jsContent": "document.getElementById('overlay-area').style.display = 'none';document.getElementById('header-block').style.display = 'none';document.getElementById('header').style.display = 'none';document.getElementById('respLocationInfo').style.display = 'none';document.getElementById('footer').style.display = 'none';",
+              "visibleWhen": ""
+              }
+]
+}

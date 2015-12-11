@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/termsConditions" layout="@layout/button_table_row_top" />
+    <include android:id="@id/privacyPolicy" layout="@layout/button_table_row_middle" />
+    <include android:id="@id/libraries" layout="@layout/button_table_row_bottom" />
+    <com.poshmark.ui.customviews.PMTextView android:textSize="12.0dip" android:textColor="@color/textColorGray" android:layout_gravity="center_horizontal" android:id="@id/versionInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+</LinearLayout>

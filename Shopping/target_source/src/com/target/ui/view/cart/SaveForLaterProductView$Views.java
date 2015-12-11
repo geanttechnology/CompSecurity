@@ -1,0 +1,28 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.target.ui.view.cart;
+
+import android.view.View;
+import android.widget.TextView;
+import com.target.ui.view.BitmapImageView;
+import com.target.ui.view.a;
+
+// Referenced classes of package com.target.ui.view.cart:
+//            SaveForLaterProductView, SavedForLaterOverflowView
+
+static class  extends a
+{
+
+    BitmapImageView image;
+    TextView outOfStock;
+    SavedForLaterOverflowView overflow;
+    TextView price;
+    TextView title;
+
+    (View view)
+    {
+        super(view);
+    }
+}

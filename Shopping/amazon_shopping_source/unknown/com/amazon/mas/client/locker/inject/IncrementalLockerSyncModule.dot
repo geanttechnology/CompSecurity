@@ -1,0 +1,7 @@
+digraph G1 {
+  concentrate = true;
+  n2 [label="@IncrementalLockerSyncModule$Incremental LockerSyncer"];
+  n2 -> IncrementalLockerSyncer;
+  AppsSyncer -> IncrementalLockerSyncer;
+  EntitlementSyncer -> IncrementalLockerSyncer;
+}

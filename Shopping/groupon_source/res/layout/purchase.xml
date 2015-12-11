@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:liveChatView="http://schemas.android.com/apk/res-auto">
+    <com.groupon.view.ObservableScrollView android:id="@id/scroller" android:background="@color/bg_color_checkout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/scrollable_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/deal_image_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.groupon.view.UrlImageView android:id="@id/deal_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+                <TextView android:layout_gravity="bottom|center" android:id="@id/deal_title" android:background="@drawable/deal_card_curtain" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_title_white" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/reservation_container_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/reservation_detail_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/reservation_details_header" style="@style/market_rate_purchase_category_text_rtl" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/reservation_details_container" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_section" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/deal_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/deal_options_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/order_details" style="@style/market_rate_purchase_category_text_rtl" />
+                    <View android:id="@id/deal_option_header_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/deal_details_container" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_section" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/user_input_action_container" android:background="@drawable/detail_screen_box_no_top_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_section" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/stock_control_header_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                        <TextView android:id="@id/stock_control_header_title" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_your_preferences" android:textAllCaps="true" style="@style/header_holo" />
+                        <View android:id="@id/titleDividerTop" android:background="@color/header_text_color" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/stock_control_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_section" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/payment_section" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/payment_details_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/payment_details" style="@style/market_rate_purchase_category_text_rtl" />
+                        <FrameLayout android:id="@id/deal_payment_layout" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_section">
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/deal_payment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <ProgressBar android:layout_gravity="center" android:id="@id/payment_spinner" android:visibility="invisible" android:layout_margin="50.0dip" style="@style/purchase_spinner" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <TextView android:id="@id/add_payment_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:text="@string/msg_enter_payment_method" style="@style/purchase_text_subtitle" />
+                </LinearLayout>
+                <com.groupon.view.LiveChatView android:id="@id/live_chat_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" liveChatView:liveChatBackground="@drawable/detail_box_selector" />
+                <CheckBox android:id="@id/newsletter_optin_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/groupon_checkbox" android:text="@string/subscribe_to_newsletter" style="@style/purchase_v2_newsletter_optin" />
+                <TextView android:id="@id/viewterms" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/terms_redesign" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.groupon.view.ObservableScrollView>
+    <include android:id="@id/bottom_bar" layout="@layout/bottom_bar_flat" />
+</RelativeLayout>

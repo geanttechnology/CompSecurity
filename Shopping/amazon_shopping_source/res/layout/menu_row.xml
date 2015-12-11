@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/divider_line_primary_color" android:layout_width="fill_parent" android:layout_height="@dimen/menu_bevel_height" />
+    <View android:background="@color/divider_line_secondary_color" android:layout_width="fill_parent" android:layout_height="@dimen/menu_bevel_height" />
+    <TextView android:textSize="@dimen/menu_detail_item_primary_text_size" android:textColor="@color/primary_text_color" android:gravity="center_vertical" android:id="@id/menuItem" android:tag="home" android:background="@drawable/menu_background_state_list_drawable" android:paddingLeft="@dimen/menu_item_padding_left" android:paddingTop="@dimen/menu_item_left_nav_padding_vertical" android:paddingBottom="@dimen/menu_item_left_nav_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

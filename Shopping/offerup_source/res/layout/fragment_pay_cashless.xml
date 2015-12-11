@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pay_cashless_item_image_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_item_image" android:scaleType="centerCrop" android:layout_centerInParent="true" android:alpha="0.3" />
+    <RelativeLayout android:background="@color/transparent_dark_black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false" android:layout_above="@id/cashless_payment_box" android:layout_alignParentTop="true" android:scrollbarFadeDuration="4000" style="@style/OfferUpTheme.WhiteText">
+        <RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/pay_cashless_seller_image" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/no_profile" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="20.0sp" android:id="@id/pay_cashless_seller_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/pay_cashless_seller_image" android:layout_centerHorizontal="true" style="@style/text.xxlarge.mediumstyle" />
+            <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/pay_cashless_title_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/pay_title_row1" android:layout_below="@id/pay_cashless_seller_name" android:layout_centerHorizontal="true" style="@style/text.medium" />
+            <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:id="@id/pay_cashless_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/pay_cashless_title_title" android:layout_centerHorizontal="true" style="@style/text.xxlarge.mediumstyle" />
+            <EditText android:textSize="24.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/pay_cashless_amount_edittext" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/pay_cashless_item_title" android:layout_centerHorizontal="true" android:inputType="numberDecimal" style="@style/OfferUpEditTextStyle" />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/cashless_payment_box" android:background="@drawable/legacy_staggeredgrid_selector" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_above="@id/pay_cashless_submit">
+        <ImageView android:id="@id/pay_cashless_cc_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/pay_cashless_cc_image" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:id="@id/pay_cashless_card_type" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text.xxlarge.mediumstyle" />
+            <TextView android:textSize="12.0sp" android:id="@id/pay_cashless_card_last4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text.xxlarge.mediumstyle" />
+        </LinearLayout>
+        <ImageView android:id="@id/pay_cashless_right_chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/chevron_light" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <Button android:textSize="22.0sp" android:id="@id/pay_cashless_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/pay_submit_button_pay" android:layout_alignParentBottom="true" style="@style/offerUpButton" />
+</RelativeLayout>

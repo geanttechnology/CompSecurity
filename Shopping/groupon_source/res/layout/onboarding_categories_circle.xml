@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/category_circle_icon" android:layout_width="@dimen/onboarding_categories_circle_size" android:layout_height="@dimen/onboarding_categories_circle_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/fork_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fork_icon" />
+        <ImageView android:layout_gravity="center" android:id="@id/knife_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/knife_icon" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/shopping_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shopping_icon" />
+    <ImageView android:layout_gravity="center" android:id="@id/travel_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plane_icon" />
+    <View android:background="@drawable/circle_onboarding" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

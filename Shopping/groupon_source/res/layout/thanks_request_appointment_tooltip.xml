@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/balloon" android:background="@drawable/bg_overlay_semitransparent_grey" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/request_appointment_thanks_coaching" style="@style/request_appointment_coaching_text" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/thanks_tooltip_angle" android:layout_below="@id/balloon" android:layout_centerInParent="true" />
+</RelativeLayout>

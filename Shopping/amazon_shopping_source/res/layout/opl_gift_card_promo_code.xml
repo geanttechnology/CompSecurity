@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_promo_code_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/opl_gift_card_promo_code_balance_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:text="@string/opl_gift_card_promo_code_balance_label" />
+        <TextView android:id="@id/opl_promo_balance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding" style="@style/Price" />
+        <Button android:textStyle="bold" android:id="@id/opl_gift_card_apply_button" android:visibility="gone" android:layout_marginTop="@dimen/padding" android:layout_marginBottom="@dimen/padding_double" android:text="@string/opl_gift_card_not_apply" style="@style/AUIButton.Silver.Fullscreen" />
+        <TextView android:id="@id/opl_promo_add_a_credit_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:text="@string/opl_gift_card_promo_code_add_credit_card_to_not_apply_balance" style="@style/Error" />
+        <View android:layout_marginBottom="@dimen/padding" style="@style/Separator" />
+    </LinearLayout>
+    <TextView android:textColor="@color/red" android:id="@id/opl_promo_redeemed_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" style="@style/Error" />
+    <EditText android:textSize="@dimen/opl_promo_code_size" android:id="@id/opl_promo_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:hint="@string/opl_gift_card_promo_code_enter_hint" />
+    <TextView android:textSize="@dimen/opl_promo_code_warning_message_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/opl_gift_card_promo_code_redeem_warning" />
+    <Button android:enabled="false" android:textStyle="bold" android:id="@id/opl_promo_redeem_button" android:text="@string/opl_gift_card_promo_code_redeem_button_text" style="@style/AUIButton.Gold.Fullscreen" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.avod.playbackclient.views.general.CheckablePreference android:gravity="center_vertical" android:orientation="horizontal" android:id="@android:id/widget_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.AmazonVideo.Preferences.VideoSettings.WidgetFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@android:id/checkbox" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?android:listChoiceIndicatorSingle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AmazonVideo.Preferences.VideoSettings.Option.Row">
+        <TextView android:ellipsize="marquee" android:id="@android:id/title" android:focusable="false" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preference_mobile_quality_title" android:singleLine="true" style="@style/Widget.AmazonVideo.Preferences.VideoSettings.Option.Title" />
+        <TextView android:id="@android:id/summary" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" style="@style/Widget.AmazonVideo.Preferences.VideoSettings.Option.Summary" />
+    </LinearLayout>
+</com.amazon.avod.playbackclient.views.general.CheckablePreference>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/search" android:background="@drawable/background_search" style="@style/RoundButtonDefaultLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sell_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_action_search" android:contentDescription="@string/search_content_description" />
+</LinearLayout>

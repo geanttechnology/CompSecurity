@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/nights_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nights" android:layout_centerVertical="true" style="@style/purchase_text_value_v2" />
+    <com.groupon.view.AutoResizeTextViewWidth android:ellipsize="end" android:id="@id/nights" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/purchase_details_value_getaways_nights_rtl" />
+</RelativeLayout>

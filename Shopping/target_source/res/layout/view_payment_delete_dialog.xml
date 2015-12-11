@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cart_dialog_title_margin" android:text="@string/checkout_payment_remove_text" app:fontStyle="medium" style="@style/Target.TextView.DialogTitle" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cart_dialog_title_margin" android:text="@string/checkout_payment_remove_msg" />
+    <RelativeLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cart_default_more_padding_margin">
+        <com.target.ui.view.TargetButton android:id="@id/remove_payment_button" android:padding="@dimen/cart_default_less_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cart_dialog_title_margin" android:text="@string/checkout_dialog_remove" android:layout_alignParentRight="true" app:fontStyle="medium" style="@style/DialogButton.Red" />
+        <com.target.ui.view.TargetButton android:id="@id/remove_cancel_button" android:padding="@dimen/cart_default_less_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cart_dialog_title_margin" android:text="@string/checkout_dialog_cancel" android:layout_toLeftOf="@id/remove_payment_button" app:fontStyle="medium" style="@style/DialogButton" />
+    </RelativeLayout>
+</LinearLayout>

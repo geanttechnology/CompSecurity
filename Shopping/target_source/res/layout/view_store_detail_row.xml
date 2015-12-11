@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/capability_item" android:background="@drawable/white_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/store_detail_row_height" android:minHeight="@dimen/store_detail_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.DepartmentBadgeView android:id="@id/detail_icon" android:layout_width="@dimen/store_capability_icon_width" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:badgeType="inactive" app:badgeSize="small" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:textSize="20.0sp" android:id="@id/detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.target.ui.view.TargetTextView android:textSize="14.0sp" android:textColor="@color/target_jet_black" android:id="@id/detail_subtext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/detail_info_icon" android:layout_width="@dimen/store_capability_icon_width" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

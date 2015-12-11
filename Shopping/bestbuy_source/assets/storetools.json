@@ -1,0 +1,77 @@
+{
+        "sections": [{
+                 "title": "",
+                 "type": "regular",
+                 "items": [
+                           {
+                           "title": "STORE\\nCHECK-IN",
+                           "subTitle": "GET <<rz_checkin_points>> MY BEST BUY POINTS \u00BB",
+                           "image": "https://s3.amazonaws.com/bbymobilecms/Navigation.png",
+                           "selectedImage": "https://s3.amazonaws.com/bbymobilecms/Navigation.png",
+                           "x": 0,
+                           "width": 320,
+                           "height": 90,
+                           "targetView": "AwardPoints",
+                           "targetURL": "",
+                           "trackingTitle": "Store CheckIn",
+                           "displayTitle": "",
+                           "jsForEvaluationString": "",
+                           "conditionalVisibilityProperty": "IsCheckedIn",
+                           "conditionalVisibilityPropertyValue": "No",
+                           "key": "StoreCheckIn"
+                           },
+                           {
+                           "title": "MY BEST BUY PRIVATE\\nSHOPPING EVENT",
+                           "subTitle": "ENTER SWEEPSTAKES AT SELECT BEST BUY STORES",
+                           "image": "https://s3.amazonaws.com/bbymobilecms/Navigation.png",
+                           "selectedImage": "https://s3.amazonaws.com/bbymobilecms/Navigation.png",
+                           "x": 0,
+                           "width": 320,
+                           "height": 90,
+                           "targetView": "bbyWebViewController",
+                           "targetURL": "http://www.apple.com",
+                           "trackingTitle": "Private Shopping Event",
+                           "displayTitle": "PRIVATE SHOPPING <span class='bold'>EVENT</span>",
+                           "jsForEvaluationString": "document.getElementById('masthead').style.display = 'none';\ndocument.getElementById('colophon').style.display = 'none';\ndocument.getElementById('header-search').style.display = 'none';",
+                           "conditionalVisibilityProperty": "",
+                           "conditionalVisibilityPropertyValue": "",
+                           "key": "PSE"
+                           },
+                           {
+                           "title": "IN-STORE CLEARANCE\\nAND OPEN BOX",
+                           "subTitle": "<<CurrentStoreName>> DEAL FINDER \u00BB",
+                           "image": "https://s3.amazonaws.com/bbymobilecms/Navigation.png",
+                           "selectedImage": "https://s3.amazonaws.com/bbymobilecms/Navigation.png",
+                           "x": 0,
+                           "width": 320,
+                           "height": 90,
+                           "targetView": "bbyWebViewController",
+                           "targetURL": "http://dealsnearme-gscob-atgci.cdc.bestbuy.com:18031/m/e/digital/DNMQuickAccessResultsWebPage?isStoreSelected=true&strId=<store-id>&pagesrc=mapps",
+                           "trackingTitle": "Store Page",
+                           "displayTitle": "",
+                           "jsForEvaluationString": "document.getElementById('masthead').style.display = 'none';\ndocument.getElementById('colophon').style.display = 'none';\ndocument.getElementById('header-search').style.display = 'none';",
+                           "conditionalVisibilityProperty": "",
+                           "conditionalVisibilityPropertyValue": "",
+                           "key": "dnmStore"
+                           },
+                           {
+                           "title": "SCAVENGER\\nHUNT",
+                           "subTitle": "SEARCH AND EARN \u00BB",
+                           "image": "https://s3.amazonaws.com/bbymobilecms/Navigation.png",
+                           "selectedImage": "https://s3.amazonaws.com/bbymobilecms/Navigation.png",
+                           "x": 0,
+                           "width": 320,
+                           "height": 90,
+                           "targetView": "bbyScavengerHuntViewController",
+                           "targetURL": "",
+                           "trackingTitle": "Scavenger Hunt",
+                           "displayTitle": "SCAVENGER <span class='bold'>HUNT</span>",
+                           "jsForEvaluationString": "",
+                           "conditionalVisibilityProperty": "",
+                           "conditionalVisibilityPropertyValue": "",
+                           "key": "ScavengerHunt"
+                           }
+                           ]
+                 }
+                 ]
+}

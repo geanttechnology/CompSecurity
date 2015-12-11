@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/covershotBGImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="#88000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip">
+        <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/textColorWhite" android:id="@id/hostLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/host" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+        <GridLayout android:id="@id/hostImagesLayout" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:background="#7cfcfbfb" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/timerIconView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="14.0dip" android:src="@drawable/ic_time_white_outline" />
+                <ImageView android:id="@id/listingCountIconView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="14.0dip" android:src="@drawable/ic_listingcount_white" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorWhite" android:id="@id/partyInfoTextView" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+                <View android:background="#7cfcfbfb" android:layout_width="2.0px" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                <ImageView android:id="@id/inviteIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="14.0dip" android:src="@drawable/ic_invite_white" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorWhite" android:id="@id/viewDetailsLabel" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_party_details" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

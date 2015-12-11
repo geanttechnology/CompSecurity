@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/remove_follow_button" android:padding="@dimen/ebayPadding3x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_grey" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/delete_saved_search" style="?android:attr/borderlessButtonStyle" />
+    <ImageButton android:id="@id/notification_icon" android:padding="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notify_me_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/notify_me_message" style="?android:attr/borderlessButtonStyle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/notification_icon" android:layout_toRightOf="@id/remove_follow_button" android:layout_centerVertical="true">
+        <TextView android:textAppearance="@style/EbayTextAppearanceStrong" android:textStyle="bold" android:ellipsize="end" android:id="@id/following_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textColor="@color/style_guide_gray" android:ellipsize="end" android:id="@id/following_item_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+</RelativeLayout>

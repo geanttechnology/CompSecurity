@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/opl_shipment_header_text" style="@style/Header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_shipment_items_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_shipping_speed_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/opl_editable_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_delivery_time_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/opl_editable_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_delivery_instruction_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/opl_editable_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_shipping_option_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/opl_editable_item" />
+    </LinearLayout>
+</LinearLayout>

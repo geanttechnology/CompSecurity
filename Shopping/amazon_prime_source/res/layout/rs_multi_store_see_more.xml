@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/pc_2px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/rs_results_textsize_xlarge" android:textColor="@color/results_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/rs_multi_store_see_more_text" android:layout_width="0.0dip" android:layout_height="@dimen/rs_results_offer_item_height" android:layout_marginLeft="@dimen/pc_5px" android:text="@string/rs_see_more_offers" android:maxLines="1" android:layout_weight="1.0" />
+    <ImageView android:id="@id/rs_multi_store_indicator" android:layout_width="wrap_content" android:layout_height="@dimen/rs_results_offer_item_height" android:layout_marginRight="@dimen/pc_8px" android:src="@drawable/rs_down_arrow" />
+</LinearLayout>

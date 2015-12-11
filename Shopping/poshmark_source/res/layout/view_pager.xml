@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.poshmark.ui.customviews.PMDrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/mother_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ListView android:layout_gravity="right" android:id="@id/drawer" android:background="#ffffffff" android:layout_width="240.0dip" android:layout_height="fill_parent" android:choiceMode="singleChoice" />
+</com.poshmark.ui.customviews.PMDrawerLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/account_help_search_browse" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/help_search_browse" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:id="@id/account_help_store_pick_up" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/help_store_pickup" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:id="@id/account_help_red_card" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/help_red_card" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:id="@id/account_help_pharmacy" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/help_pharmacy" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:id="@id/account_help_gift_cards" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/help_gift_card" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:id="@id/account_help_warranty" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/help_warranty" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:id="@id/account_help_recalls" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/help_safety_recalls" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+</LinearLayout>

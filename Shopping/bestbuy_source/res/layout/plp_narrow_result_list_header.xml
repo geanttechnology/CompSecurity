@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <RelativeLayout android:id="@id/filter_header_layout" android:background="@drawable/bby_white_shape" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/narrow_list_header_name" android:paddingLeft="14.0dip" android:paddingTop="17.0dip" android:paddingBottom="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        <ImageView android:id="@id/filter_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/downarrow_refine" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/header_divider" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="11.0dip" android:layout_below="@id/filter_header_layout" />
+</RelativeLayout>

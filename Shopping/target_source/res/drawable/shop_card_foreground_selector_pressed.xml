@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/shop_card_foreground_selector_inset_left" android:top="@dimen/shop_card_foreground_selector_inset_top" android:right="@dimen/shop_card_foreground_selector_inset_right" android:bottom="@dimen/shop_card_foreground_selector_inset_bottom">
+        <shape>
+            <corners android:radius="@dimen/shop_card_corner_radius" />
+            <solid android:color="@color/shop_card_foreground_selector_pressed" />
+        </shape>
+    </item>
+</layer-list>

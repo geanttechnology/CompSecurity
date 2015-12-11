@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/scrollView" android:background="@drawable/bg_fragment" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/brandLayout" layout="@layout/listing_filter_item" />
+        <include android:id="@id/categoryLayout" layout="@layout/listing_filter_item" />
+        <include android:id="@id/colorLayout" layout="@layout/listing_filter_color_item" />
+        <include android:id="@id/sizeLayout" layout="@layout/listing_filter_item" />
+        <include android:id="@id/priceLayout" layout="@layout/listing_filter_item" />
+        <include android:id="@id/conditionLayout" layout="@layout/listing_filter_item" />
+        <include android:id="@id/availabilityLayout" layout="@layout/listing_filter_item" />
+    </LinearLayout>
+</ScrollView>

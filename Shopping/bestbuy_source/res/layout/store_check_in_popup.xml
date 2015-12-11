@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/dialog_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" bby:BBYFontStyle="REGULAR_BOLD_STYLE" />
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/dialog_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/dialog_text" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/allow" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="5.0dip" android:text="@string/ok_text" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+    </LinearLayout>
+</RelativeLayout>

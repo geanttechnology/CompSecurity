@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.poshmark.ui.customviews.PMDrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <FrameLayout android:id="@id/mother_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/mainTabsLayout" android:layout_alignParentTop="true" />
+        <include android:id="@id/mainTabsLayout" layout="@layout/main_activity_tabs" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="right" android:id="@id/drawer" android:background="@color/bgColorGraySemiTransparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:choiceMode="singleChoice" />
+</com.poshmark.ui.customviews.PMDrawerLayout>

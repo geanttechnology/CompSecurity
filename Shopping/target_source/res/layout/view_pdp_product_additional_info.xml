@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/product_feature_additional_information_item" android:paddingBottom="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:id="@id/product_description_additional_information_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_additional_info_title" app:fontStyle="medium" style="@style/Target.TextView.PdpAdditionalInfoTitle" />
+    <com.target.ui.view.TargetTextView android:id="@id/product_description_additional_information_tcin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.PdpAdditionalInfoSubTitle" />
+    <com.target.ui.view.TargetTextView android:id="@id/product_description_additional_information_upc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.PdpAdditionalInfoSubTitle" />
+    <com.target.ui.view.TargetTextView android:id="@id/product_description_additional_information_dpci" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.PdpAdditionalInfoSubTitle" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.home.HomeView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/action_bar_end_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/home_shop_by_department_view" android:paddingLeft="@dimen/shop_by_department_padding_left" android:paddingTop="@dimen/shop_by_department_padding_top" android:paddingBottom="@dimen/shop_by_department_padding_bottom" android:layout_width="wrap_content" android:layout_height="@dimen/shop_by_department_height">
+            <TextView android:textSize="@dimen/gno_category_browse_shop_by_size" android:textColor="@color/action_bar_shop_by_department_text_color" android:gravity="left|center" android:id="@id/home_shop_by_department_label" android:background="@drawable/action_bar_button_selector" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/shop_by_department_height" android:layout_marginLeft="@dimen/shop_by_department_text_margin_left" android:layout_marginRight="@dimen/shop_by_department_text_margin_right" android:minWidth="@dimen/shop_by_department_button_min_width" android:lines="2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.amazon.mShop.home.HomeSearchBar android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/home_error_box_separator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:orientation="vertical" android:id="@id/home_content_scroller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/home_login_or_your_account_button" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:focusable="true" android:clickable="true" style="@style/ArrowSelector">
+                <TextView android:textSize="@dimen/home_subheader_text_size" android:textColor="@color/amazon_black" android:ellipsize="end" android:id="@id/home_sign_in_left_message" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_title" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/home_subheader_right_text_size" android:textColor="@color/home_gray_text_color" android:id="@id/home_sign_in_right_message" android:paddingRight="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_sign_in" android:layout_weight="0.0" />
+            </LinearLayout>
+            <View style="@style/Separator.Home" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.amazon.mShop.ui.SelectableLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/orange_outline_sharp_corner_selector" android:paddingTop="@dimen/home_promo_slot_top_bottom_margin" android:paddingBottom="@dimen/home_promo_slot_top_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <FrameLayout android:gravity="center" android:id="@id/home_mobileads_banner_left" android:layout_width="fill_parent" android:layout_height="@dimen/home_promo_slot_image_view_height" />
+                    <com.amazon.mShop.home.PromoSlotView android:layout_gravity="center" android:id="@id/promo_slot0" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/home_promo_slot_image_view_height" android:scaleType="fitCenter" />
+                </com.amazon.mShop.ui.SelectableLayout>
+                <View style="@style/Separator.Slot" />
+                <com.amazon.mShop.ui.SelectableLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/orange_outline_sharp_corner_selector" android:paddingTop="@dimen/home_promo_slot_top_bottom_margin" android:paddingBottom="@dimen/home_promo_slot_top_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <FrameLayout android:gravity="center" android:id="@id/home_mobileads_banner_right" android:layout_width="fill_parent" android:layout_height="@dimen/home_promo_slot_image_view_height" />
+                    <com.amazon.mShop.home.PromoSlotView android:layout_gravity="center" android:id="@id/promo_slot1" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/home_promo_slot_image_view_height" android:scaleType="fitCenter" />
+                </com.amazon.mShop.ui.SelectableLayout>
+            </LinearLayout>
+            <View style="@style/Separator.Home" />
+            <ImageView android:layout_gravity="center" android:id="@id/shoveler_view_empty_placeholder" android:layout_width="@dimen/home_shoveler_empty_place_holder_max_dimension" android:layout_height="@dimen/home_shoveler_empty_place_holder_max_dimension" android:layout_weight="1.0" />
+            <include android:id="@id/home_shoveler0" layout="@layout/home_shoveler_view" />
+            <include android:id="@id/home_shoveler1" layout="@layout/home_shoveler_view" />
+            <FrameLayout android:id="@id/home_strentch_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/home_bottom_banner" android:background="@drawable/home_search_background" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</com.amazon.mShop.home.HomeView>

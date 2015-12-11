@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.poshmark.ui.customviews.PMListingImageView android:id="@id/editListingImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:background="@color/bgColorBlack" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:layout_gravity="left|center" android:id="@id/editImageButton" android:background="@android:color/transparent" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_image_edit" />
+        <ImageButton android:layout_gravity="left|center" android:id="@id/recycleImageButton" android:background="@android:color/transparent" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_trash_gray" />
+        <ImageButton android:id="@id/cameraButton" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_camera_gray" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

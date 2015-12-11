@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/filters_item_background" android:paddingRight="@dimen/category_facet_padding_large" android:layout_width="fill_parent" android:layout_height="@dimen/category_facet_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/category_filter_text" android:gravity="center_vertical" android:id="@id/facet_nested_view" android:layout_width="fill_parent" android:layout_height="@dimen/category_facet_item_height" />
+    <RadioButton android:id="@id/radio_button" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="@drawable/radio_button_background" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/radio_button_background" />
+</RelativeLayout>

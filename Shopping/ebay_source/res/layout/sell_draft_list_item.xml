@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:baselineAligned="false" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/checkBoxLayout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/editModeCheckBox" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_check_off_holo_light" android:scaleType="center" />
+    </LinearLayout>
+    <FrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/icon_frame" android:background="?selectableItemBackgroundBase" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginRight="6.0dip" android:foreground="?android:selectableItemBackground">
+        <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:layout_gravity="left|center" android:id="@android:id/text1" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/text1" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/text2" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

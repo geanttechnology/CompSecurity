@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeToRefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/homescreen_channel_content" android:background="@color/style_guide_canvas" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include android:id="@id/homescreen_signin" android:visibility="gone" layout="@layout/homescreen_signin" />
+    <include android:id="@id/homescreen_error" android:visibility="gone" layout="@layout/homescreen_error" />
+    <ProgressBar android:id="@id/homescreen_progress_indicator" android:visibility="visible" android:layout_width="@dimen/commonProgressSize" android:layout_height="@dimen/commonProgressSize" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar" />
+</RelativeLayout>

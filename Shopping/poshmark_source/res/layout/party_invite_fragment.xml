@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_table_row_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/covershotBGImageView" android:layout_width="fill_parent" android:layout_height="120.0dip" android:scaleType="centerCrop" />
+            <View android:background="#88000000" android:layout_width="fill_parent" android:layout_height="120.0dip" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.poshmark.ui.customviews.RoundedImageView android:id="@id/covershotImageView" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorWhite" android:ellipsize="end" android:id="@id/partyTitleView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                    <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorWhite" android:id="@id/partyTimeView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorWhite" android:id="@id/partyLocationView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/in_the_poshmark_app" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/textColorGray" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/party_description" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/textColorBlack" android:gravity="center" android:id="@id/descriptionView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/textColorLightBlue" android:gravity="center" android:id="@id/guidelinesView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/view_party_guidelines" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+        <View android:background="@color/borderColorGray" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_margin="10.0dip" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/textColorGray" android:layout_gravity="center_horizontal" android:id="@id/hostsLabelView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/hosts" custom:fontName="fonts/ProximaNova_SBold.ttf" />
+        <GridLayout android:layout_gravity="center_horizontal" android:id="@id/hostsLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <View android:background="@color/borderColorGray" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_margin="10.0dip" />
+        <com.poshmark.ui.customviews.PMButton android:textSize="14.0sp" android:textColor="@color/textColorLightBlue" android:layout_gravity="center_horizontal" android:id="@id/inviteButton" android:background="@drawable/bg_btn_curved_blue" android:paddingLeft="20.0dip" android:paddingTop="0.0dip" android:paddingRight="20.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/invite_friends" android:drawableLeft="@drawable/ic_user_blue_outline" android:drawablePadding="10.0dip" />
+    </LinearLayout>
+</ScrollView>

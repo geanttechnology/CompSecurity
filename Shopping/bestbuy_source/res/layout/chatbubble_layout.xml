@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <ImageView android:id="@id/chatbubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_icon" />
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@id/chat_count" android:background="@drawable/circle" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+</FrameLayout>

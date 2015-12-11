@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Checkout.ContainerLayout">
+        <RelativeLayout android:id="@id/spinnerLayout" android:background="@color/style_guide_sub_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/listSeparatorTextViewStyle">
+            <com.ebay.android.widget.Spinner android:id="@id/listSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="false" style="?attr/headerDropDownStyle" />
+        </RelativeLayout>
+        <ListView android:id="@android:id/list" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+        <RelativeLayout android:id="@id/no_items_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/no_items_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_emptystate_allfeedback" android:layout_above="@id/no_items" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/no_items" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="No feedback" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/common_progress" />
+    <include layout="@layout/common_error" />
+    <include layout="@layout/common_translucent_progress" />
+</FrameLayout>

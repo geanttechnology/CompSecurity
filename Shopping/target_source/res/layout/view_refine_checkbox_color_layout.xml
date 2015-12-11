@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/prd_refine_checkbox_color_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetCheckBox android:theme="@style/AppTheme.GreenAccent" android:textSize="@dimen/smallTextSize" android:id="@id/prd_refine_color_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/Target.CheckBox" />
+    <ImageView android:id="@id/prd_refine_color" android:layout_width="@dimen/prd_refine_color_img_width_height" android:layout_height="@dimen/prd_refine_color_img_width_height" android:src="@drawable/refine_color_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

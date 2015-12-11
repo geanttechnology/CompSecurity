@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/product_feature_item" android:paddingTop="@dimen/default_2x_padding_margin" android:paddingBottom="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:id="@id/product_feature_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="medium" style="@style/Target.TextView.PdpFeatureTitle" />
+    <com.target.ui.view.TargetTextView android:id="@id/product_feature_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.PdpFeatureSubTitle" />
+</LinearLayout>

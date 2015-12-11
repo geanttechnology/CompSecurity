@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AVOD.TextAppearance.Light.Regular" android:textColor="@color/avod_white" android:ellipsize="end" android:id="@id/VideoTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/avod_spacing_xsmall" android:singleLine="true" />
+    <TextView android:textColor="@color/avod_medium_grey" android:ellipsize="end" android:id="@id/VideoSecondaryTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/AVOD.Playback.UserControls.Titles" />
+</merge>

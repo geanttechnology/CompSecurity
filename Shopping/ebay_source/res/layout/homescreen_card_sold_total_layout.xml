@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/selling_sold_total_text_size" android:textColor="@color/style_guide_green" android:gravity="center" android:id="@id/totalSold" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:id="@id/gmvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

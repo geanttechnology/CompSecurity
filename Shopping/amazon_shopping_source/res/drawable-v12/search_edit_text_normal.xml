@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="@color/search_edit_text_bottom_color" android:endColor="@color/search_edit_text_top_color" android:angle="90.0" />
+            <corners android:topLeftRadius="@dimen/amazon_corner_radius" android:bottomLeftRadius="@dimen/amazon_corner_radius" />
+        </shape>
+    </item>
+    <item android:left="@dimen/search_layer_list_left_pdding" android:top="@dimen/search_layer_list_top_pdding" android:right="@dimen/padding_zero" android:bottom="@dimen/search_layer_list_bottom_pdding">
+        <shape>
+            <solid android:color="@color/white" />
+            <corners android:topLeftRadius="@dimen/amazon_corner_radius" android:bottomLeftRadius="@dimen/amazon_corner_radius" />
+        </shape>
+    </item>
+</layer-list>

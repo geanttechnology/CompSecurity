@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cart_full_banner" android:background="@drawable/cart_banner_background" android:paddingLeft="@dimen/cart_default_more_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cart_full" app:fontStyle="medium" style="@style/Target.TextView.BannerPrimaryText" />
+        <com.target.ui.view.TargetTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_items_max_size" style="@style/Target.TextView.BannerSecondaryText" />
+    </LinearLayout>
+    <ImageButton android:id="@id/cart_full_banner_close" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_deleteitem" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/cart_cart_full_dismiss_content_desc" style="@style/GrayButtonSelectorCompat" />
+</RelativeLayout>

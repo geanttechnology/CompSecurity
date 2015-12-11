@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/cart_flyout_spacing_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/balloon" android:background="@drawable/tooltip" android:paddingLeft="@dimen/cart_flyout_spacing_left" android:paddingTop="@dimen/cart_flyout_spacing_top" android:paddingRight="@dimen/cart_flyout_spacing_right" android:layout_width="fill_parent" android:layout_height="@dimen/cart_flyout_bubble_height" android:layout_below="@id/arrow">
+        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/cart_in_app_message_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cart_in_app_message_title" android:singleLine="true" android:layout_toLeftOf="@id/cart_in_app_message_x" android:layout_alignParentTop="true" style="@style/cart_in_app_message_text" />
+        <ImageView android:id="@id/cart_in_app_message_x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_spacing_medium" android:src="@drawable/ic_cart_flyout_x" android:layout_alignParentRight="true" />
+        <TextView android:ellipsize="end" android:id="@id/cart_in_app_message_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_in_app_message_content" android:maxLines="3" android:layout_toLeftOf="@id/cart_in_app_message_x" android:layout_below="@id/cart_in_app_message_title" style="@style/cart_in_app_message_text" />
+    </RelativeLayout>
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_flyout_arrow_margin_left" android:layout_marginBottom="@dimen/cart_flyout_arrow_offset_bottom" android:src="@drawable/tooltip_arrow" android:layout_alignLeft="@id/balloon" android:layout_alignParentTop="true" />
+</RelativeLayout>

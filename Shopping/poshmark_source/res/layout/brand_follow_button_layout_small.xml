@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.poshmark.ui.customviews.BrandFollowButtonLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMButton android:id="@id/followFollowingButton" android:layout_width="100.0dip" android:text="@string/follow" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/followFollowingButton" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+</com.poshmark.ui.customviews.BrandFollowButtonLayout>

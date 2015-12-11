@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/offers_before_price" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <TextView android:id="@id/offers_price" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/offers_before_price" style="@style/Price" />
+        <TextView android:id="@id/offers_after_price" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/offers_price" />
+        <TextView android:textStyle="bold" android:id="@id/offers_sold_by" android:paddingTop="@dimen/padding_small" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mp_sold_by" android:layout_alignParentRight="true" />
+        <View android:layout_below="@id/offers_sold_by" style="@style/Separator" />
+    </RelativeLayout>
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

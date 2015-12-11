@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/showroomsContainerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/dressesTextView" android:text="@string/dresses_and_skirts" android:drawableLeft="@drawable/ic_category_dress_gray" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowTop" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/shoesTextView" android:text="@string/shoes" android:drawableLeft="@drawable/ic_category_shoe_gray" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/handbagsTextView" android:text="@string/handbags" android:drawableLeft="@drawable/ic_category_handbag_gray" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.PMButton android:id="@id/allCategoriesButton" android:text="@string/all_categories" android:drawableLeft="@drawable/ic_all_options_gray" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/buttonTableRowBottom" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/toryBurchTextView" android:text="Tory Burch" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowTop" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/michaelKorsTextView" android:text="Michael Kors" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/coachTextView" android:text="Coach" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/louisVuittonTextView" android:text="Louis Vuitton" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/gucciTextView" android:text="Gucci" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/kateSpadeTextView" android:text="Kate Spade" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/jCrewTextView" android:text="J. Crew" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/steveMaddenTextView" android:text="Steve Madden" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/juicyCoutureTextView" android:text="Juicy Couture" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/freePeopleTextView" android:text="Free People" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.SearchFilterTextView android:id="@id/lululemonAthleticaTextView" android:text="lululemon athletica" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowMiddle" />
+            <com.poshmark.ui.customviews.PMButton android:id="@id/allBrandsButton" android:text="@string/all_brands" android:drawableLeft="@drawable/ic_all_options_gray" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/buttonTableRowBottom" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

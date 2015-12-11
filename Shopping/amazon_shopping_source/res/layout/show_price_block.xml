@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/dp_show_price_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dp_show_price" />
+        <com.amazon.mShop.ui.BadgeView android:layout_gravity="center_vertical" android:id="@id/item_badge" android:paddingLeft="@dimen/item_badge_padding_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.amazon.mShop.LinkButton android:textColor="@color/link" android:layout_gravity="center_vertical" android:id="@id/product_details_why_hide_price" android:paddingRight="@dimen/padding" android:text="@string/dp_why_hide_price" style="@style/CommonSelector" amazon_titleResourceId="@string/dp_why_hide_price" amazon_textContentId="@string/help_why_hide_price" />
+</LinearLayout>

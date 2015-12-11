@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.retailsearch.android.ui.results.views.image.ImageWrapperConsumableList android:id="@id/rs_results_image_wrapper" style="@style/Results.ImageWrapper.List"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/rs_results_image" style="@style/Results.Image.List" />
+        <com.amazon.retailsearch.android.ui.results.views.cart.CartQuantityMessage android:id="@id/rs_results_image_overlay_message" style="@style/Results.ImageOverlayMessage.FreshCartQuantity" />
+    </RelativeLayout>
+</com.amazon.retailsearch.android.ui.results.views.image.ImageWrapperConsumableList>

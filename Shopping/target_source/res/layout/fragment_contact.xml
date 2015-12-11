@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/help_left_right_padding" android:layout_marginTop="@dimen/help_top_bottom_padding" android:layout_marginRight="@dimen/help_left_right_padding" android:layout_marginBottom="@dimen/help_top_bottom_padding">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contact_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" style="@style/LineItemSelector">
+            <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_phone_number" app:fontStyle="light" style="@style/Target.TextView.LineItem.PhoneNumber" />
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/smallTextSize" android:layout_gravity="top" android:paddingLeft="@dimen/help_margin" android:paddingTop="0.0dip" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_phone_name" app:fontStyle="light" style="@style/Target.TextView.LineItem.SubItem" />
+        </LinearLayout>
+        <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/contact_feedback" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+            <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/min_image_button_size" android:text="@string/contact_feedback" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+        </LinearLayout>
+        <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/contact_help" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+            <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/help_margin" android:paddingRight="@dimen/help_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/min_image_button_size" android:text="@string/contact_help" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

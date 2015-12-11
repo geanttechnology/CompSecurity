@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ship_to_me_row" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pluslogo_xo" />
+                <TextView android:id="@id/ship_to_me_estimate" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text.Secondary" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_gravity="right|center" android:id="@id/ship_to_me_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" style="@style/Checkout.Text" />
+        <RadioButton android:id="@id/ship_to_me_radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/checkoutListContainerMargin" />
+    </LinearLayout>
+</LinearLayout>

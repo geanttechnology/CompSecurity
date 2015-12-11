@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/lollipop_search_bar_height" style="@style/search_box_white_rounded"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/search_icon" style="@style/search_icon_style" />
+    <com.groupon.view.ActionBarClearableEditText android:id="@id/search_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

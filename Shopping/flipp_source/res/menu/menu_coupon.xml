@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/search_view" android:title="@string/search" android:showAsAction="ifRoom" android:actionViewClass="com.wishabi.flipp.widget.SearchView" />
+    <item android:id="@id/action_print" android:menuCategory="secondary" android:title="@string/print_coupons" android:showAsAction="never" />
+    <item android:id="@id/action_refresh" android:menuCategory="secondary" android:title="@string/refresh" android:showAsAction="never" />
+</menu>

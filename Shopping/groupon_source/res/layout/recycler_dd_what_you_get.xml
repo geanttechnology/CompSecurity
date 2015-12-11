@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/what_you_get_section" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_section_v2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/what_you_get_title" style="@style/deal_details_section_header_v2" />
+    <com.groupon.view.NonLeakingNonFlickerWebView android:id="@id/what_you_get" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

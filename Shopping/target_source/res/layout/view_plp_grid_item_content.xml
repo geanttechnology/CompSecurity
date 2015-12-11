@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/plp_grid_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.BitmapImageView android:layout_gravity="center" android:id="@id/prd_plp_grid_image_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.25">
+        <View android:id="@id/plp_grid_item_divider" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+        <com.target.ui.view.product.PlpGridPriceView android:layout_gravity="center" android:id="@id/prd_plp_grid_price_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

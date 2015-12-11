@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/listingHeaderLayout" android:background="@color/bgColorPureWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/promoBanner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/leftIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorWhite" android:id="@id/bannerText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/rightIcon" android:layout_toRightOf="@id/leftIcon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/rightIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_more_arrow_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/promoBanner">
+        <com.poshmark.ui.customviews.RoundedImageView android:id="@id/avataarView" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_user_default" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_toLeftOf="@id/priceDropLayout" android:layout_toRightOf="@id/avataarView">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:id="@id/userNameView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="User Name" custom:fontName="fonts/ProximaNova_Sbold.ttf" custom:linkColor="@color/bgColorLightBurgundy" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorGray" android:id="@id/attributionView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="shared by..." custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/priceDropLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/priceDropIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0dip" android:textColor="@color/textColorGray" android:id="@id/priceDropValue" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mobile.appdrawer.applist.LeftNavAppListItemView android:orientation="horizontal" android:background="@drawable/app_item_bg" android:paddingTop="@dimen/app_item_top_bottom_padding" android:paddingBottom="@dimen/app_item_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_icon" android:layout_width="@dimen/app_item_icon_size" android:layout_height="@dimen/app_item_icon_size" android:layout_marginLeft="@dimen/app_item_icon_left_margin" android:contentDescription="@string/app_item_icon_description" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_item_icon_text_padding" android:layout_marginRight="@dimen/app_item_icon_right_margin">
+        <TextView android:textSize="@dimen/app_item_title_text_size" android:textColor="@color/app_item_title_text_color" android:id="@id/app_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:fontFamily="@string/app_item_title_font_family" />
+        <TextView android:textSize="@dimen/app_item_desciption_text_size" android:textColor="@color/app_item_description_text_color" android:id="@id/app_desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minLines="@integer/app_item_description_lines" />
+    </LinearLayout>
+</com.amazon.mobile.appdrawer.applist.LeftNavAppListItemView>

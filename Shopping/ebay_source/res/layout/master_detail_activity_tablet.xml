@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?listContainerOutsideBackground" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/master_fragment_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.35">
+        <include layout="@layout/scrolling_tabbed_activity" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/detail_fragment_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.65">
+        <include layout="@layout/messages_detail_layout" />
+    </FrameLayout>
+</LinearLayout>

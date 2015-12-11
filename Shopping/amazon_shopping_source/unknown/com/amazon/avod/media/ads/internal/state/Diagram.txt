@@ -1,0 +1,76 @@
+'Install plantUml eclipse plugin to see this state diagram
+'http://plantuml.sourceforge.net/
+
+@startuml
+[*] -Right-> Active
+
+state Active {
+  [*] -Right-> Uninitialized
+  Uninitialized --> PreparingPrimary : Prepare
+  PreparingPrimary --> FatalError : Error
+  PreparingPrimary --> GettingAdPlan : Prepared
+  
+  GettingAdPlan --> AdPlanReady : AdPlanSuccess
+  GettingAdPlan --> AdPlanReady : AdPlanFailure
+  
+  AdPlanReady -Right-> Prepared : Prepared
+  Prepared -Up-> PreparedSeeking : Seek
+  PreparedSeeking --> Prepared : Prepared
+  PreparedSeeking --> PreparedSeeking : Seek
+  
+  Prepared -Right-> CheckPreRoll : Play
+  CheckPreRoll -Right-> PrimaryContent : Play
+  CheckPreRoll -> AdBreak : BeginAdBreak
+  
+  state PrimaryContent {
+    [*] --> Monitoring
+    
+    Monitoring --> Seek : Seek
+    Seek --> Monitoring : Monitor
+    
+    Monitoring --> Paused : Pause
+    Paused --> Monitoring : Monitor
+
+	Monitoring --> Monitoring : Monitor
+  }
+  
+  PrimaryContent --> FatalError : Error
+  PrimaryContent -right-> AdBreak : BeginAdBreak
+  PrimaryContent --> PostPrimary : Completed
+  
+  state AdBreak {
+  
+    [*] --> TransitionPrimaryToBlack : PlayAd
+    TransitionPrimaryToBlack --> AdClip : PlayAd
+    
+    AdClip --> AdBreakError : BreakError
+  
+    state AdClip {
+      [*] --> PrepareClip
+      PrepareClip --> ClipError : Error
+      PrepareClip --> TransitionBlackToClip : Prepared
+      TransitionBlackToClip --> PlayClip : Prepared
+      
+      PlayClip -right-> TransitionClipToBlack : Completed
+      PlayClip -right-> TransitionClipToBlack : Error
+      
+      TransitionClipToBlack --> ClipError : Error
+    }
+    
+    AdClip --> AdClip : NextAd
+    AdClip --> TransitionBlackToPrimary : NoMoreAds
+    AdBreakError --> TransitionBlackToPrimary : Error
+  }
+  
+  AdBreak --> PrimaryContent : NoMoreAds
+  AdBreak --> PrimaryContent : Error
+
+  PostPrimary --> AdBreak : PostRoll
+  PostPrimary --> Completed : NoPostRoll  
+}
+
+Active -Right-> Shutdown : Shutdown
+
+Shutdown -Right-> [*]
+
+@enduml

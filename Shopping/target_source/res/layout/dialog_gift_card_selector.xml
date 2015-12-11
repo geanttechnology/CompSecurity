@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/checkout_dialog_height">
+        <com.target.ui.view.TargetTextView android:id="@id/my_gift_card_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cart_dialog_title_margin" android:text="@string/account_my_gift_card" app:fontStyle="medium" style="@style/Target.TextView.DialogTitle" />
+        <RelativeLayout android:id="@id/gift_card_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/my_gift_card_dialog_title">
+            <com.target.ui.view.ScrollShadowRecyclerView android:id="@id/my_gift_card_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/my_gift_card_list_button" android:layout_alignParentTop="true" />
+            <LinearLayout android:gravity="right" android:id="@id/my_gift_card_list_button" android:paddingLeft="@dimen/checkout_dialog_default_padding" android:paddingTop="@dimen/checkout_dialog_less_padding" android:paddingRight="@dimen/checkout_dialog_default_padding" android:paddingBottom="@dimen/checkout_dialog_less_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <com.target.ui.view.TargetButton android:textSize="@dimen/mediumTextSize" android:id="@id/my_gift_card_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:text="@string/cancel" app:fontStyle="medium" style="@style/DialogButton" />
+                <com.target.ui.view.TargetButton android:textSize="@dimen/mediumTextSize" android:id="@id/my_gift_card_apply_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_apply" app:fontStyle="medium" style="@style/DialogButton.Red" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/my_gift_card_dialog_message_container" android:padding="@dimen/checkout_dialog_default_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/my_gift_card_dialog_title">
+            <com.target.ui.view.TargetTextView android:id="@id/my_gift_card_dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_my_gift_card_not_present" app:fontStyle="light" style="@style/Target.TextView.DialogMessage" />
+            <com.target.ui.view.TargetButton android:textSize="@dimen/mediumTextSize" android:id="@id/my_gift_card_message_ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:fontStyle="medium" style="@style/DialogButton.Red" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/view_dialog_progress_container" />
+</FrameLayout>

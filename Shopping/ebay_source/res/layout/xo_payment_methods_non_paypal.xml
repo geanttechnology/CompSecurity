@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/xo_cart_payment_method_eft" android:background="?android:listChoiceBackgroundIndicator" android:padding="@dimen/checkoutListContainerMargin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingTop="@dimen/checkoutTinyMargin" android:paddingBottom="@dimen/checkoutTinyMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_cart_payment_method_eft" style="@style/Checkout.Text.Bold" />
+        <ImageView android:id="@id/xo_cart_payment_method_eft_check" android:visibility="gone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Checkout.Check" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/xo_cart_payment_method_cop" android:background="?android:listChoiceBackgroundIndicator" android:padding="@dimen/checkoutListContainerMargin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingTop="@dimen/checkoutTinyMargin" android:paddingBottom="@dimen/checkoutTinyMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_cart_payment_method_cop" style="@style/Checkout.Text.Bold" />
+        <ImageView android:id="@id/xo_cart_payment_method_cop_check" android:visibility="gone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Checkout.Check" />
+    </RelativeLayout>
+</merge>

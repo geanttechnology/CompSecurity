@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_back">Précédent</string>
+    <string name="action_forward">Suivant</string>
+    <string name="add">Ajouter</string>
+    <string name="add_item">Ajouter un article</string>
+    <string name="added_to_clippings">Ajouté aux coupures</string>
+    <string name="added_to_favorites">Ajouté aux favoris</string>
+    <string name="all_items">Tous les articles</string>
+    <string name="allow_push_message">Permettre à Flipp de vous informer des offres les plus récentes dans votre région</string>
+    <string name="allow_push_popup">Voulez-vous permettre à Flipp de vous informer des offres les plus récentes dans votre région? Vous pouvez activer ou désactiver les notifications à tout moment dans le menu Paramètres.</string>
+    <string name="allow_push_title">Messages instantanés</string>
+    <string name="app_name"><g>Flipp</g></string>
+    <string name="area_not_clippable">"Il n'y a aucun article à couper dans cette partie de la circulaire"</string>
+    <string name="auth_client_needs_enabling_title">"Une application requiert l'activation des services Google Play"</string>
+    <string name="auth_client_needs_installation_title">"Une application requiert l'installation des services Google Play"</string>
+    <string name="auth_client_needs_update_title">Une application requiert la mise à jour des services Google Play</string>
+    <string name="auth_client_play_services_err_notification_msg">Erreur liée aux services Google Play</string>
+    <string name="auth_client_requested_by_msg">Demandée par %1$s</string>
+    <string name="auth_client_using_bad_version_title">Une application requiert une version valide des services Google Play</string>
+    <string name="available_flyers"><g example="3" id="num_flyers">%d</g> circulaires disponibles</string>
+    <string name="badge_label_clipped">Coupé</string>
+    <string name="badge_label_expired">Expiré</string>
+    <string name="badge_label_new">Nouveau</string>
+    <string name="badge_label_preview">Aperçu</string>
+    <string name="badge_label_sent">Envoyé</string>
+    <string name="badge_label_unavailable">Indisponible</string>
+    <string name="blank_item_not_allowed">"La case du nom de l'article ne peut être vide"</string>
+    <string name="categories">Catégories de circulaire</string>
+    <string name="category_all_flyers">Circulaires</string>
+    <string name="category_automotive">Automobile</string>
+    <string name="category_baby_kids">Enfants et bébés</string>
+    <string name="category_electronics">Électronique</string>
+    <string name="category_fashion">Mode</string>
+    <string name="category_groceries">Épicerie</string>
+    <string name="category_health_pharmacy">Santé et pharmacie</string>
+    <string name="category_home_garden">Maison et jardin</string>
+    <string name="category_office">Bureau</string>
+    <string name="category_other">Autre</string>
+    <string name="category_pets">Animaux</string>
+    <string name="category_pharmacy">Pharmacie</string>
+    <string name="category_sporting_goods">Sports</string>
+    <string name="change">Changer</string>
+    <string name="clear_search_history_message">Effacer tous les termes de recherche sauvegardés</string>
+    <string name="clear_search_history_title">Effacer mes recherches</string>
+    <string name="clear_search_history_toast">Vos termes de recherches on été effacés</string>
+    <string name="clip_coupon">Couper ce coupon</string>
+    <string name="clip_item">Couper article</string>
+    <string name="clip_menu_delete_all_coupons">Supprimer tous les coupons</string>
+    <string name="clip_menu_delete_all_items">Supprimer tous les articles</string>
+    <string name="clip_menu_delete_expired_clippings">Supprimer envoyés et expirés</string>
+    <string name="clip_menu_edit_mode">Modifier</string>
+    <string name="clipping_cell_coupon_matchup">"Coupon
+jumelé"</string>
+    <string name="clipping_cell_coupons_available"><g example="3" id="number_of_coupons">%d</g> disponible(s)</string>
+    <string name="clippings">Coupures</string>
+    <string name="close_drawer">Fermer le tiroir de navigation</string>
+    <string name="common_google_play_services_enable_button">Activer services Google Play</string>
+    <string name="common_google_play_services_enable_text">"Cette application ne fonctionnera pas tant que vous n'aurez pas activé les services Google Play."</string>
+    <string name="common_google_play_services_enable_title">Activer les services Google Play</string>
+    <string name="common_google_play_services_install_button">Installer services Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Cette application ne fonctionnera pas sans les services Google Play, qui ne sont pas installés sur votre téléphone.</string>
+    <string name="common_google_play_services_install_text_tablet">Cette application ne fonctionnera pas sans les services Google Play, qui ne sont pas installés sur votre tablette.</string>
+    <string name="common_google_play_services_install_title">Installer les services Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">"Le compte indiqué n'existe pas sur cet appareil. Veuillez sélectionner un autre compte."</string>
+    <string name="common_google_play_services_invalid_account_title">Compte erroné</string>
+    <string name="common_google_play_services_network_error_text">"Vous devez disposer d'une connexion de données pour utiliser les services Google Play."</string>
+    <string name="common_google_play_services_network_error_title">Erreur réseau</string>
+    <string name="common_google_play_services_unknown_issue">Problème inconnu avec les services Google Play.</string>
+    <string name="common_google_play_services_unsupported_date_text">"La date sur l'appareil semble incorrecte. Veuillez la vérifier."</string>
+    <string name="common_google_play_services_unsupported_text">"Les services Google Play, dont dépendent certaines de vos applications, ne sont pas compatibles avec votre appareil. Veuillez contacter le fabricant pour obtenir de l'aide."</string>
+    <string name="common_google_play_services_unsupported_title">Services Google Play</string>
+    <string name="common_google_play_services_update_button">Mettre à jour</string>
+    <string name="common_google_play_services_update_text">"Cette application ne fonctionnera pas tant que vous n'aurez pas mis à jour les services Google Play."</string>
+    <string name="common_google_play_services_update_title">Mettre à jour les services Google Play</string>
+    <string name="common_signin_button_text">Connexion</string>
+    <string name="common_signin_button_text_long">Se connecter avec Google</string>
+    <string name="correction_notice_title">Avis de correction</string>
+    <string name="correction_notices">Avis de correction</string>
+    <string name="coupon_banner_one">Coupon jumelés</string>
+    <string name="coupon_banner_other">Coupons jumelés</string>
+    <string name="coupon_barcode_title">Code barres</string>
+    <string name="coupon_category_all_deals">Tout</string>
+    <string name="coupon_category_baby">Bébé</string>
+    <string name="coupon_category_grocery">Épicerie</string>
+    <string name="coupon_category_health_beauty">Santé et beauté</string>
+    <string name="coupon_category_household">Maison</string>
+    <string name="coupon_category_other">Autre</string>
+    <string name="coupon_category_pets">Animaux</string>
+    <string name="coupon_cell_item_matchup_at">Jumelé chez</string>
+    <string name="coupon_cell_item_matchup_get_it">Prix final <g example="3.99$" id="final_price">%s</g></string>
+    <string name="coupon_details_print_disclaimer_bottom">Coupez-le pour imprimer plus tard, ou imprimez-le maintenant.</string>
+    <string name="coupon_details_print_disclaimer_top">"Ce coupon n'est pas valide avant d'être imprimer."</string>
+    <string name="coupon_details_report">Signaler un coupon jumelé incorrect</string>
+    <string name="coupon_details_title_one">Coupon</string>
+    <string name="coupon_details_title_other"><g example="3" id="number_of_coupons">%d</g> coupons</string>
+    <string name="coupon_details_valid">Valide du</string>
+    <string name="coupon_details_valid_from">Valide à partir du</string>
+    <string name="coupon_details_valid_to">au</string>
+    <string name="coupon_details_why_print">Pourquoi faut-il imprimer mes coupons?</string>
+    <string name="coupon_help">Aide: Coupons</string>
+    <string name="coupon_item_matchup_label">Coupons jumelés:</string>
+    <string name="coupon_report_confirmation">Merci! Nous nous en chargeons.</string>
+    <string name="coupon_report_dialog_cancel">Annuler</string>
+    <string name="coupon_report_dialog_message">"Vous signalez qu'un coupon jumelé est incorrect."</string>
+    <string name="coupon_report_dialog_report">Signaler</string>
+    <string name="coupon_report_dialog_title">Êtes-vous sûr?</string>
+    <string name="coupon_retailer_item_matchup_label">Voir dans la <g example="circulaire" name="flyer_alias">%s</g></string>
+    <string name="coupons">Coupons</string>
+    <string name="current_location">Position actuelle</string>
+    <string name="date_to">Du <g example="12 Fév" id="from_date">%1$s</g> au <g example="15 Fév" id="to_date">%2$s</g></string>
+    <string name="delete">Supprimer</string>
+    <string name="delete_all_coupons_message">Êtes-vous sûr vous voulez supprimer tous vos coupons coupés?</string>
+    <string name="delete_all_coupons_title">Supprimer tous vos coupons</string>
+    <string name="delete_all_items_message">"Êtes-vous sûr vous voulez supprimer tout vos coupures d'articles?"</string>
+    <string name="delete_all_items_title">Tout supprimer</string>
+    <string name="delete_expired_and_sent_message">Êtes-vous sûr vous voulez supprimer les coupures envoyés et expirés?</string>
+    <string name="delete_expired_and_sent_title">Supprimer coupures envoyés et expirés</string>
+    <string name="disclaimer_complete">Désolé, traitement en cours. La recherche, les rabais et les coupures ne sont pas encore disponibles.</string>
+    <string name="disclaimer_price">Cette circulaire pourrait être différente de celle de votre région. Veuillez vérifier votre magasin pour voir la circulaire correspondante.</string>
+    <string name="done">Terminé</string>
+    <string name="edit">Modifier</string>
+    <string name="email">Adresse courriel</string>
+    <string name="ended_date">Terminé le <g example="3 Janvier" id="month">%2$td %1$tb</g></string>
+    <string name="ends_today">"Termine aujourd'hui"</string>
+    <string name="favorites">Favoris</string>
+    <string name="featured_item">Article en vedette</string>
+    <string name="features">Fonctions</string>
+    <string name="filter_alphabetical">Ordre alphabétique</string>
+    <string name="filter_featured">En vedette</string>
+    <string name="filter_latest">Récentes</string>
+    <string name="find_deals">Trouver aubaines</string>
+    <string name="find_flyers_error">"Une erreur s'est produite lors du chargement des circulaires. Veuillez essayer de nouveau."</string>
+    <string name="flyer">circulaire</string>
+    <string name="flyer_info_title">Information</string>
+    <string name="flyers">circulaires</string>
+    <string name="geolocate">Me localiser</string>
+    <string name="geolocation_error">"Nous n'avons pas pu trouvé votre code postal à partir de votre emplacement."</string>
+    <string name="help_1">Bienvenue à Flipp. Économies dans votre poche. Faites défiler vers la droite pour commencer.</string>
+    <string name="help_1_swipe_left">Glisser vers la gauche pour commencer.</string>
+    <string name="help_call_to_action">Entrer votre code postal pourque nous puissions trouver les <g example="circulaires" id="flyer_alias">%s</g> et coupons applicables.</string>
+    <string name="hero_cell_coupon_price_label">Coupon</string>
+    <string name="hero_cell_current_price_label">Prix actuel</string>
+    <string name="hero_cell_discount_price_label">Rabais</string>
+    <string name="hero_cell_final_price_label">Prix final</string>
+    <string name="hero_cell_original_price_label">Prix courant</string>
+    <string name="history_header">Historique</string>
+    <string name="hold_to_see_details_tutorial">Appuyer et maintenir la touche pour plus de détails</string>
+    <string name="how_to_use_coupon_answer">Une fois imprimés, amenez vos coupons chez votre détaillant préféré pour les encaisser. Pour en savoir plus sur les restrictions, veuillez lire les passages en petit caractères sur chaque coupon.</string>
+    <string name="how_to_use_coupon_question">Comment utiliser mes coupons?</string>
+    <string name="in_store_only">EN MAGASIN SEULEMENT</string>
+    <string name="info_error_failure">"Nous ne pouvons pas trouver de l'information sur cette "<g example="circulaire" id="flyer">%1$s</g>"
+Veuillez réessayer plus tard."</string>
+    <string name="info_geo_off_no_stores">Aucun magasin trouvé. Activez les services de localisation pour de meuilleurs résultats.</string>
+    <string name="info_geo_off_with_stores">"Les services de localisation sont désactivés. Ce magasin est le plus proche de chez vous, d'après votre code postal."</string>
+    <string name="info_geo_on_no_location">"Nous n'avons pas pu trouvé votre emplacement. Veuillez vous assurer que vos services de localisation permettent l'utilisation des réseaux cellulaire et WiFi."</string>
+    <string name="info_no_info_available">"Il n'y a aucune information supplémentaire pour cette "<g example="circulaire" id="flyer">%1$s</g></string>
+    <string name="item_details_title">"Détails d'article"</string>
+    <string name="item_sku">SKU: <g example="12313141" id="sku">%1$s</g></string>
+    <string name="item_valid_from">Valide à partir du <g example="Mardi le 4 Janvier" id="date">%1$s</g></string>
+    <string name="item_valid_from_to_1">Applicable du <g example="Mardi le 4 Janvier" id="from_date">%1$s</g></string>
+    <string name="item_valid_from_to_2">au <g example="Lundi le 10 Janvier" id="to_date">%1$s</g></string>
+    <string name="item_valid_until">"Valide jusqu'au "<g example="Mardi le 4 Janvier" id="date">%1$s</g></string>
+    <string name="items_loading">Les articles sont encore en cours de chargement</string>
+    <string name="items_over_percent_off_zero" formatted="false">Aucun article à plus de <g example="10%" id="percent_off">%d%%</g> de rabais</string>
+    <string name="keep_search_history_message">Autoriser Flipp à enregistrer vos termes de recherche</string>
+    <string name="keep_search_history_title">Conserver mes recherches</string>
+    <string name="license">Licence</string>
+    <string name="license_agreement">Accord de licence</string>
+    <string name="loading_video">Vidéo en cours de chargement...</string>
+    <string name="menu_details">Détails</string>
+    <string name="menu_favorite">Ajouter aux favoris</string>
+    <string name="merchant_coupon_only_valid">Valide uniquement chez</string>
+    <string name="nearby_stores_one">Magasins les plus proches de chez vous</string>
+    <string name="nearby_stores_other">Les magasins les plus proches de chez vous</string>
+    <string name="no">Non</string>
+    <string name="no_clippings">"Vous n'avez aucune coupure"</string>
+    <string name="no_clippings_hint">"Appuyer sur un article pour l'ajouter à vos coupures."</string>
+    <string name="no_coupons">Aucun coupon trouvé</string>
+    <string name="no_coupons_hint">Tirer vers le bas pour actualiser ou essayer un autre code postal.</string>
+    <string name="no_favorites">"Vous n'avez aucun favori"</string>
+    <string name="no_favorites_hint">"Ajouter un magasin en tapant sur l'icône cœur."</string>
+    <string name="no_favorites_results">"Il n'y a aucune circulaire pour vos détaillants favoris."</string>
+    <string name="no_flyers">Aucun circulaire</string>
+    <string name="no_flyers_hint">Tirer vers le bas pour actualiser ou essayer un autre code postal.</string>
+    <string name="no_items">Aucun article</string>
+    <string name="no_items_yet">"Aucun article pour l'instant"</string>
+    <string name="no_search_results">Aucun résultat</string>
+    <string name="no_search_results_hint">Essayer un autre terme de recherche.</string>
+    <string name="no_search_results_param">Aucun résultat pour <g example="poulet" id="quoted_search_term">‘%s’</g></string>
+    <string name="no_search_results_request">Cherchez-vous un magasin? Aidez-nous à améliorer Flipp!</string>
+    <string name="no_search_results_request_done">"Merci, on s'en occupe!"</string>
+    <string name="no_search_results_request_param">Suggérer <g example="chicken" id="quoted_search_term">‘%s’</g></string>
+    <string name="not_clippable_yet">"Il n'y a aucun article à couper dans cette circulaire"</string>
+    <string name="notify_me_of_store">Prévenez-moi lorsque ce magasin est ajouté</string>
+    <string name="num_favorite_flyers_one">Circulaires pour votre magasin préféré</string>
+    <string name="num_favorite_flyers_other">Circulaires pour vos <g example="3" id="num_flyers">%d</g> magasins préférés</string>
+    <string name="num_sales_zero">0 solde</string>
+    <string name="onboarding_1_shopping_list">"Planifiez vos courses avec la Liste d'achats"</string>
+    <string name="onboarding_2_clippings">Coupez les articles vous souhaitez acheter</string>
+    <string name="onboarding_3_search">Rechercher des produits, des circulaires et des coupons spécifiques</string>
+    <string name="onboarding_4_coupons">"Coupon jumelés vous offre un maximum d'économies"</string>
+    <string name="only_select_stores">Cette <g example="circulaire" id="flyer">%1$s</g>" ne s'applique qu'à certains magasins"</string>
+    <string name="open_drawer">Ouvrir tiroir de navigation</string>
+    <string name="prices_not_available">Les prix ne sont pas encore disponibles</string>
+    <string name="print_clipped_coupons">Coupons coupés</string>
+    <string name="print_coupon">Imprimer coupon</string>
+    <string name="print_coupons">Imprimer vos coupons</string>
+    <string name="print_email_description">Envoyer les coupons sélectionnés à votre ordinateur pour les imprimer. Si vous ne recevez pas vos coupons, veuillez consulter votre dossier spam ou courrier indésirable.</string>
+    <string name="print_email_hint">Entrer votre adresse courriel</string>
+    <string name="print_email_label">Adresse courriel</string>
+    <string name="print_matched_coupons">Coupons jumelés</string>
+    <string name="print_selected_coupons"><g example="2" id="number_of_coupons">%s</g> sélectionné(s)</string>
+    <string name="print_sent_coupons">Coupons envoyés</string>
+    <string name="print_tutorial_print">2. Imprimer</string>
+    <string name="print_tutorial_redeem">3. Encaisser</string>
+    <string name="print_tutorial_send">1. Envoyer</string>
+    <string name="pull_to_refresh_pull_label">Tirez pour rafraîchir…</string>
+    <string name="pull_to_refresh_refreshing_label">Chargement…</string>
+    <string name="pull_to_refresh_release_label">Relâcher pour rafraîchir…</string>
+    <string name="refresh">Actualiser</string>
+    <string name="removed_from_clippings">Retiré des coupures</string>
+    <string name="removed_from_favorites">Retiré des favoris</string>
+    <string name="request_a_store">Suggérer un magasin</string>
+    <string name="reviews"><g example="3" id="review_count">%d</g> évaluations</string>
+    <string name="reviews_average">Moyenne</string>
+    <string name="sale_story_buy_x_get">ACHETEZ-EN <g example="1" id="x">%s</g> , OBTENEZ</string>
+    <string name="sale_story_buy_x_get_y" formatted="false">ACHETEZ-EN <g example="1" id="x">%s</g> , OBTENEZ-EN <g example="1" id="y">%s</g></string>
+    <string name="sale_story_free">GRATUIT</string>
+    <string name="sale_story_off">DE RABAIS</string>
+    <string name="sale_story_off_amount">À <g example="30" id="amount">%s</g></string>
+    <string name="sale_story_save">ÉPARGNEZ</string>
+    <string name="search">Recherche</string>
+    <string name="search_hint_coupons">Recherche</string>
+    <string name="search_hint_flyers">Recherche</string>
+    <string name="select_stores_one">Magasin pour cette <g example="circulaire" id="flyer">%1$s</g> (<g id="postal_code">%2$s</g>)</string>
+    <string name="select_stores_other">Magasins pour cette <g example="circulaire" id="flyer">%1$s</g> (<g id="postal_code">%2$s</g>)</string>
+    <string name="send">Envoyer</string>
+    <string name="send_coupons_failed_toast">"Vos coupons n'ont pas pu être envoyés. Veuillez réessayer."</string>
+    <string name="send_coupons_no_email_toast">Veuillez entrer votre adresse courriel</string>
+    <string name="send_me_updates">"Envoyez-moi d'autres mises à jour sur Flipp"</string>
+    <string name="sending_coupons_toast">"Coupons en cours d'envoi…"</string>
+    <string name="settings">Paramètres</string>
+    <string name="share">Partager</string>
+    <string name="shared_from_flipp">Partagé via Flipp - article dans la circulaire de <g example="Walmart http://www.flipp.com" id="merchant">%1$s %2$s</g></string>
+    <string name="shop_list_delete_all">Tout supprimer</string>
+    <string name="shop_list_delete_checked">Supprimer sélection(s)</string>
+    <string name="shop_list_edit">Modifier</string>
+    <string name="shop_list_edit_mode">Modifier la liste</string>
+    <string name="shop_list_my_list">Ma liste</string>
+    <string name="shop_list_popular_items">Articles populaires</string>
+    <string name="shop_list_search_count_suffix_one">AUBAINE</string>
+    <string name="shop_list_search_count_suffix_other">AUBAINES</string>
+    <string name="shop_list_search_count_suffix_zero">AUBAINE</string>
+    <string name="shop_list_uncheck_all">Tout déselectionner</string>
+    <string name="shopping_list">"Liste d'achats"</string>
+    <string name="shopping_list_popup_added">Ajouté!</string>
+    <string name="shopping_list_popup_title">"Ajouter à votre liste d'achat?"</string>
+    <string name="show_barcode">Voir code barres</string>
+    <string name="show_coupon_one">1 coupon</string>
+    <string name="show_coupon_other"><g example="12" id="number_of_coupons">%d</g> coupons</string>
+    <string name="show_coupon_zero">Aucun coupon</string>
+    <string name="specifications">Spécifications</string>
+    <string name="starts_on_date">Commence le <g example="3 Janvier" id="month">%2$td %1$tb</g></string>
+    <string name="starts_on_day">Commence <g example="Lundi" id="day_of_week">%tA</g></string>
+    <string name="starts_today">"À partir d'aujourd'hui"</string>
+    <string name="starts_tomorrow">Commence demain</string>
+    <string name="store_name">Nom du magasin</string>
+    <string name="store_request_sent">Merci pour la suggestion de magasin!</string>
+    <string name="tutorial_after_clipping_description_1_regular">"Vous avez coupé cet article et les
+"</string>
+    <string name="tutorial_after_clipping_description_2_bold">coupons avec lesquels il est jumelé</string>
+    <string name="tutorial_coupon_badge_description_1_regular">Nous avons </string>
+    <string name="tutorial_coupon_badge_description_2_bold">"jumelé des coupons avec
+des articles "</string>
+    <string name="tutorial_coupon_badge_description_3_regular">dans cette circulaire</string>
+    <string name="tutorial_coupon_matchup_description_1_regular">Nous avons </string>
+    <string name="tutorial_coupon_matchup_description_2_bold">"jumelé des coupons à
+des articles "</string>
+    <string name="tutorial_coupon_matchup_description_3_regular">vous avez cherchés</string>
+    <string name="tutorial_cross_browse_description_1_regular">Glisser vers le haut pour </string>
+    <string name="tutorial_cross_browse_description_2_bold">voir la prochaine circulaire</string>
+    <string name="tutorial_ok">OK, je comprends!</string>
+    <string name="tutorial_print_coupon_description_1_bold">Imprimer vos coupons </string>
+    <string name="tutorial_print_coupon_description_2_regular">"pour
+économiser plus en magasin"</string>
+    <string name="tutorial_reverse_matchup_description_1_regular">"Nous jumelons des coupons avec
+"</string>
+    <string name="tutorial_reverse_matchup_description_2_bold">de nouveaux articles chaque jour</string>
+    <string name="tutorial_tap_to_click_description_1_regular">Taper un article </string>
+    <string name="tutorial_tap_to_click_description_2_bold">pour le couper</string>
+    <string name="twitter_username">"Nom d'utilisateur Twitter"</string>
+    <string name="unclip_coupon">Retirer ce coupon</string>
+    <string name="unclip_item">"Retirer l'article"</string>
+    <string name="until_date">"Jusqu'au "<g example="3 Janvier" id="month">%2$td %1$tb</g></string>
+    <string name="until_day">"Jusqu'à "<g example="Lundi" id="day_of_week">%tA</g></string>
+    <string name="until_tomorrow">"Jusqu'à demain"</string>
+    <string name="was_price">Était</string>
+    <string name="weekly_ad">circulaire</string>
+    <string name="weekly_ads">circulaires</string>
+    <string name="why_print_coupon_answer">"Les fabricants décident dans quelle manière leurs coupons sont distribués. Plus souvent qu'autrement, ils exigent qu'ils soient imprimés. Dans le but de vous offrir le plus de coupons possible, ces coupons doivent être imprimés avant d'être encaissés chez vos détaillants locaux."</string>
+    <string name="why_print_coupon_question">Pourquoi faut-il imprimer mes coupons?</string>
+    <string name="yes">Oui</string>
+    <string name="you_have_reached_max_items">"Votre liste d'achats est remplie"</string>
+    <string name="your_clippings">Vos coupures</string>
+    <string name="zero_case_print_label_1">"Vous n'avez aucun coupon à imprimer"</string>
+    <string name="zero_case_print_label_2">Il y a nombreuses manières de découvrir les coupons!</string>
+    <string name="zero_case_print_tutorial_label_1">Feuilleter ou chercher nos coupons afin de trouver les meilleures aubaines</string>
+    <string name="zero_case_print_tutorial_label_2">Couper un article et nous vous aidons à trouver les coupons correspondants</string>
+    <string name="zero_send_coupons_toast">Veuillez sélectionner au moins un coupon</string>
+    <string name="zip_postal_code">Code postal</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/settings_background" android:paddingLeft="@dimen/settings_item_margin" android:paddingRight="@dimen/settings_item_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/legal" style="@style/settings_header_style" />
+    <TextView android:id="@id/privacy_statement" android:background="@drawable/navdrawer_item_ripple_selector" android:text="@string/privacy_policy" style="@style/settings_item_style" />
+    <View android:background="@color/settings_separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:id="@id/terms_of_use" android:background="@drawable/navdrawer_item_ripple_selector" android:text="@string/tos" style="@style/settings_item_style" />
+    <View android:background="@color/settings_separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:text="@string/about_this_app" style="@style/settings_header_style" />
+    <LinearLayout android:orientation="vertical" android:id="@id/version_number_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/settings_inactive_text" android:paddingTop="@dimen/settings_item_padding_top_bottom" android:paddingBottom="@dimen/settings_item_padding_between_lines" android:text="@string/build_version" style="@style/settings_version_style" />
+        <TextView android:textSize="@dimen/settings_version_text_size" android:textColor="@color/settings_version_number" android:id="@id/version_number" android:paddingTop="@dimen/settings_item_padding_zero" android:paddingBottom="@dimen/settings_item_padding_top_bottom" style="@style/settings_version_style" />
+        <View android:background="@color/settings_separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

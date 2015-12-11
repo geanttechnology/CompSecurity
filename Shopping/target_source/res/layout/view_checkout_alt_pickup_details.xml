@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/checkout_alt_delivery_padding_left" android:paddingRight="@dimen/checkout_more_padding_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.common.NameView android:id="@id/pickup_name_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/pickup_email_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pickup_name_view" app:viewId="@id/pickup_email">
+        <com.target.ui.view.TargetEditText android:id="@id/pickup_email" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_pickup_hint_email" android:inputType="textEmailAddress" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:id="@id/account_internal_launch_privacy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_privacy" android:drawableLeft="@drawable/account_launch_left_image_with_blank_space" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.Title.SingleTextView" />
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <com.target.ui.view.TargetTextView android:id="@id/account_internal_launch_ca_privacy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_ca_privacy" android:drawableLeft="@drawable/account_launch_left_image_with_blank_space" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.Title.SingleTextView" />
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <com.target.ui.view.TargetTextView android:id="@id/account_internal_launch_ca_supply_chain_act" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_ca_supply_chain_act" android:drawableLeft="@drawable/account_launch_left_image_with_blank_space" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.Title.SingleTextView" />
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <com.target.ui.view.TargetTextView android:id="@id/account_internal_launch_terms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_terms" android:drawableLeft="@drawable/account_launch_left_image_with_blank_space" style="@style/Target.TextView.LineItem.ExternalLaunch.Title.SingleTextView" />
+</LinearLayout>

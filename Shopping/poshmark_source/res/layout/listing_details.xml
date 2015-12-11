@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/bgColorPureWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@id/listingDetailsListView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" />
+    <RelativeLayout android:id="@id/bottomBarLayout" style="@style/bottomBar">
+        <FrameLayout android:id="@id/offerButtonsLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/buyButtonLayout" android:layout_centerVertical="true">
+            <com.poshmark.ui.customviews.PMButton android:id="@id/offerButton" android:visibility="gone" android:text="@string/make_offer_II" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/offersBlueButton" />
+            <com.poshmark.ui.customviews.PMButton android:id="@id/viewOfferButton" android:visibility="gone" android:text="@string/view_offer_II" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/offersBlueButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/buyButtonLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.poshmark.ui.customviews.PMButton android:id="@id/buyButton" android:visibility="invisible" android:text="@string/buy_now_II" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/commerceBlueButton" />
+            <com.poshmark.ui.customviews.ListingStatusView android:layout_gravity="right" android:id="@id/listingStatusView" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+        </FrameLayout>
+        <com.poshmark.ui.customviews.PMPriceLayout android:orientation="horizontal" android:id="@id/pricesLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/offerButtonsLayout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.poshmark.ui.customviews.PMTextView android:id="@id/similarListingsTitleAnchored" android:background="@color/bgColorGray" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Similar Listings" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/line_separator_width_negative" android:top="@dimen/line_separator_width_negative">
+        <shape>
+            <solid android:color="@android:color/white" />
+            <stroke android:width="@dimen/line_separator_width" android:color="@color/common_grey_separator" />
+        </shape>
+    </item>
+</layer-list>

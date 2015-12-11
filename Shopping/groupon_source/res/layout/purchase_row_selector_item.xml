@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" style="@style/white_bg_selector_element"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_plus" android:layout_toLeftOf="@id/value" android:layout_centerVertical="true" style="@style/purchase_row_label_text" />
+    <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19.0dip" android:layout_centerVertical="true" style="@style/purchase_row_value_text_no_disclosure" />
+</RelativeLayout>

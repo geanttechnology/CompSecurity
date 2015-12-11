@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/product_image_container" android:background="@drawable/variation_cell_border" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.BitmapImageView android:layout_gravity="center" android:id="@id/prd_pdp_variation_image" android:padding="@dimen/default_padding_margin" android:visibility="gone" android:layout_width="@dimen/prd_plp_variation_cell_image_size_width" android:layout_height="@dimen/prd_plp_variation_cell_image_size_height" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center" android:id="@id/prd_pdp_variation_check_box" android:padding="@dimen/default_padding_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_selecteditem" android:scaleType="center" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center" android:id="@id/prd_pdp_variation_grey_out" android:background="@drawable/grid_greyout_color_bg" android:visibility="gone" android:layout_width="@dimen/prd_plp_variation_cell_image_size_width" android:layout_height="@dimen/prd_plp_variation_cell_image_size_height" android:scaleType="fitXY" android:contentDescription="@null" />
+</FrameLayout>

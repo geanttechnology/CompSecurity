@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/checkout_alt_delivery_padding_left" android:paddingRight="@dimen/checkout_more_padding_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/recipient_name_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewId="@id/recipient_name">
+        <com.target.ui.view.TargetEditText android:id="@id/recipient_name" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_email_recipient_name_hint" android:inputType="textPersonName|textCapWords" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/recipient_email_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/recipient_name_wrapper" app:viewId="@id/recipient_email">
+        <com.target.ui.view.TargetEditText android:id="@id/recipient_email" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_pickup_hint_email" android:inputType="textEmailAddress" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/sender_name_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/recipient_email_wrapper" app:viewId="@id/sender_name">
+        <com.target.ui.view.TargetEditText android:id="@id/sender_name" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_email_sender_hint" android:inputType="textPersonName|textCapWords" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+</RelativeLayout>

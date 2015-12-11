@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/card_view_container" android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/deal_card_side" android:layout_marginTop="@dimen/deal_card_top" android:layout_marginRight="@dimen/deal_card_side" android:layout_marginBottom="@dimen/deal_card_bottom" card_view:cardCornerRadius="@dimen/deal_card_radius" card_view:cardElevation="@dimen/deal_card_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/deal_image_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.groupon.view.UrlImageView android:id="@id/deal_image" android:layout_width="fill_parent" android:layout_height="@dimen/deal_card_image_height" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/badges_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="15.0">
+                    <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/badges" android:paddingLeft="@dimen/spacing_big" android:paddingTop="@dimen/spacing_medium" android:paddingRight="@dimen/spacing_big" android:paddingBottom="@dimen/spacing_medium" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/view_deal_card_price_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/deal_image_container">
+            <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/spacing_big" android:paddingTop="11.0dip" android:paddingRight="@dimen/spacing_big" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/deal_card_title" />
+                <TextView android:id="@id/deal_card_location_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" android:layout_alignBaseline="@id/deal_card_pitch_text_2" style="@style/generic_deal_card_text" />
+                <TextView android:id="@id/view_deal_card_bought" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/deal_card_location_text" android:layout_alignWithParentIfMissing="true" style="@style/generic_deal_card_text" />
+                <TextView android:id="@id/urgency_pricing_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/deal_card_pitch_text_1" style="@style/deal_card_urgency_pricing" />
+                <TextView android:id="@id/view_deal_card_mobile_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mobile_only" android:layout_alignBaseline="@id/deal_card_pitch_text_1" style="@style/deal_card_mobile_only" />
+                <TextView android:textColor="@color/connected_marketplace_deal_list_text" android:id="@id/goods_connected_marketplace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/deal_card_pitch_text_1" style="@style/generic_deal_card_text" />
+                <TextView android:id="@id/view_deal_card_gbucks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/deal_card_pitch_text_1" style="@style/start_aligned_view" />
+                <TextView android:id="@id/deal_incentive_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginRight="5.0dip" android:layout_alignBaseline="@id/deal_card_pitch_text_1" style="@style/deal_card_incentive_title" />
+                <TextView android:textSize="@dimen/info_box_font" android:typeface="sans" android:textColor="@color/old_price" android:id="@id/deal_card_pitch_text_2" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" android:fontFamily="@string/roboto_regular" style="@style/end_aligned_view" />
+                <TextView android:id="@id/deal_card_pitch_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:layout_below="@id/deal_card_pitch_text_2" style="@style/deal_card_new_price" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/view_deal_card_time_pill_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_deal_card_price_container">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/time_pills_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="@dimen/time_pill_margin">
+                <TextView android:id="@id/time_pill_1" style="@style/time_pill" />
+                <TextView android:id="@id/time_pill_2" style="@style/time_pill" />
+                <TextView android:id="@id/time_pill_3" style="@style/time_pill" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/deal_card_sold_out_banner_container" android:background="@color/deal_card_sold_out_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_deal_card_price_container" android:layout_alignParentTop="true">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/deal_card_sold_out_banner_text" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sold_out_caps_2" style="@style/deal_card_sold_out_banner_text" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/deal_card_large_selector_state" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/view_deal_card_time_pill_container" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

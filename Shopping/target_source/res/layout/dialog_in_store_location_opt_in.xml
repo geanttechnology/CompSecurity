@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:paddingTop="@dimen/account_header_bullseye_padding" android:paddingBottom="@dimen/account_header_bullseye_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_hi_large" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/in_store_location_dialog_title" app:fontStyle="medium" style="@style/Target.TextView.DialogTitle" />
+        <com.target.ui.view.TargetTextView android:paddingTop="@dimen/dialog_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/in_store_location_dialog_message" style="@style/Target.TextView.DialogMessage" />
+        <RelativeLayout android:paddingTop="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetCheckBox android:theme="@style/AppTheme.GreenAccent" android:textSize="@dimen/mediumTextSize" android:id="@id/in_store_location_enable_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/in_store_location_enable_message" android:layout_centerVertical="true" style="@style/Target.CheckBox" />
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:textColor="@color/neutral_gray" android:id="@id/in_store_location_enable_message" android:paddingLeft="@dimen/dialog_2x_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/in_store_location_enable_sub_message" android:layout_below="@id/in_store_location_enable_checkbox" style="@style/Target.TextView.DialogMessage" />
+        </RelativeLayout>
+        <com.target.ui.view.TargetButton android:textSize="@dimen/mediumTextSize" android:layout_gravity="center_horizontal" android:id="@id/in_store_location_shop_button" android:padding="@dimen/default_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/in_store_location_start_shopping" app:fontStyle="medium" style="@style/DialogButton.Red" />
+    </LinearLayout>
+</LinearLayout>

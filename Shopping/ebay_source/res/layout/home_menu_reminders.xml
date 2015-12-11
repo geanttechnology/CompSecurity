@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/home_reminders" style="@style/Home.MenuItem.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/reminders" android:drawableLeft="@drawable/ic_home_reminders" style="@style/Home.MenuItem.ContainerTextView" />
+    <FrameLayout style="@style/Home.MenuItem.SpinnableCount">
+        <TextView android:id="@id/home_reminders_count" style="@style/Home.MenuItem.Count" />
+        <ProgressBar android:id="@id/spinner_reminders" style="@style/Home.MenuItem.Spinner" />
+    </FrameLayout>
+</LinearLayout>

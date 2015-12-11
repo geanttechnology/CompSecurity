@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.common.TargetErrorView android:id="@id/order_history_error_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/order_history_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/account_order_history_empty" app:fontStyle="regular" style="@style/Target.TextView.ErrorSubTitle" />
+    <ScrollView android:id="@id/order_history_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/account_order_history_margin_bottom">
+        <LinearLayout android:orientation="vertical" android:id="@id/order_history_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+    <com.target.ui.view.account.AccountOrderHistoryFooterView android:gravity="center_horizontal" android:id="@id/order_history_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

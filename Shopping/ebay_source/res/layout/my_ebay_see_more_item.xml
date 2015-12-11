@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/my_ebay_base_title_height" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin" android:weightSum="1.0" ebay:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="left|center" android:id="@id/see_more_title" android:paddingLeft="@dimen/ebayPadding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/EbayTextAppearance.Body1" />
+    <TextView android:gravity="center_vertical" android:id="@id/see_more_count" android:paddingRight="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/EbayTextAppearanceStrong.Body1" />
+</com.ebay.mobile.widget.FLinearLayout>

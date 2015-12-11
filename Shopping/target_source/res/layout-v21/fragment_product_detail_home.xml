@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/pdp_scroll_pane" android:scrollbars="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="always">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/prd_pdp_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/content_pdp_upper_half_layout" />
+            <LinearLayout android:gravity="center" android:id="@id/prd_pdp_progress_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_4x_padding_margin">
+                <ProgressBar android:theme="@style/AppTheme.RedAccent" android:layout_width="@dimen/dialog_progress_bar_width_height" android:layout_height="@dimen/dialog_progress_bar_width_height" style="?android:attr/progressBarStyleInverse" />
+            </LinearLayout>
+            <com.target.ui.view.common.TargetErrorView android:id="@id/prd_pdp_error_container" android:padding="@dimen/default_half_padding_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin" style="@style/Target.CardView" />
+            <LinearLayout android:orientation="vertical" android:id="@id/prd_pdp_content_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/content_pdp_lower_half_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

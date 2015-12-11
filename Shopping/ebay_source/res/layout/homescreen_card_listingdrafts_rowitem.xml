@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FRelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/item_image" android:layout_width="@dimen/homescreen_card_sell_draft_size" android:layout_height="@dimen/homescreen_card_sell_draft_size" android:layout_marginRight="@dimen/ebayMargin2x" android:scaleType="fitCenter" app:urlRewriter="zoom_gallery" app:averageBackgroundColor="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/item_image" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/ebayTextSizeMediumSmall" android:textColor="@color/style_guide_gray" android:ellipsize="end" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" android:lines="1" />
+        <TextView android:textSize="@dimen/ebayTextSizeMediumSmall" android:id="@id/item_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+</com.ebay.mobile.widget.FRelativeLayout>

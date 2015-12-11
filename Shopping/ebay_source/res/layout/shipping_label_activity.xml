@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/modal_toolbar" />
+    <FrameLayout android:orientation="horizontal" android:background="?listContainerOutsideBackground" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" layout="@layout/common_progress" />
+            <TextView android:gravity="center_horizontal" android:id="@id/psl_generate_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psl_generating_label_progress" android:layout_below="@id/progress_layout" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.ebay.android.widget.MaxSizeLinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" ebay:maxWidth="@dimen/sell_smartbox_max_width" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+            <FrameLayout android:id="@id/shipping_label_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.ebay.android.widget.MaxSizeLinearLayout>
+        <include android:visibility="gone" layout="@layout/common_error" />
+    </FrameLayout>
+</LinearLayout>

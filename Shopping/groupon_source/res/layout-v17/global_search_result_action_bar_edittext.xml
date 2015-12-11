@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/lollipop_search_bar_height" android:layout_toLeftOf="@id/shopping_cart" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/shopping_cart" android:layout_alignParentStart="true" style="@style/search_box_white_rounded">
+        <ImageView android:id="@id/search_icon" style="@style/search_icon_style" />
+        <TextView android:id="@id/post_search_term" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/search_icon" android:layout_toEndOf="@id/search_icon" style="@style/global_post_search_text_box_style_ltr_rtl" />
+    </RelativeLayout>
+    <include layout="@layout/shopping_cart_actionbar_button" />
+</RelativeLayout>

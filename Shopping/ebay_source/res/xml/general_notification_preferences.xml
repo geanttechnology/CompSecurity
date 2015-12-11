@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.preference.LongTitleSummaryCheckBoxPreference android:persistent="false" android:title="@string/send_notifications_msgm2mmsghdr" android:key="MSGM2MMSGHDR" android:summary="@string/send_notifications_msgm2mmsghdr_summary" />
+    <com.ebay.mobile.preference.LongTitleSummaryCheckBoxPreference android:persistent="false" android:title="@string/send_notifications_msgebaymsghdr" android:key="MSGEBAYMSGHDR" android:summary="@string/send_notifications_msgebaymsghdr_summary" />
+    <com.ebay.mobile.preference.LongTitleSummaryCheckBoxPreference android:persistent="false" android:title="@string/send_notifications_coupon_offer" android:key="COUPONAVLBL" android:summary="@string/send_notifications_coupon_offer_summary" />
+    <com.ebay.mobile.preference.LongTitleSummaryCheckBoxPreference android:persistent="false" android:title="@string/send_notifications_general_deals" android:key="GENERAL_DEALS" android:summary="@string/send_notifications_general_deals_summary" />
+</PreferenceScreen>

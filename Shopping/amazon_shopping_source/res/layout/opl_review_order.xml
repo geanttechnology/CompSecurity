@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/blue_light" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/opl_order_total_price_label_and_price_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textStyle="bold" android:id="@id/opl_order_total_price_label_and_price_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textStyle="bold" android:id="@id/opl_order_total_price_label_and_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:enabled="false" android:id="@id/opl_place_order_button_top" android:layout_width="wrap_content" android:text="@string/opl_review_order_place_order_button" android:drawablePadding="@dimen/padding" android:layout_alignParentRight="true" style="@style/Button.Gold.Arrow" />
+    </RelativeLayout>
+    <TextView android:id="@id/opl_error_text" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Error" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/opl_review_order_checkout_timer_block" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/opl_checkout_timer_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/opl_review_order_complete_checkout_within" />
+                <TextView android:textStyle="bold" android:textColor="@color/checkout_timer_green" android:id="@id/opl_checkout_time_remaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/opl_review_order_acknowledgement_checkbox_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:textColor="@color/error_text" android:id="@id/opl_review_order_acknowledgement_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" />
+                <View android:layout_height="4.0dip" style="@style/Separator" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/opl_order_summary_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/opl_review_order_summary_header" style="@style/Header" />
+                <com.amazon.mShop.opl.OrderSummaryView android:id="@id/opl_order_summary_table" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_double" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding_double" android:layout_marginBottom="@dimen/padding" />
+                <View style="@style/Separator" />
+            </LinearLayout>
+            <ViewStub android:id="@id/opl_payment_method_block_before_shipments_stub" android:layout="@layout/opl_payment_method_block" android:inflatedId="@id/opl_payment_method_block" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/opl_shipping_address_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/opl_review_order_shipping_address_header" style="@style/Header" />
+                <include layout="@layout/opl_editable_item" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/opl_shipping_address_cvsd_recipient_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/opl_editable_item" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/opl_orders_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/opl_payment_method_block_after_shipments_stub" android:layout="@layout/opl_payment_method_block" android:inflatedId="@id/opl_payment_method_block" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/opl_review_order_invoice_control_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/opl_review_order_invoice_needed_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:checked="false" android:text="@string/opl_invoice_header" />
+                <TextView android:id="@id/opl_review_order_invoice_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:text="@string/opl_invoice_explanation" />
+                <View android:layout_height="2.0dip" style="@style/Separator" />
+                <Button android:textColor="@color/link" android:id="@id/opl_review_order_invoice_learn_more_button" android:text="@string/opl_invoice_learn_more_link" style="@style/ArrowSelector" />
+                <View android:layout_height="2.0dip" style="@style/Separator" />
+                <Button android:textColor="@color/link" android:id="@id/opl_review_order_invoice_title" android:text="@string/opl_invoice_description_title" style="@style/ArrowSelector" />
+                <View android:layout_height="2.0dip" style="@style/Separator" />
+                <Button android:textColor="@color/link" android:id="@id/opl_review_order_invoice_category" android:text="@string/opl_invoice_category_title" style="@style/ArrowSelector" />
+            </LinearLayout>
+            <View android:layout_height="2.0dip" style="@style/Separator" />
+            <LinearLayout android:orientation="vertical" android:id="@id/opl_review_order_extra_legal_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/link" android:id="@id/opl_review_order_extra_legal_button" android:text="@string/opl_review_order_extra_legal_title" style="@style/ArrowSelector" />
+                <View android:layout_height="1.0dip" style="@style/Separator" />
+            </LinearLayout>
+            <com.amazon.mShop.LinkButton android:textColor="@color/link" android:id="@id/opl_legal_information_button" android:text="@string/opl_review_order_legal_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/opl_review_order_legal_title" amazon_urlContentId="@string/opl_review_order_legal_url_android" amazon_urlUseExternalBrowser="false" />
+            <View android:layout_height="3.0dip" style="@style/Separator" />
+            <Button android:enabled="false" android:layout_gravity="right" android:id="@id/opl_place_order_button_bottom" android:visibility="gone" android:layout_margin="@dimen/padding" android:text="@string/opl_review_order_place_order_button" style="@style/Button.Gold.Arrow" />
+            <TextView android:textSize="@dimen/text_small" android:id="@id/opl_review_order_footer" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_review_order_footer" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingBottom="@dimen/large_deal_card_pitch_text_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/original_price_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/notification_original_price_container_margin_right" android:layout_marginEnd="@dimen/notification_original_price_container_margin_right">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/original_price_cross_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/notification_original_price_margin_top" style="@style/notification_pitch_text_original_price" />
+    </FrameLayout>
+    <TextView android:layout_gravity="center_vertical" android:id="@id/discount_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/notification_discounted_price" />
+</LinearLayout>

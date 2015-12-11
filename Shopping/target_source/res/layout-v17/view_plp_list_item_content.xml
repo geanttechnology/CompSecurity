@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/prd_plp_list_container" android:padding="@dimen/default_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.target.ui.view.BitmapImageView android:layout_gravity="center" android:id="@id/prd_plp_list_image_view" android:layout_width="@dimen/prd_plp_list_image_size_width" android:layout_height="@dimen/prd_plp_list_image_size_height" android:contentDescription="@null" />
+        <com.target.ui.view.StarRatingView android:layout_gravity="center" android:id="@id/prd_plp_list_product_rating" android:padding="@dimen/default_padding_margin" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:size="small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/default_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetTextView android:id="@id/prd_plp_list_product_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/prd_plp_list_overflow_aisle_badge" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.ProductListTitle" />
+            <com.target.ui.view.AisleBadgeView android:id="@id/prd_plp_list_overflow_aisle_badge" android:visibility="gone" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:badgeType="active" app:badgeSize="small" />
+        </RelativeLayout>
+        <com.target.ui.view.TargetTextView android:id="@id/prd_plp_list_product_sub_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.ProductListSubTitle" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_2x_padding">
+            <com.target.ui.view.product.ProductPriceView android:id="@id/prd_plp_list_price_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <com.target.ui.view.product.PlpFulfillmentView android:id="@id/prd_plp_list_fulfillment_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.target.ui.view.product.ProductEyebrowView android:id="@id/prd_plp_eyebrow_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/prd_plp_fulfillment_overflow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.target.ui.view.product.PlpFulfillmentOverflowView android:id="@id/prd_plp_fulfillment_overflow" android:visibility="gone" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

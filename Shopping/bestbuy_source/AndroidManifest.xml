@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bestbuy.android" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.vibrate" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.bestbuy.android.permission.C2D_MESSAGE"/>
+    <permission android:name="com.bestbuy.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <android:uses-permission android:maxSdkVersion="18" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:icon="@drawable/bestbuyappicon" android:label="@string/app_name" android:logo="@android:color/transparent" android:name="com.bestbuy.android.base.BBYApplication">
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCZrRl9xiPydCsEMejY-Jz43N9fFXfl2hQ"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.urlshortener.API_KEY" android:value="AIzaSyBoCvFU5WR-PcSd5_Fy3F_QXkM7BkwzT4U"/>
+        <activity android:name="com.bestbuy.android.activities.home.SplashActivity" android:screenOrientation="portrait" android:theme="@style/BBYAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_home" android:launchMode="singleTop" android:name="com.bestbuy.android.activities.home.HomeActivity" android:screenOrientation="portrait" android:theme="@style/HomeTheme" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.app.default_searchable" android:value="com.bestbuy.android.activities.home.HomeActivity"/>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="com.bestbuy.android.NOTIFICATION"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestbuy.android.activities.home.ShakeNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bestbuy.android.activities.askexpert.HelpMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bestbuy.android.activities.mdot.MdotWebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.bestbuy.android.activities.environment.EnvironmentActivity" android:screenOrientation="portrait" android:theme="@style/BBYAppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.bestbuy.android.activities.home.GeofencingMediumActivity"/>
+        <activity android:name="com.bestbuy.android.activities.appsettings.MediumActivity"/>
+        <activity android:name="com.bestbuy.android.activities.bbyscan.CaptureQRCodeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.bestbuy.android.activities.stores.StoresDetailsActivity" android:parentActivityName="com.bestbuy.android.activities.home.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bestbuy.android.activities.home.HomeActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.bestbuy.android.activities.mybby.MyBBYHomeActivity" android:parentActivityName="com.bestbuy.android.activities.home.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bestbuy.android.activities.home.HomeActivity"/>
+        </activity>
+        <activity android:name="com.bestbuy.android.activities.mybby.MyBBYResetPasswordActivity" android:parentActivityName="com.bestbuy.android.activities.home.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bestbuy.android.activities.home.HomeActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.bestbuy.android.activities.mybby.MyBBYListIdActivity" android:parentActivityName="com.bestbuy.android.activities.home.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bestbuy.android.activities.home.HomeActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.bestbuy.android.activities.registry.ScannedItemActivity" android:parentActivityName="com.bestbuy.android.activities.home.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bestbuy.android.activities.home.HomeActivity"/>
+        </activity>
+        <activity android:name="com.bestbuy.android.activities.browseproduct.plp.PLPSortAndFilterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.bestbuy.android.activities.search.plp.SearchPLPSortAndFilterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.bestbuy.android.activities.dnm.DNMPLPFacetAndFilterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.bestbuy.android.activities.dnm.DNMDetailsModel" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <provider android:authorities="com.bestbuy.android.SuggestionProvider" android:name="com.bestbuy.android.providers.SuggestionProvider"/>
+        <activity android:name="com.bestbuy.android.activities.cart.PriceAndShippingDetailsActivity"/>
+        <activity android:label="Landing Page" android:name="com.exacttarget.etpushsdk.ETLandingPagePresenter"/>
+        <receiver android:exported="true" android:name="com.exacttarget.etpushsdk.ETPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.bestbuy.android"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bestbuy.android.MESSAGE_OPENED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.exacttarget.etpushsdk.ETPushService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.bestbuy.android.activities.askexpert.HelpMenuActivity$ChatBubbleService"/>
+        <activity android:name="com.bestbuy.android.activities.blueassist.BlueAssistDepartmentSelectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.bestbuy.android.activities.blueassist.BlueAssistStoreSelectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.bestbuy.android.activities.blueassist.BlueAssistUserContactInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.bestbuy.android.activities.blueassist.BlueAssistAptConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bestbuy.android.activities.blueassist.BlueAssistDateTimeSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bestbuy.android.activities.blueassist.BlueAssistReminderActivity" android:theme="@style/Theme.Transparent.Background"/>
+        <service android:enabled="true" android:name="com.bestbuy.android.activities.blueassist.BlueAssistReminderService"/>
+        <activity android:label="@string/title_activity_web_view" android:name="com.bestbuy.android.activities.home.WebViewActivity" android:parentActivityName="com.bestbuy.android.activities.home.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bestbuy.android.activities.home.HomeActivity"/>
+        </activity>
+        <activity android:name="com.bestbuy.android.activities.plpstoreavailability.PLPStoreSelectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+    </application>
+</manifest>

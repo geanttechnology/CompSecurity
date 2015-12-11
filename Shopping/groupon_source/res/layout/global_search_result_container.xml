@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout android:gravity="bottom" android:id="@id/sliding_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" sothree:umanoPanelHeight="0.0dip" sothree:umanoShadowHeight="0.0dip" sothree:umanoParalaxOffset="0.0dip" sothree:umanoOverlay="true" sothree:umanoInitialState="collapsed" style="@style/filter_sheet_panel_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sothree="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <FrameLayout android:id="@id/filter_sheet_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

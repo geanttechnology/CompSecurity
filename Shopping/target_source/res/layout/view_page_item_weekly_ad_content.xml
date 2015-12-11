@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/weekly_ad_card_recycler_view" android:paddingLeft="@dimen/shop_card_layout_padding" android:paddingRight="@dimen/shop_card_layout_padding" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/shop_card_weekly_ad_carousel_margin_top" android:layout_above="@id/text" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:paddingLeft="@dimen/shop_card_display_text_padding" android:paddingRight="@dimen/shop_card_display_text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/shop_card_display_text_height_default" android:singleLine="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

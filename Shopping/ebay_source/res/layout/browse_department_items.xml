@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/collections_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/channel_spinner" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/sub_department_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" />
+        </FrameLayout>
+        <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding2x" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

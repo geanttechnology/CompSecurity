@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ebay_plus_only_layout" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView android:gravity="center_vertical" android:id="@id/ebay_plus_only" android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:layout_width="fill_parent" android:layout_height="?listPreferredItemHeightQuantized" android:layout_marginLeft="@dimen/refineEdgeMargin" android:layout_marginRight="@dimen/refineEdgeMargin" android:checkMark="@drawable/vq_refine_checkbox" android:text="@string/ebay_plus" android:layout_toRightOf="@id/ebay_plus_only_lock" style="@style/Refine.Text.Title" />
+    <ImageView android:id="@id/ebay_plus_only_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/refineEdgeMargin" android:src="@drawable/ic_srp_refinement_unlock" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

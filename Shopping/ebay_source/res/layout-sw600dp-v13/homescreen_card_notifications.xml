@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/card_notifications_content" android:background="@android:color/white" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:divider="@drawable/divider_vertical" android:showDividers="middle" android:dividerPadding="@dimen/ebayPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/card_notification_item_0" layout="@layout/homescreen_card_notification_row" />
+    <include android:id="@id/card_notification_item_1" layout="@layout/homescreen_card_notification_row" />
+    <include android:id="@id/card_notification_item_2" layout="@layout/homescreen_card_notification_row" />
+    <com.ebay.mobile.widget.FTextView android:textSize="@dimen/ebayTextSizeMedium" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/see_all_notifications" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxWidth="100.0dip" android:text="@string/card_notifications_see_all" android:layout_weight="1.0" res_auto:foreground="?android:selectableItemBackground" style="?android:attr/textAppearanceMedium" />
+</LinearLayout>

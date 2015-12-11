@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <gradient android:startColor="@color/grey60" android:endColor="@color/grey23" android:angle="270.0" />
+            <corners android:radius="4.0dip" />
+            <padding android:left="2.0dip" android:top="5.0dip" android:right="2.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item android:state_checked="true" android:drawable="@drawable/selected_category_bg" />
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/orange50" android:endColor="@color/orange60" android:angle="270.0" />
+            <corners android:radius="4.0dip" />
+            <padding android:left="2.0dip" android:top="5.0dip" android:right="2.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <gradient android:startColor="@color/orange60" android:endColor="@color/orange50" android:angle="270.0" />
+            <corners android:radius="4.0dip" />
+            <padding android:left="2.0dip" android:top="5.0dip" android:right="2.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="4.0dip" />
+            <padding android:left="2.0dip" android:top="5.0dip" android:right="2.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/search_recent_search_footer_layout" android:paddingLeft="@dimen/default_4x_padding_margin" android:paddingRight="@dimen/default_4x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SearchHistoryFooterSelector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_padding_margin" android:layout_marginRight="@dimen/search_history_recent_image_margin" android:src="@drawable/icon_clearrecent" />
+    <com.target.ui.view.TargetTextView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/search_history_recent_image_margin" android:layout_marginRight="@dimen/search_history_recent_image_margin" android:minHeight="@dimen/min_image_button_size" android:text="@string/search_clear_recent_searches" style="@style/Target.TextView.ClearRecentHistory" />
+</LinearLayout>

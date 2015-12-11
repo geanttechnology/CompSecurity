@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/sold_dashboard" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/selling_card_main_content_text_size" android:gravity="center" android:id="@id/noOfSoldItems" android:layout_width="wrap_content" android:layout_height="@dimen/card_selling_count_height" android:minWidth="@dimen/card_selling_count_width" />
+    <include layout="@layout/homescreen_card_vertical_divider" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin">
+        <include layout="@layout/homescreen_card_sold_await_payment" />
+        <include android:id="@id/awaitingPaymentSeparator" layout="@layout/homescreen_card_horizontal_divider" />
+        <include layout="@layout/homescreen_card_sold_paid_for" />
+        <TextView android:textSize="@dimen/ebayTextSizeBody2" android:textColor="@color/style_guide_gray" android:id="@id/allPaidText" android:paddingLeft="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/selling_card_got_paid_and_shipped" />
+    </LinearLayout>
+</LinearLayout>

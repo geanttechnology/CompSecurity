@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_progress" />
+    <com.ebay.android.widget.HeaderViewWebView android:id="@id/body" android:background="?listContainerOutsideBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/MessageLayoutMargin" android:layout_marginTop="@dimen/MessageLayoutMargin" android:layout_marginRight="@dimen/MessageLayoutMargin">
+        <RelativeLayout android:background="?listContainerOutsideBackground" android:paddingBottom="@dimen/ebayMargin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="3" android:layout_alignParentTop="true" />
+            <View android:id="@id/spacer1_layout" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:layout_below="@id/subject" style="@style/CommonDivider" />
+            <RelativeLayout android:id="@id/from_date_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/spacer1_layout">
+                <TextView android:textColor="?android:textColorSecondary" android:id="@id/from_label" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/from" android:lines="1" android:layout_alignParentLeft="true" />
+                <TextView android:textColor="?android:textColorTertiary" android:ellipsize="middle" android:id="@id/sender" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/from_label" />
+                <TextView android:textColor="?android:textColorSecondary" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:id="@id/spacer2_layout" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:layout_below="@id/from_date_layout" style="@style/CommonDivider" />
+            <LinearLayout android:orientation="vertical" android:id="@id/view_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/spacer2_layout">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:maxLines="3" android:layout_toLeftOf="@id/item_details_container" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/item_details_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textColor="?android:textColorSecondary" android:id="@id/item_id_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/item_colon" android:lines="1" />
+                            <TextView android:textColor="?android:textColorTertiary" android:id="@id/item_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                        </LinearLayout>
+                        <TextView android:textColor="?android:textColorSecondary" android:id="@id/item_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                        <TextView android:textColor="?android:textColorSecondary" android:id="@id/item_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <HorizontalScrollView android:id="@id/item_images_scroller" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/item_images" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </HorizontalScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.ebay.android.widget.HeaderViewWebView>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/prd_pdp_dialog_warning_icon" android:paddingLeft="@dimen/default_2x_padding_margin" android:paddingRight="@dimen/default_2x_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_error_large" android:minWidth="@dimen/min_image_button_size" android:minHeight="@dimen/min_image_button_size" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.target.ui.view.TargetTextView android:layout_gravity="left" android:id="@id/prd_pdp_dialog_warning_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.ProductWarningTitle" />
+        <com.target.ui.view.TargetTextView android:layout_gravity="center" android:id="@id/prd_pdp_dialog_warning_sub_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.ProductWarningSubTitle" />
+    </LinearLayout>
+</LinearLayout>

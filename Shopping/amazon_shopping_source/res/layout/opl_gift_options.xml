@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_gift_options_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding_small" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding_small">
+        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opl_gift_options_dont_print_prices_checkbox" android:layout_weight="1.0" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/opl_gift_options_dont_print_prices_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_small" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_gift_options_dont_print_prices_warning" />
+    <View style="@style/Separator" />
+    <Button android:id="@id/opl_gift_options_continue_button" android:layout_margin="@dimen/padding" android:text="@string/opl_continue_button" style="@style/AUIButton.Gold" />
+</LinearLayout>

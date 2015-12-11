@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/order_summary_order_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.target.ui.view.TargetTextView android:id="@id/order_summary_order_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_history_text_margin_left" android:layout_marginTop="@dimen/account_order_history_text_margin_top" style="@style/Target.TextView.AccountProductStatus" />
+        <com.target.ui.view.TargetTextView android:id="@id/order_summary_order_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_history_text_margin_left" android:layout_marginBottom="@dimen/account_order_history_text_margin_bottom" style="@style/Target.TextView.AccountProductStatus" />
+    </LinearLayout>
+</merge>

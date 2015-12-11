@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <RelativeLayout android:id="@id/progress_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="120.0dip" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/home_tile_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/home_progress" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.ScalableImageView android:id="@id/background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/inner_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="28.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/home_tile_text" android:lineSpacingExtra="0.0dip" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" style="@style/text" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="12.0sp" android:textColor="#ff8fd6e7" android:gravity="center_vertical" android:id="@id/home_sub_tile_text" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" style="@style/text" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

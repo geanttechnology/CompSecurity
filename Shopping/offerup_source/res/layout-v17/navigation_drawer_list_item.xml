@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="?listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceListItem" android:textColor="@color/medium_gray_alt_2" android:gravity="center_vertical" android:id="@id/drawer_item_name" android:paddingLeft="?listPreferredItemPaddingLeft" android:layout_width="wrap_content" android:layout_height="?listPreferredItemHeightSmall" android:drawablePadding="35.0dip" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/nav_alert_count" android:background="@drawable/navigation_drawer_alert_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

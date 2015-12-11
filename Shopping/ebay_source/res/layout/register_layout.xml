@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.MaxSizeLinearLayout android:layout_marginTop="@dimen/ebayMargin3x" style="@style/HomeWidthContainer" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+        <TextView android:id="@id/focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:inputType="none" />
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/register_tagline" />
+        <TextView android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/register_subtagline" />
+        <Button android:id="@id/register_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin3x" android:text="@string/register_button" style="@style/EbayButton.Blue" />
+    </com.ebay.android.widget.MaxSizeLinearLayout>
+</FrameLayout>

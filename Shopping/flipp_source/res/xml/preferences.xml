@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/allow_push_title" android:key="allow_push" android:summary="@string/allow_push_message" />
+    <CheckBoxPreference android:title="@string/keep_search_history_title" android:key="keep_search_history" android:summary="@string/keep_search_history_message" android:defaultValue="true" />
+    <Preference android:title="@string/clear_search_history_title" android:key="clear_search_history" android:summary="@string/clear_search_history_message" />
+</PreferenceScreen>

@@ -1,0 +1,50 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.groupon.provider;
+
+import android.app.Fragment;
+import android.content.Context;
+import android.os.Bundle;
+import com.groupon.fragment.Coupons;
+import com.groupon.models.country.Country;
+import com.groupon.service.core.AbTestService;
+import com.groupon.service.countryanddivision.CurrentCountryManager;
+
+// Referenced classes of package com.groupon.provider:
+//            FragmentProvider
+
+public class CouponProvider
+    implements FragmentProvider
+{
+
+    protected AbTestService abTestService;
+    protected Context context;
+    protected CurrentCountryManager currentCountryManager;
+
+    public CouponProvider()
+    {
+    }
+
+    public Coupons get()
+    {
+        Bundle bundle = new Bundle();
+        return (Coupons)Fragment.instantiate(context, com/groupon/fragment/Coupons.getName(), bundle);
+    }
+
+    public volatile Object get()
+    {
+        return get();
+    }
+
+    public String getTitle()
+    {
+        return context.getString(0x7f08010c);
+    }
+
+    public boolean isFragmentEnabled()
+    {
+        return currentCountryManager.getCurrentCountry().isUnitedStates();
+    }
+}

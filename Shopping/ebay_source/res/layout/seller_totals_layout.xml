@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/seller_totals_layout" android:background="@drawable/theme_grayed_list_selector_background" android:paddingLeft="@dimen/checkoutLargeMargin" android:paddingTop="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutLargeMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ebayTextSizeSmall" android:id="@id/seller_totals_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/seller_totals_value" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@android:attr/textColorPrimary" />
+    <TextView android:textSize="@dimen/ebayTextSizeSmall" android:textStyle="bold" android:textColor="@color/common_auction_green" android:id="@id/seller_totals_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@android:attr/textColorPrimary" />
+</RelativeLayout>

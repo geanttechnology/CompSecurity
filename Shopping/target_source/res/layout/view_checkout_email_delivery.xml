@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/checkout_email_delivery_root" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_generic_view_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/email_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_checkout_email" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/cd_email_image" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_large" android:layout_toLeftOf="@id/edit_email_recipient" android:layout_toRightOf="@id/email_img" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_email_recipient" app:fontStyle="light" style="@style/Target.TextView.CheckoutTextView" />
+        <com.target.ui.view.TargetTextView android:id="@id/email_recipient_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Target.TextView.DeliverySecondaryText" />
+    </LinearLayout>
+    <ImageView android:id="@id/edit_email_recipient" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_small" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/cd_email_edit_image" style="@style/GrayButtonSelectorCompat" />
+</RelativeLayout>

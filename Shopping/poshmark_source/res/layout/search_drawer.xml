@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/drawerContents" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:visibility="gone" android:layout_marginTop="30.0dip" android:layout_marginBottom="0.0dip" style="@style/formSectionLayout">
+            <com.poshmark.ui.customviews.PMEditText android:textSize="14.0sp" android:textColor="@color/textColorBlack" android:textColorHint="@color/textColorGray" android:layout_gravity="fill_horizontal" android:id="@id/listingsSearchEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:hint="@string/search_by_keywords" android:maxLines="1" android:drawableLeft="@drawable/ic_search_gray" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+        </LinearLayout>
+        <LinearLayout android:layout_marginTop="30.0dip" style="@style/formSectionLayout">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.poshmark.ui.customviews.PMEditText android:ellipsize="end" android:id="@id/categoryEditText" android:hint="@string/category" android:maxLines="1" custom:fontName="fonts/ProximaNova_Reg.ttf" custom:keyboardInput="false" style="@style/formEditText" />
+                <com.poshmark.ui.customviews.PMButton android:layout_gravity="right|center" android:id="@id/clearCategoryButton" android:background="@drawable/ic_delete_gray" android:visibility="gone" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="12.0dip" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.poshmark.ui.customviews.PMEditText android:ellipsize="end" android:id="@id/sizeEditText" android:hint="@string/size" android:maxLines="1" custom:fontName="fonts/ProximaNova_Reg.ttf" custom:keyboardInput="false" style="@style/formEditText" />
+                <com.poshmark.ui.customviews.PMButton android:layout_gravity="right|center" android:id="@id/clearSizeButton" android:background="@drawable/ic_delete_gray" android:visibility="gone" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.poshmark.ui.customviews.PMEditText android:ellipsize="end" android:id="@id/brandEditText" android:hint="@string/brand" android:maxLines="1" custom:fontName="fonts/ProximaNova_Reg.ttf" custom:keyboardInput="false" style="@style/formEditText" />
+                <com.poshmark.ui.customviews.PMButton android:layout_gravity="right|center" android:id="@id/clearBrandButton" android:background="@drawable/ic_delete_gray" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.poshmark.ui.customviews.PMEditText android:ellipsize="end" android:id="@id/priceEditText" android:hint="@string/price" android:maxLines="1" custom:fontName="fonts/ProximaNova_Reg.ttf" custom:keyboardInput="false" style="@style/formEditText" />
+                <com.poshmark.ui.customviews.PMButton android:layout_gravity="right|center" android:id="@id/clearPriceButton" android:background="@drawable/ic_delete_gray" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_marginTop="10.0dip" style="@style/formSectionLayout">
+            <RelativeLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip">
+                <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/textColorBlack" android:id="@id/mySizeLabelView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_on_my_size" android:layout_centerVertical="true" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+                <Switch android:id="@id/mySizeSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip">
+                <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/textColorBlack" android:id="@id/unsoldLabelView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_only_unsold_items" android:layout_centerVertical="true" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+                <Switch android:id="@id/unsoldSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip">
+                <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/textColorBlack" android:id="@id/nwtLabelView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_only_nwt_items" android:layout_centerVertical="true" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+                <Switch android:id="@id/nwtSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.poshmark.ui.customviews.PMButton android:gravity="center" android:id="@id/fireSearchButton" android:layout_width="250.0dip" android:text="@string/apply" android:layout_centerHorizontal="true" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/blueActionButton" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color_checkout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:groupon="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/scan_card" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" style="@style/deal_details_section_v2">
+                <TextView android:textSize="17.0dip" android:textColor="@color/grey_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_your_card" android:drawableLeft="@drawable/icon_scan_card" android:drawablePadding="@dimen/deal_details_component_padding_v2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:paddingLeft="@dimen/deal_details_component_padding_v2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_redesign" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <org.apmem.tools.layouts.FlowLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" groupon:horizontalSpacing="2.0dip" groupon:verticalSpacing="4.0dip" groupon:minChildrenPerRow="1">
+                <TextView android:layout_gravity="left" android:id="@id/payment_info_header_title" android:paddingRight="75.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_info" android:layout_alignParentLeft="true" style="@style/market_rate_purchase_category_text_rtl" />
+                <org.apmem.tools.layouts.FlowLayout android:id="@id/supported_payment_icons_flowlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" groupon:minChildrenPerRow="2" />
+            </org.apmem.tools.layouts.FlowLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/firstname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/shipping_first_name" android:inputType="textPersonName|textCapWords" style="@style/edit_credit_card_single_line_cap_words_v2" />
+                <EditText android:id="@id/lastname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/shipping_last_name" android:inputType="textPersonName|textCapWords" style="@style/edit_credit_card_single_line_cap_words_v2" />
+                <EditText android:id="@id/iban" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/iban" android:inputType="number" style="@style/edit_credit_card_single_line_cap_words_v2" />
+                <EditText android:id="@id/bic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bic" android:inputType="text" style="@style/edit_credit_card_single_line_cap_words_v2" />
+                <LinearLayout android:orientation="vertical" android:id="@id/cc_payment_method_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.groupon.view.DefaultValueSpinner android:textColor="@color/editable_text_color" android:id="@id/cc_payment_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/add_credit_card_spinner_height_v2" android:prompt="@string/payment_method" style="@style/spinner_credit_card_v2" />
+                </LinearLayout>
+                <include layout="@layout/credit_card_number_and_cvv_field_v2" />
+                <EditText android:id="@id/bank_code" android:visibility="gone" android:nextFocusUp="@id/number" android:nextFocusDown="@id/address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="@string/bank_code" android:inputType="number" style="@style/edit_credit_card_single_line_v2" />
+                <EditText android:id="@id/issuer_number" android:visibility="gone" android:nextFocusUp="@id/cvv" android:nextFocusDown="@id/month_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/issuer_number" android:inputType="number" style="@style/edit_credit_card_single_line_v2" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/valid_from_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.groupon.view.DefaultValueSpinner android:layout_gravity="top|center" android:id="@id/month_from" android:nextFocusUp="@id/issuer_number" android:nextFocusDown="@id/year_from" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/add_credit_card_spinner_height_v2" android:prompt="@string/valid_from" android:layout_weight="1.8" style="@style/spinner_credit_card_v2" />
+                    <View android:background="@drawable/vertical_grey_separator" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.groupon.view.DefaultValueSpinner android:id="@id/year_from" android:nextFocusUp="@id/month_from" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/add_credit_card_spinner_height_v2" android:prompt="@string/year" android:layout_weight="1.0" style="@style/spinner_credit_card_v2" />
+                </LinearLayout>
+                <TextView android:id="@id/expiration_date" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/add_credit_card_spinner_height_v2" android:hint="@string/expiration_date" android:textAlignment="4" style="@style/edit_credit_card_single_line_v2" />
+                <EditText android:id="@id/cpf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cpf" android:inputType="textNoSuggestions" style="@style/edit_credit_card_single_line_cap_words_v2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/credit_card_demographics_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:id="@id/billing_address_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/billing_address" style="@style/market_rate_purchase_category_text_rtl" />
+                <LinearLayout android:orientation="vertical" android:id="@id/credit_card_demographics" android:background="@drawable/detail_screen_box" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+            </LinearLayout>
+            <CheckBox android:id="@id/recurring_payment_storage_optin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-9.0dip" android:text="@string/recurring_payment_storage_optin" style="@style/cc_storage_optin" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/bottom_bar" layout="@layout/bottom_bar_flat" />
+</LinearLayout>

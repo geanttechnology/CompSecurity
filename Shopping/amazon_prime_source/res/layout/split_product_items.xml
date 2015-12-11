@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sx="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/rs_split_product_linear_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:background="@color/rs_primary_background" android:paddingLeft="@dimen/gutter_small" android:paddingTop="@dimen/rs_results_split_product_padding_top_bottom" android:paddingRight="@dimen/gutter_small" android:paddingBottom="@dimen/rs_results_split_product_padding_top_bottom" android:layout_width="@dimen/rs_split_view_without_arrow_width" android:layout_height="wrap_content" android:baselineAligned="false">
+            <include layout="@layout/rs_results_image_wrapper_split" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pc_4px" android:layout_weight="1.0">
+                <LinearLayout style="@style/Results.HeaderSection.Split">
+                    <com.amazon.retailsearch.android.ui.results.views.messaging.Sponsored android:id="@id/rs_results_sponsored_message" style="@style/Results.Sponsored.Split" />
+                    <TextView android:id="@id/item_title" style="@style/Results.Title.Split" />
+                    <TextView android:id="@id/rs_item_byline" style="@style/Results.ByLine.Split" />
+                </LinearLayout>
+                <include layout="@layout/rs_results_price_split" />
+                <com.amazon.retailsearch.android.ui.results.views.RatingsLine android:id="@id/rs_results_ratings" style="@style/Results.Ratings.Split" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/arrow_selection_indicator_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:adjustViewBounds="false" />
+    </LinearLayout>
+</merge>

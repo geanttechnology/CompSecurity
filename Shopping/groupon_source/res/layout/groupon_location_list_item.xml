@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/groupon_location_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/grey_dark" android:gravity="left" android:id="@id/location_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/location_progress_indicator" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ProgressBar android:id="@id/location_progress_indicator" android:visibility="gone" android:layout_width="@dimen/groupon_location_list_item_progress_height_width" android:layout_height="@dimen/groupon_location_list_item_progress_height_width" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

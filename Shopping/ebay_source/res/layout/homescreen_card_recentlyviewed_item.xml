@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FRelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_rvi_imagesize" res_auto:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/rvi_image" android:layout_width="@dimen/homescreen_card_rvi_imagesize" android:layout_height="@dimen/homescreen_card_rvi_imagesize" android:scaleType="fitCenter" res_auto:urlRewriter="zoom_gallery" res_auto:averageBackgroundColor="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/rvi_image">
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/style_guide_gray" android:id="@id/rvi_eek_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:ellipsize="end" android:gravity="bottom" android:id="@id/rvi_title" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" android:maxLines="2" style="?android:attr/textAppearance" />
+        <TextView android:textStyle="bold" android:id="@id/rvi_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/textAppearance" />
+    </LinearLayout>
+</com.ebay.mobile.widget.FRelativeLayout>

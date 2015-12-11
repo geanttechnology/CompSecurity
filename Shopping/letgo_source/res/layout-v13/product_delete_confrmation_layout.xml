@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/padding_large" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/product_delete_dialog_title_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_product_dialog_title" />
+    <TextView android:textSize="@dimen/large_text_size" android:textColor="@color/grey_for_hint_darker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_large" android:text="@string/delete_product_dialog_subtitle" />
+    <TextView android:id="@id/tv_delete_product_dialog_option_already_sold" android:text="@string/delete_product_dialog_option_already_sold" android:textAllCaps="true" style="@style/DeleteProductDialogOptionsTextView" />
+    <TextView android:id="@id/tv_delete_product_dialog_option_other" android:text="@string/delete_product_dialog_option_other" android:textAllCaps="true" style="@style/DeleteProductDialogOptionsTextView" />
+    <TextView android:id="@id/tv_delete_product_dialog_option_cancel" android:text="@string/common_button_cancel" android:textAllCaps="true" style="@style/DeleteProductDialogOptionsTextView" />
+</LinearLayout>

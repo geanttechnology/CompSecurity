@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/modal_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="@style/EbayTextAppearanceStrong.Title2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photomanager_cropper_title" />
+        <ImageButton android:layout_gravity="right|center" android:id="@id/modal_toolbar_close" android:background="?android:selectionDividerHeight" android:padding="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_modal_x" android:contentDescription="@string/close" />
+    </android.support.v7.widget.Toolbar>
+    <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/modal_toolbar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_bar" android:paddingLeft="@dimen/ebayLetterboxSideMargin" android:paddingRight="@dimen/ebayLetterboxSideMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/ButtonBar.Floating">
+        <Button android:id="@id/button_rotate" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/rotate" android:layout_weight="1.0" style="@style/EbayButton.White" />
+        <Button android:id="@id/button_upload" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/upload" android:layout_weight="1.0" style="@style/EbayButton.White" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_bar" android:layout_below="@id/divider">
+        <view android:id="@id/CropImageView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.ebay.mobile.photomanager.android.CropImageView" />
+    </LinearLayout>
+</RelativeLayout>

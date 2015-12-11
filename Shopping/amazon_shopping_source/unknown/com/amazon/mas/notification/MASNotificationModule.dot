@@ -1,0 +1,6 @@
+digraph G1 {
+  concentrate = true;
+  AndroidNotificationManager -> Context;
+  MASNotificationBuilderFactory -> AndroidNotificationBuilderFactory;
+  MASNotificationManager -> AndroidNotificationManager;
+}

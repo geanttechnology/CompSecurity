@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/prd_dialog_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.product.ProductVariationView android:id="@id/prd_dialog_header_variation_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.target.ui.view.product.ProductDialogPriceView android:id="@id/prd_pick_up_dialog_price" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.target.ui.view.product.ProductDialogWarningView android:id="@id/prd_dialog_header_warning_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

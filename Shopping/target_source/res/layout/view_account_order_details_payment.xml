@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/account_order_details_payment_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_order_details_delivery_height" />
+    <include android:id="@id/account_order_details_summary_separator" android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_separator_height" android:layout_marginLeft="@dimen/account_order_details_left_margin" layout="@layout/view_account_order_details_separator" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_marginTop="@dimen/account_order_details_less_padding_margin" android:layout_marginBottom="@dimen/account_order_details_less_padding_margin">
+        <com.target.ui.view.TargetTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_order_details_default_padding_margin" android:text="@string/account_order_details_total" android:layout_centerVertical="true" app:fontStyle="medium" style="@style/Target.TextView.AccountProductPrice" />
+        <com.target.ui.view.TargetTextView android:id="@id/account_order_details_total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/account_order_details_default_padding_margin" android:layout_marginBottom="@dimen/account_order_details_default_padding_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontStyle="medium" style="@style/Target.TextView.AccountProductPrice" />
+    </RelativeLayout>
+</merge>

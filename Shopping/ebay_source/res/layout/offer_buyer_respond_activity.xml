@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/top_layout" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" style="@style/Letterbox">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ebayPadding" style="@style/ItemView">
+            <include layout="@layout/item_header_bin_plus_shipping" />
+            <TextView android:id="@id/offer_heading" android:background="?listContainerOutsideBackground" android:paddingLeft="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkoutSmallMargin" android:text="@string/heading_offer_details" />
+            <TextView android:textStyle="bold" android:textColor="@color/AuctionRed" android:id="@id/offer_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:layout_marginBottom="@dimen/checkoutSmallMargin" android:freezesText="true" />
+            <TextView android:textStyle="bold" android:textColor="@color/AuctionRed" android:id="@id/offer_decline_success" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:layout_marginBottom="@dimen/checkoutSmallMargin" android:text="@string/decline_offer_success" android:freezesText="true" />
+            <TextView android:textStyle="bold" android:textColor="?itemStatHeaderTextColor" android:id="@id/offer_accept_success" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:layout_marginBottom="@dimen/checkoutSmallMargin" android:text="@string/accept_offer_success" android:freezesText="true" />
+            <TextView android:textStyle="bold" android:textColor="?itemStatHeaderTextColor" android:id="@id/offer_counter_success" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:layout_marginBottom="@dimen/checkoutSmallMargin" android:text="@string/counteroffer_sent_to_seller" android:freezesText="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/offer_view_layout" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemStatContainer">
+                <LinearLayout style="@style/ItemStatLayout">
+                    <TextView android:text="@string/offer_shipping_label" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/view_offer_shipping_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/view_offer_import_charge_layout" style="@style/ItemStatLayout">
+                    <TextView android:text="@string/LEGAL_gsp_import_charges" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/view_offer_import_charge_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue" />
+                </LinearLayout>
+                <LinearLayout style="@style/ItemStatLayout">
+                    <TextView android:text="@string/label_seller" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/view_offer_seller" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+                <LinearLayout style="@style/ItemStatLayout">
+                    <TextView android:text="@string/label_sellers_counterofffer" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/view_offer_bid_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+                <LinearLayout style="@style/ItemStatLayout">
+                    <TextView android:text="@string/offer_quantity_label" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/view_offer_quantity_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/sales_tax_layout" style="@style/ItemStatLayout">
+                    <TextView android:text="@string/sales_tax" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/sales_tax_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue" />
+                </LinearLayout>
+                <LinearLayout style="@style/ItemStatLayout">
+                    <TextView android:text="@string/label_offer_expires_in" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/view_offer_expires_in" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/view_offer_terms_value_row" style="@style/ItemStatLayout">
+                    <TextView android:text="@string/offer_terms_label" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/view_offer_terms_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/view_offer_offers_remaining_row" style="@style/ItemStatLayout">
+                    <TextView android:text="@string/label_offers_remaining" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/view_offer_offers_remaining" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorPrimaryDisableOnly" android:id="@id/accept_offer_legal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginTop="@dimen/checkoutHugeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" />
+                <LinearLayout android:id="@id/decline_message_value_row" android:visibility="gone" style="@style/ItemStatLayout">
+                    <TextView android:text="@string/label_decline_message" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/decline_message_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/decline_message_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginTop="@dimen/checkoutMediumMargin" android:layout_marginRight="@dimen/checkoutLargeMargin">
+                <TextView android:textColor="?itemStatHeaderTextColor" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/checkoutSmallMargin" android:text="@string/label_decline_message" android:layout_weight="1.0" />
+                <EditText android:id="@id/decline_message" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:maxLength="250" android:layout_weight="2.0" android:inputType="textCapSentences|textAutoCorrect" android:imeOptions="actionDone" />
+            </LinearLayout>
+            <Button android:id="@id/offer_decline_confirm_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginTop="@dimen/checkoutHugeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:text="@string/button_decline_offer" style="@style/EbayButton.Blue" />
+            <Button android:id="@id/offer_accept_confirm_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginTop="@dimen/checkoutHugeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:text="@string/LEGAL_button_accept_offer" style="@style/EbayButton.Blue" />
+            <LinearLayout android:orientation="vertical" android:id="@id/offer_response_button_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="@dimen/checkoutHugeMargin" android:layout_marginRight="0.0dip">
+                <Button android:id="@id/offer_accept_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/LEGAL_button_accept_offer" style="@style/EbayButton.Blue" />
+                <Button android:id="@id/offer_counter_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin" android:text="@string/button_make_counteroffer" style="@style/EbayButton.White" />
+                <Button android:id="@id/offer_decline_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin" android:text="@string/button_decline_offer" style="@style/EbayButton.White" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/counteroffer_input_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <include layout="@layout/offer_amount_field" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorSecondary" android:id="@id/counteroffer_current_offer_hint" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/counteroffer_quantity_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin">
+                    <TextView android:textColor="?itemStatHeaderTextColor" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/checkoutSmallMargin" android:text="@string/offer_quantity_label" android:layout_weight="1.0" />
+                    <EditText android:id="@id/counteroffer_quantity" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" android:inputType="number" android:imeOptions="actionNext" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/counteroffer_quantity_hint_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorSecondary" android:id="@id/counteroffer_quantity_hint" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/counteroffer_terms_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin">
+                    <TextView android:textColor="?itemStatHeaderTextColor" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/checkoutSmallMargin" android:text="@string/offer_terms_label" android:layout_weight="1.0" />
+                    <EditText android:id="@id/counteroffer_terms" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:maxLength="250" android:layout_weight="2.0" android:inputType="textCapSentences|textAutoCorrect" android:imeOptions="actionDone" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/counteroffer_terms_hint_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorSecondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:text="@string/offer_contract_terms" android:layout_weight="2.0" />
+                </LinearLayout>
+                <Button android:id="@id/counteroffer_review_offer_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutHugeMargin" android:text="@string/button_review_counteroffer" style="@style/EbayButton.Blue" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/counteroffer_view_layout" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemStatContainer">
+                <LinearLayout style="@style/ItemStatLayout">
+                    <TextView android:text="@string/label_your_offer" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/counteroffer_bid_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/counteroffer_quantity_value_row" style="@style/ItemStatLayout">
+                    <TextView android:text="@string/offer_quantity_label" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/counteroffer_quantity_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/counteroffer_shipping_value_row" style="@style/ItemStatLayout">
+                    <TextView android:text="@string/offer_shipping_label" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/counteroffer_shipping_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/counteroffer_import_charge_row" style="@style/ItemStatLayout">
+                    <TextView android:text="@string/LEGAL_gsp_import_charges" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/counteroffer_import_charge_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/counteroffer_terms_value_row" style="@style/ItemStatLayout">
+                    <TextView android:text="@string/offer_terms_label" style="@style/ItemStatHeader" />
+                    <TextView android:id="@id/counteroffer_terms_value" android:layout_height="wrap_content" android:freezesText="true" style="@style/ItemStatValue.Bold" />
+                </LinearLayout>
+                <include layout="@layout/offer_shipping_details" />
+                <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorSecondary" android:id="@id/counteroffer_legal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginTop="@dimen/checkoutHugeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:text="@string/LEGAL_buyer_submit_counteroffer_legal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/counteroffer_submit_button_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginTop="@dimen/checkoutHugeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:layout_marginBottom="@dimen/checkoutSmallMargin">
+                <Button android:id="@id/counteroffer_submit_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/LEGAL_button_submit_counteroffer" style="@style/EbayButton.Blue" />
+                <Button android:id="@id/counteroffer_edit_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin" android:layout_marginBottom="@dimen/checkoutMediumMargin" android:text="@string/button_edit_offer" style="@style/EbayButton.White" />
+            </LinearLayout>
+            <Button android:id="@id/counteroffer_make_another_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginTop="@dimen/checkoutHugeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:text="@string/button_make_another_counteroffer" style="@style/EbayButton.Blue" />
+            <Button android:id="@id/offer_view_item_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginTop="@dimen/checkoutHugeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:text="@string/button_offer_view_item" style="@style/EbayButton.Blue" />
+            <include layout="@layout/offer_buyer_respond_activity_test" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:layout_gravity="center" android:id="@id/offer_progress" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="20.0dip" />
+</merge>

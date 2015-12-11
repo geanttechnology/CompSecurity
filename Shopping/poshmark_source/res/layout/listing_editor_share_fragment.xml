@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/listing_editor_share_fragment_layout" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/share_banner" android:clickable="false" android:layout_width="fill_parent" android:layout_height="165.0dip" android:scaleType="fitCenter" />
+            <LinearLayout android:orientation="vertical" android:id="@id/party_layout_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/share_items_layout_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <include android:id="@id/shareOptionPinterest" layout="@layout/listing_editor_share_option_item" />
+                <include android:id="@id/shareOptionFacebook" layout="@layout/listing_editor_share_option_item" />
+                <include android:id="@id/shareOptionTwitter" layout="@layout/listing_editor_share_option_item" />
+                <include android:id="@id/shareOptionTumblr" layout="@layout/listing_editor_share_option_item" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

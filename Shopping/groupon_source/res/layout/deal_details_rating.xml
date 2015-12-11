@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/flat_button_selector" android:paddingLeft="@dimen/deal_details_component_padding_v2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/star_container" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/deal_details_star_rating_container" />
+    </LinearLayout>
+    <TextView android:id="@id/review_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/star_container" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/deal_details_review_count_v2" />
+    <View android:id="@id/deal_details_review_separator" android:background="@color/grey80" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/star_container" />
+</RelativeLayout>

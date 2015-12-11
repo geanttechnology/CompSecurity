@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gift_card_row" android:background="@drawable/translucent_item_selector" android:paddingLeft="@dimen/cart_dialog_title_margin" android:paddingRight="@dimen/cart_dialog_title_margin" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetRadioButton android:theme="@style/AppTheme.GreenAccent" android:id="@id/gift_card_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/Target.RadioButton" />
+    <com.target.ui.view.TargetTextView android:id="@id/gift_card_ends_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_ends_in_text" app:fontStyle="light" style="@style/Target.TextView.AccountGiftCardNumber" />
+    <com.target.ui.view.TargetTextView android:id="@id/gift_card_number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.AccountGiftCardNumber" />
+    <com.target.ui.view.TargetTextView android:id="@id/gift_card_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="medium" style="@style/Target.TextView.AccountGiftCardBalance" />
+</LinearLayout>

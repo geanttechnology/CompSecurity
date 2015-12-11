@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.groupon.view.DealCardCompact android:id="@id/deal_card_compact" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gift_card_check_mark_container" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/white_bg_element">
+                <TextView android:textSize="17.0dip" android:textColor="@color/grey_medium" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/i_have_a_gift_card" android:layout_weight="0.45" />
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.55">
+                    <com.groupon.view.GrouponCheckMark android:layout_gravity="right" android:id="@id/gift_card_check_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/gift_card_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/white_bg_element_no_padding">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_number_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/white_bg_divider_element">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/grey_medium" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/card_number" android:layout_weight="0.45" />
+                        <EditText android:textSize="17.0dip" android:textColorHint="@color/grey_light" android:id="@id/gift_card_number" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/gift_card_number_digits" android:maxLength="25" android:layout_weight="0.55" android:inputType="number" style="@style/no_background_edit_text" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pin_container" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/white_bg_divider_element">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/grey_medium" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/pin" android:layout_weight="0.45" />
+                        <EditText android:textSize="17.0dip" android:textColorHint="@color/grey_light" android:id="@id/pin" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/gift_card_pin_digits" android:maxLength="25" android:layout_weight="0.55" android:inputType="number" style="@style/no_background_edit_text" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/code_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/white_bg_element">
+                    <TextView android:textSize="17.0dip" android:textColor="@color/grey_medium" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/enter_code" android:layout_weight="0.45" />
+                    <EditText android:textSize="17.0dip" android:id="@id/code" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="25" android:layout_weight="0.55" style="@style/no_background_edit_text" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/bottom_bar" layout="@layout/bottom_bar_flat" />
+</LinearLayout>

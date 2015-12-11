@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/viewBundleButton" layout="@layout/button_table_row_top" />
+    <include android:id="@id/shareClosetButton" layout="@layout/button_table_row_middle" />
+    <include android:id="@id/reportUserButton" layout="@layout/button_table_row_middle" />
+    <include android:id="@id/blockUserButton" layout="@layout/button_table_row_bottom" />
+    <include android:id="@id/unblockUserButton" layout="@layout/button_table_row_bottom" />
+</LinearLayout>

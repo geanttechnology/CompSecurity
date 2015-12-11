@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_attributes="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMListingImageView android:id="@id/filteredImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_launcher" />
+    <HorizontalScrollView android:id="@id/filtersScrollView" android:background="@drawable/bg_filters" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageButton android:id="@id/originalImageButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/original" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_original" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageButton android:id="@id/timelessFilterButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeless" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_timeless" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageButton android:id="@id/glamFilterButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glam" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_glam" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageButton android:id="@id/modernFilterButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/modern" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_modern" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageButton android:id="@id/vintageFilterButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vintage" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_vintage" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageButton android:id="@id/retroFilterButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/retro" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_retro" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageButton android:id="@id/chicFilterButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chic" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_chic" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageButton android:id="@id/streetFilterButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/street" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_street" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageButton android:id="@id/classicFilterButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/classic" />
+                <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_classic" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

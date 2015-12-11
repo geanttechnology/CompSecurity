@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/actionbar_iterative_search_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.poshmark.ui.customviews.PMSearchView android:id="@id/searchWidget" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" android:queryHint="@string/search_by_keywords" />
+</RelativeLayout>

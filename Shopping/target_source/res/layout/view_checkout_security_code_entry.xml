@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/view_underline_red" android:paddingBottom="@dimen/checkout_security_code_prompt_card_display_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/checkout_security_card_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkout_security_code_prompt_card_display_margin" android:src="@drawable/payment_default" />
+    <com.target.ui.view.TargetTextView android:id="@id/checkout_security_code_last_four_digits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkout_security_code_prompt_card_display_margin" />
+    <com.target.ui.view.TargetTextView android:id="@id/checkout_security_code_expiration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkout_security_code_prompt_card_display_margin" />
+    <com.target.ui.view.TargetEditText android:id="@id/checkout_security_code_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/checkout_security_code_hint_cvv" android:maxLength="@integer/credit_card_security_max_length" android:inputType="numberPassword" style="@style/Target.TextView.EditText.NoUnderline" />
+</LinearLayout>

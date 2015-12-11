@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left" android:id="@id/sort_by_label" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/sort_filter_sort_by" android:textAllCaps="true" />
+    <com.offerup.android.views.NonScrollListView android:id="@id/sort_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sort_by_label" />
+</RelativeLayout>

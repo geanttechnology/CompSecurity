@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/sell" android:background="@drawable/sell_button" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/sell_tv_layout" android:paddingLeft="24.0dip" android:paddingRight="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/large_text_size" android:textColor="@color/text_color_white" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/sellTextView" android:layout_width="wrap_content" android:layout_height="@dimen/sell_button_height" android:text="@string/common_btn_sell" android:singleLine="true" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="@dimen/sell_button_height" android:src="@drawable/ic_sell_white" />
+    </LinearLayout>
+</LinearLayout>

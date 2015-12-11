@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="@dimen/dates_selector_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/grey_medium" android:gravity="center_vertical" android:id="@id/select_dates" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawableLeft="@drawable/calendar_icon" android:drawablePadding="10.0dip" android:layout_alignParentTop="true" />
+    <ImageView android:paddingRight="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/triangular_dropdown_button" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <View android:id="@id/separator" android:background="@color/navdrawer_separator_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

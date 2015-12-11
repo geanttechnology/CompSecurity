@@ -1,0 +1,37 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.ebay.nautilus.domain.net.api.viewlisting;
+
+import java.util.List;
+
+// Referenced classes of package com.ebay.nautilus.domain.net.api.viewlisting:
+//            Listing
+
+public static final class ypeEnum
+    implements Comparable
+{
+
+    public String id;
+    public List offerImage;
+    public Detail offerMessageDetail;
+    public String offerSellerName;
+    public List offerURLDetail;
+    public int priority;
+    public ypeEnum type;
+
+    public int compareTo(ypeEnum ypeenum)
+    {
+        return priority - ypeenum.priority;
+    }
+
+    public volatile int compareTo(Object obj)
+    {
+        return compareTo((compareTo)obj);
+    }
+
+    public ypeEnum()
+    {
+    }
+}

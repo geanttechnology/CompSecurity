@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/splash_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:groupon="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_container">
+        <ImageView android:layout_gravity="center" android:id="@id/groupon_logo" android:layout_width="@dimen/onboarding_logo_scaled_down_width" android:layout_height="wrap_content" android:src="@drawable/splash_groupon_logo" android:layout_centerHorizontal="true" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:background="@color/splash_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/city_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" style="@style/onboarding_city_image" />
+        <RelativeLayout android:id="@id/user_input_container" android:background="@color/white" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.groupon.view.SpinnerButton android:id="@id/sso_sign_in" android:layout_width="fill_parent" android:layout_height="wrap_content" groupon:progressDrawable="@drawable/spinner_list_grey" style="@style/primary_action_button" />
+            <com.groupon.view.SpinnerButton android:id="@id/sso_switch_user" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/switch_to_different_user" android:layout_below="@id/sso_sign_in" groupon:progressDrawable="@drawable/spinner_list_grey" style="@style/secondary_action_button" />
+            <TextView android:gravity="center" android:id="@id/viewterms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sso_switch_user" style="@style/terms_redesign" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

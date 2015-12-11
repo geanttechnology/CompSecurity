@@ -1,0 +1,36 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.groupon.fragment;
+
+import android.content.SharedPreferences;
+import android.preference.Preference;
+import roboguice.inject.Lazy;
+
+// Referenced classes of package com.groupon.fragment:
+//            SecretLoggingFragment
+
+private class <init>
+    implements android.preference.r
+{
+
+    final SecretLoggingFragment this$0;
+
+    public boolean onPreferenceChange(Preference preference, Object obj)
+    {
+        ((SharedPreferences)prefs.get()).edit().ener("showTrackingInfo", ((Boolean)obj).booleanValue()).ener();
+        return true;
+    }
+
+    private Y()
+    {
+        this$0 = SecretLoggingFragment.this;
+        super();
+    }
+
+    this._cls0(this._cls0 _pcls0)
+    {
+        this();
+    }
+}

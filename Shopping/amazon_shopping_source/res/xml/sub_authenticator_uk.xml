@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-sub-authenticator accountType="com.amazon.account">
+    <token-types>
+        <token-type name="uk.amazon.mShop.android.tokens.adp_token" />
+        <token-type name="uk.amazon.mShop.android.private_key" />
+        <token-type name="uk.amazon.mShop.android.tokens.device_type" />
+        <token-type name="uk.amazon.mShop.android.tokens.dsn" />
+        <token-type name="uk.amazon.mShop.android.tokens.storeAuthCookie" />
+        <token-type name="uk.amazon.mShop.android.tokens.xmain" />
+        <token-type name="uk.amazon.mShop.android.tokens.email" />
+        <token-type name="uk.amazon.mShop.android.tokens.device_name" />
+        <token-type name="uk.amazon.mShop.android.tokens.user_name" />
+    </token-types>
+</account-sub-authenticator>

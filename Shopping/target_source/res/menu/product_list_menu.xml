@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/icon_listview" android:id="@id/action_list_view" android:title="@string/action_bar_list_button" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/icon_gridview" android:id="@id/action_grid_view" android:title="@string/action_bar_grid_button" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/icon_search" android:id="@id/action_search" android:title="@string/search" app:showAsAction="always" />
+    <item android:id="@id/action_cart" android:title="@string/cart" app:showAsAction="always" app:actionViewClass="com.target.ui.view.CartBadgeView" />
+</menu>

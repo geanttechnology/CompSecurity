@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sx="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/list_product_linear_layout" android:paddingTop="@dimen/rs_results_list_product_padding_top" android:paddingBottom="@dimen/rs_results_list_product_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_small" android:layout_marginRight="@dimen/gutter_small" android:baselineAligned="false">
+        <include layout="@layout/rs_results_image_wrapper_list" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pc_4px" android:layout_weight="1.0">
+            <com.amazon.retailsearch.android.ui.results.views.messaging.Sponsored android:id="@id/rs_results_sponsored_message" style="@style/Results.Sponsored.List" />
+            <LinearLayout style="@style/Results.HeaderSection.List">
+                <TextView android:id="@id/item_title" style="@style/Results.Title.List" />
+                <TextView android:id="@id/rs_item_byline" style="@style/Results.ByLine.List" />
+            </LinearLayout>
+            <com.amazon.retailsearch.android.ui.results.views.messaging.EditionLine android:id="@id/item_edition" style="@style/Results.EditionLine.List" />
+            <include layout="@layout/rs_results_price_list" />
+            <com.amazon.retailsearch.android.ui.results.views.price.FreeRentalLine android:id="@id/item_free_rental_line" style="@style/Results.FreeRentalLine.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.FastTrack android:id="@id/rs_results_fast_track" style="@style/Results.FastTrack.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.Promotions android:id="@id/rs_results_promotions" style="@style/Results.Promotions.List" />
+            <com.amazon.retailsearch.android.ui.results.views.price.SubscribeAndSave android:id="@id/item_subscribe_and_save" sx:Rs.Results.SubscribeAndSave.ShowSaveMoreText="true" style="@style/Results.SubscribeAndSave.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.LoyaltyPoints android:id="@id/rs_results_points" style="@style/Results.LoyaltyPoints.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.ShippingLine android:id="@id/rs_results_super_saver_shipping" style="@style/Results.ShippingLine.List" />
+            <include layout="@layout/rs_results_availability_list" />
+            <com.amazon.retailsearch.android.ui.results.views.price.OffersLine android:id="@id/item_offers_line" style="@style/Results.Offers.List" />
+            <com.amazon.retailsearch.android.ui.results.views.price.ForcedPrime android:id="@id/rs_results_forced_prime" style="@style/Results.ForcedPrime.List" />
+            <com.amazon.retailsearch.android.ui.results.views.RatingsLine android:id="@id/rs_results_ratings" style="@style/Results.Ratings.List" />
+            <TextView android:id="@id/rs_item_age_range" style="@style/Results.AgeRange.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.TradeIn android:id="@id/rs_results_trade_in" style="@style/Results.TradeIn.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.NewerEditionAvailable android:id="@id/rs_results_newer_edition_available" style="@style/Results.NewerEditionAvailable.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.Variations android:id="@id/rs_results_variations" style="@style/Results.Variations.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.EsrbRating android:id="@id/rs_results_esrb_rating" style="@style/Results.EsrbRating.List" />
+            <com.amazon.retailsearch.android.ui.results.views.twister.Twister android:id="@id/rs_item_twister" sx:Rs.Results.Twister.ShowEditionsDetail="true" style="@style/Results.Twister.List" />
+            <com.amazon.retailsearch.android.ui.results.views.BestSeller android:id="@id/rs_results_best_seller" style="@style/Results.BestSeller.List" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

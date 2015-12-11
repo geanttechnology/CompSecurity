@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_color_checkout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/add_credit_card_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" style="@style/deal_details_section_v2">
+            <ImageView android:id="@id/add_credit_card_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="30.0dip" android:src="@drawable/icon_add_card" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/grey_dark" android:id="@id/add_credit_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_credit_debit_card" android:layout_toLeftOf="@id/disclosure_indicator" android:layout_toRightOf="@id/add_credit_card_icon" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/grey72" android:id="@id/credit_card_types" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/disclosure_indicator" android:layout_toRightOf="@id/add_credit_card_icon" android:layout_below="@id/add_credit_card_title" />
+            <ImageView android:id="@id/disclosure_indicator" android:paddingLeft="@dimen/deal_details_component_padding_v2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_redesign" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/saved_cards_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/saved_credit_card_top_margin" android:layout_marginBottom="@dimen/saved_credit_card_bottom_margin" style="@style/wallet_section">
+            <TextView android:id="@id/saved_cards_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/saved_cards" style="@style/details_section_header" />
+            <include layout="@layout/purchase_row_separator_dark_v3" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:id="@id/no_saved_card" android:padding="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/purchase_no_saved_card" style="@style/payment_details_v2" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ProgressBar android:layout_gravity="center" android:id="@id/cc_spinner" android:visibility="invisible" android:layout_margin="20.0dip" style="@style/purchase_spinner" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/add_cards_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" style="@style/wallet_section">
+            <TextView android:id="@id/new_card_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/new_card" style="@style/details_section_header" />
+            <include layout="@layout/purchase_row_separator_dark_v3" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/add" android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/add_icon" style="@style/purchase_credit_card_icon_v2" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_add_v2">
+                        <TextView android:id="@id/add_payment_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/creditcard" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                        <TextView android:id="@id/add_payment_card_types" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/maestro_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/maestro_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/maestro" style="@style/payment_label_no_container_maestro_v2" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/elv_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/elv_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/elv" style="@style/payment_label_no_container_maestro_v2" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/sepa_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/sepa" style="@style/purchase_credit_card_icon_v2" />
+                        <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sepa" style="@style/payment_label_no_container_maestro_v2" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/isracard_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/isracard_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/isracard" style="@style/payment_label_no_container_maestro_v2" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/paypal_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/paypal_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paypal" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/dotpay_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/dotpay_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dotpay" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ipay88_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/ipay88_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ipay88" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/one_click_payment_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/one_click_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_click_payment" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/redcompra_payment_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/redcompra_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/redcompra_payment" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/alipay_payment_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/cc_alipay_new" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alipay_payment" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/webpay_payment_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/web_pay_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webpay_payment" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/visa_pe_payment_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/cc_visa_new" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visa" android:layout_weight="0.5" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="0.5" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/pse_payment_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/cc_pse_new" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pse_payment" android:layout_weight="0.5" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="0.5" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/mastercard_pe_payment_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/cc_mastersecurecode_new" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master" android:layout_weight="0.5" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="0.5" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ideal_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/ideal_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ideal" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/au_easypay_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/purchase_row_separator_dark_v3" />
+                    <RelativeLayout android:background="@drawable/flat_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2">
+                        <TextView android:id="@android:id/text1" android:background="@drawable/cc_au_easy_pay_v2" style="@style/purchase_credit_card_icon_v2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_container_paypal_v2">
+                            <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/au_easy_pay_au_wallet" android:layout_weight="1.0" style="@style/payment_label_v2" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_payment_details_after_confirmation" android:layout_weight="1.0" style="@style/payment_details_v2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/groupon_bucks_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="20.0dip" style="@style/deal_details_section_v2">
+            <TextView android:textSize="18.0dip" android:textColor="@color/grey_dark" android:id="@id/bucks_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/groupon_bucks_balance_us" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

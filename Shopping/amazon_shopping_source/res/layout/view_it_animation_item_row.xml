@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.search.viewit.ViewItAnimationItemView android:orientation="vertical" android:id="@id/animation_item_row" android:background="@color/white" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/animation_item_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:textColor="@color/gray_text" android:gravity="left" android:orientation="horizontal" android:id="@id/animation_item_image_and_text" android:background="@color/common_selector" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:paddingTop="@dimen/padding_extra_small" android:layout_width="@dimen/view_it_item_thumbnail_view_dimension" android:layout_height="wrap_content">
+                <ImageView android:id="@id/item_row_image" android:layout_width="@dimen/view_it_item_thumbnail_picture_max_dimension" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="@dimen/view_it_item_thumbnail_picture_max_dimension" android:maxHeight="@dimen/view_it_item_thumbnail_view_dimension" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/animation_item_row_product_info_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/item_title_block" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Price" />
+                    <com.amazon.mShop.ui.BadgeView android:layout_gravity="center_vertical" android:id="@id/item_badge" android:paddingLeft="@dimen/item_badge_padding_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/item_amazonpoints" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/item_amazonpoints_label" android:paddingRight="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/points" />
+                    <TextView android:id="@id/item_amazonpoints_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:id="@id/item_used_and_new" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.amazon.mShop.Stars android:layout_gravity="center_vertical" android:id="@id/item_rating" android:paddingRight="@dimen/padding_extra_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/item_customer_reviews_count" android:paddingLeft="@dimen/padding_extra_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/item_button_group" android:paddingBottom="@dimen/view_it_item_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:gravity="left" android:id="@id/see_all_matched_items_button" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/view_it_item_button_padding" android:text="@string/view_it_see_all_matches" style="@style/Button.GrayOutline.Arrow" />
+            <Button android:id="@id/delete_button" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/view_it_item_button_padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/view_it_item_button_padding" android:text="@string/cart_delete_button" style="@style/Button.Gray" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/view_it_item_loading_progress" />
+</com.amazon.mShop.search.viewit.ViewItAnimationItemView>

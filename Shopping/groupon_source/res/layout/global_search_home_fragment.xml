@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:groupon="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/global_search" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/global_search_location_container" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.groupon.view.ClearableEditText android:id="@id/location_search_edittext" android:layout_width="fill_parent" android:layout_height="48.0dip" style="@style/global_search_location_box_style_ltr_rtl_2" />
+            <FrameLayout android:id="@id/location_search_edittext_divider" android:background="@color/deal_card_divider_top" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/location_search_edittext" />
+            <LinearLayout android:orientation="vertical" android:id="@id/autocomplete_container" android:background="@color/global_search_location_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/location_search_edittext_divider">
+                <ListView android:id="@id/autocomplete_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/global_search_list_style_2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/search_categories_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/location_search_edittext_divider">
+                <ListView android:id="@id/global_search_categories_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="1.0px" />
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/global_search_categories_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/category_padding" />
+            </LinearLayout>
+            <ScrollView android:id="@id/global_search_tags_section" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/location_search_edittext">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/recent_search_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_search_tag_box_side_margin_2" android:layout_marginTop="@dimen/global_search_tag_box_top_margin_2" android:layout_marginRight="@dimen/global_search_tag_box_side_margin_2">
+                        <TextView android:id="@id/recent_search_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recent_searches_capitalized" style="@style/global_search_box_label_style_2" />
+                        <org.apmem.tools.layouts.FlowLayout android:id="@id/recent_search_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_search_tag_list_top_margin" groupon:horizontalSpacing="8.0dip" groupon:verticalSpacing="8.0dip" groupon:minChildrenPerRow="2" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/popular_search_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_search_tag_box_side_margin_2" android:layout_marginTop="18.0dip" android:layout_marginRight="@dimen/global_search_tag_box_side_margin_2">
+                        <TextView android:id="@id/popular_search_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/categories" style="@style/global_search_box_label_style_2" />
+                        <org.apmem.tools.layouts.FlowLayout android:id="@id/popular_search_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_search_tag_list_top_margin" groupon:horizontalSpacing="8.0dip" groupon:verticalSpacing="8.0dip" groupon:minChildrenPerRow="2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

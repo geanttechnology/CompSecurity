@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:tileMode="repeat"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/settings_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_page_section_margin_top">
+            <CheckBox android:textColor="@color/primary_text_color" android:id="@id/auto_updates_enabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_states" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/settings_page_setting_description_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/auto_updates_enabled" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/settings_page_primary_text_size" android:textColor="@color/primary_text_color" android:id="@id/auto_updates_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/settings_page_secondary_text_size" android:textColor="@color/secondary_text_color" android:id="@id/auto_updates_text" android:paddingTop="@dimen/settings_page_setting_description_margin_top" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/divider_line_primary_color" android:layout_width="fill_parent" android:layout_height="@dimen/menu_bevel_height" android:layout_marginTop="@dimen/settings_page_section_margin_top" />
+        <View android:background="@color/divider_line_secondary_color" android:layout_width="fill_parent" android:layout_height="@dimen/menu_bevel_height" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_page_section_margin_top">
+            <CheckBox android:textColor="@android:color/white" android:id="@id/notify_on_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_states" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/settings_page_setting_description_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/notify_on_update" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/settings_page_primary_text_size" android:textColor="@color/primary_text_color" android:id="@id/notify_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/settings_page_secondary_text_size" android:textColor="@color/secondary_text_color" android:id="@id/notify_text" android:paddingTop="@dimen/settings_page_setting_description_margin_top" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/divider_line_primary_color" android:layout_width="fill_parent" android:layout_height="@dimen/menu_bevel_height" android:layout_marginTop="@dimen/settings_page_section_margin_top" />
+        <View android:background="@color/divider_line_secondary_color" android:layout_width="fill_parent" android:layout_height="@dimen/menu_bevel_height" />
+    </LinearLayout>
+</ScrollView>

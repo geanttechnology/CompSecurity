@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/card_item_1" layout="@layout/card_rpp_event" />
+    <include android:id="@id/curated_collection_separator" android:layout_width="fill_parent" android:layout_height="@dimen/listContainerCaptionBottomMargin" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" layout="@layout/homescreen_card_horizontal_divider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <include android:id="@id/card_item_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/card_rpp_event" />
+        <include android:id="@id/card_item_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/card_rpp_event" />
+    </LinearLayout>
+</LinearLayout>

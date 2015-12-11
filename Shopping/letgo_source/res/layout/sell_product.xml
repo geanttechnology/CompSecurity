@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/sell" android:background="@drawable/background_sell" style="@style/RoundButtonDefaultLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sell_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_128" android:contentDescription="@string/content_description_camera" />
+    <TextView android:textColor="@color/text_color_white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_btn_sell" />
+</LinearLayout>

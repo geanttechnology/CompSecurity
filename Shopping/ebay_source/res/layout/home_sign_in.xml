@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.ExpandingImageView android:id="@id/home_sign_in_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayLetterboxSideMargin" android:layout_marginRight="@dimen/ebayLetterboxSideMargin" android:src="@drawable/img_home_signedout" android:scaleType="centerCrop" />
+    <TableLayout android:orientation="horizontal" android:id="@id/home_sign_in_layout" android:paddingTop="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1" android:shrinkColumns="0" style="@style/Letterbox">
+        <TableRow android:paddingTop="@dimen/ebayPadding">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:layout_gravity="center" android:text="@string/home_sign_in_msg" />
+            <Button android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@id/button_sign_in" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="0.0dip" android:text="@string/sign_in" style="@style/EbayButton.Blue" />
+        </TableRow>
+        <TableRow android:id="@id/home_register_button_layout" android:paddingTop="@dimen/ebayPadding">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_gravity="center" android:text="@string/home_register_msg" />
+            <Button android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@id/button_register" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="0.0dip" android:text="@string/register" style="@style/EbayButton.Blue" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:id="@id/home_divider" style="@style/HomeDividerContainer">
+        <include layout="@layout/shopping_cart_dashed_line" />
+    </LinearLayout>
+</merge>

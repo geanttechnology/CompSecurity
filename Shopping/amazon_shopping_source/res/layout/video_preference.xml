@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/Widget.AmazonVideo.Preferences.VideoSettings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/settingsOption" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AmazonVideo.Preferences.VideoSettings.Option">
+        <TextView android:ellipsize="marquee" android:id="@android:id/title" android:focusable="false" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preference_mobile_quality_title" android:singleLine="true" style="@style/Widget.AmazonVideo.Preferences.VideoSettings.Option.Title" />
+        <TextView android:id="@android:id/summary" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" style="@style/Widget.AmazonVideo.Preferences.VideoSettings.Option.Summary" />
+    </LinearLayout>
+    <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_list_amzn" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Widget.AmazonVideo.Preferences.VideoSettings.Arrow" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@android:id/widget_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.AmazonVideo.Preferences.VideoSettings.WidgetFrame" />
+</RelativeLayout>

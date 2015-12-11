@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/icon_search" android:id="@id/action_search" android:title="@string/search" app:showAsAction="always" />
+    <item android:id="@id/action_request_team_member" android:visible="false" android:title="@string/request_team_member" app:showAsAction="never" />
+    <item android:id="@id/action_indoor_location" android:visible="false" android:title="@string/disable_in_store_location" app:showAsAction="never" />
+</menu>

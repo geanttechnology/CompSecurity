@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/givingworks_result_row" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/remove_fav_charity_button" android:padding="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_grey" android:contentDescription="@string/delete_saved_search" style="?android:attr/borderlessButtonStyle" />
+    <RadioButton android:layout_gravity="center_vertical" android:id="@id/givingworks_select_button" android:padding="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:contentDescription="Select this charity" />
+    <FrameLayout android:background="?selectableItemBackgroundBase" android:layout_width="@dimen/givingworksThumbnail" android:layout_height="@dimen/givingworksThumbnail" android:layout_margin="@dimen/ebayMargin">
+        <ImageView android:id="@id/givingworks_icon" android:layout_width="@dimen/givingworksThumbnail" android:layout_height="@dimen/givingworksThumbnail" android:scaleType="centerInside" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/givingworks_icon_progress" android:visibility="gone" android:layout_width="@dimen/givingworksProgressBar" android:layout_height="@dimen/givingworksProgressBar" />
+    </FrameLayout>
+    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/givingworks_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMarginHalf" android:maxLines="2" android:layout_weight="1.0" style="@style/Checkout.Text" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/givingworks_info_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf">
+        <View android:layout_gravity="center_vertical" android:id="@id/givingworks_info_divider" android:background="?android:listDivider" android:visibility="gone" android:layout_width="@dimen/dividerHeight" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/givingworks_chevron" android:padding="@dimen/ebayScalingPadding15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrowslideright" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/givingworks_info_button" android:background="?android:selectionDividerHeight" android:padding="@dimen/ebayScalingPadding15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/info_holo" />
+    </LinearLayout>
+</LinearLayout>

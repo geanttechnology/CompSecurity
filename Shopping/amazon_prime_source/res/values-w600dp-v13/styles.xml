@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Results.Image.Gallery" parent="@style/Results.Image">
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Results.ImageWrapper.Gallery" parent="@style/Results.ImageWrapper">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/rs_results_gallery_image_padding_bottom</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">@dimen/rs_results_image_height_gallery</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Results.ImageWrapper.List" parent="@style/Results.ImageWrapper">
+        <item name="android:paddingTop">@dimen/rs_results_list_image_padding_top</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">@dimen/rs_results_image_height_list</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Results.PriceText.Gallery" parent="@style/Results.PriceText">
+        <item name="android:textSize">@dimen/rs_results_textsize_xxlarge</item>
+    </style>
+    <style name="Results.ProductDescription.Immersive" parent="@style/Results.AdditionalMsgs.Immersive">
+        <item name="android:textSize">@dimen/rs_results_textsize_base</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginBottom">@dimen/rs_results_immersive_section_spacing</item>
+        <item name="android:maxLines">6</item>
+    </style>
+    <style name="Results.Subtitle.Gallery" parent="@style/Results.Subtitle">
+        <item name="android:textSize">@dimen/rs_results_textsize_xxlarge</item>
+    </style>
+    <style name="Results.Title.Gallery" parent="@style/Results.Title">
+        <item name="android:textSize">@dimen/rs_results_textsize_xxlarge</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_base</item>
+        <item name="android:maxLines">3</item>
+    </style>
+    <style name="Results.Title.Immersive" parent="@style/Results.Title">
+        <item name="android:textSize">@dimen/rs_results_textsize_xxlarge</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingBottom">@dimen/rs_results_padding_bottom_base</item>
+        <item name="android:maxLines">3</item>
+    </style>
+</resources>

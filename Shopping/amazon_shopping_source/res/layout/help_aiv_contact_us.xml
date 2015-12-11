@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_aiv_contact_us_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <TextView android:textColor="@color/amazon_gold" android:text="@string/help_aiv_has_question" style="@style/CommonSelector" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_aiv_call_cs" style="@style/ArrowSelector" amazon_urlContentId="@string/help_aiv_cs_tel_url" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_aiv_email_cs" style="@style/ArrowSelector" amazon_urlContentId="@string/help_aiv_cs_email_url" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_aiv_video_help" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_aiv_video_help" amazon_urlContentId="@string/help_aiv_video_help_url" amazon_urlUseExternalBrowser="true" />
+        <View style="@style/Separator" />
+        <LinearLayout android:orientation="vertical" style="@style/CommonSelector">
+            <TextView android:textColor="@color/amazon_gold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_aiv_has_feedback" />
+            <TextView android:textColor="@color/gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_aiv_not_reply" />
+        </LinearLayout>
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/customerFeedbackButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_aiv_provide_feedback" style="@style/ArrowSelector" amazon_urlContentId="@string/help_aiv_feedback_email" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

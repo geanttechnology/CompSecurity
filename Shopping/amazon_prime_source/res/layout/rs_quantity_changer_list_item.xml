@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/rs_quantity_changer_indicator" android:background="@color/amazon_orange" android:visibility="invisible" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+    <TextView android:id="@id/rs_quantity_changer_info" style="@style/Rs.Quantity.ItemInfo" />
+</LinearLayout>

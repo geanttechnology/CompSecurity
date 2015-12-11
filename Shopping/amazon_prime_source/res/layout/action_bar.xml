@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/action_bar_itself" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <ImageView android:id="@id/action_bar_burger_icon" android:padding="@dimen/action_bar_icon_padding" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_bar_burger" android:contentDescription="@null" />
+        <ImageView android:gravity="center" android:id="@id/action_bar_logo" android:padding="@dimen/action_bar_icon_padding" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_bar_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/action_bar_mag_glass" android:paddingTop="@dimen/action_bar_icon_padding" android:paddingBottom="@dimen/action_bar_icon_padding" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/action_bar_search_margin_right" android:src="@drawable/action_bar_mag_glass" android:layout_toLeftOf="@id/action_bar_cart" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        <com.amazon.now.cart.ActionBarCartView android:orientation="horizontal" android:id="@id/action_bar_cart" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/action_bar_cart_image" android:padding="@dimen/action_bar_icon_padding" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_bar_cart" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/action_bar_cart_count" android:paddingLeft="5.0dip" android:paddingBottom="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/action_bar_cart_image" android:layout_centerInParent="true" />
+        </com.amazon.now.cart.ActionBarCartView>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/action_bar_debug_tool" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/action_bar_url" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/debug_web_home_url" android:maxLines="1" android:layout_weight="2.0" android:inputType="textUri" />
+        <Button android:id="@id/action_bar_go" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/debug_web_chrome_go" android:layout_weight="1.0" />
+        <Button android:id="@id/action_bar_clear" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/debug_web_chrome_clear" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

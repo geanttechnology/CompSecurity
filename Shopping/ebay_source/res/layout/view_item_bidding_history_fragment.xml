@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorSecondaryAlt" android:id="@id/container_header" android:paddingBottom="@dimen/checkoutTinyMargin" android:layout_marginLeft="@dimen/ebayMargin2x" android:text="@string/label_bidding" style="@style/ItemView" />
+    <RelativeLayout style="@style/StyleGuideViewItemStatContainer.Full">
+        <LinearLayout android:orientation="vertical" android:id="@id/parent_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/time_left_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/bid_count_layout" style="@style/StyleGuideViewItemStatCell">
+                <TextView android:text="@string/item_view_bids" style="@style/StyleGuideViewItemStatKey" />
+                <TextView android:id="@id/bid_count_textview" style="@style/StyleGuideViewItemStatValue" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bidders_layout" style="@style/StyleGuideViewItemStatCell">
+                <TextView android:text="@string/item_view_bidders" style="@style/StyleGuideViewItemStatKey" />
+                <TextView android:id="@id/bidders_count_textview" style="@style/StyleGuideViewItemStatValue" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/view_item_chevron" />
+    </RelativeLayout>
+</LinearLayout>

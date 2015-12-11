@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayScalingPadding2x" android:paddingRight="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceStrong.Body2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text1" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightSmall" android:lines="1" />
+</LinearLayout>

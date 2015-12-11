@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/search_overlay_background_drawable" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.search.SearchOverlayView android:id="@id/search_overlay_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/divider" android:background="@color/target_aluminum_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <com.target.ui.view.search.ExtendedSearchHistoryView android:id="@id/search_history_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.target.ui.view.search.ExtendedSearchSuggestionView android:id="@id/search_suggestion_card_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

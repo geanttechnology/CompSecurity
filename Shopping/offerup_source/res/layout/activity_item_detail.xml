@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.offerup.android.views.ObservableScrollView android:id="@id/fragment_scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/fragment_container" android:paddingBottom="@dimen/item_detail_bottom_toolbar_height" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/item_detail_fragment_divider" android:showDividers="middle" />
+    </com.offerup.android.views.ObservableScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/button_container" android:paddingTop="24.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/item_detail_bottom_toolbar_height" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <com.offerup.android.views.CenterImageButton android:textColor="@color/bright_green" android:id="@id/btn_ask" android:background="@drawable/white_rounded_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ask" app:iconSrc="@drawable/id_ask_icn" app:iconPadding="6.0dip" style="@style/itemDetailFloatingButton" />
+        <com.offerup.android.views.CenterImageButton android:textColor="@color/white" android:id="@id/btn_buy" android:background="@drawable/green_rounded_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/make_offer" style="@style/itemDetailFloatingButton" />
+    </LinearLayout>
+</FrameLayout>

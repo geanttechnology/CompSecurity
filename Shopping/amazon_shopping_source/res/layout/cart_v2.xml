@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/cart_top_checkout_group" android:background="@color/gray_lighter" android:paddingBottom="@dimen/padding_triple" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="left|center" android:id="@id/amazon_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/amazon_logo" android:scaleType="fitCenter" />
+            <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:id="@id/cart_estimated_price_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding">
+                <TextView android:textSize="@dimen/text_size_large" android:textStyle="bold" android:id="@id/cart_estimated_price_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/text_size_larger" android:textStyle="bold" android:id="@id/cart_estimated_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:layout_gravity="center" android:id="@id/cart_checkout_button_top" android:visibility="gone" android:text="@string/cart_checkout_button" android:layout_weight="0.0" style="@style/AUIButton.Gold.Fullscreen" />
+    </LinearLayout>
+    <com.amazon.mShop.cart.CartScrollView android:id="@id/cart_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/action_bar_cart_larger_text_size" android:textStyle="bold" android:id="@id/cart_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" />
+            <LinearLayout android:orientation="vertical" android:id="@id/cart_messages_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:layout_gravity="right|center" android:id="@id/cart_alternate_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding" style="@style/Button.Gold" />
+            <LinearLayout android:orientation="vertical" android:id="@id/cart_empty_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cart_empty_details_android" />
+                <LinearLayout android:orientation="vertical" android:id="@id/cart_sign_in_button_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/cart_sign_in_button" android:layout_margin="@dimen/padding" android:text="@string/cart_sign_in_button" style="@style/AUIButton.Gold.Fullscreen" />
+                </LinearLayout>
+                <Button android:id="@id/cart_continue_shopping_button" android:visibility="gone" android:layout_margin="@dimen/padding" android:text="@string/cart_continue_shopping_button" style="@style/AUIButton.Gold.Fullscreen" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/cart_items_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:text="@string/cart_to_buy_now_label" android:layout_weight="1.0" style="@style/Header" />
+                <TextView android:textColor="@color/gray_text" android:gravity="right" android:id="@id/cart_items_header_quantity" android:paddingLeft="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:text="@string/cart_quantity_label" android:layout_weight="0.0" style="@style/Header" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/cart_items_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cart_cart_items_empty" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/cart_items_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/cart_items_bottom_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_small" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="fill_vertical|left|center" android:id="@id/cart_subtotal_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/Price" />
+                    <TextView android:layout_gravity="fill_vertical|left|center" android:id="@id/cart_subtotal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:text="@string/cart_subtotal_text" android:layout_weight="1.0" />
+                    <TextView android:layout_gravity="fill_vertical|left|center" android:id="@id/cart_items_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_weight="0.0" />
+                    <TextView android:textStyle="bold" android:layout_gravity="fill_vertical|left|center" android:id="@id/cart_items_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_weight="0.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/cart_subtotal_amazonpoints" android:background="@color/cart_subtotal_background" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_small" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/dark_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding" android:text="@string/cart_points_total" />
+                    <TextView android:id="@id/cart_subtotal_amazonpoints_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Price" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding">
+                    <TextView android:gravity="right|center" android:paddingRight="@dimen/padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cart_change_any_quantities" android:layout_weight="1.0" />
+                    <Button android:id="@id/cart_update_button" android:text="@string/cart_update_button" android:layout_weight="0.0" android:layout_centerVertical="true" style="@style/Button.Taupe" />
+                </LinearLayout>
+                <Button android:layout_gravity="right" android:id="@id/cart_checkout_button" android:layout_margin="@dimen/padding" android:text="@string/cart_checkout_button" style="@style/Button.Gold.Arrow" />
+            </LinearLayout>
+            <TextView android:id="@id/saved_items_header" android:visibility="gone" android:text="@string/cart_to_buy_later_label" style="@style/Header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/saved_items_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cart_saved_items_empty_android" />
+                <View style="@style/Separator" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/saved_items_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.amazon.mShop.cart.CartScrollView>
+</LinearLayout>

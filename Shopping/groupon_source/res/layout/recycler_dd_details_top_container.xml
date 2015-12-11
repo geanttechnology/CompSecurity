@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/details_top_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/deal_image_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.groupon.view.DealImageView android:id="@id/deal_image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.groupon.view.DealDetailsTemporaryImage android:id="@id/temporary_deal_image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/image_gradient_overlay" android:background="@drawable/image_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/deal_details_title_value_price_section_v2" android:background="@drawable/detail_screen_box_no_top_border" android:paddingTop="@dimen/deal_details_component_padding_v2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/deal_details_title" />
+            <include layout="@layout/deal_details_header_value" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+</LinearLayout>

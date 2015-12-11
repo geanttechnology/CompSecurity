@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="21.5sp" android:textColor="@color/bby_darkest_gray" android:ellipsize="end" android:id="@id/product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:maxLines="2" android:minLines="1" android:ems="66" bby:BBYFont="@string/BBY_APP_FONT_LIGHT" />
+    <include layout="@layout/pdp_sku_module_layout" />
+</LinearLayout>

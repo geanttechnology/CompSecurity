@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fragment android:name="com.wishabi.flipp.app.ClippingsFragment" android:id="@id/clippings_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <fragment android:name="com.wishabi.flipp.app.FavoritesFragment" android:id="@id/favorites_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <fragment android:name="com.wishabi.flipp.app.FeaturedFragment" android:id="@id/featured_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="com.wishabi.flipp.app.ShoppingListFragment" android:id="@id/shopping_list_fragment" android:layout_width="270.0dip" android:layout_height="fill_parent" />
+            <fragment android:name="com.wishabi.flipp.app.SearchFragment" android:id="@id/shopping_list_search" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <fragment android:name="com.wishabi.flipp.app.CouponFragment" android:id="@id/coupon_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <fragment android:name="com.wishabi.flipp.app.PrintCouponFragment" android:id="@id/print_coupon_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout android:id="@id/main_lockscreen" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@color/listingBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+    </FrameLayout>
+    <fragment android:name="com.wishabi.flipp.app.DrawerFragment" android:layout_gravity="left" android:id="@id/drawer_fragment" android:layout_width="240.0dip" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

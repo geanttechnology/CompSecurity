@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sorting" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:id="@id/sortby" android:paddingLeft="10.0dip" android:paddingTop="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sortby" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    <com.bestbuy.android.activities.stores.DialogSpinner android:id="@id/sort_filter" android:scrollbars="none" android:layout_width="310.0dip" android:layout_height="45.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/sortby" android:layout_alignParentRight="true" />
+</RelativeLayout>

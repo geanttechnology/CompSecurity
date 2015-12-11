@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/giftcard_item" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/account_giftcards_padding" android:paddingTop="@dimen/account_giftcard_padding" android:paddingRight="@dimen/account_giftcard_padding" android:paddingBottom="@dimen/account_giftcard_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/account_gift_card_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_giftcard" android:layout_centerVertical="true" android:contentDescription="@string/cd_gift_card_image" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_giftcard_image_margin_left" android:layout_toRightOf="@id/account_gift_card_image">
+        <com.target.ui.view.TargetTextView android:id="@id/account_giftcard_number" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.AccountGiftCardNumber" />
+        <com.target.ui.view.TargetTextView android:id="@id/account_giftcard_access_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/account_giftcard_margin" android:text="@string/account_management_giftcard_access_number" style="@style/Target.TextView.AccountGiftCardAccessNumber" />
+        <include layout="@layout/view_account_separator" />
+        <com.target.ui.view.TargetTextView android:id="@id/account_giftcard_balance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_giftcard_margin" app:fontStyle="medium" style="@style/Target.TextView.AccountGiftCardBalance" />
+    </LinearLayout>
+</RelativeLayout>

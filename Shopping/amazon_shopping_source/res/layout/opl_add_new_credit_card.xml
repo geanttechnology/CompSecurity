@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/opl_error_text" android:paddingBottom="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Error" />
+    <TextView android:id="@id/opl_credit_card_type_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_payment_credit_card_type_title" />
+    <Spinner android:id="@id/opl_credit_card_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/opl_new_payment_credit_card_select_type" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_payment_credit_card_number" />
+    <EditText android:id="@id/opl_credit_card_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:numeric="integer" android:inputType="number" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_payment_credit_card_expiration_date" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@id/opl_credit_card_expiration_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/opl_new_payment_credit_card_expiration_date_month" />
+        <Spinner android:id="@id/opl_credit_card_expiration_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/opl_new_payment_credit_card_expiration_date_year" />
+    </LinearLayout>
+    <TextView android:id="@id/opl_credit_card_expiration_date_error" android:paddingBottom="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Error" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_payment_credit_card_name" />
+    <EditText android:id="@id/opl_credit_card_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" />
+    <Button android:id="@id/opl_credit_card_save" android:layout_marginTop="@dimen/padding" android:text="@string/opl_new_payment_credit_card_save_button" style="@style/AUIButton.Gold" />
+</LinearLayout>

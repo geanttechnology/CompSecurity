@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/current_store_wrapper" android:background="@color/target_bullseye_red" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_main_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.navigation.NavigationStoreView android:id="@id/current_store" android:background="@drawable/translucent_item_light_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageButton android:id="@id/edit_store" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_store" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/cd_edit_store" style="@style/SelectableImageButtonLight" />
+</RelativeLayout>

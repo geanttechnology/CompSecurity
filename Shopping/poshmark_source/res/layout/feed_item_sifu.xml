@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.poshmark.utils.FeedItem_Sifu_LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip">
+        <View android:id="@id/topBorder" android:background="@color/borderColorGray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <include android:id="@id/listingHeader" layout="@layout/feed_item_header" />
+        <include android:id="@id/listingOverview" layout="@layout/feed_item_image_sifu" />
+        <include android:id="@id/listingfooter" layout="@layout/feed_item_footer_sifu" />
+    </LinearLayout>
+</com.poshmark.utils.FeedItem_Sifu_LinearLayout>

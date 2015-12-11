@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gno_drawer_item" android:background="@color/gno_menu_sub_item_background" android:paddingLeft="@dimen/gno_menu_item_padding_left_right" android:layout_width="fill_parent" android:layout_height="@dimen/gno_menu_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gno_menu_item_text_size" android:textColor="@color/gno_drawer_item_text" android:ellipsize="end" android:id="@id/drawer_item_title" android:paddingLeft="@dimen/gno_menu_item_padding_left_depth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/drawer_item_sub_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

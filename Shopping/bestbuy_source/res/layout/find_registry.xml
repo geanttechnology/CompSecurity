@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/bby_blue" android:gravity="center" android:id="@id/textView1" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="100.0dip" android:text="@string/findRegistry" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <CheckBox android:textColor="@color/black" android:id="@id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/findRegistry2" android:layout_below="@id/textView1" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/bby_blue" android:gravity="center" android:id="@id/textView2" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="70.0dip" android:text="@string/findRegistry3" android:layout_below="@id/checkBox1" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <CheckBox android:textColor="@color/black" android:id="@id/checkBox2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/externalWebsite1" android:layout_below="@id/textView2" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <CheckBox android:textColor="@color/black" android:id="@id/checkBox3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/externalWebsite2" android:layout_below="@id/checkBox2" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <Button android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

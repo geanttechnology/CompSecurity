@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="top|center" android:id="@id/help_banner_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/droid_pulldown" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            <com.bestbuy.android.utils.CustomSwipeToRefresh android:id="@id/swipedown" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@android:id/list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/listbg" android:cacheColorHint="@color/transparent" android:divider="@color/bby_light_gray" android:dividerHeight="1.0dip" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+            </com.bestbuy.android.utils.CustomSwipeToRefresh>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/loading_spinner_layout" />
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/checkout_root_view" android:background="@color/target_stark_white" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/checkout_scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/checkout_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.target.ui.view.checkout.CheckoutProductsView android:id="@id/checkout_product_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.target.ui.view.checkout.ContactView android:id="@id/contact_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_small" android:layout_marginTop="@dimen/checkout_margin_small" android:layout_marginRight="@dimen/checkout_margin_medium" android:layout_marginBottom="@dimen/checkout_edit_text_margin_bottom" />
+            <include layout="@layout/checkout_spacer" />
+            <com.target.ui.view.checkout.GiftCardContainerView android:orientation="vertical" android:id="@id/giftcard_expanded_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" />
+            <include android:id="@id/giftcard_spacer" layout="@layout/checkout_spacer" />
+            <com.target.ui.view.checkout.PaymentView android:id="@id/payment_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_small" android:animateLayoutChanges="true" />
+            <include android:id="@id/payment_spacer" layout="@layout/checkout_spacer" />
+            <com.target.ui.view.checkout.DeliveryView android:id="@id/delivery_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.target.ui.view.checkout.PromoCodeContainerView android:id="@id/promocode_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_small" android:animateLayoutChanges="true" />
+            <include layout="@layout/checkout_spacer" />
+            <com.target.ui.view.checkout.CouponWalletSavedOffersView android:id="@id/coupon_wallet_item_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.target.ui.view.checkout.CouponWalletItemContainerView android:orientation="vertical" android:id="@id/coupon_wallet_item_container_view" android:paddingBottom="@dimen/checkout_layout_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_small" android:layout_marginRight="@dimen/checkout_margin_medium" />
+            <include android:id="@id/coupon_wallet_item_spacer" android:visibility="gone" layout="@layout/checkout_spacer" />
+            <com.target.ui.view.checkout.SummaryView android:id="@id/summary_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkout_margin_medium" />
+            <include layout="@layout/checkout_spacer" />
+            <com.target.ui.view.checkout.CardSummaryView android:id="@id/cardsummary_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:background="@color/target_fade_away_grey" android:paddingTop="@dimen/checkout_margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.target.ui.view.TargetButton android:id="@id/purchase_button" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_height_large" android:layout_marginLeft="@dimen/checkout_margin_small" android:layout_marginRight="@dimen/checkout_margin_small" android:text="@string/checkout_purchase_button_string" app:fontStyle="medium" style="@style/RedButton" />
+                <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:textColor="@color/checkout_text_grey" android:layout_gravity="center" android:id="@id/cart_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkout_layout_padding" android:layout_marginBottom="@dimen/checkout_margin_large" android:layout_below="@id/purchase_button" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.target.ui.view.common.TargetErrorView android:gravity="center" android:id="@id/checkout_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

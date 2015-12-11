@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@color/target_fade_away_grey" android:padding="@dimen/cart_default_more_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetEditText android:id="@id/zip_code_text" android:layout_width="0.0dip" android:layout_height="@dimen/cart_zip_search_button_height" android:hint="@string/cart_zip_search_hint" android:maxLength="@integer/max_zip_code_length" android:layout_weight="0.75" app:fontStyle="light" style="@style/Target.TextView.ZipCodeEditText" />
+    <com.target.ui.view.TargetButton android:enabled="false" android:id="@id/zip_code_button" android:layout_width="0.0dip" android:layout_height="@dimen/cart_zip_search_button_height" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:text="@string/cart_submit" android:layout_weight="0.25" app:fontStyle="medium" style="@style/RedButton" />
+</LinearLayout>

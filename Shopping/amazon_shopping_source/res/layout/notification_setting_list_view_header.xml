@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/notification_settings_header_text_size" android:id="@id/notification_setting_explanation" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+    <Button android:textSize="@dimen/notification_settings_header_text_size" android:id="@id/learn_more_about_notifications" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_marginTop="@dimen/padding" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+</LinearLayout>

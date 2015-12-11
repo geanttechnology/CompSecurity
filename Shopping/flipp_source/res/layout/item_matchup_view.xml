@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_matchup_background" android:background="@drawable/item_matchup_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="5.0dip" android:contentDescription="@null" />
+    <com.wishabi.flipp.widget.ItemCellSmall android:id="@id/item_matchup_item_cell" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/item_matchup_item_cell" android:layout_alignTop="@id/item_matchup_background" android:layout_alignBottom="@id/item_matchup_background">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/item_matchup_item_details_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/item_matchup_item_details_merchant" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@id/item_matchup_item_details_label" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

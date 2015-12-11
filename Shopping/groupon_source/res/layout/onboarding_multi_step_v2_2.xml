@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/groupon_logo" android:layout_width="@dimen/onboarding_logo_scaled_down_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/onboarding_logo_margin_top" android:src="@drawable/splash_groupon_logo" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/city_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" style="@style/onboarding_city_image" />
+        <RelativeLayout android:id="@id/user_input_container" android:background="@color/white" android:paddingLeft="@dimen/onboarding_container_padding_left_right" android:paddingTop="@dimen/onboarding_container_padding_top" android:paddingRight="@dimen/onboarding_container_padding_left_right" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/onboarding_container_height">
+            <TextView android:textSize="@dimen/onboarding_main_text_size" android:typeface="sans" android:textStyle="normal" android:textColor="@color/onboarding_title_text" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/onboarding_title_margin_bottom" android:text="@string/onboarding_sign_up_now" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+                <com.groupon.view.SpinnerButton android:id="@id/done" android:layout_width="@dimen/onboarding_sign_up_action_button_width" android:layout_height="wrap_content" android:minWidth="@dimen/onboarding_sign_up_action_button_min_width" android:text="@string/sign_in_sign_up" style="@style/primary_action_button" />
+                <TextView android:textSize="20.0dip" android:textColor="@color/log_in_sign_up_grey_text" android:layout_gravity="center_horizontal" android:id="@id/fragment_log_in_sign_up_or" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/onboarding_sign_up_or_margin" android:text="@string/fragment_log_in_sign_up_or" />
+                <Button android:layout_width="@dimen/onboarding_sign_up_action_button_width" android:layout_height="wrap_content" android:minWidth="@dimen/onboarding_sign_up_action_button_min_width" android:text="@string/onboarding_show_deals" android:onClick="onSkipClicked" style="@style/secondary_action_button" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.cart.InterstitialCartItemView android:orientation="vertical" android:background="@color/common_selector" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/thumbnail" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:ellipsize="end" android:layout_gravity="fill_vertical|left|center" android:id="@id/interstitial_cart_item_title" android:focusable="true" android:maxLines="2" android:layout_weight="1.0" style="@style/ClickableLink" />
+                <TextView android:layout_gravity="fill_vertical|left|center" android:id="@id/interstitial_cart_item_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:singleLine="true" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="fill_horizontal|center" android:id="@id/interstitial_cart_item_price" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Price" />
+                <com.amazon.mShop.ui.BadgeView android:layout_gravity="center_vertical" android:id="@id/item_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:layout_gravity="fill_horizontal|top|center" android:id="@id/interstitial_cart_item_invalid_threshold_item_warning" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="fill_horizontal|top|center" android:id="@id/interstitial_cart_item_checkout_timer" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/Separator" />
+</com.amazon.mShop.cart.InterstitialCartItemView>

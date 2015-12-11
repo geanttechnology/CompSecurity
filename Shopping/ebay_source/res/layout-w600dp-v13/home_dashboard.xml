@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/home_my_ebay" android:layout_marginRight="4.0dip" style="@style/HomeButtonContainer">
+        <TextView android:textSize="@dimen/ebayTextSize" android:textStyle="bold" android:textColor="@color/btn_text_light" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/my_ebay" android:drawableLeft="@drawable/icon_homescreen_myebay" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/home_browse" android:layout_marginRight="4.0dip" style="@style/HomeButtonContainer">
+        <TextView android:textSize="@dimen/ebayTextSize" android:textStyle="bold" android:textColor="@color/btn_text_light" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/categories" android:drawableLeft="@drawable/icon_homescreen_browsecategory" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/home_sell_item" style="@style/HomeButtonContainer">
+        <TextView android:textSize="@dimen/ebayTextSize" android:textStyle="bold" android:textColor="@color/btn_text_light" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sell_an_item_short" android:drawableLeft="@drawable/icon_homescreen_listanitem" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+</merge>

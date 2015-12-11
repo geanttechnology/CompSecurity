@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/subjectLayout" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/compose_message_margin" android:layout_weight="1.0" style="@style/ComposeMessage.Margin">
+            <TextView android:textSize="@dimen/ebayTextSize" android:id="@id/message_to_address" android:layout_marginTop="20.0dip" style="@style/ComposeMessage.Toaddress" />
+            <View android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/compose_message_divider_width" android:layout_marginLeft="@dimen/compose_message_divider_spacing" android:layout_marginRight="@dimen/compose_message_divider_spacing" />
+            <EditText android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorPrimary" android:id="@id/compose_msg_subject" android:visibility="gone" android:layout_marginTop="15.0dip" android:hint="@string/message_subject_hint" android:maxLength="100" style="@style/ComposeMessage.Padding" />
+            <Button android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorPrimary" android:id="@id/subjectSpinner" android:paddingLeft="@dimen/compose_message_padding" android:paddingRight="@dimen/compose_message_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" style="?android:attr/spinnerStyle" />
+            <EditText android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorPrimary" android:id="@id/compose_msg" android:layout_marginTop="10.0dip" android:hint="@string/compose_message" android:minLines="2" android:maxLength="2000" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone" style="@style/ComposeMessage.Padding" />
+        </LinearLayout>
+        <HorizontalScrollView android:id="@id/photos_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_message_margin" android:layout_marginRight="@dimen/compose_message_margin" android:layout_marginBottom="@dimen/compose_message_margin">
+            <LinearLayout android:orientation="horizontal" android:id="@id/photos_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <View android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/compose_message_divider_width" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/attachphoto_layout" android:background="@drawable/btn_state_light_grey_normal" android:layout_width="fill_parent" android:layout_height="@dimen/compose_message_attach_photo_layout_height">
+            <ImageView android:gravity="center_vertical" android:layout_gravity="left|center" android:id="@id/attach_photos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_message_margin" android:layout_marginRight="@dimen/compose_message_margin" android:src="@drawable/ic_addphoto_gray" />
+            <TextView android:textSize="@dimen/ebayTextSize" android:textColor="@color/ebay_text_color_header" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/photoAddCountText" android:text="@string/message_static_photo_count_text" style="@style/ComposeMessage.Padding" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

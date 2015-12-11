@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/link" android:id="@id/opl_review_order_new_domestic_address" android:text="@string/opl_new_address_enter_new" style="@style/ArrowSelector" />
+    <View android:layout_height="2.0dip" style="@style/Separator" />
+    <Button android:textColor="@color/link" android:id="@id/opl_review_order_new_international_address" android:text="@string/opl_new_address_enter_new_international" style="@style/ArrowSelector" />
+    <View android:layout_height="2.0dip" style="@style/Separator" />
+</LinearLayout>

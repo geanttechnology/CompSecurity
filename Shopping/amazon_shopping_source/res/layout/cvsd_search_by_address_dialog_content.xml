@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/cvsd_search_by_address_jp_states_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@id/cvsd_states_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:prompt="@string/opl_cvsd_select_prefecture" />
+        <View android:layout_margin="@dimen/padding" style="@style/Separator" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/cvsd_dialog_title_text_size" android:textColor="@color/cvsd_search_type_text" android:id="@id/cvsd_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:text="@string/opl_cvsd_search_placeholder_address" />
+    <EditText android:typeface="sans" android:id="@id/cvsd_address_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" />
+</LinearLayout>

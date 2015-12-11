@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:background="?listContainerOutsideBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="60.0">
+            <FrameLayout android:id="@id/condensed_header" android:padding="@dimen/checkoutMediumMargin" android:visibility="gone" style="@style/ItemView" />
+            <com.ebay.android.widget.ImageViewPager android:id="@id/image_view_pager" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/image_view_no_images" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_missing_image" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/top_layout" android:background="?listContainerOutsideBackground" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="40.0">
+            <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ebay.mobile.widget.EbayScrollView android:id="@id/top_scrollview" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/top_scrollview_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/view_item_activity_shared_top" />
+                        <include layout="@layout/view_item_activity_shared_bottom" />
+                    </LinearLayout>
+                </com.ebay.mobile.widget.EbayScrollView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <include android:id="@id/buy_bar_layout" layout="@layout/view_item_buy_bar" />
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/common_progress" />
+    <include layout="@layout/common_error" />
+    <include layout="@layout/common_translucent_progress" />
+</merge>

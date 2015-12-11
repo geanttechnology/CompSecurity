@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_height_large"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/checkout_promocode_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_promocode" android:layout_centerVertical="true" android:contentDescription="@string/cd_promo_code_image" />
+    <RelativeLayout android:background="@drawable/view_underline_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_img_margin_left" android:layout_toLeftOf="@id/checkout_promocode_applied_remove_layout" android:layout_toRightOf="@id/checkout_promocode_img" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:id="@id/checkout_promocode_applied_text" android:layout_width="wrap_content" android:layout_height="@dimen/checkout_edit_text_width" app:fontStyle="light" style="@style/Target.TextView.CheckoutTextView" />
+        <com.target.ui.view.TargetTextView android:textColor="@color/target_bullseye_red" android:id="@id/checkout_promocode_applied_amount" android:layout_width="wrap_content" android:layout_height="@dimen/checkout_edit_text_width" android:layout_alignBaseline="@id/checkout_promocode_applied_text" android:layout_alignParentRight="true" app:fontStyle="medium" style="@style/Target.TextView.CheckoutTextView" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/checkout_promocode_applied_remove_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_layout_padding" android:minWidth="@dimen/min_image_button_size" android:minHeight="@dimen/min_image_button_size" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@id/checkout_promocode_applied_remove_btn" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_deleteitem" android:scaleType="center" style="@style/GrayButtonSelectorCompat" />
+        <ProgressBar android:theme="@style/AppTheme.RedAccent" android:layout_gravity="center" android:id="@id/checkout_promocode_applied_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+    </FrameLayout>
+</RelativeLayout>

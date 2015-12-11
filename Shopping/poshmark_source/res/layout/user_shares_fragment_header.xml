@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/bgCovershotImageView" android:layout_width="fill_parent" android:layout_height="70.0dip" android:scaleType="centerCrop" />
+    <RelativeLayout android:orientation="horizontal" android:background="@color/bgColorLightBurgundySemiTransparent" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/backgroundTableRowMiddle">
+        <com.poshmark.ui.customviews.RoundedImageView android:id="@id/closetOwnerAvataar" android:clickable="false" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/ic_user_default" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="18.0sp" android:textColor="@color/textColorWhite" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toRightOf="@id/closetOwnerAvataar" android:layout_centerVertical="true" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        <LinearLayout android:id="@id/followFollowingButtonWrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <include android:id="@id/followFollowingButtonLayout" layout="@layout/user_follow_button_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

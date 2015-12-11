@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/live_chat_section" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/live_chat_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_chat" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/live_chat_status_text_size" android:textColor="@color/grey_medium" android:id="@id/live_chat_agent_available" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_chat_agent_available" android:layout_toLeftOf="@id/live_chat_arrow_right" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/live_chat_status_text_size" android:textColor="@color/theme_primary" android:id="@id/live_chat_in_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_chat_in_progress" android:layout_toLeftOf="@id/unread_message_count" android:layout_centerVertical="true" />
+    <TextView android:id="@id/unread_message_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/live_chat_arrow_right" style="@style/live_chat_counter_bubble" />
+    <ImageView android:id="@id/live_chat_arrow_right" android:paddingLeft="@dimen/deal_details_component_padding_v2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_redesign" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

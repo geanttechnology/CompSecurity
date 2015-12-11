@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/default_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.StarRatingView android:layout_gravity="center_horizontal" android:id="@id/prd_review_header_view_pager_star" android:layout_width="wrap_content" android:layout_height="wrap_content" app:size="big" />
+    <com.target.ui.view.TargetTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/prd_review_header_view_pager_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin" style="@style/Target.TextView.PrdSecondaryReviewTitle" />
+</LinearLayout>

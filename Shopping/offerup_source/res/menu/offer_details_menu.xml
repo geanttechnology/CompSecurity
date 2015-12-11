@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/item_details_watch_icn" android:id="@id/watch_item" android:title="Watch item" app:showAsAction="always" />
+    <item android:icon="@drawable/ab_camera_icn" android:id="@id/post_item" android:title="@string/menu_post" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.common.TargetErrorView android:gravity="center" android:id="@id/account_order_details_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:id="@id/account_order_details_scroll_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.target.ui.view.account.AccountOrderDetailsProductListView android:id="@id/account_order_details_product_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_order_details_default_padding_margin" android:layout_marginBottom="@dimen/account_order_details_default_padding_margin" />
+            <View android:id="@id/account_order_details_products_spacer" android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="@dimen/account_spacer_height" android:layout_below="@id/account_order_details_product_list" />
+            <com.target.ui.view.account.AccountOrderDetailsDeliveryView android:id="@id/account_order_details_delivery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/account_order_details_products_spacer" />
+            <com.target.ui.view.account.AccountOrderDetailsPaymentView android:id="@id/account_order_details_payment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/account_order_details_default_padding_margin" android:layout_marginBottom="@dimen/account_order_details_margin_bottom" android:layout_below="@id/account_order_details_delivery" />
+            <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/account_order_details_order_placed_date" android:paddingTop="@dimen/account_order_details_default_padding_margin" android:paddingBottom="@dimen/account_order_details_default_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_order_details_ordered_on" android:layout_alignParentBottom="true" style="@style/Target.TextView.AccountOrderDetailsFooter" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

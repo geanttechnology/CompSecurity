@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/spinner_box_selector" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:minHeight="@dimen/purchase_row_min_height" style="@style/white_bg_selector_element"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/item_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="false" style="@style/purchase_row_label_text" />
+            <TextView android:textColor="@color/grey_light" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/label" android:layout_alignParentLeft="false" style="@style/purchase_row_value_text_multiple_lines" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

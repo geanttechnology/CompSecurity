@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar_actionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/toolbar_default" />
+    <include android:id="@id/search_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar_actionbar" layout="@layout/search_view_layout" />
+    <View android:id="@id/search_top_bar_divider" android:background="#ffbababa" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/search_view_container" />
+    <ScrollView android:id="@id/search_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/search_bottom_bar" android:layout_below="@id/search_top_bar_divider">
+        <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_categories_header" />
+                <View android:background="#ffbababa" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/search_categories_groupview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_distance_header" />
+                <View android:background="#ffbababa" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/search_distance_groupview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_price_header" />
+                <View android:background="#ffbababa" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+                    <TextView android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/search_price_from" android:singleLine="true" android:layout_weight="6.0" />
+                    <EditText android:gravity="center" android:id="@id/search_price_from_edittext" android:background="@color/grey_background2" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="16" android:layout_weight="4.0" android:inputType="numberDecimal" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+                    <TextView android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/search_price_to" android:singleLine="true" android:layout_weight="6.0" />
+                    <EditText android:gravity="center" android:id="@id/search_price_to_edittext" android:background="@color/grey_background2" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="16" android:layout_weight="4.0" android:inputType="numberDecimal" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_sorting_header" />
+                <View android:background="#ffbababa" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/search_sorting_groupview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_bottom_bar" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/search_reset_button" android:background="@drawable/button_dark_gray" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/filters_reset" android:contentDescription="@string/search_reset_filters_content_description" />
+            <TextView android:textSize="@dimen/buttons_text_size" android:textStyle="bold" android:textColor="@color/gray_76" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_reset_filters" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/search_apply_button" android:background="@drawable/button_ambatana_red" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/filters_apply" android:contentDescription="@string/search_apply_filters_content_description" />
+            <TextView android:textSize="@dimen/buttons_text_size" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_apply_filters" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

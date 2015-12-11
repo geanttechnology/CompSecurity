@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@color/bk_light_green" android:layout_width="310.0dip" android:layout_height="390.0dip" android:layout_centerInParent="true">
+        <android.support.v4.view.ViewPager android:id="@id/pre_post_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/pre_post_circle_indicator" />
+        <ImageView android:id="@id/pre_post_circle_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/page_1of2_dots" android:layout_above="@id/post_help_bottom" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/post_help_bottom" android:background="@color/bk_dark_green" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/pre_post_help_back_button" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/pre_post_help_footer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="skip" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/pre_post_help_forward_button" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next_button" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

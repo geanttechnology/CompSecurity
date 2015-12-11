@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/account_management_container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="always"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/account_login_welcome_wrapper" android:background="@color/target_fade_away_grey" android:paddingLeft="@dimen/account_page_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/account_header_height">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_bullseye_small" />
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/x_largeTextSize" android:textColor="@color/target_bullseye_red" android:ellipsize="end" android:gravity="left|center" android:id="@id/account_header_session_text" android:paddingLeft="@dimen/account_page_margin_small" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/account_current_session_banner" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/account_management_profile_view" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/account_page_margin" android:layout_width="fill_parent" android:layout_height="@dimen/account_management_row_height">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_name" />
+            <com.target.ui.view.TargetTextView android:layout_gravity="center" android:paddingLeft="@dimen/account_page_margin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/account_management_profile" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.AccountManagement" />
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_small" android:scaleType="center" android:contentDescription="@string/account_management_profile_content_desc" />
+        </LinearLayout>
+        <include layout="@layout/spacer" />
+        <LinearLayout android:id="@id/account_management_payment_view" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/account_page_margin_medium" android:layout_width="fill_parent" android:layout_height="@dimen/account_management_row_height">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payment_default" />
+            <com.target.ui.view.TargetTextView android:layout_gravity="center" android:paddingLeft="@dimen/account_page_margin_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/account_management_payment" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.AccountManagement" />
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_small" android:scaleType="center" android:contentDescription="@string/account_management_payment_content_desc" />
+        </LinearLayout>
+        <include layout="@layout/spacer" />
+        <LinearLayout android:id="@id/account_management_shipping_view" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/account_page_margin_medium" android:layout_width="fill_parent" android:layout_height="@dimen/account_management_row_height">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_checkout_shippingaddress" />
+            <com.target.ui.view.TargetTextView android:layout_gravity="center" android:paddingLeft="@dimen/account_page_margin_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/account_management_shipping" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.AccountManagement" />
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_small" android:scaleType="center" android:contentDescription="@string/account_management_shipping_content_desc" />
+        </LinearLayout>
+        <include layout="@layout/spacer" />
+        <LinearLayout android:id="@id/account_management_giftcard_view" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/account_page_margin_medium" android:layout_width="fill_parent" android:layout_height="@dimen/account_management_row_height">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_giftcard" />
+            <com.target.ui.view.TargetTextView android:layout_gravity="center" android:paddingLeft="@dimen/account_page_margin_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/account_management_giftcard" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.AccountManagement" />
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_small" android:scaleType="center" android:contentDescription="@string/account_management_giftcard_content_desc" />
+        </LinearLayout>
+        <include layout="@layout/spacer" />
+        <LinearLayout android:id="@id/account_management_order_history" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/account_page_margin" android:layout_width="fill_parent" android:layout_height="@dimen/account_management_row_height">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_orderhistory" />
+            <com.target.ui.view.TargetTextView android:layout_gravity="center" android:paddingLeft="@dimen/account_page_margin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/account_management_order_history" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.AccountManagement" />
+        </LinearLayout>
+        <include layout="@layout/spacer" />
+        <com.target.ui.view.account.AccountExternalLaunchView android:id="@id/account_current_session_external_launch" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/spacer" />
+        <com.target.ui.view.account.SettingsView android:id="@id/account_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/spacer" />
+        <com.target.ui.view.account.AccountInternalLaunchView android:id="@id/account_current_session_internal_launch" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/spacer" />
+        <com.target.ui.view.account.AccountHelpVersionAndCopyrightView android:id="@id/account_help_version_copyright_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

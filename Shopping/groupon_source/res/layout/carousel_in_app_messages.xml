@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/carousel_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.groupon.view.GrouponViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.groupon.view.PagerSlidingTabStrip android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+            <com.groupon.view.InAppMessagesView android:id="@id/in_app_messages" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/in_app_message_box_height" />
+            <com.groupon.goods.shoppingcart.view.ShoppingCartInAppMessageView android:id="@id/cart_in_app_message" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/cart_in_app_message_box_height" />
+            <include android:id="@id/tool_bar" layout="@layout/toolbar" />
+        </FrameLayout>
+    </FrameLayout>
+    <include layout="@layout/navigation_drawer" />
+</android.support.v4.widget.DrawerLayout>

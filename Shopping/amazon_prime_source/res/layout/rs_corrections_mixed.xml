@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rs_corrections_mixed_dym_layout" style="@style/Rs.Corrections.Mixed.Layout.DYM">
+        <TextView android:id="@id/rs_corrections_mixed_dym_header" style="@style/Rs.Corrections.Mixed.DYM.Header" />
+        <TextView android:id="@id/rs_corrections_mixed_dym_subheader" style="@style/Rs.Corrections.Mixed.DYM.SubHeader" />
+    </LinearLayout>
+    <TextView android:id="@id/rs_corrections_mixed_quartz" style="@style/Rs.Corrections.Mixed.Layout.QUARTZ" />
+</merge>

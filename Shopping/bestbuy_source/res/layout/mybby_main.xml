@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/inner_content" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_linear_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/layout_header_search">
+        <android.support.v4.app.FragmentTabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:visibility="visible" android:layout_width="100.0dip" android:layout_height="59.0dip" />
+                <FrameLayout android:id="@id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </android.support.v4.app.FragmentTabHost>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/product_err_Msg_Layout" android:background="@drawable/error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/bby_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:text="@string/bby_mybby" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/product_na" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:text="@string/mybby_product_na" android:layout_below="@id/bby_text" android:layout_alignParentLeft="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/home_tab_layout" android:background="@drawable/tabunselected" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <RelativeLayout android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:gravity="center" android:id="@id/tab_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mediumarrow" android:contentDescription="@string/image_content_description" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="11.0sp" android:textColor="@drawable/bby_tab_text_color" android:gravity="center" android:id="@id/tab_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tab_image" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cart_badge" android:background="@drawable/cart_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/cart_badge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/noti_initial_count" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/stores_badge" android:background="@drawable/cart_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/stores_badge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+    </RelativeLayout>
+</RelativeLayout>

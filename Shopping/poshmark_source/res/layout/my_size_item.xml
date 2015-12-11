@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contentTableRowMiddle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/shareOptionExtraActionLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:id="@id/mySizeTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/textColorDarkGray" android:id="@id/mySizeDetailsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/shareOptionConnectIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_more_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

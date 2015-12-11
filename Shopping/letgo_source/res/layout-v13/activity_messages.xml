@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar_actionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/toolbar_default" />
+    <FrameLayout android:id="@id/frame_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar_actionbar">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/header" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="60.0dip" android:weightSum="100.0">
+                <LinearLayout android:gravity="top|left|center" android:layout_gravity="top|left|center" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="50.0">
+                    <ImageView android:gravity="top|left|center" android:layout_gravity="top|left|center" android:id="@id/info_product_header_image" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                    <LinearLayout android:gravity="top|left|center" android:layout_gravity="top|left|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip">
+                        <TextView android:textColor="@color/ambatana_color" android:id="@id/info_product_header_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/messages_title_product" android:lines="1" />
+                        <TextView android:textStyle="bold" android:textColor="@color/ambatana_color" android:id="@id/info_product_header_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/messages_default_price" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="top|right|center" android:layout_gravity="top|right|center" android:orientation="horizontal" android:id="@id/info_user_header_container" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="50.0">
+                    <LinearLayout android:gravity="top|right|center" android:layout_gravity="top|right|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="4.0dip">
+                        <TextView android:textColor="@color/ambatana_color" android:id="@id/info_user_header_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/common_label_username" />
+                    </LinearLayout>
+                    <ImageView android:gravity="top|right|center" android:layout_gravity="top|right|center" android:id="@id/info_user_header_image" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/no_photo" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/crouton_container_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/footer" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <EditText android:textSize="15.0sp" android:textColor="@color/black" android:textColorHint="@color/gray" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/message_content" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:hint="@string/messages_hint" android:layout_weight="0.8" android:inputType="text" android:imeOptions="actionSend" />
+        <TextView android:textStyle="bold" android:textColor="@color/chat_btn_selector_text" android:gravity="center" android:id="@id/chat_tv_send_message" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="@string/chat_btn_send" android:textAllCaps="true" />
+    </LinearLayout>
+    <ListView android:id="@id/container_messages" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:layout_above="@id/footer" android:layout_below="@id/frame_header" />
+</RelativeLayout>

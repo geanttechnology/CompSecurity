@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/stores_page_root_layout" android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="vertical" android:id="@id/map_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/map_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.8" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="@color/bby_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stores_near" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="@color/bby_gray" android:gravity="center" android:id="@id/geo_or_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/by_text" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            </LinearLayout>
+            <android.support.v4.view.ViewPager android:id="@id/stores_pager" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/enable_gps_layout" android:background="@color/bby_blue" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="210.0dip" android:layout_height="180.0dip" android:src="@drawable/enablegps" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="30.0sp" android:textColor="@color/white" android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/location_power_services" android:layout_centerHorizontal="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/accessfeatures" android:layout_centerHorizontal="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+            <com.bestbuy.android.bbyobjects.BBYButton android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/enable_gps" android:background="@drawable/error_handle_blue_box" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/enable_gps" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/stores_list_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="@color/bby_gray" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stores_near" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="@color/bby_gray" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/geo_or_search_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/by_text" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+        </LinearLayout>
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+        <ListView android:id="@id/stores_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:listSelector="@drawable/listbg" android:cacheColorHint="#00000000" android:divider="#ffcccccc" android:dividerHeight="1.0dip" />
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/no_stores_msg_layout" android:background="#ffa81231" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/location_not_found" bby:BBYFont="@string/BBY_APP_FONT_LIGHT_ITALIC" />
+    </LinearLayout>
+    <include layout="@layout/transparent_loading_layout" />
+</FrameLayout>

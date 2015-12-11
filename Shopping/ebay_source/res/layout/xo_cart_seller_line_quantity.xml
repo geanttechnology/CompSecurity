@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/Checkout.Divider" />
+    <RelativeLayout android:id="@id/xo_item_quantity_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout.Item">
+        <TextView android:id="@id/xo_item_quantity_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_quantity" android:layout_alignParentLeft="true" style="@style/Checkout.Text" />
+        <TextView android:id="@id/xo_item_quantity" android:paddingRight="@dimen/checkoutListContainerMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Checkout.Text" />
+        <TextView android:id="@id/xo_item_quantity_available" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_more_than_one" android:layout_below="@id/xo_item_quantity_label" android:layout_alignParentLeft="true" style="@style/Checkout.Text.Secondary" />
+    </RelativeLayout>
+</merge>

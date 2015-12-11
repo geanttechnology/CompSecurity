@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/view_it_sliding_drawer_empty_description_text_size" android:gravity="left|center" android:id="@id/view_it_sliding_drawer_empty_indication" android:padding="@dimen/padding_double" android:layout_width="fill_parent" android:layout_height="@dimen/view_it_sliding_drawer_empty_height" android:text="@string/view_it_sliding_drawer_empty_indication" />
+</LinearLayout>

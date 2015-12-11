@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/style_guide_red" android:ellipsize="end" android:id="@id/item_almost_gone" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_deals_almost_gone" android:maxLines="1" android:fontFamily="sans-serif" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/style_guide_gray" android:id="@id/item_eek_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/style_guide_black" android:ellipsize="end" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="sans-serif" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="end" android:id="@id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/style_guide_gray" android:ellipsize="end" android:id="@id/item_price_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="sans-serif" />
+</LinearLayout>

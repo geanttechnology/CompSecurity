@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:textAppearance="@style/AVOD.TextAppearance.Bold.XSmall" android:gravity="center_vertical" android:id="@id/ContainerIcons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/VideoTimeTotal" android:layout_alignLeft="@id/VideoTimeCurrent">
+        <TextView android:textAppearance="@style/AVOD.TextAppearance.Bold.XXSmall" android:textColor="@color/video_quality_indicator" android:id="@id/VideoQuality" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:contentDescription="@string/description_hd" />
+        <TextView android:textAppearance="@style/AVOD.TextAppearance.Bold.XXSmall" android:textColor="@color/video_quality_indicator" android:id="@id/VideoQualitySecondary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/avod_spacing_micro" android:layout_toRightOf="@id/VideoQuality" />
+        <ImageView android:id="@id/AudioQuality" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/avod_spacing_micro" android:layout_marginRight="@dimen/avod_spacing_tiny" android:src="@drawable/playback_dolby_icon_selector" android:layout_alignParentRight="true" android:contentDescription="@string/description_dolby" />
+    </RelativeLayout>
+</merge>

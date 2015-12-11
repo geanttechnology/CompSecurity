@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ambatana_colors">
+        <item>@color/ambatana_color_1</item>
+        <item>@color/ambatana_pinkish_red</item>
+        <item>@color/ambatana_color_3</item>
+        <item>@color/ambatana_color_4</item>
+    </array>
+    <string-array name="categories">
+        <item>@string/category_electronics</item>
+        <item>@string/category_cars_and_motors</item>
+        <item>@string/category_sports_leisure_and_games</item>
+        <item>@string/category_home_and_garden</item>
+        <item>@string/category_movies_books_and_music</item>
+        <item>@string/category_fashion_and_accessories</item>
+        <item>@string/category_baby_and_child</item>
+        <item>@string/category_other</item>
+    </string-array>
+    <string-array name="contact_options">
+        <item>@string/contact_subject</item>
+        <item>@string/contact_option_profile</item>
+        <item>@string/contact_option_product</item>
+        <item>@string/contact_option_location</item>
+        <item>@string/contact_option_access</item>
+        <item>@string/contact_option_spam</item>
+        <item>@string/contact_option_feedback</item>
+        <item>@string/contact_option_other</item>
+    </string-array>
+    <string-array name="image_source_option">
+        <item>@string/image_source_option_camera</item>
+        <item>@string/image_source_option_gallery</item>
+    </string-array>
+    <string-array name="new_product_image_source_spinner">
+        <item>@string/image_source_option_camera</item>
+        <item>@string/image_source_option_gallery</item>
+        <item>@string/image_source_option_delete</item>
+    </string-array>
+    <string-array name="sort">
+        <item>@string/sort_option_latest_published</item>
+        <item>@string/sort_option_price_low_to_high</item>
+        <item>@string/sort_option_price_high_to_low</item>
+        <item>@string/sort_option_proximity</item>
+    </string-array>
+    <string-array name="sort_keys">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

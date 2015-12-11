@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/image_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/deal_image_badge" android:visibility="gone" android:layout_width="@dimen/deal_image_badge_container_width" android:layout_height="@dimen/deal_image_badge_container_height" style="@style/deal_image_badge_container">
+        <TextView android:id="@id/image_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/deal_image_icon" android:layout_toStartOf="@id/deal_image_icon" style="@style/deal_image_badge_text" />
+        <ImageView android:id="@id/deal_image_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/deal_image_badge_image" />
+    </RelativeLayout>
+</FrameLayout>

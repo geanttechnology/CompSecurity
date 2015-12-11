@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rs_quantity_changer" android:layout_width="150.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/Rs.Quantity.Header">
+        <TextView style="@style/Rs.Quantity.Title" />
+        <ImageView android:id="@id/rs_quantity_dialog_close" style="@style/Rs.Quantity.Close" />
+    </RelativeLayout>
+    <ListView android:id="@id/rs_quantity_changer_list" android:background="@drawable/rs_dialog_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

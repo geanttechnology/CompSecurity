@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/background_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <TextView android:id="@id/opl_payment_method_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" />
+        <View style="@style/Separator" />
+        <TextView android:id="@id/opl_payment_method_info_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" />
+        <TextView android:id="@id/opl_payment_method_info_instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" />
+        <Button android:id="@id/opl_continue" android:layout_margin="@dimen/padding" android:text="@string/opl_continue_button" style="@style/AUIButton.Gold" />
+    </LinearLayout>
+</ScrollView>

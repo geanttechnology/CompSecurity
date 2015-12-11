@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/listContainerLightOutsideBackground" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sell_fontsize_large" android:id="@id/refine_title" android:paddingTop="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refine_title" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceStrong" android:textSize="@dimen/sell_fontsize_large" android:id="@android:id/text1" android:paddingTop="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

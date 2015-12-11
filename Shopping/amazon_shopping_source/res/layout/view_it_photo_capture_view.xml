@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.search.viewit.ViewItPhotoCaptureView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/view_it_window_over_camera" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/view_it_top_tool_bar" android:background="@drawable/action_bar_background" android:layout_width="fill_parent" android:layout_height="@dimen/view_it_top_toolbar_height">
+            <TextView android:textStyle="bold" android:textColor="@color/gray_dark_text" android:gravity="center" android:layout_gravity="center" android:id="@id/view_it_top_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/view_it_searching" />
+            <LinearLayout android:gravity="center" android:id="@id/view_it_top_camera_flash_button_group" android:paddingLeft="@dimen/view_it_flash_button_padding" android:paddingRight="@dimen/view_it_flash_button_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <ToggleButton android:id="@id/view_it_top_camera_flash_btn" android:background="@color/view_it_flash_button_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@string/view_it_flash_on_off_empty" android:textOff="@string/view_it_flash_on_off_empty" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/view_it_top_tool_bar_separator_height" android:src="@color/view_it_top_tool_bar_separator" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/view_it_sliding_drawer" />
+            <com.amazon.mShop.search.viewit.ViewItScannedItemAnimationFrame android:gravity="bottom" android:orientation="vertical" android:id="@id/view_it_animation_frame" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/view_it_animation_item_row" />
+            </com.amazon.mShop.search.viewit.ViewItScannedItemAnimationFrame>
+            <include layout="@layout/view_it_error_dialog" />
+        </FrameLayout>
+    </LinearLayout>
+</com.amazon.mShop.search.viewit.ViewItPhotoCaptureView>

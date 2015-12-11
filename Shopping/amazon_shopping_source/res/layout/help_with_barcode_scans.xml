@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_using_amazon_remembers_help_with_barcode_scans_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_help_getting_started_title" />
+        <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_new_help_text_line1" />
+        <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_new_help_text_line2" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/barcode_help" />
+        <TextView android:textStyle="bold" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_help_tips_title" />
+        <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_help_tips_text_android" />
+        <TextView android:textStyle="bold" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_help_info_title" />
+        <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_new_help_info_text" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

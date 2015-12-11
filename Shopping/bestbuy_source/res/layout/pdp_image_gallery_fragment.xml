@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <com.bestbuy.android.bbyobjects.BBYButton android:textSize="14.0sp" android:id="@id/image_gallery" android:background="@drawable/pdp_tab_left_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/images_text" android:layout_weight="1.0" />
+        <View android:background="@color/transparent" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <com.bestbuy.android.bbyobjects.BBYButton android:textSize="14.0sp" android:id="@id/videos_gallery" android:background="@drawable/pdp_tab_right_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/videos_text" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/image_gallery_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.bestbuy.android.bbyobjects.ProductImageGallery android:id="@id/product_image_gallery" android:layout_width="fill_parent" android:layout_height="230.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/product_image" android:visibility="gone" android:layout_width="230.0dip" android:layout_height="230.0dip" android:scaleType="fitCenter" android:contentDescription="@string/image_content_description" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/video_gallery_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.bestbuy.android.bbyobjects.ProductImageGallery android:id="@id/product_video_gallery" android:layout_width="fill_parent" android:layout_height="230.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/product_video_image" android:visibility="gone" android:layout_width="230.0dip" android:layout_height="230.0dip" android:scaleType="fitCenter" android:contentDescription="@string/image_content_description" />
+    </FrameLayout>
+</LinearLayout>

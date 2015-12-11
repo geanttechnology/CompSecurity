@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="13.0sp" android:textColor="@color/bby_darkest_gray" android:id="@id/product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="11.0sp" android:textColor="@color/bby_blue_shirt" android:id="@id/other_price_note" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/sku_type_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/sku_type_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="11.0sp" android:textColor="@color/bby_blue_shirt" android:id="@id/sku_type" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </LinearLayout>
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="10.0sp" android:textColor="@color/bby_red" android:id="@id/onsale_price_note" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="10.0sp" android:textColor="@color/bby_darkest_gray" android:id="@id/contract_price_note" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="10.0sp" android:textColor="@color/bby_darkest_gray" android:id="@id/saved_amount_des" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+</LinearLayout>

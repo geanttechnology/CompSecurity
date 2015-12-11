@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/hotel_purchase_item_left_right_padding" android:paddingRight="@dimen/hotel_purchase_item_left_right_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/label" android:paddingTop="@dimen/hotel_purchase_item_top_bottom_padding" android:paddingBottom="@dimen/hotel_purchase_item_top_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/market_rate_purchase_details_label_text" />
+    <View style="@style/horizontal_grey_separator" />
+</LinearLayout>

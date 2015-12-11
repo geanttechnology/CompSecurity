@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/layout_main" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/searchBarContainer" android:background="?listContainerBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColorHint="?android:textColorSecondary" android:ellipsize="end" android:gravity="left|center" android:id="@id/home_search_text" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/ebayPressedStatePadding" android:focusable="true" android:focusableInTouchMode="true" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight" android:hint="@string/common_search_hint" android:singleLine="true" android:drawableLeft="@drawable/ic_mglass_home" android:drawablePadding="8.0dip" />
+    </RelativeLayout>
+    <include android:layout_gravity="right|center" android:id="@id/saveSearch" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/search_save_view" />
+    <Spinner android:layout_gravity="right|center" android:id="@id/sortSpinner" android:background="?android:listChoiceBackgroundIndicator" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?attr/headerDropDownStyle" />
+    <include android:layout_gravity="right|center" android:id="@id/viewSwitcher" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/search_viewswitcher_view" />
+</LinearLayout>

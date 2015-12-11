@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.ContainerLayout android:id="@id/parent_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ItemView">
+        <LinearLayout android:id="@id/condition_layout" android:visibility="gone" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:text="@string/item_view_condition" style="@style/StyleGuideViewItemStatKey" />
+            <TextView android:id="@id/condition_textview" style="@style/StyleGuideViewItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/seller_notes_layout" android:visibility="gone" android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:text="@string/seller_notes" style="@style/StyleGuideViewItemStatKey" />
+            <TextView android:ellipsize="end" android:id="@id/seller_notes_textview_collapsed" android:visibility="gone" android:maxLines="2" style="@style/StyleGuideViewItemStatValue" />
+            <TextView android:id="@id/seller_notes_textview_expanded" style="@style/StyleGuideViewItemStatValue" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/time_left_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/quantity_layout" android:visibility="gone" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:id="@id/quantity_label" android:text="@string/quantity" style="@style/StyleGuideViewItemStatKey" />
+            <LinearLayout android:orientation="vertical" style="@style/StyleGuideViewItemStatValue">
+                <TextView android:id="@id/quantity_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textColor="?itemViewDefaultTextColorSecondary" android:id="@id/quantity_aux_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/eek_layout" android:visibility="gone" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:id="@id/eek_label" android:text="@string/quantity" style="@style/StyleGuideViewItemStatKey" />
+            <LinearLayout android:orientation="vertical" style="@style/StyleGuideViewItemStatValue">
+                <TextView android:id="@id/eek_value" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/collapsed_dynamic_specifics_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/dynamic_specifics_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ebay.android.widget.ContainerLayout>
+    <include layout="@layout/view_item_expando_controls" />
+</LinearLayout>

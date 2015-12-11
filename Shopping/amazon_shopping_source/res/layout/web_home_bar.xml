@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.home.web.MShopWebHomeBar android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/web_home_category_search_bar" android:background="@color/action_bar_end_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/web_home_shop_by_department_view" android:paddingLeft="@dimen/shop_by_department_padding_left" android:paddingTop="@dimen/shop_by_department_padding_top" android:paddingBottom="@dimen/shop_by_department_padding_bottom" android:layout_width="wrap_content" android:layout_height="@dimen/shop_by_department_height">
+            <TextView android:textSize="@dimen/gno_category_browse_shop_by_size" android:textColor="@color/action_bar_shop_by_department_text_color" android:gravity="left|center" android:id="@id/web_home_shop_by_department_label" android:background="@drawable/action_bar_button_selector" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/shop_by_department_height" android:layout_marginLeft="@dimen/shop_by_department_text_margin_left" android:layout_marginRight="@dimen/shop_by_department_text_margin_right" android:minWidth="@dimen/shop_by_department_button_min_width" android:lines="2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.amazon.mShop.home.HomeSearchBar android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.amazon.mShop.home.web.MShopWebHomeBar>

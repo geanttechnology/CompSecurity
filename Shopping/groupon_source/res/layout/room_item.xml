@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/detail_box_selector" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow_right" android:layout_alignParentLeft="true">
+            <TextView android:textSize="18.0dip" android:textColor="@color/black" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:gravity="bottom|left|center" android:id="@id/price_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="22.0dip" android:textStyle="bold" android:textColor="@color/green_new" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$120" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/black" android:id="@id/per_night_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginBottom="3.0dip" android:text="@string/per_night" android:layout_toRightOf="@id/price" android:layout_alignBottom="@id/price" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/grey55" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

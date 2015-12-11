@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/no_internet_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/white_background_grey_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/illus_no_connection" />
+        <TextView android:textSize="@dimen/large_text_size" android:textColor="@color/lighter_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_large" android:text="@string/no_internet_textview_top" android:fontFamily="sans-serif" />
+        <TextView android:textSize="@dimen/common_text_size_normal" android:textColor="@color/lighter_grey_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_internet_textview_bottom" android:fontFamily="sans-serif" />
+        <Button android:textColor="@android:color/white" android:id="@id/retry_bt" android:background="@drawable/button_pink" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="25.0dip" android:text="@string/no_internet_send_button" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</RelativeLayout>

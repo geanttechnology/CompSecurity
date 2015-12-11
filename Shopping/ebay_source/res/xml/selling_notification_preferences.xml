@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.preference.LongTitleSummaryCheckBoxPreference android:persistent="false" android:title="@string/send_notifications_auction_updates" android:key="BIDRCVD" android:summary="@string/send_notifications_auction_updates_summary_selling" />
+    <com.ebay.mobile.preference.LongTitleSummaryCheckBoxPreference android:persistent="false" android:title="@string/send_notifications_offer_updates" android:key="BESTOFR" android:summary="@string/send_notifications_offer_updates_summary_selling" />
+    <com.ebay.mobile.preference.LongTitleSummaryCheckBoxPreference android:persistent="false" android:title="@string/send_notifications_order_updates" android:key="SELLING_ORDER_UPDATES" android:summary="@string/send_notifications_order_updates_summary_selling" />
+</PreferenceScreen>

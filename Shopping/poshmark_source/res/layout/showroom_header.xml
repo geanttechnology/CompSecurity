@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_table_row_middle" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/showroomCovershotImageView" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="fitCenter" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:layout_gravity="center_vertical" android:id="@id/showroomTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/filterWidgetLayout" android:background="@drawable/bg_fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.poshmark.ui.customviews.ListingsFilterWidget android:orientation="horizontal" android:id="@id/filterWidget" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:layoutType="1" />
+    </LinearLayout>
+</LinearLayout>

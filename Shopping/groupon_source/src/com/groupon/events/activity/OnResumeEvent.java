@@ -1,0 +1,23 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.groupon.events.activity;
+
+import android.app.Activity;
+
+public class OnResumeEvent
+{
+
+    protected final Activity activity;
+
+    public OnResumeEvent(Activity activity1)
+    {
+        activity = activity1;
+    }
+
+    public Activity getActivity()
+    {
+        return activity;
+    }
+}

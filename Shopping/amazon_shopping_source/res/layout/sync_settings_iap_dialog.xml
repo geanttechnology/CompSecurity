@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/semi_transparent_background_color" android:padding="@dimen/dialog_padding_v" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:background="@drawable/dialog_header_background" android:padding="@dimen/dialog_title_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_header_app_logo" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/secondary_background_color" android:padding="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/iap_blocked_logo_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_section_margin_bottom">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/app_icon_padding" android:src="@drawable/icon" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="@dimen/entitlements_primary_text_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:id="@id/iap_blocked_appstore" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/entitlements_secondary_text_size" android:textColor="@color/secondary_text_color" android:id="@id/iap_blocked_update_required" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/entitlements_primary_text_size" android:textColor="@color/primary_text_color" android:id="@id/iap_blocked_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_section_margin_bottom" />
+            <TextView android:textSize="@dimen/entitlements_secondary_text_size" android:textColor="@color/secondary_text_color" android:id="@id/iap_blocked_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/button_enabled_primary_color" android:id="@id/iap_blocked_cancel" android:background="@drawable/secondary_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_button_margin" android:layout_marginTop="@dimen/dialog_button_margin" android:layout_marginBottom="@dimen/dialog_button_margin" android:layout_weight="1.0" />
+            <View android:layout_width="@dimen/dialog_button_margin" android:layout_height="fill_parent" />
+            <Button android:textColor="@color/button_enabled_primary_color" android:id="@id/iap_blocked_action" android:background="@drawable/orange_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_button_margin" android:layout_marginRight="@dimen/dialog_button_margin" android:layout_marginBottom="@dimen/dialog_button_margin" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

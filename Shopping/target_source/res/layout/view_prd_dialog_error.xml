@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/prd_price_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.common.TargetErrorView android:gravity="center" android:id="@id/prd_dialog_error_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.target.ui.view.product.ProductDialogZipCodeView android:id="@id/prd_dialog_zip_code_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.1" />
+</LinearLayout>

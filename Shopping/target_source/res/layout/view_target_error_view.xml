@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/no_network_icon" android:visibility="gone" android:layout_width="@dimen/prd_pdp_error_warning_image_width_height" android:layout_height="@dimen/prd_pdp_error_warning_image_width_height" android:src="@drawable/error_no_network" />
+    <ImageView android:id="@id/warning_icon" android:visibility="gone" android:layout_width="@dimen/prd_pdp_error_warning_image_width_height" android:layout_height="@dimen/prd_pdp_error_warning_image_width_height" android:src="@drawable/account_error_large" />
+    <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/error_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="regular" style="@style/Target.TextView.ErrorTitle" />
+    <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/error_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.ErrorSubTitle" />
+    <com.target.ui.view.TargetButton android:id="@id/try_again_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/prd_pdp_try_again_button_height" android:text="@string/product_loading_error_retry_button_text" app:fontStyle="medium" style="@style/DialogButton.Blue" />
+</merge>

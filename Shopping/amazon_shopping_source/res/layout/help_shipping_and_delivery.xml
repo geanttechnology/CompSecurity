@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_shipping_and_delivery_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shipping_and_delivery_shipping_rates_and_times_button" android:text="@string/help_shipping_and_delivery_shipping_rates_and_times_title" style="@style/OffsiteSelector" amazon_titleResourceId="@string/help_shipping_and_delivery_shipping_rates_and_times_title" amazon_urlContentId="@string/help_shipping_and_delivery_shipping_rates_and_times_url" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shipping_and_delivery_tracking_packages_button" android:text="@string/help_shipping_and_delivery_tracking_packages_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_shipping_and_delivery_tracking_packages_title" amazon_textContentId="@string/help_shipping_and_delivery_tracking_packages_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shipping_and_delivery_free_super_saver_shipping_button" android:text="@string/help_shipping_and_delivery_free_super_saver_shipping_title" style="@style/OffsiteSelector" amazon_titleResourceId="@string/help_shipping_and_delivery_free_super_saver_shipping_title" amazon_urlContentId="@string/help_shipping_and_delivery_free_super_saver_shipping_url" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

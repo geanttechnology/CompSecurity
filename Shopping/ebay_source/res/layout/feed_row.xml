@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/image1_container" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/image1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" res_auto:averageBackgroundColor="true" />
+        <include layout="@layout/feed_row_price" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/image2_container" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/image2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" res_auto:averageBackgroundColor="true" />
+        <include layout="@layout/feed_row_price" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/image3_container" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/image3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" res_auto:averageBackgroundColor="true" />
+        <include layout="@layout/feed_row_price" />
+    </LinearLayout>
+</RelativeLayout>

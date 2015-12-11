@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/frameLayout1" android:background="@drawable/normal_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/grid_view" android:paddingLeft="2.5dip" android:paddingTop="2.5dip" android:paddingRight="2.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/refresh_off_black_text" android:gravity="center" android:layout_gravity="top|center" android:id="@id/distanceBar" android:background="@drawable/location_bar" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" />
+    <RelativeLayout android:id="@id/my_archived_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip">
+        <TextView android:textColor="@color/offerup_text_gray" android:gravity="center_horizontal" android:id="@id/my_archived_no_data_title" android:paddingTop="100.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="No archived items" style="@style/text.xlarge" />
+        <TextView android:textColor="@color/offerup_text_gray" android:gravity="center_horizontal" android:id="@id/my_archived_no_data_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Go back and tap on an item to archive it." android:layout_below="@id/my_archived_no_data_title" style="@style/text.xlarge" />
+    </RelativeLayout>
+</RelativeLayout>

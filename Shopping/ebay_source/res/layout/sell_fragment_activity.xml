@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/modal_toolbar" />
+    <LinearLayout android:orientation="horizontal" android:background="?listContainerOutsideBackground" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_progress" />
+        <FrameLayout android:id="@id/sellc2c_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/listing_fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/common_error" />
+    </LinearLayout>
+</LinearLayout>

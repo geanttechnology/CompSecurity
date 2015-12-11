@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:groupon="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/dates_selector" layout="@layout/hotels_list_header" />
+    <ListView android:id="@id/autocomplete_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:footerDividersEnabled="true" style="@style/global_search_list_style_2" />
+    <ScrollView android:id="@id/recent_searches_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/recent_searches_container" android:paddingLeft="@dimen/global_search_tag_box_side_margin_2" android:paddingTop="@dimen/global_search_tag_box_top_margin_2" android:paddingRight="@dimen/global_search_tag_box_side_margin_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/recent_searches_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recent_searches_capitalized" style="@style/global_search_box_label_style_2" />
+                <org.apmem.tools.layouts.FlowLayout android:id="@id/recent_searches_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_search_tag_list_top_margin" groupon:horizontalSpacing="8.0dip" groupon:verticalSpacing="8.0dip" groupon:minChildrenPerRow="2" />
+            </LinearLayout>
+            <include android:id="@id/old_recent_searches_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/recently_searched_layout" />
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/shop" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/navigation_padding_left" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_main_item_height">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_nav_shop" android:contentDescription="@string/cd_shop_icon" />
+        <com.target.ui.view.TargetTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/navigation_padding_left" android:text="@string/nav_shop" style="@style/Target.TextView.NavigationDrawerItem" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lists" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/navigation_padding_left" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_main_item_height">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_nav_lists" android:contentDescription="@string/cd_lists_icon" />
+        <com.target.ui.view.TargetTextView android:layout_gravity="center" android:id="@id/list_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/navigation_padding_left" style="@style/Target.TextView.NavigationDrawerItem" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/account" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/navigation_padding_left" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_main_item_height">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_nav_account" android:contentDescription="@string/cd_account_icon" />
+        <com.target.ui.view.TargetTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/navigation_padding_left" android:text="@string/nav_account" style="@style/Target.TextView.NavigationDrawerItem" />
+    </LinearLayout>
+</merge>

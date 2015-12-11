@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sx="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/grid_item_content" android:padding="@dimen/rs_results_grid_product_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/rs_results_image_wrapper_grid" />
+        <LinearLayout android:orientation="vertical" android:id="@id/grid_description_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gutter_small">
+            <LinearLayout style="@style/Results.HeaderSection.Grid">
+                <TextView android:id="@id/item_title" style="@style/Results.Title.Grid" />
+                <TextView android:id="@id/rs_item_byline" style="@style/Results.ByLine.Grid" />
+            </LinearLayout>
+            <com.amazon.retailsearch.android.ui.results.views.messaging.EditionLine android:id="@id/item_edition" style="@style/Results.EditionLine.Grid" />
+            <include layout="@layout/rs_results_price_grid" />
+            <com.amazon.retailsearch.android.ui.results.views.price.OffersLine android:id="@id/item_offers_line" sx:Rs.Results.Offers.IsPriceBackup="true" style="@style/Results.Offers.Grid" />
+            <com.amazon.retailsearch.android.ui.results.views.price.FreeRentalLine android:id="@id/item_free_rental_line" style="@style/Results.FreeRentalLine.Grid" />
+            <com.amazon.retailsearch.android.ui.results.views.price.SubscribeAndSave android:id="@id/item_subscribe_and_save" sx:Rs.Results.SubscribeAndSave.ShowSaveMoreText="true" style="@style/Results.SubscribeAndSave.Grid" />
+            <include layout="@layout/rs_results_availability_grid" />
+            <com.amazon.retailsearch.android.ui.results.views.RatingsLine android:id="@id/rs_results_ratings" style="@style/Results.Ratings.Grid" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.NewerEditionAvailable android:id="@id/rs_results_newer_edition_available" style="@style/Results.NewerEditionAvailable.Grid" />
+            <com.amazon.retailsearch.android.ui.results.views.twister.Twister android:id="@id/rs_item_twister" sx:Rs.Results.Twister.ShowEditionsDetail="false" style="@style/Results.Twister.Grid" />
+            <com.amazon.retailsearch.android.ui.results.views.BestSeller android:id="@id/rs_results_best_seller" style="@style/Results.BestSeller.Grid" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

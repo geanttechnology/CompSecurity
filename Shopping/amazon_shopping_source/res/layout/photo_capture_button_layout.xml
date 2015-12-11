@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="right" android:id="@id/photo_capture_buttons_container" android:background="@drawable/photo_capture_bottom_gradient_background" android:layout_width="@dimen/photo_capture_view_buttons_container_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/photo_capture_take" android:background="@drawable/snapit_camera_rotate" android:layout_margin="0.0dip" style="@style/Button.Photo" />
+        <ImageButton android:id="@id/photo_capture_cancel" android:background="@drawable/snapit_cancel_rotate" android:visibility="gone" style="@style/Button.Photo" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="Rs.Results.Offers.IsPriceBackup" format="boolean" />
+    <attr name="Rs.Results.Price.HideBadges" format="boolean" />
+    <attr name="Rs.Results.Price.ShowListPrice" format="boolean" />
+    <attr name="Rs.Results.Price.ShowSomePrimeMsg" format="boolean" />
+    <attr name="Rs.Results.SubscribeAndSave.ShowSaveMoreText" format="boolean" />
+    <attr name="Rs.Results.Twister.ShowEditionsDetail" format="boolean" />
+    <attr name="adSize" format="string" />
+    <attr name="adSizes" format="string" />
+    <attr name="adUnitId" format="string" />
+    <attr name="amzn_locatorOff" format="boolean" />
+    <attr name="amzn_locatorInactive" format="boolean" />
+    <attr name="amzn_locatorWaiting" format="boolean" />
+    <attr name="amzn_locatorActive" format="boolean" />
+    <attr name="amzn_mapType">
+        <enum name="amzn_hybrid" value="4" />
+        <enum name="amzn_none" value="0" />
+        <enum name="amzn_normal" value="1" />
+        <enum name="amzn_satellite" value="2" />
+        <enum name="amzn_terrain" value="3" />
+    </attr>
+    <attr name="amzn_cameraBearing" format="float" />
+    <attr name="amzn_cameraTargetLat" format="float" />
+    <attr name="amzn_cameraTargetLng" format="float" />
+    <attr name="amzn_cameraTilt" format="float" />
+    <attr name="amzn_cameraZoom" format="float" />
+    <attr name="amzn_liteMode" format="boolean" />
+    <attr name="amzn_uiCompass" format="boolean" />
+    <attr name="amzn_uiRotateGestures" format="boolean" />
+    <attr name="amzn_uiScrollGestures" format="boolean" />
+    <attr name="amzn_uiTiltGestures" format="boolean" />
+    <attr name="amzn_uiZoomControls" format="boolean" />
+    <attr name="amzn_uiZoomGestures" format="boolean" />
+    <attr name="amzn_useViewLifecycle" format="boolean" />
+    <attr name="amzn_zOrderOnTop" format="boolean" />
+    <attr name="amzn_uiMapToolbar" format="boolean" />
+    <attr name="amzn_alignCompassTop" format="boolean" />
+    <attr name="amzn_alignCompassLeft" format="boolean" />
+    <attr name="amzn_alignCompassBottom" format="boolean" />
+    <attr name="amzn_alignCompassRight" format="boolean" />
+    <attr name="amzn_compassDrawable" format="reference" />
+    <attr name="amzn_alignLocatorTop" format="boolean" />
+    <attr name="amzn_alignLocatorLeft" format="boolean" />
+    <attr name="amzn_alignLocatorBottom" format="boolean" />
+    <attr name="amzn_alignLocatorRight" format="boolean" />
+    <attr name="amzn_locatorDrawable" format="reference" />
+    <attr name="amzn_tileReplacer" format="boolean" />
+    <attr name="amzn_restrictCamera" format="boolean" />
+    <attr name="amzn_restrictCameraBounds" format="string" />
+    <attr name="mapType">
+        <enum name="hybrid" value="4" />
+        <enum name="none" value="0" />
+        <enum name="normal" value="1" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+    </attr>
+    <attr name="cameraBearing" format="float" />
+    <attr name="cameraTargetLat" format="float" />
+    <attr name="cameraTargetLng" format="float" />
+    <attr name="cameraTilt" format="float" />
+    <attr name="cameraZoom" format="float" />
+    <attr name="uiCompass" format="boolean" />
+    <attr name="uiRotateGestures" format="boolean" />
+    <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiTiltGestures" format="boolean" />
+    <attr name="uiZoomControls" format="boolean" />
+    <attr name="uiZoomGestures" format="boolean" />
+    <attr name="useViewLifecycle" format="boolean" />
+    <attr name="zOrderOnTop" format="boolean" />
+    <attr name="Rs.IsStrikethroughSpan" format="boolean" />
+    <attr name="Rs.IsBoldSpan" format="boolean" />
+    <attr name="Rs.IsLinkSpan" format="boolean" />
+    <attr name="Rs.ImageHeight" format="dimension" />
+    <attr name="Rs.ImageAlign">
+        <enum name="align_baseline" value="1" />
+        <enum name="align_bottom" value="0" />
+    </attr>
+    <attr name="Rs.ShortText" format="string" />
+    <attr name="theme">
+        <enum name="holo_dark" value="0" />
+        <enum name="holo_light" value="1" />
+    </attr>
+    <attr name="environment">
+        <enum name="production" value="1" />
+        <enum name="sandbox" value="0" />
+        <enum name="strict_sandbox" value="2" />
+    </attr>
+    <attr name="fragmentStyle" format="reference" />
+    <attr name="fragmentMode">
+        <enum name="buyButton" value="1" />
+        <enum name="selectionDetails" value="2" />
+    </attr>
+    <attr name="buyButtonHeight" format="dimension">
+        <enum name="match_parent" value="-1" />
+        <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr name="buyButtonWidth" format="dimension">
+        <enum name="match_parent" value="-1" />
+        <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr name="buyButtonText">
+        <enum name="book_now" value="3" />
+        <enum name="buy_now" value="2" />
+        <enum name="buy_with_google" value="1" />
+    </attr>
+    <attr name="buyButtonAppearance">
+        <enum name="classic" value="1" />
+        <enum name="grayscale" value="2" />
+        <enum name="monochrome" value="3" />
+    </attr>
+    <attr name="maskedWalletDetailsTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsHeaderTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsButtonTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsButtonBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsLogoTextColor" format="color" />
+    <attr name="maskedWalletDetailsLogoImageType">
+        <enum name="classic" value="1" />
+        <enum name="monochrome" value="2" />
+    </attr>
+</resources>

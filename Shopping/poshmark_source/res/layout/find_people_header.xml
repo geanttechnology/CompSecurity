@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:padding="0.0dip" android:layout_marginTop="0.0dip" style="@style/backgroundTableRowMiddle">
+        <com.poshmark.ui.customviews.PMEditText android:id="@id/searchEditTextView" android:layout_marginTop="10.0dip" android:maxLines="1" android:inputType="textNoSuggestions" android:imeOptions="actionSearch" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/formEditText" />
+        <com.poshmark.ui.customviews.PMButton android:layout_gravity="right|center" android:id="@id/searchButton" android:background="@drawable/ic_search_blue" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip" />
+    </FrameLayout>
+    <com.poshmark.ui.customviews.PMTextView android:text="@string/find_friends" style="@style/listViewSectionHeaderLight" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/findContactsLayout" android:layout_marginTop="0.0dip" style="@style/backgroundTableRowMiddle">
+        <ImageView android:layout_gravity="center_vertical" android:background="@color/bgColorWhite" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/ic_contacts_colored" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/textColorDarkGray" android:ellipsize="end" android:id="@id/contactsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contacts" android:maxLines="1" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/usernameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_contact_friends" android:maxLines="1" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/findFBFriendsLayout" android:layout_marginTop="0.0dip" style="@style/backgroundTableRowMiddle">
+        <ImageView android:layout_gravity="center_vertical" android:background="@color/bgColorWhite" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/ic_fb_colored" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/textColorDarkGray" android:ellipsize="end" android:id="@id/fbTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/facebook" android:maxLines="1" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/usernameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_facebook_friends" android:maxLines="1" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/findTwitterFriendsLayout" style="@style/backgroundTableRowMiddle">
+        <ImageView android:layout_gravity="center_vertical" android:background="@color/bgColorWhite" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/ic_twitter_colored" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/textColorDarkGray" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/twitter" android:maxLines="1" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorGray" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_twitter_friends" android:maxLines="1" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.poshmark.ui.customviews.PMTextView android:text="@string/explore" style="@style/listViewSectionHeaderLight" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/newClosetsLayout" style="@style/backgroundTableRowMiddle">
+        <ImageView android:layout_gravity="center_vertical" android:background="@color/bgColorWhite" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/ic_newcloset" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/textColorDarkGray" android:ellipsize="end" android:id="@id/newClosetsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newClosets" android:maxLines="1" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.poshmark.ui.customviews.PMTextView android:text="@string/suggestions" style="@style/listViewSectionHeaderLight" />
+</LinearLayout>

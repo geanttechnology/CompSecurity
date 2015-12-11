@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/checkout_generic_view_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/flWalletImage" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:layout_marginRight="@dimen/checkout_margin_medium" android:layout_centerVertical="true">
+        <ImageView android:id="@id/wallet_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tag" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/coupon_apply_button" android:layout_toRightOf="@id/flWalletImage" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:id="@id/coupon_wallet_row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.CheckoutTextView" />
+        <com.target.ui.view.TargetTextView android:id="@id/coupon_wallet_row_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" />
+    </LinearLayout>
+    <ImageView android:id="@id/edit_coupon_wallet_image" android:visibility="gone" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_small" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.target.ui.view.TargetButton android:enabled="true" android:id="@id/coupon_apply_button" android:visibility="gone" android:layout_width="@dimen/checkout_default_button_width" android:layout_height="@dimen/checkout_img_dimens" android:layout_marginLeft="@dimen/checkout_margin_small" android:layout_marginRight="@dimen/checkout_margin_medium" android:text="@string/checkout_apply" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CheckoutSmallButton" />
+</RelativeLayout>

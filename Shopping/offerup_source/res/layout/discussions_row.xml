@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.offerup.android.views.DynamicHeightImageView android:id="@id/profilePicImageView" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/no_profile" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/profilePicImageView" android:layout_alignTop="@id/profilePicImageView" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/discussions_list_title" android:id="@id/authorTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/discussions_list_highlight" android:id="@id/messageTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/authorTextView" android:layout_alignLeft="@id/authorTextView" />
+    </RelativeLayout>
+    <android.support.v7.widget.CardView android:layout_gravity="center" android:id="@id/discussion_offer_section" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" card_view:cardBackgroundColor="@color/white" card_view:cardCornerRadius="0.0dip" card_view:cardElevation="3.0dip" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/alerts_hours_ago" android:gravity="center_horizontal" android:id="@id/discussion_row_offer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Offered" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/alerts_hours_ago" android:id="@id/priceTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/discussion_row_offer_title" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/btn_gr_bk" android:id="@id/discussion_row_cashless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cashless!" android:layout_below="@id/priceTextView" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

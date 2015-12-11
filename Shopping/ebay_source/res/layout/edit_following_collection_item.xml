@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:id="@id/selectable" android:background="?android:windowBackground" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" res_auto:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/coverImage" android:background="@drawable/image_border" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/ebayMarginHalf" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_weight="2.0" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ebay.android.widget.RemoteImageView android:id="@id/image0" android:background="@drawable/image_border" android:layout_width="fill_parent" android:layout_height="@dimen/card_collection_small_image_height" android:layout_margin="@dimen/ebayMarginHalf" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+            <com.ebay.android.widget.RemoteImageView android:id="@id/image1" android:background="@drawable/image_border" android:layout_width="fill_parent" android:layout_height="@dimen/card_collection_small_image_height" android:layout_margin="@dimen/ebayMarginHalf" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textAppearance="@style/EbayTextAppearance.Body2" android:textColor="@color/btn_text_blue" android:layout_gravity="center_vertical" android:id="@id/remove_follow_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:text="@string/unfollow" android:drawableLeft="@drawable/ic_edit_grey" android:drawablePadding="@dimen/ebayPaddingHalf" android:layout_alignParentRight="true" style="?android:attr/borderlessButtonStyle" />
+        <include android:id="@id/collection_title_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/remove_follow_button" android:layout_alignParentLeft="true" layout="@layout/card_title_and_subtitle" />
+    </RelativeLayout>
+</com.ebay.mobile.widget.FLinearLayout>

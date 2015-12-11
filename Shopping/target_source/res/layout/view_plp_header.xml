@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/prd_plp_store_location_header" android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/prd_plp_header_map_icon" android:padding="@dimen/default_padding_margin" android:layout_width="@dimen/prd_plp_header_map_image_width" android:layout_height="@dimen/prd_plp_header_map_image_height" android:src="@drawable/icon_maps_callout" android:layout_alignParentLeft="true" android:contentDescription="@string/product_list_header_image_content_desc" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/default_padding_margin" android:paddingRight="@dimen/default_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/prd_plp_header_aisle" android:layout_toRightOf="@id/prd_plp_header_map_icon" android:layout_centerInParent="true">
+            <com.target.ui.view.TargetTextView android:paddingBottom="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/product_list_header_see_this_in_ur_store" app:fontStyle="medium" style="@style/Target.TextView.ProductList.Header.SeeThisInYourStore" />
+            <com.target.ui.view.TargetTextView android:id="@id/prd_plp_header_find_in_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.ProductList.Header.Find" />
+            <com.target.ui.view.TargetTextView android:id="@id/prd_plp_header_in_store_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.ProductList.Header.Find" />
+        </LinearLayout>
+        <com.target.ui.view.AisleBadgeView android:layout_gravity="center_vertical" android:id="@id/prd_plp_header_aisle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" app:badgeType="active" app:badgeSize="big" />
+    </RelativeLayout>
+    <com.target.ui.view.common.TargetErrorView android:id="@id/prd_plp_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_2x_padding_margin" android:layout_marginTop="@dimen/no_margin" android:layout_marginRight="@dimen/default_2x_padding_margin" android:layout_marginBottom="@dimen/default_4x_padding_margin" android:minHeight="@dimen/prd_plp_error_header_min_height_small" />
+</merge>

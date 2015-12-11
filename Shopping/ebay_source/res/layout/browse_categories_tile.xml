@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/ebayMargin" app:cardBackgroundColor="?android:windowBackground" app:cardCornerRadius="@dimen/card_view_corner_radius" app:cardUseCompatPadding="true" app:cardPreventCornerOverlap="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?android:selectableItemBackground">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/category_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" app:dynamicHeight="square" />
+        <TextView android:textAppearance="@style/EbayTextAppearanceStrong" android:gravity="left|center" android:layout_gravity="bottom" android:id="@id/category_name" android:background="@android:color/white" android:padding="@dimen/ebayMarginHalf" android:layout_width="fill_parent" android:layout_height="@dimen/category_card_text_area_height" android:maxLines="2" />
+    </FrameLayout>
+</android.support.v7.widget.CardView>

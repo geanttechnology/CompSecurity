@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/webview_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/redeem_groupon" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/redeem_groupon_id_style" />
+    <WebView android:id="@id/webview" android:padding="5.0dip" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

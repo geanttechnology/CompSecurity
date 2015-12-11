@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/upgrade_dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/upgrade_dialog_layout_margin" android:layout_marginRight="@dimen/upgrade_dialog_layout_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/upgrade_dialog_title_text_size" android:textColor="@color/upgrade_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/upgrade_dialog_view_margin_left_right" android:layout_marginTop="@dimen/upgrade_dialog_view_margin_top_bottom" android:layout_marginRight="@dimen/upgrade_dialog_view_margin_left_right" android:layout_marginBottom="@dimen/upgrade_dialog_view_margin_top_bottom" android:text="@string/upgrade_dialog_title" />
+    <View style="@style/Separator.Dialog" />
+    <TextView android:textSize="@dimen/upgrade_dialog_message_text_size" android:textColor="@color/upgrade_dialog_text" android:id="@id/upgrade_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/upgrade_dialog_view_margin_left_right" android:layout_marginTop="@dimen/upgrade_dialog_view_margin_top_bottom" android:layout_marginRight="@dimen/upgrade_dialog_view_margin_left_right" android:layout_marginBottom="@dimen/upgrade_dialog_view_margin_top_bottom" android:text="@string/upgrade_dialog_message" />
+    <View style="@style/Separator.Home.Single" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/upgrade_dialog_button_text_size" android:textColor="@color/upgrade_dialog_button" android:id="@id/upgrade_now" android:background="@color/upgrade_dialog_background" android:layout_width="0.0dip" android:layout_height="@dimen/upgrade_dialog_button_height" android:text="@string/upgrade_dialog_button_upgrade" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

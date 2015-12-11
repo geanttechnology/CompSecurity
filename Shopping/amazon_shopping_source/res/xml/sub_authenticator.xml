@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-sub-authenticator accountType="com.amazon.account">
+    <token-types>
+        <token-type name="com.amazon.venezia.tokens.adp_token" />
+        <token-type name="com.amazon.venezia.private_key" />
+        <token-type name="com.amazon.venezia.tokens.device_type" />
+        <token-type name="com.amazon.venezia.tokens.dsn" />
+        <token-type name="com.amazon.venezia.tokens.storeAuthCookie" />
+        <token-type name="com.amazon.venezia.tokens.xmain" />
+        <token-type name="com.amazon.venezia.tokens.email" />
+        <token-type name="com.amazon.venezia.tokens.device_name" />
+        <token-type name="com.amazon.venezia.tokens.user_name" />
+    </token-types>
+</account-sub-authenticator>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.retailsearch.android.ui.results.views.price.PriceList android:id="@id/rs_results_price" sx:Rs.Results.Price.ShowListPrice="true" sx:Rs.Results.Price.ShowSomePrimeMsg="true" style="@style/Results.Price.List"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sx="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/rs_results_price_line0" style="@style/Results.PriceText.List" />
+    <TextView android:id="@id/rs_results_price_line1" style="@style/Results.PriceText.List" />
+    <TextView android:id="@id/rs_results_price_line2" style="@style/Results.PriceText.List" />
+    <TextView android:id="@id/rs_results_price_savings" style="@style/Results.Savings.List" />
+    <TextView android:id="@id/rs_results_price_some_prime" style="@style/Results.SomePrime.List" />
+    <TextView android:id="@id/rs_results_price_sponsored_msg" style="@style/Results.SponsoredPriceMsg.List" />
+    <TextView android:id="@id/rs_results_in_app_purchase" style="@style/Results.InAppPurchase.List" />
+</com.amazon.retailsearch.android.ui.results.views.price.PriceList>

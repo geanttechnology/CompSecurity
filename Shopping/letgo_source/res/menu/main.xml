@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/group1">
+        <item android:icon="@drawable/icon_action_search" android:id="@id/search_item" android:visible="true" android:title="@string/menu_action_search" app:showAsAction="always" />
+        <item android:icon="@drawable/icon_action_messages" android:id="@id/messages_item" android:visible="false" android:title="@string/menu_action_chat" app:showAsAction="always" />
+    </group>
+</menu>

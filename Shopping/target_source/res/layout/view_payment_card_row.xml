@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetRadioButton android:theme="@style/AppTheme.GreenAccent" android:id="@id/payment_card_row_radio_btn" android:paddingRight="@dimen/payment_card_row_padding_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" style="@style/Target.RadioButton" />
+    <ImageView android:layout_gravity="center" android:id="@id/payment_card_row_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payment_default" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/payment_card_row_padding_text_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.target.ui.view.TargetTextView android:id="@id/payment_card_row_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_payment_card_ends_in" style="@style/Target.TextView.CardNumber" />
+        <com.target.ui.view.TargetTextView android:id="@id/payment_card_address_line" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Target.TextView.SecondaryAddress" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/payment_card_row_btn_edit" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_small" android:scaleType="center" android:contentDescription="@string/payment_card_row_edit_btn_content_desc" style="@style/GrayButtonSelectorCompat" />
+</merge>

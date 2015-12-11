@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" layout="@layout/view_cart_digital_download_fulfillment_container" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" layout="@layout/view_cart_preorder_fulfillment_container" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" layout="@layout/view_cart_gift_card_fulfillment_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/standard_fulfillment_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" layout="@layout/view_cart_puis_fulfillment_container" />
+        <include layout="@layout/view_cart_separator" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" layout="@layout/view_cart_ship_home_fulfillment_container" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/suggestedBrandsRowContainer" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/brandImageFrameLayout1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <com.poshmark.ui.customviews.PMClickableImageView android:id="@id/suggestedBrandLogo1" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center" android:background="@drawable/bg_curved_burgundy_semi_transparent" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_checkmark_white" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/brandImageFrameLayout2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <com.poshmark.ui.customviews.PMClickableImageView android:id="@id/suggestedBrandLogo2" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center" android:background="@drawable/bg_curved_burgundy_semi_transparent" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_checkmark_white" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/brandImageFrameLayout3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <com.poshmark.ui.customviews.PMClickableImageView android:id="@id/suggestedBrandLogo3" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center" android:background="@drawable/bg_curved_burgundy_semi_transparent" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_checkmark_white" />
+    </FrameLayout>
+</LinearLayout>

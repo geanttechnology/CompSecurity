@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/toggle_default_left_off_amzn" />
+    <item android:state_selected="true" android:drawable="@drawable/toggle_default_left_on_amzn" />
+    <item android:state_checked="true" android:drawable="@drawable/toggle_default_left_on_amzn" />
+    <item android:drawable="@drawable/toggle_default_left_off_amzn" />
+</selector>

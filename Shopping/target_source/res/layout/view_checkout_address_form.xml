@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.common.NameView android:id="@id/shipping_address_name_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.target.ui.view.checkout.AddressView android:id="@id/shipping_address_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/address_phone_number_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewId="@id/address_phone_number">
+        <com.target.ui.view.TargetEditText android:id="@id/address_phone_number" android:layout_width="fill_parent" android:hint="@string/checkout_shipping_phone_hint" app:fontStyle="light" style="@style/Target.Edit.PhoneNumber" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+</merge>

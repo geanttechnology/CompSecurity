@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/prime_upsell_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_save_label" style="@style/Button.Gold.Arrow" />
+    <CheckBox android:id="@id/prime_upsell_clear_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_upsell_clear_user_data" />
+    <CheckBox android:id="@id/prime_force_eligible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_upsell_force_eligible" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_upsell_mode" style="@style/Header" />
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/prime_upsell_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_upsell_mode_never" />
+        <RadioButton android:id="@id/prime_upsell_always" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_upsell_mode_always" />
+        <RadioButton android:id="@id/prime_upsell_once" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_upsell_mode_less_than_maximum" />
+    </RadioGroup>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_upsell_url" style="@style/Header" />
+    <EditText android:id="@id/prime_upsell_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textUri" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_upsell_maximum_to_show" style="@style/Header" />
+    <EditText android:id="@id/prime_upsell_maximum_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="number" />
+</LinearLayout>

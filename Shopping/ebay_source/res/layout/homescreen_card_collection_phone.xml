@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" app:cardBackgroundColor="?android:windowBackground" app:cardCornerRadius="@dimen/card_view_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/title" android:text="@string/collections" style="@style/EbayTextAppearance.CardTitle" />
+        <include android:id="@id/card_item_1" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/homescreen_card_collection_item" />
+        <include android:id="@id/collection_separator" layout="@layout/homescreen_card_horizontal_divider" />
+        <include android:id="@id/card_item_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" layout="@layout/homescreen_card_collection_item" />
+        <include android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayButton" layout="@layout/homescreen_card_see_more_button" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

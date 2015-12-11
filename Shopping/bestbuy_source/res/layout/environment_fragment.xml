@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ccffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <RelativeLayout android:background="@drawable/btn_search" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/done" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:text="@string/DONE" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/env_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:text="@string/mdot_text" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <RadioGroup android:orientation="vertical" android:background="@drawable/environment_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:checkedButton="@id/environment_mdot_prod">
+                <RadioButton android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/environment_mdot_prod" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="18.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/production" />
+                <RadioButton android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/environment_mdot_qa1" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="18.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/qa1" />
+                <RadioButton android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/environment_mdot_qa2" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="18.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/qa2" />
+                <RadioButton android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/environment_mdot_qa3" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="18.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/qa3" />
+                <RadioButton android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/environment_mdot_cdc" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="18.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cdc" />
+            </RadioGroup>
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:text="@string/geolocation_text" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/environment_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+                    <com.bestbuy.android.bbyobjects.BBYTextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goelocation_radius" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                    <EditText android:textColor="@color/black" android:id="@id/environment_geofence_radius" android:layout_width="70.0dip" android:layout_height="wrap_content" android:ems="10" android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+                    <com.bestbuy.android.bbyobjects.BBYTextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/geofence" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                    <ToggleButton android:id="@id/environment_geofence_inspot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="On" android:textOff="Off" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:text="@string/bloodhound_text" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/environment_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+                    <com.bestbuy.android.bbyobjects.BBYTextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bloodhound" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                    <ToggleButton android:id="@id/environment_bloodout_use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="On" android:textOff="Off" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+                    <com.bestbuy.android.bbyobjects.BBYTextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bloodhoundproxy_url" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                    <EditText android:textColor="@color/black" android:id="@id/environment_bloodhound_proxy" android:layout_width="70.0dip" android:layout_height="wrap_content" android:ems="10" android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

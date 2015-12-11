@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/cart_item_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cart_default_less_padding_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.BitmapImageView android:id="@id/cart_free_item_product_image" android:paddingLeft="@dimen/cart_default_more_padding_margin" android:layout_width="@dimen/cart_image" android:layout_height="@dimen/cart_image" android:scaleType="centerInside" android:contentDescription="@string/cart_product_image_content_desc" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:id="@id/free_item_title" android:padding="@dimen/cart_default_more_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.ProductTitle" />
+        <include layout="@layout/view_cart_separator" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/quantity_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cart_price_margin">
+            <com.target.ui.view.TargetTextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cart_free_item" app:fontStyle="medium" style="@style/Target.TextView.ProductPrice" />
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/x_largeTextSize" android:textColor="@color/target_neutral_grey" android:gravity="center_vertical" android:id="@id/free_item_quantity_multiplier" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/cart_default_less_padding_margin" android:text="@string/cart_free_item_quantity" app:fontStyle="light" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

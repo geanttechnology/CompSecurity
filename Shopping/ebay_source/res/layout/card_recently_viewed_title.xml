@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/EbayTextAppearanceMedium" android:ellipsize="end" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/card_title_min_height" android:text="@string/channel_recently_reviewed" android:lines="1" android:layout_weight="1.0" android:paddingStart="@dimen/ebayPadding2x" android:paddingEnd="@dimen/ebayPadding2x" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceSmall" android:textColor="@color/style_guide_blue" android:gravity="center_vertical" android:id="@id/editButton" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/card_title_min_height" android:text="@string/edit" android:fontFamily="sans-serif" android:paddingStart="@dimen/ebayPadding2x" android:paddingEnd="@dimen/ebayPadding2x" />
+</LinearLayout>

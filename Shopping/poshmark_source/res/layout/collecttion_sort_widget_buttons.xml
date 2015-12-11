@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMButton android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/textColorWhite" android:id="@id/sort_all_button" android:background="@drawable/bg_tri_button_left" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/all" android:layout_weight="1.0" />
+    <com.poshmark.ui.customviews.PMButton android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/textColorWhite" android:id="@id/sort_justin_button" android:background="@drawable/bg_tri_button_center" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/just_in" android:layout_weight="1.0" />
+    <com.poshmark.ui.customviews.PMButton android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/textColorWhite" android:id="@id/sort_pricedrop_button" android:background="@drawable/bg_tri_button_right" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/price_drop" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,4710 @@
+# --table-start--
+dataClass=com.groupon.db.models.AbstractBusiness
+tableName=abstractbusiness
+# --table-fields-start--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=distance
+# --field-end--
+# --field-start--
+fieldName=heroImageUrl
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.AbstractCoupon
+tableName=abstractcoupon
+# --table-fields-start--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=displayType
+# --field-end--
+# --field-start--
+fieldName=isExclusive
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantHiresLogoUrl
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantLogoUrl
+# --field-end--
+# --field-start--
+fieldName=merchantUuid
+# --field-end--
+# --field-start--
+fieldName=productImageUrl
+# --field-end--
+# --field-start--
+fieldName=instoreOffer
+# --field-end--
+# --field-start--
+fieldName=onlineOffer
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.AbstractDeal
+tableName=abstractdeal
+# --table-fields-start--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=announcementTitle
+# --field-end--
+# --field-start--
+fieldName=largeImageUrl
+# --field-end--
+# --field-start--
+fieldName=sidebarImageUrl
+# --field-end--
+# --field-start--
+fieldName=soldQuantityMessage
+# --field-end--
+# --field-start--
+fieldName=endAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=isSoldOut
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=soldQuantity
+# --field-end--
+# --field-start--
+fieldName=grouponRating
+# --field-end--
+# --field-start--
+fieldName=endRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=area_name
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=divisionName
+# --field-end--
+# --field-start--
+fieldName=isTravelBookableDeal
+# --field-end--
+# --field-start--
+fieldName=redemptionLocation
+# --field-end--
+# --field-start--
+fieldName=displayOptions
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=channels
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=badges
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=bookableSegments
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=derivedRedemptionLocations
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=secondLevelDealCategories
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=derivedMinimumPurchaseQuantity
+# --field-end--
+# --field-start--
+fieldName=derivedDiscountPercent
+# --field-end--
+# --field-start--
+fieldName=optionLocationCount
+# --field-end--
+# --field-start--
+fieldName=derivedLocationName
+# --field-end--
+# --field-start--
+fieldName=derivedLocationNeighborhood
+# --field-end--
+# --field-start--
+fieldName=derivedLocationCity
+# --field-end--
+# --field-start--
+fieldName=derivedPriceAmount
+# --field-end--
+# --field-start--
+fieldName=derivedPriceFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedPriceCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferLabelDescriptive
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferLabel
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferType
+# --field-end--
+# --field-start--
+fieldName=derivedValueAmount
+# --field-end--
+# --field-start--
+fieldName=derivedValueFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedValueCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceAmount
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferBeginsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferEndsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=optionDimensionsCount
+# --field-end--
+# --field-start--
+fieldName=hasImagesForOptions
+# --field-end--
+# --field-start--
+fieldName=defaultOptionId
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantName
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantRecommendationPercentMessage
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantRecommendationTotalMessage
+# --field-end--
+# --field-start--
+fieldName=derivedOptionEndRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=incentivePromotionType
+# --field-end--
+# --field-start--
+fieldName=incentivePromoCode
+# --field-end--
+# --field-start--
+fieldName=incentiveShortMessage
+# --field-end--
+# --field-start--
+fieldName=incentiveLongMessage
+# --field-end--
+# --field-start--
+fieldName=incentiveExpiryDate
+# --field-end--
+# --field-start--
+fieldName=derivedIsGLiveDeal
+# --field-end--
+# --field-start--
+fieldName=firstOptionTitle
+# --field-end--
+# --field-start--
+fieldName=isConnectedMarketPlaceDeal
+# --field-end--
+# --field-start--
+fieldName=connectedMarketPlaceDisplayText
+# --field-end--
+# --field-start--
+fieldName=derivedImageUrl
+# --field-end--
+# --field-start--
+fieldName=derivedTrackingPosition
+# --field-end--
+# --field-start--
+fieldName=derivedActualPosition
+# --field-end--
+# --field-start--
+fieldName=derivedHasBookableOrSchedulableOptions
+# --field-end--
+# --field-start--
+fieldName=derivedHasHasExternalUrl
+# --field-end--
+# --field-start--
+fieldName=derivedOptionsCount
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Band
+tableName=Band
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+indexName=Band_channel_idx
+# --field-end--
+# --field-start--
+fieldName=derivedTrackingPosition
+# --field-end--
+# --field-start--
+fieldName=derivedActualPosition
+# --field-end--
+# --field-start--
+fieldName=message
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.BillingRecord
+tableName=BillingRecords
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueIndexName=BillingRecords_remoteId_idx
+# --field-end--
+# --field-start--
+fieldName=cardNumber
+# --field-end--
+# --field-start--
+fieldName=paymentType
+# --field-end--
+# --field-start--
+fieldName=postalCode
+# --field-end--
+# --field-start--
+fieldName=country
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=cardType
+# --field-end--
+# --field-start--
+fieldName=city
+# --field-end--
+# --field-start--
+fieldName=expirationMonth
+# --field-end--
+# --field-start--
+fieldName=firstName
+# --field-end--
+# --field-start--
+fieldName=state
+# --field-end--
+# --field-start--
+fieldName=isDefault
+# --field-end--
+# --field-start--
+fieldName=isShippingAddressRequired
+# --field-end--
+# --field-start--
+fieldName=streetAddress1
+# --field-end--
+# --field-start--
+fieldName=expirationYear
+# --field-end--
+# --field-start--
+fieldName=lastName
+# --field-end--
+# --field-start--
+fieldName=requireCVV
+# --field-end--
+# --field-start--
+fieldName=billingRecordId
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.BookableSegments
+tableName=bookablesegments
+# --table-fields-start--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=startsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=endsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=exactMatch
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.BugReportEmail
+tableName=BugReportEmails
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=emailSubject
+# --field-end--
+# --field-start--
+fieldName=emailRecipient
+# --field-end--
+# --field-start--
+fieldName=emailBody
+# --field-end--
+# --field-start--
+fieldName=screenshotFileName
+# --field-end--
+# --field-start--
+fieldName=sendCount
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Business
+tableName=Business
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=Business_channel_idx
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=descriptionHtml
+# --field-end--
+# --field-start--
+fieldName=titleHtml
+# --field-end--
+# --field-start--
+fieldName=website
+# --field-end--
+# --field-start--
+fieldName=businessUrl
+# --field-end--
+# --field-start--
+fieldName=isExactMatch
+columnName=isExactMatch
+# --field-end--
+# --field-start--
+fieldName=phoneNumber
+# --field-end--
+# --field-start--
+fieldName=divisionName
+# --field-end--
+# --field-start--
+fieldName=divisionPermalink
+# --field-end--
+# --field-start--
+fieldName=tipCount
+# --field-end--
+# --field-start--
+fieldName=requestedDeal
+# --field-end--
+# --field-start--
+fieldName=requestedDealMessage
+# --field-end--
+# --field-start--
+fieldName=percentMessage
+# --field-end--
+# --field-start--
+fieldName=totalMessage
+# --field-end--
+# --field-start--
+fieldName=recommend
+# --field-end--
+# --field-start--
+fieldName=openHoursMap
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=hasDeals
+# --field-end--
+# --field-start--
+fieldName=derivedTrackingPosition
+# --field-end--
+# --field-start--
+fieldName=derivedActualPosition
+# --field-end--
+# --field-start--
+fieldName=hasSpecials
+# --field-end--
+# --field-start--
+fieldName=firstSpecialName
+# --field-end--
+# --field-start--
+fieldName=categorizationFriendlyName
+# --field-end--
+# --field-start--
+fieldName=orderingListString
+# --field-end--
+# --field-start--
+fieldName=locations
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentBusiness
+# --field-end--
+# --field-start--
+fieldName=specials
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentBusiness
+# --field-end--
+# --field-start--
+fieldName=deals
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentBusiness
+# --field-end--
+# --field-start--
+fieldName=tips
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentBusiness
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=distance
+# --field-end--
+# --field-start--
+fieldName=heroImageUrl
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.BusinessSummary
+tableName=BusinessSummaries
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=BusinessSummaries_channel_idx
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=streetAddress1
+# --field-end--
+# --field-start--
+fieldName=streetNumber
+# --field-end--
+# --field-start--
+fieldName=city
+# --field-end--
+# --field-start--
+fieldName=lat
+# --field-end--
+# --field-start--
+fieldName=lng
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=distance
+# --field-end--
+# --field-start--
+fieldName=heroImageUrl
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.CategorizationItem
+tableName=CategorizationItem
+# --table-fields-start--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=CategorizationItem__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentCategorizationItem
+columnName=_categorization_item_id
+foreign=true
+indexName=CategorizationItem__categorization_item_id_idx
+columnDefinition=integer references categorizationItem(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=children
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentCategorizationItem
+# --field-end--
+# --field-start--
+fieldName=friendlyName
+# --field-end--
+# --field-start--
+fieldName=id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Category
+tableName=Category
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=slug
+# --field-end--
+# --field-start--
+fieldName=iconUrl
+# --field-end--
+# --field-start--
+fieldName=parentSpecial
+columnName=_special_id
+foreign=true
+indexName=Category__special_id_idx
+columnDefinition=integer references Special(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.CollectionCardAttribute
+tableName=CollectionCardAttribute
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=parentCollection
+columnName=_collection_id
+foreign=true
+indexName=CollectionCardAttribute__collection_id_idx
+columnDefinition=integer references DealCollection(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentUUID
+uniqueCombo=true
+indexName=CollectionCardAttribute_parentUUID_idx
+# --field-end--
+# --field-start--
+fieldName=name
+uniqueCombo=true
+indexName=CollectionCardAttribute_name_idx
+# --field-end--
+# --field-start--
+fieldName=value
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.CouponCategory
+tableName=CouponCategory
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=CouponCategory_channel_idx
+# --field-end--
+# --field-start--
+fieldName=remoteId
+canBeNull=false
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=slug
+# --field-end--
+# --field-start--
+fieldName=parentSlug
+# --field-end--
+# --field-start--
+fieldName=thumbnailImageUrl
+# --field-end--
+# --field-start--
+fieldName=instoreCouponsCount
+# --field-end--
+# --field-start--
+fieldName=onlineCouponsCount
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.CouponDetail
+tableName=CouponDetails
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueIndexName=CouponDetails_remoteId_idx
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=code
+# --field-end--
+# --field-start--
+fieldName=restrictions
+# --field-end--
+# --field-start--
+fieldName=trackingUrl
+# --field-end--
+# --field-start--
+fieldName=startsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=endsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=buttonAction
+# --field-end--
+# --field-start--
+fieldName=customLogoUrl
+# --field-end--
+# --field-start--
+fieldName=prettyEndsOn
+# --field-end--
+# --field-start--
+fieldName=couponMerchant
+columnName=_coupon_merchant_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=displayType
+# --field-end--
+# --field-start--
+fieldName=isExclusive
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantHiresLogoUrl
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantLogoUrl
+# --field-end--
+# --field-start--
+fieldName=merchantUuid
+# --field-end--
+# --field-start--
+fieldName=productImageUrl
+# --field-end--
+# --field-start--
+fieldName=instoreOffer
+# --field-end--
+# --field-start--
+fieldName=onlineOffer
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.CouponMerchant
+tableName=CouponMerchant
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=CouponMerchant_channel_idx
+# --field-end--
+# --field-start--
+fieldName=remoteId
+canBeNull=false
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=slug
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=logoUrl
+# --field-end--
+# --field-start--
+fieldName=hiresLogoUrl
+# --field-end--
+# --field-start--
+fieldName=homepageUrl
+# --field-end--
+# --field-start--
+fieldName=instoreCouponsCount
+# --field-end--
+# --field-start--
+fieldName=onlineCouponsCount
+# --field-end--
+# --field-start--
+fieldName=customLogoUrl
+# --field-end--
+# --field-start--
+fieldName=merchantLocations
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentCouponMerchant
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.CouponMerchantPagination
+tableName=couponmerchantpagination
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+indexName=couponmerchantpagination_channel_idx
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=count
+# --field-end--
+# --field-start--
+fieldName=currentOffset
+# --field-end--
+# --field-start--
+fieldName=nextOffset
+# --field-end--
+# --field-start--
+fieldName=hasMorePages
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.CouponPagination
+tableName=couponpagination
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+indexName=couponpagination_channel_idx
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=count
+# --field-end--
+# --field-start--
+fieldName=currentOffset
+# --field-end--
+# --field-start--
+fieldName=nextOffset
+# --field-end--
+# --field-start--
+fieldName=hasMorePages
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.CouponSummary
+tableName=CouponSummaries
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=CouponSummaries_channel_idx
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=displayType
+# --field-end--
+# --field-start--
+fieldName=isExclusive
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantHiresLogoUrl
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantLogoUrl
+# --field-end--
+# --field-start--
+fieldName=merchantUuid
+# --field-end--
+# --field-start--
+fieldName=productImageUrl
+# --field-end--
+# --field-start--
+fieldName=instoreOffer
+# --field-end--
+# --field-start--
+fieldName=onlineOffer
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.CustomField
+tableName=CustomFields
+# --table-fields-start--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=CustomFields__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=label
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=possibleValues
+# --field-end--
+# --field-start--
+fieldName=required
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Deal
+tableName=Deals
+# --table-fields-start--
+# --field-start--
+fieldName=remoteId
+uniqueIndexName=Deals_remoteId_idx
+# --field-end--
+# --field-start--
+fieldName=parentBusiness
+columnName=_business_id
+foreign=true
+indexName=Deals__business_id_idx
+columnDefinition=integer references Business(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=pitchHtml
+# --field-end--
+# --field-start--
+fieldName=highlightsHtml
+# --field-end--
+# --field-start--
+fieldName=shippingAddressRequired
+# --field-end--
+# --field-start--
+fieldName=specificAttributesWhatYouGetHtml
+# --field-end--
+# --field-start--
+fieldName=specificAttributesHowToGetThereHtml
+# --field-end--
+# --field-start--
+fieldName=specificAttributesTravelersTipsHtml
+# --field-end--
+# --field-start--
+fieldName=specificAttributesAmenitiesHtml
+# --field-end--
+# --field-start--
+fieldName=specificAttributesReservationsHtml
+# --field-end--
+# --field-start--
+fieldName=isApplyButton
+# --field-end--
+# --field-start--
+fieldName=expiresAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=startRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=timezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=maximumPurchaseQuantity
+# --field-end--
+# --field-start--
+fieldName=minimumPurchaseQuantity
+# --field-end--
+# --field-start--
+fieldName=remainingQuantity
+# --field-end--
+# --field-start--
+fieldName=discountPercent
+# --field-end--
+# --field-start--
+fieldName=allowedInCart
+# --field-end--
+# --field-start--
+fieldName=shouldDisplayMap
+# --field-end--
+# --field-start--
+fieldName=shouldDisplayLocation
+# --field-end--
+# --field-start--
+fieldName=dealUrl
+# --field-end--
+# --field-start--
+fieldName=isOptionListComplete
+# --field-end--
+# --field-start--
+fieldName=isGiftable
+# --field-end--
+# --field-start--
+fieldName=fulfillmentMethod
+# --field-end--
+# --field-start--
+fieldName=traitPositionMap
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=price
+columnName=_price_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=value
+columnName=_value_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=discount
+columnName=_discount_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=division
+columnName=_division_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=merchant
+columnName=_merchant_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=externalDealProvider
+columnName=_external_deal_provider_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=options
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionMaxEagerLevel=3
+foreignCollectionForeignFieldName=parentDeal
+# --field-end--
+# --field-start--
+fieldName=dealTypes
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentDeal
+# --field-end--
+# --field-start--
+fieldName=categorizations
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentDeal
+# --field-end--
+# --field-start--
+fieldName=incentives
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentDeal
+# --field-end--
+# --field-start--
+fieldName=videos
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentDeal
+# --field-end--
+# --field-start--
+fieldName=legalDisclosures
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentDeal
+# --field-end--
+# --field-start--
+fieldName=images
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentDeal
+# --field-end--
+# --field-start--
+fieldName=uiTreatment
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentDeal
+# --field-end--
+# --field-start--
+fieldName=parentWidgetSummary
+columnName=_widget_summaries_id
+foreign=true
+indexName=Deals__widget_summaries_id_idx
+columnDefinition=integer references widgetSummaries(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=announcementTitle
+# --field-end--
+# --field-start--
+fieldName=largeImageUrl
+# --field-end--
+# --field-start--
+fieldName=sidebarImageUrl
+# --field-end--
+# --field-start--
+fieldName=soldQuantityMessage
+# --field-end--
+# --field-start--
+fieldName=endAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=isSoldOut
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=soldQuantity
+# --field-end--
+# --field-start--
+fieldName=grouponRating
+# --field-end--
+# --field-start--
+fieldName=endRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=area_name
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=divisionName
+# --field-end--
+# --field-start--
+fieldName=isTravelBookableDeal
+# --field-end--
+# --field-start--
+fieldName=redemptionLocation
+# --field-end--
+# --field-start--
+fieldName=displayOptions
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=channels
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=badges
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=bookableSegments
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=derivedRedemptionLocations
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=secondLevelDealCategories
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=derivedMinimumPurchaseQuantity
+# --field-end--
+# --field-start--
+fieldName=derivedDiscountPercent
+# --field-end--
+# --field-start--
+fieldName=optionLocationCount
+# --field-end--
+# --field-start--
+fieldName=derivedLocationName
+# --field-end--
+# --field-start--
+fieldName=derivedLocationNeighborhood
+# --field-end--
+# --field-start--
+fieldName=derivedLocationCity
+# --field-end--
+# --field-start--
+fieldName=derivedPriceAmount
+# --field-end--
+# --field-start--
+fieldName=derivedPriceFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedPriceCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferLabelDescriptive
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferLabel
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferType
+# --field-end--
+# --field-start--
+fieldName=derivedValueAmount
+# --field-end--
+# --field-start--
+fieldName=derivedValueFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedValueCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceAmount
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferBeginsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferEndsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=optionDimensionsCount
+# --field-end--
+# --field-start--
+fieldName=hasImagesForOptions
+# --field-end--
+# --field-start--
+fieldName=defaultOptionId
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantName
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantRecommendationPercentMessage
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantRecommendationTotalMessage
+# --field-end--
+# --field-start--
+fieldName=derivedOptionEndRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=incentivePromotionType
+# --field-end--
+# --field-start--
+fieldName=incentivePromoCode
+# --field-end--
+# --field-start--
+fieldName=incentiveShortMessage
+# --field-end--
+# --field-start--
+fieldName=incentiveLongMessage
+# --field-end--
+# --field-start--
+fieldName=incentiveExpiryDate
+# --field-end--
+# --field-start--
+fieldName=derivedIsGLiveDeal
+# --field-end--
+# --field-start--
+fieldName=firstOptionTitle
+# --field-end--
+# --field-start--
+fieldName=isConnectedMarketPlaceDeal
+# --field-end--
+# --field-start--
+fieldName=connectedMarketPlaceDisplayText
+# --field-end--
+# --field-start--
+fieldName=derivedImageUrl
+# --field-end--
+# --field-start--
+fieldName=derivedTrackingPosition
+# --field-end--
+# --field-start--
+fieldName=derivedActualPosition
+# --field-end--
+# --field-start--
+fieldName=derivedHasBookableOrSchedulableOptions
+# --field-end--
+# --field-start--
+fieldName=derivedHasHasExternalUrl
+# --field-end--
+# --field-start--
+fieldName=derivedOptionsCount
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.DealCollection
+tableName=DealCollection
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=DealCollection_channel_idx
+# --field-end--
+# --field-start--
+fieldName=uuid
+columnName=uuid
+uniqueCombo=true
+indexName=DealCollection_uuid_idx
+# --field-end--
+# --field-start--
+fieldName=templateId
+# --field-end--
+# --field-start--
+fieldName=templateView
+# --field-end--
+# --field-start--
+fieldName=templateVersion
+# --field-end--
+# --field-start--
+fieldName=rapiFilter
+# --field-end--
+# --field-start--
+fieldName=derivedTrackingPosition
+# --field-end--
+# --field-start--
+fieldName=derivedActualPosition
+# --field-end--
+# --field-start--
+fieldName=cardDetails
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentCollection
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.DealSubsetAttribute
+tableName=DealSubsetAttributes
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+indexName=DealSubsetAttributes_channel_idx
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueIndexName=DealSubsetAttributes_remoteId_idx
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=subtitle
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.DealSummary
+tableName=DealSummaries
+# --table-fields-start--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=DealSummaries_channel_idx
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=parentWidgetSummary
+columnName=_widget_summaries_id
+foreign=true
+indexName=DealSummaries__widget_summaries_id_idx
+columnDefinition=integer references widgetSummaries(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=derivedIsSmuggled
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=announcementTitle
+# --field-end--
+# --field-start--
+fieldName=largeImageUrl
+# --field-end--
+# --field-start--
+fieldName=sidebarImageUrl
+# --field-end--
+# --field-start--
+fieldName=soldQuantityMessage
+# --field-end--
+# --field-start--
+fieldName=endAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=isSoldOut
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=soldQuantity
+# --field-end--
+# --field-start--
+fieldName=grouponRating
+# --field-end--
+# --field-start--
+fieldName=endRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=area_name
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=divisionName
+# --field-end--
+# --field-start--
+fieldName=isTravelBookableDeal
+# --field-end--
+# --field-start--
+fieldName=redemptionLocation
+# --field-end--
+# --field-start--
+fieldName=displayOptions
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=channels
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=badges
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=bookableSegments
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=derivedRedemptionLocations
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=secondLevelDealCategories
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=derivedMinimumPurchaseQuantity
+# --field-end--
+# --field-start--
+fieldName=derivedDiscountPercent
+# --field-end--
+# --field-start--
+fieldName=optionLocationCount
+# --field-end--
+# --field-start--
+fieldName=derivedLocationName
+# --field-end--
+# --field-start--
+fieldName=derivedLocationNeighborhood
+# --field-end--
+# --field-start--
+fieldName=derivedLocationCity
+# --field-end--
+# --field-start--
+fieldName=derivedPriceAmount
+# --field-end--
+# --field-start--
+fieldName=derivedPriceFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedPriceCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferLabelDescriptive
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferLabel
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferType
+# --field-end--
+# --field-start--
+fieldName=derivedValueAmount
+# --field-end--
+# --field-start--
+fieldName=derivedValueFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedValueCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceAmount
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferBeginsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferEndsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=optionDimensionsCount
+# --field-end--
+# --field-start--
+fieldName=hasImagesForOptions
+# --field-end--
+# --field-start--
+fieldName=defaultOptionId
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantName
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantRecommendationPercentMessage
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantRecommendationTotalMessage
+# --field-end--
+# --field-start--
+fieldName=derivedOptionEndRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=incentivePromotionType
+# --field-end--
+# --field-start--
+fieldName=incentivePromoCode
+# --field-end--
+# --field-start--
+fieldName=incentiveShortMessage
+# --field-end--
+# --field-start--
+fieldName=incentiveLongMessage
+# --field-end--
+# --field-start--
+fieldName=incentiveExpiryDate
+# --field-end--
+# --field-start--
+fieldName=derivedIsGLiveDeal
+# --field-end--
+# --field-start--
+fieldName=firstOptionTitle
+# --field-end--
+# --field-start--
+fieldName=isConnectedMarketPlaceDeal
+# --field-end--
+# --field-start--
+fieldName=connectedMarketPlaceDisplayText
+# --field-end--
+# --field-start--
+fieldName=derivedImageUrl
+# --field-end--
+# --field-start--
+fieldName=derivedTrackingPosition
+# --field-end--
+# --field-start--
+fieldName=derivedActualPosition
+# --field-end--
+# --field-start--
+fieldName=derivedHasBookableOrSchedulableOptions
+# --field-end--
+# --field-start--
+fieldName=derivedHasHasExternalUrl
+# --field-end--
+# --field-start--
+fieldName=derivedOptionsCount
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.DealType
+tableName=DealTypes
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=DealTypes__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.DeliveryEstimation
+tableName=DeliveryEstimation
+# --table-fields-start--
+# --field-start--
+fieldName=dealUuid
+unique=true
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=estimatesMap
+dataPersister=SERIALIZABLE
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Division
+tableName=Division
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=timezone
+# --field-end--
+# --field-start--
+fieldName=timezoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=timezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=id
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=lng
+# --field-end--
+# --field-start--
+fieldName=lat
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=Division__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.ExternalDealProvider
+tableName=ExternalDealProvider
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=ExternalDealProvider__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Finder
+tableName=Finder
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=Finder_channel_idx
+# --field-end--
+# --field-start--
+fieldName=uuid
+columnName=uuid
+uniqueCombo=true
+indexName=Finder_uuid_idx
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=derivedTrackingPosition
+# --field-end--
+# --field-start--
+fieldName=derivedActualPosition
+# --field-end--
+# --field-start--
+fieldName=titleText
+# --field-end--
+# --field-start--
+fieldName=titleTextColor
+# --field-end--
+# --field-start--
+fieldName=discountText
+# --field-end--
+# --field-start--
+fieldName=discountTextColor
+# --field-end--
+# --field-start--
+fieldName=callToActionTextColor
+# --field-end--
+# --field-start--
+fieldName=callToActionText
+# --field-end--
+# --field-start--
+fieldName=backgroundImage
+# --field-end--
+# --field-start--
+fieldName=callToActionImage
+# --field-end--
+# --field-start--
+fieldName=iconImage
+# --field-end--
+# --field-start--
+fieldName=deepLink
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.GiftingCategory
+tableName=GiftingCategory
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueIndexName=GiftingCategory_remoteId_idx
+# --field-end--
+# --field-start--
+fieldName=displayName
+uniqueIndexName=GiftingCategory_displayName_idx
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.GiftingTheme
+tableName=GiftingTheme
+# --table-fields-start--
+# --field-start--
+fieldName=id
+# --field-end--
+# --field-start--
+fieldName=remoteId
+canBeNull=false
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=imageThumbnailUrl
+# --field-end--
+# --field-start--
+fieldName=imageBackgroundUrl
+# --field-end--
+# --field-start--
+fieldName=categoryUuid
+canBeNull=false
+uniqueCombo=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.GiftWrappingCharge
+tableName=GiftWrappingCharge
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=amount
+# --field-end--
+# --field-start--
+fieldName=formattedAmount
+# --field-end--
+# --field-start--
+fieldName=currencyCode
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=GiftWrappingCharge__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Hotel
+tableName=Hotel
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=mediumImageUrl
+# --field-end--
+# --field-start--
+fieldName=phoneNumber
+# --field-end--
+# --field-start--
+fieldName=bucksPercentage
+# --field-end--
+# --field-start--
+fieldName=hotelRating
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=hotelAmenities
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=roomAmenities
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=bucksDisclaimer
+# --field-end--
+# --field-start--
+fieldName=roomRateDisclaimer
+# --field-end--
+# --field-start--
+fieldName=timeZone
+# --field-end--
+# --field-start--
+fieldName=timeZoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=active
+# --field-end--
+# --field-start--
+fieldName=derivedHotelAddressStreetAddress1
+# --field-end--
+# --field-start--
+fieldName=derivedHotelAddressStreetAddress2
+# --field-end--
+# --field-start--
+fieldName=derivedHotelAddressCity
+# --field-end--
+# --field-start--
+fieldName=derivedHotelAddressState
+# --field-end--
+# --field-start--
+fieldName=derivedHotelAddressPostalCode
+# --field-end--
+# --field-start--
+fieldName=derivedHotelAddressCountry
+# --field-end--
+# --field-start--
+fieldName=derivedHotelAddressLat
+# --field-end--
+# --field-start--
+fieldName=derivedHotelAddressLng
+# --field-end--
+# --field-start--
+fieldName=marketRateResult
+columnName=_marketrateresult_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=hotelReviews
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionMaxEagerLevel=2
+foreignCollectionForeignFieldName=parentHotel
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.HotelReview
+tableName=HotelReview
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=rating
+# --field-end--
+# --field-start--
+fieldName=userLocation
+# --field-end--
+# --field-start--
+fieldName=publishedDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=languageCode
+# --field-end--
+# --field-start--
+fieldName=body
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=userName
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=parentHotelReviews
+columnName=_hotel_reviews_id
+foreign=true
+indexName=HotelReview__hotel_reviews_id_idx
+columnDefinition=integer references HotelReviews(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.HotelReviews
+tableName=HotelReviews
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=sourceType
+# --field-end--
+# --field-start--
+fieldName=rating
+# --field-end--
+# --field-start--
+fieldName=reviewCount
+# --field-end--
+# --field-start--
+fieldName=percentRecommended
+# --field-end--
+# --field-start--
+fieldName=parentHotel
+columnName=_hotel_id
+foreign=true
+indexName=HotelReviews__hotel_id_idx
+columnDefinition=integer references hotel(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=reviews
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentHotelReviews
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Image
+tableName=Images
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=Images__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=Images__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.InAppMessage
+tableName=InAppMessages
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueIndexName=InAppMessages_remoteId_idx
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=context
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=message
+# --field-end--
+# --field-start--
+fieldName=target
+# --field-end--
+# --field-start--
+fieldName=startAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=endAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=timestamp
+# --field-end--
+# --field-start--
+fieldName=viewed
+# --field-end--
+# --field-start--
+fieldName=read
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Incentive
+tableName=Incentives
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=shortMessage
+# --field-end--
+# --field-start--
+fieldName=longMessage
+# --field-end--
+# --field-start--
+fieldName=expiresAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=promotionCode
+# --field-end--
+# --field-start--
+fieldName=promotionType
+# --field-end--
+# --field-start--
+fieldName=faqUrl
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=Incentives__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.InventoryService
+tableName=InventoryService
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=id
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=InventoryService__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.LegalDisclosure
+tableName=LegalDisclosures
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=line1
+# --field-end--
+# --field-start--
+fieldName=line2
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=LegalDisclosures__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=LegalDisclosures__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Location
+tableName=Locations
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=neighborhood
+# --field-end--
+# --field-start--
+fieldName=city
+# --field-end--
+# --field-start--
+fieldName=streetAddress1
+# --field-end--
+# --field-start--
+fieldName=streetAddress2
+# --field-end--
+# --field-start--
+fieldName=streetNumber
+# --field-end--
+# --field-start--
+fieldName=state
+# --field-end--
+# --field-start--
+fieldName=postalCode
+# --field-end--
+# --field-start--
+fieldName=country
+# --field-end--
+# --field-start--
+fieldName=phoneNumber
+# --field-end--
+# --field-start--
+fieldName=lat
+# --field-end--
+# --field-start--
+fieldName=lng
+# --field-end--
+# --field-start--
+fieldName=storesHtml
+# --field-end--
+# --field-start--
+fieldName=ratings
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentLocation
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=Locations__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentMyGrouponItem
+columnName=_mny_groupon_item_id
+foreign=true
+indexName=Locations__mny_groupon_item_id_idx
+columnDefinition=integer references MyGrouponItem(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentBusiness
+columnName=_business_id
+foreign=true
+indexName=Locations__business_id_idx
+columnDefinition=integer references Business(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentCouponMerchant
+columnName=_coupon_merchant_id
+foreign=true
+indexName=Locations__coupon_merchant_id_idx
+columnDefinition=integer references CouponMerchant(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.MarketRateResult
+tableName=MarketRateResult
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=MarketRateResult_channel_idx
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=source
+# --field-end--
+# --field-start--
+fieldName=productType
+# --field-end--
+# --field-start--
+fieldName=announcementTitle
+# --field-end--
+# --field-start--
+fieldName=discountPercentage
+# --field-end--
+# --field-start--
+fieldName=hotelRating
+# --field-end--
+# --field-start--
+fieldName=bucksPercentage
+# --field-end--
+# --field-start--
+fieldName=hasRaO
+# --field-end--
+# --field-start--
+fieldName=derivedDisplayValueAmount
+# --field-end--
+# --field-start--
+fieldName=derivedDisplayValueCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedDisplayValueFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedAvgMinPriceNet
+# --field-end--
+# --field-start--
+fieldName=derivedAvgMinPriceCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedAvgMinPriceTax
+# --field-end--
+# --field-start--
+fieldName=derivedAddressCity
+# --field-end--
+# --field-start--
+fieldName=derivedAddressState
+# --field-end--
+# --field-start--
+fieldName=derivedAddressCountry
+# --field-end--
+# --field-start--
+fieldName=derivedAddressLat
+# --field-end--
+# --field-start--
+fieldName=derivedAddressLng
+# --field-end--
+# --field-start--
+fieldName=derivedImageUrl
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Merchant
+tableName=Merchants
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=websiteUrl
+# --field-end--
+# --field-start--
+fieldName=facebookUrl
+# --field-end--
+# --field-start--
+fieldName=twitterUrl
+# --field-end--
+# --field-start--
+fieldName=isTop
+# --field-end--
+# --field-start--
+fieldName=profileHtml
+# --field-end--
+# --field-start--
+fieldName=ratings
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentMerchant
+# --field-end--
+# --field-start--
+fieldName=tips
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentMerchant
+# --field-end--
+# --field-start--
+fieldName=recommendations
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentMerchant
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=Merchants__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.mygroupons.AbstractMyGrouponItem
+tableName=abstractmygrouponitem
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=availability
+# --field-end--
+# --field-start--
+fieldName=expiresAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=verificationCode
+# --field-end--
+# --field-start--
+fieldName=redemptionCode
+# --field-end--
+# --field-start--
+fieldName=customerRedeemedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=purchaseStatus
+# --field-end--
+# --field-start--
+fieldName=purchasedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=voucherReleaseAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=isMarketRate
+# --field-end--
+# --field-start--
+fieldName=isCustomerRedeemed
+# --field-end--
+# --field-start--
+fieldName=isMerchantRedeemed
+# --field-end--
+# --field-start--
+fieldName=hasRetainedValue
+# --field-end--
+# --field-start--
+fieldName=located
+# --field-end--
+# --field-start--
+fieldName=giftFromName
+# --field-end--
+# --field-start--
+fieldName=giftRecipientName
+# --field-end--
+# --field-start--
+fieldName=giftRecipientEmail
+# --field-end--
+# --field-start--
+fieldName=isGift
+# --field-end--
+# --field-start--
+fieldName=isGiftClaimed
+# --field-end--
+# --field-start--
+fieldName=hasTrackableShipments
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=subTitle
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=instructions
+# --field-end--
+# --field-start--
+fieldName=sidebarImageUrl
+# --field-end--
+# --field-start--
+fieldName=largeImageUrl
+# --field-end--
+# --field-start--
+fieldName=checkInDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=checkOutDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=localBookingInfoStatus
+# --field-end--
+# --field-start--
+fieldName=purchaseStatusMarketRate
+# --field-end--
+# --field-start--
+fieldName=purchaseDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=statusMessage
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=credit
+# --field-end--
+# --field-start--
+fieldName=dealId
+# --field-end--
+# --field-start--
+fieldName=dealOptionId
+# --field-end--
+# --field-start--
+fieldName=merchantId
+# --field-end--
+# --field-start--
+fieldName=reservationId
+# --field-end--
+# --field-start--
+fieldName=hotelName
+# --field-end--
+# --field-start--
+fieldName=hotelTimezoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=timezoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=timezone
+# --field-end--
+# --field-start--
+fieldName=bookingType
+# --field-end--
+# --field-start--
+fieldName=bookable
+# --field-end--
+# --field-start--
+fieldName=isRewardDeal
+# --field-end--
+# --field-start--
+fieldName=dealTimezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=timezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=orderId
+# --field-end--
+# --field-start--
+fieldName=derivedRedemptionLocations
+dataPersister=SERIALIZABLE
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.mygroupons.MyGrouponItem
+tableName=MyGrouponItem
+# --table-fields-start--
+# --field-start--
+fieldName=remoteId
+uniqueIndexName=MyGrouponItem_remoteId_idx
+# --field-end--
+# --field-start--
+fieldName=redeemerName
+# --field-end--
+# --field-start--
+fieldName=merchantRedeemedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=barcodeImageUrl
+# --field-end--
+# --field-start--
+fieldName=externalVoucherUrl
+# --field-end--
+# --field-start--
+fieldName=printedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=grouponNumber
+# --field-end--
+# --field-start--
+fieldName=showUseThisGroupon
+# --field-end--
+# --field-start--
+fieldName=isAutoRefundEnabled
+# --field-end--
+# --field-start--
+fieldName=isAwaitingTicket
+# --field-end--
+# --field-start--
+fieldName=hasExternalVoucherUrl
+# --field-end--
+# --field-start--
+fieldName=shouldDisplayMap
+# --field-end--
+# --field-start--
+fieldName=shouldDisplayLocation
+# --field-end--
+# --field-start--
+fieldName=category
+# --field-end--
+# --field-start--
+fieldName=merchantUuid
+# --field-end--
+# --field-start--
+fieldName=dealOptionSpecificAttributeDelivery
+# --field-end--
+# --field-start--
+fieldName=isDealOptionSpecificAttributeTakeout
+# --field-end--
+# --field-start--
+fieldName=dealTitle
+# --field-end--
+# --field-start--
+fieldName=ticketEvent
+# --field-end--
+# --field-start--
+fieldName=ticketAccount
+# --field-end--
+# --field-start--
+fieldName=ticketEntrance
+# --field-end--
+# --field-start--
+fieldName=ticketSection
+# --field-end--
+# --field-start--
+fieldName=ticketRow
+# --field-end--
+# --field-start--
+fieldName=ticketSeat
+# --field-end--
+# --field-start--
+fieldName=redeemInstructions
+# --field-end--
+# --field-start--
+fieldName=websiteUrl
+# --field-end--
+# --field-start--
+fieldName=travelBookingUrl
+# --field-end--
+# --field-start--
+fieldName=travellerFirstName
+# --field-end--
+# --field-start--
+fieldName=travellerLastName
+# --field-end--
+# --field-start--
+fieldName=listDescriptionFromDetails
+# --field-end--
+# --field-start--
+fieldName=cash
+# --field-end--
+# --field-start--
+fieldName=billingInfoCardType
+# --field-end--
+# --field-start--
+fieldName=billingInfoCardNumber
+# --field-end--
+# --field-start--
+fieldName=billingInfoPaymentType
+# --field-end--
+# --field-start--
+fieldName=cnoOrSnText
+# --field-end--
+# --field-start--
+fieldName=serialNumber
+# --field-end--
+# --field-start--
+fieldName=dealOptionPriceAmount
+# --field-end--
+# --field-start--
+fieldName=dealOptionValueAmount
+# --field-end--
+# --field-start--
+fieldName=dealOptionValueCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=isInventoryDeal
+# --field-end--
+# --field-start--
+fieldName=isBookableTravelDeal
+# --field-end--
+# --field-start--
+fieldName=isBooked
+# --field-end--
+# --field-start--
+fieldName=isMaintenance
+# --field-end--
+# --field-start--
+fieldName=divisionTimezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=numOfNights
+# --field-end--
+# --field-start--
+fieldName=hotelFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=subTotalFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=totalFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=listDescriptions
+# --field-end--
+# --field-start--
+fieldName=isEditable
+# --field-end--
+# --field-start--
+fieldName=shipments
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentMyGrouponItem
+# --field-end--
+# --field-start--
+fieldName=redemptionLocations
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentMyGrouponItem
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=availability
+# --field-end--
+# --field-start--
+fieldName=expiresAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=verificationCode
+# --field-end--
+# --field-start--
+fieldName=redemptionCode
+# --field-end--
+# --field-start--
+fieldName=customerRedeemedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=purchaseStatus
+# --field-end--
+# --field-start--
+fieldName=purchasedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=voucherReleaseAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=isMarketRate
+# --field-end--
+# --field-start--
+fieldName=isCustomerRedeemed
+# --field-end--
+# --field-start--
+fieldName=isMerchantRedeemed
+# --field-end--
+# --field-start--
+fieldName=hasRetainedValue
+# --field-end--
+# --field-start--
+fieldName=located
+# --field-end--
+# --field-start--
+fieldName=giftFromName
+# --field-end--
+# --field-start--
+fieldName=giftRecipientName
+# --field-end--
+# --field-start--
+fieldName=giftRecipientEmail
+# --field-end--
+# --field-start--
+fieldName=isGift
+# --field-end--
+# --field-start--
+fieldName=isGiftClaimed
+# --field-end--
+# --field-start--
+fieldName=hasTrackableShipments
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=subTitle
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=instructions
+# --field-end--
+# --field-start--
+fieldName=sidebarImageUrl
+# --field-end--
+# --field-start--
+fieldName=largeImageUrl
+# --field-end--
+# --field-start--
+fieldName=checkInDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=checkOutDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=localBookingInfoStatus
+# --field-end--
+# --field-start--
+fieldName=purchaseStatusMarketRate
+# --field-end--
+# --field-start--
+fieldName=purchaseDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=statusMessage
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=credit
+# --field-end--
+# --field-start--
+fieldName=dealId
+# --field-end--
+# --field-start--
+fieldName=dealOptionId
+# --field-end--
+# --field-start--
+fieldName=merchantId
+# --field-end--
+# --field-start--
+fieldName=reservationId
+# --field-end--
+# --field-start--
+fieldName=hotelName
+# --field-end--
+# --field-start--
+fieldName=hotelTimezoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=timezoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=timezone
+# --field-end--
+# --field-start--
+fieldName=bookingType
+# --field-end--
+# --field-start--
+fieldName=bookable
+# --field-end--
+# --field-start--
+fieldName=isRewardDeal
+# --field-end--
+# --field-start--
+fieldName=dealTimezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=timezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=orderId
+# --field-end--
+# --field-start--
+fieldName=derivedRedemptionLocations
+dataPersister=SERIALIZABLE
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.mygroupons.MyGrouponItemSummary
+tableName=MyGrouponItemSummary
+# --table-fields-start--
+# --field-start--
+fieldName=category
+columnName=category
+uniqueCombo=true
+indexName=MyGrouponItemSummary_category_idx
+# --field-end--
+# --field-start--
+fieldName=shipmentsListTrackUrl
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=availability
+# --field-end--
+# --field-start--
+fieldName=expiresAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=verificationCode
+# --field-end--
+# --field-start--
+fieldName=redemptionCode
+# --field-end--
+# --field-start--
+fieldName=customerRedeemedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=purchaseStatus
+# --field-end--
+# --field-start--
+fieldName=purchasedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=voucherReleaseAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=isMarketRate
+# --field-end--
+# --field-start--
+fieldName=isCustomerRedeemed
+# --field-end--
+# --field-start--
+fieldName=isMerchantRedeemed
+# --field-end--
+# --field-start--
+fieldName=hasRetainedValue
+# --field-end--
+# --field-start--
+fieldName=located
+# --field-end--
+# --field-start--
+fieldName=giftFromName
+# --field-end--
+# --field-start--
+fieldName=giftRecipientName
+# --field-end--
+# --field-start--
+fieldName=giftRecipientEmail
+# --field-end--
+# --field-start--
+fieldName=isGift
+# --field-end--
+# --field-start--
+fieldName=isGiftClaimed
+# --field-end--
+# --field-start--
+fieldName=hasTrackableShipments
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=subTitle
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=instructions
+# --field-end--
+# --field-start--
+fieldName=sidebarImageUrl
+# --field-end--
+# --field-start--
+fieldName=largeImageUrl
+# --field-end--
+# --field-start--
+fieldName=checkInDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=checkOutDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=localBookingInfoStatus
+# --field-end--
+# --field-start--
+fieldName=purchaseStatusMarketRate
+# --field-end--
+# --field-start--
+fieldName=purchaseDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=statusMessage
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=credit
+# --field-end--
+# --field-start--
+fieldName=dealId
+# --field-end--
+# --field-start--
+fieldName=dealOptionId
+# --field-end--
+# --field-start--
+fieldName=merchantId
+# --field-end--
+# --field-start--
+fieldName=reservationId
+# --field-end--
+# --field-start--
+fieldName=hotelName
+# --field-end--
+# --field-start--
+fieldName=hotelTimezoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=timezoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=timezone
+# --field-end--
+# --field-start--
+fieldName=bookingType
+# --field-end--
+# --field-start--
+fieldName=bookable
+# --field-end--
+# --field-start--
+fieldName=isRewardDeal
+# --field-end--
+# --field-start--
+fieldName=dealTimezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=timezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=orderId
+# --field-end--
+# --field-start--
+fieldName=derivedRedemptionLocations
+dataPersister=SERIALIZABLE
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Option
+tableName=Options
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+# --field-end--
+# --field-start--
+fieldName=minimumPurchaseQuantity
+# --field-end--
+# --field-start--
+fieldName=discountPercent
+# --field-end--
+# --field-start--
+fieldName=pitchHtml
+# --field-end--
+# --field-start--
+fieldName=highlightsHtml
+# --field-end--
+# --field-start--
+fieldName=paymentMethods
+# --field-end--
+# --field-start--
+fieldName=details
+# --field-end--
+# --field-start--
+fieldName=isLimitedQuantity
+# --field-end--
+# --field-start--
+fieldName=bookable
+# --field-end--
+# --field-start--
+fieldName=externalUrl
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=endAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=expiresAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=startRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=endRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=timezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=maximumPurchaseQuantity
+# --field-end--
+# --field-start--
+fieldName=remainingQuantity
+# --field-end--
+# --field-start--
+fieldName=soldQuantity
+# --field-end--
+# --field-start--
+fieldName=soldQuantityMessage
+# --field-end--
+# --field-start--
+fieldName=isSoldOut
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=stockManagement
+# --field-end--
+# --field-start--
+fieldName=minPartySize
+# --field-end--
+# --field-start--
+fieldName=maxPartySize
+# --field-end--
+# --field-start--
+fieldName=specificAttributeDelivery
+# --field-end--
+# --field-start--
+fieldName=specificAttributeTakeout
+# --field-end--
+# --field-start--
+fieldName=customFieldPresent
+# --field-end--
+# --field-start--
+fieldName=bookableSegmentsList
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=price
+columnName=_price_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=value
+columnName=_value_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=pricingMetadata
+columnName=_pricingMetadata_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=discount
+columnName=_discount_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=regularPrice
+columnName=_regularPrice_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=giftWrappingCharge
+columnName=_giftWrappingCharge_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=schedulerOptions
+columnName=_schedulerOptions_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=inventoryService
+columnName=_inventoryService_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=redemptionLocations
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentOption
+# --field-end--
+# --field-start--
+fieldName=legalDisclosures
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentOption
+# --field-end--
+# --field-start--
+fieldName=images
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentOption
+# --field-end--
+# --field-start--
+fieldName=traits
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentOption
+# --field-end--
+# --field-start--
+fieldName=shippingOptions
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentOption
+# --field-end--
+# --field-start--
+fieldName=customFields
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentOption
+# --field-end--
+# --field-start--
+fieldName=stockCategories
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentOption
+# --field-end--
+# --field-start--
+fieldName=uiTreatments
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentOption
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=Options__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Pagination
+tableName=Pagination
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+indexName=Pagination_channel_idx
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=count
+# --field-end--
+# --field-start--
+fieldName=currentOffset
+# --field-end--
+# --field-start--
+fieldName=nextOffset
+# --field-end--
+# --field-start--
+fieldName=hasMorePages
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Price
+tableName=Prices
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=amount
+# --field-end--
+# --field-start--
+fieldName=currencyCode
+# --field-end--
+# --field-start--
+fieldName=formattedAmount
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=Prices__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=Prices__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentShippingOption
+columnName=_shipping_option_id
+foreign=true
+indexName=Prices__shipping_option_id_idx
+columnDefinition=integer references shippingoptions(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentPricingMetadata
+columnName=_pricing_metadata_id
+foreign=true
+indexName=Prices__pricing_metadata_id_idx
+columnDefinition=integer references pricingmetadata(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.PricingMetadata
+tableName=PricingMetadata
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+# --field-end--
+# --field-start--
+fieldName=offerLabelDescriptive
+# --field-end--
+# --field-start--
+fieldName=offerBeginsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=offerEndsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=offerLabel
+# --field-end--
+# --field-start--
+fieldName=timerLabel
+# --field-end--
+# --field-start--
+fieldName=offerType
+# --field-end--
+# --field-start--
+fieldName=minBuyCount
+# --field-end--
+# --field-start--
+fieldName=maxBuyCount
+# --field-end--
+# --field-start--
+fieldName=expiryInMinutes
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=PricingMetadata__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Rating
+tableName=Ratings
+# --table-fields-start--
+# --field-start--
+fieldName=parentMerchant
+columnName=_merchant_id
+foreign=true
+indexName=Ratings__merchant_id_idx
+columnDefinition=integer references merchants(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentLocation
+columnName=_location_id
+foreign=true
+indexName=Ratings__location_id_idx
+columnDefinition=integer references locations(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=reviewsCount
+# --field-end--
+# --field-start--
+fieldName=linkText
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=rating
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Recommendation
+tableName=Recommendations
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=totalMessage
+# --field-end--
+# --field-start--
+fieldName=source
+# --field-end--
+# --field-start--
+fieldName=prominentDisplay
+# --field-end--
+# --field-start--
+fieldName=percentMessage
+# --field-end--
+# --field-start--
+fieldName=parentMerchant
+columnName=_merchant_id
+foreign=true
+indexName=Recommendations__merchant_id_idx
+columnDefinition=integer references merchants(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentDealSummary
+columnName=_deal_summary_id
+foreign=true
+indexName=Recommendations__deal_summary_id_idx
+columnDefinition=integer references dealsummaries(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.SchedulerOption
+tableName=SchedulerOptions
+# --table-fields-start--
+# --field-start--
+fieldName=remoteId
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=bookingType
+# --field-end--
+# --field-start--
+fieldName=customBookingUrl
+# --field-end--
+# --field-start--
+fieldName=customBookingNotes
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=SchedulerOptions__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Shipment
+tableName=Shipment
+# --table-fields-start--
+# --field-start--
+fieldName=carrier
+# --field-end--
+# --field-start--
+fieldName=trackingUrl
+# --field-end--
+# --field-start--
+fieldName=trackingNumber
+# --field-end--
+# --field-start--
+fieldName=parentMyGrouponItem
+columnName=_groupon_item_id
+foreign=true
+indexName=Shipment__groupon_item_id_idx
+columnDefinition=integer references GrouponItem(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.ShippingOption
+tableName=ShippingOptions
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=price
+columnName=_price_id
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=ShippingOptions__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.SnapGroceryDetail
+tableName=SnapGroceryDetails
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=productName
+# --field-end--
+# --field-start--
+fieldName=offerDetails
+# --field-end--
+# --field-start--
+fieldName=offerTerms
+# --field-end--
+# --field-start--
+fieldName=cashBack
+# --field-end--
+# --field-start--
+fieldName=quantityAllowed
+# --field-end--
+# --field-start--
+fieldName=imgPath
+# --field-end--
+# --field-start--
+fieldName=bonusOffer
+# --field-end--
+# --field-start--
+fieldName=cashBackPrefix
+# --field-end--
+# --field-start--
+fieldName=cashBackSuffix
+# --field-end--
+# --field-start--
+fieldName=cashBackInteger
+# --field-end--
+# --field-start--
+fieldName=dateSoldOut
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=almostSoldOut
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=productDetails
+# --field-end--
+# --field-start--
+fieldName=instructions
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Special
+tableName=Special
+# --table-fields-start--
+# --field-start--
+fieldName=parentBusiness
+columnName=_business_id
+foreign=true
+indexName=Special__business_id_idx
+columnDefinition=integer references Business(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueIndexName=Special_remoteId_idx
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=descriptionHtml
+# --field-end--
+# --field-start--
+fieldName=descriptionText
+# --field-end--
+# --field-start--
+fieldName=endTime
+# --field-end--
+# --field-start--
+fieldName=startTime
+# --field-end--
+# --field-start--
+fieldName=shortRecurringText
+# --field-end--
+# --field-start--
+fieldName=shortRecurringHtml
+# --field-end--
+# --field-start--
+fieldName=expiration
+# --field-end--
+# --field-start--
+fieldName=finePrintHtml
+# --field-end--
+# --field-start--
+fieldName=instructionsHtml
+# --field-end--
+# --field-start--
+fieldName=recurringText
+# --field-end--
+# --field-start--
+fieldName=recurringHtml
+# --field-end--
+# --field-start--
+fieldName=redemptionMethod
+# --field-end--
+# --field-start--
+fieldName=redemptionUnit
+# --field-end--
+# --field-start--
+fieldName=isExactMatch
+# --field-end--
+# --field-start--
+fieldName=claimed
+# --field-end--
+# --field-start--
+fieldName=distance
+# --field-end--
+# --field-start--
+fieldName=derivedBusinessName
+# --field-end--
+# --field-start--
+fieldName=derivedBusinessUrl
+# --field-end--
+# --field-start--
+fieldName=categories
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentSpecial
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.StockCategory
+tableName=StockCategories
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=dealId
+# --field-end--
+# --field-start--
+fieldName=optionId
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=stockValues
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentStockCategory
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=StockCategories__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.StockValue
+tableName=StockValues
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=id
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=soldQuantity
+# --field-end--
+# --field-start--
+fieldName=maxStock
+# --field-end--
+# --field-start--
+fieldName=parentStockCategory
+columnName=_stockCategory_id
+foreign=true
+indexName=StockValues__stockCategory_id_idx
+columnDefinition=integer references StockCategories(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Tip
+tableName=Tips
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+indexName=Tips_remoteId_idx
+# --field-end--
+# --field-start--
+fieldName=businessChannelId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=text
+# --field-end--
+# --field-start--
+fieldName=likes
+# --field-end--
+# --field-start--
+fieldName=maskedName
+# --field-end--
+# --field-start--
+fieldName=createdAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=updatedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=parentBusiness
+columnName=_business_id
+foreign=true
+indexName=Tips__business_id_idx
+columnDefinition=integer references Business(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentMerchant
+columnName=_merchant_id
+foreign=true
+indexName=Tips__merchant_id_idx
+columnDefinition=integer references merchants(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Trait
+tableName=Traits
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=position
+# --field-end--
+# --field-start--
+fieldName=value
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=Traits__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.UiTreatment
+tableName=UiTreatment
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=slug
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=logoImage
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=UiTreatment__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=parentOption
+columnName=_option_id
+foreign=true
+indexName=UiTreatment__option_id_idx
+columnDefinition=integer references options(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.UniversalStub
+tableName=UniversalStub
+# --table-fields-start--
+# --field-start--
+fieldName=id
+indexName=UniversalStub_id_idx
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.Video
+tableName=Videos
+# --table-fields-start--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=provider
+# --field-end--
+# --field-start--
+fieldName=asset
+# --field-end--
+# --field-start--
+fieldName=format
+# --field-end--
+# --field-start--
+fieldName=parentDeal
+columnName=_deal_id
+foreign=true
+indexName=Videos__deal_id_idx
+columnDefinition=integer references deals(_id) on delete cascade
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.db.models.WidgetSummary
+tableName=WidgetSummaries
+# --table-fields-start--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=channel
+columnName=channel
+indexName=WidgetSummaries_channel_idx
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=displayName
+# --field-end--
+# --field-start--
+fieldName=scenarioId
+# --field-end--
+# --field-start--
+fieldName=scenarioTreatment
+# --field-end--
+# --field-start--
+fieldName=requestId
+# --field-end--
+# --field-start--
+fieldName=slotId
+# --field-end--
+# --field-start--
+fieldName=relevanceServiceTreatment
+# --field-end--
+# --field-start--
+fieldName=relevanceServiceContext
+# --field-end--
+# --field-start--
+fieldName=treatment
+# --field-end--
+# --field-start--
+fieldName=campaign
+# --field-end--
+# --field-start--
+fieldName=moreAssetsDealsUrl
+# --field-end--
+# --field-start--
+fieldName=moreAssetsDealsCount
+# --field-end--
+# --field-start--
+fieldName=viewLayout
+# --field-end--
+# --field-start--
+fieldName=dealSummaries
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionForeignFieldName=parentWidgetSummary
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.models.gdt.GtgMockDealSummary
+tableName=gtgmockdealsummary
+# --table-fields-start--
+# --field-start--
+fieldName=channel
+columnName=channel
+uniqueCombo=true
+indexName=gtgmockdealsummary_channel_idx
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=parentWidgetSummary
+columnName=_widget_summaries_id
+foreign=true
+indexName=gtgmockdealsummary__widget_summaries_id_idx
+columnDefinition=integer references widgetSummaries(_id) on delete cascade
+# --field-end--
+# --field-start--
+fieldName=derivedIsSmuggled
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=announcementTitle
+# --field-end--
+# --field-start--
+fieldName=largeImageUrl
+# --field-end--
+# --field-start--
+fieldName=sidebarImageUrl
+# --field-end--
+# --field-start--
+fieldName=soldQuantityMessage
+# --field-end--
+# --field-start--
+fieldName=endAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=isSoldOut
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=soldQuantity
+# --field-end--
+# --field-start--
+fieldName=grouponRating
+# --field-end--
+# --field-start--
+fieldName=endRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=area_name
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=divisionName
+# --field-end--
+# --field-start--
+fieldName=isTravelBookableDeal
+# --field-end--
+# --field-start--
+fieldName=redemptionLocation
+# --field-end--
+# --field-start--
+fieldName=displayOptions
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=channels
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=badges
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=bookableSegments
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=derivedRedemptionLocations
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=secondLevelDealCategories
+dataPersister=SERIALIZABLE
+# --field-end--
+# --field-start--
+fieldName=derivedMinimumPurchaseQuantity
+# --field-end--
+# --field-start--
+fieldName=derivedDiscountPercent
+# --field-end--
+# --field-start--
+fieldName=optionLocationCount
+# --field-end--
+# --field-start--
+fieldName=derivedLocationName
+# --field-end--
+# --field-start--
+fieldName=derivedLocationNeighborhood
+# --field-end--
+# --field-start--
+fieldName=derivedLocationCity
+# --field-end--
+# --field-start--
+fieldName=derivedPriceAmount
+# --field-end--
+# --field-start--
+fieldName=derivedPriceFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedPriceCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferLabelDescriptive
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferLabel
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferType
+# --field-end--
+# --field-start--
+fieldName=derivedValueAmount
+# --field-end--
+# --field-start--
+fieldName=derivedValueFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedValueCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceAmount
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceFormattedAmount
+# --field-end--
+# --field-start--
+fieldName=derivedRegularPriceCurrencyCode
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferBeginsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=derivedPricingMetadataOfferEndsAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=optionDimensionsCount
+# --field-end--
+# --field-start--
+fieldName=hasImagesForOptions
+# --field-end--
+# --field-start--
+fieldName=defaultOptionId
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantName
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantRecommendationPercentMessage
+# --field-end--
+# --field-start--
+fieldName=derivedMerchantRecommendationTotalMessage
+# --field-end--
+# --field-start--
+fieldName=derivedOptionEndRedemptionAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=incentivePromotionType
+# --field-end--
+# --field-start--
+fieldName=incentivePromoCode
+# --field-end--
+# --field-start--
+fieldName=incentiveShortMessage
+# --field-end--
+# --field-start--
+fieldName=incentiveLongMessage
+# --field-end--
+# --field-start--
+fieldName=incentiveExpiryDate
+# --field-end--
+# --field-start--
+fieldName=derivedIsGLiveDeal
+# --field-end--
+# --field-start--
+fieldName=firstOptionTitle
+# --field-end--
+# --field-start--
+fieldName=isConnectedMarketPlaceDeal
+# --field-end--
+# --field-start--
+fieldName=connectedMarketPlaceDisplayText
+# --field-end--
+# --field-start--
+fieldName=derivedImageUrl
+# --field-end--
+# --field-start--
+fieldName=derivedTrackingPosition
+# --field-end--
+# --field-start--
+fieldName=derivedActualPosition
+# --field-end--
+# --field-start--
+fieldName=derivedHasBookableOrSchedulableOptions
+# --field-end--
+# --field-start--
+fieldName=derivedHasHasExternalUrl
+# --field-end--
+# --field-start--
+fieldName=derivedOptionsCount
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.groupon.models.gdt.GtgMockMyGrouponItemSummary
+tableName=gtgmockmygrouponitemsummary
+# --table-fields-start--
+# --field-start--
+fieldName=category
+columnName=category
+uniqueCombo=true
+indexName=gtgmockmygrouponitemsummary_category_idx
+# --field-end--
+# --field-start--
+fieldName=shipmentsListTrackUrl
+# --field-end--
+# --field-start--
+fieldName=remoteId
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=modificationDate
+dataPersister=DATE_LONG
+version=true
+# --field-end--
+# --field-start--
+fieldName=primaryKey
+columnName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uuid
+# --field-end--
+# --field-start--
+fieldName=availability
+# --field-end--
+# --field-start--
+fieldName=expiresAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=verificationCode
+# --field-end--
+# --field-start--
+fieldName=redemptionCode
+# --field-end--
+# --field-start--
+fieldName=customerRedeemedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=purchaseStatus
+# --field-end--
+# --field-start--
+fieldName=purchasedAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=voucherReleaseAt
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=isMarketRate
+# --field-end--
+# --field-start--
+fieldName=isCustomerRedeemed
+# --field-end--
+# --field-start--
+fieldName=isMerchantRedeemed
+# --field-end--
+# --field-start--
+fieldName=hasRetainedValue
+# --field-end--
+# --field-start--
+fieldName=located
+# --field-end--
+# --field-start--
+fieldName=giftFromName
+# --field-end--
+# --field-start--
+fieldName=giftRecipientName
+# --field-end--
+# --field-start--
+fieldName=giftRecipientEmail
+# --field-end--
+# --field-start--
+fieldName=isGift
+# --field-end--
+# --field-start--
+fieldName=isGiftClaimed
+# --field-end--
+# --field-start--
+fieldName=hasTrackableShipments
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=subTitle
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=instructions
+# --field-end--
+# --field-start--
+fieldName=sidebarImageUrl
+# --field-end--
+# --field-start--
+fieldName=largeImageUrl
+# --field-end--
+# --field-start--
+fieldName=checkInDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=checkOutDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=localBookingInfoStatus
+# --field-end--
+# --field-start--
+fieldName=purchaseStatusMarketRate
+# --field-end--
+# --field-start--
+fieldName=purchaseDate
+dataPersister=DATE_LONG
+# --field-end--
+# --field-start--
+fieldName=statusMessage
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=credit
+# --field-end--
+# --field-start--
+fieldName=dealId
+# --field-end--
+# --field-start--
+fieldName=dealOptionId
+# --field-end--
+# --field-start--
+fieldName=merchantId
+# --field-end--
+# --field-start--
+fieldName=reservationId
+# --field-end--
+# --field-start--
+fieldName=hotelName
+# --field-end--
+# --field-start--
+fieldName=hotelTimezoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=timezoneIdentifier
+# --field-end--
+# --field-start--
+fieldName=timezone
+# --field-end--
+# --field-start--
+fieldName=bookingType
+# --field-end--
+# --field-start--
+fieldName=bookable
+# --field-end--
+# --field-start--
+fieldName=isRewardDeal
+# --field-end--
+# --field-start--
+fieldName=dealTimezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=timezoneOffsetInSeconds
+# --field-end--
+# --field-start--
+fieldName=orderId
+# --field-end--
+# --field-start--
+fieldName=derivedRedemptionLocations
+dataPersister=SERIALIZABLE
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/target_expand_layout_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/prd_refine_view_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/expand_view_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size">
+        <com.target.ui.view.TargetTextView android:id="@id/expand_view_header_title" android:paddingLeft="@dimen/default_left_right_padding_margin" android:paddingRight="@dimen/default_left_right_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TargetExpandTitleDefault" />
+        <ImageView android:id="@id/expand_view_header_drop_down_icon" android:paddingLeft="@dimen/default_left_right_padding_margin" android:paddingRight="@dimen/default_left_right_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_expandsection" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/expand_view_child_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

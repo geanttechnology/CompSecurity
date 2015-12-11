@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/bby_darkest_gray" android:id="@id/format_name" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+</LinearLayout>

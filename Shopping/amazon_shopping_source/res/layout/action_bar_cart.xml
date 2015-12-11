@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.actionBar.ActionBarCartView android:layout_gravity="center_vertical" android:id="@id/action_bar_cart" android:background="@drawable/orange_outline_round_corner_selector" android:padding="@dimen/padding_zero" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/action_bar_cart_image" android:padding="@dimen/action_bar_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_bar_cart" />
+    <TextView android:textSize="@dimen/action_bar_cart_text_size" android:textStyle="bold" android:textColor="@color/amazon_gold" android:gravity="top" android:layout_gravity="top|center" android:id="@id/action_bar_cart_count" android:paddingLeft="@dimen/cart_number_padding_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.amazon.mShop.actionBar.ActionBarCartView>

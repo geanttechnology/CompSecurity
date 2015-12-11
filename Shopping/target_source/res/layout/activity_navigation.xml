@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.target.ui.view.HackyDrawerLayout android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/container" android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:theme="@style/DarkActionBar.WhiteAccent" android:id="@id/toolbar" android:background="@color/target_bullseye_red" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                <com.target.ui.view.TargetTextView android:textSize="@dimen/x_largeTextSize" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/custom_title" android:background="@drawable/translucent_item_light_selector" android:paddingTop="@dimen/default_padding_margin" android:paddingBottom="@dimen/default_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/single_line_length" app:fontStyle="regular" />
+                <com.target.ui.view.ToolbarSpinner android:id="@id/toolbar_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="?actionBarSize" />
+            </android.support.v7.widget.Toolbar>
+            <View android:id="@id/action_bar_drop_shadow" android:layout_below="@id/toolbar" style="@style/DropShadow" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/activity_progress_container" android:background="@color/target_progress_layout_background" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/view_dialog_progress_bar" />
+        </FrameLayout>
+    </FrameLayout>
+    <fragment android:name="com.target.ui.fragment.navigation.NavigationDrawerFragment" android:layout_gravity="left" android:id="@id/navigation_drawer" android:layout_width="@dimen/navigation_drawer_width" android:layout_height="fill_parent" />
+</com.target.ui.view.HackyDrawerLayout>

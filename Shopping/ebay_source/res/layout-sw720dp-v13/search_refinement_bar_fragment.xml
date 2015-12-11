@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_bar_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/style_guide_gray" android:gravity="left|center" android:id="@id/item_count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/search_common_srp_margin" android:layout_marginRight="@dimen/search_carousel_button_padding" />
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/refinements_scrollview_content" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/style_guide_black" android:gravity="center" android:id="@id/refine" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/search_carousel_button_padding" android:paddingRight="@dimen/search_carousel_button_padding" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/refine" />
+            <TextView android:textColor="@color/style_guide_black" android:gravity="center" android:id="@id/condition" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/search_carousel_button_padding" android:paddingRight="@dimen/search_carousel_button_padding" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/label_condition" />
+            <TextView android:textColor="@color/style_guide_black" android:gravity="center" android:id="@id/buying_format" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/search_carousel_button_padding" android:paddingRight="@dimen/search_carousel_button_padding" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/label_auction_bin" />
+        </LinearLayout>
+        <TextView android:textColor="@color/style_guide_blue" android:gravity="right|center" android:id="@id/sort_view" android:background="?android:listChoiceBackgroundIndicator" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayPadding2x" android:singleLine="true" android:layout_weight="1.0" />
+        <include android:layout_gravity="left|center" android:id="@id/view_switcher" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/search_common_srp_margin" layout="@layout/search_viewswitcher_view" />
+    </LinearLayout>
+    <View android:background="@color/search_common_background_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

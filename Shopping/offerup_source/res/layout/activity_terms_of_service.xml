@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/normal_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/tos_webview" android:background="@android:color/transparent" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbarFadeDuration="500" />
+    <RelativeLayout android:background="@color/transparent_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textStyle="bold" android:id="@id/accept_and_continue_button" android:background="@drawable/blue_button_rounded_corners" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/accept_and_continue" android:layout_centerInParent="true" style="@style/offerUpButton.medium" />
+    </RelativeLayout>
+</RelativeLayout>

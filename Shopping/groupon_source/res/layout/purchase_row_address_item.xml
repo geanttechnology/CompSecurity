@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" style="@style/white_bg_flat_element"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/shipping_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_shipping" android:layout_alignParentLeft="@bool/view1_ltr" android:layout_alignParentRight="@bool/view1_rtl" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_row_address_container">
+            <TextView android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/purchase_row_label_text" />
+            <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" style="@style/purchase_row_value_text_multiple_lines" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/groupon_alert" android:id="@id/please_verify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/please_verify_this_address" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/disclosure_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_redesign" android:layout_centerVertical="true" style="@style/disclosure_indicator_rtl_compatible" />
+</RelativeLayout>

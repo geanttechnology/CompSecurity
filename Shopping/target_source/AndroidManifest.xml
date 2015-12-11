@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.target.ui" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <permission android:name="com.target.ui.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.target.ui.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.target.ui.TargetApplication" android:theme="@style/AppTheme">
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_kfjPn4aQQEX5AcoMzJYwujdlqwlXrJnM"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_egoNjZpIMt74zecSsG1BsjlfBwm4zPit"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.target.ui.activity.NavigationActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="coupons" android:pathPrefix="" android:scheme="target"/>
+                <data android:host="coupons" android:pathPrefix="/listing" android:scheme="target"/>
+                <data android:host="coupons" android:pathPrefix="/offer" android:scheme="target"/>
+                <data android:host="deals" android:pathPrefix="" android:scheme="target"/>
+                <data android:host="featured" android:pathPrefix="" android:scheme="target"/>
+                <data android:host="featured" android:pathPrefix="/preview"/>
+                <data android:host="category" android:pathPrefix="/listing" android:scheme="target"/>
+                <data android:host="landing" android:pathPrefix="/custom" android:scheme="target"/>
+                <data android:host="lists" android:pathPrefix="/view" android:scheme="target"/>
+                <data android:host="location" android:pathPrefix="/maps" android:scheme="target"/>
+                <data android:host="product" android:pathPrefix="/collection" android:scheme="target"/>
+                <data android:host="product" android:pathPrefix="/detail" android:scheme="target"/>
+                <data android:host="product" android:pathPrefix="/listing" android:scheme="target"/>
+                <data android:host="product" android:pathPrefix="/scan" android:scheme="target"/>
+                <data android:host="product" android:pathPrefix="/search" android:scheme="target"/>
+                <data android:host="promotions" android:path="" android:scheme="target"/>
+                <data android:host="gift-registry" android:path="/home" android:scheme="target"/>
+                <data android:host="gift-registry" android:path="/search" android:scheme="target"/>
+                <data android:host="gift-registry" android:path="/view" android:scheme="target"/>
+                <data android:host="weeklyad" android:pathPrefix="/home" android:scheme="target"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.target.com" android:pathPattern="/" android:scheme="http"/>
+                <data android:host="m.target.com" android:pathPattern="/" android:scheme="https"/>
+                <data android:host="m.target.com" android:pathPattern="/p/.*" android:scheme="http"/>
+                <data android:host="m.target.com" android:pathPattern="/p/.*" android:scheme="https"/>
+                <data android:host="m.target.com" android:pathPattern="/c/.*" android:scheme="http"/>
+                <data android:host="m.target.com" android:pathPattern="/c/.*" android:scheme="https"/>
+                <data android:host="target.com" android:pathPattern="/c/.*" android:scheme="http"/>
+                <data android:host="target.com" android:pathPattern="/c/.*" android:scheme="https"/>
+                <data android:host="m.target.com" android:pathPattern="/s.*" android:scheme="http"/>
+                <data android:host="m.target.com" android:pathPattern="/s.*" android:scheme="https"/>
+                <data android:host="m.weeklyad.target.com" android:pathPattern="/" android:scheme="http"/>
+                <data android:host="m.weeklyad.target.com" android:pathPattern="/#" android:scheme="http"/>
+                <data android:host="m.weeklyad.target.com" android:pathPattern="/" android:scheme="https"/>
+                <data android:host="m.weeklyad.target.com" android:pathPattern="/#" android:scheme="https"/>
+                <data android:host="weeklyad.target.com" android:pathPattern="/" android:scheme="http"/>
+                <data android:host="weeklyad.target.com" android:pathPattern="/#" android:scheme="http"/>
+                <data android:host="weeklyad.target.com" android:pathPattern="/" android:scheme="https"/>
+                <data android:host="weeklyad.target.com" android:pathPattern="/#" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tl-099dd904"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <intent-filter>
+                <data android:host="open" android:scheme="@string/branch_scheme"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:exported="false" android:label="@string/widget_title" android:name="com.target.ui.widgets.TargetWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/search_widget_info"/>
+        </receiver>
+        <service android:exported="false" android:name="com.target.ui.service.GoogleNowService"/>
+        <receiver android:exported="false" android:name="com.target.ui.googlenow.GoogleNowAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.target.ui.googlenow.GOOGLE_NOW_CREATE_ALARM_INTENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.target.ui.googlenow.GoogleNowAuthCodeReceiver">
+            <intent-filter>
+                <action android:name="com.target.ui.googlenow.GOOGLE_NOW_AUTH_CODE_BROADCAST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.target.ui.receiver.RequestTeamMemberBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.target.ui.request_team_member.REQUEST_TEAM_MEMBER_ALARM_INTENT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.parse.PushService"/>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.target.ui"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.target.ui.receiver.TargetPushBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE"/>
+                <action android:name="com.parse.push.intent.DELETE"/>
+                <action android:name="com.parse.push.intent.OPEN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.target.ui.analytics.BranchIoInstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.target.ui.service.AppConfigUpdateService"/>
+        <service android:exported="true" android:name="com.target.ui.service.TargetGcmTaskService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.target.ui.vlc.service.VlcService"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity"/>
+        <activity android:configChanges="locale|orientation" android:name="com.helpshift.HSConversation" android:theme="@style/Helpshift.Theme.Activity"/>
+        <activity android:configChanges="orientation" android:name="com.helpshift.HSQuestionsList" android:theme="@style/Helpshift.Theme.Activity"/>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:name="com.helpshift.HSQuestion" android:theme="@style/Helpshift.Theme.Activity"/>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:name="com.helpshift.HSSection" android:theme="@style/Helpshift.Theme.Activity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:name="com.helpshift.HSFaqs" android:theme="@style/Helpshift.Theme.Activity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation" android:name="com.helpshift.HSReview" android:theme="@style/Helpshift.Theme.Dialog"/>
+        <activity android:configChanges="orientation" android:name="com.helpshift.ScreenshotPreviewActivity" android:theme="@style/Helpshift.Theme.Activity"/>
+        <activity android:configChanges="orientation" android:name="com.helpshift.SearchResultActivity" android:theme="@style/Helpshift.Theme.Activity"/>
+        <service android:label="Helpshift Service" android:name="com.helpshift.HSService"/>
+        <service android:label="Helpshift Service" android:name="com.helpshift.HSRetryService"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+        <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:isolatedProcess="false" android:label="beacon" android:name="org.altbeacon.beacon.service.BeaconService"/>
+        <service android:enabled="true" android:exported="false" android:name="org.altbeacon.beacon.BeaconIntentProcessor"/>
+    </application>
+</manifest>

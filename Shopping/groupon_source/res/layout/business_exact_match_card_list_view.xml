@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/business_card_view" android:padding="@dimen/large_deal_card_exterior_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_business_exact_match_list_card" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <com.groupon.view.UrlImageView android:id="@id/business_photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.groupon.view.BusinessMapSlice android:id="@id/map_slice" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:background="@drawable/business_exact_match_curtain" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/location_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true">
+                    <TextView android:ellipsize="end" android:id="@id/business_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/view_deal_card_subtitle" />
+                </LinearLayout>
+                <TextView android:ellipsize="end" android:id="@id/business_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_above="@id/location_info" android:layout_alignLeft="@id/location_info" style="@style/view_deal_card_title" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/business_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/business_exact_match_special" />
+            <TextView android:id="@id/business_special" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/grey72" android:id="@id/no_offer_available" android:paddingLeft="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_offers_currently_available" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

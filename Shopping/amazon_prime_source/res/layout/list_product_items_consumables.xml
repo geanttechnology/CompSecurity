@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/list_product_linear_layout" android:paddingTop="@dimen/rs_results_list_product_padding_top" android:paddingBottom="@dimen/rs_results_list_product_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_small" android:layout_marginRight="@dimen/gutter_small" android:baselineAligned="false">
+        <include layout="@layout/rs_results_image_wrapper_consumable_list" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pc_4px" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/rs_fresh_past_purchases_container" style="@style/Results.FreshPastPurchases">
+                <TextView android:id="@id/rs_fresh_past_purchases" style="@style/Results.FreshPastPurchases.Text" />
+            </LinearLayout>
+            <LinearLayout style="@style/Results.HeaderSection.List">
+                <TextView android:id="@id/item_title" style="@style/Results.Title.List" />
+                <TextView android:id="@id/rs_item_byline" style="@style/Results.ByLine.List" />
+            </LinearLayout>
+            <com.amazon.retailsearch.android.ui.results.views.RatingsLine android:id="@id/rs_results_ratings" style="@style/Results.Ratings.ListConsumable" />
+            <com.amazon.retailsearch.android.ui.results.views.BestSeller android:id="@id/rs_results_best_seller" style="@style/Results.BestSeller.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.Coupon android:id="@id/rs_results_coupon" style="@style/Results.Coupon" />
+            <include layout="@layout/rs_results_consumable_price_list" />
+            <include android:id="@id/rs_results_consumable_offer_messaging" layout="@layout/rs_results_consumable_messaging" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.ShippingLine android:id="@id/rs_results_shipping_line" style="@style/Results.ShippingLine.List" />
+            <com.amazon.retailsearch.android.ui.results.views.messaging.Promotions android:id="@id/rs_results_promotions" style="@style/Results.Promotions.List" />
+            <include layout="@layout/rs_inline_actions" />
+            <include layout="@layout/rs_results_prime_options_container" />
+            <include android:id="@id/rs_results_exclusivity_messaging" layout="@layout/rs_results_consumable_messaging" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

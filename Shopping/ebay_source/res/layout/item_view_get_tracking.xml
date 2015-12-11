@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/get_tracking_layout" style="@style/ItemView.ClickableRelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow" style="@style/ItemView.Chevron" />
+    <LinearLayout android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" style="@style/ItemStatLayout">
+        <TextView android:paddingLeft="0.0dip" android:text="@string/item_view_get_tracking" style="@style/ItemStatValue.Bold" />
+    </LinearLayout>
+</RelativeLayout>

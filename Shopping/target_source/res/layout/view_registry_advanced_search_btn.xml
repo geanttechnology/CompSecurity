@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <com.target.ui.view.TargetButton android:textSize="@dimen/mediumTextSize" android:id="@id/registry_advanced_search_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registry_advanced_search_btn" app:fontStyle="light" style="@style/DialogButton.RegistryAdvancedSearch" />
+</merge>

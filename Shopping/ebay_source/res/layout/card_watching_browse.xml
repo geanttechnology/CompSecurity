@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/browseButton" android:background="@color/style_guide_black_transparent" android:layout_width="0.0dip" android:layout_height="@dimen/card_watching_recent_image_height" android:text="@string/card_watching_browse_categories" android:layout_weight="1.0" android:fontFamily="sans-serif" />
+</LinearLayout>

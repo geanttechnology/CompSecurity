@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/categories_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/onboarding_category_circle_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="right|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onboarding_save_up_to" style="@style/onboarding_categories_text" />
+            <com.groupon.view.TypewriterTextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/categories_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/onboarding_categories_text" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/onboarding_categories_circle" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

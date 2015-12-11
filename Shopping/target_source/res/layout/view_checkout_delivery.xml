@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.checkout.ShippingAddressView android:id="@id/delivery_shipping_address_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_small" />
+    <include android:id="@id/delivery_spacer_address" layout="@layout/checkout_spacer" />
+    <com.target.ui.view.checkout.PickUpDetailsView android:id="@id/delivery_pickup_details_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_small" />
+    <include android:id="@id/delivery_spacer_pickup" layout="@layout/checkout_spacer" />
+    <com.target.ui.view.checkout.EmailRecipientDetailsView android:id="@id/delivery_email_details_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_small" />
+    <include android:id="@id/delivery_spacer_email" layout="@layout/checkout_spacer" />
+    <com.target.ui.view.checkout.SmsRecipientDetailsView android:id="@id/delivery_sms_details_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_small" />
+    <include android:id="@id/delivery_spacer_sms" layout="@layout/checkout_spacer" />
+</merge>

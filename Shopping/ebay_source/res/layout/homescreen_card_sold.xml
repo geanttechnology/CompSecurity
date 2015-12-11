@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" app:cardBackgroundColor="?android:windowBackground" app:cardCornerRadius="@dimen/card_view_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:id="@id/sold_board" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" app:foreground="?android:selectableItemBackground">
+        <TextView android:layout_width="fill_parent" android:text="@string/homescreen_sold" style="@style/EbayTextAppearance.CardTitle" />
+        <include layout="@layout/homescreen_card_sold_dashboard" />
+        <include android:id="@id/sold_total" layout="@layout/homescreen_card_sold_total" />
+        <TextView android:textColor="@color/style_guide_gray" android:gravity="center" android:id="@id/oops_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_selling_utility_oops_text_size" android:text="@string/homescreen_card_sold_oops_text" />
+    </com.ebay.mobile.widget.FLinearLayout>
+</android.support.v7.widget.CardView>

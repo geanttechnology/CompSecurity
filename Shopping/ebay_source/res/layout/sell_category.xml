@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/parent_layout" style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.sell.widget.CustomScrollView style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild.WithHelp">
+            <LinearLayout android:layout_marginBottom="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:text="@string/category" style="@style/Sell.Spoke.Title.Top" />
+                <com.ebay.android.widget.ContainerLayout style="@style/Sell.Layout.Container">
+                    <TextView android:textColor="?android:textColorTertiary" android:id="@id/edit_category" style="@style/Sell.ButtonSpinner" />
+                </com.ebay.android.widget.ContainerLayout>
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_dashed_line" />
+            <LinearLayout android:layout_marginTop="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:text="@string/sell_help_category" style="@style/Sell.Layout.Help.Content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

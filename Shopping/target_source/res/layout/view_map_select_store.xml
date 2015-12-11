@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_store" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/checkout_button_height" android:text="@string/store_map_set_store_to_view_map" />
+    <com.target.ui.view.TargetButton android:id="@id/map_select_store_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deals_no_store_view_button_text" app:fontStyle="medium" style="@style/DialogButton.Red" />
+</LinearLayout>

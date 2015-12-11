@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shopping_list_popup_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/shopping_list_popup_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_shopping_list_white" android:layout_centerVertical="true" />
+    <Button android:textSize="16.0sp" android:textColor="@color/shopping_list_popup_add_text_color" android:gravity="center" android:id="@id/shopping_list_popup_add_button" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/add" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/shopping_list_popup_add_container" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/shopping_list_popup_add_button" android:layout_toRightOf="@id/shopping_list_popup_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/shopListPopupTextColor" android:id="@id/shopping_list_popup_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shopping_list_popup_title" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/shopListPopupTextColor" android:ellipsize="marquee" android:id="@id/shopping_list_popup_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/shopping_list_popup_title" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/shopListPopupTextColor" android:id="@id/shopping_list_popup_added" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shopping_list_popup_added" android:layout_toRightOf="@id/shopping_list_popup_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

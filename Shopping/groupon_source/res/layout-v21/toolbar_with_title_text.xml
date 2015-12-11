@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@id/tool_bar" android:elevation="@dimen/lollipop_toolbar_elevation" style="@style/toolbar_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tool_bar_icons" android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <include layout="@layout/shopping_cart_actionbar_button" />
+        </LinearLayout>
+        <TextView android:id="@id/toolbar_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/tool_bar_icons" android:layout_toStartOf="@id/tool_bar_icons" style="@style/toolbar_title_text_view" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

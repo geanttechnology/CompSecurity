@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/checkout_security_code_prompt_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/checkout_security_code_img_banner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkout_spot_small" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_security_code_prompt_message_margin_left" android:layout_marginBottom="@dimen/checkout_security_code_prompt_message_margin_bottom" android:layout_alignBottom="@id/checkout_security_code_img_banner">
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/x_largeTextSize" android:id="@id/checkout_security_code_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_security_code_dialog_message" style="@style/Target.TextView.CheckoutSecurityCodeDialog" />
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:id="@id/checkout_security_code_message_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_security_code_dialog_message_detail" style="@style/Target.TextView.CheckoutSecurityCodeDialog" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkout_security_code_prompt_margin" layout="@layout/view_checkout_security_code_entry" />
+    <com.target.ui.view.TargetButton android:enabled="false" android:id="@id/checkout_security_code_btn_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkout_security_code_prompt_margin" android:text="@string/checkout_security_code_submit" style="@style/RedButton" />
+</LinearLayout>

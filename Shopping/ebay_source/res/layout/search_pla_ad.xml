@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/search_pla_ad" android:background="?android:listChoiceBackgroundIndicator" android:padding="@dimen/ebayPressedStatePadding" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/search_ad_image" android:background="#ffffffff" android:layout_width="@dimen/search_pla_ad_image_size" android:layout_height="@dimen/search_pla_ad_image_size" ebay:urlRewriter="none" />
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="100.0dip">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/search_ad_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/search_ad_price_layout" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/search_ad_title">
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="?android:textColorSecondary" android:id="@id/search_ad_strike_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?android:textAppearance" android:id="@id/search_ad_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/search_ad_retailer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/search_ad_price_layout" />
+    </RelativeLayout>
+</LinearLayout>

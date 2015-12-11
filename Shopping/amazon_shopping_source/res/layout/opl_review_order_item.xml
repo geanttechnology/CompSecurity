@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/opl_item_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding" android:layout_weight="0.0" />
+        <include layout="@layout/thumbnail" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/opl_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/opl_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Price" />
+            <TextView android:id="@id/opl_item_merchant_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:id="@id/opl_picker_separator" style="@style/Separator" />
+            <TextView android:id="@id/opl_picker_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ArrowSelector" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/Separator" />
+</LinearLayout>

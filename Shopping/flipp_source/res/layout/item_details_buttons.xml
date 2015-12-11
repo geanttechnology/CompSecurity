@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:stretchColumns="0,1,2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.wishabi.flipp.widget.ActionButton android:icon="@drawable/ic_details_clip_it" android:id="@id/clip_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/clip_item" android:layout_weight="1.0" />
+        <com.wishabi.flipp.widget.ActionButton android:icon="@drawable/ic_details_store" android:id="@id/ttm_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.wishabi.flipp.widget.ActionButton android:icon="@drawable/ic_details_share" android:id="@id/share_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/share" android:layout_weight="1.0" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="18.0sp" android:textColor="#ff0067ae" android:id="@id/sort_filter_name" android:padding="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    <ImageView android:id="@id/sort_item_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/checkmark2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

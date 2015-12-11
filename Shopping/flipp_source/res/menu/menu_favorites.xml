@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/search_view" android:title="@string/search" android:showAsAction="ifRoom" android:actionViewClass="com.wishabi.flipp.widget.SearchView" />
+    <item android:icon="@drawable/ic_menu_refresh" android:id="@id/action_refresh" android:title="@string/refresh" android:showAsAction="never" />
+    <item android:id="@id/action_request_store" android:menuCategory="secondary" android:title="@string/request_a_store" android:showAsAction="never" />
+    <item android:id="@id/action_settings" android:menuCategory="secondary" android:title="@string/settings" android:showAsAction="never" />
+    <item android:id="@id/eula" android:menuCategory="secondary" android:title="@string/license" android:showAsAction="never" />
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@color/target_stark_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/product_progress_container" layout="@layout/view_progress_container" />
+    <com.target.ui.view.common.TargetErrorView android:layout_gravity="center" android:id="@id/product_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/product_read_review_container" android:background="@color/target_fade_away_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/product_review_list_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" />
+    </FrameLayout>
+</FrameLayout>

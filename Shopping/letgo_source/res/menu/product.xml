@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/icon_edit_item_page" android:id="@id/menu_item_product_edit" android:visible="false" android:orderInCategory="100" android:title="@string/product_detail_menu_item_edit" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_favorite" android:id="@id/menu_item_product_like" android:orderInCategory="101" android:title="@string/product_detail_menu_item_like" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_share" android:id="@id/menu_item_product_share" android:orderInCategory="102" android:title="@string/product_detail_menu_item_share" app:showAsAction="always" />
+    <item android:id="@id/menu_item_product_delete" android:visible="false" android:orderInCategory="103" android:title="@string/delete_product_option_menu_item" app:showAsAction="never" />
+</menu>

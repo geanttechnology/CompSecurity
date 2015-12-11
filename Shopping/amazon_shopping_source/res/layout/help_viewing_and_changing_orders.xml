@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_viewing_and_changing_orders_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_viewing_and_changing_orders_cancel_an_item_or_order_button" android:text="@string/help_viewing_and_changing_orders_cancel_an_item_or_order_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_viewing_and_changing_orders_cancel_an_item_or_order_title" amazon_textContentId="@string/help_viewing_and_changing_orders_cancel_an_item_or_order_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_viewing_and_changing_orders_combine_orders_button" android:text="@string/help_viewing_and_changing_orders_combine_orders_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_viewing_and_changing_orders_combine_orders_title" amazon_textContentId="@string/help_viewing_and_changing_orders_combine_orders_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_viewing_and_changing_orders_view_recent_orders_button" android:text="@string/help_viewing_and_changing_orders_view_recent_orders_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_viewing_and_changing_orders_view_recent_orders_title" amazon_textContentId="@string/help_viewing_and_changing_orders_view_recent_orders_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_subscribe_and_save_subscriptions_button" android:text="@string/help_subscribe_and_save_subscriptions_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_subscribe_and_save_subscriptions_title" amazon_linkLayoutId="@layout/help_subscribe_and_save_subscription" amazon_configId="@string/config_hasSns" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

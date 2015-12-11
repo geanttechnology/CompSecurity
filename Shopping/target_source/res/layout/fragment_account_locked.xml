@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/account_page_margin" android:layout_width="@dimen/account_reauth_min_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/account_page_margin" android:text="@string/account_error_login_reauth_locked_title" style="@style/Target.TextView.DialogTitle" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/account_page_margin_small" android:text="@string/account_error_login_reauth_locked_warning_message" />
+    <com.target.ui.view.TargetButton android:gravity="center" android:layout_gravity="center" android:id="@id/account_locked_button_ok" android:layout_width="@dimen/account_locked_btn_ok_width" android:layout_height="@dimen/account_locked_btn_ok_height" android:text="@string/ok" style="@style/DialogButton.Red" />
+</LinearLayout>

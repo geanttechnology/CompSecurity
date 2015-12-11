@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/myLikesButton" layout="@layout/button_table_row_top" />
+    <include android:id="@id/brandsButton" layout="@layout/button_table_row_middle" />
+    <include android:id="@id/categoriesButton" layout="@layout/button_table_row_middle" />
+    <include android:id="@id/colorButton" layout="@layout/button_table_row_middle" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/partiesLayout" android:background="@drawable/bg_table_row_bottom" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/partiesIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_parties_grey_outline" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/parties" android:layout_toRightOf="@id/partiesIcon" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorLightBlue" android:id="@id/currentPartyTag" android:background="@drawable/blue_border" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/posh_party_party_happening_now" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

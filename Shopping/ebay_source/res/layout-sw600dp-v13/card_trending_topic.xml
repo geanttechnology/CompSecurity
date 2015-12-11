@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" app:cardBackgroundColor="?android:windowBackground" app:cardCornerRadius="@dimen/card_view_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="?selectableItemBackgroundBase" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin3x" android:layout_marginRight="@dimen/ebayMargin3x">
+        <include android:id="@id/trend_title" layout="@layout/trend_detail_title" />
+        <include layout="@layout/homescreen_card_horizontal_divider" />
+        <include android:id="@id/trend_description" layout="@layout/trend_detail_description" />
+        <include layout="@layout/trend_topic_listings" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/trend_see_more" android:layout_width="@dimen/card_more_button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/cards_see_more" android:textAllCaps="false" style="@style/EbayButton" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="@color/textColorBlack" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Poshmark + Pinterest = Heck Yes!" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="top|center" android:paddingLeft="10.0dip" android:paddingTop="0.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/pin_new_customer" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0dip" android:gravity="center_horizontal" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="New \nCustomers" android:lines="2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="top|center" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/pin_share" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0dip" android:gravity="center_horizontal" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Share your \nstyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="top|center" android:paddingLeft="10.0dip" android:paddingTop="0.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/pin_increase_sales" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0dip" android:gravity="center_horizontal" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Up to 23% \nincreased sales" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.poshmark.ui.customviews.PMTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="15.0dip" android:text="By connecting to Pinterest you can:" />
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/bgColorBlack" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="5.0dip" />
+        <com.poshmark.ui.customviews.PMHTMLTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pin_listings_comment1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/bgColorBlack" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="5.0dip" />
+        <com.poshmark.ui.customviews.PMHTMLTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pin_listings_comment2" />
+    </LinearLayout>
+    <com.poshmark.ui.customviews.PMTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="12.0dip" android:textColor="@color/textColorLightGray" android:gravity="center_horizontal" android:paddingTop="40.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/you_can_change_in_sharing_settings" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.poshmark.ui.customviews.PMButton android:layout_gravity="center_horizontal" android:id="@id/connect_now" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Connect Now" android:layout_weight="1.0" style="@style/followFollowingButton" />
+    </LinearLayout>
+    <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/offersColorBlue" android:gravity="center_horizontal" android:id="@id/proceedListing_button" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="No, thanks. Pin this listing only. »" />
+</LinearLayout>

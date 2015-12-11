@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/actionbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/abc_action_bar_default_height_material" app:titleTextAppearance="@style/AppTheme.Toolbar.Title" style="@style/ToolBarStyle" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</android.support.design.widget.AppBarLayout>

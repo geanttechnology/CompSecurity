@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/my_apps_tile_background" android:padding="@dimen/entitlements_item_row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/app_icon_width" android:layout_height="@dimen/app_icon_height" android:layout_marginTop="@dimen/entitlements_icon_top_margin" android:layout_marginBottom="@dimen/entitlements_icon_top_margin" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/info_block_details" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/entitlements_detail_block_padding_left" android:paddingRight="@dimen/entitlements_detail_block_padding_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/entitlements_primary_text_size" android:textColor="@color/primary_text_color" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@id/title" android:maxLines="2" />
+                <TextView android:textSize="@dimen/entitlements_secondary_text_size" android:textColor="@color/secondary_text_color" android:ellipsize="end" android:id="@id/developer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@id/developer" android:maxLines="1" />
+                <TextView android:textSize="@dimen/entitlements_secondary_text_size" android:id="@id/reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@id/developer" />
+            </LinearLayout>
+            <Button android:textColor="@color/primary_text_color" android:id="@id/button" android:background="@drawable/orange_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/entitlements_icon_top_margin" android:minWidth="@dimen/entitlements_button_min_width" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/status_block" android:paddingLeft="@dimen/entitlements_detail_block_padding_left" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/pdi_progress_text_size" android:textColor="@color/primary_text_color" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@id/developer" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/pdi_progress_text_size" android:textColor="@color/primary_text_color" android:id="@id/progress_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                <TextView android:textSize="@dimen/pdi_progress_text_size" android:textColor="@color/primary_text_color" android:id="@id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/entitlements_progress_percentage_margin_left" android:text="@id/developer" android:layout_weight="0.0" />
+            </LinearLayout>
+            <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="@dimen/entitlements_progress_bar_height" android:layout_marginTop="@dimen/entitlements_progress_bar_top_margin" android:indeterminateOnly="false" android:progressDrawable="@drawable/orange_progress" style="@android:style/Widget.ProgressBar.Horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/normal_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_view2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/transparent_background" android:layout_centerInParent="true" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center_horizontal" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Up Payment" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/text.xxxlarge" />
+    <ImageView android:id="@id/imageView" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/watchlist_star" android:adjustViewBounds="true" android:layout_below="@id/textView" />
+    <TextView android:gravity="center_horizontal" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="Scanning tip: Hold credit card steady and make sure there's enough light" android:layout_below="@id/imageView" android:layout_centerHorizontal="true" style="@style/text.small" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Scan Card" android:layout_above="@id/add_card_manually" android:layout_centerHorizontal="true" style="@style/offerUpButton.margins" />
+    <Button android:id="@id/add_card_manually" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Enter Manually" android:layout_above="@id/help_container" android:layout_centerHorizontal="true" style="@style/offerUpButton.margins" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/help_container" android:background="@drawable/legacy_staggeredgrid_selector" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/help_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Need Help" style="@style/text" />
+        <ImageView android:id="@id/help_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_help" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_table_row_middle" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/showroomCovershotView" android:layout_width="125.0dip" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:scaleType="centerCrop" />
+    <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/showroomTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="2" />
+</LinearLayout>

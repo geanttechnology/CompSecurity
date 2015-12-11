@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.retailsearch.android.ui.entry.RetailSearchEntryBar android:orientation="vertical" android:id="@id/rs_search_entry_bar" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rs_search_plate" android:background="@color/rs_action_bar_end_color" android:paddingLeft="@dimen/rs_search_gray_bg_padding_left" android:paddingTop="@dimen/rs_search_gray_bg_padding_top" android:paddingRight="@dimen/rs_search_gray_bg_padding_right" android:paddingBottom="@dimen/rs_search_gray_bg_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rs_search_edit_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/rs_search_bar_with_buttons_frame" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.amazon.retailsearch.android.ui.entry.RetailSearchEditText android:textColorHint="@color/rs_home_gray_text_color" android:ellipsize="end" android:id="@id/rs_search_src_text" android:background="@drawable/rs_home_search_bar_selector" android:paddingLeft="@dimen/rs_search_edit_text_padding_left" android:paddingTop="@dimen/rs_search_edit_text_padding_top" android:paddingRight="@dimen/rs_search_edit_text_padding_right" android:paddingBottom="@dimen/rs_search_edit_text_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/rs_search" android:singleLine="true" android:drawableLeft="@drawable/rs_search_bar_mag_glass" android:drawablePadding="@dimen/rs_search_edit_text_drawable_padding" android:imeOptions="actionGo|flagNoFullscreen|flagNoExtractUi" />
+                <ViewStub android:layout_gravity="right|center" android:id="@id/rs_ingress_buttons_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/voice_flow_buttons_stub" android:layout_width="fill_parent" android:layout_height="@dimen/rs_voice_flow_below_search_height" />
+</com.amazon.retailsearch.android.ui.entry.RetailSearchEntryBar>

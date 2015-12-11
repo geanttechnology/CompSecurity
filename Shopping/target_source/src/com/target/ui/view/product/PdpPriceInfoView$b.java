@@ -1,0 +1,40 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.target.ui.view.product;
+
+import android.view.View;
+
+// Referenced classes of package com.target.ui.view.product:
+//            PdpPriceInfoView
+
+private class <init>
+    implements android.view.r
+{
+
+    final PdpPriceInfoView this$0;
+
+    public void onClick(View view)
+    {
+        if (PdpPriceInfoView.a(PdpPriceInfoView.this) == null)
+        {
+            return;
+        } else
+        {
+            PdpPriceInfoView.a(PdpPriceInfoView.this).a();
+            return;
+        }
+    }
+
+    private ()
+    {
+        this$0 = PdpPriceInfoView.this;
+        super();
+    }
+
+    this._cls0(this._cls0 _pcls0)
+    {
+        this();
+    }
+}

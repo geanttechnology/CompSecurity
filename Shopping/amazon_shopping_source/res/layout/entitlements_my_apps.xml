@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/up_nav_toggle_icon" android:onClick="onClose" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffff9933" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v4.view.PagerTabStrip android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_gravity="top" android:id="@id/pager_tab_strip" android:background="#ff3d352a" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

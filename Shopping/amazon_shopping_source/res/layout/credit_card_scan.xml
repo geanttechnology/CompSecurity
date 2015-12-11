@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cc_scan_outer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/cc_scan_inner_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/cc_scan_help_button" android:background="@null" android:padding="@dimen/cc_scan_padding" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cc_scan_info_icon" android:layout_alignParentLeft="true" />
+        <ImageButton android:id="@id/cc_scan_torch_button" android:background="@null" android:padding="@dimen/cc_scan_padding" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/cc_scan_upper_text" android:textStyle="bold" android:textColor="@color/cc_scan_white" android:gravity="center" android:id="@id/cc_scan_status_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cc_scan_center_card" />
+        <ImageView android:id="@id/cc_scan_ghost" android:background="@null" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/cc_scan_lower_text" android:textStyle="bold" android:textColor="@color/cc_scan_gray" android:id="@id/cc_scan_secure_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cc_scan_amazon_secure" />
+        <TextView android:textSize="@dimen/cc_scan_lower_text" android:textColor="@color/cc_scan_gray" android:id="@id/cc_scan_save_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cc_scan_card_not_stored" />
+        <ImageView android:gravity="center" android:id="@id/cc_scan_lock" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cc_scan_lock" />
+        <RelativeLayout android:id="@id/cc_scan_progress_layout" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/cc_scan_progress" android:background="@null" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cc_scan_border_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/cc_scan_border" android:background="@null" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

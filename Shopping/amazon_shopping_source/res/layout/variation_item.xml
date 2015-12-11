@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:padding="@dimen/variation_item_padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.mShop.AmazonImageView android:id="@id/item_row_image" android:layout_width="@dimen/variation_item_image_dimension" android:layout_height="@dimen/variation_item_image_dimension" android:layout_marginRight="@dimen/variation_item_padding_big" android:src="@drawable/noimage" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/item_info_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/variation_item_padding_big" android:layout_toRightOf="@id/item_row_image" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/variation_item_text_size" android:textStyle="bold" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/variation_item_text_size" android:textStyle="bold" android:textColor="@color/price" android:id="@id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/variation_item_text_size" android:textColor="@color/subtitle_text_color" android:id="@id/item_availability" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/item_checkmark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_check_buttonless_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

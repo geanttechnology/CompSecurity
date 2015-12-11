@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/nav_home_icn" android:id="@id/home_nav_drawer" android:checked="true" android:title="@string/nav_drawer_home" />
+        <item android:icon="@drawable/nav_categories_icn" android:id="@id/categories_nav_drawer" android:title="@string/nav_drawer_categories" />
+        <item android:icon="@drawable/nav_alerts_icn" android:id="@id/alerts_nav_drawer" android:title="@string/nav_drawer_alerts" />
+        <item android:icon="@drawable/nav_myoffers_icn" android:id="@id/my_offers_nav_drawer" android:title="@string/nav_drawer_my_offers" />
+        <item android:icon="@drawable/nav_help_icn" android:id="@id/help_center_nav_drawer" android:title="@string/nav_drawer_help_center" />
+    </group>
+</menu>

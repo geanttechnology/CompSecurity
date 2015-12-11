@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.details.ProductImagesView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/padding_smallest" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/product_images_view_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double" />
+            <com.amazon.mShop.details.CustomizedGallery android:gravity="center_vertical" android:id="@id/images" android:paddingTop="@dimen/product_images_spacing" android:paddingBottom="@dimen/product_images_spacing" android:focusable="false" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animationDuration="500" />
+        </LinearLayout>
+        <com.amazon.mShop.details.GalleryPinchImageView android:id="@id/pinch_image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <HorizontalScrollView android:layout_gravity="center_horizontal" android:id="@id/product_images_group_container" android:scrollbars="none" android:fadingEdgeLength="@dimen/carousel_list_fading_edge_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/product_images_group" android:padding="@dimen/padding_smallest" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</com.amazon.mShop.details.ProductImagesView>

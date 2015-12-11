@@ -1,0 +1,175 @@
+.class Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;
+.super Ljava/lang/Object;
+.source "CheckoutConfirmationFragment.java"
+
+# interfaces
+.implements Lcom/poshmark/http/api/PMApiResponseHandler;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->fireOrderViaBrainTree_Step1()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/poshmark/http/api/PMApiResponseHandler",
+        "<",
+        "Lcom/poshmark/data_model/models/BrainTreeGatewayInfo;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+.field final synthetic val$order:Lcom/poshmark/data_model/models/PMOrder;
+
+
+# direct methods
+.method constructor <init>(Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;Lcom/poshmark/data_model/models/PMOrder;)V
+    .locals 0
+
+    .prologue
+    .line 234
+    iput-object p1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    iput-object p2, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->val$order:Lcom/poshmark/data_model/models/PMOrder;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleResponse(Lcom/poshmark/http/api/PMApiResponse;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/poshmark/http/api/PMApiResponse",
+            "<",
+            "Lcom/poshmark/data_model/models/BrainTreeGatewayInfo;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .local p1, "apiResponse":Lcom/poshmark/http/api/PMApiResponse;, "Lcom/poshmark/http/api/PMApiResponse<Lcom/poshmark/data_model/models/BrainTreeGatewayInfo;>;"
+    const/4 v3, 0x0
+
+    .line 237
+    iget-object v1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    invoke-virtual {v1}, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->isAdded()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 238
+    invoke-virtual {p1}, Lcom/poshmark/http/api/PMApiResponse;->hasError()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 239
+    iget-object v0, p1, Lcom/poshmark/http/api/PMApiResponse;->data:Ljava/lang/Object;
+
+    check-cast v0, Lcom/poshmark/data_model/models/BrainTreeGatewayInfo;
+
+    .line 240
+    .local v0, "info":Lcom/poshmark/data_model/models/BrainTreeGatewayInfo;
+    iget-object v1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    iput v3, v1, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->CURRENT_TR_DATA_RETRY_COUNT:I
+
+    .line 241
+    iget-object v1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    # invokes: Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->fireOrderViaBrainTree_Step2(Lcom/poshmark/data_model/models/BrainTreeGatewayInfo;)V
+    invoke-static {v1, v0}, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->access$100(Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;Lcom/poshmark/data_model/models/BrainTreeGatewayInfo;)V
+
+    .line 254
+    .end local v0    # "info":Lcom/poshmark/data_model/models/BrainTreeGatewayInfo;
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 243
+    :cond_1
+    iget-object v1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    iget v1, v1, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->CURRENT_TR_DATA_RETRY_COUNT:I
+
+    iget-object v2, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    iget v2, v2, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->TR_DATA_RETRY_COUNT:I
+
+    if-gt v1, v2, :cond_2
+
+    .line 244
+    iget-object v1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    iget v2, v1, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->CURRENT_TR_DATA_RETRY_COUNT:I
+
+    add-int/lit8 v2, v2, 0x1
+
+    iput v2, v1, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->CURRENT_TR_DATA_RETRY_COUNT:I
+
+    .line 245
+    iget-object v1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->val$order:Lcom/poshmark/data_model/models/PMOrder;
+
+    invoke-virtual {v1}, Lcom/poshmark/data_model/models/PMOrder;->getOrderId()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1, p0}, Lcom/poshmark/http/api/PMApi;->getCreditCardGatewayData(Ljava/lang/String;Lcom/poshmark/http/api/PMApiResponseHandler;)V
+
+    goto :goto_0
+
+    .line 247
+    :cond_2
+    iget-object v1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    invoke-virtual {v1}, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->hideProgressDialog()V
+
+    .line 248
+    iget-object v1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    iput v3, v1, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->CURRENT_TR_DATA_RETRY_COUNT:I
+
+    .line 249
+    iget-object v1, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    new-instance v2, Lcom/poshmark/ui/model/ActionErrorContext;
+
+    iget-object v3, p1, Lcom/poshmark/http/api/PMApiResponse;->apiError:Lcom/poshmark/http/api/PMApiError;
+
+    sget-object v4, Lcom/poshmark/ui/model/ActionErrorContext$ActionContext;->SUBMIT_CC:Lcom/poshmark/ui/model/ActionErrorContext$ActionContext;
+
+    iget-object v5, p0, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment$4;->this$0:Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;
+
+    const v6, 0x7f0600f5
+
+    invoke-virtual {v5, v6}, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    sget-object v6, Lcom/poshmark/ui/model/ActionErrorContext$Severity;->HIGH:Lcom/poshmark/ui/model/ActionErrorContext$Severity;
+
+    invoke-direct {v2, v3, v4, v5, v6}, Lcom/poshmark/ui/model/ActionErrorContext;-><init>(Lcom/poshmark/http/api/PMApiError;Lcom/poshmark/ui/model/ActionErrorContext$ActionContext;Ljava/lang/String;Lcom/poshmark/ui/model/ActionErrorContext$Severity;)V
+
+    invoke-virtual {v1, v2}, Lcom/poshmark/ui/fragments/CheckoutConfirmationFragment;->showError(Lcom/poshmark/ui/model/ActionErrorContext;)V
+
+    goto :goto_0
+.end method

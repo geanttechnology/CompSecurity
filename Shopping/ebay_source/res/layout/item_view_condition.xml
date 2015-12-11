@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/ItemView.TopScrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Letterbox">
+        <include layout="@layout/item_header_thumbnail" />
+        <LinearLayout android:orientation="vertical" android:layout_marginLeft="@dimen/checkoutSmallMargin" android:layout_marginRight="@dimen/checkoutSmallMargin" style="@style/ItemView">
+            <com.ebay.android.widget.ContainerLayout android:id="@id/condition_layout" style="@style/ItemView.ContainerLayout">
+                <TextView android:id="@id/condition_textview" android:paddingLeft="@dimen/checkoutSmallMargin" style="@style/ItemView" />
+            </com.ebay.android.widget.ContainerLayout>
+            <TextView android:text="@string/seller_notes" style="@style/ItemView.Header" />
+            <com.ebay.android.widget.ContainerLayout style="@style/ItemView.ContainerLayout">
+                <TextView android:id="@id/seller_notes_value" android:paddingLeft="@dimen/checkoutSmallMargin" style="@style/ItemView" />
+            </com.ebay.android.widget.ContainerLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

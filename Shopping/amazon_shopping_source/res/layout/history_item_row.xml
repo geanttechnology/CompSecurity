@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.history.HistoryItemView android:orientation="vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/history_item_group" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/thumbnail" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/gray_light" android:gravity="center" android:id="@id/history_viewed_time" android:layout_width="@dimen/item_row_height" android:layout_height="wrap_content" android:maxWidth="@dimen/item_row_height" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/item_title_block" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Price" />
+                <com.amazon.mShop.ui.BadgeView android:layout_gravity="center_vertical" android:id="@id/item_badge" android:paddingLeft="@dimen/item_badge_padding_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/item_amazonpoints" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/item_amazonpoints_label" android:paddingRight="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/points" />
+                <TextView android:id="@id/item_amazonpoints_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:id="@id/item_used_and_new" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.amazon.mShop.Stars android:layout_gravity="center_vertical" android:id="@id/item_rating" android:paddingRight="@dimen/padding_extra_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/item_customer_reviews_count" android:paddingLeft="@dimen/padding_extra_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/history_delete_button" android:focusable="false" android:layout_marginTop="@dimen/padding" android:text="@string/cart_delete_button" style="@style/Button.Gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/history_undo_group" android:padding="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/in_stock_green" android:id="@id/history_removed_item" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:id="@id/history_undo_button" android:focusable="false" android:layout_marginTop="@dimen/padding" android:text="@string/undo" style="@style/Button.Gray" />
+    </LinearLayout>
+    <View style="@style/Separator" />
+</com.amazon.mShop.history.HistoryItemView>

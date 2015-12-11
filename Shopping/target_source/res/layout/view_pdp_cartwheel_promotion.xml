@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.target.ui.view.product.FixedHeightListView android:id="@id/product_cartwheel_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.ProductListView.Selectable" />
+        <View android:id="@id/product_cartwheel_div" android:background="@color/divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+        <com.target.ui.view.product.FixedHeightListView android:id="@id/product_promotion_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.ProductListView.Selectable" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/product_apply_coupon_button_wrapper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/min_image_button_size" android:layout_marginTop="@dimen/prd_pdp_top_bottom_2x_padding" style="@style/Target.CardView.Selectable">
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:textColor="@color/target_bullseye_red" android:gravity="center" android:id="@id/product_apply_coupon_button_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/product_apply_coupon_button_default" app:fontStyle="medium" />
+        <ProgressBar android:theme="@style/AppTheme.RedAccent" android:layout_gravity="center" android:id="@id/product_apply_coupon_button_progress" android:visibility="gone" android:layout_width="@dimen/prd_pdp_apply_coupon_progress_spinner_size" android:layout_height="@dimen/prd_pdp_apply_coupon_progress_spinner_size" style="?android:attr/progressBarStyleInverse" />
+    </FrameLayout>
+</merge>

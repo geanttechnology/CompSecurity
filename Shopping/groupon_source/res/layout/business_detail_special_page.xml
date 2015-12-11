@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+    <com.groupon.view.ObservableScrollView android:id="@id/scroller" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/special_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/special_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:src="@drawable/special_page_icon" />
+                <TextView android:textSize="18.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/special_name" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/special_time" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/business_special_page_primary" />
+                <TextView android:id="@id/special_detail" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" style="@style/business_special_page_primary" />
+                <com.groupon.view.SpinnerButton android:textSize="18.0dip" android:id="@id/special_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="12.0dip" android:text="@string/claim_special" style="@style/primary_action_button" />
+                <TextView android:textSize="23.0dip" android:textColor="@color/green_new" android:gravity="center_horizontal" android:id="@id/special_saved_text" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/special_claimed" style="@style/primary_action_button" />
+                <TextView android:textColor="@color/grey73" android:layout_gravity="center" android:id="@id/special_info_text" android:paddingTop="5.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/special_info" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/email_special_section" android:background="@drawable/detail_screen_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/grey_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/email_this_special" android:drawableLeft="@drawable/email_grey" android:drawablePadding="12.0dip" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:src="@drawable/arrow_right_redesign" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/instructions_container" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+                <TextView android:textSize="17.0dip" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/how_to_use_special" />
+                <WebView android:id="@id/instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.groupon.view.UrlImageView android:layout_gravity="center" android:id="@id/printable" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" />
+                <TextView android:textSize="23.0dip" android:textColor="@color/grey61" android:gravity="center" android:id="@id/promo_code" android:background="@drawable/white_with_grey_border_background" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:textIsSelectable="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.groupon.view.ObservableScrollView>
+</RelativeLayout>

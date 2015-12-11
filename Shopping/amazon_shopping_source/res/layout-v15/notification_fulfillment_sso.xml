@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/almostBlack" android:paddingRight="@dimen/notification_timestamp_right_margin" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fulfillment_app_thumbnail" android:layout_width="@dimen/notification_image_size" android:layout_height="@dimen/notification_image_size" android:layout_marginRight="@dimen/notification_image_margin_right" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/fulfillment_app_badge" android:visibility="invisible" android:layout_width="@dimen/notification_image_badge_width" android:layout_height="@dimen/notification_image_badge_height" android:layout_alignLeft="@id/fulfillment_app_thumbnail" android:layout_alignTop="@id/fulfillment_app_thumbnail" />
+    <TextView android:id="@id/fulfillment_app_timestamp" android:layout_alignTop="@id/fulfillment_app_thumbnail" android:layout_alignParentRight="true" style="@style/NotificationBodyText" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/notification_padding" android:layout_toLeftOf="@id/fulfillment_app_timestamp" android:layout_toRightOf="@id/fulfillment_app_thumbnail" android:layout_centerVertical="true">
+        <TextView android:id="@id/fulfillment_app_title_text" style="@style/NotificationTitleText" />
+        <TextView android:id="@id/fulfillment_app_status_text" style="@style/NotificationMultiLineBodyText" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/fulfillment_app_action_text" android:visibility="gone" style="@style/NotificationBodyText" />
+            <ProgressBar android:id="@id/fulfillment_app_progress" android:visibility="gone" android:layout_marginTop="@dimen/notification_progress_bar_margin_top" style="@style/NotificationProgressBar" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

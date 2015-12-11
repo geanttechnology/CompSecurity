@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/MIFU_3_LEFT" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.poshmark.ui.customviews.PMClickableImageView android:id="@id/coverShotViewBig" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" custom:imageLayoutType="Left" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMClickableImageView android:id="@id/coverShotViewSmall1" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" custom:imageLayoutType="Square" />
+            <com.poshmark.ui.customviews.PMClickableImageView android:id="@id/coverShotViewSmall2" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:imageLayoutType="Square" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/addToBundleButton" android:visibility="gone" layout="@layout/button_table_row_top" />
+    <include android:id="@id/viewBundleButton" android:visibility="gone" layout="@layout/button_table_row_middle" />
+    <include android:id="@id/reportListingButton" android:visibility="gone" layout="@layout/button_table_row_bottom" />
+    <include android:id="@id/editListingButton" android:visibility="gone" layout="@layout/button_table_row_top" />
+    <include android:id="@id/markNotForSaleButton" android:visibility="gone" layout="@layout/button_table_row_middle" />
+    <include android:id="@id/markAsAvailableButton" android:visibility="gone" layout="@layout/button_table_row_middle" />
+    <include android:id="@id/deleteListingButton" android:visibility="gone" layout="@layout/button_table_row_bottom" />
+</LinearLayout>

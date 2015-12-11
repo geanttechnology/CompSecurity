@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/delivery_and_takeout_item" android:background="@drawable/recent_list_item_background" android:layout_width="fill_parent" android:layout_height="@dimen/global_search_list_item_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_1">
+        <ImageView android:id="@id/delivery_and_takeout_new_badge" android:layout_width="32.0dip" android:layout_height="16.0dip" android:layout_marginRight="@dimen/gtg_new_badge_search_right_margin" android:src="@drawable/search_new_badge" />
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/grey50" android:gravity="center_vertical" android:id="@id/search_tag_item" android:paddingRight="@dimen/keyline_1" android:layout_width="wrap_content" android:layout_height="@dimen/global_search_list_item_row_height" android:text="@string/delivery_and_takeout" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

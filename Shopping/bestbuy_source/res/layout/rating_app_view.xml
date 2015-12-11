@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="#ff9d9fa1" android:id="@id/mesg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_centerHorizontal="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/mesg">
+        <com.bestbuy.android.bbyobjects.BBYButton android:textSize="13.0sp" android:textColor="#ff474748" android:id="@id/left_button" android:background="@drawable/bby_transparent_grey_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_weight="1.0" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        <com.bestbuy.android.bbyobjects.BBYButton android:textSize="13.0sp" android:textColor="@color/active_blue" android:id="@id/right_button" android:background="@drawable/bby_transparent_blue_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="55.0dip" android:layout_weight="1.0" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </LinearLayout>
+</RelativeLayout>

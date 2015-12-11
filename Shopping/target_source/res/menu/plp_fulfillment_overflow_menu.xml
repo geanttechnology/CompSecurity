@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/add_to_list" android:title="@string/product_fulfillment_overflow_menu_add_to_list" />
+    <item android:id="@id/email" android:title="@string/product_fulfillment_overflow_menu_email" />
+    <item android:id="@id/mail" android:title="@string/product_fulfillment_overflow_menu_mail" />
+    <item android:id="@id/pick_up" android:title="@string/product_fulfillment_overflow_menu_pick_up" />
+    <item android:id="@id/ship_it" android:title="@string/product_fulfillment_overflow_menu_ship_it" />
+    <item android:id="@id/sms" android:title="@string/product_fulfillment_overflow_menu_sms" />
+</menu>

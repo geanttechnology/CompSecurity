@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/rs_search_dropdown_item_suggestions" android:background="@color/rs_primary_background" android:paddingLeft="@dimen/rs_search_dropdown_item_container_padding_left" android:paddingRight="@dimen/rs_search_dropdown_item_container_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/rs_search_dropdown_item_suggestions_container_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rs_search_dropdown_item_clear" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/rs_clear_search_api_holo_light" android:scaleType="center" android:minWidth="@dimen/rs_search_dropdown_item_clear_width" android:contentDescription="@string/rs_delete_history_entry_description" />
+    <LinearLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.amazon.retailsearch.android.ui.entry.SuggestionTextView android:textAppearance="?android:textAppearanceSearchResultTitle" android:layout_gravity="center_vertical" android:id="@id/rs_search_dropdown_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="?android:attr/dropDownItemStyle" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/rs_search_dropdown_item_department" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/rs_search_dropdown_item_query_builder" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/rs_query_builder" android:scaleType="center" android:minWidth="@dimen/rs_search_dropdown_item_builder_width" android:contentDescription="@string/rs_query_builder_description" />
+</LinearLayout>

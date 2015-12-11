@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/social_connect_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:text="@string/debug_connect_save_label" style="@style/Button.Gold.Arrow" />
+        <CheckBox android:id="@id/social_connect_clear_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:text="@string/debug_connect_clear_user_data" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:text="@string/debug_connect_mode" />
+        <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding">
+            <RadioButton android:id="@id/social_connect_once" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_connect_mode_once" />
+            <RadioButton android:id="@id/social_connect_never" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_connect_mode_never" />
+            <RadioButton android:id="@id/social_connect_always" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_connect_mode_always" />
+        </RadioGroup>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:text="@string/debug_connect_url" />
+        <EditText android:id="@id/social_connect_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textUri" />
+    </LinearLayout>
+</ScrollView>

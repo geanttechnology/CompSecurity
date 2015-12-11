@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/search_bar" android:paddingLeft="@dimen/search_gray_bg_padding_left" android:paddingTop="@dimen/search_gray_bg_padding_top" android:paddingRight="@dimen/search_gray_bg_padding_right" android:paddingBottom="@dimen/search_gray_bg_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_bar_plate" android:background="@drawable/home_search_bar_selector" android:paddingLeft="@dimen/search_edit_text_padding_left" android:paddingTop="@dimen/home_search_bar_padding_top" android:paddingRight="@dimen/search_edit_text_padding_right" android:paddingBottom="@dimen/home_search_bar_padding_bottom" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="@dimen/search_bar_plate_height" android:layout_weight="1.0">
+        <ImageView android:id="@id/search_mag_glass" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_small" android:src="@drawable/home_search_left_magnifier" />
+        <EditText android:textSize="@dimen/search_bar_text_size" android:textColorHint="@color/home_gray_text_color" android:ellipsize="end" android:gravity="bottom|left|center" android:id="@id/search_edit_text" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/search" android:cursorVisible="false" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionGo" />
+        <ImageView android:id="@id/search_right_barcode_btn" android:background="@color/transparent" android:padding="@dimen/orange_outline_stroke_width" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_search_barcode_btn" />
+    </LinearLayout>
+    <include layout="@layout/vs_nav_voice_btn_stub" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings_partial" android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/menu_item_padding_left" android:paddingTop="@dimen/menu_item_padding_v" android:paddingBottom="@dimen/menu_item_padding_v" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/chevron" android:background="@drawable/chevron" android:paddingLeft="@dimen/menu_chevron_padding_left" android:layout_width="@dimen/menu_chevron_width" android:layout_height="@dimen/menu_chevron_height" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chevron" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/menu_detail_item_primary_text_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:id="@id/heading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/menu_detail_item_secondary_text_size" android:textColor="@color/secondary_text_color" android:id="@id/subheading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/heading" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/divider_line_primary_color" android:layout_width="fill_parent" android:layout_height="@dimen/menu_bevel_height" />
+    <View android:background="@color/divider_line_secondary_color" android:layout_width="fill_parent" android:layout_height="@dimen/menu_bevel_height" />
+</LinearLayout>

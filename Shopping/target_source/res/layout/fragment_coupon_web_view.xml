@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_web_progress_container" />
+    <com.target.ui.view.common.TargetErrorView android:layout_gravity="center" android:id="@id/coupon_web_view_error_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin" />
+    <include layout="@layout/view_coupon_web_view_host" />
+</FrameLayout>

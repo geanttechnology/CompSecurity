@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/scrollable_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.view.FilterBar android:id="@id/filter_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.groupon.view.GrouponSwipeRefreshLayout android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.groupon.util.ScrollEventListView android:id="@android:id/list" android:background="@color/background_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/pull_to_refresh" />
+            <include android:id="@android:id/empty" layout="@layout/any_channel_empty" />
+        </FrameLayout>
+    </com.groupon.view.GrouponSwipeRefreshLayout>
+</LinearLayout>

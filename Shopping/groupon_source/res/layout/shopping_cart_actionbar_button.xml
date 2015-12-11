@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:id="@id/shopping_cart" android:visibility="gone" android:layout_width="@dimen/lollipop_toolbar_icon_width" android:layout_height="@dimen/lollipop_toolbar_icon_height" android:layout_centerVertical="true" style="@style/shopping_cart_action_button"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_shopping_cart_actionbar" android:scaleType="center" />
+    <TextView android:id="@id/shopping_cart_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cart_counter_bubble_actionbar" />
+    <TextView android:id="@id/shopping_cart_new_badge" android:background="@drawable/cart_new_bg" android:visibility="gone" android:layout_width="@dimen/cart_new_badge_width" android:layout_height="@dimen/cart_new_badge_height" android:text="@string/cart_new_badge" style="@style/cart_new_text" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" app:cardBackgroundColor="?android:windowBackground" app:cardCornerRadius="@dimen/card_view_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="fill_parent" app:foreground="?android:selectableItemBackground">
+        <TextView android:id="@id/title" android:text="@string/card_drafts_title" style="@style/EbayTextAppearance.CardTitle" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="5.0">
+            <include android:id="@id/card_item_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_weight="1.0" layout="@layout/homescreen_card_listingdrafts_rowitem" />
+            <include android:id="@id/card_item_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_weight="1.0" layout="@layout/homescreen_card_listingdrafts_rowitem" />
+            <include android:id="@id/card_item_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_weight="1.0" layout="@layout/homescreen_card_listingdrafts_rowitem" />
+            <include android:id="@id/card_item_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_weight="1.0" layout="@layout/homescreen_card_listingdrafts_rowitem" />
+            <include android:id="@id/card_item_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_weight="1.0" layout="@layout/homescreen_card_listingdrafts_rowitem" />
+            <TextView android:textColor="@color/style_guide_gray" android:gravity="center" android:id="@id/oops_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_sell_draft_size" />
+        </LinearLayout>
+        <Button android:layout_gravity="center_horizontal" android:id="@id/button_see_all_drafts" android:layout_width="@dimen/card_more_button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/card_drafts_button_more" android:textAllCaps="false" style="@style/EbayButton" />
+    </com.ebay.mobile.widget.FLinearLayout>
+</android.support.v7.widget.CardView>

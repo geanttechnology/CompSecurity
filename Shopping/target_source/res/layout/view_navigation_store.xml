@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="vertical" android:paddingLeft="@dimen/navigation_padding_left" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_main_item_height" android:layout_marginRight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/xx_microTextSize" android:textColor="@color/navigation_store_description" android:ellipsize="end" android:id="@id/store_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textAllCaps="true" app:fontStyle="light" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/store_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

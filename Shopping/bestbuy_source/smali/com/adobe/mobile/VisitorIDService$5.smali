@@ -1,0 +1,142 @@
+.class Lcom/adobe/mobile/VisitorIDService$5;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/adobe/mobile/VisitorIDService;->getAnalyticsParameters()Ljava/util/Map;
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/concurrent/Callable",
+        "<",
+        "Ljava/lang/Void;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/adobe/mobile/VisitorIDService;
+
+.field final synthetic val$returnValue:Ljava/util/Map;
+
+
+# direct methods
+.method constructor <init>(Lcom/adobe/mobile/VisitorIDService;Ljava/util/Map;)V
+    .locals 0
+
+    .prologue
+    .line 316
+    iput-object p1, p0, Lcom/adobe/mobile/VisitorIDService$5;->this$0:Lcom/adobe/mobile/VisitorIDService;
+
+    iput-object p2, p0, Lcom/adobe/mobile/VisitorIDService$5;->val$returnValue:Ljava/util/Map;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic call()Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 316
+    invoke-virtual {p0}, Lcom/adobe/mobile/VisitorIDService$5;->call()Ljava/lang/Void;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public call()Ljava/lang/Void;
+    .locals 4
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 320
+    iget-object v0, p0, Lcom/adobe/mobile/VisitorIDService$5;->this$0:Lcom/adobe/mobile/VisitorIDService;
+
+    # getter for: Lcom/adobe/mobile/VisitorIDService;->_marketingCloudID:Ljava/lang/String;
+    invoke-static {v0}, Lcom/adobe/mobile/VisitorIDService;->access$000(Lcom/adobe/mobile/VisitorIDService;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 321
+    iget-object v0, p0, Lcom/adobe/mobile/VisitorIDService$5;->val$returnValue:Ljava/util/Map;
+
+    const-string v1, "mid"
+
+    iget-object v2, p0, Lcom/adobe/mobile/VisitorIDService$5;->this$0:Lcom/adobe/mobile/VisitorIDService;
+
+    # getter for: Lcom/adobe/mobile/VisitorIDService;->_marketingCloudID:Ljava/lang/String;
+    invoke-static {v2}, Lcom/adobe/mobile/VisitorIDService;->access$000(Lcom/adobe/mobile/VisitorIDService;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 326
+    iget-object v0, p0, Lcom/adobe/mobile/VisitorIDService$5;->this$0:Lcom/adobe/mobile/VisitorIDService;
+
+    # getter for: Lcom/adobe/mobile/VisitorIDService;->_blob:Ljava/lang/String;
+    invoke-static {v0}, Lcom/adobe/mobile/VisitorIDService;->access$200(Lcom/adobe/mobile/VisitorIDService;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 327
+    iget-object v0, p0, Lcom/adobe/mobile/VisitorIDService$5;->val$returnValue:Ljava/util/Map;
+
+    const-string v1, "aamb"
+
+    iget-object v2, p0, Lcom/adobe/mobile/VisitorIDService$5;->this$0:Lcom/adobe/mobile/VisitorIDService;
+
+    # getter for: Lcom/adobe/mobile/VisitorIDService;->_blob:Ljava/lang/String;
+    invoke-static {v2}, Lcom/adobe/mobile/VisitorIDService;->access$200(Lcom/adobe/mobile/VisitorIDService;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 330
+    :cond_0
+    iget-object v0, p0, Lcom/adobe/mobile/VisitorIDService$5;->this$0:Lcom/adobe/mobile/VisitorIDService;
+
+    # getter for: Lcom/adobe/mobile/VisitorIDService;->_locationHint:Ljava/lang/String;
+    invoke-static {v0}, Lcom/adobe/mobile/VisitorIDService;->access$100(Lcom/adobe/mobile/VisitorIDService;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 331
+    iget-object v0, p0, Lcom/adobe/mobile/VisitorIDService$5;->val$returnValue:Ljava/util/Map;
+
+    const-string v1, "aamlh"
+
+    iget-object v2, p0, Lcom/adobe/mobile/VisitorIDService$5;->this$0:Lcom/adobe/mobile/VisitorIDService;
+
+    # getter for: Lcom/adobe/mobile/VisitorIDService;->_locationHint:Ljava/lang/String;
+    invoke-static {v2}, Lcom/adobe/mobile/VisitorIDService;->access$100(Lcom/adobe/mobile/VisitorIDService;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 334
+    :cond_1
+    return-object v3
+.end method

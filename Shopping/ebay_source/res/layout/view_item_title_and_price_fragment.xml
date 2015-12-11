@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/item_title_textview" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/item_subtitle_textview" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/product_review_layout" android:paddingTop="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ebay.mobile.common.eBayRating android:id="@id/reviews_rating" android:layout_height="fill_parent" ebay:threshold="0" style="@style/ItemView.RatingStars" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+        <TextView android:textColor="?android:textColorTertiary" android:id="@id/reviews_count" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:id="@id/price_layout_one" layout="@layout/view_item_price_with_button" />
+    <LinearLayout android:orientation="vertical" android:id="@id/price_layout_two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/item_card_abin_vertical_separator" android:background="?listContainerOutsideBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin15" android:layout_marginBottom="@dimen/ebayMarginHalf" />
+        <include layout="@layout/view_item_price_with_button" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_card_layout" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPaddingHalf" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/ebayMargin" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/item_card_left_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/item_card_ebay_plus_layout" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_viewitem_plus" android:contentDescription="@string/ebay_plus" />
+                <TextView android:gravity="left" android:id="@id/ebay_plus_blurb" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_card_normal_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/item_card_shipping_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Free" />
+                <TextView android:id="@id/item_card_shipping_cost_converted" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorSecondary" android:id="@id/item_card_shipping_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shipping" />
+            </LinearLayout>
+            <View android:gravity="center" android:id="@id/item_card_vertical_separator" android:background="?listContainerOutsideBackground" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_card_right_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/item_card_delivery_dates" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorSecondary" android:id="@id/item_card_delivery_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/est_delivery" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

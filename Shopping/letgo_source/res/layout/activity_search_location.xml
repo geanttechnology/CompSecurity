@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar_actionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_default" />
+    <LinearLayout android:gravity="top|center" android:layout_gravity="top|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <AutoCompleteTextView android:id="@id/search_query_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

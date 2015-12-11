@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/target_stark_white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/x_largeTextSize" android:id="@id/dialog_title" android:layout_width="@dimen/store_chooser_title_width" android:layout_height="wrap_content" android:layout_margin="@dimen/cart_dialog_title_margin" android:text="@string/find_a_store" app:fontStyle="medium" style="@style/Target.TextView" />
+        <com.target.ui.view.store.StoreChooserEnableLocationServicesView android:id="@id/enable_location_services_wrapper" android:paddingTop="@dimen/store_chooser_enable_location_services_wrapper_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/store_chooser_content_height" android:layout_marginLeft="@dimen/dialog_content_padding" android:layout_marginRight="@dimen/dialog_content_padding" />
+        <com.target.ui.view.store.StoreChooserNoLocationServicesView android:id="@id/location_services_off_wrapper" android:layout_width="fill_parent" android:layout_height="@dimen/store_chooser_content_height" />
+        <com.target.ui.view.store.StoreChooserSelectionView android:id="@id/store_list_wrapper" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/store_chooser_content_height" />
+    </LinearLayout>
+    <include layout="@layout/view_dialog_progress_container" />
+</FrameLayout>

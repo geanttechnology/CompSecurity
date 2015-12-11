@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/bc_search_help_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_help_interstitial_text" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_search_help_bullet" />
+            <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_new_help_text_line1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_search_help_bullet" />
+            <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_search_new_help_text_line2" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/barcode_help" />
+        <Button android:textStyle="bold" android:id="@id/barcode_search_first_try_screen_try_it_button" android:layout_marginBottom="@dimen/padding" android:text="@string/bc_search_help_interstitial_scan_button" style="@style/AUIButton.Gold.Fullscreen" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

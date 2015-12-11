@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/modal_background" android:background="@android:color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/modal_main" android:background="?colorPrimary" style="@style/EbayModalStyle">
+        <LinearLayout android:orientation="vertical" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/modal_toolbar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/left_side_controls" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayPadding" android:layout_weight="0.2">
+                    <TextView android:layout_gravity="center" android:id="@id/modal_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:textAllCaps="true" />
+                    <ImageButton android:layout_gravity="center" android:id="@id/modal_back_button" android:padding="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_actionbar_back" android:adjustViewBounds="true" android:contentDescription="@string/back" style="?android:attr/borderlessButtonStyle" />
+                </FrameLayout>
+                <TextView android:textAppearance="@style/EbayTextAppearanceStrong.Title2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/modal_toolbar_centered_title" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Title Goes Here and Here and Here and Here" android:maxLines="2" android:layout_weight="0.6" />
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/right_side_controls" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayPadding" android:layout_weight="0.2">
+                    <TextView android:layout_gravity="center" android:id="@id/modal_done_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:textAllCaps="true" />
+                    <ImageButton android:layout_gravity="center" android:id="@id/modal_close_button" android:padding="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_actionbar_close" android:adjustViewBounds="true" android:contentDescription="@string/close" style="?android:attr/borderlessButtonStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <View style="@style/CommonDivider" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/modal_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

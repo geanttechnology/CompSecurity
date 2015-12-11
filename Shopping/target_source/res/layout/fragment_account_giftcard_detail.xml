@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/giftcard_detail_text_header" android:background="@color/gift_card_detail_header_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/scan_giftcard_header" android:scaleType="center" />
+    <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/giftcard_detail_text_price" android:layout_width="fill_parent" android:layout_height="@dimen/account_giftcard_price_height" android:layout_below="@id/giftcard_detail_text_header" app:fontStyle="regular" style="@style/Target.TextView.AccountGiftCardDetailBalance" />
+    <View android:id="@id/giftcard_detail_divider" android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_below="@id/giftcard_detail_text_price" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/giftcard_detail_button_done" android:layout_below="@id/giftcard_detail_divider">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/giftcard_detail_barcode_container" android:layout_width="@dimen/account_giftcard_barcode_width" android:layout_height="@dimen/account_giftcard_barcode_height">
+                <ImageView android:id="@id/giftcard_detail_barcode_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <WebView android:id="@id/giftcard_detail_barcode_webview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <com.target.ui.view.TargetTextView android:layout_gravity="center_horizontal" android:id="@id/giftcard_detail_text_access_number" android:padding="@dimen/account_giftcard_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Target.TextView.AccountGiftCardAccessNumber" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.target.ui.view.TargetButton android:id="@id/giftcard_detail_button_done" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_button_height" android:layout_marginLeft="@dimen/account_giftcard_margin" android:layout_marginRight="@dimen/account_giftcard_margin" android:layout_marginBottom="@dimen/account_giftcard_margin" android:text="@string/account_gift_card_done" android:layout_alignParentBottom="true" app:fontStyle="medium" style="@style/RedButton" />
+</RelativeLayout>

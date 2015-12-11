@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:tileMode="repeat">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/screen_padding_h" android:paddingTop="@dimen/screen_padding_v" android:paddingRight="@dimen/screen_padding_h" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                <ImageView android:layout_width="@dimen/login_logo_width" android:layout_height="@dimen/login_logo_height" android:src="@drawable/login_apps_logo" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/login_secondary_text_size" android:textColor="@color/primary_text_color" android:id="@id/fad" android:paddingTop="@dimen/login_fad_top_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/login_footer_text_size" android:textColor="@color/secondary_text_color" android:id="@id/login_footer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/loginScreen_container" android:paddingLeft="@dimen/screen_padding_h" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                <EditText android:textColor="@color/primary_text_color" android:id="@id/username" android:background="@drawable/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/screen_section_margin_top" android:singleLine="true" android:inputType="textEmailAddress" android:imeOptions="flagNoExtractUi" />
+                <EditText android:textColor="@color/primary_text_color" android:id="@id/password" android:background="@drawable/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/screen_section_margin_top" android:singleLine="true" android:inputType="textPassword" android:imeOptions="flagNoExtractUi" />
+                <Button android:textSize="@dimen/login_button_text_size" android:textColor="@android:color/black" android:id="@id/signIn_button" android:background="@drawable/button_orange_states" android:paddingTop="@dimen/login_button_padding_v" android:paddingBottom="@dimen/login_button_padding_v" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/screen_section_margin_top" />
+                <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/screen_section_margin_top" android:stretchColumns="1">
+                    <TableRow>
+                        <TextView android:textSize="@dimen/login_regular_text_size" android:textColor="@color/secondary_text_color" android:id="@id/forgotPasswordLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/login_regular_text_size" android:textColor="@color/secondary_text_color" android:id="@id/newCustomer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </TableRow>
+                    <TableRow>
+                        <Button android:textSize="@dimen/login_button_text_size" android:textColor="@android:color/black" android:id="@id/forgotPassword_button" android:background="@drawable/button_grey_states" android:paddingTop="@dimen/login_button_padding_v" android:paddingBottom="@dimen/login_button_padding_v" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <Button android:textSize="@dimen/login_button_text_size" android:textColor="@android:color/black" android:id="@id/createAccount_button" android:background="@drawable/button_grey_states" android:paddingTop="@dimen/login_button_padding_v" android:paddingBottom="@dimen/login_button_padding_v" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/progress_container" android:background="#80000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.venezia.widget.progress.IndeterminateProgressView android:layout_gravity="center" android:id="@id/init_spinner" android:layout_width="@dimen/default_dark_loading_indicator_size" android:layout_height="@dimen/default_dark_loading_indicator_size" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/my_groupon_item_content" android:background="@drawable/white_with_grey_border_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/my_groupon_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.groupon.view.UrlImageView android:id="@id/deal_image" style="@style/my_groupon_card" />
+            <View android:id="@id/vert_div" style="@style/my_groupon_card_divider" />
+            <LinearLayout android:orientation="vertical" android:id="@id/labels_container" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/my_groupon_labels_container">
+                <TextView android:id="@id/title" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/my_groupon_title" />
+                <TextView android:id="@id/subheader" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/my_groupon_subtitle" />
+                <TextView android:id="@id/book_now_subheader" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/book_now_subtitle" />
+            </LinearLayout>
+            <TextView android:gravity="bottom" android:id="@id/status" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/my_groupon_value" />
+        </RelativeLayout>
+        <View android:id="@id/track_package_div" android:visibility="gone" android:layout_below="@id/my_groupon_item" style="@style/my_groupon_card_divider_horizontal" />
+        <TextView android:gravity="right|center" android:id="@id/my_groupon_track_package_button" android:background="@drawable/my_groupon_selector_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_groupons_track_package_button_height" android:text="@string/shipment_track" android:layout_below="@id/track_package_div" style="@style/my_groupon_tracking" />
+        <FrameLayout android:background="@drawable/my_groupon_selector_state" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/my_groupon_item" android:layout_alignBottom="@id/my_groupon_item" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" style="@style/mycc_row_divider"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/card_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toLeftOf="@id/selected_check_mark" android:layout_toRightOf="@id/card_icon" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="left|center" android:id="@id/card_type" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_label_v3" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/groupon_alert" android:id="@id/card_expired" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/card_type" android:layout_alignBottom="@id/card_type" />
+        </RelativeLayout>
+        <TextView android:layout_gravity="left|center" android:id="@id/card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/payment_details_v3" />
+    </LinearLayout>
+    <com.groupon.view.GrouponCheckMark android:id="@id/selected_check_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/disclosure_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_redesign" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:layout_gravity="right|center" android:id="@id/more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more" />
+</RelativeLayout>

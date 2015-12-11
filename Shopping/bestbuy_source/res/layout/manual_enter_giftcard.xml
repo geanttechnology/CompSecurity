@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android"
+  xmlns:app="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/scangiftcard_layout" android:background="#ff1279ba" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="23.0sp" android:textColor="#ffffffff" android:id="@id/scan_text" android:paddingLeft="60.0dip" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_text" app:BBYFont="@string/BBY_APP_FONT_BOLD" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="23.0sp" android:id="@id/emptytext" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " app:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="23.0sp" android:textColor="#ffffffff" android:id="@id/giftcard_text" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/giftcard_text" app:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        <ImageView android:id="@id/scan_image" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:src="@drawable/scanicon" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/carddetails_layout" android:background="@drawable/commerce_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <EditText android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/gift_cardnumber_et" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:hint="@string/cardnumber_hint" android:maxLength="16" android:inputType="number" android:fontFamily="@string/BBY_APP_FONT_REGULAR" style="@style/BBYEditTextStyle.invisible" />
+        <View android:id="@id/slider_Horizontal" android:layout_below="@id/gift_cardnumber_et" style="@style/horizontal_line" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/gift_securitypin_et" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:hint="@string/Securitycode_hint" android:password="true" android:maxLength="4" android:layout_below="@id/slider_Horizontal" android:inputType="number" android:fontFamily="@string/BBY_APP_FONT_REGULAR" style="@style/BBYEditTextStyle.invisible" />
+    </RelativeLayout>
+    <com.bestbuy.android.bbyobjects.BBYButton android:enabled="false" android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/checkbalance_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:text="@string/checkbalance_text" android:fontFamily="@string/BBY_APP_FONT_BOLD" style="@style/BBYButtonStyle_Blue_3" />
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/sample_giftcard_image" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/exampleimage" />
+    </LinearLayout>
+</LinearLayout>

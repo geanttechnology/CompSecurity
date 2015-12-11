@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/search_name_edittext" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/enter_a_name" android:maxLines="1" android:lines="1" android:maxLength="100" android:inputType="text" android:imeOptions="actionDone" />
+            <TextView android:id="@id/search_name_exists" android:background="@drawable/suggestion_box_red_up" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save_exists" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <Switch android:id="@id/notify_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:textOn="@string/on" android:textOff="@string/off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/notify_me_message" android:layout_toLeftOf="@id/notify_checkbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/criteria" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/progress_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/progress_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+            <ProgressBar android:layout_width="@dimen/commonProgressSize" android:layout_height="@dimen/commonProgressSize" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

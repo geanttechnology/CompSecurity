@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FRelativeLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_notifications_iconsize" res_auto:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/notification_dummy_icon" android:layout_width="@dimen/homescreen_card_notifications_iconsize" android:layout_height="@dimen/homescreen_card_notifications_iconsize" />
+    <TextView android:textSize="@dimen/ebayTextSizeGigantic" android:gravity="center" android:id="@id/notification_item_counter" android:visibility="gone" android:layout_width="@dimen/homescreen_card_notifications_iconsize" android:layout_height="@dimen/homescreen_card_notifications_iconsize" />
+    <com.ebay.android.widget.RemoteImageView android:id="@id/notification_item_image" android:layout_width="@dimen/homescreen_card_notifications_iconsize" android:layout_height="@dimen/homescreen_card_notifications_iconsize" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_toRightOf="@id/notification_dummy_icon">
+        <TextView android:textAppearance="@style/EbayTextAppearanceStrong.Body1" android:textColor="@color/style_guide_red" android:id="@id/notification_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/EbayTextAppearance.Body2" android:textColor="@color/style_guide_gray" android:ellipsize="end" android:id="@id/notification_item_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+</com.ebay.mobile.widget.FRelativeLayout>

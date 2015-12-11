@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.preference.LongTitleSwitchPreference android:persistent="false" android:title="@string/country_auto_detect" android:key="preference_auto_detect" android:disableDependentsState="true" />
+    <com.ebay.mobile.preference.LongSummaryPreference android:persistent="false" android:selectable="false" android:key="preference_auto_detect_summary" android:summary="@string/country_auto_detect_info" />
+    <Preference android:layout="@layout/list_divider" />
+    <PreferenceScreen android:title="@string/preferred_country" android:key="preference_country" android:dependency="preference_auto_detect" android:fragment="com.ebay.mobile.settings.PreferredCountryPreferenceFragment" />
+</PreferenceScreen>

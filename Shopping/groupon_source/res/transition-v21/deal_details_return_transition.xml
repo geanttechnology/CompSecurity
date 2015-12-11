@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:duration="400" android:transitionOrdering="0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fade android:fadingMode="2">
+        <targets>
+            <target android:targetId="@id/semitransparent_overlay" />
+        </targets>
+    </fade>
+    <fade android:fadingMode="2">
+        <targets>
+            <target android:targetId="@id/details_top_container" />
+        </targets>
+    </fade>
+    <slide android:slideEdge="0x50">
+        <targets>
+            <target android:targetId="@id/bottom_bar" />
+        </targets>
+    </slide>
+    <fade android:fadingMode="2">
+        <targets>
+            <target android:targetId="@id/tool_bar" />
+        </targets>
+    </fade>
+</transitionSet>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_aiv_legal_notices_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:text="@string/help_aiv_terms_of_use_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_aiv_terms_of_use_title" amazon_urlContentId="@string/help_aiv_terms_of_use_url" amazon_urlUseExternalBrowser="true" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:text="@string/help_aiv_third_party_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_aiv_third_party_title" amazon_urlContentId="@string/help_aiv_third_party_url" amazon_urlUseExternalBrowser="true" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

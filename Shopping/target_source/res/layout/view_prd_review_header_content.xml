@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/target_stark_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:target="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/prd_review_header_view_pager" android:layout_width="fill_parent" android:layout_height="@dimen/prd_review_view_pager_min_height" android:layout_marginTop="@dimen/default_4x_padding_margin" />
+    <com.target.ui.view.common.ViewPagerIndicator android:layout_gravity="center" android:id="@id/prd_review_header_page_indicator" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_4x_padding_margin" target:indicator_size="@dimen/prd_review_indicator_size" />
+</LinearLayout>

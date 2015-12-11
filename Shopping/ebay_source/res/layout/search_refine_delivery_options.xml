@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/location_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/location_options" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/loc_free_shipping" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/refineEdgeMargin" android:layout_width="fill_parent" android:layout_height="?listPreferredItemHeightQuantized">
+            <CheckBox android:id="@id/loc_free_shipping_cbox" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/refineEdgeMargin" android:button="@drawable/vq_refine_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/loc_free_shipping_title" android:paddingRight="@dimen/refineEdgeMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_refinement_loc_free_shipping" android:layout_toLeftOf="@id/loc_free_shipping_cbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Refine.Text.Title.Bold" />
+        </RelativeLayout>
+        <include android:id="@id/loc_expedited_shipping_divider" layout="@layout/refine_panel_item_divider" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/loc_expedited_shipping" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/refineEdgeMargin" android:layout_width="fill_parent" android:layout_height="?listPreferredItemHeightQuantized">
+            <CheckBox android:id="@id/loc_expedited_shipping_cbox" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/refineEdgeMargin" android:button="@drawable/vq_refine_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/loc_expedited_shipping_title" android:paddingRight="@dimen/refineEdgeMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_refinement_loc_expedited_shipping" android:layout_toLeftOf="@id/loc_expedited_shipping_cbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Refine.Text.Title.Bold" />
+        </RelativeLayout>
+        <include layout="@layout/refine_panel_item_divider" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.retailsearch.android.ui.results.views.image.ImageWrapperGallery android:id="@id/rs_results_image_wrapper" style="@style/Results.ImageWrapper.Gallery"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rs_results_image" style="@style/Results.Image.Gallery" />
+    <com.amazon.retailsearch.android.ui.results.views.image.ThumbSwitcher android:id="@id/rs_results_thumb_switcher" style="@style/Results.ThumbSwitcher.Gallery" />
+</com.amazon.retailsearch.android.ui.results.views.image.ImageWrapperGallery>

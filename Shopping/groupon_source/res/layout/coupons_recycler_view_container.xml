@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/scrollable_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.groupon.v3.view.GrouponSwipeRefreshLayoutV3 android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/recycler_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.groupon.v3.view.GrouponSwipeRefreshLayoutV3>
+    </FrameLayout>
+    <ViewStub android:id="@id/coupons_intro_stub" android:layout="@layout/coupons_intro" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

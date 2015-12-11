@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dark_blue" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/livechat_layout" android:padding="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chaticon" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/livechat" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_expert" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/light_black" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/callbby_layout" android:padding="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/callicon" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_bestbuy" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/talk_expert" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/light_black" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/makeapt_layout" android:padding="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/meeticon" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/make_an_appointment" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/meet_expert" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

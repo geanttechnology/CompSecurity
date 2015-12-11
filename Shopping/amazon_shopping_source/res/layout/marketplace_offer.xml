@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.details.MarketPlaceOfferView android:orientation="vertical" android:id="@id/marketplace_offer" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding_icon_selector_right" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ArrowSelector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <TextView android:gravity="left" android:id="@id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Price" />
+            <com.amazon.mShop.ui.BadgeView android:layout_gravity="center_vertical" android:id="@id/item_badge" android:paddingLeft="@dimen/item_badge_padding_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:ellipsize="middle" android:id="@id/offer_merchant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <ViewStub android:id="@id/amazon_logo_stub" android:layout="@layout/amazon_logo" android:inflatedId="@id/amazon_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:gravity="left" android:id="@id/item_shipping_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="right" android:id="@id/offer_merchant_percent_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:gravity="left" android:id="@id/offer_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="right" android:id="@id/offer_merchant_rating_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.amazon.mShop.details.MarketPlaceOfferView>

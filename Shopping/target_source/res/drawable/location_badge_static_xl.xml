@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/target_fade_away_grey" />
+            <size android:height="@dimen/location_icon_size_big" android:width="@dimen/location_icon_size_big" />
+            <stroke android:width="@dimen/location_icon_stroke_width" android:color="@color/target_aluminum_grey" />
+        </shape>
+    </item>
+</layer-list>

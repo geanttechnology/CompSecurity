@@ -1,0 +1,19 @@
+version: 2.0.2
+apkFileName: combestbuyandroid972apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '19'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '972001'
+  versionName: 9.7.2
+sharedLibrary: false
+unknownFiles:
+  org/apache/http/entity/mime/version.properties: '8'
+doNotCompress:
+- resources.arsc

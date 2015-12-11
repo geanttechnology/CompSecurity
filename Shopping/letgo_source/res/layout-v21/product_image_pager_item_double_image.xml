@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher android:orientation="vertical" android:id="@id/viewSwitcher" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" android:transitionName="product_transition"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_pager_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/content_description_image" android:transitionName="@string/image_transition" />
+    <ImageView android:id="@id/image_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/content_description_image" android:transitionName="@string/image_transition" />
+</ViewSwitcher>

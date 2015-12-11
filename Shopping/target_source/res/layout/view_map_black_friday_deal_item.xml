@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.BitmapImageView android:layout_gravity="center" android:id="@id/black_friday_deal_image" android:background="@color/target_stark_white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="@drawable/layout_divider" android:layout_width="fill_parent" android:layout_height="@dimen/black_friday_deal_divider_height" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/default_padding_margin" android:layout_weight="0.25">
+        <com.target.ui.view.TargetTextView android:layout_gravity="center_vertical" android:id="@id/black_friday_deal_location" android:background="@drawable/black_friday_deal_badge" android:layout_width="@dimen/black_friday_deal_location_size" android:layout_height="@dimen/black_friday_deal_location_size" android:layout_marginLeft="@dimen/default_padding_margin" style="@style/DealBadgeTextAppearance" />
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/black_friday_deal_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_padding_margin" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

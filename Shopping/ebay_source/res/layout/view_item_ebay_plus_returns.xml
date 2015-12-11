@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+    <RelativeLayout android:id="@id/return_banner_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding15" android:focusable="true" android:minHeight="?android:listPreferredItemHeight" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:id="@id/return_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:text="@string/ebay_plus_return_banner" android:contentDescription="@string/ebay_plus_return_banner" />
+        </LinearLayout>
+        <include layout="@layout/view_item_chevron" />
+    </RelativeLayout>
+</LinearLayout>

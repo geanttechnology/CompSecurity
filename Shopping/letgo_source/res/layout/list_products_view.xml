@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="8.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/list_item_image_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/main_product_image" style="@style/ProductImageStyle" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="top|right|center" android:id="@id/sold_label" android:background="@drawable/product_list_badge_sold" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="-26.0dip" android:text="@string/product_list_badge_sold_label" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="top|right|center" android:id="@id/new_label" android:background="@drawable/product_list_badge_new" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="-26.0dip" android:text="@string/product_list_badge_new_label" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/name" android:layout_below="@id/list_item_image_container" style="@style/ProductNameTextViewStyle" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/common_color_dark" android:id="@id/product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/name" android:layout_centerHorizontal="true" />
+</RelativeLayout>

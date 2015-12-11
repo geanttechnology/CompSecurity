@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/bright_green" />
+            <stroke android:width="2.0dip" android:color="@color/profile_picture_border_color" />
+            <size android:height="80.0dip" android:width="80.0dip" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/myprofile_camera_icn" android:left="25.0dip" android:top="25.0dip" android:right="25.0dip" android:bottom="25.0dip" />
+</layer-list>

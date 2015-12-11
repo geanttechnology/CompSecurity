@@ -1,0 +1,31 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.client.metrics.codec;
+
+import com.google.protobuf.MessageOrBuilder;
+
+// Referenced classes of package com.amazon.client.metrics.codec:
+//            DeviceMetricsMessage
+
+public static interface 
+    extends MessageOrBuilder
+{
+
+    public abstract String getName();
+
+    public abstract int getSampleSize();
+
+    public abstract  getType();
+
+    public abstract String getValue();
+
+    public abstract boolean hasName();
+
+    public abstract boolean hasSampleSize();
+
+    public abstract boolean hasType();
+
+    public abstract boolean hasValue();
+}

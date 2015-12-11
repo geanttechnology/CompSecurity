@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gpattern" android:scaleType="centerCrop" />
+        <com.groupon.mapview.HotelMapView android:id="@id/hotel_mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/hotel_pager_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:layout_gravity="center" android:id="@id/btn_up" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:src="@drawable/ic_map_arrow_up" />
+        <android.support.v4.view.ViewPager android:id="@id/hotel_pager" android:layout_width="fill_parent" android:layout_height="@dimen/hotel_deal_card_height" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/scrollable_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.groupon.util.ScrollEventListView android:id="@android:id/list" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/hotel_item_selector_state" android:drawSelectorOnTop="true" style="@style/pull_to_refresh" />
+            <include android:id="@android:id/empty" layout="@layout/hotels_empty_results" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ImageButton android:id="@id/fab_map" android:layout_width="@dimen/fab_map_size" android:layout_height="@dimen/fab_map_size" android:layout_marginLeft="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" style="@style/fab_map" />
+    <com.groupon.view.HotelsLoadingScreen android:id="@id/loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

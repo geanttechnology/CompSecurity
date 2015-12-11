@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" style="@style/EbayCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/card_title" />
+        <include android:id="@id/card_item_1" android:layout_width="fill_parent" android:layout_height="@dimen/card_deals_top_height" android:layout_marginBottom="@dimen/ebayPadding2x" android:layout_marginStart="@dimen/ebayPadding2x" android:layout_marginEnd="@dimen/ebayPadding2x" layout="@layout/card_deals_cell_horizontal" />
+        <include layout="@layout/card_deals_divider" />
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:paddingStart="@dimen/ebayPadding2x" android:paddingEnd="@dimen/ebayPadding2x">
+            <include android:id="@id/card_item_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ebayPadding2x" layout="@layout/card_deals_cell_vertical" />
+            <include android:id="@id/card_item_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/card_deals_cell_vertical" />
+        </LinearLayout>
+        <include android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/EbayButton" layout="@layout/homescreen_card_see_more_button" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/cart_text_size_medium" android:textColor="@color/grey_dark" android:id="@id/custom_field_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <EditText android:id="@id/custom_field_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/log_in_sign_up_edit_text_ltr_rtl" />
+</LinearLayout>

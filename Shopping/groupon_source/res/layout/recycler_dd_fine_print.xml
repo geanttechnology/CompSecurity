@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fine_print_section" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/details_item_top_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/fine_print_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fine_print_b" style="@style/deal_details_section_header_v2" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fine_print_title">
+        <TextView android:textColor="@color/grey_medium" android:id="@id/expiration" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_expiration" />
+        <com.groupon.view.NonLeakingNonFlickerWebView android:id="@id/fine_print" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/expiration" />
+        <TextView android:id="@id/universal_rules" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fine_print" style="@style/deal_details_universal_rules_v2" />
+        <TextView android:id="@id/legal_disclosure" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/universal_rules" style="@style/deal_details_universal_rules_v2" />
+    </RelativeLayout>
+</RelativeLayout>

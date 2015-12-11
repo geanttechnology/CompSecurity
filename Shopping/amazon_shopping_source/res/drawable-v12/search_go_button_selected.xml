@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/search_go_button_background" />
+    <stroke android:width="@dimen/orange_outline_stroke_width" android:color="@color/amazon_gold" />
+    <corners android:topRightRadius="@dimen/amazon_corner_radius" android:bottomRightRadius="@dimen/amazon_corner_radius" />
+</shape>

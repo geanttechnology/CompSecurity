@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wobble_spaceship_cat_container" android:padding="30.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/spaceship_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/spaceship_lights_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/spaceship_cat" android:layout_alignRight="@id/spaceship_cat" android:layout_centerInParent="true" />
+</RelativeLayout>

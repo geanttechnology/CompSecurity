@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/did_you_mean_text" style="@style/Rs.Corrections.DidYouMean.Header" />
+    <TextView android:id="@id/did_you_mean_detailed_text" style="@style/Rs.Corrections.DidYouMean.Detail" />
+</merge>

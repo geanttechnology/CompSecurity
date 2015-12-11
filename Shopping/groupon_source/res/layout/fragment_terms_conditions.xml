@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_terms_conditions_welcome_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/secondary_action_button_no_border_text" android:id="@id/fragment_terms_conditions_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/interstitial_signup_title" />
+    <View android:id="@id/fragment_terms_conditions_separator" android:background="@color/reserve_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/fragment_terms_conditions_legal_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/accept_area" />
+        <LinearLayout android:orientation="vertical" android:id="@id/accept_area" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:id="@id/fragment_terms_conditions_separator_2" android:background="@color/reserve_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <Button android:id="@id/fragment_terms_conditions_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/interstitial_signup_accept" style="@style/primary_action_button" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

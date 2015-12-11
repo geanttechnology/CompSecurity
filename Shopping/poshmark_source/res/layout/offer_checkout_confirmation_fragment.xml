@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:orientation="vertical" android:id="@id/scrollView" android:background="@drawable/bg_fragment" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/checkoutItemSummary" layout="@layout/checkout_item_summary" />
+            <include android:id="@id/orderPricingSummary" layout="@layout/offer_pricing_summary" />
+            <com.poshmark.ui.customviews.PMTextView android:id="@id/paymentTextView" android:text="@string/payment" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/formSectionTitle" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/paymentInfoTopBorder" android:background="@color/bgColorPureRed" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentTop="true" />
+                <View android:id="@id/paymentInfoBottomBorder" android:background="@color/bgColorPureRed" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/changeCreditCardInfoButton" />
+                <View android:id="@id/paymentInfoLeftBorder" android:background="@color/bgColorPureRed" android:layout_width="2.0dip" android:layout_height="0.0dip" android:layout_alignTop="@id/paymentInfoTopBorder" android:layout_alignBottom="@id/paymentInfoBottomBorder" android:layout_alignParentLeft="true" />
+                <View android:id="@id/paymentInfoRightBorder" android:background="@color/bgColorPureRed" android:layout_width="2.0dip" android:layout_height="0.0dip" android:layout_alignTop="@id/paymentInfoTopBorder" android:layout_alignBottom="@id/paymentInfoBottomBorder" android:layout_alignParentRight="true" />
+                <com.poshmark.ui.customviews.PMButton android:id="@id/changeCreditCardInfoButton" android:layout_marginTop="0.0dip" android:text="CreditCard Info" android:drawableRight="@drawable/ic_more_arrow" android:layout_toLeftOf="@id/paymentInfoRightBorder" android:layout_toRightOf="@id/paymentInfoLeftBorder" android:layout_below="@id/paymentInfoTopBorder" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/buttonTableRowSingle" />
+            </RelativeLayout>
+            <com.poshmark.ui.customviews.PMTextView android:id="@id/shipToTextView" android:layout_marginTop="20.0dip" android:text="@string/ship_to" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/formSectionTitle" />
+            <com.poshmark.ui.customviews.PMButton android:id="@id/changeShippingInfoButton" android:background="@drawable/bg_table_row_single" android:layout_marginTop="0.0dip" android:layout_marginBottom="30.0dip" android:text="Shipping Info" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/buttonTableRowSingle" />
+            <com.poshmark.ui.customviews.PMTextView android:id="@id/offerInfoTextView" android:text="@string/first_time_offers_warning" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/formSectionTitle" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottomBarLayout" style="@style/bottomBar">
+        <com.poshmark.ui.customviews.PMButton android:layout_gravity="center" android:id="@id/submitOrderButton" android:text="@string/submit_offer" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/commerceBlueButton" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetCheckBox android:theme="@style/AppTheme.GreenAccent" android:layout_gravity="left|center" android:id="@id/checkable_form_item_checkmark" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Target.CheckBox" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/largeTextSize" android:layout_gravity="center" android:id="@id/checkable_form_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

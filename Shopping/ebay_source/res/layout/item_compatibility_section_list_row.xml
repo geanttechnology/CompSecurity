@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/ItemViewLayoutHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/label" android:paddingLeft="0.0dip" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ItemStatValue.Bold" />
+    <ImageView android:id="@id/arrow" style="@style/ItemView.Chevron" />
+</RelativeLayout>

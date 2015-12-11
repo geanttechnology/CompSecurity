@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/ItemStatContainerLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/shipping_info" android:layout_width="wrap_content" android:layout_toLeftOf="@id/shipping_cost" android:layout_alignParentLeft="true" style="@style/ItemStatValue" />
+    <TextView android:id="@id/shipping_cost" android:layout_width="wrap_content" android:layout_marginRight="@dimen/checkoutMediumMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ItemView" />
+</RelativeLayout>

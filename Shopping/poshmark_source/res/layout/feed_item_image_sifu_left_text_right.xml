@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/SIFU_LEFT_TEXT_RIGHT" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.poshmark.ui.customviews.PMClickableImageView android:id="@id/coverShotViewBig" android:background="@color/bgColorWhite" android:layout_width="115.0dip" android:layout_height="85.0dip" android:layout_margin="10.0dip" android:scaleType="fitXY" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMTextView android:textStyle="bold" android:textColor="@color/textColorBlack" android:linksClickable="true" android:id="@id/rightText" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="10.0dip" android:text="Posh Tip!" custom:fontName="fonts/ProximaNova_Sbold.ttf" custom:linkColor="@color/bgColorLightBurgundy" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/bottomBorder" android:background="@color/borderColorGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+</LinearLayout>

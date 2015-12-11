@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/load_more_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="vertical" android:id="@id/more_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="#ffadadad" android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/loading_more" android:singleLine="true" bby:BBYFont="@string/BBY_APP_FONT_LIGHT" />
+    </LinearLayout>
+    <View android:id="@id/more_empty_view" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="53.0dip" />
+</LinearLayout>

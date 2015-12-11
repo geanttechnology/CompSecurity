@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/webview_placeholder" android:layout="@layout/rs_detail_page_webview" android:inflatedId="@id/rs_detail_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.amazon.retailsearch.android.ui.search.SearchResultView android:id="@id/rs_search_result_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

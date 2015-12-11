@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.view.RotatingUrlImageView android:id="@id/deal_image" android:layout_width="fill_parent" android:layout_height="@dimen/deal_list_item_height" android:layout_marginBottom="@dimen/spacing_medium" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/see_all_button" android:background="@drawable/rotating_image_widget_button_background" android:paddingBottom="@dimen/rotating_widget_bottom_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotating_widget_regular_spacing" android:layout_marginRight="@dimen/rotating_widget_regular_spacing" android:layout_centerInParent="true">
+        <TextView android:gravity="center_horizontal" android:id="@id/primary_text" android:paddingLeft="@dimen/rotating_widget_regular_spacing" android:paddingRight="@dimen/rotating_widget_regular_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rotating_widget_top_spacing" android:layout_centerHorizontal="true" style="@style/rotating_image_widget_primary_text" />
+        <TextView android:gravity="center_vertical" android:id="@id/secondary_text" android:paddingLeft="@dimen/rotating_widget_regular_spacing" android:paddingRight="@dimen/rotating_widget_regular_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rotating_widget_small_spacing_18_14" android:drawableRight="@drawable/widget_see_all_chevron" android:drawablePadding="@dimen/widget_small_padding" android:layout_below="@id/primary_text" android:layout_centerHorizontal="true" style="@style/rotating_image_widget_secondary_text" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,51 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.parse;
+
+import a.i;
+import a.j;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+// Referenced classes of package com.parse:
+//            OfflineStore, ParseObject, ParseSQLiteDatabase
+
+class ase
+    implements i
+{
+
+    final OfflineStore this$0;
+    final ParseSQLiteDatabase val$db;
+    final List val$objects;
+
+    public j then(j j1)
+        throws Exception
+    {
+        j1 = (String)j1.e();
+        ArrayList arraylist = new ArrayList();
+        ParseObject parseobject;
+        for (Iterator iterator = val$objects.iterator(); iterator.hasNext(); arraylist.add(OfflineStore.access$900(OfflineStore.this, j1, parseobject, val$db)))
+        {
+            parseobject = (ParseObject)iterator.next();
+        }
+
+        return j.a(arraylist);
+    }
+
+    public volatile Object then(j j1)
+        throws Exception
+    {
+        return then(j1);
+    }
+
+    ase()
+    {
+        this$0 = final_offlinestore;
+        val$objects = list;
+        val$db = ParseSQLiteDatabase.this;
+        super();
+    }
+}

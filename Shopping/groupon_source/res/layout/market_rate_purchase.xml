@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:liveChatView="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/hotel_image" android:layout_width="fill_parent" android:layout_height="@dimen/market_rate_blur_background_height" />
+    <com.groupon.view.ObservableScrollView android:id="@id/scroller" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/scrollable_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/market_rate_hotel_name_overlay" />
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@color/default_list_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header">
+                <LinearLayout android:orientation="vertical" android:id="@id/guest_container" android:background="@drawable/detail_screen_box" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/orange50" android:gravity="center" android:id="@id/matching_govt_photo_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/matching_govt_photo_id" />
+                    <RelativeLayout android:id="@id/guest_name_container" android:background="@drawable/flat_white_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guest" style="@style/market_rate_purchase_details_label_text" />
+                        <TextView android:id="@id/guest_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right_redesign" android:drawablePadding="8.0dip" style="@style/purchase_details_value_text_redesign" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/reservation_container" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/room_details_container" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/payment_details" style="@style/market_rate_purchase_category_text" />
+                <LinearLayout android:orientation="vertical" android:id="@id/payment_details_container" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:id="@id/groupon_bucks" android:background="@drawable/detail_box_selector" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <TextView android:id="@id/g_bucks_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/g_bucks_back_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/market_rate_purchase_g_bucks_value_text" />
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/g_bucks_value" android:layout_centerVertical="true" style="@style/market_rate_purchase_g_bucks_label_text" />
+                </RelativeLayout>
+                <com.groupon.view.LiveChatView android:id="@id/live_chat_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" liveChatView:liveChatBackground="@drawable/detail_box_selector" />
+                <LinearLayout android:orientation="vertical" android:id="@id/cancellation_policy_container" android:background="@drawable/detail_screen_box" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancellation_policy" style="@style/market_rate_purchase_category_text" />
+                    <TextView android:id="@id/room_cancellation_policy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="10.0dip" style="@style/market_rate_purchase_cancellation_policy_text" />
+                    <com.groupon.view.NonLeakingWebView android:id="@id/cancellation_policy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:id="@id/viewterms" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/terms_redesign" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.groupon.view.ObservableScrollView>
+    <include android:id="@id/bottom_bar" layout="@layout/bottom_bar_flat" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/action_bar_itself" android:background="@drawable/action_bar_background" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/action_bar_home" android:background="@drawable/action_bar_icon_round_corner_selector" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/action_bar_home_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/action_bar_icon_padding" android:layout_marginTop="@dimen/action_bar_logo_margin_top_bottom" android:layout_marginRight="@dimen/action_bar_logo_margin_right" android:layout_marginBottom="@dimen/action_bar_logo_margin_top_bottom" android:src="@drawable/action_bar_amazon_logo" />
+    </LinearLayout>
+</RelativeLayout>

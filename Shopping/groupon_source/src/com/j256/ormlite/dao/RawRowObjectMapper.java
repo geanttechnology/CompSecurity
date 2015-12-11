@@ -1,0 +1,15 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.j256.ormlite.dao;
+
+import com.j256.ormlite.field.DataType;
+import java.sql.SQLException;
+
+public interface RawRowObjectMapper
+{
+
+    public abstract Object mapRow(String as[], DataType adatatype[], Object aobj[])
+        throws SQLException;
+}

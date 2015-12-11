@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/error_box_action_box" android:background="@drawable/error_dialog_background" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding">
+        <TextView android:id="@id/error_box_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" />
+        <Button android:id="@id/error_box_action_button" android:background="@drawable/btn_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/error_box_try_again" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/error_box_placeholder" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/error_dialog_placeholder" />
+    </LinearLayout>
+</LinearLayout>

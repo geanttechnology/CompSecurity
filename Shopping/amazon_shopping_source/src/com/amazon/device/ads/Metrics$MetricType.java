@@ -1,0 +1,160 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.device.ads;
+
+
+// Referenced classes of package com.amazon.device.ads:
+//            Metrics
+
+static final class isAdTypeSpecific extends Enum
+{
+
+    private static final AD_IS_INTERSTITIAL $VALUES[];
+    public static final AD_IS_INTERSTITIAL AAX_CONFIG_DOWNLOAD_FAILED;
+    public static final AD_IS_INTERSTITIAL AAX_CONFIG_DOWNLOAD_LATENCY;
+    public static final AD_IS_INTERSTITIAL AAX_LATENCY_GET_AD;
+    public static final AD_IS_INTERSTITIAL ADLAYOUT_HEIGHT_ZERO;
+    public static final AD_IS_INTERSTITIAL AD_COUNTER_AUTO_AD_SIZE;
+    public static final AD_IS_INTERSTITIAL AD_COUNTER_FAILED_DUE_TO_NO_RETRY;
+    public static final AD_IS_INTERSTITIAL AD_COUNTER_IDENTIFIED_DEVICE;
+    public static final AD_IS_INTERSTITIAL AD_COUNTER_PARENT_VIEW_MISSING;
+    public static final AD_IS_INTERSTITIAL AD_COUNTER_RENDERING_FATAL;
+    public static final AD_IS_INTERSTITIAL AD_FAILED_INVALID_AUTO_AD_SIZE;
+    public static final AD_IS_INTERSTITIAL AD_FAILED_LAYOUT_NOT_RUN;
+    public static final AD_IS_INTERSTITIAL AD_FAILED_NULL_LAYOUT_PARAMS;
+    public static final AD_IS_INTERSTITIAL AD_FAILED_UNKNOWN_WEBVIEW_ISSUE;
+    public static final AD_IS_INTERSTITIAL AD_IS_INTERSTITIAL;
+    public static final AD_IS_INTERSTITIAL AD_LATENCY_RENDER;
+    public static final AD_IS_INTERSTITIAL AD_LATENCY_RENDER_FAILED;
+    public static final AD_IS_INTERSTITIAL AD_LATENCY_TOTAL;
+    public static final AD_IS_INTERSTITIAL AD_LATENCY_TOTAL_FAILURE;
+    public static final AD_IS_INTERSTITIAL AD_LATENCY_TOTAL_SUCCESS;
+    public static final AD_IS_INTERSTITIAL AD_LOADED_TO_AD_SHOW_TIME;
+    public static final AD_IS_INTERSTITIAL AD_LOAD_FAILED;
+    public static final AD_IS_INTERSTITIAL AD_LOAD_FAILED_ON_AAX_CALL_TIMEOUT;
+    public static final AD_IS_INTERSTITIAL AD_LOAD_FAILED_ON_PRERENDERING_TIMEOUT;
+    public static final AD_IS_INTERSTITIAL AD_LOAD_LATENCY_AAX_GET_AD_END_TO_FETCH_THREAD_END;
+    public static final HREAD_END AD_LOAD_LATENCY_CREATE_AAX_GET_AD_URL;
+    public static final HREAD_END AD_LOAD_LATENCY_FETCH_THREAD_SPIN_UP;
+    public static final HREAD_END AD_LOAD_LATENCY_FETCH_THREAD_START_TO_AAX_GET_AD_START;
+    public static final _GET_AD_START AD_LOAD_LATENCY_FINALIZE_FETCH_SPIN_UP;
+    public static final _GET_AD_START AD_LOAD_LATENCY_FINALIZE_FETCH_START_TO_FAILURE;
+    public static final AILURE AD_LOAD_LATENCY_FINALIZE_FETCH_START_TO_RENDER_START;
+    public static final ENDER_START AD_LOAD_LATENCY_LOADAD_TO_FETCH_THREAD_REQUEST_START;
+    public static final QUEST_START AD_NO_RETRY_TTL_RECEIVED;
+    public static final QUEST_START AD_SHOW_DURATION;
+    public static final QUEST_START AD_SHOW_LATENCY;
+    public static final QUEST_START ASSETS_CREATED_LATENCY;
+    public static final QUEST_START ASSETS_ENSURED_LATENCY;
+    public static final QUEST_START ASSETS_FAILED;
+    public static final QUEST_START CARRIER_NAME;
+    public static final QUEST_START CONFIG_DOWNLOAD_ERROR;
+    public static final QUEST_START CONFIG_DOWNLOAD_LATENCY;
+    public static final QUEST_START CONFIG_PARSE_ERROR;
+    public static final QUEST_START CONNECTION_TYPE;
+    public static final QUEST_START CUSTOM_RENDER_HANDLED;
+    public static final QUEST_START SIS_COUNTER_IDENTIFIED_DEVICE_CHANGED;
+    public static final QUEST_START SIS_LATENCY_REGISTER;
+    public static final QUEST_START SIS_LATENCY_REGISTER_EVENT;
+    public static final QUEST_START SIS_LATENCY_UPDATE_DEVICE_INFO;
+    public static final QUEST_START TLS_ENABLED;
+    public static final QUEST_START VIEWPORT_SCALE;
+    public static final QUEST_START WIFI_PRESENT;
+    private final String aaxName;
+    private final boolean isAdTypeSpecific;
+
+    public static isAdTypeSpecific valueOf(String s)
+    {
+        return (isAdTypeSpecific)Enum.valueOf(com/amazon/device/ads/Metrics$MetricType, s);
+    }
+
+    public static isAdTypeSpecific[] values()
+    {
+        return (isAdTypeSpecific[])$VALUES.clone();
+    }
+
+    public String getAaxName()
+    {
+        return aaxName;
+    }
+
+    public boolean isAdTypeSpecific()
+    {
+        return isAdTypeSpecific;
+    }
+
+    static 
+    {
+        AD_LATENCY_TOTAL = new <init>("AD_LATENCY_TOTAL", 0, "tl", true);
+        AD_LATENCY_TOTAL_SUCCESS = new <init>("AD_LATENCY_TOTAL_SUCCESS", 1, "tsl", true);
+        AD_LATENCY_TOTAL_FAILURE = new <init>("AD_LATENCY_TOTAL_FAILURE", 2, "tfl", true);
+        AD_LOAD_LATENCY_LOADAD_TO_FETCH_THREAD_REQUEST_START = new <init>("AD_LOAD_LATENCY_LOADAD_TO_FETCH_THREAD_REQUEST_START", 3, "llfsl", true);
+        AD_LOAD_LATENCY_FETCH_THREAD_SPIN_UP = new <init>("AD_LOAD_LATENCY_FETCH_THREAD_SPIN_UP", 4, "lfsul");
+        AD_LOAD_LATENCY_FETCH_THREAD_START_TO_AAX_GET_AD_START = new <init>("AD_LOAD_LATENCY_FETCH_THREAD_START_TO_AAX_GET_AD_START", 5, "lfsasl");
+        AD_LOAD_LATENCY_AAX_GET_AD_END_TO_FETCH_THREAD_END = new <init>("AD_LOAD_LATENCY_AAX_GET_AD_END_TO_FETCH_THREAD_END", 6, "laefel");
+        AD_LOAD_LATENCY_FINALIZE_FETCH_SPIN_UP = new <init>("AD_LOAD_LATENCY_FINALIZE_FETCH_SPIN_UP", 7, "lffsul");
+        AD_LOAD_LATENCY_FINALIZE_FETCH_START_TO_RENDER_START = new <init>("AD_LOAD_LATENCY_FINALIZE_FETCH_START_TO_RENDER_START", 8, "lffsrsl", true);
+        AD_LOAD_LATENCY_FINALIZE_FETCH_START_TO_FAILURE = new <init>("AD_LOAD_LATENCY_FINALIZE_FETCH_START_TO_FAILURE", 9, "lffsfl", true);
+        AD_LOAD_LATENCY_CREATE_AAX_GET_AD_URL = new <init>("AD_LOAD_LATENCY_CREATE_AAX_GET_AD_URL", 10, "lcaul");
+        ASSETS_CREATED_LATENCY = new <init>("ASSETS_CREATED_LATENCY", 11, "lacl");
+        ASSETS_ENSURED_LATENCY = new <init>("ASSETS_ENSURED_LATENCY", 12, "lael");
+        ASSETS_FAILED = new <init>("ASSETS_FAILED", 13, "af");
+        AD_LOADED_TO_AD_SHOW_TIME = new <init>("AD_LOADED_TO_AD_SHOW_TIME", 14, "alast");
+        AD_SHOW_LATENCY = new <init>("AD_SHOW_LATENCY", 15, "lsa");
+        AD_SHOW_DURATION = new <init>("AD_SHOW_DURATION", 16, "asd");
+        AAX_LATENCY_GET_AD = new <init>("AAX_LATENCY_GET_AD", 17, "al");
+        AD_LOAD_FAILED = new <init>("AD_LOAD_FAILED", 18, "lf");
+        AD_LOAD_FAILED_ON_AAX_CALL_TIMEOUT = new <init>("AD_LOAD_FAILED_ON_AAX_CALL_TIMEOUT", 19, "lfat");
+        AD_LOAD_FAILED_ON_PRERENDERING_TIMEOUT = new <init>("AD_LOAD_FAILED_ON_PRERENDERING_TIMEOUT", 20, "lfpt");
+        AD_COUNTER_IDENTIFIED_DEVICE = new <init>("AD_COUNTER_IDENTIFIED_DEVICE", 21, "id");
+        AD_COUNTER_RENDERING_FATAL = new <init>("AD_COUNTER_RENDERING_FATAL", 22, "rf", true);
+        AD_LATENCY_RENDER = new <init>("AD_LATENCY_RENDER", 23, "rl", true);
+        AD_LATENCY_RENDER_FAILED = new <init>("AD_LATENCY_RENDER_FAILED", 24, "rlf", true);
+        AD_COUNTER_FAILED_DUE_TO_NO_RETRY = new <init>("AD_COUNTER_FAILED_DUE_TO_NO_RETRY", 25, "nrtf");
+        AD_NO_RETRY_TTL_RECEIVED = new <init>("AD_NO_RETRY_TTL_RECEIVED", 26, "nrtr");
+        AD_COUNTER_AUTO_AD_SIZE = new <init>("AD_COUNTER_AUTO_AD_SIZE", 27, "aas");
+        AD_COUNTER_PARENT_VIEW_MISSING = new <init>("AD_COUNTER_PARENT_VIEW_MISSING", 28, "pvm");
+        ADLAYOUT_HEIGHT_ZERO = new <init>("ADLAYOUT_HEIGHT_ZERO", 29, "ahz");
+        VIEWPORT_SCALE = new <init>("VIEWPORT_SCALE", 30, "vs");
+        AD_FAILED_UNKNOWN_WEBVIEW_ISSUE = new <init>("AD_FAILED_UNKNOWN_WEBVIEW_ISSUE", 31, "fuwi");
+        AD_FAILED_NULL_LAYOUT_PARAMS = new <init>("AD_FAILED_NULL_LAYOUT_PARAMS", 32, "fnlp");
+        AD_FAILED_LAYOUT_NOT_RUN = new <init>("AD_FAILED_LAYOUT_NOT_RUN", 33, "flnr");
+        AD_FAILED_INVALID_AUTO_AD_SIZE = new <init>("AD_FAILED_INVALID_AUTO_AD_SIZE", 34, "faas");
+        SIS_COUNTER_IDENTIFIED_DEVICE_CHANGED = new <init>("SIS_COUNTER_IDENTIFIED_DEVICE_CHANGED", 35, "sid");
+        SIS_LATENCY_REGISTER = new <init>("SIS_LATENCY_REGISTER", 36, "srl");
+        SIS_LATENCY_UPDATE_DEVICE_INFO = new <init>("SIS_LATENCY_UPDATE_DEVICE_INFO", 37, "sul");
+        SIS_LATENCY_REGISTER_EVENT = new <init>("SIS_LATENCY_REGISTER_EVENT", 38, "srel");
+        CONFIG_DOWNLOAD_ERROR = new <init>("CONFIG_DOWNLOAD_ERROR", 39, "cde");
+        CONFIG_DOWNLOAD_LATENCY = new <init>("CONFIG_DOWNLOAD_LATENCY", 40, "cdt");
+        CONFIG_PARSE_ERROR = new <init>("CONFIG_PARSE_ERROR", 41, "cpe");
+        AAX_CONFIG_DOWNLOAD_LATENCY = new <init>("AAX_CONFIG_DOWNLOAD_LATENCY", 42, "acl");
+        AAX_CONFIG_DOWNLOAD_FAILED = new <init>("AAX_CONFIG_DOWNLOAD_FAILED", 43, "acf");
+        CUSTOM_RENDER_HANDLED = new <init>("CUSTOM_RENDER_HANDLED", 44, "crh");
+        TLS_ENABLED = new <init>("TLS_ENABLED", 45, "tls");
+        WIFI_PRESENT = new <init>("WIFI_PRESENT", 46, "wifi");
+        CARRIER_NAME = new <init>("CARRIER_NAME", 47, "car");
+        CONNECTION_TYPE = new <init>("CONNECTION_TYPE", 48, "ct");
+        AD_IS_INTERSTITIAL = new <init>("AD_IS_INTERSTITIAL", 49, "i");
+        $VALUES = (new .VALUES[] {
+            AD_LATENCY_TOTAL, AD_LATENCY_TOTAL_SUCCESS, AD_LATENCY_TOTAL_FAILURE, AD_LOAD_LATENCY_LOADAD_TO_FETCH_THREAD_REQUEST_START, AD_LOAD_LATENCY_FETCH_THREAD_SPIN_UP, AD_LOAD_LATENCY_FETCH_THREAD_START_TO_AAX_GET_AD_START, AD_LOAD_LATENCY_AAX_GET_AD_END_TO_FETCH_THREAD_END, AD_LOAD_LATENCY_FINALIZE_FETCH_SPIN_UP, AD_LOAD_LATENCY_FINALIZE_FETCH_START_TO_RENDER_START, AD_LOAD_LATENCY_FINALIZE_FETCH_START_TO_FAILURE, 
+            AD_LOAD_LATENCY_CREATE_AAX_GET_AD_URL, ASSETS_CREATED_LATENCY, ASSETS_ENSURED_LATENCY, ASSETS_FAILED, AD_LOADED_TO_AD_SHOW_TIME, AD_SHOW_LATENCY, AD_SHOW_DURATION, AAX_LATENCY_GET_AD, AD_LOAD_FAILED, AD_LOAD_FAILED_ON_AAX_CALL_TIMEOUT, 
+            AD_LOAD_FAILED_ON_PRERENDERING_TIMEOUT, AD_COUNTER_IDENTIFIED_DEVICE, AD_COUNTER_RENDERING_FATAL, AD_LATENCY_RENDER, AD_LATENCY_RENDER_FAILED, AD_COUNTER_FAILED_DUE_TO_NO_RETRY, AD_NO_RETRY_TTL_RECEIVED, AD_COUNTER_AUTO_AD_SIZE, AD_COUNTER_PARENT_VIEW_MISSING, ADLAYOUT_HEIGHT_ZERO, 
+            VIEWPORT_SCALE, AD_FAILED_UNKNOWN_WEBVIEW_ISSUE, AD_FAILED_NULL_LAYOUT_PARAMS, AD_FAILED_LAYOUT_NOT_RUN, AD_FAILED_INVALID_AUTO_AD_SIZE, SIS_COUNTER_IDENTIFIED_DEVICE_CHANGED, SIS_LATENCY_REGISTER, SIS_LATENCY_UPDATE_DEVICE_INFO, SIS_LATENCY_REGISTER_EVENT, CONFIG_DOWNLOAD_ERROR, 
+            CONFIG_DOWNLOAD_LATENCY, CONFIG_PARSE_ERROR, AAX_CONFIG_DOWNLOAD_LATENCY, AAX_CONFIG_DOWNLOAD_FAILED, CUSTOM_RENDER_HANDLED, TLS_ENABLED, WIFI_PRESENT, CARRIER_NAME, CONNECTION_TYPE, AD_IS_INTERSTITIAL
+        });
+    }
+
+    private (String s, int i, String s1)
+    {
+        this(s, i, s1, false);
+    }
+
+    private <init>(String s, int i, String s1, boolean flag)
+    {
+        super(s, i);
+        aaxName = s1;
+        isAdTypeSpecific = flag;
+    }
+}

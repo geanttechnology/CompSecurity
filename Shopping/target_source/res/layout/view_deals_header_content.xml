@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.shop.WeeklyAdView android:layout_gravity="center" android:id="@id/weekly_ad_view" android:background="@color/target_stark_white" android:paddingTop="@dimen/deals_weekly_ad_pager_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/shop_card_margin" />
+    <com.target.ui.view.shop.DealsNoStoreView android:id="@id/no_store_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shop_card_margin_2x" android:layout_marginTop="@dimen/shop_card_margin_2x" android:layout_marginRight="@dimen/shop_card_margin_2x" style="@style/Target.CardView" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/shop_card_margin" android:paddingTop="@dimen/shop_card_margin" android:paddingRight="@dimen/shop_card_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:id="@id/cartwheel_button" android:layout_width="0.0dip" android:layout_height="@dimen/deals_header_button_height" android:layout_margin="@dimen/shop_card_margin" android:layout_weight="0.5" style="@style/Target.CardView.Selectable">
+            <ImageView android:padding="@dimen/deals_header_button_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/logo_cartwheel" android:contentDescription="@string/cd_deals_cartwheel_button" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/mobile_coupons_button" android:layout_width="0.0dip" android:layout_height="@dimen/deals_header_button_height" android:layout_margin="@dimen/shop_card_margin" android:layout_weight="0.5" style="@style/Target.CardView.Selectable">
+            <ImageView android:padding="@dimen/deals_header_button_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/logo_coupon" android:contentDescription="@string/cd_deals_mobile_coupons_button" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.target.ui.view.shop.DealsCategoryHeaderView android:id="@id/product_error_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.target.ui.view.common.TargetErrorView android:id="@id/product_error_view" android:paddingBottom="@dimen/deals_product_error_view_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin" android:minHeight="@dimen/prd_plp_error_screen_min_height" />
+</merge>

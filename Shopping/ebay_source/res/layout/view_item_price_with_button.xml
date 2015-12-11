@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/price_or_map_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/ebayTextSizeHuge" android:id="@id/price_textview" android:paddingRight="@dimen/checkoutTinyMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                <TextView android:textColor="@color/common_auction_blue_light" android:id="@id/item_view_show_price_button" android:paddingRight="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_view_show_price" />
+            </LinearLayout>
+            <ImageView android:id="@id/item_view_map_info_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutSmallMargin" android:src="@drawable/ic_viewitem_info" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/shipping_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/converted_prices_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/typically_price_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/deposit_amount_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/unit_price_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/price_type_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/bid_count_textview" android:visibility="gone" style="@style/ItemView" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/savings_layout" android:visibility="gone" style="@style/ItemView">
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/was_textview" android:paddingRight="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/original_price_textview" android:paddingRight="@dimen/checkoutSmallMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/percent_off_textview" android:paddingRight="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

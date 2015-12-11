@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/eBayBucksLayout" android:paddingLeft="@dimen/checkoutMediumMargin" android:paddingTop="@dimen/checkoutSmallMargin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkoutSmallMargin">
+        <TextView android:textSize="@dimen/ebayTextSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_cart_ebay_bucks" />
+        <TextView android:textSize="@dimen/ebayTextSize" android:textStyle="bold" android:textColor="@color/style_guide_green" android:id="@id/bucksBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutSmallMargin" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkoutSmallMargin">
+        <TextView android:textSize="@dimen/ebayTextSizeSmall" android:textColor="@color/style_guide_darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_spend_by" />
+        <TextView android:textSize="@dimen/ebayTextSizeSmall" android:textColor="@color/style_guide_darker_gray" android:id="@id/bucksSpendBy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutTinyMargin" />
+    </LinearLayout>
+</LinearLayout>

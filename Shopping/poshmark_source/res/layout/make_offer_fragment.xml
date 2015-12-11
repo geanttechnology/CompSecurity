@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/checkoutItemSummary" layout="@layout/makeoffer_item_summary" />
+    <View android:background="@color/bgColorDarkGray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.poshmark.ui.customviews.PMTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="All offers are binding and expire in 24 hours. If the seller accepts, payment will be processed." android:layout_toLeftOf="@id/moreIcon" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/moreIcon" android:background="@drawable/icon_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/bgColorDarkGray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:id="@id/offerLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:text="Your Offer:" android:layout_centerVertical="true" />
+        <EditText android:id="@id/offerAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/offerLabel" android:layout_alignParentRight="true" android:inputType="number" />
+    </RelativeLayout>
+    <View android:background="@color/bgColorDarkGray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/theme_selector_place_holder" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/gifting_theme_selector_height">
+            <ProgressBar android:layout_gravity="center" android:id="@id/themes_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView android:id="@id/scroll_theme_selector" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_button_height" android:layout_margin="@dimen/gifting_views_margin" android:text="@string/continue_to_confirm_purchase" style="@style/primary_action_button" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/theme_selector_place_holder">
+        <include layout="@layout/groupon_webview" />
+    </LinearLayout>
+</RelativeLayout>

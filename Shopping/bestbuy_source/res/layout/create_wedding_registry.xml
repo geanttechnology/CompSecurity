@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="center_vertical" android:background="@color/bby_off_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="25.0sp" android:textColor="@color/stores_name_color" android:gravity="center" android:background="@color/bby_off_white" android:paddingTop="50.0dip" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/whoIsGettingMarried" bby:BBYFont="@string/BBY_APP_FONT_LIGHT" />
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/firstName" android:layout_weight="0.25" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <EditText android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/first_name" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/typeHere" android:ems="10" android:maxLength="40" android:layout_weight="0.75" android:inputType="textCapSentences" />
+        </LinearLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lastName" android:layout_weight="0.25" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <EditText android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/last_name" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/typeHere" android:ems="10" android:maxLength="40" android:layout_weight="0.75" android:inputType="textCapSentences" />
+        </LinearLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="25.0sp" android:textColor="@color/stores_name_color" android:gravity="center" android:background="@color/bby_off_white" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/and_sign" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/firstName" android:layout_weight="0.25" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <EditText android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/co_first_name" android:background="@color/transparent" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/required" android:ems="10" android:maxLength="40" android:layout_weight="0.75" android:inputType="textCapSentences" />
+        </LinearLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lastName" android:layout_weight="0.25" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <EditText android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/co_last_name" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/required" android:ems="10" android:maxLength="40" android:layout_weight="0.75" android:inputType="textCapSentences" />
+        </LinearLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+</ScrollView>

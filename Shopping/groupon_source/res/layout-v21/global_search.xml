@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/radio_tab_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/lollipop_toolbar_elevation" />
+    <LinearLayout android:orientation="vertical" android:id="@id/global_search_fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/global_search" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

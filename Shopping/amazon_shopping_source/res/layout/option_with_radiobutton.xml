@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:gravity="center" android:id="@id/option_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textColor="@color/gray_dark_text" android:gravity="center_vertical" android:id="@id/option_description" android:paddingTop="@dimen/padding_double" android:paddingBottom="@dimen/padding_double" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <View style="@style/Separator" />
+</LinearLayout>

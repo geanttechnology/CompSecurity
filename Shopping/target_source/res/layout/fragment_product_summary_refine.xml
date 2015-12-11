@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:target="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/prd_summary_refine_container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="always">
+        <com.target.ui.view.refine.RefineView android:id="@id/prd_summary_refine_child_layout" android:paddingBottom="@dimen/prd_plp_bottom_btn_height" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.target.ui.view.common.TargetBottomButton android:id="@id/prd_reset_done_button" android:layout_width="fill_parent" android:layout_height="@dimen/prd_plp_bottom_btn_height" android:layout_alignParentBottom="true" target:leftText="@string/product_bottom_btn_reset_text" target:rightText="@string/product_bottom_btn_done_text" target:leftHighlight="false" target:rightHighlight="true" />
+</RelativeLayout>

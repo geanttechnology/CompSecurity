@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:paddingLeft="@dimen/spacing_big" android:paddingTop="@dimen/megamind_header_spacing_top" android:paddingRight="@dimen/spacing_big" android:paddingBottom="@dimen/megamind_header_spacing_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/megamind_header_spacing_right" android:maxLines="2" android:layout_alignParentLeft="@bool/view1_ltr" style="@style/megamind_header" />
+</merge>

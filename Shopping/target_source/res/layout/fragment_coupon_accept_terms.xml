@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/target_stark_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:textColor="@color/neutral_gray" android:textColorLink="@color/text_link" android:linksClickable="true" android:id="@id/coupon_terms_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coupons_margin_extra_large" android:layout_marginTop="@dimen/coupons_margin_extra_large" android:layout_marginRight="@dimen/coupons_margin_extra_large" android:text="FOO BRR" />
+        <com.target.ui.view.TargetButton android:layout_gravity="bottom" android:id="@id/coupons_agree_and_sign_up_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coupons_margin_extra_large" android:layout_marginRight="@dimen/coupons_margin_extra_large" android:layout_marginBottom="@dimen/coupons_margin_extra_large" android:text="@string/coupons_agree_and_sign_up_button" style="@style/RedButton" />
+    </LinearLayout>
+</ScrollView>

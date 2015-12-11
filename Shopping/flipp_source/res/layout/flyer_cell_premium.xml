@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/flyer_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wishabi.flipp.widget.WebImageView android:id="@id/image_part" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    <RelativeLayout android:id="@id/label_container" android:background="#eeffffff" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/darkTextColor" android:ellipsize="end" android:id="@id/text_part" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/fadeTextColor" android:ellipsize="end" android:id="@id/date_part" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="2.0dip" android:includeFontPadding="false" android:layout_above="@id/text_part" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/badge_part" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_above="@id/label_container" android:contentDescription="@null" android:textAllCaps="true" />
+    <com.wishabi.flipp.widget.FeaturedItemCell android:id="@id/featured_item" android:layout_width="150.0dip" android:layout_height="fill_parent" android:layout_above="@id/label_container" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/xo_other_payment_layout" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/checkoutListContainerMargin" android:paddingTop="@dimen/checkoutContentTopBottomMargin" android:paddingRight="@dimen/checkoutListContainerMargin" android:paddingBottom="@dimen/checkoutContentTopBottomMargin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/xo_payment_method_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_cart_payment_method_cop" android:layout_alignParentTop="true" style="@style/Checkout.Text" />
+    <ImageView android:id="@id/xo_payment_method_checked" android:visibility="visible" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/checkmark" style="@style/Checkout.Check" />
+</RelativeLayout>

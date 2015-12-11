@@ -1,0 +1,79 @@
+{
+  "cards": [
+    {
+      "index": 0,
+      "key": "Hottest Deals",
+      "title": "Hottest Deals",
+      "type": "icon",
+      "targetView": "bbyWebViewController",
+      "targetURL": "http://www.bestbuy.com/site/global-promotions/special-sale/pcmcat185700050011.c?id=pcmcat185700050011 ",
+      "icon": "hottestdeals",
+      "trackingTitle": "HottestDeals",
+      "contentDescription": "Hottest Deals",
+      "width": 122,
+      "height": 82,
+      "jsContent": "document.getElementById('masthead').style.display = 'none';document.getElementById('colophon').style.display = 'none';document.getElementById('header-search').style.display = 'none';document.getElementById('page-wrapper').style.display = 'none';",
+      "visibleWhen": ""
+    },
+    {
+      "index": 1,
+      "key": "GiftIdeas",
+      "title": "GiftIdeas",
+      "type": "icon",
+      "targetView": "bbyWebViewController",
+      "icon": "giftideas",
+      "trackingTitle": "GiftIdeas",
+      "contentDescription": "Gift Ideas",
+      "width": 122,
+      "height": 82,
+      "targetURL": "http://www.bestbuy.com/site/electronics/gift-ideas/abcat0010000.c?id=abcat0010000 ",
+      "jsContent": "document.getElementById('masthead').style.display = 'none';document.getElementById('colophon').style.display = 'none';document.getElementById('header-search').style.display = 'none';document.getElementById('page-wrapper').style.display = 'none';",
+      "visibleWhen": ""
+    },
+    {
+      "index": 2,
+      "key": "BestBuyOutlets",
+      "title": "BestBuyOutlets",
+      "type": "icon",
+      "targetView": "bbyWebViewController",
+      "icon": "bestbuyoutlet",
+      "trackingTitle": "BestBuyOutlets",
+      "contentDescription": "Best Buy Outlets",
+      "width": 122,
+      "height": 82,
+      "targetURL": "http://www.bestbuy.com/site/electronics/outlet-refurbished-clearance/pcmcat142300050026.c?id=pcmcat142300050026",
+      "jsContent": "document.getElementById('overlay-area').style.display = 'none';document.getElementById('header-block').style.display = 'none';document.getElementById('header').style.display = 'none';document.getElementById('respLocationInfo').style.display = 'none';document.getElementById('footer').style.display = 'none';",
+      "visibleWhen": ""
+    },
+    {
+      "index": 3,
+      "key": "WeeklyAd",
+      "title": "Weekly Ad",
+      "type": "icon",
+      "targetView": "bbyWebViewController",
+      "icon": "weeklyad",
+      "trackingTitle": "WeeklyAd",
+      "contentDescription": "Weekly Ad",
+      "width": 122,
+      "height": 82,
+      "targetURL": "http://deals.bestbuy.com",
+      "jsContent": "",
+      "visibleWhen": ""
+    },
+    {
+      "index": 4,
+      "key": "StudentDeals",
+      "title": "Student Deals",
+      "type": "icon",
+      "targetView": "bbyWebViewController",
+      "icon": "studentdeals",
+      "trackingTitle": "StudentDeals",
+      "contentDescription": "Student Deals",
+      "width": 122,
+      "height": 82,
+      "targetURL": "http://www.bestbuy.com/site/misc/back-to-school/pcmcat334100050000.c?id=pcmcat334100050000",
+      "jsContent": "",
+      "visibleWhen": ""
+    }
+  ]
+}

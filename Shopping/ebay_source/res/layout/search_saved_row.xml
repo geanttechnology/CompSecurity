@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/checkbox" android:padding="8.0dip" android:focusable="false" android:layout_width="@dimen/clickableButtonDimen" android:layout_height="@dimen/clickableButtonDimen" android:src="@drawable/btn_check_off_holo_light" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/toggleImage" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/notify_me_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:layout_gravity="center_vertical" android:id="@id/separatorImage" android:background="?android:listDivider" android:layout_width="0.5dip" android:layout_height="26.0dip" android:layout_toLeftOf="@id/toggleImage" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/style_guide_orange" android:id="@id/new_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="@string/label_new_tag" android:layout_toLeftOf="@id/separatorImage" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/ebayTextSize" android:id="@id/saved_search_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="6.0dip" android:maxLines="2" android:layout_toLeftOf="@id/new_item" android:layout_toRightOf="@id/checkbox" android:layout_centerVertical="true" />
+</RelativeLayout>

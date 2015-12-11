@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.BitmapImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/divider" android:contentDescription="@string/cd_shop_card_image" />
+    <View android:id="@id/divider" android:background="@color/shop_card_divider" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_above="@id/display_text" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:ellipsize="end" android:gravity="center" android:id="@id/display_text" android:paddingLeft="@dimen/shop_card_display_text_padding" android:paddingRight="@dimen/shop_card_display_text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/shop_card_display_text_height_default" android:singleLine="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

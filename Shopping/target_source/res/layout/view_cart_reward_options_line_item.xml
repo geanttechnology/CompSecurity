@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/free_gift_card_details" android:background="@drawable/cart_item_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cart_default_less_padding_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:layout_marginTop="@dimen/cart_default_less_padding_margin" android:layout_marginRight="@dimen/cart_default_more_padding_margin" android:layout_marginBottom="@dimen/cart_default_less_padding_margin">
+        <ImageView android:id="@id/gift_card_image" android:layout_width="@dimen/cart_free_gift_card" android:layout_height="@dimen/cart_free_gift_card" android:src="@drawable/gift_card" android:layout_centerVertical="true" android:contentDescription="@string/cart_gift_card_content_desc" />
+        <com.target.ui.view.TargetTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:text="@string/cart_free_gift_card" android:layout_toRightOf="@id/gift_card_image" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.ProductTitle" />
+        <com.target.ui.view.TargetTextView android:textColor="@color/target_choice_green" android:id="@id/gift_card_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cart_default_more_padding_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.ProductTitle" />
+    </RelativeLayout>
+    <include layout="@layout/view_cart_separator" />
+    <RadioGroup android:orientation="vertical" android:id="@id/gift_item_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

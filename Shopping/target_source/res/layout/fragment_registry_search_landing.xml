@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="always"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/registry_home_page_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/image_registry" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/registry_home_page_title_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/registry_home_page_title" app:fontStyle="light" style="@style/Target.TextView.RegistrySearchTitle" />
+        <com.target.ui.view.registry.RegistryNameView android:id="@id/registry_name_view" android:background="@color/target_stark_white" android:paddingLeft="@dimen/default_padding_margin" android:paddingTop="@dimen/default_3x_padding_margin" android:paddingRight="@dimen/default_padding_margin" android:paddingBottom="@dimen/default_3x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.target.ui.view.registry.RegistryAdvancedSearchButton android:id="@id/registry_advanced_search" android:background="@color/target_stark_white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/registry_search_container">
+            <com.target.ui.view.TargetButton android:id="@id/registry_search_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registry_search_btn" style="@style/RedButton" />
+            <com.target.ui.view.TargetTextView android:gravity="center" android:id="@id/registry_create_and_manage_text_view" android:padding="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.RegistryCreateAndManage" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

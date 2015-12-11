@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bar_frame" android:background="@color/grey_light" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/title_bar_inner_2">
+        <ImageView android:layout_gravity="bottom" android:id="@id/location_bar_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/location_marker_dark" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/location_bar_division_name" android:paddingTop="12.0dip" android:paddingRight="22.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/title_bar_action_text_2" />
+    </LinearLayout>
+</FrameLayout>

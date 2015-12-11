@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/priceDropContainer" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:id="@id/bgCovershotImageView" android:layout_width="fill_parent" android:layout_height="100.0dip" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:background="@color/bgColorLightBurgundySemiTransparent" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/backgroundTableRowMiddle">
+            <LinearLayout android:id="@id/sortWidgetContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <com.poshmark.ui.customviews.CollectionSortWidget android:orientation="horizontal" android:id="@id/sortWidget" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/filterWidgetLayout" android:background="@drawable/bg_fragment" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.poshmark.ui.customviews.ListingsFilterWidget android:orientation="horizontal" android:id="@id/filterWidget" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:layoutType="2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/rs_brand_strip_layout" style="@style/Rs.Widget.BrandStrip.Base"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/rs_brand_strip_title_textView" style="@style/Rs.Widget.BrandStrip.Header" />
+    <HorizontalScrollView android:id="@id/rs_brand_strip_scrollView" style="@style/Rs.Widget.BrandStrip.ScrollView">
+        <LinearLayout android:orientation="horizontal" android:id="@id/rs_brand_strip_cells" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+</LinearLayout>

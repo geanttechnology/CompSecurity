@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/location_icon_padding_big" android:top="@dimen/location_icon_padding_big_plus_offset" android:right="@dimen/location_icon_padding_big" android:bottom="@dimen/location_icon_padding_big_minus_offset">
+        <shape android:shape="oval">
+            <solid android:color="@color/location_badge_shadow" />
+            <size android:height="@dimen/location_icon_size_big" android:width="@dimen/location_icon_size_big" />
+        </shape>
+    </item>
+    <item android:left="@dimen/location_icon_padding_big" android:top="@dimen/location_icon_padding_big" android:right="@dimen/location_icon_padding_big" android:bottom="@dimen/location_icon_padding_big">
+        <shape android:shape="oval">
+            <solid android:color="@color/target_stark_white" />
+            <size android:height="@dimen/location_icon_size_big" android:width="@dimen/location_icon_size_big" />
+            <stroke android:width="@dimen/location_icon_stroke_width" android:color="@color/target_neutral_grey_selected" />
+        </shape>
+    </item>
+</layer-list>

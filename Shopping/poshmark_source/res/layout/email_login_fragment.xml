@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_marginTop="30.0dip" android:layout_marginBottom="0.0dip" style="@style/formSectionLayout">
+            <com.poshmark.ui.customviews.PMEditText android:id="@id/email_username" android:hint="@string/email_username_label" android:maxLines="1" android:inputType="textNoSuggestions|textEmailAddress" custom:fontName="fonts/ProximaNova_Sbold.ttf" custom:required="true" custom:mode="simple" custom:message="@string/login_invalid_username" style="@style/formEditText" />
+            <com.poshmark.ui.customviews.PMEditText android:id="@id/password" android:hint="@string/password" android:maxLines="1" android:inputType="textPassword" custom:fontName="fonts/ProximaNova_Sbold.ttf" custom:required="true" custom:mode="password" custom:message="@string/login_invalid_password" style="@style/formEditText" />
+            <com.poshmark.ui.customviews.PMButton android:id="@id/buttonLogin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/login" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/blueActionButton" />
+        </LinearLayout>
+        <com.poshmark.ui.customviews.PMButton android:textSize="15.0sp" android:textColor="@color/textColorDarkGray" android:layout_gravity="center_horizontal" android:id="@id/buttonForgotPassword" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_password" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+    </LinearLayout>
+</ScrollView>

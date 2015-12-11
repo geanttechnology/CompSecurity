@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/Checkout.Container.Content">
+        <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/checkoutListContainerMargin">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/givingworks_icon_frame" android:background="?selectableItemBackgroundBase" android:layout_width="@dimen/givingworksThumbnail" android:layout_height="@dimen/givingworksThumbnail" android:layout_margin="@dimen/checkoutListContainerMargin" android:foreground="?android:selectableItemBackground">
+                    <ImageView android:id="@id/charity_icon" android:layout_width="@dimen/givingworksThumbnail" android:layout_height="@dimen/givingworksThumbnail" android:src="@drawable/icon_home_givingworks_big" android:scaleType="centerInside" />
+                </FrameLayout>
+                <LinearLayout android:layout_gravity="left|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/checkoutListContainerMargin" android:layout_weight="1.0">
+                    <TextView android:layout_gravity="left|center" android:id="@id/charity_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutListContainerMargin" style="@style/Checkout.Text.Bold" />
+                    <TextView android:id="@id/charity_favorites" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text.Secondary" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutTinyMargin">
+                    <View android:layout_gravity="center_vertical" android:background="?android:listDivider" android:layout_width="@dimen/dividerHeight" android:layout_height="@dimen/givingworksDividerHeight" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginRight="@dimen/checkoutListContainerMargin" />
+                    <CheckBox android:layout_gravity="center_vertical" android:id="@id/givingworks_button" android:padding="@dimen/checkoutTinyMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/givingworks_button" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.ebay.android.widget.ContainerLayout>
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/givingworks_detail_about" style="@style/Checkout.Header" />
+        <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:layout_marginBottom="@dimen/checkoutListContainerMargin">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/checkoutMediumMargin" android:baselineAligned="false">
+                <TextView android:id="@id/charity_location_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/givingworks_detail_location_label" style="@style/Checkout.Text" />
+                <TextView android:id="@id/charity_location" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkoutListContainerMargin" style="@style/Checkout.Text.Secondary" />
+                <TextView android:id="@id/charity_mission" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.Text" />
+            </LinearLayout>
+        </com.ebay.android.widget.ContainerLayout>
+    </LinearLayout>
+</LinearLayout>

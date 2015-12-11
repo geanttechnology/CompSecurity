@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_rate_gbucks_main_padding" android:layout_marginTop="@dimen/market_rate_thanks_main_padding" android:layout_marginRight="@dimen/market_rate_gbucks_main_padding" android:layout_marginBottom="10.0dip" android:src="@drawable/g_bucks_icon" />
+            <TextView android:id="@id/gbucks_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_rate_gbucks_main_padding" android:layout_marginRight="@dimen/market_rate_gbucks_main_padding" android:layout_marginBottom="5.0dip" style="@style/market_rate_gbucks_value" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_rate_gbucks_main_padding" android:layout_marginRight="@dimen/market_rate_gbucks_main_padding" android:layout_marginBottom="20.0dip" style="@style/market_rate_gbucks_label" />
+            <TextView android:id="@id/gbucks_disclaimer_short" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_rate_gbucks_main_padding" android:layout_marginRight="@dimen/market_rate_gbucks_main_padding" android:layout_marginBottom="15.0dip" style="@style/market_rate_gbucks_disclaimer_short" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/gbucks_details_container" android:background="@drawable/detail_screen_box" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/gbucks_details_title" style="@style/market_rate_container_title" />
+            <View android:background="@color/grey80" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:id="@id/gbucks_disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/market_rate_purchase_cancellation_policy_text" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

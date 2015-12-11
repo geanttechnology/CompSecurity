@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/copy" android:title="Copy Link" android:showAsAction="ifRoom" />
+    <item android:id="@id/opens" android:title="Open In Chrome" android:showAsAction="ifRoom" />
+    <item android:id="@id/share" android:title="Share Page" android:showAsAction="ifRoom" />
+    <item android:id="@id/cancel" android:title="Cancel" android:showAsAction="ifRoom" />
+</menu>

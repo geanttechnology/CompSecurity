@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/registry_search_result_page_item_padding" android:paddingBottom="@dimen/registry_search_result_page_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.65">
+        <com.target.ui.view.TargetTextView android:id="@id/registry_search_registrant_name" android:paddingLeft="@dimen/registry_search_result_page_item_padding" android:paddingRight="@dimen/default_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="regular" style="@style/Target.TextView.RegistrySearchItemTitle" />
+        <com.target.ui.view.TargetTextView android:id="@id/registry_search_registry_type" android:paddingLeft="@dimen/registry_search_result_page_item_padding" android:paddingRight="@dimen/default_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.RegistryEventType" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/default_padding_margin" android:paddingRight="@dimen/registry_search_result_page_item_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.35">
+        <com.target.ui.view.TargetTextView android:gravity="right" android:id="@id/registry_created_date" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.RegistryCreatedDate" />
+        <com.target.ui.view.TargetTextView android:gravity="right" android:id="@id/registry_search_city_state" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.RegistryStateAndCity" />
+    </LinearLayout>
+</LinearLayout>

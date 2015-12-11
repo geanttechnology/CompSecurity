@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/address_edit_layout" android:layout_above="@id/cart_address_save_reset_layout" android:layout_alignParentTop="true" style="@style/Checkout.Container.Content">
+        <TextView android:id="@id/address_edit_alert" android:visibility="gone" android:text="@string/xo_cart_items_have_shipping_exceptions" android:drawableLeft="@drawable/error_icon" android:drawablePadding="@dimen/checkoutListContainerMargin" style="@style/Checkout.Alert" />
+        <ScrollView android:id="@id/address_list_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/checkoutListContainerMargin" android:layout_marginTop="@dimen/checkoutListContainerMarginDouble">
+                    <com.ebay.android.widget.ContainerLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+                        <LinearLayout android:id="@id/address_edit_country_layout" android:background="@drawable/theme_list_selector_background" android:padding="@dimen/checkoutListContainerMargin" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:id="@id/address_edit_country_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:text="@string/xo_cart_address_country" style="@style/Checkout.Text.Secondary" />
+                            <TextView android:id="@id/address_edit_country_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:text="@string/choose_a_country" android:layout_weight="1.0" style="@style/Checkout.Text" />
+                            <ImageView style="@style/Checkout.Chevron" />
+                        </LinearLayout>
+                    </com.ebay.android.widget.ContainerLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/checkoutListContainerMargin" android:layout_marginTop="@dimen/checkoutListContainerMarginDouble">
+                    <com.ebay.android.widget.ContainerLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+                        <LinearLayout android:orientation="vertical" android:id="@id/address_edit_address_layout" android:padding="@dimen/checkoutListContainerMargin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <EditText android:id="@id/address_edit_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/xo_cart_address_name" android:inputType="textPersonName|textCapWords" style="@style/Checkout.Text" />
+                            <EditText android:id="@id/address_edit_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/xo_cart_address_phone_number" android:inputType="phone" style="@style/Checkout.Text" />
+                            <EditText android:id="@id/address_edit_street" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/xo_cart_address_street1" android:inputType="textPostalAddress|textCapWords" style="@style/Checkout.Text" />
+                            <EditText android:id="@id/address_edit_street2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/xo_cart_address_street2" android:inputType="textPostalAddress|textCapWords" style="@style/Checkout.Text" />
+                            <EditText android:id="@id/address_edit_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/xo_cart_address_city" android:inputType="textPostalAddress|textCapWords" style="@style/Checkout.Text" />
+                            <Spinner android:id="@id/address_edit_state" android:paddingLeft="12.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.Text" />
+                            <EditText android:id="@id/address_edit_county" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/xo_cart_address_county" android:inputType="textPostalAddress|textCapWords" style="@style/Checkout.Text" />
+                            <EditText android:id="@id/address_edit_postal_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textPostalAddress" style="@style/Checkout.Text" />
+                        </LinearLayout>
+                    </com.ebay.android.widget.ContainerLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.ebay.android.widget.ButtonBar android:id="@id/cart_address_save_reset_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" ebay:positiveButtonText="@string/save" ebay:negativeButtonText="@string/reset" ebay:positiveButtonId="@id/cart_address_save_button" ebay:negativeButtonId="@id/cart_address_reset_button" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

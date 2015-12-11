@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:target="http://schemas.android.com/apk/res-auto">
+    <ImageView android:paddingTop="@dimen/account_input_gfx_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/account_page_margin" android:src="@drawable/account_name" />
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/account_name_first_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" target:viewId="@id/account_name_first">
+        <com.target.ui.view.TargetEditText android:gravity="left|center" android:layout_gravity="bottom" android:id="@id/account_name_first" android:background="@drawable/view_underline" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/account_sign_up_name_first_hint" android:inputType="textPersonName|textCapWords" android:imeOptions="actionNext" style="@style/Target.TextView.EditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/account_name_last_wrapper" android:paddingLeft="@dimen/account_person_name_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" target:viewId="@id/account_name_last">
+        <com.target.ui.view.TargetEditText android:gravity="left|center" android:layout_gravity="bottom" android:id="@id/account_name_last" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/account_sign_up_name_last_hint" android:inputType="textPersonName|textCapWords" android:imeOptions="actionDone" style="@style/Target.TextView.EditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+</LinearLayout>

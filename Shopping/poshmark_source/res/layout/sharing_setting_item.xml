@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contentTableRowMiddle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:layout_gravity="center_vertical" android:id="@id/shareOptionTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/shareOptionActionLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorLightBurgundy" android:layout_gravity="center_vertical" android:id="@id/shareOptionConnectTextView" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connect_now" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/shareOptionConnectIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_arrow" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/shareOptionExtraActionLayout" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/shareOptionActionLayout" android:layout_alignParentRight="true">
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlue" android:layout_gravity="center_vertical" android:id="@id/timelineOptionConnectTextView" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fb_timeline_autoshare" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+        <Switch android:id="@id/timelineOptionSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rs_brand_strip_cell" style="@style/Rs.Widget.BrandStrip.Cell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rs_brand_strip_icon" style="@style/Rs.Widget.BrandStrip.Icon" />
+    <ProgressBar android:id="@id/rs_brand_strip_cell_progressBar" style="@style/Rs.Widget.BrandStrip.ProgressBar" />
+    <View android:id="@id/rs_brand_strip_select" style="@style/Rs.Widget.BrandStrip.HighLight" />
+</RelativeLayout>

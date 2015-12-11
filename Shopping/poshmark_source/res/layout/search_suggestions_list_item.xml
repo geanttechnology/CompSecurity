@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_attributes="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:id="@id/suggestion" android:padding="13.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" />
+    <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/bgColorLightBurgundy" android:id="@id/brandLabel" android:padding="18.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/brand" android:layout_alignParentRight="true" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" />
+</RelativeLayout>

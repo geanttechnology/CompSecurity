@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/calendar_selected_start" app:state_range_first="true" />
+    <item app:state_range_middle="true">
+        <color android:color="@color/green_new" />
+    </item>
+    <item android:drawable="@drawable/calendar_selected_end" app:state_range_last="true" />
+    <item android:state_selected="true" android:drawable="@drawable/calendar_selected_start" />
+    <item android:state_pressed="true" android:drawable="@drawable/calendar_pressed_single" />
+    <item app:state_current_month="false">
+        <color android:color="@android:color/transparent" />
+    </item>
+    <item app:state_today="true">
+        <color android:color="@android:color/transparent" />
+    </item>
+    <item app:state_selectable="false">
+        <color android:color="@android:color/transparent" />
+    </item>
+</selector>

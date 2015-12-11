@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/submit_rating_button" android:layout_alignParentTop="true" android:scrollbarDefaultDelayBeforeFade="1000" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/rating_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:layout_width="fill_parent" android:layout_height="90.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:layout_gravity="bottom|center" android:id="@id/submit_rating_button" android:paddingTop="18.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/rating_button" android:layout_alignParentBottom="true" style="@style/offerUpButton.rating" />
+</FrameLayout>

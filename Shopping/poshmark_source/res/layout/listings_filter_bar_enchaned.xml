@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_table_row_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/button_layout_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:id="@id/button1" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/filter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <View android:background="@drawable/ic_arrow_down" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/button1" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="sample" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/filterSeparatorView" android:background="@color/borderColorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_layout_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:id="@id/button2" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/brand" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <View android:background="@drawable/ic_arrow_down" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/button2" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="sample" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/brandSeparatorView" android:background="@color/borderColorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_layout_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:id="@id/button3" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/category" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <View android:background="@drawable/ic_arrow_down" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/button3" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="sample" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/categorySeparatorView" android:background="@color/borderColorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_layout_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:id="@id/button4" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/size" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <View android:background="@drawable/ic_arrow_down" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/button4" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/text4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="sample" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/sizeSeparatorView" android:background="@color/borderColorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_layout_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:id="@id/button5" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/price" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <View android:background="@drawable/ic_arrow_down" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/button5" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/text5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="sample" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/priceSeparatorView" android:background="@color/borderColorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_layout_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:id="@id/button6" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/condition" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <View android:background="@drawable/ic_arrow_down" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/button6" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/text6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="sample" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/conditionSeparatorView" android:background="@color/borderColorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_layout_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:id="@id/button7" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/availability" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <View android:background="@drawable/ic_arrow_down" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/button7" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/text7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="sample" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="@color/borderColorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_layout_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:id="@id/button8" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/color" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <View android:background="@drawable/ic_arrow_down" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/button8" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/text8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="sample" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginTop="@dimen/checkoutListContainerMargin" android:layout_marginRight="@dimen/checkoutListContainerMargin">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkoutMediumMargin">
+            <TextView android:textSize="@dimen/ebayTextSize" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/xo_delivey_scheduling_ebay_now_info_step_background" android:layout_width="@dimen/ebayTextSizeLarge" android:layout_height="@dimen/ebayTextSizeLarge" android:text="@string/ebn_order_details_one" />
+            <TextView android:textSize="@dimen/ebayTextSizeMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:text="@string/xo_delivery_scheduling_step_1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkoutMediumMargin">
+            <TextView android:textSize="@dimen/ebayTextSize" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/xo_delivey_scheduling_ebay_now_info_step_background" android:layout_width="@dimen/ebayTextSizeLarge" android:layout_height="@dimen/ebayTextSizeLarge" android:text="@string/ebn_order_details_two" />
+            <TextView android:textSize="@dimen/ebayTextSizeMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:text="@string/xo_delivery_scheduling_step_2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkoutMediumMargin">
+            <TextView android:textSize="@dimen/ebayTextSize" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/xo_delivey_scheduling_ebay_now_info_step_background" android:layout_width="@dimen/ebayTextSizeLarge" android:layout_height="@dimen/ebayTextSizeLarge" android:text="@string/ebn_order_details_three" />
+            <TextView android:textSize="@dimen/ebayTextSizeMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:text="@string/xo_delivery_scheduling_step_3" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkoutMediumMargin">
+            <TextView android:textSize="@dimen/ebayTextSize" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/xo_delivey_scheduling_ebay_now_info_step_background" android:layout_width="@dimen/ebayTextSizeLarge" android:layout_height="@dimen/ebayTextSizeLarge" android:text="@string/ebn_order_details_four" />
+            <TextView android:textSize="@dimen/ebayTextSizeMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:text="@string/xo_delivery_scheduling_step_4" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

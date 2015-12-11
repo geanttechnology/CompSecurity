@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/tool_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/toolbar_with_title_text" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tool_bar_container">
+        <include layout="@layout/deal_details_recycler" />
+    </FrameLayout>
+</RelativeLayout>

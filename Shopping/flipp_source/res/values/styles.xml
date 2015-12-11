@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CategoryTitle">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="SmoothProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="spb_color">@color/spb_default_color</item>
+        <item name="spb_stroke_width">@dimen/spb_default_stroke_width</item>
+        <item name="spb_stroke_separator_length">@dimen/spb_default_stroke_separator_length</item>
+        <item name="spb_sections_count">@integer/spb_default_sections_count</item>
+        <item name="spb_speed">@string/spb_default_speed</item>
+        <item name="spb_reversed">@bool/spb_default_reversed</item>
+        <item name="spb_mirror_mode">@bool/spb_default_mirror_mode</item>
+    </style>
+    <style name="Theme.Flipp" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/listingBackgroundColor</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:spinnerDropDownItemStyle">@style/Theme.Flipp.SpinnerDropDownItem</item>
+        <item name="android:actionBarStyle">@style/Theme.Flipp.ActionBar</item>
+        <item name="android:actionModeCloseDrawable">@drawable/ic_menu_accept</item>
+        <item name="android:actionOverflowButtonStyle">@style/Theme.Flipp.ActionButton.OverFlow</item>
+        <item name="android:actionModeCloseButtonStyle">@style/Theme.Flipp.ActionButton.CloseMode</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_menu_up</item>
+        <item name="android:actionModeCutDrawable">@drawable/ic_menu_cut</item>
+        <item name="android:actionModeCopyDrawable">@drawable/ic_menu_copy</item>
+        <item name="android:actionModePasteDrawable">@drawable/ic_menu_paste</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:searchViewGoIcon">@drawable/ic_menu_select_all</item>
+        <item name="android:popupPromptView">@style/Theme.Flipp.ActionBar</item>
+        <item name="android:selectionDividerHeight">@drawable/action_button</item>
+        <item name="ptrProgressBarColor">@color/pullToRefreshColor</item>
+    </style>
+    <style name="Theme.Flipp.ActionBar" parent="@android:style/Widget.QuickContactBadgeSmall.WindowMedium">
+        <item name="android:icon">@drawable/ic_banner_flipp</item>
+        <item name="android:background">@color/tintColor</item>
+        <item name="android:titleTextStyle">@style/Theme.Flipp.ActionBar.Title</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+    <style name="Theme.Flipp.ActionBar.Title" parent="@android:style/Widget.ExpandableListView.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Theme.Flipp.ActionButton.CloseMode" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">@drawable/action_button</item>
+    </style>
+    <style name="Theme.Flipp.ActionButton.OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_overflow</item>
+    </style>
+    <style name="Theme.Flipp.NoActionBar" parent="@style/Theme.Flipp">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Theme.Flipp.SpinnerDropDownItem" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/tintColor</item>
+    </style>
+    <style name="Theme.SmoothProgressBarDefaults" parent="@android:style/Theme">
+        <item name="spbStyle">@style/SmoothProgressBar</item>
+    </style>
+    <style name="Widget.ProgressBar.PullToRefresh" parent="@style/SmoothProgressBar">
+        <item name="android:minHeight">@dimen/ptr_progress_bar_stroke_width</item>
+    </style>
+    <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/com_facebook_loginview_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/com_facebook_loginview_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_facebook_button_blue</item>
+        <item name="android:paddingLeft">@dimen/com_facebook_loginview_padding_left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="com_facebook_loginview_silver_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff4b5164</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_facebook_loginbutton_silver</item>
+        <item name="android:height">44.0dip</item>
+        <item name="android:width">205.0dip</item>
+    </style>
+    <style name="tooltip_bubble_text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.25</item>
+    </style>
+</resources>

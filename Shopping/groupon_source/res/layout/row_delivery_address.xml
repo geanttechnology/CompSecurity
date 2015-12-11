@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_row_thick_v2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/checked" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/btn_check_buttonless_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.groupon.view.AutoResizeTextViewWidth android:id="@id/value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checked" style="@style/purchase_text_value_v2" />
+    <TextView android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_toLeftOf="@id/checked" android:layout_below="@id/value" style="@style/purchase_text_header_v2" />
+</RelativeLayout>

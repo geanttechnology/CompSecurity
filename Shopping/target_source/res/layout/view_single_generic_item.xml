@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/largeTextSize" android:textColor="@android:color/black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_left_right_padding_margin" android:layout_marginRight="@dimen/default_left_right_padding_margin" android:maxLines="2" />
+</FrameLayout>

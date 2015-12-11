@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wan_learn_more_activity_padding" android:paddingRight="@dimen/wan_learn_more_activity_padding" android:paddingBottom="@dimen/wan_learn_more_activity_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wan_learn_more_title_marginTop" android:layout_marginBottom="@dimen/wan_learn_more_title_marginBottom" android:text="@string/wan_learn_more_title" style="@style/AVOD.TextAppearance.Light.XLarge" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <include layout="@layout/wan_learn_more_details" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wan_learn_more_settings_height">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/avod_blue" android:gravity="center_horizontal" android:id="@id/WANManageDataPlan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wan_learn_more_settings_header_marginBottom" android:text="@string/wan_learn_more_settings_data_plan" style="@style/AVOD.TextAppearance.Light.Small" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wan_learn_more_settings_item_spacing">
+                    <TextView android:textColor="@color/avod_light_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wan_learn_more_settings_item_marginRight" android:text="@string/wan_learn_more_settings_data_plan_5_gb" style="@style/AVOD.TextAppearance.Light.Small" />
+                    <TextView android:id="@id/WANDataPlan5GB" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AVOD.TextAppearance.Light.Small" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wan_learn_more_settings_item_spacing">
+                    <TextView android:textColor="@color/avod_light_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wan_learn_more_settings_item_marginRight" android:text="@string/wan_learn_more_settings_data_plan_3_gb" style="@style/AVOD.TextAppearance.Light.Small" />
+                    <TextView android:id="@id/WANDataPlan3GB" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AVOD.TextAppearance.Light.Small" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wan_learn_more_settings_item_spacing">
+                    <TextView android:textColor="@color/avod_light_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wan_learn_more_settings_item_marginRight" android:text="@string/wan_learn_more_settings_data_plan_250_mb" style="@style/AVOD.TextAppearance.Light.Small" />
+                    <TextView android:id="@id/WANDataPlan250MB" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AVOD.TextAppearance.Light.Small" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

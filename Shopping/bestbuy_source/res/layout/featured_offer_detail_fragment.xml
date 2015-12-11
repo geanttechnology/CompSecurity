@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/special_offers_icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="4.0dip" android:contentDescription="@string/image_content_description" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/special_offers_title" android:layout_width="fill_parent" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="13.0sp" android:textColor="@color/bby_red" android:id="@id/special_offers_expiration_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textColor="@color/bby_gray" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/items_ship_title" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textColor="@drawable/clickable_text_gray" android:id="@id/special_offers_gaming_label" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/special_offers_gaming_label_text" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/special_offers_tab_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@android:id/list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/bby_box_middle" android:cacheColorHint="@color/transparent" android:divider="#ffcccccc" android:dividerHeight="1.0dip" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/txt_empty_item" android:background="#ffffffff" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_product_with_offer_text" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+        </LinearLayout>
+        <include layout="@layout/loading_spinner_layout" />
+    </RelativeLayout>
+</LinearLayout>

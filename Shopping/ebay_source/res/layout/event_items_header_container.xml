@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="@dimen/card_rpp_event_image_height" android:scaleType="centerCrop" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+    <include layout="@layout/browse_item_details_header" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/listContainerCaptionBottomMargin" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" layout="@layout/homescreen_card_horizontal_divider" />
+    <include layout="@layout/event_details_header_action_bar" />
+</LinearLayout>

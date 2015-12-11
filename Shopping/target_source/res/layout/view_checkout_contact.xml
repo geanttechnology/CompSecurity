@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/email_img" android:paddingTop="@dimen/checkout_gfx_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_checkout_email" android:contentDescription="@string/cd_email_contact_image" />
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/checkout_contact_email_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_img_margin_left" app:viewId="@id/checkout_contact_email">
+            <com.target.ui.view.TargetEditText android:textSize="@dimen/largeTextSize" android:id="@id/checkout_contact_email" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_email_addr_txt" android:inputType="textEmailAddress" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+        </com.target.ui.view.CustomErrorViewWrapper>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/contact_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/checkout_edit_text_margin_bottom" android:layout_marginBottom="@dimen/checkout_edit_text_margin_bottom">
+        <ImageView android:id="@id/phone_image" android:paddingTop="@dimen/checkout_gfx_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_checkout_phone" android:contentDescription="@string/cd_phone_contact_image" />
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/checkout_contact_phone_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_img_margin_left" app:viewId="@id/checkout_contact_phone">
+            <com.target.ui.view.TargetEditText android:id="@id/checkout_contact_phone" android:layout_width="fill_parent" android:hint="@string/checkout_phone_hint" app:fontStyle="light" style="@style/Target.Edit.PhoneNumber" />
+        </com.target.ui.view.CustomErrorViewWrapper>
+    </LinearLayout>
+</merge>

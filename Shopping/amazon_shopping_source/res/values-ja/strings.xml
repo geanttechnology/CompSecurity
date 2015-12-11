@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_in_browser">ブラウザで開く</string>
+    <string name="app_name">Amazon JP</string>
+    <string name="cc_scan_app_name">カードをスキャン</string>
+    <string name="cc_scan_center_card">フレーム内におさまるよう調整してください</string>
+    <string name="cc_scan_amazon_secure">Amazon セキュア</string>
+    <string name="cc_scan_card_not_stored">実際のカード画像は保存されません。</string>
+    <string name="cc_scan_scanning">スキャン中…</string>
+    <string name="cc_scan_success">正常にスキャンされました。</string>
+    <string name="cc_scan_trouble">このカードの読み込みに問題があります。</string>
+    <string name="cc_scan_rescan">再スキャン</string>
+    <string name="cc_scan_manual">手動で入力</string>
+    <string name="cc_scan_help_page_us">https://www.amazon.co.jp/ccscanhelpjp</string>
+    <string name="common_google_play_services_notification_ticker">Google Play開発者サービスのエラー</string>
+    <string name="common_google_play_services_notification_needs_installation_title">アプリではGoogle Play開発者サービスをインストールする必要があります</string>
+    <string name="common_google_play_services_notification_needs_update_title">アプリではGoogle Play開発者サービスを更新する必要があります</string>
+    <string name="common_google_play_services_needs_enabling_title">アプリではGoogle Play開発者サービスを有効にする必要があります</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$sによるリクエスト</string>
+    <string name="common_google_play_services_install_title">Play開発者サービスの入手</string>
+    <string name="common_google_play_services_install_text_phone">このアプリの実行にはGoogle Play開発者サービスが必要ですが、お使いの携帯端末にはインストールされていません。</string>
+    <string name="common_google_play_services_install_text_tablet">このアプリの実行にはGoogle Play開発者サービスが必要ですが、お使いのタブレットにはインストールされていません。</string>
+    <string name="common_google_play_services_install_button">Play開発者サービスの入手</string>
+    <string name="common_google_play_services_enable_title">Play開発者サービスの有効化</string>
+    <string name="common_google_play_services_enable_text">このアプリの実行には、Google Play開発者サービスの有効化が必要です。</string>
+    <string name="common_google_play_services_enable_button">Play開発者サービスの有効化</string>
+    <string name="common_google_play_services_update_title">Play開発者サービスの更新</string>
+    <string name="common_google_play_services_update_text">このアプリの実行には、Google Play開発者サービスの更新が必要です。</string>
+    <string name="common_google_play_services_network_error_title">ネットワークエラー</string>
+    <string name="common_google_play_services_network_error_text">Google Play開発者サービスに接続するには、データ接続が必要です。</string>
+    <string name="common_google_play_services_invalid_account_title">無効なアカウント</string>
+    <string name="common_google_play_services_invalid_account_text">指定したアカウントはこの端末上に存在しません。別のアカウントを選択してください。</string>
+    <string name="common_google_play_services_unknown_issue">Google Play開発者サービスで原因不明の問題が発生しました。</string>
+    <string name="common_google_play_services_unsupported_title">Google Play開発者サービス</string>
+    <string name="common_google_play_services_unsupported_text">一部のアプリが使用しているGoogle Play開発者サービスは、お使いの端末ではサポートされていません。詳しくは、端末メーカーまでお問い合わせください。</string>
+    <string name="common_google_play_services_unsupported_date_text">端末上の日付が正しくないようです。端末上の日付をご確認ください。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_signin_button_text">ログイン</string>
+    <string name="common_signin_button_text_long">Googleでログイン</string>
+    <string name="yes">はい</string>
+    <string name="cancel">キャンセル</string>
+    <string name="search">Amazon.co.jpで検索</string>
+    <string name="addon">Add-on Item</string>
+    <string name="rs_results_best_seller_description">ナンバーワン ベストセラー</string>
+    <string name="rs_results_best_seller_department">" - %1$s"</string>
+    <string name="rs_results_error_try_again">もう一度お試しください</string>
+    <string name="rs_results_error_connectivity">インターネットへの接続をご確認の上、もう一度お試しください。</string>
+    <string name="rs_results_error_generic">申し訳ありませんが、このページに問題が今あり。ご迷惑をおかけして申し訳ありません。</string>
+    <string name="item_map_instructions">製品詳細はここをタップ</string>
+    <string name="prime_eligible">Amazonプライム対象商品</string>
+    <string name="prime_fresh_eligible">プライムフレッシュ対象</string>
+    <string name="list_view_description">リストビュー</string>
+    <string name="grid_view_description">グリッドビュー</string>
+    <string name="image_view_description">画像ビュー</string>
+    <string name="product_review_single">1個のレビュー</string>
+    <string name="product_review_count">%1$s件のレビュー</string>
+    <string name="refine_disabled">使用不可</string>
+    <string name="refine_selected">Selected</string>
+    <string name="refine_sort">並べ替え</string>
+    <string name="refine_filter">絞り込み</string>
+    <string name="searchbox_in">で</string>
+    <string name="select_department">部門</string>
+    <string name="subscribe_and_save">割引で定期的にお届け</string>
+    <string name="rs_refinement_menu_clear_all">すべての条件をクリア</string>
+    <string name="rs_refinement_menu_filter">絞り込み</string>
+    <string name="rs_refinement_menu_see_more_filters">カテゴリーを選択して、その他のフィルタをご利用ください</string>
+    <string name="rs_search_suggestions_department_text">%s</string>
+    <string name="rs_search">Amazon.co.jpで検索</string>
+    <string name="rs_search_go_button">Go</string>
+    <string name="rs_search_menu_item">検索</string>
+    <string name="rs_search_all_departments">すべてのカテゴリー</string>
+    <string name="rs_search_in_department">%1$s からキーワードで探す</string>
+    <string name="rs_bc_search_button">バーコードで検索</string>
+    <string name="rs_shop_by_department_text">カテゴリーから探す</string>
+    <string name="rs_snapit">スナップ</string>
+    <string name="adrive_lib_android_autosave_label">自動保存</string>
+    <string name="adrive_lib_android_turn_on_autosave">自動セーブをオンにする</string>
+    <string name="adrive_lib_android_video_limit">アップロード可能なビデオは2GB以下および20分以内までです。</string>
+    <string name="adrive_lib_android_breadcrumb_photo_counter">%2$d中%1$d</string>
+    <string name="adrive_lib_android_cloud_drive_almost_full">Cloud Driveはほとんどいっぱいです。残りの容量は%sMBです。</string>
+    <string name="adrive_lib_android_cloud_drive_full_message">Cloud Driveはいっぱいです。</string>
+    <string name="adrive_lib_android_cloud_drive_almost_full_message">Cloud Driveは、ほぼいっぱいです。</string>
+    <string name="adrive_lib_android_view_and_manage_info">Amazon Cloud Driveでどこからでも写真やビデオを見たり整理できます。</string>
+    <string name="adrive_lib_android_view_your_photos">Cloud Drive Photosアプリを入手</string>
+    <string name="adrive_lib_android_backup_your_photos">写真のバックアップを取る</string>
+    <string name="adrive_lib_android_backup_and_view">出先で写真やビデオをバックアップして、Amazon Cloud Driveでどこからでも見ることができます。</string>
+    <string name="adrive_lib_android_autosave_not_supported">このデバイスでは自動セーブはサポートしていません</string>
+    <string name="adrive_lib_android_5gb_free_from_acd">Amazon Cloud Drive無料5GB</string>
+    <string name="adrive_lib_android_autosave_info">お客様のスマートフォンがログイン状態にありWi-Fiに接続されている場合はいつでも、そのスマートフォンで撮影された写真やビデオはAmazon Cloud Driveアカウントに自動的に保存されます。</string>
+    <string name="adrive_lib_android_tos_agree_statement">OKをクリックすることで、Cloud Driveの利用規約に同意したことになります</string>
+    <string name="adrive_lib_android_terms_of_use">利用規約はこちら。</string>
+    <string name="adrive_lib_android_account_status_error_message">アカウントに関して問題があります。カスタマーサポートに連絡してください。</string>
+    <string name="adrive_lib_android_account_status_help_text">ヘルプ</string>
+    <string name="adrive_lib_android_account_storage_details_message">ストレージを見る</string>
+    <string name="adrive_lib_android_account_upgrade_storage_message">アカウントをアップグレードしてスペースを追加します。</string>
+    <string name="adrive_lib_android_autosave_paused_country">居住国の設定を変更したので「自動保存」はオフになりました。「居住地の変更」から再度オンに設定できます。</string>
+    <string name="adrive_lib_android_photo_backup_from_acd">Amazon Cloud Driveで写真のバックアップ</string>
+    <string name="adrive_lib_android_app_manages_backups">Amazon Cloud Driveアプリでお客様のバックアップコピーを管理します。アプリを開いて写真とビデオを表示します。</string>
+    <string name="adrive_lib_android_dont_show_me">再表示しない</string>
+    <string name="adrive_lib_android_open_cdp_app">Cloud Drive Photosアプリを開く</string>
+    <string name="adrive_lib_android_upgrade_storage">Cloud Driveストレージをアップグレードする</string>
+    <string name="adrive_lib_android_cancel">キャンセル</string>
+    <string name="adrive_lib_android_close">閉じる</string>
+    <string name="adrive_lib_android_notification_upload_complete">アップロードが完了しました</string>
+    <string name="adrive_lib_android_notification_upload_complete_message_success">%1$dが完了しました。</string>
+    <string name="adrive_lib_android_notification_upload_complete_message_mixed">%1$dは成功、%2$dは失敗しました。</string>
+    <string name="adrive_lib_android_notification_uploading">%1$sをアップロード中</string>
+    <string name="adrive_lib_android_uploading_short_text">アップロード中</string>
+    <string name="adrive_lib_android_uploading">Cloud Driveにアップロードしています</string>
+    <string name="adrive_lib_android_error_uri_parse">アップロードするファイルを見つけることができません</string>
+    <string name="adrive_lib_android_transfer_no_wifi_title">Wi-Fiがありません</string>
+    <string name="adrive_lib_android_upload_no_wifi_message">WiFiに接続されたらアップロードが開始されます。</string>
+    <string name="adrive_lib_android_upload_full_notification_title">Cloud Driveに空き容量がありません</string>
+    <string name="adrive_lib_android_upload_full_notification_subtitle">アップロードが一時停止されています</string>
+    <string name="adrive_lib_android_upload_full_notification_subtitle_prime">ビデオのアップロードが中断しました</string>
+    <string name="adrive_lib_android_full_storage_dialog_message">Cloud Driveに空き容量がありません。追加スペースが使用可能になるまで写真をアップロードできません。</string>
+    <string name="adrive_lib_android_full_storage_dialog_message_prime">Cloud Driveに空き容量がありません。追加スペースが使用可能になるまで、ビデオの保存は一時停止されます。</string>
+    <string name="adrive_lib_android_upload_low_storage_title">Cloud Driveはほとんどいっぱいです</string>
+    <string name="adrive_lib_android_upload_low_storage_remaining">残り容量は%1$s以下です</string>
+    <string name="adrive_lib_android_low_storage_dialog_message">Cloud Driveの残り容量は%1$s以下です。限界に達すると、追加スペースが使用可能になるまで写真をアップロードできなくなります。</string>
+    <string name="adrive_lib_android_low_storage_dialog_message_prime">Cloud Driveの残り容量は%1$s以下です。限界に達すると、追加スペースが使用可能になるまでビデオの保存は一時停止されます。</string>
+    <string name="adrive_lib_android_button_buy_more_space">追加スペースを購入</string>
+    <string name="adrive_lib_android_manage_storage_settings_summary">%2$s中%1$s が使用可能です</string>
+    <string name="adrive_lib_android_manage_storage_summary_available">%1$s使用可能です</string>
+    <string name="adrive_lib_android_manage_storage_summary_mb_available">%1$sMB使用可能です</string>
+    <string name="adrive_lib_android_manage_storage_summary_gb_available">%1$sGB使用可能です</string>
+    <string name="adrive_lib_android_plan">%1$sプラン</string>
+    <string name="adrive_lib_android_free_space_quota_details_header">Cloud Drive無料 - %1$sプラン</string>
+    <string name="adrive_lib_android_files_summary_label">ファイル</string>
+    <string name="adrive_lib_android_videos_summary_label">ビデオ</string>
+    <string name="adrive_lib_android_video_summary_label">ビデオ</string>
+    <string name="adrive_lib_android_photos_summary_label">写真</string>
+    <string name="adrive_lib_android_photo_summary_label">写真</string>
+    <string name="adrive_lib_android_not_enough_space_for_uploads">このアカウントには、追加アップロードを完了するための残り容量がありません。</string>
+    <string name="adrive_lib_android_ok">OK</string>
+    <string name="adrive_lib_android_retry">再試行してください</string>
+    <string name="adrive_lib_android_accept">承諾</string>
+    <string name="adrive_lib_android_activity_indicator_loading">読み込み中...</string>
+    <string name="adrive_lib_android_no_network_error">ネットワークに接続されていません</string>
+    <string name="adrive_lib_android_uploads_queued_message">アップロード中に問題が発生しました。</string>
+    <string name="adrive_lib_android_uploads_paused_user">アップロードは一時停止中です</string>
+    <string name="adrive_lib_android_uploads_paused_low_battery_subtitle">電源に接続して再開してください</string>
+    <string name="adrive_lib_android_video_length_limit_title">ビデオのアップロードに関する問題</string>
+    <string name="adrive_lib_android_video_length_limit_desc">20分以上のビデオはCloud Driveにアップロードできません。</string>
+    <string name="adrive_lib_android_photo_size_limit_title">写真のアップロードに関する問題</string>
+    <string name="adrive_lib_android_photo_size_limit_desc">2GB以上の写真やビデオはCloud Driveにアップロードできません。</string>
+    <string name="adrive_lib_android_upload_will_resume_message">アップロードはまもなく再開します。</string>
+    <string name="adrive_lib_android_upload_progress_already_saved_text">%1$d件保存済み</string>
+    <string name="adrive_lib_android_upload_progress_queued_text">残り%1$d件</string>
+    <string name="adrive_lib_android_upload_information_header_1_saved">1個のアイテムのアップロードが完了しています。</string>
+    <string name="adrive_lib_android_upload_information_header_x_saved">%1$d個のアイテムのアップロードを完了しています。</string>
+    <string name="adrive_lib_android_upload_information_header_autosave_nothing_saved">何も保存されていません。</string>
+    <string name="adrive_lib_android_upload_information_header_autosave_off">自動セーブはオフです。</string>
+    <string name="adrive_lib_android_upload_information_header_autosave_on">自動セーブはオンです。</string>
+    <string name="adrive_lib_android_upload_generic_error_status_desc">アップロードは一時停止中です。</string>
+    <string name="adrive_lib_android_upload_error_no_wifi_desc">一時停止（WiFiを待っています）</string>
+    <string name="adrive_lib_android_upload_error_no_network_desc">一時停止（ネットワークがありません）</string>
+    <string name="adrive_lib_android_upload_error_storage_full_desc">一時停止（ストレージがいっぱいです）</string>
+    <string name="adrive_lib_android_upload_error_prime_storage_full_desc">"ビデオのアップロードを一時停止しました
+（ストレージがいっぱいです）"</string>
+    <string name="adrive_lib_android_upload_information_desc_checked_today">前回のチェックは今日の%1$s</string>
+    <string name="adrive_lib_android_upload_information_desc_checked_yesterday">前回のチェックは昨日の%1$s</string>
+    <string name="adrive_lib_android_upload_information_desc_checked_other_day">前回のチェックは%1$s %2$sの%3$s</string>
+    <string name="adrive_lib_android_upload_information_desc_uploaded_today">前回のアップロードは今日の%1$s</string>
+    <string name="adrive_lib_android_upload_information_desc_uploaded_yesterday">前回のアップロードは昨日の%1$s</string>
+    <string name="adrive_lib_android_upload_information_desc_uploaded_other_day">前回のアップロードは%1$s %2$sの%3$s</string>
+    <string name="day_format">%d日間</string>
+    <string name="hour_hyphen_format">%d時間</string>
+    <string name="ok">OK</string>
+    <string name="close">閉じる</string>
+    <string name="dismiss">閉じる</string>
+    <string name="dont_show_again">今後、このメッセージを表示しない</string>
+    <string name="make_default">デフォルト設定にする</string>
+    <string name="adjust_in_settings">"この設定はいつでも変更できます。
+設定>アプリケーション>ビデオ設定"</string>
+    <string name="streaming_not_enabled_over_wan_title">ビデオ用モバイルネットワーク</string>
+    <string name="streaming_not_enabled_over_wan_text1">デバイスが Wi-Fi ネットワークに接続されていません。</string>
+    <string name="streaming_not_enabled_over_wan_link1">Wi-Fi ネットワークの確認</string>
+    <string name="streaming_not_enabled_over_wan_text2">"
+ビデオを視聴するには、「ビデオ設定」で「ビデオ用モバイルネットワーク」を有効にします。"</string>
+    <string name="streaming_not_enabled_over_wan_link2">詳細</string>
+    <string name="streaming_not_enabled_over_wan_settingsBtn">ビデオ設定</string>
+    <string name="streaming_requires_wifi">"デバイスが Wi-Fi ネットワークに接続されていません。ビデオのストリーミングには Wi-Fi ネットワークが必要です。
+
+使用可能な Wi-Fi ネットワークを確認できます。"</string>
+    <string name="streaming_requires_wifi_settingsBtn">Wi-Fi ネットワークの確認</string>
+    <string name="streaming_requires_wifi_title">ストリーミングできない理由</string>
+    <string name="buffering_limit_reached_dialog_title">インターネット接続不良</string>
+    <string name="buffering_limit_reached_dialog_accept_button">後で視聴</string>
+    <string name="buffering_limit_reached_dialog_cancel_button">視聴を続ける</string>
+    <string name="buffering_limit_reached_dialog_message_download_available">ご使用のデバイスで利用できるインターネット帯域幅が低いため、ストリーミングが中断されました。 ビデオのバッファリング中はビデオが一時停止する可能性があります。 接続速度が遅い場合に快適に視聴するには、ビデオを事前にダウンロードすることをお勧めします。 視聴を続けますか?</string>
+    <string name="buffering_limit_reached_dialog_message_no_download_available">ご使用のデバイスで利用できるインターネット帯域幅が低いため、ストリーミングが中断されました。 ビデオのバッファリング中はビデオが一時停止する可能性があります。 視聴を続けますか?</string>
+    <string name="art_support_warning_dialog_title">+++</string>
+    <string name="art_support_warning_dialog_message">+++</string>
+    <string name="art_support_warning_dialog_accept_button">+++</string>
+    <string name="fsk18_content_verify_dialog_title">年齢確認が必要</string>
+    <string name="fsk18_content_verify_dialog_message">"この FSK18 タイトルをレンタル、購入、または視聴するには、年齢確認が必要です。
+
+年齢が確認されたら、Amazon インスタント・ビデオの PIN を使用して FSK 18 タイトルにアクセスできるようになります。"</string>
+    <string name="fsk18_content_verify_dialog_button">確認</string>
+    <string name="fsk18_content_dialog_cancel_button">キャンセル</string>
+    <string name="fsk18_content_pin_dialog_title">この制限付きタイトルにアクセスするには、4 桁の Amazon PIN を入力してください。</string>
+    <string name="fsk18_content_pin_dialog_confirm_button">確認</string>
+    <string name="fsk18_content_pin_dialog_invalid_message">PIN が無効です。もう一度お試しください。</string>
+    <string name="fsk18_content_pin_setup_dialog_title">PIN が必要</string>
+    <string name="fsk18_content_pin_setup_dialog_message">この FSK18 タイトルをレンタル、購入、または視聴するには、Amazon インスタント・ビデオの PIN を設定する必要があります。</string>
+    <string name="fsk18_content_pin_setup_dialog_button">PIN の設定</string>
+    <string name="fsk18_content_pin_dialog_error">一時的に PIN を確認することができません。 後でもう一度お試しください。</string>
+    <string name="fsk18_content_kft_stream_error">Kindle FreeTime が有効になっている場合は FSK 18 のタイトルを利用できません。</string>
+    <string name="restricted_content_dialog_message">+++</string>
+    <string name="restricted_content_pc_message">+++</string>
+    <string name="resume_failure_title">続きを再生できません</string>
+    <string name="resume_failure_message">このビデオは完全にダウンロードされていないため、視聴を停止したところから続けて再生できません。次の操作が可能です。</string>
+    <string name="resume_failure_cancel_text">戻る</string>
+    <string name="download_options_watch_from_beginning">最初から再生</string>
+    <string name="error_code_format">+++</string>
+    <string name="error_show_details"><u>+++</u></string>
+    <string name="error_ok">OK</string>
+    <string name="connection_error">このページは読み込めません。 端末のネットワーク接続をチェックし、再度試してください。</string>
+    <string name="playback_error_retry">"このビデオの再生中に問題が発生しました。
+
+問題が解決しない場合は、Amazon のカスタマーサービスにお問い合わせください。"</string>
+    <string name="network_error">ネットワークへの接続時にエラーが発生しました。 もう一度お試しください。</string>
+    <string name="error_retry">再試行</string>
+    <string name="player_error_title">注意</string>
+    <string name="drm_system_needs_reset_message">このビデオのストリーミングで問題が発生しました。 [設定] > [アプリケーション] > [インストール済みのすべてのアプリの管理] > [Amazon のビデオ] に移動し、[データの消去] を選択してください。 サポートが必要な場合は、Amazon のカスタマーサービスにお問い合わせください。</string>
+    <string name="media_system_clock_error_message">デバイスの時計が正しくありません。 デバイスをインターネットに接続すると、問題は自動的に修正されます。 サポートが必要な場合は、Amazon のカスタマーサービスにお問い合わせください。</string>
+    <string name="playready_drm_error_hdcp_fail">HDMI 接続に関連する問題が発生しました。 HDMI ケーブルを接続し直してください。 HDMI ケーブルを受信機に接続している場合は、テレビまたはモニタに直接接続してみてください。</string>
+    <string name="playready_drm_error_DRMNOTINIT">現在、このビデオは利用できません。 問題が解決しない場合は、Amazon のカスタマーサービスに問い合わせて、エラーコード 02 とお伝えください。</string>
+    <string name="playready_drm_error_LICENSENOTFOUND">現在、このビデオは利用できません。 問題が解決しない場合は、Amazon のカスタマーサービスに問い合わせて、エラーコード 13 とお伝えください。</string>
+    <string name="playready_drm_error_CIPHER_NOTINITIALIZED">現在、このビデオは利用できません。 問題が解決しない場合は、Amazon のカスタマーサービスに問い合わせて、エラーコード 80 とお伝えください。</string>
+    <string name="playready_drm_error_INVALIDARG">現在、このビデオは利用できません。 問題が解決しない場合は、Amazon のカスタマーサービスに問い合わせて、エラーコード 57 とお伝えください。</string>
+    <string name="media_corrupt_error_message">このビデオに問題が発生しました。 再試行してください。 問題が解決しない場合は、Amazon のカスタマーサービスにお問い合わせください。</string>
+    <string name="reached_end_of_buffer">このビデオの視聴を続行するには、端末がオンラインである必要があります。 Wi-Fi ネットワークに接続してください。</string>
+    <string name="reached_end_of_buffer_ethernet">インターネット接続が必要です。 デバイスのインターネット接続を確認してください。</string>
+    <string name="concurrency_offline_error">ネットワークエラーが発生しました。 これは一時的な問題である可能性があります。 数分後に、もう一度行ってください。 問題が継続して発生する場合は、カスタマーサービスにお問い合わせください。</string>
+    <string name="eng_playback_error">エンジニアリングビルド: ファイルの最初の 50MB を超えて再生できません。</string>
+    <string name="service_error">このページは読み込めません。 もう一度お試しください。</string>
+    <string name="generic_error">エラーが発生しました。 もう一度お試しください。</string>
+    <string name="rental_expired">ビデオの期限が切れています。 オプションを表示するには、デバイスをインターネットに接続してください。</string>
+    <string name="media_eject_error">続行するには、コンピューターと端末の接続を解除してください。</string>
+    <string name="no_available_online_streams_title">ストリームが多すぎます</string>
+    <string name="no_available_online_streams">"お客様のアカウントで再生しているビデオの数が他の端末の最大ビデオ数を超えているため、このビデオをご使用の端末にストリーミングできません。 ご使用の端末でこのビデオを見るには、他の登録済み端末でこのビデオの視聴を停止してください。
+
+注意: ダウンロードしたビデオは、オンライン閲覧の制限にカウントされません。"</string>
+    <string name="temporarily_unavailable">現在、このビデオは利用できません。 問題が解決しない場合は、Amazon のカスタマーサービスにお問い合わせください。</string>
+    <string name="no_available_online_streams_nodownload">お客様のアカウントで最大数のビデオを再生中です。 今すぐこのビデオを視聴するには、お客様のアカウントで再生中のいずれかのビデオの再生を停止してください。 この端末で視聴を開始するまで 10 分ほどかかる場合があります。</string>
+    <string name="recoverable_offline_download_error">このビデオの再生時に問題が発生しました。インターネット接続により自動的に修正される可能性があります。 問題が解決しない場合は、ビデオを削除して、もう一度ダウンロードしてください。</string>
+    <string name="download_no_available_download_license">"このビデオは、別の登録済み端末にダウンロードされており、これ以上ダウンロードすることができません。
+
+これがレンタルビデオである場合は、これ以上ダウンロードできません。 このビデオを購入した場合は、別の端末からダウンロード済みビデオを削除すると、この端末で視聴できるようになります。"</string>
+    <string name="invalid_geo_ip_purchase">地理的制約により、ご注文を処理できませんでした。 詳細については、該当する利用規約を参照してください。</string>
+    <string name="invalid_geo_ip_download">このコンテンツには、地理的制約によりアクセスできません。 詳細については、該当する利用規約を参照してください。</string>
+    <string name="kft_download_switch_profile_error">このデバイスが登録されている成人プロファイルによって、映画とテレビ番組が FreeTime ビデオライブラリにダウンロードされる場合があります。 このビデオを観るには、成人プロファイルに切り替えてください。</string>
+    <string name="dialog_rental_period_start_warning_title">レンタル期間の開始</string>
+    <string name="dialog_rental_period_start_warning_message">"このビデオの%sのレンタル期間を開始します。
+
+注意: このビデオは１つの端末にだけダウンロードできますが、ストリーミング再生は複数の端末で行えます。"</string>
+    <string name="dialog_rental_period_start_warning_message_nodownload">このビデオの %s レンタル期間を開始しようとしています。</string>
+    <string name="dialog_rental_period_start_warning_start">今すぐ見る</string>
+    <string name="dialog_rental_period_start_warning_cancel">後で視聴する</string>
+    <string name="dialog_prime_period_start_warning_title">%sのオフライン視聴時間を開始</string>
+    <string name="dialog_prime_period_start_warning_message">このビデオは今から%1$sオフラインで視聴できます。%2$s経過後にこのビデオを見るにはインターネットに接続する必要があります。</string>
+    <string name="dialog_prime_period_start_warning_start">今すぐ見る</string>
+    <string name="dialog_prime_period_start_warning_cancel">後で視聴する</string>
+    <string name="dialog_prime_check_wifi_settings">Wi-Fiネットワークを確認</string>
+    <string name="dialog_prime_period_expired_title">オフライン視聴時間の終了</string>
+    <string name="dialog_prime_period_expired_message">このビデオのオフライン視聴期間は終了しました。 このビデオを視聴するには、再度インターネットに接続してください。</string>
+    <string name="no_internet_dialog_title">インターネットに接続されていません</string>
+    <string name="no_internet_toast">+++</string>
+    <string name="wifi_settings">+++</string>
+    <string name="no_internet_dialog_title_ethernet">インターネットに接続されていません</string>
+    <string name="no_internet_toast_ethernet">このタスクを完了するには、インターネット接続が必要です。 接続を確認してください。</string>
+    <string name="no_internet_settings_ethernet">設定</string>
+    <string name="loading">確認中</string>
+    <string name="video_loading">読み込んでいます…</string>
+    <string name="video_loading_tv_episode_title">%1$s、シーズン%2$d、第%3$d話</string>
+    <string name="video_loading_long_wait">このビデオの読み込みには、予想より時間がかかっています。 ネットワーク接続を確認するか、後で再試行することをお勧めします。</string>
+    <string name="player_hd_icon_default_text">HD</string>
+    <string name="player_hd_icon_1080p_text">1080p</string>
+    <string name="wan_learn_more_title">モバイルネットワークデータプランを使用すると、お気に入りのビデオがすぐ手に入ります。</string>
+    <string name="wan_learn_more_details_item1">• Wi-Fi を使用しないですぐに視聴を開始します。</string>
+    <string name="wan_learn_more_details_item2">• プランにデータ容量を追加して、より長時間エンターテイメントを楽しめます。</string>
+    <string name="wan_learn_more_details_item3">• デフォルトの画質設定を使用してモバイルデータプランを最大限に活用するか、ビデオ設定を使用してビデオの画質を向上させます。</string>
+    <string name="wan_learn_more_button_description">モバイルネットワークでビデオのストリーミングをオンにする</string>
+    <string name="wan_learn_more_button">ビデオ設定</string>
+    <string name="wan_learn_more_settings_data_plan">データプランの管理</string>
+    <string name="wan_learn_more_settings_data_plan_5_gb">5 GB/月プラン:</string>
+    <string name="wan_learn_more_settings_data_plan_3_gb">3 GB/月プラン:</string>
+    <string name="wan_learn_more_settings_data_plan_250_mb">250 MB/月プラン:</string>
+    <string name="wan_learn_more_settings_playback_minutes">最大%s分間のビデオ再生</string>
+    <string name="wan_learn_more_settings_playback_hours">最大%s時間のビデオ再生</string>
+    <string name="wan_streaming_toast_text">モバイルデータプランを使用してストリーミングしています。</string>
+    <string name="wan_streaming_toast_description">「ビデオ設定」でモバイルストリーミングオプションを変更してください。</string>
+    <string name="preference_video_title">ビデオ設定</string>
+    <string name="preference_mobile_quality_title">モバイルネットワークでビデオを視聴する</string>
+    <string name="preference_mobile_quality_best">最高画質</string>
+    <string name="preference_mobile_quality_better">高画質</string>
+    <string name="preference_mobile_quality_good">適正画質</string>
+    <string name="preference_mobile_quality_off">+++</string>
+    <string name="preference_mobile_quality_best_description">1 GB あたり最大 30 分間のビデオのデータプラン</string>
+    <string name="preference_mobile_quality_better_description">1 GB あたり最大 60 分間のビデオのデータプラン</string>
+    <string name="preference_mobile_quality_good_description">1 GB あたり最大 120 分間のビデオのデータプラン</string>
+    <string name="preference_mobile_quality_off_description" />
+    <string name="ads_text">広告</string>
+    <string name="ads_action_skip">スキップ</string>
+    <string name="ads_action_learn_more">+++</string>
+    <string name="ads_count_down_format">%1$s は、あと %2$d 秒で再開します…</string>
+    <string name="ads_learn_more_page_loading">スポンサーからの詳細情報を取得しています…</string>
+    <string name="ads_learn_more_download_error">スポンサーからの詳細情報を読み込めませんでした。 まもなくビデオの再生を開始します。</string>
+    <string name="prime_upsell_message">+++</string>
+    <string name="prime_upsell_learn_more">+++</string>
+    <string name="prime_upsell_title_message">Prime Instant Video を使用して、%1$sで今すぐ視聴する</string>
+    <string name="prime_upsell_btn_message">30日間の無料お試し版を開始する</string>
+    <string name="prime_upsell_title_message_tv">利用対象</string>
+    <string name="prime_upsell_btn_message_tv">Amazon プライム</string>
+    <string name="zoom">拡大</string>
+    <string name="next_up">次のエピソード</string>
+    <string name="exit_playback">再生を終了する</string>
+    <string name="next_episode">次のエピソード</string>
+    <string name="watch_from_beginning">最初から視聴する</string>
+    <string name="menu_title">オプション</string>
+    <string name="speed_hint_rewind">+++</string>
+    <string name="speed_hint_ffward">+++</string>
+    <string name="on">オン</string>
+    <string name="off">オフ</string>
+    <string name="generic_error_title">エラー</string>
+    <string name="subtitle_error">このビデオのキャプションを表示できません。</string>
+    <string name="subtitles">字幕</string>
+    <string name="subtitle_language">言語</string>
+    <string name="subtitle_size">サイズ</string>
+    <string name="subtitle_size_picker">Aa</string>
+    <string name="subtitle_format">形式</string>
+    <string name="subtitle_sample_text">これはサブタイトルのサンプルです</string>
+    <string name="subtitle_display_settings">表示設定</string>
+    <string name="audio">+++</string>
+    <string name="audio_language">音声の言語</string>
+    <string name="audio_language_unavailable">選択された音声の言語は現在利用できません。</string>
+    <string name="overflow_cc_audio">字幕と音声</string>
+    <string name="playback_audio_language_unavailable">%1$sの音声は使用できません。 %2$sで再生しています。</string>
+    <string name="unknown_language">+++</string>
+    <string name="xray_music_return_to_video">Return to Video</string>
+    <string name="download_quality_hd_dialog_title">HDダウンロードオプション</string>
+    <string name="download_quality_hd_best_dialog_button">最高画質</string>
+    <string name="download_quality_hd_best_dialog_button_continue">最高画質で続行</string>
+    <string name="download_quality_hd_best_dialog_button_restart">最高画質で最初からダウンロード</string>
+    <string name="download_quality_hd_1080p_best_dialog_description">"最大1080p HD
+ダウンロード時間が長くなり、ファイルサイズが大きくなります"</string>
+    <string name="download_quality_hd_720p_best_dialog_description">720p HD、ダウンロード時間が長くなり、ファイルサイズが大きくなります</string>
+    <string name="download_quality_hd_better_dialog_button">高画質</string>
+    <string name="download_quality_hd_better_dialog_button_continue">高画質で続行</string>
+    <string name="download_quality_hd_better_dialog_button_restart">高画質で最初からダウンロード</string>
+    <string name="download_quality_hd_1080p_better_dialog_description">最大 720p HD</string>
+    <string name="download_quality_hd_good_dialog_button">標準画質</string>
+    <string name="download_quality_hd_good_dialog_button_continue">標準画質で続行</string>
+    <string name="download_quality_hd_good_dialog_button_restart">標準画質で最初からダウンロード</string>
+    <string name="download_quality_hd_good_dialog_description">SD、ダウンロード時間が短くなり、ファイルサイズが小さくなります</string>
+    <string name="download_quality_sd_dialog_title">SD（標準画質）ダウンロードオプション</string>
+    <string name="download_quality_sd_best_dialog_button">最高画質</string>
+    <string name="download_quality_sd_best_dialog_button_continue">最高画質で続行</string>
+    <string name="download_quality_sd_best_dialog_button_restart">最高画質で最初からダウンロード</string>
+    <string name="download_quality_sd_best_dialog_description">ダウンロード時間が長くなり、ファイルサイズが大きくなります</string>
+    <string name="download_quality_sd_better_dialog_button">高画質</string>
+    <string name="download_quality_sd_better_dialog_button_continue">高画質で続行</string>
+    <string name="download_quality_sd_better_dialog_button_restart">高画質で最初からダウンロード</string>
+    <string name="download_quality_sd_better_dialog_description" />
+    <string name="download_quality_sd_good_dialog_button">標準画質</string>
+    <string name="download_quality_sd_good_dialog_button_continue">標準画質で続行</string>
+    <string name="download_quality_sd_good_dialog_button_restart">標準画質で最初からダウンロード</string>
+    <string name="download_quality_sd_good_dialog_description">ダウンロード時間が短くなり、ファイルサイズが小さくなります</string>
+    <string name="download_requires_wifi">このアイテムの容量は 50MB を超えているため、モバイルネットワーク接続ではダウンロードできません。 Wi-Fi ネットワークに接続してダウンロードしてください。</string>
+    <string name="download_requires_wifi_settingsBtn">ワイヤレスネットワーク</string>
+    <string name="download_requires_wifi_title">モバイルネットワークデータ</string>
+    <string name="mobile_download_notice">モバイルネットワークのダウンロード</string>
+    <string name="mobile_download_notice_message">モバイルデータプランを使用してビデオをダウンロードします。</string>
+    <string name="mobile_download_notice_wifi_link">Wi-Fi ネットワークの確認</string>
+    <string name="mobile_download_notice_cancel">ダウンロードのキャンセル</string>
+    <string name="mobile_download_notice_continue">続行</string>
+    <string name="dialog_title_with_close_button">+++</string>
+    <string name="prime_upsell_resume">+++</string>
+    <string name="mobile_streaming_disabled">+++</string>
+    <string name="continue_shopping">ショッピングを続ける</string>
+    <string name="opl_checkout_title">レジに進む</string>
+    <string name="opl_cancel_button">キャンセル</string>
+    <string name="opl_done_button">終了</string>
+    <string name="opl_save_button">保存</string>
+    <string name="opl_continue_button">次に進む</string>
+    <string name="opl_please_select">次を選択してください:</string>
+    <string name="opl_please_select_different">%1$s 別のものを選択してください</string>
+    <string name="opl_order_status_error_address_needs_correcting">入力された住所に問題があります。正しい都道府県と郵便番号を入力してください</string>
+    <string name="opl_order_status_error_invalid_billing_address">選択された住所は、このクレジットカード用の請求先住所ではありません</string>
+    <string name="opl_order_status_error_cannot_ship_to_address">ご注文いただいた商品は、選択された住所に発送できません</string>
+    <string name="opl_order_status_error_quantity_unavailable">ご注文いただいた商品は、選択された数量で購入することができません。注文をキャンセルして、数量を変更してください</string>
+    <string name="opl_order_status_error_invalid_payment_plan">支払い方法を選択してください</string>
+    <string name="opl_order_status_error_purchase_error">この注文にエラーが発生しています</string>
+    <string name="opl_order_status_error_state_unknown">注文手続き中にエラーが発生しました。「アカウント情報」を確認して、注文が完了したことを確認してください</string>
+    <string name="opl_review_order_building_your_order">注文する</string>
+    <string name="opl_review_order_updating_your_order">注文を更新する</string>
+    <string name="opl_review_order_place_order_button">注文の確定</string>
+    <string name="opl_review_order_tend_to_errors">赤字箇所をご確認ください</string>
+    <string name="opl_review_order_complete_checkout_within">タイムセール価格で購入するには、次の時間内に注文を確定してください:</string>
+    <string name="opl_review_order_deal_time_expired">"タイムセール価格の有効期限が切れています。
+カートをご確認ください。"</string>
+    <string name="opl_review_order_summary_header">注文内容</string>
+    <string name="opl_review_order_payment_method_header">支払い方法</string>
+    <string name="opl_review_order_billing_address_label">請求書送付先:</string>
+    <string name="opl_review_order_shipping_address_header">お届け先</string>
+    <string name="opl_review_order_shipment_x_of_y_header">発送 %1$d / %2$d</string>
+    <string name="opl_review_order_extra_legal_title" />
+    <string name="opl_review_order_extra_legal_url" />
+    <string name="opl_review_order_legal_title">規約等</string>
+    <string name="opl_review_order_legal_url_android">https://www.amazon.co.jp/legal_information_mobile_android</string>
+    <string name="opl_review_order_footer">Amazon.co.jp では業界標準のソフトウェア（SSL）を使用しています。お客様の個人情報がすべて暗号化されるので、インターネットで情報が送信される際に読み取られることはありません。</string>
+    <string name="opl_review_order_footer_conditions_of_use_text" />
+    <string name="opl_review_order_footer_conditions_of_use_url" />
+    <string name="opl_review_order_footer_privacy_notice_text" />
+    <string name="opl_review_order_footer_privacy_notice_url" />
+    <string name="opl_payment_picker_choose_header">支払い方法を選択してください</string>
+    <string name="opl_new_payment_authorization_title">アカウント認証</string>
+    <string name="opl_new_payment_authorization_details">"• ご指定いただきましたお届け先は、今までに一度もクレジットカード払いでお荷物をお届けしたことがないご住所です。 クレジットカードでのお支払いをご希望の場合には、アカウント保護のためカード情報を入力してください。
+
+• お支払い方法の情報は記録されますので、同じお届け先をご使用の場合、次回からはカード情報を再度ご入力していただく必要はございません。"</string>
+    <string name="opl_new_payment_credit_card_type_title">カードの種類</string>
+    <string name="opl_new_payment_credit_card_select_type">カードの種類を選択</string>
+    <string name="opl_new_payment_credit_card_number">クレジットカード番号</string>
+    <string name="opl_new_payment_credit_card_number_empty_error">クレジットカード番号を入力してください</string>
+    <string name="opl_new_payment_credit_card_number_invalid_error">このクレジットカード番号は無効です</string>
+    <string name="opl_new_payment_credit_card_number_type_error">カードの種類が、入力された番号と一致しません</string>
+    <string name="opl_new_payment_credit_card_expiration_date">有効期限</string>
+    <string name="opl_new_payment_credit_card_expiration_date_month">月</string>
+    <string name="opl_new_payment_credit_card_expiration_date_year">年</string>
+    <string name="opl_new_payment_credit_card_expiration_date_expired_error">期限切れ</string>
+    <string name="opl_new_payment_credit_card_name">クレジットカード名義人</string>
+    <string name="opl_new_payment_credit_card_name_empty_error">カード名義人の名前を入力してください</string>
+    <string name="opl_new_payment_credit_card_save_button">クレジットカード情報を保存</string>
+    <string name="opl_new_payment_debit_bank_code">銀行コード</string>
+    <string name="opl_new_payment_debit_account_number">口座番号</string>
+    <string name="opl_new_payment_debit_account_name">口座名</string>
+    <string name="opl_new_payment_debit_bank_code_empty_error">Please provide a direct debit bank code</string>
+    <string name="opl_new_payment_debit_bank_code_invalid_error">Invalid direct debit bank code</string>
+    <string name="opl_new_payment_debit_account_number_empty_error">Please provide a direct debit account number</string>
+    <string name="opl_new_payment_debit_account_number_invalid_error">Invalid direct debit account number</string>
+    <string name="opl_new_payment_debit_account_name_empty_error">Please provide an account name</string>
+    <string name="opl_new_payment_debit_account_save">Save Direct Debit Account</string>
+    <string name="opl_address_picker_choose_shipping_header">お届け先の選択</string>
+    <string name="opl_address_picker_add_shipping">新しいお届け先を入力</string>
+    <string name="opl_address_picker_choose_cvsd_header">コンビニの住所を選択</string>
+    <string name="opl_address_picker_add_cvsd">新しいコンビニを検索する</string>
+    <string name="opl_address_picker_choose_billing_header">請求書送付先の選択</string>
+    <string name="opl_address_picker_add_billing">新しい請求先住所を入力</string>
+    <string name="opl_new_address_default_country_code">JP</string>
+    <string name="opl_new_address_title">新しいお届け先</string>
+    <string name="opl_new_address_title_shipping">新しいお届け先を入力</string>
+    <string name="opl_new_address_title_billing">新しい請求先住所を入力</string>
+    <string name="opl_new_address_enter_new">国内の住所を入力</string>
+    <string name="opl_new_address_enter_new_international">国外の住所を入力</string>
+    <string name="opl_new_address_name">Full Name</string>
+    <string name="opl_new_address_name_empty_error">名前を入力してください</string>
+    <string name="opl_new_address_street">Street</string>
+    <string name="opl_new_address_street_empty_error">住所を入力してください</string>
+    <string name="opl_new_address_city">City</string>
+    <string name="opl_new_address_city_empty_error">市区町村を入力してください</string>
+    <string name="opl_new_address_state">State</string>
+    <string name="opl_new_address_zip">Zip</string>
+    <string name="opl_new_address_country">Country</string>
+    <string name="opl_new_address_select_country">Select Country</string>
+    <string name="opl_new_address_phone">Phone</string>
+    <string name="opl_new_address_phone_empty_error">電話番号を入力してください</string>
+    <string name="opl_new_address_save">住所を保存</string>
+    <string name="opl_new_address_jp_name">氏名</string>
+    <string name="opl_new_address_jp_zip1">〒000</string>
+    <string name="opl_new_address_jp_zip2">0000</string>
+    <string name="opl_new_address_jp_state">都道府県</string>
+    <string name="opl_new_address_jp_line1">住所1</string>
+    <string name="opl_new_address_jp_line2">住所2</string>
+    <string name="opl_new_address_jp_company">会社名（オプション:会社に配送する場合）</string>
+    <string name="opl_new_address_jp_phone">電話番号</string>
+    <string name="opl_new_address_cn_province">州</string>
+    <string name="opl_new_address_cn_please_select_province">州を選択してください。</string>
+    <string name="opl_new_address_cn_city">市区町村</string>
+    <string name="opl_new_address_cn_please_select_city">市区町村を選択してください。</string>
+    <string name="opl_new_address_cn_district">地域</string>
+    <string name="opl_new_address_cn_please_select_district">地域を選択してください。</string>
+    <string name="opl_cvsd_search_store_button">コンビニを検索</string>
+    <string name="opl_cvsd_search_address">住所で検索</string>
+    <string name="opl_cvsd_search_zip">郵便番号で検索</string>
+    <string name="opl_cvsd_search_landmark">目印の建物などで検索</string>
+    <string name="opl_cvsd_search_location">現在地から検索</string>
+    <string name="opl_cvsd_search_placeholder_address">住所　</string>
+    <string name="opl_cvsd_search_placeholder_landmark">目印の建物など</string>
+    <string name="opl_cvsd_select_prefecture">都道府県</string>
+    <string name="opl_cvsd_use_current_location_confirm">Amazon.co.jpは現在の位置情報を利用して最寄りのコンビニを検索します。よろしいですか？</string>
+    <string name="opl_cvsd_ship_to_the_selected_store">選択した店舗にお届け</string>
+    <string name="opl_cvsd_search_for_a_convenience_store">コンビニを検索</string>
+    <string name="opl_cvsd_enter_zip_code">郵便番号を入力</string>
+    <string name="opl_cvsd_search_by">検索方法を選択</string>
+    <string name="opl_cvsd_location_settings_message">お客様の現在地を判断するために、 GPS機能を設定して下さい。</string>
+    <string name="opl_cvsd_location_settings_title">現在地情報の設定</string>
+    <string name="opl_cvsd_manual_location_settings_message">端末の現在地情報を手動で設定してください</string>
+    <string name="opl_cvsd_manual_location_settings_title">現在地情報の設定 (手動)</string>
+    <string name="opl_recipient_label">受取人の名前</string>
+    <string name="opl_recipient_instructions_header">商品受け取り時に身分証明書が必要な場合があります。身分証明書に記載されている名前を正しく入力してください。</string>
+    <string name="opl_recipient_instructions_footer" />
+    <string name="opl_gift_card_promo_code_none">なし</string>
+    <string name="opl_gift_card_promo_code_title">Amazonギフト券・Amazonショッピングカード または キャンペーン用Amazonギフト券</string>
+    <string name="opl_gift_card_promo_code_redeem_warning">Amazonギフト券・Amazonショッピングカードまたはキャンペーン用Amazonギフト券は、注文が完了した時点で適用されます。</string>
+    <string name="opl_shipping_options_select_speed_header">配送方法を選択してください</string>
+    <string name="opl_shipping_options_select_preference_header">発送オプションを選択してください</string>
+    <string name="opl_delivery_time_title">ご希望の配送時間</string>
+    <string name="opl_delivery_time_select_error">配送時間を選択してください</string>
+    <string name="opl_delivery_instructions_title">配送方法</string>
+    <string name="opl_delivery_instructions_label">手順: </string>
+    <string name="opl_delivery_instructions_none">なし</string>
+    <string name="opl_gift_options_label">ギフトオプション: </string>
+    <string name="opl_gift_options_none">なし</string>
+    <string name="opl_gift_options_gift_message">ギフトメッセージ</string>
+    <string name="opl_gift_options_title">ギフトを設定</string>
+    <string name="opl_gift_options_gift_wrap_colon_label">ギフトラッピング:</string>
+    <string name="opl_gift_options_gift_wrap_no_gift_wrap">ギフトラッピングなし</string>
+    <string name="opl_gift_options_gift_wrap_colon_not_available">ギフトラッピングなし: ご利用いただけません</string>
+    <string name="opl_gift_options_gift_wrap_price">%1$s (%2$s)</string>
+    <string name="opl_gift_options_gift_wrap_warning">重要: 一部ギフト包装を承れない商品がありますので、あらかじめご了承ください。</string>
+    <string name="opl_gift_options_gift_message_maximum">(最大 %1$d 文字)</string>
+    <string name="opl_gift_options_dont_print_prices_checkbox">納品書に金額を表示しない</string>
+    <string name="opl_gift_options_dont_print_prices_warning">Amazonマーケットプレイスの商品の場合、出品者によっては、チェックを入れても納品書に金額が表示される場合がありますので購入前に出品者にご確認ください。</string>
+    <string name="opl_invoice_header">注文合計金額</string>
+    <string name="opl_invoice_explanation">デジタル商品、携帯電話、小型電化製品を注文された場合、商品に関する説明が請求書に記載されますその他の商品の注文が含まれている場合は、以下の情報を入力してください</string>
+    <string name="opl_invoice_learn_more_link">詳細はこちら</string>
+    <string name="opl_invoice_learn_more_title">請求書について詳しくはこちら</string>
+    <string name="opl_invoice_learn_more_url">https://www.amazon.co.jp/invoice_help_mobile</string>
+    <string name="opl_invoice_no_description_or_category_error">注文内容を入力してください</string>
+    <string name="opl_invoice_description_title">注文内容、合計金額</string>
+    <string name="opl_invoice_category_title">注文内容</string>
+    <string name="opl_invoice_category_choose_header">カテゴリの選択</string>
+    <string name="opl_confirmation_order_in_progress_title">注文を処理中</string>
+    <string name="opl_confirmation_dismiss_order_warning">"この画面を閉じると、あなたの注文が正常に処理されたのか表示することができません。注文内容の確認をするには、「アカウント情報」から、「注文をキャンセルする」を選択してください。
+
+この画面を閉じてますか？"</string>
+    <string name="opl_confirmation_dismiss_order_yes">YES</string>
+    <string name="opl_confirmation_dismiss_order_no">NO</string>
+    <string name="opl_confirmation_order_problem_title">問題が発生しました</string>
+    <string name="opl_confirmation_unable_to_process_purchase">注文を確定することができませんでした</string>
+    <string name="opl_confirmation_thank_you_title">ありがとうございます</string>
+    <string name="opl_confirmation_order_placed_header">ご注文が確定されました</string>
+    <string name="opl_confirmation_cancel_order_button">この注文を今すぐキャンセルする</string>
+    <string name="opl_confirmation_track_orders_button">注文内容の確認</string>
+    <string name="opl_confirmation_we_will_send_you_an_email">確認のEメールを送信しました。</string>
+    <string name="opl_confirmation_order_shipping_speed">配送方法:</string>
+    <string name="opl_confirmation_order_shipments">発送オプション</string>
+    <string name="opl_confirmation_order_orders">注文内容</string>
+    <string name="opl_confirmation_order_x_of_y_header">注文 %1$d / %2$d</string>
+    <string name="opl_confirmation_order_info">注文情報</string>
+    <string name="past_orders_order_date">注文日:</string>
+    <string name="past_orders_order_number">注文番号:</string>
+    <string name="past_orders_period_title">注文時期</string>
+    <string name="past_orders_period_header">注文時期</string>
+    <string name="past_orders_summary_loading">注文を確認中</string>
+    <string name="past_orders_summary_no_orders">該当する注文はありません。</string>
+    <string name="past_orders_summary_order_status_open">未発送の注文</string>
+    <string name="past_orders_summary_order_status_complete">発送済み</string>
+    <string name="past_orders_summary_order_status_needs_attention">ご注意ください。</string>
+    <string name="past_orders_summary_recipient">お届け先:</string>
+    <string name="past_orders_summary_items_ordered">商品:</string>
+    <string name="past_orders_summary_view_change_track_order">注文内容の確認</string>
+    <string name="past_orders_summary_view_track_order">注文内容の確認</string>
+    <string name="past_orders_details_loading">注文を確認中</string>
+    <string name="past_orders_details_order_total">合計:</string>
+    <string name="past_orders_details_ship_to_colon">お届け先:</string>
+    <string name="past_orders_details_payment_method">支払い方法</string>
+    <string name="past_orders_details_billing_address">請求先住所</string>
+    <string name="past_orders_details_gc_promo_code">Amazonギフト券・Amazonショッピングカード:</string>
+    <string name="past_orders_details_gc_promo_code_none">なし</string>
+    <string name="past_orders_details_payment_information">支払い情報</string>
+    <string name="past_orders_details_need_to_cancel">商品をキャンセルしますか？</string>
+    <string name="past_orders_details_shipment_header">発送 %1$d %2$s</string>
+    <string name="past_orders_details_invoice">請求書</string>
+    <string name="past_orders_details_invoice_title">請求概要:</string>
+    <string name="past_orders_details_invoice_category">請求内容:</string>
+    <string name="past_orders_details_recipient_colon">受取人の名前:</string>
+    <string name="past_orders_track_title">配送状況の確認</string>
+    <string name="past_orders_track_header">配送状況の確認</string>
+    <string name="past_orders_track_loading">配送状況の確認</string>
+    <string name="past_orders_track_shipment_date">発送日:</string>
+    <string name="past_orders_track_destination">お届け先:</string>
+    <string name="past_orders_track_ship_carrier">配送方法:</string>
+    <string name="past_orders_track_tracking_number">荷物番号:</string>
+    <string name="past_orders_track_status">ステータス:</string>
+    <string name="past_orders_track_arrival_date">お届け予定日:</string>
+    <string name="past_orders_track_date">日付:</string>
+    <string name="past_orders_track_time">時間:</string>
+    <string name="past_orders_track_location">住所:</string>
+    <string name="past_orders_cancel_title">商品のキャンセル</string>
+    <string name="past_orders_cancel_select_header">キャンセルをご希望の商品を選択</string>
+    <string name="past_orders_cancel_qty">数量:</string>
+    <string name="past_orders_cancel_optional">オプション</string>
+    <string name="past_orders_cancel_cancel_items_button">商品のキャンセル</string>
+    <string name="past_orders_cancel_no_items_to_cancel">キャンセルする商品の横のチェックボックスにチェックを入れてください</string>
+    <string name="past_orders_cancel_updating_order">注文内容を更新します</string>
+    <string name="past_orders_cancel_order_cancelled_title">ご注文はキャンセルされました</string>
+    <string name="past_orders_cancel_this_order_cancelled">この注文はキャンセルされました</string>
+    <string name="past_orders_cancel_reason">キャンセル理由</string>
+    <string name="past_orders_cancel_your_order_no_longer_qualifies">この注文は、国内配送料無料の対象外です。別の配送方法を選択してください</string>
+    <string name="shipping_speed_format_est_delivery">配送: %1$s</string>
+    <string name="opl_address_name_rule">required maxlength:50</string>
+    <string name="opl_address_street_rule">required maxlength:60</string>
+    <string name="opl_address_city_rule">required maxlength:50</string>
+    <string name="opl_address_state_rule">maxlength:50</string>
+    <string name="opl_address_zip_rule">required maxlength:20</string>
+    <string name="opl_address_zip1_rule">numeric minlength:3 maxlength:3</string>
+    <string name="opl_address_zip2_rule">numeric minlength:4 maxlength:4</string>
+    <string name="opl_address_phone_rule">required maxlength:20</string>
+    <string name="opl_address_line1_rule">required maxlength:50</string>
+    <string name="opl_address_line2_rule">maxlength:50</string>
+    <string name="opl_credit_card_number_rule">numeric minLength:13 maxlength:19</string>
+    <string name="opl_credit_card_name_rule">required maxlength:40</string>
+    <string name="opl_direct_debit_de_bank_code_rule">numeric required maxlength:8</string>
+    <string name="opl_direct_debit_de_account_number_rule">numeric required maxlength:11</string>
+    <string name="opl_direct_debit_de_account_name_rule">required maxlength:50</string>
+    <string name="opl_direct_debit_at_bank_code_rule">numeric required maxlength:8</string>
+    <string name="opl_direct_debit_at_account_number_rule">numeric required maxlength:11</string>
+    <string name="opl_direct_debit_at_account_name_rule">required maxlength:50</string>
+    <string name="opl_gift_message_rule">maxlength:50</string>
+    <string name="opl_invoice_title_rule">required maxlength:21</string>
+    <string name="opl_delivery_instruction_rule">maxlength:15</string>
+    <string name="opl_total">合計:</string>
+    <string name="opl_review_order_footer_sales_tax_link_title" />
+    <string name="opl_review_order_footer_sales_tax_link_url" />
+    <string name="opl_review_order_item_edit">[Edit]</string>
+    <string name="opl_gift_card_promo_code_balance_label">利用するギフト券、クーポンの残高</string>
+    <string name="opl_gift_card_promo_code_redeemed_success">ギフト券/クーポンコード %1$s が使用されました。</string>
+    <string name="opl_gift_card_not_apply">ギフト券を使用しない</string>
+    <string name="opl_gift_card_promo_code_redeem_button_text">別のギフト券またはクーポンを登録</string>
+    <string name="opl_gift_card_promo_code_enter_hint">別のギフト券番号またはクーポンコードを入力</string>
+    <string name="opl_gift_card_promo_code_add_credit_card_to_not_apply_balance">このお支払い方法を選択されない場合は、ほかのお支払い方法をお選びください。</string>
+    <string name="opl_promo_code_balance_label">利用するクーポンの残高</string>
+    <string name="opl_gift_card_promo_code_balance_zero">¥0</string>
+    <string name="alert_dialog_ok_button">OK</string>
+    <string name="name_colon_value">%1$s: %2$s</string>
+    <string name="key_dot_value">%1$s. %2$s</string>
+    <string name="new_to_amazon_create_an_account">Amazon.co.jp のご利用は初めてですか? 新規登録してください。</string>
+    <string name="undo">やり直し</string>
+    <string name="no">いいえ</string>
+    <string name="refresh">更新する</string>
+    <string name="eula_title">Amazon アプリケーション利用規約</string>
+    <string name="eula_version">1</string>
+    <string name="eula_accept">受諾</string>
+    <string name="eula_dont_accept">拒絶</string>
+    <string name="contact_us_title">カスタマーサービスに連絡</string>
+    <string name="more_to_explore">もっと調べる</string>
+    <string name="home">トップ</string>
+    <string name="home_title">こんにちは</string>
+    <string name="home_sign_in_message_welcome">%1$sさんようこそ</string>
+    <string name="home_sign_in_message_youraccount">アカウントサービス</string>
+    <string name="home_sign_in">サインイン</string>
+    <string name="home_sign_out">サインアウト</string>
+    <string name="home_search_bar_hint_portrait">キーワードで探す</string>
+    <string name="home_promo_clickstream_prefix">Promo_</string>
+    <string name="home_promo0_action_android">open_url</string>
+    <string name="home_promo0_param_android">https://www.amazon.co.jp/gp/aw/gc</string>
+    <string name="home_promo1_action_android">wishlist</string>
+    <string name="home_promo1_param_android" />
+    <string name="recommendations_title">おすすめ商品</string>
+    <string name="recommendations_explanation">"お客様の購入履歴、商品の評価、持っている商品などのデータをもとに商品をおすすめします。
+
+詳細なおすすめ商品を見るためにはサインインしてください"</string>
+    <string name="recommendations_explanation_button">Amazon.co.jp のアカウントをお持ちでしたら、 サインインしてください</string>
+    <string name="recommendations_item_ownit">持っています</string>
+    <string name="recommendations_item_notinterest">興味ありません</string>
+    <string name="recommendations_fix_this">おすすめの商品を修正</string>
+    <string name="recommendations_ok">OK</string>
+    <string name="recommendations_alert_info">評価をAmazonへ送信できませんでした。再度行う必要があります。ご不便をおかけして申し訳ありません。</string>
+    <string name="recommendations_no_recs_explanation">申し訳ありません。本日はおすすめの商品がありません</string>
+    <string name="search_go_button">Go</string>
+    <string name="search_menu_item">検索</string>
+    <string name="search_results_title">検索結果</string>
+    <string name="search_refine_by_category">カテゴリーの選択</string>
+    <string name="search_select_department">カテゴリーの選択</string>
+    <string name="search_all_departments">すべてのカテゴリー</string>
+    <string name="search_refinement">%1$s (%2$s)</string>
+    <string name="search_your_search_did_not_match">「%1$s」の検索に一致する商品はありませんでした。</string>
+    <string name="search_end_of_x_top_results_for_y">「%2$s」の検索結果%1$d件</string>
+    <string name="search_end_of_x_results_for_y_in_z">%3$sの「%2$s」の検索結果%1$d件の最後です。</string>
+    <string name="search_end_of_results_sort_by_x_in_y">"最後の商品です
+並べ替え:%1$s
+%2$s"</string>
+    <string name="search_results_for">%2$s%1$s件の検索結果  %3$s表示</string>
+    <string name="search_sort_relevance">関連順に</string>
+    <string name="search_results_in_department">%1$sで</string>
+    <string name="searching_for">「%1$s」を検索</string>
+    <string name="search_for_more_results">さらに検索結果を表示するには、カテゴリーを選択してください:</string>
+    <string name="points">ポイント:</string>
+    <string name="item_row_byline_format">%1$s</string>
+    <string name="item_row_byline_and_binding_format">%1$s (%2$s)</string>
+    <string name="item_row_x_new_and_used_from_y_format">新品/中古%2$sより（%1$d 点）</string>
+    <string name="item_row_new_and_used_from_y_format">新品/中古%1$sより</string>
+    <string name="search_no_match_message">商品がみつかりませんでした。</string>
+    <string name="search_link_help">ヘルプ</string>
+    <string name="search_try_again">検索に戻る</string>
+    <string name="search_error_message_cannot_open_camera">カメラを起動することができませんでした。お手数ですがもう一度お試しください。</string>
+    <string name="search_error_message_out_of_memory">Insufficient memory. Please try again.</string>
+    <string name="bc_searching_for">検索中</string>
+    <string name="bc_search_button">バーコードで検索</string>
+    <string name="bc_search_bad_match">違う結果が表示されました</string>
+    <string name="bc_search_bad_match_prompt">スキャンした商品ですか？</string>
+    <string name="bc_search_bad_match_acknowledgement">"ご協力いただき
+ありがとうございます"</string>
+    <string name="bc_search_result">商品が見つかりました</string>
+    <string name="bc_search_result_plural">商品が見つかりました</string>
+    <string name="bc_search_no_result">商品が見つかりませんでした</string>
+    <string name="bc_search_help_title">バーコードをスキャン</string>
+    <string name="bc_search_help_getting_started_title">バーコード検索について</string>
+    <string name="bc_search_help_tips_title">ご注意</string>
+    <string name="bc_search_help_tips_text_android">"お使いの端末を固定させてください。
+ 
+ 影や光がバーコードに映り込まないようにしてください。
+ 
+ バーコードは自動的にスキャンされます。
+ 
+ バーコードがはっきりと表示されない場合は、バーコードの焦点が合うように、お使いの端末をバーコードに近づける、または遠ざけるなどの調節を行ってください。"</string>
+    <string name="bc_search_help_info_title">サポート情報</string>
+    <string name="bc_search_new_help_info_text">本アプリは、UPCとEAN規格のバーコードに対応しています。現在対応していない規格のバーコードは、読み取りに失敗する場合があります。</string>
+    <string name="bc_search_help_interstitial_scan_button">    試す    </string>
+    <string name="bc_search_help_interstitial_text">ご利用方法</string>
+    <string name="bc_search_help_bullet">•</string>
+    <string name="bc_search_new_help_text_line1">端末を横向きにして、オレンジの四角い枠内に収まるようにバーコードを合わせてください</string>
+    <string name="bc_search_new_help_text_line2">バーコードが2つある場合は、以下の図のようにファインダーに位置を合わせてください:</string>
+    <string name="bc_picture_format_unspport_message">申し訳ありませんが、お使いの端末は現在Amazonバーコード検索機能に対応していません。</string>
+    <string name="scanit_search_camera_overlay_info_text_line1">バーコードは自動的にスキャンされます。</string>
+    <string name="scanit_search_camera_overlay_info_text_line2">影や光が映り込まないようにしてください。</string>
+    <string name="scanit_search_camera_overlay_scanning">スキャン中</string>
+    <string name="scanit_search_camera_overlay_steady">そのままお待ちください</string>
+    <string name="scanit_search_camera_overlay_start_text">下の枠内にバーコードを合わせてください</string>
+    <string name="product_details">商品の詳細</string>
+    <string name="product_details_activity_name">Amazonモバイルアプリ</string>
+    <string name="dp_show_price">価格の表示</string>
+    <string name="dp_why_hide_price">どうして価格が表示されないのですか？</string>
+    <string name="dp_add_to_cart_to_see_price">商品をカートに入れて価格を確認してください</string>
+    <string name="dp_list_price">参考価格</string>
+    <string name="dp_points">ポイント</string>
+    <string name="dp_price">価格</string>
+    <string name="dp_ppu_format_string">(%1$s/%2$s%3$s)</string>
+    <string name="dp_new_and_used">新品/中古(0)</string>
+    <string name="dp_plus_shipping">+ %1$s（配送料）</string>
+    <string name="dp_eligible_free_super_saver_shipping">国内配送料無料の対象商品</string>
+    <string name="dp_free_super_saver_shipping">国内配送料無料の対象</string>
+    <string name="dp_eligible_for_prime">Amazonプライムサービス対象商品</string>
+    <string name="dp_prime">プライム</string>
+    <string name="dp_all_prices_include_tax" />
+    <string name="dp_deal_row_title">タイムセール</string>
+    <string name="dp_select_x">%1$sの選択</string>
+    <string name="elipsis">…</string>
+    <string name="dp_special_offer">バーゲンコーナー</string>
+    <string name="dp_details">登録情報</string>
+    <string name="details_features_and_more">商品の詳細、特徴など</string>
+    <string name="dp_trackListHeader">曲目リスト</string>
+    <string name="dp_discLabel">ディスク %1$s</string>
+    <string name="customer_reviews">カスタマーレビュー </string>
+    <string name="customer_reviews_count"> (%1$s)</string>
+    <string name="average_customer_review">おすすめ度</string>
+    <string name="customer_reviews_ordered_by">参考になったレビュー順</string>
+    <string name="customer_reviews_count_reviews">(%1$d件のカスタマーレビュー)</string>
+    <string name="customer_review_published_by_android">投稿日: %1$tY/%2$tm/%3$te By %4$s</string>
+    <string name="customer_reviews_histogram_1_stars">星1つ:</string>
+    <string name="customer_reviews_histogram_2_stars">星2つ:</string>
+    <string name="customer_reviews_histogram_3_stars">星3つ:</string>
+    <string name="customer_reviews_histogram_4_stars">星4つ:</string>
+    <string name="customer_reviews_histogram_5_stars">星5つ:</string>
+    <string name="mp_new_and_used_offers">新品/中古</string>
+    <string name="mp_a_to_z_safe_buying_guarantee">Amazonマーケットプレイス保証</string>
+    <string name="mp_a_to_z_safe_buying_guarantee_url">https://www.amazon.co.jp/atoz_guarantee_mobile</string>
+    <string name="mp_offers_from_before_price">%1$d点</string>
+    <string name="mp_offers_from_after_price">より</string>
+    <string name="mp_sold_by">出品者</string>
+    <string name="mp_percent_positive">%1$d%%の高い評価</string>
+    <string name="mp_count_ratings">(評価数:%1$d)</string>
+    <string name="mp_comments">コメント: %1$s</string>
+    <string name="sharing_email_subject">この商品をAmazon.co.jpでチェック</string>
+    <string name="sharing_sms_heading">Amazonでチェック:</string>
+    <string name="sharing_share">シェアする</string>
+    <string name="sharing_see_all">See All...</string>
+    <string name="sharing_friends">Friends</string>
+    <string name="buy_box_order_within_hr_min_for">%1$d時間 %2$d分以内にご注文ください</string>
+    <string name="buy_box_order_within_hr_for">%1$d時間以内にご注文ください</string>
+    <string name="buy_box_order_within_min_for">%1$d分以内にご注文ください</string>
+    <string name="buy_box_1_click_prime_with_get_it_by_promise_android">%1$tY/%2$tm/%3$te にお届けします</string>
+    <string name="buy_box_buy_now">今すぐ買う</string>
+    <string name="buy_box_buy_now_with_one_click">1-Clickで今すぐ買う</string>
+    <string name="buy_box_pre_order">予約注文</string>
+    <string name="buy_box_pre_order_now">今日予約注文する</string>
+    <string name="buy_box_preorder_with_one_click">1-Clickで予約注文する</string>
+    <string name="buy_box_buy_now_from_amazon_appstore">Buy Now from Amazon Appstore</string>
+    <string name="buy_box_install_amazon_appstore_to_buy">Install Amazon Appstore to buy</string>
+    <string name="buy_box_add_to_cart">カートに入れる</string>
+    <string name="buy_box_add_to_wishlist">ほしい物リストに追加</string>
+    <string name="buy_box_see_all_buying_options">すべての商品を見る</string>
+    <string name="buy_box_to_buy_select">%1$sを選択してください</string>
+    <string name="buy_box_to_buy_select_separator">/</string>
+    <string name="black_curtain_age_confirm">"このストアは、アダルト商品および18歳未満の方には不適切な表現内容が含まれる商品を取り扱っています。
+18歳未満の方のアクセスは固くお断りします。
+
+あなたは18歳以上ですか？"</string>
+    <string name="black_curtain_yes">はい</string>
+    <string name="black_curtain_no">いいえ</string>
+    <string name="age_verification_title">年齢確認を行っています。</string>
+    <string name="age_verification_explanation">アルコール類の購入には、年齢制限があります。20歳未満の購入や飲酒は法律で禁止されています。</string>
+    <string name="age_verification_your_birthday">生年月日</string>
+    <string name="age_verification_please_enter">生年月日を入力してください。</string>
+    <string name="age_verification_privacy">"法律により年齢の確認が義務付けられています。
+お客様の個人情報はプライバシー規約により慎重に取り扱います。"</string>
+    <string name="age_verification_continue">次に進む</string>
+    <string name="age_verification_wrong_age">入力した誕生日では、この商品を購入することができません。</string>
+    <string name="age_verification_edit_if_incorrect">間違った生年月日を入力してしまった場合はこちらから修正してください。</string>
+    <string name="age_verification_continue_shopping">ショッピングを続ける</string>
+    <string name="about">バージョン情報</string>
+    <string name="about_description">Amazon Androidアプリ</string>
+    <string name="about_version">バージョン %1$s</string>
+    <string name="about_build">ビルド %1$s</string>
+    <string name="about_missing_placeholder">-</string>
+    <string name="about_copyright">© 1996-2014, Amazon.com, Inc. or its affiliates</string>
+    <string name="wishlist_adding_to_wishlist">ほしい物リストに追加中</string>
+    <string name="wishlist_added_to_wishlist">ほしい物リストに追加されました</string>
+    <string name="wishlist_default_title">ほしい物リスト</string>
+    <string name="wishlist_getting_lists">ほしい物リストを取得中…</string>
+    <string name="wishlist_add_dialog_title">追加するほしい物リストを選択してください:</string>
+    <string name="more">その他</string>
+    <string name="more_wishlist_button">ほしい物リスト</string>
+    <string name="more_recommendations_button">おすすめ商品</string>
+    <string name="more_your_account_button">アカウントサービス</string>
+    <string name="more_help_button">ヘルプページ</string>
+    <string name="more_about_button">バージョン情報</string>
+    <string name="more_provide_feedback_button">ご意見・ご要望</string>
+    <string name="more_privacy_notice_button">プライバシー規約</string>
+    <string name="more_get_amazon_android_apps">他のAmazonアプリ</string>
+    <string name="more_get_amazon_android_apps_url">https://www.amazon.co.jp/gp/aw/fp.html?id=android-apps&amp;mn=0</string>
+    <string name="more_email_gift_card">ギフト券</string>
+    <string name="more_email_gift_card_url">https://www.amazon.co.jp/gp/aw/gc</string>
+    <string name="youraccount">アカウントサービス</string>
+    <string name="youraccount_your_orders">注文履歴を見る</string>
+    <string name="youraccount_account_settings">アカウント設定</string>
+    <string name="youraccount_one_click_button">1-Click設定を変更</string>
+    <string name="ya_site_email_pref_button">Amazon.co.jp Eメール</string>
+    <string name="ya_site_email_pref_url">https://www.amazon.co.jp/cna_legal_mobile</string>
+    <string name="ya_shipment_tracking">発送状況の確認</string>
+    <string name="ya_backup_your_photos">写真の自動保存</string>
+    <string name="ya_points_title">Amazonポイント</string>
+    <string name="ya_my_point_summary">マイポイント（Amazonポイントの確認）</string>
+    <string name="ya_view_points_summary_and_learn_about_points">Amazonポイントについて</string>
+    <string name="ya_sign_in_to_view_points_summary">Amazonポイントの情報を見るにはサインインしてください</string>
+    <string name="ya_points_about_title">Amazonポイントについて</string>
+    <string name="cart">カート</string>
+    <string name="cart_loading">確認中</string>
+    <string name="cart_adding_to_cart">カートに追加</string>
+    <string name="cart_added_to_cart">商品がカートに追加されました</string>
+    <string name="cart_added_timed_to_cart">特別価格で購入するには、%1$d 分以内に注文を確定してください。</string>
+    <string name="cart_time_to_checkout_prompt">残り時間</string>
+    <string name="cart_go_to_shopping_cart_button_dialog">カートを見る</string>
+    <string name="cart_continue_shopping_button">ショッピングを続ける</string>
+    <string name="cart_continue_shopping_button_dialog">ショッピングを続ける</string>
+    <string name="cart_checkout_button">レジに進む</string>
+    <string name="cart_sign_in_to_checkout_button">サインインしてレジに進む</string>
+    <string name="cart_to_buy_now_label">カートの商品</string>
+    <string name="cart_quantity_label">数量</string>
+    <string name="cart_to_buy_later_label">カートに保存した商品</string>
+    <string name="cart_empty_details_android">カートをご利用ください。</string>
+    <string name="cart_sign_in_button">Amazon.co.jp のアカウントをお持ちでしたら、 サインインしてください</string>
+    <string name="cart_cart_items_empty">"以下の商品がカートに保存されています。
+
+購入する場合は、商品の横にある「カートに戻す」ボタンをクリックしてください"</string>
+    <string name="cart_saved_items_empty_android">カートに保存した商品はありません</string>
+    <string name="cart_points_total">ポイント小計=  </string>
+    <string name="cart_change_any_quantities">上記の数量を変更しますか？</string>
+    <string name="cart_update_button">更新</string>
+    <string name="cart_updating_quantity">数量を変更しています</string>
+    <string name="cart_delete_button">削除</string>
+    <string name="cart_save_for_later_button">今は買わない</string>
+    <string name="cart_saving_for_later">今は買わない</string>
+    <string name="cart_move_to_cart_button">カートに戻す</string>
+    <string name="cart_moving_to_cart">カートに戻す</string>
+    <string name="cart_deleting">削除</string>
+    <string name="cart_cancel_warning">"
+
+変更されているか、カートを確認してください"</string>
+    <string name="cart_messages_title">カート</string>
+    <string name="cart_empty">ショッピングカートに商品はありません。</string>
+    <string name="goldbox">タイムセール</string>
+    <string name="goldbox_more">さらに %1$s</string>
+    <string name="goldbox_price_percent_off">%1$s (%2$d%%)</string>
+    <string name="goldbox_check_out_before_we_run_out">売り切れになる前に、レジに進む</string>
+    <string name="deal_discount_applied_at_checkout">お一人につき一回、レジにて割引が適用されます。</string>
+    <string name="deal_starts_in_h_m_s">取り扱いは%1$02d:%2$02d:%3$02dに開始します</string>
+    <string name="deal_h_m_s_remaining">残り時間%1$02d:%2$02d:%3$02d</string>
+    <string name="deal_time_format">"hh'時'mm'分'"</string>
+    <string name="deal_end_time_tz">%1$sまで</string>
+    <string name="deal_time_tz_upcoming_deal">%1$sに開始します</string>
+    <string name="deal_percent_claimed">%1$d%%利用済</string>
+    <string name="deal_no_lightning_deal">現在行われているタイムセールはありません。次のタイムセールをお楽しみに。</string>
+    <string name="deal_select_an_option">タイムセールの価格や利用状況を確認するには、サイズ・色などを選んでください</string>
+    <string name="privacy_notice_url">https://www.amazon.co.jp/privacy_policy_mobile</string>
+    <string name="send_email">Eメールの送信</string>
+    <string name="legal_info_text">規約等</string>
+    <string name="legal_deal_term_and_use_string">細則</string>
+    <string name="legal_info_url_android_with_aiv">https://www.amazon.jp/legal_information_mobile_android</string>
+    <string name="legal_deal_term_and_use">https://www.amazon.co.jp/gp/aw/help/id=200942600</string>
+    <string name="legal_deal_help">https://www.amazon.co.jp/gp/aw/help/id=200942570</string>
+    <string name="digital_downlaod_extra_availability_message">This mobile application does not currently support digital downloads. Add this item to your WishList and you can view and purchase it from your computer.</string>
+    <string name="provide_feedback_to_address_android">feedback-amazon-app-android-jp@amazon.com</string>
+    <string name="provide_feedback_subject_android">Amazon Androidアプリ</string>
+    <string name="do_not_remove_device_id">[TrackID:%1$s] このIDはトラブルシューティングに必要です。削除しないようお願いします。 Amazonモバイルチーム</string>
+    <string name="navigate_forward_to_uri">ウェブロケーションを見る</string>
+    <string name="web_view_loading">確認中</string>
+    <string name="help_root_title">ヘルプ</string>
+    <string name="help_about">Amazon Androidアプリについて</string>
+    <string name="help_and_about_title">ヘルプ</string>
+    <string name="help_shopping_and_ordering_title">注文</string>
+    <string name="help_viewing_and_changing_orders_title">注文内容の確認</string>
+    <string name="help_shipping_and_delivery_title">配送</string>
+    <string name="help_your_account_and_settings_title">各種サービス</string>
+    <string name="help_using_amazon_remembers_title">フォト検索について</string>
+    <string name="help_eula_title">Amazonモバイルアプリ利用規約</string>
+    <string name="help_email_customer_service_title">Eメールでお問い合わせ</string>
+    <string name="help_call_customer_service_title">お電話でお問い合わせ</string>
+    <string name="help_contact_us_title">カスタマーサービスに連絡</string>
+    <string name="help_shopping_and_ordering_find_an_item_title">商品の検索方法</string>
+    <string name="help_shopping_and_ordering_find_an_item_content">"キーワードサーチを使って商品を検索する方法は以下のとおりです。なお、サーチボックスは、Amazon.co.jp ホームおよびメニュー画面の「検索」に表示されています。
+
+1.　サーチボックスに、商品タイトルなどのキーワードを入力してから、「実行」をタッチ
+2. 検索結果が表示されます。検索結果ページ下部の「カテゴリーの選択」をタッチすると、各ストアやカテゴリーで絞り込むことができます。また、商品を分類したり、特定の条件でフィルターをかけたりすることもできます
+3. 商品イメージをタッチすると、その商品の詳細ページが表示されます。詳細ページの下部にある「知らせる」をタッチすると、その商品の情報をFacebook、Twitter、Eメールなどで共有することができます"</string>
+    <string name="help_shopping_and_ordering_buy_an_item_title">商品の注文</string>
+    <string name="help_shopping_and_ordering_buy_an_item_content">"購入したい商品が見つかったら、商品詳細ページの下にある「今すぐ買う」または「カートに入れる」をクリックしてください。
+ 
+ サインインしていない場合は、サインイン画面でお客様の Amazon.co.jp アカウントのＥメールアドレスとパスワードを入力してください。
+ 
+ また、カート内の商品は、PCサイト上からも確認できます。"</string>
+    <string name="help_shopping_and_ordering_view_or_edit_shopping_cart_title">カートを見る/編集する</string>
+    <string name="help_shopping_and_ordering_view_or_edit_shopping_cart_content">"画面右上、もしくはメニュー画面の「カート」をタッチすると、ショッピングカートの中身をいつでも見ることができます。
+
+商品の数量を変更する
+ショッピングカート内の商品の数量を変更する場合は、数量の下にあるボックスに変更後の数量を入力し、「更新」ボタンをタッチします。
+
+商品を削除する
+ショッピングカート内の商品を削除する場合は、その商品の下側にある「削除」をタッチします。
+
+すぐに買わない商品を保存する
+商品をショッピングカートに保存する場合は、その商品の下側にある「今は買わない」をタッチします。ショッピングカートに保存された商品は「カートに保存した商品」の下に表示されます。「カートに戻す」をタッチすると、その商品はショッピングカートに戻ります。商品は90日間保存されますので、お好きなときに「カートに戻す」をタッチして注文手続きを始めてください。"</string>
+    <string name="help_shopping_and_ordering_view_or_edit_wish_list_title">ほしい物リストを見る/編集する</string>
+    <string name="help_shopping_and_ordering_view_or_edit_wish_list_content">"ほしい物リストを利用すれば、自分のほしい商品をほかの人に簡単にお知らせできます。また、購入者も簡単にあなたの指定したお届け先に商品を注文することができて便利です。 
+ 
+ ほしい物リストを見る 
+ メニュー画面の「ほしい物リスト」をタッチすると、ほしい物リストをいつでも見ることができます。複数のほしい物リストがある場合は、画面上の一覧から見たいリスト選択してください。 
+ 
+ ほしい物リストの商品を削除する
+ 削除したい商品の「商品を変更する」をタッチし、続いて「削除」をタッチしてください。
+ 
+ ほしい物リストを削除する
+ 削除したいほしい物リストを表示させ、下部の「管理」をタッチし、続いて「リストを削除する」ボタンをタッチしてください。
+ 
+ ほしい物リストをシェアする
+ シェアしたいほしい物リストを表示させ、下部の「管理」をタッチし、続いて「リンクをシェア」をタッチしてください。
+ ほしい物リストの画面上部の「シェアされたリスト」という表示をタッチして、ほかの人にリンクを送ることができます。"</string>
+    <string name="help_shopping_and_ordering_mobile_1click_ordering_title">モバイル1–Click注文</string>
+    <string name="help_shopping_and_ordering_mobile_1click_ordering_content">"1-Clickについて
+1-Click とはボタンを1回タッチするだけで、注文することができる機能です。1-Clickで注文すると、注文確認画面は省略されます。1-Clickを使用するには､1-Clickの設定をONにする必要があります｡
+ 
+1-Clickの設定方法
+1-ClickをONにする
+ 1. メニュー画面の｢アカウントサービス｣をタッチ
+ 2. ｢1-Click設定を変更｣をタッチ
+ 3. Eメールアドレスとパスワードを入力してサインイン
+ 4. 「1-Click設定住所」をタッチし、ご希望のお届け先住所を選択
+ 5. 支払い方法を選択すると､設定が完了
+
+1-ClickをOFFにする
+ 1. メニュー画面の｢アカウントサービス｣をタッチ
+ 2. ｢1-Click設定を変更｣をタッチ
+ 3. 「モバイル1-Click」の右に表示されているOnマークをタッチすると完了
+
+注意：
+・新しいお届け先住所や、支払い方法を選択する場合は、PCサイトの「アカウントサービス」より変更してください。"</string>
+    <string name="help_shopping_and_ordering_add_new_address_title">アドレス帳の内容を変更</string>
+    <string name="help_shopping_and_ordering_add_new_address_content">"新しいお届け先を登録するかアドレス帳に保存された住所を選択すると、お届け先や請求先住所を追加できます。
+ 
+ 注意: PCサイトをご利用の場合、注文時に新しいお届け先住所を入力すると、確認のためにクレジットカード情報を求められます。"</string>
+    <string name="help_shopping_and_ordering_select_gift_options_title">ギフトの注文</string>
+    <string name="help_shopping_and_ordering_select_gift_options_content">"Amazon.co.jp では、ギフト用のご注文も承っています。ギフトメッセージのほか、有料オプションでギフトラッピング（税込308円）やのしシール（税込154円）をお選びいただけます。ギフトを注文するには、注文画面の「配送方法」から「ギフトオプション」を選択し、設定をしてください。
+ 
+注意：一部の出店型出品者をのぞき、Amazonマーケットプレイスの商品にはギフト注文はご利用いただけません。また、一部のストアでは、ギフト注文を承っていない商品もあります。"</string>
+    <string name="help_viewing_and_changing_orders_cancel_an_item_or_order_title">注文のキャンセル</string>
+    <string name="help_viewing_and_changing_orders_cancel_an_item_or_order_content">"発送手続きが始まっていない時点ではキャンセルすることができます。携帯端末上で注文をキャンセルするには、「ご購入ありがとうございます」ページにある「注文をキャンセルする」を選択します。端末メニューから「アカウントサービス」、「注文内容の確認」を選択することによって、注文をキャンセルすることもできます。
+ 
+ 発送手続きが始まっている注文は、キャンセルすることはできません。
+ 
+ 注意: Amazonマーケットプレイスの注文のキャンセルは、販売者に直接お問い合わせください。
+ 
+ 注文の請求先またはお届け先情報を変更する場合は、PC上で、Amazon.co.jp の「アカウントサービス」で変更してください"</string>
+    <string name="help_viewing_and_changing_orders_combine_orders_title">複数の注文をまとめる</string>
+    <string name="help_viewing_and_changing_orders_combine_orders_content">注文を確定した後、その注文に商品を追加したい場合、または複数の注文をまとめたい場合は、PCサイトの「アカウントサービス」の「注文履歴を見る」から注文をまとめる手続きをしてください。</string>
+    <string name="help_viewing_and_changing_orders_view_recent_orders_title">注文履歴を見る</string>
+    <string name="help_viewing_and_changing_orders_view_recent_orders_content">最近の注文を見るには、端末メニューで「アカウントサービス」を選択してから、「注文内容の確認」を選択してください</string>
+    <string name="help_shipping_and_delivery_shipping_rates_and_times_title">配送料、手数料について</string>
+    <string name="help_shipping_and_delivery_shipping_rates_and_times_url">https://www.amazon.co.jp/jp_shipping_rates_mobile</string>
+    <string name="help_shipping_and_delivery_tracking_packages_title">配送情報</string>
+    <string name="help_shipping_and_delivery_tracking_packages_content">最近の注文の発送ステータスを見るには、メニューから「アカウントサービス」の「注文履歴を見る」を選択してください</string>
+    <string name="help_shipping_and_delivery_free_super_saver_shipping_title">国内配送料無料</string>
+    <string name="help_shipping_and_delivery_free_super_saver_shipping_url">https://www.amazon.co.jp/about_super_saver_mobile</string>
+    <string name="help_your_account_and_settings_access_your_account_title">アカウントサービスについて</string>
+    <string name="help_your_account_and_settings_access_your_account_content">Ｅメールアドレス、住所、アカウント名等の登録情報については、本アプリでは変更できません。PCサイトの「アカウントサービス」より変更いただけます。</string>
+    <string name="help_your_account_and_settings_get_password_help_title">パスワードをお忘れの場合</string>
+    <string name="help_your_account_and_settings_get_password_help_content">パスワードをお忘れの場合、トップの「サインイン」をクリックし「パスワードをお忘れですか？」を選択してください。アカウントに登録のEメールアドレスを入力し、必要事項を入力してください。「Amazon.co.jp パスワードアシスタント」という件名のEメールが送信されますので、Eメールに記載のURLをクリックし、新しいパスワードを設定してください。</string>
+    <string name="help_your_account_and_settings_amazon_prime_membership_title">Amazonプライムについて</string>
+    <string name="help_your_account_and_settings_amazon_prime_membership_content">Amazonプライムは、年会費3900円（税込）をお支払いいただくと、対象商品について、1回360円（税込）または514円（税込）のお急ぎ便や、1回360円（税込）のお届け日時指定便が追加料金なしで無制限に使える会員制プログラムです。ただし、お急ぎ便をご利用の場合、コンビニ受取はご指定いただけません。</string>
+    <string name="help_using_amazon_remembers_help_with_barcode_scans_title">バーコード検索について</string>
+    <string name="help_contact_us_feedback_header">このアプリについてご意見、ご要望はありますか？</string>
+    <string name="help_eula_url">https://www.amazon.co.jp/terms_and_conditions_android_mobile</string>
+    <string name="help_email_customer_service_url">https://www.amazon.co.jp/email_customer_service_mobile</string>
+    <string name="help_call_customer_service_url">tel:0120-999-373</string>
+    <string name="help_why_hide_price">"特定の価格を下回る場合、メーカーが小売業者に価格を表示しないよう依頼する場合があります。 「価格を表示」メッセージは、商品価格が非常に低いためにメーカーが表示しないよう求めたことを示しています。 販売担当者に商品価格を問い合わせてください。
+ 
+ Amazon.co.jpでは、[価格を見る]をクリックすると、その時点の価格が表示されます"</string>
+    <string name="bullet">•</string>
+    <string name="exit">Exit</string>
+    <string name="exit_confirmation_dialog_title">Exit Confirmation</string>
+    <string name="exit_confirmation_dialog_message">Are you sure to exit Amazon?</string>
+    <string name="categroy_browse_department">から探す</string>
+    <string name="shop_by_department_text">カテゴリーから探す</string>
+    <string name="shop_by_text">"カテゴリー
+"</string>
+    <string name="category_top_product_gallery_title">ベストセラー</string>
+    <string name="browse_search_sorted_by">%1$s</string>
+    <string name="categroy_browse_all_in_department">すべての</string>
+    <string name="category_browse_search_in_department">%1$s からキーワードで探す</string>
+    <string name="history_title">最近チェックした商品</string>
+    <string name="history_item_was_removed">%1$s は削除されました。</string>
+    <string name="history_empty_message">最近チェックした商品はありません</string>
+    <string name="history_time_format">"'チェックした日時'
+yyyy'年'MM'月'dd'日'
+HH'時'mm'分'"</string>
+    <string name="history_search_link">Amazonで検索</string>
+    <string name="history_clear_all">すべてを削除</string>
+    <string name="history_confirm_clear_all">すべての商品を削除しますか?</string>
+    <string name="notification_setting">お知らせサービス</string>
+    <string name="notification_ok">OK</string>
+    <string name="notification_gcm_unavailable">Googleのサービスで問題があります。しばらくしてからもう一度お試しください。</string>
+    <string name="notification_google_account_error">お客様のGoogleアカウントに問題があります。確認してもう一度お試しください。</string>
+    <string name="notification_turn_on_deal_notifications">Find Out When Deals Happen</string>
+    <string name="notification_deal_notifications_explanation">Turn on Lightning Deal notifications</string>
+    <string name="notification_manage_deal_notifications">Manage Lightning Deal notifications</string>
+    <string name="notification_manage_deal_notifications_explanation">Save big on limited-time deals</string>
+    <string name="notification_turn_on_shipment_notifications">商品発送予定や到着予定をチェック</string>
+    <string name="notification_shipment_notifications_explanation">出荷通知をオンにする</string>
+    <string name="notification_switch_locale_toast_text_for_deal">このセールを見るには、国の設定を%1$sに変更してください。</string>
+    <string name="notification_switch_locale_toast_text_for_order_details">注文履歴を見るためには、国の設定を%1$sに変更してください。</string>
+    <string name="notification_switch_locale_toast_text_for_deal_category">このセールのカテゴリーを見るには、国の設定を%1$sに変更してください。</string>
+    <string name="notification_switch_locale_toast_text_for_product">この商品を見るには、国の設定を%1$sに変更してください。</string>
+    <string name="notification_currently_unavailable">お知らせサービスは現在利用することができません。恐れ入りますがのちほど再度お試しください。</string>
+    <string name="notification_sign_in_to_view_shipment_notifications">出荷通知を受け取るにはサインイン</string>
+    <string name="notification_sign_in_to_view_deal_of_the_day_notifications">本日の特選商品のお知らせを受け取るにはサインイン</string>
+    <string name="notification_sign_in_to_view_sns_notifications">定期おトク便登録情報を受け取るにはサインイン</string>
+    <string name="notification_sign_in_to_view_pricealert_notifications">Sign in to receive Price Drop notifications</string>
+    <string name="notification_sign_in_to_receive_notification">Sign in to receive notifications</string>
+    <string name="notifications_us_marketplace">United States</string>
+    <string name="notifications_uk_marketplace">United Kingdom</string>
+    <string name="unavailablity_lack_rare_camera">この機能を利用するにはカメラ機能が必要です</string>
+    <string name="please_select">選択してください</string>
+    <string name="copy">コピー</string>
+    <string name="error_box_try_again">もう一度お試しください</string>
+    <string name="error_network_fail_access_amazon_message">アマゾンへの接続に問題が生じました。もう一度お試しください。</string>
+    <string name="error_network_no_connection_message">インターネットへの接続をご確認の上、もう一度お試しください。</string>
+    <string name="error_something_wrong_will_fix_message">申し訳ありませんが、このページに問題が今あり。ご迷惑をおかけして申し訳ありません。</string>
+    <string name="go_to_amazon_home">Amazonトップへ</string>
+    <string name="homeitems">おすすめ商品があります</string>
+    <string name="search_suggestions_department_text">%s</string>
+    <string name="search_refine_filter">絞り込み</string>
+    <string name="search_refine_sort">並べ替え</string>
+    <string name="search_refine_clear_all_refinements">すべてクリア</string>
+    <string name="customer_reviews_vine">Amazon Vine™先取りプログラムからのレビュー</string>
+    <string name="buy_box_buy_now_from_amazon_kindle">Buy Now from Amazon Kindle</string>
+    <string name="buy_box_install_amazon_kindle_to_buy">Install Amazon Kindle to buy</string>
+    <string name="buy_box_update_amazon_kindle_to_buy">Update Amazon Kindle to buy</string>
+    <string name="buy_box_buy_now_from_amazon_mp3">Amazon MP3ストアで今すぐ購入</string>
+    <string name="buy_box_install_amazon_mp3_to_buy">購入するには、Android版Amazon Cloud Playerをインストールしてください</string>
+    <string name="buy_box_update_amazon_mp3_to_buy">購入するには、Android版Amazon Cloud Playerをアップデートしてください</string>
+    <string name="buy_box_buy_now_from_amazon_video">Go To Amazon Instant Video App</string>
+    <string name="buy_box_install_amazon_video_to_buy">Install Amazon Video to buy</string>
+    <string name="buy_box_update_amazon_video_to_buy">Update Amazon Video to buy</string>
+    <string name="age_verification_explanation_title">20歳以上である必要があります。</string>
+    <string name="age_verification_wrong_age_title">この商品はショッピングカートに追加されませんでした。</string>
+    <string name="settings">設定</string>
+    <string name="youraccount_view_modify_track_or_cancel_an_order">注文内容の確認、変更はこちらから</string>
+    <string name="youraccount_ad_preference_button">広告表示の設定を変更</string>
+    <string name="youraccount_signin_title">%1$sさんとしてサインインしています</string>
+    <string name="ya_site_email_pref_title">Eメール通知設定</string>
+    <string name="ya_copy_order_number_failed">申し訳ございません。注文番号をコピーできませんでした。</string>
+    <string name="ya_advertising_preferences_title">広告表示の設定を変更</string>
+    <string name="cart_subtotal_text">小計</string>
+    <string name="cart_item_count_text">商品</string>
+    <string name="cart_item_count_plural_text">商品</string>
+    <string name="interstitial_cart_continue_to_checkout">あわせ買い対象商品を除外してレジに進む</string>
+    <string name="interstitial_cart_valid_item_list_header">これらの商品でレジに進む</string>
+    <string name="deal_cannot_add_to_cart">このタイムセール商品はお客様のカートに入っているか、販売時間が終了したため選択できません</string>
+    <string name="amazon_appstore_info">You may need to install Amazon Appstore first in order to buy this app. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_appstore_learn_more_text">Learn more</string>
+    <string name="amazon_appstore_learn_more_url" />
+    <string name="amazon_appstore_package_name">com.amazon.venezia</string>
+    <string name="amazon_appstore_landing_page_url">https://www.amazon.co.jp/gp/mas/get/android</string>
+    <string name="amazon_appstore_browse_node">2381130051</string>
+    <string name="amazon_appstore_search_field">Android 用アプリ</string>
+    <string name="amazon_kindle_info">You may need to install Amazon Kindle first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_kindle_info_update">You may need to update Amazon Kindle first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_mp3_info">購入するには、Android版Amazon Cloud Playerをインストールしてください携帯事業者によっては外部アプリケーションのインストールを許可していない場合もあります</string>
+    <string name="amazon_mp3_info_update">購入するには、Android版Amazon Cloud Playerをアップデートしてください携帯事業者によっては外部アプリケーションのインストールを許可していない場合もあります</string>
+    <string name="amazon_mp3_package_name">com.amazon.mp3</string>
+    <string name="amazon_video_info">You may need to install Amazon Video first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_video_info_update">You may need to update Amazon Video first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="help_subscribe_and_save_ordering_title">Amazon定期おトク便</string>
+    <string name="help_subscribe_and_save_ordering_finding_eligible_products_title">対象商品</string>
+    <string name="help_subscribe_and_save_ordering_finding_eligible_products_content">定期おトク便の対象商品には、「今すぐ買う」ボタンの下に定期おトク便の価格と割引率のボタンが表示されます。</string>
+    <string name="help_subscribe_and_save_ordering_placing_your_order_title">注文方法</string>
+    <string name="help_subscribe_and_save_ordering_placing_your_order_content">"1. 「今すぐ買う」ボタンの下に表示される定期おトク便価格の枠、または割引率のボタンを選択します。
+ 2. ドロップダウンから数量と配送頻度を選択します。
+ 3. 「申し込む」ボタンをクリックします。"</string>
+    <string name="help_subscribe_and_save_ordering_paying_for_your_subscription_title">支払い方法</string>
+    <string name="help_subscribe_and_save_ordering_paying_for_your_subscription_content">"Amazon定期おトク便では、クレジットカードによるお支払い方法がご利用いただけます。
+ 注意: 
+ • 商品代金請求時点で、お客様のアカウントに登録されているAmazonギフト券、Amazonショッピングカード、クーポン、Amazonポイントの残高がある場合は、自動的に適用され、差し引いた金額を請求させていただきます。使用の有無は選択できません。
+ • 商品発送時にご指定のクレジットカードに代金を請求します。
+ • ご注文の請求額は、注文時の価格に対してAmazon定期おトク便の割引率を適用した金額およびその金額に対する消費税の合計です。"</string>
+    <string name="help_subscribe_and_save_ordering_terms_and_conditions_title">Amazon定期おトク便 利用規約</string>
+    <string name="help_subscribe_and_save_ordering_terms_and_conditions_url">https://www.amazon.co.jp/mobile_sns_terms</string>
+    <string name="help_subscribe_and_save_subscriptions_title">Amazon定期おトク便</string>
+    <string name="help_subscribe_and_save_subscriptions_managing_your_subscriptions_title">Amazon定期おトク便情報を管理する</string>
+    <string name="help_subscribe_and_save_subscriptions_managing_your_subscriptions_content">キャンセルや追加分の発送など、お申し込み内容を変更する場合は、アプリメニューの「その他」から「定期おトク便情報を管理」の一番上にある「選択」をタップして、確認したい定期おトク便のお届け先住所を選択してください。選択されたお届け先住所に配送される定期おトク便お申し込み内容が表示されます。</string>
+    <string name="snapit">Snap It</string>
+    <string name="snapit_searching_for">Searching for photo…</string>
+    <string name="snapit_search_report_mismatch_prompt">Not your item?</string>
+    <string name="snapit_search_report_mismatch_button">Report mismatch</string>
+    <string name="snapit_search_report_mismatch_mail_recipient">report-mismatch-snapit@amazon.com</string>
+    <string name="snapit_search_report_mismatch_mail_subject">Image mismatch</string>
+    <string name="snapit_search_report_mismatch_mail_body">"Thank you for reporting a mismatch. Please submit this email and we will review to improve our match rate moving forward.
+
+"</string>
+    <string name="snapit_search_report_mismatch_item_description_with_byline_and_shortdesc">"Snap It match: %1$s by %2$s (%3$s)
+ASIN: %4$s"</string>
+    <string name="snapit_search_report_mismatch_item_description_with_byline">Snap It match: %1$s by %2$s (ASIN: %3$s)</string>
+    <string name="snapit_search_report_mismatch_item_description_with_shortdesc">"Snap It match: %1$s (%2$s)
+ASIN: %3$s"</string>
+    <string name="snapit_search_report_mismatch_item_description">Snap It match: %1$s (ASIN: %2$s)</string>
+    <string name="snapit_search_result_title_no_result">Item Not Found</string>
+    <string name="snapit_search_result_title_result">Item Found</string>
+    <string name="snapit_search_result_title_result_plural">Items Found</string>
+    <string name="snapit_search_result_title_searching_for">Searching…</string>
+    <string name="snapit_photo_capture_view_title">SnapIt - Take Photo</string>
+    <string name="snapit_help">"
+ Center the item on a plain background.
+
+ Select Retake if the photo is blurry.
+
+ Snap It works best with books, DVDs, CDs and video games.
+
+ Try to avoid shadows and glare."</string>
+    <string name="snapit_help_title">Snap It Help</string>
+    <string name="sns_detail_webpage">https://www.amazon.co.jp/gp/subscribe-and-save/idp/</string>
+    <string name="sns_mys_page">https://www.amazon.co.jp/gp/subscribe-and-save/manage</string>
+    <string name="sns_dispatch_page">https://www.amazon.co.jp/gp/subscribe-and-save/mobile/dispatch.html</string>
+    <string name="menu_more_mys_description">定期おトク便情報を管理</string>
+    <string name="sns_dp_block_title">定期おトク便</string>
+    <string name="sns_dp_button_prefix">定期おトク便で注文</string>
+    <string name="sns_dp_block_save">割引</string>
+    <string name="sns_dp_block_ppu">(%1$s)</string>
+    <string name="sns_dp_block_discount">%1$s%%</string>
+    <string name="sns_dp_block_price">%1$s %3$s %2$s</string>
+    <string name="sns_dp_subscribe_button">%1$s: %3$s%% %2$s</string>
+    <string name="sns_loading_dialog_title">%1$s …</string>
+    <string name="sns_url_with_refmarker">%1$s/ref=%2$s</string>
+    <string name="authportal">https://www.amazon.co.jp/ap/signin</string>
+    <string name="web_cart_page">https://www.amazon.co.jp/gp/cart/view.html</string>
+    <string name="product_details_web_page_url">https://www.amazon.co.jp/gp/aw/d/</string>
+    <string name="contact_us_web_page_url">https://www.amazon.co.jp/gp/aw/contact-us</string>
+    <string name="show_password"> パスワードを表示する</string>
+    <string name="signout_progress_message">ログアウトしています。</string>
+    <string name="variations_not_available_in_dimen_x_selection_y">\"%1$s: %2$s在庫がありません</string>
+    <string name="variations_not_available_with_selected_options">選択した条件の在庫がありません</string>
+    <string name="wishlist_web_page_url">https://www.amazon.co.jp/gp/registry/mobile</string>
+    <string name="deals_web_page_url">https://www.amazon.co.jp/gp/mobile/deals</string>
+    <string name="error_message_switching_language">問題があり言語の変更ができませんでした。お手数ですがしばらくたってから再度お試しください。</string>
+    <string name="error_message_switching_country">現在、国の変更機能をご利用いただくことができません。お手数ですが、しばらくたってからお試しください。</string>
+    <string name="error_can_not_find_product">申し訳ありません。お探しの商品を見つけることができませんでした。</string>
+    <string name="web_check_out">https://www.amazon.co.jp/gp/checkoutportal/enter-checkout.html</string>
+    <string name="public_url_host_unavailable">Amazon モバイルは現在%1$sでご利用いただけません</string>
+    <string name="public_url_unavailable">コンテンツを表示することができませんでした</string>
+    <string name="public_url_switch_locale_title">国の選択をされますか?</string>
+    <string name="public_url_switch_locale_message">このスクリーンは%1$sにてご覧いただけます。%1$s 国の選択をされますか?</string>
+    <string name="country_name_en_ca">カナダ</string>
+    <string name="country_name_zh_cn">中国</string>
+    <string name="country_name_de_de">ドイツ</string>
+    <string name="country_name_es_es">スペイン</string>
+    <string name="country_name_fr_fr">フランス</string>
+    <string name="country_name_it_it">イタリア</string>
+    <string name="country_name_ja_jp">日本</string>
+    <string name="country_name_en_us">米国</string>
+    <string name="country_name_en_gb">イギリス</string>
+    <string name="country_name_en_in">インド</string>
+    <string name="search_web_page_url">https://www.amazon.co.jp/gp/aw/s/%1$s?__mk_ja_JP=カタカナ</string>
+    <string name="search_prefetch_web_page_url">https://www.amazon.co.jp/gp/search/bootstrap/</string>
+    <string name="map_auth_portal_authentication_error">指定したデバイスは認証できませんでした。もう一度試してください。</string>
+    <string name="upgrade_dialog_title">Amazonモバイルをアップグレードする。</string>
+    <string name="upgrade_dialog_message">ご利用を続けるにはAmazonモバイルを最新のバージョンにアップグレードしてください。</string>
+    <string name="upgrade_dialog_visit_googleplay">Google Playストアでアップグレードを開始する。</string>
+    <string name="upgrade_dialog_visit_amazonappstore">Amazon アプリストアでアップグレードを開始する。</string>
+    <string name="upgrade_dialog_general_store">クリックしてアップグレードを開始。</string>
+    <string name="upgrade_dialog_button_upgrade">アップグレード</string>
+    <string name="upgrade_notification_dialog_message">最新版の機能をお使いいただくためにAmazonアプリのアップグレードをご検討ください。</string>
+    <string name="upgrade_remind_me_later">あとで通知</string>
+    <string name="upgrade_no_thanks">閉じる</string>
+    <string name="upgrade_available_title">最新版へのアップグレードが可能です</string>
+    <string name="upgrade_check_for_upgrade">アップグレードの確認</string>
+    <string name="checking_for_upgrade">アップグレードの確認中</string>
+    <string name="no_available_upgrade">アップグレードの必要はありません</string>
+    <string name="your_account_web_page_url">https://www.amazon.co.jp/gp/aw/ya</string>
+    <string name="cancel_order_web_page_url">https://www.amazon.co.jp/gp/aw/ya?ie=UTF8&amp;ac=oc</string>
+    <string name="your_orders_web_page_url">https://www.amazon.co.jp/gp/aw/ya/or</string>
+    <string name="order_detail_web_page_url">https://www.amazon.co.jp/gp/aw/ya/?ac=od</string>
+    <string name="ship_track_order_web_page_url">https://www.amazon.co.jp/gp/aw/ya?ie=UTF8&amp;ac=st</string>
+    <string name="one_click_settings_web_page_url">https://www.amazon.co.jp/gp/aw/vsd.html</string>
+    <string name="gno_sign_in">こんにちは。 サインイン</string>
+    <string name="gno_sign_out">%1$sさんではありませんか？サインアウト</string>
+    <string name="gno_sign_out_new_line">"%1$s…さんではありませんか？
+サインアウト"</string>
+    <string name="new_locale_available">Amazon App is now available for Amazon.in. Set Amazon.in as your default store.</string>
+    <string name="shortcut_install_title" />
+    <string name="shortcut_install_msg" />
+    <string name="app_start_indication_dialog_title">Warning</string>
+    <string name="app_start_indication_dialog_msg">This app will use data and will incur charge according to the data package you have bought. Please contact network operator for detail. Do you agree to this charge?</string>
+    <string name="app_start_indication_dialog_button_check">Do not remind me again</string>
+    <string name="app_start_indication_dialog_button_agree">Agree</string>
+    <string name="app_start_indication_dialog_button_disagree">Disagree</string>
+    <string name="view_it_flow_not_support">カメラを使った検索は、日本ではサポートしていません。</string>
+    <string name="gateway_web_page_url">https://www.amazon.co.jp/gp/gw/ajax/mshop.html</string>
+    <string name="srds_categroy_url">http://www.amazon.co.jp/s/browse/categories/?dataVersion=v0.1&amp;format=json</string>
+    <string name="html_notifications_settings_web_page_url">https://www.amazon.co.jp/ss/mobile/services/subscriptions/</string>
+    <string name="html_recommendations_web_page_url">https://www.amazon.co.jp/gp/aw/recs/ys</string>
+    <string name="aiv_unavailable">Amazon Instant Video is unavailable on this device.</string>
+    <string name="aiv_companion_app_installation_button">+++</string>
+    <string name="aiv_companion_app_not_installed_title">+++</string>
+    <string name="aiv_companion_app_not_installed">+++</string>
+    <string name="sign_in_to_your_account">今すぐサイイン</string>
+    <string name="view_your_wish_list">お客様へのおすすめ商品の表示</string>
+    <string name="find_and_reorder_past_purchases">配送お知らせサービスの利用</string>
+    <string name="track_your_purchases">1-Clickで簡単注文</string>
+    <string name="skip_sign_in">サインインしない</string>
+    <string name="amazon_store_header">"他の国のAmazonでもお買物ができます。お買物をするにはAmazonストアをお選び下さい。
+
+今お買物をされているストアのカートと欲しい物リストにある商品は保存されますが、他のストアへは移行されません。"</string>
+    <string name="amazon_store">国を選択</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_cancel_button">キャンセル</string>
+    <string name="alert_one_click_change_button">変更</string>
+    <string name="alert_error_network_error">ネットワークエラー</string>
+    <string name="alert_error_client_problem">Amazonモバイルアプリに問題が発生しました</string>
+    <string name="alert_error_service_please_try_again">Amazon.co.jpモバイルサービスに問題が発生しました。もう一度やり直してください</string>
+    <string name="sign_in_title">サインイン</string>
+    <string name="sign_in_email_hint">Eメールアドレス</string>
+    <string name="sign_in_email_phone_number_hint">Eメールアドレス</string>
+    <string name="sign_in_password_hint">Amazon.co.jp のパスワード</string>
+    <string name="sign_in_button">サインイン(セキュリティシステム使用)</string>
+    <string name="sign_in_forgot_your_password">パスワードをお忘れですか?</string>
+    <string name="sign_in_create_account_button">アカウントの作成</string>
+    <string name="sign_in_forgot_your_password_url">https://www.amazon.co.jp/forgot_password_mobile</string>
+    <string name="sign_in_in_progress">サインイン中</string>
+    <string name="sign_in_legal_link_url">https://www.amazon.co.jp/legal_information_mobile</string>
+    <string name="sso_welcome_user">こんにちは、%1$s</string>
+    <string name="sso_continue">続ける</string>
+    <string name="sso_use_different_account">このアプリ用のアカウントをお使いください</string>
+    <string name="sso_not_the_user">指定したアカウントではありませんか？</string>
+    <string name="sso_conditions_of_use">利用規約</string>
+    <string name="sso_privacy_notice">プライバシー規約</string>
+    <string name="sso_conditions_of_use_link_url">https://www.amazon.co.jp/conditions_of_use_mobile</string>
+    <string name="sso_privacy_notice_link_url">https://www.amazon.co.jp/privacy_notice_mobile</string>
+    <string name="cna_title">新しいアカウントを作成</string>
+    <string name="cna_header">新しいアカウントを作成してください</string>
+    <string name="cna_continue_button">次に進む</string>
+    <string name="cna_name_hint">名前（フルネーム）</string>
+    <string name="cna_furigana_hint">フリガナ（全角カナ、スペースなし）</string>
+    <string name="cna_email_hint">Eメールアドレス</string>
+    <string name="cna_email_phone_number_hint">Eメールアドレス</string>
+    <string name="cna_password_hint">パスワードを入力</string>
+    <string name="cna_duplicate_password_hint">パスワードの再入力</string>
+    <string name="cna_no_passwords_not_same_error">入力された2つのパスワードが一致しません</string>
+    <string name="cna_password_requirement_error">パスワードは6文字以上で入力してください</string>
+    <string name="cna_email_requirement_error">アットマーク（@）とピリオド（.）を含むＥメールアドレスを入力してください。@の右側にはスペースまたはカンマはつきません</string>
+    <string name="cna_in_progress">新しいアカウントを作成中…</string>
+    <string name="cna_legal_text">Eメールの登録・設定変更</string>
+    <string name="cna_legal_link_url">https://www.amazon.co.jp/cna_legal_mobile</string>
+    <string name="cna_registration_agreement" />
+    <string name="cna_conditions_of_use_and_sale_text" />
+    <string name="cna_conditions_of_use_and_sale_url" />
+    <string name="cna_privacy_notice_text" />
+    <string name="cna_privacy_notice_url" />
+    <string name="sign_out_title">サインアウト</string>
+    <string name="sign_out_button">サインアウト</string>
+    <string name="sign_out_you_are_signed_in_as"><b>%1$s</b>さんとしてサインインしています</string>
+    <string name="sign_out_in_progress">サインアウト中</string>
+    <string name="sign_out_confirm_title">サインアウトする</string>
+    <string name="sign_out_confirm_message">%1$sさんは、この端末のAmazonアプリからサインアウトしようとしています。</string>
+    <string name="sign_out_confirm_message_with_appstore_installed">%1$sさんは、この端末のAmazonアプリからサインアウトしようとしています。サインアウトをすると、Amazon Appstoreからダウンロードしたアプリにアクセスできなくなります。</string>
+    <string name="sign_out_your_app_confirm_message">%1$sさん、Amazon アプリからサインアウトします。</string>
+    <string name="one_click_settings_loading">確認中</string>
+    <string name="one_click_settings_loading_shipping_addresses">お届け先と支払い方法の更新</string>
+    <string name="one_click_settings_saving_shipping_payment_method">お届け先と支払い方法を保存します</string>
+    <string name="one_click_settings_turning_on">モバイル1–Click をONにします</string>
+    <string name="one_click_settings_turning_off">モバイル1–Click をOFFにします</string>
+    <string name="one_click_settings_title">1-Clickを設定</string>
+    <string name="one_click_settings_ordering_title">1-Clickで注文</string>
+    <string name="one_click_settings_mobile_one_click_title">モバイル1-Click</string>
+    <string name="one_click_settings_device_name_title">設定名</string>
+    <string name="one_click_settings_shipping_and_payments_title">お届け先と支払い方法</string>
+    <string name="one_click_settings_shipping_and_payments_empty">1-Click設定住所</string>
+    <string name="one_click_settings_about_title">モバイル 1-Click について</string>
+    <string name="one_click_settings_continue_button">次に進む</string>
+    <string name="one_click_settings_shipping_payment_method_title">お届け先/支払い方法</string>
+    <string name="one_click_settings_shipping_payment_method_info">設定されたお届け先と支払い方法は、モバイルサイトとPCサイト両方に適用されます。新しいお届け先住所や支払い方法を設定される場合は、PCサイトの「アカウントサービス」より変更してください。</string>
+    <string name="one_click_settings_shipping_payment_method_defaults_title">アカウントに登録されているお届け先と支払い方法を選択する</string>
+    <string name="one_click_settings_payment_method_title">支払い方法</string>
+    <string name="one_click_settings_payment_method_defaults_title">アカウントに登録されているお届け先と支払い方法を選択する</string>
+    <string name="one_click_settings_select_payment_method">支払い方法の選択</string>
+    <string name="one_click_settings_about_text">"1–ClickをONにすると、ボタンをクリックするだけで注文できます｡注文するときにお届け先や支払い方法を入力する手間が省けます。
+
+1-Click設定は､PCサイトとモバイルサイトでは異なります｡設定の共有はできません｡それぞれ個別にONとOFFを切り替えることができます。ただし設定された支払い方法とお届け先は、PCサイトとモバイルサイトで共通です。
+
+モバイル1–Clickは携帯端末からのみONにすることができます。モバイル1–ClickがONになっている場合、PCサイトからモバイル1–Clickの設定を確認することができます。
+
+モバイルサイトまたはPCサイトの「アカウントサービス」からモバイル1–ClickをOFFにすることができます。"</string>
+    <string name="payment_format_credit_card_expiration_date_addreviated">有効期限</string>
+    <string name="locale_switch_select_country_below">国を選択</string>
+    <string name="address_format_CN">"{name}
+{address1}
+{address2}
+{address3}
+{state} {city} {county}
+{zip}
+{country}
+{phone}"</string>
+    <string name="address_format_FR">"{name}
+{address1}
+{address2}
+{address3}
+{zip} {city} {county} {state}
+{country}
+{phone}"</string>
+    <string name="address_format_JP">"{name}
+{zip} {state} {county} {city}
+{address1}
+{address2}
+{address3}
+{country}
+{phone}"</string>
+    <string name="address_format_default">"{name}
+{address1}
+{address2}
+{address3}
+{city} {county}, {state} {zip}
+{country}
+{phone}"</string>
+    <string name="sign_in_email_rule">required maxlength:64</string>
+    <string name="sign_in_password_rule">required maxlength:512</string>
+    <string name="cna_name_rule">required maxlength:50</string>
+    <string name="cna_furigana_rule">required maxlength:50</string>
+    <string name="cna_email_rule">required maxlength:64</string>
+    <string name="cna_password_rule">required maxlength:20</string>
+    <string name="alert_error_network_error_socket_timeout">リクエストがタイムアウトしました。あとでもう一度試してください</string>
+    <string name="alert_error_network_error_unknownhost">ネットワークエラー。あとでもう一度試してください</string>
+    <string name="alert_network_failure_title">インターネットに接続していません</string>
+    <string name="alert_network_failure_message">タスクを完了するには、ネットワークに接続する必要があります。</string>
+    <string name="alert_network_failure_message_wifi">タスクを完了するには、Wi-Fiネットワークに接続する必要があります。</string>
+    <string name="sign_in_legal_text">サインインすることで、Amazon.co.jpアプリ利用規約及びAmazon.co.jp利用規約に同意したものとみなします。</string>
+    <string name="amazon_chooser_activity_no_application">この操作を実行できるアプリケーションはありません。</string>
+    <string name="amazon_chooser_activity_choose_appliaction">アプリケーションを選択</string>
+    <string name="opengl_progress_text">確認中</string>
+    <string name="adrive_lib_android_get_cdp_app">Cloud Drive Photosアプリを入手</string>
+    <string name="adrive_lib_android_notification_tap_for_details">タップして詳細を見る</string>
+    <string name="adrive_lib_android_upload_information_header_autosave_everything_saved">すべて保存されています。</string>
+</resources>

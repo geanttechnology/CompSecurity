@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:background="@drawable/drop_shadow_top_light" android:padding="@dimen/no_padding" android:layout_width="fill_parent" android:layout_height="@dimen/drop_shadow_height" android:layout_margin="@dimen/no_margin" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetButton android:id="@id/btn_left_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/BottomButtonDefault" />
+        <View android:id="@id/btn_left_btn_div" android:background="@color/divider_color" android:visibility="gone" android:layout_width="@dimen/divider_width" android:layout_height="fill_parent" />
+        <com.target.ui.view.TargetButton android:id="@id/btn_centre_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/BottomButtonDefault" />
+        <View android:id="@id/btn_centre_btn_div" android:background="@color/divider_color" android:visibility="gone" android:layout_width="@dimen/divider_width" android:layout_height="fill_parent" />
+        <com.target.ui.view.TargetButton android:id="@id/btn_right_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/BottomButtonDefault" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ships_to_and_exclusions_layout" style="@style/ItemView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ships_to_layout" style="@style/ItemStatLayout">
+        <TextView android:text="@string/ships_to" style="@style/ItemStatHeader" />
+        <TextView android:id="@id/ships_to_textview" style="@style/ItemStatValue" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/shipping_excluded_layout" style="@style/ItemStatLayout">
+        <TextView android:text="@string/excluded" style="@style/ItemStatHeader" />
+        <TextView android:id="@id/shipping_excluded_textview" style="@style/ItemStatValue" />
+    </LinearLayout>
+</LinearLayout>

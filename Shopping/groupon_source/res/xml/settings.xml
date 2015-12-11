@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="pref_screen_root"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general" android:key="pref_key_general">
+        <CheckBoxPreference android:title="@string/deal_notifications" android:key="dealNotification" android:summary="@string/pref_summary_deal_notifications" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/silent_notifications" android:key="silentNotifications" android:summary="@string/pref_summary_silent_notifications" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/new_location_setting" android:key="localizedMobileApp" android:summary="@string/pref_summary_new_location_notifications" android:defaultValue="true" />
+        <com.groupon.util.TimePickerPreference android:title="@string/notification_time" android:key="notificationTime" android:defaultValue="@string/default_notification_time" />
+        <CheckBoxPreference android:title="@string/proximity_based_notifications" android:key="proximityNotificationEnabled" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/advanced" android:key="pref_key_advanced">
+        <CheckBoxPreference android:title="@string/report_a_bug" android:key="pref_key_report_a_bug" android:summary="@string/pref_summary_report_a_bug" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

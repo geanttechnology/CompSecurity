@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="normal" android:id="@id/amazonpoints_summary_row_name" android:paddingLeft="@dimen/padding_small" />
+    <TextView android:textStyle="normal" android:gravity="right" android:id="@id/amazonpoints_summary_row_amount" android:paddingRight="@dimen/padding_small" />
+</TableRow>

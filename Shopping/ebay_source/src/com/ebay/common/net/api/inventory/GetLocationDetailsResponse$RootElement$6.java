@@ -1,0 +1,30 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.ebay.common.net.api.inventory;
+
+import com.ebay.common.model.inventory.LocationAddress;
+import com.ebay.common.model.inventory.LocationDetails;
+import org.xml.sax.SAXException;
+
+// Referenced classes of package com.ebay.common.net.api.inventory:
+//            GetLocationDetailsResponse
+
+class this._cls1 extends com.ebay.nautilus.kernel.util.t._cls6
+{
+
+    final s this$1;
+
+    public void text(String s)
+        throws SAXException
+    {
+        locationDetails.address.region = s;
+    }
+
+    ()
+    {
+        this$1 = this._cls1.this;
+        super();
+    }
+}

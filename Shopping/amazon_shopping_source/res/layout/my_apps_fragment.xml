@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.venezia.myapps.MySwipeRefreshLayout android:id="@id/swipe_container" android:background="@color/tile_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/myapps_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_indeterminate_horizontal_holo" android:layout_alignParentTop="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/tab_bar" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_tab_bar_height">
+            <TextView android:textSize="@dimen/action_bar_tab_text_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:gravity="center" android:id="@id/nav_item_cloud" android:background="@drawable/action_bar_nav_tab_unselected" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/action_bar_tab_text_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:gravity="center" android:id="@id/nav_item_device" android:background="@drawable/action_bar_nav_tab_selected" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="tabClicked" />
+            <TextView android:textSize="@dimen/action_bar_tab_text_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:gravity="center" android:id="@id/nav_item_app_updates" android:background="@drawable/action_bar_nav_tab_unselected" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="tabClicked" />
+        </LinearLayout>
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/tab_bar" android:layout_alignParentBottom="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </RelativeLayout>
+</com.amazon.venezia.myapps.MySwipeRefreshLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/query_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" />
+    <com.ebay.android.widget.ButtonBar android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:positiveButtonText="@string/yes" ebay:negativeButtonText="@string/no" ebay:positiveButtonId="@id/query_yes_btn" ebay:negativeButtonId="@id/query_no_btn" ebay:showTopDivider="true" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

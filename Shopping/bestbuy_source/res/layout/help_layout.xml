@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/transparent_outer_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/welcome_text" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/welcome_blueassist" android:layout_alignParentTop="true" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="22.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/help_text" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/how_can_we_help" android:layout_below="@id/welcome_text" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            </LinearLayout>
+            <ImageView android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/closeicon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/divider" android:background="@color/light_black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/help_text" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/divider">
+            <com.bestbuy.android.activities.browseproduct.pdp.StickyGroupExpandableListView android:id="@id/expand_options" android:background="@color/transparent_outer_blue" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:divider="@color/light_black" android:dividerHeight="1.0px" />
+            <include layout="@layout/loading_spinner_layout" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/chatprogress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

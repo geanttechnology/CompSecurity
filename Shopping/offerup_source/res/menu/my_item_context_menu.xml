@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/view_item" android:visible="false" android:title="View" />
+    <item android:id="@id/share_item" android:visible="false" android:title="Share" />
+    <item android:id="@id/delete_item" android:visible="false" android:title="Delete" />
+    <item android:id="@id/unlist_item" android:visible="false" android:title="Unlist" />
+    <item android:id="@id/relist_item" android:visible="false" android:title="Relist" />
+    <item android:id="@id/messages" android:visible="false" android:title="Messages" />
+    <item android:id="@id/mark_as_sold" android:visible="false" android:title="Mark as Sold" />
+    <item android:id="@id/edit_item" android:visible="false" android:title="Edit" />
+    <item android:id="@id/archive_item" android:visible="true" android:title="Archive" />
+    <item android:id="@id/pay_item" android:visible="false" android:title="Pay Seller" />
+    <item android:id="@id/receipt_item" android:visible="false" android:title="View Receipt" />
+    <item android:id="@id/rate_buyer_item" android:visible="false" android:title="Rate Buyer" />
+</menu>

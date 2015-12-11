@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.abtnprojects.ambatana" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.abtnprojects.ambatana.permission.C2D_MESSAGE"/>
+    <permission android:name="com.abtnprojects.ambatana.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.abtnprojects.ambatana.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.abtnprojects.ambatana.LetgoApplication" android:theme="@style/AppTheme">
+        <uses-library android:name="com.google.android.maps"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_api_key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/facebook_app_name"/>
+        <meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/ic_stat_letgo"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="da82303e33e3a2dc304cdccaa4e19dba00334a34"/>
+        <meta-data android:name="com.parse.push.gcm_sender_id" android:value="id:914431496661"/>
+;
+<activity android:label="@string/title_activity_get_started" android:name="com.abtnprojects.ambatana.ui.signup.MainSignUpActivity" android:parentActivityName="com.abtnprojects.ambatana.ui.activities.ProductListingActivity" android:screenOrientation="portrait" android:theme="@style/PublicActivitiesThemeToolBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.activities.ProductListingActivity"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="@string/log_in_title" android:name="com.abtnprojects.ambatana.ui.signup.LoginActivity" android:parentActivityName="com.abtnprojects.ambatana.ui.signup.MainSignUpActivity" android:theme="@style/PublicActivitiesThemeToolBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.signup.MainSignUpActivity"/>
+        </activity>
+        <activity android:label="@string/sign_up_title" android:name="com.abtnprojects.ambatana.ui.signup.SignUpActivity" android:parentActivityName="com.abtnprojects.ambatana.ui.signup.MainSignUpActivity" android:screenOrientation="portrait" android:theme="@style/PublicActivitiesThemeToolBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.signup.MainSignUpActivity"/>
+        </activity>
+        <activity android:label="@string/reset_password_title" android:name="com.abtnprojects.ambatana.ui.signup.ForgotPasswordActivity" android:noHistory="true" android:parentActivityName="com.abtnprojects.ambatana.ui.signup.MainSignUpActivity" android:theme="@style/PublicActivitiesThemeToolBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.signup.MainSignUpActivity"/>
+        </activity>
+        <activity android:label="@string/no_label" android:launchMode="singleTask" android:name="com.abtnprojects.ambatana.ui.activities.profile.UserProfileActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="users" android:scheme="letgo"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/no_label" android:launchMode="singleTop" android:name="com.abtnprojects.ambatana.ui.activities.CategoryListingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:label="@string/no_label" android:launchMode="singleTop" android:name="com.abtnprojects.ambatana.ui.activities.posting.PostSuccessActivity" android:noHistory="true"/>
+        <activity android:configChanges="orientation|screenLayout" android:label="@string/no_label" android:name="com.abtnprojects.ambatana.ui.activities.posting.ProductNewActivity" android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sell" android:scheme="letgo"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.letgo.com"/>
+                <data android:pathPrefix="/sell"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout" android:label="@string/no_label" android:launchMode="singleTask" android:name="com.abtnprojects.ambatana.ui.activities.ProductActivity" android:theme="@style/AppTheme.ProductActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="products" android:scheme="letgo"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.letgo.com"/>
+                <data android:pathPrefix="/products"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.abtnprojects.ambatana.ui.activities.ProductListingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="home" android:scheme="letgo"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.letgo.com"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_image_gallery" android:name="com.abtnprojects.ambatana.ui.activities.ImageGalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/chat_label" android:name="com.abtnprojects.ambatana.ui.activities.chat.MessagesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat" android:scheme="letgo"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.letgo.com"/>
+                <data android:pathPrefix="/chat"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/no_label" android:launchMode="singleTop" android:name="com.abtnprojects.ambatana.ui.activities.chat.UserMessagesListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chats" android:scheme="letgo"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.letgo.com"/>
+                <data android:pathPrefix="/chats"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/no_label" android:name="com.abtnprojects.ambatana.ui.activities.profile.EditProfileActivity" android:parentActivityName="com.abtnprojects.ambatana.ui.activities.profile.UserProfileActivity" android:windowSoftInputMode="stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.activities.profile.UserProfileActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_user_details_edition_location" android:name="com.abtnprojects.ambatana.ui.activities.profile.EditLocationActivity" android:parentActivityName="com.abtnprojects.ambatana.ui.activities.profile.EditProfileActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.activities.profile.EditProfileActivity"/>
+        </activity>
+        <activity android:label="@string/user_profile_settings_notifications" android:name="com.abtnprojects.ambatana.ui.activities.profile.NotificationPreferenceActivity" android:parentActivityName="com.abtnprojects.ambatana.ui.activities.profile.EditProfileActivity" android:windowSoftInputMode="stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.activities.profile.EditProfileActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_user_details_edition_password" android:name="com.abtnprojects.ambatana.ui.activities.profile.EditPasswordActivity"/>
+        <activity android:label="@string/menu_drawer_option_help" android:launchMode="singleTask" android:name="com.abtnprojects.ambatana.ui.activities.HelpActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/title_activity_map_full_screen" android:name="com.abtnprojects.ambatana.ui.activities.ProductLocationMapFullScreenActivity"/>
+        <activity android:label="@string/title_activity_search" android:name="com.abtnprojects.ambatana.ui.activities.SearchActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation" android:label="@string/no_label" android:launchMode="singleTop" android:name="com.abtnprojects.ambatana.ui.activities.ContactActivity"/>
+        <provider android:authorities="@string/facebook_provider_authorities" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.ads.conversiontracking.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.parse.PushService"/>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.abtnprojects.ambatana"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.abtnprojects.ambatana.receivers.AmbatanaBroadcastPushReceiver">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE"/>
+                <action android:name="com.parse.push.intent.DELETE"/>
+                <action android:name="com.parse.push.intent.OPEN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.kahuna.sdk.KahunaCoreReceiver"/>
+        <receiver android:name="com.kahuna.sdk.KahunaPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.abtnprojects.ambatana"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="@bool/useNewReceiver" android:name="com.abtnprojects.ambatana.receivers.OnUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="@bool/useOldReceiver" android:name="com.abtnprojects.ambatana.receivers.OnUpgradeReceiverPreApi12">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.abtnprojects.ambatana.services.ProductCreationService" android:process=":process"/>
+        <service android:exported="false" android:name="com.abtnprojects.ambatana.services.ProductEditionService" android:process=":process"/>
+        <service android:exported="false" android:name="com.abtnprojects.ambatana.location.GeocodeIntentService"/>
+        <service android:exported="false" android:name="com.abtnprojects.ambatana.services.CurrencyService"/>
+        <service android:exported="true" android:name="com.abtnprojects.ambatana.services.AppUpdateService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.kahuna.sdk.KahunaPushService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+    </application>
+</manifest>

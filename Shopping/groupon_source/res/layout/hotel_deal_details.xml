@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/semitransparent_overlay" android:background="@color/black_79p" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.groupon.view.ObservableScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/scrollable_content" android:paddingBottom="70.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/details_top_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/deal_image_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.groupon.view.DealImageView android:id="@id/deal_image_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <com.groupon.view.DealDetailsTemporaryImage android:id="@id/temporary_deal_image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/black" android:id="@id/hotel_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/grey_light" android:id="@id/hotel_location" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <RelativeLayout android:id="@id/trip_advisor_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <com.groupon.view.CircleRatingBar android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/grey60" android:id="@id/tripadvisor_rating" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/trip_advisor_rating" android:layout_toRightOf="@id/rating_bar" />
+                        </RelativeLayout>
+                        <RelativeLayout android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                            <RelativeLayout android:gravity="center_vertical" android:id="@id/price_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                                <TextView android:textSize="22.0dip" android:textColor="@color/grey_light" android:id="@id/strike_price" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                                <TextView android:textSize="22.0dip" android:textStyle="bold" android:textColor="@color/green_new" android:gravity="bottom" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/strike_price" />
+                                <TextView android:textSize="16.0dip" android:textColor="@color/black" android:id="@id/per_night_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginBottom="3.0dip" android:text="@string/per_night" android:layout_toRightOf="@id/price" android:layout_alignBottom="@id/price" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/rao_offer_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/g_bucks_container" android:layout_alignWithParentIfMissing="true">
+                                <TextView android:id="@id/rao_offer_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rao_offer_label" android:layout_alignParentRight="true" style="@style/hotel_details_rao_label" />
+                                <TextView android:textSize="14.0dip" android:textColor="@color/grey_light" android:id="@id/rao_discount_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:layout_toLeftOf="@id/rao_offer_label" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/last_minute_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/g_bucks_container" android:layout_alignWithParentIfMissing="true">
+                                <TextView android:textSize="14.0dip" android:textColor="@color/orange50" android:id="@id/mobile_only_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mobile" android:layout_alignParentRight="true" />
+                                <TextView android:textSize="14.0dip" android:textColor="@color/grey_light" android:id="@id/discount_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:layout_toLeftOf="@id/mobile_only_label" />
+                            </RelativeLayout>
+                            <RelativeLayout android:gravity="bottom" android:id="@id/g_bucks_container" android:paddingBottom="3.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                                <TextView android:textSize="14.0dip" android:textColor="@color/grey60" android:id="@id/g_bucks_back_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/g_bucks_credit" android:layout_alignParentRight="true" />
+                                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/green_new" android:gravity="center_vertical" android:id="@id/g_bucks_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/g_bucks_icon_small" android:drawablePadding="5.0dip" android:layout_below="@id/g_bucks_back_label" android:layout_alignParentRight="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/details_main_container" android:background="@color/background_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="400.0dip">
+                    <com.groupon.view.TripAdvisorReviewSection android:orientation="vertical" android:id="@id/tripadvisor_section" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/deal_details_sections_margin_v2" />
+                    <RelativeLayout android:id="@id/select_guests" android:background="@drawable/spinner_box_selector" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <ImageView android:id="@id/guest_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/person_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/guest_icon" android:layout_centerVertical="true">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/red_stamp" android:id="@id/no_rooms_available" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_rooms_available_guests" android:layout_weight="1.0" />
+                            <TextView android:textSize="16.0dip" android:textColor="@color/grey60" android:id="@id/guests_selector_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:indeterminate="true" />
+                    <RelativeLayout android:id="@id/disabled_select_guests" android:background="@drawable/bg_disabled_grey" android:padding="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/grey60" android:id="@id/disabled_guests_selector_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/iconuser" android:drawablePadding="15.0dip" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/booking_date_container" android:background="@drawable/bg_disabled_grey" android:padding="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="-1.0px">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/grey60" android:id="@id/booking_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/iconmoon" android:drawablePadding="15.0dip" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/room_inline" android:background="@drawable/detail_screen_box" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/black" android:id="@id/room_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" />
+                        <TextView android:id="@id/room_description" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/about_container" android:background="@drawable/detail_screen_box" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/black" android:id="@id/about_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_merchant_format" />
+                        <com.groupon.view.NonLeakingWebView android:id="@id/about_webview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/amenities_container" android:background="@drawable/detail_screen_box" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/amenities_title" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/grey55" android:id="@id/amenities_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                    </LinearLayout>
+                    <com.groupon.view.MapSliceRedesign android:id="@id/map_slice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/fine_print_container" android:background="@drawable/detail_screen_box" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fine_print_b" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/grey_medium" android:id="@id/room_rate_disclaimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/grey_medium" android:id="@id/bucks_disclaimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.groupon.view.ObservableScrollView>
+        <include android:id="@id/bottom_bar" android:visibility="gone" layout="@layout/hotel_detail_bottom_bar" />
+    </RelativeLayout>
+</FrameLayout>

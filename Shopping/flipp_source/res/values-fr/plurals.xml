@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="coupon_search_results">
+        <item quantity="other">&lt;g example="3" id="number_of_coupons">%d&lt;/g> coupons</item>
+        <item quantity="one">&lt;g example="1" id="one_coupon">%d&lt;/g> coupon</item>
+    </plurals>
+    <plurals name="item_details_match_coupon">
+        <item quantity="other">&lt;g example="3" id="number_of_matched_coupons">%d&lt;/g> coupons correspondent à cet article</item>
+        <item quantity="one">&lt;g example="1" id="one_coupon">%d&lt;/g> coupon correspond à cet article</item>
+    </plurals>
+    <plurals name="items_on_sale">
+        <item quantity="other">&lt;g example="3" id="num_items">%d&lt;/g> articles en solde</item>
+        <item quantity="one">&lt;g example="1" id="one_item">%d&lt;/g> article en solde</item>
+    </plurals>
+    <plurals name="items_over_percent_off">
+        <item quantity="other">&lt;g example="3" id="num_items">%1$d&lt;/g> articles à plus de &lt;g example="10%1$" id="percent_off">%2$d%%&lt;/g> de rabais</item>
+        <item quantity="one">&lt;g example="1" id="one_item">%1$d&lt;/g> article de plus de &lt;g example="10%1$" id="percent_off">%2$d%%&lt;/g> de rabais</item>
+    </plurals>
+    <plurals name="menu_print_coupons">
+        <item quantity="other">Imprimer &lt;g example="3" id="number_of_coupons">%d&lt;/g> coupons</item>
+        <item quantity="one">Imprimer &lt;g example="1" id="one_coupon">%d&lt;/g> coupon</item>
+    </plurals>
+    <plurals name="months_left">
+        <item quantity="other">&lt;g example="3" id="number_of_months">%d&lt;/g> mois restants</item>
+        <item quantity="one">&lt;g example="1" id="one_month">%d&lt;/g> mois restant</item>
+    </plurals>
+    <plurals name="num_clippings">
+        <item quantity="other">&lt;g example="3" id="number_of_clippings">%d&lt;/g> Coupures</item>
+        <item quantity="one">&lt;g example="1" id="one_clipping">%d&lt;/g> Coupure</item>
+    </plurals>
+    <plurals name="num_sales">
+        <item quantity="other">&lt;g example="3" id="number_of_sales">%d&lt;/g> soldes</item>
+        <item quantity="one">&lt;g example="1" id="one_sale">%d&lt;/g> solde</item>
+    </plurals>
+    <plurals name="search_results">
+        <item quantity="other">&lt;g example="3" id="number_of_results">%d&lt;/g> résultats</item>
+        <item quantity="one">&lt;g example="1" id="one_result">%d&lt;/g> résultat</item>
+    </plurals>
+    <plurals name="send_coupons_success_toast">
+        <item quantity="other">&lt;g example="3" id="number_of_coupons">%d&lt;/g>" coupons ont été envoyés.
+Veuillez aussi consulter votre dossier spam ou courrier indésirable."</item>
+        <item quantity="one">&lt;g example="1" id="one_coupon">%d&lt;/g>" coupon a été envoyé.
+Veuillez aussi consulter votre dossier spam ou courrier indésirable."</item>
+    </plurals>
+    <plurals name="weeks_left">
+        <item quantity="other">&lt;g example="3" id="number_of_weeks">%d&lt;/g> semaines restantes</item>
+        <item quantity="one">&lt;g example="1" id="one_week">%d&lt;/g> semaine restante</item>
+    </plurals>
+    <plurals name="years_left">
+        <item quantity="other">&lt;g example="3" id="number_of_years">%d&lt;/g> années restantes</item>
+        <item quantity="one">&lt;g exmaple="1" id="one_year">%d&lt;/g> année restante</item>
+    </plurals>
+</resources>

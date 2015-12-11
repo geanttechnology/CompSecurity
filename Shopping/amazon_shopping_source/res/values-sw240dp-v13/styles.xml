@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AVOD.Playback.UserControls.Xray" parent="@style/AVOD.Playback.UserControls">
+        <item name="android:layout_above">@id/ContainerPlayerControls</item>
+    </style>
+    <style name="AVOD.Widget.VideoSeekBar" parent="@style/AVOD.Widget">
+        <item name="android:paddingLeft">@dimen/avod_spacing_medium</item>
+        <item name="android:paddingRight">@dimen/avod_spacing_medium</item>
+        <item name="android:maxHeight">4.0dip</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress</item>
+        <item name="android:minHeight">4.0dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_amzn_ads</item>
+        <item name="adpod_height">@dimen/avod_spacing_xxsmall</item>
+        <item name="adpod_width">@dimen/avod_spacing_micro</item>
+        <item name="adpod_vertical_adjustment">@dimen/avod_spacing_micro</item>
+    </style>
+    <style name="AVOD.Playback.UserControls.Icons" parent="@style/AVOD.Playback.UserControls">
+        <item name="android:layout_marginLeft">@dimen/avod_spacing_small</item>
+    </style>
+    <style name="AVOD.Playback.UserControls.Titles" parent="@style/AVOD.Playback.UserControls">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Regular</item>
+    </style>
+</resources>

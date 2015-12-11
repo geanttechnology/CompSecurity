@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/payment_compact_view" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_generic_view_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/payment_compact_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payment_default" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/cd_payment_edit_image" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_large" android:layout_toLeftOf="@id/payment_compact_img_edit" android:layout_toRightOf="@id/payment_compact_img" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/payment_compact_card_details" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetTextView android:id="@id/payment_compact_card_last_digits_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.CheckoutTextView" />
+            <com.target.ui.view.TargetTextView android:id="@id/payment_compact_billing_address_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Target.TextView.DeliverySecondaryText" />
+        </LinearLayout>
+        <com.target.ui.view.TargetTextView android:id="@id/payment_compact_select_payment_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_select_payment" app:fontStyle="light" style="@style/Target.TextView.CheckoutTextView" />
+    </FrameLayout>
+    <ImageView android:id="@id/payment_compact_img_edit" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_small" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/cd_shipping_edit_image" style="@style/GrayButtonSelectorCompat" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/oneclick_settings_toggle_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/oneclick_settings_ordering_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/one_click_settings_ordering_title" style="@style/Header" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/oneclick_settings_whole_row" android:background="@color/common_selector" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:textColor="@color/gray_dark_text" android:layout_gravity="left|center" android:id="@id/oneclick_settings_mobile_oneclick_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/one_click_settings_mobile_one_click_title" android:layout_weight="1.0" />
+            <com.amazon.mShop.ui.AmazonSwitchWidget android:layout_gravity="right|center" android:id="@id/oneclick_settings_toggle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/AmazonCustomizedSwitch" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/one_click_settings_sub_text_size" android:textColor="@color/gray_text" android:id="@id/digital_oneclick_explanation" android:text="@string/one_click_settings_digital_one_click_explanation" style="@style/CommonSelector" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+    <Button android:id="@id/oneclick_settings_about_button" android:text="@string/one_click_settings_about_title" style="@style/ArrowSelector.Link" />
+    <View style="@style/Separator" />
+    <TextView android:id="@id/oneclick_settings_device_name_title" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/one_click_settings_device_name_title" style="@style/Header" />
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/oneclick_settings_device_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" />
+    </LinearLayout>
+    <View style="@style/Separator" />
+    <TextView android:id="@id/oneclick_settings_shipping_and_payments_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/one_click_settings_shipping_and_payments_title" style="@style/Header" />
+    <TextView android:textColor="@color/gray_dark_text" android:id="@id/oneclick_settings_shipping_and_payments_data" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ArrowSelector" />
+    <View style="@style/Separator" />
+    <Button android:id="@id/continue_button" android:visibility="gone" android:layout_marginTop="@dimen/padding_double" android:layout_marginBottom="@dimen/padding_double" android:text="@string/one_click_settings_continue_button" style="@style/AUIButton.Gold.Fullscreen" />
+</LinearLayout>

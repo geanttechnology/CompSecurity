@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.wishabi.flipp">
+    <item android:state_selected="true">
+        <inset android:insetLeft="3.0dip" android:insetRight="3.0dip" android:insetTop="3.0dip" android:insetBottom="3.0dip">
+            <shape android:shape="rectangle">
+                <corners android:radius="2.0dip" />
+                <solid android:color="@color/white" />
+                <stroke android:width="2.0dip" android:color="@color/couponItemBorderOnSelected" />
+            </shape>
+        </inset>
+    </item>
+    <item app:state_clipped="true">
+        <inset android:insetLeft="3.0dip" android:insetRight="3.0dip" android:insetTop="3.0dip" android:insetBottom="3.0dip">
+            <shape android:shape="rectangle">
+                <corners android:radius="2.0dip" />
+                <solid android:color="@color/white" />
+                <stroke android:width="2.0dip" android:color="@color/couponItemBorderOnClipped" />
+            </shape>
+        </inset>
+    </item>
+    <item>
+        <inset android:insetLeft="3.0dip" android:insetRight="3.0dip" android:insetTop="3.0dip" android:insetBottom="3.0dip">
+            <shape android:shape="rectangle">
+                <corners android:radius="2.0dip" />
+                <solid android:color="@color/white" />
+                <stroke android:width="2.0dip" android:color="@color/couponItemBorderOff" android:dashWidth="6.0dip" android:dashGap="4.0dip" />
+            </shape>
+        </inset>
+    </item>
+</selector>

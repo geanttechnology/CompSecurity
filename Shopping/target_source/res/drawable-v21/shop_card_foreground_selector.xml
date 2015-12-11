@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/shop_card_foreground_selector_inset_left" android:top="@dimen/shop_card_foreground_selector_inset_top" android:right="@dimen/shop_card_foreground_selector_inset_right" android:bottom="@dimen/shop_card_foreground_selector_inset_bottom">
+        <ripple android:color="@color/black_at_25_percent_opacity">
+            <item android:id="@android:id/stateUnspecified">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/shop_card_corner_radius" />
+                    <solid android:color="@android:color/black" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/snap_intro_page" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/snap_intro_1_img" android:layout_width="fill_parent" android:layout_height="120.0dip" />
+    <TextView android:textSize="15.0dip" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/snap_intro_1_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" />
+</LinearLayout>

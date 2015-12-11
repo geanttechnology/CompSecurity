@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/store_pickup_root_view" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/cart_dialog_title_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetRadioButton android:theme="@style/AppTheme.GreenAccent" android:id="@id/wallet_item_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/Target.RadioButton" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:layout_toLeftOf="@id/wallet_item_info" android:layout_toRightOf="@id/wallet_item_choice" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:id="@id/wallet_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.StoreName" />
+        <com.target.ui.view.TargetTextView android:id="@id/wallet_item_sub_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.StoreDescription" />
+    </LinearLayout>
+    <ImageButton android:id="@id/wallet_item_info" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/StoreInfoImage.Selectable" />
+</RelativeLayout>

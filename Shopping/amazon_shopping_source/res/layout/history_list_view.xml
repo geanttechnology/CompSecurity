@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/history_list_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/items_list" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/white" android:choiceMode="singleChoice" android:layout_above="@id/bottom_tool_bar" />
+        <include layout="@layout/bottom_toolbar" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/history_empty_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/history_empty_message" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_double" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/history_empty_message" />
+        <Button android:id="@id/shop_by_department_link" android:text="@string/shop_by_department_text" style="@style/AUIButton.Silver.Fullscreen" />
+        <Button android:id="@id/history_search_link" android:layout_marginTop="@dimen/padding_double" android:text="@string/history_search_link" style="@style/AUIButton.Silver.Fullscreen" />
+    </LinearLayout>
+</LinearLayout>

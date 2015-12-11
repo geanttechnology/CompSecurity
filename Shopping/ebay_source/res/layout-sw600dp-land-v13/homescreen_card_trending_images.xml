@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/trend_topic_image0" android:layout_width="@dimen/homescreen_trend_image_size" android:layout_height="@dimen/homescreen_trend_image_size" android:scaleType="fitCenter" app:urlRewriter="zoom_gallery" app:averageBackgroundColor="true" />
+    <com.ebay.android.widget.RemoteImageView android:id="@id/trend_topic_image1" android:layout_width="@dimen/homescreen_trend_image_size" android:layout_height="@dimen/homescreen_trend_image_size" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:scaleType="fitCenter" app:urlRewriter="zoom_gallery" app:averageBackgroundColor="true" />
+    <com.ebay.android.widget.RemoteImageView android:id="@id/trend_topic_image2" android:layout_width="@dimen/homescreen_trend_image_size" android:layout_height="@dimen/homescreen_trend_image_size" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:scaleType="fitCenter" app:urlRewriter="zoom_gallery" app:averageBackgroundColor="true" />
+</LinearLayout>

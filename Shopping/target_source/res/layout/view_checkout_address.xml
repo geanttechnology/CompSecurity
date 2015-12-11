@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/address_line_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewId="@id/address_line">
+        <com.target.ui.view.TargetEditText android:id="@id/address_line" android:nextFocusDown="@id/address_apartment" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_shipping_address_hint" android:inputType="textPostalAddress|textCapWords" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/address_apartment_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" app:viewId="@id/address_apartment">
+            <com.target.ui.view.TargetEditText android:id="@id/address_apartment" android:nextFocusDown="@id/address_zip_code" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_shipping_apartment_hint" android:inputType="textPostalAddress|textCapWords" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+        </com.target.ui.view.CustomErrorViewWrapper>
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/address_zip_code_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:layout_weight="0.4" app:viewId="@id/address_zip_code">
+            <com.target.ui.view.TargetEditText android:id="@id/address_zip_code" android:nextFocusDown="@id/address_city" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_shipping_zip_code_hint" android:maxLength="@integer/zip_code_max_length" android:inputType="phone" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+        </com.target.ui.view.CustomErrorViewWrapper>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/address_city_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" app:viewId="@id/address_city">
+            <com.target.ui.view.TargetEditText android:id="@id/address_city" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_shipping_city_hint" android:inputType="textPostalAddress|textCapWords" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+        </com.target.ui.view.CustomErrorViewWrapper>
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/address_state_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:layout_weight="0.4" app:viewId="@id/address_state_view">
+            <FrameLayout android:id="@id/address_state_view" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height">
+                <Spinner android:gravity="top" android:id="@id/address_state_spinner" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_state_spinner_height" android:spinnerMode="dropdown" />
+            </FrameLayout>
+        </com.target.ui.view.CustomErrorViewWrapper>
+    </LinearLayout>
+</merge>

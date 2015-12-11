@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/nav_header_login" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/main_black_text" android:gravity="center" android:id="@id/nav_drawer_login" android:background="@drawable/nav_drawer_header_selector" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nav_drawer_login_signup" />
+    <View android:layout_gravity="bottom" android:background="@color/offerup_nav_drawer_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

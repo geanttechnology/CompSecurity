@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.groupon.view.ObservableScrollView android:id="@id/scroll_view" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/freebie_bottom_bar_container" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <include layout="@layout/coupon_details_section_header" />
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/coupon_details_section_about" />
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/coupon_details_section_instructions" />
+                <com.groupon.view.CouponMapSlice android:id="@id/coupon_map_slice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" />
+                <include android:id="@id/freebie_more_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" layout="@layout/coupon_details_section_more" />
+            </LinearLayout>
+        </com.groupon.view.ObservableScrollView>
+        <FrameLayout android:id="@id/freebie_bottom_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <include android:id="@id/bottom_bar_single" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/coupon_details_bottom_bar" />
+            <include android:id="@id/bottom_bar_dual" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/coupon_details_bottom_bar_dual" />
+        </FrameLayout>
+    </RelativeLayout>
+    <include layout="@layout/toolbar_with_title_text" />
+</FrameLayout>

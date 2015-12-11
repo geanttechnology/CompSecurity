@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/headerIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_repost_gray_small" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:id="@id/headerTitleView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="Sample text" custom:fontName="fonts/ProximaNova_Sbold.ttf" custom:linkColor="@color/bgColorLightBurgundy" />
+    </LinearLayout>
+    <View android:background="@color/borderColorLightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.poshmark.ui.customviews.PMAvataarImageView android:id="@id/avataarView" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_user_default" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:id="@id/usernameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="Username" custom:linkColor="@color/bgColorLightBurgundy" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="10.0sp" android:textColor="@color/textColorGray" android:id="@id/attributionView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="2 days ago" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

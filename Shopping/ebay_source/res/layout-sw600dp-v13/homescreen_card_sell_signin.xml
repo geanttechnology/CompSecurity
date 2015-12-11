@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" app:cardBackgroundColor="?android:windowBackground" app:cardCornerRadius="@dimen/card_view_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_sell_card_sign_in_height" app:foreground="?android:selectableItemBackground">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/selling_card_sign_in_message" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="@dimen/homescreen_sell_card_sign_in_height" android:layout_weight="1.0">
+            <com.ebay.mobile.widget.FTextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:id="@id/homescreen_signin_register" android:paddingLeft="42.0dip" android:paddingRight="@dimen/ebayScalingPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/register" app:foreground="?android:selectableItemBackground" />
+            <include android:layout_gravity="center" android:layout_width="@dimen/card_divider_thickness" android:layout_height="@dimen/homescreen_sell_card_sign_in_separator_height" layout="@layout/homescreen_card_vertical_divider" />
+            <com.ebay.mobile.widget.FTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorTertiary" android:gravity="left|center" android:id="@id/homescreen_signin_signin" android:paddingLeft="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sign_in_tagline" app:foreground="?android:selectableItemBackground" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/flat_white_list_item_selector" android:paddingLeft="@dimen/hotel_purchase_item_left_right_padding" android:paddingTop="@dimen/hotel_purchase_item_top_bottom_padding" android:paddingRight="@dimen/hotel_purchase_item_left_right_padding" android:paddingBottom="@dimen/hotel_purchase_item_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/market_rate_purchase_details_label_text" />
+        <TextView android:id="@id/payment_icon" android:background="@drawable/cc_default_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/disclosure_indicator" android:layout_centerVertical="true" style="@style/breakdown_credit_card_icon_v3" />
+        <ImageView android:id="@id/disclosure_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:layout_marginLeft="@dimen/hotel_purchase_item_left_right_padding" android:layout_marginRight="@dimen/hotel_purchase_item_left_right_padding" style="@style/horizontal_grey_separator" />
+</LinearLayout>

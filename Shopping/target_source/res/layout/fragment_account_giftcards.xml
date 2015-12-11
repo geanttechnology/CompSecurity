@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.common.TargetErrorView android:gravity="center" android:id="@id/account_giftcard_list_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/account_giftcard_list_empty_container" android:visibility="gone" layout="@layout/view_common_empty_list_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/account_giftcard_input_container" android:background="@color/target_stark_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.checkout.GiftCardInputView android:id="@id/account_giftcard_input" android:paddingLeft="@dimen/account_giftcards_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/spacer" />
+    </LinearLayout>
+    <ListView android:id="@id/account_giftcard_list" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/target_fade_away_grey" android:dividerHeight="@dimen/account_management_list_divider_height" android:layout_above="@id/account_giftcards_footer" android:layout_below="@id/account_giftcard_input_container" android:overScrollMode="always" />
+    <com.target.ui.view.account.AccountGiftCardsFooterView android:gravity="center_horizontal" android:id="@id/account_giftcards_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

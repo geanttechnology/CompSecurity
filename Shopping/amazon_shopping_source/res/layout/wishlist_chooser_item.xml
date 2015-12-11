@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dialog_item_text_size" android:textStyle="bold" android:textColor="@color/gray_dark_text" android:ellipsize="marquee" android:id="@id/item_title" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_double" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_double" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/check_mark" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_check_buttonless_on" android:layout_weight="0.0" />
+</LinearLayout>

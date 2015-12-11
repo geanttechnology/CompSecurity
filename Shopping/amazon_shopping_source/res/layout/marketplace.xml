@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabWidget android:gravity="center_vertical" android:id="@android:id/tabs" android:background="@color/tabs_background" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <View style="@style/Separator" />
+    <TextView android:textSize="@dimen/home_footer_links_text_size" android:gravity="center" android:id="@id/mp_a_to_z_safe_buying_guarantee" android:padding="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mp_a_to_z_safe_buying_guarantee" android:layout_weight="0.0" style="@style/ClickableLink" />
+</LinearLayout>

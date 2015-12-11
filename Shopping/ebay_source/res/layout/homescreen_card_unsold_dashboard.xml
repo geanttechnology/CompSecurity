@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/selling_card_main_content_text_size" android:gravity="center" android:id="@id/noOfUnSoldItems" android:layout_width="wrap_content" android:layout_height="@dimen/card_selling_count_height" android:minWidth="@dimen/card_selling_count_width" />
+    <include layout="@layout/homescreen_card_vertical_divider" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/ebayTextSizeHeadline1" android:layout_gravity="center_vertical" android:id="@id/notYetRelistedText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" />
+    <TextView android:textSize="@dimen/ebayTextSizeBody2" android:textColor="@color/style_guide_gray" android:gravity="center_vertical" android:id="@id/allRelisted" android:paddingLeft="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/selling_card_everything_relisted" android:layout_weight="1.0" />
+</LinearLayout>

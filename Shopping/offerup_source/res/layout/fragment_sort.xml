@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left" android:id="@id/sort_by_label" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/sort_filter_sort_by" android:textAllCaps="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sort_by_label"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Spinner android:id="@id/sort_spinner" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="0.0dip" android:spinnerMode="dialog" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_gr_bk" android:id="@id/sort_view" android:background="@drawable/white_grid_selector" android:paddingLeft="25.0dip" android:paddingTop="20.0dip" android:paddingRight="35.0dip" android:paddingBottom="20.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:drawableRight="@drawable/chevron_right" />
+    </LinearLayout>
+</RelativeLayout>

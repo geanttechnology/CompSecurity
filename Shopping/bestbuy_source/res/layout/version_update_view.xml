@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/versionupdate_main" android:background="@drawable/bby_blue_box_gradient" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/info_icon" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/infoiconwhite" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/close_button" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/closeicon" android:layout_toRightOf="@id/update_text" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/update_text" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/update_text" android:padding="10.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:text="@string/newversion" android:layout_toRightOf="@id/info_icon" android:layout_toEndOf="@id/info_icon" />
+</RelativeLayout>

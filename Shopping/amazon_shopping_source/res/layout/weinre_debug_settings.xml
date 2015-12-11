@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/save_settings_and_restart_button" android:layout_margin="@dimen/padding" android:text="@string/debug_save_restart_label" style="@style/Button.Gold.Arrow" />
+    <TextView android:textColor="@color/gray_dark_text" android:id="@id/weinre_debug_explanation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weinre_debug_explanation" />
+    <View style="@style/Separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/gray_dark_text" android:id="@id/weinre_debug_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weinre_debug_status" />
+        <com.amazon.mShop.ui.AmazonSwitchWidget android:layout_gravity="center_vertical" android:id="@id/weinre_debug_checkbox" android:padding="@dimen/padding_one_and_a_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/AmazonCustomizedSwitch" />
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:textColor="@color/dark_text" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/weinre_server_host" />
+    <EditText android:id="@id/weinre_server_host_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" />
+    <TextView android:textStyle="bold" android:textColor="@color/dark_text" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/weinre_server_port" />
+    <EditText android:id="@id/weinre_server_port_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" />
+</LinearLayout>

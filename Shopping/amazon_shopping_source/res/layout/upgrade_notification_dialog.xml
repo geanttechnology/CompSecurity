@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/upgrade_dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/upgrade_dialog_layout_margin" android:layout_marginRight="@dimen/upgrade_dialog_layout_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/upgrade_dialog_title_text_size" android:textColor="@color/upgrade_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/upgrade_dialog_view_margin_left_right" android:layout_marginTop="@dimen/upgrade_dialog_view_margin_top_bottom" android:layout_marginRight="@dimen/upgrade_dialog_view_margin_left_right" android:layout_marginBottom="@dimen/upgrade_dialog_view_margin_top_bottom" android:text="@string/upgrade_available_title" />
+    <View style="@style/Separator.Dialog" />
+    <TextView android:textSize="@dimen/upgrade_dialog_message_text_size" android:textColor="@color/upgrade_dialog_text" android:id="@id/upgrade_notification_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/upgrade_dialog_view_margin_left_right" android:layout_marginTop="@dimen/upgrade_dialog_view_margin_top_bottom" android:layout_marginRight="@dimen/upgrade_dialog_view_margin_left_right" android:layout_marginBottom="@dimen/upgrade_dialog_view_margin_top_bottom" android:text="@string/upgrade_notification_dialog_message" />
+    <View style="@style/Separator.Home.Single" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/upgrade_dialog_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

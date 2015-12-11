@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?selectableItemBackgroundBase" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?selectableItemBackgroundBase" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/trend_title" layout="@layout/trend_detail_title" />
+        <include android:id="@id/trend_description" layout="@layout/trend_detail_description" />
+        <include android:id="@id/trend_listings" layout="@layout/trend_listing_cell_three" />
+    </LinearLayout>
+    <com.ebay.android.widget.RemoteImageView android:id="@id/trend_banner_image" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayPadding4x" android:scaleType="centerCrop" android:layout_weight="1.0" />
+</LinearLayout>

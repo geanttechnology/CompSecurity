@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FRelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/homescreen_card_following_profile_height" res_auto:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.mobile.widget.UserThumbnail android:id="@id/thumbnail" android:layout_width="@dimen/homescreen_card_following_iconsize" android:layout_height="@dimen/homescreen_card_following_iconsize" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_toRightOf="@id/thumbnail" android:layout_centerVertical="true">
+        <TextView android:textAppearance="@style/EbayTextAppearanceStrong" android:textStyle="bold" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textColor="@color/style_guide_gray" android:id="@id/following_profile_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+</com.ebay.mobile.widget.FRelativeLayout>

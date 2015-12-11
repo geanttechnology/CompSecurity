@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@android:id/title" android:paddingBottom="@dimen/avod_spacing_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/preference_mobile_quality_title" style="@style/Widget.AmazonVideo.Preferences.PreferenceCategory.Header" />
+    <View android:background="@color/avod_light_carbon_grey" android:layout_width="fill_parent" android:layout_height="@dimen/avod_spacing_tiny" />
+    <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" style="@style/Widget.AmazonVideo.Preferences.PreferenceList" />
+</LinearLayout>

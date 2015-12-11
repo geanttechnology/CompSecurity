@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.amazon.retailsearch.android.ui.results.views.ResultCloseSeparator android:id="@id/rs_result_close_separator" style="@style/Rs.ResultCloseSeparator.Immersive" />
+        <LinearLayout android:orientation="vertical" android:id="@id/rs_gallery_product_linear_layout" android:paddingBottom="@dimen/rs_results_immersive_section_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_xlarge" android:layout_marginRight="@dimen/gutter_xlarge" android:baselineAligned="false">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/rs_results_immersive_section_spacing" android:paddingBottom="@dimen/rs_results_immersive_section_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_small" android:layout_marginRight="@dimen/gutter_small" android:baselineAligned="false">
+                <include layout="@layout/rs_results_image_wrapper_list" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pc_4px" android:layout_weight="2.0">
+                    <TextView android:id="@id/item_title" style="@style/Results.Title.Immersive" />
+                    <com.amazon.retailsearch.android.ui.results.views.RatingsLine android:id="@id/rs_results_ratings" style="@style/Results.Ratings.Immersive" />
+                    <include layout="@layout/rs_results_price_gallery" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.amazon.retailsearch.android.ui.results.views.messaging.ProductDescription android:id="@id/rs_results_product_description" style="@style/Results.ProductDescription.Immersive" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_regular" android:layout_weight="1.0">
+                    <include layout="@layout/rs_inline_actions_immersive" />
+                    <include layout="@layout/rs_multi_store_item" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/rs_sims_layout" />
+        </LinearLayout>
+        <View android:background="@color/rs_immersive_view_divider_fill" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.retailsearch.android.ui.results.views.messaging.AvailabilityList android:id="@id/rs_results_availability" style="@style/Results.Availability.List"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/rs_results_availability_general" style="@style/Results.AvailabilityGeneral.List" />
+    <TextView android:id="@id/rs_results_availability_low_stock" style="@style/Results.AvailabilityLowStock.List" />
+</com.amazon.retailsearch.android.ui.results.views.messaging.AvailabilityList>

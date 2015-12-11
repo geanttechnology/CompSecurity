@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/shipping_title_layout" android:paddingBottom="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorSecondaryAlt" android:id="@id/spr_fragment_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/etrs_title_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutSmallMargin" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/spr_fragment_expando_layout" android:visibility="visible" style="@style/StyleGuideViewItemStatContainer.Full">
+        <com.ebay.android.widget.ContainerLayout android:orientation="horizontal" android:id="@id/expanded_layout_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/expanded_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include layout="@layout/view_item_chevron" />
+            </RelativeLayout>
+        </com.ebay.android.widget.ContainerLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ebp_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding15" android:focusable="true" android:minHeight="?android:listPreferredItemHeight" style="@style/StyleGuideViewItemStatCell">
+                    <TextView android:id="@id/ebp_key" style="@style/StyleGuideViewItemStatKey" />
+                    <TextView android:id="@id/ebp_value" style="@style/StyleGuideViewItemStatValue" />
+                </LinearLayout>
+                <include layout="@layout/view_item_chevron" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/spr_fragment_full_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorSecondaryAlt" android:id="@id/full_pickup_title" android:paddingBottom="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/spr_returns" />
+        <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/full_pickup_layout" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/ebayMargin2x" ebay:dividerColor="@android:color/transparent" style="@style/StyleGuideViewItemStatContainer" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorSecondaryAlt" android:id="@id/full_delivery_title" android:paddingBottom="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/spr_returns" />
+        <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/full_delivery_layout" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/StyleGuideViewItemStatContainer" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorSecondaryAlt" android:id="@id/full_returns_title" android:paddingBottom="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/spr_returns" />
+        <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/full_returns_layout" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/StyleGuideViewItemStatContainer" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorSecondaryAlt" android:id="@id/full_payments_title" android:paddingBottom="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/spr_payments" />
+        <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/full_payments_layout" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemStatContainer" />
+    </LinearLayout>
+</LinearLayout>

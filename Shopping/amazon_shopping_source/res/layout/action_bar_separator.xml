@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.actionBar.ActionBarSeparatorView android:orientation="vertical" android:id="@id/action_bar_separator" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/action_bar_separator_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/action_bar_separator_drawable" />
+    <TextView android:id="@id/window_title" android:visibility="visible" style="@style/PageTitle" />
+</com.amazon.mShop.actionBar.ActionBarSeparatorView>

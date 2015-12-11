@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/primary_background_color" android:paddingLeft="@dimen/entitlements_page_padding_h" android:paddingRight="@dimen/entitlements_page_padding_h" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:paddingLeft="@dimen/entitlements_updates_left_padding" android:paddingTop="@dimen/entitlements_updates_padding_v" android:paddingBottom="@dimen/entitlements_updates_padding_v" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/entitlements_primary_text_size" android:textColor="@color/primary_text_color" android:id="@id/updates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="@dimen/entitlements_primary_text_size" android:textColor="@color/primary_text_color" android:id="@id/update_all" android:background="@drawable/orange_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/entitlements_update_all_button_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/updates_list" android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/entitlements_item_divider_height" android:overScrollMode="never" />
+</LinearLayout>

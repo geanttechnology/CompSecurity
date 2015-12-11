@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?listContainerBackground" android:focusable="true" android:focusableInTouchMode="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/text_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ItemView.TextContainer.HeaderBar" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_spinner" android:layout_width="@dimen/ProgressSpinnerSize" android:layout_height="@dimen/ProgressSpinnerSize" android:layout_margin="@dimen/checkoutTinyMargin" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/feedback_type" android:background="@drawable/ic_positivefeedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:layout_marginRight="@dimen/checkoutSmallMargin" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutTinyMargin" android:layout_marginRight="@dimen/checkoutMediumMargin" android:layout_marginBottom="@dimen/checkoutTinyMargin">
+            <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/user" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:layout_gravity="left|center" android:id="@id/itemId" android:paddingTop="@dimen/checkoutMicroMargin" android:paddingBottom="@dimen/checkoutMicroMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

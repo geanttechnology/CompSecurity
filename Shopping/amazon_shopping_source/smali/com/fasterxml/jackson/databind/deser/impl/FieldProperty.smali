@@ -1,0 +1,280 @@
+.class public final Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;
+.super Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
+.source "FieldProperty.java"
+
+
+# instance fields
+.field protected final _annotated:Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;
+
+.field protected final transient _field:Ljava/lang/reflect/Field;
+
+
+# direct methods
+.method protected constructor <init>(Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;Lcom/fasterxml/jackson/databind/JsonDeserializer;)V
+    .locals 1
+    .param p1, "src"    # Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;",
+            "Lcom/fasterxml/jackson/databind/JsonDeserializer",
+            "<*>;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 48
+    .local p2, "deser":Lcom/fasterxml/jackson/databind/JsonDeserializer;, "Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;"
+    invoke-direct {p0, p1, p2}, Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;-><init>(Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;Lcom/fasterxml/jackson/databind/JsonDeserializer;)V
+
+    .line 49
+    iget-object v0, p1, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_annotated:Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;
+
+    iput-object v0, p0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_annotated:Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;
+
+    .line 50
+    iget-object v0, p1, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_field:Ljava/lang/reflect/Field;
+
+    iput-object v0, p0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_field:Ljava/lang/reflect/Field;
+
+    .line 51
+    return-void
+.end method
+
+.method protected constructor <init>(Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;Ljava/lang/String;)V
+    .locals 1
+    .param p1, "src"    # Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;
+    .param p2, "newName"    # Ljava/lang/String;
+
+    .prologue
+    .line 54
+    invoke-direct {p0, p1, p2}, Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;-><init>(Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;Ljava/lang/String;)V
+
+    .line 55
+    iget-object v0, p1, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_annotated:Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;
+
+    iput-object v0, p0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_annotated:Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;
+
+    .line 56
+    iget-object v0, p1, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_field:Ljava/lang/reflect/Field;
+
+    iput-object v0, p0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_field:Ljava/lang/reflect/Field;
+
+    .line 57
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/util/Annotations;Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;)V
+    .locals 1
+    .param p1, "propDef"    # Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;
+    .param p2, "type"    # Lcom/fasterxml/jackson/databind/JavaType;
+    .param p3, "typeDeser"    # Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;
+    .param p4, "contextAnnotations"    # Lcom/fasterxml/jackson/databind/util/Annotations;
+    .param p5, "field"    # Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;
+
+    .prologue
+    .line 42
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;-><init>(Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/util/Annotations;)V
+
+    .line 43
+    iput-object p5, p0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_annotated:Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;
+
+    .line 44
+    invoke-virtual {p5}, Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;->getAnnotated()Ljava/lang/reflect/Field;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_field:Ljava/lang/reflect/Field;
+
+    .line 45
+    return-void
+.end method
+
+
+# virtual methods
+.method public deserializeAndSet(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;)V
+    .locals 1
+    .param p1, "jp"    # Lcom/fasterxml/jackson/core/JsonParser;
+    .param p2, "ctxt"    # Lcom/fasterxml/jackson/databind/DeserializationContext;
+    .param p3, "instance"    # Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lcom/fasterxml/jackson/core/JsonProcessingException;
+        }
+    .end annotation
+
+    .prologue
+    .line 107
+    invoke-virtual {p0, p1, p2}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->deserialize(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {p0, p3, v0}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 108
+    return-void
+.end method
+
+.method public deserializeSetAndReturn(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+    .param p1, "jp"    # Lcom/fasterxml/jackson/core/JsonParser;
+    .param p2, "ctxt"    # Lcom/fasterxml/jackson/databind/DeserializationContext;
+    .param p3, "instance"    # Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lcom/fasterxml/jackson/core/JsonProcessingException;
+        }
+    .end annotation
+
+    .prologue
+    .line 115
+    invoke-virtual {p0, p1, p2}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->deserialize(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {p0, p3, v0}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->setAndReturn(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getMember()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
+    .locals 1
+
+    .prologue
+    .line 94
+    iget-object v0, p0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_annotated:Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;
+
+    return-object v0
+.end method
+
+.method public final set(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
+    .param p1, "instance"    # Ljava/lang/Object;
+    .param p2, "value"    # Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 123
+    :try_start_0
+    iget-object v1, p0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_field:Ljava/lang/reflect/Field;
+
+    invoke-virtual {v1, p1, p2}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 127
+    :goto_0
+    return-void
+
+    .line 124
+    :catch_0
+    move-exception v0
+
+    .line 125
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {p0, v0, p2}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_throwAsIOE(Ljava/lang/Exception;Ljava/lang/Object;)V
+
+    goto :goto_0
+.end method
+
+.method public setAndReturn(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+    .param p1, "instance"    # Ljava/lang/Object;
+    .param p2, "value"    # Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 134
+    :try_start_0
+    iget-object v1, p0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_field:Ljava/lang/reflect/Field;
+
+    invoke-virtual {v1, p1, p2}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 138
+    :goto_0
+    return-object p1
+
+    .line 135
+    :catch_0
+    move-exception v0
+
+    .line 136
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {p0, v0, p2}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->_throwAsIOE(Ljava/lang/Exception;Ljava/lang/Object;)V
+
+    goto :goto_0
+.end method
+
+.method public bridge synthetic withName(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
+    .locals 1
+    .param p1, "x0"    # Ljava/lang/String;
+
+    .prologue
+    .line 23
+    invoke-virtual {p0, p1}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->withName(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public withName(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;
+    .locals 1
+    .param p1, "newName"    # Ljava/lang/String;
+
+    .prologue
+    .line 75
+    new-instance v0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;
+
+    invoke-direct {v0, p0, p1}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;-><init>(Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic withValueDeserializer(Lcom/fasterxml/jackson/databind/JsonDeserializer;)Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
+    .locals 1
+    .param p1, "x0"    # Lcom/fasterxml/jackson/databind/JsonDeserializer;
+
+    .prologue
+    .line 23
+    invoke-virtual {p0, p1}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;->withValueDeserializer(Lcom/fasterxml/jackson/databind/JsonDeserializer;)Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public withValueDeserializer(Lcom/fasterxml/jackson/databind/JsonDeserializer;)Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/fasterxml/jackson/databind/JsonDeserializer",
+            "<*>;)",
+            "Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;"
+        }
+    .end annotation
+
+    .prologue
+    .line 80
+    .local p1, "deser":Lcom/fasterxml/jackson/databind/JsonDeserializer;, "Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;"
+    new-instance v0, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;
+
+    invoke-direct {v0, p0, p1}, Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;-><init>(Lcom/fasterxml/jackson/databind/deser/impl/FieldProperty;Lcom/fasterxml/jackson/databind/JsonDeserializer;)V
+
+    return-object v0
+.end method

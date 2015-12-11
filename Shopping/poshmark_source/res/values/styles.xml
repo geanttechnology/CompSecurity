@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="AppTheme.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/PMActionBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/PMActionBarTabStyle</item>
+        <item name="android:actionBarTabBarStyle">@style/PMActionBarTabBarStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/PMTabTextStyle</item>
+    </style>
+    <style name="MessengerButton">
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="MessengerButton.Blue" parent="@style/MessengerButton">
+        <item name="android:background">@drawable/messenger_button_blue_bg_selector</item>
+    </style>
+    <style name="MessengerButton.Blue.Large" parent="@style/MessengerButton.Blue">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="MessengerButton.Blue.Small" parent="@style/MessengerButton.Blue">
+        <item name="android:layout_width">158.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="MessengerButton.White" parent="@style/MessengerButton">
+        <item name="android:background">@drawable/messenger_button_white_bg_selector</item>
+    </style>
+    <style name="MessengerButton.White.Large" parent="@style/MessengerButton.White">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="MessengerButton.White.Small" parent="@style/MessengerButton.White">
+        <item name="android:layout_width">158.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="MessengerButtonText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">4.0dip</item>
+        <item name="android:borderTop">true</item>
+    </style>
+    <style name="MessengerButtonText.Blue" parent="@style/MessengerButtonText">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="MessengerButtonText.Blue.Large" parent="@style/MessengerButtonText.Blue">
+        <item name="android:drawableLeft">@drawable/messenger_bubble_large_white</item>
+    </style>
+    <style name="MessengerButtonText.Blue.Small" parent="@style/MessengerButtonText.Blue">
+        <item name="android:drawableLeft">@drawable/messenger_bubble_small_white</item>
+    </style>
+    <style name="MessengerButtonText.White" parent="@style/MessengerButtonText">
+        <item name="android:textColor">#ff0084ff</item>
+    </style>
+    <style name="MessengerButtonText.White.Large" parent="@style/MessengerButtonText.White">
+        <item name="android:drawableLeft">@drawable/messenger_bubble_large_blue</item>
+    </style>
+    <style name="MessengerButtonText.White.Small" parent="@style/MessengerButtonText.White">
+        <item name="android:drawableLeft">@drawable/messenger_bubble_small_blue</item>
+    </style>
+    <style name="PMActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:icon">@drawable/bg_actionbar_light</item>
+        <item name="android:background">@drawable/bg_actionbar_light</item>
+        <item name="android:text"></item>
+        <item name="android:titleTextStyle">@style/PMActionBarTitleTextStyle</item>
+    </style>
+    <style name="PMActionBarTabBarStyle" parent="@android:style/Animation.LockScreen">
+        <item name="android:background">@color/bgColorWhite</item>
+        <item name="android:showDividers">none</item>
+    </style>
+    <style name="PMActionBarTabStyle" parent="@android:style/Animation.StatusBar">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_actionbar_tab</item>
+        <item name="android:measureWithLargestChild">true</item>
+    </style>
+    <style name="PMActionBarTitleTextStyle" parent="@android:style/Widget.ExpandableListView.White">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+    </style>
+    <style name="PMProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="PMTabTextStyle" parent="@android:style/Animation.SubMenuPanel">
+        <item name="android:textColor">@color/textColorLightBurgundy</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="actionBarImageButtonStyle">
+        <item name="android:layout_gravity">right|center</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="actionBarListingImageButtonStyle">
+        <item name="android:layout_gravity">right|center</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="backgroundTableRowBottom" parent="@style/tableRow">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/bg_table_row_bottom</item>
+    </style>
+    <style name="backgroundTableRowMiddle" parent="@style/tableRow">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/bg_table_row_middle</item>
+    </style>
+    <style name="backgroundTableRowSingle" parent="@style/tableRow">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/bg_table_row_single</item>
+        <item name="android:layout_marginTop">30.0dip</item>
+    </style>
+    <style name="backgroundTableRowTop" parent="@style/tableRow">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/bg_table_row_top</item>
+        <item name="android:layout_marginTop">30.0dip</item>
+    </style>
+    <style name="blueActionButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_white_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_btn_curved_blue_filled</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="borderedGreyButtonWithBurgundyText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bgColorLightBurgundy</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_btn_curved_darkgrey</item>
+        <item name="android:layout_height">35.0dip</item>
+    </style>
+    <style name="borderedWhiteButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_white_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_btn_curved_white</item>
+        <item name="android:layout_height">35.0dip</item>
+    </style>
+    <style name="bottomBar">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@drawable/bg_bottombar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="buttonTableRowBottom" parent="@style/backgroundTableRowBottom">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="buttonTableRowMiddle" parent="@style/backgroundTableRowMiddle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="buttonTableRowSingle" parent="@style/backgroundTableRowSingle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="buttonTableRowTop" parent="@style/backgroundTableRowTop">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="com_facebook_button" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_facebook_button_background</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:drawablePadding">6.0dip</item>
+    </style>
+    <style name="com_facebook_button_like" parent="@style/com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_like_background</item>
+    </style>
+    <style name="com_facebook_button_send" parent="@style/com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_send_background</item>
+        <item name="android:text">@string/com_facebook_send_button_text</item>
+        <item name="android:drawableLeft">@drawable/com_facebook_button_send_icon</item>
+    </style>
+    <style name="com_facebook_button_share" parent="@style/com_facebook_button">
+        <item name="android:text">@string/com_facebook_share_button_text</item>
+        <item name="android:drawableLeft">@drawable/com_facebook_button_icon</item>
+    </style>
+    <style name="com_facebook_loginview_default_style" parent="@style/com_facebook_button">
+        <item name="android:drawableLeft">@drawable/com_facebook_button_icon</item>
+    </style>
+    <style name="com_facebook_loginview_silver_style" parent="@style/com_facebook_loginview_default_style">
+        <item name="android:textColor">#ff4b5164</item>
+        <item name="android:background">@drawable/com_facebook_button_login_silver_background</item>
+        <item name="android:drawableLeft">@null</item>
+    </style>
+    <style name="commerceBlueButton">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:background">@drawable/bg_checkout_button</item>
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="contentTableRowBottom" parent="@style/backgroundTableRowBottom">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:padding">13.0dip</item>
+        <item name="android:drawablePadding">8.0dip</item>
+    </style>
+    <style name="contentTableRowMiddle" parent="@style/backgroundTableRowMiddle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:padding">13.0dip</item>
+        <item name="android:drawablePadding">8.0dip</item>
+    </style>
+    <style name="contentTableRowSingle" parent="@style/backgroundTableRowSingle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:padding">13.0dip</item>
+        <item name="android:drawablePadding">8.0dip</item>
+    </style>
+    <style name="contentTableRowTop" parent="@style/backgroundTableRowTop">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:padding">13.0dip</item>
+        <item name="android:drawablePadding">8.0dip</item>
+    </style>
+    <style name="feedBubbleButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_feed_bubble</item>
+        <item name="android:layout_height">30.0dip</item>
+    </style>
+    <style name="followFollowingButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_white_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_btn_closet_follow</item>
+        <item name="android:layout_height">35.0dip</item>
+    </style>
+    <style name="formEditText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:textColorHint">@color/textColorLightGray</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">18.0dip</item>
+    </style>
+    <style name="formSectionLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_section_white_withshadow</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">20.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="formSectionTitle">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/textColorGray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="gridSelectorItem">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/bg_grid_selector_item</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_margin">10.0dip</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="listViewSectionHeaderLight">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/textColorDarkGray</item>
+        <item name="android:background">@drawable/bg_section_header_light</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="offersBlueButton">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/offersColorBlue</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="tableRow">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="textBottomBlackShadow">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="textBottomWhiteShadow">
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="tooltip_bubble_text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.25</item>
+    </style>
+</resources>

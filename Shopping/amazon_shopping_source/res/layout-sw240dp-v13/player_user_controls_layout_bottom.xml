@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ContainerPlayerControls" android:paddingBottom="@dimen/avod_spacing_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:atv="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/player_user_controls_layout_bottom_left" />
+    <RelativeLayout android:id="@id/ContainerTimeLine" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/avod_spacing_large" android:layout_marginRight="@dimen/avod_spacing_large" android:layout_toLeftOf="@id/ContainerNextup" android:layout_toRightOf="@id/VideoStepBack" android:layout_alignParentBottom="true">
+        <TextView android:textAppearance="@style/AVOD.TextAppearance.Light.Regular" android:textColor="@color/avod_white" android:id="@id/VideoTimeCurrent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <TextView android:textAppearance="@style/AVOD.TextAppearance.Light.Regular" android:textColor="@color/avod_white" android:id="@id/VideoTimeTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/ContainerSeekLine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/avod_spacing_xxsmall" android:layout_marginRight="@dimen/avod_spacing_xxsmall" android:layout_marginBottom="@dimen/avod_player_user_controls_ContainerSeekLine_paddingBottom" android:layout_toLeftOf="@id/ContainerNextup" android:layout_toRightOf="@id/VideoStepBack" android:layout_above="@id/ContainerTimeLine">
+        <com.amazon.avod.playbackclient.views.videocontrols.AdPodSeekBar android:id="@id/VideoSeekbar" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" atv:adpod_color="@color/avod_light_trans_grey" atv:adpod_color_viewed="@android:color/transparent" style="@style/AVOD.Widget.VideoSeekBar" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ContainerTitleLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/avod_spacing_large" android:layout_marginRight="@dimen/avod_spacing_large" android:layout_marginBottom="@dimen/avod_player_user_controls_ContainerTitleLine_paddingBottom" android:layout_toLeftOf="@id/ContainerNextup" android:layout_toRightOf="@id/VideoStepBack" android:layout_above="@id/ContainerSeekLine">
+        <include layout="@layout/player_user_controls_video_title" />
+        <include layout="@layout/player_user_controls_icons" />
+    </LinearLayout>
+    <include android:id="@id/ContainerNextup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/player_user_controls_nextup_bottom" />
+</RelativeLayout>

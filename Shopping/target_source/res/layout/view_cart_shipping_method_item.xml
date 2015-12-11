@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/cart_dialog_title_margin" android:paddingTop="@dimen/cart_default_less_padding_margin" android:paddingRight="@dimen/cart_dialog_title_margin" android:paddingBottom="@dimen/cart_default_less_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetRadioButton android:theme="@style/AppTheme.GreenAccent" android:id="@id/ship_method_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Target.RadioButton" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:minHeight="@dimen/cart_ship_mode_item_min_height">
+        <com.target.ui.view.TargetTextView android:id="@id/ship_method_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.ProductFulfillmentType" />
+        <com.target.ui.view.TargetTextView android:id="@id/ship_method_delivery_date" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.ProductFulfillmentSecondaryText" />
+    </LinearLayout>
+</LinearLayout>

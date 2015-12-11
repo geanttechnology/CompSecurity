@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/white_grid_selector" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/sort_radio_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/dark_gray_text" android:id="@id/sort_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/sort_radio_btn" android:layout_alignBottom="@id/sort_radio_btn" android:layout_alignParentLeft="true" />
+</RelativeLayout>

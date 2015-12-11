@@ -1,0 +1,9 @@
+digraph G1 {
+  concentrate = true;
+  n2 [label="@Named SharedPreferences"];
+  n2 -> Context;
+  n2 -> Obfuscator;
+  OpenGlActivityInterrogator -> n2;
+  OpenGlExtensionsRetriever -> ActivityLaunchOpenGlExtensionsRetriever;
+  RetrieveOpenGlExtensionsActivity -> n2;
+}

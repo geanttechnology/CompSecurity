@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.groupon" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <supports-screens android:smallScreens="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="com.samsung.wmanager.ENABLE_NOTIFICATION"/>
+    <permission android:name="com.groupon.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.groupon.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-permission android:name="com.groupon.SCAN_CARD"/>
+    <permission-group android:icon="@drawable/ic_launcher" android:name="com.groupon"/>
+    <permission android:description="@string/permission_description_scan_card" android:label="@string/permission_label_scan_card" android:name="com.groupon.SCAN_CARD" android:permissionGroup="com.groupon" android:protectionLevel="signature"/>
+    <android:uses-permission android:maxSdkVersion="18" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.groupon.GrouponApplication" android:theme="@style/Theme.Groupon">
+        <activity android:launchMode="singleTask" android:name="com.groupon.activity.Carousel" android:theme="@style/Theme.NoActionBar.StartupGreen">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.groupon.activity.Splash" android:theme="@style/Theme.NoActionBar.StartupGreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.groupon.com" android:pathPrefix="/redirect/" android:scheme="http"/>
+                <data android:host="www.groupon.com" android:pathPrefix="/redirect/" android:scheme="https"/>
+                <data android:host="www.groupon.com" android:pathPrefix="/dispatch/" android:scheme="http"/>
+                <data android:host="www.groupon.com" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.ae" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.com.ar" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.com.au" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.at" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.be" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.com.br" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.ch" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.de" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.dk" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.es" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.fi" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.fr" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.co.uk" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.ie" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.co.il" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.it" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.nl" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.no" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.grouponnz.co.nz" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.pl" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.pt" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.se" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.co.za" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.cl" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.com.co" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="www.groupon.com.mx" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.com" android:pathPrefix="/redirect/" android:scheme="http"/>
+                <data android:host="staging.groupon.com" android:pathPrefix="/redirect/" android:scheme="https"/>
+                <data android:host="staging.groupon.com" android:pathPrefix="/dispatch/" android:scheme="http"/>
+                <data android:host="staging.groupon.com" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.ae" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.com.ar" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.com.au" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.at" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.be" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.com.br" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.ch" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.de" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.dk" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.es" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.fi" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.fr" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.co.uk" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.ie" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.co.il" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.it" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.nl" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.no" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.grouponnz.co.nz" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.pl" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.pt" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.se" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.co.za" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.cl" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.com.co" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="staging.groupon.com.mx" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.com" android:pathPrefix="/redirect/" android:scheme="http"/>
+                <data android:host="uat.groupon.com" android:pathPrefix="/redirect/" android:scheme="https"/>
+                <data android:host="uat.groupon.com" android:pathPrefix="/dispatch/" android:scheme="http"/>
+                <data android:host="uat.groupon.com" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.ae" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.com.ar" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.com.au" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.at" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.be" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.com.br" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.ch" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.de" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.dk" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.es" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.fi" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.fr" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.co.uk" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.ie" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.co.il" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.it" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.nl" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.no" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.grouponnz.co.nz" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.pl" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.pt" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.se" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.co.za" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.cl" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.com.co" android:pathPrefix="/dispatch/" android:scheme="https"/>
+                <data android:host="uat.groupon.com.mx" android:pathPrefix="/dispatch/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="groupon"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.groupon.activity.TodaysDeal" android:targetActivity="com.groupon.activity.Carousel">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.groupon.activity.RedeemWebview" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.PaypalPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.DotPayPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.IPay88Purchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.OneClickPaymentPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.RedcompraPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.WebPayPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.AlipayPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.VisaPePurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.MastercardPePurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.PsePurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.IdealPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.MaestroPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.JPAUEasyPayPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.ExternalPurchase" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.SecretAdminSettings" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.DealDetails" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.NoActionBar.Transparent"/>
+        <activity android:name="com.groupon.activity.GoodsMultiOption" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.MyGroupons" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.GrouponLocationSelection" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.GrouponSSO" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.Support" android:theme="@style/Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:path="/support" android:scheme="groupon"/>
+                <data android:host="*" android:path="/support" android:scheme="internal"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.groupon.activity.SimpleMarkUpActivity" android:theme="@style/Theme.ActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:pathPrefix="/terms" android:scheme="internal"/>
+                <data android:host="*" android:pathPrefix="/tos" android:scheme="internal"/>
+                <data android:host="*" android:pathPrefix="/privacy" android:scheme="internal"/>
+                <data android:host="*" android:pathPrefix="/privacypolicy" android:scheme="internal"/>
+                <data android:host="*" android:pathPrefix="/cookiepolicy" android:scheme="internal"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.groupon.activity.FinePrint" android:theme="@style/Theme.ActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:pathPrefix="/fineprint" android:scheme="internal"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/categories" android:name="com.groupon.activity.GoodsCategories" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/city_selector_title" android:name="com.groupon.activity.Cities" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.GrouponWebView" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:label="@string/country_selector_title" android:name="com.groupon.activity.Countries" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.EditMaestro" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.EditElv" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.EditSepa" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.EditIsracard" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.EditCreditCard" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.EditCreditCardEu" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.EditCreditCardJapan" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.Gifting" android:theme="@style/Theme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.Groupon" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.CancelOrder" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.Login" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.Settings" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.MyCreditCards" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.Purchase" android:parentActivityName="com.groupon.activity.DealDetails" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.PurchaseEu" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.ConfirmCreditCard" android:theme="@style/Theme.NoActionBar.Transparent" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.groupon.activity.ShippingAddress" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.ShippingAddressEu" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.ShippingAddressLATAM" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.ShowOnMap" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.Thanks" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.GiftCodes" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.groupon.activity.DealImageCarousel" android:theme="@style/Theme.ActionBar.ActionBarOverlay"/>
+        <activity android:name="com.groupon.activity.CouponDetailsDealImageCarousel" android:theme="@style/Theme.ActionBar.ActionBarOverlay"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.MobileScheduler" android:theme="@style/Theme.ActionBar"/>
+        <activity android:excludeFromRecents="true" android:name="com.groupon.activity.OnboardingMultiStep" android:theme="@style/Theme.NoActionBar.SplashGreen" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.groupon.activity.BookingDealCalendarActivity" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.HotelSearchCalendarActivity" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.TravelerNameActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.groupon.activity.GlobalSearch" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.groupon.activity.GlobalSearchResult" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.getaways.search.GetawaysSearchResultsActivity" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.StockCategories" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.LogViewer" android:theme="@style/Theme.ActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:pathPrefix="/logviewer" android:scheme="internal"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.groupon.activity.PreconfiguredAbTests" android:theme="@style/Theme.ActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.groupon.activity.DeliveryAddresses" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.Secure3DPurchase" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.QaDiscussionsActivity" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.QaDiscussionsNativeActivity" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.GrouponBookNowActivity" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.IncentiveTickets" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.HotelDetails" android:theme="@style/Theme.NoActionBar.Transparent"/>
+        <activity android:name="com.groupon.activity.SelectRoom" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.MarketRatePurchase" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.MarketRateThanks" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.MarketRateReservation" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.GrouponBucks" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.MultiOptionActivity" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.DealSubsetActivity" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.BusinessDetailPage" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.BusinessSpecialPage" android:parentActivityName="com.groupon.activity.BusinessDetailPage" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.BusinessTipsPage" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.CustomerService" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.EditOrder" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.AboutGroupon" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.OktaAuthentication" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.GrouponInventoryWebApp" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.SnapOfferGridActivity" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.SnapGroceryDetails" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.GiftingThemeSelection" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.Redeem" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.FavoriteDealTypes" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.EmailSubscriptions" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:name="com.jumio.netswipe.sdk.core.ScanCardActivity" android:permission="com.groupon.SCAN_CARD" android:theme="@style/Theme.PreLollipop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.groupon.activity.BugReport" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.CouponDetails" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.CouponSearch" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.CouponInstoreOnlinePage" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.activity.CouponCategoriesActivity" android:theme="@style/Theme.ActionBar"/>
+        <activity android:name="com.groupon.activity.PoGSearch" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.PoGWebview" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.PogWebview"/>
+        <activity android:launchMode="singleTop" android:name="com.groupon.activity.LiveChatActivity" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.ThirdPartyLinkoutDealWebViewActivity" android:theme="@style/Theme.LinkoutDealWebview"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.activity.GeneralThirdPartyDealWebViewActivity" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.groupon.goods.shoppingcart.CartSummaryActivity" android:parentActivityName="com.groupon.activity.Carousel" android:theme="@style/Theme.ActionBar"/>
+        <activity android:configChanges="orientation" android:name="com.groupon.goods.shoppingcart.NewPurchaseCart" android:theme="@style/Theme.ActionBar"/>
+        <service android:name="com.groupon.service.PullNotificationService"/>
+        <service android:name="com.groupon.service.DealIntentService"/>
+        <service android:name="com.groupon.service.WidgetDealIntentService"/>
+        <service android:name="com.groupon.service.PurgeItemsService"/>
+        <service android:name="com.groupon.service.LocalizedMobileAppService"/>
+        <service android:name="com.groupon.service.GCMNotificationService"/>
+        <service android:name="com.groupon.service.DailySyncService"/>
+        <service android:name="com.groupon.service.upgrade.UpgradeService"/>
+        <service android:name="com.groupon.service.ProximityNotificationService"/>
+        <service android:exported="false" android:name="com.groupon.google_api.ActivityRecognitionIntentService"/>
+        <service android:exported="false" android:name="com.groupon.service.GoogleNowAuthCodeService"/>
+        <service android:exported="false" android:name="com.groupon.service.WidgetRemoteViewsService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:exported="false" android:name="com.groupon.google_api.GeofenceTransitionService"/>
+        <receiver android:exported="false" android:name="com.groupon.google_api.GeofenceTransitionWakefulBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.groupon.ACTION_RECEIVE_GEOFENCE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.groupon.recent.locations.authority" android:exported="false" android:name="com.groupon.provider.RecentLocationSearchProvider"/>
+        <receiver android:name="com.groupon.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.groupon.receiver.GoogleNowAuthWakefulBroadcastReceiver"/>
+        <receiver android:name="com.groupon.tracking.mobile.internal.LogClientReceiver"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.wallet.EnableWalletOptimizationReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wallet.ENABLE_WALLET_OPTIMIZATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.groupon.tracking.mobile.internal.LogClientService"/>
+        <receiver android:name="com.groupon.receiver.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.groupon"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.groupon.receiver.NotificationOpenedReceiver">
+            <intent-filter>
+                <action android:name="com.groupon.PUSH_NOTIFICATION_OPENED"/>
+                <action android:name="com.groupon.NOTIFICATION_OPENED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.groupon.receiver.ForwardBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+            <meta-data android:name="forward.1" android:value="com.groupon.receiver.InstallTracker"/>
+            <meta-data android:name="forward.2" android:value="com.kochava.android.tracker.ReferralCapture"/>
+        </receiver>
+        <receiver android:name="com.groupon.receiver.DealWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/deal_widget_provider"/>
+        </receiver>
+        <service android:name="com.littlefluffytoys.littlefluffylocationlibrary.LocationBroadcastService"/>
+        <receiver android:exported="true" android:name="com.littlefluffytoys.littlefluffylocationlibrary.StartupBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.littlefluffytoys.littlefluffylocationlibrary.PassiveLocationChangedReceiver"/>
+        <receiver android:name="com.groupon.receiver.LocationChangedReceiver">
+            <intent-filter>
+                <action android:name="com.groupon.littlefluffylocationlibrary.LOCATION_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.groupon.receiver.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.groupon.receiver.NonGrouponUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.groupon.receiver.DailySyncReceiver"/>
+        <receiver android:exported="false" android:name="com.groupon.receiver.PullNotificationReceiver"/>
+        <receiver android:name="com.groupon.receiver.InstallAlarms">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/mapv2_key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="roboguice.annotations.packages" android:value="roboguice,com.groupon,com.groupon.tracking"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity"/>
+        <service android:name="com.groupon.sso.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <receiver android:name="com.groupon.sso.UninstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

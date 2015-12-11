@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FRelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" res_auto:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/rvi_image" android:visibility="invisible" android:layout_width="@dimen/homescreen_card_rvi_imagesize" android:layout_height="@dimen/homescreen_card_rvi_imagesize" android:scaleType="fitCenter" res_auto:urlRewriter="zoom_gallery" res_auto:averageBackgroundColor="true" />
+    <View android:id="@id/rvi_image_placeholder" android:background="@color/homescreen_card_empty_background" android:layout_width="@dimen/homescreen_card_rvi_imagesize" android:layout_height="@dimen/homescreen_card_rvi_imagesize" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="@dimen/homescreen_card_rvi_imagesize" android:layout_height="@dimen/homescreen_card_rvi_text_height" android:layout_below="@id/rvi_image">
+        <Space android:id="@id/rvi_dummy" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/style_guide_gray" android:id="@id/rvi_eek_rating" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <TextView android:ellipsize="end" android:id="@id/rvi_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_above="@id/rvi_dummy" android:layout_below="@id/rvi_eek_rating" />
+        <TextView android:textStyle="bold" android:id="@id/rvi_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/rvi_dummy" style="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+</com.ebay.mobile.widget.FRelativeLayout>

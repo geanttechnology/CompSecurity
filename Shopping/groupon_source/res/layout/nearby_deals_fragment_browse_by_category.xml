@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey85" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:groupon="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/scrollable_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/nearby_deals_browse_by_category_map_header" />
+        <FrameLayout android:id="@id/deal_map_section" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.groupon.view.SpinnerButton android:layout_gravity="right" android:id="@id/nearby_map_progress" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="14.0dip" android:drawableRight="@drawable/spinner_map_refresh" groupon:useCompoundDrawable="true" />
+        </FrameLayout>
+        <com.groupon.view.GrouponSwipeRefreshLayout android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/empty" layout="@layout/nearby_deals_empty" />
+                <com.groupon.util.ScrollEventListView android:id="@android:id/list" android:background="@color/background_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/listview_item_selector_state" android:drawSelectorOnTop="true" style="@style/pull_to_refresh" />
+            </FrameLayout>
+        </com.groupon.view.GrouponSwipeRefreshLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/map_controls" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.groupon.view.SpinnerButton android:id="@id/reload_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/redo_search" groupon:useCompoundDrawable="true" style="@style/nearby_redo_search" />
+    </FrameLayout>
+</RelativeLayout>

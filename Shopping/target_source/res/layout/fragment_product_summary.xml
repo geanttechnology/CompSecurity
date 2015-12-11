@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/prd_plp_progress_container" android:background="@android:color/white" layout="@layout/view_progress_container" />
+    <com.target.ui.view.common.TargetErrorView android:id="@id/prd_plp_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin" android:minHeight="@dimen/prd_plp_error_screen_min_height" android:layout_centerVertical="true" />
+    <com.target.ui.view.BitmapImageView android:id="@id/prd_plp_banner_image_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentTop="true" />
+    <FrameLayout android:id="@id/prd_plp_content_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/prd_plp_banner_image_view">
+        <android.support.v7.widget.RecyclerView android:id="@id/prd_plp_list_recycler_view" android:padding="@dimen/no_padding" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.support.v7.widget.RecyclerView android:id="@id/prd_plp_grid_recycler_view" android:paddingLeft="@dimen/prd_plp_gird_layout_padding" android:paddingTop="@dimen/no_padding" android:paddingRight="@dimen/prd_plp_gird_layout_padding" android:paddingBottom="@dimen/prd_plp_gird_layout_padding" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.target.ui.view.product.PlpRefineHeaderView android:id="@id/refine_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.target.ui.view.TargetFloatingActionButton android:id="@id/prd_plp_floating_refine_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/target_floating_action_button_margin" android:src="@drawable/icon_filter" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.target.ui.view.ConfigurableDropShadowView android:id="@id/mock_action_bar_drop_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_actionbar_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <ImageView android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/img_bundle_covershot_graphic" />
+        <com.poshmark.ui.customviews.PMListingImageView android:id="@id/bundleListingImageView" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="15.0sp" android:textColor="@color/textColorWhite" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/bundleItemsCountIndicator" android:background="@drawable/img_bundle_count_bg" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bundleInfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <com.poshmark.ui.customviews.PMTextView android:textSize="15.0sp" android:textColor="@color/textColorBlack" android:ellipsize="end" android:id="@id/bundleTitleView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textColorBlack" android:ellipsize="end" android:id="@id/bundlePriceView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:singleLine="true" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="15.0sp" android:textColor="@color/textColorDarkGray" android:id="@id/bundleItemsCountView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="15.0sp" android:textColor="@color/textColorDarkGray" android:id="@id/bundleSellerNameView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

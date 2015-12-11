@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/deal_details_incentive_top_separator" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/vertical_option_cards_margin_top" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/details_item_no_vertical_padding">
+        <TextView android:ellipsize="end" android:id="@id/incentive_title" android:paddingTop="@dimen/deal_details_component_padding_v3" android:paddingBottom="@dimen/deal_details_component_padding_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/incentive_enter_code" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/deal_details_incentive_message" />
+        <TextView android:id="@id/incentive_enter_code" android:paddingLeft="@dimen/deal_details_component_padding_v3" android:paddingTop="@dimen/deal_details_component_padding_v3" android:paddingBottom="@dimen/deal_details_component_padding_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/deal_details_incentive_enter_code" />
+    </RelativeLayout>
+</LinearLayout>

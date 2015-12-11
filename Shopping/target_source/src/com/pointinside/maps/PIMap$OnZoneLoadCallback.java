@@ -1,0 +1,17 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.pointinside.maps;
+
+
+// Referenced classes of package com.pointinside.maps:
+//            PIMap
+
+public static interface 
+{
+
+    public abstract void postZoneLoad(String s, int i, int j);
+
+    public abstract void preZoneLoad(String s, int i, int j);
+}

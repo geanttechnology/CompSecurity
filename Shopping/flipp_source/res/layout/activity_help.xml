@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/help_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.wishabi.flipp.widget.ViewPagerIndicator android:id="@id/view_pager_indicator" android:layout_width="200.0dip" android:layout_height="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:unselectedColor="@color/viewPageIndicator" app:selectedColor="@color/viewPageIndicatorSelected" app:strokeWidth="5.0dip" app:indicatorGap="3.0dip" />
+    <Button android:textColor="@color/help_cancel_button" android:id="@id/cancel_part" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@android:string/cancel" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

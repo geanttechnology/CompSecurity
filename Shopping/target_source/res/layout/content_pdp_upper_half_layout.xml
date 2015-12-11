@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.product.PdpHeaderView android:id="@id/product_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.target.ui.view.product.ProductViewPager android:id="@id/product_image_viewer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.target.ui.view.product.PdpTitleView android:id="@id/product_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.target.ui.view.product.PdpPriceInfoView android:id="@id/product_price_guest_review_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.target.ui.view.product.PdpPreOrderDateView android:id="@id/product_pre_order_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

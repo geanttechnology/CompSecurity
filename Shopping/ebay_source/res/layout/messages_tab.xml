@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="0.0dip" android:layout_height="@dimen/tab_total_height" android:minWidth="140.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tab_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:maxWidth="76.0dip" android:singleLine="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="none" android:gravity="center" android:id="@id/tab_count" android:background="@drawable/count_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-6.0dip" android:layout_marginRight="10.0dip" android:minWidth="22.0dip" android:singleLine="true" android:layout_toRightOf="@id/tab_name" android:layout_centerVertical="true" />
+</RelativeLayout>

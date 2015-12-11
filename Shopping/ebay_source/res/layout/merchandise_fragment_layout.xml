@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/caption" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMargin3x" android:layout_marginBottom="@dimen/listContainerCaptionBottomMargin" style="@style/EbayTextAppearanceMedium" />
+    <GridLayout android:orientation="vertical" android:id="@id/items" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="@integer/merchandise_grid_columns" />
+    <Button android:id="@id/show_more_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/overflow_list_more" style="@style/EbayButton.White" />
+</LinearLayout>

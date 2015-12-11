@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding5x" android:layout_marginBottom="@dimen/ebayPadding5x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ebayTextSizeBody2" android:ellipsize="end" android:layout_gravity="left|center" android:id="@id/trend_topic_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1.0">
+        <include layout="@layout/homescreen_card_vertical_divider" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/trend_topic_searches" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <include layout="@layout/homescreen_card_vertical_divider" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/trend_topic_clicks" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

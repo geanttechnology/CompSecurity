@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/details_item_no_padding_top_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/image_container" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <com.groupon.view.UrlImageView android:id="@id/image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" />
+        <TextView android:textSize="20.0dip" android:textStyle="normal" android:gravity="center" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/unable_to_load_map" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/expand_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/vendor_address_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/grey80" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:id="@id/vendor_address" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_company_address_redesign" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/multiple_locations_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/grey80" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/multiple_locations_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_multiple_locations_redesign">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_locations" android:layout_alignParentLeft="true" style="@style/deal_details_multiple_locations_view_locations_redesign" />
+                <TextView android:id="@id/multiple_locations_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/deal_details_multiple_locations_n_locations_redesign" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/vendor_phone_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <View android:background="@color/grey80" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:id="@id/vendor_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_company_phone_redesign" />
+            </LinearLayout>
+            <View android:id="@id/phone_url_divider" android:background="@color/grey80" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/vendor_url_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <View android:background="@color/grey80" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:id="@id/vendor_url" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_link_redesign" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

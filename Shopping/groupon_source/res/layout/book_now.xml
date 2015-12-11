@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_bottom_bar_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_bar_container" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.groupon.view.SpinnerButton android:layout_gravity="center" android:id="@id/submit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:singleLine="false" android:layout_weight="0.5" style="@style/primary_action_button" />
+        <Button android:layout_gravity="center" android:id="@id/gdt_order_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="0.5" style="@style/primary_action_button" />
+        <Button android:layout_gravity="center" android:id="@id/book" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:singleLine="false" android:layout_weight="0.5" style="@style/primary_action_button" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/buy_now_message" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bottom_bar_container" style="@style/bottom_bar_message" />
+</RelativeLayout>

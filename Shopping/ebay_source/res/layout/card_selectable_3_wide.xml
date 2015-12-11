@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/item0" style="@style/CardImageStripOverlay" />
+    <FrameLayout android:id="@id/item1" style="@style/CardImageStripOverlay" />
+    <FrameLayout android:id="@id/item2" style="@style/CardImageStripOverlay" />
+</LinearLayout>

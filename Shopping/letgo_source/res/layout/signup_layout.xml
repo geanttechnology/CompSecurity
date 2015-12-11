@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_white_background" />
+    <com.abtnprojects.ambatana.ui.widgets.NotifyScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/padding_large" android:layout_marginTop="@dimen/padding_huge" android:layout_marginRight="@dimen/padding_large">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/add_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ViewSwitcher android:gravity="center" android:layout_gravity="center" android:id="@id/viewSwitcher" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <FrameLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:textColor="@color/common_light_grey_hint" android:gravity="center" android:layout_gravity="center" android:id="@id/user_avatar_image" android:background="@drawable/background_signup_add_photo" android:padding="1.0dip" android:layout_width="@dimen/signup_profile_image_size" android:layout_height="@dimen/signup_profile_image_size" android:src="@drawable/avatar" android:scaleType="fitCenter" android:text="@string/sign_up_button_add_photo" android:contentDescription="@string/common_content_description_user_avatar" />
+                        <ImageButton android:layout_gravity="top|right|center" android:id="@id/user_avatar_add_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_photo" />
+                    </FrameLayout>
+                    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                </ViewSwitcher>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/sign_in_text_color_normal" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium_large" android:layout_marginBottom="@dimen/padding_large" android:text="@string/sign_up_add_photo_label" />
+            </LinearLayout>
+            <EditText android:id="@id/signin_full_name_form" android:hint="@string/sign_up_full_name" style="@style/FullNameEditTextStyle" />
+            <AutoCompleteTextView android:id="@id/signin_email_form" android:layout_marginTop="@dimen/sign_up_top_margin_smaller" android:hint="@string/sign_up_email" android:drawablePadding="@dimen/padding_medium" style="@style/EmailEditTextStyle" />
+            <com.abtnprojects.ambatana.ui.widgets.RevealablePasswordContainer android:id="@id/password_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:id="@id/btn_send_signin" android:layout_marginTop="20.0dip" android:layout_marginBottom="56.0dip" android:text="@string/sign_up_send_button" style="@style/SignUpSendButtonStyleCustom" />
+        </LinearLayout>
+    </com.abtnprojects.ambatana.ui.widgets.NotifyScrollView>
+</LinearLayout>

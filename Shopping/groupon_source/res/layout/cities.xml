@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/grey85" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/country_button" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/country_selector_button" />
+        <LinearLayout android:orientation="vertical" android:id="@id/autocomplete_container" android:background="@color/global_search_location_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/autocomplete_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/global_search_list_style_2" />
+        </LinearLayout>
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView android:id="@id/sticky_list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/city_picker_list" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_matching_divisions" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/cities_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/prd_ship_it_container" android:background="@color/content_bg" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:id="@id/prd_ship_it_dialog_title" android:paddingTop="@dimen/default_2x_padding_margin" android:paddingBottom="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/product_dialog_ship_it" app:fontStyle="medium" style="@style/Target.TextView.ProductDialogTitle" />
+    <com.target.ui.view.TargetButton android:id="@id/prd_ship_it_dialog_add_to_cart" android:paddingTop="@dimen/default_2x_padding_margin" android:paddingBottom="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/product_dialog_add_to_cart" android:layout_alignParentBottom="true" style="@style/RedButton" />
+    <com.target.ui.view.ScrollShadowScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/prd_ship_it_dialog_add_to_cart" android:layout_below="@id/prd_ship_it_dialog_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.product.ProductVariationView android:id="@id/prd_ship_it_dialog_variations" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.target.ui.view.product.ProductDialogPriceView android:id="@id/prd_ship_it_dialog_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.target.ui.view.product.ProductDialogWarningView android:id="@id/prd_ship_it_dialog_warning" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.target.ui.view.ScrollShadowScrollView>
+</RelativeLayout>

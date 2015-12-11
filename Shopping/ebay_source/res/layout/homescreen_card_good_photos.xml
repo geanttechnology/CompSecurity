@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" app:cardBackgroundColor="?android:windowBackground" app:cardCornerRadius="@dimen/card_view_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/category_card_text_area_height" android:text="@string/selling_card_why_good_photos_matter" android:paddingStart="@dimen/ebayPadding2x" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ebay.android.widget.RemoteImageView android:id="@id/good_photos_image" android:layout_width="fill_parent" android:layout_height="@dimen/card_selling_good_photos_height" android:scaleType="centerCrop" android:contentDescription="@null" />
+            <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/good_photos_image" android:layout_alignBottom="@id/good_photos_image" layout="@layout/homescreen_card_good_photos_overlay" />
+        </RelativeLayout>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/ebayTextSize" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/selling_good_photos_description_height" android:layout_marginLeft="@dimen/ebayPadding2x" android:layout_marginRight="@dimen/ebayPadding2x" android:text="@string/good_photos_matter_description" />
+        <Button android:id="@id/learn_about_photos_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/learn_about_photos_button" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

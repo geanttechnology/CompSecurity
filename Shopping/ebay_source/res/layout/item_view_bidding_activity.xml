@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/top_layout" style="@style/ItemView.TopScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Letterbox">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" layout="@layout/item_header_price_shipping" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/style_guide_dark_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMarginHalf" android:text="@string/item_view_summary" />
+            <com.ebay.android.widget.ContainerLayout android:id="@id/summary_layout" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemStatContainer" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/style_guide_dark_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMarginHalf" android:text="@string/item_view_most_recent_bids" />
+            <com.ebay.android.widget.ContainerLayout android:id="@id/bids_layout" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/ebayMarginHalf" style="@style/StyleGuideViewItemStatContainer" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/common_progress" />
+    <include layout="@layout/common_error" />
+</merge>

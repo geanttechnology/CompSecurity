@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vs_disambig" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/vs_did_you_mean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vs_did_you_mean" style="@style/VSDialogTitle" />
+    <FrameLayout android:id="@id/vs_interp_container" android:background="@drawable/vs_interp_box" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/vs_dialog_content_padding" android:layout_weight="1.0">
+        <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fadeScrollbars="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/vs_interp_box" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </ScrollView>
+    </FrameLayout>
+    <com.amazon.shopapp.voice.search.ui.VSModalButton android:id="@id/vs_disambig_retry_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vs_dialog_content_padding" style="@style/VSActionButton.VSRetryButton" />
+</LinearLayout>

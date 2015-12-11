@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/dialog_progress_container" android:background="@color/target_progress_layout_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/view_dialog_progress_bar" />
+    </FrameLayout>
+</merge>

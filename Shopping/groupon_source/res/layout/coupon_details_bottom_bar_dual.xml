@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/freebie_details_section_card"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/freebie_details_section_card">
+        <Button android:id="@id/freebie_detail_action_bar_button_one" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" style="@style/primary_action_button" />
+        <Button android:id="@id/freebie_detail_action_bar_button_two" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" style="@style/primary_action_button" />
+    </LinearLayout>
+</LinearLayout>

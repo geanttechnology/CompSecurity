@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.cart.CartItemView android:orientation="vertical" android:background="@color/common_selector" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/thumbnail" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/cart_item_title" android:layout_width="fill_parent" android:maxLines="2" style="@style/ClickableLink" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/cart_item_price" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.amazon.mShop.ui.BadgeView android:layout_gravity="center_vertical" android:id="@id/item_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:id="@id/shipping_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/cart_item_amazonpoints" android:paddingLeft="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/cart_item_amazonpoints_label" android:paddingRight="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/points" />
+                <TextView android:id="@id/cart_item_amazonpoints_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:layout_gravity="fill_horizontal|top|center" android:id="@id/cart_item_checkout_timer" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/text_big" android:id="@id/cart_move_button" android:layout_marginRight="@dimen/padding_cart_button_gap" android:text="@string/cart_move_to_cart_button" android:layout_weight="0.0" style="@style/Button.White" />
+        <Button android:textSize="@dimen/text_big" android:id="@id/cart_delete_button" android:text="@string/cart_delete_button" android:layout_weight="0.0" style="@style/Button.White" />
+    </LinearLayout>
+    <View style="@style/Separator" />
+</com.amazon.mShop.cart.CartItemView>

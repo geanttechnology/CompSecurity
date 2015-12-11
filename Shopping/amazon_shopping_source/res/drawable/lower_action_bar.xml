@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/lower_action_bar_gradient_startcolor" android:endColor="@color/white" android:angle="90.0" android:centerY="0.89" android:centerColor="@color/white" />
+    <stroke android:width="@dimen/bottom_toolbar_outline_stroke_width" android:color="@color/lower_action_bar_divider" />
+</shape>

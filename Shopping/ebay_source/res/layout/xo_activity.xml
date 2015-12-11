@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/xo_cart_layout" style="@style/Checkout.Container.Content">
+            <LinearLayout android:orientation="vertical" android:id="@id/xo_cart_alert" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/error_text" android:layout_width="fill_parent" android:layout_height="@dimen/checkoutTinyMargin" />
+                <TextView android:id="@id/xo_cart_alert_text" android:paddingTop="@dimen/checkoutListContainerMargin" android:paddingBottom="@dimen/checkoutListContainerMargin" android:text="@string/xo_cart_items_have_shipping_exceptions" android:drawableLeft="@drawable/error_icon" android:drawablePadding="@dimen/checkoutListContainerMargin" style="@style/Checkout.Alert" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/xo_cart_warning" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/warning_text" android:layout_width="fill_parent" android:layout_height="@dimen/checkoutTinyMargin" />
+                <TextView android:id="@id/xo_cart_warning_text" android:paddingTop="@dimen/checkoutListContainerMargin" android:paddingBottom="@dimen/checkoutListContainerMargin" android:text="@string/xo_cart_warn_items_shipping_changed" android:drawableLeft="@drawable/warning_icon" android:drawablePadding="@dimen/checkoutListContainerMargin" style="@style/Checkout.Warning" />
+            </LinearLayout>
+            <ScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Letterbox.Modal">
+                    <TextView android:textColorHighlight="@color/style_guide_blue" android:textColorLink="@color/style_guide_blue" android:gravity="center" android:id="@id/prox_disclaimer_text" android:paddingLeft="@dimen/checkoutListContainerMarginDouble" android:paddingTop="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutListContainerMarginDouble" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" style="@style/Checkout.Text.Secondary" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/xo_cart_summary_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/checkoutHugeMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="@dimen/checkoutListContainerMarginDouble" />
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_dashed_line" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/xo_cart_payment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:text="@string/LOCKED_xo_cart_payment" style="@style/Checkout.Header" />
+                        <com.ebay.android.widget.ContainerLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:dividerColor="@color/style_guide_light_gray">
+                            <LinearLayout android:id="@id/xo_cart_payment_method_select" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+                                <TextView android:gravity="right|center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:text="@string/prox_pay_with" style="@style/Checkout.Text" />
+                                <TextView android:gravity="right|center" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/LOCKED_xo_cart_select_payment_method" android:layout_weight="1.0" style="@style/Checkout.Text.Alert" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/xo_cart_payment_method_paypal_login" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+                                <ImageView android:layout_gravity="top|left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_pal_logo" android:scaleType="centerInside" android:contentDescription="@string/xo_cart_review_order_pay_with_paypal" />
+                                <TextView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/xo_cart_payment_please_login" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/xo_cart_payment_please_login" android:layout_weight="1.0" style="@style/Checkout.Text.Alert" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/xo_cart_payment_method_paypal_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+                                <ImageView android:layout_gravity="top|left|center" android:id="@id/xo_cart_payment_paypal_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_pal_logo" android:scaleType="centerInside" android:contentDescription="@string/xo_cart_review_order_pay_with_paypal" />
+                                <TextView android:id="@id/xo_cart_payment_paypal_text" android:paddingTop="@dimen/checkoutTinyMargin" android:paddingBottom="@dimen/checkoutTinyMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prox_pay_with" style="@style/Checkout.Text" />
+                                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/xo_cart_payment_paypal_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/xo_cart_payment_method_other_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+                                <TextView android:paddingTop="@dimen/checkoutTinyMargin" android:paddingBottom="@dimen/checkoutTinyMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:text="@string/prox_pay_with" style="@style/Checkout.Text" />
+                                <TextView android:gravity="right" android:id="@id/xo_cart_payment_method_other_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Checkout.Text" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/prox_remember_instrument_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+                                <Switch android:id="@id/prox_remember_instrument_switch" android:paddingTop="@dimen/checkoutTinyMargin" android:paddingBottom="@dimen/checkoutTinyMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prox_remember_instrument_label" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/xo_cart_incentives_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+                                <TextView android:id="@id/xo_cart_incentives_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.55" style="@style/Checkout.Text" />
+                                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/xo_cart_incentives_detail" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.45">
+                                    <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/xo_cart_incentives_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text.Secondary" />
+                                    <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/xo_cart_incentives_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text" />
+                                </LinearLayout>
+                                <TextView android:layout_gravity="center_vertical" android:id="@id/xo_cart_incentive_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.Text.Alert" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/xo_cart_charity_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/xo_cart_charity_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:src="@drawable/ic_xo_charity_sm" android:scaleType="centerInside" android:contentDescription="@null" />
+                                <TextView android:ellipsize="end" android:gravity="left" android:id="@id/xo_cart_charity_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/xo_cart_charity_label" android:maxLines="1" android:layout_weight="0.8" style="@style/Checkout.Text" />
+                                <TextView android:ellipsize="end" android:gravity="right" android:id="@id/xo_cart_charity_amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="0.2" style="@style/Checkout.Text" />
+                            </LinearLayout>
+                        </com.ebay.android.widget.ContainerLayout>
+                        <TextView android:textColorHighlight="@color/style_guide_blue" android:textColorLink="@color/style_guide_blue" android:gravity="center" android:id="@id/save_payment_method_info" android:paddingLeft="@dimen/checkoutListContainerMarginDouble" android:paddingTop="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutListContainerMarginDouble" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.Text.Secondary" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/xo_shipping_address_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:text="@string/xo_cart_ships_to" style="@style/Checkout.Header" />
+                        <com.ebay.android.widget.ContainerLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:dividerColor="@color/style_guide_light_gray">
+                            <LinearLayout android:orientation="vertical" android:id="@id/xo_shipping_local_pickup" android:padding="@dimen/checkoutListContainerMargin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_cart_local_pickup_shipping" style="@style/Checkout.Text" />
+                                <TextView android:layout_gravity="left" android:id="@id/xo_shipping_local_pickup_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutListContainerMargin" style="@style/Checkout.Text" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/xo_shipping_address" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+                                <TextView android:layout_gravity="left" android:id="@id/xo_shipping_address_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text" />
+                                <TextView android:layout_gravity="left" android:id="@id/xo_shipping_address_street1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text" />
+                                <TextView android:layout_gravity="left" android:id="@id/xo_shipping_address_street2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text" />
+                                <TextView android:layout_gravity="left" android:id="@id/xo_shipping_address_city_state_postal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text" />
+                                <TextView android:id="@id/xo_shipping_address_promotion" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin" style="@style/Checkout.Text.Callout" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/xo_shipping_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout">
+                                <TextView android:layout_gravity="left" android:id="@id/xo_shipping_address_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Checkout.Text" />
+                                <TextView android:id="@id/xo_shipping_address_phone_reminder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin" android:text="@string/xo_ebn_phone_reminder" style="@style/Checkout.Text.Callout" />
+                            </LinearLayout>
+                        </com.ebay.android.widget.ContainerLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/pudo_phone_layout" android:background="?listContainerBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding2x" style="@style/Checkout.ClickableLayout">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone" android:layout_alignParentLeft="true" style="@style/Checkout.Text" />
+                        <TextView android:id="@id/pudo_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/Checkout.Text" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/xo_cart_items_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <include layout="@layout/button_bar_placeholder" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <TextView android:id="@id/payment_intermediation_verbiage" android:paddingLeft="@dimen/checkoutListContainerMarginDouble" android:paddingTop="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutListContainerMarginDouble" android:paddingBottom="@dimen/checkoutSmallMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="@string/label_transfer_payment_intermediated" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/bottom_action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/ebayTextSizeMedium" android:gravity="center" android:id="@id/xo_cart_place_order_button" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" android:text="@string/LEGAL_xo_cart_place_order" style="@style/EbayButton.Blue.Letterboxed.Modal" />
+    </LinearLayout>
+</merge>

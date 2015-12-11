@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/mock_navigation_drawer" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include android:layout_width="@dimen/navigation_drawer_width" android:layout_height="fill_parent" layout="@layout/fragment_navigation_drawer" />
+        <View android:background="@drawable/drop_shadow_right" android:layout_width="@dimen/default_padding_margin" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/coach_mark_wrapper" android:paddingLeft="@dimen/coach_mark_navigation_drawer_peek_width" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/message" android:padding="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/coach_mark_navigation_drawer_message" app:fontStyle="light" />
+        <com.target.ui.view.TargetTextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/coach_mark_navigation_drawer_ok_button" app:fontStyle="medium" style="@style/DialogButton" />
+    </LinearLayout>
+    <View android:id="@id/overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/ItemStatLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/bopis_header" style="@style/ItemView" />
+    <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/bopis_nearby_stores_container" android:paddingLeft="@dimen/checkoutMediumMargin" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

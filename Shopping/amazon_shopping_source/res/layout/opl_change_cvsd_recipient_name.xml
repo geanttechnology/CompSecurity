@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/opl_recipient_instructions_header_text" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_recipient_instructions_header" />
+    <EditText android:id="@id/opl_recipient_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" />
+    <TextView android:id="@id/opl_recipient_instructions_footer_text" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_recipient_instructions_footer" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/opl_change_recipient_name_button" android:text="@string/opl_done_button" style="@style/AUIButton.Gold" />
+</LinearLayout>

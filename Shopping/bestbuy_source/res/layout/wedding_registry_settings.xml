@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/offwhite" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/name_layout" android:background="@color/white" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/registryOwners" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/smallforwardarrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:layout_gravity="center_horizontal" android:id="@id/date_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/date" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+                    <RelativeLayout android:id="@id/reg_date_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/registryDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/smallforwardarrow" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:contentDescription="@string/image_content_description" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/address_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/user_full_name" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+                        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/full_address" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/smallforwardarrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/guest_websites_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="13.0sp" android:textColor="@color/stores_name_color" android:id="@id/guestTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guests_text" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/websites_names" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/smallforwardarrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/image_content_description" />
+                </RelativeLayout>
+                <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/bby_off_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="left" android:background="@color/bby_blue" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" android:text="@string/additionalOptions" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="25.0sp" android:textColor="@color/stores_name_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:text="Personalize Your Registry" bby:BBYFont="@string/BBY_APP_FONT_LIGHT" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/reg_name_layout" android:background="@color/white" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/reg_name_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/registryName" android:layout_alignParentLeft="true" android:layout_centerVertical="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+                <EditText android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/registry_name" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/reg_name_title" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/reg_des_layout" android:background="@color/white" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/reg_des_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/addDescription" android:layout_alignParentLeft="true" android:layout_centerVertical="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+                <EditText android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/registry_des" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/reg_des_title" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="25.0sp" android:textColor="@color/stores_name_color" android:gravity="center_vertical" android:background="@color/bby_off_white" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/eventInfo" bby:BBYFont="@string/BBY_APP_FONT_LIGHT" />
+            <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/reg_location_layout" android:background="@color/white" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/reg_location_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/location" android:layout_weight="0.25" android:layout_alignParentLeft="true" android:layout_centerVertical="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+                <EditText android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/location" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/optional" android:layout_weight="0.75" android:layout_toRightOf="@id/reg_location_title" android:inputType="textCapSentences" />
+            </LinearLayout>
+            <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/reg_city_layout" android:background="@color/white" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/reg_city_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/city" android:layout_weight="0.25" android:layout_alignParentLeft="true" android:layout_centerVertical="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+                <EditText android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/city" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/optional" android:layout_weight="0.75" android:layout_toRightOf="@id/reg_city_title" android:inputType="textCapSentences" />
+            </LinearLayout>
+            <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/reg_state_layout" android:background="@color/white" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:id="@id/reg_state_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/state" android:layout_weight="0.25" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+                <Spinner android:gravity="center" android:entries="@array/edit_countryArray" android:layout_gravity="center_vertical" android:id="@id/state" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:prompt="@string/country_prompt" android:layout_weight="0.75" />
+            </LinearLayout>
+            <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/delete_registry" android:background="@drawable/bby_white_shape_grey_border" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="20.0sp" android:textColor="@color/mybby_light_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_registry" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/loading_spinner_layout" />
+</RelativeLayout>

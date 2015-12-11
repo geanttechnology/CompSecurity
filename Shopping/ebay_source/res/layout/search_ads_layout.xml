@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_ads_layout" android:background="?listContainerOutsideBackground" android:padding="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorSecondary" android:id="@id/search_ads_header" android:paddingLeft="@dimen/ebayPressedStatePadding" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="14.0dip" android:text="@string/sponsored_links" />
+    <TableLayout android:orientation="horizontal" android:id="@id/search_ads_table" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

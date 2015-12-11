@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/plp_header_container" android:background="@color/target_fade_away_grey" android:paddingBottom="@dimen/default_half_padding_margin" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/target_stark_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.product.PdpHeaderView android:id="@id/product_collection_header_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.target.ui.view.product.ProductViewPager android:id="@id/product_collection_header_image_view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.target.ui.view.product.PdpTitleView android:id="@id/product_collection_header_title_layout" android:paddingTop="@dimen/default_half_padding_margin" android:paddingBottom="@dimen/default_half_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/product_collection_header_progress_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_4x_padding_margin">
+        <ProgressBar android:theme="@style/AppTheme.RedAccent" android:layout_width="@dimen/dialog_progress_bar_width_height" android:layout_height="@dimen/dialog_progress_bar_width_height" style="?android:attr/progressBarStyleInverse" />
+    </LinearLayout>
+    <com.target.ui.view.common.TargetErrorCardView android:id="@id/product_collection_header_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin" style="@style/Target.CardView" />
+    <com.target.ui.view.product.PdpFulfillmentView android:id="@id/product_collection_header_fulfillment_layout" android:paddingLeft="@dimen/fulfillment_button_padding_left_right" android:paddingTop="@dimen/fulfillment_button_padding_top" android:paddingRight="@dimen/fulfillment_button_padding_left_right" android:paddingBottom="@dimen/fulfillment_button_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.target.ui.view.product.PdpCartwheelAndPromotionView android:id="@id/product_collection_header_cartwheel_promotion_layout" android:paddingLeft="@dimen/prd_pdp_left_right_padding" android:paddingTop="@dimen/prd_pdp_top_bottom_padding" android:paddingRight="@dimen/prd_pdp_left_right_padding" android:paddingBottom="@dimen/prd_pdp_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

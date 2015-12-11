@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient android:startColor="@color/vs_indicator_bar_base" android:endColor="@color/vs_indicator_bar_base" android:angle="270.0" android:centerY="0.5" android:centerColor="@color/vs_indicator_bar_highlight" />
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="0.0dip" />
+            <size android:height="4.0dip" android:width="400.0dip" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="0.0dip" />
+                <gradient android:startColor="@color/vs_indicator_bar_base" android:endColor="@color/vs_indicator_bar_highlight" android:angle="0.0" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

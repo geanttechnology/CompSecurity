@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/rs_widget_sparkle_layout" android:background="@color/rs_secondary_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rs_widget_divider_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/rs_widget_sparkle_content" android:background="@color/rs_primary_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/rs_widget_sparkle_image_wrapper" style="@style/Rs.Widget.Sparkle.ImageWrapper">
+            <ImageView android:id="@id/rs_widget_sparkle_image" style="@style/Rs.Widget.Sparkle.Image" />
+        </RelativeLayout>
+        <TextView android:id="@id/rs_widget_sparkle_text" style="@style/Rs.Widget.Sparkle.Text" />
+        <ImageView android:id="@id/rs_widget_sparkle_indicator" android:src="@drawable/rs_carrot_right" style="@style/Rs.Widget.Sparkle.indicator" />
+    </LinearLayout>
+</LinearLayout>

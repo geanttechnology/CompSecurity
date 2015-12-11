@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/opl_error_text" android:paddingBottom="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Error" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_payment_debit_bank_code" />
+    <EditText android:id="@id/opl_direct_debit_bank_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:numeric="integer" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_payment_debit_account_number" />
+    <EditText android:id="@id/opl_direct_debit_account_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:numeric="integer" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_payment_debit_account_name" />
+    <EditText android:id="@id/opl_direct_debit_account_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" />
+    <Button android:id="@id/opl_direct_debit_save" android:layout_marginTop="@dimen/padding" android:text="@string/opl_new_payment_debit_account_save" style="@style/Button.Gold.Arrow" />
+</LinearLayout>

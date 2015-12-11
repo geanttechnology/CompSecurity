@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:background="?listContainerOutsideBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ebay.mobile.widget.EbayScrollView android:id="@id/top_scrollview" style="@style/ItemView.ScrollWithWeight">
+                <LinearLayout android:orientation="vertical" android:id="@id/top_scrollview_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/view_item_activity_shared_top" />
+                    <FrameLayout android:id="@id/condensed_header" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" style="@style/ItemView" />
+                    <com.ebay.android.widget.ImageViewPager android:id="@id/image_view_pager" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ItemViewPhotoGalleryHeight" android:contentDescription="@string/item_photos" />
+                    <ImageView android:id="@id/image_view_no_images" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ItemViewPhotoGalleryHeight" android:src="@drawable/ic_missing_image" android:contentDescription="@string/item_photos" />
+                    <include layout="@layout/view_item_activity_shared_bottom" />
+                </LinearLayout>
+            </com.ebay.mobile.widget.EbayScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <include android:id="@id/buy_bar_layout" layout="@layout/view_item_buy_bar" />
+    <include layout="@layout/common_progress" />
+    <include layout="@layout/common_error" />
+    <include layout="@layout/common_translucent_progress" />
+</merge>

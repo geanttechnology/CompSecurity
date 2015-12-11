@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" style="@style/StyleGuideViewItemStatCell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/stat_key" style="@style/StyleGuideViewItemStatKey" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/stat_value" android:layout_toLeftOf="@id/stat_image" style="@style/StyleGuideViewItemStatValue" />
+        <ImageView android:id="@id/stat_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:layout_marginRight="@dimen/checkoutMediumMargin" android:src="@drawable/ic_viewitem_info" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

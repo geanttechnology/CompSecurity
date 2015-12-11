@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/videoViewLayout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/videoframe" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.venezia.video.ResizableVideoView android:layout_gravity="center" android:id="@id/veneziavideoview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.amazon.venezia.widget.progress.IndeterminateProgressView android:id="@id/progress" android:layout_width="@dimen/default_dark_loading_indicator_size" android:layout_height="@dimen/default_dark_loading_indicator_size" android:layout_centerInParent="true" />
+</RelativeLayout>

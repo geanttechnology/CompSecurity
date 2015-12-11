@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_table_row_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/partyCovershot" android:layout_width="125.0dip" android:layout_height="100.0dip" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/textColorLightBurgundy" android:ellipsize="end" android:id="@id/partyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip" android:maxLines="2" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/textColorDarkGray" android:ellipsize="end" android:id="@id/partyDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="1" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/textColorDarkGray" android:ellipsize="end" android:id="@id/partyHosts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="1" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+    </LinearLayout>
+</LinearLayout>

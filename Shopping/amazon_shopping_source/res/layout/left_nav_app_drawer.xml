@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mobile.appdrawer.LeftNavAppDrawerSlidingPanel android:layout_width="fill_parent" android:layout_height="wrap_content" appdrawer:background="@drawable/app_drawer_bg_full" appdrawer:shadow="@drawable/app_drawer_shadow"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:appdrawer="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/more_amazon_apps" layout="@layout/left_nav_more_amazon_apps" />
+    <ListView android:id="@id/drawer_app_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/list_view_left_right_margin" android:layout_marginRight="@dimen/list_view_left_right_margin" android:listSelector="@color/list_view_item_highlight" android:divider="@color/list_view_divider_color" android:dividerHeight="@dimen/list_view_divider_height" android:choiceMode="singleChoice" />
+</com.amazon.mobile.appdrawer.LeftNavAppDrawerSlidingPanel>

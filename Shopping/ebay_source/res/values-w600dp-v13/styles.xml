@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EbayModalStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">@dimen/modal_tablet_width</item>
+        <item name="android:layout_height">@dimen/modal_tablet_height</item>
+    </style>
+    <style name="HomeButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="HomeButton.Text.Large" parent="@style/HomeButton.Text.LargeBase">
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="HomePhotoGallery" parent="@style/HomePhotoGalleryBase">
+        <item name="android:layout_height">120.0dip</item>
+        <item name="betweenPicturePadding">8.0dip</item>
+    </style>
+    <style name="UserDetailsCard" parent="@style/EbayCardStyle">
+        <item name="android:layout_width">@dimen/standardMaxWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

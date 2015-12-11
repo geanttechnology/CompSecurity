@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/rs_no_result_header" style="@style/Rs.Corrections.NoResult.Header" />
+    <TextView android:id="@id/rs_no_result_label" style="@style/Rs.Corrections.NoResult.Label" />
+    <View android:id="@id/rs_no_result_divider" style="@style/Rs.Corrections.NoResult.Divider" />
+    <Button android:id="@id/rs_no_result_link_button" style="@style/Rs.Corrections.NoResult.Button" />
+    <View android:id="@id/rs_no_result_divider_cover" android:background="@color/rs_white" android:layout_marginTop="1.0dip" style="@style/Rs.Corrections.NoResult.Divider" />
+</merge>

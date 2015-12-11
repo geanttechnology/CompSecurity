@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/fast_browse_drawer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:layout_gravity="left" android:id="@id/drawer_list" android:background="@color/rs_list_background" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@null" android:dividerHeight="0.75dip" android:choiceMode="singleChoice" />
+    <com.amazon.retailsearch.android.ui.refinements.SpinnerHiderRelativeLayout android:id="@id/refinements_menu_list_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

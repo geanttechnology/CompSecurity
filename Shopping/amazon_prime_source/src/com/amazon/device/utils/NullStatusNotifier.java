@@ -1,0 +1,38 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.device.utils;
+
+
+// Referenced classes of package com.amazon.device.utils:
+//            StatusNotifier
+
+public class NullStatusNotifier
+    implements StatusNotifier
+{
+
+    public NullStatusNotifier()
+    {
+    }
+
+    public void broadcastUploadStatus(CharSequence charsequence)
+    {
+    }
+
+    public void broadcastUploadTag(CharSequence charsequence)
+    {
+    }
+
+    public void fireNotification(CharSequence charsequence, int i)
+    {
+    }
+
+    public void updateFilesCount(int i)
+    {
+    }
+
+    public void updateProgress(int i)
+    {
+    }
+}

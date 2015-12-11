@@ -1,0 +1,132 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.retailsearch.android.api.intent.search;
+
+import android.net.Uri;
+import android.text.TextUtils;
+import com.amazon.searchapp.retailsearch.client.SearchMethod;
+
+public class SearchIntentUriBuilder
+{
+
+    public static final String SEARCH_PARAM_ASR_REQUEST_ID = "paramAsrRequestId";
+    public static final String SEARCH_PARAM_DATA_URL = "paramDataUrl";
+    public static final String SEARCH_PARAM_DEPARTMENT_FILTER = "paramDepartmentFilter";
+    public static final String SEARCH_PARAM_DEPARTMENT_NAME = "paramDepartmentName";
+    public static final String SEARCH_PARAM_INTERPRETATION_NUM = "paramInterpretationNum";
+    public static final String SEARCH_PARAM_METHOD = "paramMethod";
+    public static final String SEARCH_PARAM_QUERY_TEXT = "paramQueryText";
+    public static final String SEARCH_PARAM_UTTERANCE_ID = "paramUtteranceId";
+    private String asrRequestId;
+    private String categoryName;
+    private String dataUrl;
+    private String filter;
+    private int interpretationNum;
+    private String query;
+    private SearchMethod searchMethod;
+    private String utteranceId;
+
+    public SearchIntentUriBuilder()
+    {
+        query = null;
+        filter = null;
+        categoryName = null;
+        dataUrl = null;
+        searchMethod = null;
+        asrRequestId = null;
+        utteranceId = null;
+        interpretationNum = 0;
+    }
+
+    public SearchIntentUriBuilder asrRequestId(String s)
+    {
+        asrRequestId = s;
+        return this;
+    }
+
+    public Uri build()
+    {
+        if (query == null && filter == null && dataUrl == null)
+        {
+            return null;
+        }
+        android.net.Uri.Builder builder = new android.net.Uri.Builder();
+        if (!TextUtils.isEmpty(query))
+        {
+            builder.appendQueryParameter("paramQueryText", query);
+        }
+        if (!TextUtils.isEmpty(filter))
+        {
+            builder.appendQueryParameter("paramDepartmentFilter", filter);
+        }
+        if (!TextUtils.isEmpty(categoryName))
+        {
+            builder.appendQueryParameter("paramDepartmentName", categoryName);
+        }
+        if (!TextUtils.isEmpty(dataUrl))
+        {
+            builder.appendQueryParameter("paramDataUrl", dataUrl);
+        }
+        if (searchMethod != null)
+        {
+            builder.appendQueryParameter("paramMethod", searchMethod.getName());
+        }
+        if (!TextUtils.isEmpty(asrRequestId))
+        {
+            builder.appendQueryParameter("paramAsrRequestId", asrRequestId);
+        }
+        if (!TextUtils.isEmpty(utteranceId))
+        {
+            builder.appendQueryParameter("paramUtteranceId", utteranceId);
+        }
+        if (interpretationNum > 0)
+        {
+            builder.appendQueryParameter("paramInterpretationNum", String.valueOf(interpretationNum));
+        }
+        return builder.build();
+    }
+
+    public SearchIntentUriBuilder categoryName(String s)
+    {
+        categoryName = s;
+        return this;
+    }
+
+    public SearchIntentUriBuilder dataUrl(String s)
+    {
+        dataUrl = s;
+        return this;
+    }
+
+    public SearchIntentUriBuilder filter(String s)
+    {
+        filter = s;
+        return this;
+    }
+
+    public SearchIntentUriBuilder interpretationNum(int i)
+    {
+        interpretationNum = i;
+        return this;
+    }
+
+    public SearchIntentUriBuilder query(String s)
+    {
+        query = s;
+        return this;
+    }
+
+    public SearchIntentUriBuilder searchMethod(SearchMethod searchmethod)
+    {
+        searchMethod = searchmethod;
+        return this;
+    }
+
+    public SearchIntentUriBuilder utteranceId(String s)
+    {
+        utteranceId = s;
+        return this;
+    }
+}

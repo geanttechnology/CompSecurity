@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/default_4x_padding_margin" android:paddingTop="@dimen/default_4x_padding_margin" android:paddingRight="@dimen/default_4x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <com.target.ui.view.product.ProductPriceView android:id="@id/prd_pdp_guest_review_price" android:paddingBottom="@dimen/default_4x_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.target.ui.view.product.ProductEyebrowView android:id="@id/prd_pdp_eyebrow_layout" android:paddingBottom="@dimen/default_4x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/prd_pdp_guest_review_price" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/prd_pdp_guest_rating_container" android:background="@drawable/translucent_item_selector" android:padding="@dimen/default_4x_padding_margin" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <com.target.ui.view.StarRatingView android:id="@id/prd_pdp_guest_review_star" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:size="medium" />
+        <com.target.ui.view.TargetTextView android:gravity="center" android:layout_gravity="center" android:id="@id/prd_pdp_guest_review_count" android:paddingLeft="@dimen/prd_pdp_rating_count_padding" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" custom:fontStyle="regular" style="@style/Target.TextView.GuestRatingCount" />
+    </LinearLayout>
+</merge>

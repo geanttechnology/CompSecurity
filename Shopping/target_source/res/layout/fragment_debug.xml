@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="always"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/debug_heading_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/debug_layout_margin" android:layout_marginTop="@dimen/debug_layout_margin" android:layout_marginRight="@dimen/debug_layout_margin" android:text="@string/debug_header_environment" />
+        <Spinner android:id="@id/debug_spinner_environment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/debug_layout_margin" />
+        <View android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="@dimen/debug_spacer_height" />
+        <TextView android:textColor="@color/debug_heading_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/debug_layout_margin" android:layout_marginTop="@dimen/debug_layout_margin" android:layout_marginRight="@dimen/debug_layout_margin" android:text="@string/debug_header_device_details" />
+        <TextView android:textSize="@dimen/microTextSize" android:id="@id/debug_text_device_specs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/debug_layout_margin" />
+        <View android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="@dimen/debug_spacer_height" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetEditText android:id="@id/store_id_edit_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/debug_layout_margin" android:hint="@string/debug_vlc_store_hint" android:layout_toLeftOf="@id/debug_button_vlc" android:layout_centerVertical="true" android:inputType="number" app:fontStyle="light" />
+            <com.target.ui.view.TargetButton android:id="@id/debug_button_vlc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/debug_layout_margin" android:text="@string/debug_apply" android:layout_alignParentRight="true" style="@style/RedButton" />
+        </RelativeLayout>
+        <View android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="@dimen/debug_spacer_height" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/debug_layout_margin" android:text="@string/debug_enable_taplytics" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+            <com.target.ui.view.TargetCheckBox android:id="@id/debug_switch_taplytics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/debug_layout_margin" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="@dimen/debug_spacer_height" />
+        <TextView android:textColor="@color/debug_heading_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/debug_layout_margin" android:layout_marginTop="@dimen/debug_layout_margin" android:layout_marginRight="@dimen/debug_layout_margin" android:text="@string/debug_in_store_mode" />
+        <Spinner android:id="@id/debug_spinner_in_store_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/debug_layout_margin" />
+        <View android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="@dimen/debug_spacer_height" />
+        <com.target.ui.view.TargetButton android:id="@id/debug_button_launch_registry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/debug_layout_margin" android:text="@string/debug_launch_registry" style="@style/RedButton" />
+        <View android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="@dimen/debug_spacer_height" />
+        <com.target.ui.view.TargetButton android:id="@id/debug_button_get_saved_for_later_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/debug_layout_margin" android:text="@string/debug_get_saved_for_later" style="@style/RedButton" />
+        <View android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</ScrollView>

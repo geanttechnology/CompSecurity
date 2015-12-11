@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <com.getbase.floatingactionbutton.FloatingActionsMenu android:id="@id/pdp_fulfillment_floating_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" fab:fab_addButtonColorPressed="@color/target_bullseye_red" fab:fab_addButtonColorNormal="@color/target_bullseye_red" fab:fab_addButtonPlusIconColor="@color/target_stark_white" fab:fab_addButtonStrokeVisible="false" fab:fab_labelStyle="@style/Target.TextView.FabMenuLabels" fab:fab_expandDirection="up">
+        <com.target.ui.view.product.ProductFulfillmentFloatingActionButton android:id="@id/pdp_fulfillment_floating_add_to_list_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_size="mini" fab:buttonType="add_to_list" />
+        <com.target.ui.view.product.ProductFulfillmentFloatingActionButton android:id="@id/pdp_fulfillment_floating_pick_up_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_size="mini" fab:buttonType="pick_up" />
+        <com.target.ui.view.product.ProductFulfillmentFloatingActionButton android:id="@id/pdp_fulfillment_floating_fiats_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_size="mini" fab:buttonType="find_in_store" />
+        <com.target.ui.view.product.ProductFulfillmentFloatingActionButton android:id="@id/pdp_fulfillment_floating_ship_me_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_size="mini" fab:buttonType="ship_it" />
+        <com.target.ui.view.product.ProductFulfillmentFloatingActionButton android:id="@id/pdp_fulfillment_floating_mail_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_size="mini" fab:buttonType="mail" />
+        <com.target.ui.view.product.ProductFulfillmentFloatingActionButton android:id="@id/pdp_fulfillment_floating_sms_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_size="mini" fab:buttonType="sms" />
+        <com.target.ui.view.product.ProductFulfillmentFloatingActionButton android:id="@id/pdp_fulfillment_floating_email_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_size="mini" fab:buttonType="email" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</merge>

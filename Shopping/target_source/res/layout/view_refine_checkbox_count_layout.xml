@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/prd_refine_checkbox_count_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetCheckBox android:theme="@style/AppTheme.GreenAccent" android:textSize="@dimen/smallTextSize" android:id="@id/prd_refine_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/prd_refine_count" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Target.CheckBox" />
+    <com.target.ui.view.TargetTextView android:id="@id/prd_refine_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.RefineCountText" />
+</RelativeLayout>

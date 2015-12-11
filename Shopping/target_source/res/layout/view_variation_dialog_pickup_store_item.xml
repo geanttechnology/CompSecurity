@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/prd_variation_dialog_pickup_root_view" android:background="@drawable/white_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:theme="@style/AppTheme.GreenAccent" android:id="@id/prd_variation_dialog_radio_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/min_image_button_size" android:layout_centerVertical="true" style="@style/Target.RadioButton" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/prd_variation_dialog_store_info" android:layout_toRightOf="@id/prd_variation_dialog_radio_btn" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:id="@id/prd_variation_dialog_store_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.StoreName" />
+        <com.target.ui.view.TargetTextView android:id="@id/prd_variation_dialog_store_address" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.StoreDescription" />
+        <com.target.ui.view.TargetTextView android:id="@id/prd_variation_dialog_store_labels" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.StoreDescription.Green" />
+        <com.target.ui.view.TargetTextView android:id="@id/prd_variation_dialog_stock_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.StoreDescription" />
+    </LinearLayout>
+    <ImageButton android:id="@id/prd_variation_dialog_store_info" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/StoreInfoImage.Selectable" />
+</RelativeLayout>

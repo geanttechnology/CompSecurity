@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/dark_text" android:id="@id/you_are_signed_in_as_label" android:paddingLeft="@dimen/padding_double" android:paddingTop="@dimen/padding_double" android:paddingRight="@dimen/padding_double" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@id/logout_button" android:layout_marginTop="@dimen/padding_double" android:layout_marginBottom="@dimen/padding_double" android:text="@string/sign_out_button" style="@style/AUIButton.Gold.Fullscreen" />
+</LinearLayout>

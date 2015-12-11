@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.common.TargetErrorView android:gravity="center" android:id="@id/payment_card_list_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/payment_card_list_empty_container" android:visibility="gone" layout="@layout/view_common_empty_list_container" />
+    <RelativeLayout android:id="@id/payment_card_list_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/payment_card_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/target_aluminum_grey" android:dividerHeight="@dimen/payment_card_row_separator_height" android:layout_above="@id/payment_card_list_button_done" android:overScrollMode="never" />
+        <com.target.ui.view.TargetButton android:id="@id/payment_card_list_button_done" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/payment_card_list_done_button_margin" android:text="@string/common_done" android:layout_alignParentBottom="true" app:fontStyle="medium" style="@style/RedButton" />
+    </RelativeLayout>
+</FrameLayout>

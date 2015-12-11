@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/coupon_circular_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coupon_merchant_spacing_left_right" android:layout_marginTop="@dimen/coupon_merchant_spacing_top_bottom" android:layout_marginRight="@dimen/coupon_merchant_spacing_left_right" android:layout_marginBottom="@dimen/coupon_merchant_spacing_top_bottom">
+        <com.groupon.view.CustomPlaceholderUrlImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="@dimen/coupon_merchant_logo_radius" android:layout_height="@dimen/coupon_merchant_logo_radius" />
+    </FrameLayout>
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" package="com.wishabi.flipp" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE"/>
+    <permission android:name="com.wishabi.flipp.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.wishabi.flipp.permission.C2D_MESSAGE"/>
+    <permission android:name="com.wishabi.flipp.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.wishabi.flipp.permission.RECEIVE_ADM_MESSAGE"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher_flipp" android:label="@string/app_name" android:name="com.wishabi.flipp.app.FlippApplication" android:theme="@style/Theme.Flipp">
+        <meta-data android:name="LOCALYTICS_APP_KEY" android:value="f947945a552ab7c1fbd7bcd-ecbd3a2c-6534-11e4-27b9-004a77f8b47f"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <amazon:enable-feature android:name="com.amazon.device.messaging" android:required="false"/>
+        <provider android:authorities="com.wishabi.flipp.content.Flyer" android:exported="false" android:initOrder="3" android:name="com.wishabi.flipp.content.FlyersContentProvider"/>
+        <provider android:authorities="com.wishabi.flipp.models.User" android:exported="false" android:initOrder="2" android:name="com.wishabi.flipp.content.UserContentProvider"/>
+        <provider android:authorities="com.wishabi.flipp.content.SearchTerm" android:exported="false" android:initOrder="1" android:name="com.wishabi.flipp.content.SearchTermProvider"/>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.SearchActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.LauncherActivity" android:theme="@style/Theme.Flipp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.wishabi.flipp.app.MainActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <meta-data android:name="android.app.default_searchable" android:value=".app.SearchActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="flyers" android:scheme="com.wishabi.flipp"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.HelpActivity" android:theme="@style/Theme.Flipp.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.FlyerActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.ItemDetailsActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.SettingsActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.FlyerInfoActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.WebViewActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.CouponDetailsActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.BarcodeActivity" android:parentActivityName="com.wishabi.flipp.app.CouponDetailsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.CouponDetailsActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.CouponHelpActivity" android:parentActivityName="com.wishabi.flipp.app.CouponDetailsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.CouponDetailsActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.PrintCouponActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.EulaActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.wishabi.flipp.app.WebVideoActivity" android:parentActivityName="com.wishabi.flipp.app.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.MainActivity"/>
+        </activity>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"/>
+        <activity android:name="net.hockeyapp.android.FeedbackActivity"/>
+        <receiver android:exported="true" android:name="com.wishabi.flipp.app.InstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService"/>
+        <service android:exported="false" android:name="com.wishabi.flipp.app.AdmBroadcastReceiver$AdmMessageHandler"/>
+        <receiver android:name="com.wishabi.flipp.app.AdmBroadcastReceiver" android:permission="com.amazon.device.messaging.permission.SEND">
+            <intent-filter>
+                <action android:name="com.amazon.device.messaging.intent.REGISTRATION"/>
+                <action android:name="com.amazon.device.messaging.intent.RECEIVE"/>
+                <category android:name="com.wishabi.flipp"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.wishabi.flipp.app.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.wishabi.flipp"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity"/>
+    </application>
+</manifest>

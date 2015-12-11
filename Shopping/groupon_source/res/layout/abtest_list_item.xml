@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textStyle="normal" android:textColor="@color/grey_dark" android:id="@id/preconfigured_abtest_key" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/override_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/grey60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/override" />
+        <TextView android:textSize="16.0dip" android:id="@id/preconfigured_abtest_val" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/default_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/grey60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_override" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/grey60" android:id="@id/preconfigured_abtest_server" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

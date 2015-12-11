@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <include android:visibility="gone" layout="@layout/sell_list_error" />
+    <TextView android:textAppearance="@style/EbayTextAppearance" android:textSize="@dimen/sell_fontsize_large" android:textColor="@color/style_guide_gray" android:gravity="center" android:id="@id/empty_view" android:padding="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_draft_list" android:layout_centerInParent="true" />
+    <com.ebay.android.widget.MaxSizeRelativeLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" ebay:maxWidth="@dimen/max_list_width" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeToRefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </com.ebay.android.widget.MaxSizeRelativeLayout>
+</RelativeLayout>

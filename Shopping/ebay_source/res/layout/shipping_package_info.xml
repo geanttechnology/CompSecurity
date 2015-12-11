@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/psl_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/package_weight_title" android:text="@string/psl_weight" style="@style/Sell.Spoke.Title.Top" />
+        <LinearLayout android:id="@id/package_weight_container" style="@style/Sell.Layout.Container">
+            <LinearLayout android:orientation="horizontal" android:id="@id/weight_pounds_container" android:padding="8.0dip" style="@style/Sell.Layout.Row">
+                <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_pounds" android:layout_weight="1.0" />
+                <EditText android:id="@id/shipping_label_weight_pounds" style="@style/PSL.DimensionsText" />
+                <TextView android:layout_gravity="center_vertical" android:paddingLeft="@dimen/psl_padding" android:paddingRight="@dimen/psl_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/package_weight_unit_major_imperial" android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/weight_ounces_container" android:padding="8.0dip" style="@style/Sell.Layout.Row">
+                <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_ounces" android:layout_weight="1.0" />
+                <EditText android:id="@id/shipping_label_weight_ounces" style="@style/PSL.DimensionsText" />
+                <TextView android:layout_gravity="center_vertical" android:paddingLeft="@dimen/psl_padding" android:paddingRight="@dimen/psl_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/package_weight_unit_minor_imperial" android:layout_weight="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@id/package_dimensions_title" android:text="@string/psl_dimensions" style="@style/Sell.Spoke.Title.Top" />
+        <LinearLayout android:id="@id/package_dimensions_container" style="@style/Sell.Layout.Container">
+            <LinearLayout android:orientation="horizontal" android:id="@id/package_length_container" android:padding="8.0dip" style="@style/Sell.Layout.Row">
+                <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_length" android:layout_weight="1.0" />
+                <EditText android:id="@id/package_length" android:text="0" style="@style/PSL.DimensionsText" />
+                <TextView android:layout_gravity="center_vertical" android:paddingLeft="@dimen/psl_padding" android:paddingRight="@dimen/psl_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/package_length_unit_imperial" android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/package_width_container" android:padding="8.0dip" style="@style/Sell.Layout.Row">
+                <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_width" android:layout_weight="1.0" />
+                <EditText android:id="@id/package_width" android:text="0" style="@style/PSL.DimensionsText" />
+                <TextView android:layout_gravity="center_vertical" android:paddingLeft="@dimen/psl_padding" android:paddingRight="@dimen/psl_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/package_length_unit_imperial" android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/package_height_container" android:padding="8.0dip" style="@style/Sell.Layout.Row">
+                <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_height" android:layout_weight="1.0" />
+                <EditText android:id="@id/package_height" android:text="0" style="@style/PSL.DimensionsText" />
+                <TextView android:layout_gravity="center_vertical" android:paddingLeft="@dimen/psl_padding" android:paddingRight="@dimen/psl_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/package_length_unit_imperial" android:layout_weight="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

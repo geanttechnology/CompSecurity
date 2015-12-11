@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/header_container" />
+    <FrameLayout android:id="@id/spinner_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="232.0dip" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="center" android:background="@color/filters_header_divider" android:layout_width="fill_parent" android:layout_height="@dimen/date_time_list_element_height" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="36.0dip" android:paddingBottom="36.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0">
+            <com.groupon.view.FixedPositionListView android:id="@id/list_1" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/date_time_filter_sheet_margin" android:layout_marginBottom="@dimen/date_time_filter_sheet_margin" android:listSelector="@color/transparent" android:divider="@null" android:layout_weight="1.0" android:overScrollMode="never" />
+            <View android:background="@color/grey80" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <com.groupon.view.FixedPositionListView android:id="@id/list_2" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/date_time_filter_sheet_margin" android:layout_marginBottom="@dimen/date_time_filter_sheet_margin" android:listSelector="@color/transparent" android:divider="@null" android:layout_weight="1.0" android:overScrollMode="never" />
+            <View android:background="@color/grey80" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <com.groupon.view.FixedPositionListView android:id="@id/list_3" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/date_time_filter_sheet_margin" android:layout_marginBottom="@dimen/date_time_filter_sheet_margin" android:listSelector="@color/transparent" android:divider="@null" android:layout_weight="1.0" android:overScrollMode="never" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/loading_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/shade" android:background="@color/white_50p" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:gravity="center_vertical" android:id="@id/header_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/date_time_list_element_height" android:layout_above="@id/spinner_container">
+        <ImageButton android:layout_gravity="left|center" android:id="@id/close_button" android:background="@color/white" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/x_close_icon" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/grey_dark" android:layout_gravity="center" android:id="@id/filters_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_date_time_title" android:fontFamily="@string/roboto_medium" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/grey73" android:gravity="center" android:layout_gravity="right|center" android:id="@id/reset_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:text="@string/reset" android:fontFamily="@string/roboto_medium" />
+        <View android:layout_gravity="bottom" android:id="@id/titleDividerTop" android:background="@color/filters_header_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vs_dialog_content_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.shopapp.voice.search.ui.VSModalButton android:id="@id/vs_retry_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/VSActionButton.VSRetryButton" />
+    <com.amazon.shopapp.voice.search.ui.VSModalButton android:id="@id/vs_type_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vs_dialog_content_padding" style="@style/VSActionButton.VSTypeButton" />
+</LinearLayout>

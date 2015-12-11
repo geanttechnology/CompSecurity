@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.target.ui.view.ScrimInsetsFrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetForegroundCompat="@color/default_scrim_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.target.ui.view.navigation.NavigationHeaderView android:id="@id/navigation_header" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_header_height" />
+        <com.target.ui.view.navigation.NavigationStoreSelectionView android:id="@id/store_selection" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_navigation_drawer_primary_content" />
+                <include layout="@layout/view_navigation_divider_light" />
+                <LinearLayout android:orientation="vertical" android:background="@color/target_aluminum_grey_over_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/view_navigation_drawer_secondary_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.target.ui.view.ScrimInsetsFrameLayout>

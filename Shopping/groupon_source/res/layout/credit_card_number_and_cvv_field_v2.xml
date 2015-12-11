@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/number" android:nextFocusDown="@id/cvv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/card_number" android:layout_weight="1.8" android:inputType="number" style="@style/edit_credit_card_single_line_v2" />
+    <View android:background="@drawable/vertical_grey_separator" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <EditText android:id="@id/cvv" android:nextFocusUp="@id/number" android:nextFocusDown="@id/month" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/cvv" android:layout_weight="1.0" android:inputType="number" style="@style/edit_credit_card_single_line_v2" />
+</LinearLayout>

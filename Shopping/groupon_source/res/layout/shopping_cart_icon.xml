@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/lollipop_toolbar_icon_width" android:layout_height="@dimen/lollipop_toolbar_icon_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/shopping_cart_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_shopping_cart_btn" />
+    <TextView android:id="@id/shopping_cart_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cart_counter_bubble_deal_details" />
+    <TextView android:id="@id/shopping_cart_new_badge" android:background="@drawable/cart_new_bg" android:visibility="gone" android:layout_width="@dimen/cart_icon_width" android:layout_height="@dimen/cart_icon_height" android:text="@string/cart_new_badge" style="@style/cart_new_text" />
+</FrameLayout>

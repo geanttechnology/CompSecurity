@@ -1,0 +1,154 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.google.android.gms.internal;
+
+import android.net.Uri;
+import android.os.Parcel;
+import com.google.android.gms.common.internal.safeparcel.a;
+import com.google.android.gms.common.internal.safeparcel.b;
+import com.google.android.gms.common.internal.safeparcel.c;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+
+// Referenced classes of package com.google.android.gms.internal:
+//            hd, hf, gx
+
+public final class jk
+    implements android.os.Parcelable.Creator
+{
+
+    public jk()
+    {
+    }
+
+    static void a(hd hd1, Parcel parcel, int i)
+    {
+        int j = c.a(parcel, 20293);
+        hd1.a("getId");
+        c.a(parcel, 1, hd1.b, false);
+        c.a(parcel, 2, hd1.c);
+        c.a(parcel, 3, hd1.d, i, false);
+        hd1.a("getLatLng");
+        c.a(parcel, 4, hd1.e, i, false);
+        hd1.a("getLevelNumber");
+        c.a(parcel, 5, hd1.f);
+        hd1.a("getViewport");
+        c.a(parcel, 6, hd1.g, i, false);
+        c.a(parcel, 7, hd1.h, false);
+        hd1.a("getWebsiteUri");
+        c.a(parcel, 8, hd1.i, i, false);
+        hd1.a("isPermanentlyClosed");
+        c.a(parcel, 9, hd1.j);
+        hd1.a("getRating");
+        c.a(parcel, 10, hd1.k);
+        hd1.a("getPriceLevel");
+        c.b(parcel, 11, hd1.l);
+        c.a(parcel, 12, hd1.m);
+        hd1.a("getTypes");
+        c.b(parcel, 13, hd1.n, false);
+        c.b(parcel, 1000, hd1.a);
+        c.b(parcel, j);
+    }
+
+    public final Object createFromParcel(Parcel parcel)
+    {
+        int k = com.google.android.gms.common.internal.safeparcel.a.a(parcel);
+        int j = 0;
+        String s1 = null;
+        java.util.ArrayList arraylist = null;
+        android.os.Bundle bundle = null;
+        hf hf1 = null;
+        LatLng latlng = null;
+        float f1 = 0.0F;
+        LatLngBounds latlngbounds = null;
+        String s = null;
+        Uri uri = null;
+        boolean flag = false;
+        float f = 0.0F;
+        int i = 0;
+        long l1 = 0L;
+        do
+        {
+            if (parcel.dataPosition() < k)
+            {
+                int l = parcel.readInt();
+                switch (0xffff & l)
+                {
+                default:
+                    com.google.android.gms.common.internal.safeparcel.a.b(parcel, l);
+                    break;
+
+                case 1: // '\001'
+                    s1 = com.google.android.gms.common.internal.safeparcel.a.k(parcel, l);
+                    break;
+
+                case 2: // '\002'
+                    bundle = com.google.android.gms.common.internal.safeparcel.a.m(parcel, l);
+                    break;
+
+                case 3: // '\003'
+                    hf1 = (hf)com.google.android.gms.common.internal.safeparcel.a.a(parcel, l, hf.CREATOR);
+                    break;
+
+                case 4: // '\004'
+                    latlng = (LatLng)com.google.android.gms.common.internal.safeparcel.a.a(parcel, l, LatLng.CREATOR);
+                    break;
+
+                case 5: // '\005'
+                    f1 = com.google.android.gms.common.internal.safeparcel.a.h(parcel, l);
+                    break;
+
+                case 6: // '\006'
+                    latlngbounds = (LatLngBounds)com.google.android.gms.common.internal.safeparcel.a.a(parcel, l, LatLngBounds.CREATOR);
+                    break;
+
+                case 7: // '\007'
+                    s = com.google.android.gms.common.internal.safeparcel.a.k(parcel, l);
+                    break;
+
+                case 8: // '\b'
+                    uri = (Uri)com.google.android.gms.common.internal.safeparcel.a.a(parcel, l, Uri.CREATOR);
+                    break;
+
+                case 9: // '\t'
+                    flag = com.google.android.gms.common.internal.safeparcel.a.c(parcel, l);
+                    break;
+
+                case 10: // '\n'
+                    f = com.google.android.gms.common.internal.safeparcel.a.h(parcel, l);
+                    break;
+
+                case 11: // '\013'
+                    i = com.google.android.gms.common.internal.safeparcel.a.e(parcel, l);
+                    break;
+
+                case 12: // '\f'
+                    l1 = com.google.android.gms.common.internal.safeparcel.a.f(parcel, l);
+                    break;
+
+                case 13: // '\r'
+                    arraylist = com.google.android.gms.common.internal.safeparcel.a.c(parcel, l, gx.CREATOR);
+                    break;
+
+                case 1000: 
+                    j = com.google.android.gms.common.internal.safeparcel.a.e(parcel, l);
+                    break;
+                }
+            } else
+            if (parcel.dataPosition() != k)
+            {
+                throw new b((new StringBuilder("Overread allowed size end=")).append(k).toString(), parcel);
+            } else
+            {
+                return new hd(j, s1, arraylist, bundle, hf1, latlng, f1, latlngbounds, s, uri, flag, f, i, l1);
+            }
+        } while (true);
+    }
+
+    public final Object[] newArray(int i)
+    {
+        return new hd[i];
+    }
+}

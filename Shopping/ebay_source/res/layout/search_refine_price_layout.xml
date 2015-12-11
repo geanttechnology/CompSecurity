@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/price_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:id="@id/minimum_price_label" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/minimum_price" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Refine.Text.Title" />
+            <com.ebay.mobile.widget.PriceView android:id="@id/price_range_min" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/refineEdgeMargin" android:lines="1" android:maxLength="13" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="numberDecimal" android:imeOptions="actionNext" ebay:showCurrencySymbolAlways="true" style="@style/ItemView.EditCurrency" />
+        </RelativeLayout>
+        <include layout="@layout/refine_panel_item_divider" />
+        <RelativeLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:id="@id/maximum_price_label" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/maximum_price" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Refine.Text.Title" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:id="@id/max_currency_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_toRightOf="@id/maximum_price_label" android:layout_centerVertical="true" />
+            <com.ebay.mobile.widget.PriceView android:id="@id/price_range_max" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/refineEdgeMargin" android:lines="1" android:maxLength="13" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="numberDecimal" android:imeOptions="actionDone" ebay:showCurrencySymbolAlways="true" style="@style/ItemView.EditCurrency" />
+        </RelativeLayout>
+        <include layout="@layout/refine_panel_item_divider" />
+        <Button android:id="@id/apply" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/refineEdgeMargin" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/refineEdgeMargin" android:layout_marginBottom="8.0dip" android:text="@string/search_refinement_price_apply" style="@style/EbayButton.White.Outlined" />
+        <Button android:id="@id/clear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/refineEdgeMargin" android:layout_marginRight="@dimen/refineEdgeMargin" android:text="@string/search_refinement_price_clear" style="@style/EbayButton.White.Outlined" />
+    </LinearLayout>
+</ScrollView>

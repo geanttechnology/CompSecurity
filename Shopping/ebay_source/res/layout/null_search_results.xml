@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/autoCorrectSearchLayout" android:background="?selectorHeaderBackground" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:id="@id/null_result_textView" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="62.0dip" android:layout_toLeftOf="@id/dividerView" />
+    <View android:id="@id/dividerView" android:background="@color/my_ebay_vertical_divider_color" android:paddingLeft="10.0dip" android:layout_width="0.5dip" android:layout_height="35.0dip" android:layout_toLeftOf="@id/undoLayout" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/undoLayout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/undoImageView" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/undo" android:layout_centerHorizontal="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/undoTextView" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/undo" android:layout_below="@id/undoImageView" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

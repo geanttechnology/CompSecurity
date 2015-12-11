@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_2x_padding_margin" android:minHeight="@dimen/min_image_button_size" style="@style/Target.CardView.Selectable"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/prd_pdp_nutritional_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:id="@id/prd_pdp_nutritional_info" android:paddingLeft="@dimen/default_2x_padding_margin" android:paddingRight="@dimen/default_2x_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_nutrition_information" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fontStyle="medium" style="@style/Target.TextView.PdpNutritionInfo" />
+        <ImageView android:layout_gravity="right" android:id="@id/prd_pdp_nutrition_info_icon" android:paddingLeft="@dimen/default_2x_padding_margin" android:paddingRight="@dimen/default_2x_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_info" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

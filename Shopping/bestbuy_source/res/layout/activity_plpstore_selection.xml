@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent_outer_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <RelativeLayout android:id="@id/header_layout" android:background="@color/transparent_outer_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/closeicon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/geolocate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/geolocate" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <SearchView android:gravity="center_vertical" android:id="@id/searchView" android:background="@drawable/blue_assist_searchview_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="8.0dip" android:layout_toLeftOf="@id/geolocate" android:layout_toRightOf="@id/close" android:layout_centerVertical="true" android:imeOptions="actionSearch" />
+    </RelativeLayout>
+    <FrameLayout android:background="#99003b64" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_layout">
+        <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/transparent_loading_layout" />
+        <LinearLayout android:orientation="vertical" android:id="@id/no_stores_msg_layout" android:background="@color/white" android:padding="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="20.0sp" android:textColor="@color/bby_gray" android:gravity="center" android:id="@id/wrongQuery" android:layout_width="fill_parent" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="@color/bby_dark_gray" android:gravity="center" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_results" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/bby_dark_gray" android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/check_spelling" bby:BBYFont="@string/BBY_APP_FONT_LIGHT" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/enable_gps_layout" android:background="@color/bby_blue" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="150.0dip" android:layout_height="90.0dip" android:src="@drawable/enablegps" />
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/location_power_services" android:layout_centerHorizontal="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/accessfeatures" android:layout_centerHorizontal="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                <com.bestbuy.android.bbyobjects.BBYButton android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/enable_gps" android:background="@drawable/error_handle_blue_box" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/enable_gps" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

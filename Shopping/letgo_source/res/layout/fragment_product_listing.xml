@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_root" android:background="@color/grey_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/header_category_listing_not_found" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/header_category_listing" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/search_params_layout" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_results_subtitle" android:layout_centerInParent="true" />
+            <ImageButton android:layout_gravity="right" android:id="@id/clearParamsSearchButton" android:src="@drawable/ic_action_navigation_close" android:layout_alignParentRight="true" style="@style/TransparentBackgroundButtonStyle" />
+        </RelativeLayout>
+        <com.abtnprojects.ambatana.ui.widgets.AmbatanaSwipeToRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.abtnprojects.ambatana.ui.widgets.RecyclerViewWithEmpty android:id="@id/list_products_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TextView android:id="@id/product_listing_text_not_found" android:visibility="gone" style="@style/ProductListingNotFoundStyle" />
+                <com.abtnprojects.ambatana.ui.widgets.NoNetworkView android:id="@id/no_internet_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/distance_bubble" android:background="@drawable/distance_bg_shadow" android:paddingLeft="@dimen/padding_large" android:paddingTop="@dimen/padding_medium" android:paddingRight="@dimen/padding_large" android:paddingBottom="@dimen/padding_medium" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_large" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/lighter_text_color" android:id="@id/distance_bubble_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </com.abtnprojects.ambatana.ui.widgets.AmbatanaSwipeToRefreshLayout>
+    </LinearLayout>
+    <com.abtnprojects.ambatana.ui.widgets.SellButtonLayout android:id="@id/sell_button_layout" style="@style/SellButtonStyle" />
+</RelativeLayout>

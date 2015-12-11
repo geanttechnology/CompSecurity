@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/coupons_sign_up_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/coupons_margin_micro" android:layout_marginBottom="@dimen/coupons_margin_ultra_micro">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/coupon_name_img" android:paddingTop="@dimen/coupons_margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_name" android:contentDescription="@string/coupons_cd_name" />
+            <com.target.ui.view.common.NameView android:id="@id/coupon_name_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coupons_margin_extra_large" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/coupons_margin_ultra_micro" android:layout_marginBottom="@dimen/coupons_margin_ultra_micro">
+            <ImageView android:id="@id/coupon_zip_image" android:paddingTop="@dimen/coupons_margin_micro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_zipcode" android:contentDescription="@string/coupons_cd_zip_code" />
+            <com.target.ui.view.CustomErrorViewWrapper android:id="@id/coupon_zip_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coupons_margin_extra_large" app:viewId="@id/coupon_zip">
+                <com.target.ui.view.TargetEditText android:textSize="@dimen/largeTextSize" android:id="@id/coupon_zip" android:layout_width="fill_parent" android:layout_height="@dimen/coupons_signup_edit_text_height" android:hint="@string/coupons_zip_code_hint" android:maxLength="@integer/max_zip_code_length" android:inputType="number" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+            </com.target.ui.view.CustomErrorViewWrapper>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/coupons_margin_ultra_micro" android:layout_marginBottom="@dimen/coupons_margin_ultra_micro">
+            <ImageView android:id="@id/coupon_phone_image" android:paddingTop="@dimen/coupons_margin_micro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_phone" android:contentDescription="@string/coupons_cd_phone" />
+            <com.target.ui.view.CustomErrorViewWrapper android:id="@id/coupon_phone_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coupons_margin_extra_large" app:viewId="@id/coupon_phone">
+                <com.target.ui.view.TargetEditText android:id="@id/coupon_phone" android:layout_width="fill_parent" android:hint="@string/coupons_phone_hint" app:fontStyle="light" style="@style/Target.Edit.PhoneNumber" />
+            </com.target.ui.view.CustomErrorViewWrapper>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

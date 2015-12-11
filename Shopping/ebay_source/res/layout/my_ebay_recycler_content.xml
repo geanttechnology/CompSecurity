@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/progress_container" />
+    <ViewStub android:id="@id/my_ebay_empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <com.ebay.android.widget.MaxSizeRelativeLayout android:id="@id/my_ebay_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" ebay:maxWidth="@dimen/max_list_width">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/my_ebay_pull_to_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/my_ebay_recycler_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </com.ebay.android.widget.MaxSizeRelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@id/tool_bar" android:visibility="gone" style="@style/toolbar_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/close_button" android:layout_width="@dimen/web_view_close_width_height" android:layout_height="@dimen/web_view_close_width_height" android:layout_marginLeft="@dimen/web_view_close_button_side_margin" android:layout_marginRight="@dimen/web_view_close_button_side_margin" android:src="@drawable/webview_cross" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/page_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/third_party_deal_toolbar_title_text" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/xo_cart_layout" style="@style/Checkout.ContainerLayout.Modal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/xo_cart_alert" android:visibility="gone" android:drawableLeft="@drawable/error_icon" android:drawablePadding="@dimen/checkoutListContainerMargin" style="@style/Checkout.Alert" />
+    <ScrollView android:id="@id/xo_cart_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/xo_cart_payment_method_chooser_paypal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginTop="@dimen/checkoutListContainerMarginDouble" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:layout_marginBottom="@dimen/checkoutListContainerMarginDouble">
+                <com.ebay.android.widget.ContainerLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/xo_payment_methods_paypal" />
+                </com.ebay.android.widget.ContainerLayout>
+            </LinearLayout>
+            <include android:id="@id/xo_payment_method_dashed_line" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_dashed_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/xo_cart_payment_method_chooser_other_no_paypal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginTop="@dimen/checkoutListContainerMarginDouble" android:layout_marginRight="@dimen/checkoutListContainerMargin">
+                <com.ebay.android.widget.ContainerLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/xo_payment_methods_non_paypal" />
+                </com.ebay.android.widget.ContainerLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/xo_cart_payment_method_chooser_other_expandable" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginTop="@dimen/checkoutListContainerMarginDouble" android:layout_marginRight="@dimen/checkoutListContainerMargin">
+                <com.ebay.android.widget.ContainerLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/xo_payment_methods_non_paypal_expandable" />
+                </com.ebay.android.widget.ContainerLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

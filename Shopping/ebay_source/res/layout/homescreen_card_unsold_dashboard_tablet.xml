@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/unsold_count_board" android:layout_width="wrap_content" android:layout_height="@dimen/card_selling_count_height" android:minWidth="@dimen/card_selling_count_width">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/selling_card_main_content_text_size" android:gravity="center_horizontal" android:id="@id/noOfUnSoldItems" android:layout_width="@dimen/card_selling_count_width" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homescreen_unsold" android:layout_below="@id/noOfUnSoldItems" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/unsold_count_separator" layout="@layout/homescreen_card_vertical_divider" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/sell_destination_title_fontsize" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/notYetRelistedText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" />
+    <TextView android:textColor="@color/style_guide_gray" android:gravity="center" android:id="@id/oops_unsold_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_selling_utility_oops_text_size" android:text="@string/homescreen_card_unsold_oops_text" />
+    <TextView android:textSize="@dimen/ebayTextSizeBody2" android:textColor="@color/style_guide_gray" android:gravity="center_vertical" android:id="@id/allRelisted" android:paddingLeft="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/selling_card_everything_relisted" android:layout_weight="1.0" />
+</com.ebay.mobile.widget.FLinearLayout>

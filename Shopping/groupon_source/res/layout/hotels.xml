@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/scrollable_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.view.GrouponSwipeRefreshLayout android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.groupon.util.ScrollEventListView android:id="@android:id/list" android:background="@color/background_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/hotel_item_selector_state" android:drawSelectorOnTop="true" style="@style/pull_to_refresh" />
+            <include android:id="@android:id/empty" layout="@layout/hotels_empty_results" />
+        </FrameLayout>
+    </com.groupon.view.GrouponSwipeRefreshLayout>
+    <com.groupon.view.HotelsLoadingScreen android:id="@id/loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

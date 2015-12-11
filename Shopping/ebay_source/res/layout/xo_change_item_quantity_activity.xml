@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/button_bar" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/quantity_field" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="@string/Enter_Quantity" android:layout_centerHorizontal="true" android:inputType="number" />
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/quantity_available" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/quantity_field" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+    <com.ebay.android.widget.ButtonBar android:id="@id/button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" ebay:positiveButtonText="@string/ok" ebay:negativeButtonText="@string/cancel" ebay:positiveButtonId="@id/button_okay" ebay:negativeButtonId="@id/button_cancel" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

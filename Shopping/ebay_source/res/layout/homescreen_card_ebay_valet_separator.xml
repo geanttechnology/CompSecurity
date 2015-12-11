@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="9.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?listContainerBackground" android:layout_width="0.0dip" android:layout_height="@dimen/listContainerCaptionBottomMargin" android:layout_marginTop="@dimen/ebayMargin15" android:layout_marginBottom="@dimen/ebayMargin15" android:layout_weight="4.0" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/or" android:layout_weight="1.0" />
+    <View android:background="?listContainerBackground" android:layout_width="0.0dip" android:layout_height="@dimen/listContainerCaptionBottomMargin" android:layout_marginTop="@dimen/ebayMargin15" android:layout_marginBottom="@dimen/ebayMargin15" android:layout_weight="4.0" />
+</LinearLayout>

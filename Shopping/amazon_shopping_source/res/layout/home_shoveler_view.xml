@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.home.HomeShovelerView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:textColor="@color/button_gray_text_selector" android:gravity="bottom" android:orientation="horizontal" android:id="@id/home_shoveler_title_container" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding_icon_selector_right" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/home_subheader_text_size" android:textColor="@color/amazon_black" android:ellipsize="end" android:id="@id/home_shoveler_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/home_subheader_right_text_size" android:textColor="@color/home_gray_text_color" android:ellipsize="end" android:gravity="right" android:id="@id/home_shoveler_more_link" android:paddingRight="@dimen/padding_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/items_horizontal_listview_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/home_view_shoveler_view_height">
+        <com.amazon.mShop.ui.HorizontalListView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/items_horizontal_listview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/home_view_shoveler_view_height" />
+        <View android:layout_gravity="left" android:id="@id/shoveler_view_left_fading_1" android:background="@drawable/home_shoveler_left_fading_edge_gradient_background" android:layout_width="@dimen/home_shoveler_view_bottom_fading_edge_width" android:layout_height="@dimen/home_view_shoveler_view_height" />
+        <View android:layout_gravity="left" android:id="@id/shoveler_view_left_fading_2" android:background="@drawable/home_shoveler_left_fading_edge_gradient_background" android:layout_width="@dimen/home_shoveler_view_top_fading_edge_width" android:layout_height="@dimen/home_view_shoveler_view_height" />
+        <View android:layout_gravity="right" android:id="@id/shoveler_view_right_fading_1" android:background="@drawable/home_shoveler_right_fading_edge_gradient_background" android:layout_width="@dimen/home_shoveler_view_bottom_fading_edge_width" android:layout_height="@dimen/home_view_shoveler_view_height" />
+        <View android:layout_gravity="right" android:id="@id/shoveler_view_right_fading_2" android:background="@drawable/home_shoveler_right_fading_edge_gradient_background" android:layout_width="@dimen/home_shoveler_view_top_fading_edge_width" android:layout_height="@dimen/home_view_shoveler_view_height" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:id="@id/shoveler_view_loading_placeholder" android:layout_width="wrap_content" android:layout_height="@dimen/home_view_shoveler_view_height">
+        <ProgressBar android:progressBarStyle="@android:attr/progressBarStyleSmall" android:layout_gravity="center" android:id="@id/shoveler_view_loading_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.amazon.mShop.home.HomeShovelerView>

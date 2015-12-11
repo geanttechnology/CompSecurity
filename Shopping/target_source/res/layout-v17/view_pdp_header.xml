@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/pdp_header_callout_image" android:paddingLeft="@dimen/default_4x_padding_margin" android:paddingRight="@dimen/default_4x_padding_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/pdp_header_registry_details" android:paddingLeft="@dimen/default_4x_padding_margin" android:paddingRight="@dimen/default_4x_padding_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/pdp_header_registry_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_registry_small" />
+        <com.target.ui.view.TargetTextView android:layout_gravity="right|center" android:id="@id/pdp_header_registry_title" android:paddingLeft="@dimen/default_padding_margin" android:paddingRight="@dimen/default_padding_margin" android:layout_width="@dimen/registry_pdp_header_width" android:layout_height="wrap_content" app:fontStyle="regular" style="@style/Target.TextView.RegistryDetailsTitle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.target.ui.view.TargetTextView android:id="@id/pdp_header_store_availability" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="regular" style="@style/Target.TextView.PdpHeader.InventoryStatus" />
+                <com.target.ui.view.TargetTextView android:id="@id/pdp_header_store_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="regular" style="@style/Target.TextView.PdpHeader" />
+            </LinearLayout>
+            <com.target.ui.view.TargetTextView android:layout_gravity="right|center" android:id="@id/pdp_header_online_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="regular" style="@style/Target.TextView.PdpHeader.InventoryStatus" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/pdp_header_online_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prd_pdp_online_icon_left_margin" android:layout_marginTop="@dimen/prd_pdp_online_icon_margin" android:layout_marginRight="@dimen/prd_pdp_online_icon_margin" android:layout_marginBottom="@dimen/prd_pdp_online_icon_margin" android:src="@drawable/product_online_on" />
+        <com.target.ui.view.AisleBadgeView android:layout_gravity="center_vertical" android:id="@id/prd_pdp_aisle_location" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badgeType="active" app:badgeSize="big" />
+    </LinearLayout>
+</merge>

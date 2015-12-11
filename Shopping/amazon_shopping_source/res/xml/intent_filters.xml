@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<intent-filters>
+    <intent-filter>
+        <action name="com.amazon.events.NOTIFY_ACTION" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.pdiservice.PdiService.pdiInitiated" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.pdiservice.PdiService.pdiComplete" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.purchaseservice.PurchaseResponse.PURCHASE_RESPONSE" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.download.DOWNLOAD_STARTED" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.download.DOWNLOAD_PROGRESS" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.download.DOWNLOAD_COMPLETE" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.download.DOWNLOAD_FAILED" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.download.DOWNLOAD_PAUSED" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.download.DOWNLOAD_RESUMED" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.install.ENQUEUED" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.install.INSTALL_COMPLETED" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.install.INSTALL_FAILED" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.install.INSTALL_STATE_CHANGE" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.pdiservice.PdiService.downloadUrlFailed" />
+    </intent-filter>
+    <intent-filter>
+        <action name="com.amazon.mas.client.pdiservice.PdiService.generateApkLocationFailure" />
+    </intent-filter>
+</intent-filters>

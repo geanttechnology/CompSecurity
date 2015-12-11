@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/coupons_margin_large" android:text="@string/coupon_add_coupon_text" app:fontStyle="medium" style="@style/Target.TextView.DialogTitle" />
+    <com.target.ui.view.TargetEditText android:id="@id/coupon_code" android:layout_width="fill_parent" android:layout_height="@dimen/coupons_signup_edit_text_height" android:hint="@string/coupon_enter_coupon_code_text" android:inputType="textCapCharacters" app:fontStyle="light" style="@style/Target.TextView.CouponEditText" />
+    <RelativeLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/coupons_padding_small">
+        <com.target.ui.view.TargetButton android:enabled="false" android:id="@id/coupon_add_button" android:padding="@dimen/coupons_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/coupons_margin_large" android:text="@string/coupon_add_coupon_code_text" android:layout_alignParentRight="true" app:fontStyle="medium" style="@style/DialogButton.Red" />
+        <com.target.ui.view.TargetButton android:id="@id/coupon_cancel_button" android:padding="@dimen/coupons_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/coupons_margin_large" android:text="@string/coupon_cancel_coupon_code_text" android:layout_toLeftOf="@id/coupon_add_button" app:fontStyle="medium" style="@style/DialogButton" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar_actionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_default" />
+    <android.support.v4.widget.DrawerLayout android:id="@id/drawer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_actionbar"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <FrameLayout android:id="@id/content_frame" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <fragment android:name="com.abtnprojects.ambatana.ui.widgets.navigationdrawer.NavigationDrawerFragment" android:layout_gravity="left" android:id="@id/fragment_drawer" android:layout_width="@dimen/navigation_drawer_width" android:layout_height="fill_parent" app:layout="@layout/fragment_navigation_drawer_old" />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

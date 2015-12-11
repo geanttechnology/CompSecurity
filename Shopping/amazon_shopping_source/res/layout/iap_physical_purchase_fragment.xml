@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/iap_physical_purchase_relative_layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:layout_gravity="center" android:id="@id/anywhere_web_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:id="@id/anywhere_web_view_close_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/anywhere_close_button" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

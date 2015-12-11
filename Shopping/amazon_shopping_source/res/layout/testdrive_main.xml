@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/testdrive_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fragment android:name="com.amazon.testdrive.fragments.StyledTDQuitButtonFragment" android:id="@id/quit_btn_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <fragment android:name="com.amazon.testdrive.baseui.fragments.v4.TestDriveTimerFragment" android:id="@id/timer_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/quit_btn_fragment" />
+        <fragment android:name="com.amazon.testdrive.baseui.fragments.v4.TestDriveLatencyFragment" android:id="@id/latency_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/quit_btn_fragment" android:layout_below="@id/timer_fragment" />
+        <fragment android:name="com.amazon.testdrive.fragments.OneClickSSRButtonFragment" android:id="@id/one_click_ssr_btn_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <fragment android:name="com.amazon.testdrive.baseui.fragments.v4.TestDriveVideoFragment" android:gravity="center" android:layout_gravity="center" android:id="@id/video_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/testdrive_video_margin_top" android:layout_marginBottom="@dimen/testdrive_video_margin_bottom" />
+</LinearLayout>

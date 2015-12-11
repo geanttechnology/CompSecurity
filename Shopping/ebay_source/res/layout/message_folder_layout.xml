@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include layout="@layout/common_progress" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/message_display" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress_layout">
+        <ListView android:id="@id/message_list" android:background="@android:color/transparent" android:paddingLeft="@dimen/MessagesFolderListItemMargin" android:paddingRight="@dimen/MessagesFolderListItemMargin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="2.0dip" />
+        <LinearLayout android:id="@id/bottom_ribbon" android:background="@color/black_60pct" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/MessagesFolderBottomBarHeight" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/hide" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/ic_checkmark" />
+            <View android:background="@drawable/tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" />
+            <TextView android:textSize="@dimen/ebayTextSizeMedium" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/selection_count" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/trash" android:clickable="true" android:layout_width="@dimen/clickableButtonDimen" android:layout_height="@dimen/clickableButtonDimen" android:src="@drawable/ic_delete_message_white" />
+            <View android:layout_width="7.0dip" android:layout_height="1.0dip" />
+            <ImageView android:id="@id/move" android:clickable="true" android:layout_width="@dimen/clickableButtonDimen" android:layout_height="@dimen/clickableButtonDimen" android:src="@drawable/ic_move_folder_white" />
+            <View android:layout_width="7.0dip" android:layout_height="1.0dip" />
+            <ImageView android:id="@id/read" android:clickable="true" android:layout_width="@dimen/clickableButtonDimen" android:layout_height="@dimen/clickableButtonDimen" android:src="@drawable/ic_read" />
+            <ImageView android:id="@id/unread" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/clickableButtonDimen" android:layout_height="@dimen/clickableButtonDimen" android:src="@drawable/ic_unread" />
+            <View android:layout_width="7.0dip" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorSecondary" android:layout_gravity="center" android:id="@id/no_items" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/no_messages" android:drawableTop="@drawable/ic_messages_empty" android:drawablePadding="8.0dip" android:layout_below="@id/message_display" android:layout_centerInParent="true" />
+    <TextView android:textColor="?android:textColorSecondary" android:id="@id/no_items_filtered" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/no_items" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/sellButton" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ButtonBar.Floating"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/ready_to_sell" android:maxLines="2" android:layout_weight="1.0" style="?android:attr/textAppearanceMedium" />
+    <Button android:id="@id/button_sell_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sell_an_item_short" android:layout_weight="1.0" style="@style/EbayButton.Blue" />
+</LinearLayout>

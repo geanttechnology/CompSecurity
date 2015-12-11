@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/inner_content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <include layout="@layout/loading_spinner_layout" />
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/no_purchases_view" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/no_purchased_text" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+    <ListView android:id="@id/mybby_purchases_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/commerce_box_middle" android:cacheColorHint="#00000000" android:divider="#ffcccccc" android:dividerHeight="1.0dip" />
+</FrameLayout>

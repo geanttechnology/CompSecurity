@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" package="com.offerup" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <permission android:name="com.offerup.permission.UA_DATA" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.offerup.permission.UA_DATA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.offerup.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.offerup.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE"/>
+    <permission android:name="com.offerup.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.offerup.permission.RECEIVE_ADM_MESSAGE"/>
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@mipmap/launch_icn" android:label="@string/app_name" android:logo="@drawable/ab_offerup_logo_icn" android:name="com.offerup.android.application.OfferUpApplication" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/OfferUpTheme">
+        <uses-library android:name="com.google.android.maps"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA-Qgwczlzn3eJN_BottfTZqH4A_yKGct8"/>
+        <service android:exported="false" android:name="com.offerup.android.service.ApplicationStartupService"/>
+        <service android:exported="false" android:name="com.offerup.android.service.ServerStatusService"/>
+        <service android:exported="false" android:name="com.offerup.android.service.PaymentLocationService"/>
+        <activity android:name="com.offerup.android.activities.DeeplinkRouterActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_legacy_authority" android:scheme="http"/>
+                <data android:host="@string/app_authority" android:scheme="http"/>
+                <data android:host="@string/app_variant_authority" android:scheme="http"/>
+                <data android:host="@string/app_legacy_authority" android:scheme="https"/>
+                <data android:host="@string/app_authority" android:scheme="https"/>
+                <data android:host="@string/app_variant_authority" android:scheme="https"/>
+                <data android:scheme="@string/app_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.offerup.android.activities.SplashActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Archived Offers" android:name="com.offerup.android.activities.MyArchivedOffersActivity" android:screenOrientation="portrait" android:theme="@style/MyNoActionBarShadowTheme"/>
+        <activity android:label="My Offers" android:name="com.offerup.android.activities.MyOffersActivity" android:screenOrientation="portrait" android:theme="@style/OfferUpThemeNoActionBar"/>
+        <activity android:name="com.offerup.android.activities.ItemDetailActivity" android:screenOrientation="portrait" android:theme="@style/MyNoActionBarShadowTheme"/>
+        <activity android:name="com.offerup.android.activities.GalleryActivity" android:screenOrientation="portrait" android:theme="@style/OfferUpThemeNoActionBar"/>
+        <activity android:name="com.offerup.android.activities.DiscussionsListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.offerup.android.activities.ChatActivity" android:screenOrientation="portrait" android:theme="@style/MyNoActionBarShadowTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.offerup.android.activities.SearchActivity" android:screenOrientation="portrait" android:theme="@style/OfferUpThemeNoActionBar">
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <provider android:authorities="com.offerup.android.providers.SearchSuggestionProvider" android:name="com.offerup.android.providers.SearchSuggestionProvider"/>
+        <activity android:name="com.offerup.android.activities.ExploreActivity" android:screenOrientation="portrait" android:theme="@style/OfferUpThemeNoActionBar"/>
+        <activity android:label="Alerts" android:name="com.offerup.android.activities.AlertsActivity" android:screenOrientation="portrait" android:theme="@style/OfferUpThemeNoActionBar"/>
+        <activity android:name="com.offerup.android.activities.PaymentMethodsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.offerup.android.activities.PaymentMethodCaptureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.offerup.android.activities.NewPostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|adjustPan"/>
+        <activity android:name="com.offerup.android.activities.PrePostingHelpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:name="com.offerup.android.activities.PostPostingHelpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:name="com.offerup.android.activities.FirstQuestionHelpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:name="com.offerup.android.activities.MyAccountActivity" android:screenOrientation="portrait" android:theme="@style/OfferUpThemeNoActionBar"/>
+        <activity android:hardwareAccelerated="false" android:name="com.offerup.android.activities.ProfileImageActivity" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="false" android:name="com.offerup.android.activities.OfferUpWebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ouwww"/>
+            </intent-filter>
+        </activity>
+        <activity android:hardwareAccelerated="false" android:name="com.offerup.android.activities.NavigationDrawerWebViewActivity" android:screenOrientation="portrait" android:theme="@style/OfferUpThemeNoActionBar"/>
+        <activity android:name="com.offerup.android.activities.SendMessageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:name="com.offerup.android.activities.UserDetailActivity" android:screenOrientation="portrait" android:theme="@style/OfferUpThemeNoActionBar"/>
+        <activity android:name="com.offerup.android.activities.ChangeLocationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.offerup.android.activities.ChangePostLocationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.offerup.android.activities.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoDisplay"/>
+        <activity android:name="com.offerup.android.activities.BuyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.offerup.android.activities.PaymentMethodActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.offerup.android.activities.PaymentInitialConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:name="com.offerup.android.activities.PayCashlessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="com.offerup.android.activities.PaymentFinalConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:name="com.offerup.android.activities.PostPaymentConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:name="com.offerup.android.activities.ReceiptCashlessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.offerup.android.activities.PayItemGridActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="TruYou" android:name="com.offerup.android.activities.TruYouInitActivity" android:screenOrientation="portrait"/>
+        <activity android:label="TruYou" android:name="com.offerup.android.activities.TruYouConfActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.offerup.android.activities.SortAndFilterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.offerup.android.activities.RatingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.offerup.android.activities.SelectBuyerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.offerup.android.activities.ExpandedSelectBuyerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.offerup.android.activities.TermsOfServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:name="com.jumio.netverify.sdk.activity.NetverifyActivity" android:theme="@style/Theme.Netverify"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/applicationId"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/app_name"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.offerup.android.notifications.UrbanAirshipNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.urbanairship.push.CHANNEL_UPDATED"/>
+                <action android:name="com.urbanairship.push.OPENED"/>
+                <action android:name="com.urbanairship.push.RECEIVED"/>
+                <action android:name="com.urbanairship.push.DISMISSED"/>
+                <category android:name="com.offerup"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.leanplum.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.offerup.gcm"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.leanplum.LeanplumPushService"/>
+        <meta-data android:name="apptentive_api_key" android:value="6995d5a326b9118fe75b6468c4697f00aa0c984c525b442bf0ba00e6eb3f6b75"/>
+        <activity android:name="com.apptentive.android.sdk.ViewActivity" android:theme="@style/Apptentive.Theme.Transparent"/>
+        <receiver android:name="com.apptentive.android.sdk.comm.NetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/analytics"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="b847be262ec26bf5d9c86642a3ca9eb9d053dc67"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:name="com.braintreepayments.api.dropin.BraintreePaymentActivity"/>
+        <activity android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PayPalTouchActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.paypal.android.sdk.payments.PayPalService"/>
+        <amazon:enable-feature android:name="com.amazon.device.messaging" android:required="false"/>
+        <activity android:name="com.urbanairship.actions.ActionActivity"/>
+        <activity android:name="com.urbanairship.CoreActivity"/>
+        <activity android:name="com.urbanairship.google.PlayServicesErrorActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.urbanairship.actions.LandingPageActivity" android:theme="@style/LandingPageStyle">
+            <meta-data android:name="com.urbanairship.action.LANDING_PAGE_VIEW" android:resource="@layout/ua_activity_landing_page"/>
+            <meta-data android:name="com.urbanairship.push.iam.EXCLUDE_FROM_AUTO_SHOW" android:value="true"/>
+            <intent-filter>
+                <action android:name="com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="message"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"/>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"/>
+        <service android:name="com.urbanairship.actions.ActionService"/>
+        <service android:name="com.urbanairship.richpush.RichPushUpdateService"/>
+        <service android:label="Segments Service" android:name="com.urbanairship.location.LocationService"/>
+        <service android:exported="false" android:name="com.urbanairship.push.UAInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.urbanairship.CoreReceiver">
+            <intent-filter android:priority="-999">
+                <action android:name="com.urbanairship.push.OPENED"/>
+                <category android:name="com.offerup"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.offerup"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.push.ADMPushReceiver" android:permission="com.amazon.device.messaging.permission.SEND">
+            <intent-filter>
+                <action android:name="com.amazon.device.messaging.intent.REGISTRATION"/>
+                <action android:name="com.amazon.device.messaging.intent.RECEIVE"/>
+                <category android:name="com.offerup"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.offerup.urbanairship.provider" android:exported="true" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider" android:permission="com.offerup.permission.UA_DATA"/>
+    </application>
+</manifest>

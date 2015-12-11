@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/top_divider" android:background="@color/target_aluminum_grey" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/target_fade_away_grey" android:paddingLeft="@dimen/deals_category_header_left_right_margin" android:paddingTop="@dimen/deals_category_header_top_bottom_margin" android:paddingRight="@dimen/deals_category_header_left_right_margin" android:paddingBottom="@dimen/deals_category_header_top_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/smallTextSize" android:textColor="@color/target_jet_black" android:ellipsize="end" android:gravity="left" android:id="@id/primary_text" android:paddingRight="@dimen/deals_category_header_left_right_margin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="0.5" app:fontStyle="medium" />
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/smallTextSize" android:textColor="@color/target_neutral_grey" android:ellipsize="end" android:gravity="right" android:id="@id/secondary_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="0.5" app:fontStyle="medium" />
+    </LinearLayout>
+    <View android:id="@id/bottom_divider" android:background="@color/target_aluminum_grey" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+</merge>

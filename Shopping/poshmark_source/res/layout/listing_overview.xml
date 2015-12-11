@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip">
+        <RelativeLayout android:id="@id/SIFU" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.poshmark.ui.customviews.PMCovershotImageView android:id="@id/coverShotViewBig" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:imageLayoutType="Square" />
+        </RelativeLayout>
+        <com.poshmark.ui.customviews.ListingStatusView android:layout_gravity="bottom|right|center" android:id="@id/listingStatusView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    </FrameLayout>
+    <include android:id="@id/listingInfo" layout="@layout/listing_info" />
+</LinearLayout>

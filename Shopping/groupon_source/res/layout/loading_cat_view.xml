@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_cat" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/spaceship_cat"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.view.WobbleSpaceshipCatView android:id="@id/wobble_spaceship_cat_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/text_container" android:layout_width="212.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/loading_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/webview_loading_title_text" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/loading_content" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/webview_loading_subtitle_text" />
+    </LinearLayout>
+</LinearLayout>

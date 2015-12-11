@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pre_post_title_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/local_meetup_icn" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:gravity="center_horizontal" android:id="@id/pre_post_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="Local Meetup" android:layout_below="@id/pre_post_title_image" android:layout_centerHorizontal="true" style="@style/text.helptitle" />
+    <TextView android:gravity="center_horizontal" android:id="@id/pre_post_text_body" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OfferUp is the easiest place to buy and sell locally." android:layout_below="@id/pre_post_title_text" android:layout_centerHorizontal="true" style="@style/text.medium" />
+    <TextView android:gravity="center_horizontal" android:id="@id/first_question_buying_tips" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buying Tips" android:layout_below="@id/pre_post_text_body" android:layout_centerHorizontal="true" style="@style/text.medium" />
+</RelativeLayout>

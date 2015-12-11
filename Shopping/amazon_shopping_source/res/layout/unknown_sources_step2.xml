@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/simple_action_bar_layout" />
+    <View android:background="@color/dialog_divider_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dialog_title_section_margin_top" android:textStyle="bold" android:textColor="@color/primary_text_color" android:id="@id/heading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/dialog_divider_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/unknown_sources_bullet_text_size" android:textStyle="bold" android:textColor="@color/secondary_text_color" android:paddingRight="@dimen/unknown_sources_bullet_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <TextView android:textSize="@dimen/dialog_message_text_size" android:textColor="@color/primary_text_color" android:layout_gravity="fill" android:id="@id/step1" android:paddingTop="@dimen/unknown_sources_padding_top" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/unknown_sources_bullet_text_size" android:textStyle="bold" android:textColor="@color/secondary_text_color" android:gravity="center_horizontal" android:paddingRight="@dimen/unknown_sources_bullet_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+            <TextView android:textSize="@dimen/dialog_message_text_size" android:textColor="@color/primary_text_color" android:layout_gravity="fill" android:id="@id/step2" android:paddingTop="@dimen/unknown_sources_padding_top" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="100.0dip" android:src="@drawable/unknown_sources_tearaway" android:scaleType="centerInside" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/secondary_text_color" android:gravity="center_horizontal" android:id="@id/step2_note" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/unknown_sources_bullet_text_size" android:textStyle="bold" android:textColor="@color/secondary_text_color" android:gravity="center_horizontal" android:paddingRight="@dimen/unknown_sources_bullet_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+            <TextView android:textSize="@dimen/dialog_message_text_size" android:textColor="@color/primary_text_color" android:layout_gravity="fill" android:id="@id/step3" android:paddingTop="@dimen/unknown_sources_padding_top" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/button_enabled_primary_color" android:id="@id/settings" android:background="@drawable/orange_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/deal_details_estimation_top_separator" android:layout_width="0.0dip" android:layout_height="@dimen/vertical_option_cards_margin_top" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/details_item_top_margin">
+        <TextView android:id="@id/delivery_estimation_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shipping_and_delivery" style="@style/deal_details_section_header_v2" />
+        <TextView android:id="@id/delivery_estimation_shipping_fee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/free_shipping" android:drawableLeft="@drawable/dd_bullet_indicator" android:drawablePadding="10.0dip" android:layout_below="@id/delivery_estimation_title" style="@style/generic_deal_card_text" />
+        <TextView android:id="@id/delivery_estimation_information" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/dd_bullet_indicator" android:drawablePadding="10.0dip" android:layout_below="@id/delivery_estimation_shipping_fee" style="@style/generic_deal_card_text" />
+    </RelativeLayout>
+</LinearLayout>

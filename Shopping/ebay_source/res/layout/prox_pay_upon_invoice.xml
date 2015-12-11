@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Checkout.Container.Full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Letterbox.Modal">
+        <TextView android:textColor="@color/style_guide_gray" android:id="@id/prox_direct_debit_legal_text" android:padding="@dimen/ebayPadding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/LEGAL_prox_pui_text" />
+        <RelativeLayout android:background="?listContainerBackground" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ebayTextSizeMedium" android:id="@id/date_of_birth" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_toRightOf="@id/date_of_birth_label" android:layout_below="@id/iban_no" android:layout_alignParentRight="true" android:nextFocusForward="@id/bank_account_name" style="?android:attr/spinnerStyle" />
+            <TextView android:id="@id/date_of_birth_label" android:focusable="false" android:layout_width="@dimen/formFieldFixedWidth" android:layout_height="wrap_content" android:text="@string/prox_payment_method_direct_debit_date_of_birth_label" android:layout_alignBaseline="@id/date_of_birth" style="@style/Checkout.Text.Input" />
+            <TextView android:textColor="@color/style_guide_gray" android:id="@id/date_of_birth_text" android:padding="@dimen/ebayPadding" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prox_payment_method_direct_debit_date_of_birth_info" android:layout_below="@id/date_of_birth" style="@style/Checkout.Text.Input" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/style_guide_dark_gray" android:paddingBottom="@dimen/ebayPaddingHalf" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/prox_payment_method_header_billing_address" android:includeFontPadding="false" style="?android:attr/textAppearanceMedium" />
+        <include layout="@layout/prox_address_form" />
+        <TextView android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prox_pui_footer_text" style="@style/Checkout.Text.Secondary" />
+    </LinearLayout>
+</ScrollView>

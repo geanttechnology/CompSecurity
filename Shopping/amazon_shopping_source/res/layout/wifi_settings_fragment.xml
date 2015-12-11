@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:tileMode="repeat"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/settings_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/settings_page_secondary_text_size" android:textColor="@color/primary_text_color" android:id="@id/wifi_mb_limit_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_page_first_setting_margin_top" />
+        <Spinner android:textSize="@dimen/settings_page_secondary_text_size" android:textColor="@android:color/black" android:id="@id/wifi_mb_limit_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

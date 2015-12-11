@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="@dimen/goods_category_item_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/goods_category_item_image_layout_height">
+        <ImageView android:id="@id/category_image" android:layout_width="fill_parent" android:layout_height="@dimen/goods_category_item_image_height" android:scaleType="fitCenter" android:adjustViewBounds="false" />
+        <ImageView android:layout_gravity="right" android:id="@id/category_new_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/goods_category_item_new_badge_margin_top" android:layout_marginRight="@dimen/goods_category_item_new_badge_margin_right" android:src="@drawable/category_new_badge" />
+    </FrameLayout>
+    <TextView android:gravity="center" android:id="@id/category_title" android:layout_width="fill_parent" android:layout_height="@dimen/goods_category_item_title_height" android:layout_below="@id/category_image" style="@style/goods_category_title" />
+    <View android:background="@color/category_title_inset_shadow" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignBottom="@id/category_title" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/newItemDepictor" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayStaticMargin3x" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:src="@drawable/ic_new" />
+    <com.ebay.mobile.widget.UserThumbnail android:layout_gravity="center_vertical" android:id="@id/profilePic" android:visibility="gone" android:layout_width="@dimen/search_landing_profile_pic_width" android:layout_height="@dimen/search_landing_profile_pic_height" android:layout_marginRight="@dimen/ebayStaticMargin15" android:src="@drawable/ic_user_avatar" ebay:borderColor="@android:color/transparent" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceMedium" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/recentItem" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayStaticMargin" />
+</LinearLayout>

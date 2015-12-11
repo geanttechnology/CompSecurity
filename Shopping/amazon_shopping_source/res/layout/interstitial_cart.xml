@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="right|center" android:id="@id/intersitial_cart_top_checkout_button" android:layout_width="wrap_content" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding" style="@style/Button.Gold.Arrow" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/interstitial_cart_alert_messages" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/intersitial_cart_valid_items_header" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Header">
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interstitial_cart_valid_item_list_header" android:layout_weight="1.0" />
+                <TextView android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_quantity_label" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/intersitial_cart_valid_items_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/intersitial_cart_valid_items_bottom_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_small" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="fill_vertical|left|center" android:id="@id/interstitial_cart_valid_subtotal_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/Price" />
+                    <TextView android:layout_gravity="fill_vertical|left|center" android:id="@id/interstitial_cart_valid_subtotal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:text="@string/cart_subtotal_text" android:layout_weight="1.0" />
+                    <TextView android:layout_gravity="fill_vertical|left|center" android:id="@id/interstitial_cart_valid_items_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_weight="0.0" />
+                    <TextView android:textStyle="bold" android:layout_gravity="fill_vertical|left|center" android:id="@id/interstitial_cart_valid_items_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_weight="0.0" />
+                </LinearLayout>
+                <View style="@style/Separator" />
+            </LinearLayout>
+            <TextView android:id="@id/intersitial_cart_add_on_items_header" android:visibility="gone" android:text="@string/cart_to_buy_later_label" style="@style/Header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/intersitial_cart_add_on_items_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/intersitial_cart_add_on_items_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

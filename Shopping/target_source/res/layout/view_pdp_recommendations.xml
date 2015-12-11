@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:id="@id/pdp_recommendations_title" android:paddingLeft="@dimen/default_4x_padding_margin" android:paddingRight="@dimen/default_4x_padding_margin" android:paddingBottom="@dimen/default_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/product_recommendations_title" app:fontStyle="medium" style="@style/Target.TextView.PdpRecommendationsTitle" />
+    <android.support.v7.widget.RecyclerView android:id="@id/pdp_recommendations" android:paddingLeft="@dimen/prd_pdp_recommendations_padding" android:paddingTop="@dimen/prd_pdp_top_bottom_padding" android:paddingRight="@dimen/prd_pdp_recommendations_padding" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/prd_pdp_recommendations_height" android:layout_marginLeft="@dimen/prd_pdp_recommendations_margins" android:layout_marginRight="@dimen/prd_pdp_recommendations_margins" />
+</merge>

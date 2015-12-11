@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/search_current_location" android:id="@id/search_suggestions_list_item_current_location" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/global_search_current_location_item_style" />
+    <TextView android:id="@id/search_suggestions_list_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/global_search_suggestion_item_style_2" />
+</FrameLayout>

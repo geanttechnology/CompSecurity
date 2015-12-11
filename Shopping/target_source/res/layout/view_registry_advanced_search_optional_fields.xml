@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/registry_advanced_search_registry_type" android:paddingLeft="@dimen/default_4x_padding_margin" android:paddingRight="@dimen/default_4x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewId="@id/registry_advanced_search_registry_view">
+        <FrameLayout android:id="@id/registry_advanced_search_registry_view" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height">
+            <Spinner android:gravity="top" android:id="@id/registry_advanced_search_registry_spinner" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_state_spinner_height" android:spinnerMode="dropdown" />
+        </FrameLayout>
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/default_4x_padding_margin" android:paddingRight="@dimen/default_4x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/registry_advanced_search_city_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" app:viewId="@id/registry_advanced_search_city_editor">
+            <com.target.ui.view.TargetEditText android:id="@id/registry_advanced_search_city_editor" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/registry_advanced_search_city_hint" android:inputType="textPostalAddress|textCapWords" android:imeOptions="actionDone" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+        </com.target.ui.view.CustomErrorViewWrapper>
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/registry_advanced_search_state_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:layout_weight="0.4" app:viewId="@id/registry_advanced_search_state_view">
+            <FrameLayout android:id="@id/registry_advanced_search_state_view" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height">
+                <Spinner android:gravity="top" android:id="@id/registry_advanced_search_state_spinner" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_state_spinner_height" android:spinnerMode="dropdown" />
+            </FrameLayout>
+        </com.target.ui.view.CustomErrorViewWrapper>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/default_4x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/registry_advanced_search_start_date_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" app:viewId="@id/registry_advanced_search_start_date_editor">
+            <com.target.ui.view.TargetEditText android:id="@id/registry_advanced_search_start_date_editor" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/registry_advanced_search_start_date_hint" android:inputType="date" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+        </com.target.ui.view.CustomErrorViewWrapper>
+        <ImageView android:id="@id/registry_advanced_search_start_date_icon" android:padding="@dimen/default_padding_margin" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:layout_marginLeft="@dimen/registry_advanced_search_left_padding" android:src="@drawable/icon_calendar" android:scaleType="center" style="@style/ImageSelector" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/default_4x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/registry_advanced_search_end_date_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" app:viewId="@id/registry_advanced_search_end_date_editor">
+            <com.target.ui.view.TargetEditText android:id="@id/registry_advanced_search_end_date_editor" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/registry_advanced_search_end_date_hint" android:inputType="date" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+        </com.target.ui.view.CustomErrorViewWrapper>
+        <ImageView android:id="@id/registry_advanced_search_end_date_icon" android:padding="@dimen/default_padding_margin" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:layout_marginLeft="@dimen/registry_advanced_search_left_padding" android:src="@drawable/icon_calendar" android:scaleType="center" style="@style/ImageSelector" />
+    </LinearLayout>
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/registry_advanced_search_email_wrapper" android:paddingLeft="@dimen/default_4x_padding_margin" android:paddingRight="@dimen/default_4x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewId="@id/registry_advanced_search_email_editor">
+        <com.target.ui.view.TargetEditText android:id="@id/registry_advanced_search_email_editor" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/registry_advanced_search_email_hint" android:inputType="textEmailAddress" android:imeOptions="actionDone" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+</merge>

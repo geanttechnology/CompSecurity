@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/icon_edit" android:id="@id/action_edit_store" android:title="@string/weekly_ad_edit_store" app:showAsAction="always" />
+    <item android:id="@id/action_cart" android:title="@string/cart" app:showAsAction="always" app:actionViewClass="com.target.ui.view.CartBadgeView" />
+</menu>

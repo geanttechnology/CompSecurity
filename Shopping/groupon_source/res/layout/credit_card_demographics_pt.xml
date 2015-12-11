@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/demographics" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/address" android:nextFocusUp="@id/year" android:nextFocusDown="@id/street_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/address" android:inputType="textPostalAddress|textCapWords" style="@style/edit_credit_card_single_line_cap_words" />
+    <EditText android:id="@id/street_number" android:visibility="gone" android:nextFocusUp="@id/address" android:nextFocusDown="@id/postal_code" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/street_number" android:maxLength="12" android:inputType="textPostalAddress|textCapWords" style="@style/edit_credit_card_single_line_cap_words" />
+    <EditText android:id="@id/postal_code" android:nextFocusUp="@id/street_number" android:nextFocusDown="@id/city" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/postal_code" android:maxLength="12" android:inputType="textPostalAddress|textCapCharacters" style="@style/edit_credit_card_single_line" />
+    <EditText android:id="@id/city" android:nextFocusUp="@id/postal_code" android:nextFocusDown="@id/submit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/city" android:inputType="textPostalAddress|textCapWords" android:imeOptions="actionDone" style="@style/edit_credit_card_single_line_cap_words" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@id/state" android:nextFocusDown="@id/country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/state" style="@style/spinner_credit_card" />
+        <Spinner android:id="@id/country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/select_your_country" style="@style/spinner_credit_card" />
+    </LinearLayout>
+</LinearLayout>

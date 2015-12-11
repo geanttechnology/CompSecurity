@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.retailsearch.android.ui.results.views.price.PriceGrid android:id="@id/rs_results_price" style="@style/Results.Price.Grid"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/rs_results_price_line0" style="@style/Results.PriceText.Grid" />
+    <TextView android:id="@id/rs_results_price_line1" style="@style/Results.PriceText.Grid" />
+    <TextView android:id="@id/rs_results_price_line2" style="@style/Results.PriceText.Grid" />
+    <TextView android:id="@id/rs_results_price_sponsored_msg" style="@style/Results.SponsoredPriceMsg.Grid" />
+</com.amazon.retailsearch.android.ui.results.views.price.PriceGrid>

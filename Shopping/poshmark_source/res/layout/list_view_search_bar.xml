@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/searchBoxLayout" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" style="@style/formSectionLayout">
+        <com.poshmark.ui.customviews.PMEditText android:id="@id/searchEditTextView" android:maxLines="1" android:drawableRight="@drawable/ic_search_blue" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/formEditText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/allItemsLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <com.poshmark.ui.customviews.PMTextView android:id="@id/allItemsTextView" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/contentTableRowSingle" />
+    </LinearLayout>
+</LinearLayout>

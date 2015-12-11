@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:groupon="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/global_search_results_section" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/global_search_map_section" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.groupon.mapview.DealsMapView android:id="@id/map" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.groupon.view.SpinnerButton android:id="@id/global_search_map_progress" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="14.0dip" android:drawableRight="@drawable/spinner_map_refresh" android:layout_alignParentRight="true" groupon:useCompoundDrawable="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/global_search_list_section" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/filter_sheet_background_click_interceptor" android:background="@color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

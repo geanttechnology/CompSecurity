@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/rs_twister_menu_content" style="@style/Rs.Twister.Menu"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/Rs.Twister.Header">
+        <TextView android:id="@id/rs_twister_menu_header_title" style="@style/Rs.Twister.Title" />
+        <ImageView android:id="@id/rs_twister_menu_close" style="@style/Rs.Twister.Close" />
+    </RelativeLayout>
+    <com.amazon.retailsearch.android.ui.results.views.twister.TwisterListView android:id="@id/rs_twister_menu_list" style="@style/Rs.Twister.List" />
+</LinearLayout>

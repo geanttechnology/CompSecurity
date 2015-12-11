@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/loading_spinner_layout" />
+    <ImageView android:layout_gravity="top|center" android:id="@id/help_banner_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/droid_pulldown" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <com.bestbuy.android.utils.CustomSwipeToRefresh android:id="@id/swipedown" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/home_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.bestbuy.android.utils.CustomSwipeToRefresh>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/version_update_view" />
+</RelativeLayout>

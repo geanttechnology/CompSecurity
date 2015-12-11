@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/account_login_scroll_container" android:background="@color/target_fade_away_grey" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="always"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.account.AccountLoginHeaderView android:id="@id/account_login_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/account_page_margin" android:paddingRight="@dimen/account_page_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.account.AccountCredentialsInputView android:id="@id/account_login_credentials" android:paddingTop="@dimen/account_page_margin" android:paddingBottom="@dimen/account_login_button_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/account_button_sign_in" />
+            <include android:layout_gravity="center" android:layout_width="@dimen/account_forgot_password_button_width" android:layout_height="@dimen/account_forgot_password_button_height" android:layout_marginTop="@dimen/account_page_margin_small" android:layout_marginBottom="@dimen/account_page_margin_small" layout="@layout/account_button_forgot_password" />
+        </LinearLayout>
+        <include layout="@layout/spacer" />
+        <com.target.ui.view.account.AccountExternalLaunchView android:id="@id/account_login_external_launch" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/spacer" />
+        <com.target.ui.view.account.SettingsView android:id="@id/account_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/spacer" />
+        <com.target.ui.view.account.AccountInternalLaunchView android:id="@id/account_current_session_internal_launch" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/spacer" />
+        <com.target.ui.view.account.AccountHelpVersionAndCopyrightView android:id="@id/account_help_version_copyright_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

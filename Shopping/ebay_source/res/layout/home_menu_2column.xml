@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/home_menu_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.ContainerLayout android:id="@id/home_menu_column1" android:background="?listContainerBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <include layout="@layout/home_menu_reminders" />
+        <include layout="@layout/home_menu_messages" />
+    </com.ebay.android.widget.ContainerLayout>
+    <com.ebay.android.widget.ContainerLayout android:id="@id/home_menu_column2" android:background="?listContainerBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/listContainerDropShadowThickness" android:layout_weight="1.0">
+        <include layout="@layout/home_menu_searches" />
+        <include layout="@layout/home_menu_sellers" />
+    </com.ebay.android.widget.ContainerLayout>
+</LinearLayout>

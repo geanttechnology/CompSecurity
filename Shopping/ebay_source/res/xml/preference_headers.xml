@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:id="@id/account_settings_category" android:title="@string/account_information">
+        <extra android:name="isCategory" android:value="true" />
+    </header>
+    <header android:id="@id/shipping_address" android:title="@string/shipping_address" />
+    <header android:id="@id/pref_sign_out" android:title="@string/sign_out" />
+    <header android:id="@id/change_password" android:title="@string/change_password" />
+    <header android:id="@id/push_notifications" android:title="@string/PushNotifications" />
+    <header android:id="@id/preferred_country" android:title="@string/preferred_country" android:fragment="com.ebay.mobile.settings.CountryPreferencesFragment" />
+    <header android:id="@id/clear_search_history" android:title="@string/clear_search_history" />
+    <header android:id="@id/about_category" android:title="@string/about">
+        <extra android:name="isCategory" android:value="true" />
+    </header>
+    <header android:id="@id/buyer_protection" android:title="@string/buyer_protection" android:summary="@string/learn_more" />
+    <header android:id="@id/eula" android:title="@string/user_agreement" android:fragment="com.ebay.mobile.settings.EulaWebviewFragment" />
+    <header android:id="@id/privacy" android:title="@string/privacy" android:fragment="com.ebay.mobile.settings.PrivacyWebviewFragment" />
+    <header android:id="@id/advertisement_opt_out" android:title="@string/ads_opt_out" android:fragment="com.ebay.mobile.settings.AdsOptOutFragment" />
+    <header android:id="@id/email_support" android:title="@string/email_ebay_support" />
+    <header android:id="@id/about_preference" android:title="@string/about" android:fragment="com.ebay.mobile.settings.AboutPreferencesFragment" />
+    <header android:id="@id/preference_api_usage_logging" android:title="API Usage Logging">
+        <extra android:name="isSwitch" android:value="true" />
+        <extra android:name="isEnabled" android:value="true" />
+        <extra android:name="isChecked" android:value="false" />
+    </header>
+    <header android:id="@id/developer_options" android:title="@string/developer_options" android:fragment="com.ebay.mobile.preference.DeveloperPreferenceFragment" />
+    <header android:id="@id/log_tags_category" android:title="Log tags">
+        <extra android:name="isCategory" android:value="true" />
+    </header>
+    <header android:id="@id/use_qa_servers" android:title="Use QA Servers">
+        <extra android:name="isSwitch" android:value="true" />
+        <extra android:name="isEnabled" android:value="false" />
+        <extra android:name="isChecked" android:value="true" />
+    </header>
+    <header android:id="@id/preference_push_notification_logging" android:title="Using C2DM">
+        <extra android:name="isSwitch" android:value="true" />
+        <extra android:name="isEnabled" android:value="false" />
+        <extra android:name="isChecked" android:value="true" />
+    </header>
+    <header android:id="@id/preference_poll_notification_logging" android:title="Using Polling">
+        <extra android:name="isSwitch" android:value="true" />
+        <extra android:name="isEnabled" android:value="false" />
+        <extra android:name="isChecked" android:value="true" />
+    </header>
+    <header android:id="@id/preference_gcm_notification_logging" android:title="Using GCM">
+        <extra android:name="isSwitch" android:value="true" />
+        <extra android:name="isEnabled" android:value="false" />
+        <extra android:name="isChecked" android:value="true" />
+    </header>
+</preference-headers>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/Rs.Twister.Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/rs_twister_item_edition_info" style="@style/Rs.Twister.ItemInfo" />
+    <ImageView android:id="@id/rs_twister_item_chevron" style="@style/Rs.Twister.ItemChevron" />
+</RelativeLayout>

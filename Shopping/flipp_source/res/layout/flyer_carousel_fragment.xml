@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.castorflex.android.verticalviewpager.VerticalViewPager android:id="@id/flyer_carousel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/flyer_toolbar" />
+    <com.wishabi.flipp.widget.ShoppingListPopup android:id="@id/shopping_list_popup" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_above="@id/flyer_toolbar" />
+    <com.wishabi.flipp.widget.FlyerToolbar android:id="@id/flyer_toolbar" android:background="@drawable/flyer_toolbar_background" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

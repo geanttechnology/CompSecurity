@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/VideoPlayPause" android:background="@drawable/pressable_background_selector" android:focusable="true" android:clickable="true" android:layout_width="@dimen/avod_player_user_controls_iconContainerSize" android:layout_height="@dimen/avod_player_user_controls_iconContainerSize" android:src="@drawable/video_play_pause_selector" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@string/description_pause" style="@style/AVOD.Playback.UserControls.Icons" />
+    <ImageView android:id="@id/VideoStepBack" android:background="@drawable/pressable_background_selector" android:focusable="true" android:clickable="true" android:layout_width="@dimen/avod_player_user_controls_iconContainerSize" android:layout_height="@dimen/avod_player_user_controls_iconContainerSize" android:src="@drawable/skip_back_selector" android:layout_toRightOf="@id/VideoPlayPause" android:layout_alignParentBottom="true" android:contentDescription="@string/description_step_back" style="@style/AVOD.Playback.UserControls.Icons" />
+    <ImageView android:id="@id/VideoSpeedIcon" android:visibility="gone" android:layout_width="@dimen/avod_player_user_controls_iconContainerSize" android:layout_height="@dimen/avod_player_user_controls_iconContainerSize" android:contentDescription="@string/description_video_speed" style="@style/AVOD.Playback.UserControls.Icons" />
+</merge>

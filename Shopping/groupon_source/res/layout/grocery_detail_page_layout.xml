@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/freebie_bottom_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/freebie_details_section_card">
+            <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <Button android:id="@id/redeem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" style="@style/primary_action_button" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.groupon.view.ObservableScrollView android:id="@id/scroll_view" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/freebie_bottom_bar_container" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <include layout="@layout/grocery_details_section_header" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/grocery_details_section_instructions" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/grocery_details_section_offer_details" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/grocery_details_section_product_details" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/grocery_details_section_fine_print" />
+        </LinearLayout>
+    </com.groupon.view.ObservableScrollView>
+</RelativeLayout>

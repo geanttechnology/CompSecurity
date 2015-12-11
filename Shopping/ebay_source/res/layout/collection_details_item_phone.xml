@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:id="@id/selectable" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" res_auto:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/itemImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/EbayTextAppearance.Body1" android:ellipsize="end" android:id="@id/itemTitle" android:paddingLeft="@dimen/ebayMarginHalf" android:paddingRight="@dimen/ebayMarginHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textAppearance="@style/EbayTextAppearance.Body2" android:textStyle="bold" android:id="@id/itemPrice" android:paddingLeft="@dimen/ebayMarginHalf" android:paddingRight="@dimen/ebayMarginHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_see_price" />
+    </LinearLayout>
+</com.ebay.mobile.widget.FLinearLayout>

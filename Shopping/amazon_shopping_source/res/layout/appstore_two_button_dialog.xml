@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dialog_title_text_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:layout_gravity="left" android:id="@id/dialogTitle" android:background="@color/dialog_title_bar_background_color" android:padding="@dimen/dialog_title_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:background="@color/primary_background_color" android:padding="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dialog_message_text_size" android:textColor="@color/primary_text_color" android:id="@id/dialogMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/dialog_divider_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/dialog_section_button_margin_top" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/dialog_title_bar_background_color" android:padding="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/button_enabled_primary_color" android:id="@id/dialogButton2" android:background="@drawable/secondary_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/button_padding_v" android:layout_weight="1.0" android:onClick="onClick" />
+        <Button android:textColor="@color/button_enabled_primary_color" android:id="@id/dialogButton1" android:background="@drawable/orange_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/button_padding_v" android:layout_weight="1.0" android:onClick="onClick" />
+    </LinearLayout>
+</LinearLayout>

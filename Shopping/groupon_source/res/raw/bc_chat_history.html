@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Chat History</title>
+	<style type="text/css">
+		body {
+			/*background-color: ${bc_history_background};*/
+			font-family: sans-serif;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		.bc-container-operator, .bc-container-system {
+			text-align: left;
+		}
+
+		.bc-container-visitor {
+			text-align: right;
+		}
+
+		.bc-foot-operator {
+			border-bottom: 1em solid transparent;
+			vertical-align: top;
+			margin-top: 20px;
+			display: inline-block;
+			border-right: 9px solid ${bc_history_operator_background};
+		}
+
+		.bc-foot-system {
+			border-bottom: 1em solid transparent;
+			vertical-align: top;
+			margin-top: 20px;
+			display: inline-block;
+			border-right: 9px solid ${bc_history_system_background};
+		}
+
+		.bc-foot-visitor {
+			border-bottom: 1em solid transparent;
+			vertical-align: top;
+			margin-top: 20px;
+			display: inline-block;
+			border-left: 9px solid ${bc_history_visitor_background};
+		}
+
+		.bc-message {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: inline-block;
+			max-width:80%;
+			text-align: left;
+		}
+
+		.bc-message-visitor {
+			color: ${bc_history_visitor_text};
+			background-color: ${bc_history_visitor_background};
+		}
+
+		.bc-message-operator {
+			color: ${bc_history_operator_text};
+			background-color: ${bc_history_operator_background};
+		}
+
+		.bc-message-system {
+			color: ${bc_history_system_text};
+			background-color: ${bc_history_system_background};
+		}
+
+		.bc-message-created, .bc-message-sender {
+			display: inline;
+			font-size: 0.8em;
+			padding-right: 0.4em;
+		}
+
+		.bc-message-operator .bc-message-created {
+			color: ${bc_history_operator_time};
+		}
+
+		.bc-message-operator .bc-message-sender {
+			color: ${bc_history_operator_sender};
+		}
+
+		.bc-message-visitor .bc-message-created {
+			color: ${bc_history_visitor_time};
+		}
+
+		.bc-message-visitor .bc-message-sender {
+			color: ${bc_history_visitor_sender};
+		}
+
+		.bc-avatar {
+			height: 4em;
+			width: 4em;
+			line-height: 4em;
+			overflow: hidden;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.bc-avatar-operator {
+			float: left;
+			margin-right: 0.6em;
+		}
+
+		.bc-avatar-visitor {
+			float: right;
+			margin-left: 0.6em;
+		}
+
+		.bc-avatar.img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.bc-message-body {
+			word-wrap: break-word;
+			hyphens: auto;
+			vertical-align: top;
+			max-height: 10000em;
+			-webkit-text-size-adjust: 100%;
+		}
+
+	</style>
+	<script type="text/javascript">
+		${bc_chat_history_js}
+	</script>
+</head>
+<body>
+</body>
+</html>

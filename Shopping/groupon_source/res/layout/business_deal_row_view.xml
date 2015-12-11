@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/business_view_pressed" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="110.0dip">
+        <com.groupon.view.UrlImageView android:id="@id/deal_image" android:layout_width="147.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="160.0dip" android:layout_marginRight="25.0dip" android:layout_centerVertical="true">
+            <TextView android:ellipsize="end" android:id="@id/deal_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:maxLines="2" style="@style/business_deal_primary" />
+            <TextView android:id="@id/deal_bought" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/business_deal_secondary" />
+            <TextView android:textColor="@color/green_new" android:id="@id/deal_price" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_redesign" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@id/separator" android:layout_marginLeft="160.0dip" style="@style/horizontal_grey_separator" />
+</LinearLayout>

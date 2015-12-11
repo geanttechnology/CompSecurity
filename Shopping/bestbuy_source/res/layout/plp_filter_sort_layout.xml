@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <RelativeLayout android:background="#ff0067af" android:paddingLeft="21.0dip" android:paddingTop="17.0dip" android:paddingRight="12.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/filter_sort_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" bby:BBYFontStyle="FONT_BOLD_REGULAR" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/filter_sort_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_text" android:singleLine="true" android:layout_alignParentLeft="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/filter_sort_clearall" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clearall" android:singleLine="true" android:layout_alignParentRight="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/filter_fragment_container" android:background="#ffe3e3e3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

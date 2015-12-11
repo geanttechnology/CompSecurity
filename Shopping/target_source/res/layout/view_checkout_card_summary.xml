@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/giftcard_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_generic_view_height" android:layout_marginLeft="@dimen/checkout_margin_small" android:layout_marginRight="@dimen/checkout_margin_medium">
+        <ImageView android:id="@id/giftcard_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_giftcard" android:layout_centerVertical="true" android:contentDescription="@string/cd_gift_card_image" />
+        <com.target.ui.view.TargetTextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/checkout_height_xlarge" android:layout_marginLeft="@dimen/checkout_margin_large" android:text="@string/checkout_gift_cards" android:layout_toRightOf="@id/giftcard_icon" app:fontStyle="light" style="@style/Target.TextView.CheckoutTextView" />
+        <com.target.ui.view.TargetTextView android:textColor="@color/target_bullseye_red" android:gravity="center_vertical" android:id="@id/giftcard_value" android:layout_width="wrap_content" android:layout_height="@dimen/checkout_height_xlarge" android:text="@string/checkout_gift_cards_value" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontStyle="medium" style="@style/Target.TextView.CheckoutTextView" />
+    </RelativeLayout>
+    <include android:id="@id/card_summary_spacer" layout="@layout/checkout_spacer" />
+    <RelativeLayout android:id="@id/payment_card_view" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_generic_view_height" android:layout_marginLeft="@dimen/checkout_margin_small" android:layout_marginRight="@dimen/checkout_margin_medium">
+        <ImageView android:id="@id/payment_card_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payment_default" android:layout_centerVertical="true" android:contentDescription="@string/cd_credit_card_image" />
+        <com.target.ui.view.TargetTextView android:id="@id/payment_card_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_large" android:text="@string/checkout_payment_card_summary" android:layout_toRightOf="@id/payment_card_icon" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.CheckoutTextView" />
+        <com.target.ui.view.TargetTextView android:textColor="@color/target_jet_black" android:gravity="center_vertical" android:id="@id/payment_card_value" android:layout_width="wrap_content" android:layout_height="@dimen/checkout_height_xlarge" android:text="@string/checkout_payment_cards_value" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontStyle="medium" style="@style/Target.TextView.CheckoutTextView" />
+    </RelativeLayout>
+</merge>

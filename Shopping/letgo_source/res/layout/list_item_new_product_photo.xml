@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:background="@color/add_photo_background_color" android:layout_width="@dimen/new_product_image_size" android:layout_height="@dimen/new_product_image_size" android:layout_margin="@dimen/new_product_image_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_new_product_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_photo" android:contentDescription="@string/content_description_insert_img_0" />
+    <ImageView android:layout_gravity="top|right|center" android:id="@id/iv_new_product_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_image" android:contentDescription="@string/content_description_edit_image" />
+</FrameLayout>

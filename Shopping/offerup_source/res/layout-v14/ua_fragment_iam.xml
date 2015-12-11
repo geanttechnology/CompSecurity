@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.urbanairship.push.iam.view.SwipeDismissViewLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.urbanairship.push.iam.view.BannerView android:id="@id/in_app_message" style="@style/Widget.UrbanAirship.InAppMessage.Banner" />
+</com.urbanairship.push.iam.view.SwipeDismissViewLayout>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.ebay.mobile" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <permission android:name="com.ebay.mobile.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.ebay.mobile.permission.C2D_MESSAGE"/>
+    <permission android:name="com.ebay.mobile.permission.EBAY_USER_CONFIG" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.ebay.mobile.permission.EBAY_USER_CONFIG"/>
+    <permission android:name="com.ebay.mobile.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.ebay.mobile.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <supports-screens android:largeScreens="true"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <android:uses-permission android:maxSdkVersion="18" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/one_pixel_transparent" android:name="com.ebay.mobile.MyApp" android:theme="@style/AppTheme">
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
+        <meta-data android:name="search-engine" android:resource="@xml/noindex"/>
+        <service android:name="com.ebay.mobile.notifications.EventService"/>
+        <service android:name="com.ebay.mobile.notifications.PollService"/>
+        <service android:name="com.ebay.mobile.notifications.PushService"/>
+        <service android:name="com.ebay.mobile.mftd.MftdService"/>
+        <service android:name="com.ebay.mobile.service.AppWidgetRemoteService" android:permission="com.ebay.mobile.permission.EBAY_USER_CONFIG">
+            <intent-filter>
+                <action android:name="com.ebay.mobile.service.IAppWidgetRemoteService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ebay.mobile.service.AppForegroundService"/>
+        <service android:name="com.ebay.mobile.service.AppForegroundHelperService"/>
+        <service android:name="com.ebay.mobile.notifications.EbaySmartNotificationManager"/>
+        <receiver android:name="com.ebay.mobile.analytics.AnalyticsReceiver" android:permission="com.ebay.mobile.permission.EBAY_USER_CONFIG">
+            <intent-filter>
+                <action android:name="com.ebay.common.analytics.ACTION_SEND_ANALYTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.ebay.mobile.analytics.AnalyticsService"/>
+        <receiver android:exported="false" android:name="com.ebay.mobile.notifications.PollAlarmReceiver"/>
+        <receiver android:name="com.ebay.mobile.notifications.PushMessageReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.ebay.mobile"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.ebay.mobile"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.ebay.mobile"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.ebay.mobile.GCMIntentService"/>
+        <receiver android:exported="false" android:name="com.ebay.mobile.mftd.MftdAlarmReceiver"/>
+        <receiver android:name="com.ebay.mobile.notifications.DeviceStartupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ebay.mobile.action.APPLICATION_LAUNCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.ebay.mobile.service.GoogleNowAuthenticationService"/>
+        <receiver android:exported="false" android:name="com.ebay.mobile.service.LocaleChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ebay.server_requests.InstallTracking$InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.ebay.mobile.service.LoggingService"/>
+        <service android:exported="false" android:name="com.ebay.mobile.service.PreferenceSyncService">
+            <intent-filter>
+                <action android:name="com.ebay.mobile.service.PreferenceSyncService.updatePrefsPrimaryAddress"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ebay.server_requests.InstallTracking$InstallTrackingService"/>
+        <activity android:label="@string/app_name" android:name="com.ebay.mobile.activities.eBay" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ebay.mobile.WAKEUP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ebay.mobile.home.departments.DepartmentFragmentActivity" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.search.SavedSearchListActivity"/>
+        <provider android:authorities="com.ebay.mobile.ebaysearch" android:name="com.ebay.mobile.eBayDictionaryProvider" android:syncable="false"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.RecentlyViewedItemsActivity"/>
+        <provider android:authorities="com.ebay.mobile.providers.itemcacheprovider" android:exported="false" android:name="com.ebay.mobile.providers.ItemCacheProvider" android:syncable="false"/>
+        <meta-data android:name="android.app.default_searchable" android:value=".activities.QuickSearchHandler"/>
+        <activity android:excludeFromRecents="true" android:name="com.ebay.mobile.activities.QuickSearchHandler" android:stateNotNeeded="true">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ebay.mobile.search.SellerOfferResultFragmentActivity"/>
+        <activity android:name="com.ebay.mobile.search.SearchResultFragmentActivity"/>
+        <activity android:name="com.ebay.mobile.search.SearchResultFragmentActivity$SellerItemsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/search" android:launchMode="singleTop" android:name="com.ebay.mobile.search.MainSearchActivity" android:theme="@style/AppTheme.NoActionBar">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/internal_searchable"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/search" android:launchMode="singleTop" android:name="com.ebay.mobile.search.SearchLandingPage.SearchLandingPageActivity" android:theme="@style/AppTheme.NoActionBar">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/internal_searchable"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.ebay.mobile.activities.LinkHandlerActivity" android:stateNotNeeded="true" android:theme="@style/AppTheme.NoActionBar.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="item" android:path="/view" android:scheme="ebay"/>
+                <data android:host="item" android:path="/query" android:scheme="ebay"/>
+                <data android:host="pages.ebay.com" android:path="/android/item/view" android:scheme="http"/>
+                <data android:host="pages.ebay.com" android:path="/android/item/query" android:scheme="http"/>
+                <data android:host="pages.ebay.com" android:path="/android/item/view/" android:scheme="http"/>
+                <data android:host="pages.ebay.com" android:path="/android/item/query/" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pages.ebay.com" android:scheme="http"/>
+                <data android:host="apigrid.ebay.com" android:scheme="http"/>
+                <data android:path="/mobile/link"/>
+                <data android:path="/mobile/link/"/>
+                <data android:path="/mobile/qalink"/>
+                <data android:path="/mobile/qalink/"/>
+                <data android:path="/link"/>
+                <data android:path="/link/"/>
+                <data android:path="/qalink"/>
+                <data android:path="/qalink/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="link" android:scheme="ebay"/>
+                <data android:host="link/" android:scheme="ebay"/>
+                <data android:host="launch" android:scheme="ebay"/>
+                <data android:host="launch/" android:scheme="ebay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/message_of_the_day_title" android:name="com.ebay.mobile.activities.mftdActivity" android:theme="@style/Theme.Dialog"/>
+        <activity android:name="com.ebay.mobile.connection.myebay.MyEbayBuyingActivity"/>
+        <activity android:name="com.ebay.mobile.connection.myebay.MyEbayWatchingActivity"/>
+        <activity android:label="@string/my_ebay" android:name="com.ebay.mobile.sell.lists.SellingListActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/totals" android:name="com.ebay.mobile.activities.MyEbaySellerTotalsActivity"/>
+        <activity android:label="@string/related_searches_label" android:name="com.ebay.mobile.search.RelatedSearchesActivity"/>
+        <activity android:name="com.ebay.mobile.search.SearchResultFragmentActivity$RelatedSearchesResultsActivity"/>
+        <activity android:name="com.ebay.mobile.trend.TrendingActivity"/>
+        <activity android:name="com.ebay.mobile.categorybrowser.BrowseCategoriesActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.ebay.mobile.activities.MessagesActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.myebay.RemindersActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.myebay.ReminderItemsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.myebay.SavedSellerListActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.ebay.mobile.activities.RtmThemedSearchActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="rtm.mobile.ebay.com" android:path="/themedsearch" android:scheme="ebay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.ebay.mobile.activities.RtmHtmlActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="rtm.mobile.ebay.com" android:path="/html" android:scheme="ebay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.ebay.mobile.activities.RtmDownloadAppActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="rtm.mobile.ebay.com" android:path="/download" android:scheme="ebay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:excludeFromRecents="true" android:exported="false" android:name="com.ebay.mobile.activities.RtmItemListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="rtm.mobile.ebay.com" android:path="/itemlist" android:scheme="ebay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/item_view_order_details" android:name="com.ebay.mobile.activities.OrderSummaryActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/order_summary_instructions_title" android:name="com.ebay.mobile.activities.OrderSummaryInstructionsActivity"/>
+        <activity android:name="com.ebay.mobile.inventory.StorePickerActivity" android:theme="@style/AppTheme.NoActionBar.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.givingworks.GivingWorksCharityActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/item_view_order_details" android:name="com.ebay.mobile.activities.EbnOrderDetailsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/search_results" android:name="com.ebay.mobile.activities.SavedSearchResultListActivity"/>
+        <activity android:label="@string/deals_titlebar" android:name="com.ebay.mobile.activities.DealsActivity"/>
+        <activity android:name="com.ebay.mobile.deals.BrowseDealsActivity"/>
+        <activity android:name="com.ebay.mobile.deals.DealsDetailsActivity"/>
+        <activity android:name="com.ebay.mobile.events.BrowseEventsActivity"/>
+        <activity android:name="com.ebay.mobile.events.EventItemsActivity"/>
+        <activity android:name="com.ebay.mobile.collections.BrowseCollectionsActivity"/>
+        <activity android:name="com.ebay.mobile.collections.CollectionDetailsActivity"/>
+        <activity android:name="com.ebay.mobile.following.BrowseFollowingActivity"/>
+        <activity android:name="com.ebay.mobile.following.EditFollowingActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.SignInActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.SignInModalActivity" android:theme="@style/Theme.Light.DialogWhenXLarge" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.ebay.mobile.activities.SignInDeepLinkActivity" android:theme="@style/AppTheme"/>
+        <activity android:label="@string/settings_title" android:name="com.ebay.mobile.activities.PreferencesActivity" android:theme="@style/Theme.Light.Preferences"/>
+        <activity android:label="@string/refine_category" android:name="com.ebay.mobile.activities.FoundItemsCategoriesActivity" android:stateNotNeeded="true" android:theme="@style/Theme.Dialog.Picker"/>
+        <activity android:name="com.ebay.mobile.activities.ErrorDialogActivity" android:theme="@style/Theme.Dialog"/>
+        <activity android:name="com.ebay.mobile.activities.AreYouSureDialogActivity" android:theme="@style/Theme.Dialog"/>
+        <activity android:label="@string/price_range" android:name="com.ebay.mobile.activities.PriceRangeActivity" android:theme="@style/Theme.Dialog.Picker"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.ViewFeedbackActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.activities.UserDetailActivity"/>
+        <activity android:label="@string/choose_a_country" android:name="com.ebay.mobile.activities.PreferredCountryActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.ebay.mobile.activities.DcsPreferenceActivity" android:theme="@style/Theme.Light.Preferences"/>
+        <activity android:name="com.ebay.mobile.activities.NotificationReportActivity" android:theme="@style/Theme.Light.Preferences"/>
+        <activity android:label="@string/message_header" android:name="com.ebay.mobile.activities.ComposeNewMessageActivity" android:theme="@style/Theme.Dialog.NoActionBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/title_list_an_item" android:name="com.ebay.mobile.sellsmartbox.SmartboxActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/title_list_an_item" android:name="com.ebay.mobile.sell.ListingFragmentActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/listed" android:name="com.ebay.mobile.sell.CongratulationsActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/title_product_details" android:name="com.ebay.mobile.sell.ProductDetailsActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/preview_your_listing" android:name="com.ebay.mobile.sell.PreviewListingActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ebay.mobile.home.SplashActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:exported="false" android:label="@string/photomanager_title" android:name="com.ebay.mobile.photomanager.PhotoManagerActivity" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="photos.mobile.ebay.com" android:path="/upload" android:scheme="ebay"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ebay.mobile.photomanager.CropPhotoActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.AddEditTrackingInfoActivity" android:theme="@style/Theme.Dialog"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.HybridWebLandingActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.ShowWebViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.ReturnParamsWebViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.sell.SsoPagesWebViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.ShowFileWebViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.OcsActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.AfterSalesWebViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.FeedActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.DealsWebViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.AdsWebViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.RegistrationWebViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/make_offer" android:name="com.ebay.mobile.bestoffer.BuyerMakeOfferActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/seller_review_offers_title" android:name="com.ebay.mobile.bestoffer.SellerReviewOffersActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/title_respond_to_offer" android:name="com.ebay.mobile.bestoffer.SellerRespondToOfferActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/title_respond_to_offer" android:name="com.ebay.mobile.bestoffer.BuyerRespondToCounterofferActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.checkout.AddressEditActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.checkout.AddressListActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/xo_cart_shipping_method" android:name="com.ebay.mobile.checkout.ChangeShippingMethodActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/prox_checkout_label" android:name="com.ebay.mobile.checkout.CheckoutActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.checkout.IncentivesActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.checkout.DonationsActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/paypal" android:name="com.ebay.mobile.checkout.PayPalActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/xo_cart_payment_method_title" android:name="com.ebay.mobile.checkout.PaymentMethodActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/LOCKED_xo_cart_purchase_complete_title" android:name="com.ebay.mobile.checkout.PurchaseCompleteActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/LOCKED_xo_cart_purchase_complete_title" android:name="com.ebay.mobile.checkout.PurchaseCompleteAlternativeActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.checkout.ChangeCartItemQuantityActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.checkout.MessageToSellerActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.checkout.delivery.DeliverySchedulingActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.activities.PaisaPayWebViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/xo_cart_payment_method_title" android:name="com.ebay.mobile.checkout.prox.PaymentMethodActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/xo_cart_payment_method_paypal" android:name="com.ebay.mobile.checkout.prox.PayPalIdentityActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/xo_cart_payment_method_credit_card" android:name="com.ebay.mobile.checkout.prox.CreditCardActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/xo_cart_payment_method_direct_debit" android:name="com.ebay.mobile.checkout.prox.DirectDebitActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/LEGAL_prox_payment_method_direct_debit_sepa_confirmation" android:name="com.ebay.mobile.checkout.prox.SepaConfirmationActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/xo_cart_payment_method_pui" android:name="com.ebay.mobile.checkout.prox.PayUponInvoiceActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/shopping_cart_title" android:name="com.ebay.mobile.shoppingcart.ShoppingCartActivity" android:theme="@style/AppTheme.NoActionBar.Transparent.BackgroundDim"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.viewitem.ItemViewSellersLegalInfoActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ItemViewGetQuantityActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ItemViewLeaveFeedbackActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ItemViewActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ItemViewBiddingActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ViewItemConfirmActivity" android:theme="@style/Theme.Light.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ViewItemChooseVariationsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ItemViewShipmentTrackingDetails"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ViewItemShippingPaymentsReturnsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ItemViewPlaceOfferActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ViewItemPlaceBidActivity" android:theme="@style/Theme.Light.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ItemViewCompatibilityActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.ebay.mobile.viewitem.ItemViewCompatibilityLeafActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.viewitem.ItemViewPhotoGalleryActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.viewitem.ItemViewDescriptionActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.viewitem.PpaUpgradeActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.ebay.mobile.viewitem.ProductReviewsActivity"/>
+        <activity android:name="com.ebay.mobile.user.symban.SymbanActivity" android:theme="@style/Theme.Light.DialogWhenLarge"/>
+        <activity android:label="@string/psl_shipping_label" android:name="com.ebay.mobile.sell.shippinglabel.ShippingLabelActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCyDc_bf2hkKVUh4-PJUYRkLPW7YOUtvCM"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="edceecaa7d8cc3e71f584300820f9132a107f99b"/>
+        <receiver android:name="com.ebay.nautilus.kernel.EbayIdentity$DeviceIdReceiver">
+            <intent-filter>
+                <action android:name="com.ebay.nautilus.domain.ACTION_GET_DEVICE_ID"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:exported="false" android:name="com.ebay.mobile.redlaser.RedLaserScannerActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.ebay.mobile.redlaser.action.SCAN"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity"/>
+    </application>
+</manifest>

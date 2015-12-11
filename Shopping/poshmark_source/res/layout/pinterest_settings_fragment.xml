@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_fragment" android:paddingTop="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/my_listing_shares_layout" layout="@layout/sharing_setting_item" />
+    <include android:id="@id/community_shares_layout" layout="@layout/sharing_setting_item" />
+    <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/textColorGray" android:layout_gravity="center_horizontal" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save your shares to the boards above." />
+    <include android:id="@id/unlink_account_layout" layout="@layout/button_table_row_bottom" />
+</LinearLayout>

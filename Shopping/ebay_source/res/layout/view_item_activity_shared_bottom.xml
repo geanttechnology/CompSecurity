@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/title_and_price_fragment_layout" android:paddingLeft="@dimen/ebayMargin2x" android:paddingRight="@dimen/ebayMargin2x" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/ebayMargin15" style="@style/StyleGuideViewItemStatContainer" />
+    <FrameLayout android:id="@id/old_title_and_price_fragment_layout" android:visibility="gone" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin15" style="@style/ItemView" />
+    <FrameLayout android:id="@id/variations_layout" android:paddingLeft="@dimen/ebayMargin" android:paddingRight="@dimen/ebayMargin" android:visibility="gone" android:layout_marginBottom="@dimen/ebayMargin15" style="@style/StyleGuideViewItemStatContainer" />
+    <com.ebay.android.widget.ContainerLayout android:gravity="center_vertical" android:id="@id/seller_offer_layout" android:visibility="gone" android:layout_marginBottom="@dimen/ebayMargin15" style="@style/StyleGuideViewItemStatContainer.Full">
+        <RelativeLayout android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding" android:paddingRight="0.0dip" android:paddingBottom="@dimen/ebayPadding" android:focusable="true" android:layout_height="fill_parent" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:textAppearance="?android:textAppearance" android:id="@id/seller_offer_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/style_guide_gray" android:id="@id/seller_offer_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/seller_offer_caption" android:layout_alignLeft="@id/seller_offer_caption" />
+            <include layout="@layout/view_item_chevron" />
+        </RelativeLayout>
+    </com.ebay.android.widget.ContainerLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/compatible_with_layout" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:minHeight="?android:listPreferredItemHeight" style="@style/StyleGuideViewItemStatContainer">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="0.0dip" android:focusable="true" android:layout_centerVertical="true" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:textColor="?android:textColorSecondary" android:text="@string/item_view_compatible_with" android:maxLines="1" style="@style/StyleGuideViewItemStatKey" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" style="@style/StyleGuideViewItemStatValue">
+                <TextView android:id="@id/compatible_with_garage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/view_item_chevron" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/item_specifics_layout" android:paddingBottom="0.0dip" style="@style/StyleGuideViewItemStatContainer" />
+    <RelativeLayout android:id="@id/product_details_layout" android:visibility="gone" style="@style/StyleGuideViewItemStatContainer.Full">
+        <TextView android:textColor="?viewItemStatKeyTextColor" android:gravity="center_vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding15" android:focusable="true" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:minHeight="?android:listPreferredItemHeight" android:text="@string/title_product_details" style="@style/StyleGuideViewItemStatCell" />
+        <include layout="@layout/view_item_chevron" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ratings_layout" android:visibility="gone" style="@style/StyleGuideViewItemStatContainer.Full">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding15" android:focusable="true" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:minHeight="?android:listPreferredItemHeight" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:text="@string/reviews" style="@style/StyleGuideViewItemStatKey" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ratings_count_and_stars_layout" style="@style/StyleGuideViewItemStatValue">
+                <com.ebay.mobile.common.eBayRating android:id="@id/reviews_rating" android:layout_height="fill_parent" ebay:threshold="0" style="@style/ItemView.RatingStars" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+                <TextView android:id="@id/reviews_count" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/view_item_chevron" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/description_layout" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:minHeight="?android:listPreferredItemHeight" style="@style/StyleGuideViewItemStatContainer">
+        <RelativeLayout android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:focusable="true" android:layout_height="fill_parent" style="@style/StyleGuideViewItemStatCell">
+            <include android:id="@id/chevron_icon" layout="@layout/view_item_chevron" />
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chevron_icon" android:layout_centerVertical="true">
+                <TextView android:textColor="?android:textColorSecondary" android:id="@id/description_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_description" />
+                <TextView android:ellipsize="end" android:id="@id/description_snippet_textview" android:paddingBottom="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/bidding_history_layout" android:visibility="gone" style="@style/StyleGuideViewItemFragmentFrame" />
+    <LinearLayout android:id="@id/ebay_plus_signup_layout" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_marginTop="@dimen/ebayMargin2x" android:minHeight="?android:listPreferredItemHeight" style="@style/StyleGuideViewItemStatContainer">
+        <RelativeLayout android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:focusable="true" android:layout_height="fill_parent" style="@style/StyleGuideViewItemStatCell">
+            <include android:id="@id/chevron_icon" layout="@layout/view_item_chevron" />
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chevron_icon" android:layout_centerVertical="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_viewitem_plus" android:contentDescription="@string/ebay_plus" />
+                <View android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" />
+                <TextView android:textAppearance="?android:textAppearance" android:id="@id/ebay_plus_signup_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebay_plus_signup_title" android:includeFontPadding="false" android:contentDescription="@string/ebay_plus_signup_title" />
+                <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/style_guide_gray" android:id="@id/ebay_plus_signup_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/spr_layout" style="@style/StyleGuideViewItemFragmentFrame" />
+    <FrameLayout android:id="@id/about_seller_layout" android:visibility="gone" style="@style/StyleGuideViewItemFragmentFrame" />
+    <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/clickable_layouts_container" android:layout_marginLeft="@dimen/view_item_inline_button_margins" android:layout_marginRight="@dimen/view_item_inline_button_margins" style="@style/StyleGuideViewItemFragmentFrame">
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/place_bid_button_bottom" android:visibility="gone" android:text="@string/place_bid" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/buy_it_now_button_bottom" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/buy_it_now" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/watch_button_bottom" android:visibility="gone" android:text="@string/item_view_watch" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/pay_for_item_in_cart_button_bottom" android:visibility="gone" android:text="@string/pay_for_item" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/buy_another_button_bottom" android:visibility="gone" android:text="@string/buy_another" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/buying_options_button_bottom" android:visibility="gone" android:text="@string/buying_options" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/make_offer_button_bottom" android:visibility="gone" android:text="@string/make_offer" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/add_to_cart_button_bottom" android:visibility="gone" android:text="@string/add_to_cart" android:layout_weight="1.0" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/view_item_in_cart_button_bottom" android:visibility="gone" android:text="@string/view_item_in_cart" android:layout_weight="1.0" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/enter_package_tracking_button" android:visibility="gone" android:text="@string/item_view_enter_tracking_number" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/edit_package_tracking_button" android:visibility="gone" android:text="@string/item_view_edit_tracking_number" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/sell_like_button" android:visibility="gone" android:text="@string/item_view_sell_like" style="@style/EbayButton.White.ItemView.Bottom" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/share_button" android:visibility="gone" android:text="@string/share_this_item" style="@style/EbayButton.White.ItemView.Bottom" />
+    </com.ebay.android.widget.ContainerLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ad_view" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_marginTop="@dimen/ebayMargin2x" style="@style/StyleGuideViewItemStatContainer" />
+    <LinearLayout android:orientation="vertical" android:id="@id/merch_fragment_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="0.0dip" layout="@layout/search_ads_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/google_text_ad_view" android:background="?listContainerBackground" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" />
+</merge>

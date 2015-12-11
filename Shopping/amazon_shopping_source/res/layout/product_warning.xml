@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/product_details_warning_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/product_details_warning_icon" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/amazon_black" android:id="@id/product_details_warning_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:id="@id/product_details_warning_message" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:layout_below="@id/product_details_warning_content" style="@style/Separator" />
+</RelativeLayout>

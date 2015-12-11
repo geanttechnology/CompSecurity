@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/gno_debug_save" android:layout_marginTop="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:text="@string/gno_debug_save_title" style="@style/AUIButton.Gold.Fullscreen" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gno_debug_url_override_title" />
+        <EditText android:id="@id/gno_debug_url_override" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/gno_debug_url_override_hint" android:inputType="textUri" />
+        <CheckBox android:id="@id/gno_debug_url_toast" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gno_debug_url_toast" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gno_debug_expand_duration_title" />
+        <EditText android:id="@id/gno_debug_anim_expand_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gno_debug_collapse_duration_title" />
+        <EditText android:id="@id/gno_debug_anim_collapse_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textStyle="normal" android:id="@id/opl_order_confirmation_item_button" style="@style/ArrowSelector.Link" />
+    <View style="@style/Separator" />
+</LinearLayout>

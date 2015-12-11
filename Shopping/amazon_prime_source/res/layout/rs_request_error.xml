@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rs_request_error" android:background="@drawable/rs_error_dialog_background" android:padding="@dimen/pc_8px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/pc_5px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/rs_results_textsize_large" android:textColor="@color/results_black" android:id="@id/rs_request_error_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pc_8px" />
+    <Button android:textSize="@dimen/rs_results_textsize_large" android:textColor="@color/results_black" android:id="@id/rs_request_error_retry" android:background="@drawable/rs_results_error_retry_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rs_results_error_try_again" />
+</LinearLayout>

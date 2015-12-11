@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/cvsd_dialog_title_text_size" android:textColor="@color/cvsd_search_type_text" android:id="@id/cvsd_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/opl_cvsd_enter_zip_code" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/cvsd_search_by_zip_jp_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:typeface="sans" android:id="@id/cvsd_zip1_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:phoneNumber="true" android:layout_weight="4.0" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+        <EditText android:typeface="sans" android:id="@id/cvsd_zip2_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:phoneNumber="true" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cvsd_search_by_zip_fr_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:typeface="sans" android:id="@id/cvsd_zip_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

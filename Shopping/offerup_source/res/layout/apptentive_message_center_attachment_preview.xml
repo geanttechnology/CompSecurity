@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apptentive="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:paddingLeft="@dimen/apptentive_activity_side_padding" android:paddingRight="@dimen/apptentive_activity_side_padding" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/apptentive_activity_vertical_padding" android:paddingBottom="@dimen/apptentive_activity_vertical_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="vertical" android:id="@id/top_area" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ApptentiveInteractionDialogTopArea">
+                <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/apptentive_message_center_attachment_title" style="@style/ApptentiveDialogTitle" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/image" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bottom_area" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ApptentiveDialogBottomArea">
+                <com.apptentive.android.sdk.module.engagement.interaction.view.common.ApptentiveDialogButton android:id="@id/no" android:layout_width="wrap_content" android:layout_height="wrap_content" apptentive:text="@string/apptentive_no" />
+                <com.apptentive.android.sdk.module.engagement.interaction.view.common.ApptentiveDialogButton android:id="@id/yes" android:layout_width="wrap_content" android:layout_height="wrap_content" apptentive:text="@string/apptentive_yes" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

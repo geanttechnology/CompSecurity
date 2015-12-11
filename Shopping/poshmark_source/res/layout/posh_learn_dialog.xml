@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/textColorBlack" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="See what's new!" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <View android:id="@id/divider" android:background="@color/borderColorGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/title" />
+        <ImageView android:id="@id/bckgrndImage" android:background="@drawable/img_poshlearn_matrix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/divider" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/msg_I" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/bckgrndImage">
+            <ImageView android:background="@drawable/ic_category_black_outline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="NEW WAY TO SHOP" />
+                <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shop new categories, subcategories and by color to find what you want even faster" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/msg_II" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/msg_I">
+            <ImageView android:background="@drawable/ic_color_black_outline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="CHECK YOUR LISTINGS" />
+                <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sellers, we have autotagged some items with subcategory and color. Please verify your listings" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/dismissButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="Got It!" android:layout_alignParentBottom="true" style="@style/followFollowingButton" />
+    </RelativeLayout>
+</RelativeLayout>

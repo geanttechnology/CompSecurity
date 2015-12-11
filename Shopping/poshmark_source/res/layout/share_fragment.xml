@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/shareFragmentLayout" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_attributes="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/scrollContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/shareWithFollowersButtonContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/shareWithFollowersButton" layout="@layout/button_table_row_single" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/referralContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/textColorBlack" android:gravity="center" android:id="@id/referralMessage" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/textColorLightBurgundy" android:gravity="center" android:id="@id/referralCode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fbStandAloneButtonContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorDarkGray" android:id="@id/fbSharingProTip1" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+            <com.poshmark.ui.customviews.PMButton android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:gravity="left|center" android:id="@id/fbStandAloneButton" android:background="@drawable/bg_table_row_single" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/facebook" android:drawableLeft="@drawable/icon_fb_colored_filled" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sendToFriendsContainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorLightGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/share_to_friends" />
+            <include android:id="@id/messengerButton" android:visibility="gone" android:text="@string/messenger" android:drawableLeft="@drawable/icon_fbmessenger_colored_filled" layout="@layout/button_table_row_middle" />
+            <com.poshmark.ui.customviews.PMButton android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:gravity="left|center" android:id="@id/smsButton" android:background="@drawable/bg_table_row_top" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sms" android:drawableLeft="@drawable/icon_sms_colored_filled" android:drawablePadding="10.0dip" />
+            <include android:id="@id/emailButton" android:text="@string/email" android:drawableLeft="@drawable/icon_email_colored_filled" layout="@layout/button_table_row_bottom" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/shareToNetworkContainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorLightGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/share_to_network" />
+            <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorDarkGray" android:id="@id/fbSharingProTip2" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include android:id="@id/pinterestButton" android:background="@drawable/bg_table_row_top" android:visibility="gone" android:text="Pinterest" android:drawableLeft="@drawable/icon_pinterest_colored_filled" layout="@layout/button_table_row_middle" />
+            <com.poshmark.ui.customviews.PMButton android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:gravity="left|center" android:id="@id/fbButton" android:background="@drawable/bg_table_row_middle" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/facebook" android:drawableLeft="@drawable/icon_fb_colored_filled" android:drawablePadding="10.0dip" />
+            <include android:id="@id/twitterButton" android:text="@string/twitter" android:drawableLeft="@drawable/icon_twitter_colored_filled" layout="@layout/button_table_row_middle" />
+            <include android:id="@id/tumblrButton" android:text="@string/tumblr" android:drawableLeft="@drawable/icon_tumblr_colored_filled" layout="@layout/button_table_row_middle" />
+            <include android:id="@id/instagramButton" android:text="@string/instagram" android:drawableLeft="@drawable/icon_instagram_colored_filled" layout="@layout/button_table_row_bottom" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

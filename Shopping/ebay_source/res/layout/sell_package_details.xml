@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/modal_toolbar" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/button_bar_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/ButtonBar.Floating">
+            <Button android:id="@id/save" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/hub_side_margin" android:layout_marginRight="@dimen/hub_side_margin" android:text="@string/save" style="@style/EbayButton.Blue" />
+        </LinearLayout>
+        <ScrollView android:id="@id/parent_layout" android:layout_above="@id/button_bar_frame" style="@style/Sell.Layout.Scroll">
+            <LinearLayout android:layout_marginTop="6.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:id="@id/focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:inputType="none" />
+                <com.ebay.android.widget.ContainerLayout android:id="@id/package_layout" style="@style/Sell.Layout.Container">
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_package_type" style="@style/Sell.Layout.Row.Label" />
+                        <com.ebay.android.widget.EbaySpinner android:id="@id/spinner_package_type" style="@style/Sell.Spinner.Inline" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_length" style="@style/Sell.Layout.Row.Label" />
+                        <EditText android:id="@id/package_dim_length" android:nextFocusDown="@id/package_dim_width" android:layout_weight="0.5" android:inputType="number" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_length_unit1" android:layout_marginLeft="0.0dip" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_width" style="@style/Sell.Layout.Row.Label" />
+                        <EditText android:id="@id/package_dim_width" android:nextFocusDown="@id/package_dim_depth" android:layout_weight="0.5" android:inputType="number" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_length_unit2" android:layout_marginLeft="0.0dip" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_height" style="@style/Sell.Layout.Row.Label" />
+                        <EditText android:id="@id/package_dim_depth" android:layout_weight="0.5" android:inputType="number" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_length_unit3" android:layout_marginLeft="0.0dip" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/irregular_package_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckedTextView android:id="@id/checkbox_package_irregular" android:text="@string/checkbox_irregular_package" style="@style/Sell.CheckedTextView" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_package_weight" style="@style/Sell.Layout.Row.Label" />
+                        <com.ebay.android.widget.EbaySpinner android:id="@id/spinner_package_weight" style="@style/Sell.Spinner.Inline" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/package_custom_weight_layout" style="@style/Sell.Layout.Row">
+                        <EditText android:id="@id/package_weight_major" android:nextFocusDown="@id/package_weight_minor" android:layout_weight="0.5" android:inputType="number" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_weight_unit_major" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                        <EditText android:id="@id/package_weight_minor" android:layout_weight="0.5" android:inputType="number" android:imeOptions="actionDone" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_weight_unit_minor" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                    </LinearLayout>
+                </com.ebay.android.widget.ContainerLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

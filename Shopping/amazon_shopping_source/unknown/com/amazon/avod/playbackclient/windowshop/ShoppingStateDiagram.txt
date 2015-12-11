@@ -1,0 +1,28 @@
+'Install plantUml eclipse plugin to see this state diagram
+'http://plantuml.sourceforge.net/
+
+@startuml
+
+[*] -right-> Idle
+
+Idle -right-> ResolvingAsin : Start
+Idle --> Cancelled : Cancel
+
+ResolvingAsin -right-> LaunchingApp : AsinResolved
+ResolvingAsin --> Cancelled : Cancel
+ResolvingAsin --> Error : Error
+
+LaunchingApp --> Error : Error
+LaunchingApp --> Transitioning : AppClosed
+LaunchingApp -right-> AppForeground : AppOpened
+
+AppForeground --> Transitioning : AppClosed
+
+Transitioning --> AppForeground : AppOpened
+Transitioning --> Closed : AppClosed
+
+Error -down-> [*]
+Closed -down-> [*]
+Cancelled -down-> [*]
+
+@enduml

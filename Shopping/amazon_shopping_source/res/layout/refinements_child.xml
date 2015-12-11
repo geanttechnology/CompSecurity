@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_b" android:minHeight="@dimen/rs_refinement_menu_item_height" style="@style/Rs.Refinement.ChildPanel"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/rs_refinements_child_label" android:paddingLeft="@dimen/pc_18px" android:layout_width="0.0dip" android:layout_height="@dimen/rs_refinement_menu_item_height" android:maxLines="2" android:layout_weight="7.0" style="@style/Rs.Refinement.ChildPanel.Header" />
+    <ImageView android:id="@id/rs_refinements_child_indicator" android:layout_width="wrap_content" android:layout_height="@dimen/rs_refinement_menu_item_height" android:layout_marginRight="@dimen/pc_8px" android:src="@null" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/account_order_details_ship_home" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_delivery_height">
+        <com.target.ui.view.BitmapImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_delivery_margin" android:src="@drawable/icon_checkout_shippingaddress" android:layout_centerVertical="true" />
+        <com.target.ui.view.TargetTextView android:id="@id/account_order_details_ship_home_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.AccountProductDelivery" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_separator_height" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_alignParentBottom="true" layout="@layout/view_account_order_details_separator" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/account_order_details_pickup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_delivery_height">
+        <com.target.ui.view.BitmapImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_delivery_margin" android:src="@drawable/icon_checkout_storepickup" android:layout_centerVertical="true" />
+        <com.target.ui.view.TargetTextView android:id="@id/account_order_details_pickup_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.AccountProductDelivery" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_separator_height" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_alignParentBottom="true" layout="@layout/view_account_order_details_separator" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/account_order_details_email_delivery" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_delivery_height">
+        <com.target.ui.view.BitmapImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_delivery_margin" android:src="@drawable/icon_checkout_email" android:layout_centerVertical="true" />
+        <com.target.ui.view.TargetTextView android:id="@id/account_order_details_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.AccountProductDelivery" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_separator_height" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_alignParentBottom="true" layout="@layout/view_account_order_details_separator" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/account_order_details_mobile_delivery" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_delivery_height">
+        <com.target.ui.view.BitmapImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_delivery_margin" android:src="@drawable/icon_checkout_phone" android:layout_centerVertical="true" />
+        <com.target.ui.view.TargetTextView android:id="@id/account_order_details_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_centerVertical="true" app:fontStyle="light" style="@style/Target.TextView.AccountProductDelivery" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/account_order_details_separator_height" android:layout_marginLeft="@dimen/account_order_details_left_margin" android:layout_alignParentBottom="true" layout="@layout/view_account_order_details_separator" />
+    </RelativeLayout>
+</merge>

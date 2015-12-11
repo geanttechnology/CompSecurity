@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="-1.0dip">
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="2.0dip" android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" />
+            <padding android:top="-1.0dip" />
+            <solid android:color="@color/rs_refinement_dds_address_background" />
+            <stroke android:width="1.0dip" android:color="@color/rs_refinement_header_background" />
+        </shape>
+    </item>
+</layer-list>

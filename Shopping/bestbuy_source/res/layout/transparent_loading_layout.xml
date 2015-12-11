@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/loading_layout" android:background="@color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/loading_spinner_bg" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/loading" android:indeterminateDuration="2000" android:layout_centerInParent="true" style="@style/default_style_wrap" />
+    </RelativeLayout>
+</FrameLayout>

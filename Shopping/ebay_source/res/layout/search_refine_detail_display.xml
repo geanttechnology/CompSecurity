@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightQuantized"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearance" android:id="@id/left_arrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="&lt;" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Refine.Text.Title.BoldHeavy" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/refineEdgeMargin" android:layout_marginRight="6.0dip" android:layout_alignLeft="@id/left_arrow" android:layout_centerVertical="true">
+        <TextView android:textAppearance="?android:textAppearance" android:ellipsize="end" android:gravity="left|center" android:id="@id/row_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" style="@style/Refine.Text.Title" />
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="?android:textColorPrimaryInverse" android:ellipsize="end" android:gravity="right|center" android:id="@id/row_value" android:visibility="gone" android:layout_width="95.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/refineEdgeMargin" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/registry_search_icon" android:layout_width="?actionBarSize" android:layout_height="wrap_content" android:src="@drawable/icon_registry_search" />
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/registry_first_name_wrapper" android:paddingLeft="@dimen/default_padding_margin" android:paddingRight="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/registry_search_icon" app:viewId="@id/registry_first_name">
+        <com.target.ui.view.TargetEditText android:gravity="left|center" android:layout_gravity="bottom" android:id="@id/registry_first_name" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/registry_first_name_hint_title" android:inputType="textPersonName" android:imeOptions="actionNext" android:nextFocusForward="@id/registry_last_name" style="@style/Target.TextView.EditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/registry_last_name_wrapper" android:paddingLeft="@dimen/default_padding_margin" android:paddingRight="@dimen/default_2x_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/registry_search_icon" android:layout_below="@id/registry_first_name_wrapper" app:viewId="@id/registry_last_name">
+        <com.target.ui.view.TargetEditText android:gravity="left|center" android:layout_gravity="bottom" android:id="@id/registry_last_name" android:nextFocusDown="@null" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/registry_last_name_hint_title" android:inputType="textPersonName" android:imeOptions="actionDone" style="@style/Target.TextView.EditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/purchase_row" layout="@layout/purchase_row_static_primary_item_dark" />
+    <TextView android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/purchase_row_comment_text" />
+</LinearLayout>

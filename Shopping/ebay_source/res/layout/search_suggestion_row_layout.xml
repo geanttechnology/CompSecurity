@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/ebayPaddingHalf" android:paddingRight="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/refinementIcon" android:paddingRight="@dimen/queryRefinementRightPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_complete" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/ebayTextSizeMediumSmall" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin6x" android:drawablePadding="@dimen/ebayPadding" android:layout_toLeftOf="@id/refinementIcon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

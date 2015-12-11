@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/common_name_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/name_first_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewId="@id/name_first_input">
+        <com.target.ui.view.TargetEditText android:id="@id/name_first_input" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_shipping_name_hint" android:inputType="textPersonName|textCapWords" android:imeOptions="actionNext" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/name_last_wrapper" android:paddingLeft="@dimen/checkout_person_name_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewId="@id/name_last_input">
+        <com.target.ui.view.TargetEditText android:id="@id/name_last_input" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_shipping_last_hint" android:inputType="textPersonName|textCapWords" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+</LinearLayout>

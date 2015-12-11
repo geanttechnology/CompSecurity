@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.groupon.view.widgetcards.CouponTopItemLayout android:paddingLeft="@dimen/card_spacing_half" android:paddingRight="@dimen/card_spacing_half" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <com.groupon.view.widgetcards.CouponTopItemCard android:id="@id/coupon_top_item_card_chiclet_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/card_spacing_half" android:layout_weight="1.0" card_view:cardCornerRadius="@dimen/card_corner_radius" card_view:cardElevation="@dimen/deal_card_elevation" />
+    <com.groupon.view.widgetcards.CouponTopItemCard android:id="@id/coupon_top_item_card_chiclet_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/card_spacing_half" android:layout_weight="1.0" card_view:cardCornerRadius="@dimen/card_corner_radius" card_view:cardElevation="@dimen/deal_card_elevation" />
+    <com.groupon.view.widgetcards.CouponTopItemCard android:id="@id/coupon_top_item_card_chiclet_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/card_spacing_half" android:layout_weight="1.0" card_view:cardCornerRadius="@dimen/card_corner_radius" card_view:cardElevation="@dimen/deal_card_elevation" />
+</com.groupon.view.widgetcards.CouponTopItemLayout>

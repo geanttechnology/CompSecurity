@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/rs_secondary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Select Config Set:" />
+    <Spinner android:id="@id/rs_debug_config_set" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:spinnerMode="dropdown" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/rs_secondary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Select Realm:" />
+    <Spinner android:id="@id/rs_debug_select_realm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:spinnerMode="dropdown" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/rs_secondary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Select Latency (clickToATF - emulation):" />
+    <Spinner android:id="@id/rs_debug_select_latency" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:spinnerMode="dropdown" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/rs_secondary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Search Service URL:" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rs_debug_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/rs_debug_radio_secure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Secure" />
+        <RadioButton android:id="@id/rs_debug_radio_insecure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Insecure" />
+        <RadioButton android:id="@id/rs_debug_radio_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Custom" />
+    </RadioGroup>
+    <EditText android:id="@id/rs_debug_search_service_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="@string/rs_custom_environment_hint_text" android:inputType="textUri" android:imeOptions="actionDone" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/rs_secondary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Search Debug Options (Request URL parameters):" />
+    <EditText android:id="@id/rs_debug_search_debug_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:inputType="text" android:imeOptions="actionDone" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/rs_debug_force_fresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Force fresh alias" />
+        <Button android:id="@id/rs_debug_force_primenow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PrimeNow params" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/rs_secondary_text" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Set Cookies (cookie1Name=cookie1Value;cookie2Name=cookie2Value):" />
+    <EditText android:id="@id/rs_debug_search_cookies" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:inputType="text" android:imeOptions="actionDone" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <Button android:id="@id/rs_debug_add_cookies_button" android:padding="5.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="Set" android:layout_weight="1.0" />
+        <Button android:id="@id/rs_debug_clear_cookies_button" android:padding="5.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="Clear" android:layout_weight="1.0" />
+        <Button android:id="@id/rs_debug_add_marketplace_override" android:padding="5.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="Marketplace Override" android:singleLine="true" android:layout_weight="2.0" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/rs_secondary_text" android:id="@id/rs_debug_added_cookie_view" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Added Cookies:" />
+    <Button android:id="@id/rs_debug_go_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="Done!" />
+</merge>

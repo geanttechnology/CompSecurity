@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/background_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/about_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/about_app_info" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textStyle="bold" android:id="@id/about_description" android:text="@string/about_description" style="@style/AboutText" />
+            <TextView android:id="@id/about_version" style="@style/AboutText" />
+            <TextView android:id="@id/about_build" style="@style/AboutText" />
+            <TextView android:textColor="@color/dark_text" android:gravity="center" android:id="@id/about_copyright" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/about_padding_top_bottom" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/about_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_copyright" />
+        </LinearLayout>
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/about_legal_information_button_with_aiv" android:text="@string/legal_info_text" style="@style/ArrowSelector" amazon_titleResourceId="@string/legal_info_text" amazon_urlContentId="@string/legal_info_url_android_with_aiv" amazon_urlUseExternalBrowser="false" />
+        <View style="@style/Separator" />
+        <Button android:id="@id/check_upgrade_button" android:text="@string/upgrade_check_for_upgrade" style="@style/ArrowSelector" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</ScrollView>

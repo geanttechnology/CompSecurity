@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/prd_clp_progress_container" layout="@layout/view_progress_container" />
+    <com.target.ui.view.common.TargetErrorView android:layout_gravity="center" android:id="@id/prd_clp_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin" />
+    <FrameLayout android:id="@id/prd_clp_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:layout_gravity="center" android:id="@id/prd_clp_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Target.ProductListView.Selectable" />
+    </FrameLayout>
+</FrameLayout>

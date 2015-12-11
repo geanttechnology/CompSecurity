@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/shipping_address_item" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/cart_dialog_title_margin" android:paddingTop="@dimen/checkout_less_padding_margin" android:paddingBottom="@dimen/checkout_less_padding_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetRadioButton android:theme="@style/AppTheme.GreenAccent" android:id="@id/address_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/Target.RadioButton" />
+    <ImageView android:id="@id/checkout_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_checkout_shippingaddress" android:layout_centerVertical="true" android:contentDescription="@string/cd_credit_card_image" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_more_padding_margin" android:layout_toLeftOf="@id/edit_address" android:layout_toRightOf="@id/address_choice" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:id="@id/main_address" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.PrimaryAddress" />
+        <com.target.ui.view.TargetTextView android:id="@id/secondary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.SecondaryAddress" />
+    </LinearLayout>
+    <ImageButton android:id="@id/edit_address" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_edit_small" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/cd_shipping_edit_image" style="@style/GrayButtonSelectorCompat" />
+</RelativeLayout>

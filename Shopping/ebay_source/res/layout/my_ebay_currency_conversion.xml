@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/my_ebay_currency_text" android:paddingLeft="@dimen/ebayMargin" android:paddingRight="@dimen/ebayMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/my_ebay_currency_conversion" style="@style/EbayTextAppearance.Caption" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/nwt_yes_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/backgroundTableRowTop">
+        <com.poshmark.ui.customviews.PMTextView android:id="@id/nwtYesLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" />
+        <ImageView android:id="@id/checkMarkImageNwt" android:background="@drawable/ic_checkmark_burgundy" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/nwt_retail_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/backgroundTableRowMiddle">
+        <com.poshmark.ui.customviews.PMTextView android:id="@id/nwtRetailLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/newWithRetailTags" />
+        <Switch android:id="@id/nwtRetailSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="       " android:textOff="       " android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/nwt_no_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/backgroundTableRowBottom">
+        <com.poshmark.ui.customviews.PMTextView android:id="@id/nwtNoLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no" />
+        <ImageView android:id="@id/checkMarkImageNoNwt" android:background="@drawable/ic_checkmark_burgundy" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.poshmark.ui.customviews.PMTextView android:textSize="15.0sp" android:textColor="@color/textColorGray" android:textColorLink="@color/textColorGray" android:layout_gravity="center" android:id="@id/nwt_policy_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/poshmark_nwt_policy_text_with_link" />
+    <com.poshmark.ui.customviews.PMTextView android:textSize="15.0sp" android:textColor="@color/textColorGray" android:layout_gravity="center" android:id="@id/nwt_retail_policy_textView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/poshmark_nwt_retail_policy_text" />
+</LinearLayout>

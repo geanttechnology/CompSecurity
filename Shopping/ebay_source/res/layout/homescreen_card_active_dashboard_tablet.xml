@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/active_count_board" android:layout_width="wrap_content" android:layout_height="@dimen/card_selling_count_height" android:minWidth="@dimen/card_selling_count_width">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/selling_card_main_content_text_size" android:gravity="center_horizontal" android:id="@id/noOfActiveItems" android:layout_width="@dimen/card_selling_count_width" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selling_active_headline" android:layout_below="@id/noOfActiveItems" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/active_count_separator" layout="@layout/homescreen_card_vertical_divider" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/active_stat_board" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/homescreen_card_active_offers_tablet" />
+        <include android:id="@id/haveOffersSeparator" layout="@layout/homescreen_card_horizontal_divider" />
+        <include layout="@layout/homescreen_card_active_bids_tablet" />
+        <TextView android:textColor="@color/style_guide_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/noOffersOrBidsText" android:paddingLeft="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selling_card_see_listings" />
+    </LinearLayout>
+    <TextView android:textColor="@color/style_guide_gray" android:gravity="center" android:id="@id/oops_active_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_selling_utility_oops_text_size" android:text="@string/homescreen_card_active_oops_text" />
+</com.ebay.mobile.widget.FLinearLayout>

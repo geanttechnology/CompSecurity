@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/large_photo_gallery_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/photo_gallery_widget" />
+    <include android:id="@id/small_photo_gallery_layout" android:layout_width="fill_parent" android:layout_height="@dimen/view_item_gallery_thumbnail_size" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" layout="@layout/photo_gallery_widget" />
+</LinearLayout>

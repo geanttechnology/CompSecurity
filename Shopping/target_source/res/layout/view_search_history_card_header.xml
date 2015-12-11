@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/min_image_button_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetTextView android:id="@id/product_search_recent_search_header_title" android:paddingLeft="@dimen/default_4x_padding_margin" android:paddingRight="@dimen/default_4x_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_recent_searches" android:layout_centerVertical="true" style="@style/Target.TextView.SearchHistory" />
+    <com.target.ui.view.TargetButton android:id="@id/product_search_recent_search_header_clear_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_history_clear_btn" android:layout_toLeftOf="@id/prd_add_to_cart_error_dialog_red_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Target.SearchHistoryClearButton" />
+</RelativeLayout>

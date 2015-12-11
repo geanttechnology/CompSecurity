@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_plp_grid_item_content" />
+    <ImageView android:layout_gravity="top|left|center" android:id="@id/prd_plp_deals_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_padding_margin" android:src="@drawable/icon_tag" android:contentDescription="@string/cd_offers_icon" />
+</merge>

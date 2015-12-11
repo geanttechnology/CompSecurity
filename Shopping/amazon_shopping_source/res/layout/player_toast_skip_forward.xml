@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/SkipIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/SkipForward" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/skipforwardicon" android:scaleType="center" android:contentDescription="@string/description_skip_forward" />
+        <TextView android:textAppearance="@style/AVOD.TextAppearance.Light.Small" android:id="@id/SkipText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="@style/AVOD.TextAppearance.Light.Small" android:id="@id/SpeedHintText" android:paddingLeft="@dimen/avod_spacing_xxsmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Press and hold to fast forward" android:layout_toRightOf="@id/SkipIcon" android:layout_centerVertical="true" />
+</RelativeLayout>

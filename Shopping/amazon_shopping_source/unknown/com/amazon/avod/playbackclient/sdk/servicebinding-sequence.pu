@@ -1,0 +1,82 @@
+'Install plantUml eclipse plugin to see this diagram
+'http://plantuml.sourceforge.net/
+
+@startuml
+actor SdkUser
+
+' Pre-initing video before playback
+SdkUser -> AmazonInstantVideo : prepareVideo()
+activate AmazonInstantVideo
+
+group SDK <-> service binding
+AmazonInstantVideo -\ AivSdkService : bindService()
+activate AivSdkService
+AmazonInstantVideo --> SdkUser 
+deactivate AmazonInstantVideo
+AivSdkService -> AivSdkService : onBind()
+AivSdkService --\ AmazonInstantVideo : onServiceConnected()
+end
+
+AmazonInstantVideo -> AivSdkService : AivPlaybackSdk#prepareVideo()
+AivSdkService -\ WhisperCachingService : startService()
+activate WhisperCachingService
+WhisperCachingService -> WhisperCachingService : preparePlayer
+note right: out of scope of this diagram
+AivSdkService --> AmazonInstantVideo
+deactivate WhisperCachingService
+
+' Getting video ready to playback
+SdkUser -> AmazonInstantVideo : play()
+activate AmazonInstantVideo
+AmazonInstantVideo --> SdkUser
+deactivate AmazonInstantVideo
+
+' Starting playback
+SdkUser -> AmazonInstantVideo : start()
+activate AmazonInstantVideo
+
+AmazonInstantVideo -> AivSdkService : AivPlaybackSdk#startPlayback()
+AivSdkService -\ PlaybackActivity : startActivity()
+activate PlaybackActivity
+AivSdkService --> AmazonInstantVideo
+AmazonInstantVideo --> SdkUser
+deactivate AmazonInstantVideo
+
+' Tearing down prepared video since activity is stopping
+SdkUser -> AmazonInstantVideo : teardownPreparedVideo()
+activate AmazonInstantVideo
+AmazonInstantVideo -> AivSdkService : AivPlaybackSdk#teardownPreparedVideo()
+AivSdkService -\ WhisperCachingService : startService()
+activate WhisperCachingService
+WhisperCachingService -> WhisperCachingService : destroy
+note right: out of scope of this diagram
+AivSdkService --> AmazonInstantVideo
+deactivate WhisperCachingService
+AmazonInstantVideo -\ AivSdkService : unbindService()
+AmazonInstantVideo --> SdkUser
+deactivate AmazonInstantVideo
+
+PlaybackActivity -> PlaybackActivity : <<Android activity lifecycle>>
+
+group Activity <-> service binding
+PlaybackActivity -\ AivSdkService : bindService()
+AivSdkService --\ PlaybackActivity : onServiceConnected()
+end
+
+PlaybackActivity -> PlaybackActivity : <<player lifecycle>>
+
+' Receive callback through service
+PlaybackActivity -\ AivSdkService : AivPlaybackSdkResponse#onStart()
+AivSdkService -\ AmazonInstantVideo : AivPlaybackSdkResponse#onStart()
+AmazonInstantVideo -\ SdkUser : AivPlaybackSdkResponse#onStart()
+
+' Playback finishes
+PlaybackActivity -> PlaybackActivity : <<terminate>>
+PlaybackActivity -\ AivSdkService : AivPlaybackSdkResponse#onStop()
+AivSdkService -\ AmazonInstantVideo : AivPlaybackSdkResponse#onStop()
+AmazonInstantVideo -\ SdkUser : AivPlaybackSdkResponse#onStop()
+PlaybackActivity -\ AivSdkService : unbindService()
+deactivate PlaybackActivity
+deactivate AivSdkService
+
+@enduml

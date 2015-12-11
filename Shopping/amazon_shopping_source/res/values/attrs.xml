@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="show_pictures" format="boolean" />
+    <attr name="extra_fields" format="string" />
+    <attr name="show_title_bar" format="boolean" />
+    <attr name="title_text" format="string" />
+    <attr name="done_button_text" format="string" />
+    <attr name="title_bar_background" format="reference" />
+    <attr name="done_button_background" format="reference" />
+    <attr name="multi_select" format="boolean" />
+    <attr name="radius_in_meters" format="integer" />
+    <attr name="results_limit" format="integer" />
+    <attr name="search_text" format="string" />
+    <attr name="show_search_box" format="boolean" />
+    <attr name="confirm_logout" format="boolean" />
+    <attr name="fetch_user_info" format="boolean" />
+    <attr name="login_text" format="string" />
+    <attr name="logout_text" format="string" />
+    <attr name="preset_size">
+        <enum name="small" value="-2" />
+        <enum name="normal" value="-3" />
+        <enum name="large" value="-4" />
+    </attr>
+    <attr name="is_cropped" format="boolean" />
+    <attr name="adSize" format="string" />
+    <attr name="adSizes" format="string" />
+    <attr name="adUnitId" format="string" />
+    <attr name="mapType">
+        <enum name="normal" value="1" />
+        <enum name="none" value="0" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+        <enum name="hybrid" value="4" />
+    </attr>
+    <attr name="cameraBearing" format="float" />
+    <attr name="cameraTargetLat" format="float" />
+    <attr name="cameraTargetLng" format="float" />
+    <attr name="cameraTilt" format="float" />
+    <attr name="cameraZoom" format="float" />
+    <attr name="uiCompass" format="boolean" />
+    <attr name="uiRotateGestures" format="boolean" />
+    <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiTiltGestures" format="boolean" />
+    <attr name="uiZoomControls" format="boolean" />
+    <attr name="uiZoomGestures" format="boolean" />
+    <attr name="useViewLifecycle" format="boolean" />
+    <attr name="zOrderOnTop" format="boolean" />
+    <attr name="theme">
+        <enum name="holo_dark" value="0" />
+        <enum name="holo_light" value="1" />
+    </attr>
+    <attr name="environment">
+        <enum name="production" value="1" />
+        <enum name="sandbox" value="0" />
+        <enum name="strict_sandbox" value="2" />
+    </attr>
+    <attr name="fragmentStyle" format="reference" />
+    <attr name="fragmentMode">
+        <enum name="buyButton" value="1" />
+        <enum name="selectionDetails" value="2" />
+    </attr>
+    <attr name="buyButtonHeight" format="dimension">
+        <enum name="match_parent" value="-1" />
+        <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr name="buyButtonWidth" format="dimension">
+        <enum name="match_parent" value="-1" />
+        <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr name="buyButtonText">
+        <enum name="buy_with_google" value="1" />
+        <enum name="buy_now" value="2" />
+        <enum name="book_now" value="3" />
+    </attr>
+    <attr name="buyButtonAppearance">
+        <enum name="classic" value="1" />
+        <enum name="grayscale" value="2" />
+        <enum name="monochrome" value="3" />
+    </attr>
+    <attr name="maskedWalletDetailsTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsHeaderTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsButtonTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsButtonBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsLogoTextColor" format="color" />
+    <attr name="maskedWalletDetailsLogoImageType">
+        <enum name="classic" value="1" />
+        <enum name="monochrome" value="2" />
+    </attr>
+    <attr name="background" format="reference" />
+    <attr name="shadow" format="reference" />
+    <attr name="Rs.IsStrikethroughSpan" format="boolean" />
+    <attr name="Rs.IsBoldSpan" format="boolean" />
+    <attr name="Rs.IsLinkSpan" format="boolean" />
+    <attr name="Rs.ImageHeight" format="dimension" />
+    <attr name="Rs.ImageAlign">
+        <enum name="align_bottom" value="0" />
+        <enum name="align_baseline" value="1" />
+    </attr>
+    <attr name="Rs.Results.Twister.ShowEditionsDetail" format="boolean" />
+    <attr name="Rs.Results.Price.HideBadges" format="boolean" />
+    <attr name="Rs.Results.Price.ShowListPrice" format="boolean" />
+    <attr name="Rs.Results.Price.ShowSomePrimeMsg" format="boolean" />
+    <attr name="Rs.Results.SubscribeAndSave.ShowSaveMoreText" format="boolean" />
+    <attr name="Rs.Results.Offers.IsPriceBackup" format="boolean" />
+    <attr name="navigateWithinWebView" format="boolean" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="layoutId" format="reference" />
+    <attr name="adpod_height" format="dimension" />
+    <attr name="adpod_width" format="dimension" />
+    <attr name="adpod_vertical_adjustment" format="dimension" />
+    <attr name="adpod_color" format="color" />
+    <attr name="adpod_color_viewed" format="color" />
+    <attr name="thumb" format="reference" />
+    <attr name="track" format="reference" />
+    <attr name="textOn" format="reference" />
+    <attr name="textOff" format="reference" />
+    <attr name="thumbTextPadding" format="dimension" />
+    <attr name="switchTextAppearance" format="reference" />
+    <attr name="switchMaxWidth" format="dimension" />
+    <attr name="switchPadding" format="dimension" />
+    <attr name="AmazonSwitchStyle" format="reference" />
+    <attr name="handle" format="reference" />
+    <attr name="content" format="reference" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="bottomOffset" format="dimension" />
+    <attr name="topOffset" format="dimension" />
+    <attr name="allowSingleTap" format="boolean" />
+    <attr name="animateOnClick" format="boolean" />
+    <attr name="showContentAfterClose" format="boolean" />
+</resources>

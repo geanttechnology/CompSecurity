@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/availability_background" android:id="@id/storeavailabilty" android:title="@string/store_availability_title" android:showAsAction="always" />
+    <item android:icon="@drawable/search" android:id="@id/search" android:title="@string/search_bestbuy_title" android:showAsAction="ifRoom" android:actionLayout="@layout/searchview_layout" />
+    <item android:icon="@drawable/geolocate" android:id="@id/geo_locate" android:title="@string/geolocate_menu_title" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/listview" android:id="@id/switch_to_list" android:title="@string/listview_menu_title" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/mapview" android:id="@id/switch_to_map" android:title="@string/mapview_menu_title" android:showAsAction="ifRoom" />
+    <item android:id="@id/addto_menu_item" android:title="@string/addto_text" android:showAsAction="always" android:actionLayout="@layout/addto_menuitem_layout" />
+    <item android:id="@id/share_menu_item" android:title="@string/share" android:showAsAction="always" android:actionLayout="@layout/share_menitem_layout" />
+    <item android:id="@id/life_events_top_button" android:title="@string/life_events_top_button_title" android:showAsAction="always" android:actionLayout="@layout/life_events_menitem_layout" />
+    <item android:id="@id/options" android:title="@string/options" android:showAsAction="always" android:actionLayout="@layout/options_menu_layout" />
+    <item android:id="@id/clear" android:title="@string/clear" android:showAsAction="always" android:actionLayout="@layout/clear_menu_layout" />
+</menu>

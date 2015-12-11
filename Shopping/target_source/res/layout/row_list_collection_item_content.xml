@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_row_layout" android:background="@color/target_stark_white" android:layout_width="fill_parent" android:layout_height="@dimen/list_collection_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/item_gripper" android:layout_width="@dimen/action_bar_title_left_margin" android:layout_height="fill_parent" android:src="@drawable/icon_reorder" android:scaleType="center" android:layout_alignParentLeft="true" android:contentDescription="@string/reorder" />
+    <com.target.ui.view.TargetImeEditText android:id="@id/title_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/action_bar_title_left_margin" android:layout_marginRight="@dimen/list_edit_margin" android:hint="@string/list_add_title_hint" android:layout_centerVertical="true" android:inputType="textFilter" style="@style/Target.TextView.EditTextExtraPadding" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/action_bar_title_left_margin" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:ellipsize="end" android:id="@id/list_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_collection_margin" android:maxLines="1" app:fontStyle="light" style="@style/Target.TextView.ListRow" />
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/smallTextSize" android:textColor="@android:color/darker_gray" android:id="@id/list_metadata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent" />
+            <size android:width="@dimen/in_app_vertical_divider" />
+        </shape>
+    </item>
+    <item android:top="@dimen/in_app_message_top_bottom_border" android:bottom="@dimen/in_app_message_top_bottom_border">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/in_app_vertical_divider" />
+            <size android:width="@dimen/in_app_vertical_divider" />
+        </shape>
+    </item>
+</layer-list>

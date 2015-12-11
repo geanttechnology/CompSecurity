@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:id="@id/help_amazon_instant_video_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_amazon_instant_video"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_aiv_sign_in" android:text="@string/help_aiv_sign_in_title" style="@style/ArrowSelector" amazon_htmlContentId="@string/help_aiv_sign_in_content" amazon_titleResourceId="@string/help_aiv_sign_in_title" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_aiv_sign_out" android:text="@string/help_aiv_sign_out_title" style="@style/ArrowSelector" amazon_htmlContentId="@string/help_aiv_sign_out_content" amazon_titleResourceId="@string/help_aiv_sign_out_title" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_prime_instant_video" android:text="@string/help_prime_instant_video_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_aiv_prime_instant_video" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_your_watchlist" android:text="@string/help_your_watchlist_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_aiv_your_watchlist" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_your_video_library" android:text="@string/help_your_video_library_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_aiv_your_video_library" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_parental_controls" android:text="@string/help_parental_controls_title" style="@style/ArrowSelector" amazon_htmlContentId="@string/help_parental_controls_content" amazon_titleResourceId="@string/help_parental_controls_title" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_manage_mobile_data_usage" android:text="@string/help_manage_mobile_data_usage_title" style="@style/ArrowSelector" amazon_htmlContentId="@string/help_manage_mobile_data_usage_content" amazon_titleResourceId="@string/help_manage_mobile_data_usage_title" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_issues_watching_videos" android:text="@string/help_issues_watching_videos_title" style="@style/ArrowSelector" amazon_textContentId="@string/help_issues_watching_videos_content" amazon_titleResourceId="@string/help_issues_watching_videos_title" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_aiv_contact_us" android:text="@string/help_aiv_contact_us_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_aiv_contact_us" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_aiv_legal_notices" android:text="@string/help_aiv_legal_notices_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_aiv_legal_notices" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

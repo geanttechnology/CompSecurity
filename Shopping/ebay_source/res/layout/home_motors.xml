@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/home_motors_bottom" style="@style/Home.MenuItem.BottomContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/homeBottomIconSize" android:layout_height="@dimen/homeBottomIconSize" android:src="@drawable/ic_home_motors" android:scaleType="fitXY" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ebay_motors" />
+        <TextView android:textColor="?android:textColorSecondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ebay_motors_subtitle" />
+    </LinearLayout>
+</LinearLayout>

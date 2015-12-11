@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_web_progress_container" />
+    <com.target.ui.view.common.TargetErrorView android:id="@id/paypal_web_view_error_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_2x_padding_margin" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/paypal_web_view_container" android:paddingLeft="@dimen/default_left_right_padding_margin" android:paddingRight="@dimen/default_left_right_padding_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.target.ui.view.ObservableScrollWebView android:id="@id/paypal_web_view" android:focusable="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

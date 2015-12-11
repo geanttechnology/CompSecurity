@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/addToBundleButtonContainer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/addToBundleLayout" android:background="@drawable/bg_listing_action_button" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/likeButtonImageView" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/icon_addtobundle_gray_outline" />
+            <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorDarkGray" android:id="@id/addToBundleLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_below="@id/addToBundleLayout" />
+</RelativeLayout>

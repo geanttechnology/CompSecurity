@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/set_new_service_url_button" android:layout_margin="@dimen/padding" android:text="@string/debug_save_restart_label" style="@style/Button.Gold.Arrow" />
+    <View style="@style/Separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Header">
+        <TextView android:textColor="@color/dark_text" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_locale_options_spinner_label" />
+        <Spinner android:textStyle="bold" android:textColor="@color/dark_text" android:id="@id/locale_options_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:textColor="@color/dark_text" android:id="@id/service_url_edit_text_label" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double" android:text="@string/debug_current_service_url_label" />
+    <EditText android:typeface="sans" android:id="@id/service_url_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:hint="@string/debug_service_url_hint" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textEmailAddress" />
+    <TextView android:textStyle="bold" android:textColor="@color/dark_text" android:id="@id/service_secure_url_edit_text_label" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_current_service_secure_url_label" />
+    <EditText android:typeface="sans" android:id="@id/service_secure_url_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:hint="@string/debug_servcie_secure_url_hint" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textEmailAddress" />
+    <TextView android:textStyle="bold" android:textColor="@color/dark_text" android:id="@id/sso_check_login_url_edit_text_label" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_sso_url_for_check_login_service_label" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/sso_check_login_url_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/msh" android:text="@string/debug_sso_check_login_msh" />
+        <RadioButton android:id="@id/shm1" android:text="@string/debug_sso_check_login_shm" />
+    </RadioGroup>
+    <TextView android:id="@id/default_service_url_label" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double" />
+    <TextView android:id="@id/default_service_secure_url_label" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/reset_to_prod_service_button" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:text="@string/debug_reset_label" style="@style/Button.Taupe" />
+    <CheckBox android:textStyle="bold" android:id="@id/clear_session_data_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:checked="false" android:text="@string/debug_clear_session_data_label" />
+    <View style="@style/Separator" />
+    <TextView android:textSize="@dimen/text_small" android:id="@id/application_id" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View style="@style/Separator" />
+    <TextView android:id="@id/notification_token" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/mail_notification_to_me" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:text="@string/mail_notification_to_me" style="@style/Button.Taupe" />
+    <TextView android:id="@id/app_install_id" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/mail_aiid_to_me" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:text="@string/mail_aiid_to_me" style="@style/Button.Taupe" />
+    <View style="@style/Separator" />
+    <TextView android:id="@id/crash_simulation" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/simulate_crash" />
+    <Button android:id="@id/simulate_npe_to_cause_crash" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:text="@string/simulate_npe_crash" style="@style/Button.Taupe" />
+    <TextView android:id="@id/cn_getui_vcid_title" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cn_getui_vcid" />
+    <TextView android:id="@id/cn_getui_vcid" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

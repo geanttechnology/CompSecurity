@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.MaxSizeLinearLayout android:orientation="vertical" android:id="@id/givingworks_results_container" android:layout_width="fill_parent" android:layout_height="fill_parent" res-auto:maxWidth="@dimen/standardMaxWidth">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/givingworks_search_label" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/charity_select_for_sell_buy" style="@style/EbayTextAppearance.Body1" />
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" />
+    </com.ebay.android.widget.MaxSizeLinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/checkoutListContainerMargin">
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/ProgressSpinnerSize" android:layout_height="@dimen/ProgressSpinnerSize" android:layout_centerInParent="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorSecondary" android:id="@id/no_results_found" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:freezesText="true" style="@style/Checkout.Text.Medium" />
+    </RelativeLayout>
+</LinearLayout>

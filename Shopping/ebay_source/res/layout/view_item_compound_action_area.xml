@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/blurb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutMediumMargin" android:layout_marginTop="@dimen/checkoutMediumMargin" android:layout_marginRight="@dimen/checkoutMediumMargin" android:layout_marginBottom="@dimen/checkoutMediumMargin" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin">
+        <com.ebay.mobile.widget.PriceView android:layout_gravity="bottom" android:id="@id/amount_editor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:selectAllOnFocus="false" android:layout_weight="1.0" ebay:showCurrencySymbolAlways="true" style="@style/ItemView.EditCurrency" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/action_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:freezesText="true" android:layout_weight="1.0" style="@style/EbayButton.White" />
+    </LinearLayout>
+</LinearLayout>

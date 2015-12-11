@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <ScrollView style="@style/ItemView.TopScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Letterbox">
+            <include layout="@layout/item_header_place_bid" />
+            <com.ebay.android.widget.ContainerLayout android:background="?listContainerOutsideBackground" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin15" android:layout_marginRight="@dimen/ebayMargin2x" style="@style/ItemView.ContainerLayout">
+                <TextView android:id="@id/bid_too_low_message" android:visibility="gone" style="@style/ItemView" />
+                <TextView android:id="@id/bid_entry_label_textview" android:layout_width="wrap_content" style="@style/ItemView" />
+                <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/bid_at_least" android:layout_width="wrap_content" style="@style/ItemView" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ebay.mobile.widget.PriceView android:id="@id/currency_amount_edittext" android:selectAllOnFocus="false" android:layout_alignBottom="@id/review_button" ebay:showCurrencySymbolAlways="true" style="@style/ItemView.EditCurrency" />
+                    <Button android:id="@id/review_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/checkoutMediumMargin" android:layout_marginRight="0.0dip" android:text="@string/review_bid" android:layout_toRightOf="@id/currency_amount_edittext" style="@style/EbayButton.Blue" />
+                </RelativeLayout>
+            </com.ebay.android.widget.ContainerLayout>
+            <View android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin15" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" android:src="@drawable/ic_viewitem_info" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/ebayTextSize" android:textColor="?textColorSecondaryAlt" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm_place_offer_verbiage" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/common_translucent_progress" />
+    <include layout="@layout/common_error" />
+</merge>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notification_icon_lollipop" android:scaleType="center" android:minWidth="@dimen/notification_icon_min_width" android:minHeight="@dimen/notification_icon_min_height" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/image" android:layout_toEndOf="@id/image" style="@style/notification_title" />
+    <TextView android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/image" android:layout_below="@id/title" android:layout_toEndOf="@id/image" style="@style/notification_text" />
+    <FrameLayout android:padding="@dimen/notification_expanded_view_padding" android:layout_width="fill_parent" android:layout_height="@dimen/notification_expanded_view_height" android:layout_below="@id/image">
+        <ImageView android:id="@id/deal_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/price_text_background" android:background="@drawable/notification_bottom_box" android:paddingTop="@dimen/notification_price_text_background_padding_top" android:paddingRight="@dimen/notification_price_text_background_padding_right" android:paddingBottom="@dimen/notification_price_text_background_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/notification_bottom_bar_height" android:paddingEnd="@dimen/notification_price_text_background_padding_right">
+            <LinearLayout android:id="@id/price_text_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/notification_price_text_layout_margin_top">
+                <FrameLayout android:gravity="left" android:layout_gravity="left|center" android:layout_width="@dimen/notification_view_deal_width" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:paddingLeft="@dimen/notification_icon_min_width" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_deal" style="@style/notification_view_deal" />
+                </FrameLayout>
+                <FrameLayout android:gravity="right" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <include layout="@layout/notifications_price_text" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <com.target.ui.view.TargetTextView android:id="@id/registry_search_sticky_header_title" android:paddingLeft="@dimen/registry_sticky_header_left_right_margin" android:paddingTop="@dimen/registry_sticky_header_top_bottom_margin" android:paddingRight="@dimen/registry_sticky_header_left_right_margin" android:paddingBottom="@dimen/registry_sticky_header_top_bottom_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontStyle="medium" style="@style/Target.TextView.RegistrySearchStickyHeaderTitle" />
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+</merge>

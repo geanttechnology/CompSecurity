@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/colorPickerRowItem" android:background="@drawable/bg_table_row_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/colorImage" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="15.0dip" />
+    <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_toRightOf="@id/colorImage" />
+    <ImageView android:id="@id/selectedCheckMark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/borderColorGray" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_toRightOf="@id/colorImage" android:layout_below="@id/label" android:layout_alignParentRight="true" />
+</RelativeLayout>

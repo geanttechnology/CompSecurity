@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.view.GrouponSwipeRefreshLayout android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/grey_medium" android:gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discussion_no_posts" android:layout_centerInParent="true" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@android:id/empty" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </com.groupon.view.GrouponSwipeRefreshLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bby_white_shape" android:layout_width="250.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bby_white_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="20.0sp" android:textColor="@color/bby_darkest_gray" android:gravity="left" android:id="@id/store_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="50.0dip" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/bby_gray" android:gravity="left" android:id="@id/store_address" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/bby_gray" android:gravity="left" android:id="@id/store_city" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="12.5sp" android:textColor="@color/bby_darkest_gray" android:gravity="left" android:id="@id/store_open_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mediumarrow" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

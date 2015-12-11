@@ -1,0 +1,126 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.pointinside.maps.model;
+
+import android.graphics.PointF;
+import com.pointinside.model.Zone;
+
+public final class CameraPosition
+{
+    public static final class Builder
+    {
+
+        private PointF pointInZone;
+        private float rotation;
+        private float tilt;
+        private float visibleMapWidth;
+        private Zone zone;
+
+        public CameraPosition build()
+        {
+            return new CameraPosition(this);
+        }
+
+        public Builder pointInZone(PointF pointf)
+        {
+            pointInZone = pointf;
+            return this;
+        }
+
+        public Builder rotation(float f)
+        {
+            rotation = f;
+            return this;
+        }
+
+        public Builder tilt(float f)
+        {
+            if (0.0F <= f && f <= 90F)
+            {
+                tilt = f;
+            }
+            return this;
+        }
+
+        public Builder visibleMapWidth(float f)
+        {
+            if (f > 0.0F)
+            {
+                visibleMapWidth = f;
+            }
+            return this;
+        }
+
+        public Builder zone(Zone zone1)
+        {
+            zone = zone1;
+            return this;
+        }
+
+        public Builder zoomPercent(float f)
+        {
+            if (zone != null && f > 0.0F)
+            {
+                visibleMapWidth = zone.getImageSizeInMapUnits().x / f;
+            }
+            return this;
+        }
+
+
+
+
+
+
+        public Builder()
+        {
+            visibleMapWidth = 0.0F;
+        }
+
+        public Builder(CameraPosition cameraposition)
+        {
+            zone = cameraposition.zone;
+            pointInZone = new PointF(cameraposition.pointInZone.x, cameraposition.pointInZone.y);
+            rotation = cameraposition.rotation;
+            visibleMapWidth = cameraposition.visibleMapWidth;
+            tilt = cameraposition.tilt;
+        }
+    }
+
+
+    public final PointF pointInZone;
+    public final float rotation;
+    public final float tilt;
+    public final float visibleMapWidth;
+    public final Zone zone;
+
+    private CameraPosition(Builder builder)
+    {
+        zone = builder.zone;
+        pointInZone = builder.pointInZone;
+        rotation = builder.rotation;
+        visibleMapWidth = builder.visibleMapWidth;
+        tilt = builder.tilt;
+    }
+
+
+    public static Builder createWith(Zone zone1)
+        throws NullPointerException
+    {
+        PointF pointf = zone1.getImageSizeInMapUnits();
+        PointF pointf1 = new PointF(pointf.x / 2.0F, pointf.y / 2.0F);
+        return (new Builder()).zone(zone1).pointInZone(pointf1).visibleMapWidth(pointf.x);
+    }
+
+    public float getZoomPercent()
+    {
+        if (zone != null)
+        {
+            return zone.getImageSizeInMapUnits().x / visibleMapWidth;
+        } else
+        {
+            return (0.0F / 0.0F);
+        }
+    }
+}

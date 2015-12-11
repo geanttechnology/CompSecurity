@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_pressed="false" android:color="@color/rs_refinement_menu_clear_all_active_text_color" />
+    <item android:state_focused="true" android:state_pressed="true" android:color="@color/rs_refinement_menu_clear_all_active_pressed_text_color" />
+    <item android:state_focused="false" android:state_pressed="true" android:color="@color/rs_refinement_menu_clear_all_active_pressed_text_color" />
+    <item android:color="@color/rs_refinement_menu_clear_all_active_text_color" />
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/ship_to_me_layout" android:background="?listContainerOutsideBackground" android:paddingBottom="@dimen/checkoutListContainerMargin" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_layout" android:layout_alignParentTop="true">
+        <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/ship_to_me_options_list" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/checkoutListContainerMargin" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:background="@drawable/bottom_action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/ebayTextSizeMedium" android:gravity="center" android:id="@id/ship_to_me_done_button" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" android:layout_margin="@dimen/ebayMargin" android:text="@string/done" style="@style/EbayButton.White" />
+    </LinearLayout>
+</RelativeLayout>

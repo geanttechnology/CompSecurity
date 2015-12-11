@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/AVOD.Playback.UserControls.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/player_user_controls_layout_background" />
+    <include layout="@layout/player_user_controls_layout_xray" />
+    <include layout="@layout/player_user_controls_layout_trickplay" />
+    <include layout="@layout/player_user_controls_layout_top" />
+    <include layout="@layout/player_user_controls_layout_bottom" />
+    <include layout="@layout/player_user_controls_layout_right" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/photo_preview" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:layout_gravity="left" android:background="@drawable/photo_capture_top_gradient_background" android:paddingLeft="@dimen/photo_view_left_button_margin" android:layout_width="@dimen/photo_capture_view_buttons_container_width" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/snapit_preview_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="right" android:background="@drawable/photo_capture_bottom_gradient_background" android:paddingLeft="@dimen/photo_view_left_button_margin" android:layout_width="@dimen/photo_capture_view_buttons_container_width" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/photo_preview_use" android:background="@drawable/snapit_use_rotate" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/photo_view_inter_button_margin" style="@style/Button.Photo" />
+            <ImageButton android:id="@id/photo_preview_retake" android:background="@drawable/snapit_retake_rotate" android:layout_margin="0.0dip" style="@style/Button.Photo" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

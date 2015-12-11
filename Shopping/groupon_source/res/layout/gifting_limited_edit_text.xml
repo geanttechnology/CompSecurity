@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/edit_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/message" android:drawableLeft="@drawable/gifting_message" android:inputType="textMultiLine" style="@style/gifting_message_edit_field_style" />
+    <TextView android:textSize="@dimen/gifting_counter_text_size" android:textColor="@color/grey65" android:id="@id/counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/gifting_counter_min_width" android:layout_alignParentTop="true" style="@style/gifting_message_counter_style" />
+</merge>

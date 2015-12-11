@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/coupon_card" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/coupon_cell_border" android:paddingBottom="15.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/coupon_detail_container" android:paddingLeft="20.0dip" android:paddingTop="30.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.wishabi.flipp.widget.WebImageView android:id="@id/coupon_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/ic_launcher_flipp" android:scaleType="fitCenter" />
+            <FrameLayout android:id="@id/coupon_brand" android:layout_width="100.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/coupon_image">
+                <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/coupon_brand_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.wishabi.flipp.widget.WebImageView android:id="@id/coupon_brand_image" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/coupon_description_container" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/coupon_image">
+                <TextView android:textSize="12.0sp" android:id="@id/coupon_merchant_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/merchant_coupon_only_valid" />
+                <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/coupon_merchant" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/coupon_sale_story" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="11.0sp" android:id="@id/coupon_sale_story_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/coupon_sale_story_discount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textSize="11.0sp" android:id="@id/coupon_sale_story_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:id="@id/coupon_promo_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="12.0sp" android:id="@id/coupon_validity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/coupon_print_disclaimer" android:background="@color/couponDetailsPrintDisclaimerBackgroundColor" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/coupon_detail_container" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/coupon_print_disclaimer_icon" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_print_notice" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/coupon_print_disclaimer_icon" android:layout_centerVertical="true">
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/couponDetailsPrintDisclaimerTextColor" android:id="@id/coupon_print_disclaimer_label_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coupon_details_print_disclaimer_top" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/couponDetailsPrintDisclaimerTextColor" android:id="@id/coupon_print_disclaimer_label_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coupon_details_print_disclaimer_bottom" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/coupon_help" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/coupon_print_disclaimer" android:layout_centerHorizontal="true">
+            <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_coupon_help" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/coupon_details_why_print_text_color" android:layout_gravity="center_vertical" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coupon_details_why_print" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/coupon_button_container" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_below="@id/coupon_help">
+            <com.wishabi.flipp.widget.ActionButton android:icon="@drawable/ic_details_clip_it" android:id="@id/clip_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/clip_coupon" android:layout_weight="0.5" />
+            <com.wishabi.flipp.widget.ActionButton android:icon="@drawable/ic_show_barcode" android:id="@id/dynamic_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/show_barcode" android:layout_weight="0.5" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/coupon_item_matchup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/coupon_button_container">
+            <TextView android:textStyle="bold" android:textColor="@color/darkTextColor" android:id="@id/coupon_item_matchup_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/coupon_item_matchup_label" />
+            <LinearLayout android:orientation="vertical" android:id="@id/coupon_item_matchup_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/coupon_item_matchup_label" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/coupon_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/coupon_item_matchup_container" android:layout_centerHorizontal="true">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_report" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/coupon_details_report_text_color" android:layout_gravity="center_vertical" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coupon_details_report" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="11.0sp" android:id="@id/coupon_disclaimer" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/coupon_item_matchup" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/badge_part" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:includeFontPadding="false" android:layout_alignParentRight="true" android:contentDescription="@null" android:textAllCaps="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

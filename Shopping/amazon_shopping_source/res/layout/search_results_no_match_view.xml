@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/search_results_view_research_row" />
+    <include layout="@layout/search_results_view_title_row" />
+    <Button android:id="@id/search_dead_end_link_recommendations" android:text="@string/recommendations_title" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+    <Button android:id="@id/search_dead_end_link_goldbox" android:text="@string/goldbox" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+    <Button android:id="@id/search_dead_end_link_help" android:text="@string/search_link_help" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+</LinearLayout>

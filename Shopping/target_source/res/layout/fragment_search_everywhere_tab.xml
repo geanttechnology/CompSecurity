@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/product_search_everywhere_view_container" android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.search.SearchHistoryCardView android:id="@id/prd_search_everywhere_history_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_3x_padding_margin" style="@style/Target.CardView.Selectable" />
+    <com.target.ui.view.search.SearchSuggestionCardView android:id="@id/prd_search_everywhere_suggestion_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_3x_padding_margin" style="@style/Target.CardView.Selectable" />
+</LinearLayout>

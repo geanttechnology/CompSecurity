@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/selling_sold_total_text_size" android:textColor="@color/style_guide_green" android:gravity="center" android:id="@id/totalSold" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:id="@id/gmvDuration" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

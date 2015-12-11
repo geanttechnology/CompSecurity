@@ -1,0 +1,229 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.facebook.login;
+
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.text.TextUtils;
+import com.facebook.appevents.AppEventsLogger;
+import com.newrelic.agent.android.instrumentation.JSONObjectInstrumentation;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+// Referenced classes of package com.facebook.login:
+//            LoginBehavior, LoginClient, DefaultAudience
+
+class LoginLogger
+{
+
+    static final String EVENT_EXTRAS_DEFAULT_AUDIENCE = "default_audience";
+    static final String EVENT_EXTRAS_FACEBOOK_VERSION = "facebookVersion";
+    static final String EVENT_EXTRAS_IS_REAUTHORIZE = "isReauthorize";
+    static final String EVENT_EXTRAS_LOGIN_BEHAVIOR = "login_behavior";
+    static final String EVENT_EXTRAS_MISSING_INTERNET_PERMISSION = "no_internet_permission";
+    static final String EVENT_EXTRAS_NEW_PERMISSIONS = "new_permissions";
+    static final String EVENT_EXTRAS_NOT_TRIED = "not_tried";
+    static final String EVENT_EXTRAS_PERMISSIONS = "permissions";
+    static final String EVENT_EXTRAS_REQUEST_CODE = "request_code";
+    static final String EVENT_EXTRAS_TRY_LOGIN_ACTIVITY = "try_login_activity";
+    static final String EVENT_NAME_LOGIN_COMPLETE = "fb_mobile_login_complete";
+    static final String EVENT_NAME_LOGIN_METHOD_COMPLETE = "fb_mobile_login_method_complete";
+    static final String EVENT_NAME_LOGIN_METHOD_START = "fb_mobile_login_method_start";
+    static final String EVENT_NAME_LOGIN_START = "fb_mobile_login_start";
+    static final String EVENT_PARAM_AUTH_LOGGER_ID = "0_auth_logger_id";
+    static final String EVENT_PARAM_ERROR_CODE = "4_error_code";
+    static final String EVENT_PARAM_ERROR_MESSAGE = "5_error_message";
+    static final String EVENT_PARAM_EXTRAS = "6_extras";
+    static final String EVENT_PARAM_LOGIN_RESULT = "2_result";
+    static final String EVENT_PARAM_METHOD = "3_method";
+    static final String EVENT_PARAM_METHOD_RESULT_SKIPPED = "skipped";
+    static final String EVENT_PARAM_TIMESTAMP = "1_timestamp_ms";
+    static final String FACEBOOK_PACKAGE_NAME = "com.facebook.katana";
+    private final AppEventsLogger appEventsLogger;
+    private String applicationId;
+    private String facebookVersion;
+
+    LoginLogger(Context context, String s)
+    {
+        applicationId = s;
+        appEventsLogger = AppEventsLogger.newLogger(context, s);
+        try
+        {
+            context = context.getPackageManager();
+        }
+        // Misplaced declaration of an exception variable
+        catch (Context context)
+        {
+            return;
+        }
+        if (context == null)
+        {
+            break MISSING_BLOCK_LABEL_47;
+        }
+        context = context.getPackageInfo("com.facebook.katana", 0);
+        if (context == null)
+        {
+            break MISSING_BLOCK_LABEL_47;
+        }
+        facebookVersion = ((PackageInfo) (context)).versionName;
+    }
+
+    static Bundle newAuthorizationLoggingBundle(String s)
+    {
+        Bundle bundle = new Bundle();
+        bundle.putLong("1_timestamp_ms", System.currentTimeMillis());
+        bundle.putString("0_auth_logger_id", s);
+        bundle.putString("3_method", "");
+        bundle.putString("2_result", "");
+        bundle.putString("5_error_message", "");
+        bundle.putString("4_error_code", "");
+        bundle.putString("6_extras", "");
+        return bundle;
+    }
+
+    public String getApplicationId()
+    {
+        return applicationId;
+    }
+
+    public void logAuthorizationMethodComplete(String s, String s1, String s2, String s3, String s4, Map map)
+    {
+        Bundle bundle = newAuthorizationLoggingBundle(s);
+        if (s2 != null)
+        {
+            bundle.putString("2_result", s2);
+        }
+        if (s3 != null)
+        {
+            bundle.putString("5_error_message", s3);
+        }
+        if (s4 != null)
+        {
+            bundle.putString("4_error_code", s4);
+        }
+        if (map != null && !map.isEmpty())
+        {
+            s = new JSONObject(map);
+            if (!(s instanceof JSONObject))
+            {
+                s = s.toString();
+            } else
+            {
+                s = JSONObjectInstrumentation.toString((JSONObject)s);
+            }
+            bundle.putString("6_extras", s);
+        }
+        bundle.putString("3_method", s1);
+        appEventsLogger.logSdkEvent("fb_mobile_login_method_complete", null, bundle);
+    }
+
+    public void logAuthorizationMethodStart(String s, String s1)
+    {
+        s = newAuthorizationLoggingBundle(s);
+        s.putString("3_method", s1);
+        appEventsLogger.logSdkEvent("fb_mobile_login_method_start", null, s);
+    }
+
+    public void logCompleteLogin(String s, Map map, LoginClient.Result.Code code, Map map1, Exception exception)
+    {
+        Bundle bundle;
+        bundle = newAuthorizationLoggingBundle(s);
+        if (code != null)
+        {
+            bundle.putString("2_result", code.getLoggingValue());
+        }
+        if (exception != null && exception.getMessage() != null)
+        {
+            bundle.putString("5_error_message", exception.getMessage());
+        }
+        s = null;
+        if (!map.isEmpty())
+        {
+            s = new JSONObject(map);
+        }
+        code = s;
+        if (map1 == null) goto _L2; else goto _L1
+_L1:
+        map = s;
+        if (s == null)
+        {
+            map = new JSONObject();
+        }
+        s = map1.entrySet().iterator();
+_L3:
+        code = map;
+        if (!s.hasNext())
+        {
+            break; /* Loop/switch isn't completed */
+        }
+        code = (java.util.Map.Entry)s.next();
+        map.put((String)code.getKey(), code.getValue());
+        if (true) goto _L3; else goto _L2
+        s;
+        code = map;
+_L2:
+        if (code != null)
+        {
+            if (!(code instanceof JSONObject))
+            {
+                s = code.toString();
+            } else
+            {
+                s = JSONObjectInstrumentation.toString((JSONObject)code);
+            }
+            bundle.putString("6_extras", s);
+        }
+        appEventsLogger.logSdkEvent("fb_mobile_login_complete", null, bundle);
+        return;
+    }
+
+    public void logStartLogin(LoginClient.Request request)
+    {
+        Bundle bundle = newAuthorizationLoggingBundle(request.getAuthId());
+        JSONObject jsonobject;
+        jsonobject = new JSONObject();
+        jsonobject.put("login_behavior", request.getLoginBehavior().toString());
+        jsonobject.put("request_code", LoginClient.getLoginRequestCode());
+        jsonobject.put("permissions", TextUtils.join(",", request.getPermissions()));
+        jsonobject.put("default_audience", request.getDefaultAudience().toString());
+        jsonobject.put("isReauthorize", request.isRerequest());
+        if (facebookVersion != null)
+        {
+            jsonobject.put("facebookVersion", facebookVersion);
+        }
+        if (jsonobject instanceof JSONObject) goto _L2; else goto _L1
+_L1:
+        request = jsonobject.toString();
+_L3:
+        bundle.putString("6_extras", request);
+_L4:
+        appEventsLogger.logSdkEvent("fb_mobile_login_start", null, bundle);
+        return;
+_L2:
+        request = JSONObjectInstrumentation.toString((JSONObject)jsonobject);
+          goto _L3
+        request;
+          goto _L4
+    }
+
+    public void logUnexpectedError(String s, String s1)
+    {
+        logUnexpectedError(s, s1, "");
+    }
+
+    public void logUnexpectedError(String s, String s1, String s2)
+    {
+        Bundle bundle = newAuthorizationLoggingBundle("");
+        bundle.putString("2_result", LoginClient.Result.Code.ERROR.getLoggingValue());
+        bundle.putString("5_error_message", s1);
+        bundle.putString("3_method", s2);
+        appEventsLogger.logSdkEvent(s, null, bundle);
+    }
+}

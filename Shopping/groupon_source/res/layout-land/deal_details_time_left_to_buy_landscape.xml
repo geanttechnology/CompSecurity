@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/time_left_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/time_left_label_urgency_pricing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_time_left_label_urgency_pricing" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/time_left_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/time_to_buy_caps" style="@style/deal_details_time_left_label_bold" />
+        <TextView android:id="@id/time_left_landscape" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_time_left_landsdcape" />
+    </LinearLayout>
+</merge>

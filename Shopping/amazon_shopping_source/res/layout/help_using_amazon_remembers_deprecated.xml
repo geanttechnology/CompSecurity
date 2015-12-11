@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_using_amazon_remembers_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:autoLink="web" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_using_amazon_remembers_about_amazon_remembers_deprecated" />
+</com.amazon.mShop.StandardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/colorPickerRowItem" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.poshmark.ui.customviews.PMTextView android:id="@id/allColorsTextView" style="@style/contentTableRowSingle" />
+    <ImageView android:id="@id/selectedCheckMark" android:background="@drawable/ic_checkmark_burgundy" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

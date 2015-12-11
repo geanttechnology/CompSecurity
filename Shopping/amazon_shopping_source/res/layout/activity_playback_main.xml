@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/playback_surface_layout" />
+    <FrameLayout android:id="@id/ContainerPlayerAttachments" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/PlayerAttachments" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:layout_gravity="bottom" android:id="@id/ContainerAds_stub" android:layout="@layout/player_ads_controls_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:layout_gravity="bottom" android:id="@id/prime_upsell_stub" android:layout="@layout/player_prime_upsell" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/subtitle_menu_container" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/ContainerUserControls" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/UserControls" layout="@layout/player_user_controls_layout" />
+    </FrameLayout>
+</merge>

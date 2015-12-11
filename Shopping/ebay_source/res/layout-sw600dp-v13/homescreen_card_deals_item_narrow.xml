@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:layout_gravity="center" android:id="@id/item_image" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_deals_wide_image_height" android:layout_marginBottom="@dimen/ebayMargin" android:scaleType="fitCenter" />
+    <TextView android:textColor="@color/style_guide_red" android:id="@id/item_almost_gone" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceStrong" android:textSize="@dimen/ebayTextSizeSmall" android:textColor="@color/style_guide_gray" android:ellipsize="end" android:id="@id/item_eek_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceStrong" android:textSize="@dimen/ebayTextSizeMedium" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceStrong" android:textSize="@dimen/ebayTextSizeLarge" android:id="@id/item_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceStrong" android:textSize="@dimen/ebayTextSizeSmall" android:textColor="@color/style_guide_gray" android:id="@id/item_price_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+</com.ebay.mobile.widget.FLinearLayout>

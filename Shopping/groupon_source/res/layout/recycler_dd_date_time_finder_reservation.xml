@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reservation_details_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_section_v2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/reservation_header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reservation" style="@style/deal_details_section_header_v2" />
+    <TextView android:gravity="center_vertical" android:id="@id/reservation_body_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/make_a_reservation" android:drawableLeft="@drawable/calendar_icon" android:drawableRight="@drawable/arrow_right_redesign" android:drawablePadding="@dimen/spacing_big" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/white_bg_element_no_padding_and_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/deal_card_compact_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0">
+        <FrameLayout android:id="@id/deal_image_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <ImageView android:layout_gravity="center" android:id="@id/deal_image_photo_stack" android:visibility="gone" android:layout_width="95.0dip" android:layout_height="95.0dip" android:src="@drawable/cart_stack_mask" />
+            <com.groupon.view.UrlImageView android:layout_gravity="center" android:id="@id/deal_image" android:layout_width="87.0dip" android:layout_height="87.0dip" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <TextView android:textColor="@color/grey10" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@id/deal_image_background" android:layout_alignTop="@id/deal_image_background" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/grey_light" android:id="@id/cart_discount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/deal_image_background" android:layout_below="@id/title" android:layout_alignParentRight="true" />
+        <org.apmem.tools.layouts.FlowLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/view_deal_card_more_info_container" android:layout_toRightOf="@id/deal_image_background" android:layout_alignBottom="@id/deal_image_background" android:layout_centerVertical="true" f:horizontalSpacing="5.0dip" f:verticalSpacing="-2.0dip" xmlns:f="http://schemas.android.com/apk/res-auto">
+            <TextView android:typeface="sans" android:id="@id/deal_card_pitch_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/view_deal_card_old_price" />
+            <TextView android:typeface="sans" android:id="@id/deal_card_pitch_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/view_deal_card_new_price" />
+        </org.apmem.tools.layouts.FlowLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/view_deal_card_more_info_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/deal_image_background" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:gravity="bottom" android:id="@id/urgency_pricing_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:maxWidth="@dimen/urgency_pricing_label_max_width" style="@style/deal_card_label_urgency_pricing" />
+            <TextView android:typeface="sans" android:id="@id/view_deal_card_mobile_only" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="@string/mobile_only" android:maxLines="2" android:drawablePadding="3.0dip" style="@style/deal_card_mobile_only_title_carousel" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

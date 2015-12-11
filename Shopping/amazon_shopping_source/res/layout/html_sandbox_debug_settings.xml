@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/debug_html_sandbox_title" style="@style/Header" />
+    <EditText android:typeface="sans" android:id="@id/html_sandbox_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textEmailAddress" />
+    <Button android:id="@id/html_go_button" android:layout_margin="@dimen/padding" android:text="@string/debug_html_sandbox_go_url_button" style="@style/Button.Gold.Arrow" />
+</LinearLayout>

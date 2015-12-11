@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/prd_eyebrow_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:id="@id/prd_cartwheel_eyebrow_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="medium" style="@style/Target.TextView.ListEyebrow" />
+</merge>

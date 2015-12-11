@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="1.0dip">
+        <shape android:shape="line">
+            <stroke android:color="@color/deal_card_divider_top" />
+            <size android:height="@dimen/deal_card_divider_half_height" />
+        </shape>
+    </item>
+    <item android:top="1.0dip">
+        <shape android:shape="line">
+            <stroke android:color="@color/deal_card_divider_bottom" />
+            <size android:height="@dimen/deal_card_divider_half_height" />
+        </shape>
+    </item>
+</layer-list>

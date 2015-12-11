@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/demographics" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/address" android:nextFocusUp="@id/year" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/address" android:inputType="textPostalAddress|textCapWords" style="@style/edit_credit_card_single_line_cap_words_v2" />
+    <EditText android:id="@id/postal_code" android:nextFocusUp="@id/year" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zip_code" android:maxLength="5" android:inputType="number" style="@style/edit_credit_card_single_line_cap_words_v2" />
+    <EditText android:id="@id/street_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/street_number" android:inputType="textPostalAddress|textCapWords" style="@style/edit_credit_card_single_line_cap_words_v2" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/add_credit_card_spinner_height_v2">
+        <EditText android:id="@id/city" android:nextFocusUp="@id/postal_code" android:nextFocusDown="@id/state" android:layout_width="180.0dip" android:layout_height="fill_parent" android:hint="@string/city" android:inputType="textPostalAddress|textCapWords" style="@style/edit_credit_card_single_line_cap_words_v2" />
+        <View android:background="@drawable/vertical_grey_separator" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Spinner android:layout_gravity="top|center" android:id="@id/state" android:nextFocusDown="@id/postal_code" android:layout_width="75.0dip" android:layout_height="fill_parent" android:prompt="@string/state" style="@style/spinner_credit_card_v2" />
+        <View android:background="@drawable/vertical_grey_separator" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Spinner android:layout_gravity="top|center" android:id="@id/country" android:layout_width="fill_parent" android:layout_height="fill_parent" android:prompt="@string/select_your_country" style="@style/spinner_credit_card_v2" />
+    </LinearLayout>
+</LinearLayout>

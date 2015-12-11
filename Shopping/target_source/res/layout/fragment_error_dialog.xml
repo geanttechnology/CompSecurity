@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:id="@id/error_dialog_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_dialog_title_margin" android:layout_marginTop="@dimen/cart_dialog_title_margin" app:fontStyle="medium" style="@style/Target.TextView.DialogTitle" />
+    <com.target.ui.view.TargetTextView android:id="@id/error_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_dialog_title_margin" android:layout_marginTop="@dimen/cart_dialog_title_margin" android:layout_marginRight="@dimen/cart_dialog_title_margin" app:fontStyle="light" style="@style/Target.TextView.DialogTitle" />
+    <com.target.ui.view.TargetButton android:gravity="center" android:layout_gravity="center" android:id="@id/error_dialog_ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cart_dialog_title_margin" android:text="@string/ok" app:fontStyle="medium" style="@style/DialogButton.Red" />
+</LinearLayout>

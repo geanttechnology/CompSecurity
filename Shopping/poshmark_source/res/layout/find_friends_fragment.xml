@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_attributes="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/contactsPanelLayout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contentTableRowTop">
+        <ImageView android:id="@id/contactsIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_contacts_gray" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/contactsIconView" android:layout_centerVertical="true">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:id="@id/contactsPaneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_contact_friends" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" />
+        </LinearLayout>
+        <ImageView android:id="@id/contactsMoreIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/fbFriendsPanelLayout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contentTableRowMiddle">
+        <ImageView android:id="@id/fbIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_facebook_gray" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/fbMoreIconView" android:layout_toRightOf="@id/fbIconView" android:layout_centerVertical="true">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:id="@id/fbPaneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_facebook_friends" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" />
+            <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:id="@id/fbFriendsCountTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fb_following_count" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/fbFriendsImages" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/fbMoreIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/twFriendsPanelLayout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contentTableRowBottom">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/twIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_twitter_gray" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/twMoreIconView" android:layout_toRightOf="@id/twIconView" android:layout_centerVertical="true">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:id="@id/twPaneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_twitter_friends" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" />
+            <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:id="@id/twFriendsCountTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fb_following_count" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/twFriendsImages" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/twMoreIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/suggestedUsersPanelLayout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contentTableRowSingle">
+        <ImageView android:id="@id/userIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_suggested_users_gray" />
+        <LinearLayout android:layout_gravity="fill_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/userMoreIconView" android:layout_toRightOf="@id/userIconView" android:layout_centerVertical="true">
+            <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:id="@id/suggestedUsersPaneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggested_users" custom_attributes:fontName="fonts/ProximaNova_Sbold.ttf" />
+            <com.poshmark.ui.customviews.PMTextView android:textColor="@color/textColorGray" android:id="@id/suggestedUsersCountTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/suggested_user_following_message" custom_attributes:fontName="fonts/ProximaNova_Reg.ttf" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/suggestedUserImages" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/userMoreIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

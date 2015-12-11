@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackgroundBase" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/header_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/ic_undo_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/ebayTextSizeMediumSmall" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="@dimen/search_expansion_multicolumn_height" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="6.0dip" android:maxLines="3" android:layout_toLeftOf="@id/header_image" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <View android:id="@id/header_border" android:background="@drawable/left_col" android:layout_width="fill_parent" android:layout_height="@dimen/search_expansion_multicolumn_height" />
+    <View android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="@dimen/search_expansion_multicolumn_height" />
+</RelativeLayout>

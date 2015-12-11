@@ -1,0 +1,249 @@
+.class public Lcom/poshmark/data_model/models/FeedItemCollection;
+.super Lcom/poshmark/data_model/models/PMData;
+.source "FeedItemCollection.java"
+
+
+# instance fields
+.field data:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Lcom/poshmark/data_model/models/ListingSummary;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .prologue
+    .line 12
+    invoke-direct {p0}, Lcom/poshmark/data_model/models/PMData;-><init>()V
+
+    .line 13
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/poshmark/data_model/models/FeedItemCollection;->data:Ljava/util/List;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public append(Lcom/poshmark/data_model/models/PMData;)V
+    .locals 1
+    .param p1, "newData"    # Lcom/poshmark/data_model/models/PMData;
+
+    .prologue
+    .line 21
+    iget-object v0, p0, Lcom/poshmark/data_model/models/FeedItemCollection;->data:Ljava/util/List;
+
+    if-eqz v0, :cond_0
+
+    if-eqz p1, :cond_0
+
+    .line 22
+    check-cast p1, Lcom/poshmark/data_model/models/ListingSummaryCollection;
+
+    .line 25
+    .end local p1    # "newData":Lcom/poshmark/data_model/models/PMData;
+    :cond_0
+    return-void
+.end method
+
+.method public fillCursor(Lcom/poshmark/data_model/customcursors/CustomMatrixCursor;)V
+    .locals 11
+    .param p1, "cursor"    # Lcom/poshmark/data_model/customcursors/CustomMatrixCursor;
+
+    .prologue
+    .line 29
+    iget-object v7, p0, Lcom/poshmark/data_model/models/FeedItemCollection;->data:Ljava/util/List;
+
+    if-eqz v7, :cond_2
+
+    .line 30
+    iget-object v8, p0, Lcom/poshmark/data_model/models/FeedItemCollection;->data:Ljava/util/List;
+
+    monitor-enter v8
+
+    .line 31
+    :try_start_0
+    iget-object v7, p0, Lcom/poshmark/data_model/models/FeedItemCollection;->data:Ljava/util/List;
+
+    invoke-interface {v7}, Ljava/util/List;->size()I
+
+    move-result v6
+
+    .line 33
+    .local v6, "totalItems":I
+    div-int/lit8 v3, v6, 0x2
+
+    .line 34
+    .local v3, "numPairs":I
+    rem-int/lit8 v5, v6, 0x2
+
+    .line 35
+    .local v5, "residue":I
+    const/4 v0, 0x0
+
+    .line 36
+    .local v0, "index":I
+    :goto_0
+    mul-int/lit8 v7, v3, 0x2
+
+    if-ge v0, v7, :cond_0
+
+    .line 37
+    iget-object v7, p0, Lcom/poshmark/data_model/models/FeedItemCollection;->data:Ljava/util/List;
+
+    invoke-interface {v7, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/poshmark/data_model/models/ListingSummary;
+
+    .line 38
+    .local v1, "item1":Lcom/poshmark/data_model/models/ListingSummary;
+    iget-object v7, p0, Lcom/poshmark/data_model/models/FeedItemCollection;->data:Ljava/util/List;
+
+    add-int/lit8 v9, v0, 0x1
+
+    invoke-interface {v7, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/poshmark/data_model/models/ListingSummary;
+
+    .line 39
+    .local v2, "item2":Lcom/poshmark/data_model/models/ListingSummary;
+    new-instance v4, Lcom/poshmark/utils/ItemPair;
+
+    invoke-direct {v4, v1, v2}, Lcom/poshmark/utils/ItemPair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 40
+    .local v4, "pair":Lcom/poshmark/utils/ItemPair;, "Lcom/poshmark/utils/ItemPair<Lcom/poshmark/data_model/models/ListingSummary;>;"
+    const/4 v7, 0x2
+
+    new-array v7, v7, [Ljava/lang/Object;
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v10
+
+    aput-object v10, v7, v9
+
+    const/4 v9, 0x1
+
+    aput-object v4, v7, v9
+
+    invoke-virtual {p1, v7}, Lcom/poshmark/data_model/customcursors/CustomMatrixCursor;->addRow([Ljava/lang/Object;)V
+
+    .line 41
+    add-int/lit8 v0, v0, 0x2
+
+    .line 42
+    goto :goto_0
+
+    .line 44
+    .end local v1    # "item1":Lcom/poshmark/data_model/models/ListingSummary;
+    .end local v2    # "item2":Lcom/poshmark/data_model/models/ListingSummary;
+    .end local v4    # "pair":Lcom/poshmark/utils/ItemPair;, "Lcom/poshmark/utils/ItemPair<Lcom/poshmark/data_model/models/ListingSummary;>;"
+    :cond_0
+    if-eqz v5, :cond_1
+
+    .line 45
+    iget-object v7, p0, Lcom/poshmark/data_model/models/FeedItemCollection;->data:Ljava/util/List;
+
+    add-int/lit8 v9, v6, -0x1
+
+    invoke-interface {v7, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/poshmark/data_model/models/ListingSummary;
+
+    .line 46
+    .restart local v1    # "item1":Lcom/poshmark/data_model/models/ListingSummary;
+    new-instance v4, Lcom/poshmark/utils/ItemPair;
+
+    const/4 v7, 0x0
+
+    invoke-direct {v4, v1, v7}, Lcom/poshmark/utils/ItemPair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 47
+    .restart local v4    # "pair":Lcom/poshmark/utils/ItemPair;, "Lcom/poshmark/utils/ItemPair<Lcom/poshmark/data_model/models/ListingSummary;>;"
+    const/4 v7, 0x2
+
+    new-array v7, v7, [Ljava/lang/Object;
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v10
+
+    aput-object v10, v7, v9
+
+    const/4 v9, 0x1
+
+    aput-object v4, v7, v9
+
+    invoke-virtual {p1, v7}, Lcom/poshmark/data_model/customcursors/CustomMatrixCursor;->addRow([Ljava/lang/Object;)V
+
+    .line 49
+    .end local v1    # "item1":Lcom/poshmark/data_model/models/ListingSummary;
+    .end local v4    # "pair":Lcom/poshmark/utils/ItemPair;, "Lcom/poshmark/utils/ItemPair<Lcom/poshmark/data_model/models/ListingSummary;>;"
+    :cond_1
+    monitor-exit v8
+
+    .line 51
+    .end local v0    # "index":I
+    .end local v3    # "numPairs":I
+    .end local v5    # "residue":I
+    .end local v6    # "totalItems":I
+    :cond_2
+    return-void
+
+    .line 49
+    :catchall_0
+    move-exception v7
+
+    monitor-exit v8
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v7
+.end method
+
+.method public setData(Ljava/util/List;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List",
+            "<",
+            "Lcom/poshmark/data_model/models/ListingSummary;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 16
+    .local p1, "collection":Ljava/util/List;, "Ljava/util/List<Lcom/poshmark/data_model/models/ListingSummary;>;"
+    iput-object p1, p0, Lcom/poshmark/data_model/models/FeedItemCollection;->data:Ljava/util/List;
+
+    .line 17
+    return-void
+.end method

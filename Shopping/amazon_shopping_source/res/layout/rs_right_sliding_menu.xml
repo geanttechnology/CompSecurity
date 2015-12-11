@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/right_drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:orientation="horizontal" android:id="@id/web_content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/right_drawer_icon_out" android:layout_width="30.0dip" android:layout_height="45.0dip" android:src="@drawable/rs_icon_lt" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/rs_desc_slide_menu_icon" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="255.0dip" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/rs_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/right_menu_divider_height" />
+            <ListView android:layout_gravity="right" android:id="@id/right_drawer_list" android:background="@color/rs_list_background" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="255.0dip" android:layout_height="fill_parent" android:listSelector="@drawable/rs_list_selector" android:divider="@color/rs_list_divider" android:dividerHeight="0.75dip" android:choiceMode="singleChoice" />
+        </LinearLayout>
+        <com.amazon.retailsearch.android.ui.refinements.SpinnerHiderRelativeLayout android:id="@id/refinements_menu_list_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/right_drawer_icon_in" android:layout_width="30.0dip" android:layout_height="45.0dip" android:src="@drawable/rs_icon_rt" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/rs_desc_slide_menu_icon" />
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/xo_cart_payment_method_buyer_protection" android:background="@drawable/theme_dark_gray_list_selector_background" android:paddingLeft="@dimen/checkoutListContainerMargin" android:paddingTop="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutListContainerMargin" android:paddingBottom="@dimen/checkoutSmallMargin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ebayTextSizeSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/LOCKED_xo_cart_payment_choose_paypal_title" style="@style/Checkout.Text.Light" />
+        <ImageView android:id="@id/xo_cart_payment_method_buyer_protection_chevron" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginRight="@dimen/checkoutMicroMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Checkout.Chevron.Light" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/xo_cart_payment_method_paypal" android:background="?android:listChoiceBackgroundIndicator" android:padding="@dimen/checkoutListContainerMargin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutTinyMargin" android:src="@drawable/pay_pal_logo" />
+        <ImageView android:id="@id/xo_cart_payment_method_paypal_check" android:visibility="gone" android:layout_toLeftOf="@id/xo_cart_payment_method_paypal_chevron" style="@style/Checkout.Check" />
+        <ImageView android:id="@id/xo_cart_payment_method_paypal_chevron" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Checkout.Chevron" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/xo_cart_payment_method_paypal_guestxo" android:background="?android:listChoiceBackgroundIndicator" android:padding="@dimen/checkoutListContainerMargin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/xo_cart_payment_method_paypal_guestxo_text" android:paddingTop="@dimen/checkoutTinyMargin" android:paddingBottom="@dimen/checkoutTinyMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_cart_payment_method_credit_card" style="@style/Checkout.Text.Bold" />
+        <ImageView android:id="@id/xo_cart_payment_method_paypal_guestxo_check" android:visibility="gone" android:layout_toLeftOf="@id/xo_cart_payment_method_paypal_guestxo_chevron" style="@style/Checkout.Check" />
+        <ImageView android:id="@id/xo_cart_payment_method_paypal_guestxo_chevron" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Checkout.Chevron" />
+    </RelativeLayout>
+</merge>

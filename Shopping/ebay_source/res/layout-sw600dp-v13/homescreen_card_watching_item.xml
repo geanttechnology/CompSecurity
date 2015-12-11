@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FRelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" res_auto:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/watching_image" android:visibility="invisible" android:layout_width="@dimen/homescreen_card_watching_imagesize" android:layout_height="@dimen/homescreen_card_watching_imagesize" android:scaleType="fitCenter" res_auto:urlRewriter="zoom_gallery" res_auto:averageBackgroundColor="true" />
+    <View android:id="@id/watching_image_placeholder" android:background="@color/homescreen_card_empty_background" android:layout_width="@dimen/homescreen_card_watching_imagesize" android:layout_height="@dimen/homescreen_card_watching_imagesize" />
+    <TextView android:ellipsize="end" android:id="@id/watching_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:lines="1" android:layout_below="@id/watching_image" />
+    <TextView android:textStyle="bold" android:id="@id/watching_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/homescreen_card_watching_textmargin" android:layout_below="@id/watching_title" style="?android:attr/textAppearanceMedium" />
+    <TextView android:textColor="@color/style_guide_red" android:id="@id/watching_signal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/homescreen_card_watching_textmargin" android:layout_below="@id/watching_price" android:layout_alignParentRight="true" android:layout_alignStart="@id/watching_price" style="?android:attr/textAppearanceSmall" />
+</com.ebay.mobile.widget.FRelativeLayout>

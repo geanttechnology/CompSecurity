@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/contact_us_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.mShop.LinkButton android:id="@id/help_email_customer_service_button" android:text="@string/help_email_customer_service_title" style="@style/OffsiteSelector" amazon_titleResourceId="@string/help_email_customer_service_title" amazon_urlContentId="@string/help_email_customer_service_url" amazon_urlUseExternalBrowser="true" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_call_customer_service_button" android:text="@string/help_call_customer_service_title" style="@style/OffsiteSelector" amazon_titleResourceId="@string/help_call_customer_service_title" amazon_urlContentId="@string/help_call_customer_service_url" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_provide_app_feadback_button" style="@style/OffsiteSelector" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

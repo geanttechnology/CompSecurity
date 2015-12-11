@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/rs_fkmr_no_results" style="@style/Rs.Corrections.NoResult.Header.FKMR" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/gray_background" android:padding="@dimen/pc_4px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/rs_fkmr_keywords" style="@style/Rs.Corrections.FKMR.Keywords" />
+        <TextView android:id="@id/rs_fkmr_see_all" style="@style/Rs.Corrections.FKMR.SeeAll" />
+    </LinearLayout>
+</merge>

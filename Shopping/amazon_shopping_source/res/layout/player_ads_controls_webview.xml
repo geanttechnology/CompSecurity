@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/AdsWebviewContainer" android:paddingLeft="@dimen/avod_spacing_xlarge" android:paddingBottom="@dimen/avod_spacing_huge" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.avod.controls.base.WebViewPage android:id="@id/AdsWebView" android:background="@color/avod_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/avod_spacing_xlarge" android:layout_marginRight="@dimen/avod_spacing_xlarge" />
+    <ImageView android:layout_gravity="top|right|center" android:id="@id/AdsWebviewCloseButton" android:layout_width="@dimen/avod_player_user_controls_iconSize" android:layout_height="@dimen/avod_player_user_controls_iconSize" android:src="@drawable/close_webview_default" android:scaleType="center" android:contentDescription="@string/ads_webview_close_button_description" />
+</FrameLayout>

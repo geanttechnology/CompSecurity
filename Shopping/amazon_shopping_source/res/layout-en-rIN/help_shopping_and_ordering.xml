@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_shopping_and_ordering_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shopping_and_ordering_find_an_item_button" android:text="@string/help_shopping_and_ordering_find_an_item_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_shopping_and_ordering_find_an_item_title" amazon_textContentId="@string/help_shopping_and_ordering_find_an_item_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shopping_and_ordering_buy_an_item_button" android:text="@string/help_shopping_and_ordering_buy_an_item_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_shopping_and_ordering_buy_an_item_title" amazon_textContentId="@string/help_shopping_and_ordering_buy_an_item_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shopping_and_ordering_payment_options_button" android:text="@string/help_shopping_and_ordering_payment_options_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_shopping_and_ordering_payment_options_title" amazon_textContentId="@string/help_shopping_and_ordering_payment_options_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shopping_and_ordering_view_or_edit_shopping_cart_button" android:text="@string/help_shopping_and_ordering_view_or_edit_shopping_cart_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_shopping_and_ordering_view_or_edit_shopping_cart_title" amazon_textContentId="@string/help_shopping_and_ordering_view_or_edit_shopping_cart_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shopping_and_ordering_view_or_edit_wish_list_button" android:text="@string/help_shopping_and_ordering_view_or_edit_wish_list_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_shopping_and_ordering_view_or_edit_wish_list_title" amazon_textContentId="@string/help_shopping_and_ordering_view_or_edit_wish_list_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shopping_and_ordering_add_new_address_button" android:text="@string/help_shopping_and_ordering_add_new_address_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_shopping_and_ordering_add_new_address_title" amazon_textContentId="@string/help_shopping_and_ordering_add_new_address_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_shopping_and_ordering_select_gift_options_button" android:text="@string/help_shopping_and_ordering_select_gift_options_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_shopping_and_ordering_select_gift_options_title" amazon_textContentId="@string/help_shopping_and_ordering_select_gift_options_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_subscribe_and_save_ordering_button" android:text="@string/help_subscribe_and_save_ordering_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_subscribe_and_save_ordering_title" amazon_linkLayoutId="@layout/help_subscribe_and_save_ordering" amazon_configId="@string/config_hasSns" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

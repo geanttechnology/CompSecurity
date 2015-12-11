@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/vs_dialog" android:background="@drawable/vs_dialog_bg" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:paddingLeft="@dimen/vs_dialog_left_margin" android:paddingTop="@dimen/vs_dialog_top_margin" android:paddingRight="@dimen/vs_dialog_right_margin" android:paddingBottom="@dimen/vs_dialog_bottom_margin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/vs_inner_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/vs_dialog_min_width" android:minHeight="@dimen/vs_dialog_min_height">
+            <ImageView android:gravity="center" android:layout_gravity="right" android:id="@id/vs_close_btn" android:paddingLeft="@dimen/vs_close_btn_left_padding" android:paddingTop="@dimen/vs_close_btn_top_padding" android:paddingRight="@dimen/vs_close_btn_right_padding" android:paddingBottom="@dimen/vs_close_btn_bottom_padding" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vs_close_btn" android:scaleType="center" android:contentDescription="@string/vs_close_btn_description" />
+            <FrameLayout android:id="@id/vs_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vs_dialog_content_left_margin" android:layout_marginTop="@dimen/vs_dialog_content_top_margin" android:layout_marginRight="@dimen/vs_dialog_content_right_margin" android:layout_marginBottom="@dimen/vs_dialog_content_bottom_margin" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

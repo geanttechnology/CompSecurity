@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progress" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/message" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/getting_directions" style="@style/deal_details_directions" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unable_get_directions" android:drawableLeft="@drawable/icn_error" style="@style/deal_details_directions" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/driving" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icn_car" style="@style/deal_details_directions" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/walking" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icn_walk" style="@style/deal_details_directions" />
+</LinearLayout>

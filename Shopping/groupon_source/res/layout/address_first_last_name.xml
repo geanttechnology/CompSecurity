@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.view.ShippingEditText android:id="@id/shipping_first_name" android:nextFocusDown="@id/shipping_last_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/shipping_first_name" android:layout_weight="0.5" android:inputType="textPersonName|textCapWords" android:nextFocusForward="@id/shipping_last_name" style="@style/edit_credit_card_single_line_cap_words_v3" />
+    <com.groupon.view.ShippingEditText android:id="@id/shipping_last_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/shipping_last_name" android:layout_weight="0.5" android:inputType="textPersonName|textCapWords" style="@style/edit_credit_card_single_line_cap_words_v3" />
+</LinearLayout>

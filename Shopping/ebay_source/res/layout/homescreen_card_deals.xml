@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/card_deals_title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@id/item_0" layout="@layout/homescreen_card_deals_item" />
+        <include android:id="@id/item_1" layout="@layout/homescreen_card_deals_item" />
+    </LinearLayout>
+    <Button android:layout_gravity="center_horizontal" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:text="@string/card_deals_see_more" style="@style/EbayButton" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gifting_section" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/details_item_top_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/gifting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy_as_a_gift" android:drawableLeft="@drawable/instant_buy_gift" android:drawablePadding="@dimen/deal_details_component_padding_v2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/deal_details_section_header_v2" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/gifting_instruction_section" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gifting_textSize" android:id="@id/gifting_instruction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gifting_instruction" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/deal_details_gifting_instruction" />
+        <ImageView android:id="@id/gifting_arrow_right" android:paddingLeft="@dimen/deal_details_component_padding_v2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_redesign" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

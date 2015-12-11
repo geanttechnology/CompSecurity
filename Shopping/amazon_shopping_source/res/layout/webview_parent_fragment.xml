@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_indeterminate_horizontal_holo" android:layout_alignParentTop="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+</RelativeLayout>

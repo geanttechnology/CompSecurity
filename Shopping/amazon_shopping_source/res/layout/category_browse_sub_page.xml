@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.categoryBrowse.CategoryBrowseSubPageView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/search_results_footer" />
+        <LinearLayout android:orientation="vertical" android:id="@id/category_browse_page_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.amazon.mShop.categoryBrowse.CategorySearchBar android:id="@id/category_browse_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/top_product_block" android:paddingTop="@dimen/category_browse_top_product_padding_top" android:paddingBottom="@dimen/category_browse_top_product_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/category_top_product_gallery_title" android:singleLine="true" />
+                <HorizontalScrollView android:layout_gravity="center_horizontal" android:id="@id/category_product_gallery_scroll_view" android:scrollbars="none" android:fadingEdgeLength="@dimen/category_browse_product_gallery_fadingEdge" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/category_product_gallery" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <View style="@style/Separator" />
+            <LinearLayout android:orientation="vertical" android:id="@id/category_subitems_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</com.amazon.mShop.categoryBrowse.CategoryBrowseSubPageView>

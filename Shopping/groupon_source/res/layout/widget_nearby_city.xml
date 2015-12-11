@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="146.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:background="@drawable/widget_header" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.0" />
+    <ImageView android:background="@color/green_widget_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/widget_rounded_corners" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@id/widget_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_no_deals" />
+        <Button android:layout_gravity="bottom|center" android:id="@id/widget_nearby_city_1_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip" style="@style/green_button_widget" />
+    </LinearLayout>
+</LinearLayout>

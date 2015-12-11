@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/alert_dialog_message_padding_left" android:paddingRight="@dimen/alert_dialog_message_padding_right" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/prime_license_warning_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/avod_spacing_medium" style="@style/AVOD.TextAppearance.Light.Regular" />
+    <TextView android:textColor="@color/avod_blue" android:id="@id/show_wifi_settings_activity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_prime_check_wifi_settings" style="@style/AVOD.TextAppearance.Light.Regular" />
+</LinearLayout>

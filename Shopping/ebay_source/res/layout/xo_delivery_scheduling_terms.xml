@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/xo_ebn_delivery_instructions" style="@style/EbayNowDeliveryText.Label" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayNowDeliveryContainer">
+        <EditText android:textSize="@dimen/ebayTextSize" android:gravity="center_vertical" android:id="@id/delivery_instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/xo_ebn_delivery_instructions_hint" android:maxLines="5" android:minLines="1" android:maxLength="100" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/ebayTextSize" android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:id="@id/checkout_ebn_terms_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayPadding" android:layout_marginTop="@dimen/ebayPadding" android:layout_marginRight="@dimen/ebayPadding" android:layout_marginBottom="@dimen/ebayPadding15" />
+</LinearLayout>

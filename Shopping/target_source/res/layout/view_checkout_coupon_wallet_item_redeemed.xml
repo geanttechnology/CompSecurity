@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" android:layout_marginLeft="@dimen/coupon_redeemed_marginLeft" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coupon_redeemed_marginLeft" android:layout_toLeftOf="@id/coupon_redeemed" android:layout_below="@id/divider" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/smallTextSize" android:id="@id/coupon_offer_desc" android:padding="@dimen/coupon_redeemed_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Target.TextView.SingleLine" />
+        <com.target.ui.view.TargetTextView android:id="@id/coupon_expires" android:padding="@dimen/coupon_redeemed_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/coupon_offer_margin_top" android:layout_below="@id/coupon_offer_desc" android:layout_alignParentLeft="true" app:fontStyle="light" style="@style/Target.TextView.CouponOffer" />
+    </LinearLayout>
+    <com.target.ui.view.TargetTextView android:id="@id/coupon_redeemed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_redeemed" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" app:fontStyle="light" style="@style/Target.TextView.CouponOffer" />
+</merge>

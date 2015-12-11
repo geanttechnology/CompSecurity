@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.retailsearch.android.ui.resultheader.ResultsInfoBar android:orientation="horizontal" android:id="@id/results_info_bar" android:background="@drawable/results_header_bottom_border" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sx="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="left|center" android:orientation="vertical" android:padding="@dimen/small_padding_b" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_medium" android:layout_marginRight="@dimen/gutter_medium" android:layout_weight="1.0">
+        <TextView android:id="@id/rs_department_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Rs.Header.Department" />
+        <TextView android:id="@id/rs_result_count_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Rs.Header.ResultsCount" />
+    </LinearLayout>
+    <com.amazon.retailsearch.android.ui.results.ViewToggle android:layout_gravity="center" android:id="@id/rs_view_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/rs_view_toggle_min_height" />
+    <View android:background="@color/aui_tertiary" android:layout_width="@dimen/rs_results_divider_line" android:layout_height="fill_parent" android:layout_margin="@dimen/gutter_xsmall" />
+    <TextView android:gravity="center" android:id="@id/rs_filter_header_label" android:padding="@dimen/padding_b" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/rs_carrot_down" style="@style/Rs.Header.Filter" />
+</com.amazon.retailsearch.android.ui.resultheader.ResultsInfoBar>

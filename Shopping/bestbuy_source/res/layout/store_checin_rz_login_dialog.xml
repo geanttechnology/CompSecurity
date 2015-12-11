@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/dialog_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/need_signin" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/signin" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="5.0dip" android:text="@string/txt_signin" android:layout_weight="1.0" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <View android:background="@color/black" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="8.0dip" android:text="@string/cancel" android:layout_weight="1.0" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

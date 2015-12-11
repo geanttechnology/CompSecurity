@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_and_about_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_root_shopping_and_ordering_button" android:text="@string/help_shopping_and_ordering_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_shopping_and_ordering" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_root_viewing_and_changing_orders_button" android:text="@string/help_viewing_and_changing_orders_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_viewing_and_changing_orders" />
+        <LinearLayout android:orientation="vertical" android:id="@id/help_fba_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/Separator" />
+            <com.amazon.mShop.LinkButton android:id="@id/help_root_fba" android:text="@string/help_fba_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_fba" />
+        </LinearLayout>
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_root_shipping_and_delivery_button" android:text="@string/help_shipping_and_delivery_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_shipping_and_delivery" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_root_shipping_and_delivery_button_no_free_super_saver_shipping" android:text="@string/help_shipping_and_delivery_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_shipping_and_delivery_no_free_super_saver_shipping" />
+        <LinearLayout android:orientation="vertical" android:id="@id/help_aiv_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/Separator" />
+            <com.amazon.mShop.LinkButton android:id="@id/help_amazon_instant_video" android:text="@string/help_amazon_instant_video" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_amazon_instant_video" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/help_appstore_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/Separator" />
+            <com.amazon.mShop.LinkButton android:id="@id/help_appstore" android:text="@string/help_appstore" style="@style/ArrowSelector" amazon_navigationTarget="mas_help" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/help_atoz_guarantee_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/Separator" />
+            <com.amazon.mShop.LinkButton android:id="@id/help_root_atoz_guarantee" android:text="@string/help_atoz_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_atoz_guarantee" />
+        </LinearLayout>
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_root_your_account_and_settings_button" android:text="@string/help_your_account_and_settings_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_your_account_and_settings" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_root_your_account_and_settings_button_no_prime" android:text="@string/help_your_account_and_settings_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_your_account_and_settings_no_prime" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_root_using_amazon_remembers_button" android:text="@string/help_using_amazon_remembers_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_using_amazon_remembers_deprecated" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_using_amazon_remembers_help_with_barcode_scans_button" android:text="@string/help_using_amazon_remembers_help_with_barcode_scans_title" style="@style/ArrowSelector" amazon_linkLayoutId="@layout/help_with_barcode_scans" />
+        <View android:visibility="gone" style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_root_eula" android:visibility="gone" android:text="@string/help_eula_title" style="@style/OffsiteSelector" amazon_titleResourceId="@string/help_eula_title" amazon_urlContentId="@string/help_eula_url" />
+        <View style="@style/Separator.ExtraHeight" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_root_contacting_us_button" android:text="@string/contact_us_title" style="@style/ArrowSelector" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_about" android:text="@string/help_about" style="@style/ArrowSelector" amazon_titleResourceId="@string/more_about_button" amazon_linkClassName="com.amazon.mShop.about.MShopAboutView" />
+        <LinearLayout android:orientation="vertical" android:id="@id/help_more_amazon_apps_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/Separator" />
+            <com.amazon.mShop.LinkButton android:id="@id/help_more_amazon_apps" android:text="@string/more_get_amazon_android_apps" style="@style/ArrowSelector" amazon_urlUseExternalBrowser="true" amazon_urlContentId="@string/more_get_amazon_android_apps_url" />
+        </LinearLayout>
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

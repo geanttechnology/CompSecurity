@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout android:id="@id/tab_strip_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.astuetz.PagerSlidingTabStrip android:textSize="@dimen/microTextSize" android:textColor="@color/white_at_60_percent_opacity" android:id="@id/tab_strip" android:background="@color/target_bullseye_red" android:layout_width="fill_parent" android:layout_height="@dimen/tab_height" android:layout_alignParentTop="true" app:pstsIndicatorColor="@color/target_stark_white" app:pstsTabBackground="@drawable/translucent_item_light_selector" app:pstsShouldExpand="true" app:pstsTextColorSelected="@color/target_stark_white" app:pstsTextStyle="normal" />
+        <View android:id="@id/tab_drop_shadow" android:layout_below="@id/tab_strip" style="@style/DropShadow" />
+    </RelativeLayout>
+</RelativeLayout>

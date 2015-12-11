@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/notifications_setting_block" android:background="@color/common_arrow_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/notification_settings_header_text_size" android:textStyle="bold" android:id="@id/notifications_setting_title" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_zero" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/notifications_setting_explanation" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_zero" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

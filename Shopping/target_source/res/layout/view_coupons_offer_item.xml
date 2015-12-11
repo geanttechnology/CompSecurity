@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/coupon_offer_item" android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/coupons_signup_header_margin_left" android:paddingTop="@dimen/coupons_margin_large" android:paddingRight="@dimen/coupons_margin_large" android:paddingBottom="@dimen/coupons_margin_large" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:id="@id/coupon_offer_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.TextView.SingleLine" />
+    <com.target.ui.view.TargetTextView android:id="@id/coupon_expires" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/coupon_offer_margin_top" android:layout_below="@id/coupon_offer_desc" android:layout_alignParentLeft="true" app:fontStyle="light" style="@style/Target.TextView.CouponOffer" />
+</RelativeLayout>

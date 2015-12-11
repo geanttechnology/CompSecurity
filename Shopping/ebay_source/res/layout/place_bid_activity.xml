@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:background="?listContainerBackground" android:visibility="gone" style="@style/ItemView.TopScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/Letterbox">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/top_bid_info_layout" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/bid_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" />
+                <RelativeLayout android:layout_width="@dimen/ebayMargin3x" android:layout_height="@dimen/ebayMargin3x" android:layout_margin="@dimen/ebayMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/close_button" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_modal_x" android:contentDescription="@string/close" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.ebay.mobile.widget.BidFlowPriceView android:id="@id/edit_text" android:layout_width="0.0dip" android:layout_height="0.0dip" android:maxLength="14" android:alpha="0.0" ebay:showCurrencySymbolAlways="true" style="@style/ItemView.EditCurrency" />
+            <TextView android:textSize="@dimen/ebayTextSizeTitle3" android:textColor="@color/style_guide_black" android:gravity="center" android:id="@id/bid_amount_heading_blurb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/we_will_bid_up_to" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/bid_amount_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/view_item_bid_field_currency_text_size" android:textStyle="normal" android:layout_gravity="top" android:id="@id/currency_code_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMarginHalf" />
+                <TextView android:textSize="@dimen/view_item_bid_field_text_size" android:textStyle="normal" android:textColor="@color/style_guide_black" android:id="@id/bid_amount" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0" android:contentDescription="@string/enter_your_maximum_bid" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/view_item_bid_field_currency_text_size" android:textStyle="normal" android:layout_gravity="top" android:id="@id/currency_code_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginTop="@dimen/ebayMargin" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/review_bid_additional_info_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/style_guide_black" android:gravity="center" android:id="@id/shipping_cost_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+                <TextView android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:id="@id/import_charges_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+                <TextView android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:id="@id/approx_converted_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+                <TextView android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:id="@id/sales_tax_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/extra_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:id="@id/converted_bid_amount" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+                <TextView android:textColor="@color/AuctionRed" android:gravity="center" android:id="@id/error_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+            </LinearLayout>
+            <View android:id="@id/filler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/common_auction_blue_light" android:gravity="center" android:id="@id/terms_and_conditions_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/terms_and_conditions" style="@style/EbayTextAppearanceViewItem" />
+                <Button android:id="@id/confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/LEGAL_confirm_bid" style="@style/EbayButton.Blue" />
+                <TextView android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:id="@id/bid_agreement_blurb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/bid_agreement" style="@style/EbayTextAppearanceViewItem" />
+                <Button android:id="@id/review_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/review_bid" style="@style/EbayButton.Blue" />
+                <Button android:id="@id/place_bid_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin3x" style="@style/EbayButton.Blue" />
+                <TextView android:textColor="@color/style_guide_dark_gray" android:id="@id/user_consent_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_consent_text" style="@style/EbayTextAppearanceViewItem" />
+                <LinearLayout android:orientation="vertical" android:id="@id/power_bid_values_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+                    <View android:background="@drawable/divider_horizontal_bright_opaque" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                        <RelativeLayout android:id="@id/layout_power_bid_value1" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textColor="@color/common_auction_blue_light" android:id="@id/power_bid_value1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <View android:background="@drawable/tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayBarButtonTopMargin" android:layout_marginBottom="@dimen/ebayBarButtonTopMargin" />
+                        <RelativeLayout android:id="@id/layout_power_bid_value2" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textColor="@color/common_auction_blue_light" android:id="@id/power_bid_value2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <View android:background="@drawable/tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayBarButtonTopMargin" android:layout_marginBottom="@dimen/ebayBarButtonTopMargin" />
+                        <RelativeLayout android:id="@id/layout_power_bid_value3" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textColor="@color/common_auction_blue_light" android:id="@id/power_bid_value3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/common_translucent_progress" />
+    <include layout="@layout/common_error" />
+</merge>

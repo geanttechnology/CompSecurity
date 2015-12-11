@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/dialog_content_padding" android:paddingRight="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="@dimen/store_detail_row_height" android:minHeight="@dimen/store_detail_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/largeTextSize" android:id="@id/hours_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/largeTextSize" android:textColor="@color/target_choice_green" android:id="@id/today_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/today" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetTextView android:id="@id/closed_all_day" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/closed" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/open_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetTextView android:id="@id/open_hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <com.target.ui.view.TargetTextView android:textColor="@color/dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/close_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetTextView android:id="@id/close_hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <com.target.ui.view.TargetTextView android:textColor="@color/dark_gray" android:id="@id/close_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

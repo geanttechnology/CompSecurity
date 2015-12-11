@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingLeft="@dimen/screen_padding_h" android:paddingRight="@dimen/screen_padding_h" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/app_logo" android:paddingBottom="@dimen/screen_padding_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_apps_logo" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/welcome_regular_text_size" android:textColor="@color/primary_text_color" android:id="@id/blocked_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:padding="@dimen/welcome_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="5.0">
+        <Button android:textColor="@color/button_enabled_primary_color" android:id="@id/install_button" android:background="@drawable/orange_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

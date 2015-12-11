@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_white_background" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_letgo_signup" android:contentDescription="@string/get_started_activity_logo_content_description" />
+            <TextView android:textSize="@dimen/common_text_size_normal" android:textColor="@color/common_color_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small" android:text="@string/main_sign_up_claim_label" android:fontFamily="sans-serif-light" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/center_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <Button android:id="@id/bt_login_facebook" android:text="@string/common_label_sign_up_facebook" style="@style/FacebookButtonStyle" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_huge" android:layout_marginBottom="@dimen/padding_huge">
+                <include android:layout_width="60.0dip" android:layout_height="1.0dip" layout="@layout/sign_up_separator" />
+                <TextView android:textColor="@color/main_sign_up_light" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_medium" android:layout_marginRight="@dimen/padding_medium" android:text="@string/main_sign_up_or_label" />
+                <include android:layout_width="60.0dip" android:layout_height="1.0dip" layout="@layout/sign_up_separator" />
+            </LinearLayout>
+            <Button android:id="@id/btn_private_access_signup" android:text="@string/main_sign_up_sign_up_button" style="@style/SignUpButtonStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/private_access_login" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginBottom="@dimen/padding_large">
+            <TextView android:textSize="@dimen/common_text_size_large" android:textColor="@color/sign_in_text_color_light" android:paddingLeft="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_sign_up_already_registered_label" android:fontFamily="sans-serif" />
+            <TextView android:textSize="@dimen/common_text_size_large" android:textColor="@color/sign_in_text_color_normal" android:paddingRight="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_small" android:text="@string/main_sign_up_login_label" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/common_text_size_large" android:textColor="@color/sign_in_text_color_normal" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_sign_up_help" android:paddingRight="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/padding_large" android:layout_marginBottom="@dimen/padding_large" android:text="@string/sign_up_label_help" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</LinearLayout>

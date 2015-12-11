@@ -1,0 +1,30 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.ebay.nautilus.domain.net.api.trading;
+
+import com.ebay.nautilus.domain.net.XmlSerializerHelper;
+import java.io.IOException;
+import org.xmlpull.v1.XmlSerializer;
+
+// Referenced classes of package com.ebay.nautilus.domain.net.api.trading:
+//            GetMyEbayRequest, EbayTradingApi
+
+public final class GetMyEbaySellerSoldListRequest extends GetMyEbayRequest
+{
+
+    public GetMyEbaySellerSoldListRequest(EbayTradingApi ebaytradingapi, String s, int i, int j)
+    {
+        super(ebaytradingapi, s, i, j, "GetMyeBaySelling");
+    }
+
+    protected void buildXmlRequest(XmlSerializer xmlserializer, String s)
+        throws IOException
+    {
+        XmlSerializerHelper.writeErrorLocale(xmlserializer, "urn:ebay:apis:eBLBaseComponents");
+        xmlserializer.startTag("urn:ebay:apis:eBLBaseComponents", "SoldList");
+        XmlSerializerHelper.writeSimple(xmlserializer, "urn:ebay:apis:eBLBaseComponents", "Include", "true");
+        xmlserializer.endTag("urn:ebay:apis:eBLBaseComponents", "SoldList");
+    }
+}

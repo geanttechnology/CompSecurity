@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:textColor="@color/target_neutral_grey" android:ellipsize="end" android:id="@id/dates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/weekly_ad_left_right_margin" android:layout_marginTop="@dimen/weekly_ad_top_bottom_margin" android:layout_marginRight="@dimen/weekly_ad_left_right_margin" android:layout_marginBottom="@dimen/weekly_ad_top_bottom_margin" android:singleLine="true" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/weekly_ad_top_bottom_margin">
+        <com.target.ui.view.ExpandableImageViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="@dimen/weekly_ad_image_pager_default_height" />
+        <ImageView android:id="@id/placeholder_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/expandable_image_view_pager_item_padding" android:layout_marginRight="@dimen/expandable_image_view_pager_item_padding" android:contentDescription="@null" />
+    </FrameLayout>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/location_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/location_marker_light" style="@style/global_search_location_icon_style" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/clearable_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/clearable_button_clear" style="@style/global_search_clearable_edittext_style" />
+        <ImageView android:id="@id/clearable_button_clear" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/clearable_edittext_clear_button_style" />
+    </RelativeLayout>
+</LinearLayout>

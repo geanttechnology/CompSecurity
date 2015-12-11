@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/payment_card_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payment_default" android:contentDescription="@string/cd_credit_card_image" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_large" android:layout_marginTop="@dimen/checkout_margin_small" android:layout_marginRight="@dimen/checkout_layout_padding" android:layout_weight="1.0">
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/payment_card_number_error_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewId="@id/payment_card_number_text">
+            <com.target.ui.view.TargetEditText android:id="@id/payment_card_number_text" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_card_hint" android:maxLength="@integer/credit_card_max_length" android:inputType="number" app:fontStyle="light" style="@style/Target.TextView.CheckoutEditText" />
+        </com.target.ui.view.CustomErrorViewWrapper>
+        <com.target.ui.view.CustomErrorViewWrapper android:id="@id/payment_card_expiration_pin_wrapper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewId="@id/payment_card_expiration_pin_container">
+            <LinearLayout android:orientation="horizontal" android:id="@id/payment_card_expiration_pin_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.target.ui.view.TargetEditText android:id="@id/payment_card_last_digits" android:layout_width="60.0dip" android:layout_height="@dimen/custom_edit_text_height" android:layout_marginRight="@dimen/checkout_margin_large" android:singleLine="true" android:maxLength="@integer/credit_card_last_digits_max_length" android:inputType="number" app:fontStyle="light" style="@style/Target.TextView.EditText.NoUnderline" />
+                <com.target.ui.view.BackSpaceDetectorEditText android:id="@id/payment_card_expiry" android:nextFocusDown="@id/payment_card_security_code" android:layout_width="60.0dip" android:layout_height="@dimen/custom_edit_text_height" android:hint="@string/checkout_expiry_hint" android:maxLength="@integer/credit_card_expiry_max_length" android:inputType="number" app:fontStyle="light" style="@style/Target.TextView.EditText.NoUnderline" />
+                <com.target.ui.view.BackSpaceDetectorEditText android:id="@id/payment_card_security_code" android:nextFocusDown="@id/name_text" android:layout_width="0.0dip" android:layout_height="@dimen/custom_edit_text_height" android:layout_marginLeft="@dimen/checkout_margin_large" android:hint="@string/checkout_cvv_hint" android:maxLength="@integer/credit_card_security_max_length" android:layout_weight="1.0" android:inputType="numberPassword" app:fontStyle="light" style="@style/Target.TextView.EditText.NoUnderline" />
+            </LinearLayout>
+        </com.target.ui.view.CustomErrorViewWrapper>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/payment_card_scan" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_camera" android:scaleType="center" android:contentDescription="@string/cd_scan_credit_card" style="@style/ScanButtonSelector" />
+</merge>

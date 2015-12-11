@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.groupon.view.ObservableScrollView android:background="@color/bg_color_checkout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/stock_categories_header_title" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_your_preferences" android:textAllCaps="true" style="@style/header_holo" />
+            <View android:background="@color/header_text_color" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <FrameLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.groupon.view.DefaultValueSpinner android:textColor="@color/editable_text_color" android:id="@id/stock_categories_value" android:layout_width="fill_parent" android:layout_height="42.0dip" android:prompt="@string/select" style="@style/spinner_stock_categories" />
+                <FrameLayout android:id="@id/stock_category_progress" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/stock_values_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <TextView android:id="@id/stock_values_header_title" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_your_preferences" android:textAllCaps="true" style="@style/header_holo" />
+            <View android:background="@color/header_text_color" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/values_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</com.groupon.view.ObservableScrollView>

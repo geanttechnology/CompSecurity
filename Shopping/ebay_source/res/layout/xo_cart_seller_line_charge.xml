@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/xo_item_charge_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Checkout.ClickableLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/xo_line_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:text="@string/xo_ebn_convenience_charge" android:layout_centerVertical="true" style="@style/Checkout.Text" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_actionbar_info" android:layout_toRightOf="@id/xo_line_label" android:layout_centerVertical="true" />
+    <TextView android:id="@id/xo_line_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Checkout.Text" />
+</RelativeLayout>

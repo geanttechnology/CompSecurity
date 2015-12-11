@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/white_item_selector" android:paddingLeft="@dimen/dialog_content_padding" android:paddingRight="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="60.0dip" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/largeTextSize" android:id="@id/phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/phone_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_phone" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.target.ui.view.TargetTextView android:textColor="@color/dark_gray" android:id="@id/other_phone_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="@dimen/store_divider_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

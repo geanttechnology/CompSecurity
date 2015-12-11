@@ -1,0 +1,7 @@
+digraph G1 {
+  concentrate = true;
+  IAPDataStore -> IAPDataStoreImpl;
+  n2 [label="@Named Obfuscator"];
+  IAPDataStoreImpl -> n2;
+  IAPDataStoreImpl -> Context;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/current_zone_wrapper" android:background="@drawable/aluminum_gray_selector" android:paddingLeft="@dimen/default_left_right_padding_margin" android:layout_width="fill_parent" android:layout_height="@dimen/map_top_margin" android:minHeight="@dimen/map_top_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.TargetTextView android:id="@id/zone_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/Target.TextView" />
+    <ImageView android:id="@id/current_zone_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_left_right_padding_margin" android:src="@drawable/checkmark_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/cd_current_floor" />
+</RelativeLayout>

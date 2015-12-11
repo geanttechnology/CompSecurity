@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="22.0sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="12.0dip" android:text="@string/rm_new_version_available" android:singleLine="true" />
+    <View android:id="@id/line_break_view" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="12.0dip" />
+    <ScrollView android:id="@id/scroll_view" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="18.0sp" android:textColor="@color/bby_gray" android:gravity="left" android:id="@id/dialog_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ScrollView>
+    <View android:id="@id/line_break_view2" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/buttons_linear_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYButton android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/left_button" android:background="@drawable/btn_grey" android:paddingLeft="20.0dip" android:paddingTop="16.0dip" android:paddingRight="20.0dip" android:paddingBottom="16.0dip" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="40.0dip" android:text="@string/cancel_text" />
+        <com.bestbuy.android.bbyobjects.BBYButton android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/right_button" android:background="@drawable/btn_ltblue" android:paddingLeft="20.0dip" android:paddingTop="16.0dip" android:paddingRight="20.0dip" android:paddingBottom="16.0dip" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/ok_text" />
+    </LinearLayout>
+</LinearLayout>

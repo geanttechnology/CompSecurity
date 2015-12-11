@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_subscribe_and_save_ordering_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_subscribe_and_save_ordering_button" android:text="@string/help_subscribe_and_save_ordering_finding_eligible_products_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_subscribe_and_save_ordering_finding_eligible_products_title" amazon_textContentId="@string/help_subscribe_and_save_ordering_finding_eligible_products_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_subscribe_and_save_ordering_button" android:text="@string/help_subscribe_and_save_ordering_placing_your_order_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_subscribe_and_save_ordering_placing_your_order_title" amazon_textContentId="@string/help_subscribe_and_save_ordering_placing_your_order_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_subscribe_and_save_ordering_button" android:text="@string/help_subscribe_and_save_ordering_paying_for_your_subscription_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_subscribe_and_save_ordering_paying_for_your_subscription_title" amazon_textContentId="@string/help_subscribe_and_save_ordering_paying_for_your_subscription_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_subscribe_and_save_ordering_button" android:text="@string/help_subscribe_and_save_ordering_terms_and_conditions_title" style="@style/OffsiteSelector" amazon_titleResourceId="@string/help_subscribe_and_save_ordering_terms_and_conditions_title" amazon_urlContentId="@string/help_subscribe_and_save_ordering_terms_and_conditions_url" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

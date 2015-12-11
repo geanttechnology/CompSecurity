@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wishabi.flipp.widget.SlidingFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@color/tintColor" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/coupon_help" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/couponDetailsWhyPrintTextColor" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/why_print_coupon_question" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/darkTextColor" android:paddingLeft="20.0dip" android:paddingTop="0.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/why_print_coupon_answer" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/couponDetailsWhyPrintTextColor" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/how_to_use_coupon_question" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/darkTextColor" android:paddingLeft="20.0dip" android:paddingTop="0.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/how_to_use_coupon_answer" />
+        </LinearLayout>
+    </ScrollView>
+</com.wishabi.flipp.widget.SlidingFrameLayout>

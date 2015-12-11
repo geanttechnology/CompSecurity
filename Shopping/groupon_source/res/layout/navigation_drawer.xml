@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="left" android:id="@id/navdrawer" android:background="@color/navdrawer_normal_background" android:clipToPadding="true" android:layout_width="@dimen/navdrawer_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/profile_view" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/navdrawer_account_height">
+            <ImageView android:id="@id/profile_cover_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sidenav_pattern" android:scaleType="centerCrop" />
+            <RelativeLayout android:id="@id/chosen_account_content_view" android:paddingLeft="@dimen/keyline_1" android:paddingTop="@dimen/keyline_1" android:paddingBottom="@dimen/keyline_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/profile_image" android:visibility="invisible" android:layout_width="@dimen/navdrawer_profile_image_size" android:layout_height="@dimen/navdrawer_profile_image_size" android:src="@drawable/ic_user" android:scaleType="centerCrop" />
+                <FrameLayout android:id="@id/expand_account_box_indicator_group" android:layout_width="@dimen/navdrawer_expand_arrow_area" android:layout_height="@dimen/navdrawer_expand_arrow_area" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/expand_account_box_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_expand" android:scaleType="center" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/white" android:ellipsize="end" android:id="@id/profile_email_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/expand_account_box_indicator_group" android:layout_alignLeft="@id/profile_image" android:layout_alignParentBottom="true" />
+                <TextView android:textColor="@color/white" android:ellipsize="end" android:id="@id/profile_name_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/expand_account_box_indicator_group" android:layout_above="@id/profile_email_text" android:layout_alignLeft="@id/profile_image" style="@style/navdrawer_item_text_medium" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/login_prompt_view" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/navdrawer_account_height">
+            <ImageView android:id="@id/profile_cover_image2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sidenav_pattern" android:scaleType="centerCrop" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/navdrawer_login_logo_padding_side" android:layout_marginTop="@dimen/navdrawer_logo_padding_top" android:layout_marginRight="@dimen/navdrawer_login_logo_padding_side">
+                <ImageView android:id="@id/groupon_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_logo" android:scaleType="centerInside" />
+                <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/login_text" android:paddingTop="@dimen/navdrawer_login_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_or_signup_caps" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="12.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/navdrawer_items_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

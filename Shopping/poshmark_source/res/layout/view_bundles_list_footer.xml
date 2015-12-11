@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/emptyBundleLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/emptyBundleImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:src="@drawable/img_empty_bundle" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:gravity="center" android:id="@id/emptyBundleMessageI" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/empty_bundle_msg_I" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="16.0sp" android:gravity="center" android:id="@id/emptyBundleMessageII" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/empty_bundle_msg_II" />
+        <com.poshmark.ui.customviews.PMButton android:textSize="16.0sp" android:textColor="@color/textColorLightBurgundy" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/learMoreButton" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_more" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/unavailableItemsLayout" android:background="@color/bgColorLightGray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_alert_lightgray_outline" />
+        <com.poshmark.ui.customviews.PMTextView android:layout_gravity="center_vertical" android:id="@id/viewUnavailableItems" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <com.poshmark.ui.customviews.PMButton android:id="@id/addMoreItemsToBundleButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="20.0dip" android:text="" style="@style/borderedGreyButtonWithBurgundyText" />
+    <com.poshmark.ui.customviews.PMButton android:id="@id/viewAllBundlesButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/view_all_bundles" style="@style/borderedGreyButtonWithBurgundyText" />
+</LinearLayout>

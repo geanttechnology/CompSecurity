@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rs_change_environment_title_text" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/darker_gray" android:id="@id/retail_search_env_url" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:lines="2" />
+    <RadioGroup android:orientation="vertical" android:id="@id/retail_search_env_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:textColor="@android:color/black" android:id="@id/prod_env_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/rs_prod_environment_radio_text" />
+        <RadioButton android:textColor="@android:color/black" android:id="@id/integ_beta_env_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_integ_beta_environment_radio_text" />
+        <RadioButton android:textColor="@android:color/black" android:id="@id/integ_gamma_env_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_integ_gamma_environment_radio_text" />
+        <RadioButton android:textColor="@android:color/black" android:id="@id/beta_env_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_beta_environment_radio_text" />
+        <RadioButton android:textColor="@android:color/black" android:id="@id/gamma_env_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_gamma_environment_radio_text" />
+    </RadioGroup>
+    <TextView android:textSize="16.0sp" android:textColor="#ffc00000" android:id="@id/retail_search_debug_info_line" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

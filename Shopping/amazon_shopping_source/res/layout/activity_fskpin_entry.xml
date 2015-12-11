@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/pinEntryDialog" android:padding="@dimen/avod_spacing_medium" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fsk18_content_pin_dialog_title" style="@style/AVOD.TextAppearance.Light.Regular" />
+    <TextView android:textColor="@color/avod_crimson_red" android:id="@id/invalidPinText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fsk18_content_pin_dialog_invalid_message" android:layout_below="@id/title" style="@style/AVOD.TextAppearance.Light.Regular" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pinFields" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/avod_spacing_medium" android:layout_below="@id/invalidPinText">
+        <EditText android:gravity="center" android:id="@id/pinField1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="1" android:digits="0123456789" android:layout_weight="1.0" android:inputType="numberPassword" android:imeOptions="flagNoFullscreen" />
+        <EditText android:gravity="center" android:id="@id/pinField2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="1" android:digits="0123456789" android:layout_weight="1.0" android:inputType="numberPassword" android:imeOptions="flagNoFullscreen" />
+        <EditText android:gravity="center" android:id="@id/pinField3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="1" android:digits="0123456789" android:layout_weight="1.0" android:inputType="numberPassword" android:imeOptions="flagNoFullscreen" />
+        <EditText android:gravity="center" android:id="@id/pinField4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="1" android:digits="0123456789" android:layout_weight="1.0" android:inputType="numberPassword" android:imeOptions="actionDone|flagNoFullscreen" />
+    </LinearLayout>
+</RelativeLayout>

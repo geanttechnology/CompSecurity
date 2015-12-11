@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/avod_spacing_medium" android:paddingTop="@dimen/avod_spacing_small" android:paddingRight="@dimen/avod_spacing_medium" android:paddingBottom="@dimen/avod_spacing_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/errorMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/avod_spacing_small" style="@style/AVOD.TextAppearance.Light.Regular" />
+    <TextView android:id="@id/showDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/avod_spacing_small" android:text="@string/error_show_details" style="@style/AVOD.TextAppearance.Light.Small" />
+    <TextView android:textColor="@color/avod_blue" android:id="@id/errorCode" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AVOD.TextAppearance.Light.Small" />
+</LinearLayout>

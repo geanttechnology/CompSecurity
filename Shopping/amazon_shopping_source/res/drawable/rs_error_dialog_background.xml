@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/rs_results_error_corner_radius" />
+    <solid android:color="@color/rs_results_error_dialog_background" />
+    <stroke android:width="@dimen/rs_results_error_stroke_width" android:color="@color/rs_results_error_dialog_stroke" />
+</shape>

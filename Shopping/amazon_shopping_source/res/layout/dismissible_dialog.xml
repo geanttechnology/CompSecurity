@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="false" style="@style/dialog_scroll_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/dialog_content">
+        <TextView android:textColor="@color/avod_white" android:id="@id/message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_content_spacing" style="@style/AVOD.TextAppearance.Light.Regular" />
+        <LinearLayout android:orientation="vertical" android:id="@id/list_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <CheckBox android:textColor="@color/avod_white" android:id="@id/dismiss_forever" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_content_spacing" style="@style/AVOD.TextAppearance.Light.Small" />
+        <TextView android:id="@id/dismiss_forever_hint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/dialog_checkbox_hint" />
+    </LinearLayout>
+</ScrollView>

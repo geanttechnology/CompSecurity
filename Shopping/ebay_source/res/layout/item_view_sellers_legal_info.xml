@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/ItemView.TopScrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Letterbox">
+        <LinearLayout android:id="@id/sellers_legal_info_layout" style="@style/ItemView">
+            <TextView android:text="@string/item_view_sellers_legal_info" style="@style/ItemView.TextContainer.HeaderBar" />
+            <com.ebay.android.widget.ContainerLayout style="@style/ItemView.ContainerLayout">
+                <TextView android:id="@id/sellers_legal_info_textview" style="@style/ItemView.TextContainer" />
+            </com.ebay.android.widget.ContainerLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/sellers_return_policy_layout" style="@style/ItemView">
+            <TextView android:text="@string/item_view_sellers_return_policy" style="@style/ItemView.TextContainer.HeaderBar" />
+            <com.ebay.android.widget.ContainerLayout style="@style/ItemView.ContainerLayout">
+                <TextView android:id="@id/sellers_return_policy_textview" style="@style/ItemView.TextContainer" />
+            </com.ebay.android.widget.ContainerLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/sellers_t_and_c_layout" style="@style/ItemView">
+            <TextView android:text="@string/item_view_sellers_t_and_c" style="@style/ItemView.TextContainer.HeaderBar" />
+            <com.ebay.android.widget.ContainerLayout style="@style/ItemView.ContainerLayout">
+                <TextView android:id="@id/sellers_t_and_c_textview" style="@style/ItemView.TextContainer" />
+            </com.ebay.android.widget.ContainerLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

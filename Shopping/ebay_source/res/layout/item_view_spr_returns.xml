@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.android.widget.ContainerLayout android:id="@id/returns_layout" android:layout_marginBottom="0.0dip" style="@style/ItemView.ContainerLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/gsp_label" android:visibility="gone" android:layout_width="fill_parent" style="@style/ItemStatLayout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/returns_acceptance" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:id="@id/returns_acceptance_text" android:layout_width="fill_parent" style="@style/ItemStatHeader" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/within" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:text="@string/LEGAL_spr_returns_within" style="@style/ItemStatHeader" />
+            <TextView android:id="@id/within_value" android:layout_width="wrap_content" style="@style/ItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/refund" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:text="@string/spr_returns_refund" style="@style/ItemStatHeader" />
+            <TextView android:id="@id/refund_value" android:layout_width="wrap_content" style="@style/ItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/scpb" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:text="@string/spr_returns_shipping_cost_paid_by" style="@style/ItemStatHeader" />
+            <TextView android:id="@id/scpb_value" android:layout_width="wrap_content" style="@style/ItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/description" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:text="@string/LEGAL_spr_returns_desription" style="@style/ItemStatHeader" />
+            <TextView android:id="@id/description_value" android:layout_width="wrap_content" style="@style/ItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ean" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:text="@string/spr_returns_ean" style="@style/ItemStatHeader" />
+            <TextView android:id="@id/ean_value" android:layout_width="wrap_content" style="@style/ItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/restocking" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:text="@string/spr_returns_restocking_fee" style="@style/ItemStatHeader" />
+            <TextView android:id="@id/restocking_value" android:layout_width="wrap_content" style="@style/ItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/warranty" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:text="@string/spr_returns_warrenty_offered" style="@style/ItemStatHeader" />
+            <TextView android:id="@id/warranty_value" android:layout_width="wrap_content" style="@style/ItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/warranty_duration" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:text="@string/spr_returns_warrenty_duration" style="@style/ItemStatHeader" />
+            <TextView android:id="@id/warranty_duration_value" android:layout_width="wrap_content" style="@style/ItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/warranty_type" android:visibility="gone" style="@style/ItemStatLayout">
+            <TextView android:text="@string/spr_returns_warrenty_type" style="@style/ItemStatHeader" />
+            <TextView android:id="@id/warranty_type_value" android:layout_width="wrap_content" style="@style/ItemStatValue" />
+        </LinearLayout>
+    </LinearLayout>
+</com.ebay.android.widget.ContainerLayout>

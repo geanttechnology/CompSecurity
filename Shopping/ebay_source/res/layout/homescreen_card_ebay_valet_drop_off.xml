@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:layout_gravity="center" android:id="@id/valetImage2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@null" app:urlRewriter="zoom_gallery" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ebayTextSize" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/selling_card_ebay_valet_drop_it_off" />
+        <TextView android:textSize="@dimen/ebayTextSize" android:id="@id/valetDescription2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/selling_card_ebay_valet_drop_off_description" />
+    </LinearLayout>
+</LinearLayout>

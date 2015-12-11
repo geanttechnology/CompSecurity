@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/business_card_view" android:background="@drawable/business_transparent_press_state" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/business_non_exact_match_deal_card">
+        <RelativeLayout android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <com.groupon.view.UrlImageView android:id="@id/business_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.groupon.view.BusinessMapSlice android:id="@id/map_slice" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip">
+            <TextView android:ellipsize="end" android:id="@id/business_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buger king" android:maxLines="2" android:layout_alignParentTop="true" style="@style/business_non_exact_match_list_title" />
+            <TextView android:ellipsize="end" android:gravity="left" android:id="@id/business_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="132 Juno Street, Palo Alto" android:maxLines="1" android:layout_below="@id/business_name" style="@style/business_non_exact_match_list_info" />
+            <TextView android:id="@id/business_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0 miles" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" style="@style/business_non_exact_match_list_info" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

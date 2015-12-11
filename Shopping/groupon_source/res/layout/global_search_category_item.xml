@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/category_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/category_text_size" android:textColor="@color/grey_medium" android:gravity="left|center" android:id="@id/category_title" android:paddingLeft="@dimen/category_padding" android:paddingRight="@dimen/category_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/category_expand" android:layout_alignWithParentIfMissing="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/category_expand" android:background="@drawable/category_bg_selected_color" android:layout_width="@dimen/category_layout_height" android:layout_height="fill_parent" android:src="@drawable/arrow_down" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

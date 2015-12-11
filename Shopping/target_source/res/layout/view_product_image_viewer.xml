@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:paddingTop="@dimen/prd_pdp_image_pager_top_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/prd_pdp_image_view" android:paddingLeft="@dimen/expandable_image_view_pager_item_padding" android:paddingRight="@dimen/expandable_image_view_pager_item_padding" android:layout_width="wrap_content" android:layout_height="@dimen/prd_pdp_image_pager_default_height" android:scaleType="fitCenter" />
+    <com.target.ui.view.ExpandableImageViewPager android:id="@id/prd_pdp_image_pager" android:layout_width="fill_parent" android:layout_height="@dimen/prd_pdp_image_pager_default_height" />
+</FrameLayout>

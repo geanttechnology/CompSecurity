@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/item_detail_fragment_divider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/watchlist" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/itemDetailActionFrame">
+        <ImageView android:id="@id/watchlist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/save_to_watchlist_icn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/watchlist_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/itemDetailActionText" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/message_seller" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/itemDetailActionFrame">
+        <ImageView android:id="@id/message_seller_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_seller_icn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/action_message_seller" style="@style/itemDetailActionText" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/share_item" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/itemDetailActionFrame">
+        <ImageView android:id="@id/share_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_icn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/action_share_item" style="@style/itemDetailActionText" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/flag_listing" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/itemDetailActionFrame">
+        <ImageView android:id="@id/flag_listing_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flag_listing_icn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/action_flag_listing" style="@style/itemDetailActionText" />
+    </RelativeLayout>
+</LinearLayout>

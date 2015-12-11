@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" style="@style/top_level_that_handles_tablet_layout">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/detail_screen_box" android:padding="@dimen/redeem_primary_padding" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/redeem_primary_padding" android:layout_marginBottom="@dimen/redeem_primary_padding">
+            <TextView android:textSize="@dimen/redeem_title_text_size" android:textColor="@color/grey_dark" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/grey_light" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/expires_at" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/redeem_primary_padding" android:layout_marginBottom="10.0dip" android:text="@string/expires" style="@style/redeem_attribute_style" />
+            <FrameLayout android:gravity="center" android:id="@id/barcode" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="100.0dip">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+                <include layout="@layout/redeem_image" />
+                <include layout="@layout/voucher_redeemed_view" />
+            </FrameLayout>
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/barcode_number" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/redeem_primary_padding" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/redeem_primary_padding" android:textIsSelectable="true" android:fontFamily="@string/roboto_regular" style="@style/redeem_attribute_large_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/redeem_primary_padding" android:paddingRight="@dimen/redeem_primary_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/customer" style="@style/redeem_attribute_left_style" />
+                <TextView android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/redeem_av_padding_adjusted_15_15" style="@style/redeem_value_left_style" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/groupon_av" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/groupon" style="@style/redeem_attribute_right_style" />
+                <TextView android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/redeem_av_padding_adjusted_15_15" android:textIsSelectable="true" style="@style/redeem_value_right_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/redeem_primary_padding" android:layout_marginTop="@dimen/redeem_primary_padding" android:layout_marginRight="@dimen/redeem_primary_padding" android:text="@string/mark_as_used_v1" style="@style/primary_action_button" />
+        <TextView android:textSize="@dimen/redeem_content_text_size" android:textColor="@color/urlblue" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/show_this_screen" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

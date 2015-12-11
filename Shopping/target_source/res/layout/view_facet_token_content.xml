@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/prd_plp_facet_token_delete_icon_size" android:layout_height="@dimen/prd_plp_facet_token_delete_icon_size" android:layout_margin="@dimen/default_2x_padding_margin" android:src="@drawable/icon_search_delete" android:scaleType="centerInside" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/mediumTextSize" android:textColor="@color/target_neutral_grey" android:layout_gravity="center_vertical" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_2x_padding_margin" android:layout_marginBottom="@dimen/prd_plp_facet_token_text_bottom_margin" />
+</merge>

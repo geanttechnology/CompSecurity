@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/shipping_region_alternative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/shipping_region_cl" style="@style/edit_credit_card_single_line_cap_words_v2" />
+    <com.groupon.view.DefaultValueSpinner android:id="@id/shipping_region" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/add_credit_card_spinner_height_v2" android:prompt="@string/shipping_region_cl" style="@style/spinner_credit_card_v2" />
+    <EditText android:id="@id/shipping_location_alternative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/shipping_location_cl" style="@style/edit_credit_card_single_line_cap_words_v2" />
+    <com.groupon.view.DefaultValueSpinner android:id="@id/shipping_location" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/add_credit_card_spinner_height_v2" android:prompt="@string/shipping_location_cl" style="@style/spinner_credit_card_v2" />
+    <Spinner android:entries="@array/shipping_titles_latam" android:id="@id/shipping_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/add_credit_card_spinner_height_v2" style="@style/spinner_credit_card_v2" />
+</merge>

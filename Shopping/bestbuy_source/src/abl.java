@@ -1,0 +1,58 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+import android.os.Bundle;
+
+public class abl
+{
+
+    private final Object a;
+    private int b;
+    private int c;
+    private final abi d;
+    private final String e;
+
+    abl(abi abi1, String s)
+    {
+        a = new Object();
+        d = abi1;
+        e = s;
+    }
+
+    public abl(String s)
+    {
+        this(abi.a(), s);
+    }
+
+    public Bundle a()
+    {
+        Bundle bundle;
+        synchronized (a)
+        {
+            bundle = new Bundle();
+            bundle.putInt("pmnli", b);
+            bundle.putInt("pmnll", c);
+        }
+        return bundle;
+        exception;
+        obj;
+        JVM INSTR monitorexit ;
+        throw exception;
+    }
+
+    public void a(int i, int j)
+    {
+        synchronized (a)
+        {
+            b = i;
+            c = j;
+            d.a(e, this);
+        }
+        return;
+        exception;
+        obj;
+        JVM INSTR monitorexit ;
+        throw exception;
+    }
+}

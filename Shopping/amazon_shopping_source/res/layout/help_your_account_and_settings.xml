@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.StandardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" amazon_titleResourceId="@string/help_your_account_and_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_your_account_and_settings_access_your_account_button" android:text="@string/help_your_account_and_settings_access_your_account_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_your_account_and_settings_access_your_account_title" amazon_textContentId="@string/help_your_account_and_settings_access_your_account_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_your_account_and_settings_get_password_help_button" android:text="@string/help_your_account_and_settings_get_password_help_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_your_account_and_settings_get_password_help_title" amazon_textContentId="@string/help_your_account_and_settings_get_password_help_content" />
+        <View style="@style/Separator" />
+        <com.amazon.mShop.LinkButton android:id="@id/help_your_account_and_settings_amazon_prime_membership_button" android:text="@string/help_your_account_and_settings_amazon_prime_membership_title" style="@style/ArrowSelector" amazon_titleResourceId="@string/help_your_account_and_settings_amazon_prime_membership_title" amazon_textContentId="@string/help_your_account_and_settings_amazon_prime_membership_content" />
+        <View style="@style/Separator" />
+    </LinearLayout>
+</com.amazon.mShop.StandardView>

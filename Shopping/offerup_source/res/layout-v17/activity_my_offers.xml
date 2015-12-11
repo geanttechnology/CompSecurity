@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.offerup.android.views.SlidingTabLayout android:id="@id/sliding_tabs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:background="@drawable/normal_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_below="@id/sliding_tabs" />
+    <RelativeLayout android:id="@id/archive_overlay" android:background="@color/transparent_dark_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/archive_arrow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="57.0dip" android:src="@drawable/watching_arrow" android:scaleType="fitXY" android:layout_toRightOf="@id/watchlist_empty_text" android:layout_above="@id/archive_text" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <TextView android:id="@id/watchlist_empty_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/text.small" />
+        <TextView android:gravity="center_horizontal" android:id="@id/archive_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/text.xlarge" />
+    </RelativeLayout>
+</RelativeLayout>

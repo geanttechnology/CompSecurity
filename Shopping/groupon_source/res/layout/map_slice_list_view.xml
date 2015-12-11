@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/image_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.view.UrlImageView android:id="@id/image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" />
+    <ImageView android:id="@id/progress_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/grey_medium" android:gravity="center" android:id="@id/message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/unable_to_load_map" />
+</FrameLayout>

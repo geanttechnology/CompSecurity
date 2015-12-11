@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/container" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <RelativeLayout android:gravity="left" android:id="@id/wishlistdetails" android:paddingLeft="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/imageView1" android:layout_centerInParent="true">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="18.0sp" android:textColor="@color/stores_name_color" android:id="@id/wishListName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/dark_grey" android:id="@id/eventType" android:paddingTop="2.0dip" android:layout_width="87.0dip" android:layout_height="wrap_content" android:layout_below="@id/wishListName" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </RelativeLayout>
+    <ImageView android:id="@id/arrow" android:paddingRight="5.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/smallforwardarrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/image_content_description" />
+    <ImageView android:id="@id/imageView1" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/image_content_description" />
+</RelativeLayout>

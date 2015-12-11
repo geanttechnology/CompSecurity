@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/EbayTextAppearance.Body2" android:ellipsize="end" android:gravity="left|center" android:id="@id/text1" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightSmall" android:lines="1" android:layout_weight="1.0" />
+    <View android:background="?android:listDivider" android:layout_width="@dimen/card_divider_thickness" android:layout_height="fill_parent" />
+    <TextView android:textAppearance="@style/EbayTextAppearance.Body2" android:ellipsize="end" android:gravity="left|center" android:id="@id/text2" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightSmall" android:lines="1" android:layout_weight="1.0" />
+    <View android:background="?android:listDivider" android:layout_width="@dimen/card_divider_thickness" android:layout_height="fill_parent" />
+    <TextView android:textAppearance="@style/EbayTextAppearance.Body2" android:ellipsize="end" android:gravity="left|center" android:id="@id/text3" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightSmall" android:lines="1" android:layout_weight="1.0" />
+</LinearLayout>

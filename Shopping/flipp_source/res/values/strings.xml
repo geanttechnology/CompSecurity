@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_back">Back</string>
+    <string name="action_forward">Forward</string>
+    <string name="add">Add</string>
+    <string name="add_item">Add Item</string>
+    <string name="added_to_clippings">Added to Clippings</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="all_items">All items</string>
+    <string name="allow_push_message">Allow Flipp to notify you of the latest deals in your area</string>
+    <string name="allow_push_popup">Allow Flipp to notify you of the latest deals in your area? You can enable/disable notifications at any time from the Settings menu.</string>
+    <string name="allow_push_title">Accept Push Notifications</string>
+    <string name="app_name"><g>Flipp</g></string>
+    <string name="area_not_clippable">This area is not clippable</string>
+    <string name="auth_client_needs_enabling_title">An application requires Google Play Services to be enabled.</string>
+    <string name="auth_client_needs_installation_title">An application requires installation of Google Play Services.</string>
+    <string name="auth_client_needs_update_title">An application requires an update for Google Play Services.</string>
+    <string name="auth_client_play_services_err_notification_msg">Google Play services error</string>
+    <string name="auth_client_requested_by_msg">Requested by %1$s</string>
+    <string name="auth_client_using_bad_version_title">An application attempted to use a bad version of Google Play Services.</string>
+    <string name="available_flyers"><g example="3" id="num_flyers">%d</g> Available Flyers</string>
+    <string name="badge_label_clipped">Clipped</string>
+    <string name="badge_label_expired">Expired</string>
+    <string name="badge_label_new">New</string>
+    <string name="badge_label_preview">Preview</string>
+    <string name="badge_label_sent">Sent</string>
+    <string name="badge_label_unavailable">Unavailable</string>
+    <string name="blank_item_not_allowed">"The item name can't be blank"</string>
+    <string name="categories">Flyer Categories</string>
+    <string name="category_all_flyers">All Flyers</string>
+    <string name="category_automotive">Automotive</string>
+    <string name="category_baby_kids">Baby &amp; Kids</string>
+    <string name="category_electronics">Electronics</string>
+    <string name="category_fashion">Fashion</string>
+    <string name="category_groceries">Groceries</string>
+    <string name="category_health_pharmacy">Health &amp; Pharmacy</string>
+    <string name="category_home_garden">Home &amp; Garden</string>
+    <string name="category_office">Office</string>
+    <string name="category_other">Other</string>
+    <string name="category_pets">Pets</string>
+    <string name="category_pharmacy">Pharmacy</string>
+    <string name="category_sporting_goods">Sporting Goods</string>
+    <string name="change">Change</string>
+    <string name="clear_search_history_message">Remove all saved search terms</string>
+    <string name="clear_search_history_title">Clear Search History</string>
+    <string name="clear_search_history_toast">Search terms have been removed</string>
+    <string name="clip_coupon">Clip Coupon</string>
+    <string name="clip_item">Clip Item</string>
+    <string name="clip_menu_delete_all_coupons">Delete Coupons</string>
+    <string name="clip_menu_delete_all_items">Delete Items</string>
+    <string name="clip_menu_delete_expired_clippings">Delete Expired &amp; Sent</string>
+    <string name="clip_menu_edit_mode">Edit</string>
+    <string name="clipping_cell_coupon_matchup">"Coupon
+Matchup"</string>
+    <string name="clipping_cell_coupons_available"><g example="3" id="number_of_coupons">%d</g> Available</string>
+    <string name="clippings">Clippings</string>
+    <string name="close_drawer">Close Navigation Drawer</string>
+    <string name="com_facebook_choose_friends">Choose Friends</string>
+    <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
+    <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
+    <string name="com_facebook_like_button_liked">Liked</string>
+    <string name="com_facebook_like_button_not_liked">Like</string>
+    <string name="com_facebook_loading">Loading...</string>
+    <string name="com_facebook_loginview_cancel_action">Cancel</string>
+    <string name="com_facebook_loginview_log_in_button">Log in with Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log out</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
+    <string name="com_facebook_logo_content_description">Facebook Logo</string>
+    <string name="com_facebook_nearby">Nearby</string>
+    <string name="com_facebook_picker_done_button_text">Done</string>
+    <string name="com_facebook_placepicker_subtitle_catetory_only_format">%1$s</string>
+    <string name="com_facebook_placepicker_subtitle_format">%1$s • %2$,d were here</string>
+    <string name="com_facebook_placepicker_subtitle_were_here_only_format">%1$,d were here</string>
+    <string name="com_facebook_requesterror_password_changed">Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_permissions">This app doesn’t have permission to do this. To change permissions, try logging into the app again.</string>
+    <string name="com_facebook_requesterror_reconnect">Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_relogin">Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_web_login">Your Facebook account is locked. Please log into www.facebook.com to continue.</string>
+    <string name="com_facebook_tooltip_default">"New! You're in control - choose what info you want to share with apps."</string>
+    <string name="com_facebook_usersettingsfragment_log_in_button">Log in…</string>
+    <string name="com_facebook_usersettingsfragment_logged_in">Logged in</string>
+    <string name="com_facebook_usersettingsfragment_not_logged_in">Not logged in</string>
+    <string name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string name="common_google_play_services_enable_text">"This app won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Get Google Play services</string>
+    <string name="common_google_play_services_install_text_phone">"This app won't run without Google Play services, which are missing from your phone."</string>
+    <string name="common_google_play_services_install_text_tablet">"This app won't run without Google Play services, which are missing from your tablet."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_date_text">The date on the device appears to be incorrect. Please check the date on the device.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"This app won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="correction_notice_title">Correction Notices</string>
+    <string name="correction_notices">Correction Notices</string>
+    <string name="coupon_banner_one">Coupon Matchup</string>
+    <string name="coupon_banner_other">Coupon Matchups</string>
+    <string name="coupon_barcode_title">Barcode</string>
+    <string name="coupon_category_all_deals">All Deals</string>
+    <string name="coupon_category_baby">Baby</string>
+    <string name="coupon_category_grocery">Grocery</string>
+    <string name="coupon_category_health_beauty">Health &amp; Beauty</string>
+    <string name="coupon_category_household">Household</string>
+    <string name="coupon_category_other">Other</string>
+    <string name="coupon_category_pets">Pets</string>
+    <string name="coupon_cell_item_matchup_at">Matchup at</string>
+    <string name="coupon_cell_item_matchup_get_it">Get it for <g example="$3.99" id="final_price">%s</g></string>
+    <string name="coupon_details_print_disclaimer_bottom">Clip it to print later, or print it now.</string>
+    <string name="coupon_details_print_disclaimer_top">This coupon is not valid until printed.</string>
+    <string name="coupon_details_report">Report an incorrect matchup</string>
+    <string name="coupon_details_title_one">Coupon</string>
+    <string name="coupon_details_title_other"><g example="3" id="number_of_coupons">%d</g> Coupons</string>
+    <string name="coupon_details_valid">Valid</string>
+    <string name="coupon_details_valid_from">Valid from</string>
+    <string name="coupon_details_valid_to">to</string>
+    <string name="coupon_details_why_print">Why do I need to print my coupons?</string>
+    <string name="coupon_help">Coupon Help</string>
+    <string name="coupon_item_matchup_label">Coupon Matchups:</string>
+    <string name="coupon_report_confirmation">"Thanks! We're looking into it."</string>
+    <string name="coupon_report_dialog_cancel">Cancel</string>
+    <string name="coupon_report_dialog_message">You are reporting that a coupon matchup is inaccurate or incorrect.</string>
+    <string name="coupon_report_dialog_report">Report</string>
+    <string name="coupon_report_dialog_title">Are you sure?</string>
+    <string name="coupon_retailer_item_matchup_label">See it in the <g example="flyer" name="flyer_alias">%s</g></string>
+    <string name="coupons">Coupons</string>
+    <string name="current_location">Current location</string>
+    <string name="date_to"><g example="Feb 12" id="from_date">%1$s</g> to <g example="Feb 15" id="to_date">%2$s</g></string>
+    <string name="delete">Delete</string>
+    <string name="delete_all_coupons_message">Are you sure you want to delete all coupon clippings?</string>
+    <string name="delete_all_coupons_title">Delete All Coupons</string>
+    <string name="delete_all_items_message">Are you sure you want to delete all item clippings?</string>
+    <string name="delete_all_items_title">Delete All Items</string>
+    <string name="delete_expired_and_sent_message">Are you sure you want to delete all expired and sent clippings?</string>
+    <string name="delete_expired_and_sent_title">Delete Expired and Sent Clippings</string>
+    <string name="disclaimer_complete">Sorry, we are still processing this flyer so search, discounts, and clippings will not be available until later.</string>
+    <string name="disclaimer_price">This flyer may be different than the flyer for your local area. Please check your store for the most accurate flyer.</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+    <string name="email">Email address</string>
+    <string name="ended_date">Ended <g example="Jan 3" id="month">%1$tb %2$td</g></string>
+    <string name="ends_today">Ends today</string>
+    <string name="eula_10_description">"This Agreement constitutes the entire agreement between You and Application Provider and governs Your use of the Licensed Application, thereby superseding and replacing any prior agreements You may have with Application Provider. If any part of this Agreement is held invalid or unenforceable, that portion shall be construed in a manner consistent with applicable law to reflect, as nearly as possible, the original intentions of the parties, and the remaining portions shall remain in full force and effect. Any waiver of any provision of the Agreement will be effective only if in writing and signed by Application Provider. 
+ 
+Your use of the Licensed Application is not intended and shall not be deemed to create any agency, joint venture or other legal relationship of any kind between You and Application Provider. 
+ 
+Headings are inserted for convenience of reference only and shall not affect the construction or interpretation of this Agreement. The term \"including\" or \"include(s)\" shall mean \"including (or includes), but not limited to\". 
+ 
+You may not assign this Agreement to any party without Application Provider's express written permission. Application Provider may assign this Agreement as necessary to provide You the Licensed Application. 
+ 
+This Section 10 shall survive termination of this Agreement."</string>
+    <string name="eula_10_title">10. GENERAL</string>
+    <string name="eula_11_description">All notices required under this Agreement shall be given as follows: (a) in the case of notices to Application Provider, by e-mail to the following address to the attention of General Counsel: legal [at] flipp [dot] com, such notice shall be deemed effective the later of two (2) Business Days after sending such e-mail, or receipt of such e-mail by the General Counsel; and (b) in the case of notices to You, by e- mail to the e-mail address that You provided to Application Provider prior to initiating the download of the Licensed Application, such notice deemed effective the earlier of one (1) day after sending such e- mail, or receipt of such e-mail by You.</string>
+    <string name="eula_11_title">11. NOTICES</string>
+    <string name="eula_12_description">"The provisions below apply to the owner and operator of the operating system (\"OS Provider\") on which this Licensed Application is installed and executed and are in addition to the terms and conditions set out above. In the event that the Licensed Application is installed on Apple Handheld Devices, the OS Provider shall be Apple. In the event that the Licensed Application is installed on Android devices, the OS Provider shall be Google Inc. In the event that the Licensed Application is installed on BlackBerry devices, the OS Provider shall be Blackberry Limited. In the event that the Licensed Application is installed on Windows devices, the OS Provider shall be Microsoft Corporation. 
+ 
+12.1 You acknowledge and agree that OS Provider has no obligation whatsoever to furnish any maintenance and support services with respect to the Licensed Application. Please note that pursuant to Section 7.1, the Licensed Application is provided \"as-is\". 
+ 
+12.2 You acknowledge and agree that, to the maximum extent permitted by applicable law, OS Provider has no warranty obligation with respect to the Licensed Application. Subject to Section 7.1, any warranty obligations shall be the responsibility of the Application Provider. In the event that Application Provider fails to conform to any applicable warranty obligations, You shall notify OS Provider and OS Provider will refund the purchase price, if any, for the Licensed Application. 
+ 
+12.3 You acknowledge and agree that OS Provider is not responsible for addressing any claims relating to the Licensed Application or your possession and/or use of the Licensed Application, including: (i) product liability claims; (ii) any claim that the Licensed Application fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection or similar legislation. Please note the limitation of liability in Section 7.2. 
+ 
+12.4 You acknowledge and agree that OS Provider is not responsible for any third-party infringement claims that the Licensed Application or your possession and use of the Licensed Application infringe a third party's intellectual property rights. Please note the limitation of liability in Section 7.2. 
+ 
+12.5 You acknowledge and agree that OS Provider and its Affiliates are third party beneficiaries of this Agreement, and that Your acceptance of this Agreement constitutes Your acceptance that OS Provider and its Affiliates will have the right to enforce the terms of this Agreement against You as a third party beneficiary thereof. Please note additional third party beneficiaries of this Agreement in Section 4.2. 
+ 
+This Section 12 shall survive termination of this Agreement."</string>
+    <string name="eula_12_title">12. OPERATING SYSTEM PROVIDER</string>
+    <string name="eula_1_description">"\"Affiliate\" means, with respect to an entity, any person or entity that directly or indirectly owns, is owned by, or is under common ownership with that entity. For purposes of this definition, ownership means control of more than a 50% interest in an entity. 
+ 
+\"Agreement\" means this Licensed Application End-User License Agreement. 
+ 
+\"App Store Terms and Conditions\" means the terms and conditions found at www.apple.com regarding the use of the App Store as provided by Apple. 
+ 
+\"App Store Usage Rules\" has the meaning set out in Section 2. 
+ 
+\"Apple\" means Apple Inc. 
+ 
+\"Apple Handheld Devices\" means Apple's iPhone, iPod touch, iPad and any other handheld devices made by or to be made by Apple. 
+ 
+\"Application Content\" has the meaning set out in Section 4. 
+ 
+\"Application Provider\" means Flipp Corporation, the owner and operator of the Licensed Application and the licensor of this Licensed Application, having its principal offices at 3250 Bloor Street West, Suite 1200, Toronto, Ontario, M8X 2X9. 
+ 
+\"Business Day\" means every day except Saturdays, Sundays and statutory holidays in the Province of Ontario, during business hours between 9AM and 5PM Eastern Standard Time. 
+ 
+\"Content Rightsholder\" has the meaning set out in Section 4. 
+ 
+\"Feedback\" has the meaning set out in Section 3. 
+ 
+\"License\" has the meaning set out in Section 2. 
+ 
+\"Licensed Application\" means this application, and the service performed or provided by this application, that is delivered to You hereunder, together with any Update. 
+ 
+\"Update\" means any improvements, modifications, enhancements, fixes, updates, upgrades and future versions of the Licensed Application. 
+ 
+\"Usage Rules\" has the meaning set out in Section 2."</string>
+    <string name="eula_1_title">1. DEFINITIONS</string>
+    <string name="eula_2_description_1">"Subject to the terms and conditions of this Agreement, You are granted a limited, revocable, non- exclusive, non-transferable, and non-sublicensable license to use the Licensed Application for personal and non-commercial use provided that You keep all copyright, trademark, patent and other proprietary notice intact (\"License\") and to install and use the Licensed Application as permitted herein. 
+ 
+You may not (\"Usage Rules\"):"</string>
+    <string name="eula_2_description_2">"- Use, or otherwise permit the use of, the Licensed Application on any mobile device that You do not own or control; 
+ 
+- Distribute or make the Licensed Application available over a network where it could be used by multiple devices at the same time; 
+ 
+- Rent, lease, assign, sell, redistribute, sublicense, transfer or otherwise grant rights in the Licensed Application to any third party; 
+ 
+- Violate, circumvent, reverse-engineer, decompile, disassemble or otherwise tamper with the security of the Licensed Application; 
+ 
+- Copy, emulate, attempt to derive the source code of, modify, or create derivative works of the Licensed Application; 
+ 
+- Republish, post, transmit, distribute or otherwise make available the Application Content on any Internet, Intranet or Extranet site/application; 
+ 
+- Incorporate, merge, combine or otherwise include the Application Content in any database, compilation or other storage means; 
+ 
+- Use the Licensed Application in any commercial product or services; 
+ 
+- Download, copy, capture, scrape or otherwise obtain the Application Content not otherwise expressly permitted through the Licensed Application; or 
+ 
+- Modify, change, mutilate or otherwise alter the Application Content."</string>
+    <string name="eula_2_description_3">"If the Licensed Application is installed on Apple Handheld Devices that you own or control, Your use of the Licensed Application is also subject to the usage rules section in the App Store Terms and Conditions (\"App Store Usage Rules\"). Any conflicts between the Usage Rules and App Store Usage Rules shall be resolved in favour of the App Store Usage Rules. 
+ 
+Any use or installation outside of the scope of the License is a violation of the rights of the Application Provider and its licensors. If You breach this restriction, Application Provider will terminate this License granted herein and You may be subject to prosecution and damages. Such unauthorized use may also violate applicable laws, including copyright and trademark laws and applicable communications regulations and statutes. Unless explicitly stated herein, nothing in this Agreement shall be construed as conferring any license to intellectual property rights, whether by implication or otherwise. 
+ 
+The terms of this Agreement will govern any Update provided by Application Provider, unless such Update is accompanied by a separate license in which case the terms of that license will govern. You may be required to enter into an updated version of this Agreement to be able to download or otherwise take advantage of the Update."</string>
+    <string name="eula_2_title">2. SCOPE OF LICENSE AND LICENSE RESTRICTIONS</string>
+    <string name="eula_3_description">"You are not obligated to provide any suggestions, comments, or other feedbacks (\"Feedback\") to the Application Provider. By providing any such Feedback, You hereby sell, assign and transfer all rights, titles and interests in the Feedback to the Application Provider and waive all moral rights in the Feedback. You agree to execute any document to confirm and give effect to such sale, assignment, transfer and/or waiver. 
+ 
+You represent that the Feedback You provide to Application Provider is entirely without obligation or restriction of any kind on account of intellectual property rights or otherwise, and that the Feedback complies with this Agreement. You further represent that the Feedback will not cause injury to any person or entity and that it will not contain any harmful, threatening, unlawful, defamatory, infringing, abusive, inflammatory, harassing, vulgar, obscene, fraudulent, invasive of privacy or publicity rights, hateful, or racially, ethnically or otherwise objectionable content. 
+ 
+Notwithstanding anything in this Section 3, Application Provider shall have no obligation: (i) to display, maintain or use the Feedback in any way; (ii) to keep Your Feedback confidential; or (iii) to notify You that Application Provider has resolved, used, licensed, sub-licensed, assigned, transferred, disclosed or otherwise used the Feedback. 
+ 
+If You do not agree with this Section 3, do not send us any Feedback."</string>
+    <string name="eula_3_title">3. SUGGESTIONS, COMMENTS AND FEEDBACK</string>
+    <string name="eula_4_description">"This Licensed Application contains proprietary materials, including images, marks, links, texts, illustrations, pictures, designs, music clips, video clips, graphics, photographs, logos, page headers, buttons, icons, scripts, domain names, service names, and trade names, some of which may have been provided by one or more third parties (\"Third Party Content\", and all materials collectively, \"Application Content\"). Such Application Content is provided \"as-is\" and You agree that Application Provider, or the creator/owner/licensor of the Third Party Content (the \"Content Rightsholder\"), is not responsible for examining, reviewing, evaluating or verifying the accuracy, validity or completeness of such content. You agree not to use the Application Content in any manner that would infringe or violate the rights of any other party. 
+ 
+4.1 Objectionable Material: You acknowledge and agree that by using the Licensed Application, You may encounter Application Content that may be deemed offensive, indecent, violent, objectionable, or otherwise inappropriate, as judged by You or others. Nevertheless, You agree to use the Licensed Application at Your sole risk and that Application Provider or the Content Rightsholder shall have no liability to You for Application Content that may be found as such. 
+ 
+4.2 Content Rightsholder: You acknowledge and agree that Content Rightsholder and its Affiliates are third party beneficiaries of this Agreement, and that Your acceptance of this Agreement constitutes Your acceptance that Content Rightsholder and its subsidiaries will have the right to enforce the terms of this Agreement against You as a third party beneficiary thereof. 
+ 
+4.3 Survival: This Section 4 shall survive termination of this Agreement."</string>
+    <string name="eula_4_title">4. APPLICATION CONTENT</string>
+    <string name="eula_5_description">"You agree that Application Provider may collect and use data in connection with the provision of the Licensed Application, including, the collection and use of (i) user data (such as shopping behavior and geo-location) pertaining to Your use of the Licensed Application, and (ii) technical data and related information, including technical information about Your device, system, application software and peripherals. All such collection and use are governed by its privacy policy (https://corp.flipp.com/privacy) as updated from time to time. 
+ 
+No information collected through the Licensed Application shall be used to uniquely identify Your device. Unless expressly provided by You (e.g. Your subscription), no information collected through the Licensed Application shall be used to personally identify you. 
+ 
+This Section 5 shall survive termination of this Agreement."</string>
+    <string name="eula_5_title">5. CONSENT TO COLLECT AND USE DATA</string>
+    <string name="eula_6_description">"The License is effective until terminated by You or Application Provider. Your rights under this License will terminate automatically without notice from the Application Provider if You fail to comply with any term(s) of this Agreement. Upon termination of the License, You shall cease all use of the Licensed Application, and destroy all copies, full or partial, of the Licensed Application and any information permissibly downloaded or otherwise properly obtained from the Licensed Application. 
+ 
+Application Provider may in its sole discretion and at any time discontinue or modify the provision of the Licensed Application, or any part thereof, with or without notice. You agree that any termination of Your access to the Licensed Application under any provision of this Agreement may be effected without prior notice. 
+ 
+Upon termination of this Agreement, all provisions indicated herein as surviving termination of this Agreement shall remain in full force and effect."</string>
+    <string name="eula_6_title">6. TERMINATION AND MODIFICATION</string>
+    <string name="eula_7_description">"In this Section 7, the term \"Application Provider\" includes its, its Affiliates' and its licensees' employees, officers, directors, agents, and contractors. 
+ 
+7.1 No Warranties: TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSED APPLICATION (INCLUDING APPLICATION CONTENT) IS PROVIDED \"AS IS\". YOUR USE OF THE LICENSED APPLICATION IS AT YOUR SOLE RISK WITH NO WARRANTIES (INCLUDING IMPLIED, EXPRESS OR STATUTORY) WHATSOEVER. FOR CLARITY, APPLICATION PROVIDER MAKES NO REPRESENTATIONS OR WARRANTIES WITH RESPECT TO ITS ACCURACY, VALIDITY OR COMPLETENESS OF THE APPLICATION CONTENT, OR WHETHER THE PERMITTED USE OF THE APPLICATION CONTENT INFRINGES THE RIGHTS OF ANY THIRD PARTY, INCLUDING INTELLECTUAL PROPERTY RIGHTS. 
+ 
+7.2 Limitation of Liability: TO THE MAXIMUM EXTENT PERMITTED BY LAW, APPLICATION PROVIDER SHALL HAVE NO LIABILITY TO YOU FOR PERSONAL INJURY, PRODUCT CLAIM (INCLUDING PRODUCT LIABILITY CLAIMS, ANY CLAIM THAT THE LICENSED APPLICATION FAILS TO CONFORM TO ANY APPLICABLE LEGAL OR REGULATORY REQUIREMENT, AND CLAIMS ARISING UNDER CONSUMER PROTECTION OR SIMILAR LEGISLATION) OR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES WHATSOEVER, IN CONNECTION WITH OR ARISING FROM YOUR USE OF (OR INABILITY TO USE) THE LICENSED APPLICATION, HOW EVER SUCH DAMAGES WERE CAUSED, EVEN IF APPLICATION PROVIDER HAS BEEN NOTIFIED OF THE POSSIBILITY OF SUCH DAMAGES, AND REGARDLESS OF THE THEORY OF LIABILITY (TORT (INCLUDING NEGLIGENCE AND MISCONDUCT), CONTRACT, STRICT LIABILITY OR OTHERWISE). ANY LIABILITY OF THE APPLICATION PROVIDER NOT LIMITED BY THIS SECTION 7.2, BUT TO THE EXTENT NOT PROHIBITED BYLAW, APPLICATION PROVIDER'S TOTAL LIABILITY TO YOU FOR ALL DAMAGES SHALL BE LIMITED TO FIFTY DOLLARS ($50.00). THE FOREGOING LIMITATIONS SHALL APPLY EVEN IF IT FAILS ITS ESSENTIAL PURPOSE. 
+ 
+7.3 Indemnity: You agree to indemnify, defend and hold harmless Application Provider and its Affiliates, directors, officers, employees, contractors, representatives, licensors and licensees, from any damages, losses, costs and expenses (including legal fees), incurred in connection with or arising from Your use of the Licensed Application and/or breach of or misrepresentation under this Agreement. Application Provider reserves the right, at its own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by You hereunder, and You shall cooperate fully as reasonably required by Application Provider. 
+ 
+This Section 7 shall survive termination of this Agreement."</string>
+    <string name="eula_7_title">7. EXCLUSION OF WARRANTIES; LIMITATION OF LIABILITIES; INDEMNITIES</string>
+    <string name="eula_8_description">"You may not use or otherwise export or re-export the Licensed Application except as authorized by United States law and the laws of the jurisdiction in which the Licensed Application was obtained. In particular, but without limitation, the Licensed Application may not be exported or re-exported (a) into any U.S. embargoed countries or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Department of Commerce Denied Person's List or Entity List. By using the Licensed Application, You represent and warrant that You are not located in any such country or on any such list. You also agree that You will not use the Licensed Application for any purposes prohibited by United States law, including the development, design, manufacture or production of nuclear, missiles, or chemical or biological weapons."</string>
+    <string name="eula_8_title">8. LEGAL COMPLIANCE</string>
+    <string name="eula_9_description">"This Agreement and Your use of the Licensed Application shall be governed and construed in accordance with the laws of the province of Ontario and the federal laws of Canada applicable therein, excluding the application of any rule or principal of conflict of law that might otherwise refer construction, interpretation, or the resolution of any dispute to the laws of another jurisdiction. Where any dispute arises from this Agreement, including a breach of this Agreement, both parties agree not to bring any legal action against the other party in any jurisdiction except in the province of Ontario, in particular the courts located in Toronto, Ontario. With respect to matters that are exclusively the jurisdiction of the Federal Courts, both parties agree to adjudicate the matter in Toronto, Ontario. 
+ 
+This Section 9 shall survive termination of this Agreement."</string>
+    <string name="eula_9_title">9. GOVERNING LAW</string>
+    <string name="eula_description">"*If You are an individual, this Licensed Application is only available if You are 13 years or older. If You are 13 years or older but under the age of 18, You should review this Agreement with Your parent or guardian to make sure that You and Your parent or guardian understand it. 
+ 
+Your use of the Licensed Application is subject to the terms and conditions as laid out below, and updated from time to time by Application Provider in its sole discretion without further notice (the \"Agreement\"). Any updates to this Agreement, along with the date on which it was last updated, will be accessible through the Licensed Application. If applicable, this Agreement may also be accessible through the app store from which you downloaded the Licensed Application. 
+ 
+Please review carefully as it contains important information regarding Your legal rights, remedies and obligations, including limitation and exclusion clauses, in connection with the use of this Licensed Application. By accessing, browsing, subscribing, accepting, or otherwise using this Licensed Application, You agree to be unconditionally bound by and to follow the terms and conditions of this Agreement. In the event of any update to this Agreement, Your continued use of the Licensed Application after any such updates constitutes Your acceptance of the revised Agreement. 
+ 
+IF YOU DO NOT AGREE TO THIS AGREEMENT, YOU MAY NOT USE THIS LICENSED APPLICATION."</string>
+    <string name="eula_last_updated">Last Updated: August 31, 2015</string>
+    <string name="eula_title">LICENSED APPLICATION END-USER LICENSE AGREEMENT</string>
+    <string name="favorites">Favorites</string>
+    <string name="featured_item">Featured item</string>
+    <string name="features">Features</string>
+    <string name="filter_alphabetical">Alphabetical</string>
+    <string name="filter_featured">Featured</string>
+    <string name="filter_latest">Latest</string>
+    <string name="find_deals">Find Deals</string>
+    <string name="find_flyers_error">An error occurred while fetching flyers. Please try again.</string>
+    <string name="flyer">flyer</string>
+    <string name="flyer_info_title">Information</string>
+    <string name="flyers">flyers</string>
+    <string name="geolocate">Locate Me</string>
+    <string name="geolocation_error">We were unable to find your postal code from your location.</string>
+    <string name="help_1">Welcome to Flipp. Savings in your pocket. Swipe left to begin.</string>
+    <string name="help_1_swipe_left">Swipe left to begin</string>
+    <string name="help_call_to_action">Enter your ZIP/postal code so we can find the right <g example="flyers" id="flyer_alias">%s</g> and coupons.</string>
+    <string name="hero_cell_coupon_price_label">Coupon</string>
+    <string name="hero_cell_current_price_label">Current Price</string>
+    <string name="hero_cell_discount_price_label">Discount</string>
+    <string name="hero_cell_final_price_label">Get it for</string>
+    <string name="hero_cell_original_price_label">Regular Price</string>
+    <string name="history_header">History</string>
+    <string name="hold_to_see_details_tutorial">Tap + hold to see details</string>
+    <string name="how_to_use_coupon_answer">Once your coupons have been printed, simply bring your coupons to checkout at your favorite retailer to redeem. For details on restrictions, please read the fine print on each of your coupons.</string>
+    <string name="how_to_use_coupon_question">How do I use my coupons?</string>
+    <string name="in_store_only">IN-STORE ONLY</string>
+    <string name="info_error_failure">Unable to find information for this <g example="flyer" id="flyer">%1$s</g>"
+Please try again later"</string>
+    <string name="info_geo_off_no_stores">No stores were found. Turning on location services may show better results</string>
+    <string name="info_geo_off_with_stores">Location services are currently disabled. This store is the closest store to your postal code.</string>
+    <string name="info_geo_on_no_location">We were unable to find your location. Please ensure that your system Location Services settings allow the use of Wi-Fi and cellular networks. This store is the closest store to your postal code.</string>
+    <string name="info_no_info_available">No additional information is available for this <g example="flyer" id="flyer">%1$s</g></string>
+    <string name="item_details_title">Item Details</string>
+    <string name="item_sku">SKU: <g example="12313141" id="sku">%1$s</g></string>
+    <string name="item_valid_from">VALID FROM <g example="Tuesday, January 4th" id="date">%1$s</g></string>
+    <string name="item_valid_from_to_1">VALID <g example="Tuesday, January 4th" id="from_date">%1$s</g></string>
+    <string name="item_valid_from_to_2">to <g example="Tuesday, January 4th" id="to_date">%1$s</g></string>
+    <string name="item_valid_until">VALID UNTIL <g example="Tuesday, January 4th" id="date">%1$s</g></string>
+    <string name="items_loading">Items are still loading</string>
+    <string name="items_over_percent_off_zero" formatted="false">Nothing over <g example="10%" id="percent_off">%d%%</g> off</string>
+    <string name="keep_search_history_message">Allow Flipp to remember your search terms</string>
+    <string name="keep_search_history_title">Keep Search History</string>
+    <string name="license">License</string>
+    <string name="license_agreement">License Agreement</string>
+    <string name="loading_video">Loading video...</string>
+    <string name="menu_details">Details</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="merchant_coupon_only_valid">Only valid at</string>
+    <string name="nearby_stores_one">Store Closest to You</string>
+    <string name="nearby_stores_other">Store Closest to You</string>
+    <string name="no">No</string>
+    <string name="no_clippings">You have no clippings</string>
+    <string name="no_clippings_hint">Tap on an item to clip it.</string>
+    <string name="no_coupons">No coupons found</string>
+    <string name="no_coupons_hint">Pull down to refresh or try a different location.</string>
+    <string name="no_favorites">You have no favorites</string>
+    <string name="no_favorites_hint">"Favorite a store by tapping on a flyer's heart icon."</string>
+    <string name="no_favorites_results">There are no flyers for your favorite merchants.</string>
+    <string name="no_flyers">No flyers found</string>
+    <string name="no_flyers_hint">Pull down to refresh or try a different location.</string>
+    <string name="no_items">No Items</string>
+    <string name="no_items_yet">No items yet</string>
+    <string name="no_search_results">No results found</string>
+    <string name="no_search_results_hint">Try another search term.</string>
+    <string name="no_search_results_param">No results found for <g example="chicken" id="quoted_search_term">‘%s’</g></string>
+    <string name="no_search_results_request">Looking for a store? Help improve Flipp!</string>
+    <string name="no_search_results_request_done">"Thanks, we're on it!"</string>
+    <string name="no_search_results_request_param">Request <g example="chicken" id="quoted_search_term">‘%s’</g></string>
+    <string name="not_clippable_yet">This flyer is not clippable</string>
+    <string name="notify_me_of_store">Notify me when this store is added</string>
+    <string name="num_favorite_flyers_one">Flyers for your favorite store</string>
+    <string name="num_favorite_flyers_other">Flyers for your <g example="3" id="num_flyers">%d</g> favorite stores</string>
+    <string name="num_sales_zero">No Sales</string>
+    <string name="onboarding_1_shopping_list">Plan your purchases with the shopping list</string>
+    <string name="onboarding_2_clippings">Clip what you want to buy</string>
+    <string name="onboarding_3_search">Search to find specific flyers, items and coupons</string>
+    <string name="onboarding_4_coupons">Coupon matchups bring you the most savings</string>
+    <string name="only_select_stores">This <g example="flyer" id="flyer">%1$s</g> applies only to select stores</string>
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="prices_not_available">Prices not available yet</string>
+    <string name="print_clipped_coupons">Clipped Coupons</string>
+    <string name="print_coupon">Print Coupon</string>
+    <string name="print_coupons">Print Coupons</string>
+    <string name="print_email_description">"Send the selected coupons to your desktop computer to print. If you don't receive your coupons, please check your junk or spam folder."</string>
+    <string name="print_email_hint">Enter your email address</string>
+    <string name="print_email_label">Email address</string>
+    <string name="print_matched_coupons">Matched Coupons</string>
+    <string name="print_selected_coupons"><g example="2" id="number_of_coupons">%s</g> Selected</string>
+    <string name="print_sent_coupons">Sent Coupons</string>
+    <string name="print_tutorial_print">2. Print</string>
+    <string name="print_tutorial_redeem">3. Redeem</string>
+    <string name="print_tutorial_send">1. Send</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="refresh">Refresh</string>
+    <string name="removed_from_clippings">Removed from Clippings</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+    <string name="request_a_store">Request a Store</string>
+    <string name="reviews"><g example="3" id="review_count">%d</g> Reviews</string>
+    <string name="reviews_average">Average</string>
+    <string name="sale_story_buy_x_get">BUY <g example="1" id="x">%s</g> GET</string>
+    <string name="sale_story_buy_x_get_y" formatted="false">BUY <g example="1" id="x">%s</g> GET <g example="1" id="y">%s</g></string>
+    <string name="sale_story_free">FREE</string>
+    <string name="sale_story_off">OFF</string>
+    <string name="sale_story_off_amount"><g example="30" id="amount">%s</g></string>
+    <string name="sale_story_save">SAVE</string>
+    <string name="search">Search</string>
+    <string name="search_hint_coupons">Search coupons</string>
+    <string name="search_hint_flyers">Search flyers</string>
+    <string name="select_stores_one">Store For This <g example="flyer" id="flyer">%1$s</g> (<g id="postal_code">%2$s</g>)</string>
+    <string name="select_stores_other">Stores For This <g example="flyer" id="flyer">%1$s</g> (<g id="postal_code">%2$s</g>)</string>
+    <string name="send">Send</string>
+    <string name="send_coupons_failed_toast">"Failed to send coupons,
+please try again"</string>
+    <string name="send_coupons_no_email_toast">Please enter your e-mail</string>
+    <string name="send_me_updates">Send me other updates about Flipp</string>
+    <string name="sending_coupons_toast">Sending Coupons…</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="shared_from_flipp">Shared from Flipp in the <g example="Walmart" id="merchant">%1$s</g> flyer <g example="http://flipp.com" id="url">%2$s</g></string>
+    <string name="shop_list_delete_all">Delete all</string>
+    <string name="shop_list_delete_checked">Delete Checked</string>
+    <string name="shop_list_edit">Edit</string>
+    <string name="shop_list_edit_mode">Edit List</string>
+    <string name="shop_list_my_list">My List</string>
+    <string name="shop_list_popular_items">Popular Items</string>
+    <string name="shop_list_search_count_suffix_one">DEAL</string>
+    <string name="shop_list_search_count_suffix_other">DEALS</string>
+    <string name="shop_list_search_count_suffix_zero">DEALS</string>
+    <string name="shop_list_uncheck_all">Uncheck All</string>
+    <string name="shopping_list">Shopping List</string>
+    <string name="shopping_list_popup_added">Added!</string>
+    <string name="shopping_list_popup_title">Add to your shopping list?</string>
+    <string name="show_barcode">Show Barcode</string>
+    <string name="show_coupon_one">1 coupon</string>
+    <string name="show_coupon_other"><g example="12" id="number_of_coupons">%d</g> coupons</string>
+    <string name="show_coupon_zero">No coupons</string>
+    <item type="string" name="spb_default_speed">1.0</item>
+    <string name="specifications">Specifications</string>
+    <string name="starts_on_date">Starts <g example="January 3" id="month">%1$tb %2$td</g></string>
+    <string name="starts_on_day">Starts <g example="Monday" id="day_of_week">%tA</g></string>
+    <string name="starts_today">Starts today</string>
+    <string name="starts_tomorrow">Starts tomorrow</string>
+    <string name="store_name">Store name</string>
+    <string name="store_request_sent">Thanks for the store request!</string>
+    <string name="tutorial_after_clipping_description_1_regular">"You've clipped this item plus its
+"</string>
+    <string name="tutorial_after_clipping_description_2_bold">coupon matchups</string>
+    <string name="tutorial_coupon_badge_description_1_regular">"We've "</string>
+    <string name="tutorial_coupon_badge_description_2_bold">"found coupon matchups
+"</string>
+    <string name="tutorial_coupon_badge_description_3_regular">for items in this flyer</string>
+    <string name="tutorial_coupon_matchup_description_1_regular">"We've found "</string>
+    <string name="tutorial_coupon_matchup_description_2_bold">"coupon matchups
+"</string>
+    <string name="tutorial_coupon_matchup_description_3_regular">"for items you've searched"</string>
+    <string name="tutorial_cross_browse_description_1_regular">Swipe up to </string>
+    <string name="tutorial_cross_browse_description_2_bold">see the next flyer</string>
+    <string name="tutorial_ok">OK, got it!</string>
+    <string name="tutorial_print_coupon_description_1_bold">Simply print your coupons </string>
+    <string name="tutorial_print_coupon_description_2_regular">"to
+save more in store"</string>
+    <string name="tutorial_reverse_matchup_description_1_regular">"We find new coupon matchups
+for you "</string>
+    <string name="tutorial_reverse_matchup_description_2_bold">every single day</string>
+    <string name="tutorial_tap_to_click_description_1_regular">Tap an item to </string>
+    <string name="tutorial_tap_to_click_description_2_bold">clip it</string>
+    <string name="twitter_username">Twitter Username</string>
+    <string name="unclip_coupon">Unclip Coupon</string>
+    <string name="unclip_item">Unclip Item</string>
+    <string name="until_date">Until <g example="Jan 3" id="month">%1$tb %2$td</g></string>
+    <string name="until_day">Until <g example="Monday" id="day_of_week">%tA</g></string>
+    <string name="until_tomorrow">Until tomorrow</string>
+    <string name="was_price">Was</string>
+    <string name="weekly_ad">weekly ad</string>
+    <string name="weekly_ads">weekly ads</string>
+    <string name="why_print_coupon_answer">Manufacturers determine how their coupons are distributed, which is commonly through printing. In order for Flipp to bring you as many coupons as possible, they must be printed to be redeemed at your local retailers.</string>
+    <string name="why_print_coupon_question">Why do I need to print my coupons?</string>
+    <string name="yes">Yes</string>
+    <string name="you_have_reached_max_items">Your shopping list is full</string>
+    <string name="your_clippings">Your Clippings</string>
+    <string name="zero_case_print_label_1">You have no coupons to print</string>
+    <string name="zero_case_print_label_2">There are many ways to discover coupons!</string>
+    <string name="zero_case_print_tutorial_label_1">Browse or search our coupons to find the best savings</string>
+    <string name="zero_case_print_tutorial_label_2">"Clip an item and we'll find matching coupons for you"</string>
+    <string name="zero_send_coupons_toast">Please select at least one coupon</string>
+    <string name="zip_postal_code">Zip/Postal</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/top_layout" android:visibility="gone" android:layout_width="fill_parent" style="@style/ItemView.TopScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Letterbox">
+            <include layout="@layout/item_header_thumbnail" />
+            <TextView android:text="@string/leave_feedback" style="@style/ItemView.Header" />
+            <com.ebay.android.widget.ContainerLayout style="@style/ItemView.ContainerLayout">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/checkoutSmallMargin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioGroup android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/feedback_type" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:id="@id/positive_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMarginHalf" android:text="@string/positive" />
+                        <RadioButton android:id="@id/neutral_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMarginHalf" android:text="@string/neutral" />
+                        <RadioButton android:id="@id/negative_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMarginHalf" android:text="@string/negative" />
+                    </RadioGroup>
+                    <include layout="@layout/card_horizontal_divider" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/edd_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/ebayTextSizeSmall" android:id="@id/edd_question_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <RadioGroup android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/edd_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <RadioButton android:id="@id/edd_affirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" />
+                            <RadioButton android:id="@id/edd_deny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no" />
+                        </RadioGroup>
+                        <include layout="@layout/card_horizontal_divider" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/rating_1" style="@style/ItemView.RatingLayout">
+                        <TextView android:id="@id/TextViewAccurateDescription" android:text="@string/accurate_description" style="@style/ItemView.RatingText" />
+                        <com.ebay.mobile.common.eBayRating android:id="@id/description_rating" ebay:threshold="3" style="@style/ItemView.RatingStars" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/rating_2" style="@style/ItemView.RatingLayout">
+                        <TextView android:id="@id/TextViewSellerCommunication" android:text="@string/seller_communication" style="@style/ItemView.RatingText" />
+                        <com.ebay.mobile.common.eBayRating android:id="@id/communication_rating" ebay:threshold="0" style="@style/ItemView.RatingStars" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/rating_3" style="@style/ItemView.RatingLayout">
+                        <TextView android:id="@id/TextViewShippingSpeed" android:text="@string/shipping_speed" style="@style/ItemView.RatingText" />
+                        <com.ebay.mobile.common.eBayRating android:id="@id/ship_speed_rating" ebay:threshold="1" style="@style/ItemView.RatingStars" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/rating_4" style="@style/ItemView.RatingLayout">
+                        <TextView android:id="@id/TextViewReasonableShipping" android:text="@string/reasonable_shipping_cost" style="@style/ItemView.RatingText" />
+                        <com.ebay.mobile.common.eBayRating android:id="@id/ship_cost_rating" ebay:threshold="0" style="@style/ItemView.RatingStars" />
+                    </LinearLayout>
+                    <EditText android:textSize="@dimen/ebayTextSize" android:id="@id/feedback_comment" android:paddingLeft="@dimen/checkoutMediumMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin" android:hint="@string/enter_feedback" android:singleLine="true" android:maxLength="80" android:inputType="textCapSentences|textAutoCorrect" android:imeOptions="actionNone" />
+                    <TextView android:textSize="@dimen/ebayTextSizeSmall" android:textColor="?android:textColorPrimary" android:id="@id/characters_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkoutMediumMargin" />
+                    <Button android:layout_gravity="center" android:id="@id/leave_feedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/leave_feedback" style="?android:attr/buttonStyleSmall" />
+                </LinearLayout>
+            </com.ebay.android.widget.ContainerLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/common_translucent_progress" />
+    <include layout="@layout/common_error" />
+</merge>

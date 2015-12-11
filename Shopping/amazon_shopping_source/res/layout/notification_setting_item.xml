@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_zero" android:paddingBottom="@dimen/padding_zero" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item_text_block" android:paddingTop="@dimen/padding_zero" android:paddingBottom="@dimen/padding_zero" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/dialog_item_text_size" android:textColor="@color/gray_dark_text" android:id="@id/item_name" android:paddingLeft="@dimen/padding_double" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/gray_text" android:id="@id/item_description" android:paddingLeft="@dimen/padding_double" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <com.amazon.mShop.ui.AmazonSwitchWidget android:layout_gravity="center_vertical" android:id="@id/item_checkbox" android:paddingTop="@dimen/padding_one_and_a_half" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_one_and_a_half" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+    <TextView android:textSize="@dimen/dialog_item_text_size" android:textColor="@color/gray_dark_text" android:id="@id/sign_in_to_view" android:paddingLeft="@dimen/padding_double" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/notification_sign_in_to_view_shipment_notifications" style="@style/ArrowSelector.GrayTextColorLink" />
+</LinearLayout>

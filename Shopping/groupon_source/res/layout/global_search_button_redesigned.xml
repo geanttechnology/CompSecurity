@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tool_bar_icons" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <include layout="@layout/shopping_cart_actionbar_button_with_indicator" />
+        <include layout="@layout/in_app_messages_actionbar_button" />
+    </LinearLayout>
+    <include android:id="@id/global_search_bar" android:layout_width="fill_parent" android:layout_height="@dimen/lollipop_search_bar_height" android:layout_marginRight="@dimen/lollipop_search_bar_margin_right" android:layout_toLeftOf="@id/tool_bar_icons" android:layout_centerVertical="true" layout="@layout/search_bar" />
+</RelativeLayout>

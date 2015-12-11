@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_bottom_bar_white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/top_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" style="@style/bottom_bar_text" />
+    <com.groupon.view.SpinnerButton android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/primary_action_button" />
+    <com.groupon.view.BuyWithGoogleButton android:id="@id/buy_with_google" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/bottom_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/secure_connection" android:drawableLeft="@drawable/lock" android:drawablePadding="5.0dip" style="@style/bottom_bar_text" />
+</LinearLayout>

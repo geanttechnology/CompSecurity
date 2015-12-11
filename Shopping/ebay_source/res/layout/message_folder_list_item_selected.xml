@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/list_item_activated_background" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/selection" android:padding="8.0dip" android:focusable="false" android:layout_width="@dimen/clickableButtonDimen" android:layout_height="@dimen/clickableButtonDimen" />
+    <com.ebay.mobile.widget.UserThumbnail android:id="@id/user_image" android:layout_width="64.0dip" android:layout_height="64.0dip" ebay:borderWidth="@dimen/thumbnailBorderWidth" ebay:borderColor="?thumbnailBorderColor" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/style_guide_red" android:id="@id/high_priority" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/messages_high_p_excl" />
+        <TextView android:textSize="@dimen/ebayTextSizeSmall" android:textColor="@android:color/white" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/ebayTextSizeMedium" android:textColor="@android:color/white" android:gravity="left" android:id="@id/sender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/datetime" android:layout_toRightOf="@id/high_priority" />
+        <ImageView android:id="@id/flagged" android:clickable="true" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_flag_sm_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/replied" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_replied_white" android:layout_toLeftOf="@id/flagged" android:layout_alignParentBottom="true" />
+        <View android:id="@id/flag_click_zone" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_flag_sm_white" android:lines="2" android:layout_toLeftOf="@id/replied" android:layout_below="@id/sender" />
+    </RelativeLayout>
+</LinearLayout>

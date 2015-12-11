@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/prd_plp_pick_up" android:visibility="gone" android:layout_width="@dimen/prd_plp_fulfillment_width_height" android:layout_height="@dimen/prd_plp_fulfillment_width_height" android:src="@drawable/product_store_on" android:layout_weight="1.0" android:contentDescription="@string/product_list_pick_up_fulfillment" style="@style/PlpFulfillmentImageView.Selectable" />
+    <ImageView android:id="@id/prd_plp_ship_me" android:visibility="gone" android:layout_width="@dimen/prd_plp_fulfillment_width_height" android:layout_height="@dimen/prd_plp_fulfillment_width_height" android:src="@drawable/product_online_on" android:layout_weight="1.0" android:contentDescription="@string/product_list_ship_it_fulfillment" style="@style/PlpFulfillmentImageView.Selectable" />
+    <ImageView android:id="@id/prd_plp_add_to_list" android:visibility="gone" android:layout_width="@dimen/prd_plp_fulfillment_width_height" android:layout_height="@dimen/prd_plp_fulfillment_width_height" android:src="@drawable/icon_list_add" android:layout_weight="1.0" android:contentDescription="@string/add_to_list" style="@style/PlpFulfillmentImageView.Selectable" />
+    <com.target.ui.view.AisleBadgeView android:layout_gravity="center_vertical" android:id="@id/prd_plp_aisle_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:badgeType="active" app:badgeSize="small" />
+</merge>

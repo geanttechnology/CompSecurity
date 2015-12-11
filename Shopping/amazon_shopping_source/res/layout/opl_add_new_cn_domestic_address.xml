@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:shrinkColumns="0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/opl_error_text" android:paddingBottom="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Error" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_address_name" />
+    <EditText android:id="@id/opl_address_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_address_street" />
+    <EditText android:id="@id/opl_address_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" />
+    <Button android:textColor="@color/gray_text" android:gravity="left|center" android:id="@id/opl_address_province_city_district" android:text="@string/opl_new_address_state" style="@style/AmazonSpinnerStyle" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_address_zip" />
+    <EditText android:id="@id/opl_address_zip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opl_new_address_phone" />
+    <EditText android:id="@id/opl_address_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:phoneNumber="true" />
+    <Button android:id="@id/opl_address_save" android:layout_marginTop="@dimen/padding" android:text="@string/opl_new_address_save" style="@style/AUIButton.Gold" />
+</TableLayout>

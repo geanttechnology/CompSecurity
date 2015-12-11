@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_toolbar_heart_empty" android:id="@id/favorite" android:title="@string/menu_favorite" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_store_info" android:id="@id/extra_info" android:title="@string/menu_details" android:showAsAction="ifRoom" />
+</menu>

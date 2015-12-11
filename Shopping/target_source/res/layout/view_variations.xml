@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/prd_pdp_variation_spinner_top_div" android:background="@color/target_aluminum_grey" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <Spinner android:id="@id/prd_pdp_variation_spinner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/prd_plp_variation_drop_down_height" android:layout_margin="@dimen/default_padding_margin" android:dropDownSelector="@drawable/white_item_selector" />
+    <View android:id="@id/prd_pdp_variation_spinner_bottom_div" android:background="@color/target_aluminum_grey" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <com.target.ui.view.product.FixedHeightGridView android:gravity="center" android:id="@id/prd_pdp_variation_child_grid_view" android:paddingTop="@dimen/default_2x_padding_margin" android:paddingBottom="@dimen/default_2x_padding_margin" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="@dimen/default_2x_padding_margin" android:verticalSpacing="@dimen/default_2x_padding_margin" android:numColumns="@integer/prd_variations_grid_view_columns" />
+    <View android:id="@id/prd_pdp_variation_child_grid_view_bottom_div" android:background="@color/target_aluminum_grey" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+</LinearLayout>

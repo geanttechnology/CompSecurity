@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mShop.search.GroupItemView android:orientation="horizontal" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/dialog_item_text_size" android:textStyle="bold" android:textColor="@color/dark_text" android:id="@id/group_title" android:paddingLeft="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/gray_text" android:ellipsize="middle" android:id="@id/group_subtitle" android:paddingLeft="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/expanded_mark" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_up" android:layout_weight="0.0" />
+</com.amazon.mShop.search.GroupItemView>

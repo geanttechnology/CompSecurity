@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="4.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:paddingRight="@dimen/ebayPadding3x" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" layout="@layout/collection_description_tablet" />
+    <FrameLayout android:paddingRight="@dimen/ebayPadding3x" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/image0_container" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/collection_details_item" />
+    </FrameLayout>
+    <FrameLayout android:paddingRight="@dimen/ebayPadding3x" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/image1_container" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/collection_details_item" />
+    </FrameLayout>
+</LinearLayout>

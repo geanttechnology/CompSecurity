@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/barcode_search_results_view_footer_progressbar_row" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:progressBarStyle="@android:attr/progressBarStyleSmall" android:layout_gravity="center_horizontal" android:id="@id/barcode_search_results_view_footer_progress" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textStyle="bold" android:textColor="@color/link" android:layout_gravity="center_horizontal" android:id="@id/barcode_search_results_view_footer_status" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" />
+</LinearLayout>

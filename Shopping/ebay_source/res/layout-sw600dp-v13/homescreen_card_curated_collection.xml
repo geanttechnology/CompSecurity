@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" app:cardBackgroundColor="?android:windowBackground" app:cardCornerRadius="@dimen/card_view_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x">
+        <TextView android:id="@id/title" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" style="@style/EbayTextAppearance.CardTitle" />
+        <include android:id="@id/curated0" layout="@layout/homescreen_card_curated_collection_item" />
+        <include android:id="@id/curated_separator0" android:layout_width="fill_parent" android:layout_height="@dimen/listContainerCaptionBottomMargin" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" layout="@layout/homescreen_card_horizontal_divider" />
+        <include android:id="@id/curated1" layout="@layout/homescreen_card_curated_collection_item" />
+        <include android:id="@id/curated_separator1" android:layout_width="fill_parent" android:layout_height="@dimen/listContainerCaptionBottomMargin" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" layout="@layout/homescreen_card_horizontal_divider" />
+        <include android:id="@id/curated2" layout="@layout/homescreen_card_curated_collection_item" />
+        <include android:layout_gravity="center_horizontal" android:layout_width="@dimen/department_card_button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" style="@style/EbayButton" layout="@layout/homescreen_card_see_more_button" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

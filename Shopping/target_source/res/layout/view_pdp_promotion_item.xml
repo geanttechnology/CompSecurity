@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/prd_pdp_promo_tag" android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_tag" />
+    <com.target.ui.view.TargetTextView android:id="@id/prd_pdp_promo_text" android:padding="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.PdpPromotion" />
+</LinearLayout>

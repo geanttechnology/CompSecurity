@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorSecondaryAlt" android:paddingBottom="@dimen/checkoutTinyMargin" android:layout_marginLeft="@dimen/ebayMargin2x" android:text="@string/about_the_seller" style="@style/ItemView" />
+    <FrameLayout style="@style/StyleGuideViewItemStatContainer.Full">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/ebayPadding" android:paddingRight="0.0dip" android:paddingBottom="@dimen/ebayPadding" android:focusable="true" style="@style/StyleGuideViewItemStatCell">
+            <com.ebay.mobile.widget.UserThumbnail android:id="@id/seller_avatar" android:layout_width="@dimen/ViewItemSellerPhotoSize" android:layout_height="@dimen/ViewItemSellerPhotoSize" android:scaleType="fitCenter" ebay:borderWidth="@dimen/thumbnailBorderWidth" ebay:borderColor="?thumbnailBorderColor" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/seller_avatar" android:layout_centerVertical="true">
+                <TextView android:id="@id/seller_name" android:paddingLeft="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutSmallMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/ebayTextSize" android:id="@id/seller_username" android:paddingLeft="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutSmallMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/seller_name" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorSecondary" android:id="@id/seller_feedback_percent" android:paddingLeft="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutSmallMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/seller_username" />
+            </RelativeLayout>
+            <include layout="@layout/view_item_chevron" />
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/sellers_other_items_container" android:visibility="gone" style="@style/StyleGuideViewItemStatContainer.Full">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/ebayTextSize" android:gravity="center_vertical" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/ebayPadding2x" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:text="@string/sellers_other_items" />
+        <include layout="@layout/view_item_chevron" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/category_facet_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/grey_dark" android:gravity="bottom" android:id="@id/filter_title" android:paddingLeft="@dimen/category_facet_padding_large" android:paddingRight="@dimen/category_facet_padding_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_medium" android:gravity="top" android:id="@id/facet_summary" android:paddingLeft="@dimen/category_facet_padding_large" android:paddingRight="@dimen/category_facet_padding_large" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/category_facet_padding_large" android:src="@drawable/arrow_up" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:layout_alignParentBottom="true" style="@style/filter_list_header_divider" />
+</RelativeLayout>

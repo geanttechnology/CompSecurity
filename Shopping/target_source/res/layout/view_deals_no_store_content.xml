@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dialog_padding" android:src="@drawable/icon_weekly_ad" android:scaleType="center" android:contentDescription="@string/cd_deals_weekly_ad_logo" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:textColor="@color/target_neutral_grey" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/deals_no_store_view_text" />
+    <com.target.ui.view.TargetButton android:textSize="@dimen/mediumTextSize" android:id="@id/set_store" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/shop_card_margin_2x" android:text="@string/deals_no_store_view_button_text" app:fontStyle="medium" style="@style/DialogButton.Red" />
+</merge>

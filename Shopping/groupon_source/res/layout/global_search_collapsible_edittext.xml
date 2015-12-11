@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:id="@id/global_search_bar_layout" android:layout_width="fill_parent" android:layout_height="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/lollipop_search_bar_height" android:layout_toLeftOf="@id/shopping_cart" android:layout_centerVertical="true" style="@style/search_box_white_rounded">
+        <ImageView android:id="@id/search_icon" style="@style/search_icon_style" />
+        <ImageView android:id="@id/clear_text" android:visibility="gone" style="@style/global_search_box_clear_text_style" />
+        <EditText android:id="@id/search_edittext" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search" android:layout_toLeftOf="@id/clear_text" android:layout_toRightOf="@id/search_icon" style="@style/global_search_text_box_style" />
+    </RelativeLayout>
+    <include layout="@layout/shopping_cart_actionbar_button" />
+</RelativeLayout>

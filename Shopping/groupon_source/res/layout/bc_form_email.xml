@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/deal_details_section_v2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/bc_form_additional_heading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/bc_form_title" />
+    <EditText android:id="@id/bc_form_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:imeOptions="actionDone" style="@style/pre_form_line_item" />
+</LinearLayout>

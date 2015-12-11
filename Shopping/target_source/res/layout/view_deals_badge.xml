@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.DepartmentBadgeView android:id="@id/badge_background" android:layout_width="fill_parent" android:layout_height="fill_parent" app:badgeType="active" app:badgeSize="small" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_list_offer" android:contentDescription="@string/cd_offers_icon" />
+</FrameLayout>

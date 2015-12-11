@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ebayTextSizeBody2" android:textColor="@color/ebay_text_color_primary" android:ellipsize="end" android:id="@id/trend_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?android:attr/textAppearanceSmall" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceStrong.Body2" android:id="@id/trend_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

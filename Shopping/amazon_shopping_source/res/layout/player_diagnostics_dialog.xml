@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/DiagnosticOptions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Diagnostic Options:" style="@android:style/TextAppearance.Large" />
+        <CheckBox android:id="@id/ShowGraphLinear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show graph (linear scale)" style="@android:style/TextAppearance.Small" />
+        <CheckBox android:id="@id/ShowGraphLogarithmic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show graph (logarithmic scale)" style="@android:style/TextAppearance.Small" />
+        <CheckBox android:id="@id/ShowText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show text" style="@android:style/TextAppearance.Small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ControlsDebuggingOptions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Controls Debugging Options:" style="@android:style/TextAppearance.Large" />
+        <TextView android:id="@id/ControlsSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/TextAppearance.Small" />
+        <Button android:id="@id/SwitchControlsSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Switch Surface" style="@android:style/TextAppearance.Small" />
+    </LinearLayout>
+</LinearLayout>

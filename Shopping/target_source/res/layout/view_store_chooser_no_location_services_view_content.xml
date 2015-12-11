@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top|center" android:orientation="vertical" android:id="@id/placeholder_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/location_button_container" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/location_button_container" android:background="@color/target_fade_away_grey" android:padding="@dimen/cart_default_more_padding_margin" android:layout_width="fill_parent" android:layout_height="@dimen/store_chooser_button_height" android:layout_alignParentBottom="true">
+        <com.target.ui.view.TargetButton android:id="@id/use_location_button" android:layout_width="0.0dip" android:layout_height="@dimen/cart_zip_search_button_height" android:text="@string/use_my_location" android:layout_weight="0.5" style="@style/RedButton" />
+        <com.target.ui.view.TargetButton android:id="@id/enter_zip_code_button" android:layout_width="0.0dip" android:layout_height="@dimen/cart_zip_search_button_height" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:text="@string/enter_zip" android:layout_weight="0.5" style="@style/RedButton" />
+    </LinearLayout>
+</merge>

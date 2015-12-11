@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/selected_facet_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/main_header_wrapper">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:background="@color/target_fade_away_grey" android:paddingLeft="@dimen/default_padding_margin" android:paddingRight="@dimen/default_padding_margin" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/prd_plp_refine_header_height_half" />
+        <com.target.ui.view.ConfigurableDropShadowView android:id="@id/drop_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/main_header_wrapper" android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="left|center" android:id="@id/result_count" android:padding="@dimen/default_3x_padding_margin" android:layout_width="wrap_content" android:layout_height="@dimen/prd_plp_refine_header_height_half" android:maxLines="@integer/single_line_length" android:layout_toLeftOf="@id/refine_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/refine_button" android:background="@drawable/translucent_item_round_selector" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:src="@drawable/icon_filter_gray" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/cd_refine_button" />
+    </RelativeLayout>
+</merge>

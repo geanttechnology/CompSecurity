@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="horizontal" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ebayTextSizeHuge" android:layout_gravity="center_vertical" android:id="@id/trend_topic_position" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/EbayTextAppearance.Body2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/trend_topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="@dimen/ebayTextSizeSmall" android:textColor="@color/style_guide_gray" android:gravity="center_vertical" android:id="@id/trend_topic_stat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" />
+    </LinearLayout>
+    <com.ebay.android.widget.RemoteImageView android:id="@id/trend_topic_image0" android:layout_width="@dimen/homescreen_trend_image_size" android:layout_height="@dimen/homescreen_trend_image_size" android:layout_marginLeft="@dimen/ebayMargin2x" android:scaleType="fitCenter" android:layout_alignParentRight="true" app:urlRewriter="zoom_gallery" app:averageBackgroundColor="true" />
+</com.ebay.mobile.widget.FLinearLayout>

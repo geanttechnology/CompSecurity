@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/ContainerAds" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/player_ads_controls_webview" />
+    <FrameLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/AdsControls" android:paddingBottom="@dimen/avod_ads_controls_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AVOD.Playback.Ads.Controls">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/player_ads_controls_textview" />
+            <TextView android:textColor="@color/avod_white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/AdsRemainingTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/avod_ads_remaining_time_marginLeft" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/AVOD.Playback.Ads.CountdownMessage" />
+            <Button android:textColor="@color/avod_orange" android:gravity="center_vertical" android:id="@id/AdsSkipButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/avod_spacing_huge" android:text="@string/ads_action_skip" android:layout_toRightOf="@id/AdsRemainingTime" android:layout_alignBottom="@id/AdsRemainingTime" style="@style/AVOD.Playback.Ads.SkipButton" />
+        </RelativeLayout>
+        <include layout="@layout/player_ads_controls_learnmore" />
+    </FrameLayout>
+</FrameLayout>

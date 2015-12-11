@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.android.widget.TopCardView style="@style/EbayCardStyle.Top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/coverImage" android:layout_width="fill_parent" android:layout_height="@dimen/card_collection_top_height" android:scaleType="centerCrop" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+    <View android:id="@id/selectable" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:padding="@dimen/ebayMargin2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/card_collection_top_heading" android:textAllCaps="true" android:fontFamily="sans-serif" />
+        <TextView android:textSize="@dimen/ebayTextSizeHeadline2" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/title" android:paddingTop="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/body" android:paddingTop="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</com.ebay.android.widget.TopCardView>

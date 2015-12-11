@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Checkout.ContainerLayout">
+        <TextView android:id="@id/single_date" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayNowDeliveryText.Label" />
+        <com.ebay.android.widget.SlidingTabLayout android:id="@id/delivery_sliding_tabs" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/xo_cart_button_layout" android:background="@drawable/bottom_action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/ebayTextSizeMedium" android:gravity="center" android:id="@id/xo_delivery_continue_button" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" android:layout_margin="@dimen/ebayMargin" android:text="@string/done" style="@style/EbayButton.White" />
+    </LinearLayout>
+    <ViewStub android:id="@id/no_time_slots_stub" android:layout="@layout/xo_delivery_scheduling_no_time_slots" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

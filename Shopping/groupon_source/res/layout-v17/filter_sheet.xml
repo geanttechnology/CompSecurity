@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/filter_sheet_view" android:background="@color/white" android:layout_height="fill_parent" style="@style/filter_sheet_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/drag_view" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:layout_gravity="left" android:id="@id/close_button" android:background="@color/white" android:padding="@dimen/rapi_search_filter_standard_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/x_close_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/rapi_search_filter_small_text" android:textColor="@color/grey73" android:layout_gravity="right" android:id="@id/reset_button" android:padding="@dimen/rapi_search_filter_standard_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filters_reset_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:fontFamily="@string/roboto_medium" android:layout_alignParentEnd="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/rapi_search_filter_small_text" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/filters_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filters_title" android:fontFamily="@string/roboto_medium" />
+            <TextView android:textSize="@dimen/rapi_search_filter_small_text" android:textColor="@color/grey80" android:layout_gravity="center" android:id="@id/filters_deal_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/roboto_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/titleDividerTop" android:background="@color/grey85" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView android:id="@id/facets_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollAlwaysVisible="false" style="@style/city_picker_list" />
+        <View android:id="@id/shade" android:background="@color/white_50p" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

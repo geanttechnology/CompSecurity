@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:liveChatView="http://schemas.android.com/apk/res-auto">
+    <com.groupon.view.ObservableScrollView android:id="@id/scroller" android:background="@color/bg_color_checkout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_bar">
+        <LinearLayout android:orientation="vertical" android:id="@id/scrollable_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.groupon.view.DealCardCompact android:id="@id/deal_card_compact" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/deal_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/reservation_container_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/reservation_detail_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/reservation_details_header" style="@style/market_rate_purchase_category_text_rtl" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/reservation_details_container" android:background="@drawable/detail_screen_box" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_section" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/payment_details_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/user_input_action_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/white_bg_element_no_padding" />
+                    <FrameLayout android:id="@id/deal_payment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/deal_payment_container" android:paddingTop="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <ProgressBar android:layout_gravity="center" android:id="@id/payment_spinner" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+                    </FrameLayout>
+                    <TextView android:id="@id/add_payment_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:text="@string/msg_enter_payment_method" style="@style/purchase_text_subtitle" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.groupon.view.LiveChatView android:id="@id/live_chat_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" liveChatView:liveChatTitleTextColor="@color/grey_medium" liveChatView:liveChatTitleTextSize="@dimen/live_chat_title_text_size_deal_detials" liveChatView:liveChatSectionPaddingLeft="@dimen/live_chat_section_padding_left_1408" liveChatView:liveChatIcon="@drawable/icon_live_chat_light" liveChatView:liveChatBackground="@drawable/detail_box_selector" />
+            <CheckBox android:id="@id/newsletter_optin_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/groupon_checkbox" android:text="@string/subscribe_to_newsletter" style="@style/purchase_v2_newsletter_optin" />
+            <TextView android:id="@id/viewterms" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/terms_redesign" />
+        </LinearLayout>
+    </com.groupon.view.ObservableScrollView>
+    <include android:id="@id/bottom_bar" layout="@layout/bottom_bar_flat_purchase" />
+</RelativeLayout>

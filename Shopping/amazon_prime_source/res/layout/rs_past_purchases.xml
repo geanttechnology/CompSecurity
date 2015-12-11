@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/past_purchase_container" android:background="@color/past_purchase_bottom_divider" android:paddingBottom="@dimen/pc_3px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/past_purchase_list_background" android:paddingTop="@dimen/rs_past_purchases_padding_top" android:paddingBottom="@dimen/rs_past_purchases_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <RelativeLayout style="@style/Rs.Widget.PastPurchase.ImageWrapper">
+            <ImageView android:id="@id/rs_past_purchase_image" style="@style/Rs.Widget.PastPurchase.Image" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rs_past_purchases_text_margin" android:layout_marginRight="@dimen/rs_past_purchases_text_margin" android:layout_weight="1.0">
+            <TextView android:id="@id/rs_past_purchase_header" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Rs.Widget.PastPurchase.Header" />
+            <TextView android:id="@id/rs_past_purchase_item_title" style="@style/Rs.Widget.PastPurchase.Title" />
+            <TextView android:id="@id/rs_past_purchase_product_price" style="@style/Rs.Widget.PastPurchase.PriceText" />
+            <Button android:id="@id/rs_past_purchase_btn_add_to_cart" android:background="@drawable/rs_btn_add_to_cart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_add_to_cart_long" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/rs_past_purchase_see_all_link" style="@style/Rs.Widget.PastPurchase.SeeAllLink" />
+</LinearLayout>

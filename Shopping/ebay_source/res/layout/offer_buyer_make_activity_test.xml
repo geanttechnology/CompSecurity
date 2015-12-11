@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/offer_test_buttons" android:paddingLeft="14.0dip" android:paddingRight="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="15.0dip" />
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Test Actions" />
+    <Button android:id="@id/offer_fake_send_success" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Offer sent" style="@style/EbayButton.Blue" />
+    <Button android:id="@id/offer_fake_auto_accept" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Auto accepted" style="@style/EbayButton.Blue" />
+    <Button android:id="@id/offer_fake_auto_decline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Auto declined" style="@style/EbayButton.Blue" />
+    <Button android:id="@id/offer_fake_server_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Server error" style="@style/EbayButton.Blue" />
+    <Button android:id="@id/offer_fake_server_error_min_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Server error min. price" style="@style/EbayButton.Blue" />
+    <Button android:id="@id/offer_fake_network_timeout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Network timeout" style="@style/EbayButton.Blue" />
+    <Button android:id="@id/offer_fake_other_offer_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Other offer state" style="@style/EbayButton.Blue" />
+</LinearLayout>

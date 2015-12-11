@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/selling_card_main_content_text_size" android:gravity="center" android:id="@id/noOfActiveItems" android:layout_width="wrap_content" android:layout_height="80.0dip" android:minWidth="@dimen/card_selling_count_width" />
+    <include layout="@layout/homescreen_card_vertical_divider" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin">
+        <include layout="@layout/homescreen_card_active_offers" />
+        <include android:id="@id/haveOffersSeparator" layout="@layout/homescreen_card_horizontal_divider" />
+        <include layout="@layout/homescreen_card_active_bids" />
+        <TextView android:textColor="@color/style_guide_gray" android:layout_gravity="center_vertical" android:id="@id/noOffersOrBidsText" android:paddingLeft="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/selling_card_see_listings" />
+    </LinearLayout>
+</LinearLayout>

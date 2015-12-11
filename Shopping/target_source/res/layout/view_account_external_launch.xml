@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_external_launch_red_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_external_launch_item_height" style="@style/LineItemSelector">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_launch_left_image_with_icon" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_my_red_card" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.Title" />
+            <com.target.ui.view.TargetTextView android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_target_dot_com" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.SubTitle" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_external_launch_track_orders" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_external_launch_item_height" style="@style/LineItemSelector">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_launch_left_image_with_icon" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_track_orders" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.Title" />
+            <com.target.ui.view.TargetTextView android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_target_dot_com" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.SubTitle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

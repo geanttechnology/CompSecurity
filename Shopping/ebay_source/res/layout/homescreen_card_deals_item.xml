@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMarginHalf" card_view:cardBackgroundColor="@android:color/white" card_view:cardCornerRadius="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/item_image" android:layout_width="@dimen/homescreen_card_deals_image_width" android:layout_height="@dimen/homescreen_card_deals_image_width" android:scaleType="fitCenter" android:contentDescription="@null" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/item_price" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textColor="@color/style_guide_gray" android:id="@id/item_price_details" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

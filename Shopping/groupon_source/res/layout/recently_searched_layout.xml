@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/recent_search_container" android:background="@color/background_grey" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/grey63" android:gravity="center_vertical" android:id="@id/recent_label" android:layout_width="wrap_content" android:layout_height="@dimen/global_search_list_item_row_height" android:layout_marginLeft="@dimen/keyline_1" android:layout_marginRight="@dimen/keyline_1" android:text="@string/recent_searches_capitalized" />
+        <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/recent_search_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/suggestions_container" android:background="@color/background_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/grey63" android:gravity="center_vertical" android:id="@id/suggestions_label" android:layout_width="wrap_content" android:layout_height="@dimen/global_search_list_item_row_height" android:layout_marginLeft="@dimen/keyline_1" android:layout_marginRight="@dimen/keyline_1" android:text="@string/suggestions" />
+        <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <include layout="@layout/global_search_suggestion_delivery_and_takeout" />
+    </LinearLayout>
+</LinearLayout>

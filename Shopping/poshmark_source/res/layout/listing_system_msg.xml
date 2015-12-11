@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/listing_system_msg_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true">
+            <com.poshmark.ui.customviews.PMListingImageView android:layout_gravity="center_vertical" android:id="@id/infoImageView" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/ic_add_gray" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorGray" android:layout_gravity="center_vertical" android:id="@id/infoTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:text="Shipping Discount: 10%." android:includeFontPadding="false" />
+        </LinearLayout>
+        <com.poshmark.ui.customviews.PMListingImageView android:id="@id/rightIcon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/ic_add_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/borderColorGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+</LinearLayout>

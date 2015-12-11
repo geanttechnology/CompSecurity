@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/my_groupon_item_content" android:background="@drawable/white_with_grey_border_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/deal_image" android:layout_width="125.0dip" android:layout_height="125.0dip" android:layout_margin="1.0px" android:src="@drawable/gtg_groupon_item_image" android:scaleType="centerCrop" android:layout_alignParentLeft="true" />
+        <View android:id="@id/vert_div" android:background="@color/grey_light" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_toRightOf="@id/deal_image" />
+        <LinearLayout android:orientation="vertical" android:id="@id/labels_container" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/deal_image">
+            <TextView android:id="@id/title" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/my_groupon_title" />
+        </LinearLayout>
+        <TextView android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/gtg_groupon_subtitle" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:background="@drawable/list_item_selector_state" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/my_groupon_item_content" android:layout_alignBottom="@id/my_groupon_item_content" />
+</RelativeLayout>

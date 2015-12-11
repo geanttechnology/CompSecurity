@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:theme="@style/Theme.LinkoutDealWebview" android:id="@id/tool_bar" style="@style/linkout_deal_webview_toolbar_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/web_view_close_button_side_margin" android:layout_marginRight="@dimen/web_view_close_button_side_margin" android:src="@drawable/linkout_deal_webview_close_icon" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/page_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/linkout_deal_toolbar_title_text" />
+            <TextView android:id="@id/page_url" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/linkout_deal_toolbar_subtitle_text" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

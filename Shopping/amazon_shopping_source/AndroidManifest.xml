@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.amazon.mShop.android">
+    <compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"/>
+        <screen android:screenDensity="mdpi" android:screenSize="small"/>
+        <screen android:screenDensity="hdpi" android:screenSize="small"/>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"/>
+        <screen android:screenDensity="400" android:screenSize="small"/>
+        <screen android:screenDensity="480" android:screenSize="small"/>
+        <screen android:screenDensity="640" android:screenSize="small"/>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"/>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"/>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"/>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"/>
+        <screen android:screenDensity="400" android:screenSize="normal"/>
+        <screen android:screenDensity="480" android:screenSize="normal"/>
+        <screen android:screenDensity="560" android:screenSize="normal"/>
+        <screen android:screenDensity="640" android:screenSize="normal"/>
+        <screen android:screenDensity="ldpi" android:screenSize="large"/>
+        <screen android:screenDensity="mdpi" android:screenSize="large"/>
+        <screen android:screenDensity="hdpi" android:screenSize="large"/>
+        <screen android:screenDensity="xhdpi" android:screenSize="large"/>
+        <screen android:screenDensity="480" android:screenSize="large"/>
+        <screen android:screenDensity="640" android:screenSize="large"/>
+    </compatible-screens>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="false"/>
+    <application android:icon="@drawable/amzn_icon_android" android:label="@string/config_switchableAppName_en_us" android:largeHeap="true" android:name="com.amazon.mShop.AmazonApplication" android:theme="@style/AmazonTheme">
+        <meta-data android:name="com.amazon.mas.client.versionName" android:value="release-10.0500"/>
+        <meta-data android:name="com.google.android.wearable.beta.app" android:resource="@xml/wearable_app_desc"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:exported="true" android:name="com.amazon.mShop.splashscreen.StartupActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.home.GatewayActivity" android:theme="@style/AmazonTheme.Home" android:windowSoftInputMode="stateHidden"/>
+        <activity-alias android:name="com.amazon.mShop.android.home.HomeActivity" android:targetActivity="com.amazon.mShop.splashscreen.StartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:name="com.amazon.mShop.home.HomeActivity" android:targetActivity="com.amazon.mShop.splashscreen.StartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:name="com.amazon.mShop.android.home.PublicUrlActivity" android:targetActivity="com.amazon.mShop.splashscreen.StartupActivity">
+            <intent-filter>
+                <data android:scheme="com.amazon.mobile.shopping"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity-alias>
+        <receiver android:name="com.amazon.mShop.pushnotification.gcm.MShopGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.amazon.mShop.android"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.amazon.mShop.android.util.AttachmentContentProvider" android:name="com.amazon.mShop.util.AttachmentContentProvider" android:syncable="false"/>
+        <service android:name="com.amazon.venezia.service.command.CommandServiceImpl">
+            <intent-filter android:priority="10">
+                <action android:name="com.amazon.venezia.CommandService"/>
+            </intent-filter>
+        </service>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.publicurl.PublicURLActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.recommendations.RecommendationsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.recommendations.web.WebRecommendationsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.pushnotification.WebNotificationsSettingsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.clouddrive.CloudDriveUploadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="clouddrive" android:scheme="mshop"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.clouddrive.CloudDriveManageStorageActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.aiv.AIVSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.aiv.FeedbackActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.youraccount.OneClickSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.mShop.appstore.AppstoreActivity">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.APPSTORE_DEEPLINK-com.amazon.mShop.android"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.appstore.UninstalledActivity">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.appstore.APPSTORE_UNINSTALLED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.search.SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.GADGET"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.search.viewit.ViewItActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.search.viewit.ViewItScanEntryActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.search.viewit.ViewItTutorialActivity" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.search.image.SnapItActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.search.image.SnapItPhotoCaptureActivity" android:noHistory="true" android:screenOrientation="landscape"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.search.image.SnapItPhotoPreviewActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.categoryBrowse.CategoryBrowseActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.fastBrowse.FastBrowseActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.details.ProductDetailsActivity">
+            <intent-filter>
+                <data android:scheme="amazon"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="www.amazon.com" android:pathPrefix="/openInMobileApp" android:scheme="http"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.amazon.mShop.featured" android:scheme="mshop"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.details.web.WebProductDetailsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.goldbox.GoldboxActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.goldbox.WebGoldboxActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.help.HelpActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.barcodeSearch.HelpWithBarcodeScansActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.barcodeSearch.BarcodeFirstTryTipActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.history.HistoryActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.account.LoginActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.account.LogoutActivity" android:noHistory="true"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.mShop.opl.web.WebPurchaseActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.mShop.order.ViewOrderActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.order.web.WebViewOrderActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.cart.web.WebCartActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.wishlist.web.WebWishListActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.help.web.WebContactUsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.youraccount.YourAccountActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.youraccount.web.WebYourAccountActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.youraccount.web.WebOneClickSettingsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.about.MShopAboutActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.cvsd.CVSDMapActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.cvsd.CVSDRefinmentsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.cvsd.CVSDStoreDetailsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.localeswitch.LocaleSwitchActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.startup.UserAgreementActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.startup.StartupSetCountryActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.mShop.search.image.MShopContinuousScanActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.AmazonChooserActivity" android:theme="@style/AmazonSemitransparentNoTitle"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.debug.DebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.mash.AmazonMASHTestActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.web.DebugHtmlSandboxSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.gno.GNODebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.SSODebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.search.SearchDebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.mobileads.AdsWebActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.device.ads.AdActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.mobileads.DebugSettingsActivityForAds"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.web.MShopModalWebActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.web.MShopWebDebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sns.SnsWebViewActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sns.SnsManageYourSubscribesActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.aiv.AIVMShopWebActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.web.MShopWebActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.web.EmbeddedBrowserActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.DistributedSSOLoginActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.SigninPromptActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.CentralSSOLoginActivity" android:theme="@style/AmazonSemitransparentNoTitle"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.DistributedSSOLogoutActivity" android:theme="@style/AmazonSemitransparentNoTitle"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.CentralSSOLogoutActivity" android:theme="@style/AmazonSemitransparentNoTitle"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.SSOSplashScreenActivity"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="cn.amazon.mShop.android.wxapi.WXEntryActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.social.SocialConnectActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.social.SocialConnectDebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:name="com.facebook.LoginActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.primeupsell.PrimeUpsellActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.primeupsell.PrimeUpsellDebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.kiang.KiangDebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.aiv.AIVGatewayStartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.aiv.AIVGatewayActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.pushnotification.NotificationSettingActivity" android:theme="@style/AmazonTheme.Switch"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.home.web.MShopWebGatewayActivity" android:theme="@style/AmazonTheme.Home" android:windowSoftInputMode="stateHidden"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.amazon.mShop.pushnotification.NotificationContentActivity" android:taskAffinity="com.amazon.notificationContent"/>
+        <activity android:name="com.amazon.mShop.aiv.AivHttpIntentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.amazon.co.uk" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="http"/>
+                <data android:host="www.amazon.co.uk" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.amazon.co.jp" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="http"/>
+                <data android:host="www.amazon.co.jp" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.amazon.de" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="http"/>
+                <data android:host="www.amazon.de" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.amazon.com" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="http"/>
+                <data android:host="www.amazon.com" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:exported="true" android:name="com.amazon.venezia.AuthActivityToAliasInManifest" android:targetActivity="com.amazon.mShop.appstore.AppstoreActivity"/>
+        <activity-alias android:exported="true" android:name="com.amazon.venezia.settings.MShopAppstoreActivity" android:targetActivity="com.amazon.mShop.appstore.AppstoreActivity"/>
+        <activity-alias android:exported="true" android:name="com.amazon.venezia.settings.SettingsActivity" android:targetActivity="com.amazon.mShop.appstore.AppstoreActivity"/>
+        <service android:name="com.amazon.mShop.sso.SSOBackgroundAccountService"/>
+        <service android:name="com.amazon.mShop.pushnotification.gcm.MShopGCMIntentService"/>
+        <service android:name="com.amazon.mShop.pushnotification.getui.GetuiIntentService"/>
+        <service android:name="com.amazon.mas.client.settings.sync.SettingsSyncToMasterService"/>
+        <service android:name="com.amazon.mShop.wearable.wear.MShopWearListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.amazon.mShop.sso.SSOAccountListener" android:permission="com.amazon.dcp.sso.permission.account.changed">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.account.added"/>
+                <action android:name="com.amazon.dcp.sso.action.account.removed"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.mShop.appstore.AppstoreCoinBalanceReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.appstore.coin.valueChanged"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mShop.appstore.RecentlyViewedItemsReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.appstore.recentItem.record"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.venezia.mShop.MshopAuthenticationReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.USER_DEREGISTERED_ACTION"/>
+                <action android:name="com.amazon.mas.client.authentication.action.CURRENT_ACCOUNT_CHANGED_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.mShop.pushnotification.MShopClearNotificationReceiver"/>
+        <receiver android:name="com.amazon.mShop.pushnotification.getui.GetuiMsgReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.carrier.UK7HhiIwqgAP8UilLhEaT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.mShop.MShopReferralInstallationReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.venezia.mShop.settings.SettingsSyncToMasterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.amazon.mShop.search.SuggestionsProvider" android:name="com.amazon.mShop.search.SuggestionsProvider" android:syncable="false"/>
+        <provider android:authorities="com.amazon.mShop.android.WidgetContentProvider" android:exported="true" android:name="com.amazon.mShop.contentprovider.WidgetContentProvider" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS"/>
+        <provider android:authorities="com.amazon.mShop.history.HistoryContentProvider" android:name="com.amazon.mShop.history.HistoryContentProvider" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS"/>
+        <provider android:authorities="com.amazon.identity.auth.device.MapInfoProvider.mShop" android:exported="true" android:name="com.amazon.mShop.sso.MShopMAPInformationProvider" android:permission="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+        <provider android:authorities="amazon.mShop.android.AssetContentProvider" android:exported="false" android:name="com.amazon.mShop.util.AssetContentProvider" android:syncable="false"/>
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.amazon.mas.client.kiwiCompatibleVersion" android:value="2"/>
+        <meta-data android:name="android.app.default_searchable" android:value="com.amazon.mShop.search.SearchActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.igexin.sdk.SdkActivity" android:process=":vpushservice" android:taskAffinity="android.task.SdkActivityTask" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.igexin.action.popupact.com.igexin.sdk"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.igexin.sdk.SdkService" android:process=":vpushservice"/>
+        <receiver android:name="com.igexin.sdk.PayloadReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.UK7HhiIwqgAP8UilLhEaT"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="VPUSH_APPID" android:value="UK7HhiIwqgAP8UilLhEaT"/>
+        <meta-data android:name="VPUSH_APPSECRET" android:value="4p2UbHaO549X9vrDtZMS08"/>
+        <meta-data android:name="VPUSH_APPKEY" android:value="VHuGDoul8r8lbMBrMGsGm9"/>
+        <activity android:configChanges="@integer/config_maskAll" android:finishOnTaskLaunch="true" android:name="com.amazon.avod.playbackclient.MShopPlaybackActivityProxy" android:screenOrientation="sensorLandscape" android:theme="@style/AVOD.Theme.NoBackground.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskAll" android:finishOnTaskLaunch="true" android:name="com.amazon.avod.contentrestriction.MShopPinEntryActivityProxy" android:theme="@style/AVOD.Theme.Transparent"/>
+        <service android:exported="false" android:name="com.amazon.avod.syncservice.MShopSyncServiceProxy"/>
+        <service android:exported="false" android:name="com.amazon.avod.syncservice.MShopNetworkInfoIntentServiceProxy"/>
+        <service android:exported="false" android:name="com.amazon.avod.playbackclient.whispercache.WhisperCachingServiceProxy"/>
+        <receiver android:name="com.amazon.avod.playbackclient.sdk.PlaybackSdkBroadcastReceiverProxy" android:permission="com.amazon.avod.SDK_ACCESS">
+            <intent-filter>
+                <action android:name="com.amazon.avod.action.SERVICE_CLIENT"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.amazon.avod.intent" android:exported="true" android:name="com.amazon.avod.playbackclient.sdk.PlaybackIntentProviderProxy" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS"/>
+        <provider android:authorities="com.amazon.avod.settings.AivSettingsProvider" android:exported="true" android:name="com.amazon.avod.settings.AivSettingsProviderProxy" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS"/>
+        <activity android:configChanges="@integer/config_maskAll" android:finishOnTaskLaunch="true" android:name="com.amazon.avod.playbackclient.test.BasicTestPlaybackActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AVOD.Theme.NoBackground.NoTitleBar"/>
+        <activity android:configChanges="touchscreen|keyboard|keyboardHidden|navigation|orientation|uiMode" android:exported="true" android:launchMode="singleTop" android:name="com.amazon.avod.playbackclient.settings.page.PlaybackVideoSettings"/>
+        <activity android:configChanges="touchscreen|keyboard|keyboardHidden|navigation|orientation|uiMode" android:exported="true" android:launchMode="singleTop" android:name="com.amazon.avod.playbackclient.settings.page.MobileStreamingQualitySettings"/>
+        <activity android:configChanges="@integer/config_maskAll" android:name="com.amazon.avod.contentrestriction.FSKPinEntryActivity" android:theme="@style/AVOD.Theme.Transparent" android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <service android:exported="false" android:name="com.amazon.avod.playbackclient.resume.BookmarkCacheCleanerService"/>
+        <activity android:configChanges="orientation" android:name="com.amazon.clouddrive.library.display.CloudDriveFragmentActivity"/>
+        <activity android:name="com.amazon.clouddrive.library.display.CloudDriveManageStorageFragment"/>
+        <activity android:name="com.amazon.clouddrive.library.display.CloudDriveTermsOfUseActivity"/>
+        <service android:name="com.amazon.clouddrive.library.service.UploadServiceProxy"/>
+        <service android:name="com.amazon.clouddrive.library.service.AutoUploadServiceProxy"/>
+        <service android:name="com.amazon.clouddrive.library.service.CheckStorageServiceProxy"/>
+        <receiver android:enabled="true" android:name="com.amazon.clouddrive.library.device.receivers.ExternalMediaChangeReceiverProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.clouddrive.library.device.receivers.AutoUploadReceiverProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.clouddrive.library.device.receivers.ConnectivityReceiverProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.clouddrive.library.device.receivers.PackageReceiverProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.clouddrive.library.device.receivers.MShopCountryUpdateReceiverProxy">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.LOCALE_SWITCHED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.amazon.clouddrive.uploadlibrary" android:exported="false" android:name="com.amazon.clouddrive.library.provider.CloudDriveUploadLibProviderProxy"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.guide.unknownsources.AllowUnknownSourcesActivity" android:theme="@style/AppstoreDialogTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:launchMode="singleTop" android:name="com.amazon.venezia.mcb.registration.CarrierBillingActivity" android:theme="@style/AppstoreDialogTheme"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.VeneziaDialog" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.dialog.WifiDialog" android:theme="@style/AppstoreDialogTheme"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.dialog.DateTimeDialog" android:theme="@style/AppstoreDialogTheme"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.download.MASClientDownloadServiceWANDialog" android:theme="@style/AppstoreDialogTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.venezia.iap.SubscriptionsActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.venezia.settings.GiftcardsActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.amazon.venezia.initialization.InitializationActivity" android:theme="@style/AppstoreNoAnimationTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.venezia.myapps.MyAppsActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.venezia.web.BaseUrlOverrideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.venezia.web.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.venezia.web.CoinsWebViewActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|screenLayout" android:name="com.amazon.client.ftue.InferCorPfmActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.amazon.venezia.urimatch.UriMatchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.amazon.com" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.com.br" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.com.au" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.ca" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.cn" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.fr" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.de" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.it" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.co.jp" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.es" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.co.uk" android:pathPrefix="/gp/mas/dl/android" android:scheme="http"/>
+                <data android:host="www.amazon.com" android:pathPrefix="/gp/mas/get-appstore/android" android:scheme="http"/>
+                <data android:host="www.amazon.com" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.com.br" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.com.au" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.ca" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.cn" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.fr" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.de" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.it" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.co.jp" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.es" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="www.amazon.co.uk" android:pathPrefix="/gp/mas/get/android" android:scheme="http"/>
+                <data android:host="apps" android:pathPrefix="/android"/>
+                <data android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.mas.client.device.software.opengl.RetrieveOpenGlExtensionsActivity" android:theme="@style/AppstoreNoAnimationTheme"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:excludeFromRecents="true" android:name="com.amazon.mas.client.install.foreground.InstallKickoffActivity" android:permission="com.amazon.mas.client.install.INSTALL-com.amazon.mShop.android"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout" android:exported="true" android:name="com.amazon.mas.client.iap.purchase.PurchaseActivity" android:theme="@style/IAPDialogTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout" android:exported="true" android:hardwareAccelerated="false" android:name="com.amazon.mas.client.iap.physical.purchase.IapPhysicalPurchaseActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.iap.PurchaseChallengeActivity" android:theme="@style/IAPDialogTheme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout" android:name="com.amazon.mas.client.parentalcontrols.PasswordChallengeActivity" android:theme="@style/IAPDialogTheme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout" android:name="com.amazon.mas.client.parentalcontrols.PinChangeActivity" android:theme="@style/IAPDialogActivityTheme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout" android:name="com.amazon.mas.client.parentalcontrols.PinChallengeActivity" android:theme="@style/IAPDialogActivityTheme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout" android:name="com.amazon.mas.client.iap.subscription.SubscriptionsActivity"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout" android:name="com.amazon.mas.client.iap.settings.IapSettingsActivity"/>
+        <activity-alias android:exported="true" android:name="com.amazon.venezia.HtmlWebviewActivity" android:targetActivity="com.amazon.venezia.web.WebViewActivity"/>
+        <service android:name="com.amazon.venezia.metrics.FunnelMetricsService"/>
+        <service android:name="com.amazon.mas.client.locker.service.appmetadata.AppMetadataService"/>
+        <service android:name="com.amazon.mas.client.locker.service.appmgr.AppManagerService"/>
+        <service android:name="com.amazon.mas.client.locker.service.lockersync.LockerSyncService"/>
+        <service android:name="com.amazon.mcc.resources.service.ResourceCacheService"/>
+        <service android:name="com.amazon.mcc.resources.service.ResourceUpdateService"/>
+        <service android:name="com.amazon.mas.client.licensing.tokens.ContentTokenService"/>
+        <service android:name="com.amazon.venezia.service.reset.ResetService"/>
+        <service android:name="com.amazon.mas.client.logcollector.LogCollectorService"/>
+        <service android:name="com.amazon.mas.client.metrics.service.MetricsService"/>
+        <service android:name="com.amazon.mas.client.pdiservice.metrics.PdiMetricsService"/>
+        <service android:name="com.amazon.mas.client.authentication.AuthenticationChangeService"/>
+        <service android:name="com.amazon.mas.client.pfmcor.PfmCorService"/>
+        <service android:name="com.amazon.mas.client.pfmcor.PfmCorScheduleService"/>
+        <service android:name="com.amazon.mas.client.install.service.InstallService">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.install.ENQUEUE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.mas.client.install.foreground.PackageAddedService"/>
+        <service android:name="com.amazon.mas.client.download.service.DownloadService"/>
+        <service android:name="com.amazon.mas.client.purchaseservice.PurchaseService"/>
+        <service android:name="com.amazon.mas.client.pdiservice.PdiService"/>
+        <service android:name="com.amazon.venezia.reinstallationservice.ReinstallationService"/>
+        <service android:name="com.amazon.mas.client.malware.blockedapp.BlockedAppService"/>
+        <service android:name="com.amazon.mas.client.iap.service.IapService"/>
+        <service android:name="com.amazon.mas.client.serviceconfig.ServiceConfigService"/>
+        <service android:name="com.amazon.mas.client.appupdateservice.UpdateService"/>
+        <service android:name="com.amazon.sdk.availability.AvailabilityService"/>
+        <service android:exported="false" android:name="com.amazon.client.ftue.AppstoreFtueService"/>
+        <service android:name="com.amazon.mas.client.analytics.TailwindReceiverService"/>
+        <service android:name="com.amazon.mas.client.featureconfig.FeatureConfigService"/>
+        <service android:name="com.amazon.venezia.service.RegistrationService"/>
+        <service android:exported="false" android:name="com.amazon.mas.client.deleteservice.DeleteService">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.deleteAsin"/>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.undeleteAsin"/>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.undeleteAsinComplete"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.mas.client.tokenrefresh.TokenRefreshService"/>
+        <service android:name="com.amazon.zeroes.intentservice.ZeroesService"/>
+        <service android:exported="false" android:name="com.amazon.mcc.crashreporter.android.CrashReportService"/>
+        <service android:name="com.amazon.venezia.uninstall.UninstallService"/>
+        <receiver android:exported="false" android:name="com.amazon.venezia.download.MASClientDownloadServiceReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_PAUSED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.mas.client.locker.LockerBroadcastReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter android:priority="999">
+                <action android:name="com.amazon.workflow.persistent.WORKFLOW"/>
+                <action android:name="com.amazon.mas.client.framework.UpdateService.updated"/>
+            </intent-filter>
+            <intent-filter android:priority="999">
+                <action android:name="com.amazon.mas.client.install.ENQUEUED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.intent.SYNC"/>
+                <action android:name="com.amazon.mas.client.locker.service.lockersync.FORCE_LOCKER_SYNC"/>
+                <action android:name="com.amazon.mas.client.locker.service.lockersync.PERIODIC_LOCKER_SYNC"/>
+                <action android:name="com.amazon.mas.client.locker.service.appmgr.APP_OPEN"/>
+                <action android:name="com.amazon.mas.client.locker.service.appmgr.UPDATE_STUCK_REASONS"/>
+                <action android:name="com.amazon.mas.client.safemode.SAFEMODE_SHARE_APPS"/>
+                <action android:name="com.amazon.mas.client.safemode.SAFEMODE_DOWNLOAD_APP"/>
+                <action android:name="com.amazon.mas.client.safemode.SAFEMODE_REMOVE_ENTITLEMENTS"/>
+                <action android:name="com.amazon.mas.client.authentication.action.AUTHENTICATION_SUCCESS_ACTION"/>
+                <action android:name="com.amazon.mas.client.authentication.action.USER_DEREGISTERED_ACTION"/>
+                <action android:name="com.amazon.mas.client.serviceconfig.SC_ACTION_CHANGED"/>
+                <action android:name="com.amazon.mas.client.purchaseservice.PurchaseResponse.PURCHASE_RESPONSE"/>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.downloadUrlFailed"/>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.generateApkLocationFailure"/>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.pdiPolicyFailure"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_ENQUEUED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_STARTED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_RESUMED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_PAUSED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_COMPLETE"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_FAILED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_REMOVED"/>
+                <action android:name="com.amazon.mas.client.install.ENQUEUED"/>
+                <action android:name="com.amazon.mas.client.install.INSTALL_COMPLETED"/>
+                <action android:name="com.amazon.mas.client.install.INSTALL_FAILED"/>
+                <action android:name="com.amazon.mas.client.locker.service.appmetadata.REQUEST_APP_METADATA"/>
+                <action android:name="com.amazon.mas.client.application.events.APPSTORE_FTUE"/>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.deleteAsinComplete"/>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.undeleteAsinComplete"/>
+                <action android:name="com.amazon.mas.client.application.SCHEDULE_ALARMS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.locker.service.lockersync.LockerSyncResponseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.locker.service.lockersync.LOCKER_SYNC_FAILED"/>
+                <action android:name="com.amazon.mas.client.locker.service.lockersync.LOCKER_SYNC_COMPLETE"/>
+                <action android:name="com.amazon.mas.client.locker.service.lockersync.SECONDARY_ACCOUNT_LOCKER_SYNC_FAILED"/>
+                <action android:name="com.amazon.mas.client.locker.service.lockersync.SECONDARY_ACCOUNT_LOCKER_SYNC_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:name="com.amazon.mas.client.locker.service.lockersync.LockerSyncNetworkStateListener">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mcc.resources.UpdateResourcesReceiver">
+            <intent-filter/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mcc.resources.RefreshResourcesReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.PFM_COR_CHANGED"/>
+                <action android:name="com.amazon.venezia.action.REFRESH_RESOURCE_CACHE"/>
+                <action android:name="com.amazon.mas.client.authentication.action.CURRENT_ACCOUNT_CHANGED_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mcc.resources.ScheduleUpdatesReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.application.events.STARTUP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.logcollector.LogCollectionBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.venezia.service.reset.ResetService.resetServiceRefreshRequest"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.amazon.mas.client.pdiservice.metrics.PdiMetricsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.pdiInitiated"/>
+                <action android:name="com.amazon.mas.client.purchaseservice.PurchaseResponse.PURCHASE_RESPONSE"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_STARTED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_COMPLETE"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_FAILED"/>
+                <action android:name="com.amazon.mas.client.install.ENQUEUED"/>
+                <action android:name="com.amazon.mas.client.install.INSTALL_COMPLETED"/>
+                <action android:name="com.amazon.mas.client.install.INSTALL_FAILED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.metrics.service.InitializeIdentityBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.AUTHENTICATION_SUCCESS_ACTION"/>
+                <action android:name="com.amazon.mas.client.application.events.STARTUP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.licensing.LicensingBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.locker.APP_UPDATE"/>
+                <category android:name="com.amazon.mas.client.locker.category.NON_SYNC_EVENT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.locker.service.appmetadata.APP_METADATA_SYNC_COMPLETE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.USER_DEREGISTERED_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.mas.client.pfmcor.PfmCorServiceReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.broadcast.CORPFMHasChanged"/>
+                <action android:name="com.amazon.mas.client.pdiservice.PdiService.inconsistentCor"/>
+                <action android:name="com.amazon.mas.client.PFM_COR_REFRESH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.pfmcor.PfmCorScheduleServiceReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.USER_DEREGISTERED_ACTION"/>
+                <action android:name="com.amazon.mas.client.authentication.action.AUTHENTICATION_SUCCESS_ACTION"/>
+                <action android:name="com.amazon.mas.client.PFM_COR_CHANGED"/>
+                <action android:name="com.amazon.mas.client.application.SCHEDULE_ALARMS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.mas.client.authentication.AuthenticationChangeReceiver" android:permission="com.amazon.dcp.sso.permission.account.changed">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.ACCOUNT_FOR_PACKAGE_CHANGED"/>
+                <action android:name="com.amazon.dcp.sso.action.account.removed"/>
+                <action android:name="com.amazon.dcp.sso.action.account.added"/>
+                <action android:name="com.amazon.mas.client.authentication.action.AUTHENTICATION_SUCCESS_ACTION"/>
+                <action android:name="com.amazon.dcp.sso.action.secondary.account.removed"/>
+                <action android:name="com.amazon.dcp.sso.action.secondary.account.added"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.mas.client.install.foreground.PackageAddedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:name="com.amazon.mas.client.download.service.NetworkStateListener">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.amazon.mas.client.pdiservice.PdiBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.purchaseservice.PurchaseResponse.PURCHASE_RESPONSE"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_COMPLETE"/>
+                <action android:name="com.amazon.mas.client.install.ENQUEUED"/>
+                <action android:name="com.amazon.mas.client.install.INSTALL_COMPLETED"/>
+                <action android:name="com.amazon.mas.client.application.events.STARTUP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.amazon.venezia.reinstallationservice.ReinstallationReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.install.INSTALL_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.malware.blockedapp.BlockedAppScheduleReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.application.SCHEDULE_ALARMS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.malware.blockedapp.BlockedAppOnDemandReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.malware.blockedapp.UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.iap.util.IapPhysicalBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.AuthenticationService.userDeregistered"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.parentalcontrols.settings.IapChallengeBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.USER_DEREGISTERED_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.iap.settings.IapSettingsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.USER_DEREGISTERED_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.serviceconfig.receiver.ServiceConfigRefreshOnDemandReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.PFM_COR_CHANGED"/>
+                <action android:name="com.amazon.mas.client.locker.service.lockersync.REQUEST_SERVICE_CONFIG_UPDATE"/>
+                <action android:name="com.amazon.venezia.action.REFRESH_SERVICE_CONFIG"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.serviceconfig.receiver.ServiceConfigBootstrapReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.application.events.STARTUP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.serviceconfig.receiver.ServiceConfigScheduleReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.application.events.STARTUP"/>
+                <action android:name="com.amazon.mas.client.serviceconfig.SC_ACTION_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.serviceconfig.receiver.ServiceConfigAccountSummaryChangeReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.AUTHENTICATION_SUCCESS_ACTION"/>
+                <action android:name="com.amazon.mas.client.authentication.action.USER_DEREGISTERED_ACTION"/>
+                <action android:name="com.amazon.mas.client.authentication.action.CURRENT_ACCOUNT_CHANGED_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.amazon.mas.client.appupdateservice.UpdateServiceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.locker.service.appmetadata.APP_METADATA_SYNC_COMPLETE"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_FAILED"/>
+                <action android:name="com.amazon.mas.client.install.INSTALL_FAILED"/>
+                <action android:name="com.amazon.mas.client.install.INSTALL_COMPLETED"/>
+                <action android:name="com.amazon.mas.client.appupdateservice.UPDATE_APP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="true" android:name="com.amazon.mas.client.appupdateservice.PackageStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.client.ftue.DelayedFtueReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.application.events.STARTUP"/>
+                <action android:name="com.amazon.mas.client.authentication.action.AUTHENTICATION_SUCCESS_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.client.ftue.ResetReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.USER_DEREGISTERED_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.analytics.TailwindBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.iap.service.purchaseSucceeded"/>
+                <action android:name="com.amazon.mas.client.iap.service.purchaseFailed"/>
+                <action android:name="com.amazon.mas.client.locker.ENTITLED_APP_EVENT"/>
+                <action android:name="com.amazon.venezia.command.analytics.LifecycleEvent"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.featureconfig.FeatureConfigBootstrapReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.serviceconfig.SC_ACTION_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.featureconfig.FeatureConfigScheduleReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.application.SCHEDULE_ALARMS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.amazon.venezia.service.RegistrationReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.venezia.service.RegistrationService.REGISTER"/>
+                <action android:name="com.amazon.venezia.service.RegistrationService.DEREGISTER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.venezia.notification.NotificationEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_ENQUEUED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_STARTED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_PROGRESS"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_ENQUEUE_FAILED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_REMOVE_FAILED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_COMPLETE"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_FAILED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_PAUSED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_PAUSE_FAILED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_RESUMED"/>
+                <action android:name="com.amazon.mas.client.download.DOWNLOAD_RESUME_FAILED"/>
+                <action android:name="com.amazon.mas.client.install.ENQUEUED"/>
+                <action android:name="com.amazon.mas.client.install.INSTALL_FAILED"/>
+                <action android:name="com.amazon.mas.client.install.KICKOFF_INSTALL"/>
+                <action android:name="com.amazon.mas.client.appupdateservice.update.DISCOVERY_COMPLETE"/>
+                <action android:name="com.amazon.venezia.notification.FLUSH_NOTIFICATION_CACHE"/>
+                <action android:name="com.amazon.mas.client.REINSTALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.mas.client.tokenrefresh.RefreshScheduleReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.AUTHENTICATION_SUCCESS_ACTION"/>
+                <action android:name="com.amazon.mas.client.application.SCHEDULE_ALARMS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.amazon.mcc.crashreporter.android.CrashReportBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DROPBOX_ENTRY_ADDED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.amazon.venezia.crashreporter.CrashReporterBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.application.events.STARTUP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.venezia.StartupReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.application.events.STARTUP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.venezia.coins.CoinsReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.iap.service.purchaseSucceeded"/>
+                <action android:name="com.amazon.zeroes.intentservice.PurchaseBundleResponse"/>
+                <action android:name="com.amazon.mas.client.purchaseservice.PurchaseResponse.PURCHASE_RESPONSE"/>
+                <action android:name="com.amazon.mShop.appstore.coin.requestCoin"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.venezia.coins.CoinsBalanceReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.zeroes.intentservice.GetBalanceResponse"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.venezia.uninstall.AppstoreUninstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+                <action android:name="com.amazon.mas.client.locker.service.lockersync.LOCKER_SYNC_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.venezia.guide.unknownsources.VerifyUnknownSourcesReceiver"/>
+        <receiver android:exported="false" android:name="com.amazon.venezia.guide.unknownsources.PollingTimeoutReceiver"/>
+        <receiver android:exported="false" android:name="com.amazon.venezia.mShop.MshopCountryUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.LOCALE_SWITCHED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.venezia.deviceinfo.DeviceInfoCacheInvalidationReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mas.client.authentication.action.AUTHENTICATION_SUCCESS_ACTION"/>
+                <action android:name="com.amazon.mas.client.authentication.action.CURRENT_ACCOUNT_CHANGED_ACTION"/>
+                <action android:name="com.amazon.mas.client.authentication.action.USER_DEREGISTERED_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.amazon.venezia.locker-com.amazon.mShop.android" android:enabled="true" android:exported="true" android:name="com.amazon.mas.client.locker.LockerProviderStub" android:readPermission="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.mShop.android"/>
+        <provider android:authorities="com.amazon.venezia.licensing-com.amazon.mShop.android" android:enabled="true" android:exported="true" android:name="com.amazon.mas.client.licensing.LicensingProviderStub" android:readPermission="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.mShop.android"/>
+        <provider android:authorities="com.amazon.venezia.kiwi-com.amazon.mShop.android" android:enabled="true" android:exported="true" android:name="com.amazon.venezia.command.shared.AuthTokenProviderStub" android:readPermission="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.mShop.android"/>
+        <provider android:authorities="com.amazon.mas.client.install-com.amazon.mShop.android" android:enabled="true" android:exported="true" android:name="com.amazon.mas.client.install.queue.InstallQueueProviderStub" android:readPermission="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.mShop.android" android:writePermission="com.amazon.mas.client.install.CONTENT_PROVIDER_WRITE-com.amazon.mShop.android"/>
+        <provider android:authorities="com.amazon.mas.client.download-com.amazon.mShop.android" android:enabled="true" android:exported="true" android:name="com.amazon.mas.client.download.query.DownloadQueueProviderStub" android:readPermission="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.mShop.android" android:writePermission="com.amazon.mas.client.download.CONTENT_PROVIDER_WRITE-com.amazon.mShop.android"/>
+        <provider android:authorities="com.amazon.mas.client.malware.blockedapp-com.amazon.mShop.android" android:enabled="true" android:exported="true" android:name="com.amazon.mas.client.malware.blockedapp.BlockedAppProviderStub" android:readPermission="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.mShop.android" android:writePermission="com.amazon.mas.client.malware.blockedapp.BLOCKED_APP_PROVIDER_WRITE-com.amazon.mShop.android"/>
+        <provider android:authorities="com.amazon.mas.client.framework.DeviceInfoContentProvider-com.amazon.mShop.android" android:enabled="true" android:exported="true" android:name="com.amazon.venezia.deviceinfo.DeviceInfoProviderStub" android:permission="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.venezia"/>
+        <provider android:authorities="com.amazon.mas.client.framework.DeviceInfoCookieContentProvider" android:enabled="true" android:exported="true" android:name="com.amazon.venezia.deviceinfo.DeviceInfoCookieProviderStub" android:permission="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.venezia"/>
+        <service android:name="com.amazon.venezia.notification.NotificationService"/>
+        <activity android:name="com.amazon.mas.bamberg.settings.SettingsActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <service android:enabled="true" android:name="com.amazon.mas.bamberg.settings.selfupdate.SelfUpdateBackgroundService"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.mas.client.ui.myapps.MyAppsActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:name="com.amazon.testdrive.TestDriveActivity" android:screenOrientation="sensorPortait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.venezia.ftue.CreateAccountActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.video.VideoPreview" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.gallery.FullScreenGallery" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity-alias android:name="com.amazon.mas.client.video.VideoPreview" android:targetActivity="com.amazon.venezia.video.VideoPreview"/>
+        <activity-alias android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.mas.client.gallery.FullScreenGallery" android:targetActivity="com.amazon.venezia.gallery.FullScreenGallery"/>
+        <service android:name="com.amazon.venezia.mcb.registration.LongPollingRegistration"/>
+        <provider android:authorities="com.amazon.appstore-snuffy" android:enabled="true" android:exported="true" android:label="GroverContentProvider" android:name="com.amazon.mas.client.grovercp.GroverContentProviderStub" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.guide.unknownsources.UnknownSourcesGuideActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.guide.syncsettings.IAPBlockSyncActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout" android:name="com.amazon.venezia.guide.multipleaccounts.IAPBlockAccountsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.amazon.mobile.appdrawer.controllers.LeftNavAppChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="locale|orientation|screenLayout" android:launchMode="singleTop" android:name="com.creditcardreader.activities.CreditCardScanActivity"/>
+        <activity android:configChanges="locale|orientation" android:name="com.amazon.mobile.mash.embeddedbrowser.EmbeddedBrowserActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="true" android:label="Amazon AuthPortal" android:name="com.amazon.identity.auth.device.AuthPortalUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DirtyDataSyncingService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.SYNC_DIRTY_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.CLEAN_DATA"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="false" android:name="com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="com.amazon.dcp.contracts" android:required="false"/>
+        <uses-library android:name="com.amazon.dcp.contracts.framework" android:required="false"/>
+        <uses-library android:name="com.amazon.client.metrics.api" android:required="false"/>
+    </application>
+    <permission android:name="com.amazon.mShop.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.mShop.android.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <permission android:name="com.amazon.CONTENT_PROVIDER_ACCESS" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.light" android:required="false"/>
+    <permission android:name="getui.permission.GetuiService" android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="getui.permission.GetuiService"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.avod.SDK_ACCESS"/>
+    <permission android:name="com.amazon.avod.SDK_ACCESS" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.GLOBAL_BROADCAST-com.amazon.mShop.android" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.settings.SETTING_CHANGE_BROADCAST_PERMISSION" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.dcp.settings.permission.READ_SETTINGS" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.download.CONTENT_PROVIDER_WRITE-com.amazon.mShop.android" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.install.INSTALL-com.amazon.mShop.android" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.install.CONTENT_PROVIDER_WRITE-com.amazon.mShop.android" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.install.KICKOFF_INSTALL-com.amazon.mShop.android" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.install.RECEIVE_INSTALL_STATE-com.amazon.mShop.android" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.mShop.android" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.authentication.permission.DEREGISTRATION_BROADCAST_PERMISSION-com.amazon.mShop.android" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.mas.client.malware.blockedapp.BLOCKED_APP_PROVIDER_WRITE-com.amazon.mShop.android" android:protectionLevel="signature"/>
+    <permission android:description="@string/permission_purchasing_notify_description" android:label="@string/permission_purchasing_notify" android:name="com.amazon.inapp.purchasing.Permission.NOTIFY" android:protectionLevel="signature"/>
+    <permission android:description="@string/permission_physical_purchasing_notify_description" android:label="@string/permission_physical_purchasing_notify" android:name="com.amazon.device.iap.physical.Permission.NOTIFY" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="com.amazon.mas.client.GLOBAL_BROADCAST-com.amazon.mShop.android"/>
+    <uses-permission android:name="com.amazon.mas.client.settings.SETTING_CHANGE_BROADCAST_PERMISSION"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.account.changed"/>
+    <uses-permission android:name="com.android.amazon.dcp.ota.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="com.amazon.mas.client.install.INSTALL-com.amazon.mShop.android"/>
+    <uses-permission android:name="com.amazon.mas.client.install.CONTENT_PROVIDER_WRITE-com.amazon.mShop.android"/>
+    <uses-permission android:name="com.amazon.mas.client.install.KICKOFF_INSTALL-com.amazon.mShop.android"/>
+    <uses-permission android:name="com.amazon.mas.client.install.RECEIVE_INSTALL_STATE-com.amazon.mShop.android"/>
+    <uses-permission android:name="com.amazon.mas.client.CONTENT_PROVIDER_READ-com.amazon.mShop.android"/>
+    <uses-permission android:name="com.amazon.mas.client.authentication.permission.DEREGISTRATION_BROADCAST_PERMISSION-com.amazon.mShop.android"/>
+    <uses-permission android:name="com.amazon.mas.client.malware.blockedapp.BLOCKED_APP_PROVIDER_WRITE-com.amazon.mShop.android"/>
+    <uses-permission android:name="com.amazon.inapp.purchasing.Permission.NOTIFY"/>
+    <uses-permission android:name="com.amazon.device.iap.physical.Permission.NOTIFY"/>
+    <uses-permission android:name="com.amazon.mas.client.settings.provider.CONTENT_PROVIDER_ACCESS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.account.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"/>
+    <uses-permission android:name="com.amazon.dcp.settings.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    <uses-permission android:name="com.amazon.identity.permission.GENERIC_IPC"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_COR_PFM"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"/>
+    <uses-permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"/>
+    <uses-permission android:name="amazon.permission.COLLECT_METRICS"/>
+</manifest>

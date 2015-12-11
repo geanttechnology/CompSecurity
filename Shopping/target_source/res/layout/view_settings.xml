@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/settings_notification" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/account_setting_notifications" android:drawableLeft="@drawable/account_launch_left_image_with_blank_space" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.Title" />
+        <android.support.v7.widget.SwitchCompat android:id="@id/settings_notification_switch" android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/account_setting_notifications_switch" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/settings_in_store_location" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/account_setting_in_store_location" android:drawableLeft="@drawable/account_launch_left_image_with_blank_space" android:layout_weight="1.0" app:fontStyle="light" style="@style/Target.TextView.LineItem.ExternalLaunch.Title" />
+        <android.support.v7.widget.SwitchCompat android:id="@id/settings_in_store_location_switch" android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/account_setting_in_store_location_switch" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_progress" />
+    <RelativeLayout android:id="@id/top_layout" android:background="?listContainerOutsideBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ebay.android.widget.HeaderViewWebView android:id="@id/body" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/MessageLayoutMargin" android:layout_alignParentTop="true">
+            <RelativeLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="3" android:layout_alignParentTop="true" />
+                <View android:id="@id/spacer1_layout" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:layout_below="@id/subject" style="@style/CommonDivider" />
+                <RelativeLayout android:id="@id/from_date_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/spacer1_layout">
+                    <TextView android:textColor="?android:textColorSecondary" android:id="@id/from_label" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/from" android:lines="1" android:layout_alignParentLeft="true" />
+                    <TextView android:textColor="?android:textColorTertiary" android:ellipsize="middle" android:id="@id/sender" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/time" android:layout_toRightOf="@id/from_label" />
+                    <TextView android:textColor="?android:textColorSecondary" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View android:id="@id/spacer2_layout" android:layout_marginTop="@dimen/ebayMargin" android:layout_below="@id/from_date_layout" style="@style/CommonDivider" />
+                <RelativeLayout android:id="@id/view_item_layout" android:paddingTop="@dimen/ebayMargin" android:paddingBottom="@dimen/ebayMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/spacer2_layout">
+                    <ImageView android:id="@id/item_image" android:background="@android:color/transparent" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/missing_image_300" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/item_image" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <TextView android:textColor="?android:textColorSecondary" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                        <TextView android:textColor="?android:textColorTertiary" android:id="@id/item_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.ebay.android.widget.HeaderViewWebView>
+        <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_below="@id/body" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Checkout.Container.Content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/xo_cart_incentives_needs_paypal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin3x" android:text="@string/xo_cart_incentives_require_paypal" android:drawableTop="@drawable/ic_warning" android:drawablePadding="@dimen/ebayPadding" />
+    <ScrollView android:id="@id/xo_cart_incentives_entry" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/xo_cart_incentives_list_buttons" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+            <RelativeLayout android:background="?listContainerBackground" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/xo_cart_incentives_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/LOCKED_xo_cart_incentive_add_hint" android:lines="1" android:inputType="textNoSuggestions" style="?android:attr/textAppearance" />
+                <TextView android:textColor="@color/style_guide_red" android:layout_gravity="center_vertical" android:id="@id/xo_cart_incentives_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_below="@id/xo_cart_incentives_text" android:layout_alignParentLeft="true" style="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/xo_cart_incentive_paypal_verbiage" android:paddingLeft="@dimen/ebayPadding15" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:id="@id/xo_cart_incentives_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/xo_cart_incentives_list_buttons" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ebay.android.widget.ContainerLayout android:id="@id/xo_cart_incentives_list_items" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/checkoutListContainerMargin" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/xo_cart_incentives_add" android:paddingLeft="@dimen/ebayBarButtonSideMargin" android:paddingRight="@dimen/ebayBarButtonSideMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutListContainerMargin" android:text="@string/LOCKED_xo_cart_incentive_add" style="@style/EbayButton.Blue.Bar" />
+            <include layout="@layout/button_bar_placeholder" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/xo_cart_incentives_list_buttons" android:background="@drawable/bottom_action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/ebayTextSizeMedium" android:gravity="center" android:id="@id/xo_cart_incentives_done" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" android:layout_margin="@dimen/ebayMargin" android:text="@string/done" style="@style/EbayButton.White" />
+    </LinearLayout>
+</RelativeLayout>

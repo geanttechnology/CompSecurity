@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0">
+        <ImageView android:layout_gravity="center" android:id="@id/conversation_user_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/no_photo" android:contentDescription="@string/chat_user_image_title" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="left|center" android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="70.0">
+        <TextView android:textSize="16.0sp" android:id="@id/conversation_user_username" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:id="@id/conversation_user_product" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/conversation_user_lastmessage_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0sp" android:id="@id/conversation_user_lastmessage" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0">
+        <ImageView android:id="@id/go_to_conversation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right_black_48dp" android:contentDescription="@string/chat_content_description_view" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/conversations_messages_to_read" android:background="@drawable/background_elipse" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

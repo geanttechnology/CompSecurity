@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/xo_address_list_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/psl_padding" android:layout_above="@id/ships_from_button_container" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:paddingLeft="@dimen/psl_padding" android:paddingBottom="@dimen/psl_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psl_primary_shipping" style="@style/EbayTextAppearanceHeader" />
+            <LinearLayout android:orientation="vertical" android:id="@id/shipping_from_primary_address" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@id/shipping_from_address_title" android:paddingLeft="@dimen/psl_padding" android:paddingTop="@dimen/psl_padding" android:paddingBottom="@dimen/psl_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psl_previously_used_address" style="@style/EbayTextAppearanceHeader" />
+            <LinearLayout android:orientation="vertical" android:id="@id/shipping_from_list_addresses" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/ships_from_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/ebayTextSizeMedium" android:gravity="center" android:id="@id/shipping_from_add_address" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" android:text="@string/psl_new_address" style="@style/EbayButton.White.Letterboxed" />
+    </LinearLayout>
+</RelativeLayout>

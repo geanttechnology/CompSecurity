@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mycc_row_v2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_vertical" android:id="@android:id/text1" style="@style/purchase_credit_card_icon_v2" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="left|center" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/payment_label_v2" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_expired" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " />
+                <TextView android:textColor="@color/groupon_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credit_card_expired" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_gravity="left|center" android:id="@id/card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/payment_details" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center" android:id="@id/more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more" />
+</LinearLayout>

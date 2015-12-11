@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/collection_details_action_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@android:style/TextAppearance" android:textColor="@color/style_guide_gray" android:layout_gravity="center_vertical" android:id="@id/followers" android:paddingLeft="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <Button android:textAppearance="@android:style/TextAppearance" android:textColor="@color/style_guide_blue" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/followButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_follow" android:textAllCaps="false" style="?android:borderlessButtonStyle" />
+        <include layout="@layout/vertical_divider" />
+        <Button android:textAppearance="@android:style/TextAppearance" android:textColor="@color/style_guide_blue" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/shareButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_view_share" android:textAllCaps="false" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

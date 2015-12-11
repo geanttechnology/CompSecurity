@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/opl_delivery_instruction_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:hint="@string/opl_delivery_instructions_title" />
+    <Button android:id="@id/opl_delivery_instruction_save_button" android:layout_margin="@dimen/padding" android:text="@string/opl_save_button" style="@style/AUIButton.Gold" />
+</LinearLayout>

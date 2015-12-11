@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dialog_title_text_size" android:textColor="@color/primary_text_color" android:layout_gravity="left" android:id="@id/selectStore" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/dialog_title_text_size" android:textColor="@color/primary_text_color" android:layout_gravity="left" android:id="@id/whichStore" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:background="@color/divider_line_primary_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/dialog_section_margin_top" />
+</LinearLayout>

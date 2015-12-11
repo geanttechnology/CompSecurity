@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@android:style/TextAppearance" android:textColor="@color/style_guide_gray" android:layout_gravity="center_vertical" android:id="@id/followers" android:padding="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/vertical_divider" />
+    <Button android:textAppearance="@android:style/TextAppearance" android:textColor="@color/style_guide_blue" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/followButton" android:padding="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_follow" android:textAllCaps="false" style="?android:borderlessButtonStyle" />
+    <include layout="@layout/vertical_divider" />
+    <Button android:textAppearance="@android:style/TextAppearance" android:textColor="@color/style_guide_blue" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/shareButton" android:padding="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_view_share" android:textAllCaps="false" style="?android:borderlessButtonStyle" />
+</LinearLayout>

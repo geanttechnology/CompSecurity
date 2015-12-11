@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_in_browser">Ouvrir dans le navigateur</string>
+    <string name="app_name">Amazon.fr</string>
+    <string name="cc_scan_app_name">Scannez votre carte</string>
+    <string name="cc_scan_center_card">Centrez votre carte dans le cadre</string>
+    <string name="cc_scan_amazon_secure">Sécurité Amazon</string>
+    <string name="cc_scan_card_not_stored">"L'image de la carte ne sera pas sauvegardée."</string>
+    <string name="cc_scan_scanning">Numérisation en cours…</string>
+    <string name="cc_scan_success">Scannée avec succès</string>
+    <string name="cc_scan_trouble">"Nous n'arrivons pas à scanner cette carte"</string>
+    <string name="cc_scan_rescan">Re-scanner</string>
+    <string name="cc_scan_manual">Saisir</string>
+    <string name="cc_scan_help_page_us">https://www.amazon.fr/ccscanhelpfr</string>
+    <string name="common_google_play_services_notification_ticker">Erreur liée aux services Google Play</string>
+    <string name="common_google_play_services_notification_needs_installation_title">"Une application demande l'installation des services Google Play."</string>
+    <string name="common_google_play_services_notification_needs_update_title">Une application demande la mise à jour des services Google Play.</string>
+    <string name="common_google_play_services_needs_enabling_title">"Une application demande l'activation des services Google Play."</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">"Notification issue de l'application \"%1$s\""</string>
+    <string name="common_google_play_services_install_title">Installer les services Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Cette application ne fonctionnera pas sans les services Google Play, qui ne sont pas installés sur votre téléphone.</string>
+    <string name="common_google_play_services_install_text_tablet">Cette application ne fonctionnera pas sans les services Google Play, qui ne sont pas installés sur votre tablette.</string>
+    <string name="common_google_play_services_install_button">Installer services Google Play</string>
+    <string name="common_google_play_services_enable_title">Activer les services Google Play</string>
+    <string name="common_google_play_services_enable_text">"Cette application ne fonctionnera pas tant que vous n'aurez pas activé les services Google Play."</string>
+    <string name="common_google_play_services_enable_button">Activer services Google Play</string>
+    <string name="common_google_play_services_update_title">Mettre à jour les services Google Play</string>
+    <string name="common_google_play_services_update_text">"Cette application ne fonctionnera pas tant que vous n'aurez pas mis à jour les services Google Play."</string>
+    <string name="common_google_play_services_network_error_title">Erreur réseau</string>
+    <string name="common_google_play_services_network_error_text">"Vous devez disposer d'une connexion de données pour utiliser les services Google Play."</string>
+    <string name="common_google_play_services_invalid_account_title">Compte erroné</string>
+    <string name="common_google_play_services_invalid_account_text">"Le compte indiqué n'existe pas sur cet appareil. Veuillez sélectionner un autre compte."</string>
+    <string name="common_google_play_services_unknown_issue">Problème inconnu avec les services Google Play.</string>
+    <string name="common_google_play_services_unsupported_title">Services Google Play</string>
+    <string name="common_google_play_services_unsupported_text">"Les services Google Play, dont dépendent certaines de vos applications, ne sont pas compatibles avec votre appareil. Veuillez contacter le fabricant pour obtenir de l'aide."</string>
+    <string name="common_google_play_services_unsupported_date_text">"La date sur l'appareil semble incorrecte. Veuillez la vérifier."</string>
+    <string name="common_google_play_services_update_button">Mettre à jour</string>
+    <string name="common_signin_button_text">Connexion</string>
+    <string name="common_signin_button_text_long">Se connecter avec Google</string>
+    <string name="yes">Oui</string>
+    <string name="cancel">Annuler</string>
+    <string name="search">Rechercher sur Amazon.fr</string>
+    <string name="addon">Add-on Item</string>
+    <string name="rs_results_best_seller_description">Meilleure vente</string>
+    <string name="rs_results_best_seller_department">" dans %1$s"</string>
+    <string name="rs_results_error_try_again">Ré-essayer</string>
+    <string name="rs_results_error_connectivity">Merci de vérifier votre connexion Internet et de ré-essayer.</string>
+    <string name="rs_results_error_generic">Désolé, il ya un problème avec cette page dès maintenant. Nous recherchons une solution.</string>
+    <string name="item_map_instructions">Cliquez pour les détails sur le produit</string>
+    <string name="prime_eligible">"peuvent bénéficier d'Amazon Premium"</string>
+    <string name="prime_fresh_eligible">Eligible à Prime Fresh</string>
+    <string name="list_view_description">Vue Liste</string>
+    <string name="grid_view_description">Vue grille</string>
+    <string name="image_view_description">Vue image</string>
+    <string name="product_review_single">1 commentaire</string>
+    <string name="product_review_count">%1$s commentaires</string>
+    <string name="refine_disabled">Désactivé</string>
+    <string name="refine_selected">Selected</string>
+    <string name="refine_sort">Trier par</string>
+    <string name="refine_filter">Filtrer</string>
+    <string name="searchbox_in">dans</string>
+    <string name="select_department">Affiner la catégorie</string>
+    <string name="subscribe_and_save">Economisez davantage avec les livraisons mensuelles</string>
+    <string name="rs_refinement_menu_clear_all">Effacer tout</string>
+    <string name="rs_refinement_menu_filter">FILTRER</string>
+    <string name="rs_refinement_menu_see_more_filters">Choisir un département pour plus de filtres</string>
+    <string name="rs_search_suggestions_department_text">dans %s</string>
+    <string name="rs_search">Rechercher sur Amazon.fr</string>
+    <string name="rs_search_go_button">Go</string>
+    <string name="rs_search_menu_item">Rechercher</string>
+    <string name="rs_search_all_departments">Toutes nos boutiques</string>
+    <string name="rs_search_in_department">Rechercher dans %1$s</string>
+    <string name="rs_bc_search_button">Scanner un code-barres</string>
+    <string name="rs_shop_by_department_text">Choisir une Boutique</string>
+    <string name="rs_snapit">Enclenchez-le</string>
+    <string name="adrive_lib_android_autosave_label">Enregistrement automatique</string>
+    <string name="adrive_lib_android_turn_on_autosave">"Activer l'enregistrement automatique"</string>
+    <string name="adrive_lib_android_video_limit">Le chargement des vidéos est limité à 2 Go et 20 minutes</string>
+    <string name="adrive_lib_android_breadcrumb_photo_counter">%1$d sur %2$d</string>
+    <string name="adrive_lib_android_cloud_drive_almost_full">"Votre Cloud Drive est presque plein. Il reste %s Mo d'espace libre."</string>
+    <string name="adrive_lib_android_cloud_drive_full_message">Votre Cloud Drive est plein.</string>
+    <string name="adrive_lib_android_cloud_drive_almost_full_message">Votre Cloud Drive est presque plein.</string>
+    <string name="adrive_lib_android_view_and_manage_info">Visualisez et organisez vos photos et vidéos de partout grâce à Amazon Cloud Drive.</string>
+    <string name="adrive_lib_android_view_your_photos">"Obtenir l'appli Cloud Drive Photos"</string>
+    <string name="adrive_lib_android_backup_your_photos">Sauvegardez vos photos</string>
+    <string name="adrive_lib_android_autosave_not_supported">"L'enregistrement automatique n'est pas compatible avec cet appareil"</string>
+    <string name="adrive_lib_android_5gb_free_from_acd">5 Go gratuits sur Amazon Cloud Drive</string>
+    <string name="adrive_lib_android_autosave_info">Les photos et vidéos prises avec ce téléphone seront automatiquement enregistrées sur votre compte Amazon Cloud Drive à chaque fois que vous êtes connecté à votre compte et à un accès Wifi.</string>
+    <string name="adrive_lib_android_tos_agree_statement">"En cliquant sur OK vous acceptez les conditions d'utilisation de Cloud Drive"</string>
+    <string name="adrive_lib_android_terms_of_use">"Conditions d'utilisation"</string>
+    <string name="adrive_lib_android_account_status_error_message">Il y a un problème avec votre compte. Contactez le support client.</string>
+    <string name="adrive_lib_android_account_status_help_text">Aide</string>
+    <string name="adrive_lib_android_account_storage_details_message">Afficher votre espace de stockage</string>
+    <string name="adrive_lib_android_account_upgrade_storage_message">"Modifiez votre compte pour ajouter de l'espace."</string>
+    <string name="adrive_lib_android_autosave_paused_country">La sauvegarde automatique a été désactivée parce que vous avez modifié le pays. Allez sur Modifier le pays pour la réactiver.</string>
+    <string name="adrive_lib_android_photo_backup_from_acd">"Sauvegarde de photos depuis Cloud Drive d'Amazon"</string>
+    <string name="adrive_lib_android_app_manages_backups">"Votre application Cloud Drive Photos d'Amazon gère vos sauvegardes. Ouvrez l'application pour visualiser vos photos et vidéos."</string>
+    <string name="adrive_lib_android_dont_show_me">"N'affichez plus ceci"</string>
+    <string name="adrive_lib_android_open_cdp_app">"Ouvrir l'application Cloud Drive Photos"</string>
+    <string name="adrive_lib_android_upgrade_storage">Augmentez votre espace de stockage sur Cloud Drive</string>
+    <string name="adrive_lib_android_cancel">Annuler</string>
+    <string name="adrive_lib_android_close">Fermer</string>
+    <string name="adrive_lib_android_notification_upload_complete">Chargement terminé</string>
+    <string name="adrive_lib_android_notification_upload_complete_message_success">%1$d terminé.</string>
+    <string name="adrive_lib_android_notification_upload_complete_message_mixed">%1$d réussi, %2$d échoué.</string>
+    <string name="adrive_lib_android_notification_uploading">Chargement de %1$s en cours</string>
+    <string name="adrive_lib_android_uploading_short_text">Chargement en cours</string>
+    <string name="adrive_lib_android_uploading">Chargement vers Cloud Drive en cours</string>
+    <string name="adrive_lib_android_error_uri_parse">Impossible de trouver le fichier à charger</string>
+    <string name="adrive_lib_android_transfer_no_wifi_title">Aucune connexion Wi-Fi</string>
+    <string name="adrive_lib_android_upload_no_wifi_message">Votre chargement commencera dès que vous aurez une connexion wifi.</string>
+    <string name="adrive_lib_android_upload_full_notification_title">Espace de stockage sur Cloud Drive plein</string>
+    <string name="adrive_lib_android_upload_full_notification_subtitle">Les ajouts sont suspendus</string>
+    <string name="adrive_lib_android_upload_full_notification_subtitle_prime">Le chargement des vidéos est en pause</string>
+    <string name="adrive_lib_android_full_storage_dialog_message">"Votre Cloud Drive est plein. Vous ne pourrez plus ajouter de photos tant qu'il n'y a pas d'espace supplémentaire disponible."</string>
+    <string name="adrive_lib_android_full_storage_dialog_message_prime">"Votre Cloud Drive est plein. L'enregistrement des vidéos est suspendu jusqu'à ce que davantage d'espace soit disponible."</string>
+    <string name="adrive_lib_android_upload_low_storage_title">Cloud Drive est presque plein</string>
+    <string name="adrive_lib_android_upload_low_storage_remaining">il reste moins de %1$s</string>
+    <string name="adrive_lib_android_low_storage_dialog_message">Il reste moins de %1$s sur votre Cloud Drive. Lorsque votre limite sera atteinte, vous ne pourrez plus ajouter de photos tant qu’il n’y aura pas d’espace supplémentaire disponible.</string>
+    <string name="adrive_lib_android_low_storage_dialog_message_prime">"Il reste moins de %1$s sur votre Cloud Drive. Lorsque la limite sera atteinte, l'enregistrement des vidéos sera suspendu jusqu'à ce que davantage d'espace soit disponible."</string>
+    <string name="adrive_lib_android_button_buy_more_space">"Acheter de l'espace de stockage"</string>
+    <string name="adrive_lib_android_manage_storage_settings_summary">%1$s disponible sur %2$s</string>
+    <string name="adrive_lib_android_manage_storage_summary_available">%1$s disponible</string>
+    <string name="adrive_lib_android_manage_storage_summary_mb_available">%1$s Mo disponible</string>
+    <string name="adrive_lib_android_manage_storage_summary_gb_available">%1$s Go de disponible</string>
+    <string name="adrive_lib_android_plan">Plan %1$s</string>
+    <string name="adrive_lib_android_free_space_quota_details_header">Cloud Drive gratuit - Forfait %1$s</string>
+    <string name="adrive_lib_android_files_summary_label">Fichiers</string>
+    <string name="adrive_lib_android_videos_summary_label">Vidéos</string>
+    <string name="adrive_lib_android_video_summary_label">Vidéo</string>
+    <string name="adrive_lib_android_photos_summary_label">Photos</string>
+    <string name="adrive_lib_android_photo_summary_label">Photo</string>
+    <string name="adrive_lib_android_not_enough_space_for_uploads">"il ne vous reste pas suffisamment d'espace pour réaliser des chargements supplémentaires."</string>
+    <string name="adrive_lib_android_ok">OK</string>
+    <string name="adrive_lib_android_retry">Essayez à nouveau</string>
+    <string name="adrive_lib_android_accept">Accepter</string>
+    <string name="adrive_lib_android_activity_indicator_loading">Chargement en cours…</string>
+    <string name="adrive_lib_android_no_network_error">Aucune connexion réseau</string>
+    <string name="adrive_lib_android_uploads_queued_message">"Un problème s'est produit pendant le chargement."</string>
+    <string name="adrive_lib_android_uploads_paused_user">Les chargements sont suspendus</string>
+    <string name="adrive_lib_android_uploads_paused_low_battery_subtitle">Connectez-vous au secteur pour poursuivre</string>
+    <string name="adrive_lib_android_video_length_limit_title">Problèmes de chargement de vidéo</string>
+    <string name="adrive_lib_android_video_length_limit_desc">Les vidéos de plus de 20 minutes ne peuvent pas être chargées sur Cloud Drive.</string>
+    <string name="adrive_lib_android_photo_size_limit_title">Problèmes de chargement de photo</string>
+    <string name="adrive_lib_android_photo_size_limit_desc">Les photos et vidéos dont la taille dépasse 2 Go ne peuvent pas être chargées sur Cloud Drive.</string>
+    <string name="adrive_lib_android_upload_will_resume_message">Votre chargement reprendra dans un instant.</string>
+    <string name="adrive_lib_android_upload_progress_already_saved_text">%1$d déjà enregistrés</string>
+    <string name="adrive_lib_android_upload_progress_queued_text">%1$d restant</string>
+    <string name="adrive_lib_android_upload_information_header_1_saved">"Le chargement d'1 fichier est terminé."</string>
+    <string name="adrive_lib_android_upload_information_header_x_saved">Le chargement de %1$d fichiers est terminé.</string>
+    <string name="adrive_lib_android_upload_information_header_autosave_nothing_saved">"Rien n'a été enregistré."</string>
+    <string name="adrive_lib_android_upload_information_header_autosave_off">"L'enregistrement automatique est désactivé."</string>
+    <string name="adrive_lib_android_upload_information_header_autosave_on">"L'enregistrement automatique est activé."</string>
+    <string name="adrive_lib_android_upload_generic_error_status_desc">Les chargements sont suspendus.</string>
+    <string name="adrive_lib_android_upload_error_no_wifi_desc">Suspendu (en attente de wifi)</string>
+    <string name="adrive_lib_android_upload_error_no_network_desc">Suspendu (pas de réseau)</string>
+    <string name="adrive_lib_android_upload_error_low_battery_desc">Suspendu (batterie faible)</string>
+    <string name="adrive_lib_android_upload_error_storage_full_desc">Suspendu (votre espace de stockage est plein)</string>
+    <string name="adrive_lib_android_upload_error_prime_storage_full_desc">"Le chargement des vidéos est suspendu
+(votre espace de stockage est plein)"</string>
+    <string name="adrive_lib_android_upload_information_desc_checked_today">"Dernière vérification aujourd'hui à %1$s"</string>
+    <string name="adrive_lib_android_upload_information_desc_checked_yesterday">Dernière vérification hier à %1$s</string>
+    <string name="adrive_lib_android_upload_information_desc_checked_other_day">Dernière vérification %1$s %2$s à %3$s</string>
+    <string name="adrive_lib_android_upload_information_desc_uploaded_today">"Dernier chargement effectué aujourd'hui à %1$s"</string>
+    <string name="adrive_lib_android_upload_information_desc_uploaded_yesterday">Dernier chargement effectué hier à %1$s</string>
+    <string name="adrive_lib_android_upload_information_desc_uploaded_other_day">Dernier chargement %1$s %2$s à %3$s</string>
+    <string name="day_format">%d jour</string>
+    <string name="hour_hyphen_format">%d heure(s)</string>
+    <string name="ok">OK</string>
+    <string name="close">Fermer</string>
+    <string name="dismiss">Rejeter</string>
+    <string name="dont_show_again">Ne plus afficher ce message</string>
+    <string name="make_default">En faire mes paramètres par défaut</string>
+    <string name="adjust_in_settings">"Vous pouvez modifier ces paramètres à tout moment.
+Aller dans : Paramètres, Applications et Paramètres vidéo"</string>
+    <string name="streaming_not_enabled_over_wan_title">Réseau mobile pour la vidéo</string>
+    <string name="streaming_not_enabled_over_wan_text1">"Votre appareil n'est pas connecté à un réseau Wi-Fi."</string>
+    <string name="streaming_not_enabled_over_wan_link1">Rechercher des réseaux Wi-Fi</string>
+    <string name="streaming_not_enabled_over_wan_text2">"
+Pour regarder des vidéos, activez l'option Réseau mobile pour la vidéo dans les paramètres vidéo."</string>
+    <string name="streaming_not_enabled_over_wan_link2">En savoir plus</string>
+    <string name="streaming_not_enabled_over_wan_settingsBtn">Paramètres vidéo</string>
+    <string name="streaming_requires_wifi">"Votre appareil n'est pas connecté à un réseau Wi-Fi. Une connexion est nécessaire pour lire des vidéos en continu.
+
+Vous pouvez rechercher les réseaux Wi-Fi disponibles."</string>
+    <string name="streaming_requires_wifi_settingsBtn">Rechercher des réseaux Wi-Fi</string>
+    <string name="streaming_requires_wifi_title">Pourquoi ne puis-je pas regarder en streaming ?</string>
+    <string name="buffering_limit_reached_dialog_title">Connexion Internet lente</string>
+    <string name="buffering_limit_reached_dialog_accept_button">Regarder plus tard</string>
+    <string name="buffering_limit_reached_dialog_cancel_button">Continuer le visionnage</string>
+    <string name="buffering_limit_reached_dialog_message_download_available">La bande passante disponible de votre appareil est trop faible pour une lecture continue. Des pauses pourraient avoir lieu pendant la mise en mémoire tampon de la vidéo. Si vous disposez d’une connexion lente et que vous souhaitez regarder votre vidéo sans interruption, nous vous conseillons de la télécharger en avance. Souhaitez-vous continuer le visionnage ?</string>
+    <string name="buffering_limit_reached_dialog_message_no_download_available">La bande passante disponible de votre appareil est trop faible pour une lecture continue. Des pauses pourraient avoir lieu pendant la mise en mémoire tampon de la vidéo. Souhaitez-vous continuer le visionnage ?</string>
+    <string name="art_support_warning_dialog_title">+++</string>
+    <string name="art_support_warning_dialog_message">+++</string>
+    <string name="art_support_warning_dialog_accept_button">+++</string>
+    <string name="fsk18_content_verify_dialog_title">Vérification de l’âge requise</string>
+    <string name="fsk18_content_verify_dialog_message">"Vous devez indiquer votre âge avant de louer, acheter ou visionner ce titre interdit aux moins de 18 ans.
+
+Après vérification de votre âge, vous pouvez visionner les titres interdits aux moins de 18 ans en saisissant votre PIN Amazon Instant Video."</string>
+    <string name="fsk18_content_verify_dialog_button">Vérifier</string>
+    <string name="fsk18_content_dialog_cancel_button">Annuler</string>
+    <string name="fsk18_content_pin_dialog_title">Saisissez votre PIN à 4 chiffres pour accéder à ce titre présentant une restriction d’âge.</string>
+    <string name="fsk18_content_pin_dialog_confirm_button">Confirmer</string>
+    <string name="fsk18_content_pin_dialog_invalid_message">PIN invalide, veuillez réessayer.</string>
+    <string name="fsk18_content_pin_setup_dialog_title">PIN requis</string>
+    <string name="fsk18_content_pin_setup_dialog_message">Définissez un PIN Amazon Instant Video avant de louer, acheter ou visionner ce titre interdit aux moins de 18 ans.</string>
+    <string name="fsk18_content_pin_setup_dialog_button">Définir le PIN</string>
+    <string name="fsk18_content_pin_dialog_error">Nous ne sommes pas en mesure de vérifier votre PIN. Veuillez réessayer ultérieurement.</string>
+    <string name="fsk18_content_kft_stream_error">Les titres interdits aux moins de 18 ans ne sont pas disponibles lorsque Kindle FreeTime est activé.</string>
+    <string name="restricted_content_dialog_message">+++</string>
+    <string name="restricted_content_pc_message">+++</string>
+    <string name="resume_failure_title">Impossible de reprendre</string>
+    <string name="resume_failure_message">"Nous ne pouvons pas reprendre la lecture là où vous l'avez arrêtée car cette vidéo n'a pas été suffisamment téléchargée. Vous pouvez :"</string>
+    <string name="resume_failure_cancel_text">Retour</string>
+    <string name="download_options_watch_from_beginning">Recommencer</string>
+    <string name="error_code_format">+++</string>
+    <string name="error_show_details"><u>+++</u></string>
+    <string name="error_ok">OK</string>
+    <string name="connection_error">Cette page ne peut être affichée. Vérifiez la connexion Internet de votre appareil, puis réessayez.</string>
+    <string name="playback_error_retry">"Il semble y avoir un problème avec la lecture de cette vidéo.
+
+Si le problème persiste, veuillez contacter le service client d'Amazon."</string>
+    <string name="network_error">"Une erreur s'est produite lors de la connexion au réseau. Veuillez réessayer."</string>
+    <string name="error_retry">Réessayer</string>
+    <string name="player_error_title">Attention</string>
+    <string name="drm_system_needs_reset_message">Cette vidéo ne peut pas être lue en continu. Allez sur Paramètres > Applications > Gérer toutes les applications installées > Amazon Video, puis sélectionnez Effacer les données. Pour plus d’assistance, veuillez contacter le service client d’Amazon.</string>
+    <string name="media_system_clock_error_message">"L'horloge de votre appareil n'est pas correctement réglée. Connectez votre appareil à Internet pour régler automatiquement le problème. Pour plus d'assistance, veuillez contacter le service client d'Amazon."</string>
+    <string name="playready_drm_error_hdcp_fail">Nous avons détecté un problème concernant la connexion HDMI. Essayez de reconnecter le câble HDMI. Si vous avez connecté votre câble HDMI à un récepteur, essayez de le connecter directement à votre téléviseur ou à votre écran.</string>
+    <string name="playready_drm_error_DRMNOTINIT">Cette vidéo n’est pas disponible pour le moment. Si le problème persiste, veuillez contacter le service client d’Amazon en reportant le code d’erreur 02.</string>
+    <string name="playready_drm_error_LICENSENOTFOUND">Cette vidéo n’est pas disponible pour le moment. Si le problème persiste, veuillez contacter le service client d’Amazon en reportant le code d’erreur 13.</string>
+    <string name="playready_drm_error_CIPHER_NOTINITIALIZED">Cette vidéo n’est pas disponible pour le moment. Si le problème persiste, veuillez contacter le service client d’Amazon en reportant le code d’erreur 80.</string>
+    <string name="playready_drm_error_INVALIDARG">Cette vidéo n’est pas disponible pour le moment. Si le problème persiste, veuillez contacter le service client d’Amazon en reportant le code d’erreur 57.</string>
+    <string name="media_corrupt_error_message">Nous avons détecté un problème concernant cette vidéo. Veuillez réessayer. Si le problème persiste, veuillez contacter le service client d’Amazon.</string>
+    <string name="reached_end_of_buffer">Votre appareil doit être connecté pour continuer à visionner cette vidéo. Veuillez vous connecter à un réseau Wi-Fi.</string>
+    <string name="reached_end_of_buffer_ethernet">Une connexion Internet est requise. Veuillez vérifier la connexion Internet de votre appareil.</string>
+    <string name="concurrency_offline_error">"Une erreur réseau s'est produite. Cela peut être un problème temporaire. Veuillez réessayer dans quelques minutes. Si le problème persiste, veuillez contacter le service client."</string>
+    <string name="eng_playback_error">ENGINEERING BUILD : ne peut pas lire passés les premiers 50 Mo du fichier.</string>
+    <string name="service_error">Cette page ne peut être affichée. Veuillez réessayer.</string>
+    <string name="generic_error">"Une erreur s'est produite. Veuillez réessayer."</string>
+    <string name="rental_expired">Votre vidéo a expiré. Veuillez connecter votre appareil à Internet pour consulter les options d’affichage.</string>
+    <string name="media_eject_error">Veuillez déconnecter cet appareil de votre ordinateur pour continuer.</string>
+    <string name="no_available_online_streams_title">Trop de lectures en continu en cours</string>
+    <string name="no_available_online_streams">"Cette vidéo ne peut être regardée en streaming sur votre appareil, car votre compte diffuse actuellement le nombre maximum de vidéos sur d'autres appareils. Pour visionner cette vidéo sur votre appareil, veuillez arrêter de la regarder sur l'un des autres appareils liés à votre compte.
+
+Remarque : les vidéos téléchargées ne sont pas prises en compte dans votre limite de temps de lecture."</string>
+    <string name="temporarily_unavailable">Cette vidéo n’est pas disponible pour le moment. Si le problème persiste, veuillez contacter le service client d’Amazon.</string>
+    <string name="no_available_online_streams_nodownload">Vous avez atteint le nombre maximal de lectures en cours sur votre compte. Pour regarder maintenant cette vidéo, veuillez arrêter la lecture de l’une des vidéos en cours de lecture sur votre compte. Vous pourrez commencer à regarder la vidéo sur cet appareil d’ici une dizaine de minutes.</string>
+    <string name="recoverable_offline_download_error">Cette vidéo ne peut être lue. Ce problème peut être automatiquement résolu une fois la connexion Internet établie. Si le problème persiste, supprimez la vidéo puis téléchargez-la à nouveau.</string>
+    <string name="download_no_available_download_license">"Cette vidéo a été téléchargée sur un de vos autres appareils enregistrés et vous ne disposez plus d'aucune licence.
+
+Si vous avez loué cette vidéo, il ne vous reste plus de licences de téléchargement. Si vous avez acheté cette vidéo, vous pouvez la visionner sur cet appareil en supprimant une copie téléchargée depuis un autre de vos appareils enregistrés."</string>
+    <string name="invalid_geo_ip_purchase">"Votre commande ne peut aboutir suite à des restrictions géographiques. Pour plus d'informations, veuillez vous reporter aux conditions d'utilisation en vigueur."</string>
+    <string name="invalid_geo_ip_download">"Ce contenu n'est pas disponible en raison de restrictions géographiques. Pour plus d'informations, veuillez vous reporter aux conditions d'utilisation en vigueur."</string>
+    <string name="kft_download_switch_profile_error">Le profil Adulte enregistré sur cet appareil peut télécharger des films et des séries TV depuis la vidéothèque FreeTime. Pour regarder cette vidéo, veuillez passer en profil Adulte.</string>
+    <string name="dialog_rental_period_start_warning_title">Début de la période de location</string>
+    <string name="dialog_rental_period_start_warning_message">"Vous êtes sur le point de commencer la période de location %s pour cette vidéo.
+
+Remarque : vous pouvez télécharger cette vidéo sur un seul appareil, mais la regarder en streaming sur plusieurs appareils."</string>
+    <string name="dialog_rental_period_start_warning_message_nodownload">Vous êtes sur le point de commencer la période de location %s pour cette vidéo.</string>
+    <string name="dialog_rental_period_start_warning_start">Regarder maintenant</string>
+    <string name="dialog_rental_period_start_warning_cancel">Regarder plus tard</string>
+    <string name="dialog_prime_period_start_warning_title">Commencer la période de visionnage hors ligne de %s</string>
+    <string name="dialog_prime_period_start_warning_message">Vous disposerez de %1$s pour regarder cette vidéo hors ligne. Pour regarder au-delà de %2$s, veuillez vous reconnecter à Internet.</string>
+    <string name="dialog_prime_period_start_warning_start">Regarder maintenant</string>
+    <string name="dialog_prime_period_start_warning_cancel">Regarder plus tard</string>
+    <string name="dialog_prime_check_wifi_settings">Rechercher des réseaux Wi-Fi</string>
+    <string name="dialog_prime_period_expired_title">Période de visionnage hors ligne expirée</string>
+    <string name="dialog_prime_period_expired_message">Le temps de lecture hors connexion pour cette vidéo a expiré. Pour regarder cette vidéo, veuillez vous reconnecter à Internet.</string>
+    <string name="no_internet_dialog_title">Aucune connexion Internet</string>
+    <string name="no_internet_toast">+++</string>
+    <string name="wifi_settings">+++</string>
+    <string name="no_internet_dialog_title_ethernet">Pas de connexion Internet</string>
+    <string name="no_internet_toast_ethernet">Une connexion Internet est nécessaire pour effectuer cette tâche. Veuillez vérifier le statut de votre connexion.</string>
+    <string name="no_internet_settings_ethernet">Paramètres</string>
+    <string name="loading">Chargement en cours…</string>
+    <string name="video_loading">Chargement en cours…</string>
+    <string name="video_loading_tv_episode_title">%1$s, Saison %2$d, Ép. %3$d</string>
+    <string name="video_loading_long_wait">Le chargement de cette vidéo est plus long que prévu. Nous vous recommandons de vérifier votre connexion Internet ou de réessayer ultérieurement.</string>
+    <string name="player_hd_icon_default_text">HD</string>
+    <string name="player_hd_icon_1080p_text">1080p</string>
+    <string name="wan_learn_more_title">Vos vidéos préférées sont disponibles instantanément grâce à votre forfait de données mobiles.</string>
+    <string name="wan_learn_more_details_item1">• Commencez à regarder des vidéos instantanément sans le Wi-Fi.</string>
+    <string name="wan_learn_more_details_item2">"• Ajoutez des données supplémentaires à votre forfait et profitez d'heures supplémentaires de divertissement."</string>
+    <string name="wan_learn_more_details_item3">• Utilisez les options de qualité par défaut pour optimiser votre forfait de données mobiles ou utilisez les paramètres vidéo pour améliorer la qualité de la vidéo.</string>
+    <string name="wan_learn_more_button_description">Activer la lecture en streaming des vidéos sur un réseau mobile</string>
+    <string name="wan_learn_more_button">Paramètres vidéo</string>
+    <string name="wan_learn_more_settings_data_plan">Gérer votre forfait de données</string>
+    <string name="wan_learn_more_settings_data_plan_5_gb">Forfait 5 Go/mois :</string>
+    <string name="wan_learn_more_settings_data_plan_3_gb">Forfait 3 Go/mois :</string>
+    <string name="wan_learn_more_settings_data_plan_250_mb">Forfait 250 Mo/mois :</string>
+    <string name="wan_learn_more_settings_playback_minutes">"jusqu'à %s minutes de vidéo"</string>
+    <string name="wan_learn_more_settings_playback_hours">"jusqu'à %s heures de vidéo"</string>
+    <string name="wan_streaming_toast_text">Vous utilisez votre forfait de données mobiles pour regarder en streaming.</string>
+    <string name="wan_streaming_toast_description">Allez dans Paramètres vidéo pour modifier vos options de lecture en streaming mobile.</string>
+    <string name="preference_video_title">Paramètres des vidéos</string>
+    <string name="preference_mobile_quality_title">Regarder la vidéo sur le réseau mobile</string>
+    <string name="preference_mobile_quality_best">Qualité optimale</string>
+    <string name="preference_mobile_quality_better">Très bonne qualité</string>
+    <string name="preference_mobile_quality_good">Bonne qualité</string>
+    <string name="preference_mobile_quality_off">+++</string>
+    <string name="preference_mobile_quality_best_description">Jusqu’à 30 minutes de vidéo pour un forfait Internet de 1 Go</string>
+    <string name="preference_mobile_quality_better_description">Jusqu’à 60 minutes de vidéo pour un forfait Internet de 1 Go</string>
+    <string name="preference_mobile_quality_good_description">Jusqu’à 120 minutes de vidéo pour un forfait Internet de 1 Go</string>
+    <string name="preference_mobile_quality_off_description" />
+    <string name="ads_text">Publicité</string>
+    <string name="ads_action_skip">Ignorer</string>
+    <string name="ads_action_learn_more">+++</string>
+    <string name="ads_count_down_format">%1$s reprendra dans %2$d secondes…</string>
+    <string name="ads_learn_more_page_loading">En savoir plus sur le sponsor…</string>
+    <string name="ads_learn_more_download_error">"Nous ne sommes pas en mesure de fournir plus d'informations sur le sponsor. Vous pourrez regarder votre vidéo dans quelques instants."</string>
+    <string name="prime_upsell_message">+++</string>
+    <string name="prime_upsell_learn_more">+++</string>
+    <string name="prime_upsell_title_message">Regarder maintenant pour %1$s avec Prime Instant Video</string>
+    <string name="prime_upsell_btn_message">Bénéficiez de 30 jours d’essai gratuits</string>
+    <string name="prime_upsell_title_message_tv">Disponible sur</string>
+    <string name="prime_upsell_btn_message_tv">Amazon Prime</string>
+    <string name="zoom">Zoom</string>
+    <string name="next_up">Suivant</string>
+    <string name="exit_playback">Arrêter la lecture</string>
+    <string name="next_episode">Épisode suivant</string>
+    <string name="watch_from_beginning">Regarder depuis le début</string>
+    <string name="menu_title">Options</string>
+    <string name="speed_hint_rewind">+++</string>
+    <string name="speed_hint_ffward">+++</string>
+    <string name="on">Activé</string>
+    <string name="off">Désactivé</string>
+    <string name="generic_error_title">Erreur</string>
+    <string name="subtitle_error">Les sous-titres ne sont pas disponibles pour cette vidéo.</string>
+    <string name="subtitles">Sous-titres</string>
+    <string name="subtitle_language">Langue</string>
+    <string name="subtitle_size">Taille</string>
+    <string name="subtitle_size_picker">Aa</string>
+    <string name="subtitle_format">Format</string>
+    <string name="subtitle_sample_text">Exemple de sous-titre</string>
+    <string name="subtitle_display_settings">Afficher les paramètres</string>
+    <string name="audio">+++</string>
+    <string name="audio_language">Langue audio</string>
+    <string name="audio_language_unavailable">La langue audio sélectionnée est actuellement indisponible.</string>
+    <string name="overflow_cc_audio">Sous-titres et audio</string>
+    <string name="playback_audio_language_unavailable">"L'audio %1$s n'est pas disponible. Lecture en %2$s."</string>
+    <string name="unknown_language">+++</string>
+    <string name="xray_music_return_to_video">Return to Video</string>
+    <string name="download_quality_hd_dialog_title">Options de téléchargement HD</string>
+    <string name="download_quality_hd_best_dialog_button">Option « Qualité supérieure »</string>
+    <string name="download_quality_hd_best_dialog_button_continue">"Continuer avec l'option « Qualité supérieure »"</string>
+    <string name="download_quality_hd_best_dialog_button_restart">"Recommencer avec l'option « Qualité supérieure »"</string>
+    <string name="download_quality_hd_1080p_best_dialog_description">"Jusqu'à 1080p HD, si disponible
+Temps de téléchargement plus long, nécessite plus de mémoire"</string>
+    <string name="download_quality_hd_720p_best_dialog_description">720p HD, temps de téléchargement plus long, nécessite plus de mémoire</string>
+    <string name="download_quality_hd_better_dialog_button">Option « Excellente qualité »</string>
+    <string name="download_quality_hd_better_dialog_button_continue">"Continuer avec l'option « Excellente qualité »"</string>
+    <string name="download_quality_hd_better_dialog_button_restart">"Recommencer avec l'option « Excellente qualité »"</string>
+    <string name="download_quality_hd_1080p_better_dialog_description">"Jusqu'à 720p HD"</string>
+    <string name="download_quality_hd_good_dialog_button">Option « Bonne qualité »</string>
+    <string name="download_quality_hd_good_dialog_button_continue">"Continuer avec l'option « Bonne qualité »"</string>
+    <string name="download_quality_hd_good_dialog_button_restart">"Recommencer avec l'option « Bonne qualité »"</string>
+    <string name="download_quality_hd_good_dialog_description">SD, temps de téléchargement plus court, nécessite moins de mémoire</string>
+    <string name="download_quality_sd_dialog_title">Options de téléchargement SD</string>
+    <string name="download_quality_sd_best_dialog_button">Option « Qualité supérieure »</string>
+    <string name="download_quality_sd_best_dialog_button_continue">"Continuer avec l'option « Qualité supérieure »"</string>
+    <string name="download_quality_sd_best_dialog_button_restart">"Recommencer avec l'option « Qualité supérieure »"</string>
+    <string name="download_quality_sd_best_dialog_description">Temps de téléchargement plus long, nécessite plus de mémoire</string>
+    <string name="download_quality_sd_better_dialog_button">Option « Excellente qualité »</string>
+    <string name="download_quality_sd_better_dialog_button_continue">"Continuer avec l'option « Excellente qualité »"</string>
+    <string name="download_quality_sd_better_dialog_button_restart">"Recommencer avec l'option « Excellente qualité »"</string>
+    <string name="download_quality_sd_better_dialog_description" />
+    <string name="download_quality_sd_good_dialog_button">Option « Bonne qualité »</string>
+    <string name="download_quality_sd_good_dialog_button_continue">"Continuer avec l'option « Bonne qualité »"</string>
+    <string name="download_quality_sd_good_dialog_button_restart">"Recommencer avec l'option « Bonne qualité »"</string>
+    <string name="download_quality_sd_good_dialog_description">Temps de téléchargement plus court, nécessite moins de mémoire.</string>
+    <string name="download_requires_wifi">Cet élément dépasse 50 Mo et ne peut être téléchargé via votre connexion au réseau mobile. Veuillez vous connecter à un réseau Wi-Fi pour le télécharger.</string>
+    <string name="download_requires_wifi_settingsBtn">Réseaux sans fil</string>
+    <string name="download_requires_wifi_title">Données de réseau mobile</string>
+    <string name="mobile_download_notice">"Télécharger à partir d'un réseau mobile"</string>
+    <string name="mobile_download_notice_message">Vous pourrez télécharger votre vidéo en utilisant votre forfait de données mobiles.</string>
+    <string name="mobile_download_notice_wifi_link">Rechercher des réseaux Wi-Fi</string>
+    <string name="mobile_download_notice_cancel">Annuler le téléchargement</string>
+    <string name="mobile_download_notice_continue">Continuer</string>
+    <string name="dialog_title_with_close_button">+++</string>
+    <string name="prime_upsell_resume">+++</string>
+    <string name="mobile_streaming_disabled">+++</string>
+    <string name="continue_shopping">Continuer les achats</string>
+    <string name="opl_checkout_title">Passer la commande</string>
+    <string name="opl_cancel_button">Annuler</string>
+    <string name="opl_done_button">OK</string>
+    <string name="opl_save_button">Enregistrer</string>
+    <string name="opl_continue_button">Continuer</string>
+    <string name="opl_please_select">Veuillez sélectionner</string>
+    <string name="opl_please_select_different">%1$s Veuillez en sélectionner un autre.</string>
+    <string name="opl_order_status_error_address_needs_correcting">"Un problème est survenu avec l'adresse indiquée. Vérifiez le code postal."</string>
+    <string name="opl_order_status_error_invalid_billing_address">"L'adresse sélectionnée n'est pas l'adresse de facturation correspondant à cette carte de paiement."</string>
+    <string name="opl_order_status_error_cannot_ship_to_address">"Certains articles ne peuvent pas être expédiés à l'adresse sélectionnée."</string>
+    <string name="opl_order_status_error_quantity_unavailable">Certains articles ne sont pas disponibles dans les quantités sélectionnées. Veuillez annuler votre commande et modifier les quantités.</string>
+    <string name="opl_order_status_error_invalid_payment_plan">Veuillez sélectionner un mode de paiement valide.</string>
+    <string name="opl_order_status_error_purchase_error">Un problème que nous ne sommes pas en mesure de résoudre est survenu avec votre commande.</string>
+    <string name="opl_order_status_error_state_unknown">"Une erreur s'est produite au moment de l'achat. Vérifiez dans « Votre compte » que l'achat a bien été réalisé."</string>
+    <string name="opl_review_order_building_your_order">Création de votre commande...</string>
+    <string name="opl_review_order_updating_your_order">Mise à jour de votre commande...</string>
+    <string name="opl_review_order_place_order_button">Valider la commande</string>
+    <string name="opl_review_order_tend_to_errors">Veuillez corriger les informations indiquées en rouge.</string>
+    <string name="opl_review_order_complete_checkout_within">"Pour bénéficier de l'offre spéciale, veuillez passer votre commande dans les :"</string>
+    <string name="opl_review_order_deal_time_expired">"L'Offre spéciale a expiré.
+Veuillez vérifier votre panier."</string>
+    <string name="opl_review_order_summary_header">Récapitulatif de commande</string>
+    <string name="opl_review_order_payment_method_header">Mode de paiement</string>
+    <string name="opl_review_order_billing_address_label">Adr. de facturation</string>
+    <string name="opl_review_order_shipping_address_header">Destinataire</string>
+    <string name="opl_review_order_shipment_x_of_y_header">Infos livraison %1$d sur %2$d</string>
+    <string name="opl_review_order_extra_legal_title" />
+    <string name="opl_review_order_extra_legal_url" />
+    <string name="opl_review_order_legal_title">Informations légales</string>
+    <string name="opl_review_order_legal_url_android">https://www.amazon.fr/legal_information_mobile</string>
+    <string name="opl_review_order_footer">"En validant votre commande, vous acceptez l'intégralité de nos conditions générales de vente ainsi que notre politique de gestion de vos informations personnelles.
+ 
+ Pour assurer la sécurité de la transmission de vos données, nous utilisons des logiciels SSL (Secure Socket Layer) qui cryptent les informations que vous saisissez."</string>
+    <string name="opl_review_order_footer_conditions_of_use_text">conditions générales de vente</string>
+    <string name="opl_review_order_footer_conditions_of_use_url">https://www.amazon.fr/conditions_of_use_mobile</string>
+    <string name="opl_review_order_footer_privacy_notice_text">informations personnelles</string>
+    <string name="opl_review_order_footer_privacy_notice_url">https://www.amazon.fr/privacy_policy_mobile</string>
+    <string name="opl_payment_picker_choose_header">Choisir un mode de paiement</string>
+    <string name="opl_new_payment_authorization_title">Autorisation de compte</string>
+    <string name="opl_new_payment_authorization_details">"• Etant donné qu'il s'agit de votre première livraison à cette adresse, nous souhaitons vérifier qu'elle correspond bien à votre compte.
+
+• Nous ne vous importunerons plus avec cette étape supplémentaire la prochaine fois que vous enverrez quelque chose à cette adresse."</string>
+    <string name="opl_new_payment_credit_card_type_title">Type de carte</string>
+    <string name="opl_new_payment_credit_card_select_type">Sélectionnez un type de carte</string>
+    <string name="opl_new_payment_credit_card_number">Numéro de carte</string>
+    <string name="opl_new_payment_credit_card_number_empty_error">Veuillez saisir un numéro de carte</string>
+    <string name="opl_new_payment_credit_card_number_invalid_error">Numéro de carte non valide</string>
+    <string name="opl_new_payment_credit_card_number_type_error">Le type de carte ne correspond pas au numéro que vous avez indiqué</string>
+    <string name="opl_new_payment_credit_card_expiration_date">"Date d'expiration"</string>
+    <string name="opl_new_payment_credit_card_expiration_date_month">Mois</string>
+    <string name="opl_new_payment_credit_card_expiration_date_year">Année</string>
+    <string name="opl_new_payment_credit_card_expiration_date_expired_error">A expiré</string>
+    <string name="opl_new_payment_credit_card_name">Nom du titulaire de la carte</string>
+    <string name="opl_new_payment_credit_card_name_empty_error">Veuillez saisir le nom du titulaire de la carte</string>
+    <string name="opl_new_payment_credit_card_save_button">Enregistrer la carte</string>
+    <string name="opl_new_payment_debit_bank_code">Bank Code</string>
+    <string name="opl_new_payment_debit_account_number">Account Number</string>
+    <string name="opl_new_payment_debit_account_name">Account Name</string>
+    <string name="opl_new_payment_debit_bank_code_empty_error">Please provide a direct debit bank code</string>
+    <string name="opl_new_payment_debit_bank_code_invalid_error">Invalid direct debit bank code</string>
+    <string name="opl_new_payment_debit_account_number_empty_error">Please provide a direct debit account number</string>
+    <string name="opl_new_payment_debit_account_number_invalid_error">Invalid direct debit account number</string>
+    <string name="opl_new_payment_debit_account_name_empty_error">Please provide an account name</string>
+    <string name="opl_new_payment_debit_account_save">Save Direct Debit Account</string>
+    <string name="opl_address_picker_choose_shipping_header">Choisissez une adresse de livraison</string>
+    <string name="opl_address_picker_add_shipping">Ajouter une adresse de livraison</string>
+    <string name="opl_address_picker_choose_cvsd_header">Choisissez un Point Relais</string>
+    <string name="opl_address_picker_add_cvsd">Chercher un nouveau Point Relais</string>
+    <string name="opl_address_picker_choose_billing_header">Choisir une adresse de facturation</string>
+    <string name="opl_address_picker_add_billing">Ajouter une adresse de facturation</string>
+    <string name="opl_new_address_default_country_code">FR</string>
+    <string name="opl_new_address_title">Nouvelle adresse</string>
+    <string name="opl_new_address_title_shipping">Ajouter une adresse de livraison</string>
+    <string name="opl_new_address_title_billing">Ajouter une adresse de facturation</string>
+    <string name="opl_new_address_enter_new">Saisir une nouvelle adresse</string>
+    <string name="opl_new_address_enter_new_international">Saisir une nouvelle adresse internationale</string>
+    <string name="opl_new_address_name">Nom et prénom</string>
+    <string name="opl_new_address_name_empty_error">Veuillez saisir un nom</string>
+    <string name="opl_new_address_street">Rue</string>
+    <string name="opl_new_address_street_empty_error">Veuillez saisir une adresse</string>
+    <string name="opl_new_address_city">Ville</string>
+    <string name="opl_new_address_city_empty_error">Veuillez saisir une ville</string>
+    <string name="opl_new_address_state">État / Région / Canton (si approprié)</string>
+    <string name="opl_new_address_zip">Code postal</string>
+    <string name="opl_new_address_country">Pays ou DOM-TOM</string>
+    <string name="opl_new_address_select_country">Sélectionnez un pays</string>
+    <string name="opl_new_address_phone">Téléphone</string>
+    <string name="opl_new_address_phone_empty_error">Veuillez saisir un numéro de téléphone</string>
+    <string name="opl_new_address_save">"Enregistrer l'adresse"</string>
+    <string name="opl_new_address_jp_name" />
+    <string name="opl_new_address_jp_zip1" />
+    <string name="opl_new_address_jp_zip2" />
+    <string name="opl_new_address_jp_state" />
+    <string name="opl_new_address_jp_line1" />
+    <string name="opl_new_address_jp_line2" />
+    <string name="opl_new_address_jp_company" />
+    <string name="opl_new_address_jp_phone" />
+    <string name="opl_new_address_cn_province">Etat</string>
+    <string name="opl_new_address_cn_please_select_province">Sélectionnez un état</string>
+    <string name="opl_new_address_cn_city">Ville</string>
+    <string name="opl_new_address_cn_please_select_city">Sélectionnez une ville</string>
+    <string name="opl_new_address_cn_district">Arrondissement</string>
+    <string name="opl_new_address_cn_please_select_district">Sélectionnez un arrondissement</string>
+    <string name="opl_cvsd_search_store_button">Chercher Point Relais</string>
+    <string name="opl_cvsd_search_address">Recherche par adresse</string>
+    <string name="opl_cvsd_search_zip">Recherche par code postal</string>
+    <string name="opl_cvsd_search_landmark">Recherche par emplacement</string>
+    <string name="opl_cvsd_search_location">Recherche autour de votre position</string>
+    <string name="opl_cvsd_search_placeholder_address">Adresse</string>
+    <string name="opl_cvsd_search_placeholder_landmark">Emplacement</string>
+    <string name="opl_cvsd_select_prefecture">Choisir la préfecture</string>
+    <string name="opl_cvsd_use_current_location_confirm">"Est-ce qu'Amazon.fr peut utiliser votre localisation actuelle pour trouver le Point Relais le plus proche?"</string>
+    <string name="opl_cvsd_ship_to_the_selected_store">Expédier au Point Relais sélectionné</string>
+    <string name="opl_cvsd_search_for_a_convenience_store">Rechercher un Point Relais</string>
+    <string name="opl_cvsd_enter_zip_code">Entrer un code postal</string>
+    <string name="opl_cvsd_search_by">Rerchercher par</string>
+    <string name="opl_cvsd_location_settings_message">"Veuillez configurer votre localisation pour l'appareil avec le GPS de l'appareil"</string>
+    <string name="opl_cvsd_location_settings_title">Paramètres de localisation</string>
+    <string name="opl_cvsd_manual_location_settings_message">"Veuillez configurer votre localisation pour l'appareil manuellement"</string>
+    <string name="opl_cvsd_manual_location_settings_title">Paramètres de localisation manuelle</string>
+    <string name="opl_recipient_label">Nom pour le retrait</string>
+    <string name="opl_recipient_instructions_header">"Entrez vos nom et prénom(s) tels qu'ils apparaissent sur la pièce d'identité que vous allez présenter."</string>
+    <string name="opl_recipient_instructions_footer">"Pour pouvoir retirer votre commande au Point Relais, vous devrez y présenter une pièce d'identité, ainsi que votre numéro de commande Amazon. Votre numéro de commande vous sera envoyé par e-mail."</string>
+    <string name="opl_gift_card_promo_code_none">Aucun</string>
+    <string name="opl_gift_card_promo_code_title">Chèque-cadeau / bon de réduction</string>
+    <string name="opl_gift_card_promo_code_redeem_warning">"Rappel : les bons de réduction ne peuvent s'appliquer aux livres.
+
+Les chèques-cadeaux et bons de réduction Amazon.fr ne peuvent être encaissés que lorsque vous passez commande."</string>
+    <string name="opl_shipping_options_select_speed_header">Veuillez sélectionner le mode de livraison</string>
+    <string name="opl_shipping_options_select_preference_header">Choisissez les conditions de livraison</string>
+    <string name="opl_delivery_time_title">Période de livraison désirée</string>
+    <string name="opl_delivery_time_select_error">Veuillez sélectionner une période de livraison</string>
+    <string name="opl_delivery_instructions_title">Instructions pour la livraison</string>
+    <string name="opl_delivery_instructions_label">Instructions : </string>
+    <string name="opl_delivery_instructions_none">Aucune</string>
+    <string name="opl_gift_options_label">Options cadeaux : </string>
+    <string name="opl_gift_options_none">Non</string>
+    <string name="opl_gift_options_gift_message">Message cadeau</string>
+    <string name="opl_gift_options_title">Options cadeaux</string>
+    <string name="opl_gift_options_gift_wrap_colon_label">Emballage cadeau :</string>
+    <string name="opl_gift_options_gift_wrap_no_gift_wrap">"Pas d'emballage cadeau"</string>
+    <string name="opl_gift_options_gift_wrap_colon_not_available">Emballage cadeau : non disponible</string>
+    <string name="opl_gift_options_gift_wrap_price">%1$s (%2$s)</string>
+    <string name="opl_gift_options_gift_wrap_warning">Les articles de grande taille ou de forme irrégulière peuvent être placés dans un sac cadeau.</string>
+    <string name="opl_gift_options_gift_message_maximum">(%1$d caractères maximum)</string>
+    <string name="opl_gift_options_dont_print_prices_checkbox">"Ne pas imprimer les prix sur les bordereaux d'envoi."</string>
+    <string name="opl_gift_options_dont_print_prices_warning">"Veuillez noter que tous les vendeurs ne peuvent pas supprimer les prix de cette manière. Ainsi, les articles ne provenant pas d'Amazon.fr peuvent être expédiés avec le prix imprimé même si vous avez sélectionné « Ne pas imprimer »"</string>
+    <string name="opl_invoice_header">Facture</string>
+    <string name="opl_invoice_explanation">"Pour les produits numériques, les téléphones mobiles et le petit électroménager, une description détaillée des articles sera imprimée sur la facture. Si votre commande contient d'autres types d'articles, veuillez fournir les informations suivantes"</string>
+    <string name="opl_invoice_learn_more_link">En savoir plus</string>
+    <string name="opl_invoice_learn_more_title">Aide sur les factures</string>
+    <string name="opl_invoice_learn_more_url">https://www.amazon.fr/invoice_help_mobile</string>
+    <string name="opl_invoice_no_description_or_category_error">Veuillez saisir une description et une catégorie pour le contenu</string>
+    <string name="opl_invoice_description_title">Description de la facture</string>
+    <string name="opl_invoice_category_title">Catégorie du contenu</string>
+    <string name="opl_invoice_category_choose_header">Veuillez choisir une catégorie</string>
+    <string name="opl_confirmation_order_in_progress_title">Commande en cours...</string>
+    <string name="opl_confirmation_dismiss_order_warning">"Si vous quittez cet écran maintenant, nous ne sommes pas en mesure de déterminer si votre commande sera prise en compte ou annulée. Pour afficher l'état de la commande, sélectionnez « Votre compte » dans le menu, puis « Afficher ou annuler une commande ».
+
+Voulez-vous vraiment quitter cet écran ?"</string>
+    <string name="opl_confirmation_dismiss_order_yes">Oui</string>
+    <string name="opl_confirmation_dismiss_order_no">Non</string>
+    <string name="opl_confirmation_order_problem_title">Problème avec votre commande</string>
+    <string name="opl_confirmation_unable_to_process_purchase">Un problème temporaire nous empêche de traiter votre commande.</string>
+    <string name="opl_confirmation_thank_you_title">Merci</string>
+    <string name="opl_confirmation_order_placed_header">Votre commande a été prise en compte.</string>
+    <string name="opl_confirmation_cancel_order_button">Annuler cette commande</string>
+    <string name="opl_confirmation_track_orders_button">Visualiser ou suivre des commandes</string>
+    <string name="opl_confirmation_we_will_send_you_an_email">Un e-mail de confirmation vous a été envoyé.</string>
+    <string name="opl_confirmation_order_shipping_speed">Type de livraison:</string>
+    <string name="opl_confirmation_order_shipments">Expéditions</string>
+    <string name="opl_confirmation_order_orders">Commandes</string>
+    <string name="opl_confirmation_order_x_of_y_header">Commande %1$d sur %2$d</string>
+    <string name="opl_confirmation_order_info">Détails sur la commande</string>
+    <string name="past_orders_order_date">Commande passée le :</string>
+    <string name="past_orders_order_number">Commande n° </string>
+    <string name="past_orders_period_title">Période de la commande</string>
+    <string name="past_orders_period_header">Période</string>
+    <string name="past_orders_summary_loading">Chargement des commandes...</string>
+    <string name="past_orders_summary_no_orders">Aucune commande</string>
+    <string name="past_orders_summary_order_status_open">Commandes en cours</string>
+    <string name="past_orders_summary_order_status_complete">Commandes passées</string>
+    <string name="past_orders_summary_order_status_needs_attention">Nécessite votre attention</string>
+    <string name="past_orders_summary_recipient">Destinataire :</string>
+    <string name="past_orders_summary_items_ordered">Articles commandés :</string>
+    <string name="past_orders_summary_view_change_track_order">Visualiser, modifier ou suivre la commande</string>
+    <string name="past_orders_summary_view_track_order">Visualiser ou suivre la commande</string>
+    <string name="past_orders_details_loading">Chargement de la commande...</string>
+    <string name="past_orders_details_order_total">Montant total :</string>
+    <string name="past_orders_details_ship_to_colon">Adresse de livraison :</string>
+    <string name="past_orders_details_payment_method">Mode de paiement</string>
+    <string name="past_orders_details_billing_address">Adresse de facturation</string>
+    <string name="past_orders_details_gc_promo_code">Chèque-cadeau/bon de réduction :</string>
+    <string name="past_orders_details_gc_promo_code_none">Aucun</string>
+    <string name="past_orders_details_payment_information">Infos paiement</string>
+    <string name="past_orders_details_need_to_cancel">Vous voulez annuler un article ?</string>
+    <string name="past_orders_details_shipment_header">Expédition n° %1$d : %2$s</string>
+    <string name="past_orders_details_invoice">Facture</string>
+    <string name="past_orders_details_invoice_title">Description de la facture :</string>
+    <string name="past_orders_details_invoice_category">Catégorie du contenu :</string>
+    <string name="past_orders_details_recipient_colon">Nom pour le retrait :</string>
+    <string name="past_orders_track_title">Suivi du colis</string>
+    <string name="past_orders_track_header">Suivez votre colis</string>
+    <string name="past_orders_track_loading">"Chargement du suivi d'expédition"</string>
+    <string name="past_orders_track_shipment_date">"Date d'expédition :"</string>
+    <string name="past_orders_track_destination">Destination :</string>
+    <string name="past_orders_track_ship_carrier">Transporteur</string>
+    <string name="past_orders_track_tracking_number">Numéro de suivi</string>
+    <string name="past_orders_track_status">Etat :</string>
+    <string name="past_orders_track_arrival_date">"Date d'arrivée :"</string>
+    <string name="past_orders_track_date">Date :</string>
+    <string name="past_orders_track_time">Heure :</string>
+    <string name="past_orders_track_location">Lieu :</string>
+    <string name="past_orders_cancel_title">Annuler un article</string>
+    <string name="past_orders_cancel_select_header">Sélectionnez les articles à annuler</string>
+    <string name="past_orders_cancel_qty">Qté :</string>
+    <string name="past_orders_cancel_optional">Facultatif</string>
+    <string name="past_orders_cancel_cancel_items_button">Supprimer les articles sélectionnés</string>
+    <string name="past_orders_cancel_no_items_to_cancel">"Cochez la case correspondant à l'article à annuler."</string>
+    <string name="past_orders_cancel_updating_order">Mise à jour de la commande en cours...</string>
+    <string name="past_orders_cancel_order_cancelled_title">Commande annulée</string>
+    <string name="past_orders_cancel_this_order_cancelled">Cette commande a été annulée.</string>
+    <string name="past_orders_cancel_reason">"Raison de l'annulation"</string>
+    <string name="past_orders_cancel_your_order_no_longer_qualifies">"Votre commande n'est plus éligible à la livraison GRATUITE. Choisissez une autre rapidité de livraison"</string>
+    <string name="shipping_speed_format_est_delivery">Livraison prévue : %1$s</string>
+    <string name="opl_address_name_rule">required maxlength:50</string>
+    <string name="opl_address_street_rule">required maxlength:60</string>
+    <string name="opl_address_city_rule">required maxlength:50</string>
+    <string name="opl_address_state_rule">maxlength:50</string>
+    <string name="opl_address_zip_rule">required maxlength:20</string>
+    <string name="opl_address_zip1_rule">numeric minlength:3 maxlength:3</string>
+    <string name="opl_address_zip2_rule">numeric minlength:4 maxlength:4</string>
+    <string name="opl_address_phone_rule">required maxlength:20</string>
+    <string name="opl_address_line1_rule">required maxlength:50</string>
+    <string name="opl_address_line2_rule">maxlength:50</string>
+    <string name="opl_credit_card_number_rule">numeric minLength:13 maxlength:19</string>
+    <string name="opl_credit_card_name_rule">required maxlength:40</string>
+    <string name="opl_direct_debit_de_bank_code_rule">numeric required maxlength:8</string>
+    <string name="opl_direct_debit_de_account_number_rule">numeric required maxlength:11</string>
+    <string name="opl_direct_debit_de_account_name_rule">required maxlength:50</string>
+    <string name="opl_direct_debit_at_bank_code_rule">numeric required maxlength:8</string>
+    <string name="opl_direct_debit_at_account_number_rule">numeric required maxlength:11</string>
+    <string name="opl_direct_debit_at_account_name_rule">required maxlength:50</string>
+    <string name="opl_gift_message_rule">maxlength:240</string>
+    <string name="opl_invoice_title_rule">required maxlength:21</string>
+    <string name="opl_delivery_instruction_rule">maxlength:15</string>
+    <string name="opl_total">Total :</string>
+    <string name="opl_review_order_footer_sales_tax_link_title" />
+    <string name="opl_review_order_footer_sales_tax_link_url" />
+    <string name="opl_review_order_item_edit">[Edit]</string>
+    <string name="opl_gift_card_promo_code_balance_label">Chèque-cadeau / bon de réduction</string>
+    <string name="opl_gift_card_promo_code_redeemed_success">Le code chèque-cadeau / de réduction %1$s a été utilisé.</string>
+    <string name="opl_gift_card_not_apply">Ne pas utiliser le chèque-cadeau</string>
+    <string name="opl_gift_card_promo_code_redeem_button_text">Utiliser le code pour cette commande</string>
+    <string name="opl_gift_card_promo_code_enter_hint">Saisir un nouveau code</string>
+    <string name="opl_gift_card_promo_code_add_credit_card_to_not_apply_balance">Si vous ne voulez pas utiliser votre solde de chèque-cadeau, veuillez ajouter un autre moyen de paiement sur votre compte.</string>
+    <string name="opl_promo_code_balance_label">Bon de réduction</string>
+    <string name="opl_gift_card_promo_code_balance_zero">EUR 0,00</string>
+    <string name="alert_dialog_ok_button">OK</string>
+    <string name="name_colon_value">%1$s : %2$s</string>
+    <string name="key_dot_value">%1$s. %2$s</string>
+    <string name="new_to_amazon_create_an_account">Nouveau client Amazon.fr ? Créez votre compte</string>
+    <string name="undo">Annuler</string>
+    <string name="no">Non</string>
+    <string name="refresh">Actualisez</string>
+    <string name="eula_title">"Conditions d'utilisation de l'application Amazon"</string>
+    <string name="eula_version">1</string>
+    <string name="eula_accept">Accepter</string>
+    <string name="eula_dont_accept">Ne pas accepter</string>
+    <string name="contact_us_title">Nous contacter</string>
+    <string name="more_to_explore">À découvrir également…</string>
+    <string name="home">Accueil</string>
+    <string name="home_title">Bienvenue</string>
+    <string name="home_sign_in_message_welcome">Bonjour, %1$s</string>
+    <string name="home_sign_in_message_youraccount">Votre compte</string>
+    <string name="home_sign_in">Identifiez-vous</string>
+    <string name="home_sign_out">Déconnexion</string>
+    <string name="home_search_bar_hint_portrait">Amazon.fr</string>
+    <string name="smile_home_search_bar_hint_portrait">Amazon</string>
+    <string name="smile_search">Rechercher sur Amazon</string>
+    <string name="home_promo_clickstream_prefix">Promo_</string>
+    <string name="home_promo0_action_android">open_url</string>
+    <string name="home_promo0_param_android">https://www.amazon.fr/gp/aw/gc</string>
+    <string name="home_promo1_action_android">wishlist</string>
+    <string name="home_promo1_param_android" />
+    <string name="recommendations_title">Vos recommandations</string>
+    <string name="recommendations_explanation">"Amazon recommande certains articles susceptibles de vous intéresser d'après les articles que vous possédez déjà, ceux que vous avez évalués et plus encore.
+
+Identifiez-vous pour voir vos recommandations personnalisées."</string>
+    <string name="recommendations_explanation_button">Déjà client(e) ? Identifiez-vous</string>
+    <string name="recommendations_item_ownit">"Vous l'avez déjà"</string>
+    <string name="recommendations_item_notinterest">pas intéressant</string>
+    <string name="recommendations_fix_this">Corriger cette recommandation</string>
+    <string name="recommendations_ok">OK</string>
+    <string name="recommendations_alert_info">"Nous n'avons pas réussi à envoyer votre évaluation à Amazon. Merci de réessayer. Nous sommes désolés pour ce désagrément."</string>
+    <string name="recommendations_no_recs_explanation">"Désolé, nous n'avons pas de recommandations pour vous aujourd'hui."</string>
+    <string name="search_go_button">Go</string>
+    <string name="search_menu_item">Rechercher</string>
+    <string name="search_results_title">Résultats de la recherche</string>
+    <string name="search_refine_by_category">Choisissez une Boutique</string>
+    <string name="search_select_department">Choisissez une Boutique</string>
+    <string name="search_all_departments">Toutes nos boutiques</string>
+    <string name="search_refinement">%1$s (%2$s)</string>
+    <string name="search_your_search_did_not_match">Votre recherche « %1$s » ne correspond à aucun article.</string>
+    <string name="search_end_of_x_top_results_for_y">Fin des %1$d premiers résultats pour « %2$s »</string>
+    <string name="search_end_of_x_results_for_y_in_z">Fin des %1$d résultats pour « %2$s » dans %3$s</string>
+    <string name="search_end_of_results_sort_by_x_in_y">Fin des résultats dans %1$s, %2$s</string>
+    <string name="search_results_for">%1$s résultats%2$s triés par %3$s</string>
+    <string name="search_sort_relevance">pertinence</string>
+    <string name="search_results_in_department"> dans %1$s</string>
+    <string name="searching_for">Recherche de « %1$s »</string>
+    <string name="search_for_more_results">Pour afficher plus de résultats, choisissez une boutique :</string>
+    <string name="points">Points :</string>
+    <string name="item_row_byline_format">%1$s</string>
+    <string name="item_row_byline_and_binding_format">%1$s (%2$s)</string>
+    <string name="item_row_x_new_and_used_from_y_format">"%1$d neuf(s) et d'occasion à partir de %2$s"</string>
+    <string name="item_row_new_and_used_from_y_format">"Neuf et d'occasion à partir de %1$s"</string>
+    <string name="search_no_match_message">"Nous n'avons pu trouver ce produit."</string>
+    <string name="search_link_help">Aide</string>
+    <string name="search_try_again">Chercher à nouveau</string>
+    <string name="search_error_message_cannot_open_camera">L’appareil photo n’a pas pu être activé. Veuillez réessayer ultérieurement.</string>
+    <string name="search_error_message_out_of_memory">Insufficient memory. Please try again.</string>
+    <string name="bc_searching_for">Recherche en cours…</string>
+    <string name="bc_search_button">Scanner un code-barres</string>
+    <string name="bc_search_bad_match">Signaler une correspondance inadéquate</string>
+    <string name="bc_search_bad_match_prompt">"Ce n'est pas ce que vous avez scanné ?"</string>
+    <string name="bc_search_bad_match_acknowledgement">Merci de nous aider à améliorer cette fonction.</string>
+    <string name="bc_search_result">Article trouvé</string>
+    <string name="bc_search_result_plural">Articles trouvés</string>
+    <string name="bc_search_no_result">Article non trouvé</string>
+    <string name="bc_search_help_title">Scanner un code-barres</string>
+    <string name="bc_search_help_getting_started_title">Démarrage</string>
+    <string name="bc_search_help_tips_title">Conseils</string>
+    <string name="bc_search_help_tips_text_android">"Stabilisez le téléphone.
+ 
+ Essayez d'éviter les ombres et les reflets sur le code-barres.
+ 
+ Le code-barres sera lu automatiquement. Vous entendrez un bip une fois le produit scanné.
+ 
+ Si le code-barres apparaît flou, essayez de rapprocher ou d'éloigner votre téléphone jusqu'à ce qu'il devienne net."</string>
+    <string name="bc_search_help_info_title">Informations</string>
+    <string name="bc_search_new_help_info_text">L’application Amazon est compatible avec tous les codes-barres UPC et EAN. Les autres types de codes-barres peuvent ne pas fonctionner.</string>
+    <string name="bc_search_help_interstitial_scan_button">Essayer</string>
+    <string name="bc_search_help_interstitial_text">Quelques conseils pour vous aider à démarrer :</string>
+    <string name="bc_search_help_bullet">•</string>
+    <string name="bc_search_new_help_text_line1">Orientez votre appareil en mode “paysage”. Centrez le code-barres à l’intérieur du rectangle orange.</string>
+    <string name="bc_search_new_help_text_line2">"S'il y a deux codes-barres, placez-les comme sur l'image ci-dessous :"</string>
+    <string name="bc_picture_format_unspport_message">Nous sommes désolés. Votre téléphone ne permet pour le moment pas de scanner des codes-barres.</string>
+    <string name="scanit_search_camera_overlay_info_text_line1">Code-barres scanné automatiquement.</string>
+    <string name="scanit_search_camera_overlay_info_text_line2">Evitez les ombres et les reflets.</string>
+    <string name="scanit_search_camera_overlay_scanning">Scan…</string>
+    <string name="scanit_search_camera_overlay_steady">Ne bougez plus</string>
+    <string name="scanit_search_camera_overlay_start_text">Centrez le code-barres entre les flèches</string>
+    <string name="product_details">Détails sur le produit</string>
+    <string name="product_details_activity_name">Application Amazon</string>
+    <string name="dp_show_price">Afficher le prix</string>
+    <string name="dp_why_hide_price">"Pourquoi n'affichons-nous pas le prix ?"</string>
+    <string name="dp_add_to_cart_to_see_price">Ajoutez l’article au panier pour en voir le prix.</string>
+    <string name="dp_list_price">Prix conseillé</string>
+    <string name="dp_points">Points</string>
+    <string name="dp_price">Prix (TTC)</string>
+    <string name="dp_ppu_format_string">(%1$s/%2$s%3$s)</string>
+    <string name="dp_new_and_used">"Neuf et d'occasion (0)"</string>
+    <string name="dp_plus_shipping">+ %1$s livraison</string>
+    <string name="dp_eligible_free_super_saver_shipping">Eligible à la livraison GRATUITE (voir conditions)</string>
+    <string name="dp_free_super_saver_shipping">EUR 0 livraison (cond.)</string>
+    <string name="dp_eligible_for_prime">Peut bénéficier de Premium</string>
+    <string name="dp_prime">Premium</string>
+    <string name="dp_all_prices_include_tax" />
+    <string name="dp_deal_row_title">Offres Éclair</string>
+    <string name="dp_select_x">Sélectionner %1$s</string>
+    <string name="elipsis">…</string>
+    <string name="dp_special_offer">** Offre spéciale **</string>
+    <string name="dp_details">Détails</string>
+    <string name="details_features_and_more">Détails, caractéristiques et plus encore</string>
+    <string name="dp_trackListHeader">Liste des morceaux</string>
+    <string name="dp_discLabel">Disque %1$s</string>
+    <string name="customer_reviews">Commentaires client</string>
+    <string name="customer_reviews_count"> (%1$s)</string>
+    <string name="average_customer_review">Moyenne des commentaires client</string>
+    <string name="customer_reviews_ordered_by">"Classement par ordre d'utilité"</string>
+    <string name="customer_reviews_count_reviews">(%1$d commentaires)</string>
+    <string name="customer_review_published_by_android">Publié le %1$te %2$tb %3$tY par %4$s</string>
+    <string name="customer_reviews_histogram_1_stars">1 étoile :</string>
+    <string name="customer_reviews_histogram_2_stars">2 étoiles :</string>
+    <string name="customer_reviews_histogram_3_stars">3 étoiles :</string>
+    <string name="customer_reviews_histogram_4_stars">4 étoiles :</string>
+    <string name="customer_reviews_histogram_5_stars">5 étoiles :</string>
+    <string name="mp_new_and_used_offers">"Offres de produits neufs et d'occasion"</string>
+    <string name="mp_a_to_z_safe_buying_guarantee">Protection de la Garantie A à Z</string>
+    <string name="mp_a_to_z_safe_buying_guarantee_url">https://www.amazon.fr/atoz_guarantee_mobile</string>
+    <string name="mp_offers_from_before_price">%1$d offres à partir de </string>
+    <string name="mp_offers_from_after_price" />
+    <string name="mp_sold_by">Vendeur</string>
+    <string name="mp_percent_positive">"%1$d%% d'avis positifs"</string>
+    <string name="mp_count_ratings">(%1$d évaluations)</string>
+    <string name="mp_comments">Commentaires : %1$s</string>
+    <string name="sharing_email_subject">A voir sur Amazon.fr</string>
+    <string name="sharing_sms_heading">A voir sur Amazon:</string>
+    <string name="sharing_share">Partager</string>
+    <string name="sharing_see_all">See All...</string>
+    <string name="sharing_friends">Friends</string>
+    <string name="buy_box_order_within_hr_min_for">"Commandez d'ici %1$d hr %2$dmin :"</string>
+    <string name="buy_box_order_within_hr_for">"Commandez d'ici %1$d hr :"</string>
+    <string name="buy_box_order_within_min_for">"Commandez d'ici %1$d min :"</string>
+    <string name="buy_box_1_click_prime_with_get_it_by_promise_android">Recevez-le %1$ta %2$te %3$tb</string>
+    <string name="buy_box_buy_now">Acheter maintenant</string>
+    <string name="buy_box_buy_now_with_one_click">Acheter en 1–Click</string>
+    <string name="buy_box_pre_order">Précommander</string>
+    <string name="buy_box_pre_order_now">Précommander</string>
+    <string name="buy_box_preorder_with_one_click">Précommander en 1–Click</string>
+    <string name="buy_box_buy_now_from_amazon_appstore">Buy Now from Amazon Appstore</string>
+    <string name="buy_box_install_amazon_appstore_to_buy">Install Amazon Appstore to buy</string>
+    <string name="buy_box_add_to_cart">Ajouter au panier</string>
+    <string name="buy_box_add_to_wishlist">"Ajouter à votre liste d'envies"</string>
+    <string name="buy_box_see_all_buying_options">Voir toutes les options d’achat</string>
+    <string name="buy_box_to_buy_select">Pour acheter, sélectionnez %1$s</string>
+    <string name="buy_box_to_buy_select_separator">/</string>
+    <string name="black_curtain_age_confirm" />
+    <string name="black_curtain_yes" />
+    <string name="black_curtain_no" />
+    <string name="age_verification_title" />
+    <string name="age_verification_explanation" />
+    <string name="age_verification_your_birthday" />
+    <string name="age_verification_please_enter" />
+    <string name="age_verification_privacy" />
+    <string name="age_verification_continue" />
+    <string name="age_verification_wrong_age" />
+    <string name="age_verification_edit_if_incorrect" />
+    <string name="age_verification_continue_shopping" />
+    <string name="about">À propos de</string>
+    <string name="about_description">Application Amazon pour Android</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_build">Edition %1$s</string>
+    <string name="about_missing_placeholder">-</string>
+    <string name="about_copyright">© 1996-2014, Amazon.fr, Inc. ou ses affiliés</string>
+    <string name="wishlist_adding_to_wishlist">"Ajout à la liste d'envies en cours…"</string>
+    <string name="wishlist_added_to_wishlist">"L'article a été ajouté à la liste d'envies"</string>
+    <string name="wishlist_default_title">Votre liste d’envies</string>
+    <string name="wishlist_getting_lists">Vos listes d’envies…</string>
+    <string name="wishlist_add_dialog_title">"Choisir une liste d'envies:"</string>
+    <string name="more">Autre</string>
+    <string name="more_wishlist_button">"Liste d'envies"</string>
+    <string name="more_recommendations_button">Recommandations</string>
+    <string name="more_your_account_button">Votre compte</string>
+    <string name="more_help_button">Aide</string>
+    <string name="more_about_button">À propos de</string>
+    <string name="more_provide_feedback_button">Envoyez vos commentaires</string>
+    <string name="more_privacy_notice_button">Vos informations personnelles</string>
+    <string name="more_get_amazon_android_apps">Autres Apps Amazon</string>
+    <string name="more_get_amazon_android_apps_url">https://www.amazon.fr/gp/aw/fp.html?id=android-apps&amp;mn=0</string>
+    <string name="more_email_gift_card">Chèques-cadeaux</string>
+    <string name="more_email_gift_card_url">https://www.amazon.fr/gp/aw/fp.html?id=gclanding</string>
+    <string name="youraccount">Votre compte</string>
+    <string name="youraccount_your_orders">Vos commandes</string>
+    <string name="youraccount_account_settings">Paramètres de compte</string>
+    <string name="youraccount_one_click_button">Coordonnées 1–Click</string>
+    <string name="ya_site_email_pref_button" />
+    <string name="ya_site_email_pref_url" />
+    <string name="ya_shipment_tracking">Suivi des expéditions</string>
+    <string name="ya_backup_your_photos">Sauvegardez vos photos</string>
+    <string name="ya_points_title" />
+    <string name="ya_my_point_summary" />
+    <string name="ya_view_points_summary_and_learn_about_points" />
+    <string name="ya_sign_in_to_view_points_summary" />
+    <string name="ya_points_about_title" />
+    <string name="cart">Panier</string>
+    <string name="cart_loading">Chargement en cours…</string>
+    <string name="cart_adding_to_cart">Ajout au panier en cours…</string>
+    <string name="cart_added_to_cart">"L'article a été ajouté au panier"</string>
+    <string name="cart_added_timed_to_cart">"Il vous reste %1$d minutes pour valider votre commande et bénéficier de l'offre éclair."</string>
+    <string name="cart_time_to_checkout_prompt">pour terminer votre commande</string>
+    <string name="cart_go_to_shopping_cart_button_dialog">"Accéder
+au panier"</string>
+    <string name="cart_continue_shopping_button">Continuer les achats</string>
+    <string name="cart_continue_shopping_button_dialog">"Continuer
+les achats"</string>
+    <string name="cart_checkout_button">Passer la commande</string>
+    <string name="cart_sign_in_to_checkout_button">Passer la commande</string>
+    <string name="cart_to_buy_now_label">Pour un achat immédiat</string>
+    <string name="cart_quantity_label">Qté</string>
+    <string name="cart_to_buy_later_label">Mis de côté pour un futur achat</string>
+    <string name="cart_empty_details_android">Votre panier est vide pour le moment. Placez-y tous les articles que vous souhaitez commander.</string>
+    <string name="cart_sign_in_button">Déjà client(e) ? Identifiez-vous</string>
+    <string name="cart_cart_items_empty">Si vous souhaitez acheter maintenant les articles mis de côté, cliquez sur le bouton « Mettre dans le panier » à droite de chaque article sélectionné et passez votre commande.</string>
+    <string name="cart_saved_items_empty_android">"Votre liste d'articles mis de côté est vide."</string>
+    <string name="cart_points_total">Sous-total des points = </string>
+    <string name="cart_change_any_quantities">Vous avez modifié une quantité ci-dessus ?</string>
+    <string name="cart_update_button">Mettre à jour</string>
+    <string name="cart_updating_quantity">Mise à jour de la quantité…</string>
+    <string name="cart_delete_button">Supprimer</string>
+    <string name="cart_save_for_later_button">Mettre de côté</string>
+    <string name="cart_saving_for_later">Enregistrement en cours…</string>
+    <string name="cart_move_to_cart_button">Mettre dans le panier</string>
+    <string name="cart_moving_to_cart">Déplacement vers le panier en cours…</string>
+    <string name="cart_deleting">Suppression…</string>
+    <string name="cart_cancel_warning">"Opération interrompue.
+
+Vérifiez que les modifications souhaitées ont bien été réalisées dans votre panier."</string>
+    <string name="cart_messages_title">Alerte panier</string>
+    <string name="cart_empty">Votre panier est vide</string>
+    <string name="goldbox">Promotions</string>
+    <string name="goldbox_more">Plus de %1$s</string>
+    <string name="goldbox_price_percent_off">%1$s (réduction de %2$d%%)</string>
+    <string name="goldbox_check_out_before_we_run_out">Dépêchez-vous de commander avant épuisement du stock.</string>
+    <string name="deal_discount_applied_at_checkout">Réduction appliquée au moment de la commande. Une par client.</string>
+    <string name="deal_starts_in_h_m_s">La promotion commence dans %1$02d:%2$02d:%3$02d</string>
+    <string name="deal_h_m_s_remaining">Il reste %1$02d:%2$02d:%3$02d</string>
+    <string name="deal_end_time_tz">Fin à %1$s</string>
+    <string name="deal_time_tz_upcoming_deal">Commence à %1$s %2$s</string>
+    <string name="deal_percent_claimed">%1$d%% vendus</string>
+    <string name="deal_no_lightning_deal">Il n’y a pas d’offres en ce moment. Merci de revenir plus tard.</string>
+    <string name="deal_select_an_option">Choisissez une option pour voir le prix et la disponibilité</string>
+    <string name="privacy_notice_url">https://www.amazon.fr/privacy_policy_mobile</string>
+    <string name="send_email">"Envoyer l'e-mail"</string>
+    <string name="legal_info_text">Informations légales</string>
+    <string name="legal_deal_term_and_use_string" />
+    <string name="legal_info_url_android_with_aiv">https://www.amazon.fr/legal_information_mobile</string>
+    <string name="legal_deal_term_and_use" />
+    <string name="legal_deal_help" />
+    <string name="digital_downlaod_extra_availability_message">This mobile application does not currently support digital downloads. Add this item to your WishList and you can view and purchase it from your computer.</string>
+    <string name="provide_feedback_to_address_android">feedback-amazon-app-android-fr@amazon.com</string>
+    <string name="provide_feedback_subject_android">Application Amazon pour Android</string>
+    <string name="do_not_remove_device_id">"S'il vous plaît ne supprimez pas l'ID suivant, nous l'utilisons pour corriger d'éventuels problèmes: %1$s. Cordialement, l'équipe Amazon Mobile."</string>
+    <string name="navigate_forward_to_uri">"Afficher l'emplacement Web"</string>
+    <string name="web_view_loading">Chargement en cours…</string>
+    <string name="help_root_title">Aide</string>
+    <string name="help_about">"A propos de l'Application Amazon pour Android"</string>
+    <string name="help_and_about_title">Aide et a propos</string>
+    <string name="help_shopping_and_ordering_title">Achats et commandes</string>
+    <string name="help_viewing_and_changing_orders_title">Visualiser et modifier des commandes</string>
+    <string name="help_shipping_and_delivery_title">Expédition &amp; livraison</string>
+    <string name="help_your_account_and_settings_title">Votre compte et vos préférences</string>
+    <string name="help_using_amazon_remembers_title">"Utilisation d'Amazon Mémorise"</string>
+    <string name="help_eula_title">"Conditions d’utilisation de l'application Amazon"</string>
+    <string name="help_email_customer_service_title">Envoyer un e-mail au service client</string>
+    <string name="help_call_customer_service_title">Appeler le service client</string>
+    <string name="help_contact_us_title">Contactez-nous</string>
+    <string name="help_shopping_and_ordering_find_an_item_title">Rechercher un article</string>
+    <string name="help_shopping_and_ordering_find_an_item_content">"Pour rechercher un article, entrez le terme correspondant dans la zone de recherche sur la page d'accueil ou sélectionnez l'option Rechercher dans le menu du téléphone portable.
+ 
+ Pour afficher les articles d'une catégorie spécifique, sélectionnez « Toutes nos boutiques » en haut de l'écran des résultats de la recherche et choisissez une boutique."</string>
+    <string name="help_shopping_and_ordering_buy_an_item_title">Acheter un article</string>
+    <string name="help_shopping_and_ordering_buy_an_item_content">"Une fois que vous avez trouvé l'article qu'il vous faut, vous pouvez l'acheter en cliquant sur « Acheter maintenant » ou sur le bouton « Ajouter au panier », vers le bas de l'écran de cet article. Si vous êtes membre d'Amazon Premium et que l'option d'achat en 1–Click est activée, vous pouvez cliquer sur l'un des boutons d'options d'achat Amazon Premium pour effectuer une commande en 1–Click.
+ 
+ Si vous ne vous êtes pas identifié depuis votre téléphone portable, vous devez indiquer l'adresse e-mail et le mot de passe associés à votre compte Amazon.fr pour finaliser votre commande.
+ 
+ Remarque : les articles qui se trouvent dans votre panier sont également visibles sur le site Amazon.fr et vice versa.
+ 
+ Le prix barré correspond au prix de référence."</string>
+    <string name="help_shopping_and_ordering_view_or_edit_shopping_cart_title">Afficher ou modifier le panier</string>
+    <string name="help_shopping_and_ordering_view_or_edit_shopping_cart_content">"Pour afficher les articles qui se trouvent dans votre panier depuis votre ordinateur ou votre téléphone portable, cliquez sur « Panier » sur la page d'accueil ou à partir du menu du téléphone.
+ 
+ Pour commander les articles du panier, cliquez sur le bouton « Passer la commande » en haut ou en bas de l'écran « Panier ». Pour supprimer, modifier des quantités ou mettre des articles dans le panier, mettez l'article en surbrillance et sélectionnez l'option voulue."</string>
+    <string name="help_shopping_and_ordering_view_or_edit_wish_list_title">"Afficher ou modifier la liste d'envies"</string>
+    <string name="help_shopping_and_ordering_view_or_edit_wish_list_content">"Pour afficher les articles qui se trouvent dans l'une de vos listes cadeaux, sélectionnez la Liste d'envies dans le menu « Plus » de votre téléphone portable. Si vous disposez de plusieurs listes cadeaux, vous pouvez choisir laquelle afficher en haut de la page Liste d'envies.
+ 
+ Pour supprimer un article de votre liste d'envies, mettez-le en surbrillance et sélectionnez « Plus d'options ».
+ 
+ Remarque : les articles qui se trouvent dans votre liste d'envies sont également visibles sur le site Amazon.fr et vice versa."</string>
+    <string name="help_shopping_and_ordering_mobile_1click_ordering_title">Commande en 1–Click mobile</string>
+    <string name="help_shopping_and_ordering_mobile_1click_ordering_content">"La commande en 1–Click permet de passer commande sur Amazon.fr plus rapidement et plus facilement depuis votre téléphone portable.
+ 
+ L'activation de l'option d'achat en 1–Click mobile vous permet de passer les étapes du panier et de la commande. Il vous suffit de sélectionner le bouton « Acheter en 1–Click » sur n'importe quelle page produit pour que votre commande soit automatiquement facturée selon le mode de paiement choisi par défaut pour votre compte et expédiée à l'adresse définie par défaut.
+ 
+ Pour activer ou désactiver l'option d'achat en 1–Click mobile depuis votre téléphone portable, cliquez sur Votre compte sur la page d'accueil ou dans le menu de votre téléphone, choisissez l'option « Coordonnées 1–Click » et suivez les instructions. Vous pouvez également désactiver l'option d'achat en 1–Click mobile depuis votre ordinateur, via « Votre compte », « Coordonnées 1–Click »."</string>
+    <string name="help_shopping_and_ordering_add_new_address_title">Ajouter une nouvelle adresse</string>
+    <string name="help_shopping_and_ordering_add_new_address_content">"Pour ajouter une nouvelle adresse de livraison ou de facturation pendant le processus de commande, saisissez manuellement une adresse ou sélectionnez-en une existante dans votre carnet d'adresses Amazon.
+ 
+ Remarque : comme à partir d'un PC, si vous saisissez une nouvelle adresse de livraison pendant le processus de commande, vous devrez également indiquer les informations relatives à votre carte de paiement, afin de confirmer votre identité."</string>
+    <string name="help_shopping_and_ordering_select_gift_options_title">Sélectionner des options cadeaux</string>
+    <string name="help_shopping_and_ordering_select_gift_options_content">"Pour donner un air festif à vos cadeaux, faites-les emballer, imprimez un chèque-cadeau et/ou un message gratuit qui figurera sur le bordereau de conditionnement.
+
+ Le prix de l'emballage cadeau varie en fonction de la taille de l'article.
+
+ Pour les articles désignés comme étant des cadeaux expédiés par Amazon.fr à une seule adresse en France, le prix n'apparaîtra pas sur le bordereau de conditionnement. Les politiques des autres vendeurs à ce sujet peuvent être différentes.
+ 
+ Remarque : les options d'emballage cadeau, d'impression de cartes et/ou de messages ne sont pas disponibles pour tous les articles."</string>
+    <string name="help_viewing_and_changing_orders_cancel_an_item_or_order_title">Annuler un article ou une commande</string>
+    <string name="help_viewing_and_changing_orders_cancel_an_item_or_order_content">"Vous pouvez annuler la commande de n'importe quel article vendu par Amazon.fr, à condition que la commande n'ait pas encore été expédiée. Pour annuler une commande tout de suite après l'avoir passée depuis votre téléphone portable, sélectionnez l'option « Annuler cette commande », sur la page de remerciement. Vous pouvez également annuler des articles ou des commandes passées depuis votre téléphone portable en sélectionnant « Votre compte » dans le menu du portable, puis l'option « Visualiser ou annuler une commande ».
+ 
+ Si l'article à supprimer a déjà été expédié, il ne peut plus être annulé, ni par vous, ni par notre service client. Par contre, vous pouvez le renvoyer pour vous faire rembourser.
+ 
+ Remarque : nous ne sommes pas en mesure de vous aider à annuler une commande passée depuis le site d'un vendeur Amazon. Contactez plutôt directement le vendeur.
+ 
+ Pour modifier les informations de facturation ou de livraison d'une commande, accédez à Votre compte sur Amazon.fr depuis votre ordinateur."</string>
+    <string name="help_viewing_and_changing_orders_combine_orders_title">Combiner plusieurs commandes</string>
+    <string name="help_viewing_and_changing_orders_combine_orders_content">"Si vous passez plusieurs commandes à partir de votre portable pour des articles vendus sur Amazon.fr dans un délai de 30 minutes, nous combinons ces commandes en un minimum d'expéditions afin de réduire les frais d'envoi.
+ 
+ Remarque : il n'est pas possible de combiner des commandes passées sur Amazon Marketplace, sur les sites de vendeurs Amazon ou d'autres vendeurs tiers."</string>
+    <string name="help_viewing_and_changing_orders_view_recent_orders_title">Visualiser les commandes récentes</string>
+    <string name="help_viewing_and_changing_orders_view_recent_orders_content">"Pour afficher l'état d'avancement de vos commandes récentes, sélectionnez « Votre compte » dans le menu de votre téléphone portable, puis l'option « Visualiser ou annuler une commande »."</string>
+    <string name="help_shipping_and_delivery_shipping_rates_and_times_title">Tarifs et délais de livraison</string>
+    <string name="help_shipping_and_delivery_shipping_rates_and_times_url">https://www.amazon.fr/fr_delivery_rates_mobile</string>
+    <string name="help_shipping_and_delivery_tracking_packages_title">Suivi des expéditions</string>
+    <string name="help_shipping_and_delivery_tracking_packages_content">"Pour afficher l'état d'avancement de la livraison de vos commandes récentes, sélectionnez « Votre compte » dans le menu de votre téléphone portable, puis l'option « Suivi de colis »."</string>
+    <string name="help_shipping_and_delivery_free_super_saver_shipping_title">Livraison GRATUITE</string>
+    <string name="help_shipping_and_delivery_free_super_saver_shipping_url">https://www.amazon.fr/about_super_saver_mobile</string>
+    <string name="help_your_account_and_settings_access_your_account_title">Accéder à votre compte</string>
+    <string name="help_your_account_and_settings_access_your_account_content">"Pour accéder à Votre compte, vous devez d'abord vous identifier dans la zone correspondante sur la page d'accueil. Une fois que vous vous êtes identifié, sélectionnez « Votre compte » dans le menu du téléphone portable."</string>
+    <string name="help_your_account_and_settings_get_password_help_title">"Obtenir de l'aide sur le mot de passe"</string>
+    <string name="help_your_account_and_settings_get_password_help_content">"Si vous avez oublié votre mot de passe Amazon.fr, appuyez sur le bouton « Vous avez oublié votre mot de passe ? » sur la page d'identification et suivez les instructions de saisie de l'adresse e-mail associée à votre compte Amazon.fr. Nous vous enverrons par e-mail un lien vers une page sur laquelle vous pourrez créer un nouveau mot de passe."</string>
+    <string name="help_your_account_and_settings_amazon_prime_membership_title">"L'abonnement Amazon Premium"</string>
+    <string name="help_your_account_and_settings_amazon_prime_membership_content">"Les clients d'Amazon Premium bénéficient des options de livraison Amazon Premium pour les commandes passées depuis un téléphone portable. Les clients d'Amazon Premium bénéficient de la livraison « Express » (1 à 2 jours) gratuite pour des centaines de milliers d'articles éligibles au programme Amazon Premium et peuvent profiter de la livraison « Eclair » (avant 13 heures le lendemain) pour seulement 3,99 euros de plus par article, et du service « Livré en soirée ! » en région Parisienne pour 6,99 euros par article. Le programme Amazon Premium offre également la livraison « Rapide » gratuite pour tous les articles pour lesquels la livraison « Express » n'est pas disponible.
+ 
+Pour bénéficier pleinement des avantages de votre adhésion à Amazon Premium, rendez-vous sur le site Amazon.fr depuis votre ordinateur et vérifiez que votre mode de livraison par défaut est la livraison « Express ».
+ 
+Vous n'êtes pas encore membre d'Amazon Premium ? Pour devenir membre d'Amazon Premium, accédez à Votre compte sur Amazon.fr depuis votre ordinateur."</string>
+    <string name="help_using_amazon_remembers_help_with_barcode_scans_title">Scanner des codes-barres</string>
+    <string name="help_contact_us_feedback_header">Avez-vous des suggestions ou des commentaires à propos de cette application?</string>
+    <string name="help_eula_url">https://www.amazon.fr/terms_and_conditions_android_mobile</string>
+    <string name="help_email_customer_service_url">https://www.amazon.fr/email_customer_service_mobile</string>
+    <string name="help_call_customer_service_url">tel:0800947715</string>
+    <string name="help_why_hide_price">"Les fabricants demandent parfois aux détaillants de ne pas afficher un prix si celui-ci est inférieur à un certain montant. Le message « Afficher le prix » indique que le prix de l'article est tellement bas que le fabricant a demandé à ce qu'il ne soit pas annoncé (c'est-à-dire affiché). Dans un magasin réel, vous devriez probablement vous adresser à un vendeur pour connaître le prix du produit.
+
+ Sur Amazon, lorsque vous cliquez sur « Afficher le prix », vous demandez simplement à afficher le prix, et il apparaît."</string>
+    <string name="bullet">•</string>
+    <string name="exit">Exit</string>
+    <string name="exit_confirmation_dialog_title">Exit Confirmation</string>
+    <string name="exit_confirmation_dialog_message">Are you sure to exit Amazon?</string>
+    <string name="categroy_browse_department">Boutique</string>
+    <string name="shop_by_department_text">Choisir une Boutique</string>
+    <string name="shop_by_text">"Choisir une
+"</string>
+    <string name="category_top_product_gallery_title">Les plus populaires</string>
+    <string name="browse_search_sorted_by">Par %1$s</string>
+    <string name="categroy_browse_all_in_department">Tout</string>
+    <string name="category_browse_search_in_department">Rechercher dans %1$s</string>
+    <string name="history_title">Articles consultés récemment</string>
+    <string name="history_item_was_removed">%1$s a été supprimé(e).</string>
+    <string name="history_empty_message">"Vous n'avez consulté aucun article récemment."</string>
+    <string name="history_time_format">"'Consulté le'
+dd-MM-yyyy
+'à' HH 'h' mm"</string>
+    <string name="history_search_link">Rechercher sur Amazon</string>
+    <string name="history_clear_all">Tout supprimer</string>
+    <string name="history_confirm_clear_all">Voulez-vous vraiment supprimer tous les articles?</string>
+    <string name="notification_setting">Notifications</string>
+    <string name="notification_ok">OK</string>
+    <string name="notification_gcm_unavailable">Le service Google ne répond pas, merci de réessayer plus tard.</string>
+    <string name="notification_google_account_error">Merci de vérifier votre compte Google et d’essayer à nouveau.</string>
+    <string name="notification_turn_on_deal_notifications">Find Out When Deals Happen</string>
+    <string name="notification_deal_notifications_explanation">Turn on Lightning Deal notifications</string>
+    <string name="notification_manage_deal_notifications">Manage Lightning Deal notifications</string>
+    <string name="notification_manage_deal_notifications_explanation">Save big on limited-time deals</string>
+    <string name="notification_turn_on_shipment_notifications">Suivez la livraison de vos colis</string>
+    <string name="notification_shipment_notifications_explanation">Activer les notifications d’expédition</string>
+    <string name="notification_switch_locale_toast_text_for_deal">Pour voir cette offre, merci de changer le pays et de choisir %1$s.</string>
+    <string name="notification_switch_locale_toast_text_for_order_details">Pour voir les détails de votre commande, sélectionnez « %1$s ».</string>
+    <string name="notification_switch_locale_toast_text_for_deal_category">Pour voir ce type d’offre, merci de changer le pays et de choisir %1$s.</string>
+    <string name="notification_switch_locale_toast_text_for_product">Pour voir ce produit, merci de changer le pays et de choisir %1$s.</string>
+    <string name="notification_currently_unavailable">Les notifications dAmazon sont actuellement indisponibles. Veuillez réessayer plus tard.</string>
+    <string name="notification_sign_in_to_view_shipment_notifications">Identifiez-vous pour recevoir les notifications d’expédition</string>
+    <string name="notification_sign_in_to_view_deal_of_the_day_notifications">Sign in to receive Deal of the Day notifications</string>
+    <string name="notification_sign_in_to_view_sns_notifications">Sign in to receive Subscribe &amp; Save notifications</string>
+    <string name="notification_sign_in_to_view_pricealert_notifications">Sign in to receive Price Drop notifications</string>
+    <string name="notification_sign_in_to_receive_notification">Sign in to receive notifications</string>
+    <string name="notifications_us_marketplace">Etats-Unis</string>
+    <string name="notifications_uk_marketplace">Royaume-Uni</string>
+    <string name="unavailablity_lack_rare_camera">Cette fonctionnalité n’est disponible que pour les appareils disposant d’un appareil photo sur la face arrière.</string>
+    <string name="please_select">Veuillez sélectionner</string>
+    <string name="copy">Copier</string>
+    <string name="error_box_try_again">Ré-essayer</string>
+    <string name="error_network_fail_access_amazon_message">Il y a eu un problème de connexion à Amazon. Merci de ré-essayer.</string>
+    <string name="error_network_no_connection_message">Merci de vérifier votre connexion Internet et de ré-essayer.</string>
+    <string name="error_something_wrong_will_fix_message">Désolé, il ya un problème avec cette page dès maintenant. Nous recherchons une solution.</string>
+    <string name="go_to_amazon_home">Retourner à la page d’accueil</string>
+    <string name="homeitems">Recommandé pour vous</string>
+    <string name="search_suggestions_department_text">dans %s</string>
+    <string name="search_refine_filter">Filtrer</string>
+    <string name="search_refine_sort">Tri</string>
+    <string name="search_refine_clear_all_refinements">Effacer tout</string>
+    <string name="customer_reviews_vine">"Avis venant du programme Vine™ d'Amazon"</string>
+    <string name="buy_box_buy_now_from_amazon_kindle">Buy Now from Amazon Kindle</string>
+    <string name="buy_box_install_amazon_kindle_to_buy">Install Amazon Kindle to buy</string>
+    <string name="buy_box_update_amazon_kindle_to_buy">Update Amazon Kindle to buy</string>
+    <string name="buy_box_buy_now_from_amazon_mp3">Acheter sur Amazon MP3</string>
+    <string name="buy_box_install_amazon_mp3_to_buy">Installer Amazon MP3 pour pouvoir acheter</string>
+    <string name="buy_box_update_amazon_mp3_to_buy">Mettre à jour Amazon MP3 pour pouvoir acheter</string>
+    <string name="buy_box_buy_now_from_amazon_video">Go To Amazon Instant Video App</string>
+    <string name="buy_box_install_amazon_video_to_buy">Install Amazon Video to buy</string>
+    <string name="buy_box_update_amazon_video_to_buy">Update Amazon Video to buy</string>
+    <string name="settings">Paramètres</string>
+    <string name="youraccount_view_modify_track_or_cancel_an_order">Visualiser, modifier, suivre ou annuler une commande</string>
+    <string name="youraccount_ad_preference_button">Publicités : vos préférences</string>
+    <string name="youraccount_signin_title">Vous êtes identifié: %1$s</string>
+    <string name="ya_copy_order_number_failed">Désolé, nous n’avons pas pu copier le numéro de commande.</string>
+    <string name="ya_advertising_preferences_title">Préférences pour la publicité</string>
+    <string name="cart_subtotal_text">Sous-total</string>
+    <string name="cart_item_count_text">Article</string>
+    <string name="cart_item_count_plural_text">Articles</string>
+    <string name="interstitial_cart_continue_to_checkout">Passer la commande sans articles Add-on</string>
+    <string name="interstitial_cart_valid_item_list_header">Passer au paiement pour ces articles</string>
+    <string name="deal_cannot_add_to_cart">Cette promotion n’est pas disponible. Elle est soit expirée, soit déjà dans votre panier.</string>
+    <string name="amazon_appstore_info">You may need to install Amazon Appstore first in order to buy this app. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_appstore_learn_more_text">Learn more</string>
+    <string name="amazon_appstore_learn_more_url" />
+    <string name="amazon_appstore_package_name">com.amazon.venezia</string>
+    <string name="amazon_appstore_landing_page_url">https://www.amazon.fr/gp/mas/get/android</string>
+    <string name="amazon_appstore_browse_node">1661654031</string>
+    <string name="amazon_appstore_search_field">Apps pour Android</string>
+    <string name="amazon_kindle_info">You may need to install Amazon Kindle first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_kindle_info_update">You may need to update Amazon Kindle first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_mp3_info">Pour acheter ce produit, l’installation d’Amazon MP3 peut être nécessaire. Certains opérateurs ne permettent pas l’installation d’applications tierces.</string>
+    <string name="amazon_mp3_info_update">Pour acheter ce produit, la mise à jour d’Amazon MP3 peut être nécessaire. Certains opérateurs ne permettent pas l’installation d’applications tierces.</string>
+    <string name="amazon_mp3_package_name">com.amazon.mp3</string>
+    <string name="amazon_video_info">You may need to install Amazon Video first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="amazon_video_info_update">You may need to update Amazon Video first in order to buy this item. Not all carriers allow installation of third party applications.</string>
+    <string name="help_subscribe_and_save_ordering_title">Abonnements Economisez en vous abonnant</string>
+    <string name="help_subscribe_and_save_ordering_finding_eligible_products_title">Trouver des produits éligibles</string>
+    <string name="help_subscribe_and_save_ordering_finding_eligible_products_content">"Les produits éligibles afficheront un prix Economisez en vous abonnant avec un bouton sous l'option \"Ajouter au panier\" indiquant \"Economisez en vous abonnant : X% de remise\""</string>
+    <string name="help_subscribe_and_save_ordering_placing_your_order_title">Commander</string>
+    <string name="help_subscribe_and_save_ordering_placing_your_order_content">"Sélectionnez soit le prix Economisez en vous abonnant sous le prix de l'article sur la page détaillée de l'article soit le bouton \"Economisez en vous abonnant : X% de remise\" situé sous le bouton \"Ajouter au panier\". 
+
+ Sélectionnez ensuite la quantité et la fréquence à laquelle vous voulez recevoir ces articles en utilisant les menus déroulants. Finalisez votre commande en cliquant sur M'abonner."</string>
+    <string name="help_subscribe_and_save_ordering_paying_for_your_subscription_title">Payer pour votre abonnement</string>
+    <string name="help_subscribe_and_save_ordering_paying_for_your_subscription_content">"Les cartes bancaires et les chèques cadeaux sont les seuls moyens de paiement acceptés pour les commandes du programme « Economisez en vous abonnant ».
+
+ Veuillez noter que nous appliquerons toujours le montant de votre compte chèque cadeaux et vos codes promotionnels avant de vous débiter le solde restant. 
+
+ Vous payez les commandes de vos abonnements au moment où elles vous sont expédiées. Pour chaque envoi, nous vous débiterons le prix courant du produit déduction faite de la remise « Economisez en vous abonnant », plus toute taxe applicable.
+
+"</string>
+    <string name="help_subscribe_and_save_ordering_terms_and_conditions_title">Termes et conditions du programme Economisez en vous abonnant</string>
+    <string name="help_subscribe_and_save_ordering_terms_and_conditions_url">https://www.amazon.fr/mobile_sns_terms</string>
+    <string name="help_subscribe_and_save_subscriptions_title">Abonnements Economisez en vous abonnant</string>
+    <string name="help_subscribe_and_save_subscriptions_managing_your_subscriptions_title">Gérer votre abonnement</string>
+    <string name="help_subscribe_and_save_subscriptions_managing_your_subscriptions_content">"Pour gérer votre abonnement (annuler une livraison, programmer une livraison immédiate, modifier la fréquence des livraisons...) cliquez sur Autre depuis le menu principal de l'application et sélectionner \"Vos articles Economisez en vous abonnant\". Si vous avez plusieurs adresses, vous pouvez sélectionner \"Modifier\" en haut de vos articles Economisez en vous abonnant pour sélectionner l'adresse de livraison associé à l'abonnement concerné. Vous pourrez ensuite voir et modifier les abonnements listés sous cette adresse de livraison."</string>
+    <string name="snapit">Snap It</string>
+    <string name="snapit_searching_for">Searching for photo…</string>
+    <string name="snapit_search_report_mismatch_prompt">Not your item?</string>
+    <string name="snapit_search_report_mismatch_button">Report mismatch</string>
+    <string name="snapit_search_report_mismatch_mail_recipient">report-mismatch-snapit@amazon.com</string>
+    <string name="snapit_search_report_mismatch_mail_subject">Image mismatch</string>
+    <string name="snapit_search_report_mismatch_mail_body">"Thank you for reporting a mismatch. Please submit this email and we will review to improve our match rate moving forward.
+
+"</string>
+    <string name="snapit_search_report_mismatch_item_description_with_byline_and_shortdesc">"Snap It match: %1$s by %2$s (%3$s)
+ASIN: %4$s"</string>
+    <string name="snapit_search_report_mismatch_item_description_with_byline">Snap It match: %1$s by %2$s (ASIN: %3$s)</string>
+    <string name="snapit_search_report_mismatch_item_description_with_shortdesc">"Snap It match: %1$s (%2$s)
+ASIN: %3$s"</string>
+    <string name="snapit_search_report_mismatch_item_description">Snap It match: %1$s (ASIN: %2$s)</string>
+    <string name="snapit_search_result_title_no_result">Item Not Found</string>
+    <string name="snapit_search_result_title_result">Item Found</string>
+    <string name="snapit_search_result_title_result_plural">Items Found</string>
+    <string name="snapit_search_result_title_searching_for">Searching…</string>
+    <string name="snapit_photo_capture_view_title">SnapIt - Take Photo</string>
+    <string name="snapit_help">"
+ Center the item on a plain background.
+
+ Select Retake if the photo is blurry.
+
+ Snap It works best with books, DVDs, CDs and video games.
+
+ Try to avoid shadows and glare."</string>
+    <string name="snapit_help_title">Snap It Help</string>
+    <string name="sns_detail_webpage">https://www.amazon.fr/gp/subscribe-and-save/idp/</string>
+    <string name="sns_mys_page">https://www.amazon.fr/gp/subscribe-and-save/manage</string>
+    <string name="sns_dispatch_page">https://www.amazon.fr/gp/subscribe-and-save/mobile/dispatch.html</string>
+    <string name="menu_more_mys_description">Gérer vos abonnements</string>
+    <string name="sns_dp_block_title">Economisez en vous abonnant</string>
+    <string name="sns_dp_button_prefix">Economisez en vous abonnant</string>
+    <string name="sns_dp_block_save">de remise</string>
+    <string name="sns_dp_block_ppu">(%1$s)</string>
+    <string name="sns_dp_block_discount">%1$s%%</string>
+    <string name="sns_dp_block_price">%1$s %3$s %2$s</string>
+    <string name="sns_dp_subscribe_button">%1$s: %3$s%% %2$s</string>
+    <string name="sns_loading_dialog_title">%1$s …</string>
+    <string name="sns_url_with_refmarker">%1$s/ref=%2$s</string>
+    <string name="authportal">https://www.amazon.fr/ap/signin</string>
+    <string name="web_cart_page">https://www.amazon.fr/gp/cart/view.html</string>
+    <string name="product_details_web_page_url">https://www.amazon.fr/gp/aw/d/</string>
+    <string name="contact_us_web_page_url">https://www.amazon.fr/gp/aw/contact-us</string>
+    <string name="show_password"> Afficher le mot de passe</string>
+    <string name="signout_progress_message">Déconnexion en cours…</string>
+    <string name="variations_not_available_in_dimen_x_selection_y">Pas disponible en \"%1$s: %2$s\"</string>
+    <string name="variations_not_available_with_selected_options">Pas disponible avec les options sélectionnées</string>
+    <string name="wishlist_web_page_url">https://www.amazon.fr/gp/registry/mobile</string>
+    <string name="deals_web_page_url">https://www.amazon.fr/gp/mobile/deals</string>
+    <string name="error_message_switching_language">"Un problème s'est produit lors du changement de langue. Veuillez réessayer plus tard."</string>
+    <string name="error_message_switching_country">"Un problème s'est produit lors du changement de pays. Veuillez réessayer plus tard."</string>
+    <string name="error_can_not_find_product">Désolé, cet article est introuvable</string>
+    <string name="web_check_out">https://www.amazon.fr/gp/checkoutportal/enter-checkout.html</string>
+    <string name="public_url_host_unavailable">"Amazon Mobile n'est actuellement pas disponible sur %1$s."</string>
+    <string name="public_url_unavailable">"Nous n'avons pas réussi à ouvrir cette page."</string>
+    <string name="public_url_switch_locale_title">Changer de Pays?</string>
+    <string name="public_url_switch_locale_message">Cette page est disponible sur %1$s. Changer de Pays et continuer ?</string>
+    <string name="country_name_en_ca">Canada</string>
+    <string name="country_name_zh_cn">Chine</string>
+    <string name="country_name_de_de">Allemagne</string>
+    <string name="country_name_es_es">Espagne</string>
+    <string name="country_name_fr_fr">France</string>
+    <string name="country_name_it_it">Italie</string>
+    <string name="country_name_ja_jp">Japon</string>
+    <string name="country_name_en_us">États-Unis</string>
+    <string name="country_name_en_gb">Royaume-Uni</string>
+    <string name="country_name_en_in">Inde</string>
+    <string name="search_web_page_url">https://www.amazon.fr/gp/aw/s/%1$s?__mk_fr_FR=ÅMÅZÕÑ</string>
+    <string name="search_prefetch_web_page_url">https://www.amazon.fr/gp/search/bootstrap/</string>
+    <string name="map_auth_portal_authentication_error">"L’appareil n'a pas pu être identifié. S'il vous plaît, essayez de nouveau."</string>
+    <string name="upgrade_dialog_title">Mettre à jour Amazon Mobile</string>
+    <string name="upgrade_dialog_message">Merci de mettre à jour l’application Amazon Mobile pour continuer à l’utiliser.</string>
+    <string name="upgrade_dialog_visit_googleplay">Rendez-vous sur le Google Play Store pour commencer la mise à jour.</string>
+    <string name="upgrade_dialog_visit_amazonappstore">Rendez-vous sur l’app shop Amazon pour commencer la mise à jour.</string>
+    <string name="upgrade_dialog_general_store">Appuyer sur mettre à jour pour commencer.</string>
+    <string name="upgrade_dialog_button_upgrade">Mettre à jour</string>
+    <string name="upgrade_notification_dialog_message">Mettez à jour l’application Amazon pour bénéficier des dernières améliorations.</string>
+    <string name="upgrade_remind_me_later">Rappeler plus tard</string>
+    <string name="upgrade_no_thanks">Non Merci</string>
+    <string name="upgrade_available_title">Mise à jour disponible</string>
+    <string name="upgrade_check_for_upgrade">Voir si mise à jour disponible</string>
+    <string name="checking_for_upgrade">En recherche de mise à jour</string>
+    <string name="no_available_upgrade">Aucune mise à jour disponible</string>
+    <string name="your_account_web_page_url">https://www.amazon.fr/gp/aw/ya</string>
+    <string name="cancel_order_web_page_url">https://www.amazon.fr/gp/aw/ya?ie=UTF8&amp;ac=oc</string>
+    <string name="your_orders_web_page_url">https://www.amazon.fr/gp/aw/ya/or</string>
+    <string name="order_detail_web_page_url">https://www.amazon.fr/gp/aw/ya/?ac=od</string>
+    <string name="ship_track_order_web_page_url">https://www.amazon.fr/gp/aw/ya?ie=UTF8&amp;ac=st</string>
+    <string name="one_click_settings_web_page_url">https://www.amazon.fr/gp/aw/vsd.html</string>
+    <string name="gno_sign_in">Bonjour. Identifiez-vous</string>
+    <string name="gno_sign_out">Vous n’êtes pas %1$s? Déconnectez-vous</string>
+    <string name="gno_sign_out_new_line">"Vous n’êtes pas %1$s…?
+Déconnectez-vous"</string>
+    <string name="new_locale_available">Amazon App is now available for Amazon.in. Set Amazon.in as your default store.</string>
+    <string name="shortcut_install_title" />
+    <string name="shortcut_install_msg" />
+    <string name="app_start_indication_dialog_title">Warning</string>
+    <string name="app_start_indication_dialog_msg">This app will use data and will incur charge according to the data package you have bought. Please contact network operator for detail. Do you agree to this charge?</string>
+    <string name="app_start_indication_dialog_button_check">Do not remind me again</string>
+    <string name="app_start_indication_dialog_button_agree">Agree</string>
+    <string name="app_start_indication_dialog_button_disagree">Disagree</string>
+    <string name="view_it_flow_not_support">Flow est actuellement disponible uniquement pour les clients aux États-Unis.</string>
+    <string name="gateway_web_page_url">https://www.amazon.fr/gp/gw/ajax/mshop.html</string>
+    <string name="srds_categroy_url">http://www.amazon.fr/s/browse/categories/?dataVersion=v0.1&amp;format=json</string>
+    <string name="html_notifications_settings_web_page_url">https://www.amazon.fr/ss/mobile/services/subscriptions/</string>
+    <string name="html_recommendations_web_page_url">https://www.amazon.fr/gp/aw/recs/ys</string>
+    <string name="aiv_unavailable">Amazon Instant Video is unavailable on this device.</string>
+    <string name="aiv_companion_app_installation_button">+++</string>
+    <string name="aiv_companion_app_not_installed_title">+++</string>
+    <string name="aiv_companion_app_not_installed">+++</string>
+    <string name="smile_url">https://www.amazon.fr/gp/aw/ch/change/</string>
+    <string name="your_charity">Your Charity</string>
+    <string name="sign_in_to_your_account">Identifiez-vous afin de</string>
+    <string name="view_your_wish_list">"Consulter votre Liste d'envies"</string>
+    <string name="find_and_reorder_past_purchases">Retrouver votre historique de commande</string>
+    <string name="track_your_purchases">Suivre vos colis</string>
+    <string name="skip_sign_in">"S'identifier plus tard"</string>
+    <string name="amazon_store_header">"Amazon vous permet de faire vos achats dans les boutiques de différents pays. Veuillez en choisir une avant de commencer vos achats. 
+
+Si vous changez de boutique, les articles figurant dans votre panier et dans vos listes d'envies seront sauvegardés mais pas transférés"</string>
+    <string name="amazon_store">Changer le pays</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_cancel_button">Annuler</string>
+    <string name="alert_one_click_change_button">Modifier</string>
+    <string name="alert_error_network_error">Erreur réseau</string>
+    <string name="alert_error_client_problem">"L'application Amazon a rencontré un problème."</string>
+    <string name="alert_error_service_please_try_again">"Le service mobile d'Amazon.fr a rencontré un problème. Veuillez réessayer ultérieurement."</string>
+    <string name="sign_in_title">Identifiez-vous</string>
+    <string name="sign_in_email_hint">Adresse e-mail</string>
+    <string name="sign_in_email_phone_number_hint">Adresse e-mail</string>
+    <string name="sign_in_password_hint">Mot de passe Amazon.fr</string>
+    <string name="sign_in_button">Continuer (serveur sécurisé)</string>
+    <string name="sign_in_forgot_your_password">Vous avez oublié votre mot de passe ?</string>
+    <string name="sign_in_create_account_button">Créer un compte</string>
+    <string name="sign_in_forgot_your_password_url">https://www.amazon.fr/forgot_password_mobile</string>
+    <string name="sign_in_in_progress">Identification...</string>
+    <string name="sign_in_legal_link_url">https://www.amazon.fr/cna_legal_mobile</string>
+    <string name="sso_welcome_user">Bonjour, %1$s</string>
+    <string name="sso_continue">Continuer</string>
+    <string name="sso_use_different_account">Utiliser un autre compte pour cette application</string>
+    <string name="sso_not_the_user">Vous ne souhaitez pas utiliser ce compte?</string>
+    <string name="sso_conditions_of_use">"Conditions d'utilisation"</string>
+    <string name="sso_privacy_notice">Confidentialité</string>
+    <string name="sso_conditions_of_use_link_url">https://www.amazon.fr/conditions_of_use_mobile</string>
+    <string name="sso_privacy_notice_link_url">https://www.amazon.fr/privacy_notice_mobile</string>
+    <string name="cna_title">Inscription</string>
+    <string name="cna_header">"Nouveau client Amazon.fr ?
+Créez votre compte Amazon.fr."</string>
+    <string name="cna_continue_button">Continuer</string>
+    <string name="cna_name_hint">Nom et prénom</string>
+    <string name="cna_furigana_hint" />
+    <string name="cna_email_hint">Adresse e-mail</string>
+    <string name="cna_email_phone_number_hint">Adresse e-mail</string>
+    <string name="cna_password_hint">Entrez un mot de passe</string>
+    <string name="cna_duplicate_password_hint">Confirmez votre mot de passe</string>
+    <string name="cna_no_passwords_not_same_error">Les deux mots de passe entrés ne sont pas identiques.</string>
+    <string name="cna_password_requirement_error">"Veuillez entrer un mot de passe d'au moins 6 caractères."</string>
+    <string name="cna_email_requirement_error">"L'adresse e-mail que vous avez entrée semble incorrecte. Elle doit contenir le signe arobase (@) avec un point (.) à la droite du @, sans espaces ni virgules."</string>
+    <string name="cna_in_progress">Nouveau compte utilisateur...</string>
+    <string name="cna_legal_text">Informations légales</string>
+    <string name="cna_legal_link_url">https://www.amazon.fr/cna_legal_mobile</string>
+    <string name="cna_registration_agreement" />
+    <string name="cna_conditions_of_use_and_sale_text">Conditions Générales de Vente</string>
+    <string name="cna_conditions_of_use_and_sale_url">https://www.amazon.fr/conditions_of_use_mobile</string>
+    <string name="cna_privacy_notice_text">vos informations personnelles</string>
+    <string name="cna_privacy_notice_url">https://www.amazon.fr/privacy_policy_mobile</string>
+    <string name="sign_out_title">Déconnexion</string>
+    <string name="sign_out_button">Déconnexion</string>
+    <string name="sign_out_you_are_signed_in_as">Vous êtes identifié sous le nom : &lt;b>%1$s&lt;/b></string>
+    <string name="sign_out_in_progress">Déconnexion...</string>
+    <string name="sign_out_confirm_title">Confirmer la déconnexion</string>
+    <string name="sign_out_confirm_message">%1$s, vous êtes sur le point de vous déconnecter des applications Amazon sur cet appareil.</string>
+    <string name="sign_out_confirm_message_with_appstore_installed">"%1$s, vous êtes sur le point de vous déconnecter des applications Amazon sur cet appareil. Vous n'aurez plus accès aux applications téléchargées depuis l'App-Shop Amazon si vous n'êtes plus connecté."</string>
+    <string name="sign_out_your_app_confirm_message">"%1$s, vous allez être déconnecté de l'App Amazon."</string>
+    <string name="one_click_settings_loading">Chargement en cours...</string>
+    <string name="one_click_settings_loading_shipping_addresses">Chargement des adresses en cours...</string>
+    <string name="one_click_settings_saving_shipping_payment_method">"Enregistrement de l'adresse et du mode de paiement en cours..."</string>
+    <string name="one_click_settings_turning_on">"Activation de l'option d'achat en 1–Click mobile..."</string>
+    <string name="one_click_settings_turning_off">"Désactivation de l'option d'achat en 1–Click mobile..."</string>
+    <string name="one_click_settings_title">Coordonnées 1–Click</string>
+    <string name="one_click_settings_ordering_title">Commande en 1–Click</string>
+    <string name="one_click_settings_mobile_one_click_title">1–Click mobile</string>
+    <string name="one_click_settings_device_name_title">Nom du téléphone portable</string>
+    <string name="one_click_settings_shipping_and_payments_title">"Adresse d'expédition et paiement"</string>
+    <string name="one_click_settings_shipping_and_payments_empty">"Définir l'adresse 1–Click"</string>
+    <string name="one_click_settings_about_title">"A propos de l'option d'achat en 1–Click mobile"</string>
+    <string name="one_click_settings_continue_button">Continuer</string>
+    <string name="one_click_settings_shipping_payment_method_title">Adresse de livraison et mode de paiement</string>
+    <string name="one_click_settings_shipping_payment_method_info">"L'adresse et le mode de paiement que vous choisissez seront utilisés comme adresse de livraison et mode de paiement par défaut pour toutes les commandes en 1–Click passées sur le Web ou sur votre téléphone portable. Pour ajouter une adresse ou un mode de paiement, accédez au site Amazon.fr à l'aide de votre navigateur."</string>
+    <string name="one_click_settings_shipping_payment_method_defaults_title">Choisir une adresse et un mode de paiement par défaut</string>
+    <string name="one_click_settings_payment_method_title">Mode de paiement</string>
+    <string name="one_click_settings_payment_method_defaults_title">Choisir un mode de paiement par défaut</string>
+    <string name="one_click_settings_select_payment_method">Sélectionner un mode de paiement</string>
+    <string name="one_click_settings_about_text">"Si vous activez la commande en 1–Click sur Amazon Mobile, vous pouvez acheter des articles depuis votre téléphone portable en cliquant simplement sur un bouton. Vous n'avez pas besoin de vous identifier à chaque fois que vous réalisez un achat sur Amazon Mobile. &lt;br> &lt;br> L'option d'achat en 1–Click mobile de votre téléphone n'est pas la même que l'option d'achat en 1–Click que vous utilisez sur votre ordinateur. Chaque paramètre peut être activé ou désactivé indépendamment. Par contre, l'adresse et le mode de paiement par défaut sont les mêmes pour l'option d'achat en 1–Click mobile et l'option d'achat en 1–Click que vous utilisez sur votre ordinateur. &lt;br> &lt;br> L'option d'achat en 1–Click mobile ne peut être activée que depuis votre téléphone portable. Vos paramètres 1–Click mobile ne peuvent être affichés depuis votre PC uniquement si l'option d'achat en 1–Click mobile est activée. &lt;br> &lt;br> Vous pouvez désactiver l'option d'achat en 1–Click mobile depuis « Votre compte » soit sur votre téléphone portable, soit à partir de votre ordinateur."</string>
+    <string name="payment_format_credit_card_expiration_date_addreviated">Exp</string>
+    <string name="locale_switch_select_country_below">Sélectionner un pays ci-dessous</string>
+    <string name="address_format_CN">"{name}
+{address1}
+{address2}
+{address3}
+{state} {city} {county}
+{zip}
+{country}
+{phone}"</string>
+    <string name="address_format_FR">"{name}
+{address1}
+{address2}
+{address3}
+{zip} {city} {county} {state}
+{country}
+{phone}"</string>
+    <string name="address_format_JP">"{name}
+{zip} {state} {county} {city}
+{address1}
+{address2}
+{address3}
+{country}
+{phone}"</string>
+    <string name="address_format_default">"{name}
+{address1}
+{address2}
+{address3}
+{city} {county}, {state} {zip}
+{country}
+{phone}"</string>
+    <string name="sign_in_email_rule">required maxlength:64</string>
+    <string name="sign_in_password_rule">required maxlength:512</string>
+    <string name="cna_name_rule">required maxlength:50</string>
+    <string name="cna_furigana_rule">required maxlength:50</string>
+    <string name="cna_email_rule">required maxlength:64</string>
+    <string name="cna_password_rule">required maxlength:20</string>
+    <string name="alert_error_network_error_socket_timeout">Pas de réponse, merci de réessayer plus tard.</string>
+    <string name="alert_error_network_error_unknownhost">Problème de connexion, merci de réessayer plus tard.</string>
+    <string name="alert_network_failure_title">Pas de connexion Internet</string>
+    <string name="alert_network_failure_message">Une connexion réseau est nécessaire pour effectuer cette tâche. Veuillez vous connecter à un réseau.</string>
+    <string name="alert_network_failure_message_wifi">Une connexion Wi-Fi est nécessaire pour effectuer cette tâche. Veuillez vous connecter au Wi-Fi.</string>
+    <string name="sign_in_legal_text">"En ouvrant votre compte, vous acceptez l'intégralité de nos Conditions générales de vente, notre Politique de gestion de Vos informations personnelles et notre Politique Cookies et publicité sur Internet."</string>
+    <string name="amazon_chooser_activity_no_application">Aucune application ne peut effectuer cette action.</string>
+    <string name="amazon_chooser_activity_choose_appliaction">Continuer avec</string>
+    <string name="opengl_progress_text">Chargement en cours…</string>
+    <string name="adrive_lib_android_get_cdp_app">"Obtenir l'appui Cloud Drive Photos"</string>
+    <string name="adrive_lib_android_notification_tap_for_details">Taper pour des détails</string>
+    <string name="adrive_lib_android_upload_information_header_autosave_everything_saved">Tout a été enregistré.</string>
+</resources>

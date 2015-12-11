@@ -1,0 +1,35 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.crashlytics.android.core;
+
+
+// Referenced classes of package com.crashlytics.android.core:
+//            CodedOutputStream, ByteString
+
+final class crashType extends ge
+{
+
+    private static final int PROTOBUF_TAG = 10;
+    private final String crashType;
+    private final long time;
+
+    public final int getPropertiesSize()
+    {
+        return CodedOutputStream.computeUInt64Size(1, time) + CodedOutputStream.computeBytesSize(2, ByteString.copyFromUtf8(crashType));
+    }
+
+    public final void writeProperties(CodedOutputStream codedoutputstream)
+    {
+        codedoutputstream.writeUInt64(1, time);
+        codedoutputstream.writeBytes(2, ByteString.copyFromUtf8(crashType));
+    }
+
+    public transient ge(long l, String s, ge age[])
+    {
+        super(10, age);
+        time = l;
+        crashType = s;
+    }
+}

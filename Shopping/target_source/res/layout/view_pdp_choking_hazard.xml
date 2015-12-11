@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" style="@style/Target.CardView.Selectable"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/prd_pdp_hazard_icon" android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_hazard" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/prd_pdp_hazard_info_icon" android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_info" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.target.ui.view.TargetTextView android:id="@id/prd_pdp_warning_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_choking_hazard" android:layout_toLeftOf="@id/prd_pdp_hazard_info_icon" android:layout_toRightOf="@id/prd_pdp_hazard_icon" android:layout_centerVertical="true" app:fontStyle="medium" style="@style/Target.TextView.PdpChokingHazard" />
+    </RelativeLayout>
+</FrameLayout>

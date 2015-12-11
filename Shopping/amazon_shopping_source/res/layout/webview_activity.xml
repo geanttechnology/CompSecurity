@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="@dimen/header_bar_height">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/tap_target" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:onClick="onNavPressed">
+            <ImageView android:id="@id/nav_up_icon" android:paddingTop="@dimen/nav_toggle_icon_margin_top" android:paddingBottom="@dimen/nav_toggle_icon_margin_top" android:clickable="false" android:layout_width="@dimen/nav_toggle_icon_width" android:layout_height="fill_parent" android:src="@drawable/up_nav_toggle_icon" />
+            <TextView android:textSize="@dimen/app_title_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/webview_title" android:paddingLeft="@dimen/app_title_text_padding_left" android:paddingRight="@dimen/app_title_text_padding_left" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/app_title_text_height" android:layout_marginTop="@dimen/app_title_text_margin_top" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/coins_layout" android:paddingRight="@dimen/coins_layout_padding_right" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.amazon.venezia.widget.NumberSpinner android:textSize="@dimen/coins_balance_text_size" android:textColor="@color/secondary_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/coins_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/coins_label_text_size" android:textColor="@color/secondary_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/coins_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <ProgressBar android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_indeterminate_horizontal_holo" android:layout_alignParentBottom="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/webview_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

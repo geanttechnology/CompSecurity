@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" app:cardBackgroundColor="?android:windowBackground" app:cardCornerRadius="@dimen/card_view_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayScalingPadding2x" android:paddingRight="@dimen/ebayScalingPadding2x" android:paddingBottom="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:layout_width="fill_parent" android:text="@string/trending_on_ebay" style="@style/EbayTextAppearance.CardTitle" />
+        <include layout="@layout/homescreen_card_horizontal_divider" />
+        <include android:id="@id/trending_item_0" layout="@layout/homescreen_card_trending_item" />
+        <include layout="@layout/homescreen_card_horizontal_divider" />
+        <include android:id="@id/trending_item_1" layout="@layout/homescreen_card_trending_item" />
+        <include layout="@layout/homescreen_card_horizontal_divider" />
+        <include android:id="@id/trending_item_2" layout="@layout/homescreen_card_trending_item" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/see_more_trending" android:layout_width="@dimen/card_more_button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding" android:text="See more Trending" android:textAllCaps="false" style="@style/EbayButton" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

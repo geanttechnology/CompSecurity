@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cameraPreviewFrameLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.poshmark.ui.customviews.CameraViewportRectView android:id="@id/viewportOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:textSize="14.0sp" android:textColor="@color/textColorWhite" android:layout_gravity="top|left|center" android:id="@id/flashButton" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/off" android:drawableLeft="@drawable/ic_flash_white" />
+    <ImageButton android:layout_gravity="top|right|center" android:id="@id/changeCameraFaceButton" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/ic_camera_rotate_white_outline" />
+    <ImageButton android:layout_gravity="bottom|left|center" android:id="@id/cancelButton" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_cross_white" />
+    <ImageButton android:layout_gravity="bottom|center" android:id="@id/clickImageButton" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_imagecapture" />
+    <ImageButton android:layout_gravity="bottom|right|center" android:id="@id/pickImageButton" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_browse_white" />
+    <RelativeLayout android:id="@id/loadingBitmapProgressBarLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_b" android:minHeight="@dimen/rs_refinement_menu_item_height" style="@style/Rs.Refinement.GroupPanel"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/rs_refinement_menu_item_height" android:layout_weight="1.0" style="@style/Rs.Refinement.GroupPanel">
+        <TextView android:ellipsize="end" android:id="@id/rs_refinement_label" android:paddingLeft="@dimen/pc_9px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Rs.Refinement.GroupPanel.Header" />
+        <TextView android:ellipsize="end" android:id="@id/rs_refinement_selected_label" android:paddingLeft="@dimen/pc_9px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Rs.Refinement.GroupPanel.SubHeader" />
+    </LinearLayout>
+    <ImageView android:id="@id/rs_refinements_group_indicator" android:paddingLeft="@dimen/pc_8px" android:paddingRight="@dimen/pc_8px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rs_arrow_down" />
+</LinearLayout>

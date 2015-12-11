@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/html_sandbox_button" android:text="@string/debug_html_sandbox" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+    <Button android:id="@id/html_feature_env_debug_settings_button" android:text="@string/html_feature_env_debug_settings" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+    <Button android:id="@id/weinre_debug_settings_button" android:text="@string/menu_more_weinre_debug_settings" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+    <Button android:id="@id/mash_api_test_button" android:text="@string/mash_api_test" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+    <Button android:id="@id/prime_upsell_settings_button" android:text="@string/debug_prime_upsell_settings" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+    <Button android:id="@id/social_connect_settings_button" android:text="@string/debug_connect_settings" style="@style/ArrowSelector.GrayTextColorLink" />
+    <View style="@style/Separator" />
+</LinearLayout>

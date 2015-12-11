@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/xo_donations_layout" style="@style/Checkout.Container.Full">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginRight="@dimen/checkoutListContainerMargin" android:layout_marginBottom="@dimen/checkoutListContainerMargin" style="@style/Letterbox.Modal">
+                <TextView android:id="@id/xo_donations_list_header" android:text="@string/xo_donations_list_header" style="@style/Checkout.Header" />
+                <com.ebay.android.widget.ContainerLayout android:id="@id/xo_donations_list_layout" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="@dimen/givingworksDonationCellHeight" android:layout_marginTop="@dimen/checkoutListContainerMargin">
+                    <RelativeLayout android:id="@id/xo_donation_amount_layout" android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:paddingLeft="@dimen/checkoutListContainerMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_donation_amount_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:id="@id/xo_donation_amount" android:paddingRight="@dimen/checkoutListContainerMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView android:textColor="@color/ebay_text_color_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutListContainerMargin" android:layout_marginTop="@dimen/checkoutListContainerMargin" android:text="@string/xo_donations_text" />
+                <include layout="@layout/button_bar_placeholder" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ButtonBar.Floating">
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/xo_donations_cancel" android:layout_width="0.0dip" android:text="@android:string/cancel" android:layout_weight="1.0" style="@style/EbayButton.White" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/xo_donations_done" android:layout_width="0.0dip" android:text="@string/done" android:layout_weight="1.0" style="@style/EbayButton.White" />
+    </LinearLayout>
+</merge>

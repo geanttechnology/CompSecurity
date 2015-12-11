@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_loading" layout="@layout/common_progress" />
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild.WithHelp">
+            <LinearLayout android:layout_marginBottom="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/sell_label_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Sell.Spoke.Title.Top" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:id="@id/character_counter" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <com.ebay.android.widget.ContainerLayout android:layout_marginBottom="3.0dip" style="@style/Sell.Layout.Container">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/title_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                        <EditText android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/edit_listing_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_listing_title" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone|flagNoExtractUi" style="@style/Sell.EditText" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/subtitle_row" android:layout_width="fill_parent" android:layout_height="0.0dip">
+                        <EditText android:layout_gravity="center_vertical" android:id="@id/edit_listing_subtitle" android:layout_height="wrap_content" android:hint="@string/hint_listing_subtitle" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone|flagNoExtractUi" style="@style/Sell.EditText" />
+                    </LinearLayout>
+                    <include layout="@layout/sell_show_hide_options" />
+                </com.ebay.android.widget.ContainerLayout>
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_dashed_line" />
+            <LinearLayout android:layout_marginTop="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:text="@string/label_listing_title" style="@style/Sell.Layout.Help.Title" />
+                <TextView android:text="@string/sell_help_title" style="@style/Sell.Layout.Help.Content" />
+                <TextView android:text="@string/label_listing_subtitle" style="@style/Sell.Layout.Help.Title" />
+                <TextView android:text="@string/sell_help_subtitle" style="@style/Sell.Layout.Help.Content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

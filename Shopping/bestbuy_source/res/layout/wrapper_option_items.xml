@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <RelativeLayout android:id="@id/copy_link_option" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/copy_link" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:gravity="center" android:id="@id/open_browser_option" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/open_browser" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:gravity="center" android:id="@id/share_option" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.0sp" android:textColor="@color/stores_name_color" android:gravity="center" android:id="@id/cancel_option" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel_text" android:layout_centerInParent="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+    </RelativeLayout>
+</LinearLayout>

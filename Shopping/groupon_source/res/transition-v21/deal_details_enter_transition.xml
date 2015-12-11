@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:duration="400" android:transitionOrdering="0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <slide android:slideEdge="0x30">
+        <targets>
+            <target android:targetId="@id/deal_details_title_value_price_section_v2" />
+        </targets>
+    </slide>
+    <fade android:fadingMode="1">
+        <targets>
+            <target android:targetId="@id/semitransparent_overlay" />
+        </targets>
+    </fade>
+</transitionSet>

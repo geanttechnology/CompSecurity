@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:tileMode="repeat"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/settings_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_page_first_setting_margin_top">
+            <TextView android:textSize="@dimen/settings_page_primary_text_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:id="@id/version_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SettingsVersion_title_Version" />
+            <TextView android:textSize="@dimen/settings_page_secondary_text_size" android:textColor="@color/secondary_text_color" android:id="@id/apk_version_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/settings_page_field_value_left_margin" />
+        </LinearLayout>
+        <Button android:textColor="@color/button_enabled_text_color" android:layout_gravity="center_horizontal" android:id="@id/checkupdates_button" android:background="@drawable/orange_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_page_section_margin_top" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_page_section_margin_top">
+            <TextView android:textSize="@dimen/settings_page_primary_text_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:id="@id/release_notes_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/settings_page_secondary_text_size" android:textColor="@color/secondary_text_color" android:id="@id/release_notes_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/settings_page_field_value_left_margin" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

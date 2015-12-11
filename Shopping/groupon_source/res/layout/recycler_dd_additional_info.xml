@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/additional_info_section" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/details_item_top_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/additional_info_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/deal_details_additional_info" style="@style/deal_details_section_header_v2" />
+    <TextView android:id="@id/additional_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/additional_info_title" style="@style/deal_details_additional_info" />
+</RelativeLayout>

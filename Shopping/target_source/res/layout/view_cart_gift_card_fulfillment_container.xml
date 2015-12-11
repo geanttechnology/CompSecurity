@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gc_fulfillment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/gift_card_delivery_icon" android:background="@null" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:scaleType="center" android:contentDescription="@null" />
+    <com.target.ui.view.TargetTextView android:id="@id/gift_card_delivery_method" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_less_padding_margin" app:fontStyle="light" style="@style/Target.TextView.ProductFulfillmentType" />
+</LinearLayout>

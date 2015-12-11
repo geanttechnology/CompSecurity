@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/payment_option_row_paypal" android:background="@drawable/white_item_selector" android:padding="@dimen/payment_details_paypal_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/payment_details_payment_option_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="@dimen/payment_details_paypal_size" android:layout_height="@dimen/payment_details_paypal_size" android:layout_marginRight="@dimen/payment_details_paypal_margin_right" android:src="@drawable/icon_paypal" />
+    <com.target.ui.view.TargetTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_paypal" style="@style/PaymentOptionText" />
+</LinearLayout>

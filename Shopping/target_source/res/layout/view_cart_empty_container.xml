@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:background="@color/cart_empty_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/background_emptycart" android:scaleType="fitCenter" android:contentDescription="@string/cart_empty_content_desc" />
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/cart_empty_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cart_empty_message_margin" android:text="@string/cart_empty_message" />
+    </FrameLayout>
+    <GridView android:layout_gravity="fill_horizontal" android:id="@id/product_recommendations_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" style="@style/Target.ProductCardGridView.Selectable" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/cart_reauth_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cart_error" />
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:textColor="@color/target_jet_black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cart_default_more_padding_margin" android:text="@string/cart_reauth_message" />
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/mediumTextSize" android:gravity="center" android:id="@id/cart_reauth_sign_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cart_empty_message_margin" android:text="@string/cart_reauth_sign_in" android:textAllCaps="true" style="@style/DialogButton.Red" />
+    </LinearLayout>
+</LinearLayout>

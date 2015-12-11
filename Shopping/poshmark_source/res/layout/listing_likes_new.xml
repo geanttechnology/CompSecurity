@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/listingLikesLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@id/likesIconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/ic_userlike_outline" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/textColorDarkGray" android:id="@id/likesView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="name1, name2 and 3 others like this." custom:fontName="fonts/ProximaNova_Reg.ttf" custom:linkColor="@color/bgColorLightBurgundy" />
+    </LinearLayout>
+    <View android:id="@id/listingLikesDivider" android:background="@color/borderColorLightGray" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="45.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" />
+</LinearLayout>

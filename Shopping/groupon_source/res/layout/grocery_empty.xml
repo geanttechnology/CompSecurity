@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="60.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_error_grocery_basket" />
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/grey_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="Grocery offers from \nSnap by Groupon are not\n available at the moment" android:layout_weight="0.16" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/grey72" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Please check back soon" />
+    <Button android:id="@id/retry_button" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/retry" style="@style/green_button_flat" />
+</LinearLayout>

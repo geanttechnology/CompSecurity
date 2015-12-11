@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/purchase_row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/purchase_row_value_label_margin_right" android:layout_alignParentLeft="@bool/view1_ltr" android:layout_alignParentRight="@bool/view1_rtl" android:layout_centerVertical="true">
+        <com.groupon.view.AutoResizeTextViewWidth android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/purchase_text_value_v2" />
+        <TextView android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" style="@style/purchase_text_value_v2" />
+        <TextView android:textColor="@color/groupon_alert" android:id="@id/payment_method_expired_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_method_expired" />
+    </LinearLayout>
+    <TextView android:id="@id/payment_icon" android:layout_marginRight="18.0dip" android:layout_alignParentLeft="@bool/view2_ltr" android:layout_alignParentRight="@bool/view2_rtl" android:layout_centerVertical="true" style="@style/breakdown_credit_card_icon_v3" />
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/payment_icon" style="@style/purchase_row_arrow_one_item" />
+</RelativeLayout>

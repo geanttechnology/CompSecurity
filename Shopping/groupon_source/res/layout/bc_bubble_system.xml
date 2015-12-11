@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/bc_history_bubble"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bc_history_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/bc_history_bubble_system">
+        <TextView android:id="@id/bc_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/bc_history_bubble_system_text" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ExpandableListView android:scrollbarAlwaysDrawHorizontalTrack="true" android:id="@id/notification_setting_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/white" />
+    <TextView android:textStyle="bold" android:textColor="@color/empty_notification_text_color" android:gravity="center" android:id="@id/empty_notification_text" android:background="@drawable/empty_notification_text_bg" android:paddingLeft="@dimen/padding_double" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding_double" android:paddingBottom="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/notification_currently_unavailable" />
+</LinearLayout>

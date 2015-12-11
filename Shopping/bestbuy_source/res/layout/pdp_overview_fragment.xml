@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/white" android:background="@drawable/bby_blue_box" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="12.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_overview" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+    <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/specialfeatures" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/spec_features" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/free_bonus" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/prd_bonusfree" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/productDetails" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/prd_details" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="0.65" android:scaleY="0.65" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/bby_darkest_gray" android:ellipsize="end" android:id="@id/prd_details_desc" android:paddingLeft="25.0dip" android:paddingTop="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_toLeftOf="@id/icon" android:layout_below="@id/prd_details" android:layout_alignParentLeft="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/productSynopsis" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/prd_synopsis" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:id="@id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="0.65" android:scaleY="0.65" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/bby_darkest_gray" android:ellipsize="end" android:id="@id/prd_synopsis_desc" android:paddingLeft="25.0dip" android:paddingTop="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_toLeftOf="@id/icon1" android:layout_below="@id/prd_synopsis" android:layout_alignParentLeft="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/features" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/prd_features" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:id="@id/arrowicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="0.65" android:scaleY="0.65" />
+            <LinearLayout android:orientation="vertical" android:id="@id/prd_features_desc" android:paddingLeft="25.0dip" android:paddingTop="13.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrowicon" android:layout_below="@id/prd_features" android:layout_alignParentLeft="true">
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/bby_darkest_gray" android:ellipsize="end" android:id="@id/first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/bby_darkest_gray" android:ellipsize="end" android:id="@id/second" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/bby_darkest_gray" android:ellipsize="end" android:id="@id/third" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+                <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="14.0sp" android:textColor="@color/bby_darkest_gray" android:ellipsize="end" android:id="@id/fourth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/whats_included" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/prd_included" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/specifications" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/prd_specs" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/protection" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/prd_protection" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/castCrew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/cast_desc" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/movieDetails" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/movie_desc" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/episodeDetails" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/episode_desc" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/music" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/music_desc" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/softwareorgame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/softwareorgame_desc" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/songs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:textSize="15.5sp" android:textColor="@color/bby_darkest_gray" android:id="@id/songs_desc" android:paddingLeft="25.0dip" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" bby:BBYFont="@string/BBY_APP_FONT_BOLD" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/icon_right_margin" android:src="@drawable/mediumarrow" android:layout_alignParentRight="true" android:scaleX="0.65" android:scaleY="0.65" />
+        </RelativeLayout>
+        <View android:background="@color/bby_lightest_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</LinearLayout>

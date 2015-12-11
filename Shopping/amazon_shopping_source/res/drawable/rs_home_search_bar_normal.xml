@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="@color/rs_search_bar_bottom_layer_bottom_color" android:endColor="@color/rs_search_bar_bottom_layer_top_color" android:angle="90.0" />
+            <corners android:radius="@dimen/rs_amazon_corner_radius" />
+        </shape>
+    </item>
+    <item android:left="@dimen/rs_search_bar_middle_layer_offset" android:top="@dimen/rs_search_bar_middle_layer_offset" android:right="@dimen/rs_search_bar_middle_layer_offset" android:bottom="@dimen/rs_search_bar_middle_layer_offset">
+        <shape>
+            <gradient android:startColor="@color/rs_search_bar_middle_layer_bottom_color" android:endColor="@color/rs_search_bar_middle_layer_top_color" android:angle="90.0" />
+            <corners android:radius="@dimen/rs_amazon_corner_radius" />
+        </shape>
+    </item>
+    <item android:left="@dimen/rs_search_bar_top_layer_offset" android:top="@dimen/rs_search_bar_top_layer_offset" android:right="@dimen/rs_search_bar_top_layer_offset" android:bottom="@dimen/rs_search_bar_top_layer_offset">
+        <shape>
+            <solid android:color="@color/rs_white" />
+            <corners android:radius="@dimen/rs_search_bar_top_layer_corner_radius" />
+        </shape>
+    </item>
+</layer-list>

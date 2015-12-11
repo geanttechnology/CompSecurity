@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/bc_history_bubble"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bc_history_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/bc_history_bubble_visitor">
+        <ImageView android:id="@id/bc_avatar" style="@style/bc_history_bubble_visitor_avatar" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/bc_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1:00 PM" style="@style/bc_history_bubble_time" />
+                <TextView android:id="@id/bc_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Visitor" style="@style/bc_history_bubble_sender" />
+            </LinearLayout>
+            <TextView android:id="@id/bc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/bc_history_bubble_visitor_text" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

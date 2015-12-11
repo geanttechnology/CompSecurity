@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/master_pane_shadow" android:visibility="gone" android:layout_width="@dimen/MessagesShadowWidth" android:layout_height="0.0dip" android:src="@drawable/sell_hub_shadow" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <android.support.v4.view.ViewPager android:id="@id/tab_pager" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.ebay.android.widget.OnSizeRelativeLayout android:id="@id/tabhost_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ebay.mobile.myebay.ScrollingTabView android:id="@id/tabscroller" android:layout_width="fill_parent" android:layout_height="48.0dip" style="@style/ScrollingTabs" />
+                <RelativeLayout android:id="@id/belowtab_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tabscroller" />
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </TabHost>
+        <ImageView android:id="@id/tabs_master_pane_shadow" android:visibility="gone" android:layout_width="@dimen/MessagesShadowWidth" android:layout_height="0.0dip" android:src="@drawable/sell_hub_shadow" android:layout_alignTop="@android:id/tabhost" android:layout_alignRight="@android:id/tabhost" android:layout_alignBottom="@android:id/tabhost" />
+    </com.ebay.android.widget.OnSizeRelativeLayout>
+</FrameLayout>

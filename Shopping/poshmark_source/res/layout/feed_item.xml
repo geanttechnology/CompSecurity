@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/bgColorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip">
+        <View android:id="@id/topBorder" android:background="@color/borderColorGray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <include android:id="@id/listingHeader" layout="@layout/listing_header" />
+        <include android:id="@id/listingOverview" layout="@layout/listing_overview" />
+        <include android:id="@id/listingLikes" layout="@layout/listing_likes" />
+        <include android:id="@id/commentHolderLayout1" layout="@layout/listing_comment" />
+        <include android:id="@id/commentHolderLayout2" layout="@layout/listing_comment" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="13.0sp" android:textColor="@color/bgColorLightBurgundy" android:gravity="right" android:id="@id/allCommentsView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="@string/listing_view_all_n_comments_and_buy" custom:fontName="fonts/ProximaNova_Reg.ttf" custom:linkColor="@color/bgColorLightBurgundy" />
+        <include android:id="@id/listingActions" layout="@layout/listing_actions" />
+        <View android:background="@color/borderColorGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

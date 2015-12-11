@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.retailsearch.android.ui.results.views.MultiStoreOfferView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rs_multi_store_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rs_multi_store_item_badge" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@null" android:layout_weight="1.0" />
+    <View android:id="@id/rs_multi_store_item_divider" android:background="@color/aui_tertiary" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_margin="@dimen/gutter_small" />
+    <TextView android:gravity="left" android:id="@id/rs_multi_store_item_price" android:paddingLeft="@dimen/rs_multi_store_item_image_price_padding_left" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="3.0" style="@style/Results.PriceSpan.MultiStore" />
+    <TextView android:gravity="left" android:id="@id/rs_multi_store_item_message" android:paddingLeft="@dimen/rs_multi_store_item_image_price_padding_left" android:visibility="gone" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="3.0" style="@style/Rs.InlineActions.Message" />
+    <include layout="@layout/rs_inline_actions" />
+</com.amazon.retailsearch.android.ui.results.views.MultiStoreOfferView>

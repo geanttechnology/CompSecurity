@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/parent_layout" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/splash_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/splash" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="@style/EbayTextAppearanceStrong" android:textSize="@dimen/ebayTextSizeGigantic" android:gravity="center_horizontal" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vq_welcome_to_ebay_tablet" />
+        <TextView android:textAppearance="@style/EbayTextAppearance.Title1" android:gravity="center_horizontal" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/vq_easier_to_find_tablet" />
+        <Button android:id="@id/take_a_tour" android:paddingLeft="@dimen/ebayMargin8x" android:paddingRight="@dimen/ebayMargin8x" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_screen_take_a_tour" style="@style/EbayButton.BlueOutline" />
+        <TextView android:id="@id/no_thanks" android:background="@drawable/text_under_line" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/welcome_screen_no_thanks" style="@style/EbayTextAppearance" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/userListItemLayout" android:clickable="true" style="@style/backgroundTableRowMiddle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.RoundedCornersImageView android:id="@id/avataar" android:background="@color/bgColorWhite" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/ic_user_default" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/followFollowingButton" android:layout_toRightOf="@id/avataar" android:layout_centerVertical="true">
+        <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/textColorDarkGray" android:ellipsize="end" android:id="@id/fullNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="First Last" android:maxLines="1" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+        <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorGray" android:ellipsize="end" android:id="@id/usernameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\@username" android:maxLines="1" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+    </LinearLayout>
+    <com.poshmark.ui.customviews.PMButton android:id="@id/followFollowingButton" android:paddingLeft="10.0dip" android:paddingTop="0.0dip" android:paddingRight="10.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/followFollowingButton" />
+</RelativeLayout>

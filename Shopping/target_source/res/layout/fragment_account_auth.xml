@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:target="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/auth_form_container" android:layout_width="@dimen/account_reauth_min_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/account_page_margin" android:layout_marginBottom="@dimen/account_page_margin_small">
+        <com.target.ui.view.TargetTextView android:textSize="@dimen/x_largeTextSize" android:textColor="@android:color/black" android:id="@id/auth_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_page_margin" android:layout_marginRight="@dimen/account_page_margin" target:fontStyle="regular" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/auth_error_container" android:background="@color/target_fade_away_grey" android:paddingTop="@dimen/account_page_margin_small" android:paddingBottom="@dimen/account_page_margin_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_page_margin">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_page_margin" android:layout_marginRight="@dimen/account_page_margin" android:src="@drawable/account_error_large" />
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:layout_gravity="center" android:id="@id/auth_error_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.target.ui.view.account.AccountCredentialsInputView android:id="@id/auth_credentials_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_page_margin" android:layout_marginTop="@dimen/account_page_margin" android:layout_marginRight="@dimen/account_page_margin" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_page_margin" android:layout_marginTop="@dimen/account_login_button_margin_top" android:layout_marginRight="@dimen/account_page_margin" layout="@layout/account_button_sign_in" />
+        <include android:layout_gravity="center" android:layout_width="@dimen/account_forgot_password_button_width" android:layout_height="@dimen/account_forgot_password_button_height" android:layout_marginTop="@dimen/account_page_margin_small" layout="@layout/account_button_forgot_password" />
+    </LinearLayout>
+    <include layout="@layout/view_dialog_progress_container" />
+</FrameLayout>

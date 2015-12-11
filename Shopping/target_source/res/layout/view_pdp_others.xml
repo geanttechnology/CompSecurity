@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/prd_pdp_other_product_details_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/product_details" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:id="@id/prd_pdp_other_guest_review_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:id="@id/prd_pdp_other_guest_review_text" android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/product_review" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+    <View android:id="@id/prd_pdp_other_guest_review_layout_div" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:id="@id/prd_pdp_other_find_in_nearby_stores_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/product_find_in_nearby_stores" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+    <View android:id="@id/prd_pdp_other_find_in_nearby_stores_layout_div" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:id="@id/prd_pdp_other_free_shipping_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LineItemSelector">
+        <com.target.ui.view.TargetTextView android:paddingLeft="@dimen/prd_pdp_left_right_internal_padding" android:paddingRight="@dimen/prd_pdp_left_right_internal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size" android:text="@string/product_shipping_returns" app:fontStyle="light" style="@style/Target.TextView.LineItem" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,282 @@
+{
+  "sections": [
+    {
+      "title": "ACCOUNT",
+      "index": "0",
+      "items": [
+        {
+          "index": 0,
+          "title": "My Best Buy",
+          "image": "mybestbuycorecolor",
+          "targetView": "bbyRZViewController",
+          "targetURL": "",
+          "trackingTitle": "My Best Buy",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "MyBBY"
+        },
+        {
+          "index": 1,
+          "title": "Order Status",
+          "image": "orderstatus",
+          "targetView": "bbyWebViewController",
+          "targetURL": "https://www-ssl.bestbuy.com/profile/ss/orderlookup",
+          "trackingTitle": "Order Status",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "OrderStatus"
+        },
+        {
+          "index": 2,
+          "title": "Mobile Devices",
+          "image": "phoneupgrade",
+          "targetView": "bbyWebViewController",
+          "targetURL": "https://www-ssl.bestbuy.com/profile/mobilecontract/devices",
+          "trackingTitle": "Mobile Devices",
+          "displayTitle": "",
+          "jsForEvaluationString": "document.getElementById('page-wrapper').style.display = 'none';document.getElementById('colophon').style.display = 'none'; document.getElementById('header-search').style.display = 'none';",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "MobileDevices"
+        },
+        {
+          "index": 3,
+          "title": "My Wish Lists",
+          "image": "wishlist",
+          "targetView": "MyWishListsFragment",
+          "targetURL": "",
+          "trackingTitle": "My Wish Lists",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "MyWishLists"
+        },
+        {
+          "index": 4,
+          "title": "My Wedding Registry",
+          "image": "weddingregistry",
+          "targetView": "MyEmptyWeddingRegistryList",
+          "targetURL": "",
+          "trackingTitle": "MyEmptyWeddingRegistryList",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "MyEmptyWeddingRegistryList"
+        }
+      ]
+    },
+    {
+      "title": "TOOLS",
+      "index": "1",
+      "items": [
+        {
+          "index": 0,
+          "title": "Registry, Gifts & Lists",
+          "image": "registryandgifts",
+          "targetView": "RegistryAndGiftsFragment",
+          "targetURL": "",
+          "trackingTitle": "Registry & Gifts",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "RegistryAndGifts"
+        },
+        {
+          "index": 1,
+          "title": "Product Scan",
+          "image": "productscan",
+          "targetView": "bbyScanViewController",
+          "targetURL": "",
+          "trackingTitle": "Product Scan",
+          "displayTitle": "PRODUCT <span class='bold'>SCAN</span>",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "ProductScan"
+        },
+        {
+          "index": 2,
+          "title": "Store Locator",
+          "image": "storelocator",
+          "targetView": "StoreSearchMapFragment",
+          "targetURL": "",
+          "trackingTitle": "Store Locator",
+          "displayTitle": "STORE <span class='bold'>LOCATOR</span>",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "StoreLocator"
+        },
+        {
+          "index": 3,
+          "title": "Best Buy Credit Card",
+          "image": "bestbuycreditcard",
+          "targetView": "bbyAlertViewController",
+          "targetURL": "",
+          "trackingTitle": "Mobile Devices",
+          "displayTitle": "CREDIT <span class='bold'>CARD MANAGEMENT</span>",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "CreditCardManagement"
+        },
+        {
+          "index": 4,
+          "title": "Gift Card Balance",
+          "image": "giftcardbalance",
+          "targetView": "bbyGiftCardScanViewController",
+          "targetURL": "",
+          "trackingTitle": "Gift Card Balance",
+          "displayTitle": "GIFT <span class='bold'>CARD BALANCE</span>",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "GiftCardBalance"
+        }
+      ]
+    },
+    {
+      "title": "SERVICES",
+      "index": "2",
+      "items": [
+        {
+          "index": 0,
+          "title": "Get Help from BlueAssist",
+          "image": "blueshirticon",
+          "targetView": "HelpMenuActivity",
+          "targetURL": "",
+          "trackingTitle": "",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "AskBlueShirt"
+        },
+        {
+          "index": 1,
+          "title": "Upgrade Checker",
+          "image": "phoneupgrade",
+          "targetView": "bbyWebViewController",
+          "targetURL": "https://www-ssl.bestbuy.com/site/olspage.jsp?id=pcat21201&type=page&upgrade=true",
+          "trackingTitle": "Upgrade Checker",
+          "displayTitle": "",
+          "jsForEvaluationString": "document.getElementById('page-wrapper').style.display = 'none';document.getElementById('colophon').style.display = 'none'; document.getElementById('header-search').style.display = 'none';",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "PhoneUpgrade"
+        },
+        {
+          "index": 2,
+          "title": "Trade-In Center",
+          "image": "tradeincenter",
+          "targetView": "bbyWebViewController",
+          "targetURL": "http://m.bestbuy.com/m/e/promotion.jsp?id=pcmcat273100050007",
+          "trackingTitle": "Trade-In Center",
+          "displayTitle": "",//"TRADE-IN <span class='bold'>CENTER</span>",
+          "jsForEvaluationString": "document.getElementById('masthead').style.display = 'none';\ndocument.getElementById('colophon').style.display = 'none';\n document.getElementById('header-search').style.display = 'none';\n document.getElementById('searchby_video').style.display = 'none';\n  document.getElementById('search_tab').style.display = 'none';\n document.getElementById('NarrowYourResults').style.display = 'none';\n document.getElementsByClassName('traderesults_hdr')[0].style.display = 'none';\ndocument.getElementsByClassName('offers_txt3')[0].style.display = 'none';",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "TradeIn"
+        },
+        {
+          "index": 3,
+          "title": "Product Recalls",
+          "image": "productrecalls",
+          "targetView": "bbyWebViewController",
+          "targetURL": "http://www.bestbuy.com/site/Global-Promotions/Product-Recalls/pcmcat114800050015.c?id=pcmcat114800050015",
+          "trackingTitle": "Product Recall",
+          "displayTitle": "",
+          "jsForEvaluationString": "document.getElementById('header').style.display = 'none';document.getElementById('footer').style.display = 'none';",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "ProductRecall"
+        }
+      ]
+    },
+    {
+      "title": "EXTRAS",
+      "index": "3",
+      "items": [
+        {
+          "index": 0,
+          "title": "Notifications",
+          "image": "notificationsicon",
+          "targetView": "NotificationsFragment",
+          "targetURL": "",
+          "trackingTitle": "Notifications",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "Notifications"
+        },
+        {
+          "index": 1,
+          "title": "App Settings",
+          "image": "appsettings",
+          "targetView": "AppSettingsFragment",
+          "targetURL": "",
+          "trackingTitle": "App Settings",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "AppSettings"
+        },
+        {
+          "index": 1,
+          "title": "Contact Best Buy",
+          "image": "contactbby",
+          "targetView": "bbyWebViewController",
+          "targetURL": "https://ssl.m.bestbuy.com/profile/ss/contactus",
+          "trackingTitle": "Contact Best Buy",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "ContactBestBuy"
+        }
+      ,
+        {
+          "index": 1,
+          "title": "Submit Feedback",
+          "image": "feedback",
+          "targetView": "bbyWebViewController",
+          "targetURL": "https://secure.opinionlab.com/ccc01/o.asp?id=LpgtYvHj",
+          "trackingTitle": "Submit Feedback",
+          "displayTitle": "Submit Feedback",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "SubmitFeedback"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "index": "4",
+      "items": [
+        {
+          "index": 0,
+          "title": "Privacy, Terms & Conditions",
+          "image": "",
+          "targetView": "PrivacyTermsFragment",
+          "targetURL": "",
+          "trackingTitle": "",
+          "displayTitle": "",
+          "jsForEvaluationString": "",
+          "conditionalVisibilityProperty": "",
+          "conditionalVisibilityPropertyValue": "",
+          "key": "PrivacyTC"
+        }
+      ]
+    }
+  ]
+}

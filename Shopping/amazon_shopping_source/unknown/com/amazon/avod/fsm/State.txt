@@ -1,0 +1,10 @@
+'Install plantUml eclipse plugin to see this state diagram
+'http://plantuml.sourceforge.net/
+
+@startuml
+
+[*] --> State1
+State1 -Right-> State2 : Trigger
+State2 --> [*]
+
+@enduml

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AVOD.Playback.Ads.CountdownMessage" parent="@style/AVOD.Playback.Ads">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Small</item>
+    </style>
+    <style name="AVOD.Playback.Ads.SkipButton" parent="@style/AVOD.Playback.Ads">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Small</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/avod_orange</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="Widget.AmazonVideo.Preferences.PreferenceCategory.Header" parent="@style/Widget.AmazonVideo.Preferences.PreferenceCategory">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Large</item>
+        <item name="android:background">#ffffffff</item>
+        <item name="android:paddingLeft">@dimen/preference_base_paddingLeft</item>
+        <item name="android:paddingTop">@dimen/preference_base_paddingTop</item>
+        <item name="android:paddingRight">@dimen/preference_base_paddingRight</item>
+    </style>
+    <style name="Widget.AmazonVideo.Preferences.PreferenceList" parent="@style/Widget.AmazonVideo.Preferences">
+        <item name="android:layout_marginTop">@dimen/preference_list_marginTop</item>
+    </style>
+    <style name="Widget.AmazonVideo.Preferences.VideoSettings" parent="@style/Widget.AmazonVideo.Preferences">
+        <item name="android:paddingLeft">@dimen/preference_base_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/preference_base_paddingRight</item>
+    </style>
+    <style name="Widget.AmazonVideo.Preferences.VideoSettings.Option.Row" parent="@style/Widget.AmazonVideo.Preferences.VideoSettings.Option" />
+    <style name="Widget.AmazonVideo.Preferences.VideoSettings.Option.Title" parent="@style/Widget.AmazonVideo.Preferences.VideoSettings.Option">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Regular</item>
+    </style>
+    <style name="Widget.AmazonVideo.Preferences.VideoSettings.Option.Summary" parent="@style/Widget.AmazonVideo.Preferences.VideoSettings.Option">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Small</item>
+    </style>
+    <style name="AVOD.Playback.UserControls.Container" parent="@style/AVOD.Playback.UserControls">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="AVOD.Playback.UserControls.Xray" parent="@style/AVOD.Playback.UserControls">
+        <item name="android:layout_toLeftOf">@id/ContainerFakeSoftkeys</item>
+        <item name="android:layout_above">@id/PlayerUserControlsBackgroundBottom</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Options.Language.Widget" parent="@style/AVOD.Playback.SubtitleMenu.Options.Language">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginTop">@dimen/avod_spacing_medium</item>
+        <item name="android:layout_marginRight">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginBottom">@dimen/avod_spacing_medium</item>
+        <item name="android:layout_below">@id/subtitle_menu_language_header</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Options.Preset.Widget" parent="@style/AVOD.Playback.SubtitleMenu.Options.Preset">
+        <item name="android:paddingBottom">@dimen/avod_spacing_medium</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/avod_spacing_medium</item>
+        <item name="android:layout_marginTop">@dimen/avod_spacing_medium</item>
+        <item name="android:layout_marginRight">@dimen/avod_spacing_medium</item>
+        <item name="android:layout_below">@id/subtitle_menu_preset_header</item>
+    </style>
+    <style name="AVOD.Widget.VideoSeekBar" parent="@style/AVOD.Widget">
+        <item name="android:progressDrawable">@drawable/seekbar_progress</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_amzn_ads</item>
+        <item name="adpod_height">@dimen/avod_spacing_xsmall</item>
+        <item name="adpod_width">@dimen/avod_spacing_xxsmall</item>
+    </style>
+    <style name="AVOD.Playback.UserControls.Icons" parent="@style/AVOD.Playback.UserControls">
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="AVOD.Playback.UserControls.Titles" parent="@style/AVOD.Playback.UserControls">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.XSmall</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Layout" parent="@style/AVOD.Playback.SubtitleMenu">
+        <item name="android:background">@color/avod_dark_grey</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Switch.Header" parent="@style/AVOD.Playback.SubtitleMenu.Switch">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Regular</item>
+        <item name="android:layout_marginLeft">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginTop">@dimen/avod_spacing_medium</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Switch.Button" parent="@style/AVOD.Playback.SubtitleMenu.Switch">
+        <item name="android:layout_marginTop">@dimen/avod_spacing_xsmall</item>
+        <item name="android:layout_marginRight">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginBottom">@dimen/avod_spacing_xsmall</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Options.Separator" parent="@style/AVOD.Playback.SubtitleMenu.Options">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Options.Language.Header" parent="@style/AVOD.Playback.SubtitleMenu.Options.Language">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Regular</item>
+        <item name="android:layout_marginLeft">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginTop">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginRight">@dimen/avod_spacing_small</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Options.Size.Header" parent="@style/AVOD.Playback.SubtitleMenu.Options.Size">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Regular</item>
+        <item name="android:layout_marginLeft">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginTop">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginRight">@dimen/avod_spacing_small</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Options.Size.Widget" parent="@style/AVOD.Playback.SubtitleMenu.Options.Size">
+        <item name="android:layout_marginLeft">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginRight">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginBottom">@dimen/avod_spacing_medium</item>
+        <item name="android:layout_below">@id/subtitle_menu_size_header</item>
+    </style>
+    <style name="AVOD.Playback.SubtitleMenu.Options.Preset.Header" parent="@style/AVOD.Playback.SubtitleMenu.Options.Preset">
+        <item name="android:textAppearance">@style/AVOD.TextAppearance.Light.Regular</item>
+        <item name="android:layout_marginLeft">@dimen/avod_spacing_medium</item>
+        <item name="android:layout_marginTop">@dimen/avod_spacing_small</item>
+        <item name="android:layout_marginRight">@dimen/avod_spacing_small</item>
+    </style>
+</resources>

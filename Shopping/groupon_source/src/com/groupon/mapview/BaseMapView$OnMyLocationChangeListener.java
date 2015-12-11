@@ -1,0 +1,15 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.groupon.mapview;
+
+
+// Referenced classes of package com.groupon.mapview:
+//            BaseMapView
+
+public static interface 
+{
+
+    public abstract void onMyLocationChanged();
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/menu_zoom_out_pressed" />
+            <item android:drawable="@drawable/menu_zoom_out" />
+        </selector>
+    </item>
+    <item android:state_selected="false">
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/menu_zoom_in_pressed" />
+            <item android:drawable="@drawable/menu_zoom_in" />
+        </selector>
+    </item>
+</selector>

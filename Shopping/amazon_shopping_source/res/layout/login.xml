@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/login_layout" android:focusableInTouchMode="true" android:nextFocusDown="@id/login_email_edit" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/sign_in_title" style="@style/PageTitle" />
+    <EditText android:id="@id/login_email_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_email_edit_margin_left" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:hint="@string/sign_in_email_hint" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textEmailAddress" />
+    <EditText android:id="@id/login_password_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_password_edit_margin_left" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding" android:hint="@string/sign_in_password_hint" android:lines="1" android:scrollHorizontally="true" android:password="true" android:singleLine="true" />
+    <CheckBox android:id="@id/show_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_show_password_margin_left" android:text="@string/show_password" />
+    <TextView android:id="@id/login_legal_information" android:layout_margin="@dimen/padding" style="@style/HyperTextLink" />
+    <Button android:id="@id/login_button" android:layout_margin="@dimen/padding" android:text="@string/sign_in_button" style="@style/AUIButton.Gold" />
+    <TextView android:id="@id/login_forget_your_password" android:layout_marginLeft="@dimen/padding" android:text="@string/sign_in_forgot_your_password" style="@style/HyperTextLink" />
+    <TextView android:id="@id/change_email_preference" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding" android:text="@string/ya_site_email_pref_button" style="@style/HyperTextLink" />
+    <Button android:id="@id/login_create_new_button" android:layout_marginTop="@dimen/padding_double" android:text="@string/sign_in_create_account_button" style="@style/AUIButton.Silver.Fullscreen" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/Nextup" android:background="@drawable/pressable_background_selector" android:focusable="true" android:layout_width="@dimen/avod_player_user_controls_iconContainerSize" android:layout_height="@dimen/avod_player_user_controls_iconContainerSize" android:contentDescription="@string/description_will_generate">
+        <TextView android:textAppearance="@style/AVOD.TextAppearance.Light.XXSmall" android:textColor="@color/avod_white" android:id="@id/NextupText" android:paddingBottom="@dimen/avod_spacing_xsmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next_up" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/description_do_not_read" />
+        <ImageView android:paddingLeft="@dimen/avod_spacing_xxsmall" android:paddingRight="@dimen/avod_spacing_xxsmall" android:paddingBottom="@dimen/avod_spacing_xxsmall" android:layout_width="@dimen/avod_player_user_controls_iconContainerSize" android:layout_height="@dimen/avod_player_user_controls_iconContainerSize" android:src="@drawable/nextup_selector" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/scrollable_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.groupon.util.ScrollEventListView android:id="@android:id/list" android:background="@color/grey85" android:layout_width="@dimen/hotel_deal_card_width" android:layout_height="fill_parent" android:listSelector="@drawable/hotel_item_selector_state" android:drawSelectorOnTop="true" style="@style/pull_to_refresh" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gpattern" android:scaleType="centerCrop" />
+            <com.groupon.mapview.HotelMapView android:id="@id/hotel_mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:id="@android:id/empty" layout="@layout/hotels_empty_results" />
+    <com.groupon.view.HotelsLoadingScreen android:id="@id/loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AVOD.TextAppearance.Light.XLarge" android:textColor="@color/overflow_menu_text_selector" android:gravity="center_vertical" android:id="@id/Nextup" android:background="@drawable/overflow_menu_background_selector" android:paddingLeft="@dimen/avod_spacing_large" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/avod_player_user_controls_overflow_menu_item_height" android:text="@string/next_up" android:drawableLeft="@drawable/btn_nextup" android:drawablePadding="@dimen/avod_spacing_medium" android:contentDescription="@string/description_nextup" />
+</merge>

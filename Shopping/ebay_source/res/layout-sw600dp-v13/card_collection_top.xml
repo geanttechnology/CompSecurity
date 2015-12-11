@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.android.widget.TopCardView style="@style/EbayCardStyle.Top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/coverImage" android:layout_width="fill_parent" android:layout_height="@dimen/card_collection_top_height" android:scaleType="centerCrop" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" res_auto:maxWidthPixels="@integer/card_top_max_width_pixels" />
+    <View android:id="@id/selectable" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/card_collection_top_height" />
+    <RelativeLayout android:layout_gravity="top|left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x">
+        <TextView android:textSize="@dimen/ebayTextSizeCaption" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/heading" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_collection_top_heading" android:fontFamily="sans-serif" />
+        <View android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="@dimen/dividerHeight" android:layout_below="@id/heading" android:layout_alignStart="@id/heading" android:layout_alignEnd="@id/heading" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:baselineAligned="false" android:weightSum="2.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/ebayTextSizeHeadline2" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/title" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="@dimen/ebayTextSizeBody1" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/body" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="sans-serif" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ebay.mobile.widget.UserThumbnail android:id="@id/titleIcon" android:layout_width="@dimen/card_collection_top_user_image_size" android:layout_height="@dimen/card_collection_top_user_image_size" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+                <TextView android:textSize="@dimen/ebayTextSizeBody1" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:fontFamily="sans-serif" android:paddingStart="@dimen/ebayPadding" android:paddingEnd="0.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.ebay.android.widget.TopCardView>

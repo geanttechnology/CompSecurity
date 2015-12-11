@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Letterbox"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <RelativeLayout android:id="@id/search_box_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_toLeftOf="@id/cancelBtn" android:layout_alignWithParentIfMissing="true">
+            <android.support.v7.widget.SearchView android:id="@id/search_view" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/scan_button" android:layout_alignWithParentIfMissing="true" app:searchIcon="@drawable/ic_actionbar_search" app:queryBackground="@null" app:submitBackground="@null" />
+            <ImageView android:id="@id/scan_button" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_scan_icon_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/cancelBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SearchCancelButton" />
+    </RelativeLayout>
+    <View android:background="@color/style_guide_light_divider" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/ebayMargin" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeToRefreshLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@id/recentList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:overScrollMode="never" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ListView android:id="@id/suggestionList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/search_suggestion_list_divider" android:dividerHeight="@dimen/dividerHeight" android:overScrollMode="never" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/suggestionProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" style="@android:style/Widget.ProgressBar.Small" />
+</LinearLayout>

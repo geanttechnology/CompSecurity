@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/save_for_later_product_image" android:layout_width="@dimen/save_for_later_product_image_size" android:layout_height="@dimen/save_for_later_product_image_size" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:layout_marginTop="@dimen/cart_default_more_padding_margin" layout="@layout/view_cart_product_image" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_default_more_padding_margin" android:layout_marginTop="@dimen/cart_default_more_padding_margin">
+        <include android:id="@id/save_for_later_product_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cart_default_more_padding_margin" android:layout_marginRight="@dimen/cart_default_more_padding_margin" layout="@layout/view_cart_product_title" />
+        <com.target.ui.view.TargetTextView android:id="@id/save_for_later_product_out_of_stock" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cart_default_less_padding_margin" android:text="@string/save_for_later_out_of_stock" style="@style/Target.TextView.ProductInventoryStatus" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.target.ui.view.TargetTextView android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/saved_for_later_product_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:fontStyle="medium" style="@style/Target.TextView.ProductPrice" />
+            <com.target.ui.view.cart.SavedForLaterOverflowView android:layout_gravity="center_vertical" android:id="@id/saved_for_later_overflow_menu" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

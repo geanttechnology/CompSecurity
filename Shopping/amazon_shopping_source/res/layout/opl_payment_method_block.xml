@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/opl_payment_method_block" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_payment_method_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/opl_review_order_payment_method_header" style="@style/Header" />
+        <include layout="@layout/opl_editable_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_billing_address_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/opl_editable_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/opl_gift_card_promo_code_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/opl_editable_item" />
+    </LinearLayout>
+</LinearLayout>

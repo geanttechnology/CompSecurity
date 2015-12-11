@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/in_app_messages_button" android:layout_width="@dimen/lollipop_toolbar_icon_width" android:layout_height="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/in_app_messages_button_icon_area" android:layout_width="@dimen/lollipop_toolbar_icon_width" android:layout_height="@dimen/lollipop_toolbar_icon_height" android:layout_centerInParent="true" style="@style/shopping_cart_action_button">
+        <ImageView android:id="@id/in_app_messages_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/messages_icon" android:scaleType="center" android:layout_centerInParent="true" />
+        <TextView android:id="@id/in_app_messages_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cart_counter_bubble" />
+    </RelativeLayout>
+    <ImageView android:id="@id/in_app_messages_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/in_app_message_indicator_height" android:src="@drawable/messages_triangle" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

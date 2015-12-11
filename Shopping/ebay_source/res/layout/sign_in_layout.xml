@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.MaxSizeLinearLayout android:layout_gravity="center_horizontal" android:layout_marginTop="24.0dip" style="@style/HomeWidthContainer">
+        <AutoCompleteTextView android:id="@id/sign_in_username_entry" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/buttonMargin" android:hint="@string/sign_in_username_hint" android:lines="1" android:completionThreshold="1" android:inputType="textEmailAddress" android:imeOptions="actionNext" />
+        <EditText android:id="@id/sign_in_password_entry" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/buttonMargin" android:layout_marginTop="20.0dip" android:hint="@string/sign_in_password_hint" android:lines="1" android:inputType="textPassword" android:imeOptions="actionDone" />
+        <CheckBox android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/sign_in_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:checked="false" android:text="@string/sign_in_show_button" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/style_guide_blue" android:layout_gravity="right" android:id="@id/sign_in_forgot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/buttonMargin" android:text="@string/sign_in_dialog_forgot_password" />
+        <Button android:id="@id/sign_in_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding2x" android:layout_marginBottom="@dimen/ebayPadding2x" android:text="@string/sign_in" style="@style/EbayButton.Blue" />
+    </com.ebay.android.widget.MaxSizeLinearLayout>
+</ScrollView>

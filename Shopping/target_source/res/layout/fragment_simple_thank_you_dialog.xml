@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingLeft="@dimen/dialog_padding" android:paddingTop="@dimen/dialog_padding" android:paddingRight="@dimen/dialog_padding" android:layout_width="@dimen/simple_thank_you_dialog_image_wrapper_width" android:layout_height="@dimen/simple_thank_you_dialog_image_wrapper_height">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/checkout_spot_large" android:scaleType="fitCenter" android:contentDescription="@string/cd_thank_you_image" />
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:paddingLeft="@dimen/dialog_padding" android:paddingTop="@dimen/dialog_2x_padding" android:paddingBottom="@dimen/dialog_2x_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/simple_thank_you_dialog_text_margin_right">
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/xx_largeTextSize" android:textColor="@color/target_stark_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/simple_thank_you_dialog_fixed_text" />
+            <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:textColor="@color/target_grey" android:ellipsize="end" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkout_layout_margin_small" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.target.ui.view.TargetButton android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/simple_thank_you_dialog_continue_shopping" style="@style/DialogButton.Black" />
+</LinearLayout>

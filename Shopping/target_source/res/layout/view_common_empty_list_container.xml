@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/common_empty_list_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/largeTextSize" android:textColor="@color/target_jet_black" android:gravity="center_horizontal" android:id="@id/common_empty_list_primary_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkout_margin_medium" app:fontStyle="light" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:textColor="@color/target_neutral_grey" android:gravity="center_horizontal" android:id="@id/common_empty_list_secondary_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_empty_list_primary_hint" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bby="http://schemas.android.com/apk/res/com.bestbuy.android">
+    <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bestbuy.android.bbyobjects.BBYTextView android:id="@id/mybby_reciept_item_label" android:padding="5.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/items_label_title" android:layout_weight="70.0" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" style="@style/MYBBYBlackText.SmallMedium" />
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip">
+            <com.bestbuy.android.bbyobjects.BBYTextView android:id="@id/mybby_reciept_cost" android:padding="1.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" style="@style/MYBBYBlackText.SmallMedium" />
+            <com.bestbuy.android.bbyobjects.BBYTextView android:id="@id/mybby_reciept_qty" android:padding="1.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qty_text" android:singleLine="true" bby:BBYFont="@string/BBY_APP_FONT_REGULAR" style="@style/MYBBYBlueText.SmallMedium" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center" android:id="@id/arrow_click" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/carrot_r" />
+    </LinearLayout>
+    <View android:id="@id/mybby_v_seperator_points" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

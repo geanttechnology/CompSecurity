@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/seller_respond_test_buttons" android:paddingLeft="14.0dip" android:paddingRight="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="15.0dip" />
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Test Actions" />
+    <LinearLayout android:orientation="vertical" android:id="@id/seller_respond_test_decline_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/offer_fake_decline_success" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Decline success" style="@style/EbayButton.Blue" />
+        <Button android:id="@id/offer_fake_decline_failure" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Decline failure" style="@style/EbayButton.Blue" />
+        <Button android:id="@id/offer_fake_decline_network_timeout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Decline network timeout" style="@style/EbayButton.Blue" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/seller_respond_test_accept_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/offer_fake_accept_success" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Accept success" style="@style/EbayButton.Blue" />
+        <Button android:id="@id/offer_fake_accept_failure" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Accept failure" style="@style/EbayButton.Blue" />
+        <Button android:id="@id/offer_fake_accept_network_timeout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Accept network timeout" style="@style/EbayButton.Blue" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/seller_respond_test_counter_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/offer_fake_counter_success" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Counter success" style="@style/EbayButton.Blue" />
+        <Button android:id="@id/offer_fake_counter_failure" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Counter failure" style="@style/EbayButton.Blue" />
+        <Button android:id="@id/offer_fake_counter_network_timeout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Counter network timeout" style="@style/EbayButton.Blue" />
+    </LinearLayout>
+</LinearLayout>

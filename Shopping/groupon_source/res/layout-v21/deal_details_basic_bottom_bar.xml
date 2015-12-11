@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/bottom_bar" android:background="@drawable/bg_bottom_bar_white" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.groupon.goods.shoppingcart.view.ShoppingCartIconView android:layout_gravity="left" android:id="@id/shopping_cart" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_icon_deal_details_margin_left" android:layout_marginRight="@dimen/cart_icon_deal_details_margin_right" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/bottom_bar_left_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/time_left_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/time_left_label_urgency_pricing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_time_left_label_urgency_pricing" />
+            <TextView android:gravity="center_horizontal" android:id="@id/time_left" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/deal_details_time_left" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/time_left_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/left_to_buy_lower" style="@style/deal_details_time_left_label" />
+        </LinearLayout>
+        <com.groupon.view.SpinnerButton android:id="@id/add_to_cart" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_button_height" android:text="@string/add_to_cart" groupon:progressDrawable="@drawable/spinner_list_grey" style="@style/secondary_action_button" xmlns:groupon="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/bottom_bar_right_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/buy_button_container" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_button_height">
+            <com.groupon.view.SpinnerButton android:id="@id/buy_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/buy" android:stateListAnimator="@null" style="@style/primary_action_button" />
+            <TextView android:gravity="center" android:id="@id/buy_button_overlay_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/buy_button_overlay_text" />
+            <ImageView android:layout_gravity="right" android:id="@id/btn_free_shipping_band" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_free_shipping_flag_flat" />
+        </FrameLayout>
+        <Button android:id="@id/back_to_cart" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_button_height" android:text="@string/back_to_cart" style="@style/secondary_action_button" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView android:layout_gravity="left" android:id="@id/nav_view" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/drawer_header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/drawer_header" />
+            <com.offerup.android.views.NonScrollListView android:id="@id/nav_drawer_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:choiceMode="singleChoice" android:layout_below="@id/drawer_header" />
+            <View android:id="@id/nav_drawer_buffer" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_below="@id/nav_drawer_list" />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/drawer_footer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/nav_footer_divider" android:background="@color/offerup_nav_drawer_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textAppearance="?textAppearanceListItem" android:textColor="@color/bright_green" android:gravity="center_vertical" android:id="@id/pay_seller_nav_drawer" android:background="@drawable/nav_drawer_list_item_selector" android:paddingLeft="?listPreferredItemPaddingLeft" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?listPreferredItemHeightSmall" android:text="@string/nav_drawer_pay_seller" android:drawableLeft="@drawable/nav_payseller_icn" android:drawablePadding="38.0dip" android:layout_below="@id/nav_footer_divider" />
+        <TextView android:textAppearance="?textAppearanceListItem" android:textColor="@color/bright_green" android:gravity="center_vertical" android:id="@id/invite_friends_nav_drawer" android:background="@drawable/nav_drawer_list_item_selector" android:paddingLeft="?listPreferredItemPaddingLeft" android:layout_width="fill_parent" android:layout_height="?listPreferredItemHeightSmall" android:text="@string/nav_drawer_invite_friends" android:drawableLeft="@drawable/nav_invite_icn" android:drawablePadding="38.0dip" android:layout_below="@id/pay_seller_nav_drawer" />
+    </RelativeLayout>
+</android.support.design.widget.NavigationView>

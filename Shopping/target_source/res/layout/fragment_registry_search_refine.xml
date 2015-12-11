@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/target_fade_away_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:target="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/registry_refine_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/account_order_history_margin_bottom">
+        <com.target.ui.view.registry.RegistryRefineView android:orientation="vertical" android:id="@id/registry_refine_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.target.ui.view.common.TargetBottomButton android:id="@id/registry_refine_reset_done_button" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_btn_height" android:layout_alignParentBottom="true" target:leftText="@string/registry_search_reset_text" target:rightText="@string/registry_search_done_text" target:leftHighlight="false" target:rightHighlight="true" />
+</RelativeLayout>

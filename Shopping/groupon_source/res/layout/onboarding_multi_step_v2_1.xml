@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:groupon="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/continue_button_container">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/groupon_logo" android:layout_width="@dimen/onboarding_logo_scaled_down_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/onboarding_logo_margin_top" android:src="@drawable/splash_groupon_logo" android:layout_centerHorizontal="true" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/onboarding_categories_margin_top" android:layout_below="@id/groupon_logo">
+                <include layout="@layout/onboarding_categories_container" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:background="@color/splash_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/city_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" style="@style/onboarding_city_image" />
+                <RelativeLayout android:id="@id/user_input_container" android:background="@color/white" android:paddingLeft="40.0dip" android:paddingTop="@dimen/onboarding_container_padding_top" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/onboarding_container_no_button_height" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/continue_button_container" android:layout_width="fill_parent" android:layout_height="@dimen/onboarding_action_button_height" android:layout_alignParentBottom="true">
+        <View android:background="@color/theme_primary_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.groupon.view.SpinnerButton android:id="@id/continue_step" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/continue_step_text" groupon:progressDrawable="@drawable/spinner_list_grey" style="@style/secondary_action_button_no_border" />
+    </LinearLayout>
+</RelativeLayout>

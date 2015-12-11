@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/freebie_details_section_card"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/coupons_image" />
+    <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:ellipsize="end" android:id="@id/freebie_detail_section_header_title" android:paddingLeft="12.0dip" android:paddingTop="13.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/deal_details_title_v2" />
+    <TextView android:id="@id/freebie_detail_section_header_subtitle" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/freebie_details_subtitle_text" />
+    <TextView android:gravity="right" android:id="@id/freebie_detail_section_header_exclusive_label" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/groupon_exclusive" style="@style/freebie_details_exclusive_text" />
+    <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

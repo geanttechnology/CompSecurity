@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.target.ui.view.account.GuestNameViewStatic android:id="@id/account_signed_in_details_name" android:layout_width="fill_parent" android:layout_height="@dimen/custom_edit_text_height" android:layout_marginTop="@dimen/account_page_margin" />
+    <com.target.ui.view.account.AccountCredentialsInputViewStatic android:id="@id/account_signed_in_details_credentials" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_page_margin" />
+</merge>

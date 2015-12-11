@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/rs_refinement_group_layout" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_b" style="@style/Rs.Refinement.GroupPanel"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Rs.Refinement.GroupPanel">
+        <ImageView android:id="@id/rs_refinement_group_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pc_8px" android:layout_marginTop="@dimen/pc_1px" android:layout_marginBottom="@dimen/pc_1px" android:src="@drawable/rs_carrot_left" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/rs_refinement_group_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/rs_refinement_menu_item_height" android:layout_weight="1.0" style="@style/Rs.Refinement.GroupPanel">
+            <TextView android:ellipsize="end" android:id="@id/rs_refinement_label" android:paddingLeft="@dimen/pc_9px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Rs.Refinement.GroupPanel.Header" />
+            <TextView android:ellipsize="end" android:id="@id/rs_refinement_selected_label" android:paddingLeft="@dimen/pc_9px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Rs.Refinement.GroupPanel.SubHeader" />
+        </LinearLayout>
+        <ImageView android:id="@id/rs_refinements_group_indicator" android:paddingLeft="@dimen/pc_8px" android:paddingRight="@dimen/pc_8px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rs_arrow_down" />
+    </LinearLayout>
+    <View android:id="@id/rs_refinements_group_divider" android:background="@color/rs_refinement_header_background" android:layout_width="fill_parent" android:layout_height="@dimen/rs_refinement_menu_divider" />
+</LinearLayout>

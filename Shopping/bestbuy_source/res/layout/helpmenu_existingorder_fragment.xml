@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bestbuy.android.activities.askexpert.CustomGroupExpandableListView android:id="@id/expand_existingorder_options" android:background="@color/transparent_outer_blue" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:divider="@color/light_black" android:dividerHeight="1.0px" />
+</LinearLayout>

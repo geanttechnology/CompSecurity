@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/prd_dialog_add_to_list_item" android:background="@drawable/white_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_image_button_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetRadioButton android:theme="@style/AppTheme.GreenAccent" android:layout_gravity="center" android:id="@id/prd_dialog_add_to_list_radio" android:paddingLeft="@dimen/default_half_padding_margin" android:paddingRight="@dimen/default_half_padding_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Target.RadioButton" />
+    <com.target.ui.view.TargetTextView android:layout_gravity="center" android:id="@id/prd_dialog_add_to_list_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontStyle="light" style="@style/Target.RadioButtonText" />
+</LinearLayout>

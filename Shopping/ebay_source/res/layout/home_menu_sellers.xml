@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/home_saved_sellers" style="@style/Home.MenuItem.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/saved_sellers" android:drawableLeft="@drawable/ic_home_savedsellers" style="@style/Home.MenuItem.ContainerTextView" />
+</LinearLayout>

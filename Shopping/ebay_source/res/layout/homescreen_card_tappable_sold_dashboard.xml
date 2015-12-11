@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="horizontal" android:id="@id/sold_dashboard" android:layout_width="fill_parent" android:layout_height="wrap_content" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/homescreen_card_sold_dashboard_layout" />
+    <TextView android:textColor="@color/style_guide_gray" android:gravity="center" android:id="@id/oops_sold_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_selling_utility_oops_text_size" android:text="@string/homescreen_card_sold_oops_text" />
+</com.ebay.mobile.widget.FLinearLayout>

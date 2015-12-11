@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/rs_search_dropdown_item_suggestions" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rs_search_dropdown_item_clear" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/rs_clear_search_api_holo_light" android:scaleType="center" android:minWidth="@dimen/rs_search_dropdown_item_clear_width" />
+    <LinearLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceSearchResultTitle" android:layout_gravity="center_vertical" android:id="@id/rs_search_dropdown_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="?android:attr/dropDownItemStyle" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/rs_search_dropdown_item_department" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/rs_search_dropdown_item_query_builder" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/rs_query_builder" android:scaleType="center" android:minWidth="@dimen/rs_search_dropdown_item_builder_width" />
+</LinearLayout>

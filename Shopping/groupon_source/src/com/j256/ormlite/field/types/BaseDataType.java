@@ -1,0 +1,179 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.j256.ormlite.field.types;
+
+import com.j256.ormlite.field.BaseFieldConverter;
+import com.j256.ormlite.field.DataPersister;
+import com.j256.ormlite.field.FieldType;
+import com.j256.ormlite.field.SqlType;
+import java.lang.reflect.Field;
+import java.sql.SQLException;
+
+public abstract class BaseDataType extends BaseFieldConverter
+    implements DataPersister
+{
+
+    private final Class classes[];
+    private final SqlType sqlType;
+
+    public BaseDataType(SqlType sqltype, Class aclass[])
+    {
+        sqlType = sqltype;
+        classes = aclass;
+    }
+
+    public Object convertIdNumber(Number number)
+    {
+        return null;
+    }
+
+    public boolean dataIsEqual(Object obj, Object obj1)
+    {
+        boolean flag = false;
+        if (obj == null)
+        {
+            if (obj1 == null)
+            {
+                flag = true;
+            }
+        } else
+        if (obj1 != null)
+        {
+            return obj.equals(obj1);
+        }
+        return flag;
+    }
+
+    public Object generateId()
+    {
+        throw new IllegalStateException("Should not have tried to generate this type");
+    }
+
+    public String[] getAssociatedClassNames()
+    {
+        return null;
+    }
+
+    public Class[] getAssociatedClasses()
+    {
+        return classes;
+    }
+
+    public int getDefaultWidth()
+    {
+        return 0;
+    }
+
+    public Class getPrimaryClass()
+    {
+        if (classes.length == 0)
+        {
+            return null;
+        } else
+        {
+            return classes[0];
+        }
+    }
+
+    public SqlType getSqlType()
+    {
+        return sqlType;
+    }
+
+    public boolean isAppropriateId()
+    {
+        return true;
+    }
+
+    public boolean isArgumentHolderRequired()
+    {
+        return false;
+    }
+
+    public boolean isComparable()
+    {
+        return true;
+    }
+
+    public boolean isEscapedDefaultValue()
+    {
+        return isEscapedValue();
+    }
+
+    public boolean isEscapedValue()
+    {
+        return true;
+    }
+
+    public boolean isPrimitive()
+    {
+        return false;
+    }
+
+    public boolean isSelfGeneratedId()
+    {
+        return false;
+    }
+
+    public boolean isValidForField(Field field)
+    {
+        if (classes.length != 0) goto _L2; else goto _L1
+_L1:
+        return true;
+_L2:
+        Class aclass[] = classes;
+        int j = aclass.length;
+        int i = 0;
+label0:
+        do
+        {
+label1:
+            {
+                if (i >= j)
+                {
+                    break label1;
+                }
+                if (aclass[i].isAssignableFrom(field.getType()))
+                {
+                    break label0;
+                }
+                i++;
+            }
+        } while (true);
+        if (true) goto _L1; else goto _L3
+_L3:
+        return false;
+    }
+
+    public boolean isValidForVersion()
+    {
+        return false;
+    }
+
+    public boolean isValidGeneratedType()
+    {
+        return false;
+    }
+
+    public Object makeConfigObject(FieldType fieldtype)
+        throws SQLException
+    {
+        return null;
+    }
+
+    public Object moveToNextValue(Object obj)
+    {
+        return null;
+    }
+
+    public abstract Object parseDefaultString(FieldType fieldtype, String s)
+        throws SQLException;
+
+    public Object resultStringToJava(FieldType fieldtype, String s, int i)
+        throws SQLException
+    {
+        return parseDefaultString(fieldtype, s);
+    }
+}

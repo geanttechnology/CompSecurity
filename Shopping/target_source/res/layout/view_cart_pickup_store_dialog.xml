@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/target_stark_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.TargetTextView android:id="@id/pickup_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cart_dialog_title_margin" android:text="@string/cart_pickup" app:fontStyle="medium" style="@style/Target.TextView.DialogTitle" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/store_chooser_content_height">
+            <include android:id="@id/cart_pickup_no_stores_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/view_product_dialog_no_relevant_stores" />
+            <com.target.ui.view.common.TargetErrorView android:gravity="center" android:id="@id/cart_pickup_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.target.ui.view.ScrollShadowListView android:id="@id/store_list" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+        </FrameLayout>
+        <com.target.ui.view.ZipCodeChooserView android:id="@id/zip_code_chooser" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_dialog_progress_container" />
+</FrameLayout>

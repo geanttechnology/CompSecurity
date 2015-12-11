@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <include android:id="@id/dressesLayout" layout="@layout/my_size_item" />
+        <include android:id="@id/jeansLayout" layout="@layout/my_size_item" />
+        <include android:id="@id/pantsLayout" layout="@layout/my_size_item" />
+        <include android:id="@id/shoesLayout" layout="@layout/my_size_item" />
+        <include android:id="@id/sweatersLayout" layout="@layout/my_size_item" />
+    </LinearLayout>
+    <com.poshmark.ui.customviews.PMTextView android:textSize="14.0sp" android:textColor="@color/textColorGray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/my_size_filter_customizes_your_results" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+</LinearLayout>

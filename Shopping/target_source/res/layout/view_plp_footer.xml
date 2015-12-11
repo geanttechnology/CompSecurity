@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:theme="@style/AppTheme.RedAccent" android:layout_gravity="center" android:id="@id/prd_plp_footer_progress_bar" android:layout_width="@dimen/prd_plp_loading_spinner_width_height" android:layout_height="@dimen/prd_plp_loading_spinner_width_height" android:layout_margin="@dimen/default_2x_padding_margin" android:minHeight="@dimen/min_image_button_size" style="?android:attr/progressBarStyleInverse" />
+    <ImageButton android:layout_gravity="center" android:id="@id/prd_plp_footer_retry_image" android:visibility="gone" android:layout_width="@dimen/min_image_button_size" android:layout_height="@dimen/min_image_button_size" android:minHeight="@dimen/min_image_button_size" style="@style/RetryImage.Selectable" />
+</merge>

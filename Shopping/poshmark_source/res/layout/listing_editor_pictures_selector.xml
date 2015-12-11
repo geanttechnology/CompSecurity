@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMTextView android:id="@id/photosTextView" android:text="@string/photos" custom:fontName="fonts/ProximaNova_Sbold.ttf" style="@style/formSectionTitle" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_section_white_withshadow" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/listingImageView1" layout="@layout/listing_editor_image" />
+            <com.poshmark.ui.customviews.PMTextView android:textSize="12.0sp" android:textColor="@color/textColorLightGray" android:layout_gravity="center_horizontal" android:id="@id/covershotTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Covershot" custom:fontName="fonts/ProximaNova_Reg.ttf" />
+        </LinearLayout>
+        <include android:id="@id/listingImageView2" layout="@layout/listing_editor_image" />
+        <include android:id="@id/listingImageView3" layout="@layout/listing_editor_image" />
+        <include android:id="@id/listingImageView4" layout="@layout/listing_editor_image" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.ebay.mobile.common;
+
+
+// Referenced classes of package com.ebay.mobile.common:
+//            ListSelector
+
+public static interface angeListener
+{
+
+    public abstract boolean getIsSelectionEnabled();
+
+    public abstract boolean isSelected(Object obj);
+
+    public abstract void setOnSelectionModeChangeListener(angeListener angelistener);
+
+    public abstract void toggleSelection(Object obj);
+}

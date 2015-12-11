@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/item_image" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_event_image_height" android:scaleType="centerCrop" android:contentDescription="@null" res_auto:urlRewriter="zoom_gallery" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@android:color/white" android:id="@id/item_timeLeft" android:background="@drawable/text_timeleft_rounded_edges" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayPadding2x" android:drawableLeft="@drawable/ic_endtime" android:drawablePadding="@dimen/ebayPadding" android:layout_alignLeft="@id/item_image" android:layout_alignTop="@id/item_image" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/event_text_container" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_events_card_text_height">
+        <TextView android:textAppearance="@style/EbayTextAppearanceStrong.Body2" android:textSize="@dimen/ebayTextSizeBody2" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:maxLines="1" />
+        <TextView android:textAppearance="@style/EbayTextAppearance.Body1" android:textColor="@color/style_guide_gray" android:id="@id/item_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

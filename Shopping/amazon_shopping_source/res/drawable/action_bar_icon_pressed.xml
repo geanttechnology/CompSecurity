@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/action_bar_icon_border_start_color" android:endColor="@color/action_bar_icon_border_end_color" android:angle="270.0" android:centerColor="@color/action_bar_icon_border_center_color" />
+        </shape>
+    </item>
+    <item android:left="@dimen/action_bar_icon_border_width" android:top="@dimen/action_bar_icon_border_width" android:right="@dimen/action_bar_icon_border_width" android:bottom="@dimen/action_bar_icon_border_width">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/action_bar_icon_pressed_color" />
+        </shape>
+    </item>
+    <item android:left="@dimen/action_bar_icon_border_width" android:top="@dimen/action_bar_icon_border_width" android:right="@dimen/action_bar_icon_border_width" android:bottom="@dimen/action_bar_icon_border_width">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#00000000" android:endColor="#11000000" android:angle="90.0" android:centerColor="#00000000" />
+        </shape>
+    </item>
+</layer-list>

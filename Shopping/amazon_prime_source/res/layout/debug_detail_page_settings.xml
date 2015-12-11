@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_detail_page_label_endpoint" />
+    <EditText android:id="@id/debug_service_url_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prod_service_url" android:ems="10" android:inputType="textUri" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textStyle="bold" android:id="@id/debug_reset_service_url" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/debug_button_reset" android:layout_weight="1.0" />
+        <Button android:textStyle="bold" android:textColor="@color/asap_orange" android:id="@id/debug_save_service_url" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/debug_button_save_override" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

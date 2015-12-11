@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.target.ui.view.TargetTextView android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/store_hours_header" android:background="@android:color/white" android:paddingLeft="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="65.0dip" android:text="@string/store_hours" app:fontStyle="medium" />
+    <LinearLayout android:orientation="vertical" android:id="@id/today_hours_container" android:paddingTop="@dimen/capability_separator_height" android:paddingBottom="@dimen/capability_separator_height" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.target.ui.view.store.StoreHoursView android:id="@id/today_hours" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.target.ui.view.ScrollShadowListView android:id="@id/hours_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@drawable/store_hours_divider" android:dividerHeight="1.0dip" android:layout_weight="1.0" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <com.target.ui.view.TargetButton android:id="@id/close_button" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_close_button_height" android:text="@string/close" style="@style/WhiteButton" />
+</LinearLayout>

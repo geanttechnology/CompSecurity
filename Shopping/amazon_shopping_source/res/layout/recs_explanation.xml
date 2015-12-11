@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recommendations_explanation" />
+    <Button android:id="@id/recommendations_explanation_button" android:layout_margin="@dimen/padding" android:text="@string/recommendations_explanation_button" style="@style/AUIButton.Gold" />
+    <Button android:id="@id/recommendations_create_new_account" android:layout_margin="@dimen/padding" android:text="@string/new_to_amazon_create_an_account" style="@style/AUIButton.Silver" />
+</LinearLayout>

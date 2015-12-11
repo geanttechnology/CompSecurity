@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/graphic_find_store" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/largeTextSize" android:layout_gravity="center_horizontal" android:paddingTop="@dimen/store_picker_dialog_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stores_near_you" />
+    <com.target.ui.view.TargetTextView android:textSize="@dimen/microTextSize" android:textColor="@color/dark_gray" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:paddingTop="@dimen/store_picker_dialog_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deals_near_you" />
+</merge>

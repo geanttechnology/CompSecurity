@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/actionbar_listing_details" android:background="@color/bgColorPureWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.poshmark.ui.customviews.PMTextView android:textSize="20.0dip" android:textColor="@color/bgColorTitleBurgundy" android:ellipsize="end" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="Poshmark" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+    <FrameLayout android:id="@id/buttonsContainer" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:id="@id/toolBar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/likeButton" android:background="@drawable/ic_like_grey" android:visibility="visible" android:layout_width="28.0dip" android:layout_height="28.0dip" style="@style/actionBarListingImageButtonStyle" />
+            <ImageButton android:id="@id/shareButton" android:background="@drawable/ic_share_grey" android:visibility="visible" android:layout_width="28.0dip" android:layout_height="28.0dip" style="@style/actionBarListingImageButtonStyle" />
+            <ImageButton android:id="@id/menuButton" android:background="@drawable/ic_more" android:visibility="visible" android:layout_width="28.0dip" android:layout_height="28.0dip" style="@style/actionBarListingImageButtonStyle" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.poshmark.ui.customviews.PMButton android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/textColorLightBurgundy" android:gravity="center" android:id="@id/nextButton" android:background="@drawable/border_left" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/next_caps" custom:fontName="fonts/ProximaNova_Sbold.ttf" />
+    </FrameLayout>
+</RelativeLayout>

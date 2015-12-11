@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?listContainerBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="@dimen/merchandise_item_image_height" android:scaleType="fitCenter" ebay:urlRewriter="zoom_merch" ebay:maxWidthPixels="@integer/merchandise_max_image_size" ebay:maxHeightPixels="@integer/merchandise_max_image_size" ebay:fadeInDuration="@integer/search_image_fade_in_duration" ebay:averageBackgroundColor="true" />
+        <RelativeLayout android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearance" android:ellipsize="end" android:id="@id/title" android:padding="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textAppearance="?android:textAppearance" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:layout_below="@id/title" android:layout_alignParentRight="true" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="?android:textColorSecondary" android:id="@id/shipping" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:text="@string/free" android:layout_below="@id/price" android:layout_alignParentRight="true" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="?android:textColorSecondary" android:id="@id/bid_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_alignBaseline="@id/price" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

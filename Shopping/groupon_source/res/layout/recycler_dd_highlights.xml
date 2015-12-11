@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/about_section" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/details_item_top_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/highlights_b" style="@style/deal_details_section_header_v2" />
+    <com.groupon.view.NonLeakingNonFlickerWebView android:id="@id/about" android:background="@drawable/ihq_box" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

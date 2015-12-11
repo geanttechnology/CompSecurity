@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_height_xlarge" android:layout_marginRight="@dimen/checkout_margin_medium" android:layout_marginBottom="@dimen/checkout_edit_text_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/checkout_promocode_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_promocode" android:contentDescription="@string/cd_promo_code_image" />
+    <com.target.ui.view.CustomErrorViewWrapper android:id="@id/checkout_promocode_error_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_large" android:layout_marginTop="@dimen/checkout_edit_text_margin_top_large" android:layout_weight="1.0" app:viewId="@id/checkout_promocode_input_field">
+        <com.target.ui.view.TargetEditText android:id="@id/checkout_promocode_input_field" android:layout_width="fill_parent" android:layout_height="@dimen/checkout_edit_text_width" android:hint="@string/checkout_add_promo_hint" android:singleLine="true" android:inputType="textCapCharacters" app:fontStyle="light" style="@style/Target.TextView.EditText" />
+    </com.target.ui.view.CustomErrorViewWrapper>
+    <FrameLayout android:id="@id/checkout_promocode_progress_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.target.ui.view.TargetButton android:enabled="false" android:id="@id/checkout_promocode_apply_button" android:visibility="gone" android:layout_width="@dimen/checkout_default_button_width" android:layout_height="@dimen/checkout_img_dimens" android:layout_marginLeft="@dimen/checkout_margin_small" android:text="@string/checkout_apply" style="@style/CheckoutSmallButton" />
+        <ProgressBar android:theme="@style/AppTheme.RedAccent" android:layout_gravity="center" android:id="@id/checkout_promocode_progress" android:visibility="gone" android:layout_width="@dimen/checkout_default_button_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkout_margin_small" style="?android:attr/progressBarStyleSmall" />
+    </FrameLayout>
+</LinearLayout>

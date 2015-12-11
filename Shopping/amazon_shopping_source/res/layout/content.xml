@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:configChanges="orientation" android:orientation="vertical" android:id="@id/main" android:background="@color/primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/header_bar_height">
+        <LinearLayout android:orientation="horizontal" android:id="@id/nav_toggle_target" android:background="@drawable/tap_target" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:onClick="showMenu">
+            <ImageView android:id="@id/nav_toggle_icon" android:clickable="false" android:layout_width="@dimen/nav_toggle_icon_width" android:layout_height="fill_parent" android:src="@drawable/nav_toggle_icon" android:contentDescription="@string/leftnavtoggle" />
+            <TextView android:textSize="@dimen/app_title_text_size" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/nav_title_text" android:paddingLeft="@dimen/app_title_text_padding_left" android:paddingRight="@dimen/app_title_text_padding_left" android:paddingBottom="@dimen/app_title_text_margin_top" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:onClick="showMenu" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <fragment android:name="com.amazon.venezia.search.SearchFragment" android:id="@id/search_fragment" android:background="#ff00ff00" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/search_ui_margin_right" />
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="vertical" android:id="@id/coins_layout" android:background="@drawable/tap_target" android:padding="@dimen/coins_balance_padding" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="buyCoins">
+                    <com.amazon.venezia.widget.NumberSpinner android:textSize="@dimen/coins_balance_text_size" android:textColor="@color/secondary_text_color" android:gravity="center" android:id="@id/coins_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/coins_label_text_size" android:textColor="@color/secondary_text_color" android:gravity="center" android:id="@id/coins_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="right" android:id="@id/search_button_layout" android:layout_width="wrap_content" android:layout_height="@dimen/header_bar_height">
+                    <ImageView android:id="@id/search_button" android:background="@drawable/tap_target" android:padding="@dimen/search_icon_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_search" android:onClick="searchClicked" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center" android:id="@id/search_close_button" android:background="@drawable/tap_target" android:padding="@dimen/search_icon_padding" android:visibility="gone" android:layout_width="@dimen/search_icon_width" android:layout_height="fill_parent" android:src="@drawable/ic_search_close" android:onClick="searchCloseClicked" />
+        </FrameLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_indeterminate_horizontal_holo" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <FrameLayout android:id="@id/fixed_panel_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/progress_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.venezia.widget.progress.IndeterminateProgressView android:layout_gravity="center" android:id="@id/init_spinner" android:layout_width="@dimen/default_dark_loading_indicator_size" android:layout_height="@dimen/default_dark_loading_indicator_size" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>
