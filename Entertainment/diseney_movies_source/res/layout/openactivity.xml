@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/openfinish" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/openimg" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/defaulticon" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/openimg" android:layout_centerInParent="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/opentitle" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" />
+            <TextView android:textColor="#ffcccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Tab to launch" />
+        </LinearLayout>
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/openbtn" android:background="@drawable/installbg" android:layout_width="76.0dip" android:layout_height="40.0dip" android:layout_marginRight="4.0dip" android:text="Open" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

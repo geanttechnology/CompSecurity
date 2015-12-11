@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/logo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/launch_logo" android:scaleType="center" android:layout_weight="1.0" android:contentDescription="@string/xfinity_speech" />
+        <LinearLayout android:orientation="vertical" android:layout_width="360.0dip" android:layout_height="wrap_content">
+            <EditText android:id="@id/user_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/USERNAME_HINT" android:singleLine="true" android:inputType="textEmailAddress" android:imeOptions="actionNext" android:layerType="software" style="@style/HoloEditText" />
+            <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <EditText android:id="@id/password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:hint="@string/PASSWORD_HINT" android:inputType="textPassword" android:imeOptions="actionDone" android:layerType="software" style="@style/HoloEditText" />
+                <LinearLayout android:id="@id/sign_in" android:layout_marginTop="20.0dip" android:layout_below="@id/password" android:layout_alignRight="@id/password" style="@style/SetupButton">
+                    <ProgressBar android:id="@id/sign_in_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:indeterminate="true" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+                    <TextView android:id="@id/sign_in_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SIGN_IN_BUTTON_TEXT" style="@style/settings_button_label" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/LightBlue" android:id="@id/need_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NEED_COMCAST_ID" android:layout_centerVertical="true" style="@style/SmallBlue" />
+            <TextView android:textColor="@color/MediumGray" android:id="@id/or" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/or" android:layout_toRightOf="@id/need_id" android:layout_alignTop="@id/need_id" style="@style/SmallRegular" />
+            <TextView android:textColor="@color/LightBlue" android:id="@id/forgot_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/FORGOT_PASSWORD" android:layout_toRightOf="@id/or" android:layout_alignTop="@id/need_id" style="@style/Small" />
+            <TextView android:textColor="@color/LightBlue" android:gravity="center" android:id="@id/need_help_signing_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/NEED_HELP_SIGNING_IN" android:drawableLeft="@drawable/need_help_icon" android:drawablePadding="6.0dip" android:layout_below="@id/need_id" android:layout_centerHorizontal="true" style="@style/Small" />
+        </RelativeLayout>
+    </LinearLayout>
+</ViewFlipper>

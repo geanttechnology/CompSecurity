@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <com.bitstrips.outfitbuilder.views.BrandHeaderView android:id="@id/brand_header_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.bitstrips.outfitbuilder.views.FittingRoomPreviewView android:id="@id/fitting_room_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/progress" android:background="@color/progress_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

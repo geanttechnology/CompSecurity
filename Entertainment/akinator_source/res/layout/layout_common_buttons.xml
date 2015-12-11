@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutCommonButtons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/homeBottom_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutOptionsTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true">
+        <Button android:id="@id/awardsButton" android:background="@drawable/ak_cup" android:layout_width="@dimen/share_button_size" android:layout_height="@dimen/share_button_size" android:layout_marginRight="@dimen/space_between_home_buttons" />
+        <Button android:id="@id/myWorldButton" android:background="@drawable/ak_button_mw_down" android:layout_width="@dimen/share_button_size" android:layout_height="@dimen/share_button_size" android:layout_marginRight="@dimen/space_between_home_buttons" />
+        <Button android:id="@id/facebook_classement_button" android:background="@drawable/ak_fb_games_button" android:layout_width="@dimen/share_button_size" android:layout_height="@dimen/share_button_size" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutOptionsBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layoutOptionsTop" android:layout_centerHorizontal="true">
+        <Button android:id="@id/accessoriesButton" android:background="@drawable/ak_accessories" android:layout_width="@dimen/share_button_size" android:layout_height="@dimen/share_button_size" />
+        <Button android:id="@id/storeButton" android:background="@drawable/ak_caddie" android:layout_width="@dimen/share_button_size" android:layout_height="@dimen/share_button_size" android:layout_marginLeft="@dimen/space_between_home_buttons" />
+    </LinearLayout>
+</RelativeLayout>

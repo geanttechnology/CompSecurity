@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rotten_tomatoes_critic_score_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:contentDescription="@null" />
+    <TextView android:textStyle="bold" android:id="@id/rotten_tomatoes_critic_score" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+    <ImageView android:id="@id/rotten_tomatoes_fan_score_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:contentDescription="@null" />
+    <TextView android:textStyle="bold" android:id="@id/rotten_tomatoes_fan_score" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+    <TextView android:textStyle="bold" android:id="@id/common_sense_media_age" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/csm_age" />
+    <TextView android:textStyle="bold" android:textColor="@color/nearly_black" android:gravity="center" android:id="@id/common_sense_media_rating" android:background="@drawable/common_sense_media_rating_bg" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="27.0dip" />
+</LinearLayout>

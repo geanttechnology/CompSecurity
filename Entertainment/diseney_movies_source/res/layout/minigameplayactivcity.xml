@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gametop" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/detailfan" android:layout_width="48.0dip" android:layout_height="52.0dip" android:src="@drawable/myfan" />
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/playbacktv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Back" android:layout_toRightOf="@id/detailfan" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/gamereload" android:clickable="true" android:layout_width="48.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/wetop" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/gametop">
+        <WebView android:id="@id/gameplaywebview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.aio.downloader.utils.ProgressWheel android:id="@id/progress_wheel" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" wheel:progressIndeterminate="true" wheel:barColor="#ff3261b4" />
+        <ImageView android:id="@id/net_hint_img_pdt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/downnullpg" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/banner" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

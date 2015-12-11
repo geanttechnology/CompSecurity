@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/filter_dialog_category_item_layout" android:background="@drawable/entity_list_item_bg_sel" android:layout_width="fill_parent" android:layout_height="@dimen/filter_dialog_category_list_item_vertical_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/test_fdci_label" android:layout_weight="1.0" style="@style/LargeRegularWhite" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/filterCountContainer" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/ind_filter_tally_text_selector" android:id="@id/filterCount" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_fdci_count" style="@style/LargeRegularWhite" />
+            <ImageView android:layout_gravity="bottom" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/ind_filter_tally_check_selector" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/list_separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_separator_height" android:contentDescription="@null" />
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutPostPedagogique" android:background="@drawable/golden_rect" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/genizLayout" layout="@layout/layout_geniz" />
+    <ImageView android:id="@id/closePopUp" android:background="@drawable/ak_close_popup" android:layout_width="@dimen/gz_icon_size" android:layout_height="@dimen/gz_icon_size" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/yellow_color" android:gravity="center" android:id="@id/textObtenirAk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/postPropose_info_margin_top" android:text="Comment obtenir" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/postPedagogique_info_margin_top" android:layout_marginBottom="@dimen/postPedagogique_info_margin_bottom" android:layout_below="@id/textObtenirAk">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutGetGz" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/layoutGetGzInapp" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/black_color" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip">
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:id="@id/textBuyPack" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="En achetant l'un de nos pack" />
+                    </LinearLayout>
+                    <include layout="@layout/layout_pack_gz" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layoutGetGzTapjoy" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/black_color" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip">
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:id="@id/textWatchVideo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Watch video" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/imageVideoTapJoy" android:layout_width="@dimen/storePotionsize" android:layout_height="@dimen/storePotionsize" android:layout_marginRight="4.0dip" android:src="@drawable/ak_video" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip">
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:id="@id/textOtherAction" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="other action" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/imageOfferWallTapJoy" android:layout_width="@dimen/storePotionsize" android:layout_height="@dimen/storePotionsize" android:layout_marginRight="4.0dip" android:src="@drawable/ak_offerwall" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/black_color" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip">
+                    <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:id="@id/textWinAward" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="win award" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:id="@id/textDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/postPropose_margin_lr" android:layout_marginTop="@dimen/postPedagogique_info_margin_top" android:layout_marginRight="@dimen/postPropose_margin_lr" android:layout_marginBottom="10.0dip" android:text="Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus.Akinator t'invite à sortir des sentiers battus." />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/postPropose_margin_lr" android:layout_marginRight="@dimen/postPropose_margin_lr">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/postPedagogique_info_margin_top">
+                    <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/white_color" android:gravity="center" android:id="@id/textAkiAward" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="Aki Award" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/white_color" android:gravity="center" android:id="@id/textPersoPlayed" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="Personnage joue par un autre" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/postPropose_text_margin_top">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/blue_color" android:id="@id/textAwardStandard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type1" android:shadowColor="@color/blue_shadow_color" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/blue_color" android:id="@id/textAwardStandardGz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+ 100 Gz" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:gravity="center" android:id="@id/textTimeStandard" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="Temps1" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/postPropose_text_margin_top">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/red_color" android:id="@id/textAwardBronze" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type2" android:shadowColor="@color/red_shadow_color" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/red_color" android:id="@id/textAwardBronzeGz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+ 200 Gz" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:gravity="center" android:id="@id/textTimeBronze" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="Temps2" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/postPropose_text_margin_top">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/silver_color" android:id="@id/textAwardSilver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type3" android:shadowColor="@color/silver_shadow_color" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/silver_color" android:id="@id/textAwardSilverGz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+ 400 Gz" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:gravity="center" android:id="@id/textTimeSilver" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="Temps3" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/postPropose_text_margin_top">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/gold_color" android:id="@id/textAwardGold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type4" android:shadowColor="@color/gold_shadow_color" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/gold_color" android:id="@id/textAwardGoldGz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+ 800 Gz" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:gravity="center" android:id="@id/textTimeGold" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="Temps4" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/postPropose_text_margin_top">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/platinum_color" android:id="@id/textAwardPlatinum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type5" android:shadowColor="@color/platinum_shadow_color" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/platinum_color" android:id="@id/textAwardPlatinumGz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+ 1500 Gz" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:gravity="center" android:id="@id/textTimePlatinum" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="Temps5" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/postPropose_text_margin_top">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/black_badge_color" android:id="@id/textAwardBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type6" android:shadowColor="@color/black_badge_shadow_color" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+                        <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/black_badge_color" android:id="@id/textAwardBlackGz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+ 5000 Gz" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/yellow_color" android:gravity="center" android:id="@id/textTimeBlack" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="Temps6" android:layout_weight="2.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/layoutMessageAlertGz" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/viewCancel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/layoutCharactersPlayedZone" android:background="@drawable/ak_fond_texte_applati_sans_fioritures" android:layout_width="fill_parent" android:layout_height="@dimen/alert_gz_height" android:layout_marginLeft="@dimen/postHomeContent_margin_lr" android:layout_marginRight="@dimen/postHomeContent_margin_lr" android:layout_centerInParent="true">
+            <ImageView android:id="@id/closeMiniPopUp" android:background="@drawable/ak_close_popup" android:layout_width="@dimen/gz_icon_size" android:layout_height="@dimen/gz_icon_size" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/buttons_text_color" android:id="@id/textMessageAlert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/postHomeContent_margin_lr" android:layout_marginRight="@dimen/postHomeContent_margin_lr" android:text="Si tu as obtenu des Geniz, ils seront crédités dans quelques minutes." android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

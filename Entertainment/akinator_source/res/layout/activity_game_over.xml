@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/genizLayout" layout="@layout/layout_geniz" />
+    <RelativeLayout android:gravity="bottom|right|center" android:id="@id/layoutAkinator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layoutAkinator_margin_left" android:layout_above="@id/commonButtons">
+        <ImageView android:id="@id/akinatorImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/akinatorTenue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/akinatorChapeau" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <include android:id="@id/homeButton" layout="@layout/layout_home_button" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/rejouerButton" android:layout_centerHorizontal="true">
+        <Button android:textSize="@dimen/gen_button_text_size" android:id="@id/moreOptionsButton" android:background="@drawable/ak_plus" android:layout_width="@dimen/share_button_size" android:layout_height="@dimen/share_button_size" android:layout_marginRight="@dimen/space_between_home_buttons" android:text="+" />
+        <Button android:id="@id/partageButton" android:background="@drawable/ak_button_sharing_fdp" android:layout_width="@dimen/share_button_size" android:layout_height="@dimen/share_button_size" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/gen_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/rejouerButton" android:background="@drawable/gen_button" android:layout_width="@dimen/gen_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="REJOUER" android:layout_above="@id/commonButtons" android:layout_centerInParent="true" />
+    <include android:id="@id/commonButtons" layout="@layout/layout_common_buttons" />
+    <RelativeLayout android:id="@id/layoutBulleGoPlus" android:visibility="gone" android:layout_width="@dimen/question_bulle_dessin_width" android:layout_height="@dimen/gameover_bulle_dessin_height" android:layout_marginTop="@dimen/layoutBulleGoPlus_margin_top" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/bulleImageGoPlus" android:background="@drawable/ak_bulle_gameover_plus" android:visibility="visible" android:layout_width="@dimen/question_bulle_dessin_width" android:layout_height="@dimen/gameover_bulle_dessin_height" />
+        <TextView android:textSize="@dimen/gameover_text_size" android:textColor="@color/bulle_text_color" android:gravity="center" android:id="@id/bulleTextGoPlus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/gameover_bulle_text_marginleft" android:layout_marginTop="@dimen/gameover_bulle_text_margintop" android:layout_marginRight="@dimen/gameover_bulle_text_marginright" android:layout_marginBottom="@dimen/gameover_bulle_text_marginbottom" android:text="LE BEAU TEXTE QUI VA APPARAITRE DANS LA BULLE INFO! IL DOIT AVOIR UNE TAILLE RESPECTABLE DIS DONC !! SIGNE GONTRAND XAVIER FRANCOIS DE LA TRONCHE EN BIAIS, 17EME DU NOM" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layoutBulleGo" android:visibility="gone" android:layout_width="@dimen/question_bulle_dessin_width" android:layout_height="@dimen/question_bulle_dessin_height" android:layout_marginTop="@dimen/layoutBulleGoPlus_margin_top" android:layout_marginRight="@dimen/layoutBulleQuestion_margin_right" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/bulleImageGo" android:layout_width="@dimen/question_bulle_dessin_width" android:layout_height="@dimen/question_bulle_dessin_height" android:src="@drawable/ak_bulle_gameover" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutDoubleText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/gameover_bulle_text_marginleft" android:layout_marginTop="@dimen/gameover_bulle_text_margintop" android:layout_marginRight="@dimen/gameover_bulle_text_marginright" android:layout_marginBottom="@dimen/gameover_bulle_text_marginbottom">
+            <TextView android:textSize="@dimen/gameover_text_size" android:textColor="@color/bulle_text_color" android:gravity="center" android:id="@id/bulleText1" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="ENCORE TROUVE" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/gameover_text_size" android:textColor="@color/bulle_text_color" android:gravity="center" android:id="@id/bulleText2" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="Personnage déjà joué tant de fois, joué précédemment le tant tant." android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/alert1000GzOverlay" android:background="@color/black_color_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/imageIndian" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ak_akinator_accessoires" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/yellow_color" android:gravity="center" android:id="@id/textGzUnlock" android:background="@color/black_color" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="MESSAGE 1000 GZ" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layoutPartage" android:visibility="gone" android:layout_width="@dimen/gameover_partag_width" android:layout_height="@dimen/gameover_partag_height" android:layout_centerInParent="true">
+        <View android:background="@drawable/black_rect" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.8" />
+        <TextView android:textSize="@dimen/gen_button_text_size" android:gravity="center" android:id="@id/closePopUp" android:layout_width="@dimen/gz_icon_size" android:layout_height="@dimen/gz_icon_size" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="X" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/bulle_text_size" android:gravity="center" android:id="@id/textChooseSharing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Choisi le contenu souhaites partager" android:layout_below="@id/closePopUp" android:layout_centerHorizontal="true" />
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/layoutDots" android:layout_below="@id/textChooseSharing" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layoutDots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

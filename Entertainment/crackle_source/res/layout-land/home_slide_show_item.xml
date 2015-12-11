@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/slide_show_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <com.gotv.crackle.views.CrackleTextView android:textSize="14.0sp" android:textColor="@color/main_text_color" android:ellipsize="end" android:id="@id/slide_show_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/slide_show_ad_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <com.gotv.crackle.views.CrackleTextView android:textSize="10.0sp" android:textColor="@color/main_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/presented_by" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/slide_show_ad" android:layout_width="120.0dip" android:layout_height="60.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

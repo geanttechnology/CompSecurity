@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ak_decors_facebook" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@color/white_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" />
+    <ImageView android:id="@id/backButtonImage" android:layout_width="@dimen/cancel_button_size" android:layout_height="@dimen/cancel_button_size" android:layout_marginLeft="@dimen/cancel_button_margin_left" android:layout_marginTop="@dimen/classement_margin_top" android:src="@drawable/cancel_button" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <RelativeLayout android:id="@id/layoutContentMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/allButtons" android:layout_centerInParent="true">
+        <ImageView android:id="@id/imageTontonAkinator" android:layout_width="@dimen/fb_akinator_width" android:layout_height="@dimen/fb_parchemin_height" android:src="@drawable/ak_akinator_facebook" android:layout_centerVertical="true" />
+        <ImageView android:gravity="center" android:id="@id/contentImageFacebook" android:background="@drawable/ak_parchemin" android:layout_width="@dimen/fb_parchemin_width" android:layout_height="@dimen/fb_parchemin_height" android:layout_toRightOf="@id/imageTontonAkinator" />
+        <TextView android:textSize="@dimen/mw_bulle_text_size" android:textColor="@color/buttons_text_color" android:gravity="center" android:id="@id/contentTextFacebook" android:paddingLeft="@dimen/fb_parchemin_text_marginSide" android:paddingRight="@dimen/fb_parchemin_text_marginSide" android:layout_width="@dimen/fb_parchemin_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fb_parchemin_text_marginTop" android:text="See who else is playing. Compare your score and challenge your friends" android:layout_toRightOf="@id/imageTontonAkinator" />
+    </RelativeLayout>
+    <com.facebook.login.widget.LoginButton android:id="@id/login_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layoutContentMessage" android:layout_centerHorizontal="true" />
+</RelativeLayout>

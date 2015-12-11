@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/cc_preview_height">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/caption_background" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <com.comcast.cim.cmasl.android708compatlib.view.preference.CCPreviewTextView android:layout_gravity="center" android:id="@id/preview_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_cc_preview_text" />
+    </FrameLayout>
+</LinearLayout>

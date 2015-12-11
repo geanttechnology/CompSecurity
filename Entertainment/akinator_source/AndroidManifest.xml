@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.digidust.elokence.akinator.freemium" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <permission android:name="com.digidust.elokence.akinator.paid.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.digidust.elokence.akinator.paid.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.location" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <application android:allowClearUserData="false" android:fullBackupContent="@xml/akbackupscheme" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.digidust.elokence.akinator.factories.AkApplication" android:screenOrientation="portrait" android:theme="@style/AkTheme">
+        <meta-data android:name="presage_key" android:value="264709"/>
+        <service android:name="io.presage.services.PresageServiceImp"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="io.presage.activities.PresageActivity" android:theme="@style/Presage.Theme.Transparent">
+            <intent-filter>
+                <action android:name="io.presage.intent.action.LAUNCH_WEBVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="io.presage.receivers.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="io.presage.receivers.BootReceiver.RESTART_SERVICE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/title_activity_inapp_purchase" android:name="com.digidust.elokence.akinator.billing.InappPurchaseActivity"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.FreemiumPopularityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.PropositionPotionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.PropositionPotionActivity2" android:screenOrientation="portrait"/>
+        <receiver android:name="com.databerries.WakeUp">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.databerries.LocationReceiver">
+            <intent-filter>
+                <action android:name="com.databerries.LOCATION_READY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.digidust.elokence.akinator.activities.SplashscreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="akinator"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.digidust.elokence.akinator.activities.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.PostHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.StoreActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.SelectLanguageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.QuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.OneCharacterProposalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.SeveralCharactersProposalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.ContinueProcessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.ReportActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="com.digidust.elokence.akinator.activities.CustomizeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.Soundlike1Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.Soundlike2Activity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.digidust.elokence.akinator.activities.Soundlike3Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.SearchQuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.SoundlikeQuestionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.AddQuestionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation" android:name="com.digidust.elokence.akinator.activities.AddPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="com.digidust.elokence.akinator.activities.GameOverActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.MinibaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.ProposeAjoutMBActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="com.digidust.elokence.akinator.activities.AjoutModifPersoMBActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.IdentifierPersoMinibaseActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:name="com.supersonicads.sdk.controller.ControllerActivity"/>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:name="com.supersonicads.sdk.controller.InterstitialActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:name="com.supersonicads.sdk.controller.OpenUrlActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.tapjoy.TJAdUnitActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.mraid.view.ActionHandler"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.mraid.view.Browser"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:name="com.digidust.elokence.akinator.services.BackgroundMusicService"/>
+        <service android:enabled="true" android:name="com.digidust.elokence.akinator.services.BackgroundSoundsService"/>
+        <receiver android:name="com.digidust.elokence.akinator.services.AkGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.digidust.elokence.akinator.paid"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.digidust.elokence.akinator.services.GCMIntentService"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/app_name"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.PostProposeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.PopPedagogiqueActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.AwardsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.WebviewCGV" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.LeaderboardActivity" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.DefiDuJourActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.digidust.elokence.akinator.activities.FacebookConnexionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity"/>
+        <provider android:authorities="com.digidust.elokence.akinator.freemium.google_measurement_service" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"/>
+        <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:isolatedProcess="false" android:label="beacon" android:name="org.altbeacon.beacon.service.BeaconService"/>
+        <service android:enabled="true" android:exported="false" android:name="org.altbeacon.beacon.BeaconIntentProcessor"/>
+        <activity android:name="com.intentsoftware.addapptr.AATKit"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.internal.MMActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:label="sdk" android:name="com.millennialmedia.internal.MMIntentWrapperActivity"/>
+        <activity android:name="com.video.adsdk.internal.ADActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.video.adsdk.internal.BrowserActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.inmobi.androidsdk.IMBrowserActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.intentsoftware.addapptr.fullscreens.PromoHouseFullscreenActivity"/>
+        <activity android:configChanges="orientation" android:name="com.intentsoftware.addapptr.fullscreens.SmartAdServerFullscreenActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.mdotm.android.view.MdotMActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mdotm.android.vast.VastInterstitialActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity"/>
+        <activity android:name="com.applovin.adview.AppLovinConfirmationActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.adsdk.sdk.banner.InAppWebView"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:hardwareAccelerated="false" android:name="com.adsdk.sdk.video.RichMediaActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.applift.playads.PlayAdsActivity" android:taskAffinity="com.applift.playads"/>
+        <activity android:name="com.intentsoftware.addapptr.fullscreens.NexageFullscreenActivity"/>
+        <activity android:name="com.intentsoftware.addapptr.fullscreens.SmaatoFullscreenActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.playhaven.android.view.FullScreen" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="localhost" android:pathPattern="/full" android:scheme="playhaven"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.apprupt.sdk.CvInterstitialActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.apprupt.sdk.CvOverlayActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.apprupt.sdk.CvExpandActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.jirbo.adcolony.AdColonyOverlay" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.jirbo.adcolony.AdColonyFullscreen" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.jirbo.adcolony.AdColonyBrowser" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.facebook.ads.InterstitialAdActivity"/>
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:hardwareAccelerated="true" android:name="com.unity3d.ads.android.view.UnityAdsFullscreenActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.loopme.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.loopme.AdBrowserActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.device.ads.AdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MoPubActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.common.MoPubBrowser"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidVideoPlayerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.openx.sdk.browser.AdBrowserActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+    </application>
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:state_pressed="false" android:drawable="@drawable/ak_button_mw_pressed_ok" />
+    <item android:state_selected="false" android:state_pressed="true" android:drawable="@drawable/ak_button_mw_pressed_ok" />
+    <item android:drawable="@drawable/ak_button_mw_unpressed_ok" />
+</selector>

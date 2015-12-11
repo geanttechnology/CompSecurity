@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/genizLayout" layout="@layout/layout_geniz" />
+    <include android:id="@id/homeButton" layout="@layout/layout_home_button" />
+    <RelativeLayout android:background="@drawable/ak_fond_texte" android:layout_width="@dimen/soundlikeContentWidth" android:layout_height="@dimen/soundlikeContentHeight" android:layout_marginTop="@dimen/soundlike_background_margin_top" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/soundlikeContentPaddingTopBottom" android:layout_marginRight="20.0dip" android:layout_marginBottom="@dimen/soundlikeContentPaddingTopBottom" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/soundlike1ContentText_text_size" android:textColor="@color/buttons_text_color" android:gravity="center" android:id="@id/tipsContentText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="VISIBLEMENT_JE_NE_CONNAIS_PAS_ENCORE_VOTRE_PERSONNAGE" />
+            <EditText android:textSize="@dimen/gen_little_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/soundlike1FieldValue" android:background="@drawable/ak_textarea_normal" android:paddingLeft="@dimen/editText_height_padding" android:paddingRight="@dimen/editText_height_padding" android:layout_width="fill_parent" android:layout_height="@dimen/editText_height" android:cursorVisible="true" android:layout_centerInParent="true" android:inputType="text" android:textCursorDrawable="@color/black_color" />
+            <Button android:textSize="@dimen/gen_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/validateButton" android:background="@drawable/gen_button" android:layout_width="@dimen/gen_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="@dimen/soundlikeContentPaddingTopBottom" android:text="VALIDATE" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

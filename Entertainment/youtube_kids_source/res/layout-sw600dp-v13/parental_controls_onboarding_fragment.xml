@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.youtube.kids.ui.SlidingFrameLayout android:id="@id/onboarding_overlay" android:layout_width="@dimen/parental_control_overlay_fragment_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@drawable/vertical_drop_shadow" android:layout_width="6.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/parental_control_onboarding_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="@dimen/parental_onboarding_howdy_font_size" android:textColor="@color/parental_control_onboarding_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/parental_onboarding_howdy_margin_top" android:text="@string/parental_control_onboarding_welcome" ytkids:roboto2Font="bold" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dood_laugh_kids" />
+            <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="24.0sp" android:textColor="@color/parental_control_onboarding_secondary_text" android:paddingLeft="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/parental_onboarding_hey_parents_margin_top" android:text="@string/psst_parents" ytkids:roboto2Font="medium" />
+            <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="14.0sp" android:textColor="@color/parental_control_onboarding_secondary_text" android:gravity="left" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/parental_onboarding_instructions_margin_top" android:layout_marginBottom="@dimen/parental_onboarding_instructions_margin_bottom" android:text="@string/parental_control_onboarding_instructions" android:scrollHorizontally="false" ytkids:roboto2Font="light" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.apps.youtube.kids.ui.SlidingFrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/purchased_empty" android:layout_below="@id/purchased_id" style="@style/EmptySection"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/purchased_empty_image" android:src="@drawable/purchased_empty" style="@style/EmptySectionIcon" />
+    <TextView android:id="@id/purchased_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/purchased_empty" android:layout_toRightOf="@id/purchased_empty_image" style="@style/EmptySectionText" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip">
+        <ImageView android:id="@id/gameicon" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/defaulticon" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/gameicon">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/gametitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:lines="1" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffaeaeae" android:ellipsize="marquee" android:id="@id/gamedetail" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="detail" android:lines="2" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" />
+            <Button android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/gameplaybtn" android:background="@drawable/video_download_bg" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginTop="16.0dip" android:text="Play Now" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

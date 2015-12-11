@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.aio.downloader" xmlns:material="http://schemas.android.com/apk/res-auto" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_tianchi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_tianchi1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_tianchi2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_tianchi3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_tianchi4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_tianchi5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_tianchi6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_tianchi7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_tianchi8" android:background="@drawable/home_gift2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_tianchi9" android:background="@drawable/home_gift2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:orientation="horizontal" android:id="@id/main_tab_top" android:background="@color/topcolorwyc" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/tab_group1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="6.0" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_alignParentEnd="true">
+                        <com.aio.downloader.views.LImageButton android:id="@id/header_left1" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/home_page" android:layout_weight="1.0" wheel:widget_animColor="@color/color_anim_white" wheel:widget_type="left" />
+                        <com.aio.downloader.views.LImageButton android:layout_gravity="center" android:id="@id/tab_app" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/home_app" android:layout_weight="1.0" wheel:widget_animColor="@color/color_anim_white" />
+                        <com.aio.downloader.views.LImageButton android:layout_gravity="center" android:id="@id/tab_game" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/home_game" android:layout_weight="1.0" wheel:widget_animColor="@color/color_anim_white" />
+                        <ImageView android:layout_gravity="center" android:id="@id/apptopgift" android:padding="7.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/home_gift2" android:layout_weight="1.0" />
+                        <com.aio.downloader.views.LImageButton android:layout_gravity="center" android:id="@id/tab_search" android:padding="7.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/home_search" android:layout_weight="1.0" wheel:widget_animColor="@color/color_anim_white" />
+                        <com.aio.downloader.views.LImageButton android:layout_gravity="center" android:id="@id/tab_down" android:padding="9.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/home_manage" android:layout_weight="1.0" wheel:widget_animColor="@color/color_anim_white" />
+                    </RadioGroup>
+                    <RelativeLayout android:id="@id/downrelelativetv" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/main_tab_top">
+                    <com.aio.downloader.refresh.PullToRefreshLayout android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                        <include android:id="@id/head_more" android:visibility="gone" layout="@layout/refresh_head" />
+                        <com.aio.downloader.refresh.PullableListView android:id="@id/listview" android:background="@color/gray" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/gray" android:dividerHeight="10.0dip" />
+                    </com.aio.downloader.refresh.PullToRefreshLayout>
+                    <View android:background="@drawable/divider_headerbar_bottom" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/appbanner" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+        <include android:layout_gravity="left" android:orientation="vertical" android:id="@id/main_menu_left" android:background="#ffefefef" android:layout_width="180.0dip" android:layout_height="fill_parent" layout="@layout/main_liftview" />
+    </android.support.v4.widget.DrawerLayout>
+    <com.aio.downloader.utils.ProgressWheel android:id="@id/progress_wheel" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true" wheel:progressIndeterminate="true" wheel:barColor="@color/topcolorwyc" />
+    <ImageView android:id="@id/cart_anim_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle1" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/progress1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+    <com.google.android.apps.youtube.kids.ui.TimeLimitProgressBar android:id="@id/time_limit_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="6.0dip" android:progressDrawable="@drawable/time_limit_progressbar" style="?android:attr/progressBarStyleHorizontal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/header_margin">
+        <ImageView android:id="@id/back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_button_light" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/voice_search_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_search_button" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_voice_search" />
+            <android.support.v7.app.MediaRouteButton android:id="@id/media_route_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/voice_search_button" style="@style/PlayerCastMediaRouteLightButton" />
+        </RelativeLayout>
+        <SearchView android:id="@id/search_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:iconifiedByDefault="false" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.google.android.apps.youtube.kids.ui.InterstitialLayout android:id="@id/interstitial_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids" />
+        <FrameLayout android:id="@id/content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+            <com.google.android.apps.youtube.kids.ui.HeaderTileGridLayout android:id="@id/header_tile_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" ytkids:tileVerticalPadding="@dimen/tile_vertical_padding" ytkids:tileHorizontalPadding="@dimen/tile_horizontal_padding" ytkids:headerHeight="@dimen/header_height" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/lollipop_hack_overlay" android:background="#01ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.google.android.apps.youtube.kids.ui.ParentalControlLaunchBar android:layout_gravity="bottom|right|center" android:id="@id/parental_control_footer" android:layout_width="wrap_content" android:layout_height="@dimen/footer_height" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe4ebee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/movie_headimage" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/icon" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/movie_headimage" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/movie_headimage">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffff0000" android:ellipsize="end" android:id="@id/opentitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/NotificationContent" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff5b6162" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AIO " style="@style/NotificationContent" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff05a3d6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Downloader " style="@style/NotificationContent" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff5b6162" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version" style="@style/NotificationContent" />
+                </LinearLayout>
+                <TextView android:textSize="10.0sp" android:layout_gravity="right" android:id="@id/timer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="1.0dip" android:text="..." android:layout_alignParentRight="true" style="@style/NotificationContent" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                <ImageView android:id="@id/iv_haodian1" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/image_loading" />
+                <ImageView android:id="@id/iv_haodian2" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/image_loading" />
+                <ImageView android:id="@id/iv_haodian3" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/image_loading" />
+                <TextView android:textSize="12.0sp" android:layout_gravity="center" android:id="@id/noti_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="A new version has been released!" android:layout_toRightOf="@id/movie_headimage" style="@style/NotificationContent" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="#ff0796c9" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update now" android:drawableTop="@drawable/not_home_download_normal_bai" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="600.0dip" />
+</RelativeLayout>

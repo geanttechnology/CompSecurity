@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" android:text="Font Size" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/title_text">
+        <TextView android:id="@id/caption_small_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:layout_centerVertical="true" />
+        <TextView android:id="@id/caption_large_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <SeekBar android:id="@id/caption_size_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/caption_large_text" android:layout_toRightOf="@id/caption_small_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

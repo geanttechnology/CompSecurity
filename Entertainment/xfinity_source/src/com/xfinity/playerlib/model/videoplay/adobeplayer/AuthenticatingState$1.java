@@ -1,0 +1,127 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.xfinity.playerlib.model.videoplay.adobeplayer;
+
+import com.comcast.cim.cmasl.taskexecutor.task.Task;
+import com.comcast.cim.cmasl.xip.ams.AmsHttpErrorException;
+import com.comcast.cim.model.parentalcontrols.ParentalControlsPin;
+import com.comcast.cim.model.parentalcontrols.ParentalControlsSettings;
+import java.util.concurrent.Executor;
+
+// Referenced classes of package com.xfinity.playerlib.model.videoplay.adobeplayer:
+//            AuthenticatingState, VideoStateController
+
+class val.pin
+    implements Runnable
+{
+
+    final AuthenticatingState this$0;
+    final String val$pin;
+
+    private void callOnAmsAuthenticationException(final Exception e)
+    {
+        stateController.getUiThreadExecutor().execute(new Runnable() {
+
+            final AuthenticatingState._cls1 this$1;
+            final Exception val$e;
+
+            public void run()
+            {
+                stateController.onAmsAuthenticationException(e);
+            }
+
+            
+            {
+                this$1 = AuthenticatingState._cls1.this;
+                e = exception;
+                super();
+            }
+        });
+    }
+
+    private void callOnAmsAuthenticationSuccess()
+    {
+        stateController.getUiThreadExecutor().execute(new Runnable() {
+
+            final AuthenticatingState._cls1 this$1;
+
+            public void run()
+            {
+                stateController.onAmsAuthenticationSuccess();
+            }
+
+            
+            {
+                this$1 = AuthenticatingState._cls1.this;
+                super();
+            }
+        });
+    }
+
+    private void callOnAmsPinRequired()
+    {
+        stateController.getUiThreadExecutor().execute(new Runnable() {
+
+            final AuthenticatingState._cls1 this$1;
+
+            public void run()
+            {
+                stateController.onAmsPinRequired();
+            }
+
+            
+            {
+                this$1 = AuthenticatingState._cls1.this;
+                super();
+            }
+        });
+    }
+
+    public void run()
+    {
+        if (stateController.shouldUseDownloadFile()) goto _L2; else goto _L1
+_L1:
+        stateController.performAmsAuthorization(val$pin);
+_L4:
+        callOnAmsAuthenticationSuccess();
+        return;
+_L2:
+        if (stateController.getLiveStream() != null) goto _L4; else goto _L3
+_L3:
+        ParentalControlsSettings parentalcontrolssettings = (ParentalControlsSettings)stateController.getParentalControlsCache().execute();
+        if (parentalcontrolssettings == null) goto _L4; else goto _L5
+_L5:
+        ParentalControlsPin parentalcontrolspin;
+        try
+        {
+            parentalcontrolspin = parentalcontrolssettings.getParentalPin();
+        }
+        catch (Exception exception)
+        {
+            if ((exception instanceof AmsHttpErrorException) && ((AmsHttpErrorException)exception).getDetailedStatusCode() == 417)
+            {
+                callOnAmsPinRequired();
+                return;
+            } else
+            {
+                callOnAmsAuthenticationException(exception);
+                return;
+            }
+        }
+        if (parentalcontrolspin == null) goto _L4; else goto _L6
+_L6:
+        if (!AuthenticatingState.access$000(AuthenticatingState.this, parentalcontrolssettings, stateController.getVideoFacade()) || val$pin != null && parentalcontrolspin.getPin().equals(val$pin)) goto _L4; else goto _L7
+_L7:
+        callOnAmsPinRequired();
+          goto _L4
+    }
+
+    _cls3.val.e()
+    {
+        this$0 = final_authenticatingstate;
+        val$pin = String.this;
+        super();
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+    <GridLayout android:id="@id/number_box_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:columnCount="4">
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:id="@id/first_number" ytkids:roboto2Font="light" style="@style/ParentalGateAnswerText" />
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:id="@id/second_number" ytkids:roboto2Font="light" style="@style/ParentalGateAnswerText" />
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:id="@id/third_number" ytkids:roboto2Font="light" style="@style/ParentalGateAnswerText" />
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:id="@id/fourth_number" ytkids:roboto2Font="light" style="@style/ParentalGateAnswerText" />
+        <View style="@style/ParentalGateTextUnderline" />
+        <View style="@style/ParentalGateTextUnderline" />
+        <View style="@style/ParentalGateTextUnderline" />
+        <View style="@style/ParentalGateTextUnderline" />
+    </GridLayout>
+    <ImageView android:id="@id/delete_button" android:background="@drawable/round_button" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/parental_gate_number_entry_delete_margin_left" android:src="@drawable/quantum_ic_backspace_white_24" android:contentDescription="@string/accessibility_delete" />
+</LinearLayout>

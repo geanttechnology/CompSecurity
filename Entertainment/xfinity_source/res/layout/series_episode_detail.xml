@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.android.accessibility.GestureListenerLayout android:gravity="center" android:id="@id/touchy_parent" android:padding="@dimen/dialog_layout_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:padding="@dimen/entity_detail_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/detail_image" android:visibility="invisible" android:layout_width="320.0dip" android:layout_height="160.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ScrollView android:id="@id/body_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/detail_image">
+            <requestFocus />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/entity_scroll_section_side_padding" android:paddingTop="16.0dip" android:paddingRight="@dimen/entity_scroll_section_side_padding" android:paddingBottom="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/info_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+                    <TextView android:ellipsize="end" android:id="@id/info_series_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" style="@style/LargeWhite" />
+                    <com.comcast.cim.cmasl.android.util.view.widget.QuotedTextView android:ellipsize="end" android:id="@id/info_episode_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SmallWhite" />
+                </LinearLayout>
+                <ImageView android:id="@id/xod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/xod_entity" android:layout_below="@id/info_title_container" style="@style/XODLogo" />
+                <RelativeLayout android:id="@id/new_airing_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/xod">
+                    <ImageView android:id="@id/new_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ind_new" android:contentDescription="@string/content_description_new_indicator" />
+                    <TextView android:id="@id/season_episode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/test_season_episode" android:layout_toRightOf="@id/new_indicator" style="@style/Metadata" />
+                    <TextView android:id="@id/airdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_airdate" android:layout_toRightOf="@id/season_episode" style="@style/Metadata" />
+                </RelativeLayout>
+                <TextView android:ellipsize="end" android:id="@id/availability" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/new_airing_info_container" style="@style/Metadata" />
+                <TextView android:ellipsize="end" android:id="@id/duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/availability" style="@style/SmallestLightGray" />
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/reviews" />
+                <LinearLayout android:orientation="vertical" android:id="@id/video_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" />
+                <TextView android:id="@id/cast" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_below="@id/video_item_container" style="@style/Metadata" />
+                <TextView android:id="@id/description" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cast" style="@style/SmallestRegularWhite" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</com.comcast.cim.android.accessibility.GestureListenerLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:material="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.aio.downloader.pager.JazzyViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/rl_fun_gongneng" android:layout_below="@id/tv_detail_jingdu"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <com.aio.downloader.views.LImageButton android:id="@id/iv_detail_back" android:clickable="true" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/icon_header_back" material:widget_animColor="@color/color_anim_lick_header" material:widget_type="left" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_fun_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="56.0dip" android:layout_marginRight="16.0dip">
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_detail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="fdfdfd" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_detail_jingdu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="fdfdfdf" android:layout_weight="4.0" android:layout_below="@id/ll_fun_tv" />
+        <RelativeLayout android:id="@id/rl_fun_gongneng" android:background="#ff1a1a1a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.aio.downloader.views.LFrameLayout android:id="@id/lf_fun_like" android:paddingLeft="28.0dip" android:paddingTop="8.0dip" android:paddingRight="28.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" material:widget_animColor="@color/color_anim_white">
+                <LinearLayout android:orientation="vertical" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_fun_likeshow" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/fun_like" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Like" />
+                </LinearLayout>
+            </com.aio.downloader.views.LFrameLayout>
+            <com.aio.downloader.views.LFrameLayout android:id="@id/lf_fun_download" android:paddingLeft="20.0dip" android:paddingTop="8.0dip" android:paddingRight="20.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" material:widget_animColor="@color/color_anim_white">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="24.0dip" android:layout_height="26.0dip" android:src="@drawable/fun_download" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download" />
+                </LinearLayout>
+            </com.aio.downloader.views.LFrameLayout>
+            <com.aio.downloader.views.LFrameLayout android:id="@id/lf_fun_share" android:paddingLeft="28.0dip" android:paddingTop="8.0dip" android:paddingRight="28.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" material:widget_animColor="@color/color_anim_white">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/fun_share" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share" />
+                </LinearLayout>
+            </com.aio.downloader.views.LFrameLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_mygift" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:layout_alignParentRight="true">
+            <View android:layout_gravity="center_horizontal" android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="100.0dip" />
+            <com.aio.downloader.views.RoundImageView android:id="@id/iv_mygift" android:clickable="true" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_mygift_gallery" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:layout_alignParentRight="true">
+            <View android:layout_gravity="center_horizontal" android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="100.0dip" />
+            <com.aio.downloader.views.RoundImageView android:id="@id/iv_mygift_gallery" android:clickable="true" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6024 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.google.android.gms.internal;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Binder;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.ParcelFileDescriptor;
+import android.os.RemoteException;
+import com.google.android.gms.common.data.DataHolder;
+import com.google.android.gms.common.data.DataHolderCreator;
+import com.google.android.gms.games.multiplayer.ParticipantEntity;
+import com.google.android.gms.games.multiplayer.ParticipantResult;
+import com.google.android.gms.games.multiplayer.realtime.RoomEntity;
+
+// Referenced classes of package com.google.android.gms.internal:
+//            fo
+
+public interface fp
+    extends IInterface
+{
+    public static abstract class a extends Binder
+        implements fp
+    {
+
+        public static fp H(IBinder ibinder)
+        {
+            if (ibinder == null)
+            {
+                return null;
+            }
+            IInterface iinterface = ibinder.queryLocalInterface("com.google.android.gms.games.internal.IGamesService");
+            if (iinterface != null && (iinterface instanceof fp))
+            {
+                return (fp)iinterface;
+            } else
+            {
+                return new a(ibinder);
+            }
+        }
+
+        public boolean onTransact(int i1, Parcel parcel, Parcel parcel1, int j1)
+            throws RemoteException
+        {
+            Object obj = null;
+            boolean flag = false;
+            boolean flag48 = false;
+            boolean flag49 = false;
+            boolean flag42 = false;
+            boolean flag45 = false;
+            boolean flag50 = false;
+            int k1 = 0;
+            boolean flag51 = false;
+            boolean flag52 = false;
+            boolean flag53 = false;
+            boolean flag54 = false;
+            boolean flag46 = false;
+            boolean flag47 = false;
+            boolean flag44 = false;
+            boolean flag55 = false;
+            boolean flag56 = false;
+            boolean flag57 = false;
+            boolean flag58 = false;
+            boolean flag59 = false;
+            boolean flag60 = false;
+            boolean flag61 = false;
+            boolean flag30 = false;
+            switch (i1)
+            {
+            default:
+                return super.onTransact(i1, parcel, parcel1, j1);
+
+            case 1598968902: 
+                parcel1.writeString("com.google.android.gms.games.internal.IGamesService");
+                return true;
+
+            case 5001: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                j(parcel.readLong());
+                parcel1.writeNoException();
+                return true;
+
+            case 5002: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()));
+                parcel1.writeNoException();
+                return true;
+
+            case 5003: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getAppId();
+                parcel1.writeNoException();
+                parcel1.writeString(parcel);
+                return true;
+
+            case 5004: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = aU();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 5005: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                obj = parcel.readStrongBinder();
+                if (parcel.readInt() != 0)
+                {
+                    parcel = (Bundle)Bundle.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    parcel = null;
+                }
+                a(((IBinder) (obj)), parcel);
+                parcel1.writeNoException();
+                return true;
+
+            case 5006: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                df();
+                parcel1.writeNoException();
+                return true;
+
+            case 5007: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getCurrentAccountName();
+                parcel1.writeNoException();
+                parcel1.writeString(parcel);
+                return true;
+
+            case 5064: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = af(parcel.readString());
+                parcel1.writeNoException();
+                parcel1.writeString(parcel);
+                return true;
+
+            case 5065: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                e(parcel.readString(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5008: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5009: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5010: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                b(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5011: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                obj = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s1 = parcel.readString();
+                if (parcel.readInt() != 0)
+                {
+                    flag = true;
+                } else
+                {
+                    flag = false;
+                }
+                a(((fo) (obj)), s1, flag, parcel.createLongArray());
+                parcel1.writeNoException();
+                return true;
+
+            case 5012: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getCurrentPlayerId();
+                parcel1.writeNoException();
+                parcel1.writeString(parcel);
+                return true;
+
+            case 5013: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = dg();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 5014: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                c(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5015: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                obj = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                i1 = parcel.readInt();
+                if (parcel.readInt() != 0)
+                {
+                    flag = true;
+                } else
+                {
+                    flag = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag30 = true;
+                }
+                a(((fo) (obj)), i1, flag, flag30);
+                parcel1.writeNoException();
+                return true;
+
+            case 5016: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.readLong());
+                parcel1.writeNoException();
+                return true;
+
+            case 5017: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                b(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()));
+                parcel1.writeNoException();
+                return true;
+
+            case 5018: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                d(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5019: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                obj = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s2 = parcel.readString();
+                i1 = parcel.readInt();
+                j1 = parcel.readInt();
+                k1 = parcel.readInt();
+                if (parcel.readInt() != 0)
+                {
+                    flag = true;
+                } else
+                {
+                    flag = false;
+                }
+                a(((fo) (obj)), s2, i1, j1, k1, flag);
+                parcel1.writeNoException();
+                return true;
+
+            case 5020: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                obj = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s3 = parcel.readString();
+                i1 = parcel.readInt();
+                j1 = parcel.readInt();
+                k1 = parcel.readInt();
+                if (parcel.readInt() != 0)
+                {
+                    flag = true;
+                } else
+                {
+                    flag = false;
+                }
+                b(((fo) (obj)), s3, i1, j1, k1, flag);
+                parcel1.writeNoException();
+                return true;
+
+            case 5021: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo27 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                if (parcel.readInt() != 0)
+                {
+                    obj = (Bundle)Bundle.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    obj = null;
+                }
+                a(fo27, ((Bundle) (obj)), parcel.readInt(), parcel.readInt());
+                parcel1.writeNoException();
+                return true;
+
+            case 5022: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                c(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()));
+                parcel1.writeNoException();
+                return true;
+
+            case 5023: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                obj = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s4 = parcel.readString();
+                IBinder ibinder1 = parcel.readStrongBinder();
+                if (parcel.readInt() != 0)
+                {
+                    parcel = (Bundle)Bundle.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    parcel = null;
+                }
+                a(((fo) (obj)), s4, ibinder1, parcel);
+                parcel1.writeNoException();
+                return true;
+
+            case 5024: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                obj = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s5 = parcel.readString();
+                IBinder ibinder2 = parcel.readStrongBinder();
+                if (parcel.readInt() != 0)
+                {
+                    parcel = (Bundle)Bundle.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    parcel = null;
+                }
+                b(((fo) (obj)), s5, ibinder2, parcel);
+                parcel1.writeNoException();
+                return true;
+
+            case 5025: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                obj = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s6 = parcel.readString();
+                i1 = parcel.readInt();
+                IBinder ibinder3 = parcel.readStrongBinder();
+                if (parcel.readInt() != 0)
+                {
+                    parcel = (Bundle)Bundle.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    parcel = null;
+                }
+                a(((fo) (obj)), s6, i1, ibinder3, parcel);
+                parcel1.writeNoException();
+                return true;
+
+            case 5026: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                d(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()));
+                parcel1.writeNoException();
+                return true;
+
+            case 5027: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                e(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()));
+                parcel1.writeNoException();
+                return true;
+
+            case 5028: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                j(parcel.readString(), parcel.readInt());
+                parcel1.writeNoException();
+                return true;
+
+            case 5029: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i(parcel.readString(), parcel.readInt());
+                parcel1.writeNoException();
+                return true;
+
+            case 5058: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readLong());
+                parcel1.writeNoException();
+                return true;
+
+            case 5059: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                k(parcel.readLong());
+                parcel1.writeNoException();
+                return true;
+
+            case 5030: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo28 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                IBinder ibinder4 = parcel.readStrongBinder();
+                i1 = parcel.readInt();
+                String as1[] = parcel.createStringArray();
+                if (parcel.readInt() != 0)
+                {
+                    obj = (Bundle)Bundle.CREATOR.createFromParcel(parcel);
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag = true;
+                }
+                a(fo28, ibinder4, i1, as1, ((Bundle) (obj)), flag, parcel.readLong());
+                parcel1.writeNoException();
+                return true;
+
+            case 5031: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                IBinder ibinder = parcel.readStrongBinder();
+                String s23 = parcel.readString();
+                boolean flag1;
+                if (parcel.readInt() != 0)
+                {
+                    flag1 = true;
+                } else
+                {
+                    flag1 = false;
+                }
+                a(fo, ibinder, s23, flag1, parcel.readLong());
+                parcel1.writeNoException();
+                return true;
+
+            case 5032: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                e(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5033: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i1 = a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.createByteArray(), parcel.readString(), parcel.readString());
+                parcel1.writeNoException();
+                parcel1.writeInt(i1);
+                return true;
+
+            case 5034: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i1 = b(parcel.createByteArray(), parcel.readString(), parcel.createStringArray());
+                parcel1.writeNoException();
+                parcel1.writeInt(i1);
+                return true;
+
+            case 5035: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = ag(parcel.readString());
+                parcel1.writeNoException();
+                parcel1.writeString(parcel);
+                return true;
+
+            case 5036: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                clearNotifications(parcel.readInt());
+                parcel1.writeNoException();
+                return true;
+
+            case 5037: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                f(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5038: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                b(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5039: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo1 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s7 = parcel.readString();
+                String s24 = parcel.readString();
+                i1 = parcel.readInt();
+                j1 = parcel.readInt();
+                k1 = parcel.readInt();
+                boolean flag2 = flag48;
+                if (parcel.readInt() != 0)
+                {
+                    flag2 = true;
+                }
+                a(fo1, s7, s24, i1, j1, k1, flag2);
+                parcel1.writeNoException();
+                return true;
+
+            case 5040: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo2 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s8 = parcel.readString();
+                String s25 = parcel.readString();
+                i1 = parcel.readInt();
+                j1 = parcel.readInt();
+                k1 = parcel.readInt();
+                boolean flag3 = flag49;
+                if (parcel.readInt() != 0)
+                {
+                    flag3 = true;
+                }
+                b(fo2, s8, s25, i1, j1, k1, flag3);
+                parcel1.writeNoException();
+                return true;
+
+            case 5041: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                c(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5042: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                g(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5043: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                h(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5044: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo3 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                i1 = parcel.readInt();
+                j1 = parcel.readInt();
+                boolean flag4;
+                boolean flag31;
+                if (parcel.readInt() != 0)
+                {
+                    flag4 = true;
+                } else
+                {
+                    flag4 = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag31 = true;
+                } else
+                {
+                    flag31 = false;
+                }
+                a(fo3, i1, j1, flag4, flag31);
+                parcel1.writeNoException();
+                return true;
+
+            case 5045: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo4 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s9 = parcel.readString();
+                i1 = parcel.readInt();
+                boolean flag5;
+                boolean flag32;
+                if (parcel.readInt() != 0)
+                {
+                    flag5 = true;
+                } else
+                {
+                    flag5 = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag32 = true;
+                } else
+                {
+                    flag32 = false;
+                }
+                a(fo4, s9, i1, flag5, flag32);
+                parcel1.writeNoException();
+                return true;
+
+            case 5046: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo5 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                i1 = parcel.readInt();
+                boolean flag6;
+                boolean flag33;
+                if (parcel.readInt() != 0)
+                {
+                    flag6 = true;
+                } else
+                {
+                    flag6 = false;
+                }
+                flag33 = flag42;
+                if (parcel.readInt() != 0)
+                {
+                    flag33 = true;
+                }
+                b(fo5, i1, flag6, flag33);
+                parcel1.writeNoException();
+                return true;
+
+            case 5047: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                f(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()));
+                parcel1.writeNoException();
+                return true;
+
+            case 5048: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo6 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                i1 = parcel.readInt();
+                boolean flag7;
+                boolean flag34;
+                if (parcel.readInt() != 0)
+                {
+                    flag7 = true;
+                } else
+                {
+                    flag7 = false;
+                }
+                flag34 = flag45;
+                if (parcel.readInt() != 0)
+                {
+                    flag34 = true;
+                }
+                c(fo6, i1, flag7, flag34);
+                parcel1.writeNoException();
+                return true;
+
+            case 5049: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                g(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()));
+                parcel1.writeNoException();
+                return true;
+
+            case 5050: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                ah(parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5051: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                b(parcel.readString(), parcel.readString(), parcel.readInt());
+                parcel1.writeNoException();
+                return true;
+
+            case 5052: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5053: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = j(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 5060: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i1 = ai(parcel.readString());
+                parcel1.writeNoException();
+                parcel1.writeInt(i1);
+                return true;
+
+            case 5054: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo7 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s10 = parcel.readString();
+                boolean flag8 = flag50;
+                if (parcel.readInt() != 0)
+                {
+                    flag8 = true;
+                }
+                a(fo7, s10, flag8);
+                parcel1.writeNoException();
+                return true;
+
+            case 5061: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                k(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5055: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                k(parcel.readString(), parcel.readInt());
+                parcel1.writeNoException();
+                return true;
+
+            case 5067: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                boolean flag9 = dh();
+                parcel1.writeNoException();
+                i1 = k1;
+                if (flag9)
+                {
+                    i1 = 1;
+                }
+                parcel1.writeInt(i1);
+                return true;
+
+            case 5068: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                boolean flag10 = flag51;
+                if (parcel.readInt() != 0)
+                {
+                    flag10 = true;
+                }
+                s(flag10);
+                parcel1.writeNoException();
+                return true;
+
+            case 5056: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                h(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()));
+                parcel1.writeNoException();
+                return true;
+
+            case 5057: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                l(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 5062: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()));
+                parcel1.writeNoException();
+                return true;
+
+            case 5063: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo8 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                boolean flag11 = flag52;
+                if (parcel.readInt() != 0)
+                {
+                    flag11 = true;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    parcel = (Bundle)Bundle.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    parcel = null;
+                }
+                a(fo8, flag11, parcel);
+                parcel1.writeNoException();
+                return true;
+
+            case 5066: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = aj(parcel.readString());
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 5501: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo9 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s11 = parcel.readString();
+                i1 = parcel.readInt();
+                boolean flag12;
+                boolean flag35;
+                if (parcel.readInt() != 0)
+                {
+                    flag12 = true;
+                } else
+                {
+                    flag12 = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag35 = true;
+                } else
+                {
+                    flag35 = false;
+                }
+                b(fo9, s11, i1, flag12, flag35);
+                parcel1.writeNoException();
+                return true;
+
+            case 5502: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = di();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 6001: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo10 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                boolean flag13 = flag53;
+                if (parcel.readInt() != 0)
+                {
+                    flag13 = true;
+                }
+                a(fo10, flag13);
+                parcel1.writeNoException();
+                return true;
+
+            case 6002: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo11 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s12 = parcel.readString();
+                String s26 = parcel.readString();
+                boolean flag14 = flag54;
+                if (parcel.readInt() != 0)
+                {
+                    flag14 = true;
+                }
+                a(fo11, s12, s26, flag14);
+                parcel1.writeNoException();
+                return true;
+
+            case 6003: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo12 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                i1 = parcel.readInt();
+                boolean flag15;
+                boolean flag36;
+                if (parcel.readInt() != 0)
+                {
+                    flag15 = true;
+                } else
+                {
+                    flag15 = false;
+                }
+                flag36 = flag46;
+                if (parcel.readInt() != 0)
+                {
+                    flag36 = true;
+                }
+                d(fo12, i1, flag15, flag36);
+                parcel1.writeNoException();
+                return true;
+
+            case 6004: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo13 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                i1 = parcel.readInt();
+                boolean flag16;
+                boolean flag37;
+                if (parcel.readInt() != 0)
+                {
+                    flag16 = true;
+                } else
+                {
+                    flag16 = false;
+                }
+                flag37 = flag47;
+                if (parcel.readInt() != 0)
+                {
+                    flag37 = true;
+                }
+                e(fo13, i1, flag16, flag37);
+                parcel1.writeNoException();
+                return true;
+
+            case 6501: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo14 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s13 = parcel.readString();
+                i1 = parcel.readInt();
+                boolean flag17;
+                boolean flag38;
+                boolean flag43;
+                if (parcel.readInt() != 0)
+                {
+                    flag17 = true;
+                } else
+                {
+                    flag17 = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag38 = true;
+                } else
+                {
+                    flag38 = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag43 = true;
+                } else
+                {
+                    flag43 = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag44 = true;
+                }
+                a(fo14, s13, i1, flag17, flag38, flag43, flag44);
+                parcel1.writeNoException();
+                return true;
+
+            case 6502: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo15 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s14 = parcel.readString();
+                boolean flag18 = flag55;
+                if (parcel.readInt() != 0)
+                {
+                    flag18 = true;
+                }
+                b(fo15, s14, flag18);
+                parcel1.writeNoException();
+                return true;
+
+            case 6503: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo16 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                boolean flag19 = flag56;
+                if (parcel.readInt() != 0)
+                {
+                    flag19 = true;
+                }
+                b(fo16, flag19);
+                parcel1.writeNoException();
+                return true;
+
+            case 6504: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo17 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s15 = parcel.readString();
+                boolean flag20 = flag57;
+                if (parcel.readInt() != 0)
+                {
+                    flag20 = true;
+                }
+                c(fo17, s15, flag20);
+                parcel1.writeNoException();
+                return true;
+
+            case 6505: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo18 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s16 = parcel.readString();
+                boolean flag21 = flag58;
+                if (parcel.readInt() != 0)
+                {
+                    flag21 = true;
+                }
+                d(fo18, s16, flag21);
+                parcel1.writeNoException();
+                return true;
+
+            case 6506: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo19 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s17 = parcel.readString();
+                String s27 = parcel.readString();
+                boolean flag22 = flag59;
+                if (parcel.readInt() != 0)
+                {
+                    flag22 = true;
+                }
+                b(fo19, s17, s27, flag22);
+                parcel1.writeNoException();
+                return true;
+
+            case 6507: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                if (parcel.readInt() != 0)
+                {
+                    parcel = (Uri)Uri.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    parcel = null;
+                }
+                parcel = e(parcel);
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 7001: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                m(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 7002: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.readLong(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 7003: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo20 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s18 = parcel.readString();
+                i1 = parcel.readInt();
+                IBinder ibinder5 = parcel.readStrongBinder();
+                if (parcel.readInt() != 0)
+                {
+                    parcel = (Bundle)Bundle.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    parcel = null;
+                }
+                b(fo20, s18, i1, ibinder5, parcel);
+                parcel1.writeNoException();
+                return true;
+
+            case 8001: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.readString(), parcel.readInt(), parcel.readInt());
+                parcel1.writeNoException();
+                return true;
+
+            case 8002: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                ak(parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8003: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.createIntArray());
+                parcel1.writeNoException();
+                return true;
+
+            case 8004: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo21 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                i1 = parcel.readInt();
+                j1 = parcel.readInt();
+                String as[] = parcel.createStringArray();
+                if (parcel.readInt() != 0)
+                {
+                    parcel = (Bundle)Bundle.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    parcel = null;
+                }
+                a(fo21, i1, j1, as, parcel);
+                parcel1.writeNoException();
+                return true;
+
+            case 8005: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                n(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8006: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                o(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8007: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.createByteArray(), parcel.readString(), (ParticipantResult[])parcel.createTypedArray(ParticipantResult.CREATOR));
+                parcel1.writeNoException();
+                return true;
+
+            case 8008: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.createByteArray(), (ParticipantResult[])parcel.createTypedArray(ParticipantResult.CREATOR));
+                parcel1.writeNoException();
+                return true;
+
+            case 8009: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                p(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8010: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                q(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8011: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                d(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8012: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                b(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readLong());
+                parcel1.writeNoException();
+                return true;
+
+            case 8013: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                l(parcel.readLong());
+                parcel1.writeNoException();
+                return true;
+
+            case 8014: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                r(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8024: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i1 = getMaxTurnBasedMatchDataSize();
+                parcel1.writeNoException();
+                parcel1.writeInt(i1);
+                return true;
+
+            case 8025: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                f(parcel.readString(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8015: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                e(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8016: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                f(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8017: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString(), parcel.createIntArray());
+                parcel1.writeNoException();
+                return true;
+
+            case 8026: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                c(parcel.readString(), parcel.readString(), parcel.readInt());
+                parcel1.writeNoException();
+                return true;
+
+            case 8018: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readLong(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8019: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                a(parcel.readLong(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8020: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                b(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readLong(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8021: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                b(parcel.readLong(), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 8022: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                dj();
+                parcel1.writeNoException();
+                return true;
+
+            case 8023: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo22 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s19 = parcel.readString();
+                i1 = parcel.readInt();
+                boolean flag23 = flag60;
+                if (parcel.readInt() != 0)
+                {
+                    flag23 = true;
+                }
+                a(fo22, s19, i1, flag23);
+                parcel1.writeNoException();
+                return true;
+
+            case 8027: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo23 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                boolean flag24 = flag61;
+                if (parcel.readInt() != 0)
+                {
+                    flag24 = true;
+                }
+                c(fo23, flag24);
+                parcel1.writeNoException();
+                return true;
+
+            case 9001: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo24 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s20 = parcel.readString();
+                i1 = parcel.readInt();
+                boolean flag25;
+                boolean flag39;
+                if (parcel.readInt() != 0)
+                {
+                    flag25 = true;
+                } else
+                {
+                    flag25 = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag39 = true;
+                } else
+                {
+                    flag39 = false;
+                }
+                c(fo24, s20, i1, flag25, flag39);
+                parcel1.writeNoException();
+                return true;
+
+            case 9002: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                s(com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder()), parcel.readString());
+                parcel1.writeNoException();
+                return true;
+
+            case 9003: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getAllLeaderboardsIntent();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9004: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getLeaderboardIntent(parcel.readString());
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9005: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getAchievementsIntent();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9006: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getMatchInboxIntent();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9007: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getInvitationInboxIntent();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9008: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i1 = parcel.readInt();
+                j1 = parcel.readInt();
+                boolean flag26;
+                if (parcel.readInt() != 0)
+                {
+                    flag26 = true;
+                } else
+                {
+                    flag26 = false;
+                }
+                parcel = getTurnBasedSelectOpponentsIntent(i1, j1, flag26);
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9009: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i1 = parcel.readInt();
+                j1 = parcel.readInt();
+                boolean flag27;
+                if (parcel.readInt() != 0)
+                {
+                    flag27 = true;
+                } else
+                {
+                    flag27 = false;
+                }
+                parcel = getRealTimeSelectOpponentsIntent(i1, j1, flag27);
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9010: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getPlayerSearchIntent();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9011: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                RoomEntity roomentity;
+                if (parcel.readInt() != 0)
+                {
+                    roomentity = (RoomEntity)RoomEntity.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    roomentity = null;
+                }
+                parcel = a(roomentity, parcel.readInt());
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9012: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = getSettingsIntent();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9013: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = dk();
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9031: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                ParticipantEntity aparticipantentity[] = (ParticipantEntity[])parcel.createTypedArray(ParticipantEntity.CREATOR);
+                String s28 = parcel.readString();
+                String s30 = parcel.readString();
+                Uri uri;
+                if (parcel.readInt() != 0)
+                {
+                    uri = (Uri)Uri.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    uri = null;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    parcel = (Uri)Uri.CREATOR.createFromParcel(parcel);
+                } else
+                {
+                    parcel = null;
+                }
+                parcel = a(aparticipantentity, s28, s30, uri, parcel);
+                parcel1.writeNoException();
+                if (parcel != null)
+                {
+                    parcel1.writeInt(1);
+                    parcel.writeToParcel(parcel1, 1);
+                    return true;
+                } else
+                {
+                    parcel1.writeInt(0);
+                    return true;
+                }
+
+            case 9019: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                i1 = dd();
+                parcel1.writeNoException();
+                parcel1.writeInt(i1);
+                return true;
+
+            case 9020: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo25 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s21 = parcel.readString();
+                i1 = parcel.readInt();
+                boolean flag28;
+                boolean flag40;
+                if (parcel.readInt() != 0)
+                {
+                    flag28 = true;
+                } else
+                {
+                    flag28 = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag40 = true;
+                } else
+                {
+                    flag40 = false;
+                }
+                d(fo25, s21, i1, flag28, flag40);
+                parcel1.writeNoException();
+                return true;
+
+            case 9028: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                fo fo26 = com.google.android.gms.internal.fo.a.G(parcel.readStrongBinder());
+                String s22 = parcel.readString();
+                String s29 = parcel.readString();
+                i1 = parcel.readInt();
+                boolean flag29;
+                boolean flag41;
+                if (parcel.readInt() != 0)
+                {
+                    flag29 = true;
+                } else
+                {
+                    flag29 = false;
+                }
+                if (parcel.readInt() != 0)
+                {
+                    flag41 = true;
+                } else
+                {
+                    flag41 = false;
+                }
+                a(fo26, s22, s29, i1, flag29, flag41);
+                parcel1.writeNoException();
+                return true;
+
+            case 9030: 
+                parcel.enforceInterface("com.google.android.gms.games.internal.IGamesService");
+                parcel = al(parcel.readString());
+                parcel1.writeNoException();
+                break;
+            }
+            if (parcel != null)
+            {
+                parcel1.writeInt(1);
+                parcel.writeToParcel(parcel1, 1);
+                return true;
+            } else
+            {
+                parcel1.writeInt(0);
+                return true;
+            }
+        }
+    }
+
+    private static class a.a
+        implements fp
+    {
+
+        private IBinder dU;
+
+        public int a(fo fo1, byte abyte0[], String s1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_96;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            int i1;
+            parcel.writeStrongBinder(fo1);
+            parcel.writeByteArray(abyte0);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            dU.transact(5033, parcel, parcel1, 0);
+            parcel1.readException();
+            i1 = parcel1.readInt();
+            parcel1.recycle();
+            parcel.recycle();
+            return i1;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public Intent a(RoomEntity roomentity, int i1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (roomentity == null) goto _L2; else goto _L1
+_L1:
+            parcel.writeInt(1);
+            roomentity.writeToParcel(parcel, 0);
+_L3:
+            parcel.writeInt(i1);
+            dU.transact(9011, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0)
+            {
+                break MISSING_BLOCK_LABEL_110;
+            }
+            roomentity = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return roomentity;
+_L2:
+            parcel.writeInt(0);
+              goto _L3
+            roomentity;
+            parcel1.recycle();
+            parcel.recycle();
+            throw roomentity;
+            roomentity = null;
+              goto _L4
+        }
+
+        public Intent a(ParticipantEntity aparticipantentity[], String s1, String s2, Uri uri, Uri uri1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeTypedArray(aparticipantentity, 0);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            if (uri == null) goto _L2; else goto _L1
+_L1:
+            parcel.writeInt(1);
+            uri.writeToParcel(parcel, 0);
+_L5:
+            if (uri1 == null) goto _L4; else goto _L3
+_L3:
+            parcel.writeInt(1);
+            uri1.writeToParcel(parcel, 0);
+_L6:
+            dU.transact(9031, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0)
+            {
+                break MISSING_BLOCK_LABEL_162;
+            }
+            aparticipantentity = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L7:
+            parcel1.recycle();
+            parcel.recycle();
+            return aparticipantentity;
+_L2:
+            parcel.writeInt(0);
+              goto _L5
+            aparticipantentity;
+            parcel1.recycle();
+            parcel.recycle();
+            throw aparticipantentity;
+_L4:
+            parcel.writeInt(0);
+              goto _L6
+            aparticipantentity = null;
+              goto _L7
+        }
+
+        public void a(long l1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeLong(l1);
+            parcel.writeString(s1);
+            dU.transact(8019, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void a(IBinder ibinder, Bundle bundle)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeStrongBinder(ibinder);
+            if (bundle == null)
+            {
+                break MISSING_BLOCK_LABEL_67;
+            }
+            parcel.writeInt(1);
+            bundle.writeToParcel(parcel, 0);
+_L1:
+            dU.transact(5005, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            parcel.writeInt(0);
+              goto _L1
+            ibinder;
+            parcel1.recycle();
+            parcel.recycle();
+            throw ibinder;
+        }
+
+        public void a(fo fo1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_59;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            dU.transact(5002, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, int i1, int j1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_110;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5044, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, int i1, int j1, String as[], Bundle bundle)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null) goto _L2; else goto _L1
+_L1:
+            fo1 = fo1.asBinder();
+_L5:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            parcel.writeStringArray(as);
+            if (bundle == null) goto _L4; else goto _L3
+_L3:
+            parcel.writeInt(1);
+            bundle.writeToParcel(parcel, 0);
+_L6:
+            dU.transact(8004, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+_L2:
+            fo1 = null;
+              goto _L5
+_L4:
+            parcel.writeInt(0);
+              goto _L6
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+              goto _L5
+        }
+
+        public void a(fo fo1, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_103;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5015, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, long l1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_74;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeLong(l1);
+            dU.transact(5058, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, long l1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_81;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeLong(l1);
+            parcel.writeString(s1);
+            dU.transact(8018, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, Bundle bundle, int i1, int j1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null) goto _L2; else goto _L1
+_L1:
+            fo1 = fo1.asBinder();
+_L5:
+            parcel.writeStrongBinder(fo1);
+            if (bundle == null) goto _L4; else goto _L3
+_L3:
+            parcel.writeInt(1);
+            bundle.writeToParcel(parcel, 0);
+_L6:
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            dU.transact(5021, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+_L2:
+            fo1 = null;
+              goto _L5
+_L4:
+            parcel.writeInt(0);
+              goto _L6
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+              goto _L5
+        }
+
+        public void a(fo fo1, IBinder ibinder, int i1, String as[], Bundle bundle, boolean flag, long l1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag1;
+            flag1 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null) goto _L2; else goto _L1
+_L1:
+            fo1 = fo1.asBinder();
+_L6:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeStrongBinder(ibinder);
+            parcel.writeInt(i1);
+            parcel.writeStringArray(as);
+            if (bundle == null) goto _L4; else goto _L3
+_L3:
+            parcel.writeInt(1);
+            bundle.writeToParcel(parcel, 0);
+              goto _L5
+_L7:
+            parcel.writeInt(i1);
+            parcel.writeLong(l1);
+            dU.transact(5030, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+_L2:
+            fo1 = null;
+              goto _L6
+_L4:
+            parcel.writeInt(0);
+              goto _L5
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+_L9:
+            i1 = 0;
+              goto _L7
+_L5:
+            if (!flag) goto _L9; else goto _L8
+_L8:
+            i1 = ((flag1) ? 1 : 0);
+              goto _L7
+        }
+
+        public void a(fo fo1, IBinder ibinder, String s1, boolean flag, long l1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_105;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeStrongBinder(ibinder);
+            parcel.writeString(s1);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            parcel.writeLong(l1);
+            dU.transact(5031, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5008, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, int i1, int j1, int k1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag1;
+            flag1 = false;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_113;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            parcel.writeInt(k1);
+            i1 = ((flag1) ? 1 : 0);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5019, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, int i1, IBinder ibinder, Bundle bundle)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null) goto _L2; else goto _L1
+_L1:
+            fo1 = fo1.asBinder();
+_L5:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            parcel.writeStrongBinder(ibinder);
+            if (bundle == null) goto _L4; else goto _L3
+_L3:
+            parcel.writeInt(1);
+            bundle.writeToParcel(parcel, 0);
+_L6:
+            dU.transact(5025, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+_L2:
+            fo1 = null;
+              goto _L5
+_L4:
+            parcel.writeInt(0);
+              goto _L6
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+              goto _L5
+        }
+
+        public void a(fo fo1, String s1, int i1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag1;
+            flag1 = false;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_99;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            i1 = ((flag1) ? 1 : 0);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(8023, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_110;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5045, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, int i1, boolean flag, boolean flag1, boolean flag2, boolean flag3)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag4;
+            flag4 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_136;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag2)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag3)
+            {
+                i1 = ((flag4) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6501, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, long l1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_80;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeLong(l1);
+            dU.transact(5016, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, long l1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_87;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeLong(l1);
+            parcel.writeString(s2);
+            dU.transact(7002, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, IBinder ibinder, Bundle bundle)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null) goto _L2; else goto _L1
+_L1:
+            fo1 = fo1.asBinder();
+_L5:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeStrongBinder(ibinder);
+            if (bundle == null) goto _L4; else goto _L3
+_L3:
+            parcel.writeInt(1);
+            bundle.writeToParcel(parcel, 0);
+_L6:
+            dU.transact(5023, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+_L2:
+            fo1 = null;
+              goto _L5
+_L4:
+            parcel.writeInt(0);
+              goto _L6
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+              goto _L5
+        }
+
+        public void a(fo fo1, String s1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_80;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            dU.transact(5009, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, String s2, int i1, int j1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_94;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            dU.transact(8001, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, String s2, int i1, int j1, int k1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag1;
+            flag1 = false;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_123;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            parcel.writeInt(k1);
+            i1 = ((flag1) ? 1 : 0);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5039, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, String s2, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_121;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(9028, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, String s2, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_98;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6002, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_91;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5054, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, boolean flag, long al1[])
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_98;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            parcel.writeLongArray(al1);
+            dU.transact(5011, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, byte abyte0[], String s2, ParticipantResult aparticipantresult[])
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_95;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeByteArray(abyte0);
+            parcel.writeString(s2);
+            parcel.writeTypedArray(aparticipantresult, 0);
+            dU.transact(8007, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, byte abyte0[], ParticipantResult aparticipantresult[])
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_88;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeByteArray(abyte0);
+            parcel.writeTypedArray(aparticipantresult, 0);
+            dU.transact(8008, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, String s1, int ai1[])
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_80;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeIntArray(ai1);
+            dU.transact(8017, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_79;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6001, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void a(fo fo1, boolean flag, Bundle bundle)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null) goto _L2; else goto _L1
+_L1:
+            fo1 = fo1.asBinder();
+_L5:
+            parcel.writeStrongBinder(fo1);
+            if (!flag)
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (bundle == null) goto _L4; else goto _L3
+_L3:
+            parcel.writeInt(1);
+            bundle.writeToParcel(parcel, 0);
+_L6:
+            dU.transact(5063, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+_L2:
+            fo1 = null;
+              goto _L5
+_L4:
+            parcel.writeInt(0);
+              goto _L6
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+              goto _L5
+        }
+
+        public void a(fo fo1, int ai1[])
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeIntArray(ai1);
+            dU.transact(8003, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public Bundle aU()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(5004, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Bundle bundle = (Bundle)Bundle.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return bundle;
+_L2:
+            bundle = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public String af(String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            dU.transact(5064, parcel, parcel1, 0);
+            parcel1.readException();
+            s1 = parcel1.readString();
+            parcel1.recycle();
+            parcel.recycle();
+            return s1;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public String ag(String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            dU.transact(5035, parcel, parcel1, 0);
+            parcel1.readException();
+            s1 = parcel1.readString();
+            parcel1.recycle();
+            parcel.recycle();
+            return s1;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void ah(String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            dU.transact(5050, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public int ai(String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            int i1;
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            dU.transact(5060, parcel, parcel1, 0);
+            parcel1.readException();
+            i1 = parcel1.readInt();
+            parcel1.recycle();
+            parcel.recycle();
+            return i1;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public Uri aj(String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            dU.transact(5066, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            s1 = (Uri)Uri.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return s1;
+_L2:
+            s1 = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void ak(String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            dU.transact(8002, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public ParcelFileDescriptor al(String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            dU.transact(9030, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            s1 = (ParcelFileDescriptor)ParcelFileDescriptor.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return s1;
+_L2:
+            s1 = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public IBinder asBinder()
+        {
+            return dU;
+        }
+
+        public int b(byte abyte0[], String s1, String as[])
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            int i1;
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeByteArray(abyte0);
+            parcel.writeString(s1);
+            parcel.writeStringArray(as);
+            dU.transact(5034, parcel, parcel1, 0);
+            parcel1.readException();
+            i1 = parcel1.readInt();
+            parcel1.recycle();
+            parcel.recycle();
+            return i1;
+            abyte0;
+            parcel1.recycle();
+            parcel.recycle();
+            throw abyte0;
+        }
+
+        public void b(long l1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeLong(l1);
+            parcel.writeString(s1);
+            dU.transact(8021, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void b(fo fo1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_59;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            dU.transact(5017, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_103;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5046, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, long l1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_74;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeLong(l1);
+            dU.transact(8012, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, long l1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_81;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeLong(l1);
+            parcel.writeString(s1);
+            dU.transact(8020, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5010, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, String s1, int i1, int j1, int k1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag1;
+            flag1 = false;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_113;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            parcel.writeInt(k1);
+            i1 = ((flag1) ? 1 : 0);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5020, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, String s1, int i1, IBinder ibinder, Bundle bundle)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null) goto _L2; else goto _L1
+_L1:
+            fo1 = fo1.asBinder();
+_L5:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            parcel.writeStrongBinder(ibinder);
+            if (bundle == null) goto _L4; else goto _L3
+_L3:
+            parcel.writeInt(1);
+            bundle.writeToParcel(parcel, 0);
+_L6:
+            dU.transact(7003, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+_L2:
+            fo1 = null;
+              goto _L5
+_L4:
+            parcel.writeInt(0);
+              goto _L6
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+              goto _L5
+        }
+
+        public void b(fo fo1, String s1, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_110;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5501, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, String s1, IBinder ibinder, Bundle bundle)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null) goto _L2; else goto _L1
+_L1:
+            fo1 = fo1.asBinder();
+_L5:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeStrongBinder(ibinder);
+            if (bundle == null) goto _L4; else goto _L3
+_L3:
+            parcel.writeInt(1);
+            bundle.writeToParcel(parcel, 0);
+_L6:
+            dU.transact(5024, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+_L2:
+            fo1 = null;
+              goto _L5
+_L4:
+            parcel.writeInt(0);
+              goto _L6
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+              goto _L5
+        }
+
+        public void b(fo fo1, String s1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_80;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            dU.transact(5038, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, String s1, String s2, int i1, int j1, int k1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag1;
+            flag1 = false;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_123;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            parcel.writeInt(k1);
+            i1 = ((flag1) ? 1 : 0);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5040, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, String s1, String s2, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_98;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6506, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, String s1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_91;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6502, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(fo fo1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_79;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6503, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void b(String s1, String s2, int i1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            parcel.writeInt(i1);
+            dU.transact(5051, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void c(fo fo1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_59;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            dU.transact(5022, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void c(fo fo1, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_103;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5048, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void c(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5014, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void c(fo fo1, String s1, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_110;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(9001, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void c(fo fo1, String s1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_80;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            dU.transact(5041, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void c(fo fo1, String s1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_91;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6504, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void c(fo fo1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_79;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(8027, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void c(String s1, String s2, int i1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            parcel.writeInt(i1);
+            dU.transact(8026, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void clearNotifications(int i1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeInt(i1);
+            dU.transact(5036, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public void d(fo fo1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_59;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            dU.transact(5026, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void d(fo fo1, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_103;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6003, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void d(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5018, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void d(fo fo1, String s1, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_110;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(9020, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void d(fo fo1, String s1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_80;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            dU.transact(8011, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void d(fo fo1, String s1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_91;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6505, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public int dd()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            int i1;
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(9019, parcel, parcel1, 0);
+            parcel1.readException();
+            i1 = parcel1.readInt();
+            parcel1.recycle();
+            parcel.recycle();
+            return i1;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public void df()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(5006, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public DataHolder dg()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(5013, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            DataHolder dataholder = DataHolder.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return dataholder;
+_L2:
+            dataholder = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public boolean dh()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag;
+            flag = false;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            int i1;
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(5067, parcel, parcel1, 0);
+            parcel1.readException();
+            i1 = parcel1.readInt();
+            if (i1 != 0)
+            {
+                flag = true;
+            }
+            parcel1.recycle();
+            parcel.recycle();
+            return flag;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public DataHolder di()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(5502, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            DataHolder dataholder = DataHolder.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return dataholder;
+_L2:
+            dataholder = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public void dj()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(8022, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public Intent dk()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(9013, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Intent intent = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return intent;
+_L2:
+            intent = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public ParcelFileDescriptor e(Uri uri)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (uri == null) goto _L2; else goto _L1
+_L1:
+            parcel.writeInt(1);
+            uri.writeToParcel(parcel, 0);
+_L3:
+            dU.transact(6507, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0)
+            {
+                break MISSING_BLOCK_LABEL_98;
+            }
+            uri = (ParcelFileDescriptor)ParcelFileDescriptor.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return uri;
+_L2:
+            parcel.writeInt(0);
+              goto _L3
+            uri;
+            parcel1.recycle();
+            parcel.recycle();
+            throw uri;
+            uri = null;
+              goto _L4
+        }
+
+        public void e(fo fo1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_59;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            dU.transact(5027, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void e(fo fo1, int i1, boolean flag, boolean flag1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag2;
+            flag2 = true;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_103;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeInt(i1);
+            if (flag)
+            {
+                i1 = 1;
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            if (flag1)
+            {
+                i1 = ((flag2) ? 1 : 0);
+            } else
+            {
+                i1 = 0;
+            }
+            parcel.writeInt(i1);
+            dU.transact(6004, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void e(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5032, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void e(fo fo1, String s1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_80;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            dU.transact(8015, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void e(String s1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            dU.transact(5065, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void f(fo fo1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_59;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            dU.transact(5047, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void f(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5037, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void f(fo fo1, String s1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_80;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            dU.transact(8016, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void f(String s1, String s2)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            parcel.writeString(s2);
+            dU.transact(8025, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void g(fo fo1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_59;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            dU.transact(5049, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void g(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5042, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public Intent getAchievementsIntent()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(9005, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Intent intent = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return intent;
+_L2:
+            intent = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public Intent getAllLeaderboardsIntent()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(9003, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Intent intent = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return intent;
+_L2:
+            intent = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public String getAppId()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            String s1;
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(5003, parcel, parcel1, 0);
+            parcel1.readException();
+            s1 = parcel1.readString();
+            parcel1.recycle();
+            parcel.recycle();
+            return s1;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public String getCurrentAccountName()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            String s1;
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(5007, parcel, parcel1, 0);
+            parcel1.readException();
+            s1 = parcel1.readString();
+            parcel1.recycle();
+            parcel.recycle();
+            return s1;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public String getCurrentPlayerId()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            String s1;
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(5012, parcel, parcel1, 0);
+            parcel1.readException();
+            s1 = parcel1.readString();
+            parcel1.recycle();
+            parcel.recycle();
+            return s1;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public Intent getInvitationInboxIntent()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(9007, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Intent intent = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return intent;
+_L2:
+            intent = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public Intent getLeaderboardIntent(String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            dU.transact(9004, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            s1 = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return s1;
+_L2:
+            s1 = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public Intent getMatchInboxIntent()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(9006, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Intent intent = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return intent;
+_L2:
+            intent = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public int getMaxTurnBasedMatchDataSize()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            int i1;
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(8024, parcel, parcel1, 0);
+            parcel1.readException();
+            i1 = parcel1.readInt();
+            parcel1.recycle();
+            parcel.recycle();
+            return i1;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public Intent getPlayerSearchIntent()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(9010, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Intent intent = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return intent;
+_L2:
+            intent = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public Intent getRealTimeSelectOpponentsIntent(int i1, int j1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag1;
+            flag1 = false;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            i1 = ((flag1) ? 1 : 0);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(9009, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Intent intent = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return intent;
+_L2:
+            intent = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public Intent getSettingsIntent()
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            dU.transact(9012, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Intent intent = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return intent;
+_L2:
+            intent = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public Intent getTurnBasedSelectOpponentsIntent(int i1, int j1, boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            boolean flag1;
+            flag1 = false;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeInt(i1);
+            parcel.writeInt(j1);
+            i1 = ((flag1) ? 1 : 0);
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(9008, parcel, parcel1, 0);
+            parcel1.readException();
+            if (parcel1.readInt() == 0) goto _L2; else goto _L1
+_L1:
+            Intent intent = (Intent)Intent.CREATOR.createFromParcel(parcel1);
+_L4:
+            parcel1.recycle();
+            parcel.recycle();
+            return intent;
+_L2:
+            intent = null;
+            if (true) goto _L4; else goto _L3
+_L3:
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public void h(fo fo1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_59;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            dU.transact(5056, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void h(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5043, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void i(fo fo1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_59;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            dU.transact(5062, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void i(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5052, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void i(String s1, int i1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            dU.transact(5029, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public DataHolder j(fo fo1, String s1)
+            throws RemoteException
+        {
+            Object obj;
+            Parcel parcel;
+            Parcel parcel1;
+            obj = null;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_96;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5053, parcel, parcel1, 0);
+            parcel1.readException();
+            fo1 = obj;
+            if (parcel1.readInt() != 0)
+            {
+                fo1 = DataHolder.CREATOR.createFromParcel(parcel1);
+            }
+            parcel1.recycle();
+            parcel.recycle();
+            return fo1;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void j(long l1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeLong(l1);
+            dU.transact(5001, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public void j(String s1, int i1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            dU.transact(5028, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void k(long l1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeLong(l1);
+            dU.transact(5059, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public void k(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5061, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void k(String s1, int i1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeString(s1);
+            parcel.writeInt(i1);
+            dU.transact(5055, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            s1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw s1;
+        }
+
+        public void l(long l1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            parcel.writeLong(l1);
+            dU.transact(8013, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        public void l(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(5057, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void m(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(7001, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void n(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(8005, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void o(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(8006, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void p(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(8009, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void q(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(8010, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void r(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(8014, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void s(fo fo1, String s1)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (fo1 == null)
+            {
+                break MISSING_BLOCK_LABEL_68;
+            }
+            fo1 = fo1.asBinder();
+_L1:
+            parcel.writeStrongBinder(fo1);
+            parcel.writeString(s1);
+            dU.transact(9002, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            fo1 = null;
+              goto _L1
+            fo1;
+            parcel1.recycle();
+            parcel.recycle();
+            throw fo1;
+        }
+
+        public void s(boolean flag)
+            throws RemoteException
+        {
+            Parcel parcel;
+            Parcel parcel1;
+            int i1;
+            i1 = 0;
+            parcel = Parcel.obtain();
+            parcel1 = Parcel.obtain();
+            parcel.writeInterfaceToken("com.google.android.gms.games.internal.IGamesService");
+            if (flag)
+            {
+                i1 = 1;
+            }
+            parcel.writeInt(i1);
+            dU.transact(5068, parcel, parcel1, 0);
+            parcel1.readException();
+            parcel1.recycle();
+            parcel.recycle();
+            return;
+            Exception exception;
+            exception;
+            parcel1.recycle();
+            parcel.recycle();
+            throw exception;
+        }
+
+        a.a(IBinder ibinder)
+        {
+            dU = ibinder;
+        }
+    }
+
+
+    public abstract int a(fo fo, byte abyte0[], String s1, String s2)
+        throws RemoteException;
+
+    public abstract Intent a(RoomEntity roomentity, int i1)
+        throws RemoteException;
+
+    public abstract Intent a(ParticipantEntity aparticipantentity[], String s1, String s2, Uri uri, Uri uri1)
+        throws RemoteException;
+
+    public abstract void a(long l1, String s1)
+        throws RemoteException;
+
+    public abstract void a(IBinder ibinder, Bundle bundle)
+        throws RemoteException;
+
+    public abstract void a(fo fo)
+        throws RemoteException;
+
+    public abstract void a(fo fo, int i1, int j1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, int i1, int j1, String as[], Bundle bundle)
+        throws RemoteException;
+
+    public abstract void a(fo fo, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, long l1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, long l1, String s1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, Bundle bundle, int i1, int j1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, IBinder ibinder, int i1, String as[], Bundle bundle, boolean flag, long l1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, IBinder ibinder, String s1, boolean flag, long l1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, int i1, int j1, int k1, boolean flag)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, int i1, IBinder ibinder, Bundle bundle)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, int i1, boolean flag)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, int i1, boolean flag, boolean flag1, boolean flag2, boolean flag3)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, long l1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, long l1, String s2)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, IBinder ibinder, Bundle bundle)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, String s2)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, String s2, int i1, int j1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, String s2, int i1, int j1, int k1, boolean flag)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, String s2, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, String s2, boolean flag)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, boolean flag)
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, boolean flag, long al1[])
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, byte abyte0[], String s2, ParticipantResult aparticipantresult[])
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, byte abyte0[], ParticipantResult aparticipantresult[])
+        throws RemoteException;
+
+    public abstract void a(fo fo, String s1, int ai1[])
+        throws RemoteException;
+
+    public abstract void a(fo fo, boolean flag)
+        throws RemoteException;
+
+    public abstract void a(fo fo, boolean flag, Bundle bundle)
+        throws RemoteException;
+
+    public abstract void a(fo fo, int ai1[])
+        throws RemoteException;
+
+    public abstract Bundle aU()
+        throws RemoteException;
+
+    public abstract String af(String s1)
+        throws RemoteException;
+
+    public abstract String ag(String s1)
+        throws RemoteException;
+
+    public abstract void ah(String s1)
+        throws RemoteException;
+
+    public abstract int ai(String s1)
+        throws RemoteException;
+
+    public abstract Uri aj(String s1)
+        throws RemoteException;
+
+    public abstract void ak(String s1)
+        throws RemoteException;
+
+    public abstract ParcelFileDescriptor al(String s1)
+        throws RemoteException;
+
+    public abstract int b(byte abyte0[], String s1, String as[])
+        throws RemoteException;
+
+    public abstract void b(long l1, String s1)
+        throws RemoteException;
+
+    public abstract void b(fo fo)
+        throws RemoteException;
+
+    public abstract void b(fo fo, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void b(fo fo, long l1)
+        throws RemoteException;
+
+    public abstract void b(fo fo, long l1, String s1)
+        throws RemoteException;
+
+    public abstract void b(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void b(fo fo, String s1, int i1, int j1, int k1, boolean flag)
+        throws RemoteException;
+
+    public abstract void b(fo fo, String s1, int i1, IBinder ibinder, Bundle bundle)
+        throws RemoteException;
+
+    public abstract void b(fo fo, String s1, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void b(fo fo, String s1, IBinder ibinder, Bundle bundle)
+        throws RemoteException;
+
+    public abstract void b(fo fo, String s1, String s2)
+        throws RemoteException;
+
+    public abstract void b(fo fo, String s1, String s2, int i1, int j1, int k1, boolean flag)
+        throws RemoteException;
+
+    public abstract void b(fo fo, String s1, String s2, boolean flag)
+        throws RemoteException;
+
+    public abstract void b(fo fo, String s1, boolean flag)
+        throws RemoteException;
+
+    public abstract void b(fo fo, boolean flag)
+        throws RemoteException;
+
+    public abstract void b(String s1, String s2, int i1)
+        throws RemoteException;
+
+    public abstract void c(fo fo)
+        throws RemoteException;
+
+    public abstract void c(fo fo, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void c(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void c(fo fo, String s1, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void c(fo fo, String s1, String s2)
+        throws RemoteException;
+
+    public abstract void c(fo fo, String s1, boolean flag)
+        throws RemoteException;
+
+    public abstract void c(fo fo, boolean flag)
+        throws RemoteException;
+
+    public abstract void c(String s1, String s2, int i1)
+        throws RemoteException;
+
+    public abstract void clearNotifications(int i1)
+        throws RemoteException;
+
+    public abstract void d(fo fo)
+        throws RemoteException;
+
+    public abstract void d(fo fo, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void d(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void d(fo fo, String s1, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void d(fo fo, String s1, String s2)
+        throws RemoteException;
+
+    public abstract void d(fo fo, String s1, boolean flag)
+        throws RemoteException;
+
+    public abstract int dd()
+        throws RemoteException;
+
+    public abstract void df()
+        throws RemoteException;
+
+    public abstract DataHolder dg()
+        throws RemoteException;
+
+    public abstract boolean dh()
+        throws RemoteException;
+
+    public abstract DataHolder di()
+        throws RemoteException;
+
+    public abstract void dj()
+        throws RemoteException;
+
+    public abstract Intent dk()
+        throws RemoteException;
+
+    public abstract ParcelFileDescriptor e(Uri uri)
+        throws RemoteException;
+
+    public abstract void e(fo fo)
+        throws RemoteException;
+
+    public abstract void e(fo fo, int i1, boolean flag, boolean flag1)
+        throws RemoteException;
+
+    public abstract void e(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void e(fo fo, String s1, String s2)
+        throws RemoteException;
+
+    public abstract void e(String s1, String s2)
+        throws RemoteException;
+
+    public abstract void f(fo fo)
+        throws RemoteException;
+
+    public abstract void f(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void f(fo fo, String s1, String s2)
+        throws RemoteException;
+
+    public abstract void f(String s1, String s2)
+        throws RemoteException;
+
+    public abstract void g(fo fo)
+        throws RemoteException;
+
+    public abstract void g(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract Intent getAchievementsIntent()
+        throws RemoteException;
+
+    public abstract Intent getAllLeaderboardsIntent()
+        throws RemoteException;
+
+    public abstract String getAppId()
+        throws RemoteException;
+
+    public abstract String getCurrentAccountName()
+        throws RemoteException;
+
+    public abstract String getCurrentPlayerId()
+        throws RemoteException;
+
+    public abstract Intent getInvitationInboxIntent()
+        throws RemoteException;
+
+    public abstract Intent getLeaderboardIntent(String s1)
+        throws RemoteException;
+
+    public abstract Intent getMatchInboxIntent()
+        throws RemoteException;
+
+    public abstract int getMaxTurnBasedMatchDataSize()
+        throws RemoteException;
+
+    public abstract Intent getPlayerSearchIntent()
+        throws RemoteException;
+
+    public abstract Intent getRealTimeSelectOpponentsIntent(int i1, int j1, boolean flag)
+        throws RemoteException;
+
+    public abstract Intent getSettingsIntent()
+        throws RemoteException;
+
+    public abstract Intent getTurnBasedSelectOpponentsIntent(int i1, int j1, boolean flag)
+        throws RemoteException;
+
+    public abstract void h(fo fo)
+        throws RemoteException;
+
+    public abstract void h(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void i(fo fo)
+        throws RemoteException;
+
+    public abstract void i(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void i(String s1, int i1)
+        throws RemoteException;
+
+    public abstract DataHolder j(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void j(long l1)
+        throws RemoteException;
+
+    public abstract void j(String s1, int i1)
+        throws RemoteException;
+
+    public abstract void k(long l1)
+        throws RemoteException;
+
+    public abstract void k(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void k(String s1, int i1)
+        throws RemoteException;
+
+    public abstract void l(long l1)
+        throws RemoteException;
+
+    public abstract void l(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void m(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void n(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void o(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void p(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void q(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void r(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void s(fo fo, String s1)
+        throws RemoteException;
+
+    public abstract void s(boolean flag)
+        throws RemoteException;
+}

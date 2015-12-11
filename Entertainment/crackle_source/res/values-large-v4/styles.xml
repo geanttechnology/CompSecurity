@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CaptionSettingsTheme" parent="@style/AbsTheme">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="AbsTheme" parent="@style/Theme.AppCompat">
+        <item name="android:dropDownListViewStyle">@style/Theme.MyAppTheme.SpinnerDropDown</item>
+        <item name="android:actionBarStyle">@style/Theme.MyAppTheme.ActionBar</item>
+        <item name="android:actionBarTabStyle">@style/Theme.MyAppTheme.ActionBarTab</item>
+        <item name="android:actionBarTabTextStyle">@style/Theme.MyAppTheme.MyTabText</item>
+        <item name="actionBarTabStyle">@style/Theme.MyAppTheme.ActionBarTab</item>
+        <item name="actionBarTabTextStyle">@style/Theme.MyAppTheme.MyTabText</item>
+        <item name="actionBarStyle">@style/Theme.MyAppTheme.ActionBar</item>
+    </style>
+    <style name="Theme.MyAppTheme.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/actionbar_line_style</item>
+        <item name="android:listItemLayout">@drawable/actionbar_tab_style_nselected</item>
+        <item name="background">@drawable/actionbar_line_style</item>
+        <item name="backgroundStacked">@drawable/actionbar_tab_style_nselected</item>
+    </style>
+    <style name="Theme.MyAppTheme.MyTabText" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textStyle">@null</item>
+    </style>
+    <style name="Theme.MyAppTheme.SpinnerDropDown" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">#ff444444</item>
+        <item name="android:dividerHeight">1.0dip</item>
+    </style>
+    <style name="AbsThemeLeanBackMain" parent="@style/AbsTheme">
+        <item name="android:actionBarStyle">@style/Theme.MyAppTheme.ActionBarLeanBackMain</item>
+        <item name="android:actionBarTabStyle">@style/Theme.MyAppTheme.ActionBarTabLeanBack</item>
+    </style>
+    <style name="Theme.MyAppTheme.ActionBarLeanBackMain" parent="@style/Theme.MyAppTheme.ActionBar">
+        <item name="android:height">60.0dip</item>
+    </style>
+    <style name="Theme.MyAppTheme.ActionBarTabLeanBack" parent="@style/Theme.MyAppTheme.ActionBarTab">
+        <item name="android:paddingTop">20.0dip</item>
+    </style>
+</resources>

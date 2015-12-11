@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/list_bg" android:background="@drawable/homeitembg" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:id="@id/ringtoneicon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/titletextcolor" android:ellipsize="end" android:id="@id/ringtonetitle" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:text="title" android:singleLine="true" android:layout_toRightOf="@id/ringtoneicon" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="10.0sp" android:textColor="@color/titletextcolor" android:id="@id/ringtonecat" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:text="cat" android:layout_toRightOf="@id/ringtoneicon" android:layout_below="@id/ringtonetitle" />
+        <RatingBar android:id="@id/ringtone_ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/ringtoneicon" android:layout_below="@id/ringtonecat" style="?android:attr/ratingBarStyleSmall" />
+        <Button android:textSize="12.0sp" android:id="@id/ringtone_download_bt" android:background="@drawable/appdown" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

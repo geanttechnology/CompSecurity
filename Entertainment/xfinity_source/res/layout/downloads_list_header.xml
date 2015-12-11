@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/list_header" style="@style/ListHeaderNav">
+        <LinearLayout android:gravity="center" android:id="@id/recentSort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip">
+            <Button android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:text="@string/sort_downloaded_recently" style="@style/sort_btn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/alphabetSort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip">
+            <Button android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:text="@string/sort_downloads_alphabetical" style="@style/sort_btn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/expiringSort" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Button android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:text="@string/sort_downloads_expiring" style="@style/sort_btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="#55000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:contentDescription="@null" />
+</LinearLayout>

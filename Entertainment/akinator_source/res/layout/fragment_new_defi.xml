@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutNewDefi" android:background="@drawable/white_rect" android:padding="10.0dip" android:layout_width="@dimen/defi_width" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageDefi" android:layout_width="@dimen/defi_image_size" android:layout_height="@dimen/defi_image_size" android:layout_marginLeft="10.0dip" android:src="@drawable/ak_icon_bouton_unpressed_defi1" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/imageDefi" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/defi_titre" android:textStyle="bold" android:textColor="@color/buttons_text_color" android:id="@id/titreDefiGeneral" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GENERAL_DEFI" />
+        <TextView android:textSize="@dimen/defi_sous_titre" android:textColor="@color/buttons_text_color" android:id="@id/titreDefi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="TITRE_NOUVEAU_DEFI" />
+    </LinearLayout>
+</RelativeLayout>

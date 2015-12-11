@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.cmasl.android.util.view.widget.CheckableLinearLayout android:orientation="vertical" android:background="@drawable/multi_select_no_background_item_frame" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="24.0dip" android:paddingBottom="24.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:ellipsize="end" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_series_title_text" android:maxLines="2" style="@style/Large" />
+            <TextView android:id="@id/season_episode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_season_episode_text" style="@style/SmallRegularLightGray" />
+            <ImageView android:id="@id/network_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+            <TextView android:id="@id/network_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/test_network_name" android:singleLine="true" style="@style/Metadata" />
+            <TextView android:id="@id/progress_indicator" android:visibility="gone" android:layout_marginTop="3.0dip" style="@style/ProgressIndicator" />
+        </LinearLayout>
+        <LinearLayout android:state_enabled="false" android:layout_gravity="right|center" android:id="@id/play_button" android:layout_width="120.0dip" android:layout_marginRight="10.0dip" style="@style/EntitledPlayButton">
+            <include layout="@layout/button_children" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.xfinity.playerlib.view.widget.DownloadProgressBar android:id="@id/in_progress_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/download_item_padding_left" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/downloaded_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/expiration_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_expiration_text" android:lines="2" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+</com.comcast.cim.cmasl.android.util.view.widget.CheckableLinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/min_controls" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_below="@id/text"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+    <ImageView android:id="@id/subtract_time_icon" android:paddingLeft="@dimen/timer_dialog_button_horizontal_padding" android:paddingTop="14.0dip" android:paddingRight="@dimen/timer_dialog_button_horizontal_padding" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_remove_circle_outline_black_24" android:contentDescription="@string/accessibility_subtract_time" />
+    <SeekBar android:id="@id/time_limit_seek_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progress="30" android:layout_weight="1.0" />
+    <ImageView android:id="@id/add_time_icon" android:paddingLeft="@dimen/timer_dialog_button_horizontal_padding" android:paddingTop="14.0dip" android:paddingRight="@dimen/timer_dialog_button_horizontal_padding" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_add_circle_outline_black_24" android:contentDescription="@string/accessibility_add_time" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/min_display" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="@dimen/timer_dialog_minutes_text_size" android:textStyle="bold" android:textColor="@color/highlight_font" android:layout_gravity="center_horizontal" android:id="@id/time_limit_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" ytkids:roboto2Font="medium" />
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="14.0sp" android:textColor="@color/time_limit_minutes_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_limit_minutes" />
+    </LinearLayout>
+</LinearLayout>

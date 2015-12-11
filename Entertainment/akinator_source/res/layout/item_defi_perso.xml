@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/minibaseItemPaddingLR" android:paddingRight="@dimen/minibaseItemPaddingLR" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/minibaseItemPaddingLR" android:layout_marginRight="@dimen/minibaseItemPaddingLR"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layoutCharacter" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imagePersoDefi" android:layout_width="@dimen/defiPictureSize" android:layout_height="@dimen/defiPictureSize" android:layout_margin="3.0dip" android:src="@drawable/ak_place_holder_ddj" />
+        <TextView android:textSize="@dimen/gen_text_size" android:textColor="@color/black_color" android:id="@id/nomPersoDefi" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imagePersoTrouve" android:layout_width="@dimen/defiCroixSize" android:layout_height="@dimen/defiCroixSize" android:layout_margin="3.0dip" android:src="@drawable/ak_defi_ok" />
+    </LinearLayout>
+    <View android:id="@id/line" android:background="@color/grey_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/layoutCharacter" />
+</RelativeLayout>

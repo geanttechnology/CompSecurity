@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/opaque_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/invitation_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/invite" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/invitation_logo" android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/custom_logo" android:scaleType="fitStart" android:layout_alignLeft="@id/invitation_imageView" android:layout_alignTop="@id/invitation_imageView" />
+    <TextView android:gravity="center" android:id="@id/invitationText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/invitationText" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="150.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_accept" android:onClick="onInvitationAccepted" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_decline" android:onClick="onInvitationDeclined" />
+    </LinearLayout>
+</RelativeLayout>

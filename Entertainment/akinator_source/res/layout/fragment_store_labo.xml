@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/storeBackGroundLabo" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeSousHeaderLabo" android:background="@drawable/ak_header_labo" android:layout_width="fill_parent" android:layout_height="@dimen/storeSousHeaderHeight" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/unlockPotion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeItemUltime" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginBottom="2.0dip">
+                    <ImageView android:id="@id/storeLaboImagePotionUltime" android:layout_width="@dimen/storePotionsize" android:layout_height="@dimen/storePotionsize" android:src="@drawable/ak_decor_labo_fiolelvl4" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeLaboNomPotionUltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Potion ultime" />
+                        <TextView android:textSize="@dimen/storeDescTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeLaboDescPotionUltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Description potion Ultime" />
+                    </LinearLayout>
+                    <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeBoutonPotionUltime" android:background="@drawable/ak_button_get_full" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:layout_marginLeft="@dimen/marginLeftBoutonPotionUltime" android:text="Get" />
+                </LinearLayout>
+                <include layout="@layout/layout_line" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeItemPopularity" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginTop="10.0dip">
+                    <ImageView android:id="@id/storeLaboImagePotionPopularity" android:layout_width="@dimen/storePotionsize" android:layout_height="@dimen/storePotionsize" android:src="@drawable/ak_decor_labo_fiolelvl1" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeLaboNomPotionPopularity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Potion Popularity" />
+                        <TextView android:textSize="@dimen/storeDescTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeLaboDescPotionPopularity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Description potion Popularity" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/layout_get_potion" />
+                </LinearLayout>
+                <include layout="@layout/layout_line" />
+            </LinearLayout>
+            <include layout="@layout/layout_store_accepte_cgv" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

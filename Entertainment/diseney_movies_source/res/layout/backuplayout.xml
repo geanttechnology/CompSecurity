@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:material="http://schemas.android.com/apk/res-auto" xmlns:wave="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/topcolorwyc" android:layout_width="fill_parent" android:layout_height="@dimen/headerbar_height">
+        <com.aio.downloader.views.LImageButton android:id="@id/header_left_backup" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_header_back" android:layout_alignParentLeft="true" wave:widget_animColor="@color/color_anim_white" wave:widget_type="left" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Backup" android:layout_toRightOf="@id/appfan" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <com.aio.downloader.views.LTabIndicator android:id="@id/tab_indicator" android:background="@color/topcolorwyc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.view.ViewPager android:id="@id/vp_aoto" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="@drawable/divider_headerbar_bottom" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    </FrameLayout>
+</LinearLayout>

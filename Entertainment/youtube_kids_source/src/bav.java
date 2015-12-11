@@ -1,0 +1,21 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+import android.content.Context;
+import android.os.Looper;
+import com.google.android.gms.common.internal.ClientSettings;
+
+final class bav
+    implements awc
+{
+
+    bav()
+    {
+    }
+
+    public final awb a(Context context, Looper looper, ClientSettings clientsettings, Object obj, awk awk, avt avt)
+    {
+        return new bax(context, looper, awk, avt);
+    }
+}

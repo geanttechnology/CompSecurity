@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/margin_outer_b" android:paddingRight="@dimen/margin_outer_b" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_network_collections_title" android:singleLine="true" style="@style/LargeRegularWhite" />
+    <TextView android:textColor="@color/LightBlue" android:gravity="center" android:id="@id/count" android:background="@drawable/pill_counter_bg" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginLeft="20.0dip" android:text="@string/test_network_collections_count" android:singleLine="true" style="@style/Smallest" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabHost android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TabWidget android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="48.0dip" android:showDividers="none" />
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+                <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </TabHost>
+    </RelativeLayout>
+    <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

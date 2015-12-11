@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/report" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="Rapport de partie" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/addPicture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="Ajouter une photo" android:layout_below="@id/report" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/addQuestion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="Ajouter une question" android:layout_below="@id/addPicture" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/personalisation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="Piege tes amis" android:layout_below="@id/addQuestion" android:layout_centerHorizontal="true" />
+</RelativeLayout>

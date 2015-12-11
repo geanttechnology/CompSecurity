@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:material="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/topcolorwyc" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <com.aio.downloader.views.LImageButton android:id="@id/header_left_manager" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_header_back" material:widget_animColor="@color/color_anim_white" material:widget_type="left" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tv_title_uninstall" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Manager" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@drawable/divider_headerbar_bottom" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <com.aio.downloader.views.OverScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:text="App Manager" />
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110.0dip" android:weightSum="3.0">
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/ll_manager" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:id="@id/iv_manager_download" android:padding="8.0dip" android:layout_width="72.0dip" android:layout_height="72.0dip" android:src="@drawable/manage_downloads" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:text="Download" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/ll_update" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:id="@id/iv_manager_update" android:padding="8.0dip" android:layout_width="72.0dip" android:layout_height="72.0dip" android:src="@drawable/manage_update" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:text="Update" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/lf_fb_manager" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:id="@id/iv_fb_manage" android:padding="8.0dip" android:layout_width="72.0dip" android:layout_height="75.0dip" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:id="@id/tv_fb_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="-4.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                </LinearLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110.0dip" android:weightSum="3.0">
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/ll_uninstall" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/manage_uninstall" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Uninstaller" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/ll_myapp" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/manage_manage" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="My apps" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/lf_move2sd" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/myapps_main_move2sd_normal" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Move2SD" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                </LinearLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110.0dip" android:weightSum="3.0">
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/lf_backup" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/myapps_main_sync_normal" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="BackUp" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" />
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:text="Power Tools" />
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110.0dip" android:weightSum="3.0">
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/lf_cleaner" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/iconclean" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="AIO Cleaner" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/lf_battery" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/icon_batery_yh" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Battery Saver" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/lf_gallery" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/icon_gallery_wyc" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="3D Gallery" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                </LinearLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110.0dip" android:weightSum="3.0">
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/lf_wallpaper" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/icon_wallpaper" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="HD Wallpaper" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/lf_mydiylocker" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/icon_mydiylocker" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="LockScreen" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                    <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.aio.downloader.views.LFrameLayout android:id="@id/lf_caller" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_weight="1.0" material:widget_animColor="@color/managercolor">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/iconcaller" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff2e2e2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="AIO Caller ID" />
+                        </LinearLayout>
+                    </com.aio.downloader.views.LFrameLayout>
+                </LinearLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        </LinearLayout>
+    </com.aio.downloader.views.OverScrollView>
+</LinearLayout>

@@ -1,0 +1,29 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.tremorvideo.sdk.android.richmedia;
+
+import android.view.View;
+
+// Referenced classes of package com.tremorvideo.sdk.android.richmedia:
+//            n, af
+
+class a
+    implements Runnable
+{
+
+    final n a;
+
+    public void run()
+    {
+        a.f.f();
+        a.f.l().setVisibility(4);
+    }
+
+    (n n1)
+    {
+        a = n1;
+        super();
+    }
+}

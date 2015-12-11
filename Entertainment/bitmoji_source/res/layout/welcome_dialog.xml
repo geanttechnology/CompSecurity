@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/welcome_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/welcome_close_btn" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/ic_close_grey" android:layout_width="@dimen/welcome_close_size" android:layout_height="@dimen/welcome_close_size" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/welcome_panel_border" android:layout_width="1.0dip" android:layout_height="48.0dip" android:layout_toRightOf="@id/welcome_close_btn" />
+        <TextView android:textSize="@dimen/abc_action_bar_title_text_size" android:textStyle="bold" android:textColor="@color/imoji_primary" android:id="@id/how_bitmoji_works" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sign_up_submit_button_top_margin" android:text="@string/how_bitmoji_works" android:layout_toRightOf="@id/welcome_close_btn" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/welcome_title_bar">
+        <ImageView android:background="@drawable/welcome_panel_border" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <RelativeLayout android:background="@color/imoji_secondary_light" android:paddingLeft="@dimen/welcome_panel_padding_horizontal" android:paddingTop="@dimen/welcome_panel_padding_vertical" android:paddingRight="@dimen/welcome_panel_padding_horizontal" android:paddingBottom="@dimen/welcome_panel_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/chat_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sign_up_submit_button_top_margin" android:src="@drawable/chat_bubble" />
+            <TextView android:textSize="@dimen/welcome_panel_text_size" android:textColor="@color/imoji_secondary" android:id="@id/welcome_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_1" android:layout_toRightOf="@id/chat_bubble" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/welcome_panel_border" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:background="@color/imoji_primary_light" android:paddingLeft="@dimen/welcome_panel_padding_horizontal" android:paddingTop="@dimen/welcome_panel_padding_vertical" android:paddingRight="@dimen/welcome_panel_padding_horizontal" android:paddingBottom="@dimen/welcome_panel_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/library" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sign_up_submit_button_top_margin" android:src="@drawable/library" />
+            <TextView android:textSize="@dimen/welcome_panel_text_size" android:textColor="@color/imoji_primary" android:id="@id/welcome_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_2" android:layout_toRightOf="@id/library" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/welcome_panel_border" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:background="@color/imoji_tertiary_light" android:paddingLeft="@dimen/welcome_panel_padding_horizontal" android:paddingTop="@dimen/welcome_panel_padding_vertical" android:paddingRight="@dimen/welcome_panel_padding_horizontal" android:paddingBottom="@dimen/welcome_panel_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sign_up_submit_button_top_margin" android:src="@drawable/share" />
+            <TextView android:textSize="@dimen/welcome_panel_text_size" android:textColor="@color/imoji_tertiary" android:id="@id/welcome_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_3" android:layout_toRightOf="@id/share" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

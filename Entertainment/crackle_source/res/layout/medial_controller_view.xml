@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gotv.crackle.views.MediaControllerView android:id="@id/controlsView" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/buttonPausePlay" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_pause" android:layout_centerInParent="true" />
+    <LinearLayout android:id="@id/seekIndicatorContainer" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/bottomControlsLayout" android:layout_alignParentRight="true">
+        <fragment android:name="com.gotv.crackle.fragments.SeekIndicatorFragment" android:id="@id/seekIndicatorFragment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottomControlsLayout" android:background="#ff000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.gotv.crackle.views.CrackleTextView android:textAppearance="@android:style/TextAppearance.Small" android:layout_gravity="center_vertical" android:id="@id/time_played" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.gotv.crackle.views.MidRollSeekBar android:layout_gravity="center" android:id="@id/timeline" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="5.0dip" android:layout_weight="1.0" />
+        <com.gotv.crackle.views.CrackleTextView android:textAppearance="@android:style/TextAppearance.Small" android:layout_gravity="center_vertical" android:id="@id/time_remaining" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/subtitle_button" android:background="#00000000" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_cc" />
+    </LinearLayout>
+</com.gotv.crackle.views.MediaControllerView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:material="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/top" android:background="#ff3261b4" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/appfan" android:layout_width="48.0dip" android:layout_height="50.0dip" android:src="@drawable/myfan" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Downloads" android:layout_toRightOf="@id/appfan" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/searchimg" android:layout_width="48.0dip" android:layout_height="52.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cleanerre" android:background="@drawable/cleanerbgpress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_below="@id/top">
+        <ImageView android:id="@id/cleanerphone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_cleaner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="55.0dip" android:layout_toRightOf="@id/cleanerphone">
+            <TextView android:id="@id/totalmemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="......" />
+            <ProgressBar android:id="@id/cleanerpb" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="8.0dip" android:progress="40" android:progressDrawable="@drawable/progress_bg" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffff0000" android:id="@id/memorydec" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="..." />
+        </LinearLayout>
+        <ImageView android:id="@id/juckimgbtn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@null" />
+        <View android:background="#ffe5e5e5" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_toLeftOf="@id/juckimgbtn" />
+    </RelativeLayout>
+    <View android:id="@id/viewcleaner" android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/cleanerre" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_junk" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/viewcleaner">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/junkyuanjiao" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#ffff0000" android:id="@id/tv_junk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:text="1007MB" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text=" Junk files found" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="16.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_icon_left" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_icon_cencle" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_icon_right" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:id="@id/tv_junk_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="Device is slow. Use" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff006600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" All-In-One Cleaner" />
+                <TextView android:textSize="13.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" to boost" />
+            </LinearLayout>
+            <Button android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/bt_junk" android:background="@drawable/juunkbtnbg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="16.0dip" android:text="Enable" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_junk">
+        <RelativeLayout android:id="@id/rl_tab" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.aio.downloader.views.SyncHorizontalScrollView android:id="@id/mHsv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <RelativeLayout android:layout_gravity="top" android:id="@id/rl_nav" android:background="#ffbababa" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioGroup android:orientation="horizontal" android:id="@id/rg_nav_content" android:background="#ff17992c" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_alignParentTop="true" />
+                    <ImageView android:id="@id/iv_nav_indicator" android:background="#ff4cc9b6" android:layout_width="1.0dip" android:layout_height="3.0dip" android:scaleType="matrix" android:layout_alignParentBottom="true" android:contentDescription="@string/nav_desc" />
+                </RelativeLayout>
+            </com.aio.downloader.views.SyncHorizontalScrollView>
+        </RelativeLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/addlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/mViewPager" android:background="#ffffffff" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:flipInterval="30" android:layout_below="@id/rl_tab" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

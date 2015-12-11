@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ak_logo_elokence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ak_logo_elokence" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/viewVide" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" />
+        <ProgressBar android:id="@id/loadingBarGen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" style="@android:style/Widget.ProgressBar" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutMinimalDelay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Minimal Delay..." />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New version checked..." />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Purchases restored..." />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WebService loaded..." />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Translations loaded..." />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="External process..." />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Presage..." />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/textOkMinimalDelay" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok !" />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/textOkNewVersionChecked" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok !" />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/textOkPurchasesRestored" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok !" />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/textOkWSC" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok !" />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/textOkTraduction" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok !" />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/textOkExternalProcess" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok !" />
+                    <TextView android:textSize="@dimen/back_home_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/textOkPresage" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok !" />
+                </LinearLayout>
+            </LinearLayout>
+            <ProgressBar android:id="@id/loadingBar" android:layout_width="@dimen/loading_bar_width" android:layout_height="@dimen/loading_bar_height" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:progressDrawable="@drawable/ak_style_progress_bar_bleu" style="@android:style/Widget.ProgressBar.Horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

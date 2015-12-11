@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/pause" android:orderInCategory="100" android:title="@string/pause" android:showAsAction="never" />
+    <item android:id="@id/resume" android:orderInCategory="100" android:title="@string/resume" android:showAsAction="never" />
+    <item android:id="@id/delete" android:orderInCategory="100" android:title="@string/delete" android:showAsAction="never" />
+</menu>

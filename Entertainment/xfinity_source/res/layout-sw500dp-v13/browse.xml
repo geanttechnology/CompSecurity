@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.android.accessibility.GestureListenerLayout android:orientation="vertical" android:id="@id/touchy_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cim="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/body_container" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+            <com.comcast.cim.cmasl.android.util.view.widget.EntityGridView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/browse_grid_horizontal_spacing" android:columnWidth="@dimen/browse_program_cover_art_width" android:numColumns="@integer/browse_grid_columns" android:contentDescription="" android:importantForAccessibility="2" />
+            <include android:id="@android:id/empty" layout="@layout/filtered_list_empty_view" />
+            <ImageView android:id="@id/topScrollingShadow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scrolling_shadow" android:scaleType="fitXY" android:layout_alignTop="@id/listView" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/FilterSubNavBar" android:layout_width="fill_parent" android:layout_height="@dimen/grid_header_height" android:layout_alignParentTop="true" style="@style/SubNavBar">
+            <LinearLayout android:gravity="center" android:id="@id/filter_btn" android:paddingLeft="@dimen/margin_outer_a" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <Button style="@style/filter_button" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/presentationPreferenceButtons" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <LinearLayout android:gravity="center" android:id="@id/popularitySort" android:paddingLeft="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <Button android:textStyle="bold" android:id="@id/btn_popularitySort" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_marginRight="2.0dip" android:text="@string/popularity_sort_button_text" android:contentDescription="@string/popularity_sort_button_speech" style="@style/sort_btn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/otherSort" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <Button android:textStyle="bold" android:id="@id/btn_otherSort" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_marginRight="2.0dip" style="@style/sort_btn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/alphabetSort" android:paddingRight="@dimen/margin_outer_a" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <Button android:textStyle="bold" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:text="@string/alphabetical_sort_button_text" android:contentDescription="@string/alphabetical_sort_button_speech" style="@style/sort_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.comcast.cim.cmasl.android.util.view.widget.BreadcrumbContainer android:id="@id/breadcrumb_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_toLeftOf="@id/presentationPreferenceButtons" android:layout_toRightOf="@id/filter_btn" android:layout_alignWithParentIfMissing="true" android:importantForAccessibility="2" cim:addCommas="false" />
+            <View android:id="@id/divider" android:background="@color/list_separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_separator_height" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.comcast.cim.android.accessibility.GestureListenerLayout>

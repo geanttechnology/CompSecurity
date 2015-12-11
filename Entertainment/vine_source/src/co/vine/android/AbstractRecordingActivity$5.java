@@ -1,0 +1,31 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package co.vine.android;
+
+import android.animation.Animator;
+import android.view.View;
+import android.view.ViewPropertyAnimator;
+import co.vine.android.animation.SimpleAnimatorListener;
+
+// Referenced classes of package co.vine.android:
+//            AbstractRecordingActivity
+
+class ener extends SimpleAnimatorListener
+{
+
+    final AbstractRecordingActivity this$0;
+
+    public void onAnimationEnd(Animator animator)
+    {
+        AbstractRecordingActivity.access$400(AbstractRecordingActivity.this).setVisibility(8);
+        AbstractRecordingActivity.access$400(AbstractRecordingActivity.this).animate().setListener(null);
+    }
+
+    ener()
+    {
+        this$0 = AbstractRecordingActivity.this;
+        super();
+    }
+}

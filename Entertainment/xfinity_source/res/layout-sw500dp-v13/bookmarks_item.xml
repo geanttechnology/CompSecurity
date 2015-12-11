@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.cmasl.android.util.view.widget.CheckableLinearLayout android:orientation="vertical" android:id="@id/favorite_container" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:background="@drawable/multi_select_item_frame" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+        <com.comcast.cim.cmasl.android.util.view.widget.ImageStaticLayoutView android:id="@id/cover_art" android:layout_width="@dimen/browse_program_cover_art_width" android:layout_height="@dimen/browse_program_cover_art_height" android:layout_margin="@dimen/favorites_grid_image_margin" android:scaleType="fitCenter" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/favorite_title" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/favorites_grid_image_margin" />
+    </FrameLayout>
+    <ImageView android:id="@id/locked_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/ind_upsell_key" android:scaleType="center" android:contentDescription="@null" />
+</com.comcast.cim.cmasl.android.util.view.widget.CheckableLinearLayout>

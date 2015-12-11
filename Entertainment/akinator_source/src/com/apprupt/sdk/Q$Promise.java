@@ -1,0 +1,21 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.apprupt.sdk;
+
+
+// Referenced classes of package com.apprupt.sdk:
+//            Q
+
+public static interface on
+{
+
+    public abstract Throwable getError();
+
+    public abstract Object getResult();
+
+    public abstract boolean isError();
+
+    public abstract void run(Object obj, on on);
+}

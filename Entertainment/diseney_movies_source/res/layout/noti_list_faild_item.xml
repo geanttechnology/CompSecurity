@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fafafafa" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/movie_headimage_faild" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/movie_headimage_faild">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@id/movie_headimage_faild">
+                <TextView android:textSize="18.0sp" android:textColor="#ff1c1c1c" android:ellipsize="end" android:id="@id/noti_falid_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="。。。。。。" android:singleLine="true" style="@style/NotificationTitle" />
+                <TextView android:textSize="12.0sp" android:layout_gravity="right" android:id="@id/timer_faild" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="1.0dip" android:text="..." android:layout_alignParentRight="true" style="@style/NotificationContent" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff979797" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="4.0dip" android:text="Click to Restart" android:layout_toRightOf="@id/movie_headimage" style="@style/NotificationContent" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="600.0dip" />
+</RelativeLayout>

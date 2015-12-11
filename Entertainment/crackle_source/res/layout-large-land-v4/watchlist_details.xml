@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/grey_thumbnail_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.gotv.crackle.views.ThreeLayout android:id="@id/show_details_three_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/show_details_layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/show_details_left_pane" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ScrollView android:id="@id/show_buttons_thumbnail_container" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                            <RelativeLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <fragment android:name="com.gotv.crackle.fragments.ShowDetailsThumbnailFragment" android:id="@id/show_details_thumbnail_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <fragment android:name="com.gotv.crackle.fragments.ShowDetailsButtonsFragment" android:id="@id/show_details_buttons_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/show_details_thumbnail_fragment" android:layout_alignLeft="@id/show_details_thumbnail_fragment" android:layout_alignRight="@id/show_details_thumbnail_fragment" />
+                            </RelativeLayout>
+                        </ScrollView>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/details_fade_top" android:scaleType="fitXY" android:layout_alignLeft="@id/show_buttons_thumbnail_container" android:layout_alignRight="@id/show_buttons_thumbnail_container" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/details_fade_bottom" android:scaleType="fitXY" android:layout_alignLeft="@id/show_buttons_thumbnail_container" android:layout_alignRight="@id/show_buttons_thumbnail_container" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <fragment android:name="com.gotv.crackle.fragments.WatchlistDetailsTitleFragment" android:id="@id/watchlist_details_title_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <fragment android:name="com.gotv.crackle.fragments.WatchlistDetailsWhyCracklesFragment" android:id="@id/watchlist_details_why_crackles_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+                <FrameLayout android:id="@id/show_details_middle_pane" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <fragment android:id="@id/season_episode_fragment" android:layout_width="wrap_content" android:layout_height="fill_parent" class="com.gotv.crackle.fragments.SeasonEpisodeFragment" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/show_details_right_pane" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:id="@id/episode_details_group" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <fragment android:id="@id/episode_details_title_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.gotv.crackle.fragments.EpisodeDetailsTitleFragment" />
+                            <fragment android:id="@id/episode_details_buttons_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" class="com.gotv.crackle.fragments.EpisodeDetailsButtonsFragment" />
+                            <fragment android:id="@id/episode_details_more_info_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" class="com.gotv.crackle.fragments.EpisodeDetailsMoreInfoFragment" />
+                        </LinearLayout>
+                    </ScrollView>
+                    <ScrollView android:id="@id/movie_details_group" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <include layout="@layout/watchlist_movie_details" />
+                    </ScrollView>
+                </FrameLayout>
+            </RelativeLayout>
+        </com.gotv.crackle.views.ThreeLayout>
+        <ProgressBar android:id="@id/loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ad_container" android:background="#77000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/content_list_watchlists" />
+</LinearLayout>

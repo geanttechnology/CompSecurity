@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.google.android.apps.youtube.kids" platformBuildVersionCode="21" platformBuildVersionName="5.0-1521886">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:name="android.hardware.screen.landscape"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher_youtube_kids_release" android:label="@string/app_name" android:largeHeap="true" android:name="com.google.android.apps.youtube.kids.application.KidsApplication" android:theme="@android:style/WindowTitleBackground">
+        <meta-data android:name="com.google.android.apps.youtube.config.BuildType" android:value="RELEASE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="standard" android:name="com.google.android.apps.youtube.kids.activities.SplashScreenActivity" android:noHistory="true" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.Standard.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="standard" android:name="com.google.android.apps.youtube.kids.activities.BrowseActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.Standard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="standard" android:name="com.google.android.apps.youtube.kids.activities.BrowserActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.Standard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.google.android.apps.youtube.kids.activities.SearchActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.Standard">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.google.android.apps.youtube.kids.activities.VoiceSearchActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.Standard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.google.android.apps.youtube.kids.activities.WatchActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.google.android.apps.youtube.kids.activities.TimeLimitExpiredActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.android.apps.youtube.kids.activities.ParentalControlActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.android.apps.youtube.kids.activities.SettingsActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.android.apps.youtube.kids.activities.DeveloperActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.android.apps.youtube.kids.activities.DebugOnlineAdActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/open_source_licenses_title" android:name="com.google.android.apps.youtube.kids.activities.KidsLicensesActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Licenses"/>
+        <activity android:configChanges="keyboardHidden" android:launchMode="singleTask" android:name="com.google.android.apps.youtube.kids.activities.NewVersionAvailableActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.google.userfeedback.android.api.UserFeedbackActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.google.userfeedback.android.api.PreviewActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.google.userfeedback.android.api.ShowTextActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.google.userfeedback.android.api.ShowStringListActivity" android:screenOrientation="sensorLandscape"/>
+        <service android:name="com.google.userfeedback.android.api.SendUserFeedbackService"/>
+        <receiver android:name="com.google.android.libraries.youtube.player.notification.ExternalPlaybackControllerV14$RemoteControlIntentReceiver"/>
+        <receiver android:enabled="false" android:name="com.google.userfeedback.android.api.FeedbackConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.google.android.apps.youtube.kids.SuggestionProvider" android:exported="false" android:name="com.google.android.apps.youtube.kids.suggest.KidsSuggestionProvider"/>
+    </application>
+</manifest>

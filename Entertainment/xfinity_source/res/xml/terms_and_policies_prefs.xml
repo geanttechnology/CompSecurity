@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_terms_and_policies_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/settings_terms_of_service_title" android:widgetLayout="@layout/external_link_prompt_widget">
+        <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="com.comcast.cim.android.view.settings.ExternalLinkPromptActivity">
+            <extra android:name="title" android:value="@string/settings_terms_of_service_title" />
+            <extra android:name="url" android:value="@string/url_tos" />
+        </intent>
+    </Preference>
+    <Preference android:title="@string/settings_privacy_policy_title" android:widgetLayout="@layout/external_link_prompt_widget">
+        <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="com.comcast.cim.android.view.settings.ExternalLinkPromptActivity">
+            <extra android:name="title" android:value="@string/settings_privacy_policy_title" />
+            <extra android:name="url" android:value="@string/url_privacy_policy" />
+        </intent>
+    </Preference>
+    <Preference android:layout="@layout/truste_seal">
+        <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="com.comcast.cim.android.view.settings.ExternalLinkPromptActivity">
+            <extra android:name="title" android:value="@string/settings_truste_title" />
+            <extra android:name="url" android:value="@string/url_truste_validation" />
+        </intent>
+    </Preference>
+</PreferenceScreen>

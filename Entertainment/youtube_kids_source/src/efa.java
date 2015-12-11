@@ -1,0 +1,127 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+
+public final class efa extends eug
+{
+
+    private boolean a;
+    private String b;
+    private boolean c;
+    private eep d;
+    private boolean e;
+    private String f;
+    private boolean g;
+    private String h;
+    private int i;
+
+    public efa()
+    {
+        b = "";
+        d = null;
+        f = "en-US";
+        h = "";
+        i = -1;
+    }
+
+    public final int a()
+    {
+        if (i < 0)
+        {
+            b();
+        }
+        return i;
+    }
+
+    public final eug a(eud eud1)
+    {
+        do
+        {
+            int j = eud1.a();
+            switch (j)
+            {
+            default:
+                if (a(eud1, j))
+                {
+                    continue;
+                }
+                // fall through
+
+            case 0: // '\0'
+                return this;
+
+            case 18: // '\022'
+                String s = eud1.i();
+                a = true;
+                b = s;
+                break;
+
+            case 26: // '\032'
+                eep eep1 = new eep();
+                eud1.a(eep1);
+                c = true;
+                d = eep1;
+                break;
+
+            case 42: // '*'
+                String s1 = eud1.i();
+                e = true;
+                f = s1;
+                break;
+
+            case 50: // '2'
+                String s2 = eud1.i();
+                g = true;
+                h = s2;
+                break;
+            }
+        } while (true);
+    }
+
+    public final void a(eue eue1)
+    {
+        if (a)
+        {
+            eue1.a(2, b);
+        }
+        if (c)
+        {
+            eue1.b(3, d);
+        }
+        if (e)
+        {
+            eue1.a(5, f);
+        }
+        if (g)
+        {
+            eue1.a(6, h);
+        }
+    }
+
+    public final int b()
+    {
+        int k = 0;
+        if (a)
+        {
+            k = eue.b(2, b) + 0;
+        }
+        int j = k;
+        if (c)
+        {
+            j = k + eue.d(3, d);
+        }
+        k = j;
+        if (e)
+        {
+            k = j + eue.b(5, f);
+        }
+        j = k;
+        if (g)
+        {
+            j = k + eue.b(6, h);
+        }
+        i = j;
+        return j;
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/upgrade_overlay" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <requestFocus />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:id="@id/primary_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cellular_upgrade_overlay_primary" android:layout_centerHorizontal="true" style="@style/overlay_primary" />
+        <TextView android:id="@id/secondary_copy" android:layout_width="332.0dip" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="28.0dip" android:text="@string/cellular_upgrade_overlay_secondary" android:layout_below="@id/primary_copy" android:layout_centerHorizontal="true" style="@style/overlay_secondary" />
+        <RelativeLayout android:id="@id/overlay_parental_controls_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:layout_below="@id/secondary_copy" android:layout_centerHorizontal="true">
+            <Button android:id="@id/close_button" android:layout_width="213.0dip" android:text="@string/overlay_upgrade_close" android:layout_alignParentTop="true" style="@style/overlay_button_text" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

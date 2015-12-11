@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layoutOverlay" android:background="@color/storeBackGroundLabo" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_geniz" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/unlockPotion" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginBottom="@dimen/propositionPotionGenericMarginBottom" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imagePotion" android:layout_width="@dimen/propositionPotionsize" android:layout_height="@dimen/propositionPotionsize" android:src="@drawable/ak_decor_labo_fiolelvl1" />
+                    <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/white_color" android:gravity="center_vertical" android:id="@id/textPotion" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="description..." android:layout_centerHorizontal="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <View android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="3.0" />
+                    <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize2" android:textColor="@color/store_text_color_clair" android:id="@id/buttonAllTheTimeGz" android:background="@drawable/ak_button_get_gz" android:layout_width="@dimen/storeBoutonGzWidth" android:layout_height="@dimen/storeBoutonGzHeight" android:text="Get" />
+                    <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/white_color" android:gravity="center" android:id="@id/textOr" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="OU" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+                    <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/buttonPotion" android:background="@drawable/ak_button_get_labo" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="Get" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/unlockPotionUltime" android:background="#ffc5ebf3" android:paddingLeft="10.0dip" android:paddingTop="@dimen/propositionPotionGenericMarginBottom" android:paddingRight="10.0dip" android:paddingBottom="@dimen/propositionPotionGenericMarginBottom" android:layout_width="fill_parent" android:layout_height="@dimen/storePotionHeight" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/imagePotionUltime" android:layout_width="@dimen/propositionPotionsize" android:layout_height="@dimen/propositionPotionsize" android:src="@drawable/ak_decor_labo_fiolelvl4" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layoutTextPotionUltime" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/store_evenBetter" android:id="@id/textPotionUltimeEncoreMieux" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="encore mieux" android:layout_centerHorizontal="true" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/layoutPotionUltimePrix" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/store_ultimate" android:id="@id/textPotionUltimeTitre" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="ultime" android:layout_weight="1.0" />
+                        <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/buttonPotionUltime" android:background="@drawable/ak_button_get_full" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="Get" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/store_ultimate" android:gravity="center_vertical" android:id="@id/textPotionUltimePlusdeFonction" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="encore + de fonctions" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/popularity_no_replay_buttons_text_size" android:textColor="@color/buttons_text_color" android:gravity="center" android:id="@id/ButtonNonMerci" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_small_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginBottom="@dimen/margin_bottom" android:text="NO" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

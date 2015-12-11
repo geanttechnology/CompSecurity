@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:material="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/sticky_header" android:background="@drawable/zhutise" android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <com.aio.downloader.views.LImageButton android:id="@id/header_left_back" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_header_back" material:widget_animColor="@color/color_anim_white" material:widget_type="left" />
+            <TextView android:textSize="50.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/rub_total" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0.0" android:layout_centerInParent="true" style="@style/AudioFileInfoOverlayText1" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wait_clean" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ProgressBar android:id="@id/pb_clean_cache_rub" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="3.0dip" android:progressDrawable="@drawable/progress_dotted1" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:textSize="13.0sp" android:textColor="#fff5f5f5" android:id="@id/tv_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#fff5f5f5" android:id="@id/rub_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ScrollView android:id="@id/sticky_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/content_one" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/nc_speed" android:background="@drawable/list_item_bg_anim" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip">
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/junk_boost" />
+                        <TextView android:textSize="20.0dip" android:layout_gravity="center_vertical" android:id="@id/all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Memory boost" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0sp" android:layout_gravity="center_vertical" android:id="@id/bost_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="0.0B" />
+                        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/nc_pb" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="false" android:indeterminateDrawable="@anim/loadingpb" style="?android:attr/progressBarStyle" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_ncall" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/filemanager_duigou" />
+                    </LinearLayout>
+                    <com.wjj.utils.MyListView android:id="@id/lv_neicun" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/cache_speed" android:background="@drawable/list_item_bg_anim" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip">
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/junk_cache" />
+                        <TextView android:textSize="20.0dip" android:layout_gravity="center_vertical" android:id="@id/all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Cache junk" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0sp" android:layout_gravity="center_vertical" android:id="@id/cache_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="0.0B" />
+                        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progressBarcache" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="false" android:indeterminateDrawable="@anim/loadingpb" style="?android:attr/progressBarStyle" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_cacheall" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/filemanager_duigou" />
+                    </LinearLayout>
+                    <com.wjj.utils.MyListView android:id="@id/lv_huancun" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/canliulayout" android:background="@drawable/list_item_bg_anim" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip">
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/junk_files" />
+                        <TextView android:textSize="20.0dip" android:layout_gravity="center_vertical" android:id="@id/all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Residual files" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0sp" android:layout_gravity="center_vertical" android:id="@id/canliu_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="0.0B" />
+                        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/pb_canliu" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="false" android:indeterminateDrawable="@anim/loadingpb" style="?android:attr/progressBarStyle" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_canliuall" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/filemanager_duigou" />
+                    </LinearLayout>
+                    <com.wjj.utils.MyListView android:id="@id/lv_canliu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/apklayout" android:background="@drawable/list_item_bg_anim" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip">
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/junk_apk" />
+                        <TextView android:textSize="20.0dip" android:layout_gravity="center_vertical" android:id="@id/all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="APK files" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0sp" android:layout_gravity="center_vertical" android:id="@id/apk_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="0.0B" />
+                        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/pb_apk" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="false" android:indeterminateDrawable="@anim/loadingpb" style="?android:attr/progressBarStyle" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_apkall" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/filemanager_duigou" />
+                        <CheckBox android:layout_gravity="center_vertical" android:id="@id/apk_cb" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+                    </LinearLayout>
+                    <com.wjj.utils.MyListView android:id="@id/lv_apk" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/content_two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.xiaos.view.PinnedHeaderExpandableListView android:id="@id/explistview" android:background="#ffebebeb" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="true" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childDivider="#ffebebeb" android:divider="#ffebebeb" android:dividerHeight="6.0dip" android:choiceMode="singleChoice" android:fastScrollEnabled="false" android:footerDividersEnabled="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip">
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/bt_stop" android:background="@drawable/button_check" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:text="Stop" />
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/bt_clean" android:background="@drawable/button_check" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:text="@string/laji" />
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/bt_cleaning" android:background="@drawable/button_check" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:text="@string/zhengzaiqingli" />
+    </RelativeLayout>
+</LinearLayout>

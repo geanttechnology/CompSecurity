@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fileframe" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/filefan" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="52.0dip" android:src="@drawable/myfan" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/files" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/filemore" android:clickable="true" android:layout_width="48.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fileframe">
+        <RelativeLayout android:id="@id/rl_tab" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.aio.downloader.views.SyncHorizontalScrollView android:id="@id/mHsv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <RelativeLayout android:layout_gravity="top" android:id="@id/rl_nav" android:background="#ffbababa" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioGroup android:orientation="horizontal" android:id="@id/rg_nav_content" android:background="#ff17992c" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_alignParentTop="true" />
+                    <ImageView android:id="@id/iv_nav_indicator" android:background="#ff4cc9b6" android:layout_width="1.0dip" android:layout_height="3.0dip" android:scaleType="matrix" android:layout_alignParentBottom="true" android:contentDescription="@string/nav_desc" />
+                </RelativeLayout>
+            </com.aio.downloader.views.SyncHorizontalScrollView>
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/mViewPager" android:background="#ffffffff" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:flipInterval="30" android:layout_below="@id/rl_tab" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

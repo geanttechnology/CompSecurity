@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:background="@color/storeBackGroundFaces" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/homeButton" layout="@layout/layout_home_button" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ak_fond_texte_without_arabesque" android:scaleType="centerInside" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/minibaseHeader" android:background="@drawable/ak_header_myworld" android:layout_width="fill_parent" android:layout_height="@dimen/storeSousHeaderHeight" android:layout_below="@id/homeButton">
+        <include layout="@layout/layout_faces" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="bottom|right|center" android:id="@id/layoutAkinator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mw_layoutAkinator_margin_left" android:layout_marginRight="-10.0dip" android:layout_marginBottom="@dimen/mw_layoutAkinator_margin_bottom">
+        <ImageView android:id="@id/akinatorImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/akinatorTenue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/akinatorChapeau" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/allButtons" android:layout_below="@id/minibaseHeader">
+        <RelativeLayout android:id="@id/layoutBulleQuestion" android:background="@drawable/ak_mw_arabesque" android:layout_width="@dimen/mw_bulle_dessin_width" android:layout_height="@dimen/mw_bulle_dessin_height" android:layout_marginLeft="@dimen/mw_bulle_margin_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/mw_bulle_text_size" android:textColor="@color/buttons_text_color" android:gravity="center" android:id="@id/contentText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:text="Je devine que ce personnage fait partie de tes proches. Connais-tu MyWorld ? Cette fonction te permet de créer ta propre base de données. Et rassure-toi : tous les personnages créés ne seront pas visibles par les autres joueurs. Veux-tu y ajouter ce personnage ?" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/allButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/proposeAjoutMBDejaEnregistreButton">
+        <Button android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/buttons_text_color" android:gravity="center" android:id="@id/proposeAjoutMBOuiButton" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_small_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginRight="@dimen/proposal_yes_no_buttons_margin_lr" android:text="OUI" />
+        <Button android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/proposeAjoutMBNonButton" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_small_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginLeft="@dimen/proposal_yes_no_buttons_margin_lr" android:text="NON MERCI" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/proposeAjoutMBDejaEnregistreButton" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginLeft="@dimen/proposal_yes_no_buttons_margin_lr" android:layout_marginRight="@dimen/proposal_yes_no_buttons_margin_lr" android:layout_marginBottom="10.0dip" android:text="Deja enregistre" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

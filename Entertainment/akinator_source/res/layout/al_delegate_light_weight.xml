@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/al_black_alpha_60" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/al_shadow_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+            <ImageView android:id="@id/view_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:id="@id/btn_download" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AL_DownloadButtonStyle" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/al_btn_close" />
+    </FrameLayout>
+</RelativeLayout>

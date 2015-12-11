@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/coordinator_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/bitshopPackGrid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/bitshop_pack_margins" android:layout_marginRight="@dimen/bitshop_pack_margins" android:choiceMode="singleChoice" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <android.support.design.widget.AppBarLayout android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bitshop_empty" android:background="@color/bitshop_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/bitshop_empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitshop_empty" />
+        <TextView android:textSize="@dimen/bitshop_empty_title_text_size" android:textColor="@color/bitshop_empty_title" android:gravity="center" android:id="@id/txtEmptyTitle" android:paddingTop="@dimen/bitshop_empty_vertical_spacing_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bitshop_empty_side_margins" android:layout_marginRight="@dimen/bitshop_empty_side_margins" android:text="@string/bitshop_empty_title" />
+        <TextView android:textSize="@dimen/bitshop_empty_message_text_size" android:textColor="@color/bitshop_empty_message" android:gravity="center" android:id="@id/txtEmptyMessage" android:paddingTop="@dimen/bitshop_empty_vertical_spacing_message" android:paddingBottom="@dimen/bitshop_empty_extra_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bitshop_empty_side_margins" android:layout_marginRight="@dimen/bitshop_empty_side_margins" android:text="@string/bitshop_empty_message" android:lineSpacingExtra="@dimen/bitshop_empty_message_line_spacing" />
+    </LinearLayout>
+</LinearLayout>

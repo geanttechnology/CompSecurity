@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/tv_fun" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="fdfdfddfdfd" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_fun" android:layout_width="fill_parent" android:layout_height="250.0dip" android:src="@drawable/bg1" android:scaleType="centerCrop" />
+        <Button android:textColor="#ffffffff" android:id="@id/bt_video" android:background="@drawable/cb_btn_bg_funvideo" android:focusable="false" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:textColor="#ffcccccc" android:id="@id/tv_funadult_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="567 likes" />
+        <TextView android:id="@id/fun_dian" android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_marginRight="8.0dip" android:layout_toRightOf="@id/tv_funadult_like" android:layout_centerVertical="true" />
+        <TextView android:textColor="#ffcccccc" android:id="@id/tv_funadult_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 Share" android:layout_toRightOf="@id/fun_dian" />
+        <TextView android:textColor="#ffcccccc" android:id="@id/tv_funadult_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="June 6,2015" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <RelativeLayout android:id="@id/rl_like" android:background="#ffc0c0c0" android:layout_width="90.0dip" android:layout_height="40.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="Like" />
+            </LinearLayout>
+        </RelativeLayout>
+        <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/bt_share" android:background="#ffc0c0c0" android:layout_width="90.0dip" android:layout_height="40.0dip" android:text="Share" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <item android:state_enabled="false" android:drawable="@drawable/scrubber_control_disabled_holo" custom:state_appear_enabled="true" />
+    <item android:state_pressed="true" android:drawable="@drawable/scrubber_control_pressed_holo" custom:state_appear_enabled="true" />
+    <item android:state_selected="true" android:drawable="@drawable/scrubber_control_focused_holo" custom:state_appear_enabled="true" />
+    <item android:drawable="@drawable/scrubber_control_normal_holo" custom:state_appear_enabled="true" />
+    <item android:state_enabled="false" android:drawable="@drawable/scrubber_control_disabled_holo" custom:state_appear_enabled="false" />
+    <item android:state_pressed="true" android:drawable="@drawable/scrubber_control_disabled_holo" custom:state_appear_enabled="false" />
+    <item android:state_selected="true" android:drawable="@drawable/scrubber_control_disabled_holo" custom:state_appear_enabled="false" />
+    <item android:drawable="@drawable/scrubber_control_disabled_holo" custom:state_appear_enabled="false" />
+</selector>

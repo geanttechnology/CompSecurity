@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/panel_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/nav_bar_size">
+        <com.comcast.cim.cmasl.android.util.view.widget.GestureInterceptorRelativeLayout android:id="@id/filter" android:background="@drawable/bg_panel_filter" android:visibility="gone" android:layout_width="@dimen/filter_panel_size" android:layout_height="fill_parent">
+            <include android:id="@id/filter_close" layout="@layout/filter_close_panel" />
+            <FrameLayout android:id="@id/filter_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/filter_close" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/shadow_scrnheight" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        </com.comcast.cim.cmasl.android.util.view.widget.GestureInterceptorRelativeLayout>
+        <RelativeLayout android:id="@id/browse" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/browse_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/browse_snapshot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <com.comcast.cim.cmasl.android.util.view.widget.GestureInterceptorRelativeLayout android:id="@id/detail" android:visibility="gone" android:layout_width="@dimen/detail_panel_size_with_shadow" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/detail_wrapper" android:background="@drawable/bg_panel" android:layout_width="@dimen/detail_panel_size" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <include layout="@layout/detail_close_panel" />
+                <FrameLayout android:id="@id/detail_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/shadow_scrnheight" android:layout_toLeftOf="@id/detail_wrapper" android:contentDescription="@null" />
+            <ImageView android:id="@id/detail_list_shadow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/shadow_scrnheight" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        </com.comcast.cim.cmasl.android.util.view.widget.GestureInterceptorRelativeLayout>
+        <com.comcast.cim.cmasl.android.util.view.widget.GestureInterceptorRelativeLayout android:id="@id/detail_list" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <FrameLayout android:id="@id/detail_list_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </com.comcast.cim.cmasl.android.util.view.widget.GestureInterceptorRelativeLayout>
+    </RelativeLayout>
+    <include android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/global_nav_bar" />
+</RelativeLayout>

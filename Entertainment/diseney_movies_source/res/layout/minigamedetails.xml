@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gametop" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/detailfan" android:layout_width="48.0dip" android:layout_height="52.0dip" android:src="@drawable/myfan" />
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/backtv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Back" android:layout_toRightOf="@id/detailfan" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top2" android:background="@drawable/homeitembg" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_below="@id/gametop">
+        <ImageView android:id="@id/minigameicon" android:layout_width="76.0dip" android:layout_height="76.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/defaulticon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/titletextcolor" android:ellipsize="end" android:id="@id/minigametitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="22.0dip" android:text="title" android:singleLine="true" android:layout_toRightOf="@id/minigameicon" />
+        <RatingBar android:id="@id/minigame_ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/minigameicon" android:layout_below="@id/minigametitle" style="?android:attr/ratingBarStyleSmall" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="10.0sp" android:textColor="@color/titletextcolor" android:id="@id/minigamehints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:text="hits" android:layout_toRightOf="@id/minigameicon" android:layout_below="@id/minigame_ratingbar" />
+        <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/detailplaytop" android:background="@drawable/video_download_bg" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="70.0dip" android:layout_height="36.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="20.0dip" android:text="Play" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top2">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ff333333" android:id="@id/dec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="6.0dip" android:text="ssssssssssssssssssssssssssssssssssssssssssssssssss" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/homegditmebg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:weightSum="4.0">
+            <Button android:textColor="#ffffffff" android:id="@id/gamedetailplaybottom" android:background="@drawable/video_download_bg" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:text="Play" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/banner" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>

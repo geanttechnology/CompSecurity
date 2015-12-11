@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gotv.crackle.views.CrackleTextView android:textSize="20.0sp" android:layout_gravity="center_vertical" android:layout_width="58.0dip" android:layout_height="wrap_content" />
+    <com.gotv.crackle.views.CrackleTextView android:textSize="20.0sp" android:layout_gravity="center_vertical" android:id="@id/title_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/browse_title" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.gotv.crackle.views.CrackleTextView android:textSize="20.0sp" android:layout_gravity="center_vertical" android:id="@id/duration_label" android:paddingRight="10.0dip" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/browse_duration" />
+        <com.gotv.crackle.views.CrackleTextView android:textSize="20.0sp" android:layout_gravity="center_vertical" android:id="@id/rating_label" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/browse_rating" />
+        <com.gotv.crackle.views.CrackleTextView android:textSize="20.0sp" android:layout_gravity="center_vertical" android:id="@id/expires_label" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/availability_label" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/playbutton_label" android:background="#00000000" android:visibility="invisible" android:layout_width="52.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

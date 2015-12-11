@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.xfinity.playnow" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1035858">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icn_launch" android:label="@string/app_name" android:largeHeap="true" android:name="com.xfinity.playnow.PlayNowApplication" android:theme="@style/xfinity_remote_launch.theme">
+        <activity android:launchMode="singleTop" android:name="com.comcast.cim.android.view.launch.LaunchActivity" android:theme="@style/xfinity_remote_launch.theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xfinity.qac.PUT.STATE.REMOTE"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xfinitytvplaynow"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xfinitytvplaynow"/>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xplay"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xplay"/>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="xfinitytv.comcast.net" android:pathPrefix="/external/landing" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/featured" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.featured.FeaturedActivity" android:theme="@style/Theme.xfinity"/>
+        <activity android:label="@string/movies" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browseprograms.MoviesActivity" android:theme="@style/Theme.xfinity"/>
+        <activity android:label="@string/tv_series" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browseprograms.SeriesActivity" android:theme="@style/Theme.xfinity"/>
+        <activity android:label="@string/kids" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browseprograms.KidsActivity" android:theme="@style/Theme.xfinity"/>
+        <activity android:label="@string/live" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browseprograms.LiveStreamsActivity" android:theme="@style/Theme.xfinity"/>
+        <activity android:label="@string/history" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browsehistory.HistoryActivity" android:theme="@style/Theme.xfinity.ActionBarEdit"/>
+        <activity android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browseprograms.NetworkProgramsActivity" android:theme="@style/Theme.xfinity.Network"/>
+        <activity android:label="@string/networks" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browsenetworks.NetworksActivity" android:theme="@style/Theme.xfinity"/>
+        <activity android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.networkcollections.NetworkCollectionsActivity" android:theme="@style/Theme.xfinity.Network"/>
+        <activity android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.search.SearchActivity" android:theme="@style/Theme.xfinity.search" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/downloads" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.downloads.DownloadsActivity" android:theme="@style/Theme.xfinity.ActionBarEdit"/>
+        <activity android:label="@string/favorite" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.favorite.BookmarksActivity" android:theme="@style/Theme.xfinity.ActionBarEdit"/>
+        <activity android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.programdetails.EpisodeDetailActivity" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.programdetails.SeriesDetailActivity" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:label="@string/settings" android:name="com.xfinity.playerlib.view.settings.PlayNowSettingsFragmentActivity" android:theme="@style/Theme.xfinity.preferences"/>
+        <activity android:name="com.xfinity.playerlib.view.common.AnnouncementOverlayActivity" android:theme="@style/xfinity_remote.help_overlay"/>
+        <activity android:name="com.xfinity.playerlib.view.common.AdultContentSettingChangeActivity" android:theme="@style/Theme_xfinity_NoActionBar_Translucent"/>
+        <activity android:label="@string/filter_movies_label" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browseprograms.MoviesFilterDialog" android:theme="@style/xfinity_remote.filter_dialog"/>
+        <activity android:label="@string/filter_tvseries_label" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browseprograms.SeriesFilterDialog" android:theme="@style/xfinity_remote.filter_dialog"/>
+        <activity android:label="@string/filter_network_programs_label" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browseprograms.NetworkProgramsFilterDialog" android:theme="@style/xfinity_remote.filter_dialog"/>
+        <activity android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.authentication.PlayNowAuthenticationActivity" android:theme="@style/xfinity_remote.entity_no_actionbar"/>
+        <activity android:name="com.comcast.cim.android.view.common.SimpleWebViewActivity" android:theme="@style/xfinity_remote.theme"/>
+        <activity android:name="com.xfinity.playerlib.view.authentication.PlayNowSignoutActivity" android:noHistory="true" android:theme="@style/playnow_dialog_activity"/>
+        <activity android:name="com.comcast.cim.android.view.settings.ExternalLinkPromptActivity" android:noHistory="true" android:theme="@style/playnow_dialog_activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.videoplay.VideoPlayerActivity" android:screenOrientation="sensorLandscape" android:theme="@style/xfinity_playnow.player"/>
+        <activity android:name="com.xfinity.playerlib.view.programdetails.SeriesEntityActivity" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.view.programdetails.MovieDetailActivity" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.PlayerSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.MoviesSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.KidsSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.TvSeriesSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.SeriesSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.FeaturedSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.SearchSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.NetworkProgramsSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.HistorySpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.FavoriteSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:name="com.xfinity.playerlib.alt.speechrecognizers.LiveStreamsSpeechRecognizer" android:theme="@style/xfinity_remote.entity"/>
+        <activity android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.programdetails.BabyGuideMovieActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.xfinity.NoActionbarIcon"/>
+        <activity android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.programdetails.BabyGuideSeriesEntityActivity" android:screenOrientation="portrait" android:theme="@style/Theme.xfinity.NoActionbarIcon"/>
+        <activity android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.programdetails.BabyGuideEpisodeDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.xfinity.NoActionbarIcon"/>
+        <activity android:label="@string/favorite" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.favorite.BabyGuideBookmarksActivity" android:screenOrientation="portrait" android:theme="@style/Theme.xfinity.NoActionbarIcon"/>
+        <activity android:label="@string/history" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browsehistory.BabyGuideHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.xfinity.NoActionbarIcon"/>
+        <activity android:label="@string/live" android:launchMode="singleTop" android:name="com.xfinity.playerlib.view.browseprograms.BabyGuideLiveStreamsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.xfinity.NoActionbarIcon"/>
+        <receiver android:name="com.xfinity.playerlib.view.videoplay.RemoteControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.comcast.cim.analytics.PlayerAnalyticsService"/>
+        <meta-data android:name="com.penthera.virtuososdk.client.pckg" android:value="@string/client_package"/>
+        <service android:exported="false" android:label="VirtuosoService" android:name="com.penthera.virtuososdk.service.VirtuosoService" android:process=":dlservice"/>
+        <provider android:authorities="@string/client_package" android:exported="false" android:name="com.xfinity.playnow.provider.downloads.DownloadsContentProvider" android:process=":dlservice"/>
+        <receiver android:enabled="true" android:exported="false" android:label="VirtuosoServiceStarter" android:name="com.penthera.virtuososdk.service.VirtuosoServiceStarter" android:process=":dlservice">
+            <intent-filter>
+                <action android:name="virtuoso.intent.action.DOWNLOAD_UPDATE"/>
+                <action android:name="virtuoso.intent.action.START_VIRTUOSO_SERVICE_LOGGING"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="DownloadsNotificationReceiver" android:name="com.xfinity.playerlib.broadcast.DownloadsNotificationReceiver" android:process=":dlservice">
+            <intent-filter>
+                <action android:name="com.xfinity.playnow.provider.downloads.NOTIFICATION_DOWNLOAD_START"/>
+                <action android:name="com.xfinity.playnow.provider.downloads.NOTIFICATION_DOWNLOAD_STOPPED"/>
+                <action android:name="com.xfinity.playnow.provider.downloads.NOTIFICATION_DOWNLOAD_COMPLETE"/>
+                <action android:name="com.xfinity.playnow.provider.downloads.NOTIFICATION_DOWNLOAD_UPDATE"/>
+                <action android:name="com.xfinity.playnow.provider.downloads.NOTIFICATION_DOWNLOADS_PAUSED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.xfinity.playerlib.broadcast.DownloadsNotificationReceiver$NotificationBuilderService"/>
+        <service android:exported="false" android:name="com.xfinity.playerlib.downloads.MediaLicenseRenewalService"/>
+    </application>
+</manifest>

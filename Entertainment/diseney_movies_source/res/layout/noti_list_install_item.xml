@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/movie_headimage" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:ellipsize="end" android:id="@id/noti_install_name_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="......" android:singleLine="true" android:layout_toRightOf="@id/movie_headimage" style="@style/NotificationTitle" />
+        <TextView android:textSize="12.0sp" android:layout_gravity="right" android:id="@id/timer2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="1.0dip" android:text="..." android:layout_alignParentRight="true" style="@style/NotificationContent" />
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/install_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="6.0dip" android:singleLine="true" android:layout_toRightOf="@id/movie_headimage" android:layout_below="@id/noti_install_name_item" style="@style/NotificationContent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="600.0dip" />
+</RelativeLayout>

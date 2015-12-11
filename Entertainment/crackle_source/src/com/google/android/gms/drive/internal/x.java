@@ -1,0 +1,92 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.google.android.gms.drive.internal;
+
+import android.os.Parcel;
+import com.google.android.gms.common.internal.safeparcel.a;
+import com.google.android.gms.common.internal.safeparcel.b;
+import com.google.android.gms.drive.DriveId;
+
+// Referenced classes of package com.google.android.gms.drive.internal:
+//            OpenFileIntentSenderRequest
+
+public class x
+    implements android.os.Parcelable.Creator
+{
+
+    public x()
+    {
+    }
+
+    static void a(OpenFileIntentSenderRequest openfileintentsenderrequest, Parcel parcel, int i)
+    {
+        int j = b.o(parcel);
+        b.c(parcel, 1, openfileintentsenderrequest.kg);
+        b.a(parcel, 2, openfileintentsenderrequest.qL, false);
+        b.a(parcel, 3, openfileintentsenderrequest.qW, false);
+        b.a(parcel, 4, openfileintentsenderrequest.qM, i, false);
+        b.D(parcel, j);
+    }
+
+    public OpenFileIntentSenderRequest M(Parcel parcel)
+    {
+        DriveId driveid = null;
+        int j = com.google.android.gms.common.internal.safeparcel.a.n(parcel);
+        int i = 0;
+        String as[] = null;
+        String s = null;
+        do
+        {
+            if (parcel.dataPosition() < j)
+            {
+                int k = com.google.android.gms.common.internal.safeparcel.a.m(parcel);
+                switch (com.google.android.gms.common.internal.safeparcel.a.M(k))
+                {
+                default:
+                    com.google.android.gms.common.internal.safeparcel.a.b(parcel, k);
+                    break;
+
+                case 1: // '\001'
+                    i = com.google.android.gms.common.internal.safeparcel.a.g(parcel, k);
+                    break;
+
+                case 2: // '\002'
+                    s = com.google.android.gms.common.internal.safeparcel.a.m(parcel, k);
+                    break;
+
+                case 3: // '\003'
+                    as = com.google.android.gms.common.internal.safeparcel.a.x(parcel, k);
+                    break;
+
+                case 4: // '\004'
+                    driveid = (DriveId)com.google.android.gms.common.internal.safeparcel.a.a(parcel, k, DriveId.CREATOR);
+                    break;
+                }
+            } else
+            if (parcel.dataPosition() != j)
+            {
+                throw new com.google.android.gms.common.internal.safeparcel.a.a((new StringBuilder()).append("Overread allowed size end=").append(j).toString(), parcel);
+            } else
+            {
+                return new OpenFileIntentSenderRequest(i, s, as, driveid);
+            }
+        } while (true);
+    }
+
+    public OpenFileIntentSenderRequest[] am(int i)
+    {
+        return new OpenFileIntentSenderRequest[i];
+    }
+
+    public Object createFromParcel(Parcel parcel)
+    {
+        return M(parcel);
+    }
+
+    public Object[] newArray(int i)
+    {
+        return am(i);
+    }
+}

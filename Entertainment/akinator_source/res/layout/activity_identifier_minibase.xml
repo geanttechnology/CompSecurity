@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:background="@color/storeBackGroundFaces" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/homeButton" layout="@layout/layout_home_button" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ak_fond_texte_without_arabesque" android:scaleType="centerInside" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/choixDansMinibaseHeader" android:background="@drawable/ak_header_myworld" android:layout_width="fill_parent" android:layout_height="@dimen/storeSousHeaderHeight" android:layout_below="@id/homeButton">
+        <TextView android:textSize="@dimen/gen_header_text_size" android:textColor="@color/white_color" android:gravity="center" android:id="@id/choixDansMinibaseTitleText" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CHOIX MINIBASE" android:layout_centerInParent="true" />
+        <include layout="@layout/layout_faces" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/post_home_game_text_size" android:textColor="@color/black_color" android:id="@id/choixDansMinibaseInstructions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="CLIQUEZ SUR VOTRE PERSONNAGE SI VOUS LE VOYEZ DANS CETTE LISTE. A DEFAUT, VOUS POUVEZ L'AJOUTER." android:layout_below="@id/choixDansMinibaseHeader" android:layout_centerHorizontal="true" />
+    <ListView android:orientation="vertical" android:id="@id/minibaseItemsList" android:padding="@dimen/minibaseItemPaddingLR" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ajoutModifMBFooter" android:layout_below="@id/choixDansMinibaseInstructions" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ajoutModifMBFooter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/gen_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/ajouterButton" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_small_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginRight="@dimen/proposal_yes_no_buttons_margin_lr" android:text="AJOUTER" />
+        <Button android:textSize="@dimen/gen_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/rejouerButton" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_small_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginLeft="@dimen/proposal_yes_no_buttons_margin_lr" android:text="REJOUER" />
+    </LinearLayout>
+</RelativeLayout>

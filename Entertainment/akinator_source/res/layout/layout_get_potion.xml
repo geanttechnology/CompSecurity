@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/storeBackGroundLabo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="@dimen/propositionPotionGenericMarginBottom" android:layout_marginBottom="@dimen/propositionPotionGenericMarginBottom" android:layout_weight="2.5">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="3.0" />
+                <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize2" android:textColor="@color/store_text_color_clair" android:id="@id/buttonAllTheTimeGz" android:background="@drawable/ak_button_get_gz" android:layout_width="@dimen/storeBoutonGzWidth" android:layout_height="@dimen/storeBoutonGzHeight" android:text="Get" />
+                <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/white_color" android:gravity="center" android:id="@id/textOr" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="OU" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+                <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/buttonPotion" android:background="@drawable/ak_button_get_labo" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="Get" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/white_color" android:gravity="top|left|center" android:id="@id/textAllTheTime" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ALL THE TIME" android:maxLines="1" android:rotation="-10.0" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginBottom="@dimen/propositionPotionGenericMarginBottom" android:layout_weight="2.5">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="3.0" />
+                <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize2" android:textColor="@color/store_text_color_clair" android:id="@id/button2hGz" android:background="@drawable/ak_button_get_gz" android:layout_width="@dimen/storeBoutonGzWidth" android:layout_height="@dimen/storeBoutonGzHeight" android:text="Get" />
+                <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/white_color" android:gravity="center" android:id="@id/textInvisible" android:visibility="invisible" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="ou" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+                <View android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/white_color" android:gravity="top|left|center" android:id="@id/text2Hours" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2H" android:maxLines="1" android:rotation="-10.0" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="5.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginLeft="8.0dip">
+        <TextView android:textSize="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="8+ New Paid For Free Apps" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_no0" android:background="@drawable/image_loading" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffffa60a" android:id="@id/tv_no0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fddf" />
+                    <TextView android:background="#ffffa60a" android:layout_width="24.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                <ImageView android:id="@id/iv_no1" android:background="@drawable/image_loading" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffffa60a" android:id="@id/tv_no1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fddf" />
+                    <TextView android:background="#ffffa60a" android:layout_width="24.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                <ImageView android:id="@id/iv_no2" android:background="@drawable/image_loading" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffffa60a" android:id="@id/tv_no2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fddf" />
+                    <TextView android:background="#ffffa60a" android:layout_width="24.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                <ImageView android:id="@id/iv_no3" android:background="@drawable/image_loading" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffffa60a" android:id="@id/tv_no3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fddf" />
+                    <TextView android:background="#ffffa60a" android:layout_width="24.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                <ImageView android:id="@id/iv_no4" android:background="@drawable/image_loading" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffffa60a" android:id="@id/tv_no4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fddf" />
+                    <TextView android:background="#ffffa60a" android:layout_width="24.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <ImageView android:id="@id/iv_no5" android:background="@drawable/image_loading" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffffa60a" android:id="@id/tv_no5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fddf" />
+                    <TextView android:background="#ffffa60a" android:layout_width="24.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <ImageView android:id="@id/iv_no6" android:background="@drawable/image_loading" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffffa60a" android:id="@id/tv_no6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fddf" />
+                    <TextView android:background="#ffffa60a" android:layout_width="24.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <ImageView android:id="@id/iv_no7" android:background="@drawable/image_loading" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffffa60a" android:id="@id/tv_no7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fddf" />
+                    <TextView android:background="#ffffa60a" android:layout_width="24.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:background="@color/storeBackGroundFaces" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ak_fond_texte_without_arabesque" android:scaleType="centerInside" />
+    <include android:id="@id/retourButton" layout="@layout/layout_return" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/minibaseHeader" android:background="@drawable/ak_header_myworld" android:layout_width="fill_parent" android:layout_height="@dimen/storeSousHeaderHeight" android:layout_below="@id/retourButton">
+        <TextView android:textSize="@dimen/gen_header_text_size" android:textColor="@color/store_text_color_clair" android:gravity="center" android:id="@id/minibaseTitleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MyWorld" android:layout_centerInParent="true" />
+        <include layout="@layout/layout_faces" />
+    </RelativeLayout>
+    <ListView android:orientation="vertical" android:id="@id/minibaseItemsList" android:padding="@dimen/minibaseItemPaddingLR" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/suppAllButton" android:layout_below="@id/minibaseHeader" android:layout_centerHorizontal="true" />
+    <ImageView android:textSize="@dimen/minibaseButtonTextSize" android:textColor="@color/buttons_text_color" android:id="@id/suppAllButton" android:background="@drawable/ak_icon_delete_all" android:layout_width="@dimen/cancel_button_size" android:layout_height="@dimen/cancel_button_size" android:layout_marginRight="@dimen/minibaseFooterButtonsSpace" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

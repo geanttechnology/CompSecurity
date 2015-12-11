@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.comcast.cim.cmasl.android.util.view.widget.ImageStaticLayoutView android:id="@id/cover_art" android:background="@color/MissingImage" android:layout_width="87.0dip" android:layout_height="116.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/cover_art" android:layout_centerVertical="true">
+        <ImageView android:id="@id/network_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+        <TextView android:ellipsize="end" android:id="@id/title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:singleLine="true" style="@style/LargeRegularWhite" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/download_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/icn_downloadable_browse" />
+            <TextView android:id="@id/year" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" style="@style/SmallLightGray" />
+            <ImageView android:id="@id/new_indicator" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ind_new" android:contentDescription="@string/content_description_new_indicator" />
+            <ImageView android:id="@id/locked_indicator" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="15.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/ind_upsell_key" android:contentDescription="@string/locked" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/list_separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_separator_height" android:layout_marginTop="16.0dip" android:layout_below="@id/cover_art" />
+</RelativeLayout>

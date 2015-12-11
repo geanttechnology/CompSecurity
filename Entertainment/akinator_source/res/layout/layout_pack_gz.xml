@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layoutGetGz" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight">
+        <ImageView android:gravity="center" android:background="@drawable/ak_gz1" android:layout_width="@dimen/gz_icon_size" android:layout_height="@dimen/gz_icon_size" />
+        <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/store_text_color_clair" android:gravity="left|center" android:id="@id/textGz1" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="45000" android:layout_weight="1.0" />
+        <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/buttonBuyGz1" android:background="@drawable/ak_button_buy_gz" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+    </LinearLayout>
+    <include layout="@layout/layout_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight">
+        <ImageView android:gravity="center" android:background="@drawable/ak_gz2" android:layout_width="@dimen/gz_icon_size" android:layout_height="@dimen/gz_icon_size" />
+        <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/store_text_color_clair" android:gravity="left|center" android:id="@id/textGz2" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="115000" android:layout_weight="1.0" />
+        <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/buttonBuyGz2" android:background="@drawable/ak_button_buy_gz" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+    </LinearLayout>
+    <include layout="@layout/layout_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight">
+        <ImageView android:gravity="center" android:background="@drawable/ak_gz3" android:layout_width="@dimen/gz_icon_size" android:layout_height="@dimen/gz_icon_size" />
+        <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/store_text_color_clair" android:gravity="left|center" android:id="@id/textGz3" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="195000" android:layout_weight="1.0" />
+        <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/buttonBuyGz3" android:background="@drawable/ak_button_buy_gz" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+    </LinearLayout>
+    <include layout="@layout/layout_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight">
+        <ImageView android:gravity="center" android:background="@drawable/ak_gz4" android:layout_width="@dimen/gz_icon_size" android:layout_height="@dimen/gz_icon_size" />
+        <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/store_text_color_clair" android:gravity="left|center" android:id="@id/textGz4" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="300000" android:layout_weight="1.0" />
+        <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/buttonBuyGz4" android:background="@drawable/ak_button_buy_gz" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+    </LinearLayout>
+    <include layout="@layout/layout_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight">
+        <ImageView android:gravity="center" android:background="@drawable/ak_gz5" android:layout_width="@dimen/gz_icon_size" android:layout_height="@dimen/gz_icon_size" />
+        <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/store_text_color_clair" android:gravity="left|center" android:id="@id/textGz5" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="500000" android:layout_weight="1.0" />
+        <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/buttonBuyGz5" android:background="@drawable/ak_button_buy_gz" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+    </LinearLayout>
+    <include layout="@layout/layout_line" />
+    <include layout="@layout/layout_store_accepte_cgv" />
+</LinearLayout>

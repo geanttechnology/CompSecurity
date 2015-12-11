@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/onboarding_card" android:layout_width="@dimen/onboarding_card_width" android:layout_height="@dimen/onboarding_card_height">
+        <TextView android:textSize="@dimen/onboarding_text_size" android:textColor="@color/imoji_primary" android:gravity="center" android:id="@id/onboarding_slide_text_extensions" android:paddingLeft="@dimen/onboarding_card_buffer_horizontal" android:paddingTop="@dimen/onboarding_card_buffer_vertical" android:paddingRight="@dimen/onboarding_card_buffer_horizontal" android:paddingBottom="@dimen/onboarding_card_buffer_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/onboarding_min_textview_height" android:text="@string/onboarding_text_extensions" android:lineSpacingMultiplier="1.2" style="?android:textAppearanceMedium" />
+        <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:src="@drawable/welcome2" android:scaleType="fitEnd" android:adjustViewBounds="true" android:baselineAlignBottom="true" />
+    </LinearLayout>
+</LinearLayout>

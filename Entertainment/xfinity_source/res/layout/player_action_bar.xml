@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/playnow_custom_action_bar" android:background="@color/action_bar_bg" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:id="@id/watching_speech" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:gravity="center_vertical" android:id="@id/on_now" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/on_now" style="@style/SmallRegularWhite" />
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/video_title" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" style="@style/SmallRegularWhite" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/menu_tabs" android:layout_width="@dimen/baby_guide_panel_size" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center" android:id="@id/menu_guide" android:background="@drawable/actionbar_player_menu_bg_sel" android:layout_width="@dimen/baby_guide_menu_size" android:layout_height="fill_parent">
+            <ImageView android:id="@id/menu_guide_icon" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_guide_playback" android:contentDescription="@string/content_description_baby_guide_info" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:background="@color/action_bar_player_menu_divider" android:layout_width="1.0dip" android:layout_height="@dimen/baby_guide_menu_divider_height" />
+        <LinearLayout android:gravity="center" android:id="@id/menu_history" android:background="@drawable/actionbar_player_menu_bg_sel" android:layout_width="@dimen/baby_guide_menu_size" android:layout_height="fill_parent">
+            <ImageView android:id="@id/baby_guide_history" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_history" android:contentDescription="@string/content_description_baby_guide_history" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:background="@color/action_bar_player_menu_divider" android:layout_width="1.0dip" android:layout_height="@dimen/baby_guide_menu_divider_height" />
+        <LinearLayout android:gravity="center" android:id="@id/menu_favorite" android:background="@drawable/actionbar_player_menu_bg_sel" android:layout_width="@dimen/baby_guide_menu_size" android:layout_height="fill_parent">
+            <ImageView android:id="@id/baby_guide_bookmark" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_bookmarks" android:contentDescription="@string/content_description_baby_guide_bookmarks" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.gotv.crackle.fragments;
+
+import android.view.View;
+import android.widget.AdapterView;
+import com.gotv.crackle.model.BrowseModel;
+
+// Referenced classes of package com.gotv.crackle.fragments:
+//            WatchlistsFragment
+
+class this._cls0
+    implements android.widget.ckListener
+{
+
+    final WatchlistsFragment this$0;
+
+    public void onItemClick(AdapterView adapterview, View view, int i, long l)
+    {
+        view.setTag((BrowseModel)adapterview.getItemAtPosition(i));
+        launchMediaDetails(view, false);
+    }
+
+    ()
+    {
+        this$0 = WatchlistsFragment.this;
+        super();
+    }
+}

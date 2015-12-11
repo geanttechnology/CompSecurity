@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/header_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_button_dark" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/search_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_button" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_search" />
+        <android.support.v7.app.MediaRouteButton android:id="@id/media_route_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/search_button" style="@style/PlayerCastMediaRouteLightButton" />
+    </RelativeLayout>
+</RelativeLayout>

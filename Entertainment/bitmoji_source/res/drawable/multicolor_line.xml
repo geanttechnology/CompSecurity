@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="0.0dip" android:right="0.0dip">
+        <shape>
+            <gradient android:startColor="@color/bitshop_gradient_1" android:endColor="#00ffffff" android:angle="0.0" android:type="linear" android:centerColor="@color/bitshop_gradient_1" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:right="0.0dip">
+        <shape>
+            <gradient android:startColor="#00ffffff" android:endColor="@color/bitshop_gradient_4" android:angle="0.0" android:type="linear" android:centerColor="@color/bitshop_gradient_4" />
+        </shape>
+    </item>
+    <item android:left="100.0dip" android:right="100.0dip">
+        <shape>
+            <gradient android:startColor="#00ffffff" android:endColor="#00ffffff" android:angle="0.0" android:type="linear" android:centerColor="#ffff9900" />
+        </shape>
+    </item>
+    <item android:left="190.0dip" android:right="10.0dip">
+        <shape>
+            <gradient android:startColor="#00fff700" android:endColor="#00fff700" android:angle="0.0" android:type="linear" android:centerColor="@color/bitshop_gradient_3" />
+        </shape>
+    </item>
+    <item android:left="50.0dip" android:right="140.0dip">
+        <shape>
+            <gradient android:startColor="#0015ff00" android:endColor="#0015ff00" android:angle="0.0" android:type="linear" android:centerColor="@color/bitshop_gradient_2" />
+        </shape>
+    </item>
+</layer-list>

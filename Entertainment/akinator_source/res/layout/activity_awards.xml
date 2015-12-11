@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutAwards" android:background="@drawable/ak_classement_with_cadre" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layoutTitre" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/classement_margin_top">
+        <ImageView android:id="@id/akiaward_title" android:layout_width="@dimen/classement_width_title" android:layout_height="wrap_content" android:src="@drawable/ak_classement_titre" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/whatIsAkiAward" android:background="@drawable/ak_info" android:layout_width="@dimen/info_icon_size" android:layout_height="@dimen/info_icon_size" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/akiaward_title" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scrollviewClassement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/layoutBottom" android:layout_below="@id/layoutTitre">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/classement_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/classement_margin_top">
+                <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/black_color" android:gravity="right|center" android:id="@id/textNbBadgeBlack" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="0" android:layout_weight="9.0" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:id="@id/imageNbBadgeBlack" android:background="@drawable/ak_badge_shadow" android:layout_width="@dimen/classement_width_award" android:layout_height="wrap_content" android:src="@drawable/ak_badge_black" android:adjustViewBounds="true" />
+                <View android:id="@id/viewBlack" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/classement_margin_top">
+                <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/black_color" android:gravity="right|center" android:id="@id/textNbBadgePlatinum" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="0" android:layout_weight="9.0" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:id="@id/imageNbBadgePlatinum" android:background="@drawable/ak_badge_shadow" android:layout_width="@dimen/classement_width_award" android:layout_height="wrap_content" android:src="@drawable/ak_badge_platinum" android:adjustViewBounds="true" />
+                <View android:id="@id/viewPlatinum" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/classement_margin_top">
+                <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/black_color" android:gravity="right|center" android:id="@id/textNbBadgeGold" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="0" android:layout_weight="9.0" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:id="@id/imageNbBadgeGold" android:background="@drawable/ak_badge_shadow" android:layout_width="@dimen/classement_width_award" android:layout_height="wrap_content" android:src="@drawable/ak_badge_gold" android:adjustViewBounds="true" />
+                <View android:id="@id/viewGold" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/classement_margin_top">
+                <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/black_color" android:gravity="right|center" android:id="@id/textNbBadgeSilver" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="0" android:layout_weight="9.0" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:layout_width="@dimen/classement_width_award" android:layout_height="wrap_content" android:src="@drawable/ak_badge_silver" android:adjustViewBounds="true" />
+                <View android:id="@id/viewSilver" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/classement_margin_top">
+                <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/black_color" android:gravity="right|center" android:id="@id/textNbBadgeBronze" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="0" android:layout_weight="9.0" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:background="@drawable/ak_badge_shadow" android:layout_width="@dimen/classement_width_award" android:layout_height="wrap_content" android:src="@drawable/ak_badge_bronze" android:adjustViewBounds="true" />
+                <View android:id="@id/viewBronze" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/classement_margin_top">
+                <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/black_color" android:gravity="right|center" android:id="@id/textNbBadgeStandard" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="0" android:layout_weight="9.0" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:background="@drawable/ak_badge_shadow" android:layout_width="@dimen/classement_width_award" android:layout_height="wrap_content" android:src="@drawable/ak_badge_standard" android:adjustViewBounds="true" />
+                <View android:id="@id/viewStandard" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/classement_margin_top" android:layout_alignParentBottom="true">
+        <View android:id="@id/line" android:background="@color/black_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/score" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/classement_margin_top">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/black_color" android:gravity="center" android:id="@id/textScoreXp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="2000000" />
+            <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/black_color" android:gravity="right|center" android:id="@id/textXp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="XP" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/classement_margin_top" android:layout_below="@id/score">
+            <View android:layout_width="0.0dip" android:layout_height="@dimen/xp_icon_size" android:layout_weight="6.0" />
+            <ImageView android:id="@id/imageHat" android:layout_width="@dimen/xp_icon_size" android:layout_height="@dimen/xp_icon_size" android:src="@drawable/ak_xp_turban_blanc" />
+            <View android:layout_width="0.0dip" android:layout_height="@dimen/xp_icon_size" android:layout_weight="2.0" />
+            <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/black_color" android:gravity="center" android:id="@id/textRang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MAGICIEN" />
+            <View android:layout_width="0.0dip" android:layout_height="@dimen/xp_icon_size" android:layout_weight="10.0" />
+            <ProgressBar android:id="@id/pbXp" android:visibility="gone" android:layout_width="@dimen/xp_bar_width" android:layout_height="@dimen/xp_bar_height" android:progressDrawable="@drawable/ak_style_progress_bar_violet" style="@android:style/Widget.ProgressBar.Horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layoutCharactersPlayed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/viewCancel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/layoutCharactersPlayedZone" android:background="@drawable/golden_rect" android:layout_width="fill_parent" android:layout_height="@dimen/classement_alread_played_height" android:layout_marginLeft="@dimen/postHomeContent_margin_lr" android:layout_marginRight="@dimen/postHomeContent_margin_lr" android:layout_centerInParent="true">
+            <ImageView android:id="@id/closePopUp" android:background="@drawable/ak_close_popup" android:layout_width="@dimen/gz_icon_size" android:layout_height="@dimen/gz_icon_size" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/imageBadge" android:layout_width="@dimen/classement_width_award" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/imageBadge">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutItems" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/backButtonImage" android:layout_width="@dimen/cancel_button_size" android:layout_height="@dimen/cancel_button_size" android:layout_marginLeft="@dimen/cancel_button_margin_left" android:layout_marginTop="@dimen/classement_margin_top" android:src="@drawable/cancel_button" android:scaleType="fitXY" android:adjustViewBounds="true" />
+</RelativeLayout>

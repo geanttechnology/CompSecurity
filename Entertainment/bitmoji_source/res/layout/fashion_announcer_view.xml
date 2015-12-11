@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/announcer_notch" android:layout_width="@dimen/fashion_announcer_notch_width" android:layout_height="@dimen/fashion_announcer_notch_height" android:src="@drawable/ic_announcer_notch" android:layout_alignParentLeft="true" />
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/fashion_announcer_web_view_margin_top" />
+    <RelativeLayout android:id="@id/closeButtonContainer" android:layout_width="@dimen/fashion_announcer_close_container_size" android:layout_height="@dimen/fashion_announcer_close_container_size" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <Button android:textStyle="bold" android:textColor="@android:color/transparent" android:id="@id/closeButton" android:background="@drawable/ic_announcer_close" android:layout_width="@dimen/fashion_announcer_close_size" android:layout_height="@dimen/fashion_announcer_close_size" android:layout_marginRight="@dimen/fashion_announcer_close_margin_br" android:layout_marginBottom="@dimen/fashion_announcer_close_margin_br" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/AppTheme.Button" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110.0dip" android:weightSum="3.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/downloadedapp" android:background="@drawable/home_menu_sele_bg" android:layout_width="120.0dip" android:layout_height="110.0dip" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/appicon" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginTop="16.0dip" />
+                    <TextView android:textSize="12.0sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/appgame" />
+                </LinearLayout>
+                <View android:background="#ffdddddd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:id="@id/downloadedmusic" android:background="@drawable/home_menu_sele_bg" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/iv_mp3" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginTop="16.0dip" />
+                    <TextView android:textSize="12.0sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Music" />
+                </LinearLayout>
+                <View android:background="#ffdddddd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:id="@id/downloadedringtone" android:background="@drawable/home_menu_sele_bg" android:layout_width="120.0dip" android:layout_height="110.0dip" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/iv_ringtone" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginTop="16.0dip" />
+                    <TextView android:textSize="12.0sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Ringtone" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110.0dip" android:weightSum="3.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/downloadedvideo" android:background="@drawable/home_menu_sele_bg" android:layout_width="120.0dip" android:layout_height="110.0dip" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/iv_video" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginTop="16.0dip" />
+                    <TextView android:textSize="12.0sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Video" />
+                </LinearLayout>
+                <View android:background="#ffdddddd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_weight="1.0" />
+                <View android:background="#ffdddddd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110.0dip" android:weightSum="3.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="120.0dip" android:layout_height="110.0dip" android:layout_weight="1.0" />
+                <View android:background="#ffdddddd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_weight="1.0" />
+                <View android:background="#ffdddddd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

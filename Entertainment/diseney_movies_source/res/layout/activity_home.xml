@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aio.downloader.views.DragLayout android:id="@id/home_dl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_menu_item" />
+    <com.aio.downloader.views.MyRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/home_menu_dingbu_rl" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip">
+                <ImageButton android:id="@id/home_menu_icon_btn" android:background="@drawable/home_menu_sele_bg" android:layout_width="26.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                <RelativeLayout android:id="@id/linedown" android:layout_width="50.0dip" android:layout_height="55.0dip" android:layout_alignParentLeft="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/searchline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="46.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffcccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AIO Downloader" />
+                </LinearLayout>
+                <ImageView android:id="@id/togift" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginRight="46.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@null" />
+                <ImageView android:id="@id/tosearch" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@null" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/home_menu_dingbu_rl">
+            <FrameLayout android:id="@id/home_framelayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </com.aio.downloader.views.MyRelativeLayout>
+</com.aio.downloader.views.DragLayout>

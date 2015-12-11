@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/video_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/d2g_section" android:background="@drawable/video_item_available_download_bg" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="26.0dip">
+        <ImageView android:id="@id/d2g_graphic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/icn_downloadable_metadata" />
+        <TextView android:ellipsize="marquee" android:gravity="left" android:id="@id/d2g_status" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/available_for_download" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/SmallestRegularWhite">
+            <requestFocus />
+        </TextView>
+        <TextView android:gravity="right" android:id="@id/d2g_progress" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" android:contentDescription="@null" android:importantForAccessibility="2" style="@style/SmallestRegularWhite" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/buttons_layout" android:padding="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:importantForAccessibility="1">
+        <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@id/playback_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <Button android:id="@id/on_now_button" android:visibility="gone" android:layout_width="@dimen/entity_play_button_width" style="@style/OnNowButton" />
+            <LinearLayout android:id="@id/playback_button" android:visibility="gone" android:layout_width="@dimen/entity_play_button_width" style="@style/EntitledPlayButton">
+                <include layout="@layout/button_children" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/download_item_button" android:background="@drawable/download_button_entitled" android:visibility="gone" android:layout_width="@dimen/entity_play_button_width" android:layout_marginTop="16.0dip" style="@style/PlayNowPlayButton">
+                <include layout="@layout/download_button_children" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/video_details" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/playback_button_container" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/network_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:ellipsize="end" android:id="@id/network_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_network_name" android:singleLine="true" style="@style/Metadata" />
+            <TextView android:textSize="19.0dip" android:textColor="@color/indicator_gray" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/indicators" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dip" android:layout_marginTop="6.0dip" android:text="@string/test_video_language" />
+            <TextView android:id="@id/progressIndicator" android:visibility="gone" android:layout_marginTop="1.0dip" style="@style/ProgressIndicator" />
+        </LinearLayout>
+        <TextView android:id="@id/expired_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:text="@string/download_ovp_expired_message" android:layout_toLeftOf="@id/playback_button_container" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/SmallestRegularWhite" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/progress_layout" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="0.0dip" android:layout_marginRight="16.0dip" android:layout_weight="1.0" style="@style/DownloadProgressBar" />
+        <ImageView android:id="@id/cancel_download" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/x_clear_search" android:contentDescription="@string/content_description_cancel_download_button" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:material="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/topcolorwyc" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <com.aio.downloader.views.LImageButton android:id="@id/fan" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/icon_header_back" material:widget_animColor="@color/color_anim_white" material:widget_type="left" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/mysettingtv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Settings" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.aio.downloader.views.OverScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="150.0dip">
+                <ImageView android:layout_width="72.0dip" android:layout_height="72.0dip" android:src="@drawable/icon" />
+                <TextView android:textSize="22.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/full_app_name" />
+                <TextView android:textColor="#ffaaaaaa" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/showversion" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/floatsetting1" android:background="@drawable/mysettings_item_press" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="Floating Widget Setting" />
+                    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/downloadsetting1" android:background="@drawable/mysettings_item_press" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="@string/downloadsettings" />
+                    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/notisetting1" android:background="@drawable/mysettings_item_press" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="Notifications Settings" />
+                    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/cleancache" android:background="@drawable/mysettings_item_press" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="@string/cleanlocalcache" />
+                    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/checkforupdate" android:background="@drawable/mysettings_item_press" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="@string/checkforupdate" />
+                    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/contactus" android:background="@drawable/mysettings_item_press" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="@string/contactus" />
+                    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/aboutus" android:background="@drawable/mysettings_item_press" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="@string/aboutus" />
+                    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/downloadpath" android:background="@drawable/mysettings_item_press" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="@string/downloadpath" />
+                    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:id="@id/helpus" android:background="@drawable/mysettings_item_press" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="@string/helpus" />
+                    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.aio.downloader.views.OverScrollView>
+</LinearLayout>

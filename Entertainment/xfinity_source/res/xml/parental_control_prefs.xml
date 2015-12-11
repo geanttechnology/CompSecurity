@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_parental_control_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:enabled="false" android:layout="@layout/info_preference" android:title="@string/settings_parental_control_summary" android:selectable="false" />
+    <Preference android:title="Manage Parental Controls" android:key="@string/settings_key_manage_parental_control" android:widgetLayout="@layout/external_link_prompt_widget">
+        <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="com.comcast.cim.android.view.settings.ExternalLinkPromptActivity">
+            <extra android:name="title" android:value="Manage Parental Controls" />
+            <extra android:name="url" android:value="@string/url_online_parental_controls" />
+        </intent>
+    </Preference>
+    <CheckBoxPreference android:title="Show Adult Content" android:key="@string/settings_key_show_adult" android:summary="@string/settings_show_adult_content_summary" />
+</PreferenceScreen>

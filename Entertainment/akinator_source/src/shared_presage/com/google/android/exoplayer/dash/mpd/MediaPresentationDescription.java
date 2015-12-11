@@ -1,0 +1,45 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package shared_presage.com.google.android.exoplayer.dash.mpd;
+
+import java.util.Collections;
+import java.util.List;
+
+// Referenced classes of package shared_presage.com.google.android.exoplayer.dash.mpd:
+//            UtcTimingElement
+
+public class MediaPresentationDescription
+    implements shared_presage.com.google.android.exoplayer.util.ManifestFetcher.RedirectingManifest
+{
+
+    public final long availabilityStartTime;
+    public final long duration;
+    public final boolean dynamic;
+    public final String location;
+    public final long minBufferTime;
+    public final long minUpdatePeriod;
+    public final List periods;
+    public final long timeShiftBufferDepth;
+    public final UtcTimingElement utcTiming;
+
+    public MediaPresentationDescription(long l, long l1, long l2, boolean flag, 
+            long l3, long l4, UtcTimingElement utctimingelement, String s, List list)
+    {
+        availabilityStartTime = l;
+        duration = l1;
+        minBufferTime = l2;
+        dynamic = flag;
+        minUpdatePeriod = l3;
+        timeShiftBufferDepth = l4;
+        utcTiming = utctimingelement;
+        location = s;
+        periods = Collections.unmodifiableList(list);
+    }
+
+    public String getNextManifestUri()
+    {
+        return location;
+    }
+}

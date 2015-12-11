@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/ic_key_green" app:state_valid="true" app:state_empty="false" />
+    <item android:drawable="@drawable/ic_key_red" app:state_valid="false" app:state_empty="false" />
+    <item android:drawable="@drawable/ic_key" app:state_empty="true" />
+</selector>

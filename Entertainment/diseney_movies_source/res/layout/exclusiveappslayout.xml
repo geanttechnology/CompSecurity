@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:material="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/todaytop" android:background="@color/topcolorwyc" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/top" android:background="@color/topcolorwyc" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+            <com.aio.downloader.views.LImageButton android:id="@id/exclusive_fan" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_header_back" android:layout_alignParentLeft="true" material:widget_animColor="@color/color_anim_white" material:widget_type="left" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tv_ex_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Exclusive Apps" android:layout_toRightOf="@id/exclusive_fan" android:layout_centerVertical="true" />
+            <com.aio.downloader.views.LImageButton android:id="@id/apptopsearch" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="48.0dip" android:src="@drawable/home_search" android:layout_alignParentRight="true" android:layout_centerInParent="true" material:widget_animColor="@color/color_anim_white" />
+            <RelativeLayout android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_toLeftOf="@id/apptopsearch" android:layout_centerInParent="true" android:contentDescription="@null">
+                <ImageView android:id="@id/apptopgift" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/home_gift2" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/apptopgift" android:padding="8.0dip" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/home_gift" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <com.aio.downloader.views.LImageButton android:id="@id/apptodown" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/home_manage" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@null" material:widget_animColor="@color/color_anim_white" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/todaytop">
+        <android.support.v4.view.ViewPager android:id="@id/vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="@drawable/divider_headerbar_bottom" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    </RelativeLayout>
+</LinearLayout>

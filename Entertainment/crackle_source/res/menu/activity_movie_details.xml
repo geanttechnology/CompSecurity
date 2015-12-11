@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_mediaroute" android:title="@string/action_chromecast" app:showAsAction="always" app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider" />
+    <item android:icon="@drawable/icon_cc_action" android:id="@id/action_captions" android:title="@string/action_captions" app:showAsAction="always" />
+    <item android:icon="@drawable/share_button" android:id="@id/menu_share" android:title="@string/menu_share" android:showAsAction="always" />
+    <item android:icon="@drawable/like_button" android:id="@id/menu_like" android:title="@string/menu_like" android:showAsAction="always" />
+    <item android:icon="@drawable/buy_button" android:id="@id/menu_buy" android:title="@string/menu_buy" android:showAsAction="always" />
+    <item android:id="@id/menu_sign_in" android:title="@string/menu_sign_in" android:showAsAction="never" />
+    <item android:id="@id/menu_history" android:title="@string/menu_history" android:showAsAction="never" />
+    <item android:id="@id/menu_settings" android:title="@string/menu_settings" android:showAsAction="never" />
+    <item android:id="@id/menu_mpoints" android:title="@string/menu_mpoints" android:showAsAction="never" />
+    <item android:id="@id/menu_give_feedback" android:title="@string/menu_give_feedback" android:showAsAction="never" />
+    <item android:id="@id/menu_about_crackle" android:title="@string/menu_about_crackle" android:showAsAction="never" />
+</menu>

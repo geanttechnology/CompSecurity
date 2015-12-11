@@ -1,0 +1,187 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.google.android.gms;
+
+
+// Referenced classes of package com.google.android.gms:
+//            R
+
+public static final class 
+{
+
+    public static final int ActionBar[] = {
+        0x7f010021, 0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a, 
+        0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032, 0x7f010033
+    };
+    public static final int ActionBarLayout[] = {
+        0x10100b3
+    };
+    public static int ActionBarLayout_android_layout_gravity = 0;
+    public static final int ActionBarWindow[] = {
+        0x7f010000, 0x7f010001, 0x7f010002
+    };
+    public static int ActionBarWindow_windowActionBar = 0;
+    public static int ActionBarWindow_windowActionBarOverlay = 1;
+    public static int ActionBarWindow_windowSplitActionBar = 2;
+    public static int ActionBar_background = 10;
+    public static int ActionBar_backgroundSplit = 12;
+    public static int ActionBar_backgroundStacked = 11;
+    public static int ActionBar_customNavigationLayout = 13;
+    public static int ActionBar_displayOptions = 3;
+    public static int ActionBar_divider = 9;
+    public static int ActionBar_height = 1;
+    public static int ActionBar_homeLayout = 14;
+    public static int ActionBar_icon = 7;
+    public static int ActionBar_indeterminateProgressStyle = 16;
+    public static int ActionBar_itemPadding = 18;
+    public static int ActionBar_logo = 8;
+    public static int ActionBar_navigationMode = 2;
+    public static int ActionBar_progressBarPadding = 17;
+    public static int ActionBar_progressBarStyle = 15;
+    public static int ActionBar_subtitle = 4;
+    public static int ActionBar_subtitleTextStyle = 6;
+    public static int ActionBar_title = 0;
+    public static int ActionBar_titleTextStyle = 5;
+    public static final int ActionMenuItemView[] = {
+        0x101013f
+    };
+    public static int ActionMenuItemView_android_minWidth = 0;
+    public static final int ActionMenuView[] = new int[0];
+    public static final int ActionMode[] = {
+        0x7f010022, 0x7f010026, 0x7f010027, 0x7f01002b, 0x7f01002d
+    };
+    public static int ActionMode_background = 3;
+    public static int ActionMode_backgroundSplit = 4;
+    public static int ActionMode_height = 0;
+    public static int ActionMode_subtitleTextStyle = 2;
+    public static int ActionMode_titleTextStyle = 1;
+    public static final int ActivityChooserView[] = {
+        0x7f010066, 0x7f010067
+    };
+    public static int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
+    public static int ActivityChooserView_initialActivityCount = 0;
+    public static final int AdsAttrs[] = {
+        0x7f01006f, 0x7f010070, 0x7f010071
+    };
+    public static int AdsAttrs_adSize = 0;
+    public static int AdsAttrs_adSizes = 1;
+    public static int AdsAttrs_adUnitId = 2;
+    public static final int CompatTextView[] = {
+        0x7f010069
+    };
+    public static int CompatTextView_textAllCaps = 0;
+    public static final int LinearLayoutICS[] = {
+        0x7f01002a, 0x7f010051, 0x7f010052
+    };
+    public static int LinearLayoutICS_divider = 0;
+    public static int LinearLayoutICS_dividerPadding = 2;
+    public static int LinearLayoutICS_showDividers = 1;
+    public static final int MapAttrs[] = {
+        0x7f010072, 0x7f010073, 0x7f010074, 0x7f010075, 0x7f010076, 0x7f010077, 0x7f010078, 0x7f010079, 0x7f01007a, 0x7f01007b, 
+        0x7f01007c, 0x7f01007d, 0x7f01007e, 0x7f01007f
+    };
+    public static int MapAttrs_cameraBearing = 1;
+    public static int MapAttrs_cameraTargetLat = 2;
+    public static int MapAttrs_cameraTargetLng = 3;
+    public static int MapAttrs_cameraTilt = 4;
+    public static int MapAttrs_cameraZoom = 5;
+    public static int MapAttrs_mapType = 0;
+    public static int MapAttrs_uiCompass = 6;
+    public static int MapAttrs_uiRotateGestures = 7;
+    public static int MapAttrs_uiScrollGestures = 8;
+    public static int MapAttrs_uiTiltGestures = 9;
+    public static int MapAttrs_uiZoomControls = 10;
+    public static int MapAttrs_uiZoomGestures = 11;
+    public static int MapAttrs_useViewLifecycle = 12;
+    public static int MapAttrs_zOrderOnTop = 13;
+    public static final int MediaRouteButton[] = {
+        0x101013f, 0x1010140, 0x7f01006a
+    };
+    public static int MediaRouteButton_android_minHeight = 1;
+    public static int MediaRouteButton_android_minWidth = 0;
+    public static int MediaRouteButton_externalRouteEnabledDrawable = 2;
+    public static final int MenuGroup[] = {
+        0x101000e, 0x10100d0, 0x1010194, 0x10101de, 0x10101df, 0x10101e0
+    };
+    public static int MenuGroup_android_checkableBehavior = 5;
+    public static int MenuGroup_android_enabled = 0;
+    public static int MenuGroup_android_id = 1;
+    public static int MenuGroup_android_menuCategory = 3;
+    public static int MenuGroup_android_orderInCategory = 4;
+    public static int MenuGroup_android_visible = 2;
+    public static final int MenuItem[] = {
+        0x1010002, 0x101000e, 0x10100d0, 0x1010106, 0x1010194, 0x10101de, 0x10101df, 0x10101e1, 0x10101e2, 0x10101e3, 
+        0x10101e4, 0x10101e5, 0x101026f, 0x7f010049, 0x7f01004a, 0x7f01004b, 0x7f01004c
+    };
+    public static int MenuItem_actionLayout = 14;
+    public static int MenuItem_actionProviderClass = 16;
+    public static int MenuItem_actionViewClass = 15;
+    public static int MenuItem_android_alphabeticShortcut = 9;
+    public static int MenuItem_android_checkable = 11;
+    public static int MenuItem_android_checked = 3;
+    public static int MenuItem_android_enabled = 1;
+    public static int MenuItem_android_icon = 0;
+    public static int MenuItem_android_id = 2;
+    public static int MenuItem_android_menuCategory = 5;
+    public static int MenuItem_android_numericShortcut = 10;
+    public static int MenuItem_android_onClick = 12;
+    public static int MenuItem_android_orderInCategory = 6;
+    public static int MenuItem_android_title = 7;
+    public static int MenuItem_android_titleCondensed = 8;
+    public static int MenuItem_android_visible = 4;
+    public static int MenuItem_showAsAction = 13;
+    public static final int MenuView[] = {
+        0x10100ae, 0x101012c, 0x101012d, 0x101012e, 0x101012f, 0x1010130, 0x1010131, 0x101052f
+    };
+    public static int MenuView_android_headerBackground = 4;
+    public static int MenuView_android_horizontalDivider = 2;
+    public static int MenuView_android_itemBackground = 5;
+    public static int MenuView_android_itemIconDisabledAlpha = 6;
+    public static int MenuView_android_itemTextAppearance = 1;
+    public static int MenuView_android_preserveIconSpacing = 7;
+    public static int MenuView_android_verticalDivider = 3;
+    public static int MenuView_android_windowAnimationStyle = 0;
+    public static final int SearchView[] = {
+        0x101011f, 0x1010220, 0x1010264, 0x7f010056, 0x7f010057
+    };
+    public static int SearchView_android_imeOptions = 2;
+    public static int SearchView_android_inputType = 1;
+    public static int SearchView_android_maxWidth = 0;
+    public static int SearchView_iconifiedByDefault = 3;
+    public static int SearchView_queryHint = 4;
+    public static final int Spinner[] = {
+        0x10100af, 0x1010175, 0x1010176, 0x1010262, 0x10102ac, 0x10102ad, 0x7f01004d, 0x7f01004e, 0x7f01004f, 0x7f010050
+    };
+    public static int Spinner_android_dropDownHorizontalOffset = 4;
+    public static int Spinner_android_dropDownSelector = 1;
+    public static int Spinner_android_dropDownVerticalOffset = 5;
+    public static int Spinner_android_dropDownWidth = 3;
+    public static int Spinner_android_gravity = 0;
+    public static int Spinner_android_popupBackground = 2;
+    public static int Spinner_disableChildrenWhenDisabled = 9;
+    public static int Spinner_popupPromptView = 8;
+    public static int Spinner_prompt = 6;
+    public static int Spinner_spinnerMode = 7;
+    public static final int Theme[] = {
+        0x7f010043, 0x7f010044, 0x7f010045, 0x7f010046, 0x7f010047, 0x7f010048
+    };
+    public static int Theme_actionDropDownStyle = 0;
+    public static int Theme_dropdownListPreferredItemHeight = 1;
+    public static int Theme_listChoiceBackgroundIndicator = 5;
+    public static int Theme_panelMenuListTheme = 4;
+    public static int Theme_panelMenuListWidth = 3;
+    public static int Theme_popupMenuStyle = 2;
+    public static final int View[] = {
+        0x10100da, 0x7f010034, 0x7f010035
+    };
+    public static int View_android_focusable = 0;
+    public static int View_paddingEnd = 2;
+    public static int View_paddingStart = 1;
+
+
+    public ()
+    {
+    }
+}

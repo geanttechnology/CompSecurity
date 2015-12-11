@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.cmasl.android.util.view.widget.ResponsiveRelativeLayout android:background="@color/TranslucentBlack" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" auto:adjustForActionBar="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:auto="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/ads_count_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@style/SmallRegularWhite" />
+</com.comcast.cim.cmasl.android.util.view.widget.ResponsiveRelativeLayout>

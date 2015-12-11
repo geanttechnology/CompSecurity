@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/recent_empty" style="@style/EmptySection"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/recent_empty_image" android:src="@drawable/recent_empty" style="@style/EmptySectionIcon" />
+    <TextView android:id="@id/recent_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recent_empty" android:layout_toRightOf="@id/recent_empty_image" style="@style/EmptySectionText" />
+</RelativeLayout>

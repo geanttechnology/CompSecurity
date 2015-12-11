@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/downloadsSubNavBar" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <RelativeLayout android:id="@id/sort_buttons" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/offline_warning_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <TextView android:id="@id/offline_warning_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/downloadList" android:layout_above="@id/pauseResumeLayout" android:layout_alignParentTop="true" style="@style/BrowseListView" />
+        <ImageView android:id="@id/downloads_ftu" android:background="@color/dark_gray_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_download_ftu" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:id="@id/pauseResumeLayout" android:layout_alignParentBottom="true" style="@style/ListBottomBar">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pauseResumeLayoutPhone" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <Button android:id="@id/pauseResumeButton" android:text="@string/test_pause_downloads" android:drawableLeft="@drawable/btn_download_pause" android:drawablePadding="5.0dip" style="@style/filter_button" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/pauseResumeSpinner" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:indeterminate="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

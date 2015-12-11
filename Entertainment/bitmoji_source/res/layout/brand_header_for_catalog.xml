@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/textual_brand_header" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/background_brand_header" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/background_brand_logo" android:paddingTop="@dimen/catalog_brand_header_logo_paddingTop" android:paddingBottom="@dimen/catalog_brand_header_logo_paddingBottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

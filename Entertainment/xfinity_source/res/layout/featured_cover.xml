@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/tapeLine" android:background="@color/LightBlue" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@id/coverList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:layout_below="@id/tapeLine" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutItemFacebook" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fb_item_text_size" android:textColor="@color/black_color" android:gravity="center" android:id="@id/textNumero" android:layout_width="@dimen/fb_size_classement" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="999" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.facebook.login.widget.ProfilePictureView android:id="@id/facebookFriendImage" android:layout_width="@dimen/fb_size_image" android:layout_height="@dimen/fb_size_image" android:layout_margin="5.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/textNumero" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/facebookFriendCheck" android:layout_toRightOf="@id/facebookFriendImage" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/fb_item_text_size" android:textColor="@color/black_color" android:id="@id/facebookFriendName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tata Jacqueline" />
+        <TextView android:textSize="@dimen/fb_item_text_size" android:textColor="@color/silver_color_facebook" android:id="@id/facebookFriendScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000000" />
+    </LinearLayout>
+    <ImageView android:id="@id/facebookFriendCheck" android:layout_width="@dimen/cancel_button_size" android:layout_height="@dimen/cancel_button_size" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ak_select_friend_unpressed" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

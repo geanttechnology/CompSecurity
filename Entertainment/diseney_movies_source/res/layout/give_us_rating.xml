@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/mytop" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/fan" android:layout_width="48.0dip" android:layout_height="50.0dip" android:src="@drawable/myfan" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Back" android:layout_toRightOf="@id/fan" />
+        <ImageView android:id="@id/googlerelode" android:clickable="true" android:layout_width="48.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/mywebview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mytop" />
+</RelativeLayout>

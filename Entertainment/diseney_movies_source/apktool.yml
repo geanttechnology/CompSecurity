@@ -1,0 +1,24 @@
+version: 2.0.2
+apkFileName: comdisneydisneymoviesanywhere_goodownloaderapk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '10'
+  targetSdkVersion: '20'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '339'
+  versionName: 3.3.9
+sharedLibrary: false
+unknownFiles:
+  LICENSES: '8'
+  NOTICE: '8'
+  bin/RootTools.apk: '8'
+  bin/resources.ap_: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  jsr305_annotations/v0_r47/V0_r47.gwt.xml: '8'
+doNotCompress:
+- resources.arsc

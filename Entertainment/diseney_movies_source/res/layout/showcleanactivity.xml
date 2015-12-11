@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff3f51b5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:material="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rub_icon" android:background="@drawable/zhutise" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.aio.downloader.views.LImageButton android:id="@id/header_left_showclean2" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_header_back" material:widget_animColor="@color/color_anim_white" material:widget_type="left" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tv_junk_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phones Boost" android:layout_toRightOf="@id/header_left_showclean2" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rub_top" android:background="@drawable/zhutise" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rub_icon">
+        <RelativeLayout android:id="@id/rl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip">
+            <FrameLayout android:id="@id/container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/imageView3" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/guangquan" />
+                <Button android:id="@id/button1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Do 3d animation" />
+                <ImageView android:layout_gravity="center" android:id="@id/imageView1" android:layout_width="110.0dip" android:layout_height="110.0dip" android:src="@drawable/huojianda" />
+                <ImageView android:layout_gravity="center" android:id="@id/imageView2" android:visibility="invisible" android:layout_width="110.0dip" android:layout_height="110.0dip" android:src="@drawable/gou" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/container" android:layout_alignParentLeft="true">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textSize="25.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/tv_jieguo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fdd" style="@style/AudioFileInfoOverlayText1" />
+                </LinearLayout>
+                <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_zongneicun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="fdd" style="@style/AudioFileInfoOverlayText1" />
+            </LinearLayout>
+            <Button android:textColor="#ff3f51b5" android:id="@id/finish" android:background="@drawable/finish_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="16.0dip" android:text="Deep Clean" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pref_title_floater" android:key="@string/floater_pref" android:summary="@string/pref_summary_floater" android:defaultValue="true" />
+    <Preference android:title="@string/privacy_policy" android:key="@string/privacy_policy_pref">
+        <intent android:targetPackage="@string/package_name" android:data="@string/privacy_policy_filename" android:targetClass="com.bitstrips.imoji.ui.ImojiWebViewActivity">
+            <extra android:name="android.intent.extra.TITLE" android:value="@string/privacy_policy" />
+        </intent>
+    </Preference>
+    <Preference android:id="@id/terms" android:title="@string/terms" android:key="@string/terms_of_use_pref">
+        <intent android:targetPackage="@string/package_name" android:data="@string/terms_of_use_filename" android:targetClass="com.bitstrips.imoji.ui.ImojiWebViewActivity">
+            <extra android:name="android.intent.extra.TITLE" android:value="@string/terms" />
+        </intent>
+    </Preference>
+    <Preference android:title="@string/logout" android:key="@string/logout_pref">
+        <intent android:launchMode="singleTop" android:targetPackage="@string/package_name" android:data="@string/logout_pref" android:targetClass="com.bitstrips.imoji.ui.SettingsActivity" />
+    </Preference>
+    <com.bitstrips.imoji.ui.views.AboutPreference />
+</PreferenceScreen>

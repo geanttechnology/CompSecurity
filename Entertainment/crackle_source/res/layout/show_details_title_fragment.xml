@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/main_text_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/main_text_color" android:id="@id/videos_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/main_text_color" android:id="@id/rating_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

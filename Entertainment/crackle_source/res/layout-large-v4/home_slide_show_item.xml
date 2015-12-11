@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/slide_show_image_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gotv.crackle.views.CrackleTextView android:textSize="18.0sp" android:textColor="@color/crackle_orange" android:ellipsize="end" android:id="@id/slide_show_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:maxLines="1" />
+            <com.gotv.crackle.views.CrackleTextView android:textSize="18.0sp" android:textColor="@color/main_text_color" android:ellipsize="end" android:id="@id/slide_show_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/slide_show_ad_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="15.0dip">
+            <com.gotv.crackle.views.CrackleTextView android:textSize="14.0sp" android:textColor="@color/main_text_color" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/presented_by" />
+            <RelativeLayout android:id="@id/slide_show_ad" android:layout_width="120.0dip" android:layout_height="60.0dip" android:layout_marginBottom="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

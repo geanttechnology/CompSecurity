@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_mediaroute" android:title="@string/action_chromecast" app:showAsAction="always" app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider" />
+    <item android:icon="@drawable/unpost_button" android:id="@id/menu_item_unpost" android:title="@string/menu_list_grid" android:showAsAction="always" />
+    <item android:icon="@drawable/share_button" android:id="@id/menu_item_share" android:title="@string/menu_share" android:showAsAction="always" />
+    <item android:icon="@drawable/like_button" android:id="@id/menu_item_like" android:title="@string/menu_like" android:showAsAction="always" />
+    <item android:icon="@drawable/buy_button" android:id="@id/menu_item_buy" android:title="@string/menu_buy" android:showAsAction="always" />
+    <item android:icon="@drawable/to_tv_button" android:id="@id/menu_item_play_on" android:title="@string/menu_play_on" android:showAsAction="always" />
+</menu>

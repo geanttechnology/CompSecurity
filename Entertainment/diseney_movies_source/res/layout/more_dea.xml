@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip">
+        <ImageView android:id="@id/iv_dea_back" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/cha" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff616161" android:layout_gravity="center_vertical" android:id="@id/tv_dea_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="fdfdf" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0sp" android:textStyle="italic" android:textColor="#ff212121" android:id="@id/tv_dea_sheart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="16.0dip" android:text="fdfdf" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff212121" android:id="@id/tv_dea_zhengwen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginRight="16.0dip" android:text="fdfdf" />
+            <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="#ff212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Version" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff6e6e6e" android:id="@id/tv_dea_ver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="1.0" />
+                    <TextView android:textColor="#ff212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Downloads" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff6e6e6e" android:id="@id/tv_dea_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="32.0dip" android:text="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="#ff212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Updated on" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff6e6e6e" android:id="@id/tv_dea_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Jun 2015 03" />
+                    <TextView android:textColor="#ff212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Size" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff6e6e6e" android:id="@id/tv_dea_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="32.0dip" android:text="Jun 2015 03" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

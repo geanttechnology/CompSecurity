@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/icn_edit" android:id="@id/menu_item_edit" android:visible="false" android:title="@string/content_description_edit_button" android:showAsAction="always" />
+    <item android:icon="@drawable/ico_search" android:id="@id/menu_item_search" android:title="@string/content_description_search_button" android:showAsAction="always" android:actionLayout="@layout/action_bar_search_view" />
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cover_art" android:background="@color/MissingImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" android:importantForAccessibility="2" />
+    <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/placeholder_title" android:background="@color/transparent" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" style="@style/Small" />
+    <View android:id="@id/darken_on_press" android:background="@drawable/darken_on_press" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

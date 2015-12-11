@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/search_results_divider_gray" />
+    <TextView android:gravity="center_vertical" android:id="@id/search_header" android:paddingLeft="@dimen/search_results_horizontal_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="24.0dip" android:text="@string/test_search_header" style="@style/search_results_list_section_header" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="2.0dip" android:src="@color/search_results_divider_gray" />
+</LinearLayout>

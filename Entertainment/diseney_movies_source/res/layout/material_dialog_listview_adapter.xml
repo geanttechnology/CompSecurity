@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.material.widget.LLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/preference_item_minheight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:locker="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_black54" android:id="@id/dialog_listview_adapter_content" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/dialog_listview_adapter_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/material_selector_dialog_list_checkbox" android:scaleType="fitCenter" />
+</com.lion.material.widget.LLinearLayout>

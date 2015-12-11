@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/resume_background" android:background="#33000000" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/play_progress" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginBottom="4.0dip" android:max="100" android:progressDrawable="@drawable/progress_bar" style="?android:attr/progressBarStyleHorizontal" />
+    <com.gotv.crackle.views.CrackleTextView android:textSize="16.0sp" android:textColor="@color/main_text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/resume_text" android:focusable="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/resume_text" />
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.gotv.crackle.handset" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <screen android:screenDensity="400" android:screenSize="normal"/>
+    <screen android:screenDensity="400" android:screenSize="large"/>
+    <screen android:screenDensity="400" android:screenSize="xlarge"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/crackle_icon" android:label="@string/app_name" android:logo="@drawable/crackle_logo" android:name="com.gotv.crackle.Application" android:theme="@style/CrackleTheme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:label="@string/app_name" android:name="com.gotv.crackle.LoadingActivity" android:theme="@style/CrackleTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|screenLayout" android:launchMode="singleTask" android:name="com.gotv.crackle.MainActivity" android:theme="@style/AbsTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="crackle.home"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:logo="@drawable/logo_action_bar" android:name="com.gotv.crackle.MovieDetailsActivity" android:theme="@style/AbsTheme"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:logo="@drawable/logo_action_bar" android:name="com.gotv.crackle.ChromeCastingDetailsActivity" android:theme="@style/AbsTheme"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden" android:logo="@drawable/logo_action_bar" android:name="com.gotv.crackle.ShowWatchlistDetailsActivity" android:theme="@style/AbsTheme"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:logo="@drawable/logo_action_bar" android:name="com.gotv.crackle.MyCrackleHistoryActivity" android:theme="@style/AbsTheme"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:logo="@drawable/logo_action_bar" android:name="com.gotv.crackle.MyCrackleSettingsActivity" android:theme="@style/AbsTheme"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:logo="@drawable/logo_action_bar" android:name="com.gotv.crackle.captions.CaptionsActivity" android:theme="@style/CaptionSettingsTheme"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:name="com.gotv.crackle.DetailsActivityResolver" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.gotv.crackle.custom.crackle"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:path="media" android:scheme="crackle"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.crackle.com" android:pathPrefix="/c" android:scheme="http"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gotv.crackle.MainActivity"/>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:name="com.freewheel.ad.SplashAdActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTask" android:logo="@drawable/logo_action_bar" android:name="com.gotv.crackle.VideoPlayerActivity" android:theme="@style/AbsTheme"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:name="com.gotv.crackle.VideoPlayerActivityFlash" android:screenOrientation="landscape" android:theme="@style/AbsTheme"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:name="com.gotv.crackle.TwitterWebActivity" android:screenOrientation="portrait" android:theme="@style/AbsTheme"/>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.gotv.crackle.FacebookHelperActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.sessionm.sdk.BrowserActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:name="com.sessionm.sdk.SessionMService"/>
+        <activity android:configChanges="keyboard|orientation" android:excludeFromRecents="true" android:launchMode="standard" android:name="com.sessionm.ui.SessionMActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <receiver android:name="com.gotv.crackle.util.LocalNotificationManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.gotv.crackle.util.DeepLinkReceiver">
+            <intent-filter>
+                <action android:name="com.gotv.crackle.DEEPLINK"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.gotv.crackle.helpers.RemoteControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.gotv.crackle.util.ReferralReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.ads.AdActivity"/>
+        <service android:name="com.medialets.advertising.AdManagerService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="Rhythm Activity" android:name="com.rhythmnewmedia.sdk.RhythmActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="Rhythm Video Activity" android:name="com.rhythmnewmedia.sdk.video.RhythmVideoActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:name="com.tremorvideo.sdk.android.videoad.Playvideo">
+            <intent-filter>
+                <action android:name="com.tremorvideo.sdk.android.videoad.Playvideo"/>
+                <category android:name="android.intent.category.EMBED"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.inmobi.adtracker.androidsdk.IMAdTrackerOverlayActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sdt-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="true" android:name="com.inmobi.adtracker.androidsdk.IMAdTrackerInstallRefererReciever">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.mobileapptracker.Tracker">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.sample.castcompanionlibrary.remotecontrol.VideoIntentReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="com.google.sample.castcompanionlibrary.action.toggleplayback"/>
+                <action android:name="com.google.sample.castcompanionlibrary.action.stop"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.sample.castcompanionlibrary.notification.VideoCastNotificationService">
+            <intent-filter>
+                <action android:name="com.google.sample.castcompanionlibrary.action.toggleplayback"/>
+                <action android:name="com.google.sample.castcompanionlibrary.action.stop"/>
+                <action android:name="com.google.sample.castcompanionlibrary.action.notificationvisibility"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

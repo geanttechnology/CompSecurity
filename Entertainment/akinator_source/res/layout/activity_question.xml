@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:background="@color/black_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/genizLayout" layout="@layout/layout_geniz" />
+    <ImageView android:id="@id/image_filtre_enfant_ingame" android:layout_width="@dimen/cancel_button_size" android:layout_height="@dimen/cancel_button_size" android:layout_marginTop="@dimen/cancel_button_margin_top" android:layout_marginRight="10.0dip" android:src="@drawable/ak_icon_filtre_enfant_game_activated" android:layout_toLeftOf="@id/homeButton" />
+    <include android:id="@id/homeButton" layout="@layout/layout_home_button" />
+    <RelativeLayout android:gravity="bottom|right|center" android:id="@id/layoutAkinator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layoutAkinator_margin_left" android:layout_marginTop="@dimen/layoutAkinator_margin_top" android:layout_marginRight="@dimen/layoutAkinator_margin_right" android:layout_marginBottom="@dimen/layoutAkinator_margin_bottom">
+        <ImageView android:id="@id/akinatorImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/akinatorTenue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/akinatorChapeau" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <include android:id="@id/questionBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/yesDontknowNoButtons" layout="@layout/layout_question_banner" />
+    <ImageView android:id="@id/backButtonImage" android:layout_width="@dimen/cancel_button_size" android:layout_height="@dimen/cancel_button_size" android:layout_marginLeft="@dimen/cancel_button_margin_left" android:layout_marginBottom="10.0dip" android:src="@drawable/cancel_button" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_above="@id/questionBanner" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layoutBulleQuestion" android:layout_width="@dimen/question_bulle_dessin_width" android:layout_height="@dimen/question_bulle_dessin_height" android:layout_marginLeft="@dimen/layoutBulleQuestion_margin_left" android:layout_marginTop="@dimen/layoutBulleQuestion_margin_top" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/bulleImage" android:layout_width="@dimen/question_bulle_dessin_width" android:layout_height="@dimen/question_bulle_dessin_height" android:src="@drawable/ak_bulle_question" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/question_counter_text_size" android:textColor="@color/bulle_text_color" android:gravity="center" android:id="@id/questionCounterText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/question_counter_margin_top" android:text="Question N" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/bulle_text_size" android:textColor="@color/bulle_text_color" android:gravity="center" android:id="@id/bulleText" android:layout_width="@dimen/question_bulle_text_width" android:layout_height="@dimen/question_bulle_text_height" android:layout_marginTop="@dimen/question_bulle_text_margin_top" android:text="QUESTION" android:lines="5" android:layout_below="@id/questionCounterText" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/yesDontknowNoButtons" android:layout_width="fill_parent" android:layout_height="@dimen/answer_button_height" android:layout_above="@id/probablyButtons">
+        <Button android:textSize="@dimen/probably_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/yesQuestionButton" android:background="@drawable/answer_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="YES" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/probably_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/dontknowQuestionButton" android:background="@drawable/answer_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="DONT_KNOW" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/probably_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/noQuestionButton" android:background="@drawable/answer_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="NO" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/probablyButtons" android:layout_width="fill_parent" android:layout_height="@dimen/answer_button_height" android:baselineAligned="true" android:layout_above="@id/loadingBarQuestions">
+        <Button android:textSize="@dimen/probably_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/probablyQuestionButton" android:background="@drawable/answer_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="PROPABLY" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/probably_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/probablyNotQuestionButton" android:background="@drawable/answer_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="PROPABLY_NOT" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/loadingBarQuestions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/ak_style_progress_bar_multicolor" android:layout_alignParentBottom="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+</RelativeLayout>

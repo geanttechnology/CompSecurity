@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/search_edit_text" android:paddingRight="@dimen/search_clearing_x_total_width" android:layout_width="600.0dip" android:layout_height="fill_parent" android:hint="@string/search_hint" android:layout_alignParentRight="true" android:inputType="textNoSuggestions" android:imeOptions="actionDone" android:contentDescription="@null" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_search" android:layout_toLeftOf="@id/search_edit_text" android:layout_centerVertical="true" android:contentDescription="@null" android:importantForAccessibility="2" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <requestFocus />
+        <ImageView android:id="@id/clear_search" android:paddingLeft="@dimen/search_clearing_x_padding" android:paddingRight="@dimen/search_clearing_x_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/x_clear_search" android:contentDescription="@string/content_description_clear_search" />
+        <ImageView android:id="@id/speech_search" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_voice" android:contentDescription="@string/content_description_voice_search_button" />
+    </LinearLayout>
+</RelativeLayout>

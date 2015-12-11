@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/age_selector_header_height" android:layout_marginLeft="@dimen/header_margin" android:layout_marginBottom="@dimen/age_selector_header_margin_bottom">
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="20.0sp" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/age_selector_title" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <Button android:textSize="20.0sp" android:id="@id/next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/age_selector_next" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="?android:attr/actionButtonStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="20.0sp" android:ellipsize="end" android:id="@id/instructions" android:background="@drawable/bg_age_selector" android:paddingLeft="7.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/age_selector_instructions" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:alpha="0.6" />
+        <ListView android:id="@id/age_selector_list" android:background="@android:color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/instructions" />
+    </RelativeLayout>
+</LinearLayout>

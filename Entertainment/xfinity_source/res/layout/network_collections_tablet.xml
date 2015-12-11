@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/margin_outer_a" android:paddingRight="@dimen/margin_outer_a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.comcast.cim.cmasl.android.util.view.widget.ObservableScrollView android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/network_collections_row_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.comcast.cim.cmasl.android.util.view.widget.ObservableScrollView>
+    <ImageView android:id="@id/topScrollingShadow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scrolling_shadow" android:scaleType="fitXY" android:layout_alignTop="@id/body_container" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+</RelativeLayout>

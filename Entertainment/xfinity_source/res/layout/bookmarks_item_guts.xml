@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.comcast.cim.cmasl.android.util.view.widget.ImageStaticLayoutView android:id="@id/cover_art" android:background="@color/MissingImage" android:layout_width="@dimen/skinny_favorite_image_width" android:layout_height="@dimen/skinny_favorite_image_height" android:layout_margin="16.0dip" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/favorite_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:maxLines="2" style="@style/Large" />
+            <ImageView android:id="@id/locked_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/ind_upsell_key" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/list_separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</merge>

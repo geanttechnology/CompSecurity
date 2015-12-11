@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/main_text_color" android:id="@id/episode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/episode_star_rating" android:layout_marginTop="4.0dip" layout="@layout/star_rating" />
+    <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/main_text_color" android:id="@id/episode_expires_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/main_text_color" android:id="@id/episode_rating_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/main_text_color" android:id="@id/episode_duration_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/main_text_color" android:id="@id/episode_audio_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/main_text_color" android:id="@id/episode_subtitles_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

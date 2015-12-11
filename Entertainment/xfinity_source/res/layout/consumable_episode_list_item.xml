@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.cmasl.android.util.view.widget.CheckableRelativeLayout android:id="@id/list_item_container" android:background="@drawable/entity_list_item_bg_sel" android:paddingLeft="@dimen/entity_list_padding" android:paddingRight="@dimen/entity_list_padding" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/shim" android:layout_width="0.0dip" android:layout_height="80.0dip" />
+    <TextView android:textColor="@color/episode_list_episode_number" android:id="@id/episode_num" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="wrap_content" android:text="@string/test_episode_num" android:layout_centerVertical="true" style="@style/MetadataCondensed" />
+    <ImageView android:id="@id/watching_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ind_watching" android:layout_toRightOf="@id/episode_num" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/downloadable_indicator" android:layout_toRightOf="@id/watching_indicator" android:layout_centerVertical="true">
+        <ImageView android:id="@id/new_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ind_new_white" />
+        <TextView android:ellipsize="end" android:id="@id/consumable_episode_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/test_long_episode_title" android:maxLines="2" android:layout_toRightOf="@id/new_indicator" android:lineSpacingExtra="2.0dip" style="@style/SmallRegularWhite" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/progressIndicator" android:visibility="visible" android:layout_marginTop="-2.0dip" android:layout_below="@id/consumable_episode_title" style="@style/ProgressIndicator" />
+    </RelativeLayout>
+    <ImageView android:id="@id/downloadable_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icn_downloadable_browse" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.comcast.cim.cmasl.android.util.view.widget.CheckableRelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RadioGroup android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/main_tab" android:background="@drawable/buttombar" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_alignParentBottom="true">
+            <RadioButton android:textColor="@drawable/home_text_bg" android:gravity="center" android:id="@id/radio_button_home" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/main_home" />
+            <RadioButton android:textColor="@drawable/home_text_bg" android:gravity="center" android:id="@id/radio_button_download" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/main_download" />
+            <RadioButton android:textColor="@drawable/home_text_bg" android:gravity="center" android:id="@id/radio_button_file" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/main_file" />
+            <RadioButton android:textColor="@drawable/home_text_bg" android:gravity="center" android:id="@id/radio_button_recommend" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/main_recommend" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:id="@id/banner" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/main_tab" />
+    </RelativeLayout>
+</TabHost>

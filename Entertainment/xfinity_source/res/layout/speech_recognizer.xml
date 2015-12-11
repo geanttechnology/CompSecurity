@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@color/list_separator_color" android:padding="@dimen/dialog_layout_outline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/dark_gray_1" android:padding="16.0dip" android:layout_width="@dimen/dialog_default_width" android:layout_height="wrap_content" android:contentDescription="@null">
+        <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="2">
+            <ImageView android:background="@drawable/speech_mic_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mic_for_speech" />
+            <TextView android:gravity="center" android:id="@id/caption" android:paddingTop="16.0dip" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Say Something!" android:importantForAccessibility="2" style="@style/H2White" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/browse_shows_view" android:background="@color/grey_thumbnail_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/loading_progress_shows" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/header_contents_shows" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Spinner android:id="@id/spinner_sub_category_shows" android:background="@drawable/spinner_background_holo_dark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:minWidth="100.0dip" />
+                <Spinner android:id="@id/spinner_sort_by_shows" android:background="@drawable/spinner_background_holo_dark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="5.0dip" android:minWidth="100.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <include android:id="@id/browse_list_header_shows" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/browse_list_header" />
+            <com.gotv.crackle.views.CrackleListView android:id="@id/content_list_shows" android:focusable="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/grey_thumbnail_background" android:divider="#00000000" android:splitMotionEvents="false" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/ad_container_shows" android:background="#77000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/content_list_shows" />
+    </LinearLayout>
+</RelativeLayout>

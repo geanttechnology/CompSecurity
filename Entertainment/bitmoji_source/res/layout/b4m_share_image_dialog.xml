@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_title_bar" android:paddingLeft="@dimen/share_fragment_cta_button_margins" android:paddingTop="@dimen/share_fragment_cta_button_margins" android:paddingRight="@dimen/share_fragment_cta_button_margins" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/share_close_btn" android:layout_width="@dimen/share_fragment_icon_size" android:layout_height="@dimen/share_fragment_icon_size" android:layout_marginTop="@dimen/share_fragment_icon_margin_top" android:src="@drawable/ic_close_share" android:layout_alignParentLeft="true" />
+        <View android:id="@id/share_divider" android:background="@drawable/divide_line" android:layout_width="1.0dip" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/share_fragment_divider_spacing" android:layout_marginRight="@dimen/share_fragment_divider_spacing" android:layout_toRightOf="@id/share_close_btn" />
+        <TextView android:textSize="@dimen/abc_action_bar_title_text_size" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_title" android:layout_toRightOf="@id/share_divider" />
+        <ImageView android:id="@id/share_save_btn" android:background="@drawable/ic_download" android:layout_width="@dimen/share_fragment_icon_size" android:layout_height="@dimen/share_fragment_icon_size" android:layout_marginTop="@dimen/share_fragment_icon_margin_top" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/share_fragment_card" android:layout_width="@dimen/share_fragment_card_width" android:layout_height="@dimen/share_fragment_card_height" android:layout_centerInParent="true">
+        <com.bitstrips.imoji.ui.views.SquareRoundCornerImojiView android:id="@id/imoji_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:corner_radius="@dimen/share_fragment_corner_radius" app:mutate_background="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout android:background="@color/light_gray" android:paddingTop="@dimen/share_fragment_cta_button_margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/messenger_reply_button" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/share_fragment_cta_button_margins" android:layout_marginRight="@dimen/share_fragment_cta_button_margins" android:layout_marginBottom="@dimen/share_fragment_cta_button_margins" style="@style/MessengerButton.Blue.Large">
+                <TextView android:id="@id/share_image_dialog_messenger_button" android:text="@string/messenger_send_button_text" style="@style/MessengerButtonText.Blue.Large" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

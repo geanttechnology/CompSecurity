@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/downloadsSubNavBar" android:visibility="gone" style="@style/DownloadsSubNavBar">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pauseResumeLayout" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <Button android:layout_gravity="center" android:id="@id/pauseResumeButton" android:text="@string/test_pause_downloads" android:drawableLeft="@drawable/btn_download_pause" android:drawablePadding="5.0dip" style="@style/filter_button" />
+            <ProgressBar android:id="@id/pauseResumeSpinner" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:indeterminate="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/sort_buttons" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center" android:id="@id/recentSort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip">
+                <Button android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:text="@string/sort_downloaded_recently" android:contentDescription="@string/content_description_sort_by_recently_downloaded" style="@style/sort_btn" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/alphabetSort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip">
+                <Button android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:text="@string/sort_downloads_alphabetical" android:contentDescription="@string/chronological_series_sort_button_speech" style="@style/sort_btn" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/expiringSort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip">
+                <Button android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:text="@string/sort_downloads_expiring" style="@style/sort_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/downloadList" android:layout_below="@id/offline_warning_layout" style="@style/BrowseListView" />
+        <ImageView android:id="@id/downloads_ftu" android:background="@color/dark_gray_2" android:paddingLeft="60.0dip" android:paddingRight="60.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_download_ftu" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/offline_warning_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_alignParentTop="true">
+            <TextView android:id="@id/offline_warning_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

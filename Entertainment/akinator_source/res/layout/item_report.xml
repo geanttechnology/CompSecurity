@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layoutReportMain" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/reportAnswer_text_size" android:textColor="#ff000000" android:gravity="center" android:id="@id/reportAnswer" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="@dimen/reportAnswer_marginBottom" android:text="QUESTION LONGUE LONGUE LONGUE LONGUE LONGUE LONGUE LONGUE LONGUE" android:maxLines="3" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/layoutAnswerWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layoutAnswerWrapper_margin_lr" android:layout_marginRight="@dimen/layoutAnswerWrapper_margin_lr" android:layout_below="@id/reportAnswer" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/layoutExpectedAnswer" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/report_givenAnswer_marginRight" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/reportAnswer_text_size" android:textColor="#ff000000" android:id="@id/report_expectedAnswerLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXPECTED_ANSWER" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/reportAnswer_text_size" android:textColor="#ff000000" android:id="@id/report_expectedAnswerResponse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="YES_OR_NO" android:layout_below="@id/report_expectedAnswerLabel" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layoutGivenAnswer" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/report_givenAnswer_marginLeft" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/reportAnswer_text_size" android:textColor="#ff000000" android:id="@id/report_givenAnswerLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GIVEN_ANSWER" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/reportAnswer_text_size" android:textColor="#ff000000" android:id="@id/report_givenAnswerResponse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="YES_OR_NO" android:layout_below="@id/report_givenAnswerLabel" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

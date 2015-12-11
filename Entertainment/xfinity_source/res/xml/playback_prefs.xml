@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_title_playback_options" android:key="@string/settings_key_playback_options"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/settings_show_volume_title" android:key="@string/settings_key_show_volume" />
+    <CheckBoxPreference android:title="@string/settings_show_brightness_title" android:key="@string/settings_key_show_brightness" android:summary="@string/settings_show_brightness_summary" />
+    <ListPreference android:entries="@array/video_quality_selector_titles" android:title="@string/settings_title_video_quality" android:key="@string/settings_key_video_quality" android:entryValues="@array/video_quality_selector_values" />
+</PreferenceScreen>

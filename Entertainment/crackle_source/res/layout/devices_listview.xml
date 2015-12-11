@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:gravity="center" android:id="@id/DeviceDiscoveryDeviceList" android:duplicateParentState="true" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:cacheColorHint="#00000000" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/progressbar_searching" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" style="?android:attr/progressBarStyle" />
+        <TextView android:id="@id/txv_searching" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/searching" />
+    </LinearLayout>
+</LinearLayout>

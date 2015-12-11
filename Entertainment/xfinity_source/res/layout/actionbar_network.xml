@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingLeft="8.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/network_logo" android:paddingBottom="@dimen/actionbar_network_logo_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart" />
+    <TextView android:ellipsize="end" android:id="@id/title" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Large" />
+    <TextView android:ellipsize="end" android:id="@id/collection_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" style="@style/Large" />
+</LinearLayout>

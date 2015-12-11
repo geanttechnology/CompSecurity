@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="-1.0dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+            <stroke android:width="@dimen/bitshop_border_width" android:color="@color/bitshop_pack_section_border" />
+            <corners android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="@dimen/bitshop_pack_corner_radius" android:bottomRightRadius="@dimen/bitshop_pack_corner_radius" />
+        </shape>
+    </item>
+</layer-list>

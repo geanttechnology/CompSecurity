@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/ic_mute_on" custom:state_appear_enabled="true" />
+    <item android:drawable="@drawable/ic_mute_off" custom:state_appear_enabled="false" />
+</selector>

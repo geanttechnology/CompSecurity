@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/watch" android:background="@color/watch_activity_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.youtube.kids.ui.TimeLimitProgressBar android:id="@id/time_limit_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="6.0dip" android:progressDrawable="@drawable/time_limit_progressbar" style="?android:attr/progressBarStyleHorizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/watch_page_title_bar_height" android:layout_marginLeft="@dimen/header_margin" android:layout_marginRight="@dimen/header_margin">
+        <RelativeLayout android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/back_button" android:paddingLeft="@dimen/back_button_horizontal_padding" android:paddingTop="@dimen/back_button_vertical_padding" android:paddingRight="@dimen/back_button_horizontal_padding" android:paddingBottom="@dimen/back_button_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_button_dark" android:layout_centerVertical="true" />
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="20.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/watch_page_title_left_margin" android:singleLine="true" android:layout_toRightOf="@id/back_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <android.support.v7.app.MediaRouteButton android:id="@id/media_route_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/PlayerCastMediaRouteDarkButton"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/previous" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/header_margin" android:src="@drawable/fast_rewind_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_previous" />
+        <com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout android:id="@id/watch_player_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" yt:aspectRatio="@fraction/aspect_ratio_16_9_exact">
+            <com.google.android.apps.youtube.core.player.PlayerView android:id="@id/watch_player" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout>
+        <ImageView android:id="@id/next" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/header_margin" android:src="@drawable/fast_forward_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_next" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.apps.youtube.kids.ui.ScrollingSectionListGridView android:id="@id/scrolling_section_list_grid_view" android:layout_width="fill_parent" android:layout_height="@dimen/watch_next_height" android:layout_marginTop="16.0dip" ytkids:tileHeight="@dimen/watch_page_tile_height" ytkids:tileWidth="@dimen/watch_page_tile_width" ytkids:tileVerticalPadding="@dimen/watch_page_tile_vertical_padding" ytkids:tileHorizontalPadding="@dimen/watch_page_tile_horizontal_padding" />
+        <com.google.android.apps.youtube.kids.ui.ParentalControlLaunchBar android:id="@id/parental_control_footer" android:layout_width="wrap_content" android:layout_height="@dimen/footer_height" android:layout_alignRight="@id/scrolling_section_list_grid_view" android:layout_alignBottom="@id/scrolling_section_list_grid_view" />
+    </RelativeLayout>
+</LinearLayout>

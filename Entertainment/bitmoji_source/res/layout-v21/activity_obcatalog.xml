@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <android.support.v7.widget.RecyclerView android:id="@id/ob_catalog_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

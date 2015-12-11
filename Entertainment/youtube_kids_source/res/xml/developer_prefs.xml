@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/pref_developer_online_ads_title" android:key="OnlineAd" android:summary="@string/pref_developer_online_ads_summary" />
+    <Preference android:title="@string/pref_visitor_id_title" android:key="VisitorID" />
+    <EditTextPreference android:key="experiment_ids" android:defaultValue="" />
+    <CheckBoxPreference android:title="@string/pref_developer_limit_search_title" android:key="LimitSearchResults" android:summary="@string/pref_developer_limit_search_summary" />
+    <ListPreference android:title="@string/pref_developer_apiary_host_title" android:key="ApiaryHostSelection" android:summary="@string/pref_developer_apiary_host_summary" />
+    <EditTextPreference android:enabled="false" android:title="@string/pref_developer_ppg_host_title" android:key="PPGHost" android:defaultValue="" />
+    <ListPreference android:title="@string/pref_developer_innertube_apiversion_title" android:key="InnerTubeApiSelection" android:summary="@string/pref_developer_innertube_apiversion_summary" android:defaultValue="0" />
+    <CheckBoxPreference android:title="@string/pref_api_request_logging_title" android:key="ApiRequestLogging" android:summary="@string/pref_api_request_logging_summary" />
+    <CheckBoxPreference android:title="@string/pref_api_response_logging_title" android:key="FullApiResponseLogging" android:summary="@string/pref_api_response_logging_summary" />
+    <CheckBoxPreference android:title="@string/pref_enable_parental_gate_title" android:key="EnableParentalGate" android:summary="@string/pref_enable_parental_gate_summary" />
+    <Preference android:title="@string/pref_developer_restart_app_title" android:key="RestartApp" />
+</PreferenceScreen>

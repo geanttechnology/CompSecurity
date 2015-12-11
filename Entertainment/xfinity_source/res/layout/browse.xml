@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cim="http://schemas.android.com/apk/res-auto">
+    <com.comcast.cim.cmasl.android.util.view.widget.BreadcrumbContainer android:gravity="center" android:layout_gravity="center" android:id="@id/breadcrumb_container" android:background="@drawable/bg_subhead" android:layout_width="fill_parent" android:layout_height="@dimen/breadcrumb_container_height" cim:addCommas="false" />
+    <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.comcast.cim.cmasl.android.util.view.widget.EntityGridView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        <include android:id="@android:id/empty" layout="@layout/filtered_list_empty_view" />
+        <ImageView android:id="@id/topScrollingShadow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scrolling_shadow" android:scaleType="fitXY" android:layout_alignTop="@id/listView" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <include android:id="@id/sort_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/browse_sort_bar" />
+    </RelativeLayout>
+</LinearLayout>

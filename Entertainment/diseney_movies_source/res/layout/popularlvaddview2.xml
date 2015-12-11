@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/hometuijian" android:background="@drawable/popuwindowbg" android:layout_width="fill_parent" android:layout_height="260.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="1.0dip">
+        <ImageView android:id="@id/popularicon2" android:background="@drawable/defaulticon" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="260.0dip" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/popularicon2" android:layout_alignTop="@id/popularicon2" android:layout_alignBottom="@id/popularicon2">
+            <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/populartitle2" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="6.0dip" android:text="..." android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/offi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/populartitle2">
+                <TextView android:textSize="16.0sp" android:textColor="#ffcccccc" android:ellipsize="end" android:gravity="center" android:id="@id/officialpp2" android:background="@drawable/officialyuanjiao" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="20.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="14.0dip" android:text="Official" android:singleLine="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/popularauthortitle2" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="14.0dip" android:text="..." android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+            <RatingBar android:id="@id/popularrating2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/offi" style="?android:attr/ratingBarStyleSmall" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/popularicon2">
+            <Button android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/downloadapk2" android:background="@drawable/video_download_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="One click to install" />
+            <Button android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/googleplay2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="One click to install" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/light_orange_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@color/grey_thumbnail_background" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                            <RelativeLayout android:id="@id/media_thumbnail_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:id="@id/media_thumbnail" android:layout_width="120.0dip" android:layout_height="180.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" />
+                                <ImageButton android:id="@id/play_button" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_overlay_button" android:layout_centerInParent="true" />
+                            </RelativeLayout>
+                            <ProgressBar android:id="@id/play_progress" android:layout_width="wrap_content" android:layout_height="3.0dip" android:layout_marginTop="10.0dip" android:max="100" android:progressDrawable="@drawable/progress_bar" android:layout_below="@id/media_thumbnail_group" android:layout_alignLeft="@id/media_thumbnail_group" android:layout_alignRight="@id/media_thumbnail_group" style="?android:attr/progressBarStyleHorizontal" />
+                        </RelativeLayout>
+                        <include android:id="@id/media_details_title" layout="@layout/media_details_title" />
+                    </LinearLayout>
+                    <com.gotv.crackle.views.CrackleButton android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/main_text_color" android:id="@id/watch_now_button" android:background="@drawable/details_button" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="20.0dip" android:text="@string/watch_now_text_lower" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/play_progress" android:layout_alignLeft="@id/media_thumbnail_group" android:layout_alignRight="@id/media_thumbnail_group" />
+                    <com.gotv.crackle.views.CrackleToggleButton android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/main_text_color" android:gravity="center" android:id="@id/add_to_watchlist_button" android:background="@drawable/details_button" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="5.0dip" android:textOn="@string/remove_from_watchlist_text" android:textOff="@string/add_to_watchlist_text" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/watch_now_button" android:layout_alignLeft="@id/media_thumbnail_group" android:layout_alignRight="@id/media_thumbnail_group" />
+                    <include android:id="@id/media_details_why_crackles" layout="@layout/media_details_why_crackles" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <ProgressBar android:id="@id/loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ad_container" android:background="#77000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/content_list_movies" />
+</LinearLayout>

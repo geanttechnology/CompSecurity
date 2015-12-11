@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_title_cc_options" android:key="@string/settings_key_cc_options"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/settings_title_cc_shortcut" android:key="@string/settings_key_cc_shortcut">
+        <intent android:action="android.settings.CAPTIONING_SETTINGS" />
+    </Preference>
+    <com.comcast.cim.cmasl.android708compatlib.view.preference.CCPreviewPreference android:key="@string/settings_key_cc_preview" />
+    <ListPreference android:persistent="false" android:entries="@array/cc_font_size_selector_titles" android:title="@string/settings_title_cc_text_size" android:key="@string/settings_key_cc_text_size" android:entryValues="@array/cc_font_size_selector_values" />
+    <ListPreference android:persistent="false" android:entries="@array/cc_typeface_selector_titles" android:title="@string/settings_title_cc_typeface" android:key="@string/settings_key_cc_typeface" android:entryValues="@array/cc_typeface_selector_values" />
+    <ListPreference android:persistent="false" android:entries="@array/cc_color_selector_titles" android:title="@string/settings_title_cc_text_color" android:key="@string/settings_key_cc_text_color" android:entryValues="@array/cc_color_selector_values" />
+    <ListPreference android:persistent="false" android:entries="@array/cc_edge_type_selector_titles" android:title="@string/settings_title_cc_edge_type" android:key="@string/settings_key_cc_edge_type" android:entryValues="@array/cc_edge_type_selector_values" />
+    <ListPreference android:persistent="false" android:entries="@array/cc_color_selector_titles" android:title="@string/settings_title_cc_edge_color" android:key="@string/settings_key_cc_edge_color" android:dependency="@string/settings_key_cc_edge_type" android:entryValues="@array/cc_color_selector_values" />
+    <ListPreference android:persistent="false" android:entries="@array/cc_color_selector_titles" android:title="@string/settings_title_cc_background_color" android:key="@string/settings_key_cc_background_color" android:entryValues="@array/cc_color_selector_values" />
+    <ListPreference android:persistent="false" android:entries="@array/cc_opacity_selector_titles" android:title="@string/settings_title_cc_background_opacity" android:key="@string/settings_key_cc_background_opacity" android:dependency="@string/settings_key_cc_background_color" android:entryValues="@array/cc_opacity_selector_values" />
+</PreferenceScreen>

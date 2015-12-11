@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.android.accessibility.GestureListenerLayout android:gravity="center" android:orientation="vertical" android:id="@id/touchy_parent" android:paddingTop="@dimen/entity_detail_padding" android:paddingBottom="@dimen/entity_detail_padding" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/detail_image" android:visibility="gone" android:layout_width="320.0dip" android:layout_height="160.0dip" android:scaleType="fitCenter" android:contentDescription="@null" />
+    <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:gravity="center" android:id="@id/movie_detail_error_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_movie_not_available_text" style="@style/SmallRegularWhite" />
+    <ScrollView android:id="@id/body_container" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:focusable="false" layout="@layout/movie_detail_info" />
+    </ScrollView>
+</com.comcast.cim.android.accessibility.GestureListenerLayout>

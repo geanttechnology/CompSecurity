@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/browse_movies_view" android:background="@color/grey_thumbnail_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/loading_progress_search" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.gotv.crackle.views.CrackleListView android:id="@id/content_list_search" android:focusable="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/grey_thumbnail_background" android:divider="#00000000" />
+        </LinearLayout>
+        <RelativeLayout android:paddingTop="80.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/main_text_color" android:gravity="center" android:id="@id/search_encouragement_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_encouragement" />
+            <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/main_text_color" android:gravity="center" android:id="@id/no_result_found_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_no_result_found" />
+            <com.gotv.crackle.views.CrackleTextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/list_item_selected_blue" android:gravity="center" android:id="@id/go_to_recommended_watchlist_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/go_to_recommended_watchlist" android:layout_below="@id/no_result_found_text" android:onClick="goToRecommendedWatchlist" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

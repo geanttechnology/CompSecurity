@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/main_scroller" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/light_orange_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.gotv.crackle.views.CrackleTextView android:textSize="18.0sp" android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/user_preferences" />
+        <View android:background="@color/label_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+            <com.gotv.crackle.views.CrackleButton android:textSize="18.0sp" android:textColor="@color/main_text_color" android:gravity="left|center" android:id="@id/show_resume_prompt_button" android:background="@drawable/blue_selected_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_resume_prompt" android:layout_centerVertical="true" />
+            <com.gotv.crackle.views.CrackleCheckBox android:gravity="right" android:layout_gravity="right|center" android:id="@id/show_resume_prompt_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/wifi_selection" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/item_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+                <com.gotv.crackle.views.CrackleButton android:textSize="18.0sp" android:textColor="@color/main_text_color" android:gravity="left|center" android:id="@id/wifi_only_button" android:background="@drawable/blue_selected_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/videos_require_wifi" android:layout_centerVertical="true" />
+                <com.gotv.crackle.views.CrackleCheckBox android:gravity="right" android:layout_gravity="right|center" android:id="@id/wifi_only_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/item_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.gotv.crackle.views.CrackleTextView android:textSize="18.0sp" android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/parental_controls" />
+        <View android:background="@color/label_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+            <com.gotv.crackle.views.CrackleButton android:textSize="18.0sp" android:textColor="@color/main_text_color" android:gravity="left|center" android:id="@id/pc_restrict_all_content_button" android:background="@drawable/blue_selected_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/restrict_all_content" android:layout_centerVertical="true" />
+            <com.gotv.crackle.views.CrackleCheckBox android:gravity="right" android:layout_gravity="right|center" android:id="@id/pc_restrict_all_content_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/item_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/social_section" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.gotv.crackle.views.CrackleTextView android:textSize="18.0sp" android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/share_with_friends" />
+            <View android:background="@color/label_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+                <com.gotv.crackle.views.CrackleButton android:textSize="18.0sp" android:textColor="@color/main_text_color" android:gravity="left|center" android:id="@id/on_facebook_button" android:background="@drawable/blue_selected_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/on_facebook" android:layout_centerVertical="true" />
+                <com.gotv.crackle.views.CrackleCheckBox android:gravity="right" android:layout_gravity="right|center" android:id="@id/on_facebook_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/item_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/alerts_selection" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.gotv.crackle.views.CrackleTextView android:textSize="18.0sp" android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/alerts" />
+            <View android:background="@color/label_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+                <com.gotv.crackle.views.CrackleButton android:textSize="18.0sp" android:textColor="@color/main_text_color" android:gravity="left|center" android:id="@id/expiring_watchlist_items_button" android:background="@drawable/blue_selected_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/expiring_watchlist_items" android:layout_centerVertical="true" />
+                <com.gotv.crackle.views.CrackleCheckBox android:layout_gravity="right|center" android:id="@id/expiring_watchlist_items_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/item_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/push_selection" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+                <com.gotv.crackle.views.CrackleButton android:textSize="18.0sp" android:textColor="@color/main_text_color" android:gravity="left|center" android:id="@id/new_movies_and_shows_button" android:background="@drawable/blue_selected_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/new_movies_and_shows" android:layout_centerVertical="true" />
+                <com.gotv.crackle.views.CrackleCheckBox android:layout_gravity="right|center" android:id="@id/new_movies_and_shows_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/item_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

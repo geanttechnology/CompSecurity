@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <com.aio.downloader.refresh.PullToRefreshLayout android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:layout_below="@id/main_tab_top">
+        <include android:id="@id/head_more" android:visibility="gone" layout="@layout/refresh_head" />
+        <com.aio.downloader.refresh.PullableListView_load android:id="@id/lv_fun_adult" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@color/white" android:dividerHeight="16.0dip" />
+    </com.aio.downloader.refresh.PullToRefreshLayout>
+    <com.aio.downloader.utils.ProgressWheel android:id="@id/progress_wheel_fun" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true" wheel:progressIndeterminate="true" wheel:barColor="@color/topcolorwyc" />
+</RelativeLayout>

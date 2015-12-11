@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/widgetbg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/gvimg" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/defaulticon" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/gvtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="..." android:singleLine="true" android:layout_below="@id/gvimg" android:layout_alignLeft="@id/gvimg" />
+    </LinearLayout>
+</LinearLayout>

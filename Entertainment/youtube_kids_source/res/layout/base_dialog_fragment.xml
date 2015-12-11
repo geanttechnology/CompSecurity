@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/time_limit_dialog_fragment" android:paddingLeft="24.0dip" android:paddingTop="20.0dip" android:paddingRight="24.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/accessibility_timer_dialog"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+    <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="24.0sp" android:textColor="@color/title_font" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" ytkids:roboto2Font="regular" />
+    <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="14.0sp" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/title" android:layout_alignParentLeft="true" />
+    <FrameLayout android:orientation="vertical" android:id="@id/dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/text" />
+    <LinearLayout android:gravity="right" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/dialog_content" android:layout_alignParentLeft="true">
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="14.0sp" android:textStyle="bold" android:id="@id/cancel_button" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/cancel" ytkids:capitalize="true" ytkids:roboto2Font="medium" />
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/main_action_button_color" android:id="@id/main_action_button" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" ytkids:capitalize="true" ytkids:roboto2Font="medium" />
+    </LinearLayout>
+</RelativeLayout>

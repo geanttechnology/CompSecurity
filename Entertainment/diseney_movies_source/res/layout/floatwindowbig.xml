@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/bigwindowlayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/close" android:layout_width="130.0sp" android:layout_height="wrap_content" android:text="关闭" />
+    <Button android:id="@id/back" android:layout_width="130.0sp" android:layout_height="wrap_content" android:text="返回" android:layout_below="@id/close" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/storeBackGroundFaces" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeSousHeaderLabo" android:background="@drawable/ak_header_myworld" android:layout_width="fill_parent" android:layout_height="@dimen/storeSousHeaderHeight" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeItemFaces1" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="@dimen/storePotionsize" android:layout_height="@dimen/storePotionsize" android:src="@drawable/ak_decor_faceslvl1" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboNomPotionFaces1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pack Faces 1" />
+            <TextView android:textSize="@dimen/storeDescTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboDescPotionFaces1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Description faces 1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeBoutonPrixFace1" android:background="@drawable/ak_button_get_world" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/line1" layout="@layout/layout_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeItemFaces2" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="@dimen/storePotionsize" android:layout_height="@dimen/storePotionsize" android:src="@drawable/ak_decor_faceslvl2" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboNomPotionFaces2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pack Faces 2" />
+            <TextView android:textSize="@dimen/storeDescTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboDescPotionFaces2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Description faces 2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeBoutonPrixFace2" android:background="@drawable/ak_button_get_world" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/line2" layout="@layout/layout_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeItemFaces3" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="@dimen/storePotionsize" android:layout_height="@dimen/storePotionsize" android:src="@drawable/ak_decor_faceslvl3" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboNomPotionFaces3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pack Faces 3" />
+            <TextView android:textSize="@dimen/storeDescTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboDescPotionFaces3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Description faces 3" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeBoutonPrixFace3" android:background="@drawable/ak_button_get_world" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/line3" layout="@layout/layout_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeItemFaces4" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="@dimen/storePotionsize" android:layout_height="@dimen/storePotionsize" android:src="@drawable/ak_decor_faceslvl4" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboNomPotionFaces4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pack Faces 4" />
+            <TextView android:textSize="@dimen/storeDescTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboDescPotionFaces4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Description faces 4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeBoutonPrixFace4" android:background="@drawable/ak_button_get_world" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/line4" layout="@layout/layout_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeItemFaces5" android:layout_width="fill_parent" android:layout_height="@dimen/storeItemHeight" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="@dimen/storePotionsize" android:layout_height="@dimen/storePotionsize" android:src="@drawable/ak_decor_faceslvl4" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/storeDefaultTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboNomPotionFaces5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pack Faces 5" />
+            <TextView android:textSize="@dimen/storeDescTextSize" android:textColor="@color/text_shop_faces_color" android:id="@id/storeLaboDescPotionFaces5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Description faces 5" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.digidust.elokence.akinator.views.DarkAutoButton android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:id="@id/storeBoutonPrixFace5" android:background="@drawable/ak_button_get_world" android:layout_width="@dimen/storeBoutonGetWidth" android:layout_height="@dimen/storeBoutonGetHeight" android:text="xx €" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/line5" layout="@layout/layout_line" />
+    <include layout="@layout/layout_store_accepte_cgv" />
+</LinearLayout>

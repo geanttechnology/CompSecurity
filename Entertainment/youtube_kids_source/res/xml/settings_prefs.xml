@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_audio_category">
+        <CheckBoxPreference android:title="@string/pref_background_music" android:key="background_music" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_sound_effects" android:key="sound_effects" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_restrictions_category">
+        <CheckBoxPreference android:title="@string/pref_search_mode" android:key="search_mode" android:defaultValue="true" />
+        <Preference android:key="search_mode_summary" android:summary="@string/pref_search_mode_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_privacy_category">
+        <Preference android:title="@string/clear_watch_history" android:key="clear_watch_history" android:summary="@string/pref_clear_watch_history_summary" />
+        <Preference android:title="@string/privacy_policy" android:key="privacy_policy" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_about_category">
+        <Preference android:title="@string/pref_terms_of_service" android:key="terms_of_service" />
+        <Preference android:title="@string/pref_open_source_licenses" android:key="open_source_licenses" />
+        <Preference android:title="@string/pref_help" android:key="help" />
+        <Preference android:enabled="false" android:title="@string/pref_version" android:key="version" />
+    </PreferenceCategory>
+    <Preference android:title="@string/pref_developer_option" android:key="developer_option" />
+</PreferenceScreen>

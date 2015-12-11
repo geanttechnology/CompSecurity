@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cancel_button_margin_top" android:layout_marginRight="@dimen/cancel_button_margin_right" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageHat" android:layout_width="@dimen/xp_icon_size" android:layout_height="@dimen/xp_icon_size" android:src="@drawable/ak_xp_turban_blanc" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_gz" android:layout_toRightOf="@id/imageHat">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/xp_text_size" android:textColor="@color/white_color" android:gravity="center" android:id="@id/textScoreXp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="99999999" />
+            <TextView android:textSize="@dimen/xp_text_size" android:textColor="@color/white_color" android:gravity="center" android:id="@id/textXp" android:layout_width="wrap_content" android:layout_height="@dimen/gz_icon_size" android:text="XP" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/pbXp" android:layout_width="@dimen/xp_bar_width" android:layout_height="@dimen/xp_bar_height" android:progressDrawable="@drawable/ak_style_progress_bar_violet" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+.class public Lco/vine/android/drawable/ColoredOvalDrawable$ColoredOvalShape;
+.super Landroid/graphics/drawable/shapes/OvalShape;
+.source "ColoredOvalDrawable.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lco/vine/android/drawable/ColoredOvalDrawable;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = "ColoredOvalShape"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lco/vine/android/drawable/ColoredOvalDrawable;
+
+
+# direct methods
+.method public constructor <init>(Lco/vine/android/drawable/ColoredOvalDrawable;)V
+    .locals 0
+
+    .prologue
+    .line 23
+    iput-object p1, p0, Lco/vine/android/drawable/ColoredOvalDrawable$ColoredOvalShape;->this$0:Lco/vine/android/drawable/ColoredOvalDrawable;
+
+    invoke-direct {p0}, Landroid/graphics/drawable/shapes/OvalShape;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
+    .locals 1
+    .param p1, "canvas"    # Landroid/graphics/Canvas;
+    .param p2, "paint"    # Landroid/graphics/Paint;
+
+    .prologue
+    .line 27
+    iget-object v0, p0, Lco/vine/android/drawable/ColoredOvalDrawable$ColoredOvalShape;->this$0:Lco/vine/android/drawable/ColoredOvalDrawable;
+
+    iget v0, v0, Lco/vine/android/drawable/ColoredOvalDrawable;->mColor:I
+
+    invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setColor(I)V
+
+    .line 28
+    invoke-super {p0, p1, p2}, Landroid/graphics/drawable/shapes/OvalShape;->draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
+
+    .line 29
+    return-void
+.end method

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.android.accessibility.GestureListenerLayout android:gravity="center" android:id="@id/touchy_parent" android:padding="@dimen/dialog_layout_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:id="@id/not_available_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_series_not_available_text" style="@style/Medium" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.comcast.cim.cmasl.android.util.view.widget.CheckableRelativeLayout android:id="@id/header" android:background="@drawable/entity_list_item_bg_sel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/series_title_container" android:paddingLeft="@dimen/entity_list_padding" android:paddingTop="@dimen/entity_list_padding" android:paddingRight="4.0dip" android:paddingBottom="@dimen/entity_list_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:id="@id/series_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/test_series_long_title" android:maxLines="2" android:layout_toLeftOf="@id/favorite_indicator" android:layout_centerVertical="true" style="@style/LargeWhite" />
+                    <CheckBox android:id="@id/favorite_indicator" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="@drawable/icn_bookmark_entity_sel" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/favorite" android:importantForAccessibility="1" />
+                </RelativeLayout>
+                <ImageView android:id="@id/series_thumbnail" android:background="@color/MissingImage" android:layout_width="320.0dip" android:layout_height="160.0dip" android:scaleType="fitCenter" android:layout_below="@id/series_title_container" android:layout_centerHorizontal="true" />
+            </com.comcast.cim.cmasl.android.util.view.widget.CheckableRelativeLayout>
+            <ImageView android:id="@id/top_bevel" android:layout_width="fill_parent" android:layout_height="2.0dip" android:src="@drawable/divider_solid" android:scaleType="fitXY" android:contentDescription="@null" />
+            <ListView android:id="@id/episode_list" android:background="@color/Transparent" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:headerDividersEnabled="true" style="@style/DefaultListView" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.comcast.cim.android.accessibility.GestureListenerLayout>

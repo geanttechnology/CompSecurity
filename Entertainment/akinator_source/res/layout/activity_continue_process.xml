@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/genizLayout" layout="@layout/layout_geniz" />
+    <include android:id="@id/homeButton" layout="@layout/layout_home_button" />
+    <LinearLayout android:gravity="center" android:id="@id/continueButtons" android:layout_width="fill_parent" android:layout_height="@dimen/gen_button_height" android:layout_marginBottom="@dimen/margin_bottom" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/yesContinueButton" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_small_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginRight="@dimen/proposal_yes_no_buttons_margin_lr" android:text="YES" />
+        <Button android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/noContinueButton" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_small_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginLeft="@dimen/proposal_yes_no_buttons_margin_lr" android:text="NO" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="bottom|right|center" android:id="@id/layoutAkinator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layoutAkinator_margin_left" android:layout_marginTop="@dimen/layoutAkinator_margin_top" android:layout_marginRight="@dimen/layoutAkinator_margin_right" android:layout_marginBottom="@dimen/layoutAkinator_margin_bottom">
+        <ImageView android:id="@id/akinatorImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/akinatorTenue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/akinatorChapeau" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bulle" android:layout_width="@dimen/question_bulle_dessin_width" android:layout_height="@dimen/question_bulle_dessin_height" android:layout_marginLeft="@dimen/layoutBulleQuestion_margin_left" android:layout_marginTop="@dimen/layoutBulleQuestion_margin_top" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/bulleImage" android:layout_width="@dimen/question_bulle_dessin_width" android:layout_height="@dimen/question_bulle_dessin_height" android:src="@drawable/ak_bulle_question" android:adjustViewBounds="true" />
+        <TextView android:textSize="@dimen/bulle_text_size" android:textColor="@color/bulle_text_color" android:gravity="center" android:id="@id/bulleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="ON_CONTINUE" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

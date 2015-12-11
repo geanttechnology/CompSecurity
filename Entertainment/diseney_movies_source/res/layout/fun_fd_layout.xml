@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_fd_dia" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="8.0dip">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/fun_fd_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/fun_fd_iv" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

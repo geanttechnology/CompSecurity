@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/onboarding_last_slide_background" />
+    <stroke android:width="0.0dip" android:color="@color/imoji_primary" />
+    <corners android:topLeftRadius="@dimen/onboarding_card_radius" android:topRightRadius="@dimen/onboarding_card_radius" android:bottomLeftRadius="0.0dip" android:bottomRightRadius="0.0dip" />
+</shape>

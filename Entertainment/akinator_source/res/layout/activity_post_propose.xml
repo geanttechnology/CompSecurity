@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutPostPropose" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/genizLayout" layout="@layout/layout_geniz" />
+    <include android:id="@id/xpLayout" layout="@layout/layout_xp" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/layoutGZplus" android:layout_width="@dimen/xp_bar_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xp_gz_margin" android:layout_alignParentLeft="true">
+        <TextView android:textSize="@dimen/postPropose_text_size_XP_GZ" android:textColor="@color/green_color" android:id="@id/textGzWon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1500" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/layoutXpPlus" android:layout_width="@dimen/xp_bar_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xp_gz_margin" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/postPropose_text_size_XP_GZ" android:textColor="@color/purple_color" android:id="@id/textXpWon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+2730" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/layoutAward" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/postPropose_margin_lr" android:layout_marginTop="@dimen/postProposeMarginTop" android:layout_marginRight="@dimen/postPropose_margin_lr" android:layout_above="@id/layoutShareButtonsGO" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/imageAward" android:layout_width="@dimen/badgeWitdh" android:layout_height="@dimen/badgeHeight" android:src="@drawable/ak_badge_bronze" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/postPropose_margin_lr" android:layout_marginTop="@dimen/postPropose_text_margin_top" android:layout_above="@id/layoutWhatIsAkiAward" android:layout_below="@id/imageAward">
+            <LinearLayout android:orientation="vertical" android:id="@id/textCongratulation" android:paddingRight="@dimen/postPropose_margin_lr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/imageFlecheDroite" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/yellow_color" android:id="@id/textAwardPart1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Felicitations ! Tu viens de remporter un Aki Award Standart. Tu obtiens XXXX GZ." />
+                <TextView android:textSize="@dimen/postPropose_text_size" android:textColor="@color/yellow_color" android:id="@id/textAwardPart2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Le dernier Aki Award de ce personnage a été remporté par un autre joueur il y a 10 minutes." />
+            </LinearLayout>
+            <ImageView android:id="@id/imageFlecheDroite" android:layout_width="@dimen/postPropose_arrow_right_size" android:layout_height="@dimen/postPropose_arrow_right_size" android:src="@drawable/ak_arrow_right_btq" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layoutWhatIsAkiAward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/postPropose_margin_lr" android:layout_marginTop="@dimen/postPropose_text_margin_top" android:layout_marginRight="@dimen/postPropose_margin_lr" android:layout_alignParentBottom="true">
+            <ImageView android:background="@drawable/ak_info" android:layout_width="@dimen/info_icon_size" android:layout_height="@dimen/info_icon_size" />
+            <TextView android:textSize="@dimen/postPropose_text_size2" android:textColor="@color/orange_color" android:id="@id/textAwardInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="WHAT IS A AKI AKI WARD" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/layoutShareButtonsGO" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:id="@id/partageButton" android:background="@drawable/ak_button_sharing" android:layout_width="@dimen/share_button_size" android:layout_height="@dimen/share_button_size" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

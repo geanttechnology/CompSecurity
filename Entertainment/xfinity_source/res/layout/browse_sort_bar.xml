@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dark_gray_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/list_header" style="@style/ListHeaderNav">
+        <LinearLayout android:gravity="center" android:id="@id/popularitySort" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:id="@id/btn_popularitySort" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/popularity_sort_button_text" android:contentDescription="@string/popularity_sort_button_speech" style="@style/sort_btn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/otherSort" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:id="@id/btn_otherSort" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/chronological_movie_sort_button_text" style="@style/sort_btn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/alphabetSort" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:text="@string/alphabetical_sort_button_text" android:contentDescription="@string/alphabetical_sort_button_speech" style="@style/sort_btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/list_separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_separator_height" />
+</LinearLayout>

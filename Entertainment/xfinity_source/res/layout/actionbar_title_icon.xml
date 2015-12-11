@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/spacer" style="@style/ActionBarSpacer" />
+    <ImageView android:id="@id/title_icon" android:paddingBottom="@dimen/actionbar_network_logo_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_top_bar" android:scaleType="fitStart" android:layout_toRightOf="@id/spacer" android:layout_centerVertical="true" />
+</RelativeLayout>

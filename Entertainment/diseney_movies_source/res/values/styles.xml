@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/WindowTitleBackground" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="AppBaseTheme2" parent="@android:style/Theme.Light" />
+    <style name="AppTheme2" parent="@style/AppBaseTheme2" />
+    <style name="AudioFileInfoOverlayText">
+        <item name="android:textSize">60.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">4.0px</item>
+        <item name="android:paddingBottom">4.0px</item>
+        <item name="android:shadowColor">#ff4d4d4d</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">5.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="AudioFileInfoOverlayText1">
+        <item name="android:textSize">70.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">4.0px</item>
+        <item name="android:paddingBottom">4.0px</item>
+        <item name="android:shadowColor">#ff4d4d4d</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">5.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="customCheckBox2" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check</item>
+    </style>
+    <style name="customCheckBox3" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_gallery</item>
+    </style>
+    <style name="customCheckBox4" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_firstcleaner</item>
+    </style>
+    <style name="customCheckBox5" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_cleanermust</item>
+    </style>
+    <style name="customCheckBox6" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_cleanerupdate</item>
+    </style>
+    <style name="NotificationTitle" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="NotificationContent" parent="@android:style/TextAppearance.StatusBar.EventContent" />
+    <style name="CustomDialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@drawable/filled_box</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="CustomDialog3" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="mystyle" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/head_in</item>
+        <item name="android:windowExitAnimation">@anim/head_out</item>
+    </style>
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">11.0dip</item>
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+        <item name="android:minHeight">11.0dip</item>
+    </style>
+    <style name="lvRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">20.0dip</item>
+        <item name="android:progressDrawable">@drawable/lv_rating_bar</item>
+        <item name="android:minHeight">20.0dip</item>
+    </style>
+    <style name="customCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_checkbox</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:imoji-app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/edit_avatar" android:id="@id/edit_avatar" android:title="@string/edit_avatar" imoji-app:showAsAction="always" />
+    <item android:icon="@drawable/ic_outfit" android:id="@id/outfit_builder" android:title="@string/outfit_builder" imoji-app:showAsAction="always" />
+    <item android:icon="@drawable/ic_bitshop" android:id="@id/bitshop" android:title="@string/bitshop" imoji-app:showAsAction="always" />
+    <item android:id="@id/invite" android:title="@string/invite" imoji-app:showAsAction="never" />
+    <item android:id="@id/feedback" android:title="@string/feedback" imoji-app:showAsAction="never" />
+    <item android:id="@id/rate" android:title="@string/rate_and_review" imoji-app:showAsAction="never" />
+    <item android:id="@id/settings" android:title="@string/settings" imoji-app:showAsAction="never" />
+    <item android:id="@id/help" android:title="@string/help" imoji-app:showAsAction="never" />
+</menu>

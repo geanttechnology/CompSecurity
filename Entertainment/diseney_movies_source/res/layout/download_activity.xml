@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/downloadingfragment" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/downfan" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="52.0dip" android:src="@drawable/myfan" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/downloading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/downloading" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/downloadmore" android:clickable="true" android:layout_width="48.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/downloadingnotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="120.0dip" android:layout_marginRight="20.0dip" android:text="@string/downloadingnotice" />
+    <ScrollView android:id="@id/downtask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/downloadingfragment">
+        <LinearLayout android:orientation="vertical" android:id="@id/download_listview_lin" android:background="@android:color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.aio.downloader.utils.ProgressWheel android:id="@id/progress_wheel" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true" wheel:progressIndeterminate="true" wheel:barColor="#ff3261b4" />
+</RelativeLayout>

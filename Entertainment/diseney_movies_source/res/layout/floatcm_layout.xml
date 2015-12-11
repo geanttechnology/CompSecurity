@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/rl_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="80.0dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/topcolorwyc" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:background="@drawable/float_switch" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Switch" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_float_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:background="@drawable/float_funny_pics" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Funny Pics" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_float_gift" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_float_gift" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Gift" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:weightSum="4.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_brightness2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_brightness" android:background="@drawable/float_switcher_light_auto" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Brightness" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_wifi2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_wifi2" android:background="@drawable/float_switcher_wifi_on" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:id="@id/tv_wifi2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Wi-Fi" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_gps2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_gps2" android:background="@drawable/float_gps_on" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:id="@id/tv_gps2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Location" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_flash2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_flash2" android:background="@drawable/float_card_full_scan" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:id="@id/tv_flash2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Storage" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:weightSum="4.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_calculator2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/float_calculator" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Calculator" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_alarms2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/float_switcher_bluetooth" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Alarms" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_auto_rotate2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_auto_rotate2" android:background="@drawable/float_switcher_rotation_on" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:id="@id/tv_auto_rotate2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Auto-rotate" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_sleep2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_sleep2" android:background="@drawable/float_switcher_timeout_30s" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Sleep" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="16.0dip" android:weightSum="4.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_vibaration2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_vibaration2" android:background="@drawable/float_switcher_vibrate_off" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ffa1afb7" android:layout_gravity="center_horizontal" android:id="@id/tv_vibaration2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Vibration" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_airplane2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_airplane2" android:background="@drawable/float_switcher_airplane_mode_on" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:id="@id/tv_airplane2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Airplane" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_buletooth2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_buletooth2" android:background="@drawable/float_switcher_bluetooth_off" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ffa1afb7" android:layout_gravity="center_horizontal" android:id="@id/tv_buletooth2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Buletooth" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_camera2" android:background="@drawable/cb_btn_bg_float" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/float_camera" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Camera" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_junk" android:background="#fff9f9f9" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_float_junk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:background="@drawable/float_delete_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff758c98" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Junk Files                         " />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_float_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:background="@drawable/float_apps_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff758c98" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="App Manager" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/ll_float_shuffle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:background="@drawable/hex72" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff758c98" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Shuffle" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_circle" android:background="#ffeeeeee" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_junk">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/icon_hui" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff7a909d" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="AIO Downloader" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_float_set" android:background="@drawable/float_settingsnew" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <RelativeLayout android:background="@drawable/short_cut_bg2" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true">
+                    <com.aio.downloader.views.ClearView android:id="@id/clear_view" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                    <RelativeLayout android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/iv_cricle" android:layout_width="53.0dip" android:layout_height="53.0dip" android:src="@drawable/float_yuan" android:layout_centerInParent="true" />
+                        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/clear_count1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="74%" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="8.0dip" android:text="Recenct Apps" />
+        <com.aio.downloader.views.HorizontalListView android:layout_gravity="center_horizontal" android:id="@id/lv_float_recenct_app" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</RelativeLayout>

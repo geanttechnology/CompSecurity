@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_return" />
+    <RelativeLayout android:background="@drawable/ak_fond_texte" android:layout_width="@dimen/addquestionContentWidth" android:layout_height="@dimen/addquestionContentHeight" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/customizeLabelTextSize" android:textColor="@color/buttons_text_color" android:gravity="center" android:id="@id/textReport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/addQuestionTitle_margin_top" android:text="REPORT" />
+        <ListView android:id="@id/reportAnswerList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/reportAnswerList_margin_lr" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/reportAnswerList_margin_lr" android:layout_marginBottom="@dimen/reportAnswerList_margin_bottom" android:cacheColorHint="#00000000" android:divider="@android:color/transparent" android:dividerHeight="15.0dip" android:layout_below="@id/textReport" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

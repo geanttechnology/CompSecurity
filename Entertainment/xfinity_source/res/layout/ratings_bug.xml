@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/RatingsBugLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:id="@id/rating_bug_program" style="@style/RatingsBug" />
+    <TextView android:textSize="30.0dip" android:id="@id/rating_bug_rating" style="@style/RatingsBug" />
+    <TextView android:textSize="18.0dip" android:id="@id/rating_bug_sub_rating" android:visibility="gone" style="@style/RatingsBug" />
+</LinearLayout>

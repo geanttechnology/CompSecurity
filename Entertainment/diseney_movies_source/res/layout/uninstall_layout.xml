@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:material="http://schemas.android.com/apk/res-auto" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_top_backup" android:background="@color/topcolorwyc" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <com.aio.downloader.views.LImageButton android:id="@id/header_left_uninstall" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_header_back" wheel:widget_animColor="@color/color_anim_white" wheel:widget_type="left" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tv_title_uninstall" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Uninstaller" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/lv_uninstall" android:background="#ffebebeb" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+        <View android:background="@drawable/divider_headerbar_bottom" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+        <com.aio.downloader.utils.ProgressWheel android:id="@id/progress_wheel" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true" wheel:progressIndeterminate="true" wheel:barColor="@color/topcolorwyc" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_downnull" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/downnullpg" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/downloadingnotice1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="No Apps" />
+            <TextView android:textColor="#ff333333" android:id="@id/tv_feelling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="I'm feeling lucky" />
+            <ImageView android:id="@id/iv_ioio1" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="-16.0dip" android:src="@drawable/buybtn00038" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_root" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/downnullpg" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="This feature requires the root of your mobile." />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="fill_horizontal" android:orientation="horizontal" android:id="@id/adviewscanner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

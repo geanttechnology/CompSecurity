@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/body_container" android:background="@color/dark_gray_1" android:padding="@dimen/dialog_layout_outline" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/header_label" android:focusable="true" android:focusableInTouchMode="true" android:text="@string/filter_title" android:importantForAccessibility="1" style="@style/modal_header_label" />
+    <TextView android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/filter_program_type" android:importantForAccessibility="1" style="@style/LargeRegularWhite" />
+    <RadioGroup android:layout_gravity="center" android:id="@id/program_types" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="22.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:baselineAligned="false" android:layout_weight="1.0" />
+    <ImageView android:background="@color/list_separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_separator_height" android:layout_margin="10.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/downloadable_checkbox_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/filter_avail_for_download" android:lines="2" android:layout_weight="1.0" style="@style/LargeRegularWhite" />
+        <CheckBox android:id="@id/downloadable_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_holo_comcast" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/subscription_only_checkbox_container" android:visibility="@integer/subscription_only_check_visibility" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/filter_hide_locked" android:layout_weight="1.0" style="@style/LargeRegularWhite" />
+        <CheckBox android:id="@id/subscription_only_checkbox" android:padding="0.0dip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_holo_comcast" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottomBar" style="@style/modal_header_label">
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/clear" android:layout_marginRight="8.0dip" android:text="@string/clear" style="@style/modal_button" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/apply" android:layout_marginLeft="8.0dip" android:text="@string/apply" style="@style/modal_button" />
+    </LinearLayout>
+</LinearLayout>

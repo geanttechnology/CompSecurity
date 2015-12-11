@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.youtube.kids.ui.SlidingFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+    <LinearLayout android:orientation="vertical" android:id="@id/interactive_region" android:background="@color/parental_gate_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="25.0" />
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="24.0sp" android:textColor="@color/parental_gate_text" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grownups_only" ytkids:capitalize="true" ytkids:roboto2Font="medium" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="44.0" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="14.0sp" android:textColor="@color/parental_gate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginRight="5.0dip" android:text="@string/parental_gate_instructions" ytkids:roboto2Font="light" />
+                <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="14.0sp" android:textColor="@color/parental_gate_text" android:id="@id/solution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="ONE, TWO, THREE, FOUR" ytkids:capitalize="true" ytkids:roboto2Font="medium" />
+                <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/number_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="94.0" />
+            <com.google.android.apps.youtube.kids.ui.NumberPad android:layout_gravity="center_horizontal" android:id="@id/number_grid" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="38.0" />
+        <View android:background="@color/parental_gate_text" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textColor="@color/parental_gate_text" android:gravity="center" android:id="@id/dismiss_button" android:background="@drawable/touch_feedback_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:text="@string/dismiss" ytkids:roboto2Font="medium" />
+    </LinearLayout>
+</com.google.android.apps.youtube.kids.ui.SlidingFrameLayout>

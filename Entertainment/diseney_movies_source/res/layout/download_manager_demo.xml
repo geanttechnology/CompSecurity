@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/download_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:ellipsize="end" android:id="@id/download_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:singleLine="true" />
+    <TextView android:ellipsize="end" android:id="@id/download_precent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_50" android:singleLine="true" android:layout_alignTop="@id/download_size" android:layout_alignParentRight="true" />
+    <ProgressBar android:id="@id/download_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_50" android:layout_below="@id/download_size" style="?android:attr/progressBarStyleHorizontal" />
+    <Button android:gravity="bottom" android:id="@id/download_cancel" android:visibility="gone" android:layout_width="@dimen/dp_40" android:layout_height="wrap_content" android:layout_alignRight="@id/download_progress" android:layout_alignBottom="@id/download_progress" android:layout_alignParentRight="true" style="?android:attr/buttonBarButtonStyle" />
+    <TextView android:gravity="left" android:id="@id/download_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_70" android:layout_alignParentLeft="true" />
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="adjustForActionBar" format="boolean" />
+    <attr name="hlv_absHListViewStyle" format="reference" />
+    <attr name="hlv_expandableListViewStyle" format="reference" />
+    <attr name="hlv_listPreferredItemWidth" format="dimension" />
+    <attr name="hlv_listViewStyle" format="reference" />
+    <attr name="isFullScreen" format="boolean" />
+    <attr name="showHotwireButton" format="boolean" />
+    <attr name="showSize" format="boolean" />
+    <attr name="hlv_stackFromRight" format="boolean" />
+    <attr name="hlv_transcriptMode">
+        <enum name="alwaysScroll" value="2" />
+        <enum name="disabled" value="0" />
+        <enum name="normal" value="1" />
+    </attr>
+    <attr name="hlv_indicatorGravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="hlv_childIndicatorGravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="hlv_childDivider" format="reference|color" />
+    <attr name="hlv_groupIndicator" format="reference" />
+    <attr name="hlv_childIndicator" format="reference" />
+    <attr name="hlv_indicatorPaddingLeft" format="dimension" />
+    <attr name="hlv_indicatorPaddingTop" format="dimension" />
+    <attr name="hlv_childIndicatorPaddingLeft" format="dimension" />
+    <attr name="hlv_childIndicatorPaddingTop" format="dimension" />
+    <attr name="hlv_dividerWidth" format="dimension" />
+    <attr name="hlv_headerDividersEnabled" format="boolean" />
+    <attr name="hlv_footerDividersEnabled" format="boolean" />
+    <attr name="hlv_overScrollHeader" format="reference|color" />
+    <attr name="hlv_overScrollFooter" format="reference|color" />
+    <attr name="hlv_measureWithChild" format="integer" />
+    <attr name="state_appear_enabled" format="boolean" />
+    <attr name="areHeadersSticky" format="boolean" />
+    <attr name="typefaceFamily" format="string" />
+    <attr name="typefaceStyle">
+        <flag name="black" value="0x00000064" />
+        <flag name="blackItalic" value="0x00000065" />
+        <flag name="bold" value="0x000000c8" />
+        <flag name="boldCondensed" value="0x000000c9" />
+        <flag name="boldCondensedItalic" value="0x000000ca" />
+        <flag name="boldItalic" value="0x000000cb" />
+        <flag name="condensed" value="0x0000012c" />
+        <flag name="condensedItalic" value="0x0000012d" />
+        <flag name="custom1" value="0x000003e8" />
+        <flag name="custom2" value="0x000003e9" />
+        <flag name="italic" value="0x00000190" />
+        <flag name="light" value="0x000001f4" />
+        <flag name="lightItalic" value="0x000001f5" />
+        <flag name="medium" value="0x00000258" />
+        <flag name="mediumCondensed" value="0x00000259" />
+        <flag name="mediumItalic" value="0x0000025a" />
+        <flag name="regular" value="0x00000000" />
+        <flag name="thin" value="0x000002bc" />
+        <flag name="thinItalic" value="0x000002bd" />
+    </attr>
+    <attr name="aspectRatio" format="float" />
+    <attr name="ringColor" format="color" />
+    <attr name="ringBackingColor" format="color" />
+    <attr name="ringStrokeWidth" format="float" />
+    <attr name="state_animating" format="boolean" />
+    <attr name="leadText" format="reference|string" />
+    <attr name="showNoFilterText" format="boolean" />
+    <attr name="noFilterText" format="reference|string" />
+    <attr name="addCommas" format="boolean" />
+    <attr name="expanded" format="boolean" />
+    <attr name="prependedText" format="reference|string" />
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/tap_out_layer" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.comcast.cim.cmasl.android.util.view.widget.GestureInterceptorRelativeLayout android:id="@id/nav_panel_container" android:background="@drawable/bg_subnav" android:visibility="gone" android:layout_width="@dimen/nav_panel_size" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/nav_bar_size" />
+    <RelativeLayout android:background="@drawable/bg_nav" android:layout_width="@dimen/nav_bar_size" android:layout_height="wrap_content">
+        <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_icon_xfinity" android:contentDescription="@string/xfinity_logo_speech" />
+        <ImageView android:id="@id/logo_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rule_beveled_nav" android:layout_below="@id/logo" android:contentDescription="@null" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/nav_util_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/help_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_icon_help" android:contentDescription="@string/help" />
+            <ImageView android:id="@id/settings_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_icon_settings" android:layout_below="@id/help_button" android:contentDescription="@string/settings" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

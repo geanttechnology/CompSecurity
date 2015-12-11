@@ -1,0 +1,131 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.tapjoy.internal;
+
+import android.graphics.Point;
+import java.net.URL;
+
+// Referenced classes of package com.tapjoy.internal:
+//            bp, gz, bu, cw
+
+public final class gx
+{
+
+    public static final bp b = new bp() {
+
+        private static Point b(bu bu1)
+        {
+            Object obj = null;
+            bu1.i();
+            while (bu1.k()) 
+            {
+                if ("offset".equals(bu1.m()))
+                {
+                    bu1.i();
+                    int j = 0;
+                    int i = 0;
+                    while (bu1.k()) 
+                    {
+                        obj = bu1.m();
+                        if ("x".equals(obj))
+                        {
+                            i = bu1.s();
+                        } else
+                        if ("y".equals(obj))
+                        {
+                            j = bu1.s();
+                        } else
+                        {
+                            bu1.t();
+                        }
+                    }
+                    bu1.j();
+                    obj = new Point(i, j);
+                } else
+                {
+                    bu1.t();
+                }
+            }
+            bu1.j();
+            return ((Point) (obj));
+        }
+
+        public final Object a(bu bu1)
+        {
+            gz gz1 = null;
+            bu1.i();
+            Point point1 = null;
+            Point point = null;
+            do
+            {
+                if (!bu1.k())
+                {
+                    break;
+                }
+                String s = bu1.m();
+                if ("image".equals(s))
+                {
+                    s = bu1.n();
+                    if (!cw.c(s))
+                    {
+                        gz1 = new gz(new URL(s));
+                    }
+                } else
+                if ("landscape".equals(s))
+                {
+                    point = b(bu1);
+                } else
+                if ("portrait".equals(s))
+                {
+                    point1 = b(bu1);
+                } else
+                {
+                    bu1.t();
+                }
+            } while (true);
+            bu1.j();
+            return new gx(gz1, point, point1);
+        }
+
+    };
+    public final gz a;
+    private final Point c;
+    private final Point d;
+
+    public gx(gz gz, Point point, Point point1)
+    {
+        a = gz;
+        c = point;
+        d = point1;
+    }
+
+    public final boolean a()
+    {
+        return a != null && (c != null || d != null);
+    }
+
+    public final Point b()
+    {
+        if (c == null)
+        {
+            return d;
+        } else
+        {
+            return c;
+        }
+    }
+
+    public final Point c()
+    {
+        if (d == null)
+        {
+            return c;
+        } else
+        {
+            return d;
+        }
+    }
+
+}

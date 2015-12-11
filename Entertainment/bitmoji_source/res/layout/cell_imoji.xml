@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/imoji_image" />
+    <View android:layout_gravity="left" android:id="@id/imojiLeftBorder" android:background="@color/bitshop_pack_section_border" android:visibility="gone" android:layout_width="@dimen/bitshop_border_width" android:layout_height="fill_parent" />
+    <View android:layout_gravity="right" android:id="@id/imojiRightBorder" android:background="@color/bitshop_pack_section_border" android:visibility="gone" android:layout_width="@dimen/bitshop_border_width" android:layout_height="fill_parent" />
+</FrameLayout>

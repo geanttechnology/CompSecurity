@@ -1,0 +1,118 @@
+.class public Lco/vine/android/MenuUsersAdapter$FriendsViewHolder;
+.super Ljava/lang/Object;
+.source "MenuUsersAdapter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lco/vine/android/MenuUsersAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "FriendsViewHolder"
+.end annotation
+
+
+# instance fields
+.field public avatarKey:Lco/vine/android/util/image/ImageKey;
+
+.field public divider:Landroid/view/View;
+
+.field public friendName:Landroid/widget/TextView;
+
+.field public image:Landroid/widget/ImageView;
+
+.field public position:I
+
+.field public recipient:Lco/vine/android/api/VineRecipient;
+
+.field public sectionIndicator:Landroid/view/View;
+
+.field public sectionSort:Landroid/widget/TextView;
+
+.field public sectionTitle:Landroid/widget/TextView;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
+    .locals 2
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "view"    # Landroid/view/View;
+
+    .prologue
+    .line 199
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 200
+    const v0, 0x7f0a0125
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lco/vine/android/MenuUsersAdapter$FriendsViewHolder;->friendName:Landroid/widget/TextView;
+
+    .line 201
+    const v0, 0x7f0a0063
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p0, Lco/vine/android/MenuUsersAdapter$FriendsViewHolder;->image:Landroid/widget/ImageView;
+
+    .line 202
+    const v0, 0x7f0a0120
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lco/vine/android/MenuUsersAdapter$FriendsViewHolder;->sectionIndicator:Landroid/view/View;
+
+    .line 203
+    const v0, 0x7f0a01ab
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lco/vine/android/MenuUsersAdapter$FriendsViewHolder;->sectionTitle:Landroid/widget/TextView;
+
+    .line 204
+    const v0, 0x7f0a01aa
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lco/vine/android/MenuUsersAdapter$FriendsViewHolder;->sectionSort:Landroid/widget/TextView;
+
+    .line 205
+    const v0, 0x7f0a0060
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lco/vine/android/MenuUsersAdapter$FriendsViewHolder;->divider:Landroid/view/View;
+
+    .line 206
+    iget-object v0, p0, Lco/vine/android/MenuUsersAdapter$FriendsViewHolder;->sectionTitle:Landroid/widget/TextView;
+
+    iget-object v1, p0, Lco/vine/android/MenuUsersAdapter$FriendsViewHolder;->sectionSort:Landroid/widget/TextView;
+
+    invoke-static {p1, v0, v1}, Lco/vine/android/util/Util;->styleSectionHeader(Landroid/content/Context;Landroid/widget/TextView;Landroid/widget/TextView;)V
+
+    .line 207
+    return-void
+.end method

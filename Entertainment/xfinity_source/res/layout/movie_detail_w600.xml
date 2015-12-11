@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.android.accessibility.GestureListenerLayout android:gravity="center" android:id="@id/touchy_parent" android:background="@color/list_separator_color" android:padding="@dimen/dialog_layout_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/dark_gray_1" android:paddingLeft="@dimen/entity_view_padding" android:paddingTop="@dimen/entity_view_padding" android:paddingRight="8.0dip" android:paddingBottom="@dimen/entity_view_padding" android:layout_width="@dimen/entity_modal_width" android:layout_height="@dimen/entity_modal_height" android:contentDescription="@null">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/detail_image" android:visibility="gone" android:layout_width="@dimen/entity_view_image_width" android:layout_height="@dimen/entity_view_image_height" android:layout_marginRight="8.0dip" android:scaleType="fitCenter" />
+        <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/movie_detail_error_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_movie_not_available_text" style="@style/SmallRegularWhite" />
+        <ScrollView android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/movie_detail_info" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.comcast.cim.android.accessibility.GestureListenerLayout>

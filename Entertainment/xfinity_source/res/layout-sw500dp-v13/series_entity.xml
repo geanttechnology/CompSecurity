@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@color/dark_gray_2" android:layout_width="wrap_content" android:layout_height="@dimen/entity_modal_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:id="@id/body_container" android:background="@color/list_separator_color" android:padding="@dimen/dialog_layout_outline" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/fragment_container_1" android:background="@color/dark_gray_1" android:layout_width="@dimen/entity_list_width" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/fragment_container_2" android:background="@color/dark_gray_2" android:layout_width="@dimen/entity_detail_width" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:vine="http://schemas.android.com/apk/res-auto">
+    <co.vine.android.widget.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="@color/white_forty_percent" android:layout_gravity="right" android:id="@id/skip" android:padding="@dimen/standard_spacing" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.0dip" android:text="@string/skip" android:textAllCaps="true" vine:textWeight="4" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="41.0dip" android:src="@drawable/vm_roundel" />
+    <co.vine.android.widget.TypefacesTextView android:textSize="19.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_small" android:text="@string/intro_splash_heading" vine:textWeight="4" />
+    <co.vine.android.widget.TypefacesTextView android:textSize="14.0sp" android:textColor="@color/white_forty_percent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_micro" android:text="@string/intro_splash_subtext" />
+    <Button android:textSize="@dimen/font_size_large" android:textStyle="bold" android:textColor="@color/primary_text" android:id="@id/check_it_out" android:background="@drawable/vm_thread_bubble" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/spacing_medium" android:text="@string/intro_splash_cta" />
+</LinearLayout>

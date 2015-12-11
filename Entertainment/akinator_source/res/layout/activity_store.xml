@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/storeHeader" android:background="@drawable/ak_header_boutique" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/gen_header_height" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/gen_header_text_size" android:textColor="@color/store_text_color_clair" android:id="@id/storeTextBoutique" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="La Boutique d'Akinator" android:layout_weight="1.0" />
+        <include android:id="@id/homeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_home_button" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutStoreBottom" android:background="@drawable/ak_bottom_boutique" android:layout_width="fill_parent" android:layout_height="@dimen/gen_bottom_height" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center" android:id="@id/storeTabPotion" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/tabLabo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/ak_decor_labo_fiolelvl3" android:layout_width="@dimen/storeIconSize" android:layout_height="@dimen/storeIconSize" />
+                <TextView android:textSize="@dimen/storeTabTextSize" android:textColor="@color/store_text_color_clair" android:gravity="center" android:id="@id/storeTextPotion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="POTIONS" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/storeTabDecor" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/tabItems" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/ak_xp_turban_blanc" android:layout_width="@dimen/storeIconSize" android:layout_height="@dimen/storeIconSize" />
+                <TextView android:textSize="@dimen/storeTabTextSize" android:textColor="@color/store_text_color_clair" android:gravity="center" android:id="@id/storeTextItems" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="ACCESSOIRES" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/storeTabFaces" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/tabFaces" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/ak_decor_faces_logo" android:layout_width="@dimen/storeIconSize" android:layout_height="@dimen/storeIconSize" />
+                <TextView android:textSize="@dimen/storeTabTextSize" android:textColor="@color/store_text_color_clair" android:gravity="center" android:id="@id/storeTextFaces" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="FACES" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/storeTabGeniz" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/tabGz" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/ak_gz" android:layout_width="@dimen/storeIconSize" android:layout_height="@dimen/storeIconSize" />
+                <TextView android:textSize="@dimen/storeTabTextSize" android:textColor="@color/store_text_color_clair" android:gravity="center" android:id="@id/storeTextGz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="GZ" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layoutStoreBottom" android:layout_below="@id/storeHeader">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeSousHeaderLabo" android:layout_width="fill_parent" android:layout_height="@dimen/storeSousHeaderHeight">
+            <View android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <include android:id="@id/layoutGz" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/home_button_margin_right" layout="@layout/layout_geniz" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layoutFaces" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/home_button_margin_right">
+                    <include layout="@layout/layout_faces" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

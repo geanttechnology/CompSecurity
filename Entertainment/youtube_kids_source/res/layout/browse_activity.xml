@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+    <ImageView android:id="@id/background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:id="@id/main_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.apps.youtube.kids.ui.TimeLimitProgressBar android:id="@id/time_limit_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="6.0dip" android:progressDrawable="@drawable/time_limit_progressbar" style="?android:attr/progressBarStyleHorizontal" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.google.android.apps.youtube.kids.ui.InterstitialLayout android:id="@id/interstitial_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="top|left|center" android:id="@id/tab_title_container" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tab_title_top_margin">
+                    <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="@dimen/tab_title_text_size" android:textStyle="normal" android:textColor="#ffe62117" android:layout_gravity="top|center" android:id="@id/tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" ytkids:capitalize="false" ytkids:roboto2Font="medium" />
+                </FrameLayout>
+                <com.google.android.apps.youtube.kids.ui.HeaderTileGridLayout android:id="@id/header_tile_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" ytkids:tileVerticalPadding="@dimen/tile_vertical_padding" ytkids:tileHorizontalPadding="@dimen/tile_horizontal_padding" ytkids:headerHeight="@dimen/header_height" />
+            </FrameLayout>
+            <RelativeLayout android:id="@id/chrome_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <com.google.android.apps.youtube.kids.ui.ParentalControlLaunchBar android:layout_gravity="bottom|right|center" android:id="@id/parental_control_footer" android:layout_width="wrap_content" android:layout_height="@dimen/footer_height" />
+        <ImageView android:id="@id/thumbnail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/lollipop_hack_overlay" android:background="#01ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

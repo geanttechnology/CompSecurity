@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ad_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="@dimen/controls_overlay_top_right_buttons_width" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/thumbnail" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="4.0dip" android:adjustViewBounds="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffcccccc" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:maxLines="1" android:shadowColor="#7f000000" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="1.0" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ad_time_bar_group" android:background="@drawable/player_bottom_bar" android:paddingBottom="@dimen/ad_time_bar_group_padding_bottom" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/ad_overlay_ad_text_size" android:textColor="@android:color/white" android:id="@id/ad_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_text_margin_left" android:text="@string/ad_normal" android:includeFontPadding="false" android:shadowColor="#7f000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="0.01" />
+        <com.google.android.apps.youtube.kids.ui.TimeBar android:id="@id/fullscreen_time_bar" android:layout_width="wrap_content" android:layout_height="8.0dip" android:layout_marginLeft="@dimen/ad_time_bar_margin_left" android:layout_marginRight="@dimen/ad_time_bar_margin_right" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/skip_ad_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_overlay_margin_bottom" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ad_skip_button" android:layout_width="wrap_content" android:layout_height="53.0dip">
+            <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="18.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/skip_ad_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/skip_ad_text_margin" android:layout_marginRight="@dimen/skip_ad_text_margin" android:text="@string/skip_ad_in" android:includeFontPadding="false" ytkids:roboto2Font="regular" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/skip_ad_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_skip_dark_kids" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

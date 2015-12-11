@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/card_kids" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/player_bottom_bar" android:layout_width="fill_parent" android:layout_height="96.0dip">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/mini_thumbnail_size" android:layout_marginBottom="@dimen/mini_thumbnail_margin" android:weightSum="14.0">
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/tile_channel_text_size" android:textStyle="normal" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/channel_title" android:paddingLeft="@dimen/text_height" android:paddingRight="@dimen/tile_text_horizontal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="7.0" android:textIsSelectable="false" yt:robotoFont="medium" />
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/tile_secondary_text_size" android:textStyle="normal" android:textColor="#ccffffff" android:gravity="center_vertical" android:paddingLeft="@dimen/text_height" android:paddingRight="@dimen/tile_text_horizontal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/channel" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="7.0" android:textIsSelectable="false" yt:robotoFont="light" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="bottom|left|center" android:id="@id/mini_thumbnail" android:background="@drawable/bg_video_thumb" android:layout_width="@dimen/mini_thumbnail_size" android:layout_height="@dimen/mini_thumbnail_size" android:layout_margin="@dimen/mini_thumbnail_margin" android:scaleType="centerCrop" />
+</FrameLayout>

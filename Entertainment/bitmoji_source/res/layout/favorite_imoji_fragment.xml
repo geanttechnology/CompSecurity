@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bitstrips.imoji.ui.views.NonFocusingScrollView android:id="@id/favorite_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ActivityContainer">
+        <TextView android:id="@id/recent_id" android:background="@color/recent_title_background" android:text="@string/recent_title" style="@style/SectionHeader" />
+        <include layout="@layout/cell_recent_empty" />
+        <com.bitstrips.imoji.ui.views.NoScrollGridView android:id="@id/recent_gridview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="@dimen/grid_horizontal_spacing" android:verticalSpacing="@dimen/grid_vertical_spacing" android:stretchMode="columnWidth" android:columnWidth="@dimen/thumbnail_size" android:numColumns="auto_fit" />
+        <TextView android:textColor="@color/recent_title_text" android:gravity="left|center" android:id="@id/popular" android:background="@color/popular_title_background" android:layout_width="fill_parent" android:text="@string/popular_title" style="@style/SectionHeader" />
+        <com.bitstrips.imoji.ui.views.NoScrollGridView android:id="@id/popular_gridview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="@dimen/grid_horizontal_spacing" android:verticalSpacing="@dimen/grid_vertical_spacing" android:stretchMode="columnWidth" android:columnWidth="@dimen/thumbnail_size" android:numColumns="auto_fit" />
+        <RelativeLayout android:id="@id/purchased_section" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/recent_title_text" android:gravity="left|center" android:id="@id/purchased_id" android:background="@color/purchased_title_background" android:layout_width="fill_parent" android:text="@string/purchased_title" style="@style/SectionHeader" />
+            <include layout="@layout/cell_packs_empty" />
+            <com.bitstrips.imoji.ui.views.NoScrollGridView android:id="@id/purchased_gridview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="@dimen/grid_horizontal_spacing" android:verticalSpacing="@dimen/grid_vertical_spacing" android:stretchMode="columnWidth" android:columnWidth="@dimen/thumbnail_size" android:numColumns="auto_fit" android:layout_below="@id/purchased_id" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.bitstrips.imoji.ui.views.NonFocusingScrollView>

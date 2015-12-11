@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/layoutOverlay" android:background="#ff60b9d7" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/genizLayout" layout="@layout/layout_geniz" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/unlockPotion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/propositionPotionGenericMarginBottom" android:layout_marginRight="10.0dip" android:layout_below="@id/genizLayout">
+        <ImageView android:id="@id/imagePotionDansOverlayQuestion" android:layout_width="@dimen/propositionPotionsize" android:layout_height="@dimen/propositionPotionsize" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/white_color" android:gravity="center_vertical" android:id="@id/overlayTextDescQuestion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="No ads potion description..." />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/continueButtons" android:layout_width="fill_parent" android:layout_height="@dimen/gen_button_height" android:layout_marginBottom="@dimen/margin_bottom" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/ButtonAcheter" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_small_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginRight="@dimen/proposal_yes_no_buttons_margin_lr" android:text="YES" />
+        <Button android:textSize="@dimen/yes_no_buttons_text_size" android:textColor="@color/buttons_text_color" android:id="@id/ButtonNonMerci" android:background="@drawable/gen_little_button" android:layout_width="@dimen/gen_small_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginLeft="@dimen/proposal_yes_no_buttons_margin_lr" android:text="NO" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gotv.crackle.views.CrackleTextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/enter_code_text" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/pinLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <com.gotv.crackle.views.CrackleEditText android:textSize="30.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/digit_0" android:padding="10.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:minLines="1" android:singleLine="true" android:maxLength="1" android:inputType="numberSigned" />
+        <com.gotv.crackle.views.CrackleEditText android:textSize="30.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/digit_1" android:padding="10.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:minLines="1" android:singleLine="true" android:maxLength="1" android:inputType="numberSigned" />
+        <com.gotv.crackle.views.CrackleEditText android:textSize="30.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/digit_2" android:padding="10.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:minLines="1" android:singleLine="true" android:maxLength="1" android:inputType="numberSigned" />
+        <com.gotv.crackle.views.CrackleEditText android:textSize="30.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/digit_3" android:padding="10.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:minLines="1" android:singleLine="true" android:maxLength="1" android:inputType="numberSigned" />
+    </LinearLayout>
+    <Button android:id="@id/cancelButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel_text" android:layout_alignLeft="@id/pinLayout" android:layout_alignRight="@id/pinLayout" />
+    <Button android:id="@id/okayButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok_text" android:layout_alignLeft="@id/pinLayout" android:layout_alignRight="@id/pinLayout" />
+</LinearLayout>

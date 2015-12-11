@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/homegditmebg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="96.0dip" android:layout_height="wrap_content">
+        <ImageView android:id="@id/gvimg" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/defaulticon" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/ll_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/gvimg" android:layout_centerHorizontal="true">
+            <com.aio.downloader.views.LImageButton android:layout_gravity="center_vertical" android:id="@id/gvdown" android:padding="6.0dip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/home_san" android:layout_alignParentRight="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/gvtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="......" android:lines="2" android:layout_toLeftOf="@id/gvdown" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ll_list" android:layout_centerInParent="true">
+            <TextView android:textSize="11.0sp" android:textColor="#ff6da13f" android:id="@id/tv_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="FREE" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <RatingBar android:id="@id/gvratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:rating="4.0" android:isIndicator="true" android:layout_centerVertical="true" style="@style/roomRatingBar" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="4.0dip" />
+</LinearLayout>

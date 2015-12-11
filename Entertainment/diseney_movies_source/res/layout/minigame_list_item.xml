@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/minigamelist" android:background="@drawable/homeitembg" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <ImageView android:id="@id/minigameicon" android:layout_width="76.0dip" android:layout_height="76.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/defaulticon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/titletextcolor" android:ellipsize="end" android:id="@id/minigametitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:text="title" android:singleLine="true" android:layout_toRightOf="@id/minigameicon" />
+        <RatingBar android:id="@id/minigame_ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:isIndicator="true" android:layout_toRightOf="@id/minigameicon" android:layout_below="@id/minigametitle" style="@style/lvRatingBar" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="10.0sp" android:textColor="@color/titletextcolor" android:id="@id/minigamehints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:text="hits" android:layout_toRightOf="@id/minigameicon" android:layout_below="@id/minigame_ratingbar" />
+        <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/minigameplaybt" android:background="@drawable/video_download_bg" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="70.0dip" android:layout_height="36.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="6.0dip" android:text="Play" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/fb_fragment_activity_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fb_fragment_activity" android:layout_centerInParent="true" />
+    <Button android:id="@id/sdk_fb_activity_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sdk_fb_activity" android:layout_below="@id/fb_fragment_activity_btn" android:layout_centerInParent="true" />
+    <Button android:id="@id/multi_conversation_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multi_conversation_activity" android:layout_below="@id/sdk_fb_activity_btn" android:layout_centerInParent="true" />
+</RelativeLayout>

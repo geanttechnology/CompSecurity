@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comcast.cim.cmasl.android.util.view.widget.CheckableLinearLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pn="http://schemas.android.com/apk/res-auto">
+    <com.comcast.cim.cmasl.android.util.view.widget.ImageStaticLayoutView android:id="@id/cover_art" android:background="@color/MissingImage" android:layout_width="@dimen/history_cover_art_width_phone" android:layout_height="@dimen/history_cover_art_height_phone" android:layout_margin="16.0dip" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip">
+        <TextView android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/Large" />
+        <TextView android:ellipsize="end" android:id="@id/series_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/SmallRegularLightGray" />
+        <TextView android:id="@id/progressIndicator" style="@style/ProgressIndicator" />
+        <com.xfinity.playerlib.view.widget.DownloadProgressBar android:id="@id/in_progress_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" pn:showHotwireButton="false" pn:showSize="false" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/downloaded_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/expiration_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_expiration_text" android:lines="2" android:drawablePadding="6.0dip" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/on_now_button" android:padding="0.0dip" android:focusable="false" android:visibility="gone" android:layout_width="@dimen/history_play_button_width_phone" android:layout_marginTop="@dimen/history_play_button_margin_top_phone" android:layout_marginBottom="@dimen/history_play_button_margin_bottom_phone" style="@style/EntitledPlayButton">
+            <Button android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/OnNowButton" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/play_button" android:focusable="false" android:layout_width="@dimen/history_play_button_width_phone" android:layout_marginTop="@dimen/history_play_button_margin_top_phone" android:layout_marginBottom="@dimen/history_play_button_margin_bottom_phone" style="@style/EntitledPlayButton">
+            <include layout="@layout/button_children" />
+        </LinearLayout>
+    </LinearLayout>
+</com.comcast.cim.cmasl.android.util.view.widget.CheckableLinearLayout>

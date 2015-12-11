@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/yuanjiao5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:background="@drawable/yuanjiao6" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="40.0sp" android:textColor="#fff7dddc" android:id="@id/tv_shu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.99" android:shadowColor="#ff4d4d4d" android:shadowDx="0.0" android:shadowDy="5.0" android:shadowRadius="3.0" />
+                <TextView android:textSize="16.0sp" android:textColor="#fff7dddc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:text="GB" android:shadowColor="#ff4d4d4d" android:shadowDx="0.0" android:shadowDy="5.0" android:shadowRadius="3.0" android:layout_toRightOf="@id/tv_shu" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="#ffe44738" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginTop="-6.0dip" />
+        <RelativeLayout android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+            <ImageView android:id="@id/iv_memory" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="8.0dip" android:src="@drawable/boost_tag_task_icon" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memory boost" android:layout_toRightOf="@id/iv_memory" android:layout_centerVertical="true" />
+            <CheckBox android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/customCheckBox5" />
+        </RelativeLayout>
+        <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+            <ImageView android:id="@id/iv_junk" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="8.0dip" android:src="@drawable/junk_tag_icon_header_cache" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cache junk" android:layout_toRightOf="@id/iv_junk" android:layout_centerVertical="true" />
+            <CheckBox android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/customCheckBox5" />
+        </RelativeLayout>
+        <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+            <ImageView android:id="@id/iv_junk_tag" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="8.0dip" android:src="@drawable/junk_tag_icon_header_residual" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Residual junk files" android:layout_toRightOf="@id/iv_junk_tag" android:layout_centerVertical="true" />
+            <CheckBox android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/customCheckBox5" />
+        </RelativeLayout>
+        <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+            <ImageView android:id="@id/iv_header_apk" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="8.0dip" android:src="@drawable/junk_tag_icon_header_apk" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Obsolete apks" android:layout_toRightOf="@id/iv_header_apk" android:layout_centerVertical="true" />
+            <CheckBox android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/customCheckBox5" />
+        </RelativeLayout>
+        <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:background="@drawable/yuanjiao5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/bt_cleanermuster" android:background="@drawable/juunkbtnbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="16.0dip" android:text="CLEAN JUNK 1.99GB" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_help_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/settings_faq_title" android:key="@string/settings_key_faq" android:widgetLayout="@layout/external_link_prompt_widget">
+        <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="com.comcast.cim.android.view.settings.ExternalLinkPromptActivity">
+            <extra android:name="title" android:value="@string/settings_faq_title" />
+            <extra android:name="url" android:value="@string/url_faq" />
+        </intent>
+    </Preference>
+    <PreferenceCategory android:title="@string/settings_contact_us_title">
+        <Preference android:enabled="false" android:layout="@layout/info_preference" android:title="@string/settings_contact_us_summary" android:selectable="false" />
+        <Preference android:title="@string/settings_call_title" android:key="@string/settings_key_call_us">
+            <intent android:action="android.intent.action.DIAL" android:data="@string/url_contact_phone_number" />
+        </Preference>
+        <Preference android:title="@string/settings_chat_title" android:widgetLayout="@layout/external_link_prompt_widget">
+            <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="com.comcast.cim.android.view.settings.ExternalLinkPromptActivity">
+                <extra android:name="title" android:value="@string/settings_chat_title" />
+                <extra android:name="url" android:value="@string/url_contact_live_chat" />
+            </intent>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

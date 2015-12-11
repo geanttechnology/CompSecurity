@@ -1,0 +1,84 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.aio.downloader.activity;
+
+import android.content.Intent;
+import android.view.View;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import java.util.Timer;
+import java.util.TimerTask;
+
+// Referenced classes of package com.aio.downloader.activity:
+//            AppDetailsActivity
+
+class this._cls0
+    implements android.view.ilsActivity._cls21
+{
+
+    final AppDetailsActivity this$0;
+
+    public void onClick(View view)
+    {
+        AppDetailsActivity.access$3(AppDetailsActivity.this).setVisibility(0);
+        AppDetailsActivity.access$8(AppDetailsActivity.this).setVisibility(8);
+        AppDetailsActivity.access$4(AppDetailsActivity.this).setProgress(AppDetailsActivity.access$76(AppDetailsActivity.this));
+        AppDetailsActivity.access$77(AppDetailsActivity.this, null);
+        AppDetailsActivity.access$77(AppDetailsActivity.this, new Timer());
+        AppDetailsActivity.access$7(AppDetailsActivity.this).schedule(new TimerTask() {
+
+            final AppDetailsActivity._cls21 this$1;
+
+            public void run()
+            {
+                runOnUiThread(new Runnable() {
+
+                    final _cls1 this$2;
+
+                    public void run()
+                    {
+                        if (AppDetailsActivity.access$4(this$0).getProgress() >= AppDetailsActivity.access$78(this$0))
+                        {
+                            if (AppDetailsActivity.access$7(this$0) != null)
+                            {
+                                AppDetailsActivity.access$7(this$0).cancel();
+                            }
+                            return;
+                        } else
+                        {
+                            AppDetailsActivity.access$4(this$0).setProgress(AppDetailsActivity.access$4(this$0).getProgress() + 1);
+                            AppDetailsActivity appdetailsactivity = this$0;
+                            AppDetailsActivity.access$79(appdetailsactivity, AppDetailsActivity.access$76(appdetailsactivity) + 1);
+                            return;
+                        }
+                    }
+
+            
+            {
+                this$2 = _cls1.this;
+                super();
+            }
+                });
+            }
+
+
+            
+            {
+                this$1 = AppDetailsActivity._cls21.this;
+                super();
+            }
+        }, 1000L, 600L);
+        view = new Intent("pdtpause");
+        view.putExtra("type", "resume");
+        sendBroadcast(view);
+    }
+
+
+    _cls1.this._cls1()
+    {
+        this$0 = AppDetailsActivity.this;
+        super();
+    }
+}

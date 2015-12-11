@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lv_gv_line" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@id/topsearch" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="2.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/lv_gv_tvtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/lv_gv_tvsearch" android:background="@drawable/juunkbtnbg" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MORE" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.aio.downloader.views.MyGridView android:id="@id/lv_gv_gridview" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:numColumns="3" />
+        <TextView android:id="@id/gridviewtv" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <ImageView android:id="@id/bannerimg" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitXY" />
+        <TextView android:id="@id/tv_game" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <include android:id="@id/gamelist2" layout="@layout/minigameitem" />
+        <TextView android:id="@id/fun_top" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <RelativeLayout android:gravity="center" android:id="@id/fun_title" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="8.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fun Show" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/fun_more" android:background="@drawable/juunkbtnbg" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MORE" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <include android:id="@id/funshouye" layout="@layout/funall" />
+        <TextView android:id="@id/fun_botten" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

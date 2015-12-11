@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#99000000" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="220.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/icon" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/kaiji_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Boot used: " android:layout_centerVertical="true" />
+                <TextView android:textSize="30.0sp" android:textColor="#ffffffff" android:id="@id/kaiji_shijan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20s" android:layout_toRightOf="@id/kaiji_title" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_back_kaiji" android:background="@drawable/close_06" android:padding="16.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rate_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff545454" android:layout_gravity="center" android:id="@id/kaiji_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Speed up by AIO Downloader:3s" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff545454" android:gravity="center" android:layout_gravity="center" android:id="@id/kaiji_lala" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="Your Boot time is very slow! Set Auao Start to optimize boot." />
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_layout_kaiji" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip">
+                    <Button android:textSize="16.0sp" android:textColor="#ff545454" android:layout_gravity="center_vertical" android:id="@id/btn_cancel_kaiji" android:background="#ffffffff" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:text="Not Now" android:singleLine="true" android:layout_weight="1.0" />
+                    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/btn_ok_kaiji" android:background="@drawable/cb_btn_bg_kaiji_jiasu" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="Optimize" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

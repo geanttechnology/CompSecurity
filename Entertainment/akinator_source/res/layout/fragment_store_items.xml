@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffab4a5d" android:layout_width="fill_parent" android:layout_height="@dimen/storeSousHeaderHeight" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/storeSousHeaderLabo" android:background="@drawable/ak_header_accessoires" android:layout_width="fill_parent" android:layout_height="@dimen/storeSousHeaderHeight" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/storeSousHeaderLabo">
+        <ImageView android:id="@id/imageBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layoutAkinator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layoutAkinatorShop_margin_left" android:layout_marginTop="@dimen/layoutAkinatorShop_margin_top" android:layout_marginRight="@dimen/layoutAkinatorShop_margin_right" android:layout_marginBottom="@dimen/layoutAkinatorShop_margin_bottom">
+        <ImageView android:id="@id/akinatorImage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/akinatorTenue" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/akinatorChapeau" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutElements" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/scrollViewPreview" android:layout_below="@id/storeSousHeaderLabo">
+        <RelativeLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/buttonHatLeft" android:background="@drawable/ak_arrow_left_btq" android:layout_width="@dimen/postPropose_arrow_right_size" android:layout_height="@dimen/postPropose_arrow_right_size" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <RelativeLayout android:gravity="center" android:id="@id/layoutArrowBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/postPropose_arrow_right_size">
+                    <ImageView android:id="@id/imageArrowBottom" android:background="@drawable/ak_button_btq_arrow_bottom" android:layout_width="@dimen/button_buy_width" android:layout_height="@dimen/button_buy_height" />
+                    <TextView android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:gravity="center" android:id="@id/textArrowBottom" android:layout_width="@dimen/button_buy_width" android:layout_height="@dimen/button_buy_text_height" android:text="10000" />
+                </RelativeLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+            </LinearLayout>
+            <Button android:id="@id/buttonHatRight" android:background="@drawable/ak_arrow_right_btq" android:layout_width="@dimen/postPropose_arrow_right_size" android:layout_height="@dimen/postPropose_arrow_right_size" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/buttonClothLeft" android:background="@drawable/ak_arrow_left_btq" android:layout_width="@dimen/postPropose_arrow_right_size" android:layout_height="@dimen/postPropose_arrow_right_size" />
+            <View android:layout_width="0.0dip" android:layout_height="@dimen/storeBoutonGetHeight" android:layout_weight="0.4" />
+            <Button android:id="@id/buttonClothRight" android:background="@drawable/ak_arrow_right_btq" android:layout_width="@dimen/postPropose_arrow_right_size" android:layout_height="@dimen/postPropose_arrow_right_size" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0.0dip" android:layout_height="@dimen/button_buy_height" android:layout_weight="0.4" />
+            <RelativeLayout android:id="@id/layoutArrowTop" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageArrowCloth" android:background="@drawable/ak_button_btq_arrow_top" android:layout_width="@dimen/button_buy_width" android:layout_height="@dimen/button_buy_height" />
+                <TextView android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:gravity="center" android:id="@id/textArrowCloth" android:layout_width="@dimen/button_buy_width" android:layout_height="@dimen/button_buy_text_height" android:text="10000" android:layout_alignBottom="@id/imageArrowCloth" />
+            </RelativeLayout>
+            <View android:layout_width="0.0dip" android:layout_height="@dimen/button_buy_height" android:layout_weight="0.4" />
+        </LinearLayout>
+    </LinearLayout>
+    <HorizontalScrollView android:id="@id/scrollViewPreview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/layoutBackgroundGz" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/buttonBackgroundGz" android:background="@drawable/ak_button_btq_arrow_bottom" android:layout_width="@dimen/button_buy_width" android:layout_height="@dimen/button_buy_height" />
+                    <TextView android:textSize="@dimen/storeButtonsTextSize" android:textColor="@color/store_text_color_clair" android:gravity="center" android:id="@id/textBackgroundGz" android:layout_width="@dimen/button_buy_width" android:layout_height="@dimen/button_buy_text_height" android:text="10000" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/listImagesAndAlpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layoutBackgroundGz">
+                    <View android:background="#ffffffff" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/background_icon_height" android:layout_alignLeft="@id/listImages" android:layout_alignRight="@id/listImages" android:alpha="0.5" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/listImages" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

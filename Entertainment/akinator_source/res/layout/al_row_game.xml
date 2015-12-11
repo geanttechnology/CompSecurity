@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/row_game_root" android:padding="@dimen/al_game_row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/row_game_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/al_game_row_padding" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/al_dark_grey" android:ellipsize="end" android:id="@id/row_game_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/row_game_image" />
+    <TextView android:id="@id/row_game_price" android:background="@drawable/al_rectangular_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:textAllCaps="true" style="@style/AL_CurrentPriceStyle" />
+</RelativeLayout>

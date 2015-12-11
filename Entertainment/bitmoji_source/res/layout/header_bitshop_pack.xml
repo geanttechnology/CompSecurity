@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bitshop_header" android:layout_width="fill_parent" android:layout_height="@dimen/bitshop_header_height" android:layout_marginTop="@dimen/bitshop_pack_margins"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header_pack" />
+    <ImageView android:layout_gravity="center" android:id="@id/bitshop_pack_hanger" android:layout_width="wrap_content" android:layout_height="@dimen/bitshop_pack_hanger_height" android:src="@drawable/pack_hanger" />
+    <TextView android:textSize="@dimen/bitshop_price_text_size" android:textStyle="bold" android:layout_gravity="right|center" android:id="@id/bitshop_header_price" android:background="@drawable/bitshop_price_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bitshop_header_padding" />
+</FrameLayout>

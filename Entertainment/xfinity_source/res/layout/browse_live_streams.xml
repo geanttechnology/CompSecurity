@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/divider" android:background="@color/live_featured_carousel_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.comcast.cim.cmasl.android.util.view.widget.EntityGridView android:id="@id/list_view" android:paddingLeft="@dimen/live_stream_list_padding" android:paddingRight="@dimen/live_stream_list_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:numColumns="@integer/browse_grid_columns" android:layout_below="@id/divider" android:contentDescription="@null" android:importantForAccessibility="2" />
+        <include android:id="@android:id/empty" layout="@layout/empty_view" />
+        <ImageView android:id="@id/top_scrolling_shadow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scrolling_shadow" android:scaleType="fitXY" android:layout_alignTop="@id/listView" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    </RelativeLayout>
+</LinearLayout>

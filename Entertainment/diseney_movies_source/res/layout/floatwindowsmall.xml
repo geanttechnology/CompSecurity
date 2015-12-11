@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/smallwindowlayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/percent" android:background="@drawable/free_swipe__cell_highlight" android:layout_width="25.0dip" android:layout_height="90.0dip" />
+    <ImageView android:id="@id/iv_bigview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/float_bigicon" />
+</RelativeLayout>

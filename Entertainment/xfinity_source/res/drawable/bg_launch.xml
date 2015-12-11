@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/dark_gray_2" />
+        </shape>
+    </item>
+    <item android:top="@dimen/splash_margin_top">
+        <bitmap android:gravity="top" android:src="@drawable/launch_logo_app" />
+    </item>
+    <item android:bottom="@dimen/splash_margin_bottom">
+        <bitmap android:gravity="bottom" android:src="@drawable/launch_logo" />
+    </item>
+</layer-list>

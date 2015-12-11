@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/timer_toast" android:background="@drawable/talk_bubble_time_kids" android:paddingLeft="16.0dip" android:paddingRight="32.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/timer_toast_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ytkids="http://schemas.android.com/apk/res/com.google.android.apps.youtube.kids">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/timer_kids_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_timer_kids" />
+    <com.google.android.apps.youtube.kids.ui.YouTubeKidsTextView android:textSize="@dimen/timer_toast_text_size" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/talk_bubble_time_kids" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="0.0dip" ytkids:roboto2Font="medium" />
+</LinearLayout>

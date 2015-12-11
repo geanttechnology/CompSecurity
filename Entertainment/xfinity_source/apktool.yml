@@ -1,0 +1,32 @@
+version: 2.0.2
+apkFileName: comxfinityplaynow246028apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '19'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '5937'
+  versionName: 2.4.6.028
+sharedLibrary: false
+unknownFiles:
+  hypermedia-client-ahp-build.properties: '8'
+  tv/freewheel/FWAdManager.keystore: '8'
+  tv/freewheel/ant.properties: '8'
+  com/fasterxml/jackson/core/json/VERSION.txt: '8'
+  com/fasterxml/jackson/databind/cfg/VERSION.txt: '8'
+  com/comcast/cim/httpcomponentsandroid/version.properties: '8'
+  com/comcast/cim/httpcomponentsandroid/client/version.properties: '8'
+  com/xfinity/playerlib/model/dibic/testdata/playnow/good/iostags.json: '8'
+  org/apache/log4j/lf5/config/defaultconfig.properties: '8'
+  org/apache/log4j/lf5/viewer/images/channelexplorer_new.gif: '8'
+  org/apache/log4j/lf5/viewer/images/channelexplorer_satellite.gif: '8'
+  org/apache/log4j/lf5/viewer/images/lf5_small_icon.gif: '8'
+  org/apache/log4j/xml/log4j.dtd: '8'
+  templates/release-notes.vm: '8'
+doNotCompress:
+- resources.arsc

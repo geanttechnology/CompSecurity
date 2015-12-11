@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/h_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="new" android:layout_weight="1.0" />
+    <Button android:id="@id/h_trending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="trending" android:layout_weight="1.0" />
+    <Button android:id="@id/h_random" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="random" android:layout_weight="1.0" />
+</LinearLayout>

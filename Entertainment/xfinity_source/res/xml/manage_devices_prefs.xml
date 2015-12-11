@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_manage_devices_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/manage_dl_devices_layout" android:selectable="false" />
+    <Preference android:enabled="false" android:layout="@layout/loading_preference" android:selectable="false" android:key="@string/settings_manage_devices_loading_key" />
+</PreferenceScreen>

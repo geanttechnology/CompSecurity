@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/upgrade_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/primary_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overlay_upgrade_primary" style="@style/overlay_primary" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/secondary_copy" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/overlay_upgrade_secondary" style="@style/overlay_secondary" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/close_button" android:layout_width="270.0dip" android:layout_marginTop="50.0dip" android:text="@string/overlay_upgrade_close" style="@style/overlay_button_text" />
+</LinearLayout>

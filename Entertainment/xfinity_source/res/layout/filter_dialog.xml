@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/dialog_layout_outline" android:layout_width="@dimen/filter_layout_dialog_width" android:layout_height="@dimen/filter_layout_dialog_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.comcast.cim.cmasl.android.util.view.widget.LoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/topBar">
+            <TextView android:id="@id/header_label" android:focusable="true" android:focusableInTouchMode="true" android:layout_height="fill_parent" android:text="@string/filter_title" android:importantForAccessibility="1" style="@style/modal_header_label" />
+            <LinearLayout android:gravity="left|center" android:id="@id/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:contentDescription="@string/content_description_filter_back">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/ic_back" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/categories_panel_fragment_container" android:background="@color/dark_gray_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@integer/filter_dialog_panel_one_weight" />
+            <FrameLayout android:id="@id/category_subpanel_fragment_container" android:background="@color/filter_dialog_panel_right_color" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@integer/filter_dialog_panel_two_weight" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottomBar" style="@style/modal_header_label">
+            <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/clearAll" android:layout_marginRight="8.0dip" android:text="@string/clear" style="@style/modal_button" />
+            <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/apply" android:layout_marginLeft="8.0dip" android:text="@string/apply" style="@style/modal_button" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

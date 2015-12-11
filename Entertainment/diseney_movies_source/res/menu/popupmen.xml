@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/homereload" android:orderInCategory="100" android:title="@string/reload" android:showAsAction="never" />
+    <item android:id="@id/homeshare" android:orderInCategory="100" android:title="@string/share" android:showAsAction="never" />
+    <item android:id="@id/homesetting" android:orderInCategory="100" android:title="@string/setting" android:showAsAction="never" />
+    <item android:id="@id/homefeature" android:orderInCategory="100" android:title="@string/features" android:showAsAction="never" />
+</menu>

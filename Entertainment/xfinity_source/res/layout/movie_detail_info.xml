@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="16.0dip" android:paddingTop="@dimen/entity_scroll_section_top_padding" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/content_description_movie_details"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/favorite_indicator" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/icn_bookmark_entity_sel" android:layout_alignParentRight="true" android:contentDescription="@string/favorite" android:importantForAccessibility="1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/movie_summary" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/favorite_indicator" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:ellipsize="end" android:id="@id/info_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="16.0dip" android:text="@string/test_long_title" style="@style/LargeWhite" />
+        <ImageView android:id="@id/xod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/xod_entity" android:layout_below="@id/info_title" style="@style/XODLogo" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/new_release_year_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/xod">
+            <ImageView android:id="@id/new_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ind_new" android:contentDescription="@string/content_description_new_indicator" />
+            <TextView android:ellipsize="end" android:id="@id/release_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_release_year" style="@style/Metadata" />
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@id/availability" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/test_availability" style="@style/Metadata" />
+        <TextView android:ellipsize="end" android:id="@id/duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/test_duration" android:layout_below="@id/availability" style="@style/Metadata" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" layout="@layout/reviews" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/video_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_below="@id/movie_summary" />
+    <TextView android:id="@id/cast" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/test_cast" android:layout_below="@id/video_item_container" style="@style/Metadata" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cast">
+        <TextView android:id="@id/description" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/test_description" style="@style/SmallestRegularWhite" />
+    </LinearLayout>
+</RelativeLayout>

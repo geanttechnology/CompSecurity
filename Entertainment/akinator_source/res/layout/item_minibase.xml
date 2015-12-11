@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/minibaseItemPaddingLR" android:paddingRight="@dimen/minibaseItemPaddingLR" android:layout_width="fill_parent" android:layout_height="@dimen/minibaseItemHeight" android:layout_marginLeft="@dimen/minibaseItemPaddingLR" android:layout_marginRight="@dimen/minibaseItemPaddingLR"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/minibaseItemPhoto" android:layout_width="@dimen/minibasePictureHeight" android:layout_height="@dimen/minibasePictureHeight" android:layout_margin="5.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/gen_text_size" android:textColor="@color/black_color" android:gravity="left" android:id="@id/minibaseItemText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tata Jacqueline" android:layout_toLeftOf="@id/minibaseItemSuppBouton" android:layout_toRightOf="@id/minibaseItemPhoto" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/minibaseItemSuppBouton" android:background="@drawable/ak_icon_delete" android:layout_width="@dimen/cancel_button_size" android:layout_height="@dimen/cancel_button_size" android:layout_margin="5.0dip" android:layout_alignParentRight="true" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" layout="@layout/layout_line" />
+</RelativeLayout>

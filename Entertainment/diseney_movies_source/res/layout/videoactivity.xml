@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/videojianpan" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/mytop" android:background="#ff3261b4" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/fanvideo" android:layout_width="48.0dip" android:layout_height="50.0dip" android:src="@drawable/myfan" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video2" android:layout_toRightOf="@id/fanvideo" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/mychafan" android:clickable="true" android:layout_width="48.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relawebview" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mytop">
+        <WebView android:id="@id/videowebview" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.aio.downloader.utils.ProgressWheel android:id="@id/progress_wheel" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="150.0dip" android:layout_centerHorizontal="true" wheel:progressIndeterminate="true" wheel:barColor="#ff3261b4" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvloading" android:background="@drawable/tvloadingyuanjiao" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="48.0dip" android:text="Getting Details" android:layout_below="@id/progress_wheel" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/net_hint_img_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:src="@drawable/downnullpg" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lieshow" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="44.0dip" android:weightSum="4.0">
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/videodownloader" android:background="@drawable/video_download_bg" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="Download Video" android:layout_weight="1.0" />
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/videodownloader2" android:background="@drawable/videonobutton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="Download Video" android:layout_weight="1.0" />
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/videoreload" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="2.0dip" android:text="Reload" android:layout_weight="3.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/videobanner" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

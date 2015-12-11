@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/list_separator_color" android:padding="@dimen/dialog_layout_outline" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/pin_layout_dialog_width" android:layout_height="wrap_content">
+        <TextView android:id="@id/header_label" android:layout_height="@dimen/topBar" android:text="@string/pin_prompt_title" style="@style/modal_header_label" />
+        <LinearLayout android:orientation="vertical" android:background="@color/LighterGray" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pinBoxContainerOuter" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:contentDescription="@string/keypadbox_one" style="@style/pin_entry">
+                        <TextView android:id="@id/pinBoxOne" style="@style/pin_box_text" />
+                    </LinearLayout>
+                    <LinearLayout android:contentDescription="@string/keypadbox_two" style="@style/pin_entry">
+                        <TextView android:id="@id/pinBoxTwo" style="@style/pin_box_text" />
+                    </LinearLayout>
+                    <LinearLayout android:contentDescription="@string/keypadbox_three" style="@style/pin_entry">
+                        <TextView android:id="@id/pinBoxThree" style="@style/pin_box_text" />
+                    </LinearLayout>
+                    <LinearLayout android:contentDescription="@string/keypadbox_four" style="@style/pin_entry">
+                        <TextView android:id="@id/pinBoxFour" style="@style/pin_box_text" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/transparent" android:tag="spacer ... see note ^" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_pinpad_spacer_fill" style="@style/SmallRegularRed" />
+                    <TextView android:gravity="center" android:id="@id/pinStatus" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/SmallRegularRed" />
+                    <TextView android:textColor="@color/transparent" android:tag="spacer ... see note ^" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_pinpad_spacer_fill" style="@style/SmallRegularRed" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.comcast.cim.cmasl.android.util.view.widget.NumericKeypad android:id="@id/keypad" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

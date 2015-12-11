@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <com.bitstrips.imoji.ui.views.ImojiBannerView android:layout_width="fill_parent" android:layout_height="wrap_content" app:speech_bubble_text="@string/login_banner_text" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_margin" android:layout_marginRight="@dimen/activity_margin" android:layout_marginBottom="0.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bitstrips.imoji.ui.views.FormField android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sign_up_form_margin_top" android:hint="@string/email_address" android:drawableLeft="@drawable/ic_mail_selector" android:inputType="textEmailAddress" />
+            <com.bitstrips.imoji.ui.views.FormField android:id="@id/password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/password" android:password="true" android:drawableLeft="@drawable/ic_key_selector" android:inputType="textPassword" />
+            <Button android:enabled="false" android:textStyle="bold" android:textColor="@drawable/sign_up_submit_button_text" android:id="@id/login_button" android:background="@drawable/sign_up_submit_button" android:layout_width="fill_parent" android:layout_height="@dimen/sign_up_submit_button_height" android:layout_marginTop="@dimen/sign_up_submit_button_top_margin" android:layout_marginBottom="@dimen/sign_up_form_margin_top" android:text="@string/log_in" android:onClick="onLoginClicked" style="@style/AppTheme.Button" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/forgot_password_link" android:paddingTop="@dimen/login_button_spacing" android:paddingBottom="@dimen/login_button_spacing" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sign_up_form_margin_top" android:text="@string/forgot_password_link" android:onClick="onForgotPasswordClicked" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/time_limit_expired_splash" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.apps.youtube.kids.activities.ScalingVideoView android:id="@id/timer_expired_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/accessibility_time_limit_expired" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/time_expired_message_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/time_expired_message_large_text_size" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/timer_expired_title" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_expired_title" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.apps.youtube.kids.ui.ParentalControlLaunchBar android:id="@id/parental_control_footer" android:layout_width="fill_parent" android:layout_height="@dimen/footer_height" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

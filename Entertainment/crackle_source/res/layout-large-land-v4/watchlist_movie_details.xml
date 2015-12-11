@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <fragment android:name="com.gotv.crackle.fragments.MovieDetailsThumbnailFragment" android:id="@id/movie_details_thumbnail_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+        <fragment android:name="com.gotv.crackle.fragments.MovieDetailsButtonsFragment" android:id="@id/movie_details_buttons_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/movie_details_thumbnail_fragment" android:layout_alignLeft="@id/movie_details_thumbnail_fragment" android:layout_alignRight="@id/movie_details_thumbnail_fragment" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <fragment android:name="com.gotv.crackle.fragments.EpisodeDetailsTitleFragment" android:id="@id/movie_details_title_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+            <fragment android:name="com.gotv.crackle.fragments.WatchlistDetailsWhyCracklesFragment" android:id="@id/movie_details_why_crackles_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <fragment android:name="com.gotv.crackle.fragments.EpisodeDetailsMoreInfoFragment" android:id="@id/movie_details_more_info_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="20.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

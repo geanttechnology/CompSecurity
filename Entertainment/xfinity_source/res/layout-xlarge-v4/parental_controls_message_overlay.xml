@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parental_controls_overlay" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <requestFocus />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:id="@id/overlay_parental_controls_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overlay_parental_controls_primary" style="@style/overlay_primary" />
+        <TextView android:id="@id/overlay_parental_controls_secondary_above" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="28.0dip" android:text="@string/overlay_parental_controls_secondary_above" android:layout_below="@id/overlay_parental_controls_primary" android:layout_alignLeft="@id/overlay_parental_controls_primary" android:layout_alignRight="@id/overlay_parental_controls_primary" style="@style/overlay_secondary" />
+        <LinearLayout android:orientation="vertical" android:id="@id/overlay_parental_controls_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="48.0dip" android:layout_below="@id/overlay_parental_controls_secondary_above" android:layout_alignLeft="@id/overlay_parental_controls_secondary_above" android:layout_alignRight="@id/overlay_parental_controls_secondary_above" android:layout_centerHorizontal="true">
+            <Button android:id="@id/overlay_parental_controls_go_to_button" android:layout_width="fill_parent" android:layout_marginBottom="20.0dip" android:text="@string/overlay_parental_controls_go_to_button" style="@style/overlay_button_text" />
+            <Button android:id="@id/overlay_parental_controls_do_not_show_again_button" android:layout_width="fill_parent" android:text="@string/overlay_parental_controls_do_not_show_again_button" style="@style/overlay_button_text" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="48.0dip" android:text="@string/overlay_parental_controls_secondary_below" android:layout_below="@id/overlay_parental_controls_button_container" android:layout_alignLeft="@id/overlay_parental_controls_primary" android:layout_alignRight="@id/overlay_parental_controls_primary" style="@style/overlay_secondary" />
+    </RelativeLayout>
+</RelativeLayout>

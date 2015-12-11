@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_return" />
+    <RelativeLayout android:background="@drawable/ak_fond_texte" android:layout_width="@dimen/soundlikeContentWidth" android:layout_height="@dimen/soundlikeContentHeight" android:layout_centerInParent="true">
+        <ListView android:id="@id/questionsList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/soundlike2_list_margin_left_right" android:layout_marginTop="@dimen/listQuestionsTitle_margin_top" android:layout_marginRight="@dimen/soundlike2_list_margin_left_right" android:layout_marginBottom="10.0dip" android:cacheColorHint="#00000000" android:layout_above="@id/addQuestionButton" android:footerDividersEnabled="false" />
+        <Button android:textSize="@dimen/character_not_in_list_button_text_size" android:textColor="@color/buttons_text_color" android:id="@id/addQuestionButton" android:background="@drawable/gen_button" android:layout_width="@dimen/gen_button_width" android:layout_height="@dimen/gen_button_height" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="@dimen/soundlikeContentPaddingTopBottom" android:text="ADD QUESTION" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+    </RelativeLayout>
+</RelativeLayout>

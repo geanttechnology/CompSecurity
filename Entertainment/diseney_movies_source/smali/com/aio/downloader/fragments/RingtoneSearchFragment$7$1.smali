@@ -1,0 +1,438 @@
+.class Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;
+.super Landroid/os/AsyncTask;
+.source "RingtoneSearchFragment.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/os/AsyncTask",
+        "<",
+        "Ljava/lang/Void;",
+        "Ljava/lang/Void;",
+        "Ljava/lang/Void;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+.field private final synthetic val$arg2:I
+
+
+# direct methods
+.method constructor <init>(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;I)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    iput p2, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->val$arg2:I
+
+    .line 229
+    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic access$2(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;)Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+    .locals 1
+
+    .prologue
+    .line 229
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method protected bridge varargs synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 1
+    check-cast p1, [Ljava/lang/Void;
+
+    invoke-virtual {p0, p1}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    .locals 12
+    .param p1, "arg0"    # [Ljava/lang/Void;
+
+    .prologue
+    .line 243
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v0, "http://t.zedge.net/ringtone/"
+
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 244
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment;->list:Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$5(Lcom/aio/downloader/fragments/RingtoneSearchFragment;)Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    iget v2, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->val$arg2:I
+
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/aio/downloader/mydownload/DownloadMovieItem;
+
+    invoke-virtual {v0}, Lcom/aio/downloader/mydownload/DownloadMovieItem;->getId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "/?page=1"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 243
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/aio/downloader/utils/publicTools;->getUrl(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v10
+
+    .line 245
+    .local v10, "ringtonecontent":Ljava/lang/String;
+    new-instance v8, Ljava/util/HashMap;
+
+    invoke-direct {v8}, Ljava/util/HashMap;-><init>()V
+
+    .line 246
+    .local v8, "map":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
+    const-string v0, "content"
+
+    invoke-virtual {v8, v0, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 247
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v0, "http://android.downloadatoz.com/_201409/market/ringtone_pdt_parser.php?content="
+
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 248
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment;->list:Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$5(Lcom/aio/downloader/fragments/RingtoneSearchFragment;)Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    iget v2, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->val$arg2:I
+
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/aio/downloader/mydownload/DownloadMovieItem;
+
+    invoke-virtual {v0}, Lcom/aio/downloader/mydownload/DownloadMovieItem;->getId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 247
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    .line 249
+    .local v11, "ringtoneposturl":Ljava/lang/String;
+    invoke-static {v11, v8}, Lcom/aio/downloader/utils/publicTools;->doHttpPost(Ljava/lang/String;Ljava/util/HashMap;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 253
+    .local v7, "jsondata":Ljava/lang/String;
+    :try_start_0
+    new-instance v9, Lorg/json/JSONObject;
+
+    invoke-direct {v9, v7}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    .line 254
+    .local v9, "object":Lorg/json/JSONObject;
+    const-string v0, "status"
+
+    invoke-virtual {v9, v0}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    .line 255
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/aio/downloader/model/Model;
+
+    invoke-direct {v1}, Lcom/aio/downloader/model/Model;-><init>()V
+
+    invoke-static {v0, v1}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$12(Lcom/aio/downloader/fragments/RingtoneSearchFragment;Lcom/aio/downloader/model/Model;)V
+
+    .line 256
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment;->model:Lcom/aio/downloader/model/Model;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$13(Lcom/aio/downloader/fragments/RingtoneSearchFragment;)Lcom/aio/downloader/model/Model;
+
+    move-result-object v0
+
+    const-string v1, "url"
+
+    invoke-virtual {v9, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/aio/downloader/model/Model;->setRingtoneurl(Ljava/lang/String;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 278
+    .end local v9    # "object":Lorg/json/JSONObject;
+    :cond_0
+    :goto_0
+    :try_start_1
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment;->player:Lcom/aio/downloader/utils/Player;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$2(Lcom/aio/downloader/fragments/RingtoneSearchFragment;)Lcom/aio/downloader/utils/Player;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v1}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v1
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment;->model:Lcom/aio/downloader/model/Model;
+    invoke-static {v1}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$13(Lcom/aio/downloader/fragments/RingtoneSearchFragment;)Lcom/aio/downloader/model/Model;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/aio/downloader/model/Model;->getRingtoneurl()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/aio/downloader/utils/Player;->playUrl(Ljava/lang/String;)V
+
+    .line 279
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/util/Timer;
+
+    invoke-direct {v1}, Ljava/util/Timer;-><init>()V
+
+    invoke-static {v0, v1}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$14(Lcom/aio/downloader/fragments/RingtoneSearchFragment;Ljava/util/Timer;)V
+
+    .line 280
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1$1;
+
+    invoke-direct {v1, p0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1$1;-><init>(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;)V
+
+    invoke-static {v0, v1}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$15(Lcom/aio/downloader/fragments/RingtoneSearchFragment;Ljava/util/TimerTask;)V
+
+    .line 288
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment;->timer:Ljava/util/Timer;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$16(Lcom/aio/downloader/fragments/RingtoneSearchFragment;)Ljava/util/Timer;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v1}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v1
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment;->task:Ljava/util/TimerTask;
+    invoke-static {v1}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$17(Lcom/aio/downloader/fragments/RingtoneSearchFragment;)Ljava/util/TimerTask;
+
+    move-result-object v1
+
+    const-wide/16 v2, 0x0
+
+    const-wide/16 v4, 0x3e8
+
+    invoke-virtual/range {v0 .. v5}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;JJ)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 293
+    :goto_1
+    const/4 v0, 0x0
+
+    return-object v0
+
+    .line 258
+    :catch_0
+    move-exception v6
+
+    .line 259
+    .local v6, "e":Lorg/json/JSONException;
+    invoke-virtual {v6}, Lorg/json/JSONException;->printStackTrace()V
+
+    goto :goto_0
+
+    .line 289
+    .end local v6    # "e":Lorg/json/JSONException;
+    :catch_1
+    move-exception v0
+
+    goto :goto_1
+.end method
+
+.method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    check-cast p1, Ljava/lang/Void;
+
+    invoke-virtual {p0, p1}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->onPostExecute(Ljava/lang/Void;)V
+
+    return-void
+.end method
+
+.method protected onPostExecute(Ljava/lang/Void;)V
+    .locals 2
+    .param p1, "result"    # Ljava/lang/Void;
+
+    .prologue
+    .line 298
+    invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
+
+    .line 300
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment;->progressWheel:Lcom/aio/downloader/utils/ProgressWheel;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment;)Lcom/aio/downloader/utils/ProgressWheel;
+
+    move-result-object v0
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Lcom/aio/downloader/utils/ProgressWheel;->setVisibility(I)V
+
+    .line 301
+    if-nez p1, :cond_0
+
+    .line 305
+    :cond_0
+    return-void
+.end method
+
+.method protected onPreExecute()V
+    .locals 2
+
+    .prologue
+    .line 233
+    invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
+
+    .line 234
+    iget-object v0, p0, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7$1;->this$1:Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->this$0:Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment$7;)Lcom/aio/downloader/fragments/RingtoneSearchFragment;
+
+    move-result-object v0
+
+    # getter for: Lcom/aio/downloader/fragments/RingtoneSearchFragment;->progressWheel:Lcom/aio/downloader/utils/ProgressWheel;
+    invoke-static {v0}, Lcom/aio/downloader/fragments/RingtoneSearchFragment;->access$0(Lcom/aio/downloader/fragments/RingtoneSearchFragment;)Lcom/aio/downloader/utils/ProgressWheel;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/aio/downloader/utils/ProgressWheel;->setVisibility(I)V
+
+    .line 237
+    return-void
+.end method
