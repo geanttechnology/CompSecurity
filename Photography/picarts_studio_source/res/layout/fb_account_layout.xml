@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/space_16dp" android:paddingRight="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fb_account_image" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/si_ui_default_avatar" android:scaleType="centerCrop" />
+    <TextView android:gravity="left|center" android:id="@id/fb_account_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_16dp" android:text="user" android:layout_weight="1.0" style="@style/TextAppearance.Picsart.Light.Username" />
+</LinearLayout>

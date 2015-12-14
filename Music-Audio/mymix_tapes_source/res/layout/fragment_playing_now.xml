@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/playing_now" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/color_red" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <ImageButton android:id="@id/playing_now_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/description" style="@style/Widget.AppCompat.ActionButton" />
+    <ImageView android:id="@id/playing_now_album" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/placeholder" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" android:contentDescription="@string/description" android:layout_marginEnd="8.0dip" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/playing_now_buttons" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/playing_now_previous" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_previous_np" android:contentDescription="@string/description" style="@style/Widget.AppCompat.ActionButton" />
+        <ProgressBar android:id="@id/playing_now_loading" android:padding="8.0dip" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="fill_parent" style="@style/Widget.AppCompat.ProgressBar" />
+        <ImageButton android:id="@id/playing_now_play" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_play_np" android:contentDescription="@string/description" style="@style/Widget.AppCompat.ActionButton" />
+        <ImageButton android:id="@id/playing_now_next" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_next_np" android:contentDescription="@string/description" style="@style/Widget.AppCompat.ActionButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/playing_now_buttons" android:layout_toRightOf="@id/playing_now_album">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_red" android:ellipsize="marquee" android:id="@id/playing_now_song" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_gray" android:id="@id/playing_now_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/target_spot_now" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

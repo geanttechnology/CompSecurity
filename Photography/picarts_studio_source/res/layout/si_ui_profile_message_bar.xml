@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:id="@id/si_profile_message_panel" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/si_profile_message_panel_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notif_comment" android:layout_alignParentLeft="true" />
+    <TextView android:textColor="#ff000000" android:id="@id/si_profile_message_panel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socialin_loading" android:layout_centerInParent="true" />
+</RelativeLayout>

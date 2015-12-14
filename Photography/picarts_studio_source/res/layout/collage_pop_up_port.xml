@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_20dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/collage_grid_button" android:background="?selectableItemBackground" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginRight="@dimen/space_12dp" android:layout_marginBottom="@dimen/space_12dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/collage_grid" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/textSize_16" android:gravity="top" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:text="@string/collage_grid_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/collage_frame_button" android:background="?selectableItemBackground" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginRight="@dimen/space_12dp" android:layout_toRightOf="@id/collage_grid_button">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/collage_frame" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/textSize_16" android:gravity="center" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:text="@string/collage_frame_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/collage_bg_button" android:background="?selectableItemBackground" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_margin="@dimen/space_12dp" android:layout_below="@id/collage_grid_button">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/collage_bg" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/textSize_16" android:gravity="center" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:text="@string/collage_bg_text" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

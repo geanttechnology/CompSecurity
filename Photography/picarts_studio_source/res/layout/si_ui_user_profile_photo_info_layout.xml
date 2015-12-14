@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/user_photo_and_info_adapter_layout" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_user_photo" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="@dimen/space_8dp" android:src="@color/gray_e6" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/my_network_image_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/textSize_16" android:textStyle="normal" android:textColor="@drawable/xml_si_ui_more_text_link" android:id="@id/txt_view_user_img_info" android:paddingLeft="@dimen/space_12dp" android:paddingTop="@dimen/space_4dp" android:paddingRight="@dimen/space_12dp" android:paddingBottom="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Title : " android:maxLines="1" />
+</LinearLayout>

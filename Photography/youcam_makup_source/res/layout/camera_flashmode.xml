@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/flashModeLayout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="664">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="664">
+            <LinearLayout android:orientation="vertical" android:id="@id/flashModeContent" android:background="@drawable/bg_flsfmenu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="479.0" app:child_width="174" app:child_height="479" app:child_left="666" app:child_top="120">
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="67.0" />
+                <FrameLayout android:id="@id/shotOnContent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="80.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:id="@id/shotOnButton" android:background="@drawable/image_selector_camera_flashmodeon_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="80" app:guideline_height="80" />
+                </FrameLayout>
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="60.0" />
+                <FrameLayout android:id="@id/shotOffContent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="80.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:id="@id/shotOffButton" android:background="@drawable/image_selector_camera_flashmodeoff_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="80" app:guideline_height="80" />
+                </FrameLayout>
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="60.0" />
+                <FrameLayout android:id="@id/shotAutoContent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="80.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:id="@id/shotAutoButton" android:background="@drawable/image_selector_camera_flashmodeauto_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="80" app:guideline_height="80" />
+                </FrameLayout>
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</FrameLayout>

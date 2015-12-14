@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/PalettesPanelTopArea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/PalettesPanelBottomArea">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/PalettesPanelTopToolBarHolder" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140">
+            <View android:id="@id/PalettesPanelGenericTopBar" android:background="#b3494758" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/PalettesPanelSkuTopBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/PalettesPanelSkuVendorLogo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@null" />
+            </FrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <RelativeLayout android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/PalettesPanelTopToolBarHolder">
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1080.0">
+                <GridView android:id="@id/PalettesPanelGridView" android:paddingLeft="12.0dip" android:paddingTop="15.0dip" android:paddingRight="12.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" android:layout_weight="1030.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1080.0">
+                <ExpandableListView android:id="@id/PalettesPanelExpandableGridView" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:groupIndicator="@null" android:divider="@android:color/transparent" android:layout_weight="1030.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/PalettesPanelBottomArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/PalettesPanelStyleMenuContainer" android:background="#ff8c7a9d" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="150">
+                <com.cyberlink.youcammakeup.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/PalettesPanelStyleMenu" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:listSelector="@android:color/transparent" app:choiceMode="singleChoice" app:numRows="1" style="@style/PatternMenuStyle" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="#ff8c7a9d" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="8" />
+        </FrameLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="#b3494758" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="150">
+            <LinearLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1080.0">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="top" android:id="@id/PalettesPanelCloseButton" android:background="#ff8c7a9d" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="106.0" app:guideline_width="106" app:guideline_height="126">
+                    <LinearLayout android:gravity="bottom|right|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="126.0">
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/colorset_menu_btn_s" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="88.0" app:guideline_width="97" app:guideline_height="88" />
+                        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+                    </LinearLayout>
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </LinearLayout>
+</RelativeLayout>

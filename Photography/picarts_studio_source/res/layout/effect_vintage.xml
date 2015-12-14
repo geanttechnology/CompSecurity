@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/vintage_mode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/vintage_mode_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:checked="true" android:text="@string/effect_param_vintage1" />
+                <RadioButton android:id="@id/vintage_mode_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:text="@string/effect_param_vintage2" />
+                <RadioButton android:id="@id/vintage_mode_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:text="@string/effect_param_vintage3" />
+                <RadioButton android:id="@id/vintage_mode_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:text="@string/effect_param_vintage4" />
+            </RadioGroup>
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/vintage_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect_param_amount" />
+            <SeekBar android:id="@id/vintage_seekbar_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

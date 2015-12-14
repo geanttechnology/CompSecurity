@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/component_app_bar" />
+    <ListView android:id="@id/search_list_list" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" android:layout_below="@id/app_bar" />
+    <View android:background="@drawable/tab_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_below="@id/app_bar" />
+    <RelativeLayout android:id="@id/search_more_banner" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/activity_search_loading" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

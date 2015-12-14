@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/btn_save_palette_d" />
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@drawable/btn_save_palette" />
+            <item android:drawable="@drawable/image_selector_camera_navigator_background_oval" />
+        </layer-list>
+    </item>
+    <item android:drawable="@drawable/btn_save_palette" />
+</selector>

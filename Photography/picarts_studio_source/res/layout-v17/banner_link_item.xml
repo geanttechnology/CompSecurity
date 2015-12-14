@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/banner_link_image_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+        <com.picsart.studio.utils.DynamicHeightImageView android:id="@id/banner_link_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/placeholder_banner_1" android:scaleType="centerCrop" android:contentDescription="@string/banner_image_desc" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/feature_banner_msg_title" android:textStyle="bold" android:textColor="@color/text_color_black" android:ellipsize="end" android:id="@id/banner_message_title_id" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Picsart.TextView.Link" />
+        <TextView android:textColor="@color/text_color_black" android:ellipsize="end" android:id="@id/banner_link_text_id" android:paddingLeft="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:maxWidth="230.0dip" android:shadowColor="@color/color_black" android:shadowDy="5.0" />
+        <RelativeLayout android:paddingBottom="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textSize="@dimen/textSize_12" android:id="@id/banner_link_button_id" android:padding="@dimen/space_4dp" android:layout_width="84.0dip" android:layout_height="38.0dip" android:layout_marginRight="@dimen/space_20dp" android:layout_marginBottom="@dimen/space_12dp" android:text="Click meeeeee" android:drawablePadding="@dimen/space_4dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/space_20dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

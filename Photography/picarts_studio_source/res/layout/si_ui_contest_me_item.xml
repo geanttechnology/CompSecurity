@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:picsart="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/si_ui_network_footer" android:paddingLeft="@dimen/space_12dp" android:paddingTop="@dimen/space_12dp" android:paddingRight="@dimen/space_12dp" android:paddingBottom="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_12" android:textStyle="normal" android:textColor="@color/text_color_light_gray" android:id="@id/contest_me_item_date_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            <TextView android:textSize="@dimen/textSize_16" android:textStyle="normal" android:textColor="@color/text_color_dark_gray" android:id="@id/contest_me_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:layout_below="@id/contest_me_item_date_txt" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.picsart.studio.utils.DynamicHeightImageView android:id="@id/contest_me_item_image_view" android:background="@color/gray_f5" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+            <ProgressBar android:id="@id/contest_me_image_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/contest_me_data_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp" android:layout_toRightOf="@id/contest_me_status_txt">
+                <LinearLayout android:id="@id/contest_me_votes_count_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_light_gray" android:id="@id/contest_me_votes_count_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_light_gray" android:id="@id/contest_me_votes_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="@string/gen_votes" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/contest_me_place_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/contest_me_votes_count_layout" android:layout_alignParentRight="true">
+                    <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_light_gray" android:id="@id/contest_me_place_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="@string/gen_place" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/textSize_24" android:textStyle="bold" android:textColor="@color/new_10" android:id="@id/contest_me_status_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_light_gray" android:id="@id/contest_me_reject_reason_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

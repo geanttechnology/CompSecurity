@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/shop_item_main_imageview" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginRight="@dimen/space_4dp" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/textSize_24" android:textStyle="normal" android:textColor="@color/text_color_dark_gray" android:id="@id/shop_item_name_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/shop_item_main_imageview" />
+        <FrameLayout android:id="@id/shop_item_buy_install_button" android:background="@drawable/shop_buy_button_background_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/shop_item_main_imageview" android:layout_below="@id/shop_item_name_textview">
+            <TextView android:textSize="@dimen/textSize_16" android:textColor="@drawable/shop_buy_button_selector" android:id="@id/shop_item_price_textview" android:paddingLeft="@dimen/space_12dp" android:paddingTop="@dimen/space_2dp" android:paddingRight="@dimen/space_12dp" android:paddingBottom="@dimen/space_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageView android:id="@id/shop_item_promo_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="@dimen/space_8dp" android:scaleType="fitStart" android:layout_toRightOf="@id/shop_item_main_imageview" android:layout_below="@id/shop_item_buy_install_button" />
+        <TextView android:textColor="@color/text_color_light_gray" android:id="@id/shop_item_description_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/shop_item_main_imageview" android:layout_below="@id/shop_item_promo_button" />
+    </RelativeLayout>
+    <ImageView android:id="@id/shop_item_banner_imageview" android:paddingBottom="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" />
+</LinearLayout>

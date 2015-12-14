@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/vignette_radius" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radius_25" />
+            <SeekBar android:id="@id/vignette_radius_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="255" />
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/vignette_fade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fade_0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0">
+                <SeekBar android:layout_gravity="center_vertical" android:id="@id/vignette_fade_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="255" android:layout_weight="1.0" />
+                <RelativeLayout android:id="@id/vignetteColorId" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="0.0">
+                    <LinearLayout android:background="@drawable/color" android:clickable="false" android:duplicateParentState="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_centerInParent="true" />
+                    <ImageView android:background="@drawable/xml_icon_bg_color" android:clickable="false" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/vignette_algoritm_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/sin_algoritm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:text="@string/sin" />
+                <RadioButton android:id="@id/sqrt_algoritm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:text="@string/sqrt" />
+                <RadioButton android:id="@id/square_algoritm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/square" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

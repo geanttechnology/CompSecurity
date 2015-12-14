@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@color/local_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/include1" android:background="@drawable/bar_beauty_white_bottom_strok" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <Button android:id="@id/back_btn" android:background="@drawable/cancel_btn" android:focusable="false" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/unselected_bg" android:id="@id/librarytitlebar" android:background="@color/solid_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="haha" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <Button android:id="@id/next_btn" android:background="@drawable/btnmanage" android:focusable="false" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/include1" />
+    <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bannerContainerID" android:layout_alignParentLeft="true">
+        <FrameLayout android:id="@id/materials_contrainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" />
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/downloadProgressBar" android:layout_width="70.0dip" android:layout_height="70.0dip" android:indeterminate="true" android:indeterminateBehavior="cycle" android:layout_centerInParent="true" />
+</RelativeLayout>

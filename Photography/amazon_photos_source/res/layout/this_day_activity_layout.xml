@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.gallery.thor.widget.AndroidNavigationPane android:id="@id/sidePanelLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/parentView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:theme="@style/ToolbarOverlay" android:id="@id/toolbar" android:background="@color/primary_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" />
+            <android.support.design.widget.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabGravity="fill" style="@style/TabLayoutStyle" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/first_load_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:contentDescription="@string/adrive_gallery_common_syncing_content" style="?android:attr/progressBarStyleLarge" />
+        <include android:layout_gravity="bottom|left|center" android:id="@id/chrome_activity_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/chrome_activity_indicator" />
+        <include android:layout_gravity="bottom|left|center" android:id="@id/network_activity_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/network_activity_indicator" />
+    </android.support.design.widget.CoordinatorLayout>
+    <include layout="@layout/nav_pane_list" />
+</com.amazon.gallery.thor.widget.AndroidNavigationPane>

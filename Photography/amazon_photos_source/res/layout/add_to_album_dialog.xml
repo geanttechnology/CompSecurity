@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/album_select_dialog_input_spacing" android:paddingRight="@dimen/album_select_dialog_input_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/albums_operation_dialog_margin_large" android:layout_marginTop="@dimen/albums_operation_dialog_margin_large" android:layout_marginRight="@dimen/albums_operation_dialog_margin_large">
+        <TextView android:textSize="@dimen/albums_operation_dialog_title_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_album_add_to_album_dialog_title" android:layout_alignParentLeft="true" />
+        <FrameLayout android:id="@id/create_album_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:foreground="?selectableItemBackground" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/f_ic_add_light_24dp" android:tint="@color/accent_color" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/albums_operation_dialog_margin_large" android:layout_marginTop="@dimen/albums_operation_dialog_margin_medium" android:layout_marginRight="@dimen/albums_operation_dialog_margin_large">
+        <ImageView android:id="@id/search_icon" android:layout_width="@dimen/albums_operation_dialog_margin_medium" android:layout_height="@dimen/albums_operation_dialog_margin_medium" android:src="@drawable/f_ic_search_light_24dp" android:tint="@color/primary_text_color" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <EditText android:id="@id/album_name_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:hint="@string/adrive_gallery_album_add_to_album_dialog_hint" android:singleLine="true" android:layout_toRightOf="@id/search_icon" android:inputType="textCapWords" />
+    </RelativeLayout>
+    <ListView android:id="@id/album_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/albums_operation_dialog_margin_extra_small" android:layout_marginTop="@dimen/albums_operation_dialog_margin_small" android:layout_marginRight="@dimen/albums_operation_dialog_margin_extra_small" android:layout_marginBottom="@dimen/albums_operation_dialog_margin_extra_small" />
+</LinearLayout>

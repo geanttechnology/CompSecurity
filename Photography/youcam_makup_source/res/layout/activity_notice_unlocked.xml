@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/btn_morehome_notice_n" android:layout_width="300.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Activity Notice Unlocked" />
+    </RelativeLayout>
+</RelativeLayout>

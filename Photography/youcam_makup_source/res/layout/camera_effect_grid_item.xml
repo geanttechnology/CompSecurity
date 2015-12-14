@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:child_width="170" app:child_height="200" app:guideline_width="170" app:guideline_height="210"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/lookMoreBtnContainer" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="170" app:guideline_height="200">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/lookMoreBtnChildProportion" android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="170" app:reference_height="200">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/lookMoreBtnPlusIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_camera_download" android:contentDescription="@string/app_name" app:self_width="119" app:self_height="119" app:self_left="24" />
+            <ImageView android:id="@id/liveLookMoreBtnRedIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ico_bottombar_hilight" android:contentDescription="@string/app_name" app:self_width="20" app:self_height="20" app:self_left="125" app:self_top="40" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_gravity="center" android:id="@id/lookItemContainer" android:background="@drawable/shadow_s" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="170" app:reference_height="200">
+        <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="155" app:self_height="180" app:mask="@drawable/camera_effect_grid_item_mask" app:porterduffxfermode="DST_IN">
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="155" app:reference_height="180">
+                <ImageView android:id="@id/effectGridPhoto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/look_thumb_00" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                <View android:layout_gravity="right" android:id="@id/effectNewIcon" android:background="@drawable/new_no_border" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="102" app:self_height="81" />
+                <View android:layout_gravity="right" android:id="@id/effectDeleteIcon" android:background="@drawable/image_selector_makeup_close_btn" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="67" app:self_height="67" />
+                <LinearLayout android:gravity="center" android:id="@id/downloadItemProgressContanier" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="280.0">
+                    <ProgressBar android:layout_gravity="center" android:id="@id/downloadItemProgress" android:layout_width="0.0dip" android:progress="0" android:layout_weight="248.0" style="@style/DownloadGridItemProgressStyle" />
+                </LinearLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="180" app:reference_height="180">
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/downloadItemInfoContanier" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="180" app:self_height="90">
+                    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="180" app:reference_height="90">
+                        <View android:layout_gravity="right" android:id="@id/effectDownloadIcon" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="45" app:self_height="45" />
+                        <TextView android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/effectThumbName" android:background="#d8000000" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" app:self_width="180" app:self_height="45" style="@style/PresetGridItemTextStyle" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+                </LinearLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+        </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+        <View android:id="@id/effectGridCheck" android:background="@drawable/image_selector_camera_thumbnail_selected" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>

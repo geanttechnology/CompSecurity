@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/image_selector_share_menu_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="110">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1080.0">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="46.0" />
+            <TextView android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/DownloadItemGroupTitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/more_new" android:layout_weight="960.0" style="@style/Pixel40CorrespondSize" />
+            <ImageView android:id="@id/DownloadItemGroupArrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ico_arrow_right" android:scaleType="fitCenter" android:layout_weight="50.0" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</RelativeLayout>

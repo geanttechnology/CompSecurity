@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/item_details_activity_layout" android:layout_height="fill_parent" style="@style/bottom_dialog_view"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.view.SlidingUpPanelLayout android:gravity="bottom" android:id="@id/sliding_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" sothree:shadowHeight="4.0dip" sothree:paralaxOffset="100.0dip" sothree:dragView="@id/dragView" xmlns:sothree="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout android:id="@id/outside_layer" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.picsart.studio.view.SlidingUpPanelLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/post_comment_bottom_bar" />
+</RelativeLayout>

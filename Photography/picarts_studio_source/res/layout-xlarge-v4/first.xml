@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <LinearLayout android:gravity="center" android:id="@id/gallery_capture_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/galleryButtonId" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp">
+            <ImageView android:background="@drawable/ic_dialog_gallery" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:text="@string/gen_gallery" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/captureButtonId" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20dp" android:layout_marginRight="@dimen/space_12dp">
+            <ImageView android:background="@drawable/ic_dialog_camera" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_4dp" android:text="@string/gen_capture" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/social_panel_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:id="@id/picsInGalleryLayoutId" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/space_4dp">
+            <Button android:background="@drawable/picsart_logo_big" android:clickable="false" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/facebookLayoutId" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/space_4dp">
+            <Button android:background="@drawable/fb_icon" android:clickable="false" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/flickrLayoutId" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/space_4dp">
+            <Button android:background="@drawable/flickr_icon" android:clickable="false" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/instagramLayoutId" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/space_4dp">
+            <Button android:background="@drawable/ic_action_instagram" android:clickable="false" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/social_panel_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:id="@id/picasaLayoutId" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/space_4dp">
+            <Button android:background="@drawable/picasa_icon" android:clickable="false" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/googleLayoutId" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/space_4dp">
+            <Button android:background="@drawable/google_icon" android:clickable="false" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/dropboxLayoutId" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/space_4dp">
+            <Button android:background="@drawable/dropbox_icon" android:clickable="false" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/moreLayoutId" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/space_4dp">
+            <Button android:background="@drawable/more_import_icon" android:clickable="false" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/recentPhotosPanel" android:paddingLeft="@dimen/space_2dp" android:paddingRight="@dimen/space_2dp" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="92.0dip">
+        <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_dark_gray" android:gravity="center" android:id="@id/recentPhotosTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_recently_used" />
+        <RelativeLayout android:background="@color/gray_75" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/recentPhotosTitle" />
+        <RelativeLayout android:padding="@dimen/space_2dp" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginTop="@dimen/space_2dp" android:layout_below="@id/recentPhotosTitle" android:layout_alignParentBottom="true">
+            <ProgressBar android:id="@id/loading_progress" android:layout_width="47.0dip" android:layout_height="47.0dip" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+            <android.support.v7.widget.RecyclerView android:id="@id/recent_photos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/delete_recent_photos" />
+</LinearLayout>

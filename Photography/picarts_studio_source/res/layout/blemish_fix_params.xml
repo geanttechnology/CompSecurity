@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSize_13" android:textStyle="bold" android:id="@id/fix_blemish_radius_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20dp" android:text="@string/radius" />
+    <SeekBar android:id="@id/fix_blemish_radius_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="40" />
+    <TextView android:textSize="@dimen/textSize_13" android:textStyle="bold" android:id="@id/fix_blemish_amount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20dp" android:text="@string/amount_70" />
+    <SeekBar android:id="@id/fix_blemish_amount_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/blemish_fix_methods" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/blemish_fix_method_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weak" />
+        <RadioButton android:id="@id/blemish_fix_method_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="@string/strong" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/gray_f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/shop_list_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/shop_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/banner_container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.socialin.android.picsart.profile.view.PagerRecyclerView android:id="@id/recyclerView_row" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </RelativeLayout>
+        <com.picsart.studio.view.SlidingTabLayout android:id="@id/shop_sliding_tabs" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    </LinearLayout>
+</RelativeLayout>

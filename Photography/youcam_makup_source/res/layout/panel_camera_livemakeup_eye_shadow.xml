@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" custom:guideline_width="1080" custom:guideline_height="410">
+        <RelativeLayout android:id="@id/touchEventReceiver" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/eyeShadowContainer" android:background="@color/camera_panel_effect_background_alpha" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" custom:guideline_width="1080" custom:guideline_height="150">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/eyeShadowShimmerSwitcherBtn" android:layout_width="@dimen/f33dp" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/f10dp" android:layout_marginRight="@dimen/f7dp" android:src="@drawable/image_selector_eyeshadow_shimmer_switcher_btn" android:scaleType="fitCenter" android:contentDescription="@null" />
+                    <com.cyberlink.youcammakeup.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/cameraEyeShadowGridArea" android:paddingLeft="@dimen/f3dp" android:paddingRight="@dimen/f3dp" android:clickable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" custom:listSelector="@android:color/transparent" custom:horizontalSpacing="@dimen/f10dp" custom:numRows="1" />
+                </LinearLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/patternContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_above="@id/eyeShadowContainer" custom:guideline_width="1080" custom:guideline_height="140">
+                <com.cyberlink.youcammakeup.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/cameraPatternGridArea" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" custom:listSelector="@android:color/transparent" custom:horizontalSpacing="0.0dip" custom:numRows="1" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </RelativeLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/panelTopView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" custom:guideline_width="1080" custom:guideline_height="410" />
+</RelativeLayout>

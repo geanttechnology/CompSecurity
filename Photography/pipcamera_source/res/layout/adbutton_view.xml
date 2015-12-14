@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageSwitcher android:layout_gravity="center" android:id="@id/imageswitcher" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/fbnative_clickedview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="8.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/fbnative_flag_ad" android:background="@drawable/view_roundbackground" android:layout_width="15.0dip" android:layout_height="15.0dip" android:text="AD" />
+    </FrameLayout>
+</FrameLayout>

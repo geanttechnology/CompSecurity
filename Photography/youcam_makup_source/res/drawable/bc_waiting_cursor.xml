@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item android:id="@android:id/progress"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <rotate android:duration="300" android:drawable="@drawable/bc_waiting_cursor_image" android:fromDegrees="0.0" android:toDegrees="360.0" />
+    </item>
+</layer-list>

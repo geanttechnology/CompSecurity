@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:paddingBottom="@dimen/space_24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/drawing_panel" android:paddingLeft="@dimen/space_24dp" android:paddingRight="@dimen/space_24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24dp">
+        <Button android:id="@id/draw_blank_image_button" android:layout_width="108.0dip" android:layout_height="108.0dip" android:layout_marginRight="@dimen/space_8dp" android:text="@string/draw_blank_text" android:drawableTop="@drawable/draw_on_blank" style="@style/Widget.Picsart.Button.DrawingPopUpWindow" />
+        <Button android:id="@id/draw_photo_image_button" android:layout_width="108.0dip" android:layout_height="108.0dip" android:layout_marginRight="@dimen/space_8dp" android:text="@string/draw_on_photo_text" android:drawableTop="@drawable/draw_on_photo" style="@style/Widget.Picsart.Button.DrawingPopUpWindow" />
+        <Button android:id="@id/draw_bg_image_button" android:layout_width="108.0dip" android:layout_height="108.0dip" android:layout_marginRight="@dimen/space_8dp" android:text="@string/draw_on_bg_text" android:drawableTop="@drawable/draw_on_bg" style="@style/Widget.Picsart.Button.DrawingPopUpWindow" />
+        <Button android:id="@id/open_draft_image_button" android:background="?selectableItemBackground" android:layout_width="108.0dip" android:layout_height="108.0dip" android:text="@string/open_draft_text" android:drawableTop="@drawable/open_draft" style="@style/Widget.Picsart.Button.DrawingPopUpWindow" />
+    </LinearLayout>
+</LinearLayout>

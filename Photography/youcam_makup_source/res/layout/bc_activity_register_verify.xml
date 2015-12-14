@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" style="@style/BcRegisterPanelStyle">
+        <TextView android:gravity="center" android:id="@id/register_verified_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_register_verified_desc" style="@style/BcRegisterDescVerifiedTextStyle" />
+        <Button android:gravity="center" android:id="@id/register_continue_btn" android:layout_width="fill_parent" android:text="@string/bc_register_verified_continue" android:layout_below="@id/register_verified_description" android:layout_centerHorizontal="true" style="@style/BcRegisterVerifiedButtonTextStyle" />
+    </RelativeLayout>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

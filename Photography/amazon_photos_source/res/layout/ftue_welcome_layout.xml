@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ftue_welcome_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/welcome_screen_content" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        <TextView android:id="@id/ftue_header" android:text="@string/adrive_gallery_common_ftue_welcome_header" android:singleLine="false" android:layout_weight="0.5" style="@style/ftue_text.large" />
+        <TextView android:id="@id/ftue_subheader" android:text="@string/adrive_gallery_common_ftue_welcome_subheader" android:layout_weight="0.5" style="@style/ftue_text.med" />
+        <TextView android:id="@id/learn_more_button" android:focusable="true" android:visibility="gone" android:text="@string/adrive_gallery_common_ftue_welcome_learn_more" android:layout_weight="0.3" style="@style/ftue_link" />
+        <ImageView android:id="@id/welcome_graphic" android:src="@drawable/welcome_cloud" android:adjustViewBounds="false" android:layout_weight="2.0" style="@style/ftue_scale_image" />
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.1" />
+        <Button android:textSize="@dimen/ftue_text_med" android:layout_gravity="center_horizontal" android:id="@id/ftue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_ftue_welcome_get_started" android:textAllCaps="false" />
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.8" />
+        <ImageView android:id="@id/ftue_amazon_logo" android:src="@drawable/clouddrive_logo" style="@style/ftue_scale_image" />
+    </LinearLayout>
+    <ImageButton android:id="@id/ftue_x_mark" android:contentDescription="@android:string/cancel" style="@style/ftue_x" />
+</FrameLayout>

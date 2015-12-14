@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/player_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/abc_action_bar_up_description" />
+    <View android:background="@drawable/player_shadow" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/cover_container" android:layout_width="fill_parent" android:layout_height="48.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:background="@drawable/ic_stats_views" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="2.0dip" />
+            <TextView android:textColor="@android:color/white" android:id="@id/player_hits" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:background="@drawable/ic_stats_likes" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            <TextView android:textColor="@android:color/white" android:id="@id/player_likes" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:background="@drawable/ic_stats_comments" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            <TextView android:textColor="@android:color/white" android:id="@id/player_total_comments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

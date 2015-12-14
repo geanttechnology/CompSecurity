@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/tool_dashboardDoneId" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/btn_rotate_cw" android:src="@drawable/ic_action_rotate_cw_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/btn_rotate_ccw" android:src="@drawable/ic_action_rotate_ccw_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/btn_flipVertical" android:src="@drawable/ic_action_flip_vertical_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/btn_flipHorizontal" android:src="@drawable/ic_action_flip_horizontal_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <RadioGroup android:orientation="vertical" android:id="@id/rg_colorAdjustmentMode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/btn_brightness" android:background="@drawable/ic_action_brightness_with_selector_t" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+        <RadioButton android:id="@id/btn_contrast" android:background="@drawable/ic_action_contrast_with_selector_t" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+        <RadioButton android:id="@id/btn_saturation" android:background="@drawable/ic_action_saturation_with_selector_t" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+        <RadioButton android:id="@id/btn_hue" android:background="@drawable/ic_action_hue_with_selector_t" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+    </RadioGroup>
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/tool_dashboardCancelId" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+</LinearLayout>

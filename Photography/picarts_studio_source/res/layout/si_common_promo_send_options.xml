@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/promo_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_send_fb" android:text="@string/gen_facebook" android:drawableLeft="@drawable/ic_action_facebook" style="@style/si_common_promo_send_item" />
+    <View style="@style/Divider.Horizontal" />
+    <Button android:id="@id/btn_send_sms" android:text="@string/gen_sms" android:drawableLeft="@drawable/ic_action_sms" style="@style/si_common_promo_send_item" />
+    <View style="@style/Divider.Horizontal" />
+    <Button android:id="@id/btn_send_email" android:text="@string/gen_email" android:drawableLeft="@drawable/ic_action_email" style="@style/si_common_promo_send_item" />
+    <View style="@style/Divider.Horizontal" />
+    <Button android:id="@id/btn_send_twitter" android:text="@string/gen_twitter" android:drawableLeft="@drawable/ic_action_twitter" style="@style/si_common_promo_send_item" />
+</LinearLayout>

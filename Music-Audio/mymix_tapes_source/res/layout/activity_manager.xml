@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/manager_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.DrawerLayout android:id="@id/manager_drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/manager_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/component_app_bar" />
+            <FrameLayout android:id="@id/manager_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/app_bar" />
+            <LinearLayout android:orientation="vertical" android:id="@id/manager_navigation_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <fragment android:name="my.googlemusic.play.services.player.PlayingNow" android:id="@id/manager_fragment" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+                <RelativeLayout android:gravity="bottom" android:layout_gravity="center_horizontal" android:id="@id/manager_banner" android:layout_width="fill_parent" android:layout_height="52.0dip" />
+                <fragment android:name="my.googlemusic.play.fragments.components.NavigationFragment" android:id="@id/manager_navigation" android:layout_width="fill_parent" android:layout_height="52.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@id/activity_manager_layout_loading" android:background="@color/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/activity_manager_progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" />
+        </LinearLayout>
+        <fragment android:name="my.googlemusic.play.fragments.manager.DrawerFragment" android:layout_gravity="left" android:id="@id/manager_drawer" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

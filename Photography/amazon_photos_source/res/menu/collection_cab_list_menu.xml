@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_home_amazon_dark" android:id="@id/cab_home_button" android:title="@string/adrive_gallery_common_add_to_favorites" />
+    <item android:icon="@drawable/ic_album_edit" android:id="@id/cab_edit_album_button" android:visible="false" android:title="@string/adrive_gallery_common_overflow_menu_edit" />
+    <item android:icon="@drawable/f_ic_delete_dark_24dp" android:id="@id/cab_delete_button" android:title="@string/adrive_gallery_common_actionbar_delete" />
+    <item android:icon="@drawable/f_ic_cloud_download_dark_24dp" android:id="@id/cab_download_button" android:title="@string/adrive_gallery_common_actionbar_download" />
+    <item android:icon="@drawable/f_ic_cloud_upload_dark_24dp" android:id="@id/cab_upload_button" android:title="@string/adrive_gallery_common_actionbar_upload" />
+    <item android:icon="@drawable/ic_album_rename" android:id="@id/cab_rename_button" android:title="@string/adrive_gallery_common_action_rename" />
+    <item android:icon="@drawable/ic_share_amazon_dark" android:id="@id/cab_share_album_button" android:visible="false" android:title="@string/adrive_gallery_common_dialog_share_single" />
+    <item android:icon="@drawable/f_ic_information_dark_24dp" android:id="@id/cab_album_info_button" android:visible="false" android:title="@string/adrive_gallery_album_info" />
+</menu>

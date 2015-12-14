@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/text_dashboardDoneId" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/text_dashboardItemId" android:src="@drawable/ic_action_text_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <RelativeLayout android:layout_width="48.0dip" android:layout_height="48.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/text_options_popup_anchor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/btn_showTextPopup" android:src="@drawable/ic_action_options_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </RelativeLayout>
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/text_dashboardUndolId" android:src="@drawable/ic_action_undo_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/text_dashboardCancelId" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+</LinearLayout>

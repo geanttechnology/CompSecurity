@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/paging_fragment_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.socialin.android.picsart.profile.view.PicsartSwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.socialin.android.picsart.profile.view.PicsartSwipeRefreshLayout>
+    <Button android:textSize="@dimen/textSize_12" android:textStyle="bold" android:textColor="@drawable/xml_ic_arrow_up" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/btn_goto_top" android:background="@drawable/rounded_background_white" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:visibility="gone" android:layout_width="112.0dip" android:layout_height="36.0dip" android:layout_marginTop="@dimen/gototop_default_margin" android:text="@string/gen_go_to_top" android:drawableLeft="@drawable/xml_ic_arrow_up" />
+    <RadioGroup android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/rg_view_selector" android:background="@drawable/rounded_background_white" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginBottom="@dimen/space_16dp">
+        <RadioButton android:id="@id/rb_grid_view" android:background="@drawable/xml_si_ui_action_grid_column3_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:checked="true" android:button="@null" />
+        <RadioButton android:id="@id/rb_staggered_view" android:background="@drawable/xml_si_ui_action_grid_column2_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:button="@null" />
+        <RadioButton android:id="@id/rb_card_view" android:background="@drawable/ic_grid_column1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:button="@null" />
+    </RadioGroup>
+    <FrameLayout android:id="@id/id_exceptional_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/progress_view_container" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Picsart.ProgressBar" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/id_footer_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/fragment_paging_footer" />
+    </FrameLayout>
+</FrameLayout>

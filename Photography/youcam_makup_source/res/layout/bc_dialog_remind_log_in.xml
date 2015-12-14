@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bc_login_pop_up_bg" android:layout_width="@dimen/t320dp" android:layout_height="@dimen/t240dp" android:layout_margin="@dimen/t15dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <TextView android:textSize="@dimen/t16dp" android:textColor="@color/bc_color_black" android:gravity="top|center" android:id="@id/bc_remind_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t20dp" android:layout_marginTop="@dimen/t80dp" android:layout_marginRight="@dimen/t20dp" android:minHeight="@dimen/t90dp" android:text="@string/bc_remind_desc" android:lineSpacingExtra="@dimen/t3dp" style="@style/BcDefaultFontStyle" />
+    <Button android:textSize="@dimen/t18dp" android:textColor="@color/bc_color_white" android:gravity="center" android:id="@id/bc_remind_login_btn" android:background="@drawable/bc_register_btn_selector" android:paddingLeft="@dimen/t8dp" android:paddingRight="@dimen/t8dp" android:layout_width="wrap_content" android:layout_height="@dimen/t40dp" android:minWidth="@dimen/t140dp" android:text="@string/bc_welcome_btn_join" style="@style/BcDefaultFontStyle" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <RelativeLayout android:id="@id/nonVideoLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel">
+        <com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout android:id="@id/bc_pull_to_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/videoLayout" android:background="@color/bc_color_black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" />
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/t3dp" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/bc_upload_progressbar" android:layout_below="@id/fragment_topbar_panel" style="?android:attr/progressBarStyleHorizontal" />
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+    <com.cyberlink.beautycircle.view.widgetpool.facebook.LoginButton android:id="@id/register_facebook" android:visibility="gone" android:scaleType="fitXY" style="@style/BcRegisterMoreSigninBtnStyle" />
+</RelativeLayout>

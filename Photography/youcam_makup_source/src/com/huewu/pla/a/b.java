@@ -1,0 +1,116 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.huewu.pla.a;
+
+
+public final class b
+{
+
+    public static final int PLA__padding = 0x7f010078;
+    public static final int PLA__paddingBottom = 0x7f01007c;
+    public static final int PLA__paddingEnd = 0x7f01007e;
+    public static final int PLA__paddingLeft = 0x7f010079;
+    public static final int PLA__paddingRight = 0x7f01007b;
+    public static final int PLA__paddingStart = 0x7f01007d;
+    public static final int PLA__paddingTop = 0x7f01007a;
+    public static final int PLA_absListViewStyle = 0x7f010000;
+    public static final int PLA_accessibilityFocusable = 0x7f0100b6;
+    public static final int PLA_addStatesFromChildren = 0x7f0100be;
+    public static final int PLA_alpha = 0x7f0100a6;
+    public static final int PLA_alwaysDrawnWithCache = 0x7f0100bd;
+    public static final int PLA_animateLayoutChanges = 0x7f0100b7;
+    public static final int PLA_animationCache = 0x7f0100bb;
+    public static final int PLA_cacheColorHint = 0x7f010060;
+    public static final int PLA_choiceMode = 0x7f010063;
+    public static final int PLA_clickable = 0x7f010098;
+    public static final int PLA_clipChildren = 0x7f0100b8;
+    public static final int PLA_clipToPadding = 0x7f0100b9;
+    public static final int PLA_contentDescription = 0x7f0100a3;
+    public static final int PLA_descendantFocusability = 0x7f0100bf;
+    public static final int PLA_dividerHeight = 0x7f010065;
+    public static final int PLA_drawSelectorOnTop = 0x7f01005b;
+    public static final int PLA_drawingCacheQuality = 0x7f01009c;
+    public static final int PLA_duplicateParentState = 0x7f01009e;
+    public static final int PLA_fadeScrollbars = 0x7f010086;
+    public static final int PLA_fadingEdge = 0x7f010090;
+    public static final int PLA_fadingEdgeLength = 0x7f010092;
+    public static final int PLA_fastScrollAlwaysVisible = 0x7f010064;
+    public static final int PLA_fastScrollEnabled = 0x7f010061;
+    public static final int PLA_filterTouchesWhenObscured = 0x7f01009b;
+    public static final int PLA_fitsSystemWindows = 0x7f010082;
+    public static final int PLA_focusable = 0x7f01007f;
+    public static final int PLA_focusableInTouchMode = 0x7f010080;
+    public static final int PLA_footerDividersEnabled = 0x7f010067;
+    public static final int PLA_hapticFeedbackEnabled = 0x7f0100a2;
+    public static final int PLA_headerDividersEnabled = 0x7f010066;
+    public static final int PLA_id = 0x7f010074;
+    public static final int PLA_importantForAccessibility = 0x7f0100b5;
+    public static final int PLA_isScrollContainer = 0x7f010085;
+    public static final int PLA_keepScreenOn = 0x7f01009d;
+    public static final int PLA_layerType = 0x7f0100b1;
+    public static final int PLA_layoutAnimation = 0x7f0100ba;
+    public static final int PLA_layoutDirection = 0x7f0100b2;
+    public static final int PLA_listSelector = 0x7f01005a;
+    public static final int PLA_listViewStyle = 0x7f010001;
+    public static final int PLA_longClickable = 0x7f010099;
+    public static final int PLA_minHeight = 0x7f01009f;
+    public static final int PLA_minWidth = 0x7f0100a0;
+    public static final int PLA_nextFocusDown = 0x7f010096;
+    public static final int PLA_nextFocusForward = 0x7f010097;
+    public static final int PLA_nextFocusLeft = 0x7f010093;
+    public static final int PLA_nextFocusRight = 0x7f010094;
+    public static final int PLA_nextFocusUp = 0x7f010095;
+    public static final int PLA_onClick = 0x7f0100a4;
+    public static final int PLA_overScrollFooter = 0x7f010069;
+    public static final int PLA_overScrollHeader = 0x7f010068;
+    public static final int PLA_overScrollMode = 0x7f0100a5;
+    public static final int PLA_persistentDrawingCache = 0x7f0100bc;
+    public static final int PLA_plaColumnNumber = 0x7f01006b;
+    public static final int PLA_plaColumnPaddingLeft = 0x7f01006d;
+    public static final int PLA_plaColumnPaddingRight = 0x7f01006e;
+    public static final int PLA_plaContentBackground = 0x7f01006a;
+    public static final int PLA_plaLandscapeColumnNumber = 0x7f01006c;
+    public static final int PLA_ptrArrowMarginRight = 0x7f010071;
+    public static final int PLA_ptrHeight = 0x7f01006f;
+    public static final int PLA_ptrLastUpdateTextSize = 0x7f010073;
+    public static final int PLA_ptrSpinnerMarginRight = 0x7f010070;
+    public static final int PLA_ptrTextSize = 0x7f010072;
+    public static final int PLA_requiresFadingEdge = 0x7f010091;
+    public static final int PLA_rotation = 0x7f0100ab;
+    public static final int PLA_rotationX = 0x7f0100ac;
+    public static final int PLA_rotationY = 0x7f0100ad;
+    public static final int PLA_saveEnabled = 0x7f01009a;
+    public static final int PLA_scaleX = 0x7f0100ae;
+    public static final int PLA_scaleY = 0x7f0100af;
+    public static final int PLA_scrollX = 0x7f010076;
+    public static final int PLA_scrollY = 0x7f010077;
+    public static final int PLA_scrollbarAlwaysDrawHorizontalTrack = 0x7f01008e;
+    public static final int PLA_scrollbarAlwaysDrawVerticalTrack = 0x7f01008f;
+    public static final int PLA_scrollbarDefaultDelayBeforeFade = 0x7f010088;
+    public static final int PLA_scrollbarFadeDuration = 0x7f010087;
+    public static final int PLA_scrollbarSize = 0x7f010089;
+    public static final int PLA_scrollbarStyle = 0x7f010084;
+    public static final int PLA_scrollbarThumbHorizontal = 0x7f01008a;
+    public static final int PLA_scrollbarThumbVertical = 0x7f01008b;
+    public static final int PLA_scrollbarTrackHorizontal = 0x7f01008c;
+    public static final int PLA_scrollbarTrackVertical = 0x7f01008d;
+    public static final int PLA_scrollbars = 0x7f010083;
+    public static final int PLA_scrollingCache = 0x7f01005d;
+    public static final int PLA_smoothScrollbar = 0x7f010062;
+    public static final int PLA_soundEffectsEnabled = 0x7f0100a1;
+    public static final int PLA_splitMotionEvents = 0x7f0100c0;
+    public static final int PLA_stackFromBottom = 0x7f01005c;
+    public static final int PLA_tag = 0x7f010075;
+    public static final int PLA_textAlignment = 0x7f0100b4;
+    public static final int PLA_textDirection = 0x7f0100b3;
+    public static final int PLA_textFilterEnabled = 0x7f01005e;
+    public static final int PLA_transcriptMode = 0x7f01005f;
+    public static final int PLA_transformPivotX = 0x7f0100a9;
+    public static final int PLA_transformPivotY = 0x7f0100aa;
+    public static final int PLA_translationX = 0x7f0100a7;
+    public static final int PLA_translationY = 0x7f0100a8;
+    public static final int PLA_verticalScrollbarPosition = 0x7f0100b0;
+    public static final int PLA_visibility = 0x7f010081;
+}

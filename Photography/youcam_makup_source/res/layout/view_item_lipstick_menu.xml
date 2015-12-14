@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/menu_frame" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="278" app:guideline_height="278"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:background="@drawable/image_selector_tool_menu_item" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="278" app:guideline_height="278">
+        <ImageView android:layout_gravity="center" android:id="@id/beautifyMenuItemImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/menu_ps" android:scaleType="fitCenter" android:contentDescription="@null" app:child_width="230" app:child_height="230" />
+        <com.cyberlink.youcammakeup.widgetpool.common.AutoResizeTextView android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/beautifyMenuItemText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/app_name" android:maxLines="2" android:minLines="1" android:includeFontPadding="false" app:child_width="214" app:child_height="80" app:child_top="192" style="@style/SkuPopUpMenuText" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

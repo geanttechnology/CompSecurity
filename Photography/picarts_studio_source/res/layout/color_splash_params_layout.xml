@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_16dp" android:paddingRight="@dimen/space_16dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/changeColorBtn" android:background="@drawable/btn_borderless_material_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_change_color" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/removeColorBtn" android:background="@drawable/btn_borderless_material_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="@string/button_remove_color" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/color_white" android:id="@id/replace_color_hue_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/replace_hue_240" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.picsart.effects.colorsplash.GradientView android:id="@id/replaceHueColorsBg" android:layout_width="fill_parent" android:layout_height="@dimen/color_splash_seekbar_height" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:layout_centerInParent="true" />
+        <SeekBar android:id="@id/replace_hue_seekbar" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-15.0dip" android:layout_marginRight="-15.0dip" android:progressDrawable="@android:color/transparent" style="@style/fx_colorSplash_SeekBar_style" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/color_white" android:id="@id/min_hue_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/min_delta_hue" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.picsart.effects.colorsplash.GradientView android:id="@id/minHueColorsBg" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:layout_centerInParent="true" />
+        <SeekBar android:id="@id/min_hue_seekbar" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-15.0dip" android:layout_marginRight="-15.0dip" android:progressDrawable="@android:color/transparent" style="@style/fx_colorSplash_SeekBar_style" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/color_white" android:id="@id/max_hue_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:text="@string/max_delta_hue" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.picsart.effects.colorsplash.GradientView android:id="@id/maxHueColorsBg" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:layout_centerInParent="true" />
+        <SeekBar android:id="@id/max_hue_seekbar" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-15.0dip" android:layout_marginRight="-15.0dip" android:progressDrawable="@android:color/transparent" style="@style/fx_colorSplash_SeekBar_style" />
+    </RelativeLayout>
+    <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/splash_modes" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/grayscale_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:text="@string/gray_scale" />
+        <RadioButton android:id="@id/sepia_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sepia" />
+    </RadioGroup>
+</LinearLayout>

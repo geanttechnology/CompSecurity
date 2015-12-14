@@ -1,0 +1,19 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.cyberlink.you.friends;
+
+import org.apache.http.impl.client.DefaultHttpClient;
+
+class n
+{
+
+    private static DefaultHttpClient a;
+
+    static DefaultHttpClient a(DefaultHttpClient defaulthttpclient)
+    {
+        a = defaulthttpclient;
+        return defaulthttpclient;
+    }
+}

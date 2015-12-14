@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="503" app:guideline_height="417"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="503.0">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/shadow" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="479.0" app:guideline_width="479" app:guideline_height="393">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="382.0">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="193.0" app:guideline_width="285" app:guideline_height="193">
+                    <ImageView android:id="@id/downloadThumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                    <LinearLayout android:gravity="center" android:id="@id/downloadItemProgressContanier" android:background="#99000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="285.0">
+                        <ProgressBar android:layout_gravity="center" android:id="@id/downloadItemProgress" android:layout_width="0.0dip" android:progress="50" android:layout_weight="248.0" style="@style/DownloadGridItemProgressStyle" />
+                    </LinearLayout>
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="30.0" />
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="70.0" app:guideline_width="275" app:guideline_height="70">
+                    <Button android:id="@id/downloadBtn" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/DownloadBtnStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </LinearLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="54" app:child_height="54" app:child_left="415" app:child_top="10" app:guideline_width="479" app:guideline_height="393">
+                <View android:id="@id/downloadItemNewIcon" android:background="@drawable/icon_new_tile" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </LinearLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

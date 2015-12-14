@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="85.0dip" android:layout_height="85.0dip">
+        <RelativeLayout android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/multiselect_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_22_picsart" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/selected_image_imageview" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/empty_drawable" android:scaleType="centerCrop" />
+        </RelativeLayout>
+        <Button android:background="@drawable/xml_btn_remove_common" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

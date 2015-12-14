@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_gp_actions">
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_gp_action_all_title" android:key="enable_gp_action_all" android:summary="@string/pref_enable_gp_action_all_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_gp_actions">
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_gp_action_add_title" android:key="enable_gp_action_add" android:summary="@string/pref_enable_gp_action_add_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_gp_action_like_title" android:key="enable_gp_action_like" android:summary="@string/pref_enable_gp_action_like_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_gp_action_comment_title" android:key="enable_gp_action_comment" android:summary="@string/pref_enable_gp_action_comment_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

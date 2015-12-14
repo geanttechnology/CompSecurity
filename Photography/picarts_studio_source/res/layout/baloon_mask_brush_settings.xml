@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mask_brush_params" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pntik" android:background="@drawable/baloon_pointer" android:layout_width="wrap_content" android:layout_height="8.0dip" android:layout_marginRight="50.0dip" android:layout_alignRight="@id/brush_param_container" />
+    <RelativeLayout android:id="@id/brush_param_container" android:background="@drawable/baloon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/pntik">
+        <ImageButton android:id="@id/button_undo" android:layout_height="fill_parent" android:src="@drawable/ic_action_undo_selector" android:layout_alignParentLeft="true" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/button_brush_ghost" android:layout_height="fill_parent" android:src="@drawable/ic_action_brush_ghost_t" android:layout_toRightOf="@id/button_undo" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/button_clear" android:layout_height="fill_parent" android:src="@drawable/ic_action_refresh" android:layout_toRightOf="@id/button_brush_ghost" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ToggleButton android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_mode_draw" android:background="@drawable/btn_switch_left" android:layout_width="54.0dip" android:layout_height="32.0dip" android:layout_marginLeft="5.0dip" android:textOn="@string/gen_mask" android:textOff="@string/gen_mask" android:layout_toRightOf="@id/button_clear" android:layout_centerVertical="true" />
+        <ToggleButton android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_mode_erase" android:background="@drawable/btn_switch_right" android:layout_width="54.0dip" android:layout_height="32.0dip" android:layout_marginRight="5.0dip" android:textOn="@string/gen_original" android:textOff="@string/gen_original" android:layout_toRightOf="@id/button_mode_draw" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

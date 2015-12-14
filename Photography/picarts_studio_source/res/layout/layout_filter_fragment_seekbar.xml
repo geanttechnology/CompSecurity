@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/btn_reset_effect" android:src="@drawable/ic_action_refresh" style="@style/Widget.Picsart.ImageButton.Action" />
+    <TextView android:id="@id/effect_param_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:singleLine="true" />
+    <SeekBar android:id="@id/effect_param_seekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="320.0dip" android:layout_weight="1.0" />
+</LinearLayout>

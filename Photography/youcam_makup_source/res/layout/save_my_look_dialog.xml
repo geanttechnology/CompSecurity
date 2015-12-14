@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/SaveMyLookTopToolBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="134">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1080.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/SaveMyLookBackButton" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="150.0" app:guideline_width="150" app:guideline_height="134">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" style="@style/CameraTopBackBtn" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1080.0">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:weightSum="134.0">
+                        <View android:background="#ff919191" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="72.0" />
+                    </LinearLayout>
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/SaveMyLookHomeButton" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="150.0" app:guideline_width="150" app:guideline_height="134">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_selector_camera_gohome_btn" android:contentDescription="@string/app_name" style="@style/GeneralTopBtn" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </LinearLayout>
+                <TextView android:textColor="#ff1e1e1e" android:id="@id/SaveMyLookTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_my_look" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TopBarTextStyle" />
+            </RelativeLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/SaveMyLookSaveButtonArea" android:layout_below="@id/SaveMyLookTopToolBar">
+        <LinearLayout android:orientation="vertical" android:background="@android:drawable/dialog_holo_light_frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="768.0" android:layout_weight="1.0">
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="20.0" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1040.0" android:layout_weight="648.0">
+                <com.cyberlink.youcammakeup.widgetpool.touchview.TouchImageView android:id="@id/SaveMyLookBeforeImage" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="500.0" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+                <com.cyberlink.youcammakeup.widgetpool.touchview.TouchImageView android:id="@id/SaveMyLookAfterImage" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="500.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1040.0" android:layout_weight="100.0">
+                <TextView android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/intro_before" android:layout_weight="500.0" style="@style/PaletteNameTextStyle" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+                <TextView android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/intro_after" android:layout_weight="500.0" style="@style/PaletteNameTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1080.0" android:layout_weight="1.0">
+            <com.idunnololz.widgets.AnimatedExpandableListView android:id="@id/SaveMyLookSettingMenu" android:layout_width="0.0dip" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:groupIndicator="@null" android:divider="#ffa89fab" android:dividerHeight="2.0dip" android:layout_weight="1020.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/SaveMyLookSaveButtonArea" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" app:guideline_width="1080" app:guideline_height="140">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="140">
+            <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:layout_gravity="center_vertical" android:id="@id/SaveMyLookGoToButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/save_my_look_go_to_looks" app:child_width="416" app:child_height="88" app:child_left="88" app:text_size_info="360:9:default;" app:suppress_max="true" style="@style/SaveMyLookBtnStyle" />
+            <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:layout_gravity="center_vertical" android:id="@id/SaveMyLookSaveButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/common_Save" app:child_width="416" app:child_height="88" app:child_left="88" app:text_size_info="360:9:default;" app:suppress_max="true" style="@style/SaveMyLookBtnStyle" />
+            <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:layout_gravity="right|center" android:id="@id/saveMyLookCollageBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/save_my_look_compare" app:child_width="416" app:child_height="88" app:child_left="88" app:self_rtl="true" app:text_size_info="360:9:default;" app:suppress_max="true" style="@style/SaveMyLookBtnStyle" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" app:child_width="146" app:child_height="188" app:guideline_width="1080" app:guideline_height="191">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_gravity="right" android:id="@id/collageThumbContainer" android:background="@drawable/save_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="146" app:guideline_height="188">
+            <View android:layout_gravity="center" android:id="@id/collageThumbView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="116" app:child_height="156" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="190" app:guideline_height="250"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="164" app:child_height="164" app:guideline_width="190" app:guideline_height="250">
+        <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" app:mask="@drawable/texture_lipstick_color" app:porterduffxfermode="DST_IN">
+            <com.cyberlink.youcammakeup.widgetpool.common.MultiColorView android:layout_gravity="center" android:id="@id/colorItemColor" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+        <View android:layout_gravity="center" android:id="@id/colorItemMask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:layout_gravity="center" android:background="@drawable/image_selector_color_list_item_selected_lipstick" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/colorItemSerialNumber" android:layout_width="fill_parent" android:layout_height="fill_parent" app:text_size_info="360:10.5:default" app:suppress_max="true" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:child_width="74" app:child_height="74" app:child_left="104" app:child_top="24" app:guideline_width="190" app:guideline_height="250">
+        <View android:id="@id/colorItemHotIcon" android:background="@drawable/star" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

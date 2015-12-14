@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/header" android:background="@drawable/quickaction_top_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/quickaction_item_arrow_up" />
+    <ImageView android:id="@id/quickaction_item_arrow_up" android:background="@drawable/quickaction_arrow_up" android:layout_width="16.0dip" android:layout_height="4.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/quickaction_item_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header">
+        <RelativeLayout android:background="@color/little_gray_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_beauty_fg_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/delay_capture" android:layout_toLeftOf="@id/delay_capture_photo" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/delay_capture_photo" android:background="@color/black" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/beauty_bg_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:background="@color/little_gray_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_beauty_fg_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/click_screen_capture" android:layout_toLeftOf="@id/click_screen_capture" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/click_screen_capture" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/footer" android:background="@drawable/quickaction_bottom_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/quickaction_item_content" />
+</RelativeLayout>

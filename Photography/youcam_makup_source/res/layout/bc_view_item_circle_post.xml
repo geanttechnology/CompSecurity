@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t5dp" android:layout_marginTop="@dimen/t5dp" android:layout_marginRight="@dimen/t5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="@dimen/t60dp" android:layout_height="@dimen/t60dp">
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:gravity="center" android:id="@id/bc_discover_category_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+        <ImageView android:background="@drawable/bc_avatar_circle_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bc_category_tag_selector" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/t12dp" android:textColor="@color/bc_color_main_edit_text" android:gravity="top|center" android:layout_gravity="center" android:id="@id/bc_discover_category_name" android:layout_width="@dimen/t60dp" android:layout_height="wrap_content" android:lines="2" style="@style/BcCategoryTextStyle" />
+</LinearLayout>

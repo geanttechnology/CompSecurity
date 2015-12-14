@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.cyberlink.you.widgetpool.common.CircleImageView android:id="@id/GroupCreateImageView" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="8.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.rockerhieu.emojicon.EmojiconTextView android:textSize="14.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/GroupCreateMemberName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/GroupCreateMemberCheckBox" android:layout_toRightOf="@id/GroupCreateImageView" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/GroupCreateMemberCheckBox" android:background="@drawable/u_custom_checkbox_friends" android:focusable="false" android:clickable="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="11.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffd2d2d2" android:layout_width="wrap_content" android:layout_height="@dimen/t1dp" android:layout_alignLeft="@id/GroupCreateImageView" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

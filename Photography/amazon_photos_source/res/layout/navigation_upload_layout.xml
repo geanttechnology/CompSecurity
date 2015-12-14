@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="left|center" android:id="@id/navigation_upload_progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/nav_pane_progress_bar_height" android:layout_marginTop="@dimen/nav_pane_padding" android:layout_marginRight="@dimen/nav_pane_progress_bar_right_padding" android:progress="0" android:progressDrawable="@drawable/curved_progress_drawable" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="@dimen/nav_pane_upload_text_size" android:gravity="left|center" android:id="@id/navigation_upload_top_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/nav_pane_padding" />
+    <TextView android:textSize="@dimen/nav_pane_upload_text_size" android:gravity="left|center" android:id="@id/navigation_upload_bottom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/nav_pane_text_top_padding" android:layout_marginBottom="@dimen/nav_pane_padding" />
+</merge>

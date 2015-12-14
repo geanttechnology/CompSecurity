@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/collage_preview_panel" android:background="@color/gray_33" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/adLayoutlId" />
+    <RelativeLayout android:gravity="bottom" android:id="@id/adLayoutlId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/collage_preview_topMenu" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+    <SlidingDrawer android:orientation="horizontal" android:id="@id/collage_menu_sliding_drawer" android:clipChildren="true" android:layout_width="270.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:handle="@id/handle" android:content="@id/content">
+        <ImageView android:id="@id/handle" android:background="@drawable/handle_settings_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@drawable/panel_drawer_right" android:paddingLeft="@dimen/space_12dp" android:paddingTop="@dimen/space_20dp" android:paddingRight="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/collage_outer_border_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collage_outer_border_txt" />
+                <TextView android:id="@id/collage_outer_border_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <SeekBar android:id="@id/collage_outer_border_width_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="40" android:progress="12" android:layout_weight="1.0" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp">
+                    <FrameLayout android:orientation="horizontal" android:id="@id/collage_preview_outer_borderColorId" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginTop="@dimen/space_4dp" android:layout_centerInParent="true" />
+                    <ImageView android:background="@drawable/xml_icon_bg_color" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/collage_inner_border_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20dp">
+                <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collage_inner_border_txt" />
+                <TextView android:id="@id/collage_inner_border_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/collage_inner_border_seekbar_layout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <SeekBar android:id="@id/collage_inner_border_width_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="39" android:progress="4" android:layout_weight="1.0" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp">
+                    <FrameLayout android:orientation="horizontal" android:id="@id/collage_preview_inner_borderColorId" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginTop="@dimen/space_4dp" android:layout_centerInParent="true" />
+                    <ImageView android:background="@drawable/xml_icon_bg_color" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/collage_radius_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20dp">
+                <TextView android:id="@id/collage_corner_radius_textview" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collage_corner_radius_txt" />
+                <TextView android:id="@id/collage_radius_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="0" />
+            </LinearLayout>
+            <SeekBar android:id="@id/collage_corner_radius_seekbar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_56dp" android:max="100" android:progress="0" />
+            <LinearLayout android:id="@id/collage_opacity_text_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20dp">
+                <TextView android:id="@id/collage_opacity_textview" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/draw_line_opacity_space" />
+                <TextView android:id="@id/collage_opacity_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="100" />
+            </LinearLayout>
+            <SeekBar android:id="@id/collage_opacity_seekbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_56dp" android:max="255" android:progress="100" />
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/collage_fill_type_radiolayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20dp">
+                <ToggleButton android:textColor="@android:color/white" android:id="@id/collage_mode_on_image" android:background="@drawable/btn_switch_left" android:layout_width="wrap_content" android:layout_height="32.0dip" android:textOn="@string/gen_inside" android:textOff="@string/gen_inside" android:singleLine="true" />
+                <ToggleButton android:textColor="@android:color/white" android:id="@id/collage_mode_out_image" android:background="@drawable/btn_switch_right" android:layout_width="wrap_content" android:layout_height="32.0dip" android:textOn="@string/gen_outside" android:textOff="@string/gen_outside" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+    <LinearLayout android:orientation="vertical" android:id="@id/collage_preview_topMenu" android:background="@drawable/panel_left_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageButton android:id="@id/menu_item_done" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_vertical" />
+        <TextView android:ellipsize="start" android:gravity="center_horizontal" android:id="@id/collage_preview_frameId" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_4dp" android:paddingBottom="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:drawableTop="@drawable/ic_action_frame_t" />
+        <include layout="@layout/separator_vertical" />
+        <TextView android:ellipsize="start" android:gravity="center_horizontal" android:id="@id/collage_preview_freeCropId" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_4dp" android:paddingBottom="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:drawableTop="@drawable/ic_action_cut_t" />
+        <include layout="@layout/separator_vertical" />
+        <TextView android:ellipsize="start" android:gravity="center_horizontal" android:id="@id/collage_preview_shapeCropId" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_4dp" android:paddingBottom="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:drawableTop="@drawable/ic_action_shape_crop_t" />
+        <include layout="@layout/separator_vertical" />
+        <TextView android:ellipsize="start" android:gravity="center_horizontal" android:id="@id/collage_preview_cropId" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_4dp" android:paddingBottom="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:drawableTop="@drawable/ic_action_crop_t" />
+        <include layout="@layout/separator_vertical" />
+        <ImageButton android:id="@id/menu_item_close" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+</RelativeLayout>

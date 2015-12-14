@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="420.0dip" android:layout_height="450.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/launcherBannerIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="420" app:guideline_height="200">
+        <TextView android:id="@id/launcherBannerTextView" android:text="@string/PhotoDirector" style="@style/LauncherBannerButtonTextStyle" />
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="420" app:guideline_height="142">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:id="@id/launcherBannerNewIcon" android:background="@drawable/icon_new_launcher_banner" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="130" app:guideline_height="142" />
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</FrameLayout>

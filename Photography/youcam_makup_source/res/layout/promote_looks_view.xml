@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.AutoSizeFrameLayout android:gravity="center" android:id="@id/extraLargeThumbLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sourceWDP="360" app:sourceHDP="640" app:useDeviceDP="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeFrameLayout android:layout_gravity="center" android:layout_width="360.0dip" android:layout_height="550.0dip" app:sourceWDP="360" app:sourceHDP="640" app:useDeviceDP="true">
+        <RelativeLayout android:gravity="top" android:layout_gravity="center" android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="513.0dip">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/thumbArea" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="960" app:guideline_height="1030">
+                <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="960" app:guideline_height="1030">
+                    <ImageView android:id="@id/PromoteThumbView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_gravity="center_horizontal" android:id="@id/downloadItemProgressContanier" android:background="#99000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="960" app:guideline_height="1030">
+                        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/downloadItemProgress" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progress="50" app:child_width="544" app:child_height="20" app:child_top="866" style="@style/DownloadGridItemProgressStyle" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+                    <View android:id="@id/PromoteLooksPagerLeftArrow" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="208" app:child_height="1030" app:child_left="0" app:child_top="0" />
+                    <View android:id="@id/PromoteLooksPagerLeftArrowImage" android:background="@drawable/image_selector_costume_looks_left_arrow_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="54" app:child_height="104" app:child_left="0" app:child_top="462" />
+                    <View android:id="@id/PromoteLooksPagerRightArrow" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="208" app:child_height="1030" app:child_left="752" app:child_top="0" />
+                    <View android:id="@id/PromoteLooksPagerRightArrowImage" android:background="@drawable/image_selector_costume_looks_right_arrow_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="54" app:child_height="104" app:child_left="906" app:child_top="462" />
+                </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/buttonArea" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/thumbArea" app:guideline_width="960" app:guideline_height="170">
+                <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="960" app:guideline_height="170">
+                    <Button android:layout_gravity="center" android:id="@id/extraLargeThumbDownloadBtn" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="338" app:child_height="98" style="@style/DownloadBtnStyle" />
+                    <View android:id="@id/extraLargeThumbmDownloadLockIcon" android:background="@drawable/lock_icon" android:focusable="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="100" app:child_height="100" app:child_left="670" app:child_top="30" />
+                </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignBottom="@id/buttonArea" app:child_width="380" app:child_height="280" app:child_left="290" app:child_top="780" app:guideline_width="960" app:guideline_height="1200">
+                <include android:id="@id/useTemplateMenu" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/buttonArea" android:layout_centerHorizontal="true" layout="@layout/use_template_menu" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/descriptionArea" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/buttonArea" app:guideline_width="960" app:guideline_height="340">
+                <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/div" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="960" app:guideline_height="2" />
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="960" app:guideline_height="24" />
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="960" app:guideline_height="288">
+                        <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="960.0">
+                            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="26.0" />
+                            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="908.0">
+                                <TextView android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/DownloadItemTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/DownloadItemTitleStyle" />
+                                <TextView android:textColor="@color/text_color_top_tool_bar_button_default" android:gravity="center_vertical" android:id="@id/TemplateModeTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/DownloadItemTitle" style="@style/DownloadITemplateModeStyle" />
+                                <TextView android:textSize="@dimen/f14dp" android:textColor="#ff464646" android:id="@id/DownloadItemDescription" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/TemplateModeTitle" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="960" app:guideline_height="26" />
+                </LinearLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/extraLargeThumbCloseBtn" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/image_selector_makeup_close_btn" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeFrameLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.AutoSizeFrameLayout>

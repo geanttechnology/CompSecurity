@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/viewerContainer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layoutEditDeleteButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/btnEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_edit" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/btnDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_delete" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/btnCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_camera" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/btnPublish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_publish" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/btnExport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_export" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layoutCameraDoneButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/btnDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_done" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/btnCamera2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_camera" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

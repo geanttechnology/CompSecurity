@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_48dp">
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/TextAppearance.Holo" />
+        <TextView android:textSize="@dimen/textSize_14" android:id="@id/txt_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" style="@android:style/TextAppearance.Holo" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btn_decrement" android:background="@drawable/button_background_rounded" android:padding="@dimen/space_4dp" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_minus_normal" />
+        <com.picsart.studio.view.FloatSeekBar android:id="@id/seekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:layout_weight="1.0" style="@style/Widget.Picsart.Light.SeekBar.Float" />
+        <ImageButton android:id="@id/btn_increment" android:background="@drawable/button_background_rounded" android:padding="@dimen/space_4dp" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_plus_normal" />
+    </LinearLayout>
+</LinearLayout>

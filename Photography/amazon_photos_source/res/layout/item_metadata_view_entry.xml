@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:paddingTop="@dimen/item_metadata_view_divider_top_padding" android:paddingBottom="@dimen/item_metadata_view_divider_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/image_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/item_metadata_entry_icon" android:layout_width="@dimen/item_metadata_view_image_width_height" android:layout_height="@dimen/item_metadata_view_image_width_height" android:scaleType="centerCrop" />
+            <include android:layout_gravity="bottom" android:id="@id/item_metadata_video_overlay" android:layout_width="@dimen/item_metadata_view_image_width_height" android:layout_height="wrap_content" android:layout_alignBottom="@id/item_metadata_entry_icon" layout="@layout/video_play_overlay_icon" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_metadata_view_text_left_padding" android:layout_toLeftOf="@id/item_metadata_entry_checkbox" android:layout_toRightOf="@id/image_frame" android:layout_centerVertical="true">
+            <TextView android:textAppearance="@style/textapperance_auto_save_folder_title" android:ellipsize="marquee" android:id="@id/item_metadata_entry_size_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/textapperance_auto_save_folder_subtitle" android:ellipsize="marquee" android:id="@id/item_metadata_entry_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <CheckBox android:id="@id/item_metadata_entry_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/item_metadata_view_checkbox_right_padding" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="1.5" android:scaleY="1.5" />
+    </RelativeLayout>
+    <View android:layout_gravity="bottom|center" android:id="@id/item_metadata_view_divider" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/item_metadata_view_divider_height" />
+</FrameLayout>

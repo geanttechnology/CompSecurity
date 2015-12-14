@@ -1,0 +1,140 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.google.android.gms.drive;
+
+import com.google.android.gms.common.internal.zzx;
+import com.google.android.gms.drive.metadata.CustomPropertyKey;
+import com.google.android.gms.drive.metadata.internal.MetadataBundle;
+import com.google.android.gms.internal.zzmb;
+import com.google.android.gms.internal.zzmd;
+import java.util.Date;
+
+// Referenced classes of package com.google.android.gms.drive:
+//            MetadataChangeSet
+
+public static class 
+{
+
+    private final MetadataBundle zzagS = MetadataBundle.zzrb();
+    private com.google.android.gms.drive.metadata.internal..zza zzagT;
+
+    private int zzcE(String s)
+    {
+        if (s == null)
+        {
+            return 0;
+        } else
+        {
+            return s.getBytes().length;
+        }
+    }
+
+    private String zzj(String s, int i, int j)
+    {
+        return String.format("%s must be no more than %d bytes, but is %d bytes.", new Object[] {
+            s, Integer.valueOf(i), Integer.valueOf(j)
+        });
+    }
+
+    private void zzk(String s, int i, int j)
+    {
+        boolean flag;
+        if (j <= i)
+        {
+            flag = true;
+        } else
+        {
+            flag = false;
+        }
+        zzx.zzb(flag, zzj(s, i, j));
+    }
+
+    private com.google.android.gms.drive.metadata.internal..zza zzqq()
+    {
+        if (zzagT == null)
+        {
+            zzagT = new com.google.android.gms.drive.metadata.internal..zza();
+        }
+        return zzagT;
+    }
+
+    public MetadataChangeSet build()
+    {
+        if (zzagT != null)
+        {
+            zzagS.zzb(zzmb.zzakq, zzagT.zzqY());
+        }
+        return new MetadataChangeSet(zzagS);
+    }
+
+    public  deleteCustomProperty(CustomPropertyKey custompropertykey)
+    {
+        zzx.zzb(custompropertykey, "key");
+        zzqq().zza(custompropertykey, null);
+        return this;
+    }
+
+    public  setCustomProperty(CustomPropertyKey custompropertykey, String s)
+    {
+        zzx.zzb(custompropertykey, "key");
+        zzx.zzb(s, "value");
+        zzk("The total size of key string and value string of a custom property", 124, zzcE(custompropertykey.getKey()) + zzcE(s));
+        zzqq().zza(custompropertykey, s);
+        return this;
+    }
+
+    public  setDescription(String s)
+    {
+        zzagS.zzb(zzmb.zzakr, s);
+        return this;
+    }
+
+    public Bundle.zzb setIndexableText(String s)
+    {
+        zzk("Indexable text size", 0x20000, zzcE(s));
+        zzagS.zzb(zzmb.zzakx, s);
+        return this;
+    }
+
+    public Bundle.zzb setLastViewedByMeDate(Date date)
+    {
+        zzagS.zzb(zzmd.zzale, date);
+        return this;
+    }
+
+    public Bundle.zzb setMimeType(String s)
+    {
+        zzagS.zzb(zzmb.zzakL, s);
+        return this;
+    }
+
+    public Bundle.zzb setPinned(boolean flag)
+    {
+        zzagS.zzb(zzmb.zzakD, Boolean.valueOf(flag));
+        return this;
+    }
+
+    public Bundle.zzb setStarred(boolean flag)
+    {
+        zzagS.zzb(zzmb.zzakS, Boolean.valueOf(flag));
+        return this;
+    }
+
+    public Bundle.zzb setTitle(String s)
+    {
+        zzagS.zzb(zzmb.zzakU, s);
+        return this;
+    }
+
+    public Bundle.zzb setViewed(boolean flag)
+    {
+        zzagS.zzb(zzmb.zzakK, Boolean.valueOf(flag));
+        return this;
+    }
+
+    public ()
+    {
+    }
+}

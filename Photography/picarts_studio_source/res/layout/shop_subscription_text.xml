@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" />
+    <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/color_subscribe_txt" android:id="@id/shop_subscription_txt_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" />
+</LinearLayout>

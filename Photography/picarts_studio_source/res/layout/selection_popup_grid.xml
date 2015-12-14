@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/selection_popup_grid_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btn_brush" android:layout_marginRight="@dimen/selection_popup_grid_padding" android:src="@drawable/ic_action_brush_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_erase" android:src="@drawable/ic_action_eraser_xml" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <include layout="@layout/divider_soft_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/selection_popup_grid_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btn_lasso" android:layout_marginRight="@dimen/selection_popup_grid_padding" android:src="@drawable/ic_selection_lasso" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_add_lasso" android:layout_marginRight="@dimen/selection_popup_grid_padding" android:src="@drawable/ic_selection_add_lasso" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_sub_lasso" android:src="@drawable/ic_selection_sub_lasso_xml" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <include layout="@layout/divider_soft_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/selection_popup_grid_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btn_rectangle" android:layout_marginRight="@dimen/selection_popup_grid_padding" android:src="@drawable/ic_selection_rectangle" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_add_rectangle" android:layout_marginRight="@dimen/selection_popup_grid_padding" android:src="@drawable/ic_selection_add_rectangle" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_sub_rectangle" android:src="@drawable/ic_selection_sub_rectangle_xml" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <include layout="@layout/divider_soft_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/selection_popup_grid_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btn_circle" android:layout_marginRight="@dimen/selection_popup_grid_padding" android:src="@drawable/ic_selection_circle" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_add_circle" android:layout_marginRight="@dimen/selection_popup_grid_padding" android:src="@drawable/ic_selection_add_circle" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_sub_circle" android:src="@drawable/ic_selection_sub_circle_xml" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+</LinearLayout>

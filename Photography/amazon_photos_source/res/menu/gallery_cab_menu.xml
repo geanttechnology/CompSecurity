@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/f_ic_share_dark_24dp" android:id="@id/share_button" android:title="@string/adrive_gallery_common_dialog_share_multi" />
+    <item android:icon="@drawable/ic_album_create" android:id="@id/add_to_album_button" android:title="@string/adrive_gallery_album_add_to_album" />
+    <item android:icon="@drawable/f_ic_edit_dark_24dp" android:id="@id/edit_button" android:title="@string/adrive_gallery_common_overflow_menu_edit" />
+    <item android:icon="@drawable/ic_album_remove" android:id="@id/remove_button" android:title="@string/adrive_gallery_album_remove_from_album_dialog_confirm" />
+    <item android:icon="@drawable/f_ic_delete_dark_24dp" android:id="@id/delete_button" android:title="@string/adrive_gallery_common_actionbar_delete" />
+    <item android:icon="@drawable/f_ic_cloud_download_dark_24dp" android:id="@id/download_button" android:title="@string/adrive_gallery_common_actionbar_download" />
+    <item android:icon="@drawable/f_ic_cloud_upload_dark_24dp" android:id="@id/upload_button" android:title="@string/adrive_gallery_common_actionbar_upload" />
+    <item android:icon="@drawable/f_ic_image_rewind_dark_24dp" android:id="@id/rewind_chooser_button" android:title="@string/adrive_gallery_image_rewind_action" />
+    <item android:icon="@drawable/ic_hide" android:id="@id/hide_button" android:visible="false" android:title="@string/adrive_gallery_hide_action" />
+    <item android:icon="@drawable/ic_show" android:id="@id/unhide_button" android:visible="false" android:title="@string/adrive_gallery_unhide_action" />
+    <item android:icon="@drawable/f_ic_print_dark_24dp" android:id="@id/print_button" android:title="@string/adrive_gallery_common_actionbar_print" />
+    <item android:icon="@drawable/f_ic_information_dark_24dp" android:id="@id/info_button" android:title="@string/adrive_gallery_common_photo_info" />
+    <item android:id="@id/wallpaper_button" android:title="@string/adrive_gallery_common_actionbar_wallpaper" />
+    <item android:id="@id/set_cover_photo_button" android:title="@string/adrive_gallery_set_cover_photo_action" />
+</menu>

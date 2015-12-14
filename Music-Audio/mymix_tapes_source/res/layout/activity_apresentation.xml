@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffc83035" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/apresentation_logo" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/ic_stat_notif" android:contentDescription="@string/description" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:text="What's New" android:layout_toRightOf="@id/apresentation_logo" />
+    <Button android:textColor="@android:color/white" android:id="@id/presentation_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SKIP" android:layout_alignParentBottom="true" style="@style/Widget.AppCompat.ActionButton" />
+    <LinearLayout android:gravity="center" android:id="@id/presentation_indicator_container" android:layout_width="72.0dip" android:layout_height="48.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/selector_one" android:background="@drawable/view_pager_indicator_selected" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="2.0dip" android:contentDescription="@string/description" />
+        <ImageView android:id="@id/selector_two" android:background="@drawable/view_pager_indicator_normal" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="2.0dip" android:contentDescription="@string/description" />
+        <ImageView android:id="@id/selector_three" android:background="@drawable/view_pager_indicator_normal" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="2.0dip" android:contentDescription="@string/description" />
+        <ImageView android:id="@id/selector_four" android:background="@drawable/view_pager_indicator_normal" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="2.0dip" android:contentDescription="@string/description" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/apresentation_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/presentation_indicator_container" />
+    <Button android:textColor="@android:color/white" android:id="@id/presentation_finish" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="FINISH" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Widget.AppCompat.ActionButton" />
+    <ImageView android:textColor="@android:color/white" android:id="@id/presentation_next" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_action_next" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/description" style="@style/Widget.AppCompat.ActionButton" />
+</RelativeLayout>

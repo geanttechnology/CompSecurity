@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffb52525" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/login_recover_animated_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/login_recover_animated_transition" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <include layout="@layout/component_app_bar" />
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="128.0dip" android:src="@drawable/login_logo" android:layout_above="@id/login_recover_edit_email" />
+        <EditText android:textSize="14.0sp" android:textColor="#ffffffff" android:textColorHint="#cfffffff" android:ellipsize="end" android:gravity="center" android:id="@id/login_recover_edit_email" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="32.0dip" android:hint="E-mail" android:layout_centerVertical="true" android:inputType="textEmailAddress" />
+        <View android:id="@id/login_divider_email" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" android:layout_below="@id/login_recover_edit_email" android:layout_marginStart="36.0dip" android:layout_marginEnd="36.0dip" />
+        <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_red" android:id="@id/login_recover_btn_submit" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="32.0dip" android:text="Recover" android:layout_below="@id/login_divider_email" />
+        <TextView android:textColor="@color/color_white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="32.0dip" android:text="Click on recover and you’ll receive an e-mail with your info" android:layout_below="@id/login_recover_btn_submit" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

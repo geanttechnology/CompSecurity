@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bc_issue_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/feed_header_post_ad_container" android:background="@color/bc_ad_default_background" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/t6dp" style="@style/BcProductListAdPanelStyle">
+        <com.cyberlink.beautycircle.view.widgetpool.common.SlideShowView android:id="@id/feed_header_post_ad_panel" android:background="@color/bc_ad_default_background" android:layout_width="fill_parent" style="@style/BcProductListAdPanelStyle" />
+    </FrameLayout>
+</LinearLayout>

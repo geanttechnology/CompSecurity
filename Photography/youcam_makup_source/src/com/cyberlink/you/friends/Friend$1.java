@@ -1,0 +1,39 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.cyberlink.you.friends;
+
+import android.os.Parcel;
+
+// Referenced classes of package com.cyberlink.you.friends:
+//            Friend
+
+final class 
+    implements android.os.e.Creator
+{
+
+    public Friend a(Parcel parcel)
+    {
+        return new Friend(parcel);
+    }
+
+    public Friend[] a(int i)
+    {
+        return new Friend[i];
+    }
+
+    public Object createFromParcel(Parcel parcel)
+    {
+        return a(parcel);
+    }
+
+    public Object[] newArray(int i)
+    {
+        return a(i);
+    }
+
+    ()
+    {
+    }
+}

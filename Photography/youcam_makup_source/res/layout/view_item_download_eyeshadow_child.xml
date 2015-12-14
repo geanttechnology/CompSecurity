@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="378"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1080.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1000.0" android:layout_weight="1000.0">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="960.0" app:guideline_width="960" app:guideline_height="378">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="#ffb8afbb" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="960" app:guideline_height="2" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="960.0">
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="40.0" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="880.0">
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="920" app:guideline_height="16" />
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="920" app:guideline_height="92">
+                            <TextView android:textColor="#ff464646" android:gravity="center_vertical" android:id="@id/DownloadItemChildTitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/included_patterns" />
+                        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="920" app:guideline_height="234">
+                            <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <LinearLayout android:orientation="horizontal" android:id="@id/DownloadItemChildMenu" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                            </HorizontalScrollView>
+                        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                    </LinearLayout>
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="40.0" />
+                </LinearLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/lomo_mode_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/effect_param_lomo1" />
+        <RadioButton android:id="@id/lomo_mode_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect_param_lomo2" />
+        <RadioButton android:id="@id/lomo_mode_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect_param_lomo3" />
+        <RadioButton android:id="@id/lomo_mode_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect_param_lomo4" />
+        <RadioButton android:id="@id/lomo_mode_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect_param_lomo5" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/vignette_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/vignette_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:id="@id/vignette_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/contrast_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/contrast_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:id="@id/contrast_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/amount_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/amount_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:id="@id/amount_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/fade_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/fade_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:layout_gravity="center_vertical" android:id="@id/fade_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0" />
+</LinearLayout>

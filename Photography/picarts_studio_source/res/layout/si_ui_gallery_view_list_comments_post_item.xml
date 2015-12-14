@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/si_ui_gallery_button_post_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_12dp" android:text="@string/post" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <EditText android:gravity="top" android:id="@id/si_ui_gallery_post_comment_text_item" android:background="@drawable/xml_si_ui_text_field_bg" android:padding="@dimen/space_4dp" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="@dimen/space_12dp" android:maxLength="50" android:layout_toLeftOf="@id/si_ui_gallery_button_post_item" android:layout_centerVertical="true" android:inputType="textMultiLine" android:imeOptions="actionDone" android:textCursorDrawable="@null" />
+</RelativeLayout>

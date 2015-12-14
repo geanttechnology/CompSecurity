@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.cyberlink.youcammakeup" platformBuildVersionCode="23" platformBuildVersionName="6.0-2166767">
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.cyberlink.youcammakeup.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.cyberlink.youperfect.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.cyberlink.youcammakeup.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.cyberlink.youcammakeup.Globals" android:theme="@style/AppTheme">
+        <receiver android:name="com.cyberlink.youcammakeup.gcm.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.cyberlink.youperfect"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.cyberlink.youcammakeup"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.cyberlink.youcammakeup.gcm.GcmIntentService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/share_facebook_app_id"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.OpeningTutorialActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.GpuBenchmarkActivity" android:screenOrientation="portrait" android:theme="@style/PfAppFullScreenNoAnimationTheme"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.CameraLandscapeActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.widgetpool.PureWebViewActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.LauncherActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host_launcher" android:scheme="@string/appscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.DeepLinkActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host_takephoto" android:scheme="@string/appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host_pickphoto" android:scheme="@string/appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host_promotion_page" android:scheme="@string/appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host_promoitem" android:scheme="@string/appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host_redirect" android:scheme="@string/appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host_makeup_cam" android:scheme="@string/appscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.LibraryPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:name="com.cyberlink.youcammakeup.activity.LibraryPickerActivityForIntent" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cyberlink.action.LIBRARY_PICKER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.EditViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/share_editview_label" android:name="com.cyberlink.youcammakeup.activity.EditViewActivityForIntent" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/jpeg"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.cyberlink.action.EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.MoreActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.NoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.WeekStarActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.ExtraDownloadActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cyberlink.action.EXTRA_DOWNLOAD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="extra" android:pathPrefix="/WIGS" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/EYE_LINES" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/EYE_LASHES" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/EYE_SHADOWS" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/HAIR_BAND" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/NECKLACE" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/EARRINGS" android:scheme="@string/appscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.ExtraDownloadCategoryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="extra" android:pathPrefix="/LOOKS" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/NATURAL_LOOKS" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/COSTUME_LOOKS" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/EYE_WEAR" android:scheme="@string/appscheme"/>
+                <data android:host="extra" android:pathPrefix="/ACCESSORY" android:scheme="@string/appscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.RecommendationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:excludeFromRecents="true" android:name="com.cyberlink.youcammakeup.gcm.NoticeActivityLocked" android:taskAffinity="com.cyberlink.youcammakeup.gcm.NoticeActivityLocked" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:excludeFromRecents="true" android:name="com.cyberlink.youcammakeup.gcm.NoticeActivityUnlocked" android:taskAffinity="com.cyberlink.youcammakeup.gcm.NoticeActivityUnlocked" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.FacebookSharingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:name="com.cyberlink.youcammakeup.activity.FacebookSharingActivityForIntent" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:name="com.facebook.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.FacebookFriendPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:name="com.cyberlink.youcammakeup.activity.FacebookFriendPickerActivityForIntent" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.FacebookPlacePickerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:name="com.cyberlink.youcammakeup.activity.FacebookPlacePickerActivityForIntent" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.WeiboSharingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.BeautyTipCategoryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host_makeup_tip" android:scheme="@string/appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_makeup_tip" android:scheme="@string/bc_scheme2"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.BeautyTipFilmActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.VideoPlaybackActivity" android:screenOrientation="sensor"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.MoreMakeupActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.SponsorAdActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sponsor" android:scheme="@string/appscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.SponsorConsultActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.CostumeLooksPagerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.WebViewerExActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.youcammakeup.activity.PromotionWebViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:launchMode="singleTask" android:name="com.cyberlink.youcammakeup.activity.TestSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:exported="true" android:label="@string/app_name" android:name="com.cyberlink.youcammakeup.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" android:label="@string/app_name" android:name="com.cyberlink.beautycircle.controller.activity.ShareInWrapperYMKActivity" android:screenOrientation="portrait" android:theme="@style/BcAppThemeTransparent">
+            <intent-filter android:icon="@drawable/ic_launcher" android:label="@string/share_label">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.cyberlink.youcammakeup.referral.ReferralReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.cyberlink.youcammakeup.referral.ReferralIntentService"/>
+        <service android:exported="false" android:name="com.pf.common.restart.RestartService" android:process=":r"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="7cf4f41e41a0867070e1c351ef5a724dc4459889"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.beautycircle.controller.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_main" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_main" android:scheme="@string/bc_scheme2"/>
+                <data android:host="@string/bc_host_main" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.beautycircle.controller.activity.DeepLinkActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_feed" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_feed" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_discover" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_discover" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_post" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_post" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_product" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_product" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_me" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_me" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_notifications" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_notifications" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_circle" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_circle" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_create_post" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_create_post" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_resume" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_resume" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_free_sample" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_free_sample" android:scheme="@string/bc_appscheme"/>
+                <data android:host="@string/bc_host_free_sample" android:scheme="@string/appscheme"/>
+                <data android:host="@string/bc_host_event" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_event" android:scheme="@string/bc_appscheme"/>
+                <data android:host="@string/bc_host_event" android:scheme="@string/appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_free_sample_apply" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_free_sample_apply" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_free_sample_listuser" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_free_sample_listuser" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_free_sample_message" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_free_sample_message" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_beautyist" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_beautyist" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/bc_host_contest" android:scheme="@string/bc_scheme"/>
+                <data android:host="@string/bc_host_beautyist" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.ProductsActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.PostActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.PostCommentActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.beautycircle.controller.activity.PhotoViewerActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.WebViewerActivity" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.beautycircle.controller.activity.ProductInfoActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.beautycircle.controller.activity.ProductSocialActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.WritePostActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.TagProductActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.RegisterActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.beautycircle.controller.activity.LikeListActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.ProductReviewActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.RegisterVerifyActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.RegisterForgetPasswordActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.RegisterChangePasswordActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.BeautyProfileActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.AboutInfoActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.EditFeedbackActivity" android:screenOrientation="portrait" android:theme="@style/PfAppBcFullScreenTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.PreviewFeedbackActivity" android:screenOrientation="portrait" android:theme="@style/PfAppBcFullScreenTheme"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.beautycircle.controller.activity.CircleActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.CircleEditorActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.EditCircleActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.SelectCategoryActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.SelectReportActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.EditNotificationActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.EditCommentActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.EditAboutActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.UserProfileActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.beautycircle.controller.activity.MeActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:name="com.sina.weibo.sdk.net.DownloadService"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.beautycircle.controller.activity.LogBrowserActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.beautycircle.controller.activity.ConnectionHistoryActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.beautycircle.controller.activity.DeepLinkHistoryActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.DiscoverActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.HotTopicActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.ShareInActivity" android:screenOrientation="portrait" android:theme="@style/BcAppThemeTransparent"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.ShareInPostActivity" android:screenOrientation="portrait" android:theme="@style/BcAppThemeTransparent"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.BCNotificationActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.beautycircle.controller.activity.UserListActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.GeneralWaterFallActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.PostGroupActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.CircleGroupActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.cyberlink.beautycircle.controller.activity.SearchActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme">
+            <intent-filter android:icon="@drawable/ic_launcher" android:label="@string/share_label">
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="@string/bc_host_pick_post" android:scheme="@string/bc_appscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.ContestActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.ContestShareActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.FreeSampleListActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.FreeSampleActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.FreeSampleFillDataActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.FreeSampleResultActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.AutoPostActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.LookInfoActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.beautycircle.controller.activity.YouTubeActivity" android:theme="@style/BcAppTheme"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.beautycircle.controller.activity.TutorialActivity" android:screenOrientation="portrait" android:theme="@style/BcAppTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tencent.connect.common.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.you.activity.ChatDialogActivity" android:screenOrientation="portrait" android:theme="@style/ULauncherThemeStyle" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.you.activity.StickerShopAcitvity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.you.activity.StickerShopDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.cyberlink.you.activity.ShowTextInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.you.activity.SelectUsersActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.you.activity.ScrollTextViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.cyberlink.you.activity.SelectXmppServerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.you.activity.LogBrowserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.you.activity.AboutPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.you.activity.SelectGroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.cyberlink.you.activity.MessageSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <service android:enabled="true" android:exported="false" android:name="com.cyberlink.you.MonitorService"/>
+    </application>
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/menu_id" android:background="@drawable/panel_top_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/menu_item_close" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action.Wide" />
+        <ImageButton android:id="@id/menu_item_clean" android:src="@drawable/ic_action_refresh" style="@style/Widget.Picsart.ImageButton.Action.Wide" />
+        <ImageButton android:id="@id/menu_item_undo" android:src="@drawable/ic_action_undo_t" style="@style/Widget.Picsart.ImageButton.Action.Wide" />
+        <include layout="@layout/separator_horizontal" />
+        <include layout="@layout/separator_horizontal" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/menu_item_save" android:src="@drawable/ic_action_save" style="@style/Widget.Picsart.ImageButton.Action.Wide" />
+        <ImageButton android:id="@id/menu_item_share" android:src="@drawable/ic_action_share_t" style="@style/Widget.Picsart.ImageButton.Action.Wide" />
+    </LinearLayout>
+</RelativeLayout>

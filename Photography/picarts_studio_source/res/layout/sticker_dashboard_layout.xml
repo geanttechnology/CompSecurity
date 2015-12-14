@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="100.0dip" android:layout_height="fill_parent">
+        <Spinner android:layout_gravity="top|center" android:id="@id/spinner_stickerBlendingMode" android:layout_width="80.0dip" android:layout_height="48.0dip" />
+        <com.socialin.android.photo.view.StickerPreviewView android:layout_gravity="bottom" android:id="@id/stickerPreview" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+    </FrameLayout>
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:paddingLeft="@dimen/space_8dp" android:paddingTop="@dimen/space_8dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawing_brush_option_thickness" />
+            <TextView android:textSize="@dimen/textSize_10" android:id="@id/edit_sticker_panel_sizeSeekText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 100%" />
+        </LinearLayout>
+        <SeekBar android:id="@id/edit_sticker_sizeSeek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="256.0dip" android:max="99" android:progress="99" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawing_brush_option_opacity" />
+            <TextView android:textSize="@dimen/textSize_10" android:id="@id/edit_sticker_panel_opacitySeekText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": 255" />
+        </LinearLayout>
+        <SeekBar android:id="@id/edit_sticker_opacitySeek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="256.0dip" android:max="255" android:progress="255" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hue_withColon" />
+            <TextView android:textSize="@dimen/textSize_10" android:id="@id/edit_sticker_panel_hueSeekText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": 0" />
+        </LinearLayout>
+        <SeekBar android:id="@id/edit_sticker_hueSeek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="256.0dip" android:max="360" android:progress="0" />
+    </LinearLayout>
+</LinearLayout>

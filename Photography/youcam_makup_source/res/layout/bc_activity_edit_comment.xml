@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bc_bg_post" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_below="@id/fragment_topbar_panel" style="@style/BcIssuePanelOutsideStyle">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePanelInsideStyle">
+            <FrameLayout android:id="@id/thumbnail_panel" android:layout_alignParentLeft="true" style="@style/BcAvertarSmallNoBorderStyle">
+                <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/comment_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" app:bc_default_image="@drawable/bc_avatar_mugshot" />
+                <ImageView android:background="@drawable/bc_avatar_circle_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <com.rockerhieu.emojicon.EmojiconEditText android:gravity="top|left|center" android:id="@id/edit_comment_text" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:hint="@string/bc_post_comment_hint" android:maxLines="6" android:minLines="2" android:maxLength="2048" android:layout_toRightOf="@id/thumbnail_panel" android:inputType="textAutoCorrect|textMultiLine" style="@style/BcEditMeEditLongTextStyle" />
+            <TextView android:textColor="@color/bc_color_main_style" android:id="@id/bc_edit_cancel" android:background="@drawable/bc_general_radius_white_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_post_comment_menu_cancel" android:layout_below="@id/edit_comment_text" android:layout_alignParentRight="true" style="@style/BcCommentEditButtonStyle" />
+            <TextView android:id="@id/bc_edit_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_post_comment_menu_update" android:layout_toLeftOf="@id/bc_edit_cancel" android:layout_below="@id/edit_comment_text" style="@style/BcCommentEditButtonStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

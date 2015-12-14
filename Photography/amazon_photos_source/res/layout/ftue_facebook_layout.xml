@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ftue_facebook_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ftue_margin">
+        <ImageView android:id="@id/ftue_icon" android:src="@drawable/ic_empty_libraries_facebook_lrg_amazon_dark" android:layout_weight="0.8" style="@style/ftue_scale_image" />
+        <include layout="@layout/divider_line" />
+        <TextView android:id="@id/ftue_header" android:text="@string/adrive_gallery_common_ftue_facebook_header" android:singleLine="false" style="@style/ftue_text.large" />
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.3" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/ftue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_ftue_facebook_import_button" />
+        <TextView android:id="@id/ftue_skip_link" android:text="@string/adrive_gallery_common_ftue_facebook_skip_import_link" android:layout_weight="0.6" android:contentDescription="@string/adrive_gallery_common_ftue_facebook_skip_import_link_accessibility" style="@style/ftue_skip_link" />
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.1" layout="@layout/prime_ftue_layout" />
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" />
+        <ImageView android:id="@id/ftue_amazon_logo" android:src="@drawable/clouddrive_logo" android:layout_weight="0.5" style="@style/ftue_scale_image" />
+    </LinearLayout>
+    <ImageButton android:id="@id/ftue_x_mark" android:contentDescription="@android:string/cancel" style="@style/ftue_x" />
+</FrameLayout>

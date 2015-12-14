@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/color_white" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_error_no_network_connection" />
+    <ImageView android:id="@id/no_network_retry" android:paddingLeft="@dimen/space_20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/si_ui_profile_retry_failed_upload" />
+</LinearLayout>

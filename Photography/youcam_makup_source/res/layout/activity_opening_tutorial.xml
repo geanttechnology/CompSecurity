@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/tutorialViewPager" android:background="#80ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <View android:id="@id/tutorialGestureView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/f36dp">
+        <ImageView android:id="@id/leftArrowBtn" android:padding="@dimen/f7dp" android:layout_width="@dimen/f33dp" android:layout_height="@dimen/f66dp" android:layout_marginLeft="@dimen/f10dp" android:src="@drawable/image_selector_tutorial_left_arrow_btn" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/rightArrowBtn" android:padding="@dimen/f7dp" android:layout_width="@dimen/f33dp" android:layout_height="@dimen/f66dp" android:layout_marginRight="@dimen/f10dp" android:src="@drawable/image_selector_tutorial_right_arrow_btn" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.IndicatorView android:layout_gravity="bottom|center" android:id="@id/tutorialIndicatorView" android:layout_width="fill_parent" android:layout_height="@dimen/f40dp" android:layout_marginBottom="@dimen/f30dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

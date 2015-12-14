@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/following_circles" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/following_circles_title" android:paddingTop="@dimen/t5dp" android:paddingBottom="@dimen/t5dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/bc_me_following_circles" style="@style/BcFollowingGroupNameStyle" />
+            <TextView android:layout_toLeftOf="@id/following_circles_title_arrow" style="@style/BcFollowingGroupSeeAllStyle" />
+            <ImageView android:id="@id/following_circles_title_arrow" android:contentDescription="@string/app_name" style="@style/BcFollowingGroupArrowStyle" />
+        </RelativeLayout>
+        <TableRow android:id="@id/following_circles_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/following_circles_title">
+            <include android:id="@id/following_circle1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/bc_view_item_circle" />
+            <include android:id="@id/following_circle2" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/bc_view_item_circle" />
+        </TableRow>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/following_people" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t5dp">
+        <RelativeLayout android:id="@id/following_people_all" android:paddingTop="@dimen/t5dp" android:paddingBottom="@dimen/t5dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/bc_me_following_people" style="@style/BcFollowingGroupNameStyle" />
+            <TextView android:layout_toLeftOf="@id/following_people_title_arrow" style="@style/BcFollowingGroupSeeAllStyle" />
+            <ImageView android:id="@id/following_people_title_arrow" android:contentDescription="@string/app_name" style="@style/BcFollowingGroupArrowStyle" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/following_people_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/following_people_all" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+// Vertex shader grayscale 
+
+precision highp float;
+
+attribute vec3 vPosition;
+
+uniform vec2 rltb;
+uniform vec2 initialXY;
+uniform vec2 textureInitialXY;
+uniform float bitmapWidth;
+uniform float bitmapHeight;
+
+varying vec2 textCoords;
+        
+void main()
+{
+	textCoords = vec2((vPosition.x-initialXY.x+textureInitialXY.x)/bitmapWidth,((vPosition.y-initialXY.y+textureInitialXY.y)/bitmapHeight));
+	gl_Position = vec4(((rltb.x*vPosition.x)-1.000000),((rltb.y*vPosition.y)+1.000000),vPosition.z,1);
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.editor.custommasks.MaskView android:id="@id/image" android:background="@color/editor_bg" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <include android:id="@id/mask_top_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" layout="@layout/mask_top" />
+    <RelativeLayout android:id="@id/preview_panel" android:background="@drawable/panel_bottom_transparent" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_margin="0.0dip" android:layout_above="@id/ad" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true">
+        <android.support.v7.widget.RecyclerView android:id="@id/masks_preview_gallery" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="48.0dip" android:layout_alignParentLeft="true" />
+        <FrameLayout android:background="@drawable/panel_effects_left" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:layout_gravity="center" android:id="@id/show_masks_category_button" android:background="@null" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:src="@drawable/btn_plus_round" />
+        </FrameLayout>
+    </RelativeLayout>
+    <include android:id="@id/mask_params_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/preview_panel" layout="@layout/mask_params" />
+    <android.support.v7.widget.RecyclerView android:id="@id/masks_category_list" android:background="@drawable/bg_window_dark_transparent" android:visibility="gone" android:layout_width="128.0dip" android:layout_height="wrap_content" android:listSelector="@color/color_transparent" android:layout_above="@id/preview_panel" />
+    <include android:id="@id/mask_brush_params_layout" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_below="@id/mask_top_layout" android:layout_centerHorizontal="true" layout="@layout/baloon_mask_brush_settings" />
+    <RelativeLayout android:id="@id/effect_hover_preview" android:background="@drawable/baloon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/effect_hover_preview_imageview" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/effect_hover_preview_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Effect Title" android:layout_below="@id/effect_hover_preview_imageview" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/ad" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/editor_ad_layout" />
+</RelativeLayout>

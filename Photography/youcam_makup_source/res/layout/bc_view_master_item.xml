@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bc_color_black" android:layout_width="fill_parent" style="@style/BcMasterInfoBannerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/bc_master_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1.0">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_weight="0.372">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.52">
+                <TextView android:textColor="@drawable/bc_general_radius_new_button_text_selector" android:gravity="center" android:layout_gravity="top|center" android:id="@id/follow_text" android:background="@drawable/bc_general_radius_new_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/f88dp" android:text="@string/bc_plus_follow" style="@style/BcCelebrityFollowTextStyle" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bc_new_post_outter" android:background="@color/bc_color_transparent" android:paddingLeft="@dimen/f14dp" android:layout_width="fill_parent" android:layout_height="@dimen/f54dp" android:layout_marginBottom="@dimen/f20dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/f16dp" android:textColor="@color/bc_color_black" android:ellipsize="end" android:id="@id/bc_new_post" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/f10dp" android:layout_marginBottom="@dimen/f12dp" android:singleLine="true" android:layout_alignParentBottom="true" style="@style/BcDefaultFontStyle" />
+        <TextView android:textSize="@dimen/f10dp" android:textColor="@color/bc_master_color" android:id="@id/bc_new_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/f1dp" android:text="@string/bc_me_usertype_master_new" android:layout_above="@id/bc_new_post" style="@style/BcDefaultFontStyle" />
+    </RelativeLayout>
+</RelativeLayout>

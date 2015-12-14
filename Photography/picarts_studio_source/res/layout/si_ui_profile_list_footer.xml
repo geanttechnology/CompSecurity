@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/si_ui_profile_list_footer_layout_id" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ProgressBar android:id="@id/si_ui_profile_list_footer_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" style="@style/Widget.Picsart.ProgressBar.Small" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_dark_gray" android:id="@id/si_ui_profile_list_footer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_loading" />
+        <Button android:textSize="@dimen/textSize_16" android:textStyle="bold" android:id="@id/si_ui_profile_list_footer_btn_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_retry" />
+    </LinearLayout>
+</FrameLayout>

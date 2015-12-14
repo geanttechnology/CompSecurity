@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffcfcfc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/text_listitem_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:onClick="startchat" />
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/text_listitem_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:onClick="startchat" />
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/text_listitem_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:onClick="startchat" />
+</LinearLayout>

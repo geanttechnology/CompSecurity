@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <ScrollView android:id="@id/me_plus_about_outter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/fragment_topbar_panel">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProfileInfoPanelStyle">
+                <include android:id="@id/circle_name" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/circle_description" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/circle_category" layout="@layout/bc_profile_with_goto" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProfileInfoPanelStyle">
+                <include android:id="@id/circle_secret_circle" layout="@layout/bc_profile_with_checkbox" />
+            </LinearLayout>
+            <Button android:gravity="center" android:id="@id/circle_delete" android:layout_marginTop="@dimen/t30dp" android:text="@string/bc_edit_circle_delete" style="@style/BcRegisterButtonTextStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

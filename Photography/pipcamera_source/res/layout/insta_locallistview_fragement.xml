@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/include1" android:background="@color/ui_action_bar_color" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <FrameLayout android:layout_gravity="top|left|center" android:id="@id/btn_cancel" android:layout_width="90.0dip" android:layout_height="48.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView2" android:background="@drawable/back_btn" android:layout_width="59.0dip" android:layout_height="44.0dip" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/nav_back_color" android:layout_gravity="center" android:id="@id/maintitlebar" android:background="@color/ui_action_bar_color" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="top|right|center" android:visibility="invisible" android:layout_width="80.0dip" android:layout_height="48.0dip" android:layout_marginRight="10.0dip">
+            <Button android:textSize="18.0sp" android:textColor="@color/nav_back_color" android:gravity="right|center" android:id="@id/showfilter_btn" android:background="@color/transparent" android:focusable="false" android:layout_width="80.0dip" android:layout_height="48.0dip" android:text="@string/Filter" />
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/headerview" android:background="@color/solid_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/include1">
+        <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+    </RelativeLayout>
+    <ListView android:id="@id/listview" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/headerview" />
+    <RelativeLayout android:id="@id/bottomBarFrame" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="48.0dip">
+        <com.instamag.activity.commonview.MagFilterActionBar android:id="@id/bottomActionBar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <ListView android:id="@id/bc_log_browser_list_view" android:layout_width="fill_parent" android:layout_height="@dimen/t300dp" android:divider="@color/bc_color_main_pressed_gray" android:dividerHeight="1.0dip" android:layout_below="@id/fragment_topbar_panel" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bc_log_browser_list_view">
+        <LinearLayout android:orientation="vertical" android:id="@id/bc_font_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/bc_color_main_pressed_gray" android:dividerHeight="@dimen/t1dp">
+            <TextView android:id="@id/BcFontFamilyThin" android:padding="@dimen/t3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_font_test" style="@style/BcFontFamilyThinStyle" />
+            <TextView android:id="@id/BcFontFamilyLight" android:padding="@dimen/t3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_font_test" style="@style/BcFontFamilyLightStyle" />
+            <TextView android:id="@id/BcFontFamilyLightBold" android:padding="@dimen/t3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_font_test" style="@style/BcFontFamilyLightBoldStyle" />
+            <TextView android:id="@id/BcFontFamilyCondensed" android:padding="@dimen/t3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_font_test" style="@style/BcFontFamilyCondensedStyle" />
+            <TextView android:id="@id/BcFontFamilyCondensedBold" android:padding="@dimen/t3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_font_test" style="@style/BcFontFamilyCondensedBoldStyle" />
+            <TextView android:id="@id/BcFontFamilyNormal" android:padding="@dimen/t3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_font_test" style="@style/BcFontFamilyNormalStyle" />
+            <TextView android:id="@id/BcFontFamilyNormalBold" android:padding="@dimen/t3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_font_test" style="@style/BcFontFamilyNormalBoldStyle" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

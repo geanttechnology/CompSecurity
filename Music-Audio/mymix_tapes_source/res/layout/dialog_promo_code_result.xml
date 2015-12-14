@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <my.googlemusic.play.utils.views.RobotoTextView android:textSize="20.0sp" android:textColor="@color/color_light_gray" android:layout_gravity="left" android:id="@id/dialog_promo_result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip" android:text="Congratiolations!" app:typeface="roboto_condensed_bold" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <my.googlemusic.play.utils.views.RobotoTextView android:textSize="18.0sp" android:textColor="@color/color_light_gray" android:layout_gravity="center_horizontal" android:id="@id/dialog_promo_result_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="2.0dip" app:typeface="roboto_condensed" />
+        <my.googlemusic.play.utils.views.RobotoTextView android:textSize="18.0sp" android:textColor="@color/color_light_gray" android:layout_gravity="center_horizontal" android:id="@id/dialog_promo_result_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" app:typeface="roboto_condensed" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/dialog_promo_result_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="16.0dip" android:scaleType="fitCenter" />
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <my.googlemusic.play.utils.views.RobotoTextView android:textSize="16.0sp" android:textColor="@color/color_red" android:gravity="center" android:id="@id/dialog_promo_result_ok" android:background="@anim/button_dialog" android:layout_width="100.0dip" android:layout_height="36.0dip" android:text="OK" app:typeface="roboto_regular" style="@style/Widget.AppCompat.ActionButton" />
+    </LinearLayout>
+</LinearLayout>

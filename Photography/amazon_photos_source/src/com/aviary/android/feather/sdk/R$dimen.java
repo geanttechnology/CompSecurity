@@ -1,0 +1,186 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.aviary.android.feather.sdk;
+
+
+// Referenced classes of package com.aviary.android.feather.sdk:
+//            R
+
+public static final class 
+{
+
+    public static final int abc_action_bar_default_height_material = 0x7f0a005b;
+    public static final int abc_action_bar_default_padding_material = 0x7f0a005c;
+    public static final int abc_action_bar_icon_vertical_padding_material = 0x7f0a005d;
+    public static final int abc_action_bar_progress_bar_size = 0x7f0a0061;
+    public static final int abc_action_bar_stacked_max_height = 0x7f0a0062;
+    public static final int abc_action_bar_stacked_tab_max_width = 0x7f0a0063;
+    public static final int abc_action_bar_subtitle_bottom_margin_material = 0x7f0a0064;
+    public static final int abc_action_bar_subtitle_top_margin_material = 0x7f0a0065;
+    public static final int abc_action_button_min_height_material = 0x7f0a0066;
+    public static final int abc_action_button_min_width_material = 0x7f0a0067;
+    public static final int abc_action_button_min_width_overflow_material = 0x7f0a0068;
+    public static final int abc_config_prefDialogWidth = 0x7f0a006e;
+    public static final int abc_control_inset_material = 0x7f0a0070;
+    public static final int abc_control_padding_material = 0x7f0a0071;
+    public static final int abc_dropdownitem_icon_width = 0x7f0a0079;
+    public static final int abc_dropdownitem_text_padding_left = 0x7f0a007a;
+    public static final int abc_dropdownitem_text_padding_right = 0x7f0a007b;
+    public static final int abc_panel_menu_list_width = 0x7f0a0081;
+    public static final int abc_search_view_preferred_width = 0x7f0a0082;
+    public static final int abc_search_view_text_min_width = 0x7f0a0083;
+    public static final int abc_text_size_body_1_material = 0x7f0a0085;
+    public static final int abc_text_size_body_2_material = 0x7f0a0086;
+    public static final int abc_text_size_button_material = 0x7f0a0087;
+    public static final int abc_text_size_caption_material = 0x7f0a0088;
+    public static final int abc_text_size_display_1_material = 0x7f0a0089;
+    public static final int abc_text_size_display_2_material = 0x7f0a008a;
+    public static final int abc_text_size_display_3_material = 0x7f0a008b;
+    public static final int abc_text_size_display_4_material = 0x7f0a008c;
+    public static final int abc_text_size_headline_material = 0x7f0a008d;
+    public static final int abc_text_size_large_material = 0x7f0a008e;
+    public static final int abc_text_size_medium_material = 0x7f0a008f;
+    public static final int abc_text_size_menu_material = 0x7f0a0090;
+    public static final int abc_text_size_small_material = 0x7f0a0091;
+    public static final int abc_text_size_subhead_material = 0x7f0a0092;
+    public static final int abc_text_size_subtitle_material_toolbar = 0x7f0a0093;
+    public static final int abc_text_size_title_material = 0x7f0a0094;
+    public static final int abc_text_size_title_material_toolbar = 0x7f0a0095;
+    public static final int aviary_action_bar_progress_bar_size = 0x7f0a00b0;
+    public static final int aviary_adjust_button_padding_left = 0x7f0a00b1;
+    public static final int aviary_adjust_button_padding_right = 0x7f0a00b2;
+    public static final int aviary_adjust_consolidation_tip_width = 0x7f0a00b3;
+    public static final int aviary_adjust_strokeWidth = 0x7f0a00b4;
+    public static final int aviary_adjust_strokeWidth2 = 0x7f0a00b5;
+    public static final int aviary_bottombar_height = 0x7f0a00b6;
+    public static final int aviary_bottombar_height_freetime = 0x7f0a00b7;
+    public static final int aviary_bottombar_tool_end_margin = 0x7f0a00b8;
+    public static final int aviary_bottombar_tool_margin = 0x7f0a00b9;
+    public static final int aviary_color_splash_brush_size = 0x7f0a00ba;
+    public static final int aviary_crop_min_size = 0x7f0a00bb;
+    public static final int aviary_crop_stroke_internal_width = 0x7f0a00bc;
+    public static final int aviary_crop_stroke_width = 0x7f0a00bd;
+    public static final int aviary_effect_thumb_margin_bottom = 0x7f0a00be;
+    public static final int aviary_effect_thumb_padding = 0x7f0a00bf;
+    public static final int aviary_effect_thumb_radius = 0x7f0a00c0;
+    public static final int aviary_effect_thumb_stroke = 0x7f0a00c1;
+    public static final int aviary_enhance_button_padding_left = 0x7f0a00c2;
+    public static final int aviary_enhance_button_padding_right = 0x7f0a00c3;
+    public static final int aviary_focus_button_padding_left = 0x7f0a00c4;
+    public static final int aviary_focus_button_padding_right = 0x7f0a00c5;
+    public static final int aviary_frame_item_image_width = 0x7f0a00c6;
+    public static final int aviary_frame_item_width = 0x7f0a00c7;
+    public static final int aviary_gallery_bottom_indicator_height = 0x7f0a00c8;
+    public static final int aviary_gallery_item_width = 0x7f0a00c9;
+    public static final int aviary_gallery_margin_bottom = 0x7f0a00ca;
+    public static final int aviary_gallery_margin_top = 0x7f0a00cb;
+    public static final int aviary_gallery_mid_indicator_height = 0x7f0a00cc;
+    public static final int aviary_gallery_top_indicator_height = 0x7f0a00cd;
+    public static final int aviary_iap_list_divider_height = 0x7f0a00ce;
+    public static final int aviary_iap_list_item_padding_bottom = 0x7f0a00cf;
+    public static final int aviary_iap_list_item_padding_left = 0x7f0a00d0;
+    public static final int aviary_iap_list_item_padding_right = 0x7f0a00d1;
+    public static final int aviary_iap_list_item_padding_top = 0x7f0a00d2;
+    public static final int aviary_iap_list_padding_top = 0x7f0a00d3;
+    public static final int aviary_iap_previews_list_height = 0x7f0a00d4;
+    public static final int aviary_list_view_width = 0x7f0a00d5;
+    public static final int aviary_main_image_padding = 0x7f0a00d6;
+    public static final int aviary_main_image_padding_freetime = 0x7f0a00d7;
+    public static final int aviary_main_loader_padding = 0x7f0a00d8;
+    public static final int aviary_main_loader_radius = 0x7f0a00d9;
+    public static final int aviary_nav_divider = 0x7f0a00da;
+    public static final int aviary_nav_divider_double = 0x7f0a00db;
+    public static final int aviary_nav_height = 0x7f0a00dc;
+    public static final int aviary_optionpanel_button_padding_bottom = 0x7f0a00dd;
+    public static final int aviary_optionpanel_button_padding_left = 0x7f0a00de;
+    public static final int aviary_optionpanel_button_padding_right = 0x7f0a00df;
+    public static final int aviary_optionpanel_button_padding_top = 0x7f0a00e0;
+    public static final int aviary_overlay_close_button_margins = 0x7f0a00e1;
+    public static final int aviary_overlay_text_margins = 0x7f0a00e2;
+    public static final int aviary_overlay_title_margins = 0x7f0a00e3;
+    public static final int aviary_preview_margins = 0x7f0a00e4;
+    public static final int aviary_spot_toast_height = 0x7f0a00e5;
+    public static final int aviary_spot_toast_width = 0x7f0a00e6;
+    public static final int aviary_sticker_overlay_min_size = 0x7f0a00e7;
+    public static final int aviary_sticker_overlay_padding = 0x7f0a00e8;
+    public static final int aviary_sticker_pack_image_width = 0x7f0a00e9;
+    public static final int aviary_sticker_pack_width = 0x7f0a00ea;
+    public static final int aviary_sticker_single_item_image_width = 0x7f0a00eb;
+    public static final int aviary_sticker_single_item_width = 0x7f0a00ec;
+    public static final int aviary_store_buy_button_min_height = 0x7f0a00ed;
+    public static final int aviary_store_detail_description_size = 0x7f0a00ee;
+    public static final int aviary_store_detail_grid_v_space = 0x7f0a00ef;
+    public static final int aviary_store_detail_hlist_divider = 0x7f0a00f0;
+    public static final int aviary_store_detail_icon_size = 0x7f0a00f1;
+    public static final int aviary_store_detail_image_height_iap2 = 0x7f0a00f2;
+    public static final int aviary_store_detail_image_right_margin = 0x7f0a00f3;
+    public static final int aviary_store_detail_padding_horizontal = 0x7f0a00f4;
+    public static final int aviary_store_detail_padding_vertical = 0x7f0a00f5;
+    public static final int aviary_store_detail_passport_banner_v_margin = 0x7f0a00f6;
+    public static final int aviary_store_detail_preview_padding_horizontal = 0x7f0a00f7;
+    public static final int aviary_store_detail_subscription_size = 0x7f0a00f8;
+    public static final int aviary_store_detail_title_size = 0x7f0a00f9;
+    public static final int aviary_store_featured_image_landscape = 0x7f0a0215;
+    public static final int aviary_store_featured_padding_vertical = 0x7f0a00fa;
+    public static final int aviary_store_list_buy_button_width = 0x7f0a00fb;
+    public static final int aviary_store_list_divider_height = 0x7f0a00fc;
+    public static final int aviary_store_list_icon_size = 0x7f0a00fd;
+    public static final int aviary_store_list_icon_size_big = 0x7f0a00fe;
+    public static final int aviary_store_list_item_padding_bottom = 0x7f0a00ff;
+    public static final int aviary_store_list_item_padding_left = 0x7f0a0100;
+    public static final int aviary_store_list_item_padding_right = 0x7f0a0101;
+    public static final int aviary_store_list_item_padding_top = 0x7f0a0102;
+    public static final int aviary_store_list_item_title_size = 0x7f0a0103;
+    public static final int aviary_store_passport_button_width = 0x7f0a0104;
+    public static final int aviary_subscription_bottombar_padding_h = 0x7f0a0105;
+    public static final int aviary_subscription_bottombar_padding_v = 0x7f0a0106;
+    public static final int aviary_subscription_message_h_padding = 0x7f0a0107;
+    public static final int aviary_subscription_message_v_padding = 0x7f0a0108;
+    public static final int aviary_subscription_text_padding_h = 0x7f0a0109;
+    public static final int aviary_subscription_text_padding_v = 0x7f0a010a;
+    public static final int aviary_subscription_textarea_height = 0x7f0a010b;
+    public static final int aviary_textSizeLarge = 0x7f0a010c;
+    public static final int aviary_textSizeMedium = 0x7f0a010d;
+    public static final int aviary_textSizeMediumBigger = 0x7f0a010e;
+    public static final int aviary_textSizeSmall = 0x7f0a010f;
+    public static final int aviary_textSizeTools = 0x7f0a0110;
+    public static final int aviary_text_highlight_background_inner_stroke_width = 0x7f0a0111;
+    public static final int aviary_text_highlight_background_radius = 0x7f0a0112;
+    public static final int aviary_text_highlight_background_stroke_width = 0x7f0a0113;
+    public static final int aviary_text_overlay_default_size = 0x7f0a0114;
+    public static final int aviary_text_overlay_min_size = 0x7f0a0115;
+    public static final int aviary_text_overlay_padding = 0x7f0a0116;
+    public static final int aviary_tool_bucket_height = 0x7f0a0117;
+    public static final int aviary_tool_bucket_width = 0x7f0a0118;
+    public static final int aviary_tool_height = 0x7f0a0119;
+    public static final int aviary_tool_list_color_margin = 0x7f0a011a;
+    public static final int aviary_tool_list_height = 0x7f0a011b;
+    public static final int aviary_tool_list_normal = 0x7f0a011c;
+    public static final int aviary_tool_list_selected = 0x7f0a011d;
+    public static final int aviary_tool_list_size_margin = 0x7f0a011e;
+    public static final int aviary_tool_margin = 0x7f0a011f;
+    public static final int aviary_tool_stroke_width = 0x7f0a0120;
+    public static final int aviary_tool_width = 0x7f0a0121;
+    public static final int aviary_view_flipper_padding = 0x7f0a0122;
+    public static final int aviary_vignette_outer_radius_addition = 0x7f0a0123;
+    public static final int aviary_vignette_outer_rect_outset = 0x7f0a0124;
+    public static final int aviary_wheel_margin_horizontal = 0x7f0a0125;
+    public static final int cardview_compat_inset_shadow = 0x7f0a0126;
+    public static final int cardview_default_elevation = 0x7f0a0127;
+    public static final int cardview_default_radius = 0x7f0a0128;
+    public static final int dialog_fixed_height_major = 0x7f0a0134;
+    public static final int dialog_fixed_height_minor = 0x7f0a0135;
+    public static final int dialog_fixed_width_major = 0x7f0a0136;
+    public static final int dialog_fixed_width_minor = 0x7f0a0137;
+    public static final int disabled_alpha_material_dark = 0x7f0a0139;
+    public static final int disabled_alpha_material_light = 0x7f0a013a;
+    public static final int ttlm_default_corner_radius = 0x7f0a01e9;
+    public static final int ttlm_default_padding = 0x7f0a01ea;
+    public static final int ttlm_default_stroke_weight = 0x7f0a01eb;
+
+    public ()
+    {
+    }
+}

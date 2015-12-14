@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/bc_color_main_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/t10dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/suggestion_header" android:background="@color/bc_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/t1dp">
+        <RelativeLayout android:id="@id/suggestion_header_clean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/t8dp" android:layout_alignParentRight="true">
+            <ProgressBar android:id="@id/suggestion_header_progress" android:padding="@dimen/t8dp" android:layout_width="@dimen/t36dp" android:layout_height="@dimen/t36dp" android:indeterminateDrawable="@drawable/bc_waiting_cursor" android:indeterminateBehavior="repeat" style="@style/BcRefreshWaitingCursorStyle" />
+            <FrameLayout android:id="@id/suggestion_header_clear_text" android:padding="@dimen/t8dp" android:layout_width="wrap_content" android:layout_height="@dimen/t36dp">
+                <TextView android:textSize="@dimen/t14dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:background="@drawable/bc_search_clear_btn_background" android:paddingLeft="@dimen/t10dp" android:paddingRight="@dimen/t10dp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/bc_search_clear" android:includeFontPadding="true" />
+            </FrameLayout>
+            <ImageView android:id="@id/suggestion_header_clean_icon" android:padding="@dimen/t8dp" android:layout_width="@dimen/t36dp" android:layout_height="@dimen/t36dp" android:src="@drawable/bc_search_clear_text_x" android:layout_alignRight="@id/suggestion_header_clear_text" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/t13dp" android:textStyle="bold" android:textColor="@color/bc_issue_image_circle_default" android:id="@id/suggestion_header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t10dp" android:layout_toLeftOf="@id/suggestion_header_clean" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

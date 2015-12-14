@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="320" app:guideline_height="320"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/downloadItemTopSpace" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="320" app:guideline_height="3" />
+    <LinearLayout android:gravity="center" android:id="@id/downloadItemImageContainer" android:background="@drawable/bg_live_palette_item_border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="316.0" android:layout_below="@id/downloadItemTopSpace">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="311.0" app:guideline_width="311" app:guideline_height="311">
+            <FrameLayout android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/beautyTipsGridItemThumbnail" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="311" app:guideline_height="62">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="62" app:guideline_height="62">
+                        <ImageView android:id="@id/beautyTipsGridItemPlayBtn" android:background="@drawable/ico_play" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="311" app:guideline_height="50">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/beautyTipsGridItemDescription" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/DownloadVideoGridItemNameBasicStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </FrameLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="54" app:child_height="54" app:child_left="247" app:child_top="10" app:guideline_width="311" app:guideline_height="311">
+                <View android:id="@id/beautyTipsGridItemNewIcon" android:background="@drawable/icon_new_tile" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </LinearLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

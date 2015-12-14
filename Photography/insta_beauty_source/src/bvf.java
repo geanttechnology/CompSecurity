@@ -1,0 +1,84 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+import io.fabric.sdk.android.services.concurrency.DependencyPriorityBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.RunnableFuture;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+public class bvf extends ThreadPoolExecutor
+{
+
+    private static final int a;
+    private static final int b;
+    private static final int c;
+
+    bvf(int i, int j, long l, TimeUnit timeunit, DependencyPriorityBlockingQueue dependencypriorityblockingqueue, ThreadFactory threadfactory)
+    {
+        super(i, j, l, timeunit, dependencypriorityblockingqueue, threadfactory);
+        prestartAllCoreThreads();
+    }
+
+    public static bvf a()
+    {
+        return a(b, c);
+    }
+
+    public static bvf a(int i, int j)
+    {
+        return new bvf(i, j, 1L, TimeUnit.SECONDS, new DependencyPriorityBlockingQueue(), new bvg(10));
+    }
+
+    protected void afterExecute(Runnable runnable, Throwable throwable)
+    {
+        bvh bvh1 = (bvh)runnable;
+        bvh1.setFinished(true);
+        bvh1.setError(throwable);
+        b().recycleBlockedQueue();
+        super.afterExecute(runnable, throwable);
+    }
+
+    public DependencyPriorityBlockingQueue b()
+    {
+        return (DependencyPriorityBlockingQueue)super.getQueue();
+    }
+
+    public void execute(Runnable runnable)
+    {
+        if (bve.isProperDelegate(runnable))
+        {
+            super.execute(runnable);
+            return;
+        } else
+        {
+            super.execute(newTaskFor(runnable, null));
+            return;
+        }
+    }
+
+    public BlockingQueue getQueue()
+    {
+        return b();
+    }
+
+    protected RunnableFuture newTaskFor(Runnable runnable, Object obj)
+    {
+        return new bvc(runnable, obj);
+    }
+
+    protected RunnableFuture newTaskFor(Callable callable)
+    {
+        return new bvc(callable);
+    }
+
+    static 
+    {
+        a = Runtime.getRuntime().availableProcessors();
+        b = a + 1;
+        c = a * 2 + 1;
+    }
+}

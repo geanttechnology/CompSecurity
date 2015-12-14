@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bc_me_beauty_profile_light" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcMeBeautyProfileItemPanelStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <com.rockerhieu.emojicon.EmojiconTextView android:textColor="@color/bc_color_main_pressed_gray" android:ellipsize="end" android:gravity="left|center" android:id="@id/bc_goto_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignBaseline="@id/bc_goto_left_text" android:layout_centerVertical="true" style="@style/BcMeBeautyProfileRightTextStyle" />
+    <TextView android:textColor="@color/bc_color_black" android:ellipsize="end" android:gravity="left|center" android:id="@id/bc_goto_left_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/BcMeBeautyProfileLeftTextStyle" />
+</RelativeLayout>

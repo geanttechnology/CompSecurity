@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.picsart.studio.editor.view.MotionView android:id="@id/motion_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/count_action_panel" android:background="@drawable/panel_bottom_transparent" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:gravity="right" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/effect_motion_distance" />
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:gravity="center" android:id="@id/count_text" android:layout_width="20.0dip" android:layout_height="wrap_content" />
+            <com.picsart.studio.view.FloatSeekBar android:id="@id/count_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Widget.Picsart.SeekBar.Float" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <ImageButton android:id="@id/btn_cancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/motionParamsLayout" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:paddingRight="@dimen/space_12dp" android:layout_width="100.0dip" android:layout_height="46.0dip">
+                    <Spinner android:orientation="horizontal" android:id="@id/blend_mode_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <Button android:textAppearance="@android:style/Animation.TypingFilterRestore" android:id="@id/blend_mode_spinner_button" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Material.Button.Borderless" />
+                </RelativeLayout>
+                <RadioGroup android:orientation="horizontal" android:id="@id/motion_mode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:textColor="@android:color/white" android:id="@id/mode_linear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/gen_linear" />
+                    <RadioButton android:textColor="@android:color/white" android:id="@id/mode_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_lowercase_free" />
+                </RadioGroup>
+            </LinearLayout>
+            <ImageButton android:id="@id/btn_done" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:layout_gravity="right" android:id="@id/info_btn" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="@dimen/space_12dp" android:layout_marginRight="@dimen/space_12dp" style="@style/Widget.Picsart.InfoBtn" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_medium_picsart" />
+</FrameLayout>

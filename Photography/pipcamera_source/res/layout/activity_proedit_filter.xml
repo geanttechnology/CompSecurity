@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top|left|center" android:id="@id/ly_imgae_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="53.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="128.0dip" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ly_filter_container" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginBottom="30.0dip">
+        <SeekBar android:layout_gravity="left" android:id="@id/scn_opacity_seekbar" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:maxHeight="1.0dip" android:progress="80" android:progressDrawable="@drawable/progress_slider_new" android:minHeight="1.0dip" android:thumb="@drawable/progress_control_new" />
+        <View android:background="#ff383838" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.fotoable.fotoproedit.activity.filter.TFilterListScrollView android:layout_gravity="center_vertical" android:id="@id/tFilterListScrollView_lomo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.fotoable.fotoproedit.activity.filter.TFilterListScrollView android:layout_gravity="center_vertical" android:id="@id/tFilterListScrollView_beauty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.fotoable.fotoproedit.activity.filter.TFilterListScrollView android:layout_gravity="center_vertical" android:id="@id/tFilterListScrollView_arts" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/ly_filter_cata" android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <FrameLayout android:id="@id/lomo_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/lomo_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_filter_classic" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/beauty_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/beauty_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_filter_beauty" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/arts_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/arts_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_filter_artistic" android:scaleType="fitCenter" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/ly_action_bar" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.fotoable.photocollage.view.ProEidtActionBarView android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

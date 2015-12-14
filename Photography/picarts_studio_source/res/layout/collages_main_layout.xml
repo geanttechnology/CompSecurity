@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title_panel_icons" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <ImageButton android:textSize="9.0sp" android:textColor="@color/color_white" android:id="@id/dashboardCancelId" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_2dp" android:paddingBottom="@dimen/space_2dp" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_action_cancel_t" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <Button android:textSize="9.0sp" android:textColor="@color/color_white" android:id="@id/collage_shuffle" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_2dp" android:paddingBottom="@dimen/space_2dp" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/button_shuffle" android:drawableTop="@drawable/ic_action_shuffle_t" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <Button android:textSize="9.0sp" android:textColor="@color/color_white" android:id="@id/dashboardFramePanelId" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_2dp" android:paddingBottom="@dimen/space_2dp" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/gen_frame" android:drawableTop="@drawable/ic_action_frame_t" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <Button android:textSize="9.0sp" android:textColor="@color/color_white" android:id="@id/dashboardGridPanelId" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_2dp" android:paddingBottom="@dimen/space_2dp" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/button_grid" android:drawableTop="@drawable/ic_action_grid_t" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <ImageButton android:textSize="9.0sp" android:textColor="@color/color_white" android:id="@id/dashboardDoneId" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_2dp" android:paddingBottom="@dimen/space_2dp" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_action_done_t" />
+    </LinearLayout>
+    <com.picsart.collages.CollageCreatorView android:id="@id/create_poligon_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/title_panel_icons" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/collages_actions_panel" android:background="@color/black_transparent_60" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:id="@id/effect" android:src="@drawable/ic_action_effects_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/crop" android:src="@drawable/ic_action_crop_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/rotate" android:src="@drawable/ic_action_rotate_cw_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/flip" android:src="@drawable/ic_action_flip_horizontal_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/delete" android:src="@drawable/ic_action_delete_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <com.picsart.effects.view.WrappingSlidingDrawer android:id="@id/collage_menu_sliding_drawer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/title_panel_icons" android:handle="@id/handle" android:content="@id/content">
+        <ImageView android:id="@id/handle" android:background="@drawable/handle_settings_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/content" android:background="@drawable/panel_drawer_bottom" android:paddingLeft="@dimen/space_12dp" android:paddingTop="@dimen/space_4dp" android:paddingRight="@dimen/space_12dp" android:paddingBottom="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:id="@id/collage_border_corner_radius_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collage_corner_radius_txt" />
+                        <TextView android:id="@id/cornerRadiusTextId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="0" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/collage_border_corner_radius_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageButton android:id="@id/show_controls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_toggle_collage_controls" style="@style/Widget.Picsart.ImageButton.Action" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/collage_border_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collage_border_txt" />
+                <TextView android:id="@id/collage_border_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="12" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <SeekBar android:id="@id/collage_border_width_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="80" android:progress="12" android:layout_weight="1.0" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_12dp">
+                    <FrameLayout android:id="@id/collage_borderColorId" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size">
+                        <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/color_picker_preview" android:layout_width="@dimen/drawing_bottom_items_icon_size" android:layout_height="@dimen/drawing_bottom_items_icon_size" />
+                    </FrameLayout> `
+</RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_12dp">
+                    <ImageView android:id="@id/collage_borderBgId" android:background="@drawable/collage_bg_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginTop="@dimen/space_4dp" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+                    <ImageView android:background="@drawable/xml_icon_bg_color" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginTop="@dimen/space_4dp" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.picsart.effects.view.WrappingSlidingDrawer>
+</RelativeLayout>

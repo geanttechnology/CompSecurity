@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:panel="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@id/param1Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contrast : 0" />
+    <SeekBar android:layout_gravity="center_horizontal" android:id="@id/param1SeekBar" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@id/param2Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Brightness : 0" />
+    <SeekBar android:layout_gravity="center_horizontal" android:id="@id/param2SeekBar" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@id/param3Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fade : 0" />
+    <SeekBar android:layout_gravity="center_horizontal" android:id="@id/param3SeekBar" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@id/param4Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fade : 0" />
+    <SeekBar android:layout_gravity="center_horizontal" android:id="@id/param4SeekBar" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+</LinearLayout>

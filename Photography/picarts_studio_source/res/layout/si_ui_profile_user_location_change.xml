@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dialog_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <EditText android:textSize="@dimen/textSize_18" android:id="@id/si_user_country_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_24dp" android:layout_marginTop="@dimen/space_24dp" android:layout_marginRight="@dimen/space_24dp" android:layout_marginBottom="@dimen/space_16dp" android:hint="@string/txt_new_country" android:singleLine="true" />
+    <EditText android:textSize="@dimen/textSize_18" android:id="@id/si_user_city_edittex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_24dp" android:layout_marginRight="@dimen/space_24dp" android:layout_marginBottom="@dimen/space_16dp" android:hint="@string/txt_new_city" android:singleLine="true" />
+    <Button android:textSize="@dimen/textSize_12" android:textColor="@drawable/xml_si_ui_button_selector" android:layout_gravity="right" android:id="@id/si_user_location_autofill_btn" android:background="@drawable/xml_si_ui_button_selector" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/space_24dp" android:layout_marginTop="@dimen/space_24dp" android:layout_marginRight="@dimen/space_24dp" android:layout_marginBottom="@dimen/space_16dp" android:text="@string/btn_auto_fill" />
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/si_user_location_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_cancel" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/si_user_location_save_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_save" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.socialin.android.apiv3.controllers;
+
+import android.app.Application;
+import android.content.Intent;
+import android.text.TextUtils;
+import com.socialin.android.apiv3.SocialinApiV3;
+import com.socialin.android.apiv3.SocialinV3;
+import com.socialin.android.apiv3.model.Response;
+import com.socialin.android.apiv3.model.Settings;
+import com.socialin.android.apiv3.model.StatusObj;
+import com.socialin.android.apiv3.model.User;
+import com.socialin.android.apiv3.request.ParamWithUserData;
+import com.socialin.android.apiv3.request.RequestParams;
+import com.socialin.android.util.b;
+import com.socialin.asyncnet.Request;
+
+// Referenced classes of package com.socialin.android.apiv3.controllers:
+//            BaseSocialinApiRequestController
+
+public class AddFollowingController extends BaseSocialinApiRequestController
+{
+
+    int requestId;
+
+    public AddFollowingController()
+    {
+        requestId = -1;
+        params = new ParamWithUserData();
+    }
+
+    public void doRequest(String s, ParamWithUserData paramwithuserdata)
+    {
+        params = paramwithuserdata;
+        if (status == 0)
+        {
+            return;
+        }
+        status = 0;
+        if (TextUtils.isEmpty(paramwithuserdata.userIds))
+        {
+            paramwithuserdata = String.valueOf(paramwithuserdata.userId);
+        } else
+        {
+            paramwithuserdata = paramwithuserdata.userIds;
+        }
+        requestId = SocialinApiV3.getInstance().addFollowing(paramwithuserdata, s, this);
+    }
+
+    public volatile void doRequest(String s, RequestParams requestparams)
+    {
+        doRequest(s, (ParamWithUserData)requestparams);
+    }
+
+    public int getRequestId()
+    {
+        return requestId;
+    }
+
+    public volatile void onSuccess(Response response, Request request)
+    {
+        onSuccess((StatusObj)response, request);
+    }
+
+    public void onSuccess(StatusObj statusobj, Request request)
+    {
+        if (statusobj != null && statusobj.status.equals("success") && SocialinV3.getInstance().isRegistered())
+        {
+            if (SocialinV3.getInstance().getSettings().isAppboyEnabled())
+            {
+                b.a(SocialinV3.getInstance().getContext()).b("# of Friends Followed", 1);
+            }
+            User user = SocialinV3.getInstance().getUser();
+            user.followingsCount = user.followingsCount + 1;
+            SocialinV3.getInstance().getContext().sendBroadcast(new Intent("com.picsart.studio.update.user.action"));
+        }
+        super.onSuccess(statusobj, request);
+    }
+
+    public volatile void onSuccess(Object obj, Request request)
+    {
+        onSuccess((StatusObj)obj, request);
+    }
+}

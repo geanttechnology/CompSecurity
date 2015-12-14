@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/si_ui_profile_user_item" android:background="@drawable/xml_profile_follow_bg_selector" android:padding="@dimen/space_4dp" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp">
+        <ImageView android:id="@id/si_ui_profile_friend_avatar" style="@style/Widget.Picsart.Avatar" />
+        <ImageView android:layout_gravity="right" android:id="@id/verified_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_verifed_badge" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginStart="@dimen/space_8dp">
+        <TextView android:id="@id/si_ui_profile_friend_fullname" style="@style/TextAppearance.Picsart.Light.Username" />
+        <TextView android:id="@id/si_ui_profile_friend_username" style="@style/TextAppearance.Picsart.Light.Subusername" />
+        <CheckBox android:id="@id/si_ui_profile_friend_follow_btn" android:visibility="gone" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginTop="@dimen/space_4dp" android:checked="false" android:button="@drawable/btn_follow" />
+    </LinearLayout>
+</LinearLayout>

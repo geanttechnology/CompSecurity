@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_light_gray" android:gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="H" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_light_gray" android:gravity="center" android:id="@id/hue_component" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="0" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_vertical" android:id="@id/hue_minus" android:background="@drawable/ic_color_picker_minus" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <com.socialin.android.colorpicker.HueBarView android:layout_gravity="center" android:id="@id/hue_bar" android:paddingTop="@dimen/space_8dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="194.0dip" android:layout_height="28.0dip" android:layout_weight="2.0" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/hue_plus" android:background="@drawable/ic_color_picker_plus" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_light_gray" android:gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="S" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_light_gray" android:gravity="center" android:id="@id/saturation_component" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="0" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_vertical" android:id="@id/saturation_minus" android:background="@drawable/ic_color_picker_minus" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <com.socialin.android.colorpicker.SaturationBarView android:layout_gravity="center" android:id="@id/saturation_bar" android:paddingTop="@dimen/space_8dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="194.0dip" android:layout_height="28.0dip" android:layout_weight="2.0" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/saturation_plus" android:background="@drawable/ic_color_picker_plus" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_light_gray" android:gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="B" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_light_gray" android:gravity="center" android:id="@id/value_component" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="0" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_vertical" android:id="@id/value_minus" android:background="@drawable/ic_color_picker_minus" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <com.socialin.android.colorpicker.ValueBarView android:layout_gravity="center" android:id="@id/value_bar" android:paddingTop="@dimen/space_8dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="194.0dip" android:layout_height="28.0dip" android:layout_weight="2.0" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/value_plus" android:background="@drawable/ic_color_picker_plus" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+</LinearLayout>

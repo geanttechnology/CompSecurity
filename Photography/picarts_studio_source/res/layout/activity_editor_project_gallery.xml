@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="center_horizontal" android:id="@id/projects_grid" android:background="@color/gray_ee" android:padding="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/space_8dp" android:verticalSpacing="@dimen/space_16dp" android:numColumns="@integer/drawing_gallery_column_num" android:choiceMode="multipleChoiceModal" android:animateLayoutChanges="true" />
+    <TextView android:textColor="@color/text_color_dark_gray" android:layout_gravity="center" android:id="@id/no_projects_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_projects_message" />
+</FrameLayout>

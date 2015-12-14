@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/gray_DE" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.utils.DynamicHeightImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/double_tap_like" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_net_like_p" />
+    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/private_identifier" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8dp" android:src="@drawable/si_ui_ic_lock_dark" />
+</FrameLayout>

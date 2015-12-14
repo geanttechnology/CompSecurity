@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/homepageview" android:background="@drawable/gr_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_function" android:layout_below="@id/layout_top">
+        <FrameLayout android:layout_gravity="center" android:id="@id/adViewContainer" android:tag="adViewContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout_function" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="top|left|center" android:id="@id/imageView1" android:background="@drawable/gr_logo" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/img_requset" android:background="@drawable/btn_center_res" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="50.0dip" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/img_setting" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/btn_setting_res" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_bottom" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </FrameLayout>
+</RelativeLayout>

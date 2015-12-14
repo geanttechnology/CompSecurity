@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/folders_banner" android:background="@color/folders_banner_background" android:paddingTop="@dimen/folders_banner_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/folders_banner_min_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/folders_banner_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/folders_banner_icon_padding" android:layout_marginRight="@dimen/folders_banner_icon_padding" android:src="@drawable/ic_folders_orange" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/folders_banner_padding_side" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/folders_banner_icon" android:layout_centerVertical="true">
+        <TextView android:id="@id/folders_banner_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_folders_banner_from_albums" />
+        <TextView android:textColor="@color/accent_color" android:id="@id/folders_banner_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/folders_banner_padding_top" android:text="@string/adrive_gallery_folders_banner_action" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_multi_photos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multi_photos" />
+    <View style="@style/Divider.Horizontal" />
+    <Button android:id="@id/btn_single_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/single_photo" />
+</LinearLayout>

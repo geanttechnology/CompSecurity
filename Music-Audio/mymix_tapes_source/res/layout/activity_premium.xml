@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/component_app_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/premium_screen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/premium_bg" android:scaleType="centerCrop" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/premium_phone" android:layout_alignBottom="@id/premium_screen" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/premium_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/premium_text_upgrade" android:layout_below="@id/premium_screen" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_red" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip" android:text="@string/premium_valor" android:layout_below="@id/premium_text" android:layout_centerHorizontal="true" />
+        <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/premium_buy" android:background="@color/color_red" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/premium_button_name" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_primary_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:text="@string/premium_text_subscription" android:layout_above="@id/premium_buy" />
+    </RelativeLayout>
+</LinearLayout>

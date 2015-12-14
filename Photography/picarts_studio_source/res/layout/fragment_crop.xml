@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/crop_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ruler="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <View android:id="@id/measureView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_reset_angle" />
+        <com.picsart.studio.editor.view.CropEditorView android:id="@id/rect_selection_view" android:paddingLeft="@dimen/space_40dp" android:paddingTop="@dimen/space_40dp" android:paddingRight="@dimen/space_40dp" android:paddingBottom="152.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.picsart.studio.editor.view.RulerView android:layout_gravity="bottom" android:id="@id/ruler" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" ruler:rulerOrientation="horizontal" ruler:pointSize="8.0dip" />
+        <FrameLayout android:id="@id/btn_reset_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/ruler" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reset_angle_background" />
+            <TextView android:layout_gravity="center" android:id="@id/reset_angle_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_8dp" android:maxLength="7" />
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/aspect_ratio_selection_panel" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View style="@style/EvenSeparator.Horizontal" />
+        <ImageButton android:id="@id/btn_lock" android:src="@drawable/btn_crop_lock_aspect_ratio_normal" style="@style/Widget.Picsart.ImageButton.Action" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <ImageButton android:id="@id/btn_crop_1x1" android:src="@drawable/crop_proportion_1_1_normal" style="@style/Widget.Picsart.ImageButton.Action" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <ImageButton android:id="@id/btn_crop_4x3" android:src="@drawable/crop_proportion_4_3_normal" style="@style/Widget.Picsart.ImageButton.Action" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <ImageButton android:id="@id/btn_crop_3x4" android:src="@drawable/crop_proportion_3_4_normal" style="@style/Widget.Picsart.ImageButton.Action" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <ImageButton android:id="@id/btn_crop_3x2" android:src="@drawable/crop_proportion_3_2_normal" style="@style/Widget.Picsart.ImageButton.Action" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <ImageButton android:id="@id/btn_crop_16x9" android:src="@drawable/crop_proportion_16_9_normal" style="@style/Widget.Picsart.ImageButton.Action" />
+        <View style="@style/EvenSeparator.Horizontal" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/action_bar" android:background="@drawable/panel_bottom_transparent" android:paddingLeft="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btn_cancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_reset" android:src="@drawable/ic_action_refresh" style="@style/Widget.Picsart.ImageButton.Action" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textAppearance="@android:style/Animation.SearchBar" android:gravity="center" android:layout_gravity="center" android:id="@id/text_crop_rect_size" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableRight="@drawable/spinner_material_pointer" android:drawablePadding="@dimen/space_4dp" />
+        </FrameLayout>
+        <ImageButton android:id="@id/btn_rotate" android:src="@drawable/ic_crop_rotate_cw" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_done" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+</LinearLayout>

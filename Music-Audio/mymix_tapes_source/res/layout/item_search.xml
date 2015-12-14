@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_search_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <my.googlemusic.play.utils.views.RobotoTextView android:textSize="14.0sp" android:textColor="@color/color_red" android:layout_gravity="center_vertical" android:id="@id/item_search_category" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="MIXTAPEZ" app:typeface="roboto_medium" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/item_search_container" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <Button android:id="@id/item_search_content" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.AppCompat.ActionButton" />
+        <ImageView android:id="@id/item_search_image" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/placeholder" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@string/description" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/item_search_image">
+            <my.googlemusic.play.utils.views.RobotoTextView android:textSize="16.0sp" android:textColor="@android:color/primary_text_light_nodisable" android:id="@id/item_search_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:typeface="roboto_regular" />
+            <my.googlemusic.play.utils.views.RobotoTextView android:textSize="14.0sp" android:textColor="@android:color/tertiary_text_light" android:id="@id/item_search_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:typeface="roboto_regular" />
+        </LinearLayout>
+        <View android:id="@id/item_search_divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="88.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <Button android:textAppearance="@style/ShadowOverlayText" android:textSize="12.0sp" android:gravity="center" android:id="@id/item_search_more" android:background="@drawable/rounded_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="See more" android:layout_alignParentRight="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" style="@style/Base.Widget.AppCompat.ActionButton" />
+    <RelativeLayout android:id="@id/item_search_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <my.googlemusic.play.utils.views.RobotoTextView android:textSize="16.0sp" android:textColor="@android:color/tertiary_text_light" android:id="@id/item_search_empty_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" app:typeface="roboto_regular" />
+    </RelativeLayout>
+</RelativeLayout>

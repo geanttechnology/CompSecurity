@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sourceWDP="360" app:useDeviceDP="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/noticeWaitingCursorContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/noticeTopToolBar" android:layout_centerInParent="true" />
+    <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:id="@id/noticeTopToolBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" app:sourceWDP="360" app:useDeviceDP="true">
+        <ImageView android:id="@id/noticeBackBtn" android:contentDescription="@null" style="@style/CameraTopBackBtn" />
+        <TextView android:textColor="#ff1e1e1e" android:id="@id/noticeTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_notice" android:layout_centerInParent="true" style="@style/BCTopBarTextStyle" />
+    </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+    <ExpandableListView android:id="@id/noticeExpandableListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:childDivider="#21603354" android:divider="@drawable/div" android:layout_below="@id/noticeTopToolBar" />
+    <FrameLayout android:id="@id/noticeRetryDialogContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>

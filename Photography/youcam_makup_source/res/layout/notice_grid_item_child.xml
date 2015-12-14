@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#21603354" android:paddingLeft="@dimen/t30dp" android:paddingTop="@dimen/t15dp" android:paddingRight="@dimen/t30dp" android:paddingBottom="@dimen/t5dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/t13dp" android:textColor="#ff464646" android:id="@id/NoticeItemChildFeatureDescription" android:paddingLeft="@dimen/t10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/BcFontFamilyLightStyle" />
+    <TextView android:textSize="@dimen/t13dp" android:textColor="@color/color_selector_notice_action_text" android:ellipsize="end" android:id="@id/NoticeItemChildDownloadBtn" android:padding="@dimen/t10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/t5dp" android:text="@string/app_name" android:singleLine="true" style="@style/BcFontFamilyLightStyle" />
+</LinearLayout>

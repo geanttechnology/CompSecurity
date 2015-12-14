@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/empty_layer" android:paddingLeft="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/empty_layer" />
+    <View style="@style/Divider.Horizontal" />
+    <TextView android:gravity="center_vertical" android:id="@id/photo_layer" android:paddingLeft="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/photo_layer" />
+    <View style="@style/Divider.Horizontal" />
+    <TextView android:gravity="center_vertical" android:id="@id/camera_layer" android:paddingLeft="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/camera_layer" />
+</LinearLayout>

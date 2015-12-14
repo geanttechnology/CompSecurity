@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/library_picker_item_album" />
+    <item android:drawable="@color/camera_panel_previous_frame" />
+</selector>

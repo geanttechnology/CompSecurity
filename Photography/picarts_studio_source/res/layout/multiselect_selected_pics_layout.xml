@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/multiselect_top_panelId" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/selected_images_count_panelId" android:paddingLeft="@dimen/space_12dp" android:paddingRight="@dimen/space_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/color_white" android:id="@id/selected_images_count_textId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:text="0" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/color_white" android:id="@id/selected_images_max_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:layout_toRightOf="@id/selected_images_count_textId" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/multiselect_selected_items" android:layout_toRightOf="@id/selected_images_max_count" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <Button android:textSize="@dimen/textSize_14" android:id="@id/multiselect_btn_resetId" android:background="@drawable/btn_borderless_material_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginRight="@dimen/space_8dp" android:text="@string/gen_reset" />
+                <Button android:textSize="@dimen/textSize_14" android:id="@id/multiselect_btn_doneId" android:background="@drawable/btn_borderless_material_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginRight="@dimen/space_8dp" android:text="@string/gen_done" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:background="@drawable/multi_separator" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:layout_below="@id/selected_images_count_panelId" />
+    </RelativeLayout>
+    <HorizontalScrollView android:id="@id/selected_images_gridview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_below="@id/multiselect_top_panelId">
+        <LinearLayout android:orientation="horizontal" android:id="@id/selected_images_scroll_container" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+</RelativeLayout>

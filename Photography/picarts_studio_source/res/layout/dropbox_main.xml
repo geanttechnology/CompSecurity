@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dropbox_user_layout_id" android:background="@drawable/si_ui_gallery_toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="31.0dip">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/text_color_dark_gray" android:gravity="right|center" android:id="@id/dropbox_user_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_4dp" android:text="@string/gen_user" />
+    </RelativeLayout>
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/dropbox_scrollview_id" android:padding="@dimen/space_4dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_12dp" android:layout_below="@id/dropbox_user_layout_id" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/dropbox_login_layout" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <EditText android:textSize="@dimen/textSize_16" android:textColor="@color/text_color_black" android:id="@id/dropbox_login_email" android:paddingLeft="@dimen/space_12dp" android:layout_width="280.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/space_4dp" android:minWidth="30.0dip" android:hint="@string/profile_txt_email_hint" android:singleLine="true" android:editable="true" android:inputType="textEmailAddress" android:textCursorDrawable="@null" />
+                <EditText android:textSize="@dimen/textSize_16" android:textColor="@color/text_color_black" android:id="@id/dropbox_login_password" android:paddingLeft="@dimen/space_12dp" android:layout_width="280.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/space_12dp" android:hint="@string/profile_txt_pwd" android:password="true" android:layout_below="@id/dropbox_login_email" />
+                <Button android:textSize="@dimen/textSize_18" android:textColor="@color/text_color_dark_gray" android:id="@id/dropbox_login_button" android:background="@drawable/btn_borderless_material_light" android:layout_width="140.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/space_12dp" android:text="@string/btn_signin" android:layout_below="@id/dropbox_login_password" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/dropbox_entries_layout_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_4dp" android:layout_below="@id/dropbox_user_layout_id">
+        <ListView android:id="@id/dropbox_entries_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_2dp" android:layout_marginRight="@dimen/space_2dp" android:cacheColorHint="@color/color_transparent" android:divider="@drawable/list_divider_holo_light" />
+        <Button android:textSize="@dimen/textSize_16" android:textColor="@color/text_color_dark_gray" android:gravity="center" android:id="@id/dropbox_upload_button" android:background="@drawable/btn_borderless_material_light" android:padding="@dimen/space_12dp" android:visibility="gone" android:clickable="true" android:layout_width="140.0dip" android:layout_height="50.0dip" android:layout_marginBottom="@dimen/space_12dp" android:text="@string/gen_upload" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

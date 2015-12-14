@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/report_title" android:background="@color/bc_report_title" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/t100dp" android:layout_below="@id/fragment_topbar_panel">
+        <TextView android:textSize="@dimen/t20dp" android:id="@id/report_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/t12dp" android:text="@string/bc_me_report_someone" style="@style/BcDefaultFontStyle" />
+        <TextView android:textSize="@dimen/t16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_me_report_problem" style="@style/BcDefaultFontStyle" />
+    </LinearLayout>
+    <ListView android:id="@id/bc_report_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/bc_color_main_pressed_gray" android:dividerHeight="1.0dip" android:layout_below="@id/report_title" />
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

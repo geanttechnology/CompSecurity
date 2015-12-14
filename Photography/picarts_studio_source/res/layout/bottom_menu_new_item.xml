@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="10.0sp" android:ellipsize="end" android:id="@id/btn" android:background="?selectableItemBackground" android:paddingTop="@dimen/space_4dp" android:paddingBottom="@dimen/space_4dp" android:layout_width="64.0dip" android:layout_height="wrap_content" android:maxLines="1" android:drawableTop="@drawable/ic_action_add_photo_t" />
+    <ImageView android:layout_gravity="top|center" android:layout_width="wrap_content" android:layout_height="12.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginTop="@dimen/space_2dp" android:src="@drawable/ic_new" android:adjustViewBounds="true" />
+</FrameLayout>

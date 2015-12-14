@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bc_register_fb_btn_selector" android:layout_width="@dimen/t260dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:src="@drawable/bc_login_log_icon_fb" android:contentDescription="@string/app_name" style="@style/BcRegisterButtonIconStyle" />
+    <View android:background="@color/bc_fb_sub_color" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <TextView android:id="@id/bc_fb_btn_text" android:text="@string/bc_welcome_btn_connect_fb" style="@style/BcRegisterButtonBasicStyle" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.client.metrics.codec;
+
+import com.google.protobuf.ProtocolMessageEnum;
+
+// Referenced classes of package com.amazon.client.metrics.codec:
+//            DeviceMetricsMessage
+
+public static final class value extends Enum
+    implements ProtocolMessageEnum
+{
+
+    private static final CLICKSTREAM $VALUES[];
+    public static final CLICKSTREAM CLICKSTREAM;
+    public static final CLICKSTREAM COUNTER;
+    public static final CLICKSTREAM DISCRETE;
+    public static final CLICKSTREAM TIMER;
+    private static final CLICKSTREAM VALUES[] = values();
+    private static com.google.protobuf.ge.DataType.values internalValueMap = new com.google.protobuf.Internal.EnumLiteMap() {
+
+    };
+    private final int index;
+    private final int value;
+
+    public static value valueOf(int i)
+    {
+        switch (i)
+        {
+        default:
+            return null;
+
+        case 0: // '\0'
+            return COUNTER;
+
+        case 1: // '\001'
+            return TIMER;
+
+        case 2: // '\002'
+            return DISCRETE;
+
+        case 3: // '\003'
+            return CLICKSTREAM;
+        }
+    }
+
+    public static CLICKSTREAM valueOf(String s)
+    {
+        return (CLICKSTREAM)Enum.valueOf(com/amazon/client/metrics/codec/DeviceMetricsMessage$DataPointMessage$DataType, s);
+    }
+
+    public static CLICKSTREAM[] values()
+    {
+        return (CLICKSTREAM[])$VALUES.clone();
+    }
+
+    public final int getNumber()
+    {
+        return value;
+    }
+
+    static 
+    {
+        COUNTER = new <init>("COUNTER", 0, 0, 0);
+        TIMER = new <init>("TIMER", 1, 1, 1);
+        DISCRETE = new <init>("DISCRETE", 2, 2, 2);
+        CLICKSTREAM = new <init>("CLICKSTREAM", 3, 3, 3);
+        $VALUES = (new .VALUES[] {
+            COUNTER, TIMER, DISCRETE, CLICKSTREAM
+        });
+    }
+
+    private _cls1(String s, int i, int j, int k)
+    {
+        super(s, i);
+        index = j;
+        value = k;
+    }
+}

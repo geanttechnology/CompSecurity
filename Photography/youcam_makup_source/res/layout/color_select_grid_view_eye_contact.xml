@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="140">
+        <View android:id="@id/colorSelectTopDivider" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_height="2" app:child_top="0" />
+        <com.cyberlink.youcammakeup.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/colorSelectGridView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:listSelector="@android:color/transparent" app:choiceMode="singleChoice" app:child_height="138" app:child_top="3" app:horizontalSpacing="0.0dip" app:numRows="1" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

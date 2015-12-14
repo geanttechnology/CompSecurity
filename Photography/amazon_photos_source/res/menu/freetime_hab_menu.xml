@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_camera_freetime_dark" android:id="@id/camera_button" android:title="@string/adrive_gallery_common_actionbar_camera" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_slideshow_freetime_dark" android:id="@id/slideshow_button" android:title="@string/adrive_gallery_common_actionbar_slideshow" app:showAsAction="always" />
+</menu>

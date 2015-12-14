@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/effect_dashboard" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/maskPreviewPanel" android:background="@color/color_black" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ScrollView android:id="@id/maskPreviewGallery" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/space_56dp" android:layout_alignParentLeft="true" android:overScrollMode="never" />
+        <FrameLayout android:id="@id/mask_more_panelId" android:background="@drawable/panel_effects_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/mask_moreId" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_plus_round" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/maskPropertiesLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/maskPreviewPanel">
+        <SlidingDrawer android:orientation="horizontal" android:id="@id/sliding_drawer" android:clipChildren="true" android:layout_width="320.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:handle="@id/handle" android:content="@id/parameters">
+            <ImageView android:id="@id/handle" android:background="@drawable/handle_settings_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/parameters" android:background="@drawable/panel_drawer_right" android:paddingTop="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/mask_dashboardFlipHorizId" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/ic_action_flip_horizontal_t" style="@style/Widget.Picsart.ImageButton.Action" />
+                    <ImageButton android:id="@id/mask_dashboardFlipVertId" android:layout_marginLeft="@dimen/space_4dp" android:src="@drawable/ic_action_flip_vertical_t" style="@style/Widget.Picsart.ImageButton.Action" />
+                    <ImageButton android:id="@id/mask_dashboardRotateLeft" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/ic_action_rotate_ccw_t" style="@style/Widget.Picsart.ImageButton.Action" />
+                    <ImageButton android:id="@id/mask_dashboardRotateRight" android:layout_marginLeft="@dimen/space_4dp" android:src="@drawable/ic_action_rotate_cw_t" style="@style/Widget.Picsart.ImageButton.Action" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/mask_edit_traspPanel" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="60.0dip" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/textSize_10" android:textColor="@color/color_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawing_brush_option_opacity" />
+                        <TextView android:textSize="@dimen/textSize_10" android:textColor="@color/color_white" android:layout_gravity="center" android:id="@id/mask_opacity_panel_seekTextId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": 12" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/mask_opacity_seekId" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="250.0dip" android:max="255" android:progress="255" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/mask_edit_hue" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="60.0dip" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/textSize_10" android:textColor="@color/color_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hue" />
+                        <TextView android:textSize="@dimen/textSize_10" android:textColor="@color/color_white" android:layout_gravity="center" android:id="@id/mask_hue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": 0" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/mask_hue_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="250.0dip" android:max="360" android:progress="0" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
+    <ListView android:id="@id/masks_category_list" android:background="@drawable/bg_window_dark_transparent" android:visibility="gone" android:layout_width="128.0dip" android:layout_height="wrap_content" android:layout_toLeftOf="@id/maskPreviewPanel" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/effect_hover_preview" android:background="@drawable/baloon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/effect_hover_preview_imageview" android:padding="@dimen/space_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_switch_left" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/effect_hover_preview_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Effect Title" android:layout_below="@id/effect_hover_preview_imageview" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/buttons_hover_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/white_transparent_80" android:id="@id/button_hover_textview" android:background="@drawable/tooltip" android:padding="@dimen/space_4dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+    </RelativeLayout>
+</RelativeLayout>

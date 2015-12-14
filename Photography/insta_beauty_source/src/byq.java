@@ -1,0 +1,105 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+import jp.co.cyberagent.android.gpuimage.Rotation;
+
+public class byq
+{
+
+    public static final float a[] = {
+        0.0F, 1.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, 0.0F
+    };
+    public static final float b[] = {
+        1.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F
+    };
+    public static final float c[] = {
+        1.0F, 0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 0.0F, 1.0F
+    };
+    public static final float d[] = {
+        0.0F, 0.0F, 1.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F
+    };
+    public static final float e[] = {
+        0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 0.0F, 1.0F, 1.0F
+    };
+
+    private static float a(float f)
+    {
+        float f1 = 0.0F;
+        if (f == 0.0F)
+        {
+            f1 = 1.0F;
+        }
+        return f1;
+    }
+
+    public static float[] a(Rotation rotation, boolean flag, boolean flag1)
+    {
+        byr.a[rotation.ordinal()];
+        JVM INSTR tableswitch 1 3: default 36
+    //                   1 188
+    //                   2 195
+    //                   3 202;
+           goto _L1 _L2 _L3 _L4
+_L4:
+        break MISSING_BLOCK_LABEL_202;
+_L1:
+        rotation = a;
+_L5:
+        if (flag)
+        {
+            float af[] = new float[8];
+            af[0] = a(rotation[0]);
+            af[1] = rotation[1];
+            af[2] = a(rotation[2]);
+            af[3] = rotation[3];
+            af[4] = a(rotation[4]);
+            af[5] = rotation[5];
+            af[6] = a(rotation[6]);
+            af[7] = rotation[7];
+            rotation = af;
+        }
+        if (flag1)
+        {
+            return (new float[] {
+                rotation[0], a(rotation[1]), rotation[2], a(rotation[3]), rotation[4], a(rotation[5]), rotation[6], a(rotation[7])
+            });
+        } else
+        {
+            return rotation;
+        }
+_L2:
+        rotation = b;
+          goto _L5
+_L3:
+        rotation = c;
+          goto _L5
+        rotation = e;
+          goto _L5
+    }
+
+    public static float[] a(float af[], Rotation rotation)
+    {
+        switch (byr.a[rotation.ordinal()])
+        {
+        default:
+            return af;
+
+        case 1: // '\001'
+            return (new float[] {
+                af[2], af[3], af[6], af[7], af[0], af[1], af[4], af[5]
+            });
+
+        case 2: // '\002'
+            return (new float[] {
+                af[6], af[7], af[4], af[5], af[2], af[3], af[0], af[1]
+            });
+
+        case 3: // '\003'
+            return (new float[] {
+                af[4], af[5], af[0], af[1], af[6], af[7], af[2], af[3]
+            });
+        }
+    }
+
+}

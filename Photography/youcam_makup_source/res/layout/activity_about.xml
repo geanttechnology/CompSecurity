@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sourceWDP="360" app:useDeviceDP="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:id="@id/settingTopToolBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" app:sourceWDP="360" app:useDeviceDP="true">
+        <ImageView android:id="@id/aboutBackBtn" android:contentDescription="@string/app_name" style="@style/CameraTopBackBtn" />
+        <TextView android:textColor="#ff1e1e1e" android:id="@id/settingTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AboutPage_About" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/BCTopBarTextStyle" />
+        <View android:id="@id/launcherTestSettingBtn" android:layout_width="@dimen/f50dp" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/settingTopToolBar">
+        <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:sourceWDP="360" app:useDeviceDP="true">
+            <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeLinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/settingTopToolBar" app:sourceWDP="360" app:useDeviceDP="true">
+                <View android:background="@color/setting_item_separate_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" app:ignoreHeight="true" />
+                <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:id="@id/currentVersionBtn" android:layout_width="fill_parent" android:layout_height="@dimen/t70dp" app:sourceWDP="360" app:useDeviceDP="true">
+                    <TextView android:textSize="@dimen/t16dp" android:textColor="@color/text_color_setting_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/about_page_current_version" android:layout_centerVertical="true" style="@style/BcFontFamilyLightStyle" />
+                    <TextView android:textSize="@dimen/t16dp" android:id="@id/currentVersionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/setting_photo_quality_high" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BcFontFamilyLightStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+                <View android:id="@id/latestVersionDivider" android:background="@color/setting_item_separate_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" app:ignoreHeight="true" />
+                <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:id="@id/latestVersionBtn" android:layout_width="fill_parent" android:layout_height="@dimen/t70dp" app:sourceWDP="360" app:useDeviceDP="true">
+                    <TextView android:textSize="@dimen/t16dp" android:textColor="@color/text_color_setting_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/about_page_latest_version" android:layout_centerVertical="true" style="@style/BcFontFamilyLightStyle" />
+                    <TextView android:textSize="@dimen/t16dp" android:id="@id/latestVersionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/setting_photo_quality_high" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BcFontFamilyLightStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+                <View android:background="@color/setting_item_separate_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" app:ignoreHeight="true" />
+                <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:id="@id/legalInfoBtn" android:background="@drawable/image_selector_share_menu_item" android:layout_width="fill_parent" android:layout_height="@dimen/t70dp" app:sourceWDP="360" app:useDeviceDP="true">
+                    <TextView android:textSize="@dimen/t16dp" android:textColor="@color/text_color_setting_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/about_page_legal_information" android:layout_centerVertical="true" style="@style/BcFontFamilyLightStyle" />
+                    <ImageView android:clickable="true" android:layout_width="20.0dip" android:layout_height="16.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ico_arrow_right" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+                <View android:background="@color/setting_item_separate_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" app:ignoreHeight="true" />
+            </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeLinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+    </ScrollView>
+</com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>

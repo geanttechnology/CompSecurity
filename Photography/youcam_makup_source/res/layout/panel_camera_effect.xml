@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/colorEffectTopDivider" android:background="#ff423846" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:id="@id/cameraEffectGridAreaParent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/colorEffectTopDivider" custom:guideline_width="1025" custom:guideline_height="200">
+        <com.cyberlink.youcammakeup.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/cameraEffectGridArea" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" custom:listSelector="@android:color/transparent" custom:horizontalSpacing="0.0dip" custom:numRows="1" />
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:id="@id/cameraTabContainer" android:background="#bf000000" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/cameraEffectGridAreaParent" custom:guideline_width="1025" custom:guideline_height="54">
+        <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.2" />
+                <ImageView android:id="@id/CameraSelfieDot" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/camera_tab_text_prefix" android:scaleType="center" android:layout_weight="0.1" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+                <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@drawable/camera_effect_tab_btn_text" android:ellipsize="end" android:gravity="center" android:id="@id/CameraSelfieBtn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Camera_Tab_Portrait" android:shadowColor="@android:color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_weight="0.7" custom:text_size_info="360:11:default" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.2" />
+                <ImageView android:id="@id/CameraSceneryDot" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/camera_tab_text_prefix" android:scaleType="center" android:layout_weight="0.1" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+                <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@drawable/camera_effect_tab_btn_text" android:ellipsize="end" android:gravity="center" android:id="@id/CameraSceneryBtn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Camera_Tab_Scenery" android:shadowColor="@android:color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_weight="0.7" custom:text_size_info="360:11:default" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.2" />
+                <ImageView android:id="@id/CameraFoodDot" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/camera_tab_text_prefix" android:scaleType="center" android:layout_weight="0.1" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+                <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@drawable/camera_effect_tab_btn_text" android:ellipsize="end" android:gravity="center" android:id="@id/CameraFoodBtn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Camera_Tab_Food" android:shadowColor="@android:color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_weight="0.7" custom:text_size_info="360:11:default" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.2" />
+                <ImageView android:id="@id/CameraArtisticDot" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/camera_tab_text_prefix" android:scaleType="center" android:layout_weight="0.1" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+                <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@drawable/camera_effect_tab_btn_text" android:ellipsize="end" android:gravity="center" android:id="@id/CameraArtisticBtn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Camera_Tab_Artistic" android:shadowColor="@android:color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_weight="0.7" custom:text_size_info="360:11:default" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:guideline_width="1025" custom:guideline_height="254">
+        <View android:id="@id/panelTopView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</RelativeLayout>

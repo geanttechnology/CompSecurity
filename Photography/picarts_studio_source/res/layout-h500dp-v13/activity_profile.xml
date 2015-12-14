@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_cover_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/profile_cover_user_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignTop="@id/profile_cover_overlay" android:layout_alignBottom="@id/profile_cover_overlay" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/profile_cover_overlay" android:background="@drawable/profile_cover_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16dp">
+                            <FrameLayout android:id="@id/avatar_frame" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/selectable_item_overlay_round_picsart_light" android:layout_centerHorizontal="true">
+                                <ImageView android:id="@id/iv_avatar" android:background="@drawable/profile_avatar_background" android:padding="@dimen/space_4dp" android:layout_width="@dimen/profile_avatar_size" android:layout_height="@dimen/profile_avatar_size" android:src="@drawable/si_ui_default_avatar" android:scaleType="centerCrop" />
+                            </FrameLayout>
+                            <CheckBox android:id="@id/btn_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/btn_follow" android:layout_toRightOf="@id/avatar_frame" android:layout_centerVertical="true" android:translationX="@dimen/profile_avatar_follow_button_width_half_negative" />
+                            <TextView android:textSize="@dimen/textSize_14" android:typeface="normal" android:textColor="@color/color_white" android:id="@id/btn_add_cover" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:layout_marginTop="@dimen/space_16dp" android:text="@string/add_cover" android:drawablePadding="@dimen/space_8dp" android:layout_toRightOf="@id/btn_follow" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/display_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp">
+                            <TextView android:textSize="@dimen/textSize_18" android:typeface="normal" android:textColor="@color/color_white" android:id="@id/tv_displayname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dip" android:singleLine="true" android:layout_centerHorizontal="true" />
+                            <ImageView android:id="@id/iv_badge" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:src="@drawable/si_ui_verified_badge" android:layout_toRightOf="@id/tv_displayname" />
+                        </RelativeLayout>
+                        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/color_white" android:ellipsize="end" android:id="@id/tv_username" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp" android:maxWidth="240.0dip" android:singleLine="true" />
+                        <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/color_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_status" android:clickable="true" android:layout_width="wrap_content" android:layout_height="64.0dip" android:layout_marginTop="@dimen/space_8dp" android:layout_marginBottom="@dimen/space_8dp" android:maxWidth="240.0dip" android:maxLines="3" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/textSize_14" android:typeface="normal" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/si_ui_add_cover_photo_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_16dp" android:maxWidth="160.0dip" android:maxHeight="100.0dip" android:text="@string/msg_cover_add_photo" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <com.picsart.studio.view.SlidingTabLayout android:id="@id/profile_cover_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:id="@id/toolbar_gradient" android:background="@drawable/activity_profile_toolbar_background" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/color_white" android:ellipsize="end" android:layout_gravity="center" android:id="@id/title_username" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="240.0dip" android:singleLine="true" />
+                <ImageView android:gravity="center" android:layout_gravity="top|right|center" android:id="@id/add_photo" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:padding="@dimen/space_12dp" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/add_photo_profile" />
+            </android.support.v7.widget.Toolbar>
+        </FrameLayout>
+        <TextView android:textColor="@color/text_color_light_gray" android:layout_gravity="center" android:id="@id/tv_invalid_user" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_message_no_user" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Picsart.ProgressBar" />
+    </FrameLayout>
+    <fragment android:layout_gravity="left" android:id="@id/fragment_navigation" android:layout_width="310.0dip" android:layout_height="fill_parent" class="com.socialin.android.picsart.profile.fragment.NavigationFragment" />
+</android.support.v4.widget.DrawerLayout>

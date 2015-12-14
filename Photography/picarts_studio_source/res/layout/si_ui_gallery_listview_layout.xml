@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/si_ui_gallery_listview_layout_id" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/si_ui_gallery_listview_top_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/si_ui_gallery_listview_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" style="@style/Widget.Picsart.ProgressBar.Small" />
+        <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_dark_gray" android:id="@id/si_ui_gallery_listview_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_loading" />
+    </LinearLayout>
+    <ListView android:id="@id/si_ui_gallery_list_view" android:background="@color/color_white" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/list_divider_holo_light" android:layout_below="@id/si_ui_gallery_listview_top_layout" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/si_ui_gallery_listview_center_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.Picsart.Light.ProgressBar" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/si_ui_gallery_retry_layout" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <include layout="@layout/button_go_to_top_layout" />
+    </RelativeLayout>
+</RelativeLayout>

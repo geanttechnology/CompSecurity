@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:paddingTop="6.5999756dip" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:emojicon="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ChatMessageContentArea" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/itemCheckBox" android:visibility="visible" android:layout_marginLeft="@dimen/chat_item_check_box_margin_left" android:layout_marginRight="@dimen/chat_item_check_box_margin_right" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/UViewItemMessageCheckBox" />
+        <com.cyberlink.you.widgetpool.common.CircleImageView android:id="@id/ChatMessageAvatar" android:scaleType="centerCrop" android:layout_toRightOf="@id/itemCheckBox" style="@style/UViewItemRecvAvatar" />
+        <com.rockerhieu.emojicon.EmojiconTextView android:textColor="#ff000000" android:id="@id/ChatMessageNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ChatMessageAvatar" android:layout_alignParentTop="true" style="@style/UViewItemRecvName" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/ChatMessageAvatar" android:layout_below="@id/ChatMessageNameTextView">
+            <RelativeLayout android:id="@id/contentLayout" android:paddingLeft="0.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/ChatMessageContentLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View android:id="@id/TextContentArea" android:background="@drawable/u_img_chats_bg_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/ChatMessageContentTextView" android:layout_alignTop="@id/ChatMessageContentTextView" android:layout_alignRight="@id/ChatMessageContentTextView" android:layout_alignBottom="@id/ChatMessageContentTextView" />
+                    <com.rockerhieu.emojicon.EmojiconTextView android:textSize="@dimen/chat_textfontsize" android:textColor="#ff000000" android:id="@id/ChatMessageContentTextView" android:paddingLeft="@dimen/t24dp" android:paddingTop="@dimen/t5dp" android:paddingRight="@dimen/t8dp" android:paddingBottom="@dimen/t5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" emojicon:emojiconSize="32.0dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:id="@id/ChatMessageTimeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/contentLayout" android:layout_alignBottom="@id/contentLayout" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

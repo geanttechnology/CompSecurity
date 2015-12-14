@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/u_bg_edittext_normal_gray_border" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/SearchIconImageView" android:layout_width="31.0dip" android:layout_height="31.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/u_search_bar_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/SearchEditXImage" android:visibility="gone" android:layout_width="31.0dip" android:layout_height="31.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/u_iocn_display_name_x" android:layout_alignParentRight="true" />
+    <EditText android:textSize="17.0sp" android:textColor="@color/you_color_normal_gray" android:textColorHint="@color/you_color_hint" android:id="@id/SearchEditText" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="2.0dip" android:singleLine="true" android:layout_toLeftOf="@id/SearchEditXImage" android:layout_toRightOf="@id/SearchIconImageView" android:inputType="text" android:imeOptions="actionSearch" android:contentDescription="[AID]SearchEditText" android:textCursorDrawable="@null" />
+</RelativeLayout>

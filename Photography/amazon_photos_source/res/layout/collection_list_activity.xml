@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/gallery_activity_main_layout" android:background="@color/primary_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/chrome_breadcrumb" />
+    <FrameLayout android:id="@id/collection_list_frame_layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <include layout="@layout/collection_list_body" />
+    </FrameLayout>
+</RelativeLayout>

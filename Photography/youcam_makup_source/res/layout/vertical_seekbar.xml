@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/verticalTopMargin" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="520" />
+    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1080.0" android:layout_above="@id/verticalBottomMargin" android:layout_below="@id/verticalTopMargin">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/verticalSliderContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="136.0">
+            <com.cyberlink.youcammakeup.widgetpool.common.VerticalSeekBar android:id="@id/verticalSlider" android:paddingLeft="20.0dip" android:paddingTop="0.0dip" android:paddingRight="20.0dip" android:paddingBottom="0.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/t1dp" android:layout_marginBottom="@dimen/t18dp" android:maxHeight="1.5dip" android:max="100" android:progress="50" android:progressDrawable="@drawable/layer_list_slider_vertical" android:minHeight="1.5dip" android:thumb="@drawable/image_selector_slider_thumb_nodisable_vertical" android:thumbOffset="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/verticalBottomMargin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" app:guideline_width="1080" app:guideline_height="540" />
+</RelativeLayout>

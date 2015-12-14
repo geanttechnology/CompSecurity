@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient1_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient1" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/effect_grad1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient2_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient2" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/effect_grad2" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient3_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient3" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/effect_grad3" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient4_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient4" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/effect_grad4" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient5_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gradient5" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/effect_grad5" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/color1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_color" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/color1_parameter_container" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="0.0">
+                <FrameLayout android:id="@id/color1_background_view" android:background="@drawable/color" android:clickable="false" android:duplicateParentState="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_centerInParent="true" />
+                <ImageView android:background="@drawable/xml_icon_bg_color" android:clickable="false" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/color2_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_color" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/color2_parameter_container" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="0.0">
+                <FrameLayout android:id="@id/color2_background_view" android:background="@drawable/color" android:clickable="false" android:duplicateParentState="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_centerInParent="true" />
+                <ImageView android:background="@drawable/xml_icon_bg_color" android:clickable="false" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/hue_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/hue_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:layout_gravity="center_vertical" android:id="@id/hue_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/saturation_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/saturation_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:layout_gravity="center_vertical" android:id="@id/saturation_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/fade_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/fade_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:layout_gravity="center_vertical" android:id="@id/fade_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0" />
+</LinearLayout>

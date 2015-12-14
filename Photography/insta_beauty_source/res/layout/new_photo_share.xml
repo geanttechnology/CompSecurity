@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:background="@drawable/gr_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fotoable.view.actionbar.CommonActionBarView1 android:id="@id/actionBarView" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/photo_share_btns" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.fotoable.savepagescrollview.ShareScrolladView android:gravity="center" android:id="@id/tShareScrollView1" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/shareSaveTextviewLayout" android:background="@color/solid_dark_gray" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/solid_white" android:gravity="center" android:id="@id/shareSaveTextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photo_share_save_success" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/scrollViewContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/shareButtonView" />
+</LinearLayout>

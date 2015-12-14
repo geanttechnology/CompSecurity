@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mm="http://millennialmedia.com/android/schema">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="48.0dip" android:layout_marginBottom="48.0dip" layout="@layout/component_loading" />
+    <include layout="@layout/component_app_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/activity_comments_bottom_components" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/divider" android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <my.googlemusic.play.utils.views.AutoCompleteTextView android:id="@id/comments_message" android:background="#ffffffff" android:paddingLeft="16.0dip" android:paddingRight="64.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/comments_add" android:maxLength="140" android:inputType="text" android:paddingEnd="64.0dip" />
+            <Button android:id="@id/addNew" android:background="@anim/button_add_comment" android:padding="4.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/comments_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" />
+    </LinearLayout>
+    <ListView android:id="@id/list" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="56.0dip" android:drawSelectorOnTop="true" android:divider="@null" android:layout_above="@id/activity_comments_bottom_components" />
+    <include layout="@layout/component_offline" />
+</RelativeLayout>

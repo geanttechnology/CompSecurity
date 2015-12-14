@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/bc_delete_btn" android:background="#ffff0000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/t40dp" android:layout_marginBottom="@dimen/t50dp" android:text="@string/u_delete_btn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout android:id="@id/bc_pull_to_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bc_delete_btn">
+        <ListView android:id="@id/bc_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" style="@style/BcPanelListViewBasicStyle" />
+    </com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout>
+    <ImageView android:id="@id/bc_create_group_btn" android:visibility="gone" android:layout_width="@dimen/t40dp" android:layout_height="@dimen/t40dp" android:layout_marginRight="@dimen/t4dp" android:layout_marginBottom="@dimen/t74dp" android:src="@drawable/bc_issue_create_post_btn" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/me_signIn_outter" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/bc_view_top_add_panel" />
+    <include layout="@layout/bc_view_top_home_panel" />
+</RelativeLayout>

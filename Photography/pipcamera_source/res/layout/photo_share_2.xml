@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wantu.view.CommonActionBarView1 android:id="@id/actionBarView" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/actionBarView" />
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/shareSaveTextviewLayout" android:background="@color/save_red" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="100.0dip">
+        <TextView android:textColor="@color/solid_white" android:id="@id/shareSaveTextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/photo_share_btns" android:layout_width="fill_parent" android:layout_height="367.0dip" android:layout_below="@id/shareSaveTextviewLayout" android:layout_centerHorizontal="true">
+        <com.wantu.view.NewTShareScrollView android:gravity="center" android:id="@id/tShareScrollView1" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/shareMoreLayout" android:background="@color/solid__share_gray" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="-245.0dip" android:layout_below="@id/photo_share_btns">
+        <ImageView android:id="@id/shareButtonBg" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip" />
+        <TextView android:textColor="@color/nav_save_color" android:id="@id/shareMoreTextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_share" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/container" android:background="@color/solid_white" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_below="@id/shareMoreLayout" android:layout_centerHorizontal="true">
+        <FrameLayout android:layout_gravity="top|center" android:id="@id/adViewContainer" android:tag="adViewContainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

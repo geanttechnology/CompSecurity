@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.picsart.studio.view.viewpagerindicator.VerticalViewPager android:layout_gravity="center_horizontal" android:id="@id/vertical_shape_pager" android:layout_width="@dimen/select_shape_grid_width" android:layout_height="0.0dip" />
+        <com.picsart.studio.view.viewpagerindicator.VerticalCirclePageIndicator android:orientation="vertical" android:id="@id/vertical_shape_pager_indicator" android:padding="@dimen/space_12dp" android:layout_width="wrap_content" android:layout_height="fill_parent" custom:fillColor="@color/gray_5e" custom:pageColor="@color/gray_ac" custom:radius="3.0dip" />
+        <View style="@style/Divider.Vertical" />
+        <LinearLayout android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="fill_parent">
+            <com.socialin.android.photo.draw.shape.ShapePreview android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="96.0dip" />
+            <View style="@style/Divider.Horizontal" />
+            <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <include layout="@layout/select_shape_options" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/gen_cancel" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/gen_ok" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

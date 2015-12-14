@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/t88dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/NoticeItemNewIcon" android:background="@drawable/icon_new_dot" android:layout_width="@dimen/t18dp" android:layout_height="@dimen/t18dp" android:layout_marginLeft="@dimen/t10dp" android:layout_marginTop="@dimen/t10dp" android:contentDescription="@null" />
+    <FrameLayout android:id="@id/NoticeItemRightArrow" android:layout_width="@dimen/t17dp" android:layout_height="@dimen/t9dp" android:layout_marginRight="@dimen/t20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/NoticeItemArrowDown" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_arrow_list_down" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/NoticeItemArrowUp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_arrow_list_up" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/t10dp" android:layout_marginTop="@dimen/t10dp" android:layout_marginRight="@dimen/t10dp" android:layout_toLeftOf="@id/NoticeItemRightArrow" android:layout_toRightOf="@id/NoticeItemNewIcon">
+        <TextView android:textSize="@dimen/t14dp" android:textColor="#ff464646" android:gravity="top" android:id="@id/NoticeItemDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2014/1/1" style="@style/BcFontFamilyLightStyle" />
+        <TextView android:textSize="@dimen/t14dp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/NoticeItemVersion" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Version 1.03 Update:" style="@style/BcFontFamilyLightStyle" />
+        <TextView android:textSize="@dimen/t14dp" android:textColor="#ff000000" android:gravity="top" android:id="@id/NoticeItemFeature" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t2dp" android:text="Add new feature - style recorder" style="@style/BcFontFamilyLightStyle" />
+    </LinearLayout>
+</RelativeLayout>

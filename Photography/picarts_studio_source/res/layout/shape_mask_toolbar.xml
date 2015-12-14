@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/bottom_menu_colorpicker" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip">
+            <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/color_picker_preview" android:layout_width="@dimen/drawing_bottom_items_icon_size" android:layout_height="@dimen/drawing_bottom_items_icon_size" />
+        </FrameLayout>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_select_background" android:layout_width="@dimen/drawing_bottom_items_icon_size" android:layout_height="@dimen/drawing_bottom_items_icon_size" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_8dp" android:text="@string/gen_inverse" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_invert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_16dp" android:checked="false" />
+        <Spinner android:layout_gravity="center_vertical" android:id="@id/blend_mode_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:id="@id/seekbar_label" android:paddingLeft="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <SeekBar android:id="@id/collage_outer_border_size_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="40" android:progress="12" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

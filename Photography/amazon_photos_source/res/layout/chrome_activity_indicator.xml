@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/chrome_activity_indicator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/activity_indicator_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="8.0dip" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:textColor="@color/loading_spinner_full_screen" android:layout_gravity="center_vertical" android:id="@id/activity_indicator_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:text="@string/adrive_gallery_common_activity_indicator_loading" style="@style/textapperance_photos2_spinner_text" />
+</LinearLayout>

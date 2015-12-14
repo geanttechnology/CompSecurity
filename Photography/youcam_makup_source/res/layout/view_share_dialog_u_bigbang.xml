@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="920.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="25.0" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_vertical" android:id="@id/UItemIcon" android:background="@drawable/icon_u_album" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="195.0" app:guideline_width="1" app:guideline_height="1" />
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="26.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="648.0">
+        <TextView android:textColor="#ff474846" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/UItemLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/u_ad_photo_chat_description" android:maxLines="3" style="@style/SharePromotionMessageText" />
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" />
+        <TextView android:textColor="#ff3a9900" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ULinkHintLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/u_ad_link_to_store" android:maxLines="3" style="@style/SharePromotionMessageText" />
+    </LinearLayout>
+</LinearLayout>

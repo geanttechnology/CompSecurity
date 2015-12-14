@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bc_beauty_option_panel" android:background="@drawable/bc_discover_top_option_background" android:padding="@dimen/t8dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/t3dp" android:layout_marginRight="@dimen/t3dp">
+        <ImageView android:id="@id/bc_beauty_option_image" android:layout_marginLeft="@dimen/t3dp" android:layout_marginTop="@dimen/t2dp" android:layout_marginRight="@dimen/t3dp" android:layout_marginBottom="@dimen/t2dp" android:contentDescription="@string/app_name" style="@style/BcDiscoverTopBtnImageStyle" />
+        <TextView android:id="@id/bc_beauty_option_text" android:layout_marginLeft="@dimen/t2dp" android:layout_marginRight="@dimen/t2dp" style="@style/BcDiscoverTopBtnTextStyle" />
+    </LinearLayout>
+</LinearLayout>

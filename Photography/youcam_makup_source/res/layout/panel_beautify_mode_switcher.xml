@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="470" app:guideline_height="162"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom|right|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="162.0">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/colorbtn_eyeshadow_bg" android:layout_width="0.0dip" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="137.0" app:guideline_width="466" app:guideline_height="137">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="137.0">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="112.0" app:guideline_width="450" app:guideline_height="112">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/paletteMenuBtn" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="106" app:guideline_height="112">
+                            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:id="@id/paletteMenuBtnImage" android:background="@drawable/colorset_menu_btn_n" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="97" app:guideline_height="88" />
+                        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="112.0">
+                            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="88.0" app:guideline_width="332" app:guideline_height="88">
+                                <ViewSwitcher android:layout_gravity="center" android:id="@id/paletteColorSwitcher" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@android:anim/slide_in_left" android:outAnimation="@android:anim/slide_out_right" />
+                                <ImageView android:id="@id/paletteColorImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+                            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </LinearLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="top" android:id="@id/toolsTopArrows" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="470" app:guideline_height="26">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="470.0">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="164.0" />
+            <FrameLayout android:id="@id/toolsTopArrowEven21" android:background="@drawable/pattenmenu_arrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="108.0" />
+            <FrameLayout android:id="@id/toolsTopArrowEven22" android:background="@drawable/pattenmenu_arrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="80.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="470.0">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="136.0" />
+            <FrameLayout android:id="@id/toolsTopArrowOdd1" android:background="@drawable/pattenmenu_arrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="54.0" />
+            <FrameLayout android:id="@id/toolsTopArrowOdd2" android:background="@drawable/pattenmenu_arrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="52.0" />
+            <FrameLayout android:id="@id/toolsTopArrowOdd3" android:background="@drawable/pattenmenu_arrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="44.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="470.0">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="124.0" />
+            <FrameLayout android:id="@id/toolsTopArrowEven41" android:background="@drawable/pattenmenu_arrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="24.0" />
+            <FrameLayout android:id="@id/toolsTopArrowEven42" android:background="@drawable/pattenmenu_arrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="26.0" />
+            <FrameLayout android:id="@id/toolsTopArrowEven43" android:background="@drawable/pattenmenu_arrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="24.0" />
+            <FrameLayout android:id="@id/toolsTopArrowEven44" android:background="@drawable/pattenmenu_arrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="58.0" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="27.0" />
+        </LinearLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <LinearLayout android:gravity="right|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="162.0">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/bottom_tool_bar_divider" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="104.0" app:guideline_width="4" app:guideline_height="104" />
+    </LinearLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/BcDownloadYMKPageStyle">
+        <View android:background="@drawable/bc_banner_ycm" android:layout_width="fill_parent" android:scaleType="fitXY" android:layout_alignParentBottom="true" style="@style/BcDownloadYMKBackgroundStyle" />
+        <LinearLayout android:gravity="top|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/BcDownloadYMKPanelStyle">
+            <TextView android:textColor="#ffc43869" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_dialog_ymk_title" style="@style/BcDownloadYMKTextStyle" />
+            <TextView android:textColor="#ff000000" android:gravity="top|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_dialog_ymk_dowload_message" style="@style/BcDownloadYMKDescTextStyle" />
+            <Button android:textColor="@color/bc_color_white" android:id="@id/bc_download_youcam_makeup" android:background="@drawable/bc_register_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_dialog_ymk_download" style="@style/BcDownloadYMKButtontStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/bc_nextTimeButton" android:src="@drawable/bc_write_post_delete" android:layout_alignParentRight="true" style="@style/BcDownloadYMKCancelStyle" />
+</RelativeLayout>

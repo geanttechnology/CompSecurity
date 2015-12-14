@@ -1,0 +1,1493 @@
+package com.livemixtapes;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import org.json.JSONObject;
+
+import android.annotation.SuppressLint;
+import android.app.ActionBar.LayoutParams;
+import android.app.AlertDialog;
+import android.app.DownloadManager;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
+import android.app.ProgressDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.Point;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.SystemClock;
+import android.util.Log;
+import android.view.Display;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
+import android.view.ViewGroup;
+import android.view.ViewGroup.MarginLayoutParams;
+import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
+import android.view.animation.AnimationUtils;
+import android.widget.AbsListView;
+import android.widget.AbsListView.OnScrollListener;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.PopupWindow;
+import android.widget.PopupWindow.OnDismissListener;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.google.android.gms.analytics.HitBuilders;
+<<<<<<< HEAD
+//import com.google.android.gms.internal.ob;
+=======
+>>>>>>> f8b57bea7e586d83f95043b155a9bdfb43d9a32f
+import com.livemixtapes.AsyncHttp.AsyncHttpCallback;
+import com.livemixtapes.database.DBHelper;
+import com.livemixtapes.library.JSONParser;
+import com.livemixtapes.profile.SeeAllList;
+import com.livemixtapes.utils.Utility;
+
+@SuppressWarnings("unchecked")
+public class Mixtape extends Fragment implements OnClickListener {
+	Map<String, Object> mixtape;
+
+	private int maxCoverSize;
+	private int minCoverSize;
+	private int maxHeaderSize;
+	private int minHeaderSize;
+
+	private Boolean measured = false;
+
+	// layout objects
+	private ViewGroup layout;
+	private View filler;
+	private View header;
+	private View info;
+	private View mixtapeBtns;
+	private View trackBtns;
+	private TextView dj;
+	private TextView title;
+	private TextView views;
+	private TextView date;
+	private TextView score;
+	private ListView tracks;
+	private ImageView cover;
+
+	private ImageButton comments;
+	private ImageButton favorite;
+	private ImageButton playlist;
+	private ImageButton like;
+	private ImageButton dislike;
+
+	private ImageButton playAll, downloadAll;
+	private ProgressBar downloadAllProgressBar;
+
+	private FrameLayout mainFrameLayout;
+
+	MainActivity parentActivity;
+
+	LazyAdapterTracks adapter;
+	DownloadManager downloadManager;
+
+	Context mContext;
+
+	DBHelper dbHelper;
+	
+	LinearLayout layoutBack;
+	TextView textViewBack;
+	LinearLayout buttonShare;
+	TextView textViewTitle;
+
+	 
+	
+	public HashMap<String, Long> downloadProgressList = new HashMap<String, Long>();
+	public HashMap<String, Integer> listPosMap = new HashMap<String, Integer>();
+	Handler handler;
+
+	Timer globalTimer;
+	private int mScrollState = OnScrollListener.SCROLL_STATE_IDLE;
+
+	private int id;
+	private Boolean favorited = false;
+	private Boolean voted = false;
+	private Boolean voting = false;
+	public Boolean playlistMode = false;
+	Button addTracksButton;
+	public ArrayList<String> selectedPlayListTracks = new ArrayList<String>();
+	public static boolean shouldClearPlayListMode;
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		
+		
+		console.log( "LOGGING MIXTAPE VIEW");
+		App application = (App) getActivity().getApplication();
+		
+		application.getDefaultTracker().setScreenName("Image~" + "Mixtape");
+		
+		
+		application.getDefaultTracker().send(new HitBuilders.ScreenViewBuilder().build());
+		
+		// TODO Auto-generated method stub
+		mContext = getActivity();
+		
+		// hide keyboard if shown
+		Utility.hideKeyboard(getActivity());
+
+		shouldClearPlayListMode = false;
+		
+		handler = new Handler();
+	    View rootView = inflater.inflate(R.layout.mixtape, container, false);
+
+	    Bundle bundle = this.getArguments();
+	    String backScreenTitle = "Recent";
+	    if(bundle!=null) {
+	      mixtape= (Map<String, Object>) bundle.getSerializable("mixtapeData");
+	      backScreenTitle = bundle.getString("backScreenTitle");
+	      if(backScreenTitle == null || backScreenTitle.equals("")) {
+	    	  backScreenTitle = "Recent";
+	      }
+	    }
+
+	    setHasOptionsMenu(true);
+
+	    mainFrameLayout = (FrameLayout) rootView.findViewById(R.id.mainmenu);
+		mainFrameLayout.getForeground().setAlpha(0);
+
+		layout = (ViewGroup) rootView.findViewById(R.id.mixtapeview);
+		header = (View) rootView.findViewById(R.id.header);
+		info = (View) rootView.findViewById(R.id.info);
+		cover = (ImageView) rootView.findViewById(R.id.cover);
+		tracks = (ListView) rootView.findViewById(R.id.tracks);
+		mixtapeBtns = (View) rootView.findViewById(R.id.metabuttons);
+		trackBtns = (View) rootView.findViewById(R.id.trackbuttons);
+
+		dj = (TextView) rootView.findViewById(R.id.dj);
+		title = (TextView) rootView.findViewById(R.id.title);
+		views = (TextView) rootView.findViewById(R.id.views);
+		date = (TextView) rootView.findViewById(R.id.date);
+		score = (TextView) rootView.findViewById(R.id.score);
+		comments = (ImageButton) rootView.findViewById(R.id.comments);
+
+		playAll = (ImageButton) rootView.findViewById(R.id.playall);
+		downloadAll = (ImageButton) rootView.findViewById(R.id.downloadall);
+		favorite = (ImageButton) rootView.findViewById(R.id.favorite);
+		playlist = (ImageButton) rootView.findViewById(R.id.playlist);
+		
+		like = (ImageButton) rootView.findViewById(R.id.like);
+		dislike = (ImageButton) rootView.findViewById(R.id.dislike);
+
+		downloadAllProgressBar = (ProgressBar) rootView.findViewById(R.id.downloadAllProgressBar);
+		
+
+		layoutBack = (LinearLayout) rootView.findViewById(R.id.layoutBack);
+		textViewBack = (TextView) rootView.findViewById(R.id.textViewBack);
+		buttonShare = (LinearLayout) rootView.findViewById(R.id.buttonShare);
+		textViewTitle = (TextView) rootView.findViewById(R.id.textViewTitle);
+		
+		layoutBack.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				getActivity().onBackPressed();
+			}
+			
+		});
+		textViewBack.setText(backScreenTitle);
+		
+		String title = mixtape.get("artist").toString();
+		if(title.length() > 12) {
+			title = title.substring(0, 12) + "...";
+		}
+		textViewTitle.setText(title);
+		
+		buttonShare.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+			    sharingIntent.setType("text/plain");
+			    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Text");
+			    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject");
+			    startActivity(Intent.createChooser(sharingIntent, "Share using"));
+			}
+			
+		});
+		
+
+		downloadManager = (DownloadManager) mContext.getSystemService(Context.DOWNLOAD_SERVICE);
+
+		downloadAll.setOnClickListener(this);
+		playAll.setOnClickListener(this);
+		playlist.setOnClickListener(this);
+		favorite.setOnClickListener(this);
+		like.setOnClickListener(this);
+		dislike.setOnClickListener(this);
+		
+		addTracksButton = (Button) rootView.findViewById(R.id.tapTracksButton);
+		addTracksButton.setVisibility(View.GONE);
+		addTracksButton.setOnClickListener(this);
+		
+		
+		// pop now playing/
+		 ArrayList<HashMap<String, Object>> temp_tracklist;
+		temp_tracklist = (ArrayList<HashMap<String,Object>>) mixtape.get("tracks");
+		if (temp_tracklist.size() > 0)
+		{
+			if (App.didLoad == false)
+			{
+				App.didLoad=true;
+		MainActivity.firstLoad = true;
+		console.log ("MIXTAPE DATA: " + mixtape);
+		NowPlayingActivity.mixtape = mixtape;
+		NowPlayingActivity.playList = null;
+		NowPlayingActivity.position = 0;
+		NowPlayingActivity.flag = NowPlayingActivity.MIXTAPE_FLAG;
+		
+		startActivity(new Intent(mContext,NowPlayingActivity.class));
+			}
+		}
+		else
+		{
+			playAll.setVisibility(View.GONE);
+			downloadAll.setVisibility(View.GONE);
+			downloadAllProgressBar.setVisibility(View.GONE);
+			like.setVisibility(View.GONE);
+			dislike.setVisibility(View.GONE);
+			//disableVoteButtons();
+		}
+		
+		temp_tracklist = null;
+		//////////////////
+		
+		comments.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+				CommentsPopup popup = new CommentsPopup(getActivity(), mContext, mixtape);
+				popup.showPopup(mainFrameLayout, comments);
+				/*
+				Display display = getActivity().getWindowManager().getDefaultDisplay();
+				Point size = new Point();
+				display.getSize(size);
+				int width = size.x;
+				int height = size.y;
+
+				LayoutInflater layoutInflater = (LayoutInflater) mContext
+						.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+				View popupView = layoutInflater.inflate(
+						R.layout.comment_share_popup, null);
+				final PopupWindow popupWindow = new PopupWindow(popupView,
+						3 * width / 4, 3 * height / 5);
+				popupWindow.setAnimationStyle(android.R.style.Animation_Dialog);
+				popupWindow.setOutsideTouchable(true);
+				popupWindow.setFocusable(true);
+				popupWindow.setBackgroundDrawable(new ColorDrawable(
+						Color.TRANSPARENT));
+
+				popupWindow.showAtLocation(comments, Gravity.CENTER, 0, 40);
+				popupWindow.setOnDismissListener(new OnDismissListener() {
+					@Override
+					public void onDismiss() {
+						// unblur the main layout
+						mainFrameLayout.getForeground().setAlpha(0);
+					}
+				});
+
+				ImageButton commentBtn = (ImageButton) popupView
+						.findViewById(R.id.comment);
+				commentBtn.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						popupWindow.dismiss();
+						Intent intent = new Intent(mContext,
+								CommentsActivity.class);
+						intent.putExtra("mixTapeId", mixtape.get("id")
+								.toString());
+						startActivity(intent);
+					}
+				});
+
+				ImageButton closeBtn = (ImageButton) popupView
+						.findViewById(R.id.closeButton);
+				closeBtn.setOnClickListener(new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						popupWindow.dismiss();
+					}
+				});
+
+				ImageButton fbBtn = (ImageButton) popupView
+						.findViewById(R.id.shareFb);
+				fbBtn.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						popupWindow.dismiss();
+						shareSocialNetworks("com.facebook.katana");
+					}
+				});
+
+				ImageButton twitterBtn = (ImageButton) popupView
+						.findViewById(R.id.shareTwitter);
+				twitterBtn.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						popupWindow.dismiss();
+						shareSocialNetworks("com.twitter.android");
+					}
+				});
+
+				ImageButton instagramBtn = (ImageButton) popupView
+						.findViewById(R.id.shareInstagram);
+				instagramBtn.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						popupWindow.dismiss();
+						shareSocialNetworks("com.instagram.android");
+					}
+				});
+
+				ImageButton emailBtn = (ImageButton) popupView
+						.findViewById(R.id.shareEmail);
+				emailBtn.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						popupWindow.dismiss();
+						Intent intent = new Intent(Intent.ACTION_SEND);
+						intent.setData(Uri.parse("mailto:"));
+						intent.setType("plain/text");
+						intent.putExtra(Intent.EXTRA_SUBJECT,
+								(String) mixtape.get("title"));
+						intent.putExtra(Intent.EXTRA_TEXT,
+								(String) mixtape.get("sharetext"));
+						startActivity(Intent
+								.createChooser(intent, "Send Email"));
+					}
+				});
+
+				ImageButton smsBtn = (ImageButton) popupView
+						.findViewById(R.id.shareMessage);
+				smsBtn.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						popupWindow.dismiss();
+						Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+						sendIntent.setData(Uri.parse("sms:"));
+						sendIntent.putExtra("sms_body",
+								(String) mixtape.get("sharetext"));
+						startActivity(sendIntent);
+					}
+				});
+
+				ImageButton tumblerBtn = (ImageButton) popupView
+						.findViewById(R.id.shareTumbler);
+				tumblerBtn.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						popupWindow.dismiss();
+						shareSocialNetworks("com.tumblr");
+					}
+				});
+
+				ImageButton copyBtn = (ImageButton) popupView
+						.findViewById(R.id.copy_link);
+				copyBtn.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						popupWindow.dismiss();
+						ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+						ClipData clip = ClipData.newPlainText("label",
+								(String) mixtape.get("sharetext"));
+						clipboard.setPrimaryClip(clip);
+					}
+				});
+				// Blur the main layout
+				mainFrameLayout.getForeground().setAlpha(135);
+				
+				*/
+			}
+		});
+
+		filler = getActivity().getLayoutInflater().inflate(R.layout.empty_header, tracks,
+				false);
+		tracks.addHeaderView(filler, null, false);
+
+		setData();
+		App.scaleViewGroup(layout);
+
+		new App.OnLayoutMeasureListener(layout) {
+			@Override
+			public void onLayoutMeasure() {
+				calcMeasurements();
+			}
+		};
+
+		tracks.setOnScrollListener(new OnScrollListener() {
+
+			@Override
+			public void onScroll(AbsListView view, int firstVisibleItem,
+					int visibleItemCount, int totalItemCount) {
+//				
+//
+//				if (!measured) {
+//					return;
+//				}
+//
+//				int scrollY = getScrollY();
+//
+//				if (scrollY > 0) {
+//					views.setVisibility(View.INVISIBLE);
+//					date.setVisibility(View.INVISIBLE);
+//					mixtapeBtns.setVisibility(View.INVISIBLE);
+//				} else {
+//					views.setVisibility(View.VISIBLE);
+//					date.setVisibility(View.VISIBLE);
+//					mixtapeBtns.setVisibility(View.VISIBLE);
+//				}
+//
+//				int newCoverSize = Math.max(maxCoverSize
+//						- (int) (scrollY * 0.6), minCoverSize);
+//				int newHeaderSize = Math.max(maxHeaderSize - scrollY,
+//						minHeaderSize);
+//
+//				cover.getLayoutParams().width = newCoverSize;
+//				cover.getLayoutParams().height = newCoverSize;
+//
+//				header.getLayoutParams().height = newHeaderSize;
+//
+//				cover.requestLayout();
+//				header.requestLayout();
+			}
+
+			@Override
+			public void onScrollStateChanged(AbsListView view, int scrollState) {
+				mScrollState = scrollState;
+			}
+
+		});
+
+		tracks.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@SuppressLint("NewApi") @Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				Log.v("mixtape", "track clicked");
+
+				// if (position == 0)
+				// return;
+				position -= tracks.getHeaderViewsCount();
+
+				ArrayList<HashMap<String, String>> d = (ArrayList) mixtape
+						.get("tracks");
+				try {
+					// TabHost tabs = parentActivity.getTabHost();
+
+					if (playlistMode) {
+						String trackId = d.get(position).get("track_id");
+						if(selectedPlayListTracks.contains(trackId))
+						{
+							selectedPlayListTracks.remove(trackId);
+							//This is very efficient than reloading all rows
+							updatePlayListSelectionBackground(position, false);
+						}
+						else
+						{
+							selectedPlayListTracks.add(trackId);
+							updatePlayListSelectionBackground(position, true);
+						}
+					}
+					
+					else
+					{
+						NowPlayingActivity.mixtape = mixtape;
+						NowPlayingActivity.position = position;
+						NowPlayingActivity.flag = NowPlayingActivity.MIXTAPE_FLAG;
+						MainActivity.isPlaying = true;
+						NowPlayingActivity.reloadData();
+						MainActivity.nowplayingbutton.setImageResource(R.drawable.tab_player_active);
+						shake(MainActivity.nowplayingbutton,null);
+						
+						/*
+						String whichThumb = ((String)mixtape.get("cover")).toString();
+						NowPlayingActivity.thumbURL = whichThumb;
+						NowPlayingActivity.title = ((HashMap<String, ?>)((ArrayList)mixtape.get("tracks")).get(position)).get("track_title").toString();
+						String whichURL = null;
+						String whichTrack = ((HashMap<String, ?>)((ArrayList)mixtape.get("tracks")).get(position)).get("track_id").toString();
+						if (Utils.isFileExists(App.context, whichTrack))
+						{
+							console.log ("TRACK IS DOWNLOADED");
+//							whichURL = "file://" + App.context.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS).toString()+ "/LiveMixTapes/" + ((HashMap<String, ?>)((ArrayList)mixtape.get("tracks")).get(position)).get("track_id").toString();
+							whichURL = "file://" + Utils.getLivemixtapesFolder().getAbsolutePath()+ "/" + ((HashMap<String, ?>)((ArrayList)mixtape.get("tracks")).get(position)).get("track_id").toString();
+							console.log ("TRACK URL IS: " + whichURL);
+						}
+						else
+						{
+							console.log ("TRACK IS NOT DOWNLOADED");
+							whichURL = ((HashMap<String, ?>)((ArrayList)mixtape.get("tracks")).get(position)).get("download_url").toString();
+						}
+						
+						///
+						Intent i = new Intent(LMTService.ACTION_URL);
+						i.setPackage("com.livemixtapes");
+						
+						Uri uri = Uri.parse(whichURL);
+						console.log ("URI IS: " + uri.toString());
+						//Uri uri = Uri.parse("httplive://cdn-streams.livemixtapes.com/biggarankin/shy_glizzy-young_jefe/3540DE73.mp4.m3u8");
+						i.setData(uri);
+						App.context.startService(i);
+						*/
+					}
+
+					App.showNotification(d.get(position).get("track_title"),
+							cover);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+
+		header.setOnTouchListener(new OnTouchListener() {
+			@Override
+			public boolean onTouch(View view, MotionEvent ev) {
+				return true;
+			}
+		});
+
+		return  rootView;
+	}
+
+	public Map<String, ?> getMixtape() {
+		return mixtape;
+	}
+
+	public int getScrollY() {
+
+		View c = tracks.getChildAt(0);
+
+		if (c == null) {
+			return 0;
+		}
+
+		int firstVisiblePosition = tracks.getFirstVisiblePosition();
+		int top = c.getTop();
+
+		int headerHeight = 0;
+
+		if (firstVisiblePosition >= 1) {
+			headerHeight = filler.getHeight();
+		}
+
+		return -top + firstVisiblePosition * c.getHeight() - headerHeight;
+	}
+
+	public int getAbsoluteHeight(View view) {
+		int height;
+		MarginLayoutParams params = (MarginLayoutParams) view.getLayoutParams();
+
+		height = view.getHeight();
+		Log.v("height", Integer.toString(height));
+		height += view.getPaddingTop() + view.getPaddingBottom();
+		Log.v("height", Integer.toString(height));
+		height += params.topMargin + params.bottomMargin;
+		Log.v("height", Integer.toString(height));
+
+		return height;
+	}
+
+	public void calcMeasurements() {
+		if (measured)
+			return;
+
+		maxCoverSize = cover.getWidth();
+		minCoverSize = (int) (maxCoverSize * 0.625);
+
+		int btnHeight = (int) (maxCoverSize * 0.27);
+
+		MarginLayoutParams btnParams = (MarginLayoutParams) mixtapeBtns
+				.getLayoutParams();
+		MarginLayoutParams infoParams = (MarginLayoutParams) info
+				.getLayoutParams();
+
+		btnParams.height = btnHeight;
+
+		mixtapeBtns.setLayoutParams(btnParams);
+		trackBtns.getLayoutParams().height = btnHeight;
+
+		maxHeaderSize = maxCoverSize + btnHeight * 2;
+		maxHeaderSize += btnParams.bottomMargin * 2;
+		maxHeaderSize += infoParams.topMargin;
+
+		minHeaderSize = maxHeaderSize - (maxCoverSize - minCoverSize)
+				- btnHeight;
+
+		LinearLayout.LayoutParams coverParams = new LinearLayout.LayoutParams(
+				maxCoverSize, maxCoverSize);
+		coverParams.weight = 0;
+		cover.setLayoutParams(coverParams);
+
+		RelativeLayout.LayoutParams headerParams = new RelativeLayout.LayoutParams(
+				LayoutParams.MATCH_PARENT, maxHeaderSize);
+		header.setLayoutParams(headerParams);
+
+		filler = getActivity().getLayoutInflater().inflate(R.layout.empty_header, tracks,
+				false);
+		filler.getLayoutParams().height = maxHeaderSize - 1;
+		tracks.addHeaderView(filler, null, false);
+
+		filler.getLayoutParams().height = maxHeaderSize - 1;
+		// filler.requestLayout();
+
+		// App.scaleView(mixtapeBtns);
+		// App.scaleView(score);
+		// layout.invalidate();
+
+
+		measured = true;
+	}
+
+	public void setData() {
+		dbHelper = DBHelper.sharedInstance(mContext);
+		
+		id = Integer.valueOf((String)mixtape.get("id"));
+
+		dj.setText(" " + (String) mixtape.get("DJ") + " ");
+		title.setText((String) mixtape.get("title"));
+		
+		 DecimalFormat formatter = new DecimalFormat("#,###,###");
+    	 String viewsFormatted = formatter.format(Integer.valueOf((String) mixtape.get("views")));
+		
+		views.setText("Mixtape Views: " + viewsFormatted);
+		
+		String dateString = (String) mixtape.get("releasedate");
+		String[] dateParts = dateString.split("T");
+		String[] yearParts = dateParts[0].split("-");
+		
+
+		date.setText("Uploaded: " + yearParts[1] + "/" + yearParts[2] + "/" + yearParts[0]);
+		score.setText((String) mixtape.get("score"));
+
+		favorited = false;
+		voted = false;
+		voting = false;
+		
+		if (User.isGuest()) {
+			disableVoteButtons();
+		} else {
+			favorited = User.getData().favoriteMixtapeIds.contains(id);
+			
+			if (voted) {
+				disableVoteButtons();
+			} else {
+				enableVoteButtons();
+			}
+		}
+		
+		if (favorited) {
+			favorite.setImageResource(R.drawable.unstar);
+		} else {
+			favorite.setImageResource(R.drawable.star);
+		}
+
+		ImageLoader imageLoader = new ImageLoader(mContext);
+		imageLoader.DisplayImage((String) mixtape.get("cover"), cover);
+
+		adapter = new LazyAdapterTracks(this,
+				(ArrayList) mixtape.get("tracks"));
+		tracks.setAdapter(adapter);
+		downloadAllProgressBar.setProgress(0);
+
+		//header.setBackgroundColor(App.defaultBackground);
+
+		Log.v("mixtape", "setData");
+
+
+//		IntentFilter filter = new IntentFilter(
+//				DownloadManager.ACTION_DOWNLOAD_COMPLETE);
+//		registerReceiver(downloadReceiver, filter);
+
+//		setData();
+	}
+
+	public MotionEvent getFakeTap(float x, float y, int action) {
+		long downTime = SystemClock.uptimeMillis();
+		long eventTime = SystemClock.uptimeMillis() + 100;
+
+		// List of meta states found here:
+		// developer.android.com/reference/android/view/KeyEvent.html#getMetaState()
+		int metaState = 0;
+		MotionEvent motionEvent = MotionEvent.obtain(downTime, eventTime,
+				action, x, y, metaState);
+
+		return motionEvent;
+	}
+
+	public Uri getLocalUriFromBitmap(Bitmap bmp) {
+		// Store image to default external storage directory
+		Uri bmpUri = null;
+		try {
+			File file = new File(
+					Environment
+							.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
+					"share_image_" + System.currentTimeMillis() + ".png");
+			file.getParentFile().mkdirs();
+			FileOutputStream out = new FileOutputStream(file);
+			bmp.compress(Bitmap.CompressFormat.PNG, 90, out);
+			out.close();
+			bmpUri = Uri.fromFile(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return bmpUri;
+	}
+
+	void shareSocialNetworks(String packageName) {
+		Intent shareIntent = new Intent(android.content.Intent.ACTION_SEND);
+		shareIntent.setType("text/plain");
+		if (packageName.equals("com.instagram.android"))
+			shareIntent.setType("image/*");
+		shareIntent.putExtra(android.content.Intent.EXTRA_TEXT,
+				(String) mixtape.get("sharetext"));
+		ImageLoader imageLoader = new ImageLoader(mContext);
+		Bitmap bt = imageLoader.getBitmap((String) mixtape.get("cover"));
+		shareIntent.putExtra(Intent.EXTRA_STREAM, getLocalUriFromBitmap(bt));
+
+		PackageManager pm = getActivity().getPackageManager();
+		List<ResolveInfo> activityList = pm.queryIntentActivities(shareIntent,
+				0);
+		for (final ResolveInfo app : activityList) {
+			if ((app.activityInfo.packageName).equals(packageName)) {
+				final ActivityInfo activity = app.activityInfo;
+				final ComponentName name = new ComponentName(
+						activity.applicationInfo.packageName, activity.name);
+				shareIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+				shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+						| Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+				shareIntent.setComponent(name);
+				startActivity(shareIntent);
+				break;
+			}
+		}
+	}
+
+//	private BroadcastReceiver downloadReceiver = new BroadcastReceiver() {
+//		@Override
+//		public void onReceive(Context context, Intent intent) {
+//
+//			if (intent.getAction().equals(
+//					DownloadManager.ACTION_DOWNLOAD_COMPLETE)) {
+//				// adapter.notifyDataSetChanged();
+//			}
+//		}
+//	};
+
+	void downloadAll() {
+		ArrayList<HashMap<String, String>> tracksList = ((ArrayList) mixtape
+				.get("tracks"));
+		if (tracksList == null)
+			return;
+		for (int i = 0; i < tracksList.size(); i++)
+			download(i);
+
+		/*
+		// Run every 500ms
+		Timer timer = new Timer();
+		timer.schedule(new TimerTask() {
+			@Override
+			public void run() {
+				final int progressPercent = getAllFilesDownloadPercentage();
+				if (progressPercent == 100) {
+					handler.post(new Runnable() {
+						@Override
+						public void run() {
+							downloadAllProgressBar.setProgress(100);
+							// downloadAll.setImageResource(R.drawable.ic_action_remove);
+						}
+					});
+					this.cancel();
+				} else {
+					handler.post(new Runnable() {
+						@Override
+						public void run() {
+							downloadAllProgressBar.setProgress(progressPercent);
+						}
+					});
+				}
+			}
+		}, 500, 500);
+		*/
+	}
+
+	@SuppressLint("NewApi")
+	void download(final int pos) {
+
+		final int position = pos + tracks.getHeaderViewsCount(); // This is very
+																	// important
+																	// since our
+																	// list has
+																	// headers
+		HashMap<String, String> selectedTrack = (HashMap<String, String>) ((ArrayList) mixtape
+				.get("tracks")).get(pos); // This is pos, to get the right set
+											// of data
+		final String trackId = selectedTrack.get("track_id").toString();
+		if (Utils.isFileExists(mContext, trackId))
+			return;
+
+//		if(!Utils.shouldAllowDownload(mContext, mixtape.get("id").toString(), selectedTrack.get("track_id")))
+//		{
+//			new AlertDialog.Builder(mContext).setTitle("Download limit").setMessage("Please wait until current downloads are finished.")
+//			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+//				@Override
+//				public void onClick(DialogInterface dialog, int which) {
+//					dialog.dismiss();
+//				}
+//			}).setIcon(android.R.drawable.ic_dialog_alert).show();
+//			return;
+//		}
+		
+		if (downloadProgressList.containsKey(trackId)) {
+			downloadManager.remove(downloadProgressList.get(trackId));
+			downloadProgressList.remove(trackId);
+			listPosMap.remove(trackId);
+			setProgressOnUiThreadWithPos(position, 0);
+			changeImageButtonImage(position, true);
+			dbHelper.deleteDownload(trackId);
+
+			return;
+		} else {
+			
+			if(selectedTrack.get("download_url")==null || selectedTrack.get("download_url").length()==0)
+				return;
+			
+			changeImageButtonImage(position, false);
+			DownloadManager.Request request = new DownloadManager.Request(
+					Uri.parse(selectedTrack.get("download_url")));
+			request.setDescription(selectedTrack.get("track_title"));
+			request.setTitle(selectedTrack.get("track_title"));
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+				request.allowScanningByMediaScanner();
+				request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE);
+			}
+			request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI
+					| DownloadManager.Request.NETWORK_MOBILE);
+			
+			request.setDestinationUri(Uri.fromFile(Utils.getLivemixtapesFolder(getActivity(), selectedTrack.get("track_id"))));
+//			request.setDestinationInExternalFilesDir(mContext,
+//					"Documents/LiveMixTapes",
+//					selectedTrack.get("track_id"));
+			final long downloadId = downloadManager.enqueue(request);
+			downloadProgressList.put(trackId, downloadId);
+			listPosMap.put(trackId, position);
+
+			dbHelper.insertDownload(trackId, selectedTrack.get("track_title"), mixtape.get("id").toString(), (String) mixtape.get("title"), mixtape.get("cover").toString(), selectedTrack.get("track_duration"), 0);
+
+			checkIfTimerOn();
+		}
+	}
+
+	void setProgressOnUiThreadWithPos(final int pos, final int progress) {
+
+		handler.post(new Runnable() {
+			@Override
+			public void run() {
+				if (pos < tracks.getFirstVisiblePosition())
+					return;
+				final View v = tracks.getChildAt(pos
+						- tracks.getFirstVisiblePosition());
+				if (v == null)
+					return;
+				((ProgressBar) v.findViewById(R.id.trackProgressBar))
+						.setProgress(progress);
+			}
+		});
+	}
+
+	void hideProgressAndDownloadButtons(final int pos) {
+
+		handler.post(new Runnable() {
+			@Override
+			public void run() {
+				if (pos < tracks.getFirstVisiblePosition())
+					return;
+				final View v = tracks.getChildAt(pos
+						- tracks.getFirstVisiblePosition());
+				if (v == null)
+					return;
+				((ProgressBar) v.findViewById(R.id.trackProgressBar))
+						.setVisibility(View.INVISIBLE);
+				((ImageButton) v.findViewById(R.id.download))
+						.setVisibility(View.INVISIBLE);
+			}
+		});
+	}
+
+	
+	
+	void updatePlayListSelectionBackground(final int pos, final boolean isSelected) {
+		handler.post(new Runnable() {
+			@Override
+			public void run() {
+				if (pos < 0)
+					return;
+				final View v = tracks.getChildAt(pos+tracks.getHeaderViewsCount()-tracks.getFirstVisiblePosition());
+				if (v == null)
+					return;
+				
+				View selectionView = v.findViewById(R.id.selectionView);
+				if (isSelected)
+					selectionView.setBackgroundColor(Color.parseColor("#000080"));
+				else
+					selectionView.setBackgroundResource(R.drawable.button_border);
+				
+				if(selectedPlayListTracks.size()>0)
+					addTracksButton.setText("Add "+selectedPlayListTracks.size()+" Track(s)");
+				else
+					addTracksButton.setText("Tap the tracks you want to add");
+			}
+		});
+	}
+	
+	void changeImageButtonImage(final int pos, final boolean isDownload) {
+
+		handler.post(new Runnable() {
+			@Override
+			public void run() {
+				if (pos < tracks.getFirstVisiblePosition())
+					return;
+				final View v = tracks.getChildAt(pos
+						- tracks.getFirstVisiblePosition());
+				if (v == null)
+					return;
+				if (isDownload)
+					((ImageButton) v.findViewById(R.id.download))
+							.setImageResource(R.drawable.download);
+				else
+					((ImageButton) v.findViewById(R.id.download))
+							.setImageResource(R.drawable.pause);
+			}
+		});
+	}
+
+	int getAllFilesDownloadPercentage() {
+		ArrayList<HashMap<String, String>> tracksList = ((ArrayList<HashMap<String, String>>) mixtape
+				.get("tracks"));
+		int totalCount = tracksList.size();
+		int completedCount = 0;
+		for (HashMap<String, String> track : tracksList) {
+			if (Utils.isFileExists(mContext, track.get("track_id")
+					.toString()))
+				completedCount++;
+		}
+
+		if (totalCount > 0)
+			return (int) ((completedCount * 100l) / totalCount);
+		return 0;
+	}
+
+	int getIndividualFileProgress(String trackId) {
+		DownloadManager.Query q = new DownloadManager.Query();
+		q.setFilterById(downloadProgressList.get(trackId));
+
+		Cursor cursor = downloadManager.query(q);
+		if (cursor == null || !cursor.moveToFirst())
+			return 0;
+
+		int bytes_downloaded = cursor
+				.getInt(cursor
+						.getColumnIndex(DownloadManager.COLUMN_BYTES_DOWNLOADED_SO_FAR));
+		int bytes_total = cursor.getInt(cursor
+				.getColumnIndex(DownloadManager.COLUMN_TOTAL_SIZE_BYTES));
+
+		if (cursor.getInt(cursor.getColumnIndex(DownloadManager.COLUMN_STATUS)) == DownloadManager.STATUS_SUCCESSFUL) {
+			downloadProgressList.remove(trackId);
+			listPosMap.remove(trackId);
+			cursor.close();
+			return 100;
+		}
+
+		final int dl_progress = (int) ((bytes_downloaded * 100l) / bytes_total);
+		cursor.close();
+		return dl_progress;
+	}
+
+	private void likeMixtape() {
+		if (voted || voting) return;
+
+		final ProgressDialog dialog = ProgressDialog.show(mContext, "Liking ...", "Liking ...", true);
+
+		HashMap<String, String> params = new HashMap<String, String>();
+		params.put("id", (String)mixtape.get("id"));
+		params.put("auth", User.getAuth());
+
+		new AsyncHttp().get("https://api.livemixtapes.com/api/vote/up", params,
+			new AsyncHttpCallback(){
+				@Override
+				protected void success(String data, String reasonPhrase, int statusCode) {
+					console.log(data, reasonPhrase, statusCode);
+					disableVoteButtons();
+					voted = true;
+
+					int oldScore = Integer.valueOf((String)mixtape.get("score"));
+					score.setText(Integer.toString(oldScore + 1));
+				}
+
+				@Override
+				protected void exception(Exception e) {
+					console.log(e);
+				}
+
+				@Override
+				protected void always() {
+					voting = false;
+					dialog.dismiss();
+				}
+			}
+		);
+	}
+
+	private void dislikeMixtape() {
+		if (voted || voting) return;
+
+		final ProgressDialog dialog = ProgressDialog.show(mContext, "Disliking ...", "Disliking ...", true);
+
+		HashMap<String, String> params = new HashMap<String, String>();
+		params.put("id", (String)mixtape.get("id"));
+		params.put("auth", User.getAuth());
+
+		new AsyncHttp().get("https://api.livemixtapes.com/api/vote/down", params,
+			new AsyncHttpCallback(){
+				@Override
+				protected void success(String data, String reasonPhrase, int statusCode) {
+					console.log(data, reasonPhrase, statusCode);
+					disableVoteButtons();
+					voted = true;
+
+					int oldScore = Integer.valueOf((String)mixtape.get("score"));
+					score.setText(Integer.toString(oldScore - 1));
+				}
+
+				@Override
+				protected void exception(Exception e) {
+					console.log(e);
+				}
+
+				@Override
+				protected void always() {
+					voting = false;
+					dialog.dismiss();
+				}
+			}
+		);
+	}
+	
+	private void getMixtapeInfo() {
+
+		new AsyncTask<String, Integer, JSONObject>() {
+			@Override
+			protected JSONObject doInBackground(String... params) {
+				// TODO Auto-generated method stub
+				JSONParser jParser = new JSONParser();
+				String response = jParser.getUrlResponse("https://api.livemixtapes.com/api/mixtape/"+mixtape.get("id").toString());
+				try
+				{
+					JSONObject obj = new JSONObject(response);
+					return obj;
+				}
+				catch(Exception e)
+				{
+				}
+				return null;
+			}
+			
+			protected void onPostExecute(JSONObject obj) {
+				if(obj!=null)
+				{
+					try
+					{
+						DecimalFormat formatter = new DecimalFormat("#,###,###");
+				    	String viewsFormatted = formatter.format(Integer.valueOf(obj.getJSONObject("mixtape").get("views").toString()));
+						views.setText("Mixtape Views: " + viewsFormatted);
+						score.setText(obj.getJSONObject("mixtape").getString("score").toString());
+					}
+					catch(Exception e)
+					{
+					}
+					
+				}
+			}
+			
+		}.execute("");
+		
+	}
+
+	private void disableVoteButtons() {
+		like.setAlpha(0.3f);
+		like.setEnabled(false);
+		like.setClickable(false);
+
+		dislike.setAlpha(0.3f);
+		dislike.setEnabled(false);
+		dislike.setClickable(false);
+	}
+
+	private void enableVoteButtons() {
+		like.setAlpha(1f);
+		like.setEnabled(true);
+		like.setClickable(true);
+
+		dislike.setAlpha(1f);
+		dislike.setEnabled(true);
+		dislike.setClickable(true);
+	}
+	
+	private void togglePlaylistMode() {
+		if (User.isGuest()) {
+			showGuestWarning();
+			return;
+		}
+		
+		if (playlistMode) {
+			exitPlaylistMode();
+		} else {
+			enterPlaylistMode();
+		}
+	}
+	
+	private void enterPlaylistMode() {
+		playlistMode = true;
+		adapter.notifyDataSetChanged();
+		addTracksButton.setVisibility(View.VISIBLE);
+	}
+
+	private void exitPlaylistMode() {
+		playlistMode = false;
+		selectedPlayListTracks.clear();
+		adapter.notifyDataSetChanged();
+		addTracksButton.setVisibility(View.GONE);
+	}
+	
+	private void showGuestWarning() {
+		new AlertDialog.Builder(mContext)
+
+	    .setTitle("Account Required")
+	    .setMessage("Sign up to create playlists, vote, comment and more!\nIt's free!")
+	    .setPositiveButton("Not Now", new DialogInterface.OnClickListener() {
+	        public void onClick(DialogInterface dialog, int which) {
+	            dialog.dismiss();
+	        }
+	     })
+	    .setNegativeButton("Sign Up", new DialogInterface.OnClickListener() {
+	        public void onClick(DialogInterface dialog, int which) {
+	        	dialog.dismiss();
+	        	startActivity(new Intent(App.context, SignUp.class));
+	        }
+	     })
+	    .setIcon(android.R.drawable.ic_dialog_info)
+	    .show();
+	}
+
+	private void toggleFavorite() {
+		if (User.isGuest()) {
+			showGuestWarning();
+			return;
+		}
+
+		if (favorited) {
+			unfavoriteMixtape();
+		} else {
+			favoriteMixtape();
+		}
+	}
+
+	private void favoriteMixtape() {
+		final ProgressDialog dialog = ProgressDialog.show(mContext, "Saving ...", "Saving ...", true);
+
+		HashMap<String, String> params = new HashMap<String, String>();
+		params.put("album_id", (String)mixtape.get("id"));
+
+		new AsyncHttp().post("https://api.livemixtapes.com/api/favorites/add" + "?auth=" + User.getAuth(), params,
+			new AsyncHttpCallback(){
+				@Override
+				protected void success(String data, String reasonPhrase, int statusCode) {
+					console.log("added: " + id, data, reasonPhrase, statusCode);
+					favorite.setImageResource(R.drawable.unstar);
+					favorited = true;
+					User.addFavoriteMixtape(mixtape);
+				}
+
+				@Override
+				protected void exception(Exception e) {
+					console.log(e);
+				}
+
+				@Override
+				protected void always() {
+					dialog.dismiss();
+				}
+			}
+		);
+	}
+
+	private void unfavoriteMixtape() {
+		final ProgressDialog dialog = ProgressDialog.show(mContext, "Saving ...", "Saving ...", true);
+
+		HashMap<String, String> params = new HashMap<String, String>();
+		params.put("album_id", (String)mixtape.get("id"));
+		
+		new AsyncHttp().post("https://api.livemixtapes.com/api/favorites/remove" + "?auth=" + User.getAuth(), params,
+			new AsyncHttpCallback(){
+				@Override
+				protected void success(String data, String reasonPhrase, int statusCode) {
+					console.log("removed: " + id, data, reasonPhrase, statusCode);
+					favorite.setImageResource(R.drawable.star);
+					favorited = false;
+					User.removeFavoriteMixtape(id);
+				}
+
+				@Override
+				protected void exception(Exception e) {
+					console.log(e);
+				}
+
+				@Override
+				protected void always() {
+					dialog.dismiss();
+				}
+			}
+		);
+	}
+
+	@SuppressLint("NewApi") void playAll() {
+	    int position = 0;
+		NowPlayingActivity.mixtape = mixtape;
+		NowPlayingActivity.position = position;
+		MainActivity.isPlaying = true;
+		MainActivity.nowplayingbutton.setImageResource(R.drawable.tab_player_active);
+		shake(MainActivity.nowplayingbutton,null);
+		NowPlayingActivity.tracksList = (ArrayList<HashMap<String,String>>) mixtape.get("tracks");
+		NowPlayingActivity.reloadData();
+		//NowPlayingActivity.artistTitle.setText((String) mixtape.get("title"));
+		//thumbURL = (String) mixtape.get("cover");
+		//imageLoader.DisplayImageWithoutCache((String) mixtape.get("cover"), playListImage);
+		//NowPlayingActivity.trackTitle.setText(((HashMap<String, ?>)NowPlayingActivity.tracksList.get(position)).get("track_title").toString());
+		
+		//
+		
+		/// decide which url
+		
+		/*
+		String whichURL = null;
+		String whichTrack = ((HashMap<String, ?>)((ArrayList)mixtape.get("tracks")).get(position)).get("track_id").toString();
+		
+		String whichThumb = ((String)mixtape.get("cover")).toString();
+		
+		NowPlayingActivity.title = ((HashMap<String, ?>)((ArrayList)mixtape.get("tracks")).get(position)).get("track_title").toString();
+
+		NowPlayingActivity.thumbURL = whichThumb;
+		
+		if (Utils.isFileExists(App.context, whichTrack))
+		{
+			console.log ("TRACK IS DOWNLOADED");
+			whichURL = "file://" + Utils.getLivemixtapesFolder().getAbsolutePath()+ "/" + ((HashMap<String, ?>)((ArrayList)mixtape.get("tracks")).get(position)).get("track_id").toString();
+			console.log ("TRACK URL IS: " + whichURL);
+		}
+		else
+		{
+			console.log ("TRACK IS NOT DOWNLOADED");
+			whichURL = ((HashMap<String, ?>)((ArrayList)mixtape.get("tracks")).get(position)).get("download_url").toString();
+		}
+		
+		///
+		Intent i = new Intent(LMTService.ACTION_URL);
+		i.setPackage("com.livemixtapes");
+		
+		Uri uri = Uri.parse(whichURL);
+		console.log ("URI IS: " + uri.toString());
+		//Uri uri = Uri.parse("httplive://cdn-streams.livemixtapes.com/biggarankin/shy_glizzy-young_jefe/3540DE73.mp4.m3u8");
+		i.setData(uri);
+		App.context.startService(i);
+		*/
+	}
+	
+	@Override
+	public void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		getMixtapeInfo();
+	}
+	
+
+	private void shake(View v, final Runnable callback) {
+		Animation anim = AnimationUtils.loadAnimation(mContext, R.anim.tabshake);
+
+		anim.setAnimationListener(new AnimationListener() {
+			@Override
+			public void onAnimationStart(Animation animation) {
+			}
+
+			@Override
+			public void onAnimationEnd(Animation animation) {
+
+				if (callback != null) {
+					callback.run();
+				}
+			}
+
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+			}
+		});
+
+		v.startAnimation(anim);
+	}
+
+
+
+	void checkIfTimerOn() {
+		console.log ("CHECKING TIMER");
+
+		if (globalTimer == null) {
+			globalTimer = new Timer();
+
+			globalTimer.schedule(new TimerTask() {
+				@Override
+				public void run() {
+					if (downloadProgressList.isEmpty()) {
+						this.cancel();
+						globalTimer = null;
+						return;
+					}
+
+					// We check if the user is scrolling, and update only if the
+					// user is not scrolling
+					// if (mScrollState != OnScrollListener.SCROLL_STATE_IDLE)
+					// return;
+
+					for (final String key : downloadProgressList.keySet()) {
+						int pos = listPosMap.get(key);
+
+						if (pos < tracks.getFirstVisiblePosition()
+								|| pos > tracks.getLastVisiblePosition())
+							return;
+						final View v = tracks.getChildAt(pos
+								- tracks.getFirstVisiblePosition());
+						if (v == null)
+							return;
+						handler.post(new Runnable() {
+							@Override
+							public void run() {
+								int progress = getIndividualFileProgress(key);
+								((ProgressBar) v
+										.findViewById(R.id.trackProgressBar))
+										.setProgress(progress);
+								if (progress == 100) {
+									downloadProgressList.remove(key);
+									dbHelper.markDownloadComplete(key);
+
+									adapter.notifyDataSetChanged();
+								}
+							}
+						});
+					}
+
+				}
+			}, 0, 500);
+		}
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch(v.getId())
+		{
+		case R.id.playlist:
+			togglePlaylistMode();
+			break;
+			
+		case R.id.favorite:
+			toggleFavorite();
+			break;
+
+		case R.id.like:
+			likeMixtape();
+			break;
+
+		case R.id.dislike:
+			dislikeMixtape();
+			break;
+
+		case R.id.downloadall:
+			downloadAll();
+			break;
+		case R.id.playall:
+			playAll();
+			break;
+			
+		case R.id.tapTracksButton:
+			if(selectedPlayListTracks.size()>0)
+			{
+				shouldClearPlayListMode = false;
+				FragmentTransaction fragmentTransaction = getActivity().getFragmentManager().beginTransaction();
+				SeeAllList seeAllFragment = new SeeAllList();
+				Bundle extras = new Bundle();
+				extras.putInt("flag", 1);
+				extras.putBoolean("isAddTrackToPlaylist", true);
+				extras.putString("tracks", android.text.TextUtils.join(",", selectedPlayListTracks));
+				seeAllFragment.setArguments(extras);
+				fragmentTransaction.replace(R.id.frameLayout, seeAllFragment, "SEEALL").addToBackStack(null);
+				fragmentTransaction.commit();
+			}
+			break;
+		}
+	}
+	
+	@Override
+	public void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		//Clear playlist mode after closing playlist activity
+		if(shouldClearPlayListMode && playlistMode)
+		{
+			shouldClearPlayListMode = false;
+			exitPlaylistMode();
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header" android:background="@drawable/card_header_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/avatar" android:clickable="false" android:duplicateParentState="true" android:layout_marginLeft="@dimen/space_16dp" style="@style/Widget.Picsart.Avatar" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp">
+            <TextView android:id="@id/username" android:maxLength="20" style="@style/TextAppearance.Picsart.Light.Username" />
+            <ImageView android:id="@id/verified_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_2dp" android:layout_marginBottom="@dimen/space_2dp" android:src="@drawable/list_verifed_badge" android:layout_toRightOf="@id/username" android:layout_alignBottom="@id/username" />
+            <TextView android:id="@id/display_name" android:maxLength="20" android:layout_below="@id/username" style="@style/TextAppearance.Picsart.Light.Subusername" />
+        </RelativeLayout>
+        <include layout="@layout/separator_horizontal" />
+        <CheckBox android:id="@id/follow_btn" android:visibility="visible" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginRight="@dimen/space_16dp" android:button="@drawable/btn_follow" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/photos" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

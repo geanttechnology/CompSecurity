@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/t5dp" android:visibility="invisible" android:layout_width="@dimen/t28dp" android:layout_height="@dimen/t28dp" android:baselineAligned="false" android:alpha="0.7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bc_tag_product_number" />
+    <TextView android:textSize="@dimen/t10dp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tag_number" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/BcDefaultFontStyle" />
+</FrameLayout>

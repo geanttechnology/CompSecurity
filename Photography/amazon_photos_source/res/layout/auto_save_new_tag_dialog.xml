@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="left" android:orientation="vertical" android:paddingLeft="@dimen/app_compat_progress_dialog_edge_padding" android:paddingTop="@dimen/app_compat_dialog_content_top_padding" android:paddingRight="@dimen/app_compat_progress_dialog_edge_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/auto_save_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/adrive_gallery_common_auto_save_dialog_checkbox_text" style="@style/AppCompatAlertDialog.Content" />
+    <TextView android:paddingTop="@dimen/app_compat_dialog_content_top_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_auto_save_dialog_small_print" style="@style/AppCompatAlertDialog.Content" />
+</LinearLayout>

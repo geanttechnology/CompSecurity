@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/AboutBackground" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="@dimen/t42dp">
+        <ImageView android:id="@id/back" android:layout_width="@dimen/t42dp" android:layout_height="@dimen/t42dp" android:src="@drawable/u_image_selector_topbar_back_btn" android:layout_alignParentLeft="true" android:contentDescription="[AID]Chat_Back" style="@style/UTopBarButtonStyle" />
+        <TextView android:textSize="@dimen/t20sp" android:textColor="#ff000000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/u_message_setting" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/t15sp" android:textColor="#ff777777" android:id="@id/done" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/t5dp" android:text="@string/u_message_setting_done" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="@dimen/t1dp" android:layout_marginTop="@dimen/t34dp" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayoutGroupName" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/t40dp">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/t10dp" android:layout_width="fill_parent" android:layout_height="@dimen/t39dp">
+                <TextView android:textSize="@dimen/t15sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/u_message_setting_group_name" />
+                <EditText android:textSize="@dimen/t15sp" android:textColor="#ff7b7c7c" android:layout_gravity="center_vertical" android:id="@id/groupName" android:background="@null" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t5dp" android:singleLine="true" android:maxLength="30" />
+            </LinearLayout>
+            <View android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="@dimen/t1dp" />
+        </LinearLayout>
+        <RelativeLayout android:background="#ffffffff" android:paddingLeft="@dimen/t10dp" android:layout_width="fill_parent" android:layout_height="@dimen/t40dp">
+            <TextView android:textSize="@dimen/t15sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/u_message_setting_mute_notifications" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/checkbox" android:background="@drawable/u_group_notification_checkbox" android:layout_width="@dimen/t49dp" android:layout_height="@dimen/t28dp" android:layout_marginRight="@dimen/t5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="@dimen/t1dp" />
+        <RelativeLayout android:paddingLeft="@dimen/t10dp" android:layout_width="fill_parent" android:layout_height="@dimen/t34dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t12dp" android:text="@string/u_message_setting_members" />
+        </RelativeLayout>
+        <View android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="@dimen/t1dp" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayoutFooter" android:paddingBottom="@dimen/t29dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="@dimen/t1dp" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/t29dp" android:text="@string/u_message_setting_block_description" />
+            <Button android:textSize="@dimen/t13sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/leaveGroup" android:background="@drawable/u_image_selector_leave_group_button" android:paddingLeft="@dimen/t20dp" android:paddingRight="@dimen/t20dp" android:layout_width="wrap_content" android:layout_height="@dimen/t32dp" android:text="@string/u_message_setting_leave_group" />
+        </LinearLayout>
+        <ListView android:id="@id/memberListView" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/LinearLayoutFooter" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

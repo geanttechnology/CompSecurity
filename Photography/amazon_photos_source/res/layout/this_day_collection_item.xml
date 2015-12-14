@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/this_day_card_collage_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amazon.gallery.thor.widget.CollageLayout android:id="@id/collageLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/this_day_card_title_height" />
+    <TextView android:textAppearance="@android:style/Widget.Holo.Light.PopupWindow.ActionMode" android:textSize="@dimen/this_day_card_title_text_size" android:textColor="@color/this_day_card_title" android:gravity="left|center" android:layout_gravity="top" android:id="@id/collageTitle" android:background="@color/this_day_card_title_background" android:paddingLeft="@dimen/this_day_card_title_text_left_padding" android:layout_width="fill_parent" android:layout_height="@dimen/this_day_card_title_height" />
+    <com.amazon.gallery.thor.widget.TriangularMarkerView android:layout_width="@dimen/this_day_card_marker_width" android:layout_height="@dimen/this_day_card_marker_height" android:layout_marginLeft="@dimen/this_day_card_title_marker_left_margin" android:layout_marginTop="@dimen/this_day_card_title_height" app:fillColor="@color/this_day_card_title_background" app:strokeColor="@color/primary_color" app:strokeWidth="@dimen/this_day_card_collage_item_margin" />
+</FrameLayout>

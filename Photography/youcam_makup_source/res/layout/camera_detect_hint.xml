@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/IntroBackgroundStyle" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="900">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="900">
+            <TextView android:layout_gravity="center_horizontal" android:text="@string/intro_camera_detect_mode_tip" app:child_width="860" app:child_height="400" style="@style/CameraDetectHintTextStyle" />
+            <View android:layout_gravity="bottom" android:background="@drawable/arrow_intro_r" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="150" app:child_height="230" app:child_left="406" app:child_top="256" app:self_btt="true" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <bitmap android:gravity="center" android:src="@drawable/ic_brush_disabled" />
+    </item>
+    <item android:drawable="@drawable/ic_action_brush_with_selector_t" />
+</selector>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1080.0" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/dialog_frame" android:padding="18.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="955.0">
+        <TextView android:textSize="14.0dip" android:textColor="@android:color/black" android:gravity="center" android:id="@id/extraErrorDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/more_error" android:layout_centerHorizontal="true" />
+        <View android:id="@id/extraErrorDialogSpace" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_below="@id/extraErrorDescription" />
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/extraErrorDialogSpace" app:guideline_width="955" app:guideline_height="80">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="100.0">
+                <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="50.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="320" app:guideline_height="80">
+                        <Button android:textSize="14.0dip" android:textColor="@android:color/black" android:id="@id/extraOkBtn" android:background="@drawable/image_selector_message_dialog_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dialog_Ok" android:layout_centerInParent="true" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="50.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="320" app:guideline_height="80">
+                        <Button android:textSize="14.0dip" android:textColor="@android:color/black" android:id="@id/extraRetryBtn" android:background="@drawable/image_selector_message_dialog_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/more_retry" android:layout_centerInParent="true" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </RelativeLayout>
+</LinearLayout>

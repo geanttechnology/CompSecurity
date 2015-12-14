@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.pages.librarypicker.photozoompage.TouchViewPager android:layout_gravity="center" android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_panel_container" />
+    <RelativeLayout android:id="@id/bottom_panel_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/t45dp" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/photoShareBtn" android:text="@string/action_share" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/ZoomPanelBtn" />
+        <TextView android:id="@id/photoDeleteBtn" android:text="@string/action_delete" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ZoomPanelBtn" />
+        <TextView android:textColor="#ffe70049" android:id="@id/photoMakeupBtn" android:text="@string/common_Makeup" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/ZoomPanelBtn" />
+    </RelativeLayout>
+</RelativeLayout>

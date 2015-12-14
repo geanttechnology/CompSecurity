@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/recommendation_item" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="273">
+        <LinearLayout android:orientation="horizontal" android:id="@id/recommendation_ad_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="272">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="700" app:child_left="276" app:child_top="50">
+                <TextView android:textColor="#ff000000" android:id="@id/recommendation_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="title" android:maxLines="1" android:lineSpacingMultiplier="1.1" style="@style/RecommendationTitleStyle" />
+                <TextView android:textColor="#ff464646" android:id="@id/recommendation_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="description" android:layout_below="@id/recommendation_title" android:lineSpacingMultiplier="1.1" style="@style/RecommendationDescriptionStyle" />
+            </RelativeLayout>
+            <View android:gravity="center" android:background="@drawable/ico_arrow_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:child_width="44" app:child_height="70" app:child_left="1006" app:child_top="101" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <View android:background="@drawable/div" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/primary_text_color" android:id="@id/no_content_library_type" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" style="@style/ftue_text.large" />
+        <TextView android:textColor="@color/primary_text_color" android:id="@id/no_content_header" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/adrive_gallery_common_empty_cloud" style="@style/ftue_text.large" />
+        <include android:id="@id/no_content_divider_line" layout="@layout/divider_line" />
+        <TableLayout android:id="@id/no_content_overlay_table" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableRow android:id="@id/no_content_overlay_camera_row" android:visibility="gone" android:clickable="true" android:layout_marginTop="10.0dip" android:onClick="navigateToCamera" style="@style/no_content_overlay_table_row">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_ftue" android:tint="@color/icon_tint_color" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/ftue_text_med" android:textColor="@color/primary_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/adrive_gallery_common_take_photo" />
+                <include android:layout_marginLeft="15.0dip" layout="@layout/no_content_right_arrow" />
+            </TableRow>
+            <TableRow android:id="@id/no_content_overlay_mobile_row" android:layout_marginTop="10.0dip" style="@style/no_content_overlay_table_row">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_empty_libraries_devices_medium_amazon_dark" android:tint="@color/icon_tint_color" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/ftue_text_med" android:textColor="@color/primary_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/adrive_gallery_common_ftue_mobile_label" android:contentDescription="@string/adrive_gallery_common_ftue_mobile_label_accessibility" />
+                <include android:layout_marginLeft="15.0dip" layout="@layout/no_content_right_arrow" />
+            </TableRow>
+            <TableRow android:id="@id/no_content_overlay_desktop_row" style="@style/no_content_overlay_table_row">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_empty_libraries_laptop_medium_amazon_dark" android:tint="@color/icon_tint_color" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/ftue_text_med" android:textColor="@color/primary_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/adrive_gallery_common_ftue_desktop_label" android:contentDescription="@string/adrive_gallery_common_ftue_desktop_label_accessibility" />
+                <include android:layout_marginLeft="15.0dip" layout="@layout/no_content_right_arrow" />
+            </TableRow>
+            <TableRow android:id="@id/no_content_overlay_facebook_row" style="@style/no_content_overlay_table_row">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_empty_libraries_facebook_medium_amazon_dark" android:tint="@color/icon_tint_color" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/ftue_text_med" android:textColor="@color/primary_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/adrive_gallery_common_ftue_facebook_label" android:contentDescription="@string/adrive_gallery_common_ftue_facebook_label_accessibility" />
+                <include android:layout_marginLeft="15.0dip" layout="@layout/no_content_right_arrow" />
+            </TableRow>
+            <TableRow android:id="@id/no_content_overlay_usb_row" style="@style/no_content_overlay_table_row">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/f_ic_usb_default_dark_36dp" android:tint="@color/icon_tint_color" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/ftue_text_med" android:textColor="@color/primary_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/adrive_gallery_common_ftue_usb_label" android:contentDescription="@string/adrive_gallery_common_ftue_usb_label_accessibility" />
+                <include android:layout_marginLeft="15.0dip" layout="@layout/no_content_right_arrow" />
+            </TableRow>
+        </TableLayout>
+        <include android:id="@id/no_content_usb_content" android:visibility="gone" layout="@layout/no_content_usb_popup" />
+    </LinearLayout>
+</ScrollView>

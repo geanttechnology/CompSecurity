@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/cameraPreview_afl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <jp.co.cyberagent.android.gpuimage.camera.BeautyCameraGLSurfaceView android:id="@id/cameraPreview_surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/view_switchcam_use" android:background="@color/black_transparent_90" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:id="@id/find_face_rect" android:background="@drawable/gr_facerec" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/img_touch_focus" android:background="@drawable/gr_focus" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <FrameLayout android:id="@id/camera_preview_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="left|center" android:id="@id/img_back_camera" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_edit_cancel_res" />
+        <ImageView android:layout_gravity="right|center" android:id="@id/img_switch_camera" android:layout_width="52.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_switch_camera_res" />
+        <ImageView android:layout_gravity="left|center" android:id="@id/img_flash_camera" android:layout_width="52.0dip" android:layout_height="45.0dip" android:layout_marginLeft="45.0dip" android:src="@drawable/btn_flash_off" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_setting_camera" android:layout_width="50.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_camera_setting_res" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/mcameratoolcontianer" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_marginBottom="83.0dip">
+        <LinearLayout android:layout_gravity="bottom|left|center" android:id="@id/camera_auto_whitening" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="85.0dip">
+            <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/auto_whitening" android:shadowColor="#ff808080" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="1.0" />
+            <SeekBar android:layout_gravity="center" android:id="@id/seekbar_auto_whitening" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progress="40" android:progressDrawable="@drawable/beauty_red_scrubber_progress" android:minHeight="2.0dip" android:thumb="@drawable/beauty_red_scrubber_control" />
+        </LinearLayout>
+        <com.fotoable.beautyui.gpuimage.sample.activity.CameraFilterScrollView android:layout_gravity="bottom" android:id="@id/cam_filter" android:layout_width="fill_parent" android:layout_height="67.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/capturePhoto_toolbar" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="85.0dip">
+        <Button android:layout_gravity="right|center" android:id="@id/button_filter_change" android:background="@drawable/btn_filter_l" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="50.0dip" />
+        <ImageButton android:layout_gravity="center" android:id="@id/button_seperate_record" android:background="@drawable/record_btn" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        <com.fotoable.beautyui.other.SeperateMovieBar android:id="@id/moviebar" android:background="@color/solid_gray" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="5.0dip" custom:bar_color="@color/ui_item_selector_color" custom:delbar_color="@color/save_red" custom:bar_height="5.0dip" custom:blank_width="1.0dip" />
+        <ImageButton android:layout_gravity="left|center" android:id="@id/button_movie_state" android:background="@drawable/btn_vidmode_2" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" />
+        <ImageButton android:layout_gravity="right|center" android:id="@id/button_change_scale" android:background="@drawable/btn_video_portrait" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" />
+        <ImageButton android:layout_gravity="left|center" android:id="@id/button_delete_movie" android:background="@drawable/btn_videoclose" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" />
+        <ImageButton android:layout_gravity="right|center" android:id="@id/button_save_movie" android:background="@drawable/btn_ok" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textColor="@color/color_truegray" android:gravity="center" android:layout_gravity="left|center" android:id="@id/tv_movie_time" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="60.0dip" android:text="00:00" />
+        <ImageButton android:layout_gravity="center" android:id="@id/button_continous_record" android:background="@drawable/btn_record_dn" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        <TextView android:layout_gravity="left|center" android:id="@id/button_from_library" android:background="@drawable/btn_library_l" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="50.0dip" />
+        <ImageButton android:layout_gravity="center" android:id="@id/button_capture" android:background="@drawable/photo_btn" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        <FrameLayout android:layout_gravity="right|center" android:id="@id/next_step_container" android:visibility="invisible" android:layout_width="70.0dip" android:layout_height="50.0dip" android:layout_marginRight="35.0dip">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/next_step_button" android:background="@drawable/btn_quickshot" android:layout_width="55.0dip" android:layout_height="36.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/photo_count_label" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="0" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textSize="24.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/label_filter_name" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="haha" />
+    <FrameLayout android:id="@id/refect_touch_container" android:background="@color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/delay_image_view" android:background="@drawable/gr_counter3" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/tip_finger" android:background="@drawable/gr_finger" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+    <View android:id="@id/view_filllight_use" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true" />
+    <FrameLayout android:id="@id/waittingcontainer" android:background="@color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    </FrameLayout>
+</FrameLayout>

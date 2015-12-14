@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="1080" app:reference_height="1920">
+        <View android:background="@drawable/laneige_pop_up" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="600" app:self_height="400" app:self_left="240" app:self_top="800" />
+        <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="#ff8c459a" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/foundation_bb_cushion_hint" app:self_width="550" app:self_height="140" app:self_left="260" app:self_top="1060" app:text_size_info="360:10:default;360:8:de,fr,nl" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</FrameLayout>

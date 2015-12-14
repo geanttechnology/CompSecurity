@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="774">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="774">
+            <View android:layout_gravity="bottom|center" android:background="@drawable/bg_setting_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.8" app:child_width="1020" app:child_height="649" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/cameraSettingContent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="20.0" app:child_width="1020" app:child_height="624">
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.5" style="@style/CameraSettingMarginStyle">
+                    <TextView android:id="@id/captureModeTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/capture_mode" android:layout_alignParentLeft="true" style="@style/CameraSettingTextStyle" />
+                </RelativeLayout>
+                <View android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3" style="@style/CameraSettingMarginStyle" />
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="2.2" style="@style/CameraSettingMarginStyle">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/captureGeneralButton" android:background="@drawable/image_selector_camera_capturemode_general_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="255" app:guideline_height="74">
+                        <TextView android:id="@id/captureGeneralTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/capture_general" style="@style/CameraSettingTextStyle" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/captureTouchButton" android:background="@drawable/image_selector_camera_capturemode_detect_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="255" app:guideline_height="74">
+                        <TextView android:id="@id/captureTouchTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/capture_touch" style="@style/CameraSettingTextStyle" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/captureDetectButton" android:background="@drawable/image_selector_camera_capturemode_detect_btn" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="255" app:guideline_height="74">
+                        <TextView android:id="@id/captureDetectTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/capture_detect" style="@style/CameraSettingTextStyle" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </LinearLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.8" style="@style/CameraSettingMarginStyle">
+                    <View android:layout_centerInParent="true" style="@style/SettingDivStyle" />
+                </RelativeLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.2" style="@style/CameraSettingMarginStyle">
+                    <TextView android:layout_gravity="left" android:id="@id/cameraFilterTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/camera_filter" style="@style/CameraSettingTextStyle" />
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:id="@id/cameraFilterButton" android:background="@drawable/image_selector_camera_timer_btn" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="158" app:guideline_height="74" />
+                </FrameLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.8" style="@style/CameraSettingMarginStyle">
+                    <View android:layout_centerInParent="true" style="@style/SettingDivStyle" />
+                </RelativeLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.2" style="@style/CameraSettingMarginStyle">
+                    <TextView android:layout_gravity="left" android:id="@id/cameraTimerTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/camera_timer" style="@style/CameraSettingTextStyle" />
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:id="@id/cameraTimerButton" android:background="@drawable/image_selector_camera_timer_btn" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="158" app:guideline_height="74" />
+                </FrameLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.8" style="@style/CameraSettingMarginStyle">
+                    <View android:layout_centerInParent="true" style="@style/SettingDivStyle" />
+                </RelativeLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.2" style="@style/CameraSettingMarginStyle">
+                    <TextView android:layout_gravity="left" android:id="@id/cameraSoundTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/camera_sound" style="@style/CameraSettingTextStyle" />
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:id="@id/cameraSoundButton" android:background="@drawable/image_selector_camera_timer_btn" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="158" app:guideline_height="74" />
+                </FrameLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.8" style="@style/CameraSettingMarginStyle">
+                    <View android:layout_centerInParent="true" style="@style/SettingDivStyle" />
+                </RelativeLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.2" style="@style/CameraSettingMarginStyle">
+                    <TextView android:layout_gravity="left" android:id="@id/cameraPreviewTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/camera_preview" style="@style/CameraSettingTextStyle" />
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:id="@id/cameraLivePreviewButton" android:background="@drawable/image_selector_camera_timer_btn" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="158" app:guideline_height="74" />
+                </FrameLayout>
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</FrameLayout>

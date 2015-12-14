@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/social_items_message_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16dp" android:layout_marginRight="@dimen/space_12dp" android:layout_marginBottom="@dimen/space_4dp" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_small_picsart" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+            <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_black" android:id="@id/social_items_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16dp" android:layout_marginBottom="@dimen/space_4dp" android:text="@string/loading" />
+        </LinearLayout>
+        <RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <GridView android:gravity="center" android:id="@id/social_items_gridView" android:paddingLeft="@dimen/space_2dp" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/color_transparent" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:stretchMode="columnWidth" android:columnWidth="70.0dip" android:numColumns="auto_fit" android:layout_above="@id/social_items_progress_layout" />
+            <RelativeLayout android:id="@id/social_items_progress_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ProgressBar android:padding="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_small_picsart" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="bottom" android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/social_search_bottom_panel" android:background="@drawable/folder_panel_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/social_search_text_layout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/social_search_bottom_panel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <Button android:id="@id/social_search_multycheck_mode_btn" android:background="@drawable/xml_icon_multycheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/social_search_images_frame_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

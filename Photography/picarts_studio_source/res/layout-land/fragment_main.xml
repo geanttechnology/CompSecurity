@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/editor_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.editor.view.EditorView android:id="@id/editor" android:paddingLeft="48.0dip" android:paddingRight="52.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad" android:layout_alignWithParentIfMissing="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/panel_left" android:background="@drawable/panel_left_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageButton android:id="@id/btn_share" android:src="@drawable/ic_action_share_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_export_gif" android:src="@drawable/editor_gif_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_save" android:src="@drawable/ic_action_save" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/btn_reset" android:src="@drawable/editor_reset_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_undo" android:src="@drawable/editor_undo_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_close" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/ad" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toLeftOf="@id/panel_right" android:layout_toRightOf="@id/panel_left" android:layout_alignParentBottom="true" />
+    <ScrollView android:layout_gravity="left" android:id="@id/panel_right" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fillViewport="true" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_tools" android:text="@string/gen_tool" android:drawableTop="@drawable/ic_action_tools_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_effect" android:text="@string/gen_effect" android:drawableTop="@drawable/ic_action_effects_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_addPhoto" android:text="@string/gen_add_photo" android:drawableTop="@drawable/ic_action_add_photo_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_square_fit" android:text="@string/square_fit" android:drawableTop="@drawable/square_fit" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_border" android:text="@string/gen_border" android:drawableTop="@drawable/ic_action_border_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_mask" android:text="@string/gen_mask" android:drawableTop="@drawable/ic_action_mask_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_draw" android:text="@string/gen_draw" android:drawableTop="@drawable/ic_brush_normal" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_text" android:text="@string/gen_text" android:drawableTop="@drawable/ic_action_text_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_clipart" android:text="@string/gen_clipart" android:drawableTop="@drawable/ic_action_clipart_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_sticker" android:text="@string/gen_sticker" android:drawableTop="@drawable/ic_action_sticker_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_lensFlare" android:text="@string/gen_lensFlare" android:drawableTop="@drawable/ic_action_lensflare_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_shapeMask" android:text="@string/tool_shape_mask" android:drawableTop="@drawable/ic_action_shape_overlay_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_frame" android:text="@string/gen_frame" android:drawableTop="@drawable/ic_action_frame_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_callout" android:text="@string/gen_callout" android:drawableTop="@drawable/ic_action_callout_t" style="@style/EditorMainScreenButton" />
+            <Button android:id="@id/btn_shop" android:text="@string/gen_shop" android:drawableTop="@drawable/ic_action_shop" style="@style/EditorMainScreenButton" />
+        </LinearLayout>
+    </ScrollView>
+>>>>>>> master
+</RelativeLayout>

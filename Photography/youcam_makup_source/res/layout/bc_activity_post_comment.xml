@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/main_observable_root_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <RelativeLayout android:id="@id/normal_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel">
+        <FrameLayout android:id="@id/post_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/post_comment_bar" />
+        <RelativeLayout android:id="@id/post_comment_bar" android:background="@color/bc_issue_btn_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/BcPostCommentPanelStyle">
+            <TextView android:id="@id/post_comment_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/t5dp" android:text="@string/bc_post_comment_btn" android:layout_alignTop="@id/post_comment_text" android:layout_alignBottom="@id/post_comment_text" android:layout_alignParentRight="true" style="@style/BcPostButtonBasicStyle" />
+            <com.rockerhieu.emojicon.EmojiconEditText android:textColor="@color/bc_color_black" android:gravity="left|center" android:id="@id/post_comment_text" android:background="@drawable/bc_post_comment_text_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bc_post_comment_hint" android:cursorVisible="true" android:maxLines="3" android:maxLength="2048" android:layout_toLeftOf="@id/post_comment_btn" android:layout_alignParentLeft="true" android:inputType="textAutoCorrect|textMultiLine" android:textCursorDrawable="@null" style="@style/BcPostCommentTextStyle" />
+        </RelativeLayout>
+        <View android:layout_above="@id/post_comment_bar" style="@style/BcBottomShadowStyle" />
+    </RelativeLayout>
+    <include android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" layout="@layout/bc_view_message_panel" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/bc_view_toast_panel" />
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+    <com.cyberlink.beautycircle.view.widgetpool.facebook.LoginButton android:id="@id/register_facebook" android:visibility="gone" android:scaleType="fitXY" style="@style/BcRegisterMoreSigninBtnStyle" />
+    <com.cyberlink.beautycircle.view.widgetpool.common.BCArcMenu android:id="@id/bc_arc_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>

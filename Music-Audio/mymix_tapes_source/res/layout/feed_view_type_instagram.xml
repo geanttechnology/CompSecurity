@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/card_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:foreground="?android:selectableItemBackground" card_view:cardCornerRadius="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip">
+            <ImageButton android:id="@id/feed_view_type_mymix_profile" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="16.0dip" android:scaleType="centerCrop" android:contentDescription="no description" android:layout_marginStart="16.0dip" style="@style/Widget.AppCompat.ActionButton" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+                <TextView android:textStyle="bold" android:textColor="#ff808080" android:id="@id/feed_view_type_mymix_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Username" />
+                <TextView android:textColor="#ffaeaeae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Published on Instagram:" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/feed_view_type_mymix_image" android:layout_width="fill_parent" android:layout_height="196.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginEnd="12.0dip">
+            <ImageButton android:id="@id/feed_view_type_comment_action" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_stats_insta" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="no description" android:layout_alignParentEnd="true" style="@style/Widget.AppCompat.ActionButton" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffaeaeae" android:id="@id/feed_view_type_mymix_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="4.0dip" android:singleLine="true" android:layout_toLeftOf="@id/feed_view_type_comment_action" android:layout_alignParentLeft="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="4.0dip" android:layout_toStartOf="@id/feed_view_type_comment_action" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

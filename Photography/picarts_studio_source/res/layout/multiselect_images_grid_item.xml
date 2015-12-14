@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/images_grid_item_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.utils.DynamicHeightImageView android:id="@id/images_grid_item_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/corrupted" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/relativeLayout1" android:background="@drawable/xml_gallery_item_selector" android:duplicateParentState="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

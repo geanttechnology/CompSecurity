@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_launcher" android:id="@id/action_share" android:background="@android:color/transparent" android:title="@string/action_share" android:showAsAction="ifRoom" android:actionProviderClass="com.cyberlink.youmakeup.kernelctrl.ShareActionProvider" />
+    <item android:icon="@drawable/ic_launcher" android:id="@id/action_delete" android:background="@android:color/transparent" android:title="@string/action_delete" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_copy" android:title="@string/action_copy_editing" android:showAsAction="withText" />
+    <item android:id="@id/action_paste" android:title="@string/action_paste_editing" android:showAsAction="withText" />
+    <item android:id="@id/action_reset" android:title="@string/action_reset" android:showAsAction="withText" />
+    <item android:id="@id/action_rotate" android:title="@string/action_rotate" android:showAsAction="withText" />
+    <item android:id="@id/action_save" android:title="@string/action_save" android:showAsAction="withText" />
+    <item android:id="@id/action_select" android:title="@string/action_select" android:showAsAction="withText" />
+    <item android:id="@id/action_deselect" android:title="@string/action_deselect" android:showAsAction="withText" />
+    <item android:enabled="false" android:id="@id/action_debug_checked_image_ids" android:visible="false" android:orderInCategory="1000" android:title="[Debug] show checked image IDs" android:titleCondensed="Image IDs" android:showAsAction="withText" />
+    <item android:enabled="false" android:id="@id/action_debug_mounted" android:visible="false" android:orderInCategory="1000" android:title="[Debug] notify media mounted" android:titleCondensed="Media mounted" android:showAsAction="withText" />
+</menu>

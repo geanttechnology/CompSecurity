@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:id="@id/btbFuncBtnsScrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/btbFuncBtnsContainer" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/bottomToolBarEyeLineBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_liner" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_eye_lines" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottomToolBarEyeLashBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_lashes" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_eye_lashes" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottomToolBarEyeShadowBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_shadow" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_eye_shadow" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottomToolBarEyeBrowBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_brows" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_eye_brow" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottomToolBarEyeContactBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_contact" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_eye_contact" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottomToolBarEyeBagBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_bag" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <com.cyberlink.youcammakeup.widgetpool.common.AutoResizeTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_eye_bag" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottomToolBarEyeEnlargeBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_enlarge" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_enlarge_eye" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottomToolBarEyeSparkleBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_brighten" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_sparkle_eye" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottomToolBarDoubleEyelidBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_lid" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_eyelid" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottomToolBarRedEyeBtn" android:layout_width="@dimen/f77dp" android:layout_height="fill_parent">
+            <View android:background="@drawable/image_selector_eye_red_eye" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/beautifier_red_eye" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</HorizontalScrollView>

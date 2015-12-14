@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/chrome_breadcrumb" />
+    <android.support.v7.widget.RecyclerView android:id="@id/cleanup_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/cleanup_manager_recyclerview_side_padding" android:layout_marginTop="?actionBarSize" android:layout_marginRight="@dimen/cleanup_manager_recyclerview_side_padding" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/cleanup_progress_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/cleanup_progressBar" android:background="@color/gallery_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/cleanup_manager_progressbar_height" android:progressDrawable="@drawable/progress_drawable" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+        <ProgressBar android:id="@id/cleanup_activity_indicator_spinner" android:paddingBottom="@dimen/cleanup_manager_progressbar_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/cleanup_progressBar" android:layout_alignParentLeft="true" style="?android:attr/progressBarStyleSmall" />
+        <TextView android:id="@id/cleanup_activity_indicator_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cleanup_manager_loading_description_left_padding" android:text="@string/adrive_gallery_common_cleanup_manager_loading_description" android:layout_toRightOf="@id/cleanup_activity_indicator_spinner" android:layout_above="@id/cleanup_progressBar" style="@style/textapperance_photos2_spinner_text" />
+    </RelativeLayout>
+</FrameLayout>

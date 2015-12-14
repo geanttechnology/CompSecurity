@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/component_offline" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="56.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/component_offline_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_offline" android:layout_centerHorizontal="true" />
+        <my.googlemusic.play.utils.views.RobotoTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/secondary_text_light_nodisable" android:id="@id/component_offline_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="You are offline" android:layout_centerHorizontal="true" app:typeface="roboto_medium" />
+        <my.googlemusic.play.utils.views.RobotoTextView android:textColor="@android:color/secondary_text_light_nodisable" android:id="@id/component_offline_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="The search for users is unavailable offline." android:layout_below="@id/component_offline_alert" android:layout_centerHorizontal="true" app:typeface="roboto_medium" />
+        <Button android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/component_offline_button" android:background="@anim/button_red" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginTop="16.0dip" android:text="Go to Music Library" />
+    </LinearLayout>
+</RelativeLayout>

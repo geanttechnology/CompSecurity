@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/coverImage" android:background="#ffffffff" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/appicon" android:scaleType="centerInside" />
+            <TextView android:textColor="#ff000000" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/trackName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Test" android:singleLine="true" android:maxLength="40" android:layout_weight="3.0" android:marqueeRepeatLimit="marquee_forever" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/mediaPrevious" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@android:style/MediaButton.Previous" />
+                <ImageButton android:id="@id/mediaPause" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/mediaNext" android:layout_below="@id/mediaPrevious" android:layout_centerVertical="true" style="@android:style/MediaButton.Pause" />
+                <ImageButton android:id="@id/mediaNext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@android:style/MediaButton.Next" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

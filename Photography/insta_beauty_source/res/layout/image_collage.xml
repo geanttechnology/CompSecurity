@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/CollageLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <wantu.sephiroth.android.library.imagezoom.RoundCornerImageViewTouch android:layout_gravity="left" android:id="@id/imageView1" android:layout_width="200.0dip" android:layout_height="200.0dip" />
+            <wantu.sephiroth.android.library.imagezoom.RoundCornerImageViewTouch android:layout_gravity="left" android:id="@id/imageView2" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="200.0dip" />
+            <wantu.sephiroth.android.library.imagezoom.RoundCornerImageViewTouch android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <wantu.sephiroth.android.library.imagezoom.RoundCornerImageViewTouch android:id="@id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <wantu.sephiroth.android.library.imagezoom.RoundCornerImageViewTouch android:id="@id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <wantu.sephiroth.android.library.imagezoom.RoundCornerImageViewTouch android:id="@id/imageView6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <wantu.sephiroth.android.library.imagezoom.RoundCornerImageViewTouch android:id="@id/imageView7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <wantu.sephiroth.android.library.imagezoom.RoundCornerImageViewTouch android:id="@id/imageView8" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <wantu.sephiroth.android.library.imagezoom.RoundCornerImageViewTouch android:id="@id/imageView9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.wantu.view.ImagesMovingView android:id="@id/movingView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

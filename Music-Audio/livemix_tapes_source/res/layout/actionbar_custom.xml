@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/actionBarLogo" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/logo_home" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff336699" android:id="@id/logout_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="Logout" android:layout_toRightOf="@id/actionBarLogo" android:layout_centerVertical="true" />
+</RelativeLayout>

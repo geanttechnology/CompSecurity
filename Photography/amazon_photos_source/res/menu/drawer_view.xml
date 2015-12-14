@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/library_group">
+        <item android:icon="@drawable/f_ic_grid_view_default_dark_24dp" android:id="@id/all" android:title="@string/adrive_gallery_common_breadcrumb_all_photos" android:checkable="true" />
+        <item android:icon="@drawable/ic_this_day_dark" android:id="@id/this_day" android:visible="false" android:title="@string/adrive_gallery_common_this_day_title" android:checkable="true" />
+        <item android:icon="@drawable/f_ic_albums_default_dark_24dp" android:id="@id/albums" android:visible="false" android:title="@string/adrive_gallery_albums" android:checkable="true" />
+        <item android:icon="@drawable/f_ic_video_default_dark_24dp" android:id="@id/videos" android:visible="false" android:title="@string/adrive_gallery_common_breadcrumb_videos" android:checkable="true" />
+        <item android:icon="@drawable/f_ic_camera_dark_24dp" android:id="@id/camera_roll" android:visible="false" android:title="@string/adrive_gallery_common_dir_camera" android:checkable="true" />
+        <item android:icon="@drawable/f_ic_device_dark_24dp" android:id="@id/device" android:title="@string/adrive_gallery_common_breadcrumb_local" android:checkable="true" />
+    </group>
+    <group android:id="@id/more_group">
+        <item android:icon="@drawable/f_ic_add_dark_24dp" android:id="@id/add_photos" android:visible="false" android:title="@string/adrive_gallery_common_ftue_add_photos_subheader" android:checkable="true" />
+        <item android:icon="@drawable/f_ic_settings_dark_24dp" android:id="@id/settings" android:title="@string/adrive_gallery_common_breadcrumb_settings" android:checkable="true" />
+        <item android:icon="@drawable/f_ic_help_dark_24dp" android:id="@id/help" android:visible="false" android:title="@string/adrive_gallery_common_overflow_menu_help" android:checkable="true" />
+        <item android:icon="@drawable/f_ic_cloud_dark_24dp" android:id="@id/manage_storage" android:visible="false" android:title="@string/adrive_gallery_common_overflow_menu_manage_storage" android:checkable="true" />
+        <item android:id="@id/debug" android:visible="false" android:title="Debug" android:checkable="true" />
+    </group>
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@color/camera_panel_effect_background_alpha" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:guideline_width="1080" custom:guideline_height="237">
+        <com.cyberlink.youcammakeup.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/cameraLookGridArea" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" custom:listSelector="@android:color/transparent" custom:horizontalSpacing="0.0dip" custom:numRows="1" />
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/panelTopView" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:guideline_width="1080" custom:guideline_height="237" />
+</FrameLayout>

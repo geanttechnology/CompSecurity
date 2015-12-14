@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/action_bar" android:background="@drawable/panel_top_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/btn_cancel" android:padding="@dimen/space_8dp" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            <TextView android:textAppearance="@android:style/Animation.SearchBar" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tool_tilt_shift" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_done" android:padding="@dimen/space_8dp" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.picsart.studio.editor.view.TiltShiftEditorView android:id="@id/tilt_shift_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:paddingLeft="@dimen/space_16dp" android:paddingRight="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:gravity="center" android:id="@id/blur_value" android:layout_width="40.0dip" android:layout_height="wrap_content" />
+            <com.picsart.studio.view.FloatSeekBar android:id="@id/blur_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Widget.Picsart.SeekBar.Float" />
+            <ImageButton android:id="@id/btn_invert" android:src="@drawable/ic_selection_inverse" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <ImageButton android:id="@id/btn_linear" android:background="@drawable/si_ui_selector_white" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="30.0dip" android:src="@drawable/linear_mode" style="@style/Widget.Picsart.ImageButton.Action" />
+            <ImageButton android:id="@id/btn_radial" android:background="@drawable/si_ui_selector_white" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/radial_mode" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_medium_picsart" />
+</FrameLayout>

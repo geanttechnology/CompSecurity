@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/contest_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.utils.DynamicHeightImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+</FrameLayout>

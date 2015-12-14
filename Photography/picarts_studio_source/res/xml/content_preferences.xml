@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_content">
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_safe_content_title" android:key="enable_safe_content" android:summary="@string/pref_enable_safe_content_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

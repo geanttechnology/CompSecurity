@@ -1,0 +1,21 @@
+version: 2.0.2
+apkFileName: livemixtapes_v1084_apkpurecomapk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '21'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '84'
+  versionName: 1.0.84
+sharedLibrary: false
+unknownFiles:
+  com/livemixtapes/Mixtape.java.orig: '8'
+  com/livemixtapes/SearchFragment.java.orig: '8'
+  com/livemixtapes/Utils.java.orig: '8'
+doNotCompress:
+- resources.arsc

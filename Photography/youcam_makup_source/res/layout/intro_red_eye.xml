@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/IntroBackgroundStyle" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="1372">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="160">
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/redEyeIcon" android:background="@drawable/ico_red_eye_removal" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="144" app:guideline_height="160" />
+                <TextView android:text="@string/beautifier_red_eye" style="@style/IntroTitleTextStyle" />
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="550">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="250">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="980" app:guideline_height="250">
+                <TextView android:gravity="bottom" android:id="@id/redEyeTipTextView" android:text="@string/intro_red_eye_arrow_tip" style="@style/IntroTipTextStyle" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="460">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="580" app:guideline_height="460">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="150" app:guideline_height="460">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="150" app:guideline_height="293">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/arrow_intro_r" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="150" app:guideline_height="230" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="927">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="840" app:guideline_height="927">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="192" app:guideline_height="927">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="192" app:guideline_height="268">
+                    <View android:background="@drawable/hand_tap" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="648" app:guideline_height="927">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="648" app:guideline_height="240">
+                    <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/intro_tap_to_show_feature_points" style="@style/IntroTipTextStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</FrameLayout>

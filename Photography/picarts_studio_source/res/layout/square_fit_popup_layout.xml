@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@android:color/white" android:id="@id/tooltip_textview" android:background="@drawable/square_fit_popup_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_square_fit_for_instagram" />
+    <ImageView android:id="@id/tooltip_arrow_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instagram_tooltip_arrow" android:layout_below="@id/tooltip_textview" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/IntroBackgroundStyle" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="1372">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="160">
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/antiShineIcon" android:background="@drawable/intro_face_art" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="165" app:guideline_height="150" />
+                <TextView android:text="@string/beautifier_face_art" style="@style/IntroTitleTextStyle" />
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="1200">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="1080" app:reference_height="1200">
+            <View android:layout_gravity="bottom" android:background="@drawable/arrow_01" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="144" app:self_height="582" app:self_left="310" app:self_top="189" app:self_btt="true" />
+            <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:gravity="bottom|center" android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/intro_face_art_pattern" app:self_width="920" app:self_top="790" app:self_btt="true" app:text_size_info="360:18:default" style="@style/IntroTipTextStyle" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</FrameLayout>

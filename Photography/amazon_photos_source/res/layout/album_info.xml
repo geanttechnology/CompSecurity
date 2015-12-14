@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/chrome_breadcrumb" />
+        <RelativeLayout android:id="@id/album_info_content" android:padding="@dimen/album_info_dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+            <LinearLayout android:orientation="vertical" android:id="@id/album_general_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/album_info_name_size" android:id="@id/album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:background="@color/light_grey_translucent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/album_info_divider_margin" />
+                <TextView android:textSize="@dimen/album_info_header_size" android:id="@id/album_date_created_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/album_info_section_margin" android:text="@string/adrive_gallery_album_info_created" />
+                <TextView android:textSize="@dimen/album_info_body_size" android:textStyle="bold" android:id="@id/album_date_created" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/album_info_header_size" android:id="@id/album_photos_count_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/album_info_section_margin" android:text="@string/adrive_gallery_album_info_count" />
+                <TextView android:textSize="@dimen/album_info_body_size" android:textStyle="bold" android:id="@id/album_photos_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/album_properties_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <View android:background="@color/light_grey_translucent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/album_properties_table" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ProgressBar android:id="@id/progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</ScrollView>

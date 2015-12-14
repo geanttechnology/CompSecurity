@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.amazon.clouddrive.photos" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.account.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_COR_PFM"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"/>
+    <uses-permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.account.changed"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"/>
+    <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
+    <uses-permission android:name="com.amazon.identity.permission.GENERIC_IPC"/>
+    <uses-permission android:name="com.amazon.dcp.settings.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"/>
+    <uses-permission android:name="amazon.permission.COLLECT_METRICS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <application android:allowBackup="true" android:backupAgent="com.amazon.gallery.thor.settings.ThorBackupAgent" android:icon="@drawable/icon" android:label="@string/adrive_gallery_common_app_name" android:name="com.amazon.gallery.thor.app.ThorGalleryApplication" android:theme="@style/AppCompatTheme">
+        <activity android:launchMode="singleTop" android:name="com.amazon.gallery.thor.app.activity.ThorNativeGalleryActivity">
+            <intent-filter>
+                <action android:name="com.amazon.photos.LAUNCH_PHOTOS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.CAMERA_ROLL"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="amazon.intent.category.PHOTOS"/>
+                <category android:name="amazon.intent.category.AD"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.photos.CMS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.gallery.thor.LAUNCH_VIDEOS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.gallery.LAUNCH_VIDEOS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.gallery.LAUNCH_PHOTOS_STORAGE_MANAGER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.gallery.LAUNCH_NEW_SUBSCRIPTION_NOTIFICATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.amazon.clouddrive.photos.display.LauncherActivity" android:targetActivity="com.amazon.gallery.thor.app.activity.ThorNativeGalleryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.gallery.thor.app.activity.ActionSendActivity" android:theme="@style/Theme.AppCompat.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.amazon.identity.auth.device.MapInfoProvider.AospMAPInformationProvider" android:exported="true" android:name="com.amazon.gallery.thor.app.authentication.AospMAPInformationProvider" android:permission="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+        <service android:name="com.amazon.identity.auth.accounts.MAPSubAuthenticatorService">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.AccountSubAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="com.amazon.dcp.sso.AccountSubAuthenticator" android:resource="@xml/sub_authenticator"/>
+        </service>
+        <service android:name="com.amazon.gallery.thor.app.authentication.FetchCustomerEmailService"/>
+        <service android:exported="true" android:name="com.amazon.gallery.thor.cds.GalleryMetadataSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/mixtape_syncadapter"/>
+        </service>
+        <service android:exported="true" android:name="com.amazon.gallery.thor.syncframework.NewPromotionSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/promotion_syncadapter"/>
+        </service>
+        <service android:exported="true" android:name="com.amazon.gallery.thor.syncframework.WhisperUploadSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/whisper_upload_syncadapter"/>
+        </service>
+        <receiver android:name="com.amazon.gallery.thor.packageupdate.PackageUpdateCheckReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.gallery.thor.packageupdate.PackageUpdateService"/>
+        <provider android:authorities="com.amazon.clouddrive.photos.AviaryCdsProvider" android:exported="false" android:name="com.aviary.android.feather.cds.AviaryCdsProvider" android:process=":aviarycds" android:syncable="true"/>
+        <receiver android:name="com.amazon.photos.device.receivers.AutoUploadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.photos.device.receivers.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.photos.device.receivers.CheckCampaignsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.photos.device.receivers.PackageUpdateCheckReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.photos.device.receivers.CameraActionReceiver">
+            <intent-filter>
+                <action android:name="com.android.camera.NEW_PICTURE"/>
+                <action android:name="com.android.camera.NEW_VIDEO"/>
+                <action android:name="android.hardware.action.NEW_PICTURE"/>
+                <action android:name="android.hardware.action.NEW_VIDEO"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.gallery.thor.thisday.ThisDayBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.photos.device.receivers.GooglePlayAdsInstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="" android:name="com.amazon.gallery.thor.ftue.ThorFTUEActivity" android:screenOrientation="sensorPortait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="amazon.intent.category.PHOTOS_FTUE"/>
+                <category android:name="amazon.intent.category.AD"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.gallery.thor.app.activity.ChooserStubActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/image"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amazon.gallery.thor.app.activity.ThorChooserActivity"/>
+        <activity android:name="com.amazon.gallery.thor.albums.AddToAlbumChooserActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.gallery.thor.app.activity.HiddenNativeGalleryActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/adrive_gallery_common_app_name" android:name="com.amazon.gallery.thor.app.activity.ThorViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="application/sdp"/>
+                <data android:mimeType="application/vnd.apple.mpegurl"/>
+                <data android:mimeType="application/x-mpegurl"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="rtsp"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.gallery.framework.kindle.activity.SingleViewActivity" android:showOnLockScreen="true">
+            <intent-filter>
+                <action android:name="com.android.camera.action.REVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.amazon.gallery.thor.app.activity.ThorCollectionListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="amazon.intent.category.PHOTOS_COLLECTION"/>
+                <category android:name="amazon.intent.category.AD"/>
+            </intent-filter>
+        </activity>
+        <activity android:hardwareAccelerated="true" android:name="com.amazon.gallery.thor.app.activity.CollectionListPickActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.gallery.thor.app.activity.ThorSettingsActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="amazon.intent.category.SETTINGS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="amazon.intent.category.PHOTOS_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="amazon.intent.category.AD"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.amazon.gallery.thor.app.activity.FolderSelectionActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="amazon.intent.action.FOLDER_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amazon.gallery.thor.app.activity.AlbumInfoActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.amazon.gallery.thor.app.activity.FreetimeAutosaveSettings" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="amazon.intent.action.FREETIME_AUTOSAVE_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:name="com.amazon.gallery.framework.kindle.video.KindleVideoPlaybackActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.amazon.gallery.framework.kindle.activity.SlideShowActivity" android:theme="@style/SlideShowTheme"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.amazon.gallery.thor.app.activity.ManageStorageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="amazon.intent.category.MANAGE_STORAGE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amazon.gallery.thor.app.activity.CleanupManagerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="standard" android:name="com.amazon.gallery.thor.app.activity.SignInActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.gallery.thor.app.activity.LegalInformationSettingsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.gallery.thor.app.activity.LegalInformationWebActivity"/>
+        <activity android:name="com.amazon.gallery.thor.app.activity.ThisDayActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="amazon.intent.category.PHOTOS_THIS_DAY"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amazon.gallery.framework.kindle.activity.FoldersActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="amazon.intent.category.PHOTOS_FOLDERS"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="trimmer" android:name="com.amazon.gallery.app.activity.VideoTrimmerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.amazon.gallery.LAUNCH_TRIMMER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.amazon.gallery.provider.internal" android:exported="false" android:name="com.amazon.gallery.framework.kindle.provider.GalleryInternalContentProvider"/>
+        <provider android:authorities="com.amazon.mixtape.gallery.thor.cloud" android:exported="false" android:name="com.amazon.mixtape.provider.CloudNodesProvider" android:syncable="true"/>
+        <provider android:authorities="com.amazon.mixtape.gallery.thor.metrics" android:exported="false" android:name="com.amazon.mixtape.provider.MixtapeMetricsProvider"/>
+        <provider android:authorities="com.amazon.photos.promotion" android:exported="false" android:name="com.amazon.gallery.thor.syncframework.StubContentProvider" android:syncable="true"/>
+        <provider android:authorities="com.amazon.photos.whisperupload" android:exported="false" android:name="com.amazon.gallery.thor.syncframework.WhisperUploadContentProvider" android:syncable="true"/>
+        <service android:name="com.amazon.gallery.thor.app.service.WhisperCacheBeanService"/>
+        <service android:name="com.amazon.gallery.framework.network.watchdog.WhisperUploadService"/>
+        <service android:name="com.amazon.gallery.thor.app.service.VideoTranscodeService"/>
+        <service android:name="com.amazon.gallery.thor.cds.MetadataProcessingService"/>
+        <service android:name="com.amazon.gallery.thor.app.service.ThisDayNotificationService"/>
+        <service android:name="com.amazon.gallery.thor.app.service.ThisDayPrefetchService"/>
+        <service android:name="com.amazon.mixtape.authenticator.MixtapeNoOpAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <receiver android:enabled="true" android:name="com.amazon.gallery.thor.app.AccountStateReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.account.removed"/>
+                <action android:name="com.amazon.dcp.sso.action.secondary.account.added"/>
+                <action android:name="com.amazon.dcp.sso.action.secondary.account.removed"/>
+                <action android:name="com.amazon.kindle.tablet.ftue_free_for_all"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.kindle.tablet.do_ftue"/>
+                <data android:scheme="amazon-ftue"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.amazon.gallery.thor.device.ThorDeviceAttributeReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.AmazonAccountPropertyService.property.changed"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.amazon.gallery.thor.app.MediaScannerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.action.NEW_PICTURE"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.action.NEW_VIDEO"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.amazon.gallery.thor.app.BackupCloudDriveReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.otter.oobe.ENABLE_AUTO_SAVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DirtyDataSyncingService" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.SYNC_DIRTY_DATA"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="false" android:name="com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.gallery.thor.app.service.GalleryPowerStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.gallery.thor.app.service.GalleryNetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.gallery.thor.app.service.GalleryBatteryStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.gallery.thor.app.PackageUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.CLEAN_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.amazon.gallery.framework.kindle.notifications.CheckForNewSubscriptionsService"/>
+        <meta-data android:name="com.amazon.kindle.policy.BLOCK_TYPE" android:value="DAC"/>
+        <meta-data android:name="com.amazon.gallery.framework.glide.GalleryGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.aviary.android.feather.v1.API_KEY" android:value="oeriumv75k11lb1h"/>
+        <activity android:name="com.amazon.gallery.thor.aviary.LaunchAviaryWrapperActivity">
+            <intent-filter>
+                <action android:name="com.amazon.photos.EDIT"/>
+                <data android:mimeType="image/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:largeHeap="true" android:name="com.aviary.android.feather.sdk.FeatherActivity" android:process=":aviarysdk" android:screenOrientation="unspecified" android:theme="@style/AviaryCustomTheme"/>
+        <service android:exported="false" android:name="com.aviary.android.feather.cds.AviaryCdsService" android:process=":aviarycds">
+            <intent-filter>
+                <action android:name="aviary.intent.action.CDS_DOWNLOAD_START"/>
+                <action android:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="aviary.intent.action.CDS_DOWNLOAD_START"/>
+                <action android:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS"/>
+                <action android:name="aviary.intent.action.CDS_RESTORE_OWNED_PACKS"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.aviary.android.feather.cds.AviaryCdsReceiver" android:permission="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" android:process=":aviarycds"/>
+        <service android:exported="false" android:name="com.aviary.android.feather.cds.AviaryCdsAssetsDownloaderService" android:process=":aviarycds">
+            <intent-filter>
+                <action android:name="aviary.intent.action.CDS_DOWNLOAD_EXTRA_ASSETS"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="com.amazon.client.metrics.api" android:required="false"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="true" android:label="Amazon AuthPortal" android:launchMode="singleTop" android:name="com.amazon.identity.auth.device.AuthPortalUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    </application>
+</manifest>

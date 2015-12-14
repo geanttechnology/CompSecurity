@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Material.CardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header" android:background="@drawable/card_header_bg_selector" android:paddingLeft="@dimen/space_8dp" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <ImageView android:id="@id/icon" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/text_color_black" android:layout_gravity="center_vertical" android:id="@id/title" android:paddingLeft="@dimen/space_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_light_gray" android:layout_gravity="center_vertical" android:id="@id/subtitle" android:paddingLeft="@dimen/space_8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/divider_horizontal_new" />
+        <LinearLayout android:orientation="vertical" android:id="@id/body" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/footer" android:background="@drawable/card_header_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/empty_space" android:background="@color/color_transparent" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+            <TextView android:layout_gravity="center" android:id="@id/footerTitle" android:layout_margin="@dimen/space_16dp" style="@style/Widget.Picsart.SeeAllBtn" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

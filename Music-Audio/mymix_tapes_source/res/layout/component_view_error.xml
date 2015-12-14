@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/component_error_view" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/component_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_navigation_refresh" />
+    <my.googlemusic.play.utils.views.RobotoTextView android:textSize="18.0sp" android:textColor="@color/color_very_light_gray" android:gravity="center" android:id="@id/component_error_message" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="32.0dip" android:text="Could not load this feature" app:typeface="roboto_condensed" />
+</LinearLayout>

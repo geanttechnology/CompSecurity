@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FaceSwitcherView android:id="@id/faceSwitcherView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/faceSwitcherMessage" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Message_Face_Switcher" android:layout_above="@id/FaceSwitcherBottomBar" android:layout_centerHorizontal="true" style="@style/FaceSwitcherMessageText" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/FaceSwitcherBottomBar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" app:guideline_width="1080" app:guideline_height="160" />
+</RelativeLayout>

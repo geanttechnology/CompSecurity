@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <LinearLayout android:gravity="top|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" style="@style/BcFullActivityPaddingStyle">
+        <RatingBar android:id="@id/write_review_rating_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rating="0.0" android:stepSize="1.0" android:isIndicator="false" style="@style/BcProductWriteRatingStyle" />
+        <TextView android:gravity="center" android:id="@id/write_review_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_product_info_review_rating_desc" style="@style/BcProductWriteReviewRatingDescStyle" />
+        <EditText android:textColor="@color/bc_color_black" android:gravity="top|left|center" android:id="@id/write_review_text" android:background="@drawable/bc_product_review_text_background" android:layout_width="fill_parent" android:hint="@string/bc_product_info_review_text_hint" android:cursorVisible="true" android:maxLength="255" android:inputType="textAutoCorrect|textMultiLine" android:textCursorDrawable="@null" style="@style/BcProductWriteReviewTextStyle" />
+    </LinearLayout>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

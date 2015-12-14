@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@color/black_transparent_CC" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:picsart="http://schemas.android.com/apk/res-auto">
+    <com.picsart.studio.view.SlidingTabLayout android:id="@id/sliding_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager android:id="@id/profile_tag_pager" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sliding_tabs" />
+    <com.melnykov.fab.FloatingActionButton android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16dp" android:src="@drawable/ic_action_pen" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" picsart:fab_colorPressed="@color/accent_dark_picsart" picsart:fab_colorNormal="@color/accent_picsart" picsart:fab_colorRipple="@color/ripple_material_light" />
+</RelativeLayout>

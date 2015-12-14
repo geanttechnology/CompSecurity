@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:picsart="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/text_color_dark_gray" android:id="@id/contest_me_header_txt" android:paddingTop="@dimen/space_8dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:textColor="@color/temp_6" android:id="@id/contest_me_header_submit_btn" android:background="@drawable/btn_borderless_material_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contest_submit_button_text" />
+    <FrameLayout android:id="@id/my_submitted_photos_id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/space_4dp" />
+</LinearLayout>

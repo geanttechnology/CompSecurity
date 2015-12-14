@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.gallery.thor.widget.NavigationPaneWrapper android:orientation="vertical" android:id="@id/sidePanelLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/chrome_breadcrumb" />
+        <WebView android:id="@id/storage_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include layout="@layout/nav_pane_list" />
+</com.amazon.gallery.thor.widget.NavigationPaneWrapper>

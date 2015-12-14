@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="top|center" android:orientation="vertical" android:id="@id/bc_login_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/t55dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/bc_fb_login_panel" style="@style/BcRegisterBtnStyle">
+            <ImageView android:id="@id/bc_fb_more" android:background="@drawable/bc_register_fb_btn_selector" android:padding="@dimen/t5dp" android:layout_width="@dimen/t42dp" android:layout_height="@dimen/t42dp" android:layout_marginLeft="@dimen/t8dp" android:src="@drawable/bc_icon_dots" android:layout_alignParentRight="true" />
+            <include android:id="@id/bc_fb_login" android:layout_width="fill_parent" android:layout_height="@dimen/t42dp" android:layout_toLeftOf="@id/bc_fb_more" style="@style/BcRegisterBtnBaseStyle" layout="@layout/bc_view_me_login_fb" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bc_weibo_login_panel" style="@style/BcRegisterBtnStyle">
+            <ImageView android:id="@id/bc_weibo_more" android:background="@drawable/bc_register_weibo_btn_selector" android:padding="@dimen/t5dp" android:layout_width="@dimen/t42dp" android:layout_height="@dimen/t42dp" android:layout_marginLeft="@dimen/t8dp" android:src="@drawable/bc_icon_dots" android:layout_alignParentRight="true" />
+            <include android:id="@id/bc_weibo_login" android:layout_width="fill_parent" android:layout_height="@dimen/t42dp" android:layout_toLeftOf="@id/bc_weibo_more" style="@style/BcRegisterBtnBaseStyle" layout="@layout/bc_view_me_login_weibo" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bc_wechat_login_panel" style="@style/BcRegisterBtnStyle">
+            <ImageView android:id="@id/bc_wechat_more" android:background="@drawable/bc_register_wechat_btn_selector" android:padding="@dimen/t5dp" android:layout_width="@dimen/t42dp" android:layout_height="@dimen/t42dp" android:layout_marginLeft="@dimen/t8dp" android:src="@drawable/bc_icon_dots" android:layout_alignParentRight="true" />
+            <include android:id="@id/bc_wechat_login" android:layout_width="fill_parent" android:layout_height="@dimen/t42dp" android:layout_toLeftOf="@id/bc_wechat_more" style="@style/BcRegisterBtnBaseStyle" layout="@layout/bc_view_me_login_wechat" />
+        </RelativeLayout>
+        <include android:id="@id/bc_email_login" style="@style/BcRegisterBtnStyle" layout="@layout/bc_view_me_login_email" />
+        <include android:id="@id/bc_explore" style="@style/BcRegisterBtnStyle" layout="@layout/bc_view_me_login_explore_small" />
+        <TextView android:textSize="@dimen/t14sp" android:textStyle="bold" android:textColor="@color/bc_color_white" android:id="@id/bc_have_an_account" android:paddingLeft="@dimen/t20dp" android:paddingTop="@dimen/t5dp" android:paddingRight="@dimen/t20dp" android:paddingBottom="@dimen/t5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t25dp" android:text="@string/bc_welcome_btn_i_have_an_account" />
+    </LinearLayout>
+</RelativeLayout>

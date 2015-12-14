@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.socialin.android.views.MultiScreenListView android:gravity="center_horizontal" android:id="@id/si_ui_profile_list" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:fadingEdge="none" android:clickable="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@color/gray_f5" android:divider="@null" android:requiresFadingEdge="0x0" />
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Picsart.ProgressBar" />
+        <TextView android:layout_gravity="center" android:id="@id/tv_no_followers" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_no_followers" />
+        <TextView android:layout_gravity="center" android:id="@id/tv_no_followings" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_no_followings" />
+        <include android:id="@id/find_friends_layout" android:visibility="gone" layout="@layout/si_ui_find_friends_button_layout" />
+        <include android:visibility="gone" layout="@layout/si_ui_gallery_retry_layout" />
+        <include layout="@layout/si_ui_gallery_item_spen_layout" />
+    </FrameLayout>
+    <include android:layout_gravity="top|center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/button_go_to_top_layout" />
+</FrameLayout>

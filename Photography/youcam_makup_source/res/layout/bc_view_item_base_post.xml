@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bc_bg_post" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" style="@style/BcIssuePanelOutsideStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePanelInsideStyle">
+        <include layout="@layout/bc_view_auther_panel" />
+        <com.rockerhieu.emojicon.EmojiconTextView android:ellipsize="end" android:id="@id/post_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/BcIssuePostTextStyle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/post_box" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePostSubPanelStyle">
+            <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/post_cover" android:layout_width="fill_parent" android:scaleType="centerCrop" style="@style/BcIssuePostImageStyle" />
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/post_icon_panel" android:background="@drawable/bc_general_product_tag_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/post_tag_icon" android:background="@drawable/bc_general_text_selector" android:padding="@dimen/t4dp" android:layout_width="@dimen/t30dp" android:layout_height="@dimen/t30dp" android:src="@drawable/bc_product_tag_preview_selector" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/post_text_box" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.rockerhieu.emojicon.EmojiconTextView android:ellipsize="end" android:linksClickable="true" android:id="@id/post_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" app:emojiLineSpacingExtra="2.0dip" style="@style/BcIssuePostDescriptionTextStyle" />
+                <TextView android:textStyle="italic" android:textColor="@color/bc_issue_btn_text" android:ellipsize="end" android:id="@id/post_host" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" style="@style/BcCommentAgoTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@id/post_like_comment_count" android:background="@drawable/bc_general_text_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/BcIssuePostLikeCountTextStyle" />
+    </LinearLayout>
+    <include android:id="@id/issue_bottom_option" layout="@layout/bc_view_issue_bottom_option" />
+</LinearLayout>

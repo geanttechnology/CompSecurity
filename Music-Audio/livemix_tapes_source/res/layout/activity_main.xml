@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent" android:tabStripEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <FrameLayout android:id="@android:id/tabcontent" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@android:id/tabs" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/nowplayingwidget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_player" android:scaleType="centerInside" android:layout_alignTop="@android:id/tabs" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</TabHost>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <ScrollView android:id="@id/me_plus_about_outter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/fragment_topbar_panel">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProfileInfoPanelStyle">
+                <include android:id="@id/item_notify_comments_on_your_post" layout="@layout/bc_profile_with_checkbox" />
+                <include android:id="@id/item_notify_follows_you" layout="@layout/bc_profile_with_checkbox" />
+                <include android:id="@id/item_notify_follows_you_or_your_board" layout="@layout/bc_profile_with_checkbox" />
+                <include android:id="@id/item_notify_follows_joins_beauty_circle" layout="@layout/bc_profile_with_checkbox" />
+                <include android:id="@id/item_notify_people_add_a_post" layout="@layout/bc_profile_with_checkbox" />
+                <include android:id="@id/item_notify_people_creates_a_circle" layout="@layout/bc_profile_with_checkbox" />
+                <include android:id="@id/item_notify_like_your_post" layout="@layout/bc_profile_with_checkbox" />
+                <include android:id="@id/item_notify_circle_in_your_post" layout="@layout/bc_profile_with_checkbox" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

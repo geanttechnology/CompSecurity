@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/editor_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.socialin.android.photo.select.SelectionView android:id="@id/selectionView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/drawableSettingsLayout" android:background="@drawable/panel_bottom_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_toLeftOf="@id/addDrawableActionsContainer" android:layout_above="@id/ad" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:paddingLeft="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/textSize_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawing_brush_option_opacity" />
+            <TextView android:textSize="@dimen/textSize_10" android:id="@id/drawableOpacityText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": 255" />
+            <SeekBar android:id="@id/drawableOpacitySeekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:maxWidth="256.0dip" android:max="255" android:progress="255" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/blendModesSettingMainView" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_4dp" android:layout_weight="0.0">
+            <Spinner android:id="@id/blendModesSpinner" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <Button android:id="@id/blendModeBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Material.Button.Borderless" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/addDrawableActionsContainer" android:background="@drawable/panel_right_transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/cancelDrawable" android:src="@drawable/ic_action_cancel_t" android:layout_alignParentBottom="true" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/doneDrawable" android:src="@drawable/ic_action_done_t" android:layout_alignParentTop="true" style="@style/Widget.Picsart.ImageButton.Action" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanelTest" android:background="@drawable/panel_left_transparent" android:layout_width="@dimen/selection_top_item_width" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/bottomPanel" android:background="@drawable/panel_right_transparent" android:visibility="visible" android:layout_width="@dimen/selection_bottom_panel_size" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/doneBtn" android:src="@drawable/ic_action_done_t" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/Widget.Picsart.ImageButton.Action" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/doneBtn" android:layout_centerHorizontal="true">
+            <ImageButton android:id="@id/undoSelectionBtn" android:src="@drawable/editor_undo_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_12dp" android:layout_above="@id/cancelBtn" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/freeCropSizesMainView" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_weight="0.0">
+                <Spinner android:id="@id/freeCropSizesSpinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageButton android:id="@id/freeCropSizeBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_brush_ghost_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="48.0dip" android:layout_height="48.0dip">
+                <ImageButton android:id="@id/selectionTypeBtn" android:src="@drawable/ic_action_brush_t" style="@style/Widget.Picsart.ImageButton.Action" />
+                <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" android:src="@drawable/stretch_bottom_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageButton android:id="@id/cancelBtn" android:src="@drawable/ic_action_cancel_t" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Widget.Picsart.ImageButton.Action" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/topPopupView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/selection_top_popupview_margin" android:layout_marginRight="@dimen/selection_top_popupview_margin" android:layout_toRightOf="@id/topPanelTest" android:layout_alignParentTop="true">
+        <HorizontalScrollView android:background="@drawable/baloon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp">
+            <LinearLayout android:orientation="horizontal" android:id="@id/topPopupViewContent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <ImageView android:id="@id/arrowImageView" android:background="@drawable/baloon_pointer_to_left" android:layout_width="8.0dip" android:layout_height="@dimen/selection_arrow_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/ad" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginRight="48.0dip" android:layout_toRightOf="@id/topPanelTest" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" layout="@layout/editor_ad_layout" />
+</RelativeLayout>

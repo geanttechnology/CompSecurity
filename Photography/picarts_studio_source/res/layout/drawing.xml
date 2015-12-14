@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.socialin.android.brushlib.camera.CameraPreviewContainer android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/drawing_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad_panelParentId">
+        <com.socialin.android.brushlib.view.DrawingView android:id="@id/drawing_view" android:background="@color/gray_bf" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/btn_redo_frame" android:background="@drawable/panel_top_transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btn_action_redo" android:layout_width="@dimen/drawing_top_panel_height" android:layout_height="@dimen/drawing_top_panel_height" android:src="@drawable/drawing_redo_selector" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/zoom_frame" android:background="@drawable/zoom_window" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/space_4dp" android:layout_below="@id/top_panel_container" android:layout_alignParentLeft="true">
+        <TextView android:textSize="@dimen/textSize_24" android:gravity="center" android:id="@id/zoom_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="52%" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/top_panel_container" android:layout_width="fill_parent" android:layout_height="@dimen/drawing_top_panel_height">
+        <LinearLayout android:orientation="horizontal" android:id="@id/top_panel" android:background="@drawable/drawing_panel_top_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/drawing_top_panel_height">
+            <ImageButton android:id="@id/btn_action_cancel" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/draw_cancel_selector" />
+            <include layout="@layout/separator_horizontal" />
+            <ImageButton android:id="@id/btn_undo" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_height" android:layout_height="@dimen/drawing_top_panel_height" android:src="@drawable/drawing_undo_selector" />
+            <include layout="@layout/separator_horizontal" />
+            <ImageButton android:id="@id/btn_redo" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_height" android:layout_height="@dimen/drawing_top_panel_height" android:src="@drawable/drawing_redo_selector" />
+            <include layout="@layout/separator_horizontal" />
+            <ImageButton android:id="@id/btn_screen_editing_actions" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_height" android:layout_height="@dimen/drawing_top_panel_height" android:src="@drawable/draw_screen_options_selector" />
+            <include layout="@layout/separator_horizontal" />
+            <ImageButton android:id="@id/btn_export_video" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_height" android:layout_height="@dimen/drawing_top_panel_height" android:src="@drawable/draw_export_video_selector" />
+            <include layout="@layout/separator_horizontal" />
+            <ImageButton android:id="@id/btn_more_actions" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_height" android:layout_height="@dimen/drawing_top_panel_height" android:src="@drawable/draw_more_actions_selector" />
+            <include layout="@layout/separator_horizontal" />
+            <ImageButton android:id="@id/btn_action_done" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/draw_done_selector" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="top|right|center" android:id="@id/exit_fullscreen_frame" android:background="@drawable/panel_top_transparent" android:visibility="gone" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size">
+            <ImageButton android:layout_gravity="center" android:id="@id/btn_exit_fullscreen" android:src="@drawable/ic_action_exitfullscreen_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <include android:id="@id/camera_panel" android:layout_centerVertical="true" layout="@layout/drawing_left_panel" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/panel_bottom" android:layout_below="@id/top_panel_container">
+        <include layout="@layout/drawing_layers_panel" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ad_panelParentId">
+        <include android:id="@id/transform_editing_bottom_panel" android:visibility="gone" layout="@layout/transform_editing_mode_panel" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/panel_bottom" android:background="@drawable/drawing_panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ad_panelParentId">
+        <FrameLayout android:id="@id/btn_color_picker" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size">
+            <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/color_picker_preview" android:layout_width="@dimen/drawing_bottom_items_icon_size" android:layout_height="@dimen/drawing_bottom_items_icon_size" />
+        </FrameLayout>
+        <include layout="@layout/separator_horizontal" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/mini_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/mode_draw" android:layout_width="@dimen/drawing_top_panel_item_size_small" android:layout_height="@dimen/drawing_top_panel_item_size_small" android:src="@drawable/drawing_mode_brush_selector" />
+            <View android:background="@color/white_transparent_66" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageButton android:id="@id/mode_erase" android:layout_width="@dimen/drawing_top_panel_item_size_small" android:layout_height="@dimen/drawing_top_panel_item_size_small" android:src="@drawable/drawing_mode_erase_selector" />
+            <View android:background="@color/white_transparent_66" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageButton android:id="@id/mode_camera" android:layout_width="@dimen/drawing_top_panel_item_size_small" android:layout_height="@dimen/drawing_top_panel_item_size_small" android:src="@drawable/drawing_mode_camera_selector" />
+        </LinearLayout>
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/btn_add_text" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/draw_add_text_selector" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/btn_add_shape" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/draw_shape_selector" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/btn_add_objects" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/draw_add_objects_selector" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/btn_open_layers_panel" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/draw_add_layer_selector" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/ad_panelParentId" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

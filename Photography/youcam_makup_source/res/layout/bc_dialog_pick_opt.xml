@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bc_color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <TextView android:id="@id/itemPhotoLibrary" android:text="@string/bc_change_photo_library" android:drawableLeft="@drawable/bc_photo_library_icon" android:contentDescription="@string/app_name" style="@style/BcPopUpMenuTextStyle" />
+    <View style="@style/BcDivider1pxStyle" />
+    <TextView android:id="@id/itemTakePhoto" android:text="@string/bc_change_photo_take_photo" android:drawableLeft="@drawable/bc_camera_icon" android:contentDescription="@string/app_name" style="@style/BcPopUpMenuTextStyle" />
+</LinearLayout>

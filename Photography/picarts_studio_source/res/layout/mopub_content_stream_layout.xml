@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Material.CardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mopub_main_viewgroup" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mopub_header" android:background="@drawable/card_header_bg_selector" android:layout_width="fill_parent" android:layout_height="58.0dip">
+            <ImageView android:id="@id/mopub_icon" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginLeft="@dimen/space_12dp" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/text_color_black" android:layout_gravity="center_vertical" android:id="@id/mopub_title" android:paddingLeft="@dimen/space_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="25" />
+                <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_light_gray" android:layout_gravity="center_vertical" android:id="@id/mopub_subtitle" android:paddingLeft="@dimen/space_8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/mopub_main_image_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+            <com.picsart.studio.utils.DynamicHeightImageView android:id="@id/mopub_main_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/banner_image_desc" />
+        </FrameLayout>
+        <TextView android:textColor="@color/color_black" android:id="@id/mopub_desc_id" android:padding="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="100" android:shadowColor="@color/color_black" android:shadowDy="5.0" />
+        <Button android:layout_gravity="right" android:id="@id/mopub_action_button_id" android:layout_margin="@dimen/space_12dp" style="@style/Widget.Picsart.Button.OrangeButton" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

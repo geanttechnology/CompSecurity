@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center" android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:padding="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/shop_item_preview_img" android:layout_width="320.0dip" android:layout_height="wrap_content" android:minHeight="350.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </ScrollView>
+    <View style="@style/Divider.Horizontal" />
+    <Button android:id="@id/button_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gen_ok" />
+</LinearLayout>

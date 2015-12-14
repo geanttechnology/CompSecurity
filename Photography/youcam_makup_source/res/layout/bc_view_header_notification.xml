@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bc_view_hot_topic_header_outter" android:background="@drawable/bc_issue_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BcDiscoverSelectBtnPanelStyle">
+            <LinearLayout android:orientation="vertical" android:id="@id/bc_notification_people" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout style="@style/BcNotificationOptionStyle">
+                    <ImageView android:id="@id/bc_alert_people" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/BcNotificationSelectIconStyle" />
+                    <TextView android:id="@id/bc_notification_people_text" android:text="@string/bc_notification_people" style="@style/BcNotificationSelectBtnStyle" />
+                </LinearLayout>
+                <View style="@style/BcNotificationSelectionStyle" />
+            </LinearLayout>
+            <View android:layout_gravity="center" android:id="@id/bc_notification_select_divi" android:layout_width="@dimen/t1dp" android:layout_height="@dimen/t20dp" style="@style/BcVerticalDivider1pxStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/bc_notification_you" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout style="@style/BcNotificationOptionStyle">
+                    <ImageView android:id="@id/bc_alert_you" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/BcNotificationSelectIconStyle" />
+                    <TextView android:id="@id/bc_notification_you_text" android:text="@string/bc_notification_you" style="@style/BcNotificationSelectBtnStyle" />
+                </LinearLayout>
+                <View style="@style/BcNotificationSelectionStyle" />
+            </LinearLayout>
+            <View android:layout_gravity="center" android:id="@id/bc_notification_select_divider2" android:layout_width="@dimen/t1dp" android:layout_height="@dimen/t20dp" style="@style/BcVerticalDivider1pxStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/bc_notification_chat" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout style="@style/BcNotificationOptionStyle">
+                    <ImageView android:id="@id/bc_alert_chat" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/BcNotificationSelectIconStyle" />
+                    <TextView android:id="@id/bc_notification_chat_text" android:text="@string/bc_notification_chat" style="@style/BcNotificationSelectBtnStyle" />
+                </LinearLayout>
+                <View style="@style/BcNotificationSelectionStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t50dp" layout="@layout/bc_view_message_panel" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/component_app_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/activity_library_bottom_components" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <fragment android:name="my.googlemusic.play.services.player.PlayingNow" android:id="@id/playing" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+        <RelativeLayout android:id="@id/library_banner" android:background="#ff898992" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/library_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/activity_library_bottom_components" android:layout_below="@id/app_bar" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/native_ly" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.fotoable.comlib.ui.RecyclingImageView android:id="@id/native_imgview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
+        <TextView android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/native_title" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="top|left|center" android:id="@id/native_admark" android:background="@drawable/view_roundbackground" android:layout_width="15.0dip" android:layout_height="15.0dip" android:text="AD" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/wap_right_border" android:layout_above="@id/wap_bottom_border">
+        <RelativeLayout android:id="@id/wap_image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/wap_bottom_layout">
+            <ImageView android:id="@id/wap_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/gray_f5" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <ProgressBar android:id="@id/wap_image_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.Picsart.Light.ProgressBar" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/textSize_16" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="top|left|center" android:id="@id/wap_top_place_text" android:background="@drawable/si_ui_contest_place" android:paddingLeft="@dimen/space_8dp" android:paddingTop="@dimen/space_4dp" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/wap_image_layout">
+            <ImageView android:layout_gravity="right|center" android:id="@id/wap_top_place_img" android:visibility="invisible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="@dimen/space_8dp" android:layout_marginRight="@dimen/space_8dp" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/wap_bottom_layout" android:background="@color/color_white" android:paddingRight="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="@dimen/contest_image_bottom_panel_height" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/text_color_dark_gray" android:layout_gravity="left|center" android:id="@id/wap_place_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/text_color_dark_gray" android:layout_gravity="left|center" android:id="@id/wap_pics_cout_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_image_mini" android:drawablePadding="@dimen/space_4dp" />
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/text_color_dark_gray" android:layout_gravity="right|center" android:id="@id/wap_votes_count_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" />
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/text_color_dark_gray" android:layout_gravity="right|center" android:id="@id/wap_title_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/wap_vote_btn" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8dp" />
+            <FrameLayout android:id="@id/wap_voted_btn" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8dp" />
+        </FrameLayout>
+        <RelativeLayout android:background="?selectableItemBackground" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/wap_bottom_border" android:background="@color/gray_DE" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/wap_right_border" android:background="@color/gray_e6" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

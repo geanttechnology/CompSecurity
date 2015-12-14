@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/IntroBackgroundStyle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:id="@id/cameraLivePreviewHintText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="@string/camera_live_makeup_warning_message" android:layout_centerHorizontal="true" style="@style/CameraDetectHintTextStyle" />
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="32.0dip" android:layout_below="@id/cameraLivePreviewHintText" app:guideline_width="1080" app:guideline_height="80">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="760" app:guideline_height="80">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="left" android:id="@id/disableLivePreviewButton" android:background="@drawable/image_selector_rate_us_btn" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="350" app:guideline_height="80">
+                    <TextView android:text="@string/camera_live_preview_disable" style="@style/RateButtonTextStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:id="@id/enableLivePreviewButton" android:background="@drawable/image_selector_rate_us_btn" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="350" app:guideline_height="80">
+                    <TextView android:text="@string/camera_live_preview_enable" style="@style/RateButtonTextStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:id="@id/livePreviewConfirmButton" android:background="@drawable/image_selector_rate_us_btn" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="350" app:guideline_height="80">
+                    <TextView android:text="@string/dialog_Ok" style="@style/RateButtonTextStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

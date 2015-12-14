@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/editor_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/gpuimageview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad" />
+    <FrameLayout android:id="@id/ad" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toLeftOf="@id/bottom_panel" android:layout_toRightOf="@id/top_panel" android:layout_alignParentBottom="true" layout="@layout/editor_ad_layout" />
+    <RelativeLayout android:id="@id/top_panel" android:background="@drawable/panel_left_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageButton android:id="@id/button_done" android:src="@drawable/ic_action_done_t" android:layout_alignParentTop="true" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/button_cancel" android:src="@drawable/ic_action_cancel_t" android:layout_alignParentBottom="true" style="@style/Widget.Picsart.ImageButton.Action" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/effect_buttons_land" android:background="@drawable/panel_right_transparent" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fillViewport="true" android:layout_alignParentRight="true">
+        <RadioGroup android:orientation="vertical" android:id="@id/adjust_parameter_radio_group" android:layout_width="@dimen/editor_main_fragment_bottom_item_width" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/btn_brightness" android:checked="true" android:text="@string/brightness" android:drawableTop="@drawable/ic_action_adjust_brightness_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/btn_contrast" android:text="@string/contrast" android:drawableTop="@drawable/ic_action_adjust_contrast_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/btn_saturation" android:text="@string/saturation" android:drawableTop="@drawable/ic_action_adjust_saturation_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/btn_hue" android:text="@string/hue" android:drawableTop="@drawable/ic_action_adjust_hue_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/btn_shadows" android:text="@string/effect_shadows" android:drawableTop="@drawable/ic_action_adjust_shadows_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/btn_highlights" android:text="@string/effect_highlights" android:drawableTop="@drawable/ic_action_adjust_highlights_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/btn_temp" android:text="@string/effect_temp" android:drawableTop="@drawable/ic_action_adjust_temp_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+        </RadioGroup>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_panel" android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/effect_buttons_land">
+        <ImageButton android:id="@id/button_reset" android:src="@drawable/ic_action_adjust_reset_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <View android:id="@id/measureView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/adjust_param_value_label" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <com.photo.adjust.TwoDirectionSeekbar android:layout_gravity="center_vertical" android:id="@id/adjust_seekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginBottom="48.0dip" android:maxWidth="300.0dip" android:progressDrawable="@color/color_transparent" android:layout_toLeftOf="@id/bottom_panel" style="@style/Widget.Picsart.SeekBar.Float" />
+</RelativeLayout>

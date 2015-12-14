@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/bc_notification_outter" style="@style/BcNotificationStyle">
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/bc_notification_avatar" android:layout_width="@dimen/t55dp" android:layout_height="@dimen/t55dp" android:layout_marginRight="@dimen/t12dp" android:src="@drawable/bc_avatar_mugshot" android:layout_alignParentLeft="true" android:contentDescription="@string/app_name" app:bc_default_image="@drawable/bc_avatar_mugshot" />
+        <ImageView android:background="@drawable/bc_avatar_circle_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/bc_notification_avatar" android:layout_alignTop="@id/bc_notification_avatar" android:layout_alignRight="@id/bc_notification_avatar" android:layout_alignBottom="@id/bc_notification_avatar" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/avatar_crown" android:visibility="gone" android:layout_width="@dimen/t20dp" android:layout_height="@dimen/t18dp" android:src="@drawable/bc_user_ico_master" android:layout_alignLeft="@id/bc_notification_avatar" android:layout_alignTop="@id/bc_notification_avatar" android:contentDescription="@string/app_name" />
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/bc_notification_right_image" android:layout_width="@dimen/t55dp" android:layout_height="@dimen/t55dp" android:layout_marginRight="@dimen/t6dp" android:scaleType="matrix" android:adjustViewBounds="true" android:layout_alignParentRight="true" app:bc_adjudge_portrait_center_crop="true" app:bc_adjudge_portrait_center_crop_scale="0.5" />
+        <View android:id="@id/bc_notification_right_image_mask" android:background="@drawable/bc_avatar_circle_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/bc_notification_right_image" android:layout_alignTop="@id/bc_notification_right_image" android:layout_alignRight="@id/bc_notification_right_image" android:layout_alignBottom="@id/bc_notification_right_image" android:contentDescription="@string/app_name" />
+        <View android:id="@id/bc_notification_right_image_square_mask" android:background="@drawable/bc_circle_banner_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/bc_notification_right_image" android:layout_alignTop="@id/bc_notification_right_image" android:layout_alignRight="@id/bc_notification_right_image" android:layout_alignBottom="@id/bc_notification_right_image" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/t10dp" android:layout_toLeftOf="@id/bc_notification_right_image" android:layout_toRightOf="@id/bc_notification_avatar">
+            <com.rockerhieu.emojicon.EmojiconTextView android:id="@id/bc_notification_main_desc" style="@style/BcNotificationTitleStyle" />
+            <TextView android:gravity="left" android:id="@id/bc_notification_main_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BcSubTextStyle" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/bc_notification_bottom_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t6dp">
+                <include android:id="@id/bc_bottom_image_first" layout="@layout/bc_view_item_bottom_image" />
+                <include android:id="@id/bc_bottom_image_second" layout="@layout/bc_view_item_bottom_image" />
+                <include android:id="@id/bc_bottom_image_third" layout="@layout/bc_view_item_bottom_image" />
+                <RelativeLayout android:gravity="bottom" android:id="@id/bc_bottom_count_outter" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:gravity="left" android:id="@id/bc_bottom_count_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BcSubTextStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@id/bc_notification_divi" android:layout_marginTop="@dimen/t10dp" style="@style/BcDivider1pxStyle" />
+            <com.rockerhieu.emojicon.EmojiconTextView android:id="@id/bc_notification_comment_desc" style="@style/BcNotificationCommentStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_gravity="bottom" android:layout_marginLeft="@dimen/t72dp" style="@style/BcDivider1pxStyle" />
+</FrameLayout>

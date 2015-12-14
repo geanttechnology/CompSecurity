@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="250" app:guideline_height="290"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="290.0">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="250.0" app:guideline_width="235" app:guideline_height="235">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="235.0">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="224.0" app:guideline_width="200" app:guideline_height="200">
+                    <FrameLayout android:layout_gravity="center" android:background="@drawable/bg_thumbnail_item_border" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <View android:id="@id/panel_beautify_template_button_background" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+                        <ImageView android:id="@id/panel_beautify_template_button_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/preloading_preset" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="180" app:guideline_height="70">
+                            <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textSize="@dimen/f9dp" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@id/panel_beautify_template_item_name" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:text_size_info="360:6:default" />
+                        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="200" app:guideline_height="81">
+                            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:id="@id/panel_beautify_template_new_icon" android:background="@drawable/new_no_border" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="102" app:guideline_height="81" />
+                        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                    </FrameLayout>
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </LinearLayout>
+            <View android:layout_gravity="center" android:id="@id/looksItemHighlightView" android:background="@drawable/image_selector_preset_thumbnail_selected" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </LinearLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/panel_beautify_template_close_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="154" app:guideline_height="90">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="154" app:guideline_height="82">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:background="@drawable/image_selector_button_close" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="78" app:guideline_height="82" />
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="250" app:reference_height="290">
+        <View android:layout_gravity="center_horizontal" android:id="@id/panel_beautify_template_top_arrow" android:background="@drawable/pattenmenu_arrow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="50" app:self_height="22" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

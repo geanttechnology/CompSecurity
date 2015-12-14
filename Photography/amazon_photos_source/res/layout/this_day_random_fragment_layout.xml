@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:contentDescription="@string/adrive_gallery_common_syncing_content" style="?android:attr/progressBarStyleLarge" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/photos_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/collage_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" layout="@layout/this_day_collection_item" />
+                <com.amazon.gallery.thor.widget.CollageLayout android:id="@id/collageLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:reverseDirection="true" />
+                <include android:id="@id/footer_message_container" android:visibility="gone" layout="@layout/this_day_upload_from_desktop_layout" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

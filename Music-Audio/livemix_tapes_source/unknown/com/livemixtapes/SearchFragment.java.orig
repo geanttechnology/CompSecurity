@@ -1,0 +1,353 @@
+package com.livemixtapes;
+
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import android.app.Fragment;
+import android.app.FragmentTransaction;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Rect;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
+import android.view.animation.AnimationUtils;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+
+<<<<<<< HEAD
+//import com.google.android.gms.analytics.ac;
+=======
+>>>>>>> 3d5e25302e84515011f650cf35351eb43a68c867
+import com.livemixtapes.library.JSONParser;
+import com.livemixtapes.ui.widgets.SearchView;
+import com.livemixtapes.utils.Utility;
+
+public class SearchFragment extends Fragment implements SearchView.QueryTextListener {
+
+	
+	boolean shouldShowTracks;
+
+	ListView list;
+	SearchView searchView;
+	
+	RelativeLayout layoutHeader;
+
+	LazyAdapterSearch adapter;
+
+	ArrayList<HashMap<String, Object>> defaultList = new ArrayList<HashMap<String, Object>>();
+	ArrayList<HashMap<String, Object>> searchList = new ArrayList<HashMap<String, Object>>();
+	
+	// URL to get JSON Array
+	private static String textBasedSearchUrl = "https://api.livemixtapes.com/api/search?query=";
+	private static String simpleSearchUrl = "https://api.livemixtapes.com/api/top_artists";
+
+	JSONArray mixtapes = null;
+	JSONArray sourcelist = null;
+	JSONObject sObj = null;
+
+	JSONParse parseAsyncTask = null;
+
+	public static final int isSimpleSearch = 1;
+	public static final int isTextBasedSearch = 2;
+	
+	SearchActivity activity;
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+
+
+	    View rootView = inflater.inflate(R.layout.search_fragment, container, false);
+	    
+	    activity = (SearchActivity)getActivity();
+
+		searchView = (SearchView) rootView.findViewById(R.id.searchView1);
+		searchView.setOnQueryTextListener(this);
+		searchView.clearFocus();
+		rootView.setOnTouchListener(new OnTouchListener() {
+
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				// TODO Auto-generated method stub
+				Rect rect = new Rect(searchView.getLeft(), searchView.getTop(), searchView.getRight(), searchView.getBottom());
+				if(!rect.contains(v.getLeft() + (int) event.getX(), v.getTop() + (int) event.getY())){
+					searchView.setExpand(false);
+		        }
+				return false;
+			}
+			
+		});
+		searchView.setOnExpandListener(new SearchView.ExpandListener() {
+			
+			@Override
+			public void onBeforeExpand(final boolean expand) {
+				// TODO Auto-generated method stub
+				Animation layoutAnimation = new Animation() {
+					@Override
+				    protected void applyTransformation(float interpolatedTime, 	android.view.animation.Transformation t) {
+						LinearLayout.LayoutParams params = (LinearLayout.LayoutParams)layoutHeader.getLayoutParams();
+				        float height = 0;
+				        if(expand)
+				        	height = Utility.dpToPixel(activity, 50 - 50 * interpolatedTime);
+				        else
+				        	height = Utility.dpToPixel(activity, 50 * interpolatedTime);
+				        params.height = (int)height;
+				        layoutHeader.setLayoutParams(params);
+				    }
+				};
+				layoutAnimation.setDuration(SearchView.ANIMATION_DURATION);
+				layoutHeader.startAnimation(layoutAnimation);
+			}
+			
+			@Override
+			public void onAfterExpand(boolean expand) {
+				// TODO Auto-generated method stub
+			}
+		});
+		
+		layoutHeader = (RelativeLayout) rootView.findViewById(R.id.layoutHeader);
+
+		searchList = new ArrayList<HashMap<String, Object>>();
+		list = (ListView) rootView.findViewById(R.id.searchListView);
+
+		adapter = new LazyAdapterSearch(this, searchList);
+		list.setAdapter(adapter);
+
+		parseAsyncTask = new JSONParse(isSimpleSearch);
+		parseAsyncTask.execute("");
+		
+		shouldShowTracks = true;
+		
+		
+		//preload nowplaying//
+		
+		
+		JSONObject json = null;
+		JSONObject json_tape = null;
+		try {
+			json = new JSONObject(App.DefaultTape);
+			json_tape = json.getJSONObject("mixtape");
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		HashMap <String, Object>mixtape = JsonToMap.convert(json_tape);
+		
+		if (App.didLoad == false)
+		{
+		App.didLoad = true;
+		MainActivity.firstLoad = true;
+		NowPlayingActivity.mixtape = mixtape;
+		NowPlayingActivity.playList = null;
+		NowPlayingActivity.position = 0;
+		NowPlayingActivity.flag = NowPlayingActivity.MIXTAPE_FLAG;
+		
+		startActivity(new Intent(activity,NowPlayingActivity.class));
+		}
+		/////////////////////
+
+		list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				if (adapter.isSimpleSearchOrComplexSearch == isSimpleSearch) {
+					String searchStr = defaultList.get(position).get("artist")
+							.toString();
+					searchView.setQuery(searchStr);
+				} else
+				{
+					activity.getWindow().setSoftInputMode(
+							WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+					showMixtapeFragment(activity, searchList.get(position));
+				}
+			}
+		});
+		
+		final InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+		imm.showSoftInput(searchView, InputMethodManager.SHOW_IMPLICIT);
+		searchView.setFocusable(false);
+
+		return rootView;
+	}
+	
+
+	void showMixtapeFragment(Context ctx, HashMap<String, Object> obj)
+	{
+		Utility.hideKeyboard(activity);
+		
+		searchView.clearFocus();
+		
+		FragmentTransaction fragmentTransaction = activity.getAnimatedFragmentTransaction();
+		Mixtape mixtapeFragment = new Mixtape();
+		fragmentTransaction.replace(R.id.frameLayout, mixtapeFragment, "MIXTAPE").addToBackStack(null);
+		Bundle extras = new Bundle();
+		extras.putSerializable("mixtapeData",obj);
+		extras.putString("backScreenTitle", "Search");
+		mixtapeFragment.setArguments(extras);
+		fragmentTransaction.commit();
+	}
+
+	private class JSONParse extends AsyncTask<String, String, String> {
+
+		private int searchType;
+
+		public JSONParse(int type) {
+			// TODO Auto-generated constructor stub
+			searchType = type;
+		}
+
+		@Override
+		protected void onPreExecute() {
+			//searchList.clear();
+			super.onPreExecute();
+			if (searchType == isTextBasedSearch) {
+				adapter.data = searchList;
+				adapter.notifyDataSetChanged();
+			}
+			//showProgressBar("Searching...");
+		}
+
+		@Override
+		protected String doInBackground(String... args) {
+			JSONParser jParser = new JSONParser();
+			// Getting JSON from URL
+			String url = simpleSearchUrl;
+			if (searchType == isTextBasedSearch)
+				url = textBasedSearchUrl + URLEncoder.encode(args[0]);
+			String json = jParser.getUrlResponse(url); // Spaces etc are encoded
+			return json;
+		}
+
+		@Override
+		protected void onPostExecute(String json) {
+			activity.hideProgressBar();
+
+			adapter.isSimpleSearchOrComplexSearch = searchType;
+
+			if (searchType == isSimpleSearch) {
+				JSONArray array;
+				try {
+					array = new JSONArray(json);
+					defaultList.addAll((ArrayList) JsonToMap.toList(array));
+
+					Collections.sort(defaultList,
+							new Comparator<HashMap<String, Object>>() {
+
+								@Override
+								public int compare(HashMap<String, Object> lhs,
+										HashMap<String, Object> rhs) {
+									int lhsPos = Integer.parseInt(lhs.get(
+											"position").toString());
+									int rhsPos = Integer.parseInt(rhs.get(
+											"position").toString());
+									return lhsPos - rhsPos;
+								}
+							});
+
+					adapter.data = defaultList;
+					adapter.notifyDataSetChanged();
+				} catch (Exception e) {
+				}
+			} else {
+				JSONObject jsonObj;
+				shouldShowTracks = true;
+				try {
+					jsonObj = new JSONObject(json);
+					searchList.clear();
+					ArrayList<HashMap<String, Object>> responseArrayList = (ArrayList) JsonToMap
+							.convert(jsonObj).get("artist_results");
+					ArrayList<HashMap<String, String>> trackResultsList = (ArrayList) JsonToMap
+							.convert(jsonObj).get("track_results");
+
+					if (responseArrayList != null
+							&& responseArrayList.size() > 0) {
+						responseArrayList = (ArrayList) responseArrayList
+								.get(0).get("mixtapes");
+						//shouldShowTracks = false;
+						searchList.addAll(responseArrayList);
+					} 
+					
+					if(searchList.size()==0)
+						searchList.addAll((ArrayList) JsonToMap
+								.convert(jsonObj).get("mixtape_results"));
+					adapter.data = searchList;
+					adapter.trackResults = trackResultsList;
+					adapter.notifyDataSetChanged();
+				} catch (Exception e) {
+				}
+
+			}
+		}
+	}
+
+	public boolean onQueryTextChange(String arg0) {
+		// TODO Auto-generated method stub
+		if (TextUtils.isEmpty(arg0)) {
+			searchList.clear();
+			list.clearTextFilter();
+			activity.hideProgressBar();
+			adapter.isSimpleSearchOrComplexSearch = isSimpleSearch;
+			adapter.data = defaultList;
+			adapter.notifyDataSetChanged();
+		} else {
+			// Cancel the async task if already running
+			if (parseAsyncTask != null && !parseAsyncTask.isCancelled())
+				parseAsyncTask.cancel(true);
+			parseAsyncTask = new JSONParse(isTextBasedSearch);
+			parseAsyncTask.execute(arg0);
+		}
+		return true;
+	}
+
+	public boolean onQueryTextSubmit(String arg0) {
+		// TODO Auto-generated method stub
+	    searchView.clearFocus();
+		return false;
+	}
+	
+
+	
+	void shake(Context ctx, View v, final Runnable callback) {
+		Animation anim = AnimationUtils.loadAnimation(ctx, R.anim.tabshake);
+
+		anim.setAnimationListener(new AnimationListener() {
+			@Override
+			public void onAnimationStart(Animation animation) {
+			}
+
+			@Override
+			public void onAnimationEnd(Animation animation) {
+
+				if (callback != null) {
+					callback.run();
+				}
+			}
+
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+			}
+		});
+
+		v.startAnimation(anim);
+	}
+}

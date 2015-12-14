@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/drawing_panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/tranform_editing_cancel" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/tranform_editing_rotate_left" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_rotate_ccw_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/tranform_editing_rotate_right" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_rotate_cw_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/tranform_editing_flip_horizontal" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_flip_horizontal_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/tranform_editing_flip_vertical" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_flip_vertical_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/tranform_editing_done" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+</LinearLayout>

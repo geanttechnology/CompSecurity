@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/fineTuneTitleContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/f17dp" android:textColor="@color/white" android:gravity="center" android:id="@id/fineTuneTitle" android:background="@color/bc_color_black" android:layout_width="fill_parent" android:layout_height="@dimen/f40dp" android:text="@string/fine_tune_title" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/f11dp" android:textColor="#ff292929" android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/f19dp" android:text="@string/fine_tune_hint" android:layout_below="@id/fineTuneTitle" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fineTuneTitleContainer" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/fineTuneBtnContainer" android:background="@color/bc_color_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/fineTuneCloseBtn" android:src="@drawable/btb_btn_cancel_n" android:layout_alignParentLeft="true" style="@style/GeneralBtmBtn" />
+            <RelativeLayout android:id="@id/fineTuneUndoRedoPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <View android:id="@id/fineTuneUndoBtn" android:background="@drawable/image_selector_fine_tune_undo_btn" android:layout_width="@dimen/f33dp" android:layout_height="@dimen/f24dp" />
+                <View android:id="@id/fineTuneRedoBtn" android:background="@drawable/image_selector_fine_tune_redo_btn" android:layout_width="@dimen/f33dp" android:layout_height="@dimen/f24dp" android:layout_marginLeft="@dimen/f45dp" android:layout_toRightOf="@id/fineTuneUndoBtn" />
+            </RelativeLayout>
+            <ImageView android:id="@id/fineTuneApplyBtn" android:src="@drawable/btb_btn_ok_n" android:layout_alignParentRight="true" style="@style/GeneralBtmBtn" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/fineTuneFeatureContainer" android:background="#ff303030" android:layout_width="fill_parent" android:layout_height="@dimen/f62dp" android:weightSum="4.0" android:layout_above="@id/fineTuneBtnContainer">
+            <RelativeLayout android:gravity="center" android:id="@id/fineTuneFaceButton" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:id="@id/fineTuneFaceButtonImage" android:background="@drawable/image_selector_fine_tune_feature_point_face_btn" android:layout_width="@dimen/f33dp" android:layout_height="@dimen/f29dp" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/f10dp" android:textColor="@drawable/color_bottom_fine_tune_btn_text" android:ellipsize="end" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fine_tune_face" android:layout_below="@id/fineTuneFaceButtonImage" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/fineTuneLeftEyeButton" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:id="@id/fineTuneLeftEyeButtonImage" android:background="@drawable/image_selector_fine_tune_feature_point_left_eye_btn" android:layout_width="@dimen/f33dp" android:layout_height="@dimen/f29dp" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/f10dp" android:textColor="@drawable/color_bottom_fine_tune_btn_text" android:ellipsize="end" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fine_tune_left_eye" android:layout_below="@id/fineTuneLeftEyeButtonImage" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/fineTuneRightEyeButton" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:id="@id/fineTuneRightEyeButtonImage" android:background="@drawable/image_selector_fine_tune_feature_point_right_eye_btn" android:layout_width="@dimen/f33dp" android:layout_height="@dimen/f29dp" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/f10dp" android:textColor="@drawable/color_bottom_fine_tune_btn_text" android:ellipsize="end" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fine_tune_right_eye" android:layout_below="@id/fineTuneRightEyeButtonImage" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/fineTuneLipsButton" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:id="@id/fineTuneLipsButtonImage" android:background="@drawable/image_selector_fine_tune_feature_point_lips_btn" android:layout_width="@dimen/f33dp" android:layout_height="@dimen/f29dp" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/f10dp" android:textColor="@drawable/color_bottom_fine_tune_btn_text" android:ellipsize="end" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fine_tune_lips" android:layout_below="@id/fineTuneLipsButtonImage" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/EditViewMouthSwitchArea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/fineTuneFeatureContainer" style="@style/EditViewMouthSwitchBackground">
+            <ImageButton android:id="@id/EditViewMouthSwitchBtn" android:background="#00000000" android:visibility="gone" android:src="@drawable/image_selector_camera_timer_btn" android:scaleType="fitCenter" android:contentDescription="@string/app_name" style="@style/EditViewMouthSwitchButton" />
+            <TextView android:id="@id/EditViewMouthSwitchText" android:visibility="gone" android:text="@string/switch_mouth_close" style="@style/EditViewMouthSwitchText" />
+        </FrameLayout>
+        <com.cyberlink.youcammakeup.kernelctrl.featurepoints.samplepanel.FPSampleController android:id="@id/fpsamplecontroler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/f3dp" android:layout_above="@id/EditViewMouthSwitchArea" />
+    </RelativeLayout>
+</RelativeLayout>

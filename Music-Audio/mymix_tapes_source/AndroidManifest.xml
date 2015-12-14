@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="my.googlemusic.play" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <permission android:name="my.googlemusic.play.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="my.googlemusic.play.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="my.googlemusic.play.application.App" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="applovin.sdk.key" android:value="U2noLIxMnAso29VWJNNmyw6qPOh3mkbFmN15fySQ7JD9Sifm52W1ydsL0XOnF-00M160zTR5teEJMu4RxaTtDJ"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="my.googlemusic.play.activities.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mytpz.mx" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_manager" android:launchMode="singleTop" android:name="my.googlemusic.play.activities.ManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_manager" android:launchMode="singleTop" android:name="my.googlemusic.play.activities.ForgotPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:name="my.googlemusic.play.activities.AlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_manager" android:name="my.googlemusic.play.activities.MoreAlbumsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_create" android:name="my.googlemusic.play.activities.CreateAccountStepOneActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_create" android:name="my.googlemusic.play.activities.CreateAccountStepTwoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_create" android:name="my.googlemusic.play.activities.CreateAccountStepThreeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_upcoming" android:name="my.googlemusic.play.activities.UpcomingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_premium" android:name="my.googlemusic.play.activities.PremiumActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_library" android:name="my.googlemusic.play.activities.LibraryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_artist" android:name="my.googlemusic.play.activities.ArtistActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_video_stream" android:name="my.googlemusic.play.activities.PlayerVideoActivity" android:screenOrientation="landscape"/>
+        <activity android:label="@string/title_activity_comments" android:name="my.googlemusic.play.activities.PlayerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:label="@string/title_activity_radio" android:name="my.googlemusic.play.activities.RadioActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:label="@string/title_activity_comments" android:name="my.googlemusic.play.activities.ImageZoomActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.inmobi.rendering.InMobiAdActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver">
+            <intent-filter>
+                <action android:name="com.inmobi.share.id"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:label="" android:name="my.googlemusic.play.activities.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="my.googlemusic.play.activities.BadgeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="my.googlemusic.play.activities.SearchMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_settings" android:name="my.googlemusic.play.activities.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_settings" android:name="my.googlemusic.play.activities.PresentationActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_contact_us" android:name="my.googlemusic.play.activities.ContactUsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_comments" android:launchMode="singleTop" android:name="my.googlemusic.play.activities.CommentsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:label="@string/title_activity_reply" android:name="my.googlemusic.play.activities.ReplyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:exported="false" android:name="my.googlemusic.play.services.notification.NotificationService"/>
+        <service android:name="my.googlemusic.play.services.download.DownloadService"/>
+        <service android:exported="false" android:name="my.googlemusic.play.services.player.PlayerService">
+            <intent-filter>
+                <action android:name="my.googlemusic.play.services.player.PlayerNotification.ACTION_NEXT"/>
+                <action android:name="my.googlemusic.play.services.player.PlayerNotification.ACTION_STOP"/>
+                <action android:name="my.googlemusic.play.services.player.PlayerNotification.ACTION_PREVIOUS"/>
+                <action android:name="my.googlemusic.play.services.player.PlayerNotification.ACTION_PLAY_OR_PAUSE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_id"/>
+        <activity android:label="@string/title_activity_profile" android:name="my.googlemusic.play.activities.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_favorite" android:name="my.googlemusic.play.activities.FavoriteActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_follower" android:name="my.googlemusic.play.activities.FollowerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_following" android:name="my.googlemusic.play.activities.FollowingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MoPubActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.common.MoPubBrowser"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidVideoPlayerActivity"/>
+        <receiver android:name="my.googlemusic.play.services.player.PlayerRemoteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/ic_stat_notif"/>
+        <service android:name="com.parse.PushService"/>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="my.googlemusic.play.utils.pushnotification.ParseReceiver">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE"/>
+                <action android:name="com.parse.push.intent.DELETE"/>
+                <action android:name="com.parse.push.intent.OPEN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="my.googlemusic.play"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/title_activity_dabb_record" android:name="my.googlemusic.play.activities.DabbRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_dabb_share" android:name="my.googlemusic.play.activities.DabbShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity"/>
+        <activity android:name="com.applovin.adview.AppLovinConfirmationActivity"/>
+        <activity android:label="@string/mmadsdk_app_name" android:name="com.millennialmedia.internal.MMActivity" android:theme="@style/Theme.MMTransparent"/>
+        <activity android:label="sdk" android:name="com.millennialmedia.internal.MMIntentWrapperActivity"/>
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+    </application>
+</manifest>

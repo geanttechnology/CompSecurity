@@ -1,0 +1,90 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+
+public final class aaq
+{
+
+    public static final int adbutton_beauty_2_wantu = 0x7f020033;
+    public static final int adbutton_mag_2_beauty = 0x7f020034;
+    public static final int adbutton_mag_2_beautypage = 0x7f020035;
+    public static final int adbutton_mag_2_pip = 0x7f020036;
+    public static final int adbutton_mag_2_wantu = 0x7f020037;
+    public static final int adbutton_makeup_0_instamag = 0x7f020038;
+    public static final int adbutton_makeup_1_wantu = 0x7f020039;
+    public static final int adbutton_pip_2_instamag = 0x7f02003a;
+    public static final int adbutton_pip_2_wantu = 0x7f02003b;
+    public static final int adbutton_pip_abroad = 0x7f02003c;
+    public static final int adbutton_wantu_2_beauty = 0x7f02003d;
+    public static final int adbutton_wantu_abroad = 0x7f02003e;
+    public static final int adlogo = 0x7f020040;
+    public static final int advertising_icon = 0x7f020042;
+    public static final int beauty_in_pip_cn = 0x7f02004e;
+    public static final int beauty_in_pip_en = 0x7f02004f;
+    public static final int beautybanner_cn = 0x7f020053;
+    public static final int beautybanner_en = 0x7f020054;
+    public static final int bg_btn_shape = 0x7f020057;
+    public static final int btn_cancel = 0x7f020091;
+    public static final int btn_cancel_dn = 0x7f020092;
+    public static final int btn_check = 0x7f02009b;
+    public static final int btn_check_dn = 0x7f02009c;
+    public static final int btn_foto_close = 0x7f0200f8;
+    public static final int btn_insta_blur = 0x7f020100;
+    public static final int btn_insta_border = 0x7f020101;
+    public static final int btn_insta_color = 0x7f020102;
+    public static final int btn_insta_radius = 0x7f020103;
+    public static final int btn_insta_shadow = 0x7f020104;
+    public static final int btn_openad = 0x7f020134;
+    public static final int btn_share = 0x7f02016a;
+    public static final int btn_share_states = 0x7f02016f;
+    public static final int fullscreen_default_locker = 0x7f020284;
+    public static final int fullscreen_default_pip = 0x7f020285;
+    public static final int fullscreen_default_wantu = 0x7f020286;
+    public static final int gr_btn_helpr = 0x7f02028c;
+    public static final int gr_newupdate = 0x7f0202d8;
+    public static final int gr_rating5stars = 0x7f0202de;
+    public static final int helprbanner = 0x7f02032f;
+    public static final int home_fotorus_cn = 0x7f020332;
+    public static final int home_fotorus_en = 0x7f020333;
+    public static final int home_instabeauty_cn = 0x7f020334;
+    public static final int home_instabeauty_en = 0x7f020335;
+    public static final int home_instamag_cn = 0x7f020336;
+    public static final int home_instamag_en = 0x7f020337;
+    public static final int ic_action_previous_item = 0x7f02033b;
+    public static final int instagram2x = 0x7f02037a;
+    public static final int magbanner_cn = 0x7f02038c;
+    public static final int magbanner_en = 0x7f02038d;
+    public static final int new_share_view_nomal = 0x7f020486;
+    public static final int new_share_view_press = 0x7f020487;
+    public static final int pipbanner_cn = 0x7f0203ae;
+    public static final int pipbanner_en = 0x7f0203af;
+    public static final int proedit_btn_cancel = 0x7f0203bc;
+    public static final int proedit_btn_check = 0x7f0203bd;
+    public static final int progress_control = 0x7f0203bf;
+    public static final int progress_slider = 0x7f0203c3;
+    public static final int savewall_fotorus_cn = 0x7f0203d5;
+    public static final int savewall_fotorus_en = 0x7f0203d6;
+    public static final int savewall_instabeauty_cn = 0x7f0203d7;
+    public static final int savewall_instabeauty_en = 0x7f0203d8;
+    public static final int savewall_instamag_cn = 0x7f0203d9;
+    public static final int savewall_instamag_en = 0x7f0203da;
+    public static final int sync_fb2x = 0x7f02040e;
+    public static final int sync_instagram2x = 0x7f020410;
+    public static final int sync_line2x = 0x7f020412;
+    public static final int sync_moments2x = 0x7f020414;
+    public static final int sync_more2x = 0x7f020416;
+    public static final int sync_qq2x = 0x7f02041d;
+    public static final int sync_qqweibo2x = 0x7f02041f;
+    public static final int sync_qzone2x = 0x7f020421;
+    public static final int sync_rr2x = 0x7f020423;
+    public static final int sync_sina2x = 0x7f020426;
+    public static final int sync_tumblr2x = 0x7f020429;
+    public static final int sync_twitter2x = 0x7f02042b;
+    public static final int sync_wechat2x = 0x7f02042d;
+    public static final int textview = 0x7f020438;
+    public static final int translucent_background = 0x7f020488;
+    public static final int view_roundbackground = 0x7f020475;
+    public static final int wantubanner_cn = 0x7f02047d;
+    public static final int wantubanner_en = 0x7f02047e;
+}

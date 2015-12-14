@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.effects.view.ZoomCommonView android:id="@id/zoomView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/setting_seekbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_panel" layout="@layout/layout_filter_fragment_seekbar" />
+    <RelativeLayout android:id="@id/bottom_panel" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/btn_cancel" android:src="@drawable/ic_action_cancel_t" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Widget.Picsart.ImageButton.Action" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/settings_buttons_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/btn_done" android:src="@drawable/ic_action_done_t" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Widget.Picsart.ImageButton.Action" />
+    </RelativeLayout>
+</RelativeLayout>

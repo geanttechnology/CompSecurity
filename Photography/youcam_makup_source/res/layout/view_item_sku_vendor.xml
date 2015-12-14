@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/image_selector_sku_vendor_btn" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="380" app:guideline_height="150"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/skuItemVendorName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/app_name" />
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="380" app:guideline_height="150">
+        <View android:id="@id/skuVendorItemBottomDivider" android:background="#ffaa7ae8" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="330" app:self_height="2" app:self_left="25" app:self_top="148" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

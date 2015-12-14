@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/freeCollageLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.wantu.imagelib.decorator.sprite.ImageCanvasSurfaceView android:layout_gravity="left" android:id="@id/image_editor_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center" android:id="@id/forgroundImage" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

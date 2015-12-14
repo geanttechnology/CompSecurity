@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="center" android:id="@id/frameGrid" android:background="@color/color_black" android:padding="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="?selectableItemBackground" android:drawSelectorOnTop="true" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:columnWidth="100.0dip" android:numColumns="auto_fit" />
+    <FrameLayout android:id="@id/select_frame_fragment_container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

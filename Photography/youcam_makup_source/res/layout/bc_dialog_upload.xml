@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bc_general_radius_white_background_no_border" android:layout_width="@dimen/t280dp" android:layout_height="@dimen/t160dp" android:layout_margin="@dimen/t15dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/t14sp" android:gravity="center" android:id="@id/bc_upload_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t40dp" android:text="@string/bc_write_post_dialog_title" style="@style/BcDefaultFontStyle" />
+    <ProgressBar android:gravity="center" android:id="@id/bc_upload_dialog_progressbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t8dp" android:indeterminate="false" style="@style/BcUploadProgressBarStyle" />
+    <Button android:textColor="@color/bc_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/bc_upload_dialog_cancel_btn" android:background="@drawable/bc_register_btn_selector" android:layout_marginTop="@dimen/t20dp" android:text="@string/bc_dialog_button_cancel" style="@style/BcCancelButtonTextStyle" />
+</LinearLayout>

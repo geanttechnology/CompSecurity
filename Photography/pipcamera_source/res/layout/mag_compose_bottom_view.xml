@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top|left|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip">
+        <LinearLayout android:layout_gravity="top|left|center" android:orientation="horizontal" android:id="@id/ly_bottom" android:background="@color/local_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip">
+            <ImageView android:id="@id/download" android:background="@color/color_btn_blue_txt" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="90.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btn_compose_library" />
+            <com.fotoable.comlib.ui.HorizontalListView android:layout_gravity="top|left|center" android:id="@id/horizontalReuseListView1" android:background="@color/local_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

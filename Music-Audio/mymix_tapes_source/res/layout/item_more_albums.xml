@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_album_more_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/album_teste" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/description" />
+    <ImageView android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_alignParentBottom="true" android:contentDescription="@string/description" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/primary_text_dark_nodisable" android:id="@id/item_more_album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="2.0dip" android:text="Album" android:singleLine="true" android:layout_marginStart="16.0dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/secondary_text_dark_nodisable" android:id="@id/item_more_album_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="8.0dip" android:text="Artist" android:layout_marginStart="16.0dip" />
+    </LinearLayout>
+</RelativeLayout>

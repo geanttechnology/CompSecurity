@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/login_loader_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="64.0dip" android:layout_marginRight="64.0dip">
+        <ImageView android:id="@id/login_loader_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/login_logo" android:scaleType="fitCenter" android:contentDescription="@string/description" />
+        <ProgressBar android:id="@id/login_loader_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+</RelativeLayout>

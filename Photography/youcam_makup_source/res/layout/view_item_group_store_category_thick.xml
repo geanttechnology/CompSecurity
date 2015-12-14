@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="188">
+        <LinearLayout android:background="@drawable/image_selector_share_menu_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1080.0">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="46.0" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="200.0" android:layout_weight="200.0">
+                <FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="200.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="180.0">
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="150.0" app:guideline_width="180" app:guideline_height="150">
+                            <ImageView android:id="@id/DownItemGroupIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+                        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top|right|center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="170.0">
+                        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="5.0" />
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/DownItemGroupNew" android:background="@drawable/icon_new_tile" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="54.0" app:guideline_width="54" app:guideline_height="54" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="68.0" />
+            <TextView android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/DownloadItemGroupTitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/more_new" android:layout_weight="700.0" style="@style/Pixel40CorrespondSize" />
+            <ImageView android:id="@id/DownloadItemGroupArrow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ico_arrow_right" android:scaleType="fitCenter" android:layout_weight="50.0" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:id="@id/DownloadItemGroupDivider" android:background="#80b2b2b2" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="4" />
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</FrameLayout>

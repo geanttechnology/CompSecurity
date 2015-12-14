@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:paddingLeft="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSize_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawing_brush_option_opacity" />
+    <TextView android:textSize="@dimen/textSize_10" android:id="@id/edit_panel_seekTextId" android:layout_width="32.0dip" android:layout_height="wrap_content" />
+    <SeekBar android:id="@id/edit_seekId" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:maxWidth="256.0dip" android:max="255" android:progress="255" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="96.0dip" android:layout_height="wrap_content">
+        <Spinner android:id="@id/blend_mode_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:textAppearance="@android:style/Animation.TypingFilterRestore" android:id="@id/blend_mode_spinner_button" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Material.Button.Borderless" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/edit_dashboard_select_color_panel" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/edit_dashboard_select_color_button" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginTop="@dimen/space_4dp" android:layout_centerInParent="true" />
+        <ImageView android:background="@drawable/xml_icon_bg_color" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

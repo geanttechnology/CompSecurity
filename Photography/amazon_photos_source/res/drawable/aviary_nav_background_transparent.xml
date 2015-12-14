@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/aviary_nav_secondary_color_transparent" android:endColor="@color/aviary_nav_primary_color_transparent" android:angle="90.0" android:centerX="0.1" android:centerY="0.1" />
+        </shape>
+    </item>
+</layer-list>

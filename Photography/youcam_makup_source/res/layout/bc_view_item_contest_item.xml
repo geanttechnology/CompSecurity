@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/f14dp" android:textColor="@color/bc_color_white" android:gravity="left" android:id="@id/contest_event_status" android:background="@color/bc_contest_voting" android:paddingLeft="@dimen/f12dp" android:paddingTop="@dimen/f5dp" android:paddingRight="@dimen/f10dp" android:paddingBottom="@dimen/f5dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f4dp" android:lines="1" />
+    <LinearLayout android:orientation="vertical" android:background="@color/bc_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f2dp">
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/free_sample_image" android:contentDescription="@string/app_name" style="@style/BcFreeSampleBannerStyle" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f16dp" android:layout_marginTop="@dimen/f8dp" android:layout_marginRight="@dimen/f20dp" android:layout_marginBottom="@dimen/f2dp">
+            <TextView android:textSize="@dimen/f14dp" android:textColor="@color/bc_register_desc_text" android:id="@id/free_sample_join_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/free_sample_duration" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/free_sample_time_icon" android:layout_width="@dimen/f14dp" android:layout_height="@dimen/f14dp" android:src="@drawable/bc_icon_clock" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/f14dp" android:textColor="@color/bc_color_main_style_hightlight_ex" android:id="@id/free_sample_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f6dp" android:layout_toLeftOf="@id/free_sample_join_count" android:layout_toRightOf="@id/free_sample_time_icon" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/f14dp" android:textColor="@color/bc_celebrity_description_text" android:id="@id/free_sample_event_description" android:background="@color/bc_color_white" android:paddingLeft="@dimen/f16dp" android:paddingRight="@dimen/f20dp" android:paddingBottom="@dimen/f12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@drawable/bc_updown_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/f3dp" android:layout_marginBottom="@dimen/f4dp" />
+</LinearLayout>

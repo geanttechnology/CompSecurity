@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.gallery.thor.widget.NavigationPaneWrapper android:id="@id/sidePanelLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/thor_collection_list_activity" />
+    <include layout="@layout/nav_pane_list" />
+</com.amazon.gallery.thor.widget.NavigationPaneWrapper>

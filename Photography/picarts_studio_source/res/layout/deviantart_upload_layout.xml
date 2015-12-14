@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/deviantart_uploaded_picture_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp">
+                    <ImageView android:id="@id/deviantart_uploaded_picture" android:layout_width="fill_parent" android:layout_height="180.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/deviantart_uploaded_picture_pointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/si_ui_ic_up_triangle" android:layout_alignBottom="@id/deviantart_uploaded_picture" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_light_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginTop="@dimen/space_8dp" android:layout_marginRight="@dimen/space_12dp" android:text="@string/say_something" android:drawableLeft="@drawable/si_ui_ic_say_something" android:drawablePadding="@dimen/space_8dp" />
+                <AutoCompleteTextView android:textSize="@dimen/textSize_14" android:textStyle="normal" android:textColor="@color/text_color_light_gray" android:gravity="top" android:id="@id/deviantart_upload_desc" android:background="@null" android:paddingLeft="@dimen/space_16dp" android:paddingTop="@dimen/space_8dp" android:paddingRight="@dimen/space_16dp" android:paddingBottom="@dimen/space_4dp" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginRight="@dimen/space_12dp" android:ems="10" android:textCursorDrawable="@null" />
+            </LinearLayout>
+            <View android:background="@drawable/menu_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20dp" android:layout_marginRight="@dimen/space_20dp" />
+            <TextView android:textColor="@color/text_color_dark_gray" android:id="@id/deviantart_upload_title" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_margin="@dimen/space_20dp" android:layout_marginBottom="@dimen/space_40dp" android:hint="@string/gen_title" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/deviantart_upload_button" android:background="@drawable/btn_bg_raised_black_picsart" android:clickable="true" android:layout_width="300.0dip" android:layout_height="56.0dip" android:layout_marginTop="@dimen/space_12dp" android:layout_marginBottom="@dimen/space_12dp">
+                <ImageView android:layout_gravity="center" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_done_t" android:contentDescription="@string/gen_share" />
+                <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/color_white" android:layout_gravity="center" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="@string/gen_upload" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

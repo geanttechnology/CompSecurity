@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gray_ee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/gray_ee" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:background="@color/color_white" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_12dp">
+            <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:text="@string/youtube_title" />
+            <EditText android:textColor="@color/text_color_black" android:textColorHint="@color/hint_foreground_material_light" android:layout_gravity="center_horizontal" android:id="@id/youtube_video_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:hint="@string/youtube_title_hint" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/color_white" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_12dp">
+            <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:text="@string/youtube_description" />
+            <EditText android:textColor="@color/text_color_black" android:textColorHint="@color/hint_foreground_material_light" android:layout_gravity="center_horizontal" android:id="@id/youtube_video_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:hint="@string/youtube_video_description" android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/color_white" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_12dp">
+            <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:text="@string/youtube_privacy" />
+            <Spinner android:id="@id/youtube_privacy_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/color_white" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_12dp">
+            <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:text="@string/youtube_tags" />
+            <EditText android:textColor="@color/text_color_black" android:textColorHint="@color/text_color_light_gray" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/youtube_video_tags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:hint="@string/youtube_tags_hint" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

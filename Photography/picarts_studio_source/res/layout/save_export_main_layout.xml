@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/export_share_layout_id" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/text_color_black" android:gravity="center_horizontal" android:id="@id/share_picture_title" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_12dp" android:text="@string/si_export_type_share" />
+    <View android:background="@color/gray_e6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <GridLayout android:layout_gravity="center_horizontal" android:id="@id/grid_view_share" android:padding="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rowCount="2" android:columnCount="4" />
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/t45dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/topToolBarBackBtnContainer" android:contentDescription="@string/app_name" style="@style/CameraTopBackBtn" />
+        <TextView android:textSize="@dimen/t16dp" android:textColor="#ff1e1e1e" android:gravity="center" android:id="@id/topToolBarBackTextBtn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/common_Album" android:singleLine="true" android:layout_toRightOf="@id/topToolBarBackBtnContainer" style="@style/TopBarTextStyle" />
+        <TextView android:textSize="@dimen/t18dp" android:textColor="#ff1e1e1e" android:gravity="center" android:id="@id/moduleTitle" android:paddingLeft="@dimen/t5dp" android:paddingRight="@dimen/t5dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/common_Library" android:singleLine="true" android:layout_toLeftOf="@id/topToolBarApplyBtnContainer" android:layout_toRightOf="@id/topToolBarBackBtnContainer" style="@style/TopBarTextStyle" />
+        <View android:id="@id/topToolBarApplySeperator" android:background="#ffffffff" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="@dimen/t23dp" android:weightSum="134.0" android:layout_toLeftOf="@id/topToolBarApplyBtnContainer" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/topToolBarApplyBtnContainer" android:padding="0.0dip" android:visibility="invisible" android:layout_marginLeft="@dimen/t5dp" android:layout_marginRight="@dimen/t5dp" android:src="@drawable/image_selector_topbar_apply_btn_zoom_view" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" style="@style/GeneralTopBtn" />
+        <ImageView android:id="@id/zoomTopToolBarApplyBtnContainer" android:layout_marginLeft="@dimen/t5dp" android:layout_marginRight="@dimen/t5dp" android:src="@drawable/image_selector_camera_btn" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" style="@style/GeneralTopBtn" />
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

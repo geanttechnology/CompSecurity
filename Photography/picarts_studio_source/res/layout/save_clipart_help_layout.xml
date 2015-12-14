@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="160.0dip" android:src="@drawable/save_clipart_help" />
+        <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2dp" android:layout_marginBottom="@dimen/space_4dp" android:text="@string/find_in_my_clipart" />
+    </LinearLayout>
+    <View style="@style/Divider.Horizontal" />
+    <Button android:id="@id/ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/gen_ok" style="?android:attr/buttonBarButtonStyle" />
+</LinearLayout>

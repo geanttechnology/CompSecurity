@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/black_transparent_B3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_invite_done_big" />
+        <TextView android:textSize="@dimen/invite_text_large" android:textColor="@color/color_white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:text="@string/gen_copied_to_clipboard" />
+        <TextView android:textSize="@dimen/invite_text_small" android:textColor="@color/text_color_light_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp" android:text="@string/invite_ad_free_invite_paste" />
+        <TextView android:textSize="@dimen/invite_text_small" android:textColor="@color/text_color_light_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/invite_top_margin" android:text="@string/invite_ad_free_invite_share_directly" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/invites_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

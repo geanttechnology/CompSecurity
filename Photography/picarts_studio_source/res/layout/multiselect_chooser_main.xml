@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/folders_list_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_2dp" android:layout_above="@id/selected_images_layout" />
+    <RelativeLayout android:id="@id/selected_images_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/multiselect_selected_pics_layout" />
+    </RelativeLayout>
+</RelativeLayout>

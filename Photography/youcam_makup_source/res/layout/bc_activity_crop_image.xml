@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/bc_crop_top_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+        <View android:id="@id/bc_photo_selector_up_padding" android:background="@color/bc_color_black" android:layout_width="fill_parent" android:layout_height="@dimen/t20dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bc_photo_selector" android:background="@color/bc_color_black" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/bc_photo_selector_prev_btn" android:src="@drawable/bc_celebrity_top_arrow" android:contentDescription="@string/app_name" android:rotation="180.0" style="@style/BcCropButtonButtontStyle" />
+        <TextView android:textSize="@dimen/t20sp" android:textColor="@color/bc_color_white" android:id="@id/bc_photo_selector_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <ImageView android:id="@id/bc_photo_selector_next_btn" android:src="@drawable/bc_celebrity_top_arrow" android:contentDescription="@string/app_name" style="@style/BcCropButtonButtontStyle" />
+    </LinearLayout>
+    <com.edmodo.cropper.CropImageView android:id="@id/bc_crop_image_view" android:background="@color/bc_color_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bc_photo_selector" android:layout_below="@id/bc_crop_top_panel" custom:guidelines="off" custom:cornerResourceWidth="50" custom:cornerResourceHeight="50" xmlns:custom="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

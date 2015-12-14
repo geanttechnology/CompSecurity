@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/btbFuncBtnsContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bottomToolBarEyewearBtn" android:layout_width="@dimen/f94dp" android:layout_height="fill_parent">
+        <View android:background="@drawable/image_selector_accessories_eyewear" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginLeft="@dimen/f32dp" android:layout_marginTop="@dimen/f3dp" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f8dp" android:layout_marginTop="@dimen/f33dp" android:text="@string/accessories_eyewear" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottomToolBarHairBandBtn" android:layout_width="@dimen/f86dp" android:layout_height="fill_parent">
+        <View android:background="@drawable/image_selector_accessories_hair_band" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/accessories_hair_band" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottomToolBarNecklaceBtn" android:layout_width="@dimen/f86dp" android:layout_height="fill_parent">
+        <View android:background="@drawable/image_selector_accessories_necklace" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginTop="@dimen/f3dp" android:layout_centerHorizontal="true" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:text="@string/accessories_necklace" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottomToolBarEarringsBtn" android:layout_width="@dimen/f94dp" android:layout_height="fill_parent">
+        <View android:background="@drawable/image_selector_accessories_earrings" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f38dp" android:layout_marginLeft="@dimen/f24dp" android:layout_marginTop="@dimen/f3dp" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f33dp" android:layout_marginRight="@dimen/f8dp" android:text="@string/accessories_earrings" style="@style/BottomToolBarBeautifierFuncBtnTextStyle" />
+    </RelativeLayout>
+</LinearLayout>

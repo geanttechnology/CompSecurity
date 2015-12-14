@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bc_general_radius_white_background_no_border" android:paddingLeft="@dimen/t10dp" android:paddingTop="@dimen/t20dp" android:paddingRight="@dimen/t10dp" android:paddingBottom="@dimen/t20dp" android:layout_width="@dimen/t320dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <TextView android:textSize="@dimen/t16dp" android:textColor="@color/bc_color_black" android:gravity="center" android:id="@id/bc_dialog_confirm_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t10dp" android:layout_marginTop="@dimen/t20dp" android:layout_marginRight="@dimen/t10dp" android:text="@string/bc_freesample_result_dialog_confirm_desc" android:lineSpacingExtra="@dimen/t3dp" style="@style/BcDefaultFontStyle" />
+    <TextView android:textSize="@dimen/t16dp" android:textColor="@color/bc_color_red" android:gravity="center" android:id="@id/bc_dialog_confirm_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t10dp" android:layout_marginTop="@dimen/t10dp" android:layout_marginRight="@dimen/t10dp" android:text="@string/bc_freesample_result_dialog_confirm_alert" android:lineSpacingExtra="@dimen/t3dp" style="@style/BcDefaultFontStyle" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/t320dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t30dp">
+        <TextView android:id="@id/bc_dialog_positive" android:text="@string/bc_freesample_result_store_btn" style="@style/BcDialogBtnStyle" />
+        <TextView android:textColor="@color/bc_color_main_style" android:id="@id/bc_dialog_negative" android:background="@drawable/bc_general_radius_white_background_with_border" android:text="@string/bc_freesample_result_dialog_confirm_cancel" style="@style/BcDialogBtnStyle" />
+    </LinearLayout>
+</LinearLayout>

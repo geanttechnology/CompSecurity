@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/dialog_title_panel_id" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/si_ui_gallery_popular_tags_layout" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginRight="@dimen/space_12dp">
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="normal" android:textColor="@color/text_color_black" android:layout_gravity="left" android:id="@id/si_ui_gallery_popular_tags_title" android:paddingBottom="@dimen/space_2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_popular_tags" />
+        <ScrollView android:id="@id/si_ui_gallery_tag_list_scrollview" android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <com.socialin.android.views.PredicateLayout android:id="@id/si_ui_gallery_popular_tags_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+    <View style="@style/Divider.Horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/tag_dialog_cancel_button_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/gen_cancel" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/tag_dialog_done_button_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/gen_done" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

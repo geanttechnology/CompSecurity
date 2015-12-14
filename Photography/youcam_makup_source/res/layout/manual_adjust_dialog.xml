@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <w.panzoomview.PanZoomView android:id="@id/manual_adjust_view" android:background="#ff424242" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/manualDescriptionArea" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/manualDescriptionArea" android:background="#ff424242" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/manual_bottom_bar">
+        <ImageView android:gravity="center_horizontal" android:id="@id/manualInfoBtn" android:paddingLeft="@dimen/t10dp" android:layout_width="@dimen/t45dp" android:layout_height="@dimen/t40dp" android:src="@drawable/image_manual_adjust_info_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <TextView android:textColor="@color/white" android:padding="@dimen/t10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manualDescription" android:layout_toRightOf="@id/manualInfoBtn" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/BCTopBarTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/manual_bottom_bar" android:background="#ff1c1c1c" android:layout_width="fill_parent" android:layout_height="@dimen/t60dp" android:layout_alignParentBottom="true">
+        <ImageView android:gravity="center_vertical" android:id="@id/manualCancelBtn" android:paddingLeft="@dimen/t10dp" android:layout_width="@dimen/t35dp" android:layout_height="@dimen/t35dp" android:src="@drawable/btb_btn_cancel_n" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <TextView android:textColor="@color/white" android:id="@id/manualBottomBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Manual" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/BCTopBarTextStyle" />
+        <ImageView android:gravity="center_vertical" android:id="@id/manualApplyBtn" android:paddingRight="@dimen/t10dp" android:layout_width="@dimen/t35dp" android:layout_height="@dimen/t35dp" android:src="@drawable/btb_btn_ok_n" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+</RelativeLayout>

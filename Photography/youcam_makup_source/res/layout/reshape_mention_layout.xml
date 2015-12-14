@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/reshape_mention_stroke" android:layout_width="50.0dip" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/reshape_mention_stroke2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_centerInParent="true">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:id="@id/reshapeArrow" android:background="@drawable/reshape_mention_solid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" app:child_width="12" app:child_height="12" app:child_left="4" app:child_top="4" app:guideline_width="20" app:guideline_height="20">
+            <View android:background="@drawable/ico_brush_arrow_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

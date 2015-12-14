@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/gpuBenchmarkLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/splashCenterVertical" android:paddingBottom="@dimen/f40dp" android:layout_width="@dimen/f273dp" android:layout_height="@dimen/f80dp" android:src="@drawable/logo_splash" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+    <ProgressBar android:id="@id/splashWaitingCircle" android:layout_width="@dimen/f40dp" android:layout_height="@dimen/f40dp" android:scaleType="fitXY" android:indeterminateDrawable="@drawable/layer_list_waiting_cursor_special" android:indeterminateDuration="2000" android:indeterminateBehavior="repeat" android:layout_below="@id/splashCenterVertical" android:layout_centerHorizontal="true" android:alpha="0.5" />
+    <ImageView android:id="@id/logo_baidu" android:visibility="invisible" android:layout_width="@dimen/f131dp" android:layout_height="@dimen/f33dp" android:layout_marginBottom="@dimen/f20dp" android:src="@drawable/logo_baidu" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

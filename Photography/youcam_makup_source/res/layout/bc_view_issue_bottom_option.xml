@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:baselineAligned="false" style="@style/BcIssuePostLastBtnPanelStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/issue_btn_like" android:background="@drawable/bc_issue_bottom_option" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/like_ico" android:src="@drawable/bc_image_selector_like_icon" android:layout_centerVertical="true" style="@style/BcIssuePostLastBtnIconStyle" />
+        <TextView android:textColor="@drawable/bc_post_like_text" android:id="@id/like_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_post_like" android:layout_toRightOf="@id/like_ico" android:layout_centerVertical="true" style="@style/BcIssuePostLastBtnTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/issue_btn_comment" android:background="@drawable/bc_issue_bottom_option_with_sep" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/comment_ico" android:src="@drawable/bc_issue_reward_comment_ico" android:layout_centerVertical="true" style="@style/BcIssuePostLastBtnIconStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_post_comment" android:layout_toRightOf="@id/comment_ico" android:layout_centerVertical="true" style="@style/BcIssuePostLastBtnTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/issue_btn_share" android:background="@drawable/bc_issue_bottom_option_with_sep" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/share_ico" android:src="@drawable/bc_issue_reward_share_ico" android:layout_centerVertical="true" style="@style/BcIssuePostLastBtnIconStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_post_share" android:layout_toRightOf="@id/share_ico" android:layout_centerVertical="true" style="@style/BcIssuePostLastBtnTextStyle" />
+    </RelativeLayout>
+</LinearLayout>

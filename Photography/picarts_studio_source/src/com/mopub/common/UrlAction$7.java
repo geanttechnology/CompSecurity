@@ -1,0 +1,47 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.mopub.common;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import com.mopub.common.util.Intents;
+import com.mopub.exceptions.IntentNotResolvableException;
+import com.mopub.exceptions.UrlParseException;
+
+// Referenced classes of package com.mopub.common:
+//            UrlAction, Preconditions, UrlHandler
+
+final class nit> extends UrlAction
+{
+
+    protected final void performAction(Context context, Uri uri, UrlHandler urlhandler)
+    {
+        Preconditions.checkNotNull(context);
+        Preconditions.checkNotNull(uri);
+        urlhandler = (new StringBuilder("Could not handle share tweet intent with URI ")).append(uri).toString();
+        try
+        {
+            Intents.launchIntentForUserClick(context, Intent.createChooser(Intents.intentForShareTweet(uri), "Share via"), urlhandler);
+            return;
+        }
+        // Misplaced declaration of an exception variable
+        catch (Context context)
+        {
+            throw new IntentNotResolvableException((new StringBuilder()).append(urlhandler).append("\n\t").append(context.getMessage()).toString());
+        }
+    }
+
+    public final boolean shouldTryHandlingUrl(Uri uri)
+    {
+        Preconditions.checkNotNull(uri);
+        return "mopubshare".equals(uri.getScheme()) && "tweet".equals(uri.getHost());
+    }
+
+    Exception(String s, int i, boolean flag)
+    {
+        super(s, i, flag, null);
+    }
+}

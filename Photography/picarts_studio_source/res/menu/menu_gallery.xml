@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_add_to_membox" android:title="@string/add_to_membox" app:showAsAction="never" />
+    <item android:id="@id/menu_edit" android:title="@string/gen_edit" app:showAsAction="never" />
+    <item android:id="@id/menu_delete" android:title="@string/gen_delete" app:showAsAction="never" />
+    <item android:id="@id/menu_delete_from_membox" android:title="@string/delete_from_membox" app:showAsAction="never" />
+    <item android:id="@id/menu_report" android:title="@string/preview_report_abuse" app:showAsAction="never" />
+    <item android:id="@id/menu_copy_url" android:title="@string/txt_copy_url" app:showAsAction="never" />
+    <item android:id="@id/menu_repost" android:title="@string/gen_repost" app:showAsAction="never" />
+    <item android:id="@id/menu_share" android:title="@string/gen_share" app:showAsAction="never" />
+</menu>

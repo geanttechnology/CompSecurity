@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/blog_banner_layout" android:background="@color/color_black" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/blog_banner_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/gray_ac" android:scaleType="centerCrop" android:contentDescription="@string/gen_blog" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_32dp" android:layout_alignBottom="@id/blog_banner_image_view">
+        <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/color_white" android:id="@id/blog_banner_date_text_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dip" android:maxLines="1" android:shadowColor="@color/color_black" android:shadowDx="0.5" android:shadowDy="0.5" android:shadowRadius="0.5" />
+        <TextView android:textSize="@dimen/textSize_18" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/blog_banner_text_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:scaleType="centerCrop" android:maxWidth="240.0dip" android:maxLines="7" android:shadowColor="@color/color_black" android:shadowDx="0.5" android:shadowDy="0.5" android:shadowRadius="0.5" />
+    </LinearLayout>
+    <ImageView android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?selectableItemBackground" android:scaleType="fitXY" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upload_cancel_red" android:layout_alignParentLeft="true" android:contentDescription="@string/gen_cancel" />
+        <TextView android:textColor="@color/text_color_black" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upload_done_green" android:layout_alignParentRight="true" android:contentDescription="@string/gen_done" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="@drawable/list_divider_holo_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24dp" android:layout_marginRight="8.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:src="@drawable/membox_dark_gray" android:layout_centerVertical="true" android:contentDescription="@string/gen_name" />
+        <EditText android:textColor="@color/text_color_black" android:textColorHint="@color/text_color_light_gray" android:id="@id/new_membox_title" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_56dp" android:hint="@string/membox_name_txt" android:singleLine="true" android:maxLength="30" android:inputType="textNoSuggestions" />
+    </RelativeLayout>
+    <View android:background="@color/gray_e0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_56dp" android:layout_marginTop="@dimen/space_24dp" />
+    <EditText android:textColor="@color/text_color_black" android:textColorHint="@color/text_color_light_gray" android:id="@id/new_membox_description" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_56dp" android:layout_marginTop="@dimen/space_16dp" android:layout_marginRight="8.0dip" android:hint="@string/membox_desc_txt" android:maxLines="4" android:lines="4" android:maxLength="250" android:inputType="textMultiLine|textNoSuggestions" />
+</LinearLayout>

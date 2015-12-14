@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:layout_width="@dimen/t280dp" android:layout_height="@dimen/t200dp">
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/t5dp" android:layout_marginBottom="@dimen/t5dp" />
+        <TextView android:textSize="@dimen/t16sp" android:textStyle="bold" android:textColor="@color/bc_issue_error_msg_text" android:gravity="center" android:id="@id/empty_message_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bc_me_circle_promote" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/page_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

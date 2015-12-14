@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_fb_actions">
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_fb_action_explicit" android:key="enable_fb_explicit" android:summary="@string/pref_enable_fb_action_explicit_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_fb_action_all_title" android:key="enable_fb_action_all" android:summary="@string/pref_enable_fb_action_all_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_fb_actions">
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_fb_action_add_title" android:key="enable_fb_action_add" android:summary="@string/pref_enable_fb_action_add_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_fb_action_like_title" android:key="enable_fb_action_like" android:summary="@string/pref_enable_fb_action_like_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_fb_action_comment_title" android:key="enable_fb_action_comment" android:summary="@string/pref_enable_fb_action_comment_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_fb_action_follow_title" android:key="enable_fb_action_follow" android:summary="@string/pref_enable_fb_action_follow_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_fb_action_vote_title" android:key="enable_fb_action_vote" android:summary="@string/pref_enable_fb_action_vote_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

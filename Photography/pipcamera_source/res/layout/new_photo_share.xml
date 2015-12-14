@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wantu.view.CommonActionBarView1 android:id="@id/actionBarView" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/actionBarView" />
+    <RelativeLayout android:gravity="center" android:id="@id/divideLine" android:background="@color/save_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="100.0dip" />
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/photo_share_btns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divideLine" android:layout_centerHorizontal="true">
+        <com.wantu.view.NewTShareScrollView android:gravity="center" android:id="@id/tShareScrollView1" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/shareSaveTextviewLayout" android:background="@color/save_gray" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/solid_white" android:id="@id/shareSaveTextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ListView android:id="@id/adScrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_below="@id/photo_share_btns" />
+</RelativeLayout>

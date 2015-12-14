@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_dark_gray" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#80000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:background="#80000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/primary_text_dark_nodisable" android:id="@id/item_album_header_component_artist" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/album_action_more_from_artist" android:drawableLeft="@drawable/ic_list_morefrom" android:layout_weight="1.0" style="@style/Widget.AppCompat.ActionButton" />
+        <View android:background="?dividerVertical" android:layout_width="1.5dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="@android:color/primary_text_dark_nodisable" android:id="@id/item_album_header_component_comment" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/album_action_leave_comment" android:drawableLeft="@drawable/ic_list_comment" android:layout_weight="1.0" style="@style/Widget.AppCompat.ActionButton" />
+    </LinearLayout>
+</RelativeLayout>

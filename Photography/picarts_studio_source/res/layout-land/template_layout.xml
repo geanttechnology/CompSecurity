@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainId" android:background="@color/gray_33" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/templateCont" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/adLayoutId" />
+    <LinearLayout android:orientation="vertical" android:id="@id/topMenuPanel" android:background="@drawable/panel_left_transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/adLayoutId">
+        <ImageButton android:id="@id/dashboardEffectId" android:src="@drawable/ic_action_effects_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_vertical" />
+        <ImageButton android:id="@id/dashboardCropId" android:src="@drawable/ic_action_crop_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_vertical" />
+        <ImageButton android:id="@id/dashboardRotateId" android:src="@drawable/ic_action_rotate_cw_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_vertical" />
+        <ImageButton android:id="@id/dashboardFlipId" android:src="@drawable/ic_action_flip_horizontal_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_vertical" />
+        <ImageButton android:id="@id/dashboardDeleteId" android:src="@drawable/ic_action_delete_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/title_panel_icons" android:background="@drawable/panel_right_transparent" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageButton android:textSize="@dimen/textSize_10" android:textColor="@color/color_white" android:id="@id/dashboardDoneId" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/ic_action_done_t" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <Button android:textSize="@dimen/textSize_10" android:textColor="@color/color_white" android:id="@id/dashboardGridPanelId" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/button_grid" android:drawableTop="@drawable/ic_action_grid_t" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <Button android:textSize="@dimen/textSize_10" android:textColor="@color/color_white" android:id="@id/dashboardFramePanelId" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/gen_frame" android:drawableTop="@drawable/ic_action_frame_t" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <Button android:textSize="@dimen/textSize_10" android:textColor="@color/color_white" android:id="@id/dashboardShufflePanelId" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/button_shuffle" android:drawableTop="@drawable/ic_action_shuffle_t" />
+        <View style="@style/EvenSeparator.Horizontal" />
+        <ImageButton android:textSize="@dimen/textSize_10" android:textColor="@color/color_white" android:id="@id/dashboardCancelId" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/ic_action_cancel_t" />
+    </LinearLayout>
+    <SlidingDrawer android:orientation="horizontal" android:id="@id/collage_menu_sliding_drawer" android:visibility="invisible" android:clipChildren="true" android:layout_width="220.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_toLeftOf="@id/title_panel_icons" android:handle="@id/handle" android:content="@id/content">
+        <ImageView android:id="@id/handle" android:background="@drawable/handle_settings_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@drawable/panel_drawer_right" android:padding="@dimen/space_12dp" android:layout_width="240.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/collage_border_corner_radius_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collage_corner_radius_txt" />
+                <TextView android:id="@id/cornerRadiusTextId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12dp">
+                <SeekBar android:id="@id/collage_border_corner_radius_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/collage_border_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collage_border_txt" />
+                <TextView android:id="@id/collage_border_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="12" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp">
+                <SeekBar android:id="@id/collage_border_width_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="80" android:progress="12" android:layout_weight="1.0" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12dp">
+                <LinearLayout android:orientation="horizontal" android:id="@id/collage_borderColorId" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true" />
+                <ImageView android:background="@drawable/xml_icon_bg_color" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_toRightOf="@id/collage_borderColorId">
+                    <ImageView android:id="@id/collage_borderBgId" android:background="@drawable/collage_bg_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true" />
+                    <ImageView android:background="@drawable/xml_icon_bg_color" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+    <RelativeLayout android:gravity="bottom" android:id="@id/adLayoutId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

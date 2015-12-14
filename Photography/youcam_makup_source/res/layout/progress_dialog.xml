@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="372.0dip" android:weightSum="1.0" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ProgressDialogLeftSpace" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.1" />
+    <RelativeLayout android:id="@id/ProgressBarArea" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.8">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/ProgressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progress="0" android:progressDrawable="@drawable/custom_progress_bar" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/ProgressBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_above="@id/ProgressBarMessage" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/ProgressBarMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/ProgressBarPercentage" android:layout_above="@id/ProgressBar" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/ProgressBarPercentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/ProgressBarMessage" android:layout_alignBottom="@id/ProgressBarMessage" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/ProgressDialogRightSpace" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.1" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/editor_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.editor.view.StickerEditorView android:id="@id/editor" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad" android:layout_alignWithParentIfMissing="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panel_properties" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/panel_options" android:layout_above="@id/ad" android:layout_alignWithParentIfMissing="true">
+        <FrameLayout android:layout_width="100.0dip" android:layout_height="fill_parent">
+            <Spinner android:layout_gravity="top|center" android:id="@id/spinner_stickerBlendingMode" android:layout_width="100.0dip" android:layout_height="48.0dip" />
+            <com.socialin.android.photo.view.StickerPreviewView android:layout_gravity="bottom" android:id="@id/stickerPreview" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+        </FrameLayout>
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:paddingLeft="@dimen/space_8dp" android:paddingTop="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_xsmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawing_brush_option_thickness" />
+                <TextView android:textSize="@dimen/textSize_xsmall" android:id="@id/edit_sticker_panel_sizeSeekText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <SeekBar android:id="@id/edit_sticker_sizeSeek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="256.0dip" android:max="99" android:progress="99" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_xsmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawing_brush_option_opacity" />
+                <TextView android:textSize="@dimen/textSize_xsmall" android:id="@id/edit_sticker_panel_opacitySeekText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <SeekBar android:id="@id/edit_sticker_opacitySeek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="256.0dip" android:max="255" android:progress="255" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_xsmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hue_withColon" />
+                <TextView android:textSize="@dimen/textSize_xsmall" android:id="@id/edit_sticker_panel_hueSeekText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <SeekBar android:id="@id/edit_sticker_hueSeek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="256.0dip" android:max="360" android:progress="0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/panel_options" android:background="@drawable/panel_bottom_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/btn_done" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_choose_sticker" android:src="@drawable/ic_action_sticker_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_properties" android:src="@drawable/ic_action_properties_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/btn_undo" android:src="@drawable/editor_undo_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/btn_cancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/ad" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toLeftOf="@id/panel_options" android:layout_alignParentBottom="true" layout="@layout/editor_ad_layout" />
+</RelativeLayout>

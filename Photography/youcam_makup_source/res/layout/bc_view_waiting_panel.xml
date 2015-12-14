@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/waiting_cursor" android:indeterminateDrawable="@drawable/bc_waiting_cursor" android:indeterminateBehavior="repeat" style="@style/BcRefreshWaitingCursorStyle" />
+    <TextView android:id="@id/waiting_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_waiting_text" android:layout_toRightOf="@id/waiting_cursor" android:layout_centerVertical="true" style="@style/BcRefreshWaitingTextStyle" />
+</RelativeLayout>

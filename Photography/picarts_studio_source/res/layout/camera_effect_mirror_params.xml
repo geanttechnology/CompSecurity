@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mirror_effect_modes" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/mirror_mode1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:text="@string/effect_param_horizontal" />
+        <RadioButton android:id="@id/mirror_mode2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:text="@string/effect_param_vertical" />
+    </RadioGroup>
+</LinearLayout>

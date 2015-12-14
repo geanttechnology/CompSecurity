@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="?attr/aviaryBottomBarOptionPanelContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="6.0dip" android:layout_height="wrap_content" android:weightSum="4.0" style="@style/AviaryConsolidatedAdjustButtons">
+        <com.aviary.android.feather.sdk.widget.AviaryTextView android:ellipsize="end" android:gravity="center" android:id="@id/tool1" android:background="@drawable/aviary_dark_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="3.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/AviaryTextAppearance.Small" />
+        <com.aviary.android.feather.sdk.widget.AviaryTextView android:ellipsize="end" android:gravity="center" android:id="@id/tool2" android:background="@drawable/aviary_dark_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="3.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/AviaryTextAppearance.Small" />
+        <com.aviary.android.feather.sdk.widget.AviaryTextView android:ellipsize="end" android:gravity="center" android:id="@id/tool3" android:background="@drawable/aviary_dark_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="3.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/AviaryTextAppearance.Small" />
+        <com.aviary.android.feather.sdk.widget.AviaryTextView android:ellipsize="end" android:gravity="center" android:id="@id/tool4" android:background="@drawable/aviary_dark_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/AviaryTextAppearance.Small" />
+    </LinearLayout>
+    <com.aviary.android.feather.sdk.widget.NonSwipeableViewPager android:id="@id/aviary_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

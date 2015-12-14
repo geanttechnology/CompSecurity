@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:facebook="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/fbTopBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" facebook:guideline_width="1080" facebook:guideline_height="140">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" facebook:guideline_width="1080" facebook:guideline_height="134">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/fbCancelBtnContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" facebook:guideline_width="240" facebook:guideline_height="134">
+                    <Button android:id="@id/fbCancelBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/common_Cancel" style="@style/FacebookTopBtnStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:weightSum="134.0" android:layout_toRightOf="@id/fbCancelBtnContainer">
+                    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="72.0" style="@style/TopToolBarDividerStyle" />
+                </LinearLayout>
+                <TextView android:id="@id/fbTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_Facebook" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TopBarTextStyle" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:weightSum="134.0" android:layout_toLeftOf="@id/fbPostBtnContainer">
+                    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="72.0" style="@style/TopToolBarDividerStyle" />
+                </LinearLayout>
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/fbPostBtnContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" facebook:guideline_width="240" facebook:guideline_height="134">
+                    <Button android:id="@id/fbPostBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/share_post" style="@style/FacebookTopBtnStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </RelativeLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/fbTopPadding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/fbTopBar" facebook:guideline_width="1080" facebook:guideline_height="43" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/fbBottomBar" android:background="@color/bottom_bar_background_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" facebook:guideline_width="1080" facebook:guideline_height="162">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/fbFriendBtn" android:background="@drawable/bg_selector_toolbar_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="16.0" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="90.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" facebook:guideline_width="90" facebook:guideline_height="90">
+                        <RelativeLayout android:id="@id/RelativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/ImageView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_selector_fb_friend_btn" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </RelativeLayout>
+                <TextView android:gravity="top|center" android:text="@string/share_friends" style="@style/BottomToolBarBtnTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:weightSum="160.0">
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="80.0" style="@style/CropPanelSeparatorStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/fbTopicBtn" android:background="@drawable/bg_selector_toolbar_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="16.0" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="90.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" facebook:guideline_width="90" facebook:guideline_height="90">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_selector_fb_topic_btn" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </RelativeLayout>
+                <TextView android:gravity="top|center" android:text="@string/share_topic" style="@style/BottomToolBarBtnTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:weightSum="160.0">
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="80.0" style="@style/CropPanelSeparatorStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/fbLocationBtn" android:background="@drawable/bg_selector_toolbar_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="16.0" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="90.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" facebook:guideline_width="90" facebook:guideline_height="90">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_selector_fb_location_btn" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </RelativeLayout>
+                <TextView android:gravity="top|center" android:text="@string/share_location" style="@style/BottomToolBarBtnTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <View android:id="@id/fbBottomBivider" android:background="@color/bottom_bar_top_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/fbBottomBar" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/fbBottomBivider" android:layout_below="@id/fbTopPadding">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="30.0" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" facebook:guideline_width="150" facebook:guideline_height="150">
+                <com.facebook.widget.ProfilePictureView android:id="@id/fbUserPic" android:layout_width="fill_parent" android:layout_height="fill_parent" facebook:preset_size="normal" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </FrameLayout>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="30.0" />
+        <ScrollView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="840.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textColor="@color/text_color_camera_navigator_tip" android:id="@id/fbInputMessage" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/share_hint" android:ems="10" style="@style/FacebookEditTextStyle">
+                    <requestFocus />
+                </EditText>
+                <TextView android:textColor="@color/text_color_camera_navigator_tip" android:id="@id/fbTagsInfo" android:paddingTop="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/FacebookEditTextStyle" />
+                <View android:layout_width="fill_parent" android:layout_height="9.0dip" />
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" facebook:guideline_width="840" facebook:guideline_height="220">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/fbUploadImageThumbnailParent" android:background="@drawable/shadow" android:layout_width="0.0dip" android:layout_height="fill_parent" facebook:guideline_width="220" facebook:guideline_height="220">
+                        <RelativeLayout android:background="@drawable/bg_thumbnail_item_border" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/fbUploadImageThumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photo_default" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/fbUploadLinkThumbnailParent" android:background="@drawable/shadow" android:layout_width="0.0dip" android:layout_height="fill_parent" facebook:guideline_width="840" facebook:guideline_height="220">
+                        <RelativeLayout android:background="@drawable/bg_thumbnail_item_border" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/fbUploadLinkThumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photo_default" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="30.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/facebookSharingRetryDialogContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

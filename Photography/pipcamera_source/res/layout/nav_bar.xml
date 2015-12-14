@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/ui_action_bar_color" android:layout_width="fill_parent" android:layout_height="47.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/back_btn" android:background="@drawable/nav_back_btn" android:layout_width="59.0dip" android:layout_height="44.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="backBtnClicked" />
+    <Button android:textSize="16.0sp" android:textColor="@color/button_txt_color" android:id="@id/next_btn" android:background="@null" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="nextBtnClicked" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="20.0sp" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageButton android:id="@id/helper" android:background="@null" android:padding="5.0dip" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_toRightOf="@id/title" android:layout_centerVertical="true" android:onClick="helpBtnClicked" />
+</RelativeLayout>

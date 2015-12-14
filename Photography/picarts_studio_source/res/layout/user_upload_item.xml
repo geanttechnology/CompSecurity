@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/contest_item_background" android:padding="@dimen/space_2dp" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.utils.DynamicHeightImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xml_si_ui_profile_cancel_upload_image" />
+        <View android:id="@id/btn_retry_space" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btn_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xml_si_ui_profile_retry_failed_upload" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <SeekBar android:layout_gravity="bottom|center" android:id="@id/upload_progress" android:clickable="false" android:layout_width="100.0dip" android:layout_height="12.0dip" android:layout_marginBottom="@dimen/space_2dp" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/xml_si_ui_upload_item_progress" android:thumb="@null" />
+</FrameLayout>

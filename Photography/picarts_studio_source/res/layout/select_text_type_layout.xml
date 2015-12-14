@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dialog_bg_color" android:paddingLeft="@dimen/space_16dp" android:paddingRight="@dimen/space_16dp" android:paddingBottom="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerHorizontal" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textAppearance="?android:textAppearance" android:textSize="18.0sp" android:gravity="left|center" android:id="@id/frequently_used_txt" android:padding="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_frequently_used" style="?android:attr/borderlessButtonStyle" />
+    <Button android:textAppearance="?android:textAppearance" android:textSize="18.0sp" android:gravity="left|center" android:id="@id/location_based_txt" android:padding="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_location_based" style="?android:attr/borderlessButtonStyle" />
+    <Button android:textAppearance="?android:textAppearance" android:textSize="18.0sp" android:gravity="left|center" android:id="@id/date_and_time_txt" android:padding="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_date_and_time" style="?android:attr/borderlessButtonStyle" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fotoable.beautyui.other.ArcMenu android:id="@id/id_arc_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:position="bottom_center" custom:bottom_margin="10.0dip" custom:arcmenu_radius="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/id_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sync_more2x" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/player_share_wechat" android:tag="wechat" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/sync_wechat" />
+    <ImageView android:id="@id/player_share_sina" android:tag="sina" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/sina_logo" />
+    <ImageView android:id="@id/player_share_qq" android:tag="qq" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/sync_qq" />
+    <ImageView android:id="@id/player_share_instagram" android:tag="instagram" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/sync_instagram" />
+    <ImageView android:id="@id/player_share_fb" android:tag="facebook" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/fb_logo" />
+    <ImageView android:id="@id/player_share_twitter" android:tag="twitter" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/sync_twitter" />
+</com.fotoable.beautyui.other.ArcMenu>

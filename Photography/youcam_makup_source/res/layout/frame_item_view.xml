@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioLinearLayout android:orientation="horizontal" android:id="@id/frameItemContentArea" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="220.0" app:guideline_width="220" app:guideline_height="260">
+        <FrameLayout android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="215.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="260.0">
+                <FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="217.0">
+                    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="217.0">
+                        <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="200.0">
+                            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentLeft="true" app:guideline_width="200" app:guideline_height="200">
+                                <ImageView android:id="@id/frameItemImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_launcher" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                                <LinearLayout android:gravity="top|right|center" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="200.0">
+                                    <ImageView android:id="@id/frameItemNewIcon" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/panel_thumbnail_new" android:scaleType="fitStart" android:layout_weight="102.0" android:contentDescription="@string/app_name" />
+                                </LinearLayout>
+                                <ImageView android:id="@id/frameItemCheck" android:background="@drawable/image_selector_thumbnail_selected" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top|right|center" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="200.0">
+                        <FrameLayout android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="100.0">
+                            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/frameItemCloseButton" android:background="@drawable/image_selector_button_close" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="78" app:guideline_height="82" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioLinearLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/frameItemMoreButton" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="260.0" app:guideline_width="138" app:guideline_height="260">
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="154.0" android:layout_weight="122.0">
+            <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/image_selector_more_add_button" android:layout_weight="136.0" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioLinearLayout>
+</RelativeLayout>

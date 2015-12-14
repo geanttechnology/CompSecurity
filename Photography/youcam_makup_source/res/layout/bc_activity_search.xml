@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/main_observable_root_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout android:id="@id/normal_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel">
+        <com.cyberlink.beautycircle.view.widgetpool.common.CLMultiColumnListView android:id="@id/search_suggestion_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollEnabled="true" style="@style/BcMultiColumnStyle" />
+    </com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout>
+    <include android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" layout="@layout/bc_view_message_panel" />
+    <com.cyberlink.beautycircle.view.widgetpool.facebook.LoginButton android:id="@id/register_facebook" android:visibility="gone" android:scaleType="fitXY" style="@style/BcRegisterMoreSigninBtnStyle" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/bc_view_toast_panel" />
+    <com.cyberlink.beautycircle.view.widgetpool.common.BCArcMenu android:id="@id/bc_arc_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/bc_view_top_add_panel" />
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>

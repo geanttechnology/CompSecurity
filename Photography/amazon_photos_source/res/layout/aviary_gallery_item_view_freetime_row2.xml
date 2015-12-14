@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/nonblank" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aviary="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:focusable="false" android:layout_width="@dimen/aviary_tool_list_selected" android:layout_height="@dimen/aviary_tool_list_selected" android:layout_marginLeft="@dimen/aviary_tool_list_color_margin" android:layout_marginRight="@dimen/aviary_tool_list_color_margin" android:scaleType="centerInside" android:layerType="software" />
+</RelativeLayout>

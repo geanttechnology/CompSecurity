@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/xml_si_ui_vote_button_bg" android:layout_width="@dimen/contest_submit_button_width" android:layout_height="@dimen/contest_submit_button_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left|center" android:paddingLeft="@dimen/contest_submit_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_submit" />
+    <TextView android:textSize="@dimen/contest_submit_button_text_size" android:textColor="@color/color_white" android:layout_gravity="right|center" android:paddingRight="@dimen/contest_submit_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_submit" />
+</FrameLayout>

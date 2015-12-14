@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/textProperties" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.socialin.android.photo.textart.TextPreview android:gravity="center_vertical" android:id="@id/preview" android:background="@color/gray_33" android:layout_width="0.0dip" android:layout_height="72.0dip" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginRight="@dimen/space_8dp" android:hint="@string/select_text_placeholder" android:cursorVisible="true" android:layout_weight="1.0" android:inputType="textMultiLine" android:imeOptions="flagNoExtractUi" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/add_standart_text_button" android:layout_width="@dimen/space_48dp" android:layout_height="@dimen/space_48dp" android:src="@drawable/add_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/color_settings_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/label_fill" android:layout_width="24.0dip" android:layout_height="wrap_content" android:src="@drawable/fill_color_label" />
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/fill_color_btn" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="@dimen/space_32dp" android:layout_height="@dimen/space_32dp" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp">
+                <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/fill_color_picker" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/gradient_color_btn" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="@dimen/space_32dp" android:layout_height="@dimen/space_32dp" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp">
+                <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/gradient_color_picker" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/label_stroke" android:layout_width="24.0dip" android:layout_height="wrap_content" android:src="@drawable/stroke_color_label" />
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/stroke_color_btn" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="@dimen/space_32dp" android:layout_height="@dimen/space_32dp" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp">
+                <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/stroke_color_picker" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+            </FrameLayout>
+            <ImageButton android:id="@id/alignmentLeft" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/align_left" />
+            <ImageButton android:id="@id/alignmentCenter" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/align_center" />
+            <ImageButton android:id="@id/alignmentRight" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/align_right" />
+            <View android:id="@id/emptyViewForSpacing" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/button_reset" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/reset_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/font_size_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp">
+            <TextView android:textSize="@dimen/textSize_12" android:id="@id/font_size_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <SeekBar android:id="@id/font_size_seekBar" android:layout_width="352.0dip" android:layout_height="wrap_content" android:max="150" android:progress="30" android:layout_toRightOf="@id/font_size_text" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="bottom" android:id="@id/adLayoutlId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/adLayoutlId" android:layout_below="@id/textProperties" />
+</RelativeLayout>

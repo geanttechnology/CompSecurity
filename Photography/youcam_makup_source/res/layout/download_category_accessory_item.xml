@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/bg_accessory_category" android:layout_width="@dimen/f94dp" android:layout_height="@dimen/f94dp" android:layout_marginLeft="@dimen/f8dp" android:layout_marginTop="@dimen/f2dp">
+        <ImageView android:layout_gravity="center" android:id="@id/downloadThumbnail" android:layout_width="@dimen/f80dp" android:layout_height="@dimen/f67dp" android:src="@drawable/preloading_clg_vb" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/downloadThumbnailError" android:background="#ff70706f" android:visibility="gone" android:layout_width="@dimen/f80dp" android:layout_height="@dimen/f67dp" android:src="@drawable/photo_bad" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        <LinearLayout android:gravity="center" android:id="@id/downloadItemProgressContanier" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="416.0">
+            <ProgressBar android:layout_gravity="center" android:id="@id/downloadItemProgress" android:layout_width="0.0dip" android:progress="50" android:layout_weight="248.0" style="@style/DownloadGridItemProgressStyle" />
+        </LinearLayout>
+        <Button android:layout_gravity="bottom|right|center" android:id="@id/downloadBtn" android:background="@drawable/btn_icon_download" android:layout_width="@dimen/f29dp" android:layout_height="@dimen/f29dp" android:layout_marginRight="@dimen/f3dp" android:layout_marginBottom="@dimen/f3dp" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/downloadItemNewIcon" android:visibility="gone" android:layout_width="@dimen/f29dp" android:layout_height="@dimen/f23dp" android:src="@drawable/new_no_border" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+</FrameLayout>

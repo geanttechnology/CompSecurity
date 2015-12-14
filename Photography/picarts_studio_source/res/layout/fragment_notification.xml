@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/notification_redeem_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include layout="@layout/invite_ad_free_editor" />
+    </FrameLayout>
+    <com.socialin.android.picsart.profile.view.PicsartSwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/notification_redeem_layout"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:paddingTop="@dimen/space_8dp" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.socialin.android.picsart.profile.view.PicsartSwipeRefreshLayout>
+    <ProgressBar android:id="@id/image_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_medium_picsart" android:layout_centerInParent="true" />
+    <TextView android:textColor="@color/text_color_black" android:id="@id/no_data_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_notifications" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/si_ui_profile_user_item" android:background="@drawable/xml_si_ui_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/space_16dp" android:paddingRight="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/si_ui_profile_friend_avatar" android:layout_marginLeft="@dimen/space_16dp" style="@style/Widget.Picsart.Avatar" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:layout_marginRight="@dimen/space_16dp" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/si_ui_profile_friend_username" android:layout_marginBottom="@dimen/space_2dp" style="@style/TextAppearance.Picsart.Light.Username" />
+                <ImageView android:id="@id/verified_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_2dp" android:layout_marginTop="@dimen/space_4dp" android:src="@drawable/list_verifed_badge" />
+            </LinearLayout>
+            <TextView android:id="@id/si_ui_profile_friend_fullname" style="@style/TextAppearance.Picsart.Light.Subusername" />
+        </LinearLayout>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/si_ui_profile_friend_follow_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/btn_follow" android:minWidth="41.0dip" />
+    </LinearLayout>
+</LinearLayout>

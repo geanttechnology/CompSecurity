@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/to_top_btn" android:visibility="invisible" android:src="@drawable/bc_issue_to_top_btn" style="@style/BcIssueToTopButtonStyle" />
+    <ImageView android:id="@id/create_post_btn" android:src="@drawable/bc_issue_create_post_btn" style="@style/BcIssueToTopButtonStyle" />
+    <View android:visibility="invisible" android:layout_width="1.0px" android:layout_marginTop="@dimen/t25dp" style="@style/BcBottomBarPanelStyle" />
+</LinearLayout>

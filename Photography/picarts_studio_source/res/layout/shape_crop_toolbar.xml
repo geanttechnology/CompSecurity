@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/seekbar_label" android:paddingLeft="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <SeekBar android:id="@id/collage_outer_border_size_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="40" android:progress="12" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/bottom_menu_colorpicker" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size">
+            <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/color_picker_preview" android:layout_width="@dimen/drawing_bottom_items_icon_size" android:layout_height="@dimen/drawing_bottom_items_icon_size" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

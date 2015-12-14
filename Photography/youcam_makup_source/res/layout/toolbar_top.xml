@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/t45dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/topToolBarBackBtn" android:contentDescription="@string/app_name" style="@style/CameraTopBackBtn" />
+        <ImageView android:id="@id/topToolBarCloseBtn" android:visibility="invisible" android:src="@drawable/image_selector_topbar_close_btn" android:contentDescription="@null" style="@style/GeneralTopBtn" />
+        <com.cyberlink.youcammakeup.widgetpool.common.AutoResizeTextView android:textSize="@dimen/t18dp" android:textColor="#ff1e1e1e" android:gravity="center" android:id="@id/moduleTitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/common_Makeup" android:layout_toLeftOf="@id/topToolBarApplyBtn" android:layout_toRightOf="@id/topToolBarBackBtn" android:layout_centerVertical="true" style="@style/TopBarTextStyle" />
+        <RelativeLayout android:id="@id/EditViewUndoRedoPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <View android:id="@id/EditViewUndoBtn" android:background="@drawable/image_selector_edit_undo_btn" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f23dp" />
+            <View android:id="@id/EditViewRedoBtn" android:background="@drawable/image_selector_edit_redo_btn" android:layout_width="@dimen/f38dp" android:layout_height="@dimen/f23dp" android:layout_marginLeft="@dimen/f13dp" android:layout_toRightOf="@id/EditViewUndoBtn" />
+        </RelativeLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/topToolBarMoreBtnContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/topToolBarBackBtn" app:guideline_width="150" app:guideline_height="140">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/topToolBarMoreBtn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="140.0">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/image_selector_topbar_more_btn" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="106.0" app:guideline_width="106" app:guideline_height="106" />
+            </LinearLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="76" app:guideline_height="130">
+                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="130.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/topToolBarNewIcon" android:background="@drawable/icon_new_tile" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="60.0" app:guideline_width="60" app:guideline_height="64" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="10.0" />
+                </LinearLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <TextView android:textSize="@dimen/t14dp" android:textStyle="bold" android:textColor="@drawable/color_top_tool_bar_export_btn_text" android:gravity="center" android:id="@id/topToolBarExportBtn" android:background="@drawable/bg_bottom_tool_btn" android:paddingLeft="@dimen/t10dp" android:paddingRight="@dimen/t10dp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/action_SAVE" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/topToolBarApplyBtn" android:visibility="invisible" android:src="@drawable/image_selector_topbar_apply_btn" android:layout_alignParentRight="true" android:contentDescription="@null" style="@style/GeneralTopBtn" />
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

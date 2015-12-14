@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <my.googlemusic.play.utils.views.TabAndroidL android:id="@id/library_tabs" android:background="@color/color_red" android:layout_width="fill_parent" android:layout_height="48.0dip" app:pstsIndicatorColor="@color/color_red_dark" app:pstsShouldExpand="true" />
+    <android.support.v4.view.ViewPager android:id="@id/library_pager" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/library_tabs" />
+    <View android:background="@drawable/tab_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_below="@id/library_tabs" />
+</RelativeLayout>

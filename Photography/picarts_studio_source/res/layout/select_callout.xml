@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:id="@id/callout_preview_panel" android:layout_width="wrap_content" android:layout_height="155.0dip" android:layout_marginLeft="@dimen/space_4dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/callout_preview_subpanel" android:layout_width="220.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <GridView android:gravity="center" android:id="@id/calloutTypeGrid" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:listSelector="?selectableItemBackground" android:horizontalSpacing="@dimen/space_16dp" android:verticalSpacing="@dimen/space_8dp" android:stretchMode="columnWidth" android:columnWidth="70.0dip" android:numColumns="auto_fit" android:layout_toRightOf="@id/callout_preview_panel" android:layout_above="@id/text_edit_panel" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="left|center" android:id="@id/text_edit_panel" android:paddingLeft="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/callout_preview_panel">
+        <AutoCompleteTextView android:textSize="@dimen/textSize_14" android:textStyle="normal" android:id="@id/text_edit_id" android:layout_width="256.0dip" android:layout_height="fill_parent" android:hint="@string/msg_enter_text_here" android:completionThreshold="1" android:inputType="textCapSentences|textMultiLine" style="?android:editTextStyle" />
+        <ImageButton android:id="@id/add_standart_text_button" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_plus_upload_normal" android:scaleType="center" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="bottom" android:id="@id/adLayoutlId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/callout_list_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/adLayoutlId" android:layout_below="@id/text_edit_panel">
+        <GridView android:gravity="center" android:id="@id/calloutGrid" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_20dp" android:listSelector="@color/color_transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:columnWidth="80.0dip" android:numColumns="auto_fit" />
+    </RelativeLayout>
+</RelativeLayout>

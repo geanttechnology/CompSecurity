@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/eye_replacer_params" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSize_13" android:textStyle="bold" android:id="@id/eye_replace_hue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20dp" android:text="@string/replace_hue_240" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:layout_marginRight="@dimen/space_16dp">
+        <com.picsart.effects.colorsplash.GradientView android:id="@id/maxHueColorsBg" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:layout_centerInParent="true" />
+        <SeekBar android:id="@id/eye_replace_hue_seekbar" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-15.0dip" android:layout_marginRight="-15.0dip" android:max="360" android:progressDrawable="@android:color/transparent" style="@style/fx_colorSplash_SeekBar_style" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/textSize_13" android:textStyle="bold" android:id="@id/eye_replace_saturation_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20dp" android:text="@string/saturation_50" />
+    <SeekBar android:id="@id/eye_replace_saturation_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+</LinearLayout>

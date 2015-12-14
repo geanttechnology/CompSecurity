@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_box" android:background="@android:color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="230.0dip" android:layout_alignParentBottom="true">
+        <my.googlemusic.play.utils.views.RobotoTextView android:textSize="20.0sp" android:textColor="@color/color_light_gray" android:id="@id/component_dabb_trim_music_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="Share this song" app:typeface="roboto_condensed_bold" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="24.0dip" android:weightSum="3.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_dabb_content" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0" style="@style/Widget.AppCompat.ActionButton">
+                <ImageView android:id="@id/share_dabb_image" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_create_dabb" />
+                <TextView android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/share_dabb_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Create Dabb" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_instagram_content" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0" style="@style/Widget.AppCompat.ActionButton">
+                <ImageView android:id="@id/share_instagram_image" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_share_instagram" />
+                <TextView android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/share_instagram_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Instagram" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_twitter_content" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0" style="@style/Widget.AppCompat.ActionButton">
+                <ImageView android:id="@id/share_twitter_image" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_share_twitter" />
+                <TextView android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/share_twitter_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Twitter" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/component_dabb_trim_music" />
+    <include layout="@layout/component_dabb_download" />
+    <View android:id="@id/share_view" android:background="#40000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/share_box" />
+</RelativeLayout>

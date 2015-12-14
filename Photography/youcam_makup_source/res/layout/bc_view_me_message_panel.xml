@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/error_message_panel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/t16sp" android:textStyle="bold" android:textColor="@color/bc_issue_error_msg_text" android:gravity="center" android:id="@id/me_empty_message_text" android:paddingLeft="@dimen/t40dp" android:paddingTop="@dimen/t40dp" android:paddingRight="@dimen/t40dp" android:paddingBottom="@dimen/t30dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" style="@style/BcDefaultFontStyle" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/me_write_post_btn" android:background="@drawable/bc_general_radius_white_button" android:paddingLeft="@dimen/t20dp" android:paddingTop="@dimen/t7dp" android:paddingRight="@dimen/t20dp" android:paddingBottom="@dimen/t7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/t50dp" android:minWidth="@dimen/t200dp" android:layout_below="@id/me_empty_message_text" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="@dimen/t33dp" android:layout_height="@dimen/t33dp" android:src="@drawable/bc_me_create_icon" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="@dimen/t16dp" android:textColor="@color/bc_issue_error_msg_text" android:id="@id/me_create_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t10dp" android:text="@string/bc_write_a_post_btn" style="@style/BcDefaultFontStyle" />
+    </LinearLayout>
+</RelativeLayout>

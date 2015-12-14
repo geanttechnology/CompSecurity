@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode1_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode1" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@color/suntan_tone_1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode2_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode2" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@color/suntan_tone_2" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode3_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode3" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@color/suntan_tone_3" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode4_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode4" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@color/suntan_tone_4" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_2dp">
+            <ImageView android:visibility="visible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/color_white" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode5_selected" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@color/effects_frame_pressed_blue" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/suntan_mode5" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@color/suntan_tone_5" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/fade_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/fade_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:layout_gravity="center_vertical" android:id="@id/fade_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0" />
+</LinearLayout>

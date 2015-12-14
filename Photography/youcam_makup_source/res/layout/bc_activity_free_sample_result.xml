@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bc_color_white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/fragment_topbar_panel">
+        <LinearLayout android:gravity="top|center" android:orientation="vertical" android:paddingBottom="@dimen/t70dp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/free_sample_banner" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/BcFreeSampleBannerStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/brand_event_title_row" android:layout_width="@dimen/f320dp" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/t18sp" android:textColor="@color/bc_product_list_price_text" android:layout_gravity="center" android:id="@id/brand_event_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t15dp" />
+                <TextView android:textSize="@dimen/t18sp" android:textColor="@color/bc_product_list_price_text" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t5dp" android:text="@string/bc_consultation_reservation" />
+                <View android:background="@drawable/bc_dash_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="@dimen/t15dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="@dimen/f313dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t10dp">
+                <RelativeLayout android:id="@id/userItem" android:paddingTop="@dimen/t4dp" android:paddingRight="@dimen/t10dp" android:paddingBottom="@dimen/t4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t3dp" android:layout_marginTop="@dimen/t1dp" android:layout_marginRight="@dimen/t3dp" android:layout_marginBottom="@dimen/t1dp">
+                    <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/free_sample_avatar_image" android:layout_width="@dimen/t40dp" android:layout_height="@dimen/t40dp" android:layout_marginRight="@dimen/t8dp" android:layout_alignParentLeft="true" android:contentDescription="@string/app_name" app:bc_default_image="@drawable/bc_avatar_mugshot" />
+                    <ImageView android:background="@drawable/bc_avatar_circle_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/free_sample_avatar_image" android:layout_alignTop="@id/free_sample_avatar_image" android:layout_alignRight="@id/free_sample_avatar_image" android:layout_alignBottom="@id/free_sample_avatar_image" android:contentDescription="@string/app_name" />
+                    <com.rockerhieu.emojicon.EmojiconTextView android:ellipsize="end" android:gravity="left" android:id="@id/display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/free_sample_avatar_image" android:layout_centerVertical="true" style="@style/BcCelebrityAvatarTextStyle" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/t14sp" android:id="@id/free_sample_result_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t5dp" />
+                <TextView android:textSize="@dimen/t14sp" android:textColor="@color/bc_product_list_price_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f10dp" android:layout_marginTop="@dimen/t15dp" android:layout_marginRight="@dimen/f10dp" android:text="@string/free_sample_apply_info_hint" />
+                <TableLayout android:id="@id/discovery_features" android:layout_width="fill_parent" style="@style/BcUserTableLayoutFieldStyle">
+                    <TableRow style="@style/BcFreesampleDataTableRowStyle">
+                        <TextView android:text="@string/bc_userinfo_name" style="@style/BcFreesampleDataTitleStyle" />
+                        <TextView android:id="@id/free_sample_result_name" style="@style/BcFreesampleDataResultFieldStyle" />
+                    </TableRow>
+                    <TableRow android:id="@id/freesample_birthday_row" style="@style/BcFreesampleDataTableRowStyle">
+                        <TextView android:text="@string/bc_beauty_profile_birthday" style="@style/BcFreesampleDataTitleStyle" />
+                        <TextView android:id="@id/free_sample_result_birthday" style="@style/BcFreesampleDataResultFieldStyle" />
+                    </TableRow>
+                    <TableRow style="@style/BcFreesampleDataTableRowStyle">
+                        <TextView android:text="@string/bc_userinfo_mobile" style="@style/BcFreesampleDataTitleStyle" />
+                        <TextView android:id="@id/free_sample_result_phone" style="@style/BcFreesampleDataResultFieldStyle" />
+                    </TableRow>
+                    <TableRow style="@style/BcFreesampleDataTableRowStyle">
+                        <TextView android:text="@string/bc_userinfo_email" style="@style/BcFreesampleDataTitleStyle" />
+                        <TextView android:id="@id/free_sample_result_mail" style="@style/BcFreesampleDataResultFieldStyle" />
+                    </TableRow>
+                    <TableRow android:id="@id/freesample_home_row" style="@style/BcFreesampleDataTableRowStyle">
+                        <TextView android:text="@string/bc_userinfo_address" style="@style/BcFreesampleDataTitleStyle" />
+                        <TextView android:id="@id/free_sample_result_address" android:singleLine="false" style="@style/BcFreesampleDataResultFieldStyle" />
+                    </TableRow>
+                    <TableRow android:id="@id/freesample_store_row" android:visibility="gone" style="@style/BcFreesampleDataTableRowStyle">
+                        <TextView android:text="@string/bc_userinfo_store" style="@style/BcFreesampleDataTitleStyle" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:id="@id/free_sample_result_store_area" style="@style/BcFreesampleDataResultFieldStyle" />
+                            <TextView android:id="@id/free_sample_result_store_name" android:layout_marginTop="@dimen/t5dp" style="@style/BcFreesampleDataResultFieldStyle" />
+                            <TextView android:id="@id/free_sample_result_store_address" android:layout_marginTop="@dimen/t5dp" style="@style/BcFreesampleDataResultFieldStyle" />
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow android:id="@id/freesample_product_row" style="@style/BcFreesampleDataTableRowStyle">
+                        <TextView android:text="@string/bc_userinfo_product" style="@style/BcFreesampleDataTitleStyle" />
+                        <TextView android:id="@id/free_sample_result_product" android:singleLine="false" style="@style/BcFreesampleDataResultFieldStyle" />
+                    </TableRow>
+                </TableLayout>
+                <TextView android:textSize="@dimen/t14sp" android:textColor="@color/bc_product_list_price_text" android:id="@id/free_sample_result_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t20dp" />
+                <LinearLayout android:orientation="vertical" android:id="@id/freesample_redeem_row" android:background="@drawable/bc_general_radius_white_background_pink_border" android:paddingLeft="@dimen/t24dp" android:paddingTop="@dimen/t18dp" android:paddingRight="@dimen/t24dp" android:paddingBottom="@dimen/t18dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/t5dp">
+                    <TextView android:textSize="@dimen/t12dp" android:textColor="@color/bc_color_red" android:gravity="center" android:id="@id/free_sample_result_redeem_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/t18dp" android:text="@string/bc_freesample_result_store_alert" />
+                    <TextView android:textSize="@dimen/t14dp" android:gravity="center" android:id="@id/free_sample_result_redeem_btn" android:padding="@dimen/t12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_freesample_result_store_btn" style="@style/BcRegisterButtonTextBasicStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

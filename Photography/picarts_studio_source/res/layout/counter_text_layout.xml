@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/camera_options" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/main_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="50.0sp" android:textColor="@color/color_white" android:id="@id/counter_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20" />
+            <ImageView android:background="@drawable/set_next_timer_value" android:layout_width="17.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginBottom="@dimen/space_12dp" android:layout_toRightOf="@id/counter_value" android:layout_alignBottom="@id/counter_value" />
+        </RelativeLayout>
+        <TextView android:id="@id/counter_text_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/main_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

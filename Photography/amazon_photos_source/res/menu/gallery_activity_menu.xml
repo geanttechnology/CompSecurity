@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/f_ic_bulk_edit_dark_24dp" android:id="@id/select_mode_action" android:title="@string/adrive_gallery_common_overflow_menu_select" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_album_create" android:id="@id/create_album_button" android:visible="false" android:title="@string/adrive_gallery_album_create_album" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_album_create" android:id="@id/add_to_album_button" android:visible="false" android:title="@string/adrive_gallery_album_add_to_album" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_bulk_edit_dark_24dp" android:id="@id/edit_album_button" android:visible="false" android:title="@string/adrive_gallery_common_overflow_menu_edit" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_share_amazon_dark" android:id="@id/share_album_button" android:visible="false" android:title="@string/adrive_gallery_common_dialog_share_single" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_information_dark_24dp" android:id="@id/album_info_button" android:visible="false" android:title="@string/adrive_gallery_album_info" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_camera_dark_24dp" android:id="@id/camera_button" android:title="@string/adrive_gallery_common_actionbar_camera" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_whisperplay_dark_24dp" android:id="@id/whisper_button" android:title="@string/adrive_gallery_common_actionbar_second_screen" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_share_dark_24dp" android:id="@id/share_button" android:title="@string/adrive_gallery_common_dialog_share_multi" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_edit_dark_24dp" android:id="@id/single_view_menu_edit" android:title="@string/adrive_gallery_common_overflow_menu_edit" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_album_remove" android:id="@id/remove_button" android:title="@string/adrive_gallery_album_remove_from_album_dialog_confirm" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_delete_dark_24dp" android:id="@id/delete_button" android:title="@string/adrive_gallery_common_actionbar_delete" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_slideshow_dark_24dp" android:id="@id/slideshow_button" android:title="@string/adrive_gallery_common_actionbar_slideshow" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_cloud_download_dark_24dp" android:id="@id/single_view_menu_download" android:title="@string/adrive_gallery_common_actionbar_download" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_cloud_upload_dark_24dp" android:id="@id/single_view_menu_upload" android:title="@string/adrive_gallery_common_actionbar_upload" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_image_rewind_dark_24dp" android:id="@id/rewind_chooser_button" android:title="@string/adrive_gallery_image_rewind_action" />
+    <item android:icon="@drawable/ic_hide" android:id="@id/hide_button" android:visible="false" android:title="@string/adrive_gallery_hide_action" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_show" android:id="@id/unhide_button" android:visible="false" android:title="@string/adrive_gallery_unhide_action" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_sort_dark_24dp" android:id="@id/sort_button" android:title="@string/adrive_gallery_common_actionbar_sort" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_print_dark_24dp" android:id="@id/single_view_menu_print" android:title="@string/adrive_gallery_common_actionbar_print" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_information_dark_24dp" android:id="@id/single_view_menu_info" android:title="@string/adrive_gallery_common_photo_info" app:showAsAction="ifRoom" />
+    <item android:id="@id/wallpaper_button" android:title="@string/adrive_gallery_common_actionbar_wallpaper" app:showAsAction="ifRoom" />
+    <item android:id="@id/set_cover_photo_button" android:title="@string/adrive_gallery_set_cover_photo_action" app:showAsAction="never" />
+</menu>

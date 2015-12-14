@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:background="@color/local_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/materials_contrainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginBottom="50.0dip" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/actionBarLayout" android:background="@color/ui_action_bar_color" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <FrameLayout android:layout_gravity="top|left|center" android:id="@id/btn_cancel" android:layout_width="90.0dip" android:layout_height="50.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView2" android:background="@drawable/back_btn" android:layout_width="59.0dip" android:layout_height="44.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="top|right|center" android:id="@id/btn_save" android:layout_width="80.0dip" android:layout_height="48.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/button_txt_color" android:layout_gravity="right|center" android:id="@id/txtSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:text="@string/save" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/btn_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="145.0dip">
+        <Button android:textSize="18.0sp" android:layout_gravity="left" android:id="@id/edit_type_btn" android:background="@drawable/btn_closetab_down" android:layout_width="45.0dip" android:layout_height="45.0dip" android:onClick="OnTypeEditClicked" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/actionBarLayout2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="50.0dip">
+        <Button android:textSize="18.0sp" android:layout_gravity="right" android:id="@id/flip_type_btn" android:background="@drawable/flip_type_btn" android:layout_width="38.0dip" android:layout_height="38.0dip" />
+        <FrameLayout android:layout_gravity="bottom" android:background="@color/adline" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ly_mask" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ly_styleview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="50.0dip">
+        <com.instamag.activity.commonview.TStyleCollectionView android:id="@id/bottomStyleView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/bannerContainerID" android:tag="bannerRelative" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</FrameLayout>

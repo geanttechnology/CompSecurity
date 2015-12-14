@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.livemixtapes">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission android:name="com.livemixtapes.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.livemixtapes.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="true" android:icon="@drawable/appicon" android:label="@string/app_name" android:name="com.livemixtapes.App" android:theme="@style/myTheme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name=".SplashActivity" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Login" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".SignUp" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MixtapesActivity"/>
+        <activity android:name=".WorldActivity"/>
+        <activity android:label="Now Playing" android:launchMode="singleTask" android:name=".NowPlayingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SearchActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".CommentsActivity"/>
+        <activity android:name=".CallbackActivity"/>
+        <activity android:name=".profile.SeeAllList" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.SelectedPlayList"/>
+        <activity android:launchMode="singleTask" android:name=".Mixtape" android:screenOrientation="portrait"/>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.livemixtapes"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.livemixtapes.GCMIntentService"/>
+        <service android:enabled="true" android:name="com.livemixtapes.LMTService" android:stopWithTask="true">
+            <intent-filter>
+                <action android:name="com.livemixtapes.action.TOGGLE_PLAYBACK"/>
+                <action android:name="com.livemixtapes.action.PLAY"/>
+                <action android:name="com.livemixtapes.action.PAUSE"/>
+                <action android:name="com.livemixtapes.action.SKIP"/>
+                <action android:name="com.livemixtapes.action.PREVIOUS"/>
+                <action android:name="com.livemixtapes.action.REWIND"/>
+                <action android:name="com.livemixtapes.action.STOP"/>
+                <action android:name="com.livemixtapes.action.IMAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.livemixtapes.action.URL"/>
+                <data android:scheme="http"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </service>
+        <receiver android:name=".MusicIntentReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

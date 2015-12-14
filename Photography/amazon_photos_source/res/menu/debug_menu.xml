@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/collection_menu_debug_endpoint" android:title="1Lens Endpoint">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/collection_menu_debug_endpoint_prod" android:title="Production" />
+                <item android:id="@id/collection_menu_debug_endpoint_1box" android:title="1Box (NA)" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@id/collection_menu_debug_ftue" android:title="FTUE">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/collection_menu_debug_ftue_launch_flow" android:title="Launch FTUE Flow" />
+                <item android:id="@id/collection_menu_debug_ftue_show_reminder" android:title="Show Reminder" />
+                <item android:id="@id/collection_menu_debug_ftue_clear_reminder_flag" android:title="Clear Saw Reminder Flag" />
+                <item android:id="@id/collection_menu_debug_ftue_clear_ftue_complete_flag" android:title="Clear FTUE Complete Flag" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@id/collection_menu_debug_demo" android:title="Demo Mode Debug">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/collection_menu_debug_demo_true" android:title="Set Force Demo Mode to True" />
+                <item android:id="@id/collection_menu_debug_demo_false" android:title="Set Force Demo Mode to False" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@id/collection_menu_debug_facebook" android:title="Facebook Debug">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/collection_menu_debug_facebook_get_real_permissions" android:title="Get Actual Permissions" />
+                <item android:id="@id/collection_menu_debug_facebook_force_no_photos_permissions" android:title="Simulate No Photos Permissions" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@id/collection_menu_debug_sync_media_store_async" android:title="Sync Media Store" />
+    <item android:id="@id/collection_menu_debug_auto_upload_dialog" android:title="Show AutoUpload Dialog" />
+    <item android:id="@id/collection_menu_debug_video" android:title="Video Support">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/collection_menu_debug_video_enable" android:title="Enable Video" />
+                <item android:id="@id/collection_menu_debug_video_disable" android:title="Disable Video" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@id/collection_menu_debug_video_quality" android:title="Video Quality">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/collection_menu_debug_video_quality_auto" android:title="Auto" />
+                <item android:id="@id/collection_menu_debug_video_quality_360p" android:title="360p (480x360)" />
+                <item android:id="@id/collection_menu_debug_video_quality_480p" android:title="480p (720x480)" />
+                <item android:id="@id/collection_menu_debug_video_quality_720p" android:title="720p (1280x720)" />
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/left_panel_header" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_view_header_height">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Headline" android:textColor="@android:color/white" android:layout_gravity="top|left|center" android:paddingLeft="@dimen/nav_pane_padding" android:paddingTop="@dimen/nav_pane_top_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_app_name_fos" />
+    </LinearLayout>
+    <include layout="@layout/left_panel_divider" />
+    <com.amazon.gallery.thor.widget.AndroidNavigationUploadView android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/nav_pane_padding" />
+    <include layout="@layout/left_panel_divider" />
+</LinearLayout>

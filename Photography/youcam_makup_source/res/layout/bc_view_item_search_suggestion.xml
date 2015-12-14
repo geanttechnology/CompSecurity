@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bc_issue_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bc_general_radius_white_background_no_border" android:padding="@dimen/t10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t1dp" android:layout_marginBottom="@dimen/t1dp">
+        <ImageView android:id="@id/search_icon" android:layout_width="@dimen/t16dp" android:layout_height="@dimen/t16dp" android:layout_marginLeft="@dimen/t5dp" android:src="@drawable/bc_search_icon" android:contentDescription="@string/app_name" />
+        <com.rockerhieu.emojicon.EmojiconTextView android:textSize="@dimen/t16sp" android:textStyle="bold" android:ellipsize="end" android:gravity="left" android:id="@id/suggestion_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t15dp" android:maxLines="1" style="@style/BcDefaultFontStyle" />
+    </LinearLayout>
+</FrameLayout>

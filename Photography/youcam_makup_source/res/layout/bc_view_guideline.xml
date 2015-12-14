@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#b0000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/fragment_bottombar_space" android:layout_width="fill_parent" android:layout_alignParentBottom="true" style="@style/BcBottomBarPanelStyle" />
+    <RelativeLayout android:id="@id/bc_guideline_arrow_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/fragment_bottombar_space">
+        <ImageView android:id="@id/bc_guideline_arrow_one" android:layout_width="@dimen/f40dp" android:layout_height="@dimen/f220dp" android:layout_marginLeft="@dimen/f9dp" android:src="@drawable/bc_guideline_arrow_01" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/bc_guideline_arrow_two" android:layout_width="@dimen/f16dp" android:layout_height="@dimen/f55dp" android:layout_marginLeft="@dimen/f90dp" android:src="@drawable/bc_guideline_arrow_02" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/bc_guideline_arrow_three" android:layout_width="@dimen/f40dp" android:layout_height="@dimen/f313dp" android:layout_marginLeft="@dimen/f150dp" android:src="@drawable/bc_guideline_arrow_03" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/bc_guideline_arrow_four" android:layout_width="@dimen/f20dp" android:layout_height="@dimen/f80dp" android:layout_marginLeft="@dimen/f240dp" android:src="@drawable/bc_guideline_arrow_04" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/bc_guideline_arrow_five" android:layout_width="@dimen/f34dp" android:layout_height="@dimen/f260dp" android:layout_marginLeft="@dimen/f313dp" android:src="@drawable/bc_guideline_arrow_05" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+        <TextView android:layout_width="@dimen/f105dp" android:layout_marginLeft="@dimen/f7dp" android:text="@string/bc_guideline_arrow_left_desc" android:layout_above="@id/bc_guideline_arrow_one" style="@style/BcGuidelineArrowDescStyle" />
+        <TextView android:layout_width="@dimen/f100dp" android:layout_marginLeft="@dimen/f55dp" android:text="@string/bc_guideline_arrow_discover_desc" android:layout_above="@id/bc_guideline_arrow_two" style="@style/BcGuidelineArrowDescStyle" />
+        <TextView android:layout_width="@dimen/f110dp" android:layout_marginLeft="@dimen/f120dp" android:text="@string/bc_guideline_arrow_center_desc" android:layout_above="@id/bc_guideline_arrow_three" style="@style/BcGuidelineArrowDescStyle" />
+        <TextView android:layout_width="@dimen/f112dp" android:layout_marginLeft="@dimen/f200dp" android:text="@string/bc_guideline_arrow_notification_desc" android:layout_above="@id/bc_guideline_arrow_four" style="@style/BcGuidelineArrowDescStyle" />
+        <TextView android:layout_width="@dimen/f105dp" android:layout_marginLeft="@dimen/f260dp" android:text="@string/bc_guideline_arrow_right_desc" android:layout_above="@id/bc_guideline_arrow_five" style="@style/BcGuidelineArrowDescStyle" />
+    </RelativeLayout>
+    <ImageView android:id="@id/bc_me_logo" android:layout_width="@dimen/f200dp" android:layout_height="@dimen/f40dp" android:layout_marginTop="@dimen/f40dp" android:src="@drawable/bc_login_logo" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

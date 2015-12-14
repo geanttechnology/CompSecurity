@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_red" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/login_animated_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/login_animated_transition" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="96.0dip" android:layout_alignParentTop="true">
+        <include layout="@layout/fragment_login_main" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/login_main_layout_skip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_main_skip_part_one" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="12.0sp" android:textColor="@android:color/primary_text_dark_nodisable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/login_main_skip_part_two" />
+    </LinearLayout>
+</RelativeLayout>

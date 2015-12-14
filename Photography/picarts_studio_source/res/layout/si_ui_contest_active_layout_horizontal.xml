@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Material.CardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/wap_active_image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/wap_active_image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:minHeight="150.0dip" android:contentDescription="@string/contest_title_active" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/wap_active_info_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/space_2dp" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_12dp">
+                    <TextView android:textSize="@dimen/contest_time_left_text_size" android:textColor="@color/text_color_dark_gray" android:id="@id/wap_active_time_left_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_contest_time" android:drawablePadding="@dimen/space_4dp" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/contest_time_left_text_size" android:textColor="@color/text_color_dark_gray" android:gravity="bottom" android:id="@id/wap_pics_cout_txt" android:paddingRight="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20dp" android:drawableLeft="@drawable/ic_image_mini" android:drawablePadding="@dimen/space_4dp" android:layout_alignParentRight="true" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/contest_desc_text_size" android:textColor="@color/text_color_black" android:ellipsize="end" android:id="@id/wap_active_description_txt" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp" android:layout_weight="1.0" />
+                <View android:background="@color/gray_e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="@dimen/contest_rules_button_text_size" android:textColor="@color/text_color_dark_gray" android:id="@id/read_contest_rules_id" android:background="@drawable/btn_borderless_material_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_read_the_rules" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="@dimen/contest_submit_button_text_size" android:textColor="@color/temp_6" android:id="@id/wap_active_submit_btn" android:background="@drawable/btn_borderless_material_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contest_submit_button_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

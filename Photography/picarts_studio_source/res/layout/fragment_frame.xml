@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/editor_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.editor.view.FrameEditorView android:id="@id/editor" android:background="@color/editor_bg" android:padding="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/panel_edit_item" android:background="@drawable/panel_bottom_transparent" android:paddingLeft="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:gravity="left" android:id="@id/opacity_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="84.0dip" />
+            <SeekBar android:id="@id/opacity_seekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:maxWidth="256.0dip" android:max="255" android:progress="255" android:layout_weight="1.0" />
+            <Spinner android:id="@id/blend_mode_spinner" android:layout_width="96.0dip" android:layout_height="fill_parent" android:spinnerMode="dropdown" style="@style/Widget.AppCompat.Spinner" />
+            <FrameLayout android:id="@id/frameColorPreview_container" android:background="?selectableItemBackground" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size">
+                <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/frameColor_preview" android:layout_width="@dimen/drawing_bottom_items_icon_size" android:layout_height="@dimen/drawing_bottom_items_icon_size" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/btn_cancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            <include layout="@layout/separator_horizontal" />
+            <ImageButton android:id="@id/btn_rotate_ccw" android:src="@drawable/ic_action_rotate_ccw_t" android:baselineAlignBottom="false" style="@style/Widget.Picsart.ImageButton.Action" />
+            <ImageButton android:id="@id/btn_rotate_cw" android:src="@drawable/ic_action_rotate_cw_t" android:baselineAlignBottom="false" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/btn_chooseFrame" android:src="@drawable/ic_action_frame_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            <ImageButton android:id="@id/btn_done" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/ad" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/editor_ad_layout" />
+</LinearLayout>

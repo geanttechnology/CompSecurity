@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/si_ui_login_picsart_header_img" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerCrop" />
+        <TextView android:textSize="21.0sp" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/si_ui_login_picsart_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="52.0dip" android:layout_marginRight="52.0dip" android:layout_marginBottom="@dimen/space_56dp" android:text="@string/invite_ad_free_auto_login_text" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/si_ui_social_accounts_login_container" android:paddingLeft="@dimen/space_32dp" android:paddingTop="@dimen/space_32dp" android:paddingRight="@dimen/space_32dp" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/si_ui_socialin_sign_fb" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/signin_fb_button_square" />
+            <TextView android:textColor="@color/color_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_connect_with_facebook" android:textAllCaps="true" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/si_ui_socialin_sign_googleplus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/signin_gplus_button_square_redeem" />
+                <TextView android:textColor="@color/color_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_googleplus" android:textAllCaps="true" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/si_ui_socialin_sign_twitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/signin_twitter_button_square" />
+                <TextView android:textColor="@color/color_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_twitter" android:textAllCaps="true" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

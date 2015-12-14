@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" style="@style/BcCelebrityInfoBannerStyle">
+        <com.cyberlink.beautycircle.view.widgetpool.common.NonSwipableViewPager android:id="@id/me_ad_view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/me_ad_view_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/setting_btn" android:clickable="true" android:layout_marginRight="@dimen/t4dp" android:src="@drawable/bc_topbar_setting" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" style="@style/BcHomeButtonStyle" />
+        <ImageView android:id="@id/add_btn" android:clickable="true" android:src="@drawable/bc_topbar_add" android:layout_toLeftOf="@id/setting_btn" android:layout_alignParentTop="true" android:contentDescription="@string/app_name" style="@style/BcHomeButtonStyle" />
+    </RelativeLayout>
+</LinearLayout>

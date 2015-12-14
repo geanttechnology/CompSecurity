@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/switcher_border_offset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <solid android:color="@color/dark_blue" />
+        <stroke android:width="@dimen/switcher_border" android:color="@color/dark_blue" />
+        <corners android:topRightRadius="@dimen/switcher_corner" android:bottomRightRadius="@dimen/switcher_corner" />
+    </shape>
+</inset>

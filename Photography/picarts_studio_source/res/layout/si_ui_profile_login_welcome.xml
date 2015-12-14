@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/gray_e6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_24" android:textStyle="normal" android:textColor="@color/text_color_black" android:id="@id/welcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16dp" android:text="@string/welcome_text" android:drawableRight="@drawable/ic_picsart_logo" />
+            <FrameLayout android:id="@id/welcome_user_img_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16dp">
+                <ImageView android:layout_gravity="center" android:id="@id/welcome_user_img" android:layout_width="140.0dip" android:layout_height="140.0dip" android:src="@drawable/si_ui_default_avatar" />
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/si_ui_welcome_camera_photo" />
+                <View android:layout_gravity="bottom|right|center" android:id="@id/spinner_anchor" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/welcome_username_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16dp">
+                <TextView android:textSize="@dimen/textSize_18" android:textStyle="bold" android:textColor="@color/text_color_black" android:id="@id/welcome_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\@username" android:maxLength="20" />
+                <Button android:textSize="@dimen/textSize_12" android:textColor="@color/color_white" android:id="@id/welcome_change_btn" android:background="@drawable/xml_si_ui_welcome_next_btn" android:clickable="true" android:layout_width="64.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_8dp" android:text="@string/btn_change_username" />
+            </LinearLayout>
+            <FrameLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/space_16dp" android:layout_weight="1.0">
+                <EditText android:textColor="@color/text_color_dark_gray" android:gravity="left" android:id="@id/welcome_text" android:background="@color/color_white" android:paddingLeft="@dimen/space_32dp" android:paddingTop="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="120.0dip" android:hint="@string/profile_title_about_me" android:cursorVisible="true" android:imeOptions="actionDone" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_username" />
+                <TextView android:textColor="@color/text_color_dark_gray" android:layout_gravity="bottom|right|center" android:id="@id/about_me_symbols_count" android:padding="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_me_symbols" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:id="@id/welcome_next_btn" android:background="@drawable/xml_si_ui_welcome_next_btn" android:clickable="true" android:layout_width="@dimen/profile_signin_button_width" android:layout_height="48.0dip" android:layout_marginTop="@dimen/space_16dp" android:layout_marginBottom="@dimen/space_16dp">
+                <ImageView android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right_arrow_white" android:contentDescription="@string/btn_signin" />
+                <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/color_white" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_next" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/post_top_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcDiscoverAuthorPanelStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/post_avatar" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:bc_default_image="@drawable/bc_avatar_mugshot" style="@style/BcDiscoverAuthorAvatarStyle" />
+    <ImageView android:background="@drawable/bc_avatar_circle_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/post_avatar" android:layout_alignTop="@id/post_avatar" android:layout_alignRight="@id/post_avatar" android:layout_alignBottom="@id/post_avatar" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/avatar_crown" android:visibility="gone" android:layout_width="@dimen/t12dp" android:layout_height="@dimen/t10dp" android:src="@drawable/bc_user_ico_master" android:layout_alignLeft="@id/post_avatar" android:layout_alignTop="@id/post_avatar" android:contentDescription="@string/app_name" />
+    <com.rockerhieu.emojicon.EmojiconTextView android:textStyle="normal" android:gravity="top" android:id="@id/post_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toRightOf="@id/post_avatar" android:layout_alignParentTop="true" style="@style/BcDiscoverAuthorTextStyle" />
+    <TextView android:gravity="top" android:id="@id/circle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="true" android:layout_toRightOf="@id/post_avatar" android:layout_below="@id/post_author" style="@style/BcDiscoverAgoTextStyle" />
+</RelativeLayout>

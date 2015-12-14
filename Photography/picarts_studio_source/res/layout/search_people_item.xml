@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_marginLeft="@dimen/space_16dp" style="@style/Widget.Picsart.Avatar" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginRight="@dimen/space_8dp" android:layout_weight="1.0">
+            <TextView android:id="@id/username" android:layout_marginBottom="@dimen/space_2dp" style="@style/TextAppearance.Picsart.Light.Username" />
+            <ImageView android:id="@id/verified_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_2dp" android:layout_marginBottom="@dimen/space_2dp" android:src="@drawable/list_verifed_badge" android:layout_toRightOf="@id/username" android:layout_alignBottom="@id/username" />
+            <TextView android:id="@id/display_name" android:layout_below="@id/username" style="@style/TextAppearance.Picsart.Light.Subusername" />
+        </RelativeLayout>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/btn_follow" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginRight="@dimen/space_16dp" android:button="@drawable/btn_follow" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/gray_e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

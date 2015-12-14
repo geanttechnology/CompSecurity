@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/item_drawer_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/btn_drawer_normal" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/drawer_text_primary" android:id="@id/item_drawer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/item_drawer_icon" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/item_drawer_icon" />
+    <View android:id="@id/item_drawer_divisor" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

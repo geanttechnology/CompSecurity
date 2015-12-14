@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/panel_top_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/addPhoto_preview_effectId" android:src="@drawable/ic_action_effects_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/addPhoto_preview_cropId" android:src="@drawable/ic_action_crop_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/addPhoto_preview_shapeCropId" android:src="@drawable/ic_action_shape_crop_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/addPhoto_preview_freeCropId" android:src="@drawable/ic_action_cut_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/addPhoto_preview_frameId" android:src="@drawable/ic_action_frame_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/addPhoto_preview_border" android:src="@drawable/ic_action_border_t" style="@style/Widget.Picsart.ImageButton.Action" />
+</LinearLayout>

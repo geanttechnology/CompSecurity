@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bottom_bar" android:layout_width="fill_parent" style="@style/BcBottomBarPanelStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/bottom_bar_tab_feed" android:background="@drawable/bc_bottombar_tab" style="@style/BcBottomBarTabStyle">
+        <ImageView android:src="@drawable/bc_bottombar_tab_feed_selector" style="@style/BcBottomBarTabIconStyle" />
+        <TextView android:text="@string/bc_launcher_feed" style="@style/BcBottomBarTabTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/bottom_bar_tab_discover" style="@style/BcBottomBarTabStyle">
+        <ImageView android:src="@drawable/bc_bottombar_tab_discover_selector" style="@style/BcBottomBarTabIconStyle" />
+        <TextView android:text="@string/bc_launcher_discovery" style="@style/BcBottomBarTabTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/bottom_bar_tab_products" style="@style/BcBottomBarTabStyle">
+        <ImageView android:src="@drawable/bc_bottombar_tab_products_selector" style="@style/BcBottomBarTabIconStyle" />
+        <TextView android:text="@string/bc_launcher_products" style="@style/BcBottomBarTabTextStyle" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/bottom_bar_tab_notifications" style="@style/BcBottomBarTabStyle">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:src="@drawable/bc_bottombar_tab_notifications_selector" style="@style/BcBottomBarTabIconStyle" />
+            <TextView android:text="@string/bc_launcher_notifications" style="@style/BcBottomBarTabTextStyle" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/t42dp" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="top|right|center" android:id="@id/bc_new_alert" android:layout_width="@dimen/t16dp" android:layout_height="@dimen/t16dp" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/bc_new_alert_outter" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bc_new_alert_outter" android:alpha="0.4" />
+                <ImageView android:padding="@dimen/t2dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bc_new_alert_inner" />
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:id="@id/bottom_bar_tab_me" style="@style/BcBottomBarTabStyle">
+        <ImageView android:src="@drawable/bc_bottombar_tab_me_selector" style="@style/BcBottomBarTabIconStyle" />
+        <TextView android:text="@string/bc_launcher_me" style="@style/BcBottomBarTabTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/bottom_bar_tab_developer" android:visibility="gone" style="@style/BcBottomBarTabStyle">
+        <ImageView android:src="@drawable/bc_bottombar_tab_add_selector" style="@style/BcBottomBarTabIconStyle" />
+        <TextView android:text="@string/bc_launcher_developer" style="@style/BcBottomBarTabTextStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/foursquare_main_layout" android:background="@color/color_black" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/foursquare_user_layout" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/foursquare_user_image" android:background="@drawable/si_ui_default_avatar" android:scrollbars="none" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="@dimen/space_8dp" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:gravity="center_vertical" android:id="@id/foursquare_user_login_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_4dp" android:text="Username" />
+        <TextView android:textSize="@dimen/textSize_10" android:textColor="@color/text_color_light_gray" android:gravity="center_vertical" android:id="@id/si_ui_gallery_user_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_4dp" android:maxLines="1" />
+    </LinearLayout>
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:paddingLeft="@dimen/space_12dp" android:paddingRight="@dimen/space_12dp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/foursquare_user_layout" android:layout_centerHorizontal="true">
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:paddingRight="@dimen/space_4dp" android:scrollbars="vertical" android:layout_width="300.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_12dp">
+            <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/foursquare_uploaded_pic_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginTop="@dimen/space_12dp" android:layout_marginRight="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_12dp">
+                <ImageView android:layout_gravity="left" android:id="@id/foursquare_uploaded_picture" android:layout_width="110.0dip" android:layout_height="110.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/foursquare_checkin_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginLeft="@dimen/space_4dp">
+                    <EditText android:textSize="@dimen/textSize_14" android:textStyle="normal" android:textColor="@color/text_color_black" android:gravity="top" android:id="@id/foursquare_checkin_shout" android:background="@drawable/xml_si_ui_text_field_bg" android:paddingLeft="@dimen/space_16dp" android:paddingTop="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" android:hint="@string/txt_checkin_shout" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/foursquare_action_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12dp" android:layout_below="@id/foursquare_uploaded_pic_layout">
+                <RelativeLayout android:id="@id/foursquare_location_layout" android:background="@drawable/btn_borderless_material_dark" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="@dimen/space_2dp">
+                    <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="@string/social_where_are_you" android:maxLines="1" android:layout_centerVertical="true" />
+                    <LinearLayout android:visibility="visible" android:layout_width="160.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/textView2" android:layout_centerVertical="true">
+                        <TextView android:textSize="@dimen/textSize_10" android:textColor="@color/text_color_light_gray" android:gravity="center" android:id="@id/foursquare_location_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="3" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/foursquare_location_btn" android:clickable="false" android:duplicateParentState="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/space_16dp" android:src="@drawable/xml_ic_map_upload" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/space_12dp" android:layout_below="@id/foursquare_action_layout">
+                <Button android:textStyle="normal" android:id="@id/foursquare_upload_button" android:layout_width="110.0dip" android:layout_height="40.0dip" android:text="@string/button_checkin" android:layout_alignParentRight="true" style="@android:style/Widget.Holo.Button.Small" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

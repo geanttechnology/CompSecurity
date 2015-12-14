@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/editor_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.socialin.android.photo.collage.ShapeCropView android:id="@id/crop_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/shapeListContainer" android:layout_below="@id/top_panel" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_panel" android:background="@drawable/panel_top_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/photo_crop_image_discard" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <TextView android:textAppearance="@android:style/Animation.SearchBar" android:gravity="center" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/save_crop_image_as_clipart" android:src="@drawable/icon_save_as_my_clipart" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/photo_crop_image_save" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <com.picsart.effects.view.WrappingSlidingDrawer android:id="@id/slider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/shapeListContainer" android:handle="@id/handle" android:content="@id/content">
+        <ImageView android:id="@id/handle" android:background="@drawable/handle_settings_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@drawable/panel_drawer_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.picsart.effects.view.WrappingSlidingDrawer>
+    <FrameLayout android:id="@id/shapeListContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ad" android:layout_alignWithParentIfMissing="true">
+        <ImageView android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left" />
+        <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" />
+        <HorizontalScrollView android:background="@drawable/panel_bottom_transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <LinearLayout android:orientation="horizontal" android:id="@id/shapeContainer" android:paddingLeft="@dimen/space_16dp" android:paddingRight="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </FrameLayout>
+    <FrameLayout android:id="@id/ad" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/editor_ad_layout" />
+</RelativeLayout>

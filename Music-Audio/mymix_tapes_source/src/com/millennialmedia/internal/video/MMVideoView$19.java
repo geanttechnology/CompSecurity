@@ -1,0 +1,29 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.millennialmedia.internal.video;
+
+
+// Referenced classes of package com.millennialmedia.internal.video:
+//            MMVideoView
+
+class val.percent
+    implements Runnable
+{
+
+    final MMVideoView this$0;
+    final int val$percent;
+
+    public void run()
+    {
+        MMVideoView.access$700(MMVideoView.this).onBufferingUpdate(MMVideoView.this, val$percent);
+    }
+
+    ideoViewListener()
+    {
+        this$0 = final_mmvideoview;
+        val$percent = I.this;
+        super();
+    }
+}

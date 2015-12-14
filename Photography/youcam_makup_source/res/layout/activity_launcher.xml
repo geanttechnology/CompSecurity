@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/lancher_logo_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/lancherfunctionPanel">
+        <ImageView android:id="@id/launcher_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/launcher_images" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <ImageView android:layout_width="@dimen/f230dp" android:layout_height="@dimen/f35dp" android:layout_marginLeft="@dimen/f13dp" android:layout_marginTop="@dimen/f16dp" android:src="@drawable/title" android:scaleType="fitStart" android:contentDescription="@null" />
+        <RelativeLayout android:id="@id/btnBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewFlipper android:id="@id/bigBangViewFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <View android:id="@id/launcherCLLogo" android:layout_width="@dimen/f230dp" android:layout_height="@dimen/f35dp" android:layout_marginLeft="@dimen/f13dp" android:layout_marginTop="@dimen/f16dp" android:scaleType="fitStart" />
+        <View android:id="@id/launcherButterfly" android:layout_width="@dimen/f50dp" android:layout_height="@dimen/f50dp" android:layout_alignParentRight="true" />
+        <View android:orientation="vertical" android:id="@id/launcherVelocityScrollViewContainerBackground" android:background="#55ffffff" android:clickable="true" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/launcherVelocityScrollViewContainer" android:layout_alignBottom="@id/launcherVelocityScrollViewContainer" />
+        <LinearLayout android:orientation="vertical" android:id="@id/launcherVelocityScrollViewContainer" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.cyberlink.youcammakeup.widgetpool.common.HorizontalScrollView android:id="@id/launcherVelocityScrollView" android:scrollbars="none" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="@dimen/f86dp" android:layout_marginTop="@dimen/f10dp" android:layout_marginBottom="@dimen/f10dp" android:overScrollMode="never">
+                <LinearLayout android:orientation="horizontal" android:id="@id/launcherBigBangRefreshRegion" android:clipChildren="false" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View android:layout_width="@dimen/f16dp" android:layout_height="fill_parent" />
+                    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/launcherNaturalMakeupBtn" style="@style/LauncherOptionPanelStyle">
+                        <ImageView android:src="@drawable/ico_natural_n" android:contentDescription="@null" style="@style/LauncherOptionImageStyle" />
+                        <TextView android:text="@string/launcher_natural_makeup" style="@style/LauncherOptionTextStyle" />
+                    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>
+                    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/launcherCustomLooksBtn" style="@style/LauncherOptionPanelStyle">
+                        <ImageView android:src="@drawable/icon_lnc_looks" android:contentDescription="@null" style="@style/LauncherOptionImageStyle" />
+                        <TextView android:text="@string/launcher_costume_looks" style="@style/LauncherOptionTextStyle" />
+                    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>
+                    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/launcherBeautyCicleBtn" android:background="@null" style="@style/LauncherOptionPanelStyle">
+                        <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout android:id="@id/bcTileRefreshRegion" android:layout_width="fill_parent" android:layout_height="fill_parent" app:mask="@drawable/image_mask_circle" app:porterduffxfermode="DST_IN">
+                            <include layout="@layout/view_launcher_bigbang_bc_tile_original" />
+                            <include layout="@layout/view_launcher_bigbang_bc_tile_notification" />
+                        </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+                        <View android:id="@id/launcherBeautyCircleNewIcon" style="@style/LauncherNewIconStyle" />
+                    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>
+                    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/launcher_dfp_parent" android:background="@null" style="@style/LauncherOptionPanelStyle">
+                        <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout android:layout_gravity="center" android:id="@id/launcher_dfp_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:mask="@drawable/image_mask_circle" app:porterduffxfermode="DST_IN" />
+                    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>
+                    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/launcherYCPTile" android:background="@null" style="@style/LauncherOptionPanelStyle">
+                        <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:mask="@drawable/image_mask_circle" app:porterduffxfermode="DST_IN">
+                            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ico_ycp" android:contentDescription="@null" />
+                        </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+                    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>
+                    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/launcherYCNTile" android:background="@null" style="@style/LauncherOptionPanelStyle">
+                        <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:mask="@drawable/image_mask_circle" app:porterduffxfermode="DST_IN">
+                            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ycn_tile" android:contentDescription="@null" />
+                        </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+                    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>
+                    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/launcherPromoteTile" android:visibility="gone" style="@style/LauncherOptionPanelStyle">
+                        <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout android:id="@id/launcherPromoteTileMask" android:layout_width="fill_parent" android:layout_height="fill_parent" app:mask="@drawable/image_mask_circle" app:porterduffxfermode="DST_IN">
+                            <ViewFlipper android:id="@id/bigBangPromoteViewFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+                    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>
+                    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/launcherBeautyTipBtn" style="@style/LauncherOptionPanelStyle">
+                        <ImageView android:src="@drawable/icon_tips_n" android:contentDescription="@null" style="@style/LauncherOptionImageStyle" />
+                        <TextView android:text="@string/launcher_beauty_tips" style="@style/LauncherOptionTextStyle" />
+                        <View android:id="@id/launcherBeautyTipNewIcon" style="@style/LauncherNewIconStyle" />
+                    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>
+                    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/launcherFeaturedAppsBtn" style="@style/LauncherOptionPanelStyle">
+                        <ImageView android:src="@drawable/image_selector_launcher_featured_apps" android:contentDescription="@null" style="@style/LauncherOptionImageStyle" />
+                        <TextView android:text="@string/launcher_featured_apps" style="@style/LauncherOptionTextStyle" />
+                    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>
+                </LinearLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.HorizontalScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/lancherfunctionPanel" android:background="@color/white" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/f205dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/LauncherBottomPanel" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/f54dp" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/launcherExtra" android:layout_marginLeft="@dimen/f8dp" android:src="@drawable/image_selector_launcher_buy" android:layout_alignParentLeft="true" android:contentDescription="@null" style="@style/LauncherBottomOptionStyle" />
+            <View android:id="@id/launcherExtraNewIcon" android:layout_alignTop="@id/launcherExtra" android:layout_alignRight="@id/launcherExtra" style="@style/LauncherButtonNewIconStyle" />
+            <ImageView android:id="@id/launcherRecommendBtn" android:src="@drawable/image_selector_launcher_hot" android:layout_toRightOf="@id/launcherExtra" android:contentDescription="@null" style="@style/LauncherBottomOptionStyle" />
+            <ImageView android:id="@id/launcherSettingButton" android:layout_marginRight="@dimen/f8dp" android:src="@drawable/image_selector_launcher_setting" android:layout_alignParentRight="true" android:contentDescription="@null" style="@style/LauncherBottomOptionStyle" />
+            <View android:id="@id/launcherNoticeNewIcon" android:layout_alignTop="@id/launcherSettingButton" android:layout_alignRight="@id/launcherSettingButton" style="@style/LauncherButtonNewIconStyle" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/launcherCameraContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/lancherfunctionPanel" android:layout_alignBottom="@id/lancherfunctionPanel" app:reference_height="205">
+        <com.cyberlink.youcammakeup.widgetpool.common.FitRatioFrameLayout android:layout_gravity="center_horizontal" android:id="@id/launcherCamera" android:background="@drawable/shutter_n" android:layout_width="@dimen/f125dp" android:layout_height="@dimen/f125dp" app:child_top="20" app:guideline_width="1" app:guideline_height="1">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/f37dp" android:layout_height="@dimen/f37dp" android:src="@drawable/ico_camera_n" android:contentDescription="@string/app_name" />
+        </com.cyberlink.youcammakeup.widgetpool.common.FitRatioFrameLayout>
+        <TextView android:textSize="@dimen/t13sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:id="@id/launcherCameraText" android:paddingTop="@dimen/f2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/launcher_capture_photo" app:child_top="145" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</RelativeLayout>

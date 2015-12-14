@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sourceWDP="360"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:id="@id/makeupCategoryTopToolBar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" app:sourceWDP="360" app:useDeviceDP="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/makeupCategoryBackBtn" android:src="@drawable/image_selector_camera_gohome_btn" android:contentDescription="@string/app_name" style="@style/GeneralTopBtn" />
+        <TextView android:textColor="#ff1e1e1e" android:id="@id/makeupCategoryTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/beauty_tips" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TopBarTextStyle" />
+    </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+    <ScrollView android:id="@id/makeupCategoryScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/makeupAdViewContainer" android:layout_below="@id/makeupCategoryTopToolBar">
+        <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeFrameLayout android:id="@id/makeupCategoryContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sourceWDP="360" app:useDeviceDP="true">
+            <include android:id="@id/naturalLooksCategory" android:layout_width="155.0dip" android:layout_height="142.0dip" android:layout_marginLeft="21.0dip" android:layout_marginTop="5.0dip" layout="@layout/makeup_download_category_item" />
+            <include android:id="@id/costumeLooksCategory" android:layout_width="155.0dip" android:layout_height="142.0dip" android:layout_marginLeft="184.0dip" android:layout_marginTop="5.0dip" layout="@layout/makeup_download_category_item" />
+            <include android:id="@id/eyeShadowCategory" android:layout_width="155.0dip" android:layout_height="142.0dip" android:layout_marginLeft="21.0dip" android:layout_marginTop="155.0dip" layout="@layout/makeup_download_category_item" />
+            <include android:id="@id/eyeLinerCategory" android:layout_width="155.0dip" android:layout_height="142.0dip" android:layout_marginLeft="184.0dip" android:layout_marginTop="155.0dip" layout="@layout/makeup_download_category_item" />
+            <include android:id="@id/eyeLashCategory" android:layout_width="155.0dip" android:layout_height="142.0dip" android:layout_marginLeft="21.0dip" android:layout_marginTop="305.0dip" layout="@layout/makeup_download_category_item" />
+            <include android:id="@id/hairCategory" android:layout_width="155.0dip" android:layout_height="142.0dip" android:layout_marginLeft="184.0dip" android:layout_marginTop="305.0dip" layout="@layout/makeup_download_category_item" />
+            <include android:id="@id/eyeWearCategory" android:layout_width="155.0dip" android:layout_height="142.0dip" android:layout_marginLeft="21.0dip" android:layout_marginTop="455.0dip" layout="@layout/makeup_download_category_item" />
+            <include android:id="@id/accessoryCategory" android:layout_width="155.0dip" android:layout_height="142.0dip" android:layout_marginLeft="184.0dip" android:layout_marginTop="455.0dip" layout="@layout/makeup_download_category_item" />
+            <View android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_marginTop="597.0dip" />
+        </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeFrameLayout>
+    </ScrollView>
+    <View android:id="@id/makeupAdCloseBtn" android:background="@drawable/state_btn_closead" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="26.0dip" android:layout_alignBottom="@id/makeupCategoryScrollView" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/dialogContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/makeupCategoryTopToolBar" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/makeupCategoryRetryDialogContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/makeupAdViewContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>

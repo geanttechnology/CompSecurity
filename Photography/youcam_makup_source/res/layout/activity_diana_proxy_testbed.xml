@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/fill_layout_1" android:layout_width="wrap_content" android:layout_height="368.0dip">
+        <Button android:id="@id/buttonReload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reload" />
+        <Button android:id="@id/buttonRedEyeRemoval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RedEye" />
+        <Button android:id="@id/buttonEyeEnlarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EyeEnlarge" />
+        <Button android:id="@id/buttonEyeBag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EyeBag" />
+        <Button android:id="@id/buttonFaceThin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FaceThin" />
+        <Button android:id="@id/buttonBlush" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Blush" />
+        <TextView android:textSize="13.0sp" android:textColor="#c2000000" android:id="@id/masterTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="#c2000000" android:id="@id/maskTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="#c2000000" android:id="@id/fillstartTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="right" android:id="@id/fill_layout_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+    </RelativeLayout>
+</LinearLayout>

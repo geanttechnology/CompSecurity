@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_75" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/space_4dp" android:layout_above="@id/layout_bottom">
+        <RelativeLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/exception_logo" android:background="@drawable/error_dialog_preview_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/exception_logo" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exception_oops" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_problem" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/color_white" android:id="@id/txt_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:text="@string/help_by_email" />
+                <TextView android:textSize="22.0sp" android:textStyle="bold|italic" android:textColor="@color/text_color_black" android:layout_gravity="right" android:id="@id/btn_preview" android:clickable="true" android:duplicateParentState="true" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:text="@string/preview" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:id="@id/btn_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip" android:text="@string/gen_send" android:singleLine="true" />
+        <Button android:id="@id/btn_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:minWidth="70.0dip" android:text="@string/gen_skip" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

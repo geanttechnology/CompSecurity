@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/u_bg_border_search_token_selected" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffa286c3" android:ellipsize="end" android:id="@id/txt_token" android:padding="@dimen/t4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <ImageView android:id="@id/imageViewDelete" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/u_btn_name_delete" android:layout_toRightOf="@id/txt_token" android:layout_centerVertical="true" />
+</RelativeLayout>

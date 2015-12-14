@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/text_color_dark_gray" android:gravity="center" android:id="@id/start_follow_friends" android:paddingLeft="@dimen/space_56dp" android:paddingRight="@dimen/space_56dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8dp" android:text="@string/txt_start_follow_friends" />
+    <Button android:id="@id/si_ui_login_or_sign_up" android:paddingLeft="@dimen/space_48dp" android:paddingRight="@dimen/space_48dp" android:layout_height="48.0dip" android:layout_margin="@dimen/space_4dp" android:layout_marginTop="@dimen/space_2dp" android:text="@string/btn_find_friends" style="@style/Widget.Picsart.Button.OrangeButton" />
+</LinearLayout>

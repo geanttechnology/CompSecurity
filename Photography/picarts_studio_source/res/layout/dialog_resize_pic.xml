@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/contentPanelId" android:paddingLeft="@dimen/space_24dp" android:paddingTop="@dimen/space_24dp" android:paddingRight="@dimen/space_24dp" android:paddingBottom="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:text="@string/width" />
+        <EditText android:id="@id/resize_pic_width" android:layout_width="64.0dip" android:layout_height="wrap_content" android:maxLength="4" android:inputType="number" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:text="@string/height" />
+        <EditText android:id="@id/resize_pic_height" android:layout_width="64.0dip" android:layout_height="wrap_content" android:maxLength="4" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttonPanelId" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/button_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_ok" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/button_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_cancel" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

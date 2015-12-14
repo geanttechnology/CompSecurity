@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ftue_desktop_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ftue_icon" android:src="@drawable/f_ic_usb_default_dark_48dp" android:tint="@color/icon_tint_color" style="@style/ftue_scale_image" />
+    <include layout="@layout/divider_line" />
+    <TextView android:textColor="@color/primary_text_color" android:id="@id/ftue_header" android:text="@string/adrive_gallery_common_ftue_usb_label" android:singleLine="false" style="@style/ftue_text.large" />
+    <TextView android:textColor="@color/primary_text_color" android:id="@id/ftue_subheader" android:text="@string/adrive_gallery_common_ftue_usb_instructions" style="@style/ftue_text.med" />
+</LinearLayout>

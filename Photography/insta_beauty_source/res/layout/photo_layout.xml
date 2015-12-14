@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="90.0dip" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fotoable.comlib.ui.RecyclingImageView android:id="@id/photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/empty_photo" />
+    <ImageView android:id="@id/photo_check" android:background="@drawable/capture_pictures_selected" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

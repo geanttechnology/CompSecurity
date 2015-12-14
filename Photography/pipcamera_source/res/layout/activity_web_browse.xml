@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/navibar" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:id="@id/back_btn" android:background="@drawable/nav_back_btn" android:layout_width="67.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="backBtnClicked" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="20.0dip" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/downloadProgressbar" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/web_brower" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/navibar" android:layout_alignParentLeft="true" />
+</RelativeLayout>

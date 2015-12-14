@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#20000000" />
+            <size android:height="@dimen/empty_album_action_button_size" android:width="@dimen/empty_album_action_button_size" />
+            <padding android:bottom="3.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/divider_background_color" />
+            <size android:height="@dimen/empty_album_action_button_size" android:width="@dimen/empty_album_action_button_size" />
+        </shape>
+    </item>
+</layer-list>

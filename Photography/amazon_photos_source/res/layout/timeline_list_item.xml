@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/timeline_list_item" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/timeline_text_color" android:gravity="right" android:id="@id/timeline_list_item_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_list_item_title_height" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/timeline_list_item_image" android:paddingTop="@dimen/timeline_list_item_box_padding" android:paddingRight="10.0dip" android:paddingBottom="@dimen/timeline_list_item_box_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/no_date_icon" android:layout_weight="1.0" android:translationX="5.0dip" />
+</LinearLayout>

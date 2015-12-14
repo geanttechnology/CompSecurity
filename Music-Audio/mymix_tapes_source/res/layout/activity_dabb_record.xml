@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_video_share_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:font="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:id="@id/activity_dabb_record_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/activity_dabb_record_top_overlay" android:background="@color/light_dark" android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_centerHorizontal="true">
+        <ImageButton android:id="@id/activity_dabb_record_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ab_back" style="@style/Widget.AppCompat.ActionButton" />
+        <my.googlemusic.play.utils.views.RobotoTextView android:textSize="20.0sp" android:textColor="@android:color/primary_text_dark_nodisable" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/app_bar_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="Record" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" android:marqueeRepeatLimit="marquee_forever" font:typeface="roboto_medium" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/activity_dabb_record_bottom_overlay" android:background="@color/light_dark" android:layout_width="fill_parent" android:layout_height="108.0dip" android:weightSum="3.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageButton android:id="@id/activity_dabb_record_camera_orientation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dabb_rearcamera" android:layout_weight="1.0" style="@style/Widget.AppCompat.ActionButton" />
+        <ImageButton android:id="@id/activity_dabb_record_record" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/squarecamera__camera_snap_unselected" android:layout_weight="1.0" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/activity_dabb_record_done" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dabb_finished" android:layout_weight="1.0" style="@style/Widget.AppCompat.ActionButton" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/activity_dabb_record_progress_recording" android:layout_width="fill_parent" android:layout_height="6.0dip" android:progressDrawable="@drawable/dabb_progressbar" android:layout_above="@id/activity_dabb_record_bottom_overlay" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal" />
+    <com.nhaarman.supertooltips.ToolTipRelativeLayout android:id="@id/activity_dabb_record_progress_tutorial" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

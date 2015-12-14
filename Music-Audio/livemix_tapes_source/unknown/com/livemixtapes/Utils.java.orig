@@ -1,0 +1,255 @@
+package com.livemixtapes;
+
+import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.livemixtapes.database.DBHelper;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.DownloadManager;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.Environment;
+import android.os.Parcelable;
+
+public class Utils {
+	
+	public static final String API_KEY  = "bJGpttXhgbjsLEpbI9VPFj1pvizPrfLh";
+	public static final String API_URL = "https://api.livemixtapes.com/api/";
+<<<<<<< HEAD
+	public static final String USER_AGENT = "LiveMixtapes Android/1.0.31 BETA";
+	public static final String BETA_VERSION = "LiveMixtapes 1.0.31 BETA";
+=======
+	public static final String USER_AGENT = "LiveMixtapes Android/1.0.29";
+	public static final String BETA_VERSION = "LiveMixtapes 1.0.29 BETA";
+>>>>>>> a4cfc7340665d6e8662e8d5ab573b4783104f34e
+	
+	public static void CopyStream(InputStream is, OutputStream os) {
+		final int buffer_size = 1024;
+		try {
+			byte[] bytes = new byte[buffer_size];
+			for (;;) {
+				int count = is.read(bytes, 0, buffer_size);
+				if (count == -1)
+					break;
+				os.write(bytes, 0, count);
+			}
+		} catch (Exception ex) {
+		}
+	}
+
+	// Create Share Intent - Subject is only for Messaging app, URI is Image URI for Instagram
+    public static Intent createShareIntent(PackageManager pm, String subject, String text, Uri uri) {
+    	
+    	//Create an arraylist of whitelisted apps
+    	List<String> whiteList = new ArrayList<String>();
+        whiteList.add("com.instagram.android");
+        whiteList.add("com.facebook.katana");
+        whiteList.add("com.twitter.android");
+        whiteList.add("com.tumblr");
+        whiteList.add("com.android.mms");
+
+        List<Intent> targetedIntents = new ArrayList<Intent>();
+
+        Intent dummy = new Intent(Intent.ACTION_SEND);
+
+        //Get all apps which can receive type text/plain
+        dummy.setType("text/plain");
+        List<ResolveInfo> resInfo = pm.queryIntentActivities(dummy, 0);
+
+        for (ResolveInfo ri : resInfo) {
+        	//Filter based on package name
+            if (ri.activityInfo == null || !whiteList.contains(ri.activityInfo.packageName))
+                continue;
+
+            Intent targetedShareIntent = new Intent(Intent.ACTION_SEND);
+            targetedShareIntent.setType("text/plain");
+            targetedShareIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+            targetedShareIntent.putExtra(Intent.EXTRA_TEXT, text);
+            targetedShareIntent.setPackage(ri.activityInfo.packageName);
+            targetedShareIntent.setClassName(ri.activityInfo.packageName, ri.activityInfo.name);
+            targetedIntents.add(targetedShareIntent);
+        }
+
+        //Get Instagram
+        dummy.setType("image/*");
+        resInfo = pm.queryIntentActivities(dummy, 0);
+        for (ResolveInfo ri : resInfo) {
+            if (ri.activityInfo == null || !ri.activityInfo.packageName.equalsIgnoreCase("com.instagram.android"))
+                continue;
+
+            Intent targetedShareIntent = new Intent(Intent.ACTION_SEND);
+            targetedShareIntent.setType("image/*");
+            targetedShareIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+            targetedShareIntent.putExtra(Intent.EXTRA_TEXT, text);
+            targetedShareIntent.putExtra(Intent.EXTRA_STREAM, uri);
+            targetedShareIntent.setPackage(ri.activityInfo.packageName);
+            targetedShareIntent.setClassName(ri.activityInfo.packageName, ri.activityInfo.name);
+            targetedIntents.add(targetedShareIntent);
+        }
+
+        Intent chooserIntent = Intent.createChooser(targetedIntents.get(0), "Share via");
+        targetedIntents.remove(0);
+        Parcelable[] targetedIntentsParcelable =
+                targetedIntents.toArray(new Parcelable[targetedIntents.size()]);
+        chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, targetedIntentsParcelable);
+        return chooserIntent;
+    }
+    
+    public static void savePreferences(Context mContext, String key,
+			String value) {
+		SharedPreferences sharedPreferences = mContext.getSharedPreferences(
+				"LiveMixTapes", Context.MODE_PRIVATE);
+		SharedPreferences.Editor editor = sharedPreferences.edit();
+		editor.putString(key, value);
+		editor.commit();
+	}
+
+	public static String loadPreferences(Context mContext, String key) {
+		SharedPreferences sharedPreferences = ((Activity) mContext)
+				.getSharedPreferences("LiveMixTapes", Context.MODE_PRIVATE);
+		String val = "";
+		try {
+			val = sharedPreferences.getString(key, "");
+		} catch (Exception e) {
+			val = "";
+		}
+		return val;
+	}
+	
+	public static boolean isFileExists(Context ctx, String fileName)
+	{
+		File mixtapesFolder = new File(ctx.getExternalFilesDir(null) , fileName);
+		
+//		File file = new File(ctx.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS).toString()+ "/LiveMixTapes", fileName);
+//		File mixtapesFolder = new File(Environment.getExternalStorageDirectory() + "/Documents/LiveMixTapes");
+//		if(!mixtapesFolder.exists())
+//			mixtapesFolder.mkdirs();
+//	    File file = new File(mixtapesFolder.getAbsolutePath(),fileName); 
+		if(mixtapesFolder.exists())
+			return true;
+		return false;
+	}
+	
+//	public static File getLivemixtapesFolder(Context ctx)
+//	{
+//	    File file = new File(ctx.getExternalFilesDir(null), "DemoFile.jpg");
+//	    File mixtapesFolder = new File(ctx.getExternalFilesDir(Environment.DIRECTORY_MUSIC) + "/Documents/LiveMixTapes");
+////		File mixtapesFolder = new File(Environment.getExternalStorageDirectory() + "/Documents/LiveMixTapes");
+//		if(!mixtapesFolder.exists())
+//			mixtapesFolder.mkdirs();
+//	    return mixtapesFolder;
+//	}
+	
+	public static File getLivemixtapesFolder(Context ctx, String fileName)
+	{
+	    File mixtapesFolder = new File(ctx.getExternalFilesDir(null) , fileName);
+	    return mixtapesFolder;
+//		File mixtapesFolder = new File(Environment.getExternalStorageDirectory() + "/Documents/LiveMixTapes");
+//		if(!mixtapesFolder.exists())
+//			mixtapesFolder.mkdirs();
+//		File file = new File(mixtapesFolder.getAbsolutePath(),fileName);
+//	    return file;
+	}
+
+	public static String formatDuration(double seconds) {
+		String format = "";
+		double hours, minutes;
+
+		hours = Math.floor(seconds / 3600);
+		seconds %= 3600;
+
+		minutes = Math.floor(seconds / 60);
+		seconds %= 60;
+
+		if (hours > 0) {
+			format += (int) hours + ":";
+			format += String.format("%02d", (int) minutes) + ":";
+		} else {
+			format += (int) minutes + ":";
+		}
+
+		format += String.format("%02d", (int) seconds);
+
+		return format;
+	}
+	
+	public static boolean shouldAllowDownload(Context mContext, String mixtapeId, String trackId)
+	{
+		DBHelper dbHelper = DBHelper.sharedInstance(mContext);
+		ArrayList<HashMap<String, String>> incompleteDownloads = dbHelper.getIncompleteDownloads();
+		
+		//Less than 4 tracks are downloading, hence allow them
+		if(incompleteDownloads.size()<4)	
+			return true;
+		
+		//Check if all tracks belong to the same mixtape
+		boolean isOfSameMixtape = true;
+		for(HashMap<String, String> hashMap : incompleteDownloads)
+		{
+			if(!hashMap.get("mixtape_id").equals(mixtapeId))
+			{
+				isOfSameMixtape = false;
+				break;
+			}
+		}
+		if(isOfSameMixtape)
+			return true;
+		
+		//Check for all playlists
+		if(incompleteDownloads.size()>=20)
+			return false;
+		
+		ArrayList<String> trackIds = new ArrayList<String>();
+		for(HashMap<String, String> hashMap : incompleteDownloads)
+			trackIds.add(hashMap.get("track_id").toString());
+
+		for (Map<String, Object> playlistMap : User.getData().playlists) {
+			ArrayList<String> playlistTrackIds = new ArrayList<String>();
+			for (Map<String, Object> subMap : (ArrayList<HashMap<String, Object>>) playlistMap.get("tracks"))
+				playlistTrackIds.add(subMap.get("track_id").toString());
+			if (playlistTrackIds.containsAll(trackIds) && playlistTrackIds.contains(trackId.toString())) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public static boolean isDownloaded(Context mContext, long downloadId) {
+		DownloadManager.Query q = new DownloadManager.Query();
+		q.setFilterById(downloadId);
+		DownloadManager downloadManager = (DownloadManager) mContext.getSystemService(Context.DOWNLOAD_SERVICE);
+		
+		Cursor cursor = downloadManager.query(q);
+		if (cursor == null || !cursor.moveToFirst())
+			return false;
+
+		int bytes_downloaded = cursor
+				.getInt(cursor
+						.getColumnIndex(DownloadManager.COLUMN_BYTES_DOWNLOADED_SO_FAR));
+		int bytes_total = cursor.getInt(cursor
+				.getColumnIndex(DownloadManager.COLUMN_TOTAL_SIZE_BYTES));
+
+		if (cursor.getInt(cursor.getColumnIndex(DownloadManager.COLUMN_STATUS)) == DownloadManager.STATUS_SUCCESSFUL) {
+			cursor.close();
+			return true;
+		}
+
+		final int dl_progress = (int) ((bytes_downloaded * 100l) / bytes_total);
+		cursor.close();
+		if(dl_progress==100)
+			return true;
+		return false;
+	}
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/toolView" android:background="#ffe1e1e1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" app:guideline_width="250" app:guideline_height="250"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="250" app:guideline_height="250">
+        <ImageView android:layout_gravity="center" android:id="@id/toolViewImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/p_thumbnail_ps" android:scaleType="fitCenter" android:contentDescription="@null" app:child_width="214" app:child_height="214" />
+        <ImageView android:id="@id/toolViewBrandImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@null" app:child_width="198" app:child_height="42" app:child_left="26" app:child_top="184" />
+        <View android:id="@id/toolViewArrow" android:background="@drawable/image_selector_tool_menu_lipstick" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="60" app:child_height="60" app:child_left="165" app:child_top="25" />
+        <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/toolViewText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/app_name" app:child_width="198" app:child_height="42" app:child_left="26" app:child_top="184" app:text_size_info="360:7:default; 360:6:ja,ru,tr; 360:5:tr" app:suppress_max="true" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

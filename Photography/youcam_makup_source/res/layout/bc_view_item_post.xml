@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t12dp" style="@style/BcIssuePostPanelOutsideHeaderStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePanelInsideStyle">
+            <include layout="@layout/bc_view_auther_panel" />
+            <com.rockerhieu.emojicon.EmojiconTextView android:id="@id/post_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePostTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/post_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/t12dp" style="@style/BcIssuePostPanelOutsideFooterStyle">
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/post_like_comment_outter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t15dp" android:layout_marginRight="@dimen/t15dp" android:layout_marginBottom="@dimen/t10dp">
+            <ImageView android:id="@id/post_like_icon" android:src="@drawable/bc_post_like_icon_selector" style="@style/BcPostIconStyle" />
+            <TextView android:id="@id/post_like_count" style="@style/BcPostIconTextStyle" />
+            <ImageView android:id="@id/post_comment_icon" android:src="@drawable/bc_issue_reward_comment_ico" style="@style/BcPostIconStyle" />
+            <TextView android:id="@id/post_comment_count" style="@style/BcPostIconTextStyle" />
+            <ImageView android:id="@id/post_repost_icon" android:src="@drawable/bc_issue_reward_repost_ico" style="@style/BcPostIconStyle" />
+            <TextView android:id="@id/post_repost_count" style="@style/BcPostIconTextStyle" />
+        </LinearLayout>
+        <include android:id="@id/issue_bottom_option" layout="@layout/bc_view_issue_bottom_option" />
+        <View style="@style/BcDivider1pxStyle" />
+        <RelativeLayout android:gravity="left|center" android:id="@id/like_list_btn" android:background="@drawable/bc_post_list_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/bc_color_black" android:gravity="left|center" android:id="@id/like_list_text" android:layout_width="wrap_content" style="@style/BcLikeCountPanelStyle" />
+            <ImageView android:layout_width="@dimen/t15dp" android:layout_height="@dimen/t15dp" android:src="@drawable/bc_go_to_arrow" android:layout_toRightOf="@id/like_list_text" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <Button android:textColor="@color/bc_color_purple" android:gravity="left|center" android:id="@id/more_comment_btn" android:background="@drawable/bc_post_list_background" android:layout_width="fill_parent" android:text="@string/bc_post_comment_see_all_comments" style="@style/BcLikeCountPanelStyle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/comment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/bc_post_comment_divider" android:showDividers="middle|end" />
+        <Button android:textColor="@color/bc_color_purple" android:gravity="left|center" android:id="@id/add_comment_btn" android:background="@drawable/bc_post_list_background" android:layout_width="fill_parent" android:text="@string/bc_post_comment_add_comment" style="@style/BcLikeCountPanelStyle" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/post_related_posts" android:visibility="gone" android:text="@string/bc_post_related_posts" style="@style/BcPostSeparatorTextStyle" />
+</LinearLayout>

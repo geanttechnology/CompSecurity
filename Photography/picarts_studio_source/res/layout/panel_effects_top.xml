@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/panel_top_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/button_close" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <View style="@style/EvenSeparator.Horizontal" />
+    <RadioButton android:id="@id/button_shape" android:background="@drawable/ic_action_focal_with_selector_t" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+    <RadioButton android:id="@id/button_brush" android:background="@drawable/ic_action_brush_with_selector_t" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/button_apply" android:background="@drawable/btn_borderless_material_dark" android:padding="@dimen/effects_small_button_padding" android:layout_width="@dimen/effects_small_button_width" android:layout_height="wrap_content" android:text="@string/gen_apply" android:singleLine="true" />
+    <Button android:enabled="false" android:layout_gravity="center_vertical" android:id="@id/button_reset_apply" android:background="@drawable/btn_borderless_material_dark" android:padding="@dimen/effects_small_button_padding" android:layout_width="@dimen/effects_small_button_width" android:layout_height="wrap_content" android:text="@string/gen_reset" android:singleLine="true" />
+    <View style="@style/EvenSeparator.Horizontal" />
+    <ImageButton android:id="@id/button_done" android:visibility="visible" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/button_save" android:visibility="gone" android:layout_width="48.0dip" android:layout_margin="1.0dip" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+</LinearLayout>

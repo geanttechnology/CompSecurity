@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="456" app:guideline_height="518"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="456" app:guideline_height="518">
+        <FrameLayout android:background="@drawable/shadow_scale" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="456" app:child_height="406">
+            <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/SkuPaletteSeriesImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_launcher" android:scaleType="fitCenter" android:contentDescription="@null" />
+        </FrameLayout>
+        <View android:id="@id/SkuPaletteSeriesCheckedBorder" android:background="@drawable/bg_live_palette_item_border" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="456" app:child_height="406" />
+        <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/SkuPaletteSeriesText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/app_name" android:maxLines="2" app:child_width="456" app:child_height="112" app:text_size_info="360:12:default" app:suppress_max="true" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

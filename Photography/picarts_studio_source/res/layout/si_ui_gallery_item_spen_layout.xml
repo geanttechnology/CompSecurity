@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gallery_spen_hover_container" android:background="@drawable/spen_hover_background" android:padding="@dimen/space_2dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/si_ui_profile_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.Picsart.ProgressBar" />
+        <ImageView android:id="@id/gallery_spen_hover_imageview" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/icon_warning" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="20.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_likes_mini" />
+        <TextView android:textSize="@dimen/textSize_16" android:textColor="@android:color/white" android:id="@id/gallery_spen_hover_likes" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:src="@drawable/ic_comments_mini" />
+        <TextView android:textSize="@dimen/textSize_16" android:textColor="@android:color/white" android:id="@id/gallery_spen_hover_comments" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:src="@drawable/ic_views_mini" />
+        <TextView android:textSize="@dimen/textSize_16" android:textColor="@android:color/white" android:id="@id/gallery_spen_hover_views" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

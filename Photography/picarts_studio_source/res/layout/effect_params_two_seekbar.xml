@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fade" />
+            <SeekBar android:id="@id/seekbar1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fade" />
+            <SeekBar android:id="@id/seekbar2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

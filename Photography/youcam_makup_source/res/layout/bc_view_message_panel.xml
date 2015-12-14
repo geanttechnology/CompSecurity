@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/error_message_panel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textStyle="bold" android:textColor="@color/bc_issue_error_msg_text" android:gravity="center" android:id="@id/error_message_text" android:paddingBottom="@dimen/t30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t30dp" android:layout_marginRight="@dimen/t30dp" android:text="@string/bc_error_empty_data" android:layout_centerInParent="true" style="@style/BcNoDataDescStyle" />
+    <ImageView android:id="@id/error_icon" android:src="@drawable/bc_network_error" android:scaleType="fitCenter" android:layout_above="@id/error_message_text" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" style="@style/BcNoDataImageStyle" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/yestercolor_round_corners" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect_param_round_corners" />
+                <CheckBox android:id="@id/yestercolor_round_corners_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/yestercolor_colorId" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="0.0">
+                    <LinearLayout android:background="@drawable/color" android:clickable="false" android:duplicateParentState="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_centerInParent="true" />
+                    <ImageView android:background="@drawable/xml_icon_bg_color" android:clickable="false" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/yestercolor_fade_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fade_0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0">
+                <SeekBar android:layout_gravity="center_vertical" android:id="@id/yestercolor_fade_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="255" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

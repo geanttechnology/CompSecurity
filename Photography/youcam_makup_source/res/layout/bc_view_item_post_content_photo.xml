@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/post_how_to_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/t15dp" style="@style/BcIssuePostPanelOutsideFooterStyle" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/t6dp">
+            <TextView android:textSize="@dimen/t14dp" android:textColor="@color/bc_celebrity_description_text" android:id="@id/post_steps" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/t20dp" android:layout_marginTop="@dimen/t8dp" android:layout_marginBottom="@dimen/t8dp" android:text="@string/bc_post_steps" android:includeFontPadding="false" style="@style/BcDefaultFontStyle" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/t50dp">
+            <TextView android:textSize="@dimen/t20dp" android:textColor="@color/bc_color_main_style_hightlight_ex" android:gravity="left|center" android:id="@id/post_how_to_header_subtitle" android:paddingLeft="@dimen/t40dp" android:layout_width="fill_parent" android:layout_height="@dimen/t50dp" android:includeFontPadding="false" android:layout_alignParentTop="true" style="@style/BcIssuePostPanelOutsideHeaderStyle" />
+            <TextView android:textSize="@dimen/t26dp" android:textColor="@color/bc_color_white" android:gravity="left|center" android:id="@id/post_how_to_header_index" android:background="@drawable/bc_no_tag_bg" android:paddingLeft="@dimen/t8dp" android:layout_width="@dimen/t40dp" android:layout_height="@dimen/t36dp" android:includeFontPadding="false" android:layout_centerVertical="true" style="@style/BcDefaultFontStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePostPanelOutsideBodyStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/post_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/t8dp">
+                <FrameLayout android:id="@id/post_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" style="@style/BcIssuePostImageStyle">
+                    <include layout="@layout/bc_view_item_tag_points" />
+                    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/storelink_btn" android:visibility="gone" android:layout_marginBottom="@dimen/t2dp" android:src="@drawable/bc_storelink_btn" style="@style/BcIssueToTopButtonStyle" />
+                </FrameLayout>
+                <include layout="@layout/bc_view_item_product_tags" />
+                <com.cyberlink.beautycircle.view.widgetpool.common.PostContentTextView android:linksClickable="true" android:id="@id/post_article" android:layout_width="fill_parent" android:layout_height="wrap_content" app:emojiLineSpacingExtra="2.0dip" style="@style/BcIssuePostDescriptionTextInPostStyle" />
+                <TextView android:textStyle="italic" android:textColor="@color/bc_issue_btn_text" android:ellipsize="end" android:id="@id/post_host" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" style="@style/BcCommentAgoTextInPostStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/post_try_it_outter" android:background="@drawable/bc_btn_tryit_radius_pink_background" android:paddingLeft="@dimen/t26dp" android:paddingRight="@dimen/t16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t10dp" android:layout_marginBottom="@dimen/t10dp" android:minWidth="@dimen/t220dp">
+                <ImageView android:layout_width="@dimen/t50dp" android:layout_height="@dimen/t40dp" android:src="@drawable/bc_icon_product_try" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/t16dp" android:textStyle="bold" android:textColor="@color/bc_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t12dp" android:layout_marginRight="@dimen/t52dp" android:text="@string/bc_product_info_try_it" style="@style/BcDefaultFontStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

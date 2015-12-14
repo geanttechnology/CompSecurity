@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/baloon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ToggleButton android:textSize="@dimen/textSize_12" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_mode_erase" android:background="@drawable/btn_switch_right" android:layout_width="50.0dip" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/space_4dp" android:checked="true" android:textOn="@string/gen_erase" android:textOff="@string/gen_erase" />
+    <ToggleButton android:textSize="@dimen/textSize_12" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_mode_draw" android:background="@drawable/btn_switch_left" android:layout_width="50.0dip" android:layout_height="32.0dip" android:layout_marginRight="@dimen/space_4dp" android:textOn="@string/gen_draw" android:textOff="@string/gen_draw" />
+    <ImageButton android:id="@id/button_undo" android:layout_height="fill_parent" android:src="@drawable/ic_action_undo_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/button_brush_ghost" android:layout_height="fill_parent" android:src="@drawable/ic_action_brush_ghost_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/button_clear" android:layout_height="fill_parent" android:src="@drawable/ic_action_refresh" style="@style/Widget.Picsart.ImageButton.Action" />
+</LinearLayout>

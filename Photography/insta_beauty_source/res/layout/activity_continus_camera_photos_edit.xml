@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/imageview_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top_bar" android:background="@drawable/bar_beauty_white_bottom_strok" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/gridview_container" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/cancel_edit_photos" android:background="@drawable/btn_edit_cancel_res" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_truegray" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_check_photo_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="count" />
+        <ImageView android:layout_gravity="right|center" android:id="@id/back_home_page" android:background="@drawable/home_res" android:layout_width="49.0dip" android:layout_height="43.0dip" android:layout_marginRight="1.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/gridview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" android:layout_marginBottom="45.0dip" android:layout_alignParentTop="true">
+        <GridView android:layout_gravity="top|left|center" android:id="@id/gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:stretchMode="columnWidth" android:numColumns="2" style="@style/PhotoGridLayout" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:weightSum="2.0" android:layout_alignParentBottom="true">
+        <Button android:textSize="14.0sp" android:textColor="@color/conti_capture_operate_bar_txt_color" android:gravity="center" android:id="@id/btn_delete_checked_photos" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/delete" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="@color/conti_capture_operate_bar_txt_color" android:gravity="center" android:id="@id/btn_instamag_checked_photo" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/collage" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="44.0dip" android:layout_alignParentTop="true" />
+    <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="44.0dip" android:layout_alignParentBottom="true" />
+    <com.wantu.imagerender.ImageGLSurfaceView android:layout_gravity="center" android:id="@id/gl_render_view" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+    <include android:visibility="gone" layout="@layout/activity_continuous_viewer" />
+</RelativeLayout>

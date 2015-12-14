@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/selectLooksFullDialogTopArea" android:background="#d9000000" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140" />
+    <FrameLayout android:id="@id/collagePanelAnimationView" android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/selectLooksFullDialogBottomArea" android:layout_below="@id/selectLooksFullDialogTopArea">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1660.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="136.0">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="76.0" />
+                <TextView android:textStyle="bold" android:textColor="#ff454545" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/select_looks_full_tap_to_select" android:layout_weight="798.0" style="@style/Pixel40CorrespondSize" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="146.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/collagePanelCloseBtn" android:background="@drawable/btn_close_look_full" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="146" app:guideline_height="104" />
+                </LinearLayout>
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="35.0" />
+            </LinearLayout>
+            <com.idunnololz.widgets.AnimatedExpandableListView android:id="@id/collagePanelExpandableGridView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:groupIndicator="@null" android:childDivider="@android:color/transparent" android:divider="#ffe1e1e1" android:dividerHeight="1.0dip" android:layout_weight="1524.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/selectLooksFullDialogBottomArea" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" app:guideline_width="1080" app:guideline_height="220">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="220">
+            <View android:layout_gravity="center" android:id="@id/selectLooksFullDialogDownloadMoreBtn" android:background="@drawable/image_selector_costume_looks_more_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="602" app:child_height="154" />
+            <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/select_looks_full_download_more" app:child_width="602" app:child_height="60" app:text_size_info="360:14:default" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/layer_item_root" android:layout_width="wrap_content" android:layout_height="@dimen/drawing_layers_thumbnail_height" android:layout_margin="@dimen/space_12dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/layer_visibility" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="@dimen/drawing_layers_thumbnail_height" android:src="@drawable/show_layer" />
+    <FrameLayout android:layout_width="@dimen/drawing_layers_thumbnail_width" android:layout_height="@dimen/drawing_layers_thumbnail_height">
+        <ImageView android:id="@id/layer_thumbnail" android:background="@color/gray_bf" android:layout_width="@dimen/drawing_layers_thumbnail_width" android:layout_height="@dimen/drawing_layers_thumbnail_height" android:src="@android:color/white" />
+        <ImageView android:layout_gravity="bottom|right|center" android:id="@id/layer_thumbnail_camera" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_layer" />
+    </FrameLayout>
+</LinearLayout>

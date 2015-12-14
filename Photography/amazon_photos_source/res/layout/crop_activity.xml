@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.amazon.gallery.framework.gallery.crop.OverlayView android:id="@id/overlayView" android:background="@color/dark_black_translucent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_crop_instructions" android:layout_above="@id/crop_buttons" android:layout_centerHorizontal="true" />
+        <LinearLayout android:id="@id/crop_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/crop_buttons_margin_top" android:layout_marginBottom="@dimen/crop_buttons_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/crop_button_margin_side" android:text="@string/adrive_gallery_common_dialog_negative" />
+            <Button android:id="@id/setButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/crop_button_margin_side" android:text="@string/adrive_gallery_crop_set_button_label" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

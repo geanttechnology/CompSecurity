@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/si_ui_login_picsart_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_32dp" android:layout_marginBottom="@dimen/space_20dp" android:src="@drawable/picsart_icon_big" />
+    <TextView android:textSize="@dimen/profile_dialog_login_text_size" android:textColor="@color/text_color_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/si_ui_profile_login_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_login_text" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/si_ui_social_accounts_login_container" android:paddingLeft="@dimen/space_12dp" android:paddingRight="@dimen/space_12dp" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_12dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/si_ui_socialin_sign_googleplus" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:src="@drawable/xml_signin_googleplus_button" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/si_ui_socialin_sign_fb" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:src="@drawable/xml_signin_fb_button" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/si_ui_socialin_sign_twitter" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xml_signin_twitter_button" />
+    </LinearLayout>
+</LinearLayout>

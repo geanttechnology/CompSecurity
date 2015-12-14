@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_33" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/collage_preview_topMenu" android:background="@drawable/panel_top_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/btn_cancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+                <include layout="@layout/separator_horizontal" />
+                <ImageButton android:id="@id/btn_done" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            </LinearLayout>
+            <com.picsart.studio.editor.view.BorderEditorView android:id="@id/editor" android:background="@color/gray_33" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.picsart.effects.view.WrappingSlidingDrawer android:layout_gravity="bottom" android:id="@id/collage_menu_sliding_drawer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:handle="@id/handle" android:content="@id/content">
+            <ImageView android:id="@id/handle" android:background="@drawable/handle_settings_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/content" android:background="@drawable/panel_drawer_bottom" android:padding="@dimen/space_8dp" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/outerBorderSize_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <SeekBar android:id="@id/outerBorderSize_seekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="40" android:progress="12" android:layout_weight="1.0" />
+                    <FrameLayout android:id="@id/outerBorderColor_container" android:background="?selectableItemBackground" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size">
+                        <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/outerBorderColor_preview" android:layout_width="@dimen/drawing_bottom_items_icon_size" android:layout_height="@dimen/drawing_bottom_items_icon_size" />
+                    </FrameLayout>
+                </LinearLayout>
+                <TextView android:id="@id/innerBorderSize_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <SeekBar android:id="@id/innerBorderSize_seekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="40" android:progress="4" android:layout_weight="1.0" />
+                    <FrameLayout android:id="@id/innerBorderColor_container" android:background="?selectableItemBackground" android:layout_width="@dimen/drawing_top_panel_item_size" android:layout_height="@dimen/drawing_top_panel_item_size">
+                        <com.socialin.android.photo.view.ColorPickerPreview android:layout_gravity="center" android:id="@id/innerBorderColor_preview" android:layout_width="@dimen/drawing_bottom_items_icon_size" android:layout_height="@dimen/drawing_bottom_items_icon_size" />
+                    </FrameLayout>
+                </LinearLayout>
+                <TextView android:id="@id/cornerRadius_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <SeekBar android:id="@id/cornerRadius_seekBar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:max="100" android:progress="0" />
+                <TextView android:id="@id/opacity_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <SeekBar android:id="@id/opacity_seekBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:max="255" android:progress="100" />
+                <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ToggleButton android:textColor="@android:color/white" android:id="@id/innerBorder_toggleButton" android:background="@drawable/btn_switch_left" android:layout_width="wrap_content" android:layout_height="32.0dip" android:textOn="@string/gen_inside" android:textOff="@string/gen_inside" android:singleLine="true" />
+                    <ToggleButton android:textColor="@android:color/white" android:id="@id/outerBorder_toggleButton" android:background="@drawable/btn_switch_right" android:layout_width="wrap_content" android:layout_height="32.0dip" android:textOn="@string/gen_outside" android:textOff="@string/gen_outside" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.picsart.effects.view.WrappingSlidingDrawer>
+    </FrameLayout>
+    <FrameLayout android:id="@id/ad" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/editor_ad_layout" />
+</LinearLayout>

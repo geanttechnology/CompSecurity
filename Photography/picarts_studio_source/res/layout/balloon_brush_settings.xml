@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/baloon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/button_undo" android:layout_height="fill_parent" android:src="@drawable/ic_action_undo_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/button_brush_ghost" android:layout_height="fill_parent" android:src="@drawable/ic_action_brush_ghost_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/button_clear" android:layout_height="fill_parent" android:src="@drawable/ic_action_delete_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ToggleButton android:textSize="@dimen/textSize_12" android:textColor="@color/selectable_text_dark" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_mode_draw" android:background="?selectableItemBackground" android:layout_width="64.0dip" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/space_4dp" android:textOn="@string/gen_effect" android:textOff="@string/gen_effect" />
+    <ToggleButton android:textSize="@dimen/textSize_12" android:textColor="@color/selectable_text_dark" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_mode_erase" android:background="?selectableItemBackground" android:layout_width="64.0dip" android:layout_height="32.0dip" android:layout_marginRight="@dimen/space_4dp" android:textOn="@string/gen_original" android:textOff="@string/gen_original" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/brush_invert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp">
+        <TextView android:textSize="@dimen/textSize_10" android:id="@id/brush_invert_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-3.0dip" android:text="@string/gen_invert" />
+        <CheckBox android:id="@id/brush_invert_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

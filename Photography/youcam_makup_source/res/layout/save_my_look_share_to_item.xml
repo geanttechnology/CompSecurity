@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="300" app:guideline_height="290"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="300" app:reference_height="290">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/save_my_look_share_to_item_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_share_bc" android:contentDescription="@null" app:self_width="180" app:self_height="180" app:self_top="20" />
+        <View android:layout_gravity="center_horizontal" android:background="@drawable/image_selector_camera_navigator_background_rec" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="180" app:self_height="180" app:self_top="20" />
+        <com.cyberlink.youcammakeup.widgetpool.common.AutoResizeTextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/save_my_look_share_to_item_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/common_beauty_circle" app:self_width="300" app:self_height="90" style="@style/CameraNavigatorButtonTextStyle" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

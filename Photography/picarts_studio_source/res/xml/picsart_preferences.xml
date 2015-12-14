@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="pref_screen_main"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_category_general" android:key="pref_caretory_gen">
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_wifi_settings_title" android:key="pref_wifi_settings" android:summary="@string/pref_wifi_settings_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_connections" android:key="social_connections">
+        <Preference android:title="@string/pref_social_connections_title" android:key="pref_facebook_connections" android:summary="@string/pref_social_connections_summary" />
+        <Preference android:title="@string/pref_facebook_actions_title" android:key="pref_facebook_actions" android:summary="@string/pref_facebook_actions_summary" />
+        <Preference android:title="@string/pref_googleplus_actions_title" android:key="pref_googleplus_actions" android:summary="@string/pref_googleplus_actions_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/gen_notification">
+        <Preference android:title="@string/pref_notification_settings_title" android:key="pref_notification_settings" android:summary="@string/pref_notification_settings_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_content" android:key="pref_category_content">
+        <Preference android:title="@string/menu_content_settings" android:key="pref_content_settings" android:summary="@string/pref_content_settings_summary" />
+        <Preference android:title="@string/pref_web_cache_title" android:key="pref_web_cache" android:summary="@string/pref_web_cache_text" />
+        <Preference android:title="@string/pref_search_history_title" android:key="pref_search_history" android:summary="@string/pref_search_history_text" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_about">
+        <Preference android:title="@string/pref_about_terms_title" android:key="pref_terms" />
+        <Preference android:title="@string/pref_license" android:key="pref_license" />
+        <Preference android:title="@string/pref_about_privacy_title" android:key="pref_privacy" />
+        <Preference android:title="@string/pref_dmca" android:key="pref_dmca" />
+    </PreferenceCategory>
+</PreferenceScreen>

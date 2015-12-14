@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:background="#78ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_area" android:layout_width="320.0dip" android:layout_height="243.0dip">
+        <FrameLayout android:layout_gravity="top|left|center" android:id="@id/item_classic" android:layout_width="74.0dip" android:layout_height="99.0dip" android:layout_marginLeft="31.0dip" android:layout_marginTop="17.0dip">
+            <ImageView android:layout_gravity="top|center" android:id="@id/img_classic" android:background="@drawable/btn_main_classic" android:layout_width="74.0dip" android:layout_height="74.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.pipcamera.activity.mainViewPager.FontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tx_classic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" android:text="@string/bt_classic" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="top|center" android:id="@id/item_collage" android:layout_width="74.0dip" android:layout_height="99.0dip" android:layout_marginTop="17.0dip">
+            <ImageView android:layout_gravity="top|center" android:id="@id/img_collage" android:background="@drawable/btn_main_magazine" android:layout_width="74.0dip" android:layout_height="74.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.pipcamera.activity.mainViewPager.FontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tx_collage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" android:text="@string/title_collage" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="top|right|center" android:id="@id/item_free_collage" android:layout_width="74.0dip" android:layout_height="99.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="32.0dip">
+            <ImageView android:layout_gravity="top|center" android:id="@id/img_free_collage" android:background="@drawable/btn_main_collage" android:layout_width="74.0dip" android:layout_height="74.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.pipcamera.activity.mainViewPager.FontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tx_free_collage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" android:text="@string/title_editcollage" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom|left|center" android:id="@id/item_proedit" android:layout_width="74.0dip" android:layout_height="99.0dip" android:layout_marginLeft="32.0dip" android:layout_marginBottom="18.0dip">
+            <ImageView android:layout_gravity="top|center" android:id="@id/img_proedit" android:background="@drawable/btn_main_edit" android:layout_width="74.0dip" android:layout_height="74.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.pipcamera.activity.mainViewPager.FontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tx_proedit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" android:text="@string/proedit" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom|center" android:id="@id/item_ad1" android:layout_width="72.0dip" android:layout_height="99.0dip" android:layout_marginBottom="18.0dip">
+            <com.fotoable.adbuttonlib.TAdButton android:layout_gravity="top|center" android:id="@id/item_adC01" android:layout_width="72.0dip" android:layout_height="72.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.pipcamera.activity.mainViewPager.FontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tx_ad01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom|right|center" android:id="@id/item_ad2" android:layout_width="72.0dip" android:layout_height="99.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="18.0dip">
+            <com.fotoable.adbuttonlib.TAdButton android:layout_gravity="top|center" android:id="@id/item_adC02" android:layout_width="72.0dip" android:layout_height="72.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.pipcamera.activity.mainViewPager.FontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tx_ad02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

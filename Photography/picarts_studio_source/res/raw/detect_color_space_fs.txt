@@ -1,0 +1,226 @@
+// fragment shader color space detector
+
+precision highp float;
+        
+varying vec2 textCoords;
+
+uniform float minHue;
+uniform float maxHue;
+uniform float selectedHue;
+uniform float replaceHue;
+uniform sampler2D texture;
+
+uniform float minHue1;
+uniform float maxHue1;
+uniform float minHue2;
+uniform float maxHue2;
+uniform float minHue3;
+uniform float maxHue3;
+uniform float replaceHue1;
+uniform float replaceHue2;
+uniform float replaceHue3;
+
+uniform float selectedHue1;
+uniform float selectedHue2;
+uniform float selectedHue3;
+
+// functions
+
+float changecolor(float color)
+	{
+		float resturnColor;
+		if(color>0.0404500)
+			{
+        		resturnColor =pow((color+0.055000/1.055000),2.400000);
+        	}
+        else
+        	{
+        resturnColor=color/12.920000;
+        	}
+        return resturnColor;
+        }
+float changeXYZElement(float e)
+	{
+    	if(e > 0.008856)
+        	{
+        		e = pow( e,( 1.000000/3.000000 ));
+        	}
+       	else
+        	{
+        		e = ( 7.787000 * e ) + ( 16.000000 / 116.000000 );
+        	}
+        return e;
+	}
+        
+vec3 XYZtoLCH(float X,float Y,float Z)
+	{
+    	float ref_X =  95.047000;
+        float ref_Y = 100.000000;
+        float ref_Z = 108.883000;
+        X/=ref_X;
+        Y/=ref_Y;
+        Z/=ref_Z;
+        X = changeXYZElement(X);
+        Y = changeXYZElement(Y);
+        Z = changeXYZElement(Z);
+        float CIE_L = ( 116.000000 * Y ) - 16.000000;
+        float CIE_A = 500.000000 * ( X - Y );
+        float CIE_B = 200.000000 * ( Y - Z );
+        float H = atan( CIE_B,CIE_A );
+        if(H > 0.000000)
+        	{
+        		H = degrees(H);
+        	}
+        else
+        	{
+        		H=360.000000 - degrees(abs(H));
+        	}
+        float C = sqrt(pow(CIE_A,2.000000)+pow(CIE_B,2.000000));
+        //CIE-C* = sqrt( CIE-a* ^ 2 + CIE-b* ^ 2 )
+        vec3 LCH = vec3(CIE_L,C,H);
+        //return H;
+        return LCH;
+	}
+        
+vec3 RGBtoLCH(float red,float green,float blue) 
+	{
+    	red=changecolor(red);
+        green=changecolor(green);
+        blue=changecolor(blue);
+        red*=100.000000;
+        green*=100.000000;
+        blue*=100.000000;
+        float X = red * 0.412400 + green * 0.357600 + blue * 0.180500;
+        float Y = red * 0.212600 + green * 0.715200 + blue * 0.072200;
+        float Z = red * 0.019300 + green * 0.119200 + blue * 0.950500;
+        vec3 LCH = XYZtoLCH(X,Y,Z);
+        return LCH;
+	}
+vec3 LCHtoLAB(vec3 LCH)
+{
+	vec3 LAB;
+	LAB.x = LCH.x;
+	LAB.y = cos(radians(LCH.z))*LCH.y;
+	LAB.z= sin(radians(LCH.z))*LCH.y;
+	return LAB;
+}
+float getLABtoXYZElement(float e)
+{
+	if(pow(e,3.000000)> 0.008856)
+	{
+		e = pow(e,3.000000);
+	}
+	else
+	{
+		e = (e-16.000000/116.000000)/7.787000;
+	}
+	return e;
+	
+}
+vec3 LABtoXYZ(vec3 LAB)
+{
+	vec3 XYZ;
+	float var_Y = (LAB.x+16.000000)/116.000000;
+	float var_X = LAB.y/500.000000+var_Y;
+	float var_Z = var_Y-LAB.z/200.000000;
+	
+	var_Y = getLABtoXYZElement(var_Y);
+	var_X = getLABtoXYZElement(var_X);
+	var_Z = getLABtoXYZElement(var_Z);
+	
+	float ref_X =  95.047000;
+    float ref_Y = 100.000000;
+    float ref_Z = 108.883000;
+    
+    XYZ.x = ref_X*var_X;
+    XYZ.y = ref_Y*var_Y;
+    XYZ.z = ref_Z*var_Z;
+    return XYZ;
+	
+}
+float getXYZtoRGBElement(float e)
+{
+	if (e>0.0031308) 
+	{
+		e = 1.055000*( pow(e,1.000000/2.400000))-0.055000;
+	}
+	else
+	{
+		e = 12.920000*e;
+	}
+	return e;
+}
+vec3 XYZtoRGB(vec3 XYZ)
+{
+	vec3 RGB;
+	
+	float var_X = XYZ.x/100.000000;
+	float var_Y = XYZ.y/100.000000;
+	float var_Z = XYZ.z/100.000000;
+	
+	float var_R = var_X*3.240600+var_Y*(-1.537200)+var_Z*(-0.498600);
+	float var_G = var_X*(-0.968900)+var_Y*1.875800+var_Z*0.041500;
+	float var_B = var_X*0.055700+var_Y*(-0.204000)+var_Z*1.057000;
+	
+	RGB.x = getXYZtoRGBElement(var_R);
+	RGB.y = getXYZtoRGBElement(var_G);
+	RGB.z = getXYZtoRGBElement(var_B);
+	return RGB;
+}
+vec3 LCHtoRGB(vec3 LCH)
+{
+	vec3 LAB = LCHtoLAB(LCH);
+    vec3 XYZ = LABtoXYZ(LAB);
+    vec3 RGB = XYZtoRGB(XYZ);
+    return RGB;
+}
+
+bool isColorInSplashRange(float localMinHue,float localMaxHue,float currentHue){
+
+	bool result = false;
+	if(localMinHue<=localMaxHue)
+    {
+       if(currentHue>localMinHue && currentHue<localMaxHue)
+        {
+        	result = true;
+        }
+    }else{
+    	if(currentHue>localMinHue || currentHue<localMaxHue){
+    		result = true;
+    	}
+    }
+    return result;
+}
+
+void main()
+	{
+        vec4 vColor=texture2D(texture, textCoords);
+        vec4 newColor;
+        vec3 LCH = RGBtoLCH(vColor.r,vColor.g,vColor.b);
+        float hue= LCH.z;
+        
+       
+       if(minHue1 >= 0.0 && isColorInSplashRange(minHue1,maxHue1,hue)){
+       		float deltaHue = hue-selectedHue1;
+        	float newReplaceHue = replaceHue1+deltaHue;
+        	vec3 newLCH = vec3(LCH.x,LCH.y,newReplaceHue);
+        	vec3 RGB = LCHtoRGB(newLCH);
+        	newColor = vec4(RGB.x,RGB.y,RGB.z,vColor.a);
+       }else if (minHue2 >= 0.0 && isColorInSplashRange(minHue2,maxHue2,hue)){
+       		float deltaHue = hue-selectedHue2;
+        	float newReplaceHue = replaceHue2+deltaHue;
+        	vec3 newLCH = vec3(LCH.x,LCH.y,newReplaceHue);
+        	vec3 RGB = LCHtoRGB(newLCH);
+        	newColor = vec4(RGB.x,RGB.y,RGB.z,vColor.a);
+       }else if(minHue3 >= 0.0 && isColorInSplashRange(minHue3,maxHue3,hue)){
+       		float deltaHue = hue-selectedHue3;
+        	float newReplaceHue = replaceHue3+deltaHue;
+        	vec3 newLCH = vec3(LCH.x,LCH.y,newReplaceHue);
+        	vec3 RGB = LCHtoRGB(newLCH);
+        	newColor = vec4(RGB.x,RGB.y,RGB.z,vColor.a);
+       }else{
+       		newColor = vColor;
+       }
+       
+       gl_FragColor=newColor;
+	}

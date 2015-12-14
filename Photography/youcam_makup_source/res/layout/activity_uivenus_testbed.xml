@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/uivenusTestbed_buttonScrollBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/uivenusTestbed_buttonList" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/uivenusTestbed_btnPickImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load" />
+            <Button android:id="@id/uivenusTestbed_btnRotateImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rotate" />
+            <Button android:id="@id/uivenusTestbed_btnTagFace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tag" />
+            <Button android:id="@id/uivenusTestbed_btnSpotAuto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Spot(A)" />
+            <Button android:id="@id/uivenusTestbed_btnSpotManual" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Spot(M)" />
+            <Button android:id="@id/uivenusTestbed_btnSkinSmooth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smoothen" />
+            <Button android:id="@id/uivenusTestbed_btnSkinWhiten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Whiten" />
+            <Button android:id="@id/uivenusTestbed_btnAntiShine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AntiShine" />
+            <Button android:id="@id/uivenusTestbed_btnOneTouch_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OneTouch(5)" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:textColor="#ffff0000" android:id="@id/uivenusTestbed_msgBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/uivenusTestbed_buttonScrollBar" android:layout_alignLeft="@id/uivenusTestbed_innerSurfaceView" />
+    <view android:id="@id/uivenusTestbed_innerSurfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/uivenusTestbed_buttonScrollBar" android:layout_centerHorizontal="true" class="com.cyberlink.youcammakeup.unittest.uivenus.UIVenusTestbed$InnerSurfaceView" />
+</RelativeLayout>

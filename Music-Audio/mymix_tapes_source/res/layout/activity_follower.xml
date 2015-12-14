@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/app_bar" layout="@layout/component_app_bar" />
+    <ListView android:id="@id/follower_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:divider="@null" android:layout_below="@id/app_bar" />
+    <ProgressBar android:id="@id/follower_loading" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/app_bar" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/follower_no_friend" android:visibility="gone" android:layout_width="96.0dip" android:layout_height="96.0dip" android:src="@drawable/ic_nofriends" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/description" />
+    <my.googlemusic.play.utils.views.RobotoTextView android:id="@id/follower_no_friend_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/follow_no_followers_yet" android:layout_below="@id/follower_no_friend" android:layout_centerHorizontal="true" app:typeface="roboto_light" />
+</RelativeLayout>

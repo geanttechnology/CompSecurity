@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <TextView android:textSize="@dimen/textSize_16" android:id="@id/dialog_message_id" android:paddingLeft="@dimen/space_24dp" android:paddingRight="@dimen/space_24dp" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24dp" android:maxHeight="@dimen/info_dialog_text_max_height" android:maxLines="@integer/info_dialog_text_max_lines" />
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:layout_gravity="right" android:id="@id/dialog_ok_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_ok" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

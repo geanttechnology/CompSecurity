@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout android:id="@id/bc_pull_to_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/bc_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    </com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/bc_view_top_add_panel" />
+    <include android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip" layout="@layout/bc_view_message_panel" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/si_ui_socialin_sign_up_picsart_button" android:background="@drawable/btn_bg_raised_black_picsart" android:clickable="true" android:layout_width="280.0dip" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/abs__ic_cab_done_holo_dark" android:contentDescription="@string/btn_signup" />
+    <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/color_white" android:layout_gravity="center" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_signup" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/beautyFilmTopToolBar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="134">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/beautyFilmBackBtnContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="150" app:guideline_height="134">
+                    <ImageView android:id="@id/beautyFilmBackBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" style="@style/CameraTopBackBtn" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <TextView android:textColor="#ff1e1e1e" android:id="@id/beautyFilmTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TopBarTextStyle" />
+            </RelativeLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1080.0" android:layout_below="@id/beautyFilmTopToolBar">
+        <GridView android:scrollbarStyle="insideOverlay" android:id="@id/beautyFilmGridView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:numColumns="2" android:layout_weight="1024.0" android:overScrollMode="never" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/beautyFilmWaitingCursor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/beautyFilmTopToolBar" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/beautyFilmRetryDialogContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

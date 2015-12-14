@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff424242" android:layout_width="fill_parent" android:layout_height="128.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/not_music_player_layout" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/description" />
+    <RelativeLayout android:id="@id/not_music_image_layout" android:layout_width="128.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/not_music_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/placeholder" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:contentDescription="@string/description" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/not_close_button" android:background="#ff424242" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_cancel" android:layout_alignParentRight="true" android:contentDescription="@string/description" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:layout_toLeftOf="@id/not_close_button" android:layout_toRightOf="@id/not_music_image_layout" android:layout_toStartOf="@id/not_close_button" android:layout_toEndOf="@id/not_music_image_layout">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/not_music_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="14.0sp" android:id="@id/not_music_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/not_music_name" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/not_music_image_layout" android:layout_toEndOf="@id/not_music_image_layout">
+        <LinearLayout android:orientation="horizontal" android:id="@id/not_layout_button" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+            <ImageButton android:id="@id/not_prev_button" android:background="#ff424242" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_notif_previous" android:layout_weight="1.0" android:contentDescription="@string/description" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ProgressBar android:id="@id/not_loading_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/android:progressBarStyleSmall" />
+                <ImageButton android:id="@id/not_play_button" android:background="#ff424242" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_notif_play" android:contentDescription="@string/description" />
+            </RelativeLayout>
+            <ImageButton android:id="@id/not_next_button" android:background="#ff424242" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_notif_next" android:layout_weight="1.0" android:contentDescription="@string/description" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

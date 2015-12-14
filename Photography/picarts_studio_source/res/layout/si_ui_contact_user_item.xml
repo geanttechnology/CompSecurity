@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contact_user_item_layout" android:background="@drawable/selectable_item_overlay_rect_picsart_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/divider_horizontal_new" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16dp">
+        <ImageView android:id="@id/contact_user_photo" style="@style/Widget.Picsart.Avatar" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp">
+            <TextView android:id="@id/contact_user_name" style="@style/TextAppearance.Picsart.Light.Username" />
+            <TextView android:id="@id/contact_user_info" style="@style/TextAppearance.Picsart.Light.Subusername" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

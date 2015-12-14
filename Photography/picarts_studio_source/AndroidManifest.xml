@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.picsart.studio" platformBuildVersionCode="23" platformBuildVersionName="6.0-2166767">
+    <permission android:name="com.picsart.studio.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.picsart.studio.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.BIND_WALLPAPER"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.sec.android.iap.permission.BILLING"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.picsart.studio.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.picsart.studio.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.software.live_wallpaper" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.socialin.android.SocialinApplication" android:theme="@style/Theme.Picsart">
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_lpps7MD1yaPgvf7mLY0gOpefqDkC2HFt"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_fdiC7Gy8tkSauc8lV4YiIjldwCiw3MBH"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="b54aaa54be28576eea7101f9a64e0cb4dd350945"/>
+        <meta-data android:name="com.socialin.android.apiv3.GlideCommonModule" android:value="GlideModule"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.deeplinking.UrlDeepLinkingActivity" android:noHistory="true" android:theme="@style/Theme.Picsart.Dialog.NoBackground">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="open" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="i" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Invite To Picsart">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="invitefb" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Membox Item">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart" android:path="/membox" android:pathPattern="\?" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Camera">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="camera" android:path="/" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Gallery">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="pic" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Gallery">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="picsart.com" android:pathPrefix="/i/" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:label="Shop Item">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart.com" android:path="/shop" android:pathPattern="\?" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:label="Shop Item">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart.com" android:path="/shop" android:pathPattern="\?" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Shop Item">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="shop" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart App">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart App">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Gallery">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="media" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart My Network">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart" android:path="/mynetwork" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Explore">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart" android:path="/explore" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Artists">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart" android:path="/artists" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart User">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="user" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart User">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart" android:path="/user" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Location">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="location" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Contest Item">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="contests" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Contest Item">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart" android:path="/contests" android:pathPattern="\?" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Stream">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="stream" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Comment">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="comment" android:scheme="picsart"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Tag">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart" android:path="/pics" android:pathPattern="\?" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Reset Password">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="picsart" android:path="/reset" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:name="com.socialin.android.photo.picsinphoto.MainPagerActivity" android:theme="@style/Theme.Picsart.NoActionBar.SplashScreen" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/image"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="picsartphotostudio"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.airview.HOVER"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.minimode.icon.portrait.normal" android:resource="@drawable/icon"/>
+            <meta-data android:name="com.sec.minimode.icon.landscape.normal" android:resource="@drawable/icon"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.socialin.android.multiselect.FoldersActivity" android:process=":ImageMultiselect" android:theme="@style/Theme.Picsart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.socialin.android.multiselect.ItemsActivity" android:process=":ImageMultiselect" android:theme="@style/Theme.Picsart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.picsart.filters.FilterActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.photo.morph.StretchActivity" android:process=":PicsartMagicEffects" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.photo.morph.StretchActivityMainProcess" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:label="@string/app_name" android:name="com.photo.morph.MorphActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.collage.CollagePreviewActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.lib.AmazonPurchaseActivity" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.amazon.device.ads.AdActivity"/>
+        <receiver android:name="com.amazon.device.iap.ResponseReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.collage.SelectCollageCropShape" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:hardwareAccelerated="false" android:name="com.socialin.android.photo.freecrop.FreeCropActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:hardwareAccelerated="false" android:name="com.socialin.android.photo.select.SelectionActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.picsart.effects.clone.CloneActivity" android:process=":PicsartMagicEffects" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.picsart.effects.clone.CloneActivityMainProcess" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.collage.SelectCollageBgActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.collage.CollageCropActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.activity.LocationListActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.main.DateAndTimeListActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.main.CommonPhraseListActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.callout.SelectCalloutActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.lensflare.SelectLensFlareActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.sticker.SelectStickerActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:hardwareAccelerated="false" android:name="com.socialin.android.photo.clipart.SelectClipArtFrameActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:name="com.socialin.android.photo.clipart.SaveClipartHelpDialog" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.frame.SelectSvgFrameActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.frame.FrameSvgActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.tools.ResizeDialogActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.dialog.BrushTypeDialogActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.dialog.CancelDialogActivity" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.socialin.android.preference.PreferencesActivity" android:theme="@style/Theme.Picsart">
+            <intent-filter android:label="Picsart Social">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="picsart-oauth2-success" android:path="/" android:scheme="https"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="Picsart Social">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="oauth-success" android:scheme="picsartphotostudio"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.preference.SharePreferencesActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.preference.ContentPreferencesActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.preference.FBActionPreferencesActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.preference.GPActionPreferencesActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.photo.template.TemplateActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.photo.template.SelectCustomCollageActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:name="com.socialin.android.photo.draw.DrawingActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.socialin.android.photo.picsinphoto.StudioActivity" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:name="com.socialin.android.photo.draw.DrawingActivityMainProcess" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.photo.draw.dialog.SelectShapeDialog" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Light.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboard" android:hardwareAccelerated="false" android:name="com.socialin.android.photo.draw.dialog.SelectBrushDialog" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Light.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.picsart.profile.activity.BottomSheetActivity" android:theme="@style/Theme.Picsart.Dialog.Bottom"/>
+        <receiver android:icon="@drawable/icon" android:name="com.socialin.android.picsart.widget.PicsartAppWidgetProvider" android:process=":EditorProcess">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_xml"/>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.share.SaveExportActivity" android:theme="@style/Theme.Picsart.Dialog.Bottom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.exporter.SaveAndShareActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.Bottom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.socialin.android.activity.SaveToSdCardDialogActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.activity.FolderChooserActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.socialin.android.analytics.PAInstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.socialin.android.activity.InfoDialogActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Light.Dialog.NoActionBar"/>
+        <activity android:name="com.socialin.android.picsart.profile.activity.ActionShareInfoActivity" android:theme="@style/Theme.Picsart.Dialog.NoBackground"/>
+        <activity android:name="com.socialin.android.picsart.profile.activity.FriendInviteDialogActivity" android:theme="@style/Theme.Picsart.Dialog.NoBackground"/>
+        <activity android:name="com.socialin.android.picsart.profile.activity.SaveToSDMessageActivity" android:theme="@style/Theme.Picsart.Dialog.NoBackground"/>
+        <activity android:name="com.socialin.android.activity.ExceptionReportActivity"/>
+        <meta-data android:name="SOCIALIN_CONFIRM_EXCEPTION" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/Theme.Picsart.Dialog.NoFrame"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.socialin.android.facebook.FacebookMainActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.socialin.android.facebook.FacebookWallPostActivity" android:theme="@style/Theme.Picsart.PicsartUploadActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.facebook.activity.FacebookAdapterActivity" android:theme="@style/Theme.Picsart.Dialog.NoFrame"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.socialin.android.facebook.FacebookPageListActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.facebook.activity.FacebookSettingsDialogActivity" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.oauth2.OAuth2BaseActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.googleplus.GooglePlusSignInActivity" android:theme="@style/Theme.Picsart.Dialog.NoFrame"/>
+        <activity android:name="com.socialin.android.photo.deeplinking.GalleryItemDeepLinkingActivity" android:theme="@style/Theme.Picsart.Transparent.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:icon="@drawable/ic_action_dropbox" android:name="com.socialin.android.dropbox.DropboxStartActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="singleTask" android:name="com.dropbox.client2.android.AuthActivity">
+            <intent-filter>
+                <data android:scheme="db-qz0ubwmycfmwyj3"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.googledrive.OpenGoogleDriveActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.NoFrame"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.googledrive.UploadInGoogleDriveActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.NoFrame"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.googledrive.BaseDriveActivity" android:process=":EditorProcess"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.googledrive.GoogleAccountPickerActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/si_ui_icon_foursquare" android:name="com.socialin.android.foursquare.FoursquareOAuthMainActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/ic_action_deviantart" android:name="com.socialin.android.deviantart.DeviantArtOAuthMainActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.socialin.android.social.activity.SocialMainActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.twitter.TwitterOAuthActivity" android:theme="@style/Theme.Picsart.Twitter"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.twitter.TwitterWebAuthentication" android:theme="@style/Theme.Picsart.Twitter.Auth"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.tumblr.TumblrOAuthActivity" android:theme="@style/Theme.Picsart">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="success" android:scheme="android-tumblr"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.socialin.android.youtube.YouTubeUploadActivity" android:theme="@style/Theme.Picsart.Light.YouTubeUploadActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/ic_location_white" android:name="com.picsart.studio.activity.MapActivity" android:theme="@style/Theme.Picsart"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDGVaH5pJQJXGcDtT5eWYXwN8qwnwL8K4k"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDGVaH5pJQJXGcDtT5eWYXwN8qwnwL8K4k"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.instagram.InstagramMainActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.activity.MemboxItemsActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.activity.UserTagDetalisActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:name="com.socialin.android.picsart.profile.activity.GalleryItemShowActivity" android:theme="@style/Theme.Picsart.GalleryItemShowActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.picsart.profile.activity.SliderActivity" android:theme="@style/Theme.Picsart.SliderActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:hardwareAccelerated="true" android:name="com.socialin.android.picsart.profile.activity.CommentImageZoomActivity" android:theme="@style/Theme.Picsart.Panel"/>
+        <activity android:name="com.socialin.android.photo.deeplinking.UserIdDeepLinkingActivity" android:theme="@style/Theme.Picsart.Light.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.activity.GalleryItemTagActivity" android:theme="@style/Theme.Picsart.Light.Dialog.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.upload.PicsartUploadEditActivity" android:theme="@style/Theme.Picsart.PicsartUploadActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.activity.ProfileSettingsActivity" android:theme="@style/Theme.Picsart.Light.DarkActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.activity.UserAvatarUploadActivity" android:theme="@style/Theme.Picsart.Dialog.NoFrame"/>
+        <activity android:configChanges="keyboardHidden" android:hardwareAccelerated="true" android:label="@string/title_activity_profile" android:name="com.picsart.studio.profile.ProfileActivity" android:theme="@style/Theme.Picsart.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.socialin.android.picsart.profile.activity.UserPhotosActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.social.activity.SocialConnectionsActivity" android:theme="@style/Theme.Picsart.Light.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.picsart.profile.activity.LoginFragmentActivity" android:theme="@style/Theme.Picsart.Light.LoginFragmentActivity"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.picsart.profile.activity.WelcomeActivity" android:theme="@style/Theme.Picsart.Light.DarkActionBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.picsart.profile.activity.WebViewActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.activity.RegistrationActivity" android:theme="@style/Theme.Picsart.Light.DarkActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.activity.UserPasswordConfirmActivity" android:theme="@style/Theme.Picsart.Light.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.activity.FindFriendsActivity" android:theme="@style/Theme.Picsart.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.socialin.android.photo.picsinphoto.MainPagerActivity"/>
+        </activity>
+        <activity android:hardwareAccelerated="true" android:name="com.socialin.android.picsart.profile.activity.PhotosByLocationActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:label="Search" android:name="com.socialin.android.picsart.profile.activity.SearchActivity" android:theme="@style/Theme.Picsart">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.socialin.android.photo.picsinphoto.MainPagerActivity"/>
+        </activity>
+        <activity android:hardwareAccelerated="true" android:name="com.socialin.android.picsart.profile.activity.TopTagsActivity" android:theme="@style/Theme.Picsart">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.socialin.android.photo.picsinphoto.MainPagerActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.socialin.android.picsart.profile.activity.ContestItemsActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:hardwareAccelerated="true" android:name="com.socialin.android.picsart.profile.activity.ContestByGroupActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.activity.ContestRateActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.socialin.android.picsart.profile.activity.DataActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/gen_camera" android:name="com.socialin.picsin.camera.CameraMainActivity" android:process=":CameraMainActivity" android:theme="@style/Theme.Picsart.CameraMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.socialin.android_samsung_billing_lib.SamsungPurchaseActivity" android:theme="@style/Theme.Picsart.Light.Dialog"/>
+        <activity android:name="com.socialin.android_samsung_billing_lib.SamsungGetPricesActivity"/>
+        <activity android:configChanges="keyboardHidden" android:hardwareAccelerated="true" android:name="com.picsart.shop.ShopActivity" android:theme="@style/Theme.Picsart.NoActionBar"/>
+        <activity android:name="com.socialin.android.photo.deeplinking.ShopDeepLinkingActivity" android:theme="@style/Theme.Picsart.Light.Dialog"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.socialin.android.photo.effects.activity.EffectsActivityNew" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.socialin.android.photo.motion.MotionActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.socialin.android.photo.imgop.blending.BlendingActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="@string/app_name" android:name="com.picsart.effects.colorsplash.ColorSplashActivity" android:process=":PicsartMagicEffects" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="@string/app_name" android:name="com.picsart.effects.colorsplash.ColorSplashActivityMainProcess" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.picsart.effects.blemishfix.BlemishFixActivity" android:process=":PicsartMagicEffects" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.picsart.effects.blemishfix.BlemishFixActivityMainProcess" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.picsart.effects.redeyeremover.RedEyeRemoverActivity" android:process=":PicsartMagicEffects" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.picsart.effects.redeyeremover.RedEyeRemoverActivityMainProcess" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.picsart.effects.eyereplacer.EyeReplacerActivity" android:process=":PicsartMagicEffects" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.picsart.effects.eyereplacer.EyeReplacerActivityMainProcess" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.socialin.android.picsart.profile.activity.AboutPicsartActivity" android:theme="@style/Theme.Picsart.Light.AboutPicsartAcivity"/>
+        <activity android:label="@string/app_name" android:name="com.socialin.android.picsart.profile.activity.SendFeedbackActivity" android:theme="@style/Theme.Picsart.Light.SendFeedbackActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.inmobi.androidsdk.IMBrowserActivity"/>
+        <service android:enabled="true" android:name="com.inmobi.commons.internal.ActivityRecognitionManager"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MoPubActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.common.MoPubBrowser"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidVideoPlayerActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.ads.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:multiprocess="true" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.facebook.ads.InterstitialAdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.facebook.ads.VideoAdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.flurry.android.FlurryShareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:hardwareAccelerated="true" android:name="com.picsart.collages.SelectCollageActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart"/>
+        <activity android:hardwareAccelerated="true" android:name="com.picsart.collages.CollagesActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:name="com.appboy.ui.AppboyWebViewActivity" android:theme="@android:style/Theme"/>
+        <service android:icon="@drawable/live_icon" android:label="Funny Color Lines" android:name="com.socialin.android.wall.photo.ColorLinesWallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/livewallpaper"/>
+        </service>
+        <service android:name="com.socialin.android.net.FileDownloadService"/>
+        <service android:name="com.socialin.android.apiv3.log.EventLoggingService"/>
+        <service android:name="com.socialin.android.photo.notifications.NotificationsService"/>
+        <service android:exported="false" android:name="com.picsart.upload.UploadServiceEditor" android:process=":EditorProcess"/>
+        <service android:exported="false" android:name="com.picsart.upload.UploadService"/>
+        <service android:name="com.socialin.android.picsart.profile.invite.NotificationInviteService"/>
+        <service android:name="com.socialin.android.picsart.profile.invite.NotificationRedeemService"/>
+        <provider android:authorities="com.picsart.studio.provider" android:exported="false" android:name="com.socialin.android.photo.database.PicsartProvider"/>
+        <provider android:authorities="com.socialin.android.picsart.profile.util.SuggestionProvider" android:name="com.socialin.android.picsart.profile.util.SuggestionProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.picsart.studio.DrawingGalleryActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.socialin.android.photo.picsinphoto.MainPagerActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.activity.WhatsNewActivity" android:theme="@style/Theme.Picsart.Light.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="com.socialin.android.picsart.profile.activity.BlogActivity" android:theme="@style/Theme.Picsart.Light.DarkActionBar"/>
+        <receiver android:name="com.appboy.AppboyGcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.picsart.studio"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.android.gcm.AppboyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.picsart.studio.intent.APPBOY_PUSH_RECEIVED"/>
+                <action android:name="com.picsart.studio.intent.APPBOY_NOTIFICATION_OPENED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.appboy.ui.activities.AppboyFeedActivity"/>
+        <activity android:name="com.picsart.shop.ShopItemActivity" android:theme="@style/Theme.Picsart.ShopItemActivity"/>
+        <activity android:name="com.picsart.shop.ShopItemsListActivity" android:theme="@style/Theme.Picsart"/>
+        <activity android:name="com.socialin.android.picsart.profile.activity.ShareGroupActivity" android:theme="@style/Theme.Picsart.SharePublicActivity"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider108569252539536" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.socialin.android.picsart.profile.invite.InviteActivity" android:theme="@style/Theme.Picsart" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.stripe.android.picsart.StripeAuthActivity" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.invite.GetRewardDialogActivity" android:theme="@style/Theme.Picsart.Light.Dialog.NoActionBar.Invite"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socialin.android.picsart.profile.invite.RewardFinishActivity" android:theme="@style/Theme.Picsart.Light.Dialog.NoActionBar.Invite"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.socialin.android.picsart.profile.invite.InviteSocialsActivity" android:theme="@style/Theme.Picsart.Transparent.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.picsart.studio.ImagePickerActivity" android:theme="@style/Theme.Picsart.Dialog.NoActionBar">
+            <intent-filter android:icon="@drawable/picsart_logo">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="instagram.com" android:scheme="https"/>
+                <data android:host="instagram.com" android:scheme="http"/>
+                <data android:host="instagram.com"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.picsart.studio.editor.activity.EditorActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <activity android:name="com.picsart.studio.editor.activity.StandaloneCropToolActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.NoActionBar.Fullscreen"/>
+        <service android:name="com.socialin.android.photo.clipart.SyncClipartsService"/>
+        <activity android:label="@string/title_activity_square_fit_standalone" android:name="com.picsart.studio.editor.activity.SquareFitStandaloneActivity" android:process=":EditorProcess" android:theme="@style/Theme.Picsart.Dialog.NoActionBar"/>
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity"/>
+        <service android:name="com.appboy.services.AppboyDataSyncService"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <receiver android:name="com.packetzoom.speed.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

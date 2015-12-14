@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/solid__share_gray" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/lineLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout1" android:background="@drawable/btn_share_stats" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="top|center" android:background="@drawable/btn_share" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="16.0dip">
+                    <com.instamag.activity.view.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage1" android:background="@drawable/sync_moments2x" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+                    <View android:layout_gravity="top|right|center" android:id="@id/flag_new1" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/shareText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="nice" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/lineHorizLayout2" android:background="@drawable/btn_share_stats" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="top|center" android:background="@drawable/btn_share" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="16.0dip">
+                    <com.instamag.activity.view.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage2" android:background="@drawable/sync_moments2x" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+                    <View android:layout_gravity="top|right|center" android:id="@id/flag_new2" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/shareText2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="right" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout3" android:background="@drawable/btn_share_stats" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="top|center" android:background="@drawable/btn_share" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="16.0dip">
+                    <com.instamag.activity.view.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage3" android:background="@drawable/sync_moments2x" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+                    <View android:layout_gravity="top|right|center" android:id="@id/flag_new3" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/shareText3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="nice" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout4" android:background="@drawable/btn_share_stats" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="top|center" android:background="@drawable/btn_share" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="16.0dip">
+                    <com.instamag.activity.view.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage4" android:background="@drawable/sync_moments2x" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+                    <View android:layout_gravity="top|right|center" android:id="@id/flag_new4" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/shareText4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="nice" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lineLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout5" android:background="@drawable/btn_share_stats" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="top|center" android:background="@drawable/btn_share" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="16.0dip">
+                    <com.instamag.activity.view.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage5" android:background="@drawable/sync_moments2x" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+                    <View android:layout_gravity="top|right|center" android:id="@id/flag_new5" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/shareText5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="nice" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/lineHorizLayout6" android:background="@drawable/btn_share_stats" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="top|center" android:background="@drawable/btn_share" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="16.0dip">
+                    <com.instamag.activity.view.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage6" android:background="@drawable/sync_moments2x" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+                    <View android:layout_gravity="top|right|center" android:id="@id/flag_new6" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/shareText6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="right" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout7" android:background="@drawable/btn_share_stats" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="top|center" android:background="@drawable/btn_share" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="16.0dip">
+                    <com.instamag.activity.view.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage7" android:background="@drawable/sync_moments2x" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+                    <View android:layout_gravity="top|right|center" android:id="@id/flag_new7" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/shareText7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="nice" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout8" android:background="@drawable/btn_share_stats" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="top|center" android:background="@drawable/btn_share" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="16.0dip">
+                    <com.instamag.activity.view.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage8" android:background="@drawable/sync_moments2x" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+                    <View android:layout_gravity="top|right|center" android:id="@id/flag_new8" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/shareText8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="nice" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

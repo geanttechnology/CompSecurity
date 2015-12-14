@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" style="?attr/aviaryBottomBarOptionPanelContainerStyleNoMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.aviary.android.feather.sdk.widget.AviaryGallery android:id="@id/aviary_gallery" android:clipChildren="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="@dimen/aviary_tool_list_height" android:layout_centerVertical="true" style="?attr/aviaryGalleryStyle" />
+    <ImageView android:id="@id/left_bucket" android:layout_width="@dimen/aviary_tool_bucket_width" android:layout_height="@dimen/aviary_tool_bucket_height" android:layout_marginLeft="-1.0px" android:src="@drawable/aviary_ft_bucket_left" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/right_bucket" android:layout_width="@dimen/aviary_tool_bucket_width" android:layout_height="@dimen/aviary_tool_bucket_height" android:layout_marginRight="-1.0px" android:src="@drawable/aviary_ft_bucket_right" android:layout_alignParentRight="true" />
+</RelativeLayout>

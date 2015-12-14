@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_content" android:padding="?aviaryMainImagePadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/drawing_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.aviary.android.feather.sdk.widget.AviaryImageViewUndoRedo android:id="@id/image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/image_loading_view" layout="@layout/aviary_main_loader" />
+</RelativeLayout>

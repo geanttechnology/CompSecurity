@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <ScrollView android:id="@id/me_plus_about_outter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/fragment_topbar_panel">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/profile_banner_inside" android:background="@color/bc_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProfileInfoTopPanelStyle">
+                <FrameLayout android:id="@id/thumbnail" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/BcAvertarMediumExStyle">
+                    <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/profile_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bc_avatar_mugshot" android:contentDescription="@string/app_name" app:bc_default_image="@drawable/bc_avatar_mugshot" app:bc_circle_bitmap="true" />
+                    <ImageView android:id="@id/me_avatar_changphoto_btn" android:background="@drawable/bc_me_changephoto_circle_ico" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                </FrameLayout>
+                <ImageView android:id="@id/bc_user_goto_image" android:layout_alignTop="@id/thumbnail" android:layout_alignBottom="@id/thumbnail" android:contentDescription="@string/app_name" style="@style/BcProfileInfoGotoBtnStyle" />
+                <com.rockerhieu.emojicon.EmojiconTextView android:textColor="@color/bc_color_black" android:ellipsize="end" android:gravity="left|center" android:id="@id/profile_username_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:layout_toLeftOf="@id/bc_user_goto_image" android:layout_toRightOf="@id/thumbnail" android:layout_centerVertical="true" style="@style/BcProfileInfoUsernameTextStyle" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_detail_region" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProfileInfoPanelStyle">
+                <include android:id="@id/profile_about_me_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_beauty_item" layout="@layout/bc_profile_with_goto" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_country_region" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProfileInfoPanelStyle">
+                <include android:id="@id/profile_country_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_change_password" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_push_notification" layout="@layout/bc_profile_with_goto" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_developer_mode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProfileInfoPanelStyle">
+                <include android:id="@id/profile_server_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_version_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_device_id" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_userid_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_usertoken_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_usertype_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_accout_source_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_email_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_lastmodify_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_avatarurl_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_coverurl_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_delete_user_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_send_latest_log_item" layout="@layout/bc_profile_with_goto" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_legal_region" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProfileInfoPanelStyle">
+                <include android:id="@id/profile_terms_of_service_item" layout="@layout/bc_profile_with_goto" />
+                <include android:id="@id/profile_privacy_item" layout="@layout/bc_profile_with_goto" />
+            </LinearLayout>
+            <Button android:id="@id/bc_log_out_btn" android:layout_marginTop="@dimen/t25dp" android:text="@string/bc_user_log_out" style="@style/BcLogoutButtonTextStyle" />
+            <View style="@style/BcBottomPaddingStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_16dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/size_picker_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_48dp">
+            <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawing_brush_option_thickness" style="@android:style/TextAppearance.Holo" />
+            <TextView android:textSize="@dimen/textSize_14" android:id="@id/size_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" style="@android:style/TextAppearance.Holo" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/btn_decrement_size" android:background="?selectableItemBackground" android:padding="@dimen/space_4dp" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/minus_button_selector" />
+            <com.picsart.studio.view.FloatSeekBar android:id="@id/size_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:layout_weight="1.0" app:min_value="1.0" app:max_value="20.0" style="@style/Widget.Picsart.Light.SeekBar.Float" />
+            <ImageButton android:id="@id/btn_increment_size" android:background="?selectableItemBackground" android:padding="@dimen/space_4dp" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/plus_button_selector" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/opacity_picker_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_48dp">
+            <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawing_brush_option_opacity" style="@android:style/TextAppearance.Holo" />
+            <TextView android:textSize="@dimen/textSize_14" android:id="@id/opacity_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" style="@android:style/TextAppearance.Holo" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/btn_decrement_opacity" android:background="?selectableItemBackground" android:padding="@dimen/space_4dp" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/minus_button_selector" />
+            <com.picsart.studio.view.FloatSeekBar android:id="@id/opacity_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:layout_weight="1.0" app:min_value="0.0" app:max_value="255.0" style="@style/Widget.Picsart.Light.SeekBar.Float" />
+            <ImageButton android:id="@id/btn_increment_opacity" android:background="?selectableItemBackground" android:padding="@dimen/space_4dp" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/plus_button_selector" />
+        </LinearLayout>
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_fill_style" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/style_fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:checked="true" android:text="@string/draw_shape_fill" />
+        <RadioButton android:id="@id/style_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:checked="false" android:text="@string/draw_shape_stroke" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/app_name"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/makeupMainMenu" android:background="#ff4c4a5b" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:guideline_width="1080" custom:guideline_height="162">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1080.0" android:layout_below="@id/bottomToolBarTopDivider">
+            <FrameLayout android:id="@id/btbOthersBackButton" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" custom:guideline_width="60" custom:guideline_height="292">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:background="@drawable/btb_btn_cancel_n" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:guideline_width="60" custom:guideline_height="60" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </FrameLayout>
+            <View android:background="@drawable/pattenmenu_divide" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+            <FrameLayout android:id="@id/btbOthersPanelContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="770.0" />
+            <View android:background="@drawable/pattenmenu_divide" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+            <FrameLayout android:id="@id/btbOthersApplyButton" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" custom:guideline_width="60" custom:guideline_height="292">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:background="@drawable/btb_btn_ok_n" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:guideline_width="60" custom:guideline_height="60" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:id="@id/bottomToolBarTopDivider" android:background="@color/bottom_bar_top_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</RelativeLayout>

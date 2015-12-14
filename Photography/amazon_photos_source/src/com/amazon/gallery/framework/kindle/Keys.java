@@ -1,0 +1,155 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.amazon.gallery.framework.kindle;
+
+import android.media.MediaScannerConnection;
+import android.view.LayoutInflater;
+import com.amazon.gallery.foundation.metrics.Profiler;
+import com.amazon.gallery.foundation.metrics.amazoninsights.AmazonInsightsHelper;
+import com.amazon.gallery.foundation.metrics.customer.CustomerMetricsInfo;
+import com.amazon.gallery.foundation.utils.di.BeanKey;
+import com.amazon.gallery.framework.data.TruthDataMigrationUtilities;
+import com.amazon.gallery.framework.data.dao.DynamicAlbumDao;
+import com.amazon.gallery.framework.data.dao.SortTypeDao;
+import com.amazon.gallery.framework.data.dao.mediaitem.MediaItemDao;
+import com.amazon.gallery.framework.data.dao.remotestorage.RemoteStorageDao;
+import com.amazon.gallery.framework.data.dao.sqlite.GalleryDBConnectionManager;
+import com.amazon.gallery.framework.data.dao.sqlite.mediastore.LocalStateDao;
+import com.amazon.gallery.framework.data.dao.sqlite.mediastore.MediaStoreHelper;
+import com.amazon.gallery.framework.data.dao.sqlite.mediastore.MediaStoreSyncProvider;
+import com.amazon.gallery.framework.data.dao.tag.LocalTagDao;
+import com.amazon.gallery.framework.data.dao.tag.TagDao;
+import com.amazon.gallery.framework.data.model.TimelineModel;
+import com.amazon.gallery.framework.data.store.DiskEvictor;
+import com.amazon.gallery.framework.data.store.DiskEvictorConfig;
+import com.amazon.gallery.framework.data.store.DiskStore;
+import com.amazon.gallery.framework.gallery.actions.FacebookHelper;
+import com.amazon.gallery.framework.gallery.actions.LaunchAviary;
+import com.amazon.gallery.framework.gallery.demo.PhotosDemoManager;
+import com.amazon.gallery.framework.gallery.dialog.DialogManager;
+import com.amazon.gallery.framework.gallery.lenticular.GalleryLenticularHelper;
+import com.amazon.gallery.framework.gallery.metrics.EngagementMetrics;
+import com.amazon.gallery.framework.gallery.metrics.LaunchTimeMetrics;
+import com.amazon.gallery.framework.gallery.metrics.NavigationMetrics;
+import com.amazon.gallery.framework.gallery.metrics.ProfilerSession;
+import com.amazon.gallery.framework.gallery.metrics.SessionMetrics;
+import com.amazon.gallery.framework.gallery.print.GalleryPrintContext;
+import com.amazon.gallery.framework.gallery.share.ShareStore;
+import com.amazon.gallery.framework.gallery.timeline.TimelineNavigator;
+import com.amazon.gallery.framework.gallery.view.ViewDescriptorQuery;
+import com.amazon.gallery.framework.kindle.activity.CollectionListActivity;
+import com.amazon.gallery.framework.kindle.activity.FTUEFragmentActivity;
+import com.amazon.gallery.framework.kindle.activity.LaunchSourceMetrics;
+import com.amazon.gallery.framework.kindle.amazon.ScreenModeManager;
+import com.amazon.gallery.framework.kindle.auth.AuthenticationManager;
+import com.amazon.gallery.framework.kindle.cms.KindleCMSClient;
+import com.amazon.gallery.framework.kindle.edit.ProcessImageEditsUtil;
+import com.amazon.gallery.framework.kindle.metrics.UIClickMetrics;
+import com.amazon.gallery.framework.kindle.notifications.UploadNotificationHandler;
+import com.amazon.gallery.framework.kindle.recyclerview.MosaicLayoutCache;
+import com.amazon.gallery.framework.network.DownloadManagerRetryWatchdog;
+import com.amazon.gallery.framework.network.cloudfront.CloudFrontConfig;
+import com.amazon.gallery.framework.network.connectivity.NetworkConnectivity;
+import com.amazon.gallery.framework.network.disk.NetworkStore;
+import com.amazon.gallery.framework.network.download.GalleryDownloadManager;
+import com.amazon.gallery.framework.network.http.rest.RestClient;
+import com.amazon.gallery.framework.network.http.rest.account.SubscriptionInfoCache;
+import com.amazon.gallery.framework.network.http.rest.account.UserManager;
+import com.amazon.gallery.framework.network.http.rest.http.HttpFactory;
+import com.amazon.gallery.framework.network.http.senna.sync.manager.SyncManager;
+import com.amazon.gallery.framework.network.multiqueueuploader.MultiQueueUploader;
+import com.amazon.gallery.framework.network.multiqueueuploader.MultiQueueUploaderMessageHandler;
+import com.amazon.gallery.framework.network.throttle.NetworkThrottle;
+import com.amazon.gallery.framework.network.upload.DeviceAttributeStore;
+import com.amazon.gallery.framework.network.watchdog.AutoSaveManager;
+import com.amazon.gallery.thor.app.GalleryPermissionChecker;
+import com.amazon.gallery.thor.app.MemoryLeakDetector;
+import com.amazon.gallery.thor.app.authentication.AccountStateManager;
+import com.amazon.gallery.thor.app.service.WhisperUploadManager;
+import com.amazon.gallery.thor.app.ui.UiReadyExecutor;
+import com.amazon.gallery.thor.cds.CloudDriveServiceClientManager;
+import com.amazon.gallery.thor.removablestorage.RemovableStorageManager;
+import com.amazon.gallery.thor.thisday.ThisDayAlarmManager;
+import java.io.File;
+
+// Referenced classes of package com.amazon.gallery.framework.kindle:
+//            ParentalControl
+
+public interface Keys
+{
+
+    public static final BeanKey ACCOUNT_CHANGE_LISTENER = new BeanKey("accountChangeListener", java/lang/Object);
+    public static final BeanKey ACCOUNT_STATE_MANAGER = new BeanKey("accountStateManager", com/amazon/gallery/thor/app/authentication/AccountStateManager);
+    public static final BeanKey AMAZON_INSIGHTS_HELPER = new BeanKey("amazonInsightsHelper", com/amazon/gallery/foundation/metrics/amazoninsights/AmazonInsightsHelper);
+    public static final BeanKey AUTHENTICATING_MANAGER = new BeanKey("authenticationManager", com/amazon/gallery/framework/kindle/auth/AuthenticationManager);
+    public static final BeanKey AUTO_SAVE_MANAGER = new BeanKey("autoSaveManager", com/amazon/gallery/framework/network/watchdog/AutoSaveManager);
+    public static final BeanKey AVIARY_PROCESS_IMAGE_EDITS_UTIL = new BeanKey("AviaryProcessImageEditsUtil", com/amazon/gallery/framework/kindle/edit/ProcessImageEditsUtil);
+    public static final BeanKey CLOUD_DRIVE_SERVICE_CLIENT_MANAGER = new BeanKey("cloudDriveServiceClientManager", com/amazon/gallery/thor/cds/CloudDriveServiceClientManager);
+    public static final BeanKey CLOUD_FRONT_CONFIG = new BeanKey("cloudFrontConfig", com/amazon/gallery/framework/network/cloudfront/CloudFrontConfig);
+    public static final BeanKey CMS_REQUEST_HANDLER_FACTORY = new BeanKey("cmsRequestHandlerFactory", com/amazon/gallery/framework/kindle/cms/CMSRequestHandler$RequestHandlerFactory);
+    public static final BeanKey CURRENT_COLLECTION_ACTIVITY = new BeanKey("collectionListActivity", com/amazon/gallery/framework/kindle/activity/CollectionListActivity);
+    public static final BeanKey CURRENT_FTUE_ACTIVITY = new BeanKey("ftueFragmentActivity", com/amazon/gallery/framework/kindle/activity/FTUEFragmentActivity);
+    public static final BeanKey CUSTOMER_METRICS_INFO = new BeanKey("customerMetricsInfo", com/amazon/gallery/foundation/metrics/customer/CustomerMetricsInfo);
+    public static final BeanKey DB_CONNECTION_MANAGER = new BeanKey("dpOpenHelper", com/amazon/gallery/framework/data/dao/sqlite/GalleryDBConnectionManager);
+    public static final BeanKey DEMO_MANAGER = new BeanKey("photosDemoManager", com/amazon/gallery/framework/gallery/demo/PhotosDemoManager);
+    public static final BeanKey DEVICE_ATTRIBUTE_STORE = new BeanKey("deviceAttributeStore", com/amazon/gallery/framework/network/upload/DeviceAttributeStore);
+    public static final BeanKey DIALOG_MANAGER = new BeanKey("dialogManager", com/amazon/gallery/framework/gallery/dialog/DialogManager);
+    public static final BeanKey DISK_EVICTOR = new BeanKey("diskEvictor", com/amazon/gallery/framework/data/store/DiskEvictor);
+    public static final BeanKey DISK_EVICTOR_CONFIG = new BeanKey("diskEvictorConfig", com/amazon/gallery/framework/data/store/DiskEvictorConfig);
+    public static final BeanKey DISK_STORE = new BeanKey("diskStore", com/amazon/gallery/framework/data/store/DiskStore);
+    public static final BeanKey DOWNLOAD_MANAGER_RETRY_WATCHDOG = new BeanKey("downloadManagerRetryWatchdog", com/amazon/gallery/framework/network/DownloadManagerRetryWatchdog);
+    public static final BeanKey DYNAMIC_ALBUM_DAO = new BeanKey("dynamicAlbumDao", com/amazon/gallery/framework/data/dao/DynamicAlbumDao);
+    public static final BeanKey ENGAGEMENT_METRICS = new BeanKey("engagementMetrics", com/amazon/gallery/framework/gallery/metrics/EngagementMetrics);
+    public static final BeanKey FACEBOOK_HELPER = new BeanKey("facebookHelper", com/amazon/gallery/framework/gallery/actions/FacebookHelper);
+    public static final BeanKey GALLERY_DOWNLOAD_MANAGER = new BeanKey("galleryDownloadManager", com/amazon/gallery/framework/network/download/GalleryDownloadManager);
+    public static final BeanKey GALLERY_PERMISSION_CHECKER = new BeanKey("galleryPermissionChecker", com/amazon/gallery/thor/app/GalleryPermissionChecker);
+    public static final BeanKey HTTP_FACTORY = new BeanKey("httpFactory", com/amazon/gallery/framework/network/http/rest/http/HttpFactory);
+    public static final BeanKey KINDLE_CMS_CLIENT = new BeanKey("cmsClient", com/amazon/gallery/framework/kindle/cms/KindleCMSClient);
+    public static final BeanKey LAUNCH_AVIARY = new BeanKey("launchAviary", com/amazon/gallery/framework/gallery/actions/LaunchAviary);
+    public static final BeanKey LAUNCH_SOURCE_PROFILER = new BeanKey("LaunchSourceMetrics", com/amazon/gallery/framework/kindle/activity/LaunchSourceMetrics);
+    public static final BeanKey LAUNCH_TIME_METRICS = new BeanKey("launchTimeMetrics", com/amazon/gallery/framework/gallery/metrics/LaunchTimeMetrics);
+    public static final BeanKey LAYOUT_INFLATER = new BeanKey("layoutInflater", android/view/LayoutInflater);
+    public static final BeanKey LENTICULAR_HELPER = new BeanKey("lenticularHeloer", com/amazon/gallery/framework/gallery/lenticular/GalleryLenticularHelper);
+    public static final BeanKey LOCAL_STATE_DAO = new BeanKey("localStateDao", com/amazon/gallery/framework/data/dao/sqlite/mediastore/LocalStateDao);
+    public static final BeanKey LOCAL_TAG_DAO = new BeanKey("localTagDao", com/amazon/gallery/framework/data/dao/tag/LocalTagDao);
+    public static final BeanKey MEDIA_ITEM_DAO = new BeanKey("mediaItemDao", com/amazon/gallery/framework/data/dao/mediaitem/MediaItemDao);
+    public static final BeanKey MEDIA_SCANNER_CONNECTION = new BeanKey("mediaScannerConnection", android/media/MediaScannerConnection);
+    public static final BeanKey MEDIA_STORE_HELPER = new BeanKey("mediaStoreHelper", com/amazon/gallery/framework/data/dao/sqlite/mediastore/MediaStoreHelper);
+    public static final BeanKey MEDIA_STORE_SYNC_PROVIDER = new BeanKey("mediaStoreSyncProvider", com/amazon/gallery/framework/data/dao/sqlite/mediastore/MediaStoreSyncProvider);
+    public static final BeanKey MEMORY_LEAK_DETECTION_HELPER = new BeanKey("memoryLeakDetector", com/amazon/gallery/thor/app/MemoryLeakDetector);
+    public static final BeanKey MOSAIC_CACHE = new BeanKey("mosaicCache", com/amazon/gallery/framework/kindle/recyclerview/MosaicLayoutCache);
+    public static final BeanKey MULTI_QUEUE_MESSAGE_HANDLER = new BeanKey("multiQueueMessageHandler", com/amazon/gallery/framework/network/multiqueueuploader/MultiQueueUploaderMessageHandler);
+    public static final BeanKey MULTI_QUEUE_UPLOADER = new BeanKey("multiQueueUploader", com/amazon/gallery/framework/network/multiqueueuploader/MultiQueueUploader);
+    public static final BeanKey NAVIGATION_METRICS = new BeanKey("navigationMetrics", com/amazon/gallery/framework/gallery/metrics/NavigationMetrics);
+    public static final BeanKey NETWORK_CONNECTIVITY = new BeanKey("networkConnectivity", com/amazon/gallery/framework/network/connectivity/NetworkConnectivity);
+    public static final BeanKey NETWORK_STORE = new BeanKey("networkStore", com/amazon/gallery/framework/network/disk/NetworkStore);
+    public static final BeanKey NETWORK_THROTTLE = new BeanKey("networkThrottle", com/amazon/gallery/framework/network/throttle/NetworkThrottle);
+    public static final BeanKey PARENTAL_CONTROL = new BeanKey("parentalControl", com/amazon/gallery/framework/kindle/ParentalControl);
+    public static final BeanKey PRINT_CONTEXT = new BeanKey("printContext", com/amazon/gallery/framework/gallery/print/GalleryPrintContext);
+    public static final BeanKey PROFILER = new BeanKey("profiler", com/amazon/gallery/foundation/metrics/Profiler);
+    public static final BeanKey PROFILER_SESSION = new BeanKey("profilerSession", com/amazon/gallery/framework/gallery/metrics/ProfilerSession);
+    public static final BeanKey REMOTE_STORAGE_DAO = new BeanKey("remoteStorageDao", com/amazon/gallery/framework/data/dao/remotestorage/RemoteStorageDao);
+    public static final BeanKey REMOVABLE_STORAGE_MANAGER = new BeanKey("removableStorageManager", com/amazon/gallery/thor/removablestorage/RemovableStorageManager);
+    public static final BeanKey REST_CLIENT = new BeanKey("restClient", com/amazon/gallery/framework/network/http/rest/RestClient);
+    public static final BeanKey SCREEN_MODE_MANAGER = new BeanKey("screenModeManager", com/amazon/gallery/framework/kindle/amazon/ScreenModeManager);
+    public static final BeanKey SESSION_METRICS = new BeanKey("sessionMetrics", com/amazon/gallery/framework/gallery/metrics/SessionMetrics);
+    public static final BeanKey SHARED_FILES_DIRECTORY = new BeanKey("sharedFilesDirectory", java/io/File);
+    public static final BeanKey SHARE_STORE = new BeanKey("shareStore", com/amazon/gallery/framework/gallery/share/ShareStore);
+    public static final BeanKey SORT_PREFERENCE_DAO = new BeanKey("sortPreferenceDao", com/amazon/gallery/framework/data/dao/SortTypeDao);
+    public static final BeanKey SUBSCRIPTION_INFO_CACHE = new BeanKey("subscriptionInfoCache", com/amazon/gallery/framework/network/http/rest/account/SubscriptionInfoCache);
+    public static final BeanKey SYNC_MANAGER = new BeanKey("syncManager", com/amazon/gallery/framework/network/http/senna/sync/manager/SyncManager);
+    public static final BeanKey TAG_DAO = new BeanKey("tagDao", com/amazon/gallery/framework/data/dao/tag/TagDao);
+    public static final BeanKey THIS_DAY_ALARM_MANAGER = new BeanKey("thisDayAlarmManager", com/amazon/gallery/thor/thisday/ThisDayAlarmManager);
+    public static final BeanKey TIMELINE_DAO = new BeanKey("timelineDao", com/amazon/gallery/framework/data/model/TimelineModel);
+    public static final BeanKey TIMELINE_NAVIGATOR = new BeanKey("timelineNavigator", com/amazon/gallery/framework/gallery/timeline/TimelineNavigator);
+    public static final BeanKey TRUTH_MIGRATION_UTILS = new BeanKey("truthDataMigrationUtilities", com/amazon/gallery/framework/data/TruthDataMigrationUtilities);
+    public static final BeanKey UI_METRICS_PROFILER = new BeanKey("UIClickMetrics", com/amazon/gallery/framework/kindle/metrics/UIClickMetrics);
+    public static final BeanKey UI_READY_EXECUTOR = new BeanKey("uiReadyExecutor", com/amazon/gallery/thor/app/ui/UiReadyExecutor);
+    public static final BeanKey UPLOAD_NOTIFICATION_HANDLER = new BeanKey("uploadNotificationHandler", com/amazon/gallery/framework/kindle/notifications/UploadNotificationHandler);
+    public static final BeanKey USER_MANAGER = new BeanKey("userManager", com/amazon/gallery/framework/network/http/rest/account/UserManager);
+    public static final BeanKey VIEW_DESCRIPTOR_QUERY = new BeanKey("ViewDescriptorQuery", com/amazon/gallery/framework/gallery/view/ViewDescriptorQuery);
+    public static final BeanKey WHISPER_UPLOAD_MANAGER = new BeanKey("whisperUploadManager", com/amazon/gallery/thor/app/service/WhisperUploadManager);
+
+}

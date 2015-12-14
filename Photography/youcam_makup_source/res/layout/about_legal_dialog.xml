@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sourceWDP="360" app:useDeviceDP="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:id="@id/settingTopToolBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" app:sourceWDP="360" app:useDeviceDP="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/legalBackBtn" android:contentDescription="@string/app_name" style="@style/CameraTopBackBtn" />
+        <TextView android:textColor="#ff1e1e1e" android:id="@id/settingTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_page_legal_information" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/BCTopBarTextStyle" />
+    </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+    <View android:id="@id/divider" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/settingTopToolBar" />
+    <WebView android:id="@id/legalWebView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:layout_below="@id/divider" />
+</com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>

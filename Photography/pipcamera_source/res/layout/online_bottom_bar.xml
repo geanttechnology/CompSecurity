@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/gr_tab" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bottom_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ly_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.instamag.activity.commonview.TabItemView android:layout_gravity="center_horizontal" android:id="@id/btnPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/bottom_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ly_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.instamag.activity.commonview.TabItemView android:layout_gravity="center_horizontal" android:id="@id/btnSquare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/bottom_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ly_3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.instamag.activity.commonview.TabItemView android:layout_gravity="center_horizontal" android:id="@id/btnLandScape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

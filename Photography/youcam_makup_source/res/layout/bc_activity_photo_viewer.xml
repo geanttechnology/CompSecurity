@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.beautycircle.view.widgetpool.common.NonSwipableViewPager android:id="@id/photo_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/photo_view_bottom_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/BcPhotoViewInfoPanelStyle">
+        <ImageView android:id="@id/photo_view_like" android:visibility="invisible" android:src="@drawable/bc_issue_reward_like_ico" android:scaleType="fitXY" android:layout_alignParentBottom="true" style="@style/BcPhotoViewOptionStyle" />
+        <ImageView android:id="@id/photo_view_comment" android:visibility="invisible" android:src="@drawable/bc_issue_reward_comment_ico" android:scaleType="fitXY" android:layout_toRightOf="@id/photo_view_like" android:layout_alignParentBottom="true" style="@style/BcPhotoViewOptionStyle" />
+        <ImageView android:id="@id/photo_view_share" android:visibility="invisible" android:src="@drawable/bc_issue_reward_share_ico" android:scaleType="fitXY" android:layout_toRightOf="@id/photo_view_comment" android:layout_alignParentBottom="true" style="@style/BcPhotoViewOptionStyle" />
+        <View android:id="@id/photo_view_div" android:background="@color/bc_color_main_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/photo_view_like" />
+        <TextView android:textColor="@color/bc_color_white" android:ellipsize="end" android:gravity="bottom" android:id="@id/photo_view_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_coming_soon" android:maxLines="5" android:layout_above="@id/photo_view_div" style="@style/BcPhotoViewDescriptionTextStyle" />
+    </RelativeLayout>
+</RelativeLayout>

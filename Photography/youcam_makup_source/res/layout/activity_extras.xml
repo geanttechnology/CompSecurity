@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/extrasTopToolBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="134">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/extrasBackBtnContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="150" app:guideline_height="134">
+                    <ImageView android:id="@id/extrasBackBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_selector_topbar_back_btn" android:contentDescription="@string/app_name" style="@style/TopBarButtonStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:weightSum="134.0" android:layout_toRightOf="@id/extrasBackBtnContainer">
+                    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="72.0" style="@style/TopToolBarDividerStyle" />
+                </LinearLayout>
+                <TextView android:id="@id/extrasTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_extra" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TopBarTextStyle" />
+            </RelativeLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/extrasAdCloseBtn" android:background="@drawable/state_btn_closead" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="26.0dip" android:layout_alignParentRight="true" />
+        <FrameLayout android:id="@id/extrasAdViewContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/extrasAdCloseBtn" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/extraBottomPadding">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_centerVertical="true" app:guideline_width="1080" app:guideline_height="982">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="982.0" android:layout_weight="260.0">
+                <com.cyberlink.youcammakeup.pages.moreview.ExtrasItemView android:layout_gravity="center" android:id="@id/extrasCollageItem" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="289.0" app:extras_category_name="@string/common_Collage" app:extras_category_image="@drawable/image_selector_extras_collage_item" app:extras_category_quantity="0" app:extras_text_color="@drawable/color_selector_extra_collage_btn_text" />
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="58.0" />
+                <com.cyberlink.youcammakeup.pages.moreview.ExtrasItemView android:layout_gravity="center" android:id="@id/extrasFrameItem" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="289.0" app:extras_category_name="@string/common_Frame" app:extras_category_image="@drawable/image_selector_extras_frame_item" app:extras_category_quantity="0" app:extras_text_color="@drawable/color_selector_extra_frame_btn_text" />
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="58.0" />
+                <com.cyberlink.youcammakeup.pages.moreview.ExtrasItemView android:layout_gravity="center" android:id="@id/extrasEffectItem" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="289.0" app:extras_category_name="@string/common_Effects" app:extras_category_image="@drawable/image_selector_extras_effect_item" app:extras_category_quantity="0" app:extras_text_color="@drawable/color_selector_extra_preset_btn_text" />
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </RelativeLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/extraBottomPadding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" app:guideline_width="1080" app:guideline_height="173" />
+</RelativeLayout>

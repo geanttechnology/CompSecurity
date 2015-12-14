@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:id="@id/main_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/notification_item_gallery" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn1" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn2" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn3" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn4" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn5" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn6" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn7" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn8" />
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header_panel" android:background="@drawable/panel_top_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/provider_4square_btn" android:background="@drawable/item_background_holo_dark" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="45.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/foursquare_icon" android:background="@drawable/ic_action_foursquare" android:layout_width="40.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="8.0dip" android:textColor="@color/color_white" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:text="@string/gen_foursquare" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/provider_google_btn" android:background="@drawable/item_background_holo_dark" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="45.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/provider_4square_btn">
+            <ImageView android:id="@id/google_icon" android:background="@drawable/ic_action_google" android:layout_width="40.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="8.0dip" android:textColor="@color/color_white" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:text="@string/gen_google" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/location_remove_btn" android:background="@drawable/item_background_holo_dark" android:visibility="gone" android:clickable="true" android:layout_width="45.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/provider_4square_btn">
+            <ImageView android:id="@id/location_remove_icon" android:layout_width="40.0dip" android:layout_height="35.0dip" android:src="@drawable/remove" android:layout_centerInParent="true" />
+            <TextView android:textSize="8.0dip" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:text="@string/gen_remove" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mapLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:background="@drawable/drop_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/relativeLayout1" android:background="@drawable/drop_shadow_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/zoom" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <fragment android:id="@id/map_frgament" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" class="com.google.android.gms.maps.MapFragment" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/placeList_layout" android:background="@color/color_white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <ProgressBar android:id="@id/progressBar" android:padding="@dimen/space_4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+        <ListView android:orientation="vertical" android:id="@id/placeList" android:padding="@dimen/space_12dp" android:visibility="visible" android:animationCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="true" android:divider="@color/gray_ac" android:dividerHeight="0.5dip" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:background="@color/unselected_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fotoable.view.actionbar.CommonActionBarView1 android:id="@id/actionBarView" android:background="@drawable/bar_beauty_white_bottom_strok" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/actionBarView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+            <FrameLayout android:id="@id/renderFrame" android:padding="5.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="400.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/shareImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/photo_share_btns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/renderFrame">
+                <com.fotoable.beautyui.gpuimage.sample.activity.TShareGridView android:id="@id/tShareScrollView1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="4" android:isScrollContainer="false" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/btn_ad_at_share" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_below="@id/photo_share_btns" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

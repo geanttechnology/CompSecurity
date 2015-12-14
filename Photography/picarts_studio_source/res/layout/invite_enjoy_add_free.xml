@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_transparent" android:layout_width="320.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corners" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageButton android:layout_gravity="top|left|center" android:id="@id/invite_enjoy_dialog_close_btn" android:background="@drawable/btn_borderless_material_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2dp" android:src="@drawable/ad_free_close" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/adfree_editor_enjoy_picsie" />
+            <TextView android:textSize="@dimen/invite_text_large" android:textColor="@color/text_color_black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24dp" android:text="@string/invite_ad_free_enjoy" />
+            <TextView android:textSize="@dimen/invite_text_small" android:textColor="@color/text_color_dark_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24dp" android:text="@string/invite_ad_free_have_fun_message" />
+            <LinearLayout android:orientation="vertical" android:id="@id/invite_friends_enjoy_bottom_layout" android:background="@drawable/rounded_corners_gray" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="@dimen/space_32dp">
+                <TextView android:textSize="@dimen/invite_text_small" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_ad_free_dont_break_chain" />
+                <TextView android:textSize="@dimen/invite_text_small" android:textColor="@color/text_color_light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_ad_free_invite_friends" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="@dimen/invite_text_medium" android:id="@id/invite_friends_button" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="@dimen/space_16dp" android:layout_marginRight="0.0dip" android:text="@string/gen_invite_friends" android:textAllCaps="true" style="@style/Widget.Picsart.Button.OrangeButton" />
+    </LinearLayout>
+</ScrollView>

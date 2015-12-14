@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white_light" android:layout_width="fill_parent" android:layout_height="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/item_album_content" android:layout_width="fill_parent" android:layout_height="72.0dip" style="@style/Widget.AppCompat.ActionButton" />
+    <ImageButton android:id="@id/item_album_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_core_overflow" android:layout_alignParentRight="true" android:contentDescription="@string/description" android:layout_alignParentEnd="true" style="@style/Widget.AppCompat.ActionButton" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_toLeftOf="@id/item_album_more">
+        <TextView android:textSize="14.0sp" android:textColor="@color/primary_album_text" android:id="@id/item_album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/item_album_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/ic_stat_downloading" android:contentDescription="@string/description" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/secondary_album_text" android:id="@id/item_album_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

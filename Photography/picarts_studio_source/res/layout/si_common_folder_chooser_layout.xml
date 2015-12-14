@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/folder_chooser_paths_layout" android:paddingLeft="@dimen/space_24dp" android:paddingRight="@dimen/space_24dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24dp">
+        <ImageView android:id="@id/folder_chooser_folders_paths_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/arrow" />
+        <com.socialin.android.views.PredicateLayout android:id="@id/folder_chooser_paths_text_views_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/si_common_folder_chooser_listview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="?selectableItemBackground" android:divider="@null" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/file_chooser_action_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:buttonBarStyle">
+        <Button android:id="@id/folder_chooser_cancel_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/gen_cancel" android:layout_weight="2.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/folder_chooser_new_foldr_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/button_new_folder" android:layout_weight="2.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/folder_chooser_choose_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/gen_ok" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

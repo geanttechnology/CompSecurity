@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/cold_boot_progress" android:background="@color/cold_boot_progress_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/CHROME_HEIGHT" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/cold_boot_loading_progress_message" android:gravity="center" android:id="@id/cold_boot_progress_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <ProgressBar android:id="@id/cold_boot_progress_progress_bar" android:layout_width="fill_parent" android:layout_height="3.0dip" android:progress="0" android:progressDrawable="@drawable/progress_drawable" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

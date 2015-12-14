@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <ScrollView android:paddingLeft="@dimen/space_24dp" android:paddingRight="@dimen/space_24dp" android:layout_width="@dimen/dialog_width" android:layout_height="0.0dip" android:layout_marginTop="@dimen/space_24dp" android:layout_marginBottom="@dimen/space_16dp" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_template" android:background="@drawable/spinner_holo_dark" android:layout_width="120.0dip" android:layout_height="48.0dip" android:layout_marginBottom="@dimen/space_12dp" android:text="@string/template" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="48.0dip">
+                <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_8dp" android:text="@string/width_space" />
+                <EditText android:id="@id/et_width" android:layout_width="80.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="48.0dip">
+                <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_8dp" android:text="@string/height_space" />
+                <EditText android:id="@id/et_height" android:layout_width="80.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="48.0dip" android:listSelector="@color/color_transparent">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_8dp" android:text="@string/orientation" />
+                <ImageButton android:id="@id/btn_landscape" android:background="@drawable/btn_selectable_orange_selector" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_action_landscape_t" style="@style/Widget.Picsart.ImageButton.Action" />
+                <ImageButton android:id="@id/btn_portrait" android:background="@drawable/btn_selectable_orange_selector" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_action_portrait_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_cancel" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_ok" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

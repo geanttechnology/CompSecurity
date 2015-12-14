@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/gray_f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSize_24" android:textColor="@color/text_color_black" android:gravity="center_horizontal" android:id="@id/shop_items_info_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_32dp" android:layout_marginRight="@dimen/space_32dp" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/shop_login_container_layout" android:paddingLeft="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/gray_ac" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginRight="@dimen/space_12dp" />
+        <Button android:id="@id/shop_login_button" android:paddingLeft="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_login" android:layout_alignParentRight="true" />
+        <TextView android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:text="@string/txt_login_to_see_installed_items" android:layout_toLeftOf="@id/shop_login_button" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/shop_message_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/shop_items_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/shop_login_container_layout">
+        <ListView android:gravity="center" android:id="@id/shop_items_grid" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@color/color_transparent" android:horizontalSpacing="12.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="1" android:smoothScrollbar="true" />
+        <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/text_color_black" android:id="@id/shop_items_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/shop_main_progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_medium_picsart" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/shop_load_more_items_progress_layout" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_centerInParent="true" style="@style/Widget.Picsart.Light.ProgressBar.Small" />
+    </RelativeLayout>
+</RelativeLayout>

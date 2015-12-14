@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/dialogBody" android:background="@drawable/dialog_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" app:child_width="960">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="960" app:guideline_height="50" />
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:guideline_width="960">
+                <TextView android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/MessageDialogText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Message_Default_Text" app:child_width="758" style="@style/Pixel40CorrespondSize" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="960" app:guideline_height="20" />
+            <CheckBox android:textColor="@android:color/black" android:id="@id/dontAskCheckBox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Message_Dialog_Do_not_ask_me_agian" style="@style/Pixel40CorrespondSize" />
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:child_width="820" app:child_height="90" app:guideline_width="960" app:guideline_height="180">
+                <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="662.0">
+                    <View android:id="@id/MessageDialogButtonFrontArea" android:background="#00000000" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0" />
+                    <FrameLayout android:id="@id/MessageDialogButtonArea1" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="300.0">
+                        <Button android:textColor="@android:color/black" android:id="@id/MessageDialogButton1" android:background="@drawable/image_selector_message_dialog_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dialog_Ok" style="@style/DialogButtonStyle" />
+                    </FrameLayout>
+                    <View android:id="@id/MessageDialogButtonGap" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="62.0" />
+                    <FrameLayout android:id="@id/MessageDialogButtonArea2" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="300.0">
+                        <Button android:textColor="@android:color/black" android:id="@id/MessageDialogButton2" android:background="@drawable/image_selector_message_dialog_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dialog_Cancel" style="@style/DialogButtonStyle" />
+                    </FrameLayout>
+                </LinearLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+        </LinearLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/gallery_tag_item_layout" android:background="@drawable/share_group_suggestion_item_background" android:paddingLeft="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="@dimen/space_8dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_white" android:gravity="center_vertical" android:id="@id/share_public_item_text" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="28.0dip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="@dimen/space_4dp" android:src="@drawable/upload_close_white" />
+</LinearLayout>

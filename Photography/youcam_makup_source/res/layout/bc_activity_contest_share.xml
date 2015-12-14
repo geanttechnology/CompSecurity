@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcFullActivityPaddingStyle">
+            <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/post_img" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" app:auto_resize_mode="fill_width_auto_height" />
+            <TextView android:textSize="@dimen/t16sp" android:textColor="@color/bc_color_black" android:id="@id/footer_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t7dp" android:layout_marginTop="@dimen/t14dp" android:layout_marginRight="@dimen/t7dp" android:text="@string/bc_contest_share_submit" style="@style/BcTextViewCommonBasicStyle" />
+            <TextView android:textSize="@dimen/t18sp" android:textStyle="bold" android:textColor="@color/bc_color_black" android:id="@id/footer_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t7dp" android:layout_marginTop="@dimen/t14dp" android:layout_marginRight="@dimen/t7dp" android:text="@string/bc_contest_share_slogan" style="@style/BcTextViewCommonBasicStyle" />
+            <TextView android:textSize="@dimen/t14sp" android:textColor="@color/bc_color_black" android:id="@id/footer_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t7dp" android:layout_marginTop="@dimen/t14dp" android:layout_marginRight="@dimen/t7dp" android:text="@string/bc_contest_share_hint" style="@style/BcTextViewCommonBasicStyle" />
+            <com.cyberlink.beautycircle.view.widgetpool.common.ObservableHorizontalScrollView android:paddingLeft="@dimen/t14dp" android:paddingRight="@dimen/t14dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+                <LinearLayout android:orientation="horizontal" android:id="@id/share_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BcFullActivityPaddingStyle" />
+            </com.cyberlink.beautycircle.view.widgetpool.common.ObservableHorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+    <com.cyberlink.beautycircle.view.widgetpool.facebook.LoginButton android:id="@id/register_facebook" android:visibility="gone" android:scaleType="fitXY" style="@style/BcRegisterMoreSigninBtnStyle" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/panel_right_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/sticker_dashboardDone" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/sticker_dashboardItem" android:src="@drawable/ic_action_sticker_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/sticker_dashboardProperties" android:src="@drawable/ic_action_properties_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/sticker_dashboardUndo" android:src="@drawable/ic_action_undo_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/sticker_dashboardCancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+</LinearLayout>

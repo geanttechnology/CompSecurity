@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.you.widgetpool.common.FixedAspectRatioLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="88">
+        <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="30" />
+        <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="58">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" app:guideline_width="237" app:guideline_height="58">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/dateView" android:background="@drawable/u_bg_date_msg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+            </RelativeLayout>
+        </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.you.widgetpool.common.FixedAspectRatioLinearLayout>
+</RelativeLayout>

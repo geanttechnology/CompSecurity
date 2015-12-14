@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:emojicon="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" emojicon:guideline_width="1080" emojicon:guideline_height="518">
+        <LinearLayout android:orientation="vertical" android:id="@id/emojiLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView0" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView1" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView2" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView3" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView4" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView5" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView6" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView7" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView8" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView9" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView10" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView11" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView12" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView13" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView14" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView15" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView16" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView17" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView18" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView19" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/emojiconView20" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+</LinearLayout>

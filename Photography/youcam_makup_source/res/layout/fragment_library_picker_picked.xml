@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="384">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="top" android:id="@id/pickedMessage" android:background="#ff727272" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Picked items" android:layout_weight="120.0" />
+            <HorizontalScrollView android:id="@id/pickedScrollView" android:background="#ffa1a1a1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="270.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vertical_spacing" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="270.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/pickedQueue" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="204.0" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</LinearLayout>

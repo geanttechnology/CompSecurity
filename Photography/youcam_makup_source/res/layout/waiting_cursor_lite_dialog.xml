@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/loadingPanel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/image_selector_waiting_lite" android:layout_width="wrap_content" android:layout_height="@dimen/t26dp" android:layout_marginBottom="@dimen/f155dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/t12dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dialog_message" android:paddingLeft="@dimen/t15dp" android:paddingRight="@dimen/t15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waiting_cursor_apply_look_effect" style="@style/DefaultFontStyle" />
+    </LinearLayout>
+</RelativeLayout>

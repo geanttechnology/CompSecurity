@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:background="#ffebeaea" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sourceWDP="360" app:useDeviceDP="true"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:id="@id/CostumeLooksPagerTopBarContainer" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" app:sourceWDP="360" app:useDeviceDP="true">
+        <ImageView android:id="@id/CostumeLooksPagerBackBtn" android:src="@drawable/image_selector_camera_gohome_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" style="@style/GeneralTopBtn" />
+        <TextView android:textColor="#ff1e1e1e" android:id="@id/CostumeLooksPagerTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/costume_looks" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TopBarTextStyle" />
+    </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.LockableViewPager android:layout_gravity="center" android:id="@id/CostumeLooksPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/CostumeLooksPagerTopBarContainer" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/CostumeLooksPagerTopBarContainer" app:guideline_width="1080" app:guideline_height="1405">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="1405">
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/CostumeLooksPagerLeftArrow" android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="80" app:reference_height="123" app:self_width="80" app:self_height="123" app:self_left="20" app:self_top="691">
+                <View android:layout_gravity="center" android:id="@id/CostumeLooksPagerLeftArrowImage" android:background="@drawable/image_selector_costume_looks_left_arrow_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="80" app:self_height="123" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_gravity="right" android:id="@id/CostumeLooksPagerRightArrow" android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="80" app:reference_height="123" app:self_width="80" app:self_height="123" app:self_left="20" app:self_top="691" app:self_rtl="true">
+                <View android:layout_gravity="center" android:id="@id/CostumeLooksPagerRightArrowImage" android:background="@drawable/image_selector_costume_looks_right_arrow_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="80" app:self_height="123" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1780.0" android:layout_below="@id/CostumeLooksPagerTopBarContainer">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:id="@id/CostumeLookViewAllBtn" android:background="@drawable/image_selector_custom_looks_button_background" android:clickable="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="154.0" app:guideline_width="602" app:guideline_height="154">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/common_Store" app:text_size_info="360:14:default" />
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="36" app:guideline_height="154" />
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:guideline_width="87" app:guideline_height="87">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_more_download" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </LinearLayout>
+            <View android:background="@drawable/image_selector_custom_looks_button_background_pressed" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="111.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/extraDownloadRetryDialogContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>

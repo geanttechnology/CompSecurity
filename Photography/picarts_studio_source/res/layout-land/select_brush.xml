@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_4dp" android:paddingBottom="@dimen/space_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.picsart.studio.view.viewpagerindicator.VerticalViewPager android:layout_gravity="center_horizontal" android:id="@id/vertical_brush_pager" android:layout_width="0.0dip" android:layout_height="0.0dip" android:overScrollMode="never" />
+        <com.picsart.studio.view.viewpagerindicator.VerticalCirclePageIndicator android:orientation="vertical" android:id="@id/vertical_brush_pager_indicator" android:padding="@dimen/space_12dp" android:layout_width="wrap_content" android:layout_height="fill_parent" app:fillColor="@color/gray_5e" app:pageColor="@color/gray_ac" app:radius="3.0dip" />
+        <View style="@style/Divider.Vertical" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="@dimen/drawing_brush_dialog_preview_width" android:layout_height="wrap_content">
+                <com.socialin.android.photo.draw.view.BrushPreview android:id="@id/brush_preview" android:paddingLeft="@dimen/space_8dp" android:paddingTop="@dimen/space_2dp" android:paddingRight="@dimen/space_48dp" android:paddingBottom="@dimen/space_2dp" android:layout_width="fill_parent" android:layout_height="@dimen/drawing_brush_dialog_preview_height" />
+                <ImageButton android:layout_gravity="right|center" android:id="@id/btn_show_advanced_settings" android:background="@drawable/btn_brush_advanced_settings" android:padding="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_8dp" android:src="@null" />
+            </FrameLayout>
+            <View style="@style/Divider.Horizontal" />
+            <FrameLayout android:id="@id/settings_switcher" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/basic_params" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include android:visibility="invisible" layout="@layout/brush_dialog_advanced_params" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:minHeight="48.0dip" style="?android:attr/buttonBarStyle">
+                <Button android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:minHeight="48.0dip" android:text="@string/gen_cancel" style="?android:attr/buttonBarButtonStyle" />
+                <Button android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:minHeight="48.0dip" android:text="@string/gen_set" style="?android:attr/buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

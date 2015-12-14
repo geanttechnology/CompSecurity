@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_frame" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/player_frame_bar_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="left|center" android:id="@id/img_back_movie" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_edit_cancel_res" />
+        <ImageView android:layout_gravity="right|center" android:id="@id/img_player_home" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/home" />
+    </FrameLayout>
+    <jp.co.cyberagent.android.gpuimage.grafika.AspectFrameLayout android:layout_gravity="center" android:id="@id/view_container" android:background="@android:color/black" android:clickable="true" android:layout_width="@dimen/activity_mediaplayer_container_height" android:layout_height="@dimen/activity_mediaplayer_container_height" android:layout_marginBottom="20.0dip">
+        <com.fotoable.beautyui.other.BeautyVideoView android:layout_gravity="center" android:id="@id/vvcameracapture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </jp.co.cyberagent.android.gpuimage.grafika.AspectFrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/player_frame_bar_tool" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="85.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/img_player_del_movie" android:background="@drawable/btn_player_delete" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/img_player_share_recent" android:background="@drawable/btn_player_wechat" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/img_player_custom_share" android:background="@drawable/btn_player_custom_share" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/img_player_normal_share" android:background="@drawable/btn_player_normal_share" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/player_frame_bar_custom_share" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/img_player_share_wechat" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_custom_share_we" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/img_player_share_qq" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_custom_share_qq" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/img_player_share_fb" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_custom_share_fb" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/img_player_share_instagram" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_custom_share_insta" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/img_player_share_line" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_custom_share_line" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/img_player_share_back" android:background="@drawable/btn_player_customdown" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

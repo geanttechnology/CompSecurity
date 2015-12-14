@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <RelativeLayout android:id="@id/productContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel">
+        <RelativeLayout android:id="@id/productDescriptionContainer" android:layout_width="fill_parent" android:layout_alignParentTop="true" style="@style/BcProductInfoDescriptionPanelStyle">
+            <TextView android:id="@id/productInfoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/BcProductInfoTitleTextStyle" />
+            <TextView android:ellipsize="end" android:id="@id/productInfoDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="3" android:layout_below="@id/productInfoTitle" android:layout_alignParentLeft="true" style="@style/BcProductInfoDescTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/TryBuyLayout" android:layout_width="fill_parent" android:layout_alignParentBottom="true" style="@style/BcProductInfoBuyTryPanelStyle">
+            <RelativeLayout android:id="@id/productInfoTryBtn" android:clickable="true" style="@style/BcProductInfoBtnStyle">
+                <ImageView android:gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" android:layout_alignParentTop="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_product_info_try" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/BcProductInfoBtnTextStyle" />
+            </RelativeLayout>
+            <View android:id="@id/productInfoSpace" android:layout_height="1.0dip" android:layout_toRightOf="@id/productInfoTryBtn" style="@style/BcProductInfoBtnSpaceStyle" />
+            <RelativeLayout android:id="@id/productInfoBuyBtn" android:clickable="true" android:layout_toRightOf="@id/productInfoSpace" style="@style/BcProductInfoBtnStyle">
+                <ImageView android:gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" android:layout_alignParentTop="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_product_info_buy" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/BcProductInfoBtnTextStyle" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/productInfoImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_above="@id/TryBuyLayout" android:layout_below="@id/productDescriptionContainer" />
+    </RelativeLayout>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

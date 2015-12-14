@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shop_top_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/textSize_18" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/shop_user_ballance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_32dp" android:text="@string/gen_remove_ads" />
+        <TextView android:id="@id/shop_ad_remover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_4dp" android:text="@string/shop_remove_ads_desc" />
+        <EditText android:id="@id/shop_promo_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_4dp" android:hint="@string/shop_promotional_code" />
+        <Button android:textStyle="bold" android:textColor="@color/color_white" android:gravity="center" android:id="@id/shop_submit" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20dp" android:text="@string/gen_go" />
+    </LinearLayout>
+</RelativeLayout>

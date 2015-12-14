@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/tool_crop" android:text="@string/gen_crop" android:drawableTop="@drawable/ic_action_crop_t" style="@style/EditorMainScreenToolButton" />
+        <Button android:id="@id/tool_freeCrop" android:text="@string/gen_free_crop" android:drawableTop="@drawable/ic_action_cut_t" style="@style/EditorMainScreenToolButton" />
+        <Button android:id="@id/tool_shapeCrop" android:text="@string/tool_shape_crop" android:drawableTop="@drawable/ic_action_shape_crop_t" style="@style/EditorMainScreenToolButton" />
+        <Button android:id="@id/tool_selection" android:text="@string/tool_selection" android:drawableTop="@drawable/ic_action_rectangle_selection_t" style="@style/EditorMainScreenToolButton" />
+    </LinearLayout>
+    <include layout="@layout/divider_soft_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/tool_perspective" android:text="@string/tool_perspective" android:drawableTop="@drawable/ic_perspective_h_normal" style="@style/EditorMainScreenToolButton" />
+            <ImageView android:layout_gravity="top|right|center" android:layout_width="wrap_content" android:layout_height="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="0.0dip" android:src="@drawable/ic_new" android:adjustViewBounds="true" />
+        </FrameLayout>
+        <Button android:id="@id/tool_clone" android:text="@string/tool_clone" android:drawableTop="@drawable/ic_action_tool_clone_t" style="@style/EditorMainScreenToolButton" />
+        <Button android:id="@id/tool_motion" android:text="@string/tool_motion" android:drawableTop="@drawable/ic_action_motion_t" style="@style/EditorMainScreenToolButton" />
+        <Button android:id="@id/tool_stretch" android:text="@string/tool_stretch" android:drawableTop="@drawable/ic_stretch_wrap" style="@style/EditorMainScreenToolButton" />
+    </LinearLayout>
+    <include layout="@layout/divider_soft_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/tool_curves" android:text="@string/tool_curves" android:drawableTop="@drawable/ic_action_curves_t" style="@style/EditorMainScreenToolButton" />
+        <Button android:id="@id/tool_colorAdjustment" android:text="@string/tool_colorAdjustment" android:drawableTop="@drawable/ic_action_contrast_t" style="@style/EditorMainScreenToolButton" />
+        <Button android:id="@id/tool_enhance" android:text="@string/tool_enhance" android:drawableTop="@drawable/ic_action_enhance_t" style="@style/EditorMainScreenToolButton" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/tool_tilt_shift" android:text="@string/tool_tilt_shift" android:drawableTop="@drawable/ic_action_tilt_shift_t" style="@style/EditorMainScreenToolButton" />
+            <ImageView android:layout_gravity="top|right|center" android:layout_width="wrap_content" android:layout_height="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="0.0dip" android:src="@drawable/ic_new" android:adjustViewBounds="true" />
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/divider_soft_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/tool_resize" android:text="@string/tool_resize" android:drawableTop="@drawable/ic_action_resize_t" style="@style/EditorMainScreenToolButton" />
+        <Button android:id="@id/tool_flipRotate" android:text="@string/tool_flip_rotate" android:drawableTop="@drawable/ic_action_rotate_ccw_t" style="@style/EditorMainScreenToolButton" />
+    </LinearLayout>
+</LinearLayout>

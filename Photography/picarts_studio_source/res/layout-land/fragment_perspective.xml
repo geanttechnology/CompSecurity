@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/crop_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ruler="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.picsart.studio.editor.view.PerspectiveView android:id="@id/perspective_view" android:paddingLeft="@dimen/space_8dp" android:paddingTop="@dimen/space_8dp" android:paddingRight="104.0dip" android:paddingBottom="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.picsart.studio.editor.view.RulerView android:id="@id/ruler" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_24dp" android:layout_marginBottom="@dimen/space_24dp" android:layout_alignParentRight="true" ruler:rulerOrientation="vertical" ruler:pointSize="8.0dip" ruler:minProgress="-20.0" ruler:maxProgress="20.0" />
+        <FrameLayout android:id="@id/btn_reset_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/ruler" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reset_angle_background" />
+            <TextView android:layout_gravity="center" android:id="@id/reset_angle_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_8dp" android:maxLength="7" />
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/perspective_mode_selection_panel" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/separator_vertical" />
+            <ImageButton android:id="@id/btn_horizontal_perspective" android:layout_marginBottom="@dimen/space_12dp" android:src="@drawable/btn_perspective_h_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+            <ImageButton android:id="@id/btn_vertical_perspective" android:src="@drawable/btn_perspective_v_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+            <include layout="@layout/separator_vertical" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/action_bar" android:paddingLeft="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/btn_done" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Vertical" />
+            <ImageButton android:id="@id/btn_cancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

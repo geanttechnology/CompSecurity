@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip">
+        <ImageButton android:id="@id/feed_view_type_like_user_image" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="16.0dip" android:scaleType="centerCrop" android:contentDescription="@string/image_description_default" android:layout_marginStart="16.0dip" style="@style/Widget.AppCompat.ActionButton" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+            <TextView android:textStyle="bold" android:textColor="#ffb52525" android:id="@id/feed_view_type_like_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Username" />
+            <TextView android:textColor="#ffaeaeae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="liked an album" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ffc3c3c3" android:gravity="right" android:id="@id/feed_view_type_like_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="32 min" android:layout_weight="1.0" android:layout_marginEnd="16.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/feed_view_type_like_image" android:layout_width="fill_parent" android:layout_height="196.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginEnd="12.0dip">
+        <ImageView android:id="@id/feed_view_type_like_action" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_stats_like" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/image_description_default" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffb52525" android:gravity="center" android:id="@id/feed_view_type_like_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="Phryme" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/feed_view_type_like_artist" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="- wassup ft jasse j" android:singleLine="true" android:layout_toLeftOf="@id/feed_view_type_like_action" android:layout_toRightOf="@id/feed_view_type_like_album" android:layout_centerVertical="true" android:layout_toStartOf="@id/feed_view_type_like_action" android:layout_toEndOf="@id/feed_view_type_like_album" />
+    </RelativeLayout>
+</LinearLayout>

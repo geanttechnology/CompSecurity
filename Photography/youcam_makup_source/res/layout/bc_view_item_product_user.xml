@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/celebrityItem" android:background="@color/bc_celebrity_item_background" android:paddingLeft="@dimen/t10dp" android:paddingTop="@dimen/t6dp" android:paddingRight="@dimen/t15dp" android:paddingBottom="@dimen/t6dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/thumbnail" android:layout_alignParentLeft="true" style="@style/BcAvertarMediumNoBorderStyle">
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/avatar_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bc_avatar_mugshot" android:contentDescription="@string/app_name" app:bc_default_image="@drawable/bc_avatar_mugshot" />
+        <ImageView android:background="@drawable/bc_avatar_circle_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/avatar_crown" android:visibility="gone" android:layout_width="@dimen/t20dp" android:layout_height="@dimen/t18dp" android:src="@drawable/bc_user_ico_master" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <com.rockerhieu.emojicon.EmojiconTextView android:textStyle="bold" android:ellipsize="end" android:gravity="left" android:id="@id/comment_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/comment_time" android:layout_toRightOf="@id/thumbnail" android:layout_alignTop="@id/thumbnail" style="@style/BcIssueAuthorTextStyle" />
+    <RatingBar android:id="@id/product_rating_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/thumbnail" android:layout_below="@id/comment_user" style="@style/BcProductCommentRatingStyle" />
+    <com.cyberlink.beautycircle.view.widgetpool.common.PostContentTextView android:id="@id/comment_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/thumbnail" android:layout_below="@id/product_rating_star" app:emojiLineSpacingExtra="2.0dip" style="@style/BcCommentTextStyle" />
+    <TextView android:gravity="right|center" android:id="@id/comment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/comment_user" android:layout_alignBottom="@id/comment_user" android:layout_alignParentRight="true" style="@style/BcSubTextStyle" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/IntroBackgroundStyle" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="1372">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140">
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/eyeBrowIcon" android:background="@drawable/ico_eye_contact" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="140" app:guideline_height="140" />
+                <TextView android:text="@string/beautifier_eye_contact" style="@style/IntroTitleTextStyle" />
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="1200">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="1200">
+            <View android:background="@drawable/hand_tap" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="192" app:child_height="268" app:child_left="120" />
+            <TextView android:gravity="center_vertical" android:layout_gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/intro_tap_to_show_feature_points" app:child_width="640" app:child_height="240" app:child_left="120" app:self_rtl="true" style="@style/IntroTipTextStyle" />
+            <TextView android:layout_gravity="bottom" android:text="@string/intro_eye_contact_lens_texture_tip" app:child_width="370" app:child_height="220" app:child_left="30" app:child_top="640" app:self_btt="true" style="@style/IntroTipTextStyle" />
+            <View android:layout_gravity="bottom" android:background="@drawable/introarrow_05" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="88" app:child_height="540" app:child_left="80" app:child_top="80" app:self_btt="true" />
+            <TextView android:layout_gravity="bottom" android:text="@string/intro_eye_contact_select_color" app:child_width="500" app:child_height="180" app:child_left="400" app:child_top="500" app:self_btt="true" style="@style/IntroTipTextStyle" />
+            <View android:layout_gravity="bottom" android:background="@drawable/introarrow_02" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="88" app:child_height="240" app:child_left="500" app:child_top="250" app:self_btt="true" />
+            <TextView android:layout_gravity="bottom|right|center" android:text="@string/intro_eye_contact_size_tip" app:child_width="500" app:child_height="150" app:child_left="100" app:child_top="770" app:self_rtl="true" app:self_btt="true" style="@style/IntroTipTextStyle" />
+            <View android:layout_gravity="bottom|right|center" android:background="@drawable/introarrow_00" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="205" app:child_height="200" app:child_left="50" app:child_top="560" app:self_rtl="true" app:self_btt="true" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</FrameLayout>

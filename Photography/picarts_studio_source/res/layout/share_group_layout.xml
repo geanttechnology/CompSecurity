@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.SearchView android:id="@id/share_group_search" android:background="@color/gray_25" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <com.socialin.android.views.PredicateLayout android:id="@id/public_share_suggesteds" android:paddingTop="@dimen/space_16dp" android:paddingBottom="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:layout_marginRight="@dimen/space_16dp" />
+    </ScrollView>
+    <View android:background="@color/gray_ee" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/following_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/space_16dp" android:layout_marginRight="@dimen/space_16dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upload_following_gray" />
+        <TextView android:textSize="@dimen/textSize_16" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:text="@string/social_following" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/share_group_follow_checkbox" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/suggested_layout" android:background="@color/gray_f5" android:paddingLeft="@dimen/space_16dp" android:paddingRight="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="28.0dip">
+        <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/public_share_suggested" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/public_share_select_all" />
+    </LinearLayout>
+    <ListView android:id="@id/listview_users_list" android:layout_width="wrap_content" android:layout_height="200.0dip" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/adrive_gallery_privacy_policy" android:key="privacy_policy" />
+    <Preference android:title="@string/adrive_gallery_terms_of_use" android:key="terms_of_use" />
+    <Preference android:title="@string/adrive_gallery_3p_licenses" android:key="3p_license" />
+    <Preference android:title="@string/adrive_gallery_cookies_and_internet_policy" android:key="cookies_and_internet_policy" />
+</PreferenceScreen>

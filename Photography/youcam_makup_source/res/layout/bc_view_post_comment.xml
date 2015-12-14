@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout android:orientation="vertical" android:id="@id/bc_pull_to_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableScrollView android:id="@id/post_scroll_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/post_comment_bar" android:layout_below="@id/fragment_topbar_panel">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/comment_layout_outter" android:background="@drawable/bc_bg_post" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePostPanelOutsideStyle">
+                <Button android:textColor="@color/bc_color_black" android:gravity="left|center" android:id="@id/more_comment_btn" android:background="@drawable/bc_post_list_background" android:layout_width="fill_parent" android:text="@string/bc_post_comment_see_more_comments" style="@style/BcLikeCountPanelStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/comment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/bc_post_comment_divider" android:showDividers="middle" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableScrollView>
+</com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout>

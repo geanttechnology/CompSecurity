@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/panelBody" android:paddingBottom="@dimen/space_20dp" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/hardroundBtn1" android:src="@drawable/hardround_normal_1" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardroundBtn2" android:src="@drawable/hardround_normal_2" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardroundBtn3" android:src="@drawable/hardround_normal_3" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardroundBtn4" android:src="@drawable/hardround_normal_4" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardroundBtn5" android:src="@drawable/hardround_normal_5" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardroundBtn6" android:src="@drawable/hardround_normal_6" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/hardsquareBtn1" android:src="@drawable/hardsquare_normal_1" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardsquareBtn2" android:src="@drawable/hardsquare_normal_2" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardsquareBtn3" android:src="@drawable/hardsquare_normal_3" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardsquareBtn4" android:src="@drawable/hardsquare_normal_4" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardsquareBtn5" android:src="@drawable/hardsquare_normal_5" style="@style/Widget.Picsart.ImageButton.Action" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:id="@id/hardsquareBtn6" android:src="@drawable/hardsquare_normal_6" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

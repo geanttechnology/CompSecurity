@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@drawable/membox_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/card_item" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/text_color_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title" android:paddingLeft="@dimen/space_16dp" android:clickable="false" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="@string/color_splash" android:singleLine="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/si_ui_profile_stream_images_container" android:paddingLeft="@dimen/space_8dp" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/empty_space" android:background="@color/color_transparent" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/space_8dp" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/click_layer" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/card_header_bg_selector" />
+</FrameLayout>

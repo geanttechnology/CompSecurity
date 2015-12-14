@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/FullDialogBackgroundStyle" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:id="@id/iconContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="340">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/hi" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="340" app:guideline_height="340" />
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/topSpace" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/iconContainer" android:layout_alignParentLeft="true" app:guideline_width="1080" app:guideline_height="56" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/titleContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1080.0" android:layout_below="@id/topSpace">
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/download_ycp_detail" android:layout_weight="800.0" style="@style/FullDialogTextStyle" />
+        </LinearLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/middleSpace" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/titleContainer" android:layout_alignParentLeft="true" app:guideline_width="1080" app:guideline_height="55" />
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/bottomSpace" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/titleContainer" android:layout_alignParentLeft="true" app:guideline_width="1080" app:guideline_height="160" />
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/bottomSpace" app:guideline_width="1080" app:guideline_height="80">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="760" app:guideline_height="80">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="left" android:id="@id/goToStoreButton" android:background="@drawable/image_selector_rate_us_btn" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="350" app:guideline_height="80">
+                    <TextView android:text="@string/btn_yes" style="@style/RateButtonTextStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:id="@id/nextTimeButton" android:background="@drawable/image_selector_rate_us_btn" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="350" app:guideline_height="80">
+                    <TextView android:text="@string/rate_us_next_time" style="@style/RateButtonTextStyle" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </RelativeLayout>
+</FrameLayout>

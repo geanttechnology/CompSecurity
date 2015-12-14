@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:state_pressed="true" android:drawable="@drawable/btn_onoff_thick_on_p" />
+    <item android:state_selected="true" android:state_pressed="false" android:drawable="@drawable/btn_onoff_thick_on_n" />
+    <item android:state_selected="false" android:state_pressed="true" android:drawable="@drawable/btn_onoff_thick_off_p" />
+    <item android:drawable="@drawable/btn_onoff_thick_off_n" />
+</selector>

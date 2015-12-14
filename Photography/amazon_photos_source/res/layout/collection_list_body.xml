@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <in.srain.cube.views.GridViewWithHeaderAndFooter android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="@integer/GRID_ALBUM_NUM_COLUMNS" style="@style/GridViewCustomStyle"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <include android:layout_gravity="bottom" android:id="@id/chrome_activity_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/chrome_activity_indicator" />
+    <include android:layout_gravity="bottom" android:id="@id/network_activity_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/network_activity_indicator" />
+    <RelativeLayout android:id="@id/no_content_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+    <include android:id="@id/collection_list_status_bar" android:visibility="gone" layout="@layout/status_bar" />
+    <include android:id="@id/cold_boot_progress" layout="@layout/cold_boot_loading_progress" />
+    <android.support.design.widget.CoordinatorLayout android:id="@id/snackbar_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

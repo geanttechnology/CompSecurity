@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_top" />
+    <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_bottom" />
+    <ScrollView android:id="@id/scrollView_bottomMenu" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@id/panel_bottom_main" android:paddingTop="@dimen/space_16dp" android:paddingBottom="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ScrollView>
+</FrameLayout>

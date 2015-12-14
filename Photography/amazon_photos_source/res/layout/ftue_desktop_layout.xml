@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ftue_desktop_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center_horizontal" android:id="@id/scrollView2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/ic_empty_libraries_laptop_lrg_amazon_dark" android:layout_weight="1.2" style="@style/ftue_scale_image" />
+            <include layout="@layout/divider_line" />
+            <TextView android:id="@id/ftue_header" android:text="@string/adrive_gallery_common_ftue_desktop_header" style="@style/ftue_text.large" />
+            <TextView android:id="@id/ftue_subheader" android:text="@string/adrive_gallery_common_ftue_desktop_subheader" android:layout_weight="0.5" style="@style/ftue_text.med" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ftue_desktop_email_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_weight="1.0">
+                <EditText android:textSize="@dimen/ftue_text_small" android:layout_gravity="center_vertical" android:id="@id/ftue_desktop_text_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/adrive_gallery_common_ftue_desktop_hint" android:lines="1" android:singleLine="true" android:inputType="textEmailAddress" android:windowSoftInputMode="adjustPan" style="@style/ftue_interactive_object" />
+                <Button android:enabled="false" android:layout_gravity="center_vertical" android:id="@id/email_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_ftue_mobile_send_button" android:singleLine="true" />
+            </LinearLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/ftue_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_ftue_desktop_email_button" />
+            <TextView android:id="@id/ftue_skip_link" android:focusable="true" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_ftue_desktop_skip_email_link" android:layout_weight="0.5" android:layout_centerHorizontal="true" android:contentDescription="@string/adrive_gallery_common_ftue_desktop_skip_email_link_accessibility" style="@style/ftue_skip_link" />
+            <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.3" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.1" layout="@layout/prime_ftue_layout" />
+            <ImageView android:id="@id/ftue_amazon_logo" android:src="@drawable/clouddrive_logo" android:layout_weight="0.6" style="@style/ftue_scale_image" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageButton android:id="@id/ftue_x_mark" android:contentDescription="@android:string/cancel" style="@style/ftue_x" />
+</FrameLayout>

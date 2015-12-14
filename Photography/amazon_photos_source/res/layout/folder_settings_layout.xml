@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/chrome_breadcrumb" />
+    <TextView android:id="@id/header_detail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/folder_settings_header_detail_side_margin" android:layout_marginTop="@dimen/folder_settings_header_detail_bottom_margin" android:layout_marginRight="@dimen/folder_settings_header_detail_side_margin" android:layout_marginBottom="@dimen/folder_settings_header_detail_bottom_margin" android:text="@string/adrive_gallery_common_freetime_header_details" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:scrollbarStyle="outsideInset" android:id="@id/listView" android:paddingLeft="@dimen/SETTINGS_MARGIN_LEFT_RIGHT" android:paddingRight="@dimen/SETTINGS_MARGIN_LEFT_RIGHT" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/layout_indicators" />
+        <include android:id="@id/collection_list_status_bar" android:visibility="gone" layout="@layout/status_bar" />
+    </FrameLayout>
+</LinearLayout>

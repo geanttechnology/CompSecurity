@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/si_ui_notification_layout" android:paddingLeft="?listPreferredItemPaddingLeft" android:paddingRight="?listPreferredItemPaddingRight" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/si_ui_notification_main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" android:baselineAligned="false" android:layout_toLeftOf="@id/si_ui_notification_image_layout">
+        <FrameLayout android:id="@id/si_ui_notification_user_image_layout" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <FrameLayout android:layout_gravity="right|center" android:id="@id/si_ui_notification_user_chip" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip">
+                <ImageView android:id="@id/si_ui_notification_user_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/si_ui_default_avatar" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="left|center" android:id="@id/notification_type_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/si_ui_notification_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" android:layout_toRightOf="@id/si_ui_notification_user_image_layout">
+            <TextView android:textSize="@dimen/textSize_12" android:textStyle="normal" android:textColor="@color/text_color_light_gray" android:gravity="center_vertical" android:id="@id/si_ui_notification_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 mounth ago" android:drawablePadding="@dimen/space_4dp" />
+            <TextView android:textSize="@dimen/textSize_12" android:textStyle="normal" android:textColor="@color/text_color_dark_gray" android:layout_gravity="left|center" android:id="@id/si_ui_notification_top_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dip" android:maxHeight="50.0dip" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_13" android:textStyle="normal" android:textColor="@color/text_color_black" android:id="@id/si_ui_notification_user_name_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+                <TextView android:textSize="@dimen/textSize_13" android:textStyle="normal" android:textColor="@color/text_color_black" android:ellipsize="marquee" android:layout_gravity="top" android:id="@id/si_ui_notification_user_name_and_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:singleLine="false" />
+            </LinearLayout>
+            <ImageView android:id="@id/si_ui_notification_comment_imageview" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/horizontal_scrollable_image_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_margin="@dimen/space_12dp" android:layout_marginTop="@dimen/space_4dp" android:layout_below="@id/si_ui_notification_info_layout" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/si_ui_notification_user_image_click" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_toLeftOf="@id/horizontal_scrollable_image_list" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/si_ui_notification_image_layout" android:clickable="true" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginTop="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" android:foreground="?selectableItemBackground" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/si_ui_notification_image" android:clickable="false" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/empty_drawable" android:scaleType="centerCrop" android:contentDescription="@string/gen_photo" />
+    </FrameLayout>
+    <View android:background="@color/gray_ee" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/space_4dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

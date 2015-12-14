@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/chrome_breadcrumb" />
+        </android.support.design.widget.AppBarLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/no_content_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+        </FrameLayout>
+        <ListView android:layout_gravity="right" android:id="@id/timeline_date_list" android:background="@color/timeline_bar_background" android:scrollbars="none" android:layout_width="@dimen/timeline_list_width" android:layout_height="fill_parent" android:listSelector="@drawable/timeline_list_selector" android:divider="@null" android:translationX="@dimen/timeline_list_width" android:importantForAccessibility="2" app:layout_behavior="com.amazon.gallery.framework.kindle.timeline.TimelineBehavior" />
+        <include layout="@layout/layout_indicators" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

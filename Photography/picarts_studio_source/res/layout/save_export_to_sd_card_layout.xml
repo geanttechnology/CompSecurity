@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/space_24dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+        <ScrollView android:paddingLeft="@dimen/space_24dp" android:paddingTop="@dimen/space_24dp" android:paddingRight="@dimen/space_24dp" android:paddingBottom="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/save_export_filename_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sin_share_save_to_sd_filename" />
+                <EditText android:id="@id/save_export_filename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_12dp" android:inputType="text" />
+                <TextView android:id="@id/save_export_packagename_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sin_share_save_to_sd_package_name" />
+                <LinearLayout android:id="@id/save_export_packagename_panelId" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:id="@id/save_export_packagename" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+                </LinearLayout>
+                <Spinner android:id="@id/save_export_imageformat" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+            <Button android:id="@id/save_export_button_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_cancel" style="?android:attr/buttonBarButtonStyle" />
+            <Button android:id="@id/save_export_button_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_ok" style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressBar" android:padding="@dimen/space_4dp" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:indeterminate="true" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+</RelativeLayout>

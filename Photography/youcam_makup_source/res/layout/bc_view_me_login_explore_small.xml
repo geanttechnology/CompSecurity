@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bc_register_email_btn_selector" android:layout_width="@dimen/t260dp" android:layout_height="@dimen/t42dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/bc_email_text_color" android:gravity="center" android:layout_height="@dimen/t42dp" android:layout_marginRight="@dimen/t10dp" android:text="@string/bc_welcome_btn_explore_now" style="@style/BcRegisterButtonBasicStyle" />
+</LinearLayout>

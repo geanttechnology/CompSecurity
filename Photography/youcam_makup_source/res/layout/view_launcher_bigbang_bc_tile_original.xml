@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="453" app:reference_height="496"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/ico_bc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <View android:layout_gravity="center" android:background="@drawable/logo_bc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@drawable/image_selector_launcher_main_btn_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

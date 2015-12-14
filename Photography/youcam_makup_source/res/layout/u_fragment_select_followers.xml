@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ChatAddMemberRelativeLayout1" android:layout_width="fill_parent" android:layout_height="@dimen/t40dp" android:layout_marginLeft="@dimen/t6dp" android:layout_marginRight="@dimen/t6dp" android:layout_below="@id/ChatAddMemberHeader">
+        <include android:contentDescription="[AID]Chat_AddMember_Search" layout="@layout/u_search_edit_token" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/RecentContractLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ChatAddMemberRelativeLayout1">
+        <TextView android:textSize="@dimen/t11dp" android:textColor="#ff979797" android:id="@id/recentContractText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t6dp" android:layout_marginBottom="@dimen/t3dp" android:text="@string/u_recent_contacts" android:layout_below="@id/ChatAddMemberRelativeLayout1" />
+        <View android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/recentContractText" />
+    </LinearLayout>
+    <ListView android:id="@id/ChatAddMemberListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="17.0dip" android:divider="@null" android:layout_above="@id/deselectBarLayout" android:layout_below="@id/RecentContractLayout" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/you_color_normal_gray_text" android:gravity="center" android:id="@id/ChatAddMemberSearchEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/u_empty_string_search_friend" android:layout_alignTop="@id/ChatAddMemberListView" android:layout_alignBottom="@id/ChatAddMemberListView" />
+    <ProgressBar android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+    <RelativeLayout android:id="@id/AlphabeticScrollTextLayout" android:background="@color/you_color_scroll_bg_gray" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="40.0sp" android:textColor="@color/white" android:id="@id/AlphabeticScrollTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

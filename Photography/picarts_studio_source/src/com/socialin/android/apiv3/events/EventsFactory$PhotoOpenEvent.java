@@ -1,0 +1,29 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.socialin.android.apiv3.events;
+
+import com.socialin.android.constants.EventParam;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class addParam extends addParam
+{
+
+    public addParam setExtras(JSONObject jsonobject)
+    {
+        addParam(EventParam.EXTRAS, jsonobject);
+        return this;
+    }
+
+    public (long l, long l1, int i, int j, JSONArray jsonarray)
+    {
+        super("photo_open");
+        addParam(EventParam.PHOTO_ID, Long.valueOf(l));
+        addParam(EventParam.OWNER_ID, Long.valueOf(l1));
+        addParam(EventParam.LIKES_COUNT, Integer.valueOf(i));
+        addParam(EventParam.COMMENTS_COUNT, Integer.valueOf(j));
+        addParam(EventParam.TAGS, jsonarray);
+    }
+}

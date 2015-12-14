@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/si_ui_gallery_item_view_slider_content_root" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/headerView" layout="@layout/si_ui_gallery_item_details_header" />
+    <FrameLayout android:id="@id/load_more_comment" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="32.0dip" android:foreground="?selectableItemBackground" android:layout_below="@id/headerView">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Picsart.ProgressBar.Small" />
+        <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/text_color_light_gray" android:layout_gravity="center" android:id="@id/text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/load_more" />
+    </FrameLayout>
+    <View android:layout_gravity="bottom" android:id="@id/divider" android:background="@drawable/list_divider_holo_light" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/load_more_comment" />
+    <com.picsart.studio.view.CommentListView android:id="@id/si_ui_gallery_item_details_listView" android:paddingBottom="@dimen/space_48dp" android:visibility="visible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/color_white" android:divider="@drawable/list_divider_holo_light" android:layout_below="@id/divider" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:paddingBottom="@dimen/space_48dp" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/color_white" android:divider="@drawable/list_divider_holo_light" android:layout_below="@id/divider" />
+    <TextView android:id="@id/si_ui_gallery_item_details_messageView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/social_no_data" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/loader_layout" android:background="@color/color_white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_12dp" android:layout_below="@id/divider">
+        <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_medium_picsart" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tag_photo_panel" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/tag_points_photo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:contentDescription="@string/app_name" app:auto_resize_mode="fill_width_auto_height" />
+        <ImageView android:id="@id/post_play_icon" android:visibility="gone" android:layout_width="@dimen/t50dp" android:layout_height="@dimen/t50dp" android:src="@drawable/bc_play_video_selector" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/tag_points_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="bottom|left|center" android:id="@id/tag_points_toggle_btn" android:padding="@dimen/t6dp" android:visibility="gone" android:layout_width="@dimen/t45dp" android:layout_height="@dimen/t45dp" android:src="@drawable/bc_product_tag_preview_selector" android:contentDescription="@string/app_name" />
+</FrameLayout>

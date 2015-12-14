@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/space_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/si_profile_user_avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16dp" android:layout_marginBottom="@dimen/space_16dp">
+            <ImageView android:layout_gravity="center" android:id="@id/si_profile_user_avatar" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/si_ui_default_avatar" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/si_ui_welcome_camera_photo" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_16" android:typeface="normal" android:textColor="@color/text_color_light_gray" android:gravity="center_vertical" android:id="@id/username_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_txt_login" android:drawableLeft="@drawable/ic_at" android:drawablePadding="@dimen/space_4dp" />
+            <TextView android:textSize="@dimen/textSize_14" android:typeface="normal" android:textColor="@color/text_color_dark_gray" android:id="@id/tv_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:maxWidth="130.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_edit_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_edit_dark" style="@style/Widget.Picsart.ImageButton.Action.Small" />
+        </LinearLayout>
+        <View android:background="@drawable/menu_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_16" android:typeface="normal" android:textColor="@color/text_color_light_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_txt_name" android:drawableLeft="@drawable/ic_username" android:drawablePadding="@dimen/space_4dp" />
+            <TextView android:textSize="@dimen/textSize_16" android:typeface="normal" android:textColor="@color/text_color_dark_gray" android:id="@id/tv_displayname" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginRight="@dimen/space_8dp" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_import_name_from_twitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_follow_us_twitter_p" style="@style/Widget.Picsart.ImageButton.Action.Small" />
+            <ImageButton android:id="@id/btn_import_name_from_fb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_facebookimport_dark" style="@style/Widget.Picsart.ImageButton.Action.Small" />
+            <ImageButton android:id="@id/btn_edit_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_edit_dark" style="@style/Widget.Picsart.ImageButton.Action.Small" />
+        </LinearLayout>
+        <View android:background="@drawable/menu_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_14" android:typeface="normal" android:textColor="@color/text_color_light_gray" android:gravity="center_vertical" android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_email" android:drawableLeft="@drawable/ic_email" android:drawablePadding="@dimen/space_4dp" />
+            <TextView android:textSize="@dimen/textSize_16" android:typeface="normal" android:textColor="@color/text_color_dark_gray" android:id="@id/tv_email" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginRight="@dimen/space_8dp" android:maxWidth="160.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_import_email_from_fb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_facebookimport_dark" style="@style/Widget.Picsart.ImageButton.Action.Small" />
+            <ImageButton android:id="@id/btn_edit_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_edit_dark" style="@style/Widget.Picsart.ImageButton.Action.Small" />
+        </LinearLayout>
+        <View android:background="@drawable/menu_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_16" android:typeface="normal" android:textColor="@color/text_color_light_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_txt_pwd" android:drawableLeft="@drawable/ic_password" android:drawablePadding="@dimen/space_4dp" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_edit_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_edit_dark" style="@style/Widget.Picsart.ImageButton.Action.Small" />
+        </LinearLayout>
+        <View android:background="@drawable/menu_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_14" android:typeface="normal" android:textColor="@color/text_color_light_gray" android:gravity="center_vertical" android:id="@id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_txt_location" android:drawableLeft="@drawable/ic_location" android:drawablePadding="@dimen/space_4dp" />
+            <TextView android:textSize="@dimen/textSize_16" android:typeface="normal" android:textColor="@color/text_color_dark_gray" android:id="@id/tv_location" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginRight="@dimen/space_8dp" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_edit_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_edit_dark" style="@style/Widget.Picsart.ImageButton.Action.Small" />
+        </LinearLayout>
+        <View android:background="@drawable/menu_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/text_color_light_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pref_about" android:drawableLeft="@drawable/ic_info" android:drawablePadding="@dimen/space_4dp" />
+            <TextView android:textSize="@dimen/textSize_16" android:typeface="normal" android:textColor="@color/text_color_dark_gray" android:ellipsize="end" android:id="@id/tv_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8dp" android:layout_marginRight="@dimen/space_8dp" android:maxLines="3" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_edit_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_edit_dark" style="@style/Widget.Picsart.ImageButton.Action.Small" />
+        </LinearLayout>
+        <View android:id="@id/user_profile_social_connections_separator" android:background="@drawable/menu_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/user_profile_social_connections_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize_14" android:typeface="normal" android:textColor="@color/text_color_light_gray" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_title_social_connections" android:drawableLeft="@drawable/ic_social" android:drawablePadding="@dimen/space_4dp" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/social_connections_frame_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

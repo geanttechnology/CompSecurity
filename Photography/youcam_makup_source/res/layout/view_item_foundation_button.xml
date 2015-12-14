@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1920.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1720.0">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="1080" app:reference_height="1720">
+            <View android:layout_gravity="bottom|right|center" android:id="@id/foundation_bb_cushion_ad_btn" android:background="@drawable/bb_cushion_ad" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="240" app:self_height="260" app:self_left="150" app:self_top="30" app:self_rtl="true" app:self_btt="true" />
+            <View android:layout_gravity="bottom|right|center" android:id="@id/foundation_bb_cushion_pc_btn" android:background="@drawable/bb_cushion_pc" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="240" app:self_height="260" app:self_left="150" app:self_top="30" app:self_rtl="true" app:self_btt="true" />
+            <FrameLayout android:layout_gravity="bottom|right|center" android:id="@id/foundation_bb_cushion_play_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="140" app:self_height="130" app:self_left="135" app:self_top="290" app:self_rtl="true" app:self_btt="true">
+                <View android:background="@drawable/text_bubble" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textStyle="bold" android:textColor="#ffa560b3" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/foundation_bb_cushion_play" app:text_size_info="360:11:default" />
+            </FrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </FrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/foundationButtonViewBottomArea" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="200.0" app:guideline_width="1080" app:guideline_height="200" />
+</LinearLayout>

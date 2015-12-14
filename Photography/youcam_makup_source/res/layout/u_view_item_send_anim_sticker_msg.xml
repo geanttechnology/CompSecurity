@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UViewItemSendLayout">
+        <ImageView android:id="@id/itemCheckBox" android:visibility="visible" android:layout_marginLeft="@dimen/chat_item_check_box_margin_left" android:layout_marginRight="@dimen/chat_item_check_box_margin_right" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/UViewItemMessageCheckBox" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ChatMessageContentLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.cyberlink.you.widgetpool.common.GifImageView android:id="@id/ChatMessageContentGifView" android:padding="10.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" style="@style/UViewItemSendAnimSticker" />
+                <View android:id="@id/scheduleSendMask" android:background="@color/you_color_50_percentage_white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/ChatMessageContentGifView" android:layout_alignTop="@id/ChatMessageContentGifView" android:layout_alignRight="@id/ChatMessageContentGifView" android:layout_alignBottom="@id/ChatMessageContentGifView" />
+            </RelativeLayout>
+            <ImageView android:id="@id/explode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ChatMessageContentLayout" android:layout_alignBottom="@id/ChatMessageContentLayout" android:layout_centerVertical="true">
+            <TextView android:textColor="#ff000000" android:id="@id/ChatMessageReadCountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/UViewItemSendRead" />
+            <ProgressBar android:id="@id/sendingProgressbar" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            <TextView android:textColor="#ff000000" android:id="@id/ChatMessageTimeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" style="@style/UViewItemSendTime" />
+        </LinearLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ffff0000" android:id="@id/ttl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="11.0dip" android:includeFontPadding="false" android:layout_below="@id/ChatMessageContentLayout" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

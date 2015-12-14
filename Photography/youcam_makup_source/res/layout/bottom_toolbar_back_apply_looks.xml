@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/lookTypeSwitcher" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="@dimen/f28dp" android:weightSum="2.0">
+        <TextView android:id="@id/lookTypeSwitcherNaturalButton" android:text="@string/more_NATURAL" style="@style/LooksStyleTabText" />
+        <TextView android:id="@id/lookTypeSwitcherCostumeButton" android:text="@string/more_COSTUME" style="@style/LooksStyleTabText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/makeupMainMenu" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/f87dp" android:weightSum="1080.0" android:layout_below="@id/lookTypeSwitcher">
+        <FrameLayout android:id="@id/btbLooksBackButton" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" custom:guideline_width="60" custom:guideline_height="292">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:background="@drawable/btb_btn_cancel_n" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:guideline_width="60" custom:guideline_height="60" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </FrameLayout>
+        <View android:background="@drawable/pattenmenu_divide" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="50.0" />
+        <com.cyberlink.youcammakeup.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/makeupLooksGridView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1080.0" custom:listSelector="@android:color/transparent" custom:horizontalSpacing="0.0dip" custom:numRows="1" />
+        <View android:background="@drawable/pattenmenu_divide" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+        <FrameLayout android:id="@id/btbLooksApplyButton" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" custom:guideline_width="60" custom:guideline_height="292">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:background="@drawable/btb_btn_ok_n" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:guideline_width="60" custom:guideline_height="60" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

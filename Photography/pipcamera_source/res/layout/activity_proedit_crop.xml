@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ly_action_bar" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.fotoable.photocollage.view.ProEidtActionBarView android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/ly_action_bar" android:layout_alignParentLeft="true" />
+    <FrameLayout android:id="@id/ly_imgae_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ly_bottom" android:layout_below="@id/bannerContainerID" />
+    <FrameLayout android:id="@id/ly_bottom" android:background="@color/color_scroll_bar" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginBottom="45.0dip" android:layout_alignParentBottom="true">
+        <com.fotoable.fotoproedit.activity.crop.TProEditCropScrollView android:layout_gravity="bottom" android:id="@id/tMainScrollView1" android:background="@color/color_scroll_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.fotoable.fotoproedit.activity.crop.TProEditRotateBottomBar android:layout_gravity="center" android:id="@id/tRotateBottomBar1" android:background="@color/color_scroll_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/tProBottom" android:background="@color/color_scroll_bar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <SeekBar android:layout_gravity="center" android:id="@id/tProSeekbar" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxHeight="2.0dip" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ff2d2d2d" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/crop_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/crop_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_crop_crop" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/rotate_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/rotate_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_crop_rotate" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/strech_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/strech_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_crop_pro" android:scaleType="fitCenter" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

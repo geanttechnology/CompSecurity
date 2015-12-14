@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/topToolBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="140">
+            <ImageView android:id="@id/sponsorAdBackBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" app:child_width="157" app:child_height="140" style="@style/CameraTopBackBtn" />
+            <ImageView android:layout_gravity="center" android:id="@id/sponsorLogoImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/app_name" app:child_width="750" app:child_height="100" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/buttonContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" app:guideline_width="1080" app:guideline_height="280">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="280">
+            <View android:id="@id/makeupTrailBtn" android:background="@drawable/image_selector_makeup_trail_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="180" app:child_height="180" app:child_left="278" app:child_top="7" />
+            <View android:id="@id/walkInServiceBtn" android:background="@drawable/image_selector_walk_in_service_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="180" app:child_height="180" app:child_left="622" app:child_top="7" />
+            <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="#ffa186c4" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/makeupTrailTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/makeup_trail" app:child_width="320" app:child_left="208" app:child_top="200" app:text_size_info="360:14:default; 360:12:fr; 360:12:pt;" app:suppress_max="true" />
+            <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="#ffa186c4" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/walkInServiceTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/walk_in_service" app:child_width="320" app:child_left="552" app:child_top="200" app:text_size_info="360:14:default" app:suppress_max="true" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/sponsorAdImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_above="@id/buttonContainer" android:layout_below="@id/topToolBar" android:contentDescription="@string/app_name" />
+    <FrameLayout android:id="@id/interruptTouchView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:child_width="540" app:child_height="350" app:child_left="242" app:guideline_width="1080" app:guideline_height="620">
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/trailMenuContainer" android:background="@drawable/option_box" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="640" app:guideline_height="440">
+                <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="606" app:child_height="359" app:child_left="18" app:child_top="18">
+                    <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/takePhotoBtn" android:background="@drawable/image_selector_sponsor_ad_menu_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/common_capture_photo" android:layout_weight="1.0" app:text_size_info="360:16:default" app:suppress_max="true" />
+                    <View android:background="#ffa186c4" android:layout_width="fill_parent" android:layout_height="2.0px" />
+                    <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/selectPhotoBtn" android:background="@drawable/image_selector_sponsor_ad_menu_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/sponsor_ad_menu_photo_album" android:layout_weight="1.0" app:text_size_info="360:16:default" app:suppress_max="true" />
+                </LinearLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+    </FrameLayout>
+    <include android:id="@id/shareWaitingCursor" layout="@layout/waiting_cursor_dialog" />
+</RelativeLayout>

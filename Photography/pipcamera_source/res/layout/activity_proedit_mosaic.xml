@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fotoable.photocollage.view.ProEidtActionBarView android:layout_gravity="top" android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="50.0dip" android:layout_alignParentLeft="true" />
+    <FrameLayout android:layout_gravity="top|left|center" android:id="@id/ly_imgae_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="108.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="58.0dip" />
+    <ImageButton android:layout_gravity="top|center" android:id="@id/btn_edit_back" android:background="@drawable/gr_mosaic_undo_res" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="110.0dip" android:layout_marginRight="40.0dip" />
+    <ImageButton android:layout_gravity="top|center" android:id="@id/btn_edit_next" android:background="@drawable/gr_mosaic_redo_res" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="110.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/showcolor" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/scrollContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip">
+        <com.fotoable.photocollage.view.compose2.color.ColorSelectView android:layout_gravity="bottom" android:id="@id/colorSelectView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="36.0dip" />
+        <com.fotoable.fotoproedit.activity.mosaic.MosaicIconScrollView android:id="@id/scroll_brushicon" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:background="@color/ui_main_text_color" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="138.0dip" android:layout_height="fill_parent">
+            <ImageButton android:layout_gravity="center" android:id="@id/btn_pen" android:background="@null" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/gr_mosaic_pen" android:scaleType="fitCenter" />
+            <ImageButton android:layout_gravity="left|center" android:id="@id/btn_change_color" android:background="@null" android:padding="7.0dip" android:visibility="gone" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/gr_mosaic_pattern" android:scaleType="fitCenter" />
+            <ImageButton android:layout_gravity="left|center" android:id="@id/btn_erasor" android:background="@null" android:padding="7.0dip" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/gr_mosaic_erasor" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="right|center" android:background="@drawable/gr_mosaic_pen_bg" android:layout_width="160.0dip" android:layout_height="44.0dip" android:layout_marginRight="20.0dip">
+            <ImageButton android:layout_gravity="left|center" android:id="@id/btn_pen_size_1" android:background="@null" android:layout_width="34.0dip" android:layout_height="44.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/gr_mosaic_1" android:scaleType="fitCenter" />
+            <ImageButton android:layout_gravity="left|center" android:id="@id/btn_pen_size_2" android:background="@null" android:layout_width="34.0dip" android:layout_height="44.0dip" android:layout_marginLeft="48.0dip" android:src="@drawable/gr_mosaic_2" android:scaleType="fitCenter" />
+            <ImageButton android:layout_gravity="left|center" android:id="@id/btn_pen_size_3" android:background="@null" android:layout_width="34.0dip" android:layout_height="44.0dip" android:layout_marginLeft="80.0dip" android:src="@drawable/gr_mosaic_3" android:scaleType="fitCenter" />
+            <ImageButton android:layout_gravity="left|center" android:id="@id/btn_pen_size_4" android:background="@null" android:layout_width="34.0dip" android:layout_height="44.0dip" android:layout_marginLeft="114.0dip" android:src="@drawable/gr_mosaic_4" android:scaleType="fitCenter" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/ly_tip" android:background="@color/black_tranparent_40" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:background="@drawable/gr_tip_pinch" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginBottom="90.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:text="@string/mosaic_tip_zoom" />
+        <ImageView android:layout_gravity="center" android:background="@drawable/gr_tip_swipe" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginTop="90.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:text="@string/mosaic_tip_move" />
+    </FrameLayout>
+</FrameLayout>

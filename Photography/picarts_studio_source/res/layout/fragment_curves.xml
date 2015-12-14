@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/gray_33" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.picsart.studio.editor.view.CurvesEditorView android:id="@id/editor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/color_curves_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <RadioGroup android:gravity="center" android:orientation="vertical" android:id="@id/channelsRadioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/RGBRadio" android:background="@drawable/radio_btn_rgb_selector_t" android:layout_width="40.0dip" android:layout_height="40.0dip" android:checked="true" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+                    <RadioButton android:id="@id/redRadio" android:background="@drawable/rgb_radio_button_selector_holo_dark" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:button="@null" android:drawableLeft="@drawable/shape_rectangle_red" android:drawableStart="@drawable/shape_rectangle_red" style="@style/Widget.Picsart.ImageButton.Action" />
+                    <RadioButton android:id="@id/greenRadio" android:background="@drawable/rgb_radio_button_selector_holo_dark" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:checked="false" android:button="@null" android:drawableLeft="@drawable/shape_rectangle_green" android:drawableStart="@drawable/shape_rectangle_green" style="@style/Widget.Picsart.ImageButton.Action" />
+                    <RadioButton android:id="@id/blueRadio" android:background="@drawable/rgb_radio_button_selector_holo_dark" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:button="@null" android:drawableLeft="@drawable/shape_rectangle_blue" android:drawableStart="@drawable/shape_rectangle_blue" style="@style/Widget.Picsart.ImageButton.Action" />
+                </RadioGroup>
+                <com.picsart.studio.editor.view.RGBConvertView android:id="@id/rgbConvertView" android:background="@color/gray_tr_64_32" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/space_4dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp">
+                <ImageButton android:id="@id/cancelBtn" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+                <ImageButton android:id="@id/resetChannelBtn" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_refresh" style="@style/Widget.Picsart.ImageButton.Action" />
+                <ImageButton android:id="@id/deletePointBtn" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_delete_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+                <include layout="@layout/separator_horizontal" />
+                <ImageButton android:id="@id/doneBtn" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/ad" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/editor_ad_layout" />
+</LinearLayout>

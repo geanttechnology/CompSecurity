@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/t6dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/bc_bottom_main_image" android:layout_width="@dimen/t45dp" android:layout_height="@dimen/t45dp" android:scaleType="matrix" android:adjustViewBounds="true" app:bc_adjudge_portrait_center_crop="true" app:bc_adjudge_portrait_center_crop_scale="0.5" />
+    <View android:id="@id/bc_bottom_main_image_mask" android:background="@drawable/bc_avatar_circle_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/bc_bottom_main_image" android:layout_alignTop="@id/bc_bottom_main_image" android:layout_alignRight="@id/bc_bottom_main_image" android:layout_alignBottom="@id/bc_bottom_main_image" android:contentDescription="@string/app_name" />
+    <View android:id="@id/bc_bottom_main_image_square_mask" android:background="@drawable/bc_circle_banner_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/bc_bottom_main_image" android:layout_alignTop="@id/bc_bottom_main_image" android:layout_alignRight="@id/bc_bottom_main_image" android:layout_alignBottom="@id/bc_bottom_main_image" android:contentDescription="@string/app_name" />
+</RelativeLayout>

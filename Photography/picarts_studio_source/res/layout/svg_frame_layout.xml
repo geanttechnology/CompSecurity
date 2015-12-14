@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.socialin.android.photo.frame.FrameSvgView android:id="@id/edit_frame_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <FrameLayout android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left" />
+        <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" />
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <LinearLayout android:orientation="horizontal" android:id="@id/frameContainer" android:paddingLeft="@dimen/space_16dp" android:paddingRight="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btn_cancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/rotate_left" android:src="@drawable/ic_action_rotate_ccw_t" android:baselineAlignBottom="false" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/rotate_right" android:src="@drawable/ic_action_rotate_cw_t" android:baselineAlignBottom="false" style="@style/Widget.Picsart.ImageButton.Action" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/edit_dashboard_select_color_panel" android:paddingLeft="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/select_color" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginTop="@dimen/space_4dp" android:layout_centerInParent="true" />
+            <ImageView android:background="@drawable/xml_icon_bg_color" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/btn_done" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/ad_panel" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</LinearLayout>

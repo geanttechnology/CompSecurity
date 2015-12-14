@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bc_arc_mainLayout" android:background="#40000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.beautycircle.view.widgetpool.common.ArcLayout android:id="@id/bc_arc_circleLayout" android:layout_width="@dimen/t300dp" android:layout_height="@dimen/t300dp" app:bc_arc_outterRadius="@dimen/t80dp" app:bc_arc_innerRadius="@dimen/t15dp" app:bc_arc_innerCircle="@color/bc_color_main_pressed_gray" app:bc_arc_innerCircleBorderWidth="@dimen/t2dp">
+        <com.cyberlink.beautycircle.view.widgetpool.common.ArcView android:id="@id/bc_arc_like" android:visibility="gone" android:layout_width="@dimen/t50dp" android:layout_height="@dimen/t60dp" app:bc_arc_hintText="@string/bc_arc_like" app:bc_arc_circleBackground="@drawable/bc_arc_icon_like" />
+        <com.cyberlink.beautycircle.view.widgetpool.common.ArcView android:id="@id/bc_arc_edit" android:visibility="gone" android:layout_width="@dimen/t50dp" android:layout_height="@dimen/t60dp" app:bc_arc_hintText="@string/bc_arc_edit" app:bc_arc_circleBackground="@drawable/bc_arc_icon_edit" />
+        <com.cyberlink.beautycircle.view.widgetpool.common.ArcView android:id="@id/bc_arc_share" android:visibility="gone" android:layout_width="@dimen/t50dp" android:layout_height="@dimen/t60dp" app:bc_arc_hintText="@string/bc_arc_share" app:bc_arc_circleBackground="@drawable/bc_arc_icon_share" />
+        <com.cyberlink.beautycircle.view.widgetpool.common.ArcView android:id="@id/bc_arc_circle_it" android:visibility="gone" android:layout_width="@dimen/t50dp" android:layout_height="@dimen/t60dp" app:bc_arc_hintText="@string/bc_arc_circle_it" app:bc_arc_circleBackground="@drawable/bc_arc_icon_circle_it" />
+    </com.cyberlink.beautycircle.view.widgetpool.common.ArcLayout>
+</RelativeLayout>

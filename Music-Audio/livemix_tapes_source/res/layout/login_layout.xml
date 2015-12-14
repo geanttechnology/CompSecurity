@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/login_splash" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_dummy1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+        <View android:layout_width="fill_parent" android:layout_height="200.0dip" />
+        <EditText android:layout_gravity="center" android:id="@id/text_username" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="          UserName          " />
+        <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <EditText android:layout_gravity="center" android:id="@id/text_password" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="          Password           " />
+        <ImageView android:layout_gravity="center" android:id="@id/login_signin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_button_signin" />
+        <ImageView android:layout_gravity="center" android:id="@id/login_signup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-40.0dip" android:src="@drawable/login_button_signup" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_dummy2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+</LinearLayout>

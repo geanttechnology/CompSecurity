@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listViewXmppServer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/you_color_10_percentage_dark" android:dividerHeight="3.0dip" android:layout_weight="0.7" />
+    <Space android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/view1" android:layout_width="wrap_content" android:layout_height="5.0dip" android:layout_weight="0.1" />
+    <Button android:id="@id/buttonDisconnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Auto select" android:layout_weight="0.1" />
+    <Space android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

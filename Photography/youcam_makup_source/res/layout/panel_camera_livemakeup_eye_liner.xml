@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" custom:guideline_width="1080" custom:guideline_height="290">
+        <RelativeLayout android:id="@id/touchEventReceiver" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/eyeLinerContainer" android:background="@color/camera_panel_effect_background_alpha" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" custom:guideline_width="1080" custom:guideline_height="150">
+                <com.cyberlink.youcammakeup.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/cameraColorGridArea" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" custom:listSelector="@android:color/transparent" custom:horizontalSpacing="0.0dip" custom:numRows="1" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_above="@id/eyeLinerContainer" custom:guideline_width="1080" custom:guideline_height="140">
+                <com.cyberlink.youcammakeup.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/cameraPatternGridArea" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" custom:listSelector="@android:color/transparent" custom:horizontalSpacing="0.0dip" custom:numRows="1" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </RelativeLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/panelTopView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" custom:guideline_width="1080" custom:guideline_height="290" />
+</RelativeLayout>

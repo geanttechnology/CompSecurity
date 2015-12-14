@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/clipart_clear_dashboardDone" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <include layout="@layout/separator_horizontal" />
+    <ImageButton android:id="@id/dashboardDrawingUndoId" android:src="@drawable/drawing_undo_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+    <ImageButton android:id="@id/clearDrawButtonBrushGhost" android:layout_width="fill_parent" android:src="@drawable/ic_action_brush_ghost_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/clearDrawEraseDrawSelector" android:background="@drawable/mini_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/mode_erase" android:layout_width="@dimen/drawing_top_panel_item_size_small" android:layout_height="@dimen/drawing_top_panel_item_size_small" android:src="@drawable/drawing_mode_erase_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+        <View android:background="@color/white_transparent_66" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ImageButton android:id="@id/mode_draw" android:layout_width="@dimen/drawing_top_panel_item_size_small" android:layout_height="@dimen/drawing_top_panel_item_size_small" android:src="@drawable/drawing_mode_brush_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <ImageButton android:id="@id/clipart_clear_dashboardCancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+</LinearLayout>

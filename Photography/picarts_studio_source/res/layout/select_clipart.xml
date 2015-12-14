@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/gray_33" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/color_white" android:layout_gravity="center" android:id="@id/no_cliparts" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_no_clipart_to_show" />
+    <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/color_white" android:layout_gravity="center" android:id="@id/no_connection" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_error_no_network_connection" />
+    <FrameLayout android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Picsart.ProgressBar" />
+    </FrameLayout>
+    <GridView android:gravity="center" android:id="@id/clipart_grid" android:background="@color/gray_33" android:paddingBottom="@dimen/space_4dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="true" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:columnWidth="70.0dip" android:numColumns="auto_fit" />
+    <FrameLayout android:id="@id/select_clipart_fragment_container_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

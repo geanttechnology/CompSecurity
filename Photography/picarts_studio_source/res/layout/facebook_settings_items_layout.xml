@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12dp">
+        <Button android:id="@id/btn_share_all" android:text="@string/txt_share_to_all" style="@style/si_common_promo_send_item" />
+        <CheckBox android:id="@id/checkbox_share_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/Divider.Horizontal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_pages" android:text="@string/gen_pages" style="@style/si_common_promo_send_item" />
+        <CheckBox android:id="@id/checkbox_pages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/Divider.Horizontal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_upload" android:text="@string/gen_upload" style="@style/si_common_promo_send_item" />
+        <CheckBox android:id="@id/checkbox_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/Divider.Horizontal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_likes" android:text="@string/gen_likes" style="@style/si_common_promo_send_item" />
+        <CheckBox android:id="@id/checkbox_likes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/Divider.Horizontal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_comments" android:text="@string/comments" style="@style/si_common_promo_send_item" />
+        <CheckBox android:id="@id/checkbox_comments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/Divider.Horizontal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_follow" android:text="@string/social_follow" style="@style/si_common_promo_send_item" />
+        <CheckBox android:id="@id/checkbox_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/Divider.Horizontal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_vote" android:text="@string/gen_vote" style="@style/si_common_promo_send_item" />
+        <CheckBox android:id="@id/checkbox_vote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

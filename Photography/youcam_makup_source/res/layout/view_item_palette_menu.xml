@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="320" app:guideline_height="150"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="320" app:guideline_height="150">
+        <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/beautifyMenuItemText" android:background="@drawable/image_selector_palette_menu_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/common_perfect_style" app:child_width="304" app:child_height="114" app:child_left="12" app:text_size_info="360:12:default" app:suppress_max="true" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

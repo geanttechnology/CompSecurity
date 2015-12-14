@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="80"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="72.0" />
+        <ImageView android:id="@id/LookItemGroupArrowOpen" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/image_selector_select_looks_full_group_arrow_open" android:scaleType="fitCenter" android:layout_weight="40.0" android:contentDescription="@null" />
+        <ImageView android:id="@id/LookItemGroupArrowClose" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/image_selector_select_looks_full_group_arrow_close" android:scaleType="fitCenter" android:layout_weight="40.0" android:contentDescription="@null" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="30.0" />
+        <TextView android:textColor="#ff454545" android:gravity="center_vertical" android:id="@id/LookItemGroupTitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/makeup_mode_looks" android:layout_weight="938.0" style="@style/Pixel40CorrespondSize" />
+    </LinearLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

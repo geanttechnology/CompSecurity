@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/folder_settings_entry_padding" android:paddingBottom="@dimen/folder_settings_entry_padding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SETTINGS_MARGIN_LEFT_RIGHT" android:layout_marginRight="@dimen/SETTINGS_MARGIN_LEFT_RIGHT" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/foldericon" android:layout_width="@dimen/folder_settings_icon_size" android:layout_height="@dimen/folder_settings_icon_size" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SETTINGS_MARGIN_LEFT_RIGHT" android:layout_toLeftOf="@id/folder_settings_checkBox" android:layout_toRightOf="@id/foldericon" android:layout_centerVertical="true">
+        <TextView android:textAppearance="@style/textapperance_auto_save_folder_title" android:ellipsize="middle" android:id="@id/foldername" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Camera Roll" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textAppearance="@style/textapperance_auto_save_folder_subtitle" android:id="@id/folderdetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.6MB, 1 item" android:layout_below="@id/foldername" />
+    </RelativeLayout>
+    <CheckBox android:id="@id/folder_settings_checkBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

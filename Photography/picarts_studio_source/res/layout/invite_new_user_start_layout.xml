@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/invite_dialog_id" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:picsart="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/invite_dialog_user_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/newuser_dialog_inviter_img" android:layout_width="160.0dip" android:layout_height="160.0dip" android:src="@drawable/si_ui_default_avatar" />
+        <TextView android:textSize="@dimen/invite_text_medium" android:layout_gravity="center_horizontal" android:id="@id/newuser_dialog_text" android:layout_marginTop="@dimen/space_20dp" android:text="Your friend has sent you a gift" style="@style/TextAppearance.Picsart.Username" />
+        <TextView android:textSize="@dimen/invite_text_small" android:layout_gravity="center_horizontal" android:layout_marginTop="@dimen/space_8dp" android:text="@string/invite_ad_free_new_user_text2" style="@style/TextAppearance.Picsart.Subusername" />
+    </LinearLayout>
+    <com.melnykov.fab.FloatingActionButton android:id="@id/invite_dialog_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16dp" android:src="@drawable/ic_action_pen" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" picsart:fab_colorPressed="@color/accent_dark_picsart" picsart:fab_colorNormal="@color/accent_picsart" picsart:fab_colorRipple="@color/ripple_material_light" />
+</RelativeLayout>

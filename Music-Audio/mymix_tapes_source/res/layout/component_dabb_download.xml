@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/component_dabb_music_download" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="230.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <my.googlemusic.play.utils.views.RobotoTextView android:textSize="20.0sp" android:textColor="@color/color_light_gray" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="34.0dip" android:text="Creating Dabb" wheel:typeface="roboto_condensed_bold" />
+    <com.github.rahatarmanahmed.cpv.CircularProgressView android:layout_gravity="center_horizontal" android:id="@id/component_dabb_music_download_progress" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+</LinearLayout>

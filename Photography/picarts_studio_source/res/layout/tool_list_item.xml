@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/text" android:paddingLeft="@dimen/space_8dp" android:paddingRight="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:drawablePadding="@dimen/space_8dp" />
+    <ImageView android:layout_gravity="right|center" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

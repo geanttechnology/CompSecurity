@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progressBar" android:padding="@dimen/space_4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+        <GridView android:gravity="center" android:id="@id/GVPublicImages" android:paddingLeft="@dimen/space_2dp" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/color_transparent" android:horizontalSpacing="1.0dip" android:verticalSpacing="0.0dip" android:stretchMode="columnWidth" android:numColumns="auto_fit" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/text_color_black" android:layout_gravity="center" android:id="@id/error_msg_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/instagram_error_message" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <ScrollView android:id="@id/me_plus_about_outter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/fragment_topbar_panel">
+        <LinearLayout android:orientation="vertical" android:id="@id/edit_feedback_panel" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcFullActivityPaddingStyle">
+            <com.rockerhieu.emojicon.EmojiconEditText android:gravity="top|left|center" android:id="@id/edit_feedback_text" android:layout_height="@dimen/t170dp" android:hint="@string/bc_feedback_hint" android:inputType="textAutoCorrect|textMultiLine" style="@style/BcEditMeEditLongTextStyle" />
+            <EditText android:gravity="center" android:id="@id/edit_feedback_email" android:layout_marginTop="@dimen/t10dp" android:hint="@string/bc_feedback_email_hint" android:singleLine="true" android:maxLength="50" style="@style/BcEditMeEditTextStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/edit_feedback_image_panel" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:id="@id/edit_feedback_image_btn" android:background="@drawable/bc_post_comment_text_background" android:layout_width="fill_parent" android:layout_height="@dimen/t40dp" android:layout_marginTop="@dimen/t10dp">
+                <ImageView android:layout_width="@dimen/t20dp" android:layout_height="@dimen/t20dp" android:src="@drawable/bc_upload_icon" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/t16sp" android:textColor="@color/bc_color_main_hint_text" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t10dp" android:hint="@string/bc_feedback_upload_image_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/loadingPanel" android:background="@drawable/bg_dialog_save" android:layout_width="@dimen/t110dp" android:layout_height="@dimen/t110dp" android:layout_margin="@dimen/t15dp" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="@dimen/t50dp" android:layout_height="@dimen/t50dp" android:indeterminateDrawable="@drawable/layer_list_waiting_cursor" android:indeterminateDuration="700" android:indeterminateBehavior="repeat" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

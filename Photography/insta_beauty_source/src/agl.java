@@ -1,0 +1,45 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+import android.text.Editable;
+import android.text.TextWatcher;
+import com.fotoable.fotoproedit.activity.ProEditFontActivity;
+import com.fotoable.fotoproedit.activity.font.FontTextLabelView;
+
+public class agl
+    implements TextWatcher
+{
+
+    final ProEditFontActivity a;
+
+    public agl(ProEditFontActivity proeditfontactivity)
+    {
+        a = proeditfontactivity;
+        super();
+    }
+
+    public void afterTextChanged(Editable editable)
+    {
+    }
+
+    public void beforeTextChanged(CharSequence charsequence, int i, int j, int k)
+    {
+    }
+
+    public void onTextChanged(CharSequence charsequence, int i, int j, int k)
+    {
+        if (ProEditFontActivity.n(a) != null && !ProEditFontActivity.E(a))
+        {
+            ProEditFontActivity.n(a).setLabelTextStr(charsequence.toString());
+            ProEditFontActivity.n(a).onTextCreate();
+            ProEditFontActivity.a(a, ProEditFontActivity.n(a));
+            ProEditFontActivity.h(a);
+            return;
+        } else
+        {
+            ProEditFontActivity.e(a, false);
+            return;
+        }
+    }
+}

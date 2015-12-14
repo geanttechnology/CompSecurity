@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/recent_photos_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/recent_photos_progress" android:layout_width="47.0dip" android:layout_height="47.0dip" android:indeterminateOnly="true" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recent_photos_bottom_sheet" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

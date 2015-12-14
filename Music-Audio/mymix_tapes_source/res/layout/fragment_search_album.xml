@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/search_album_list" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" />
+    <RelativeLayout android:id="@id/search_album_info" android:background="@color/color_white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/search_album_info_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nomusic" android:layout_above="@id/search_album_info_message" android:layout_centerHorizontal="true" android:contentDescription="@string/description" />
+    </RelativeLayout>
+    <View android:background="@drawable/tab_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/fragment_search_icon" android:visibility="gone" android:layout_width="92.0dip" android:layout_height="92.0dip" android:src="@drawable/ic_action_search_placeholder" android:layout_centerInParent="true" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/fragment_search_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Search for music, albums or artists" android:layout_below="@id/fragment_search_icon" android:layout_centerHorizontal="true" />
+    <include layout="@layout/component_loading" />
+</RelativeLayout>

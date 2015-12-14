@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/downloadItemCollagePortrait" android:layout_width="@dimen/f96dp" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/downloadShadow" android:layout_width="@dimen/f84dp" android:layout_height="@dimen/f103dp" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+        <ImageView android:id="@id/downloadThumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/downloadThumbnailError" android:background="#ff70706f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photo_bad" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        <LinearLayout android:gravity="center" android:id="@id/downloadItemProgressContanier" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="416.0">
+            <ProgressBar android:layout_gravity="center" android:id="@id/downloadItemProgress" android:layout_width="0.0dip" android:progress="50" android:layout_weight="248.0" style="@style/DownloadGridItemProgressStyle" />
+        </LinearLayout>
+        <Button android:layout_gravity="bottom|right|center" android:id="@id/downloadBtn" android:background="@drawable/btn_icon_download" android:layout_width="@dimen/f29dp" android:layout_height="@dimen/f29dp" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/downloadItemNewIcon" android:visibility="gone" android:layout_width="@dimen/f29dp" android:layout_height="@dimen/f23dp" android:src="@drawable/new_no_border" android:contentDescription="@string/app_name" />
+        <View android:layout_gravity="bottom|right|center" android:id="@id/downloadLockIcon" android:background="@drawable/lock_icon" android:layout_width="@dimen/f29dp" android:layout_height="@dimen/f29dp" />
+        <View android:layout_gravity="bottom|left|center" android:id="@id/DownloadInfoBtn" android:background="@drawable/image_selector_extra_download_info_btn" android:layout_width="@dimen/f29dp" android:layout_height="@dimen/f29dp" />
+    </FrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="#ff454545" android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/DownloadItemTitle" android:layout_width="@dimen/f84dp" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="@string/app_name" app:text_size_info="360:11:default" />
+</FrameLayout>

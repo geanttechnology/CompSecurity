@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/image_zoom_close_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/comment_image_zoom_bg" android:padding="@dimen/space_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/image_zoom_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_medium_picsart" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/image_zoom_imageview" android:background="@color/gray_ee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    </RelativeLayout>
+</RelativeLayout>

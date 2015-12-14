@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/si_ui_profile_user_item" android:background="@drawable/xml_profile_follow_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:padding="@dimen/space_4dp" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/si_ui_profile_right_layout" android:layout_alignParentLeft="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/si_ui_profile_friend_avatar" android:clickable="false" android:duplicateParentState="true" style="@style/Widget.Picsart.Avatar" />
+                <ImageView android:id="@id/verified_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_verifed_badge" android:layout_alignTop="@id/si_ui_profile_friend_avatar" android:layout_alignRight="@id/si_ui_profile_friend_avatar" />
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp">
+                <TextView android:id="@id/si_ui_profile_friend_fullname" style="@style/TextAppearance.Picsart.Light.Username" />
+                <TextView android:id="@id/si_ui_profile_friend_username" style="@style/TextAppearance.Picsart.Light.Subusername" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/si_ui_profile_right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_black" android:id="@id/si_ui_profile_friend_photo_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:maxLength="6" />
+                <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_photos" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp">
+                <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_black" android:id="@id/si_ui_profile_friend_followers_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:maxLength="6" />
+                <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/social_followers" />
+            </LinearLayout>
+            <ImageView android:id="@id/si_ui_profile_friend_follow_btn_seperator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginRight="@dimen/space_12dp" android:src="@drawable/si_ui_minitab_separator" />
+            <CheckBox android:id="@id/si_ui_profile_friend_follow_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/btn_follow" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/si_ui_profile_friend_images_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/si_ui_profile_friend_images_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/text_color_light_gray" android:layout_gravity="center" android:id="@id/si_ui_profile_friend_images_empty_txt" android:paddingLeft="@dimen/space_12dp" android:paddingRight="@dimen/space_12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_empty" />
+    </LinearLayout>
+</LinearLayout>

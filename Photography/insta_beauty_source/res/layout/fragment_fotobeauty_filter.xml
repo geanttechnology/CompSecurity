@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/gray55" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wantu.imagerender.ImageGLSurfaceView android:layout_gravity="top|left|center" android:id="@id/gl_render_view" android:visibility="visible" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/imagecontaier" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="111.0dip">
+        <ImageView android:id="@id/srcimageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/imageview1" android:background="@color/gray55" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottomcontainer" android:layout_width="fill_parent" android:layout_height="156.0dip">
+        <com.fotoable.beautyui.NewFilterContainer android:layout_gravity="bottom" android:id="@id/filtercontainer" android:layout_width="fill_parent" android:layout_height="113.0dip" android:layout_marginBottom="44.0dip" />
+        <View android:layout_gravity="bottom" android:background="@color/beauty_bg_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="44.0dip" />
+        <FrameLayout android:layout_gravity="bottom|left|center" android:background="@color/color_lgray" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <ImageView android:layout_gravity="left" android:id="@id/btnback" android:background="@drawable/btn_edit_close_res" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+            <Button android:layout_gravity="center" android:id="@id/btnSel3" android:background="@drawable/btn_3_res" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            <Button android:layout_gravity="center" android:id="@id/btnSel2" android:background="@drawable/btn_2_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="45.0dip" />
+            <Button android:layout_gravity="center" android:id="@id/btnSel1" android:background="@drawable/btn_1_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="90.0dip" />
+            <Button android:layout_gravity="center" android:id="@id/btnSel4" android:background="@drawable/btn_4_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="45.0dip" />
+            <Button android:layout_gravity="center" android:id="@id/btnSel5" android:background="@drawable/btn_5_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="90.0dip" />
+            <ImageView android:layout_gravity="right" android:id="@id/btnnext" android:background="@drawable/btn_edit_save_res" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/waittingcontainer" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    </FrameLayout>
+</FrameLayout>

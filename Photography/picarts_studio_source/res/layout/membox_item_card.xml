@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Material.CardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/header" android:background="@drawable/card_header_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+            <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/text_color_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title" android:paddingLeft="@dimen/space_16dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_splash" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_color_light_gray" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/subtitle" android:paddingLeft="@dimen/space_16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/si_ui_profile_stream_images_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/empty_space" android:background="@color/color_transparent" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

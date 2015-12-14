@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_color_bg" android:layout_width="wrap_content" android:layout_height="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/row_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="3.0dip" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="left|center" android:id="@id/row_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_weight="3.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/newMaterialAlert_btn" android:background="@drawable/btn_newsmall" android:visibility="invisible" android:layout_width="38.0dip" android:layout_height="19.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" />
+</LinearLayout>

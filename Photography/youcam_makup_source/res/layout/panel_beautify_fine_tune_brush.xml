@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/app_name"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/bottom_bar_top_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="#99000000" android:clickable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="138">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="138">
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/panelHairDyeBrushSizeBtn1" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="107" app:self_height="107" app:self_left="82" app:self_top="16" app:guideline_width="107" app:guideline_height="107">
+                <View android:layout_gravity="center" android:background="@drawable/image_selector_beauty_panel_hair_dye_brush_size_dot" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="17" app:self_height="17" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/panelHairDyeBrushSizeBtn2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="107" app:self_height="107" app:self_left="256" app:self_top="16" app:guideline_width="107" app:guideline_height="107">
+                <View android:layout_gravity="center" android:background="@drawable/image_selector_beauty_panel_hair_dye_brush_size_dot" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="23" app:self_height="23" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/panelHairDyeBrushSizeBtn3" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="107" app:self_height="107" app:self_left="430" app:self_top="16" app:guideline_width="107" app:guideline_height="107">
+                <View android:layout_gravity="center" android:background="@drawable/image_selector_beauty_panel_hair_dye_brush_size_dot" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="35" app:self_height="35" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/panelHairDyeBrushSizeBtn4" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="107" app:self_height="107" app:self_left="632" app:self_top="16" app:guideline_width="107" app:guideline_height="107">
+                <View android:layout_gravity="center" android:background="@drawable/image_selector_beauty_panel_hair_dye_brush_size_dot" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="43" app:self_height="43" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/panelHairDyeBrushSizeBtn5" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="107" app:self_height="107" app:self_left="824" app:self_top="16" app:guideline_width="107" app:guideline_height="107">
+                <View android:layout_gravity="center" android:background="@drawable/image_selector_beauty_panel_hair_dye_brush_size_dot" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="55" app:self_height="55" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="154">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="154">
+            <View android:id="@id/panelHairDyeClearBtn" android:background="@drawable/image_selector_fine_tune_clear_btn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="100" app:self_height="100" app:self_left="50" app:self_top="27" />
+            <View android:id="@id/panelHairDyeAddBtn" android:background="@drawable/image_selector_fine_tune_add_btn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="150" app:self_height="120" app:self_left="308" app:self_top="18" />
+            <View android:id="@id/panelHairDyeRemoveBtn" android:background="@drawable/image_selector_fine_tune_remove_btn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="150" app:self_height="120" app:self_left="620" app:self_top="18" />
+            <View android:id="@id/panelHairDyeOkBtn" android:background="@drawable/image_selector_fine_tune_ok_btn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="100" app:self_height="100" app:self_left="930" app:self_top="27" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</LinearLayout>

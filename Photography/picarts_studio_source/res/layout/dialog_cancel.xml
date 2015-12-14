@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_24dp" android:maxLines="2" android:singleLine="false" style="?android:attr/windowTitleStyle" />
+    <ScrollView android:id="@id/scroll_view_id" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/space_16dp" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/savePanelId" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/button_save_project" android:text="@string/save_draft" android:drawableLeft="@drawable/ic_action_save_drawing_project" style="@style/si_common_promo_send_item" />
+            <Button android:id="@id/button_export_video" android:text="@string/msg_export_video" android:drawableLeft="@drawable/ic_action_export_video_normal" style="@style/si_common_promo_send_item" />
+            <Button android:id="@id/button_export_gif" android:visibility="gone" android:text="@string/msg_export_gif" android:drawableLeft="@drawable/ic_export_gif" style="@style/si_common_promo_send_item" />
+            <LinearLayout android:orientation="vertical" android:id="@id/sharing_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:id="@id/button_saveSDId" android:text="@string/save_sd" android:drawableLeft="@drawable/ic_action_save" style="@style/si_common_promo_send_item" />
+                <Button android:id="@id/button_uploadToPicsinId" android:text="@string/social_upload_to_picsart" android:drawableLeft="@drawable/ic_action_picsart" style="@style/si_common_promo_send_item" />
+                <Button android:id="@id/button_postFBId" android:text="@string/fb_add_to_timeline" android:drawableLeft="@drawable/ic_action_facebook" style="@style/si_common_promo_send_item" />
+                <Button android:id="@id/btn_share_instagram" android:text="@string/instagram_share_message" android:drawableLeft="@drawable/ic_action_instagram" style="@style/si_common_promo_send_item" />
+                <Button android:id="@id/button_tweetId" android:text="@string/gen_tweet" android:drawableLeft="@drawable/ic_action_twitter" style="@style/si_common_promo_send_item" />
+                <Button android:id="@id/button_shareId" android:text="@string/gen_export" android:drawableLeft="@drawable/ic_action_share" style="@style/si_common_promo_send_item" />
+            </LinearLayout>
+            <Button android:id="@id/button_picsartEditId" android:text="@string/gen_edit" android:drawableLeft="@drawable/ic_action_picsart_edit" style="@style/si_common_promo_send_item" />
+            <CheckBox android:id="@id/dontShowAgainCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:text="@string/dont_show_again" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/button_cancelId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_cancel" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/button_okId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_close" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

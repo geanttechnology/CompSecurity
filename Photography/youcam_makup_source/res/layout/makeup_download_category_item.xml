@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:layout_width="155.0dip" android:layout_height="142.0dip" app:sourceWDP="360" app:useDeviceDP="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <ImageView android:id="@id/categoryImage" android:layout_width="153.0dip" android:layout_height="120.0dip" android:layout_marginTop="2.0dip" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/f13dp" android:gravity="center" android:id="@id/categoryName" android:layout_width="153.0dip" android:layout_height="15.0dip" android:layout_marginTop="125.0dip" android:maxLines="1" android:includeFontPadding="false" />
+    <ImageView android:id="@id/categoryNewIcon" android:visibility="invisible" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="129.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon_new_tile" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+</com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>

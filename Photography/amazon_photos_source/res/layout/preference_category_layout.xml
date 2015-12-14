@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/settings_preference_category_side_padding" android:paddingTop="@dimen/settings_preference_category_top_padding" android:paddingRight="@dimen/settings_preference_category_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_preference_category_side_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/divider_layout_bm" />
+    <TextView android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PreferenceTitle" />
+    <include layout="@layout/divider_layout_tm" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mirror_flip_mode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/mirror_flip_mode_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:checked="true" android:text="@string/effect_param_horizontal" />
+        <RadioButton android:id="@id/mirror_flip_mode_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:text="@string/effect_param_vertical" />
+    </RadioGroup>
+    <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mirror_mode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/mirror_mode1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:checked="true" android:text="@string/mirror_mode_1" />
+        <RadioButton android:id="@id/mirror_mode2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_2dp" android:text="@string/mirror_mode_2" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/offset_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/offset_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:id="@id/offset_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+</LinearLayout>

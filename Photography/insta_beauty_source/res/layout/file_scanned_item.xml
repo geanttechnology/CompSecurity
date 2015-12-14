@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/item_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/relativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_logo" android:background="@drawable/img_folder" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_filepath" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="56.0dip" android:singleLine="true" android:layout_toRightOf="@id/iv_logo" />
+        </RelativeLayout>
+        <ImageView android:id="@id/select_picture" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/gr_flag_local_dn" android:layout_alignParentRight="true" />
+        <FrameLayout android:id="@id/frame_1" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="40.0dip">
+            <Button android:textSize="14.0sp" android:layout_gravity="left|center" android:id="@id/bt_go" android:background="@drawable/new_folder_btn" android:layout_width="160.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/go_folder" />
+            <Button android:textSize="14.0sp" android:layout_gravity="right|center" android:id="@id/btn_save" android:background="@drawable/new_folder_btn" android:layout_width="160.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/set_path_name" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

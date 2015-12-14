@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <RelativeLayout android:id="@id/fb_accounts_progress" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small" />
+    </RelativeLayout>
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:gravity="center_horizontal" android:id="@id/scroll_view_id" android:visibility="gone" android:layout_width="340.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/fb_accounts_layout_id" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:id="@id/newAccountButtonId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fb_connect_other_account" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

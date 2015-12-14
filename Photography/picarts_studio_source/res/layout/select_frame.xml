@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/adLayoutlId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/frame_panelId" android:background="@color/gray_33" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/adLayoutlId">
+        <GridView android:gravity="center" android:id="@id/frameGrid" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="?selectableItemBackground" android:drawSelectorOnTop="true" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:columnWidth="100.0dip" android:numColumns="auto_fit" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/albums_operation_dialog_margin_large" android:paddingTop="@dimen/albums_operation_dialog_margin_large" android:paddingRight="@dimen/albums_operation_dialog_margin_large" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/albums_operation_dialog_title_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/adrive_gallery_album_create_album" />
+    <EditText android:id="@id/album_name_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/albums_operation_dialog_margin_medium" android:hint="@string/adrive_gallery_album_name" android:singleLine="true" android:inputType="textCapWords" />
+</LinearLayout>

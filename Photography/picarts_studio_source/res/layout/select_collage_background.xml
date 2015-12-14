@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_4a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/collage_bg_recyclerView" android:background="@color/gray_4a" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:layout_above="@id/customPanelId" />
+    <LinearLayout android:orientation="vertical" android:id="@id/customPanelId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/adLayoutlId">
+        <FrameLayout android:gravity="center" android:id="@id/customBgPanelId" android:background="@color/color_black" android:clickable="true" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/color_white" android:gravity="center" android:background="?selectableItemBackground" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/button_cutom_bg" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/fromGalleryBgPanelId" android:background="@color/color_black" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <TextView android:textSize="@dimen/textSize_16" android:textColor="@color/color_white" android:gravity="center" android:background="?selectableItemBackground" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_choose_from_gallery" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="bottom" android:id="@id/adLayoutlId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

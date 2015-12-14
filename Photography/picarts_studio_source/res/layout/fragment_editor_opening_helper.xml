@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+        <Button android:id="@id/btn_new_project" android:layout_width="108.0dip" android:layout_height="108.0dip" android:layout_marginRight="8.0dip" android:text="@string/new_project" android:drawableTop="@drawable/draw_on_bg" style="@style/Widget.Picsart.Button.DrawingPopUpWindow" />
+        <Button android:id="@id/btn_open_project" android:background="?selectableItemBackground" android:layout_width="108.0dip" android:layout_height="108.0dip" android:text="@string/open_project" android:drawableTop="@drawable/open_draft" style="@style/Widget.Picsart.Button.DrawingPopUpWindow" />
+    </LinearLayout>
+</LinearLayout>

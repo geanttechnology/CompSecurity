@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/f_ic_information_dark_24dp" android:id="@id/cleanup_info_button" android:title="@string/adrive_gallery_common_photo_info" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_sort_dark_24dp" android:id="@id/sort_button" android:visible="false" android:title="@string/adrive_gallery_common_actionbar_sort" app:showAsAction="always" />
+    <item android:icon="@drawable/f_ic_bulk_edit_dark_24dp" android:id="@id/cleanup_select_x_button" android:visible="false" android:title="@string/adrive_gallery_common_overflow_menu_select" app:showAsAction="always">
+        <menu>
+            <item android:id="@id/cleanup_select_500mb" android:visible="false" android:title="@string/adrive_gallery_common_cleanup_manager_select_500mb" />
+            <item android:id="@id/cleanup_select_1gb" android:visible="false" android:title="@string/adrive_gallery_common_cleanup_manager_select_1gb" />
+            <item android:id="@id/cleanup_select_2gb" android:visible="false" android:title="@string/adrive_gallery_common_cleanup_manager_select_2gb" />
+            <item android:id="@id/cleanup_selectAll" android:title="@string/adrive_gallery_common_cleanup_manager_select_all" />
+        </menu>
+    </item>
+</menu>

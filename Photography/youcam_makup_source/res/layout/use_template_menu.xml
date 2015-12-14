@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:id="@id/trailMenuContainer" android:background="@drawable/pop_up" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="400" app:guideline_height="240"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="380" app:child_height="190" app:child_left="10" app:child_top="10">
+        <com.cyberlink.youcammakeup.widgetpool.common.AutoResizeTextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/takePhotoBtn" android:background="@drawable/image_selector_sponsor_ad_menu_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/launcher_capture_photo" android:maxLines="1" android:layout_weight="1.0" app:suppress_max="true" style="@style/UseTemplateMenu" />
+        <View android:background="#ffa186c4" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <com.cyberlink.youcammakeup.widgetpool.common.AutoResizeTextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/selectPhotoBtn" android:background="@drawable/image_selector_sponsor_ad_menu_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/sponsor_ad_menu_photo_album" android:maxLines="1" android:layout_weight="1.0" app:suppress_max="true" style="@style/UseTemplateMenu" />
+    </LinearLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>

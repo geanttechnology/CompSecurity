@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/stub_pass_panel" android:layout="@layout/stripe_pass_panel_layout" android:inflatedId="@id/pass_panel_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/stripe_choose_account" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12dp">
+        <Button android:id="@id/stripe_exisiting_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stripe_existing_account_title" />
+        <Button android:id="@id/stripe_new_account_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stripe_new_account_title" />
+    </LinearLayout>
+</LinearLayout>

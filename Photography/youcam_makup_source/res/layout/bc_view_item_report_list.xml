@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sharein_category_item" android:background="@color/bc_color_white" android:paddingLeft="@dimen/t6dp" android:paddingTop="@dimen/t6dp" android:paddingRight="@dimen/t6dp" android:paddingBottom="@dimen/t6dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/t14sp" android:textColor="@color/bc_color_main_edit_text" android:id="@id/report_reason_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t14dp" android:layout_marginTop="@dimen/t24dp" android:layout_marginRight="@dimen/t60dp" android:layout_marginBottom="@dimen/t24dp" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <ImageView android:id="@id/report_reason_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/t12dp" android:src="@drawable/bc_report_radio_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

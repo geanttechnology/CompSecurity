@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/dialog_title_panel_id" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="vertical" android:id="@id/radio_group_choose_pic_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="18.0sp" android:id="@id/radio_btn_size_recommended" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_12dp" android:paddingRight="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="50.0dip" android:checked="true" android:button="@null" android:drawableRight="@drawable/radiobutton_material" />
+            <View style="@style/Divider.Horizontal" />
+            <RadioButton android:textSize="18.0sp" android:id="@id/radio_btn_size_max" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_12dp" android:paddingRight="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="50.0dip" android:checked="false" android:button="@null" android:drawableRight="@drawable/radiobutton_material" />
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@id/donot_show_again_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/Divider.Horizontal" />
+            <CheckBox android:textSize="18.0sp" android:id="@id/checkbox_show" android:background="?selectableItemBackground" android:paddingLeft="@dimen/space_12dp" android:paddingRight="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="50.0dip" android:checked="true" android:button="@null" android:text="@string/dont_show_again" android:drawableRight="@drawable/checkbox_material" />
+        </LinearLayout>
+        <View style="@style/Divider.Horizontal" />
+    </LinearLayout>
+</LinearLayout>

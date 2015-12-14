@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BcMultiColumnCountStyle">
+        <item name="PLA_plaColumnNumber">2</item>
+    </style>
+    <style name="CollageBottomBarButtonText">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="DialogButtonStyle">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@drawable/btn_effect_text_color</item>
+        <item name="android:background">@drawable/image_selector_common_button_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="DownloadItemTitleStyle">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="DownloadVideoGridItemNameBasicStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#b2000000</item>
+        <item name="android:text"></item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="EditViewCompareButton">
+        <item name="android:padding">9.0dip</item>
+        <item name="android:layout_width">52.0dip</item>
+        <item name="android:layout_height">52.0dip</item>
+        <item name="android:layout_marginTop">9.0dip</item>
+        <item name="android:layout_marginRight">1.0dip</item>
+    </style>
+    <style name="EditViewManualButton">
+        <item name="android:layout_width">34.0dip</item>
+        <item name="android:layout_height">34.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginTop">18.0dip</item>
+    </style>
+    <style name="EditViewMouthSwitchBackground">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">34.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginBottom">9.0dip</item>
+    </style>
+    <style name="EditViewMouthSwitchButton">
+        <item name="android:layout_width">56.0dip</item>
+        <item name="android:layout_height">26.0dip</item>
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+    </style>
+    <style name="EditViewMouthSwitchText" parent="@style/EditViewMouthSwitchTextBaseStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26.0dip</item>
+        <item name="android:layout_marginLeft">64.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+    </style>
+    <style name="EditViewResetButton">
+        <item name="android:layout_width">34.0dip</item>
+        <item name="android:layout_height">34.0dip</item>
+        <item name="android:layout_marginLeft">64.0dip</item>
+        <item name="android:layout_marginTop">18.0dip</item>
+    </style>
+    <style name="EditViewWigButton">
+        <item name="android:padding">9.0dip</item>
+        <item name="android:layout_width">52.0dip</item>
+        <item name="android:layout_height">52.0dip</item>
+        <item name="android:layout_marginTop">70.0dip</item>
+        <item name="android:layout_marginRight">1.0dip</item>
+    </style>
+    <style name="FaceSwitcherMessageText">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:padding">10.0dip</item>
+    </style>
+    <style name="FacebookEditTextStyle">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="MessageDialogIcon">
+        <item name="android:layout_width">42.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="MessageDialogText">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:inputType">none</item>
+    </style>
+    <style name="PaletteGroupTextStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:paddingLeft">7.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+    </style>
+    <style name="PaletteNameTextStyle">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="PaletteNumberStyle">
+        <item name="android:layout_width">12.0dip</item>
+        <item name="android:layout_height">14.0dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="PaletteSaveTextStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:paddingLeft">8.0dip</item>
+    </style>
+    <style name="PatternMenuStyle">
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+    </style>
+    <style name="Pixel40CorrespondSize">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="RedEyePanelText">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff6850a6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:inputType">none</item>
+    </style>
+    <style name="RemovalPanelText">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="SaveMyLookSettingIntensityTextStyle" parent="@style/SaveMyLookSettingTitleStyle">
+        <item name="android:textSize">10.0dip</item>
+    </style>
+    <style name="SaveMyLookSettingSubtitleStyle" parent="@style/SaveMyLookSettingTitleStyle">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="SaveMyLookSettingTitleStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+    </style>
+    <style name="SliderTest">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff6850a6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:inputType">none</item>
+    </style>
+    <style name="VideoDescriptionBasicStyle">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:text"></item>
+    </style>
+    <style name="VideoNameBasicStyle">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:text"></item>
+    </style>
+    <style name="VideoTitleBasicStyle">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:text"></item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="SaveMyLookBtnStyle" parent="@style/Pixel40CorrespondSize">
+        <item name="android:textColor">@drawable/color_selector_extra_download_btn_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_download_btn</item>
+    </style>
+    <style name="BCTopBarTextStyle" parent="@style/BcFontFamilyLightStyle">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="BcProductCommentRatingStyle" parent="@style/BcProductRatingSmallBasicStyle">
+        <item name="android:layout_marginLeft">-3.0dip</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+    </style>
+    <style name="BcProductRatingStyle" parent="@style/BcProductRatingMediumBasicStyle">
+        <item name="android:layout_marginTop">27.0dip</item>
+        <item name="android:layout_marginBottom">20.0dip</item>
+    </style>
+    <style name="BcProductWriteRatingStyle" parent="@style/BcProductRatingBigBasicStyle">
+        <item name="android:layout_marginTop">30.0dip</item>
+    </style>
+    <style name="BeautyDegreeTextStyle" parent="@style/BeautyDegreeTextBasicStyle">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="BottomToolBarBtnTextStyle" parent="@style/BottomToolBarBtnTextBasicStyle">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="BottomToolBarCropMenuTextStyle" parent="@style/BottomToolBarCropMenuTextBasicStyle">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="CameraDetectHintTextStyle" parent="@style/CameraDetectHintTextBaseStyle">
+        <item name="android:textSize">14.5dip</item>
+    </style>
+    <style name="CameraHintTextStyle" parent="@style/CameraHintTextBasicStyle">
+        <item name="android:textSize">23.0dip</item>
+    </style>
+    <style name="CameraModeBtnTextStyle" parent="@style/CameraModeBtnTextBasicStyle">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="CameraNavigatorButtonTextStyle" parent="@style/CameraNavigatorButtonTextBasicStyle">
+        <item name="android:textSize">11.0dip</item>
+    </style>
+    <style name="CameraNavigatorSavedToTextStyle" parent="@style/CameraNavigatorTipTextBasicStyle">
+        <item name="android:textSize">11.0dip</item>
+    </style>
+    <style name="CameraNavigatorTipTextStyle" parent="@style/CameraNavigatorTipTextBasicStyle">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="CameraSettingTextStyle" parent="@style/CameraSettingTextBasicStyle">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="CropPanelButtonTextStyle" parent="@style/CropPanelButtonTextBasicStyle">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="DownloadBtnStyle" parent="@style/DownloadBtnBasicStyle">
+        <item name="android:textSize">11.0dip</item>
+    </style>
+    <style name="DownloadGridCostumeItemProgressStyle" parent="@style/DownloadGridItemCostumeProgressBasicStyle">
+        <item name="android:layout_height">6.0dip</item>
+    </style>
+    <style name="DownloadGridItemNameStyle" parent="@style/DownloadGridItemNameBasicStyle">
+        <item name="android:textSize">17.0dip</item>
+    </style>
+    <style name="DownloadGridItemProgressStyle" parent="@style/DownloadGridItemProgressBasicStyle">
+        <item name="android:layout_height">6.0dip</item>
+    </style>
+    <style name="DownloadITemplateModeStyle">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="EditViewViewerStyle">
+        <item name="android:layout_marginTop">53.0dip</item>
+        <item name="android:layout_marginBottom">59.0dip</item>
+    </style>
+    <style name="EffectEditPanelTextStyle" parent="@style/EffectEditPanelTextBasicStyle">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="ExtraHomeBtnTextStyle" parent="@style/ExtraHomeBtnTextBasicStyle">
+        <item name="android:textSize">21.0dip</item>
+    </style>
+    <style name="ExtraLev1TabStyle" parent="@style/ExtraTabBasicStyle">
+        <item name="android:textSize">17.0dip</item>
+    </style>
+    <style name="ExtraLev2TabStyle" parent="@style/ExtraTabBasicStyle">
+        <item name="android:textSize">13.0dip</item>
+    </style>
+    <style name="FacebookTopBtnStyle" parent="@style/FacebookTopBtnBasicStyle">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="FullDialogTextStyle" parent="@style/FullDialogBasicStyle">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="IntroBeforeAfterTextStyle" parent="@style/IntroTextStyle">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="IntroTipTextStyle" parent="@style/IntroTipTextBaseStyle">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="IntroTitleTextStyle" parent="@style/IntroTitleTextBaseStyle">
+        <item name="android:textSize">19.0dip</item>
+    </style>
+    <style name="IntroTitleTipTextStyle" parent="@style/IntroTextStyle">
+        <item name="android:textSize">13.5dip</item>
+    </style>
+    <style name="LauncherBannerButtonTextStyle" parent="@style/LauncherButtonTextBasicStyle">
+        <item name="android:textSize">17.0dip</item>
+    </style>
+    <style name="LauncherButtonTextStyle" parent="@style/LauncherButtonTextBasicStyle">
+        <item name="android:textSize">19.0dip</item>
+    </style>
+    <style name="LauncherMoreButtonTextStyle" parent="@style/LauncherMoreButtonTextBasicStyle">
+        <item name="android:textSize">20.0dip</item>
+    </style>
+    <style name="LauncherRateButtonTextStyle" parent="@style/LauncherRateButtonTextBasicStyle">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="MoreHomeBtnTextStyle" parent="@style/MoreHomeBtnTextBasicStyle">
+        <item name="android:textSize">21.0dip</item>
+    </style>
+    <style name="MorePageTitileStyle" parent="@style/MorePageTitileBasicStyle">
+        <item name="android:textSize">27.0dip</item>
+    </style>
+    <style name="NoticeBtnStyle" parent="@style/NoticeBtnBasicStyle">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="NoticeItemChildStyle">
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="NoticeItemChildTextStyle">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="NoticeItemDateTextStyle">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="NoticeItemVersionTextStyle">
+        <item name="android:textSize">13.0dip</item>
+    </style>
+    <style name="PresetGridItemTextStyle">
+        <item name="android:textSize">9.0dip</item>
+    </style>
+    <style name="RateButtonTextStyle" parent="@style/RateUsTextBasicStyle">
+        <item name="android:textSize">13.0dip</item>
+    </style>
+    <style name="RateUsSavedToTextStyle" parent="@style/RateUsSavedToBasicStyle">
+        <item name="android:textSize">13.0dip</item>
+    </style>
+    <style name="RateUsTitleTextStyle" parent="@style/RateUsTextBasicStyle">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="RecommendationDescriptionStyle">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="RecommendationTitleStyle">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="SettingTextStyle">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="SharePromotionMessageText">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="ShareUItemStyle">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="ShareViewMenuStyle">
+        <item name="android:dividerHeight">2.0dip</item>
+    </style>
+    <style name="ShareViewMessageStyle">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:paddingTop">15.0dip</item>
+        <item name="android:paddingBottom">15.0dip</item>
+    </style>
+    <style name="ShareViewTitleStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">7.0dip</item>
+    </style>
+    <style name="SliderValueTextStyle" parent="@style/SliderValueTextBasicStyle">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="TopBarTextStyle" parent="@style/TopBarTextBasicStyle">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="UnlockDialogNameText">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="UseTemplateMenu">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="WebViewerTitleText">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="beautifier_text_style">
+        <item name="android:textSize">13.0dip</item>
+    </style>
+    <style name="SkuPopUpMenuText">
+        <item name="android:textSize">11.0dip</item>
+    </style>
+</resources>

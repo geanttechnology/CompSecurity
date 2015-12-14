@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aviary.android.feather.library.services.drag.DragLayer android:id="@id/dragLayer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="?aviaryBackgroundColorFreetime" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/aviary_navbar" layout="@layout/aviary_navbar" />
+        <include android:id="@id/main_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/aviary_bottombar_wrapper" android:layout_below="@id/aviary_navbar" android:layout_alignParentTop="true" layout="@layout/aviary_main_content_view" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/aviary_bottombar_wrapper" android:layout_alignParentBottom="true" style="?attr/aviaryBottomBarFreetime">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/bottom_bar_gallery" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <ImageView android:layout_width="?aviaryToolWidthFreetime" android:layout_height="?aviaryToolHeightFreetime" android:layout_marginLeft="?aviaryBottomBarToolEndMargin" android:layout_marginRight="?aviaryBottomBarToolMargin" android:src="@drawable/aviary_save_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/bottom_bar_tool" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <ImageView android:layout_width="?aviaryToolWidthFreetime" android:layout_height="?aviaryToolHeightFreetime" android:layout_marginLeft="?aviaryBottomBarToolEndMargin" android:layout_marginRight="?aviaryBottomBarToolMargin" android:src="@drawable/aviary_back_selector" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <include android:id="@id/aviary_bottombar" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_centerInParent="true" layout="@layout/aviary_bottombar_freetime" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/bottom_bar_undo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:layout_width="?aviaryToolWidthFreetime" android:layout_height="?aviaryToolHeightFreetime" android:layout_marginLeft="?aviaryBottomBarToolMargin" android:src="@drawable/aviary_undo_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/bottom_bar_trash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:layout_width="?aviaryToolWidthFreetime" android:layout_height="?aviaryToolHeightFreetime" android:layout_marginLeft="?aviaryBottomBarToolMargin" android:layout_marginRight="?aviaryBottomBarToolEndMargin" android:src="@drawable/aviary_delete_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/bottom_bar_clear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:layout_width="?aviaryToolWidthFreetime" android:layout_height="?aviaryToolHeightFreetime" android:layout_marginLeft="?aviaryBottomBarToolMargin" android:layout_marginRight="?aviaryBottomBarToolEndMargin" android:src="@drawable/aviary_clear_selector" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/feather_dialogs_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/aviary_navbar" />
+        <SurfaceView android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    </RelativeLayout>
+</com.aviary.android.feather.library.services.drag.DragLayer>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/grid_background" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.livemixtapes.ui.widgets.DjBadgesView android:id="@id/list_dj" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:gravity="center" android:id="@id/mixtapeimage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/stub" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/dark_blue" android:ellipsize="end" android:gravity="center" android:id="@id/mixtapetitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="Tape Title" android:maxLines="1" />
+    </LinearLayout>
+    <TextView android:id="@id/mixtapeindy" android:visibility="gone" android:text="INDY" style="@style/Banner.Right.LightBlue" />
+    <TextView android:id="@id/mixtapeclub" android:visibility="gone" android:text="CLUB" style="@style/Banner.Left.Green" />
+    <TextView android:id="@id/mixtapefeatured" android:visibility="gone" android:text="FEATURED" style="@style/Banner.Left.DarkBlue" />
+</RelativeLayout>

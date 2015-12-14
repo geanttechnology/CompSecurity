@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/panel_effects_top" />
+    <com.socialin.android.photo.effects.draw.EffectsView android:id="@id/effects_view" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_panel" android:layout_below="@id/top_panel" />
+    <ImageButton android:id="@id/button_before" android:background="@android:color/transparent" android:clickable="true" android:src="@drawable/xml_ic_eye_selector" android:layout_above="@id/bottom_panel" android:layout_alignParentRight="true" style="@style/Widget.Picsart.ImageButton.Action" />
+    <RelativeLayout android:id="@id/bottom_panel" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <android.support.v7.widget.RecyclerView android:scrollbarStyle="insideOverlay" android:id="@id/effects_thumbs_recycler_view" android:scrollbars="none" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_48dp" android:layout_marginTop="@dimen/space_2dp" android:layout_alignParentTop="true" android:overScrollMode="never" />
+        <FrameLayout android:id="@id/effects_more_panel" android:background="@drawable/panel_effects_left" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:gravity="center" android:id="@id/effects_more_button" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_plus_round" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_panel">
+        <com.picsart.effects.view.WrappingSlidingDrawer android:id="@id/sliding_drawer" android:visibility="visible" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:handle="@id/handle" android:content="@id/parameters">
+            <ImageView android:id="@id/handle" android:background="@drawable/handle_settings_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/parameters" android:background="@drawable/panel_drawer_bottom" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/effects_blend_mode_spinner_container" android:layout_width="96.0dip" android:layout_height="50.0dip" android:layout_marginRight="@dimen/space_12dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                    <Spinner android:id="@id/effects_blend_mode_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <Button android:id="@id/effects_blend_mode_spinner_button" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Material.Button.Borderless" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/parameters_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/effects_blend_mode_spinner_container" />
+            </RelativeLayout>
+        </com.picsart.effects.view.WrappingSlidingDrawer>
+    </RelativeLayout>
+    <ListView android:id="@id/effects_category_list" android:background="@drawable/bg_window_dark_transparent" android:visibility="gone" android:layout_width="176.0dip" android:layout_height="wrap_content" android:listSelector="@color/color_transparent" android:layout_above="@id/bottom_panel" android:overScrollMode="never" />
+    <RelativeLayout android:id="@id/layout_brush_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_panel" android:layout_centerHorizontal="true">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp" android:layout_centerHorizontal="true" layout="@layout/balloon_brush_settings" />
+        <LinearLayout android:paddingLeft="68.0dip" android:layout_width="230.0dip" android:layout_height="8.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:background="@drawable/baloon_pointer" android:layout_width="wrap_content" android:layout_height="8.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_shape_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_panel" android:layout_centerHorizontal="true">
+        <include android:id="@id/layout_main_shape" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8dp" android:layout_centerHorizontal="true" layout="@layout/balloon_focal_settings" />
+        <LinearLayout android:paddingLeft="@dimen/space_20dp" android:layout_width="230.0dip" android:layout_height="8.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:background="@drawable/baloon_pointer" android:layout_width="wrap_content" android:layout_height="8.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/layout_effects_spen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_48dp" layout="@layout/layout_effects_spen" />
+</RelativeLayout>

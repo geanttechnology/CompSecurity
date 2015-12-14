@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/gray_ee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/si_ui_contest_active_listview" android:paddingLeft="@dimen/space_2dp" android:paddingRight="@dimen/space_2dp" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:descendantFocusability="afterDescendants" android:layout_width="0.0dip" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@color/gray_f5" android:divider="@null" android:layout_weight="2.0" android:overScrollMode="never" android:requiresFadingEdge="0x0" />
+    <View android:background="@color/gray_ac" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+        <com.socialin.android.picsart.profile.view.PicsartSwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/lvContent" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@color/gray_f5" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:requiresFadingEdge="0x0" />
+        </com.socialin.android.picsart.profile.view.PicsartSwipeRefreshLayout>
+        <ProgressBar android:id="@id/si_ui_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.Picsart.ProgressBar" />
+        <include android:visibility="gone" layout="@layout/si_ui_gallery_retry_layout" />
+        <ProgressBar android:id="@id/si_ui_footer_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Widget.Picsart.ProgressBar.Small" />
+    </RelativeLayout>
+</LinearLayout>

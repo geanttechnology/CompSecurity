@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@id/aviary_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@anim/abc_fade_in" android:outAnimation="@anim/abc_fade_out" android:autoStart="false" style="?attr/aviaryBottomBarOptionPanelContainerStyleNoMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aviary="http://schemas.android.com/apk/res-auto">
+    <include android:layout_gravity="center" android:id="@id/aviary_loader" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/aviary_progress_small" />
+    <it.sephiroth.android.library.widget.HListView android:gravity="center_vertical" android:id="@id/aviary_list_packs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:overScrollMode="always" listSelector="@android:color/transparent" />
+    <it.sephiroth.android.library.widget.HListView android:gravity="center_vertical" android:id="@id/aviary_list_stickers" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:overScrollMode="always" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+        <ImageView android:id="@id/aviary_button_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/aviary_sticker_opacity_dismiss" android:layout_weight="0.0" />
+        <SeekBar android:layout_gravity="center" android:id="@id/aviary_seekbar" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxHeight="18.0dip" android:progressDrawable="@drawable/adjust_seekbar_progress" android:minHeight="18.0dip" android:thumb="@drawable/aviary_seekbar_thumb" android:layout_weight="@integer/aviary_sticker_opactiy_slider_weight" />
+        <ImageView android:id="@id/aviary_button_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/aviary_sticker_opacity_confirm" android:layout_weight="0.0" />
+    </LinearLayout>
+</ViewFlipper>

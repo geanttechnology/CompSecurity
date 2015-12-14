@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:drawable="@drawable/upload_fail_dismiss_retry" />
+        </selector>
+    </item>
+    <item android:drawable="@drawable/selectable_item_overlay_round_picsart_light" />
+</layer-list>

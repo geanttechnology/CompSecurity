@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aviary.android.feather.sdk.widget.AviaryBottomBarViewFlipper android:layout_width="wrap_content" android:layout_height="fill_parent" android:animateFirstView="false" style="?attr/aviaryBottomBarViewFlipperStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/aviary_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/aviaryBottomBarOptionPanelStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/aviary_tool_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <it.sephiroth.android.library.widget.HListView android:id="@id/aviary_tools_listview" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/AviaryWidget.BottomBar.HorizontalScrollView" />
+        <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/AviaryWidget.BottomBar.Logo.Container">
+            <ImageView android:id="@id/aviary_white_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/feather_powered_by_aviary" style="@style/AviaryWidget.BottomBar.Logo.Image" />
+        </LinearLayout>
+    </LinearLayout>
+</com.aviary.android.feather.sdk.widget.AviaryBottomBarViewFlipper>

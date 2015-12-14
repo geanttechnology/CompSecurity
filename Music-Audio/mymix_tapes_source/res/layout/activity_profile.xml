@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/profile_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/description" />
+    <View android:background="#5f000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/profile_feed_not_found" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="96.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_activity" android:contentDescription="@string/description" />
+        <TextView android:textColor="@android:color/secondary_text_dark_nodisable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="This user has no activity yet" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/profile_recycle_view" android:background="#ffeaeaea" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/profile_status_bar_overlay" android:background="#ffb52525" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+    <include android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_below="@id/profile_status_bar_overlay" layout="@layout/component_app_bar" />
+    <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/profile_recycle_view" android:layout_alignParentBottom="true" />
+</RelativeLayout>

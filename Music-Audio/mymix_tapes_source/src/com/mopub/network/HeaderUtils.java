@@ -1,0 +1,134 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.mopub.network;
+
+import com.mopub.common.util.ResponseHeader;
+import java.text.NumberFormat;
+import java.util.Locale;
+import java.util.Map;
+import org.apache.http.Header;
+import org.apache.http.HttpResponse;
+
+public class HeaderUtils
+{
+
+    public HeaderUtils()
+    {
+    }
+
+    public static boolean extractBooleanHeader(Map map, ResponseHeader responseheader, boolean flag)
+    {
+        return formatBooleanHeader(extractHeader(map, responseheader), flag);
+    }
+
+    public static boolean extractBooleanHeader(HttpResponse httpresponse, ResponseHeader responseheader, boolean flag)
+    {
+        return formatBooleanHeader(extractHeader(httpresponse, responseheader), flag);
+    }
+
+    public static String extractHeader(Map map, ResponseHeader responseheader)
+    {
+        return (String)map.get(responseheader.getKey());
+    }
+
+    public static String extractHeader(HttpResponse httpresponse, ResponseHeader responseheader)
+    {
+        httpresponse = httpresponse.getFirstHeader(responseheader.getKey());
+        if (httpresponse != null)
+        {
+            return httpresponse.getValue();
+        } else
+        {
+            return null;
+        }
+    }
+
+    public static int extractIntHeader(HttpResponse httpresponse, ResponseHeader responseheader, int i)
+    {
+        httpresponse = extractIntegerHeader(httpresponse, responseheader);
+        if (httpresponse == null)
+        {
+            return i;
+        } else
+        {
+            return httpresponse.intValue();
+        }
+    }
+
+    public static Integer extractIntegerHeader(Map map, ResponseHeader responseheader)
+    {
+        return formatIntHeader(extractHeader(map, responseheader));
+    }
+
+    public static Integer extractIntegerHeader(HttpResponse httpresponse, ResponseHeader responseheader)
+    {
+        return formatIntHeader(extractHeader(httpresponse, responseheader));
+    }
+
+    public static Integer extractPercentHeader(Map map, ResponseHeader responseheader)
+    {
+        return formatPercentHeader(extractHeader(map, responseheader));
+    }
+
+    public static String extractPercentHeaderString(Map map, ResponseHeader responseheader)
+    {
+        map = extractPercentHeader(map, responseheader);
+        if (map != null)
+        {
+            return map.toString();
+        } else
+        {
+            return null;
+        }
+    }
+
+    private static boolean formatBooleanHeader(String s, boolean flag)
+    {
+        if (s == null)
+        {
+            return flag;
+        } else
+        {
+            return s.equals("1");
+        }
+    }
+
+    private static Integer formatIntHeader(String s)
+    {
+        NumberFormat numberformat = NumberFormat.getInstance(Locale.US);
+        numberformat.setParseIntegerOnly(true);
+        int i;
+        try
+        {
+            i = numberformat.parse(s.trim()).intValue();
+        }
+        // Misplaced declaration of an exception variable
+        catch (String s)
+        {
+            return null;
+        }
+        return Integer.valueOf(i);
+    }
+
+    private static Integer formatPercentHeader(String s)
+    {
+        if (s != null) goto _L2; else goto _L1
+_L1:
+        s = null;
+_L4:
+        return s;
+_L2:
+        Integer integer;
+        integer = formatIntHeader(s.replace("%", ""));
+        if (integer == null || integer.intValue() < 0)
+        {
+            break; /* Loop/switch isn't completed */
+        }
+        s = integer;
+        if (integer.intValue() <= 100) goto _L4; else goto _L3
+_L3:
+        return null;
+    }
+}

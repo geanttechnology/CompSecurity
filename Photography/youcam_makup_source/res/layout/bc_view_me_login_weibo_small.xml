@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bc_register_weibo_btn_selector" android:layout_width="@dimen/t120dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:src="@drawable/bc_login_icon_weibo" android:contentDescription="@string/app_name" style="@style/BcRegisterButtonIconStyle" />
+    <View android:background="@color/bc_weibo_sub_color" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <TextView android:id="@id/bc_weibo_btn_text" android:text="@string/bc_welcome_btn_connect_to_weibo" style="@style/BcRegisterButtonBasicStyle" />
+</LinearLayout>

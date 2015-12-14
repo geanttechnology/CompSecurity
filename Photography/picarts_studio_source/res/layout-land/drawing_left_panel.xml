@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/open_close_button" android:background="@drawable/drawing_panel_bottom_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/camera_actions" android:layout_alignBottom="@id/camera_actions">
+        <ImageButton android:layout_gravity="center" android:id="@id/button_open_panel" android:padding="@dimen/space_4dp" android:visibility="gone" android:layout_width="wrap_content" android:src="@drawable/camera_arrow_closed_land" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:layout_gravity="center" android:id="@id/button_close_panel" android:padding="@dimen/space_4dp" android:layout_width="wrap_content" android:src="@drawable/camera_arrow_opened_land" style="@style/Widget.Picsart.ImageButton.Action" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/camera_actions" android:background="@drawable/drawing_panel_bottom_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_2dp" android:layout_toRightOf="@id/open_close_button">
+        <ImageButton android:id="@id/button_done_camera" android:padding="@dimen/space_4dp" android:src="@drawable/done_camera" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/button_switch_camera" android:padding="@dimen/space_4dp" android:src="@drawable/front_camera" style="@style/Widget.Picsart.ImageButton.Action" />
+        <ImageButton android:id="@id/button_cancel_camera" android:padding="@dimen/space_4dp" android:src="@drawable/cancel_camera" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+</RelativeLayout>

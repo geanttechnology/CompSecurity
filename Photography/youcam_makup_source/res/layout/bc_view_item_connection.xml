@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/celebrityItem" android:background="@drawable/bc_general_radius_white_background_no_border" android:paddingLeft="@dimen/t8dp" android:paddingTop="@dimen/t4dp" android:paddingRight="@dimen/t8dp" android:paddingBottom="@dimen/t4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t8dp" android:layout_marginTop="@dimen/t2dp" android:layout_marginRight="@dimen/t8dp" android:layout_marginBottom="@dimen/t2dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/connection_leftpanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/t14dp" android:textStyle="bold" android:ellipsize="end" android:gravity="right" android:layout_gravity="right" android:id="@id/connection_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/t30dp" android:maxLines="1" style="@style/BcDefaultFontStyle" />
+            <TextView android:textSize="@dimen/t11dp" android:textStyle="bold|italic" android:textColor="@color/bc_color_white" android:gravity="center" android:layout_gravity="right" android:id="@id/connection_response" android:background="@drawable/bc_general_radius_demo_background" android:paddingLeft="@dimen/t4dp" android:paddingTop="@dimen/t2dp" android:paddingRight="@dimen/t4dp" android:paddingBottom="@dimen/t2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t2dp" android:minWidth="@dimen/t30dp" android:shadowColor="@color/bc_color_black" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" style="@style/BcDefaultFontStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t8dp" android:layout_toRightOf="@id/connection_leftpanel" android:layout_alignParentRight="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/t10dp" android:textStyle="bold" android:textColor="@color/bc_color_main_hint_text" android:id="@id/connection_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BcDefaultFontStyle" />
+                <TextView android:textSize="@dimen/t14dp" android:textStyle="bold" android:id="@id/connection_path" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/connection_duration" android:layout_alignParentLeft="true" style="@style/BcDefaultFontStyle" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/t11dp" android:textStyle="italic" android:id="@id/connection_uri" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t1dp" style="@style/BcDefaultFontStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

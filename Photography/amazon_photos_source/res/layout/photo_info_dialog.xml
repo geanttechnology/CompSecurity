@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="29.0dip" android:paddingTop="10.0dip" android:paddingRight="29.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="5.0" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/photo_info_table" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/photo_info_table_row_filename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/info_dialog_margin_bottom">
+                <TextView android:id="@id/photo_info_table_row_filename_label" android:paddingRight="@dimen/info_dialog_padding_right" android:layout_width="@dimen/info_dialog_row_width" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_photo_info_name_label" />
+                <TextView android:ellipsize="end" android:id="@id/photo_info_table_row_filename_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_photo_info_name_label" android:maxLines="4" android:singleLine="false" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/photo_info_table_row_datetaken" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/info_dialog_margin_bottom">
+                <TextView android:id="@id/photo_info_table_row_datetaken_label" android:paddingRight="@dimen/info_dialog_padding_right" android:layout_width="@dimen/info_dialog_row_width" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_photo_info_datetaken_label" />
+                <TextView android:id="@id/photo_info_table_row_datetaken_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_photo_info_datetaken_label" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/photo_info_table_row_dimensions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/info_dialog_margin_bottom">
+                <TextView android:id="@id/photo_info_table_row_dimensions_label" android:paddingRight="@dimen/info_dialog_padding_right" android:layout_width="@dimen/info_dialog_row_width" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_photo_info_dimensions_label" />
+                <TextView android:id="@id/photo_info_table_row_dimensions_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_photo_info_dimensions_label" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/photo_info_table_row_duration" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/info_dialog_margin_bottom">
+                <TextView android:id="@id/photo_info_table_row_duration_label" android:paddingRight="@dimen/info_dialog_padding_right" android:layout_width="@dimen/info_dialog_row_width" android:layout_height="wrap_content" android:text="@string/adrive_gallery_label_duration" />
+                <TextView android:id="@id/photo_info_table_row_duration_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/photo_info_table_row_filesize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/info_dialog_margin_bottom">
+                <TextView android:id="@id/photo_info_table_row_filesize_label" android:paddingRight="@dimen/info_dialog_padding_right" android:layout_width="@dimen/info_dialog_row_width" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_photo_info_device_filesize_label" />
+                <TextView android:id="@id/photo_info_table_row_filesize_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adrive_gallery_common_photo_info_device_filesize_label" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:layout_gravity="center" android:id="@id/photo_info_confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="28.0dip" android:layout_marginBottom="29.0dip" android:text="@string/adrive_gallery_common_dialog_positive" android:layout_weight="1.0" />
+</LinearLayout>

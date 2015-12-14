@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="top" android:id="@id/root_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_black" android:layout_gravity="center_vertical" android:id="@id/tv_search_tag_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_dark_gray" android:layout_gravity="center_vertical" android:id="@id/tv_search_tag_photos_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_16dp" android:singleLine="true" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/btn_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_16dp" android:button="@drawable/follow_tag" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/gray_e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

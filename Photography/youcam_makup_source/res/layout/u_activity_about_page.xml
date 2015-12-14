@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/AboutBackground" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:id="@id/AboutPageHeader" android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="128">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="150" app:guideline_height="134">
+                <ImageView android:id="@id/AboutPageBackBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/u_image_selector_topbar_back_btn" android:contentDescription="[AID]About_Back" style="@style/UTopBarButtonStyle" />
+            </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/AboutPageCloseBtn" android:background="@color/action_button_default" android:paddingLeft="8.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/u_close" android:layout_alignParentRight="true" android:contentDescription="[AID]About_Close" />
+        </RelativeLayout>
+    </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutPageVersionArea" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@drawable/u_bg_edittext_normal_gray_border" android:layout_width="fill_parent" android:layout_height="33.0dip" android:contentDescription="[AID]About_Version">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:textColorHint="@color/you_color_hint" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/AboutPageVersionTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="@string/u_about_page_version" android:layout_toLeftOf="@id/AboutPageVersionTextView" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutPageLegalNoticesArea" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@drawable/u_bg_edittext_normal_gray_border" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="@string/u_about_page_legal_notices" android:contentDescription="[AID]About_LegalNorice" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutDebugModeSendData" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_green" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:id="@id/SendDataText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Mail] Send U Log" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutRevision" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:textColorHint="@color/you_color_hint" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/AboutRevisionTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Info] Revision" android:layout_toLeftOf="@id/AboutRevisionTextView" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutQueryMessageVersion" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:textColorHint="@color/you_color_hint" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/AboutQueryMessageVersionTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Info] QueryMessageVersion" android:layout_toLeftOf="@id/AboutQueryMessageVersionTextView" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutUserId" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:textColorHint="@color/you_color_hint" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/AboutUserIdTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Info] UserId" android:layout_toLeftOf="@id/AboutUserIdTextView" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutBaiduUserId" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Info] BaiduUId" />
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:textColorHint="@color/you_color_hint" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/AboutBaiduUserIdTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutBaiduChannelId" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Info] BaiduCId" />
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:textColorHint="@color/you_color_hint" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/AboutBaiduChannelIdTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutXMPPLog" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Log] XMPP" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutPingLog" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Log] PingServer" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutGcmLog" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Log] GCM" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutSendPhotoLog" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Log] SendPhoto" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutHeartbeatLog" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Log] Heartbeat" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutNotificationLog" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Log] Notification" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutDbLog" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Log] DB" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutVoiceCallLog" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Log] Voice_Call" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutUnreadCntLog" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Log] Unread count" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutImportDB" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Import] DB" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutExportDB" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Export] DB" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutExportSharedPrefs" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Export] Shared_Prefs" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/AboutDebugModeSelectXmppServer" android:background="@color/you_color_transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <RelativeLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/you_color_normal" android:gravity="center" android:id="@id/SelectXmppServerText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="[Config] Select XMPP servers" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

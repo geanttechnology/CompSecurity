@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.socialin.android.views.MultiScreenListView android:gravity="center_horizontal" android:id="@id/si_ui_user_photos_listView" android:focusable="false" android:focusableInTouchMode="false" android:fadingEdge="none" android:clickable="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@color/gray_f5" android:divider="@null" android:requiresFadingEdge="0x0" />
+    <FrameLayout android:layout_gravity="center" android:paddingTop="250.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_no_photos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_no_photos" />
+        <include layout="@layout/si_ui_gallery_retry_layout" />
+    </FrameLayout>
+    <com.socialin.android.lib.WrapGridView android:gravity="center_horizontal" android:id="@id/si_ui_user_photos_gridView" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:fadingEdge="none" android:clickable="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@color/gray_f5" android:divider="@null" android:requiresFadingEdge="0x0" />
+    <FrameLayout android:id="@id/profile_upload_photo_button" android:background="@color/gray_DE" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profie_upload_button_small_plus" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/si_ui_profile_progress_bar_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <ProgressBar android:layout_gravity="center" android:id="@id/si_ui_profile_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Picsart.ProgressBar" />
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="bottom|center" android:id="@id/si_ui_user_photos_bottom_tabs" android:paddingBottom="@dimen/space_32dp" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/si_ui_grid_column_change_panel" />
+        <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/si_ui_select_cells_count_radiogroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <RadioButton android:id="@id/si_ui_photos_colums_3_tab" android:background="@drawable/xml_si_ui_action_grid_column3_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:checked="true" android:button="@null" />
+            <RadioButton android:id="@id/si_ui_photos_colums_2_tab" android:background="@drawable/xml_si_ui_action_grid_column2_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:button="@null" />
+        </RadioGroup>
+    </RelativeLayout>
+    <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/button_go_to_top_layout" />
+    <include layout="@layout/si_ui_gallery_item_spen_layout" />
+</FrameLayout>

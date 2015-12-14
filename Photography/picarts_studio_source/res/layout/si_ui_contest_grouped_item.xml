@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_vertical" android:id="@id/si_ui_contest_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16dp">
+        <TextView android:textSize="@dimen/contest_group_name_size" android:textStyle="normal" android:textColor="@color/text_color_black" android:layout_gravity="left|center" android:id="@id/si_ui_contest_txt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp" android:maxLines="1" style="@style/Widget.Picsart.TextView.Link" />
+        <TextView android:layout_gravity="right|center" android:id="@id/si_ui_contest_more" android:background="@drawable/btn_borderless_material_light" android:paddingLeft="@dimen/space_16dp" android:paddingTop="@dimen/space_12dp" android:paddingRight="@dimen/space_16dp" android:paddingBottom="@dimen/space_12dp" android:visibility="visible" android:layout_marginRight="@dimen/space_8dp" android:text="@string/contest_see_all" style="@style/Widget.Picsart.SeeAllBtn" />
+    </FrameLayout>
+    <HorizontalScrollView android:gravity="center" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="horizontal" android:id="@id/si_ui_contest_images_container_with_scroll" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/si_ui_contest_images_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

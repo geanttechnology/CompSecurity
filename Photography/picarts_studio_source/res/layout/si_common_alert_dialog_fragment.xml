@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:paddingBottom="@dimen/space_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/custom_title_stub" android:layout="@layout/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_24dp" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/dialog_message_id" android:paddingLeft="@dimen/space_24dp" android:paddingRight="@dimen/space_24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_16dp" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" android:fadeScrollbars="false">
+        <FrameLayout android:id="@id/dialog_content_panel_id" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout android:id="@id/buttons" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/dialog_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_cancel" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/dialog_ok_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_ok" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

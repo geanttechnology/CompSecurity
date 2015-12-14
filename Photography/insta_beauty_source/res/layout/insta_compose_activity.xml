@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:background="@color/local_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/materials_contrainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/actionBarLayout" android:background="@drawable/bar_beauty_white_bottom_strok" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <Button android:layout_gravity="left" android:id="@id/btn_cancel" android:background="@drawable/cancel_btn" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+        <Button android:layout_gravity="right" android:id="@id/btn_save" android:background="@drawable/save_btn" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ly_mask" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/ly_styleview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="18.0sp" android:id="@id/flip_type_btn" android:background="@drawable/btn_flip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="OnTypeEditClicked" />
+            <com.instamag.activity.commonview.TStyleCollectionView android:layout_gravity="bottom" android:id="@id/bottomStyleView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/flip_type_btn" android:isScrollContainer="false" />
+        </RelativeLayout>
+        <FrameLayout android:layout_gravity="bottom|left|center" android:id="@id/ly_restype_frame" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/ly_styleview">
+            <Button android:textSize="18.0sp" android:id="@id/edit_type_btn" android:background="@drawable/btn_closetab" android:layout_width="50.0dip" android:layout_height="44.0dip" android:layout_marginLeft="5.0dip" android:onClick="OnTypeEditClicked" />
+            <com.instamag.activity.commonview.TResTypeScrollView android:layout_gravity="left" android:id="@id/restype_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="55.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/line" android:background="@color/adline" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/ly_styleview" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="45.0dip" android:layout_alignParentLeft="true" />
+</FrameLayout>

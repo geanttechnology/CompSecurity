@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingTop="@dimen/space_24dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dialog_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <EditText android:textSize="@dimen/textSize_18" android:id="@id/si_username_input" android:padding="@dimen/space_12dp" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_24dp" android:layout_marginTop="@dimen/space_24dp" android:layout_marginRight="@dimen/space_24dp" android:layout_marginBottom="@dimen/space_16dp" android:hint="@string/profile_txt_name" android:singleLine="true" android:imeOptions="flagNoExtractUi" />
+    <TextView android:textSize="@dimen/textSize_13" android:textColor="@android:color/bright_foreground_light_disabled" android:id="@id/textView1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:layout_marginTop="@dimen/space_12dp" android:layout_marginRight="@dimen/space_16dp" android:text="@string/profile_suggestion_exists_text" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:layout_marginRight="@dimen/space_16dp" android:dividerPadding="@dimen/space_4dp">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/text_color_dark_gray" android:id="@id/textView2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_suggestion_available" />
+        <TextView android:textSize="@dimen/textSize_14" android:id="@id/si_username_suggestions_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/si_username_btn_cancel" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_cancel" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/si_username_btn_save" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_save" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

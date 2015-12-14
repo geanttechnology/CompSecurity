@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="654">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/emojiListLayout" android:background="#ffe6e6e6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="12.0dip" app:guideline_width="1080" app:guideline_height="136">
+                <com.cyberlink.you.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/emojiListGridView" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:listSelector="@android:color/transparent" app:horizontalSpacing="20.0dip" app:numRows="1" />
+            </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+            <RelativeLayout android:id="@id/viewPagerLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/viewpager" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:id="@id/stickerInnerMask" android:background="#80ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/pageIndexContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:divider="@drawable/u_padding_album_column" android:layout_alignParentBottom="true" android:showDividers="middle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+    <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:background="@color/you_color_normal_gray" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="126">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/stickerShopLayout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageButton android:id="@id/stickerShopImageButton" android:background="#fff1f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/u_sticker_thumbnail_plus" android:scaleType="fitCenter" />
+            </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+            <View android:id="@id/seperator" android:background="#ffb2b2b2" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <com.cyberlink.you.widgetpool.clhorizontalgridview.HorizontalGridView android:id="@id/stickerListGridView" android:background="#fff1f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:overScrollMode="never" app:listSelector="@android:color/transparent" app:numRows="1" />
+        </RelativeLayout>
+    </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+</LinearLayout>

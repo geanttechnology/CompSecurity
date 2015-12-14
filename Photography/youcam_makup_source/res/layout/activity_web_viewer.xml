@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/fragment_topbar_panel" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="134">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/web_viewer_back_btn_container" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="150" app:guideline_height="134">
+                    <ImageView android:id="@id/web_viewer_back_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" style="@style/CameraTopBackBtn" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <TextView android:id="@id/web_viewer_top_bar_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" style="@style/TopBarTextStyle" />
+                <EditText android:textColor="#ff585858" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/web_viewer_top_bar_title_et" android:background="@drawable/web_viewer_url_shape" android:padding="5.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/web_viewer_back_btn_container" android:layout_centerInParent="true" android:inputType="textUri" style="@style/WebViewerTitleText" />
+            </RelativeLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <WebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/fragment_topbar_panel" app:guideline_width="1080" app:guideline_height="10">
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:indeterminate="false" style="?android:attr/progressBarStyleHorizontal" />
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <include android:id="@id/waiting_cursor" android:visibility="gone" layout="@layout/waiting_cursor_dialog" />
+</RelativeLayout>

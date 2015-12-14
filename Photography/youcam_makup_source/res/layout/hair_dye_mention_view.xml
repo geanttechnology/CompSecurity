@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/hairdye_mention_stroke" android:layout_width="50.0dip" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/hairdye_mention_stroke2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/hairDyeCross" android:background="@drawable/hairdye_mention_solid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="3.0dip" android:layout_centerInParent="true">
+            <View android:background="@color/white" android:layout_width="2.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+            <View android:background="@color/white" android:layout_width="20.0dip" android:layout_height="2.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

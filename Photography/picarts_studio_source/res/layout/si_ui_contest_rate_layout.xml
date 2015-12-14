@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/si_ui_contest_rate_skip_btn">
+        <ProgressBar android:layout_gravity="center" android:id="@id/si_ui_wrapgrid_progress_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Picsart.Light.ProgressBar" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/si_ui_gallery_retry_layout" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/gallery_wrapgrid_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.socialin.android.lib.WrapGridView android:gravity="center" android:id="@id/gallery_wrapgrid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/gallery_wrapgrid_progress_layout" />
+            <RelativeLayout android:id="@id/gallery_wrapgrid_progress_layout" android:background="@color/color_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.Picsart.Light.ProgressBar.Small" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/si_ui_contest_rate_skip_btn" android:background="@color/gray_e6" android:padding="2.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/contest_shuffle_button_height" android:layout_margin="@dimen/space_12dp" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/xml_btn_rules_bg" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_24dp" android:src="@drawable/ic_shuffle" android:contentDescription="@string/gen_next" />
+            <TextView android:textSize="@dimen/contest_shuffle_button_text_size" android:textColor="@color/text_color_dark_gray" android:layout_gravity="center" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:text="@string/gen_next" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

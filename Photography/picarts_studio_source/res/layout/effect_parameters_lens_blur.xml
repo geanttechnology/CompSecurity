@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_20dp" android:paddingRight="@dimen/space_20dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/shape" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/shape_octagon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/effect_param_lens_blur_shape_octagon" />
+        <RadioButton android:id="@id/shape_rhombus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect_param_lens_blur_shape_rhombus" />
+        <RadioButton android:id="@id/shape_triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect_param_lens_blur_shape_triangle" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/radius_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/radius_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:id="@id/radius_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/lightness_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/lightness_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar android:id="@id/lightness_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" />
+</LinearLayout>

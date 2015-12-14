@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/panel_top_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_panel_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/mask_top_cancel" android:src="@drawable/ic_action_cancel_t" android:layout_alignParentLeft="true" style="@style/Widget.Picsart.ImageButton.Action" />
+    <LinearLayout android:id="@id/mask_top_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <Spinner android:id="@id/mask_blend_mode" android:layout_width="96.0dip" android:layout_height="fill_parent" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/mask_button_mode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/button_drag" android:background="@drawable/ic_action_drag_with_selector_t" android:checked="true" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+            <RadioButton android:enabled="false" android:id="@id/button_brush" android:background="@drawable/ic_mask_brush_selector" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+        </RadioGroup>
+    </LinearLayout>
+    <ImageButton android:id="@id/mask_top_done" android:src="@drawable/ic_action_done_t" android:layout_alignParentRight="true" style="@style/Widget.Picsart.ImageButton.Action" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:background="@color/bg_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/solid_white" android:layout_gravity="center" android:id="@id/tx_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="Collage" />
+    <FrameLayout android:layout_gravity="left|center" android:id="@id/layout_pre" android:background="@drawable/btn_edit_close" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+    <FrameLayout android:layout_gravity="right|center" android:id="@id/layout_accept" android:background="@drawable/btn_edit_save" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+</FrameLayout>

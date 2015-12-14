@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/text_edit_dashboard" android:layout_width="fill_parent" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/text_dashboard_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_above="@id/title_panel_icons" layout="@layout/text_dashboard_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_panel_icons" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_panel_height" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/text_dashboardCancelId" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/text_dashboardUndolId" android:src="@drawable/ic_action_undo_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <RelativeLayout android:layout_width="48.0dip" android:layout_height="48.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/text_options_popup_anchor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageButton android:id="@id/btn_showTextPopup" android:src="@drawable/ic_action_options_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        </RelativeLayout>
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/text_dashboardItemId" android:src="@drawable/ic_action_text_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_horizontal" />
+        <ImageButton android:id="@id/text_dashboardDoneId" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" xmlns:emojicon="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/ScrollTextViewHeader" android:background="#ffb2b2b2" android:layout_width="fill_parent" android:layout_height="0.0dip" emojicon:guideline_width="1080" emojicon:guideline_height="128">
+        <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" emojicon:guideline_width="1080" emojicon:guideline_height="134">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" emojicon:guideline_width="150" emojicon:guideline_height="134">
+                    <ImageView android:id="@id/ScrollTextViewBackBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/u_image_selector_topbar_back_btn" android:contentDescription="@string/app_name" style="@style/UTopBarButtonStyle" />
+                </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+                <TextView android:textColor="#ffffffff" android:id="@id/ScrollTextViewTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/u_ping_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/UChatTopBarTitle" />
+            </RelativeLayout>
+        </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+    </com.cyberlink.you.widgetpool.common.FixedAspectRatioFrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ScrollTextViewHeader">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/ScrollTextViewPingBtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/u_ping_btn" android:layout_weight="1.0" android:contentDescription="[AID]Ping_Ping" style="@style/UAppButtonStyleGeneral" />
+            <Button android:id="@id/ScrollTextViewOpenBtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="5.0dip" android:text="@string/u_ping_open_btn" android:layout_weight="1.0" style="@style/UAppButtonStyleGeneral" />
+        </LinearLayout>
+        <ScrollView android:id="@id/ScrollTextViewScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/ScrollTextViewText" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

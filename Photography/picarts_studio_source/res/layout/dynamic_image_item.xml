@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/contest_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.utils.DynamicHeightImageView android:id="@id/image" android:background="@color/gray_DE" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/double_tap_like" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_net_like_p" />
+</FrameLayout>

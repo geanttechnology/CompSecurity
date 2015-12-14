@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="PLA_absListViewStyle" format="reference" />
+    <attr name="PLA_listViewStyle" format="reference" />
+    <attr name="listSelector" format="reference|color" />
+    <attr name="drawSelectorOnTop" format="boolean" />
+    <attr name="stackFromRight" format="boolean" />
+    <attr name="scrollingCache" format="boolean" />
+    <attr name="textFilterEnabled" format="boolean" />
+    <attr name="transcriptMode">
+        <enum name="alwaysScroll" value="2" />
+        <enum name="disabled" value="0" />
+        <enum name="normal" value="1" />
+    </attr>
+    <attr name="cacheColorHint" format="color" />
+    <attr name="smoothScrollbar" format="boolean" />
+    <attr name="choiceMode">
+        <enum name="multipleChoice" value="2" />
+        <enum name="none" value="0" />
+        <enum name="singleChoice" value="1" />
+    </attr>
+    <attr name="adSize" format="string" />
+    <attr name="adSizes" format="string" />
+    <attr name="adUnitId" format="string" />
+    <attr name="sourceWDP" format="integer" />
+    <attr name="sourceHDP" format="integer" />
+    <attr name="useDeviceDP" format="boolean" />
+    <attr name="ignoreWidth" format="boolean" />
+    <attr name="ignoreHeight" format="boolean" />
+    <attr name="child_width" format="integer" />
+    <attr name="child_height" format="integer" />
+    <attr name="child_left" format="integer" />
+    <attr name="child_top" format="integer" />
+    <attr name="child_rtl" format="boolean" />
+    <attr name="child_btt" format="boolean" />
+    <attr name="reference_width" format="integer" />
+    <attr name="reference_height" format="integer" />
+    <attr name="self_width" format="integer" />
+    <attr name="self_height" format="integer" />
+    <attr name="self_left" format="integer" />
+    <attr name="self_top" format="integer" />
+    <attr name="self_rtl" format="boolean" />
+    <attr name="self_btt" format="boolean" />
+    <attr name="layout_x" format="dimension" />
+    <attr name="layout_y" format="dimension" />
+    <attr name="guidelines">
+        <enum name="off" value="0" />
+        <enum name="on" value="2" />
+        <enum name="onTouch" value="1" />
+    </attr>
+    <attr name="fixAspectRatio" format="boolean" />
+    <attr name="aspectRatioX" format="integer" />
+    <attr name="aspectRatioY" format="integer" />
+    <attr name="imageResource" format="reference" />
+    <attr name="cornerResourceTopLeft" format="reference" />
+    <attr name="cornerResourceTopRight" format="reference" />
+    <attr name="cornerResourceBottomLeft" format="reference" />
+    <attr name="cornerResourceBottomRight" format="reference" />
+    <attr name="cornerResourceWidth" format="integer" />
+    <attr name="cornerResourceHeight" format="integer" />
+    <attr name="circleBackground" format="boolean" />
+    <attr name="emojiconSize" format="dimension" />
+    <attr name="emojiLineSpacingExtra" format="dimension" />
+    <attr name="extras_category_name" format="string" />
+    <attr name="extras_category_image" format="integer" />
+    <attr name="extras_category_quantity" format="integer" />
+    <attr name="extras_text_color" format="reference" />
+    <attr name="guideline_width" format="integer" />
+    <attr name="guideline_height" format="integer" />
+    <attr name="horizontalSpacing" format="dimension" />
+    <attr name="stretchMode">
+        <enum name="none" value="0" />
+        <enum name="rowHeight" value="2" />
+        <enum name="spacingHeight" value="1" />
+        <enum name="spacingWidthUniform" value="3" />
+    </attr>
+    <attr name="rowHeight" format="dimension" />
+    <attr name="numRows" format="integer" min="0">
+        <enum name="auto_fit" value="-1" />
+    </attr>
+    <attr name="verticalSpacing" format="dimension" />
+    <attr name="paddingTop" format="dimension" />
+    <attr name="horizontalGapSpacing" format="dimension" />
+    <attr name="paddingLeft" format="dimension" />
+    <attr name="imageWidth" format="dimension" />
+    <attr name="imageHeight" format="dimension" />
+    <attr name="titleSize" format="dimension" />
+    <attr name="isHorizontal" format="boolean" />
+    <attr name="mapType">
+        <enum name="normal" value="1" />
+        <enum name="none" value="0" />
+        <enum name="hybrid" value="4" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+    </attr>
+    <attr name="cameraBearing" format="float" />
+    <attr name="cameraTargetLat" format="float" />
+    <attr name="cameraTargetLng" format="float" />
+    <attr name="cameraTilt" format="float" />
+    <attr name="cameraZoom" format="float" />
+    <attr name="uiCompass" format="boolean" />
+    <attr name="uiRotateGestures" format="boolean" />
+    <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiTiltGestures" format="boolean" />
+    <attr name="uiZoomControls" format="boolean" />
+    <attr name="uiZoomGestures" format="boolean" />
+    <attr name="useViewLifecycle" format="boolean" />
+    <attr name="zOrderOnTop" format="boolean" />
+    <attr name="mask" format="reference" />
+    <attr name="porterduffxfermode">
+        <enum name="ADD" value="0" />
+        <enum name="CLEAR" value="1" />
+        <enum name="DARKEN " value="2" />
+        <enum name="DST" value="3" />
+        <enum name="DST_ATOP" value="4" />
+        <enum name="DST_IN" value="5" />
+        <enum name="DST_OUT" value="6" />
+        <enum name="DST_OVER" value="7" />
+        <enum name="LIGHTEN" value="8" />
+        <enum name="MULTIPLY" value="9" />
+        <enum name="OVERLAY" value="10" />
+        <enum name="SCREEN" value="11" />
+        <enum name="SRC" value="12" />
+        <enum name="SRC_ATOP" value="13" />
+        <enum name="SRC_IN" value="14" />
+        <enum name="SRC_OUT" value="15" />
+        <enum name="SRC_OVER" value="16" />
+        <enum name="XOR" value="17" />
+    </attr>
+    <attr name="column_count" format="integer" min="2" />
+    <attr name="column_layout" format="reference" />
+    <attr name="pull_to_refresh_layout" format="reference" />
+    <attr name="pull_to_refresh_trigger_offset" format="dimension" />
+    <attr name="pull_to_refresh_max_height" format="dimension" />
+    <attr name="text_size_info" format="string" />
+    <attr name="suppress_max" format="boolean" />
+    <attr name="PLA_listSelector" format="reference|color" />
+    <attr name="PLA_drawSelectorOnTop" format="boolean" />
+    <attr name="PLA_stackFromBottom" format="boolean" />
+    <attr name="PLA_scrollingCache" format="boolean" />
+    <attr name="PLA_textFilterEnabled" format="boolean" />
+    <attr name="PLA_transcriptMode">
+        <enum name="PLA_alwaysScroll" value="2" />
+        <enum name="PLA_disabled" value="0" />
+        <enum name="PLA_normal" value="1" />
+    </attr>
+    <attr name="PLA_cacheColorHint" format="color" />
+    <attr name="PLA_fastScrollEnabled" format="boolean" />
+    <attr name="PLA_smoothScrollbar" format="boolean" />
+    <attr name="PLA_choiceMode">
+        <enum name="PLA_multipleChoice" value="2" />
+        <enum name="PLA_multipleChoiceModal" value="3" />
+        <enum name="PLA_none" value="0" />
+        <enum name="PLA_singleChoice" value="1" />
+    </attr>
+    <attr name="PLA_fastScrollAlwaysVisible" format="boolean" />
+    <attr name="PLA_dividerHeight" format="dimension" />
+    <attr name="PLA_headerDividersEnabled" format="boolean" />
+    <attr name="PLA_footerDividersEnabled" format="boolean" />
+    <attr name="PLA_overScrollHeader" format="reference|color" />
+    <attr name="PLA_overScrollFooter" format="reference|color" />
+    <attr name="PLA_plaContentBackground" format="color" />
+    <attr name="PLA_plaColumnNumber" format="integer" />
+    <attr name="PLA_plaLandscapeColumnNumber" format="integer" />
+    <attr name="PLA_plaColumnPaddingLeft" format="dimension" />
+    <attr name="PLA_plaColumnPaddingRight" format="dimension" />
+    <attr name="PLA_ptrHeight" format="dimension" />
+    <attr name="PLA_ptrSpinnerMarginRight" format="dimension" />
+    <attr name="PLA_ptrArrowMarginRight" format="dimension" />
+    <attr name="PLA_ptrTextSize" format="dimension" />
+    <attr name="PLA_ptrLastUpdateTextSize" format="dimension" />
+    <attr name="PLA_id" format="reference" />
+    <attr name="PLA_tag" format="string" />
+    <attr name="PLA_scrollX" format="dimension" />
+    <attr name="PLA_scrollY" format="dimension" />
+    <attr name="PLA__padding" format="dimension" />
+    <attr name="PLA__paddingLeft" format="dimension" />
+    <attr name="PLA__paddingTop" format="dimension" />
+    <attr name="PLA__paddingRight" format="dimension" />
+    <attr name="PLA__paddingBottom" format="dimension" />
+    <attr name="PLA__paddingStart" format="dimension" />
+    <attr name="PLA__paddingEnd" format="dimension" />
+    <attr name="PLA_focusable" format="boolean" />
+    <attr name="PLA_focusableInTouchMode" format="boolean" />
+    <attr name="PLA_visibility">
+        <enum name="PLA_gone" value="2" />
+        <enum name="PLA_invisible" value="1" />
+        <enum name="PLA_visible" value="0" />
+    </attr>
+    <attr name="PLA_fitsSystemWindows" format="boolean" />
+    <attr name="PLA_scrollbars">
+        <flag name="PLA_none" value="0x00000000" />
+        <flag name="PLA_horizontal" value="0x00000100" />
+        <flag name="PLA_vertical" value="0x00000200" />
+    </attr>
+    <attr name="PLA_scrollbarStyle">
+        <enum name="PLA_insideInset" value="16777216" />
+        <enum name="PLA_insideOverlay" value="0" />
+        <enum name="PLA_outsideInset" value="50331648" />
+        <enum name="PLA_outsideOverlay" value="33554432" />
+    </attr>
+    <attr name="PLA_isScrollContainer" format="boolean" />
+    <attr name="PLA_fadeScrollbars" format="boolean" />
+    <attr name="PLA_scrollbarFadeDuration" format="integer" />
+    <attr name="PLA_scrollbarDefaultDelayBeforeFade" format="integer" />
+    <attr name="PLA_scrollbarSize" format="dimension" />
+    <attr name="PLA_scrollbarThumbHorizontal" format="reference" />
+    <attr name="PLA_scrollbarThumbVertical" format="reference" />
+    <attr name="PLA_scrollbarTrackHorizontal" format="reference" />
+    <attr name="PLA_scrollbarTrackVertical" format="reference" />
+    <attr name="PLA_scrollbarAlwaysDrawHorizontalTrack" format="boolean" />
+    <attr name="PLA_scrollbarAlwaysDrawVerticalTrack" format="boolean" />
+    <attr name="PLA_fadingEdge">
+        <flag name="PLA_none" value="0x00000000" />
+        <flag name="PLA_horizontal" value="0x00001000" />
+        <flag name="PLA_vertical" value="0x00002000" />
+    </attr>
+    <attr name="PLA_requiresFadingEdge">
+        <flag name="PLA_none" value="0x00000000" />
+        <flag name="PLA_horizontal" value="0x00001000" />
+        <flag name="PLA_vertical" value="0x00002000" />
+    </attr>
+    <attr name="PLA_fadingEdgeLength" format="dimension" />
+    <attr name="PLA_nextFocusLeft" format="reference" />
+    <attr name="PLA_nextFocusRight" format="reference" />
+    <attr name="PLA_nextFocusUp" format="reference" />
+    <attr name="PLA_nextFocusDown" format="reference" />
+    <attr name="PLA_nextFocusForward" format="reference" />
+    <attr name="PLA_clickable" format="boolean" />
+    <attr name="PLA_longClickable" format="boolean" />
+    <attr name="PLA_saveEnabled" format="boolean" />
+    <attr name="PLA_filterTouchesWhenObscured" format="boolean" />
+    <attr name="PLA_drawingCacheQuality">
+        <enum name="PLA_auto" value="0" />
+        <enum name="PLA_high" value="2" />
+        <enum name="PLA_low" value="1" />
+    </attr>
+    <attr name="PLA_keepScreenOn" format="boolean" />
+    <attr name="PLA_duplicateParentState" format="boolean" />
+    <attr name="PLA_minHeight" format="dimension" />
+    <attr name="PLA_minWidth" format="dimension" />
+    <attr name="PLA_soundEffectsEnabled" format="boolean" />
+    <attr name="PLA_hapticFeedbackEnabled" format="boolean" />
+    <attr name="PLA_contentDescription" format="string" localization="suggested" />
+    <attr name="PLA_onClick" format="string" />
+    <attr name="PLA_overScrollMode">
+        <enum name="PLA_always" value="0" />
+        <enum name="PLA_ifContentScrolls" value="1" />
+        <enum name="PLA_never" value="2" />
+    </attr>
+    <attr name="PLA_alpha" format="float" />
+    <attr name="PLA_translationX" format="dimension" />
+    <attr name="PLA_translationY" format="dimension" />
+    <attr name="PLA_transformPivotX" format="dimension" />
+    <attr name="PLA_transformPivotY" format="dimension" />
+    <attr name="PLA_rotation" format="float" />
+    <attr name="PLA_rotationX" format="float" />
+    <attr name="PLA_rotationY" format="float" />
+    <attr name="PLA_scaleX" format="float" />
+    <attr name="PLA_scaleY" format="float" />
+    <attr name="PLA_verticalScrollbarPosition">
+        <enum name="PLA_defaultPosition" value="0" />
+        <enum name="PLA_left" value="1" />
+        <enum name="PLA_right" value="2" />
+    </attr>
+    <attr name="PLA_layerType">
+        <enum name="PLA_none" value="0" />
+        <enum name="PLA_hardware" value="2" />
+        <enum name="PLA_software" value="1" />
+    </attr>
+    <attr name="PLA_layoutDirection">
+        <enum name="PLA_inherit" value="2" />
+        <enum name="PLA_ltr" value="0" />
+        <enum name="PLA_rtl" value="1" />
+        <enum name="locale" value="3" />
+    </attr>
+    <attr name="PLA_textDirection" format="integer">
+        <enum name="PLA_inherit" value="0" />
+        <enum name="PLA_ltr" value="3" />
+        <enum name="PLA_rtl" value="4" />
+        <enum name="PLA_anyRtl" value="2" />
+        <enum name="PLA_firstStrong" value="1" />
+        <enum name="PLA_locale" value="5" />
+    </attr>
+    <attr name="PLA_textAlignment" format="integer">
+        <enum name="PLA_inherit" value="0" />
+        <enum name="PLA_center" value="4" />
+        <enum name="PLA_gravity" value="1" />
+        <enum name="PLA_textEnd" value="3" />
+        <enum name="PLA_textStart" value="2" />
+        <enum name="PLA_viewEnd" value="6" />
+        <enum name="PLA_viewStart" value="5" />
+    </attr>
+    <attr name="PLA_importantForAccessibility" format="integer">
+        <enum name="PLA_auto" value="0" />
+        <enum name="PLA_no" value="2" />
+        <enum name="PLA_yes" value="1" />
+    </attr>
+    <attr name="PLA_accessibilityFocusable" format="integer">
+        <enum name="PLA_auto" value="0" />
+        <enum name="PLA_no" value="2" />
+        <enum name="PLA_yes" value="1" />
+    </attr>
+    <attr name="PLA_animateLayoutChanges" format="boolean" />
+    <attr name="PLA_clipChildren" format="boolean" />
+    <attr name="PLA_clipToPadding" format="boolean" />
+    <attr name="PLA_layoutAnimation" format="reference" />
+    <attr name="PLA_animationCache" format="boolean" />
+    <attr name="PLA_persistentDrawingCache">
+        <flag name="PLA_none" value="0x00000000" />
+        <flag name="PLA_all" value="0x00000003" />
+        <flag name="PLA_animation" value="0x00000001" />
+        <flag name="PLA_scrolling" value="0x00000002" />
+    </attr>
+    <attr name="PLA_alwaysDrawnWithCache" format="boolean" />
+    <attr name="PLA_addStatesFromChildren" format="boolean" />
+    <attr name="PLA_descendantFocusability">
+        <enum name="PLA_afterDescendants" value="1" />
+        <enum name="PLA_beforeDescendants" value="0" />
+        <enum name="PLA_blocksDescendants" value="2" />
+    </attr>
+    <attr name="PLA_splitMotionEvents" format="boolean" />
+    <attr name="panelTitle" format="string" />
+    <attr name="auto_resize_mode" format="integer">
+        <enum name="fill_height_auto_width" value="2" />
+        <enum name="fill_width_align_top" value="3" />
+        <enum name="fill_width_auto_height" value="1" />
+        <enum name="no_resize" value="0" />
+    </attr>
+    <attr name="bc_default_image" format="reference" />
+    <attr name="bc_circle_bitmap" format="boolean" />
+    <attr name="bc_fade_In_displayer" format="boolean" />
+    <attr name="bc_fade_In_duration" format="integer" />
+    <attr name="bc_circle_border_width" format="dimension" />
+    <attr name="bc_circle_border_color" format="reference|color" />
+    <attr name="bc_is_cl_multi_column" format="boolean" />
+    <attr name="bc_adjudge_portrait_center_crop" format="boolean" />
+    <attr name="bc_adjudge_portrait_center_crop_scale" format="float" />
+    <attr name="bc_crop_left" format="dimension" />
+    <attr name="bc_crop_right" format="dimension" />
+    <attr name="bc_crop_top" format="dimension" />
+    <attr name="bc_crop_bottom" format="dimension" />
+    <attr name="bc_crop_proportion_left" format="float" />
+    <attr name="bc_crop_proportion_right" format="float" />
+    <attr name="bc_crop_proportion_top" format="float" />
+    <attr name="bc_crop_proportion_bottom" format="float" />
+    <attr name="bc_cache_on_disk" format="boolean" />
+    <attr name="theme">
+        <enum name="holo_dark" value="0" />
+        <enum name="holo_light" value="1" />
+    </attr>
+    <attr name="environment">
+        <enum name="production" value="1" />
+        <enum name="sandbox" value="0" />
+        <enum name="strict_sandbox" value="2" />
+    </attr>
+    <attr name="fragmentStyle" format="reference" />
+    <attr name="fragmentMode">
+        <enum name="buyButton" value="1" />
+        <enum name="selectionDetails" value="2" />
+    </attr>
+    <attr name="buyButtonHeight" format="dimension">
+        <enum name="match_parent" value="-1" />
+        <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr name="buyButtonWidth" format="dimension">
+        <enum name="match_parent" value="-1" />
+        <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr name="buyButtonText">
+        <enum name="book_now" value="3" />
+        <enum name="buy_now" value="2" />
+        <enum name="buy_with_google" value="1" />
+    </attr>
+    <attr name="buyButtonAppearance">
+        <enum name="classic" value="1" />
+        <enum name="grayscale" value="2" />
+        <enum name="monochrome" value="3" />
+    </attr>
+    <attr name="maskedWalletDetailsTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsHeaderTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsButtonTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsButtonBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsLogoTextColor" format="color" />
+    <attr name="maskedWalletDetailsLogoImageType">
+        <enum name="classic" value="1" />
+        <enum name="monochrome" value="2" />
+    </attr>
+    <attr name="bc_arc_outterRadius" format="dimension" />
+    <attr name="bc_arc_innerRadius" format="dimension" />
+    <attr name="bc_arc_innerCircle" format="reference|color" />
+    <attr name="bc_arc_innerCircleBorderWidth" format="dimension" />
+    <attr name="bc_arc_angleOffset" format="float" />
+    <attr name="bc_arc_angleRange" format="float" />
+    <attr name="bc_arc_hintText" format="string" />
+    <attr name="bc_arc_circleBackground" format="reference" />
+    <attr name="multi_select" format="boolean" />
+    <attr name="confirm_logout" format="boolean" />
+    <attr name="fetch_user_info" format="boolean" />
+    <attr name="login_text" format="string" />
+    <attr name="logout_text" format="string" />
+    <attr name="show_pictures" format="boolean" />
+    <attr name="extra_fields" format="string" />
+    <attr name="show_title_bar" format="boolean" />
+    <attr name="title_text" format="string" />
+    <attr name="done_button_text" format="string" />
+    <attr name="title_bar_background" format="reference" />
+    <attr name="done_button_background" format="reference" />
+    <attr name="radius_in_meters" format="integer" />
+    <attr name="results_limit" format="integer" />
+    <attr name="search_text" format="string" />
+    <attr name="show_search_box" format="boolean" />
+    <attr name="preset_size">
+        <enum name="normal" value="-3" />
+        <enum name="large" value="-4" />
+        <enum name="small" value="-2" />
+    </attr>
+    <attr name="is_cropped" format="boolean" />
+</resources>

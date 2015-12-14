@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/divider_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/timeline_divider_date_year" android:id="@id/divider_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timeline_divider_text_margin_left" android:layout_marginBottom="@dimen/timeline_divider_year_bottom_padding" style="@style/textappearance_divider_year" />
+    <TextView android:textSize="@dimen/timeline_divider_date_month" android:id="@id/divider_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timeline_divider_text_margin_left" android:layout_marginBottom="@dimen/timeline_divider_text_margin_bottom" style="@style/textappearance_divider_month" />
+</LinearLayout>

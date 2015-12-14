@@ -1,0 +1,142 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.cyberlink.beautycircle.controller.activity;
+
+import android.content.res.Resources;
+import android.widget.TextView;
+import com.cyberlink.beautycircle.model.Comment;
+import com.cyberlink.beautycircle.model.Creator;
+import com.cyberlink.beautycircle.model.Post;
+import com.cyberlink.beautycircle.model.Tags;
+import com.cyberlink.beautycircle.model.UserInfo;
+import com.cyberlink.beautycircle.model.network.NetworkPost;
+import com.cyberlink.beautycircle.model.r;
+import com.cyberlink.beautycircle.utility.AccountManager;
+import com.cyberlink.beautycircle.utility.b;
+import com.perfectcorp.utility.e;
+import com.perfectcorp.utility.j;
+import com.perfectcorp.utility.m;
+import com.rockerhieu.emojicon.EmojiconEditText;
+
+// Referenced classes of package com.cyberlink.beautycircle.controller.activity:
+//            g, PostActivity
+
+class a
+    implements b
+{
+
+    final String a;
+    final g b;
+
+    public void a()
+    {
+        e.e(new Object[] {
+            "getAccountToken Fail"
+        });
+    }
+
+    public void a(String s)
+    {
+        if (g.a(b) == null)
+        {
+            return;
+        } else
+        {
+            g.a(b).a(Long.valueOf(g.a(b).commentCount.longValue() + 1L), new r() {
+
+                final g._cls17 a;
+
+                public void a(Post post)
+                {
+                    if (post != null)
+                    {
+                        g.a(a.b, post);
+                    }
+                    a.b.a(g.a(a.b));
+                    com.cyberlink.beautycircle.controller.activity.g.b(a.b, g.a(a.b));
+                }
+
+            
+            {
+                a = g._cls17.this;
+                super();
+            }
+            });
+            NetworkPost.a(s, "Post", g.a(b).postId.longValue(), a, new Tags()).a(new m() {
+
+                final g._cls17 a;
+
+                protected void a()
+                {
+                    PostActivity.k(a.b.b).setEnabled(true);
+                }
+
+                protected void a(int i)
+                {
+                    if (i != 523) goto _L2; else goto _L1
+_L1:
+                    String s1 = a.b.b.getResources().getString(com.cyberlink.beautycircle.m.bc_post_comment_you_blocked_toast);
+                    e.a(a.b.b, s1);
+_L4:
+                    PostActivity.k(a.b.b).setEnabled(true);
+                    return;
+_L2:
+                    if (i == 524)
+                    {
+                        String s2 = a.b.b.getResources().getString(com.cyberlink.beautycircle.m.bc_post_comment_blocked_you_toast);
+                        e.a(a.b.b, s2);
+                    }
+                    if (true) goto _L4; else goto _L3
+_L3:
+                }
+
+                protected void a(Comment comment)
+                {
+                    com.cyberlink.beautycircle.controller.activity.PostActivity.j(a.b.b).setText("");
+                    PostActivity.k(a.b.b).setEnabled(true);
+                    g.a(a.b, 2);
+                    UserInfo userinfo = AccountManager.d();
+                    Creator creator = new Creator();
+                    if (userinfo != null)
+                    {
+                        creator.avatar = userinfo.avatarUrl;
+                        creator.userId = userinfo.id;
+                        creator.displayName = userinfo.displayName;
+                    }
+                    comment.creator = creator;
+                    comment.comment = a.a;
+                    comment.likeCount = 0L;
+                    g.a(a.b, g.a(a.b).creator.userId, comment);
+                }
+
+                protected void b(Object obj)
+                {
+                    a((Comment)obj);
+                }
+
+            
+            {
+                a = g._cls17.this;
+                super();
+            }
+            });
+            return;
+        }
+    }
+
+    public void b()
+    {
+        e.e(new Object[] {
+            "getAccountToken Abort"
+        });
+    }
+
+    _cls2.a(g g1, String s)
+    {
+        b = g1;
+        a = s;
+        super();
+    }
+}

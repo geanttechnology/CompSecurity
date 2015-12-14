@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/splashImageLogo" android:paddingBottom="@dimen/f40dp" android:layout_width="@dimen/f273dp" android:layout_height="@dimen/f80dp" android:src="@drawable/logo_splash" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/topSpace" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentTop="true" app:guideline_width="1080" app:guideline_height="600" />
+    <ImageView android:id="@id/splashImageLogo2" android:paddingBottom="@dimen/f40dp" android:visibility="invisible" android:layout_width="@dimen/f273dp" android:layout_height="@dimen/f80dp" android:src="@drawable/logo_splash" android:layout_below="@id/topSpace" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/logo_baidu" android:visibility="invisible" android:layout_width="@dimen/f131dp" android:layout_height="@dimen/f33dp" android:layout_marginBottom="@dimen/f20dp" android:src="@drawable/logo_baidu" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

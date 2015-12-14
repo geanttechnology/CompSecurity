@@ -1,0 +1,26 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.aviary.android.feather.sdk.widget;
+
+import android.view.View;
+
+// Referenced classes of package com.aviary.android.feather.sdk.widget:
+//            AviaryAdapterView
+
+public static class id
+    implements android.view.w.AdapterContextMenuInfo
+{
+
+    public long id;
+    public int position;
+    public View targetView;
+
+    public (View view, int i, long l)
+    {
+        targetView = view;
+        position = i;
+        id = l;
+    }
+}

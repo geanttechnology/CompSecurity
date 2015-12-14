@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/bc_view_hot_topic_header_outter" android:background="@drawable/bc_general_radius_white_background_with_border" android:paddingLeft="@dimen/t7dp" android:paddingRight="@dimen/t7dp" android:paddingBottom="@dimen/t10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/t10dp" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/circle_description_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t5dp" android:layout_marginTop="@dimen/t10dp" android:layout_marginRight="@dimen/t5dp">
+            <RelativeLayout android:id="@id/circle_edit_description" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/circle_edit_description_icon" android:padding="@dimen/t5dp" android:layout_width="@dimen/t30dp" android:layout_height="@dimen/t30dp" android:src="@drawable/bc_go_to_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/t14sp" android:textColor="@color/bc_product_list_description_text" android:ellipsize="end" android:gravity="left|center" android:id="@id/circle_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t5dp" android:minHeight="@dimen/t30dp" android:text="@string/bc_edit_circle_empty_hint" android:maxLines="3" android:layout_toLeftOf="@id/circle_edit_description_icon" style="@style/BcDefaultFontStyle" />
+            </RelativeLayout>
+            <View android:layout_marginTop="@dimen/t10dp" style="@style/BcSaperaterHStyle" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t10dp" android:layout_marginTop="@dimen/t10dp" android:layout_marginRight="@dimen/t10dp">
+            <TextView android:id="@id/circle_panel_follower" android:text="@string/bc_edit_circle_follower_button" android:layout_alignParentLeft="true" style="@style/BcCircleHeaderBtnStyle" />
+            <TextView android:id="@id/circle_panel_edit" android:text="@string/bc_edit_circle_edit_button" android:layout_alignParentRight="true" style="@style/BcCircleHeaderBtnStyle" />
+            <ImageView android:id="@id/circle_panel_secret" android:layout_width="@dimen/t16dp" android:layout_height="@dimen/t16dp" android:layout_marginRight="@dimen/t10dp" android:src="@drawable/bc_circle_secret_icon_selector" android:layout_toLeftOf="@id/circle_panel_edit" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

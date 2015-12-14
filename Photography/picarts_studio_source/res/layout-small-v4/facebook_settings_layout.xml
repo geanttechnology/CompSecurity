@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_title" />
+    <TextView android:paddingLeft="@dimen/space_12dp" android:paddingTop="@dimen/space_4dp" android:paddingRight="@dimen/space_12dp" android:paddingBottom="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fb_settings_share_info_short" />
+    <ScrollView android:id="@id/dialog_fb_body_layout_id" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+    <View style="@style/Divider.Horizontal" />
+    <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/gray_tr_80_FA" android:paddingLeft="@dimen/space_12dp" android:paddingTop="@dimen/space_4dp" android:paddingRight="@dimen/space_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fb_settings_share_info_short" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/dialog_fb_dont_show_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" />
+        <TextView android:textSize="@dimen/textSize_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dont_show_again" />
+    </LinearLayout>
+    <View style="@style/Divider.Horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/dialog_fb_buttons_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/dialog_fb_cancel_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/gen_cancel" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/dialog_fb_ok_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/gen_ok" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

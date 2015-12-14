@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/listsContainer" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ListView android:id="@id/effectsList" android:background="@drawable/camera_options" android:scrollbars="none" android:layout_width="70.0dip" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/color_transparent" android:dividerHeight="0.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/maskPreviewPanel" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ListView android:id="@id/maskPreviewList" android:background="@drawable/camera_options" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/color_transparent" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+            <FrameLayout android:id="@id/mask_more_panelId" android:background="@drawable/plus_panel" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_weight="0.0">
+                <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/mask_moreId" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_plus_round" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/effectParamsContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/listsContainer">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/effect_params_container" android:background="@drawable/panel_drawer_left" android:layout_width="260.0dip" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <ScrollView android:id="@id/effect_params_scrollview" android:layout_width="260.0dip" android:layout_height="260.0dip" android:layout_centerInParent="true">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/effects_params_layout" android:layout_width="260.0dip" android:layout_height="wrap_content" />
+            </ScrollView>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/handleBtn" android:paddingTop="@dimen/space_16dp" android:paddingBottom="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_effect_settings" android:scaleType="center" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/masksParamsContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/listsContainer">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/mask_params_scrolliew_container" android:background="@drawable/panel_drawer_left" android:layout_width="200.0dip" android:layout_height="fill_parent">
+            <ScrollView android:id="@id/mask_params_scrollview" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/masks_params_layout" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+            </ScrollView>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/masksHandleBtn" android:paddingTop="@dimen/space_16dp" android:paddingRight="@dimen/space_20dp" android:paddingBottom="@dimen/space_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_effect_settings" android:scaleType="center" android:layout_weight="0.0" />
+    </LinearLayout>
+    <ListView android:id="@id/masks_category_list" android:background="@drawable/bg_window_dark_transparent" android:visibility="gone" android:layout_width="128.0dip" android:layout_height="wrap_content" android:listSelector="@color/color_transparent" android:layout_toRightOf="@id/listsContainer" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/f_ic_bulk_edit_dark_24dp" android:id="@id/select_mode_action" android:title="@string/adrive_gallery_common_overflow_menu_select" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_album_create" android:id="@id/create_album_button" android:title="@string/adrive_gallery_album_create_album" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_whisperplay_dark_24dp" android:id="@id/whisper_button" android:title="@string/adrive_gallery_common_actionbar_second_screen" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_camera_dark_24dp" android:id="@id/camera_button" android:title="@string/adrive_gallery_common_actionbar_camera" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/f_ic_sort_dark_24dp" android:id="@id/sort_button" android:title="@string/adrive_gallery_common_actionbar_sort" app:showAsAction="ifRoom" />
+</menu>

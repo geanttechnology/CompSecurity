@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/studio_grid" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8dp">
+        <Button android:textSize="@dimen/textSize_14" android:gravity="left|center" android:id="@id/start_fx_id" android:background="@drawable/xml_start_fx" android:padding="@dimen/space_8dp" android:layout_width="0.0dip" android:layout_height="@dimen/studio_button_height" android:text="@string/card_studio_effect" android:drawableLeft="@drawable/studio_fx" android:drawablePadding="@dimen/space_8dp" android:layout_weight="1.0" android:drawableStart="@drawable/studio_fx" style="@style/StartScreenItems" />
+        <View android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/textSize_14" android:gravity="left|center" android:id="@id/start_edit_id" android:background="@drawable/xml_start_edit" android:padding="@dimen/space_8dp" android:layout_width="0.0dip" android:layout_height="@dimen/studio_button_height" android:text="@string/card_studio_edit" android:drawableLeft="@drawable/studio_edit" android:drawablePadding="@dimen/space_8dp" android:layout_weight="1.0" android:drawableStart="@drawable/studio_edit" style="@style/StartScreenItems" />
+        <View android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/textSize_14" android:gravity="left|center" android:id="@id/start_camera_id" android:background="@drawable/xml_start_camera" android:padding="@dimen/space_8dp" android:layout_width="0.0dip" android:layout_height="@dimen/studio_button_height" android:text="@string/card_studio_camera" android:drawableLeft="@drawable/studio_camera" android:drawablePadding="@dimen/space_8dp" android:layout_weight="1.0" android:drawableStart="@drawable/studio_camera" style="@style/StartScreenItems" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8dp">
+        <Button android:textSize="@dimen/textSize_14" android:gravity="left|center" android:id="@id/start_collage_id" android:background="@drawable/xml_start_collage" android:padding="@dimen/space_8dp" android:layout_width="0.0dip" android:layout_height="@dimen/studio_button_height" android:text="@string/card_studio_collage" android:drawableLeft="@drawable/studio_collage" android:drawablePadding="@dimen/space_8dp" android:layout_weight="1.0" android:drawableStart="@drawable/studio_collage" style="@style/StartScreenItems" />
+        <View android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/textSize_14" android:gravity="left|center" android:id="@id/start_draw_id" android:background="@drawable/xml_start_camera" android:padding="@dimen/space_8dp" android:layout_width="0.0dip" android:layout_height="@dimen/studio_button_height" android:text="@string/card_studio_draw" android:drawableLeft="@drawable/studio_draw" android:drawablePadding="@dimen/space_8dp" android:layout_weight="1.0" android:drawableStart="@drawable/studio_draw" style="@style/StartScreenItems" />
+        <View android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        <View android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="@dimen/studio_button_height" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

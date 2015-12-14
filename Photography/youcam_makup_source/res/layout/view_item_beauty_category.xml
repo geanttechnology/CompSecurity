@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/beautyCategoryImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <com.cyberlink.youcammakeup.widgetpool.common.AutoResizeTextView android:textSize="500.0sp" android:textColor="#ffffffff" android:gravity="left" android:id="@id/beautyCategoryName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:includeFontPadding="false" />
+    <ImageView android:id="@id/beautyCategoryNewIcon" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_new_tile" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+</RelativeLayout>

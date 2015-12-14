@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.socialin.android.picsart.profile.view.BannerViewPager android:id="@id/slide_banner_viewpager" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.picsart.studio.view.viewpagerindicator.CirclePageIndicator android:layout_gravity="bottom" android:id="@id/slide_banner_indicator" android:padding="@dimen/space_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" app:fillColor="@color/gray_ce" app:radius="3.0dip" app:strokeColor="@color/gray_ce" />
+</FrameLayout>

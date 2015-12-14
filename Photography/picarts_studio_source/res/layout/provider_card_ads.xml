@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Material.CardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/card_ad_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12dp" android:layout_marginBottom="@dimen/space_24dp" />
+    <TextView android:textColor="@color/text_color_dark_gray" android:layout_gravity="bottom|right|center" android:padding="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_16dp" android:text="Sponsored" />
+</android.support.v7.widget.CardView>

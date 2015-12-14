@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/capturePhoto_toolbar" android:background="@color/color_beauty_hl_fg_deep" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/button_capture" android:background="@drawable/btn_capture_photo" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/next_step_container" android:layout_width="70.0dip" android:layout_height="50.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <FrameLayout android:layout_gravity="center" android:layout_width="55.0dip" android:layout_height="36.0dip">
+            <ImageView android:id="@id/btn_next_step" android:background="@drawable/bg_nextstep" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/color_beauty_fg" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/next" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/bg_photo_count" android:layout_width="20.0dip" android:layout_height="20.0dip">
+            <TextView android:textSize="14.0sp" android:layout_gravity="center" android:id="@id/txt_photo_count" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

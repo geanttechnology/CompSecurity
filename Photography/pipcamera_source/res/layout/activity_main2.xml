@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/home_container" android:background="@drawable/gr_bgpip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:layout_gravity="top|left|center" android:id="@id/imgLogo" android:background="@drawable/gr_logopip" android:visibility="visible" android:layout_width="130.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" />
+        <Button android:layout_gravity="right|center" android:id="@id/setting" android:background="@drawable/btn_setup_new" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:onClick="OnSettingBtnClicked" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_function" android:layout_below="@id/layout_top">
+        <FrameLayout android:layout_gravity="center" android:id="@id/adViewContainer" android:tag="adViewContainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_function" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <android.support.v4.view.ViewPager android:layout_gravity="bottom" android:id="@id/pager" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

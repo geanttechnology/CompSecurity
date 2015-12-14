@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/t12dp" android:paddingTop="@dimen/t8dp" android:paddingRight="@dimen/t12sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/thumbnail_panel" android:layout_alignParentLeft="true" style="@style/BcAvertarSmallNoBorderStyle">
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/comment_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" app:bc_default_image="@drawable/bc_avatar_mugshot" />
+        <ImageView android:background="@drawable/bc_avatar_circle_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/avatar_crown" android:visibility="gone" android:layout_width="@dimen/t15dp" android:layout_height="@dimen/t13dp" android:src="@drawable/bc_user_ico_master" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <com.rockerhieu.emojicon.EmojiconTextView android:textStyle="bold" android:id="@id/comment_auther" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/thumbnail_panel" style="@style/BcIssueAuthorTextStyle" />
+    <com.cyberlink.beautycircle.view.widgetpool.common.PostContentTextView android:id="@id/comment_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/thumbnail_panel" android:layout_below="@id/comment_auther" app:emojiLineSpacingExtra="2.0dip" style="@style/BcCommentTextStyle" />
+    <TextView android:textColor="@color/bc_issue_post_subtext" android:id="@id/comment_time" android:paddingBottom="@dimen/t8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/thumbnail_panel" android:layout_below="@id/comment_text" style="@style/BcCommentAgoTextStyle" />
+</RelativeLayout>

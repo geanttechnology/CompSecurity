@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/suggestions_user_item_layout" android:background="@drawable/xml_si_ui_suggest_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:background="@drawable/card_background_selector" android:padding="@dimen/space_4dp" android:clickable="false" android:duplicateParentState="true" android:layout_width="144.0dip" android:layout_height="48.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/suggestions_user_avatar" android:clickable="false" android:duplicateParentState="true" style="@style/Widget.Picsart.Avatar" />
+            <LinearLayout android:orientation="vertical" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp">
+                <TextView android:id="@id/suggestions_username" android:maxLength="20" style="@style/TextAppearance.Picsart.Light.Username" />
+                <TextView android:id="@id/suggestions_display_name" android:maxLength="20" style="@style/TextAppearance.Picsart.Light.Subusername" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

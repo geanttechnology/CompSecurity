@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/button_go_top_top" android:background="@drawable/si_ui_go_top_panel" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xml_ic_arrow_up" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@drawable/xml_ic_arrow_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_go_to_top" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/AboutBackground" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="@dimen/t42dp">
+        <ImageView android:id="@id/back" android:layout_width="@dimen/t42dp" android:layout_height="@dimen/t42dp" android:src="@drawable/u_image_selector_topbar_back_btn" android:layout_alignParentLeft="true" android:contentDescription="[AID]Chat_Back" style="@style/UTopBarButtonStyle" />
+        <TextView android:textSize="@dimen/t20sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

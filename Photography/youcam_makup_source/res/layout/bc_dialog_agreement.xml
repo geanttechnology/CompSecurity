@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bc_general_radius_white_background_no_border" android:padding="@dimen/t15dp" android:layout_width="@dimen/t320dp" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <WebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="@dimen/t300dp" />
+    <TextView android:id="@id/freesample_accept_btn" android:layout_marginTop="@dimen/t15dp" android:text="@string/bc_freesample_confirm_btn" style="@style/BcDialogBtnStyle" />
+</LinearLayout>

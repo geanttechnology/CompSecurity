@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:picsart="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_frame" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.picsart.studio.view.SlidingTabLayout android:id="@id/sliding_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <android.support.v4.view.ViewPager android:id="@id/main_viewpager" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sliding_tabs" />
+                    <com.melnykov.fab.FloatingActionButton android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16dp" android:src="@drawable/ic_action_pen" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" picsart:fab_colorPressed="@color/accent_dark_picsart" picsart:fab_colorNormal="@color/accent_picsart" picsart:fab_colorRipple="@color/ripple_material_light" />
+                    <FrameLayout android:id="@id/fragment_container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </RelativeLayout>
+                <FrameLayout android:layout_gravity="right" android:id="@id/right_frame" android:layout_width="320.0dip" android:layout_height="fill_parent" />
+            </android.support.v4.widget.DrawerLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="left" android:id="@id/left_frame" android:layout_width="310.0dip" android:layout_height="fill_parent" />
+    </android.support.v4.widget.DrawerLayout>
+    <FrameLayout android:id="@id/invite_shadow" android:background="@drawable/invite_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.beautycircle.view.widgetpool.common.ObservableScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/t70dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/bc_ad_default_ex_background" android:layout_width="fill_parent" style="@style/BcProductListAdPanelStyle">
+            <TextView android:textSize="@dimen/f16dp" android:textStyle="bold" android:textColor="#fffbcd0b" android:gravity="center" android:id="@id/bc_developer_banner_desc" android:padding="@dimen/t3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/f30dp" android:text="@string/bc_developer_title_sub" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/f40dp" android:textStyle="italic" android:textColor="@color/bc_color_white" android:gravity="center" android:padding="@dimen/t3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_developer_title" android:includeFontPadding="false" android:layout_above="@id/bc_developer_banner_desc" android:layout_centerHorizontal="true" style="@style/BcDeveloperAdPanelStyle" />
+        </RelativeLayout>
+        <View android:id="@id/updown_shadow_panel" style="@style/BcTopShadowStyle" />
+        <TableLayout android:id="@id/discovery_features" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/t6dp">
+            <TableRow>
+                <Button android:id="@id/developer_system_info" android:text="@string/bc_developer_system_info" style="@style/BcDeveloperFeatureButtonStyle" />
+                <Button android:id="@id/developer_server_switch" android:text="@string/bc_developer_server_switch" style="@style/BcDeveloperFeatureButtonStyle" />
+            </TableRow>
+            <TableRow>
+                <Button android:id="@id/developer_history_web_request" android:text="@string/bc_developer_web_request_history" style="@style/BcDeveloperFeatureButtonStyle" />
+                <Button android:id="@id/develop_btn_auto_post" android:text="@string/bc_developer_auto_post" style="@style/BcDeveloperFeatureButtonStyle" />
+            </TableRow>
+            <TableRow>
+                <Button android:id="@id/developer_history_deeplink" android:text="@string/bc_developer_history_deeplink" style="@style/BcDeveloperFeatureButtonStyle" />
+                <Button android:id="@id/develop_btn_deeplink" android:text="@string/bc_developer_function_deep_link" style="@style/BcDeveloperFeatureButtonStyle" />
+            </TableRow>
+            <TableRow>
+                <Button android:id="@id/develop_btn_logcat" android:text="@string/bc_developer_logcat" style="@style/BcDeveloperFeatureButtonStyle" />
+                <Button android:id="@id/developer_Log" android:text="@string/bc_developer_log_browser" style="@style/BcDeveloperFeatureButtonStyle" />
+            </TableRow>
+            <TableRow>
+                <Button android:id="@id/develop_btn_todo_function_one" android:text="@string/bc_developer_function_one" style="@style/BcDeveloperFeatureButtonStyle" />
+                <Button android:id="@id/develop_btn_todo_function_second" android:text="@string/bc_developer_function_two" style="@style/BcDeveloperFeatureButtonStyle" />
+            </TableRow>
+            <TableRow>
+                <Button android:id="@id/develop_btn_post_json" android:text="@string/bc_developer_post_json" style="@style/BcDeveloperFeatureButtonStyle" />
+                <Button android:id="@id/develop_btn_tutorial" android:text="@string/bc_developer_tutorial" style="@style/BcDeveloperFeatureButtonStyle" />
+            </TableRow>
+            <TableRow>
+                <Button android:id="@id/develop_btn_consultation" android:text="@string/bc_develop_consultation" style="@style/BcDeveloperNewFeatureButtonStyle" />
+                <Button android:id="@id/develop_btn_looks_parser" android:text="@string/bc_developer_function_looks_parser" style="@style/BcDeveloperNewFeatureButtonStyle" />
+            </TableRow>
+        </TableLayout>
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/t30dp" />
+    </LinearLayout>
+</com.cyberlink.beautycircle.view.widgetpool.common.ObservableScrollView>

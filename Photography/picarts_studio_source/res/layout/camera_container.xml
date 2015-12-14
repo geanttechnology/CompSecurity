@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:panel="http://schemas.android.com/apk/res-auto">
+    <com.socialin.picsin.camera.view.SurfaceViewMainContainer android:id="@id/surface_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.socialin.picsin.camera.view.CameraContainerView android:id="@id/cameraContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/blackBackGroundView" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/gl_container" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </com.socialin.picsin.camera.view.SurfaceViewMainContainer>
+    <com.socialin.picsin.camera.view.CameraFocusRectView android:id="@id/camera_focus_rect" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" />
+    <ViewFlipper android:id="@id/flipperSelectSettingsCategory" android:layout_width="wrap_content" android:layout_height="fill_parent" android:measureAllChildren="false" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/left_panel" android:background="@drawable/panel_l" android:layout_width="48.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/zoomContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+                    <TextView android:textColor="@color/gray_DE" android:gravity="center_horizontal" android:id="@id/zoom_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" android:text="2x" />
+                    <com.socialin.picsin.camera.view.CustomVerticalSeekBar android:layout_gravity="center_horizontal" android:id="@id/seekBarZoom" android:focusable="false" android:layout_width="wrap_content" android:layout_height="150.0dip" android:max="100" android:progress="20" style="@style/Widget.Picsart.SeekBar" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/flipperFlashContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btnCameraFaceContainer">
+                        <ViewFlipper android:id="@id/flipperFlash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureAllChildren="false">
+                            <com.socialin.picsin.camera.view.RotateImageView android:id="@id/btnFlashLightAuto" android:focusable="false" android:src="@drawable/btn_flash_auto" style="@style/Widget.Picsart.ImageButton.Action" />
+                            <com.socialin.picsin.camera.view.RotateImageView android:id="@id/btnFlashLightEnabled" android:focusable="false" android:src="@drawable/btn_flash" style="@style/Widget.Picsart.ImageButton.Action" />
+                            <com.socialin.picsin.camera.view.RotateImageView android:id="@id/btnFlashLightDisabled" android:focusable="false" android:src="@drawable/btn_flash_off" style="@style/Widget.Picsart.ImageButton.Action" />
+                        </ViewFlipper>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/btnCameraFaceContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/more_settings_btn_container">
+                        <com.socialin.picsin.camera.view.RotateImageView android:id="@id/btnCameraFace" android:focusable="false" android:src="@drawable/front_camera" style="@style/Widget.Picsart.ImageButton.Action" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/more_settings_btn_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:layout_alignParentBottom="true">
+                        <com.socialin.picsin.camera.view.RotateImageView android:id="@id/more_settings_btn" android:focusable="false" android:src="@drawable/camera_more_settings" style="@style/Widget.Picsart.ImageButton.Action" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:background="@drawable/panel_l" android:layout_width="49.0dip" android:layout_height="fill_parent">
+                <RadioGroup android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/radioGroupCategory" android:paddingRight="@dimen/space_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_2dp">
+                    <RadioButton android:gravity="center" android:id="@id/btnBrightness" android:background="@drawable/ic_action_brightness" android:focusable="false" android:button="@null" style="@style/PicsartActionBarRadioButton" />
+                    <RadioButton android:gravity="center" android:id="@id/btnContrast" android:background="@drawable/ic_action_contrast" android:focusable="false" android:button="@null" style="@style/PicsartActionBarRadioButton" />
+                    <RadioButton android:gravity="center" android:id="@id/btnSharpness" android:background="@drawable/ic_action_sharpness" android:focusable="false" android:button="@null" style="@style/PicsartActionBarRadioButton" />
+                    <RadioButton android:gravity="center" android:id="@id/btnSaturation" android:background="@drawable/ic_action_saturation" android:focusable="false" android:button="@null" style="@style/PicsartActionBarRadioButton" />
+                    <RadioButton android:gravity="center" android:id="@id/btnSettings" android:background="@drawable/ic_action_config" android:focusable="false" android:button="@null" style="@style/PicsartActionBarRadioButton" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ViewFlipper>
+    <ViewFlipper android:id="@id/selectedCaregoryItemsFlipper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:measureAllChildren="false" android:layout_toLeftOf="@id/right_panel" android:layout_toRightOf="@id/flipperSelectSettingsCategory">
+        <RelativeLayout android:id="@id/brightnessContainer" android:layout_width="250.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/camera_options" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@id/txtBrightness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/brightness" />
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@id/seekBarBrightness" android:focusable="false" android:layout_width="200.0dip" android:layout_height="wrap_content" android:max="100" android:progress="0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/contrastContainer" android:layout_width="250.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/camera_options" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@id/txtContrast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contrast" />
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@id/seekbarContrast" android:focusable="false" android:layout_width="200.0dip" android:layout_height="wrap_content" android:max="100" android:progress="0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/sharpnessContainer" android:layout_width="250.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/camera_options" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@id/txtSharpness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharpness" />
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@id/seekbarSharpness" android:focusable="false" android:layout_width="200.0dip" android:layout_height="wrap_content" android:max="100" android:progress="0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/saturationContainer" android:layout_width="250.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/camera_options" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/textSize_18" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@id/txtSaturation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/saturation" />
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@id/seekbarSturation" android:focusable="false" android:layout_width="200.0dip" android:layout_height="wrap_content" android:max="100" android:progress="0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ListView android:scrollbarAlwaysDrawVerticalTrack="false" android:id="@id/settingsContainer" android:background="@drawable/camera_options" android:focusable="false" android:layout_width="200.0dip" android:layout_height="fill_parent" android:cacheColorHint="@color/color_transparent" android:divider="@drawable/options_separator" android:dividerHeight="1.0dip" />
+        <ListView android:scrollbarAlwaysDrawVerticalTrack="false" android:id="@id/settingsSelected" android:background="@drawable/camera_options" android:focusable="false" android:layout_width="200.0dip" android:layout_height="fill_parent" android:cacheColorHint="@color/color_transparent" android:divider="@drawable/options_separator" android:dividerHeight="1.0dip" />
+        <ListView android:scrollbarAlwaysDrawVerticalTrack="false" android:id="@id/effectsContainer" android:background="@drawable/camera_options" android:focusable="false" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="fill_parent" android:cacheColorHint="@color/color_transparent" android:divider="@drawable/options_separator" android:dividerHeight="1.0dip" />
+    </ViewFlipper>
+    <FrameLayout android:id="@id/left_panel_shadow" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_40dp" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/right_panel" android:background="@drawable/panel_right_transparent" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/right_panel_category" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/btnShotLocation" android:layout_alignParentRight="true">
+            <com.socialin.picsin.camera.view.RotateImageView android:layout_gravity="right|center" android:id="@id/custom_effects" android:focusable="false" android:visibility="gone" android:src="@drawable/icon_effects" style="@style/Widget.Picsart.ImageButton.Action" />
+            <com.socialin.picsin.camera.view.RotateImageView android:layout_gravity="right|center" android:id="@id/camera_masks" android:focusable="false" android:src="@drawable/ic_action_mask_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+        <com.socialin.picsin.camera.view.RotateImageView android:id="@id/btnShotLocation" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/xml_shot" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/right_panel_category_below" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/btnShotLocation" android:layout_alignParentRight="true">
+            <com.socialin.picsin.camera.view.RotateImageView android:layout_gravity="right|center" android:id="@id/camera_settings" android:focusable="false" android:src="@drawable/btn_camera_settings" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/preview_taken_photo_btn_layout" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="@dimen/space_2dp" android:layout_marginBottom="@dimen/space_4dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/last_taken_photo_image" android:background="@color/color_blue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <Button android:id="@id/preview_photo_btn" android:background="@drawable/preview_photo_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.socialin.picsin.camera.view.RotateImageView android:id="@id/btnShot" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-15.0dip" android:src="@drawable/xml_shot" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/preview_layout" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/camera_preview_imageview" android:background="@android:color/black" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/space_4dp" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/previewLayoutRightPanel" android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_4dp">
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/save_photo_btn" android:background="@drawable/item_background_holo_dark" android:focusable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginBottom="@dimen/space_4dp" android:src="@drawable/ic_action_done_t" />
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/share_photo_btn" android:background="@drawable/item_background_holo_dark" android:focusable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_action_share_t" />
+            <View style="@style/EvenSeparator.Horizontal" />
+            <ImageButton android:gravity="center" android:id="@id/delete_photo_btn" android:background="@drawable/item_background_holo_dark" android:focusable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_action_delete_t" />
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/retake_photo_btn" android:background="@drawable/item_background_holo_dark" android:focusable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="@dimen/space_4dp" android:src="@drawable/ic_action_cancel_t" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/open_gl_effect_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/right_panel" android:layout_toRightOf="@id/flipperSelectSettingsCategory" />
+</RelativeLayout>

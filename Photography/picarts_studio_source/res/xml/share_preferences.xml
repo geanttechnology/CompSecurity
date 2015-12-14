@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/gen_notification" android:key="pref_screen_main">
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_all_notifications_title" android:key="notifications_enable_all" android:summary="@string/pref_enable_all_notifications_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_like_notifications_title" android:key="notifications_enable_likes" android:summary="@string/pref_enable_like_notifications_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_repost_notifications_mine_title" android:key="notifications_enable_reposts_me" android:summary="@string/pref_enable_repost_notifications_mine_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_repost_notifications_other_title" android:key="notifications_enable_reposts_other" android:summary="@string/pref_enable_repost_notifications_other_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_comment_notifications_title" android:key="notifications_enable_comments" android:summary="@string/pref_enable_comment_notifications_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_mention_notifications_title" android:key="notifications_enable_mention" android:summary="@string/pref_enable_mention_notifications_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_publish_notifications_title" android:key="notifications_enable_publishs" android:summary="@string/pref_enable_publish_notifications_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_follow_me_notifications_title" android:key="notifications_enable_follow_me" android:summary="@string/pref_enable_follow_me_notifications_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_follow_notifications_title" android:key="notifications_enable_follow" android:summary="@string/pref_enable_follow_notifications_summary" />
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_suggest_notifications_title" android:key="notifications_enable_suggest" android:summary="@string/pref_enable_suggest_notifications_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/gen_push_notification" android:key="pref_category_push">
+        <com.socialin.android.preference.CheckBoxPreferenceWithLongSummary android:title="@string/pref_enable_push_notifications_title" android:key="notifications_enable_push" />
+    </PreferenceCategory>
+</PreferenceScreen>

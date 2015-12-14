@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/continue_viewer_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/photo_viewpager_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.fotoable.beautyui.gpuimage.sample.activity.ContinuousPhotoViewPager android:id="@id/continue_viewer_viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/continue_viewer_frame_bar_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="left|center" android:id="@id/continue_viewer_back" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_edit_cancel_res" />
+        <TextView android:textColor="@color/color_truegray" android:gravity="center" android:layout_gravity="center" android:id="@id/continue_viewer_tv_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="count" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/continue_viewer_frame_bar_tool" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/continue_viewer_shareto_instamag" android:background="@drawable/btn_share_instamag" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/continue_viewer_share_recent" android:background="@drawable/btn_player_wechat" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/continue_viewer_custom_share" android:background="@drawable/btn_player_custom_share" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/continue_viewer_del_photo" android:background="@drawable/btn_player_delete" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/continue_viewer_frame_bar_share" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/continue_viewer_linear_wechat" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/continue_viewer_share_we" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_custom_share_we" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/continue_viewer_linear_sina" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/continue_viewer_share_sina" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_share_sina" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/continue_viewer_linear_qqzone" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/continue_viewer_share_qqzone" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_share_qqzone" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/continue_viewer_linear_moment" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/continue_viewer_share_moment" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_share_moment" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/continue_viewer_linear_fb" android:background="@color/white" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/continue_viewer_share_fb" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_custom_share_fb" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/continue_viewer_linear_insta" android:background="@color/white" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/continue_viewer_share_insta" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_custom_share_insta" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/continue_viewer_linear_twitter" android:background="@color/white" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/continue_viewer_share_twitter" android:background="@drawable/btn_share" android:padding="1.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_share_twitter" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/continue_viewer_normal_share" android:background="@drawable/btn_player_normal_share" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/continue_viewer_share_back" android:background="@drawable/btn_player_customdown" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

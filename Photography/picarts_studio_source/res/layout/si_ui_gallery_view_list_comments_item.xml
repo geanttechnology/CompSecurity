@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/xml_si_ui_bg_selector" android:padding="@dimen/space_16dp" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/si_ui_gallery_item_view_user_image_frame" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/selectable_item_overlay_round_picsart_light">
+        <ImageView android:id="@id/si_ui_gallery_item_view_user_image" style="@style/Widget.Picsart.Avatar" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/si_ui_gallery_item_view_user_name_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16dp" android:layout_toRightOf="@id/si_ui_gallery_item_view_user_image_frame">
+        <TextView android:id="@id/si_ui_gallery_item_view_user_name" android:background="@drawable/selectable_item_overlay_rect_picsart_light" android:clickable="true" android:text="username" style="@style/TextAppearance.Picsart.Light.Username" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/verified_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_2dp" android:layout_marginBottom="@dimen/space_4dp" android:src="@drawable/list_verifed_badge" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/si_ui_gallery_comment_container_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/si_ui_gallery_item_view_user_image_frame" android:layout_below="@id/si_ui_gallery_item_view_user_name_container" android:layout_alignLeft="@id/si_ui_gallery_item_view_user_name_container">
+        <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_black" android:id="@id/si_ui_gallery_item_view_user_comment" android:paddingRight="@dimen/space_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gen_comment" />
+        <ImageView android:id="@id/si_ui_gallery_item_view_user_comment_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/si_ui_gallery_item_view_user_name_container" android:layout_alignParentRight="true">
+        <FrameLayout android:id="@id/si_ui_gallery_item_comment_more" android:padding="@dimen/space_4dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/si_ui_gallery_item_comment_more_spinner" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/si_ui_gallery_item_comment_more" android:layout_alignRight="@id/si_ui_gallery_item_comment_more" />
+        <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_dark_gray" android:id="@id/si_ui_gallery_item_view_comment_time" android:paddingLeft="@dimen/space_4dp" android:paddingTop="@dimen/space_4dp" android:paddingRight="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Time" android:singleLine="true" android:layout_toLeftOf="@id/si_ui_gallery_item_comment_more" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.pages.librarypicker.albumpage.AlbumView android:id="@id/AlbumView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" app:listSelector="@android:color/transparent" />
+    <com.cyberlink.youcammakeup.pages.librarypicker.photopage.PhotoView android:id="@id/PhotoView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+    <fragment android:name="com.cyberlink.youcammakeup.pages.librarypicker.photozoompage.PhotoZoomFragment" android:id="@id/PhotoZoomFragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

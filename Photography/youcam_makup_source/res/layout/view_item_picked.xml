@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/picked_broder_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="266.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="266.0" android:layout_weight="204.0">
+            <View android:id="@id/picked_border" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="204.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/picked_image_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="266.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="266.0" android:layout_weight="200.0">
+            <ImageView android:id="@id/pickedItemImage" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="200.0" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="top|right|center" android:orientation="vertical" android:id="@id/picked_badge_close_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="266.0">
+        <LinearLayout android:gravity="top|right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="266.0" android:layout_weight="100.0">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="100.0" app:guideline_width="78" app:guideline_height="82">
+                <ImageView android:id="@id/picked_badge_close" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_selector_button_close" android:scaleType="fitXY" android:layout_weight="78.0" android:contentDescription="@string/app_name" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

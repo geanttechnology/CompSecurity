@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bc_issue_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/userItem" android:background="@drawable/bc_general_radius_white_background_no_border" android:paddingLeft="@dimen/t10dp" android:paddingTop="@dimen/t3dp" android:paddingRight="@dimen/t10dp" android:paddingBottom="@dimen/t3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t3dp" android:layout_marginTop="@dimen/t1dp" android:layout_marginRight="@dimen/t3dp" android:layout_marginBottom="@dimen/t1dp">
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/avatar_image" android:layout_width="@dimen/t50dp" android:layout_height="@dimen/t50dp" android:layout_marginRight="@dimen/t8dp" android:layout_alignParentLeft="true" android:contentDescription="@string/app_name" app:bc_default_image="@drawable/bc_avatar_mugshot" />
+        <ImageView android:background="@drawable/bc_avatar_circle_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/avatar_image" android:layout_alignTop="@id/avatar_image" android:layout_alignRight="@id/avatar_image" android:layout_alignBottom="@id/avatar_image" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/avatar_crown" android:visibility="gone" android:layout_width="@dimen/t20dp" android:layout_height="@dimen/t18dp" android:src="@drawable/bc_user_ico_master" android:layout_alignLeft="@id/avatar_image" android:layout_alignTop="@id/avatar_image" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar_image">
+            <com.rockerhieu.emojicon.EmojiconTextView android:ellipsize="end" android:gravity="left" android:id="@id/display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/BcCelebrityAvatarTextStyle" />
+            <com.rockerhieu.emojicon.EmojiconTextView android:textSize="@dimen/t10sp" android:textColor="@color/bc_issue_image_circle_default" android:ellipsize="end" android:gravity="left" android:id="@id/display_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t3dp" android:maxLines="1" style="@style/BcDefaultFontStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

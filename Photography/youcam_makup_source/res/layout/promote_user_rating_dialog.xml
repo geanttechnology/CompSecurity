@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/MessageDialogBackground" android:background="@color/dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/DialogPanelStyle">
+        <TextView android:textSize="@dimen/t16dp" android:textStyle="bold" android:id="@id/MessageDialogTitle" android:layout_marginBottom="0.0dip" android:text="@string/star_dialog_title" style="@style/DialogDescStyle" />
+        <TextView android:id="@id/MessageDialogText" android:layout_marginTop="@dimen/t10dp" android:layout_marginBottom="@dimen/t20dp" android:text="@string/star_dialog_desc" style="@style/DialogDescStyle" />
+        <ImageView android:layout_gravity="center" android:id="@id/FiveStarIcon" android:layout_width="@dimen/t212dp" android:layout_height="@dimen/t40dp" android:src="@anim/rate_us_star" />
+        <View android:background="@color/launcher_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/t45dp" android:divider="@drawable/dialog_divider" android:showDividers="middle">
+            <TextView android:id="@id/MessageDialogButton2" android:background="@drawable/dialog_button_left" android:text="@string/star_dialog_negative" style="@style/DialogOptionTextStyle" />
+            <TextView android:textColor="@color/dialog_ok_color" android:id="@id/MessageDialogButton1" android:background="@drawable/dialog_button_right" android:text="@string/star_dialog_positive" style="@style/DialogOptionTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

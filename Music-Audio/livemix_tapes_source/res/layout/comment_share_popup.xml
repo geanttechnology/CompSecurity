@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="15.0dip" android:layout_weight="1.0">
+                <com.livemixtapes.ui.FadeImageButton android:id="@id/comment" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/comment_popup_button" android:scaleType="centerInside" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="15.0dip" android:layout_weight="3.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.livemixtapes.ui.FadeImageButton android:id="@id/shareFb" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/share_fb_popup" android:scaleType="centerInside" android:layout_weight="1.0" />
+                    <com.livemixtapes.ui.FadeImageButton android:id="@id/shareTwitter" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/share_twitter_popup" android:scaleType="centerInside" android:layout_weight="1.0" />
+                    <com.livemixtapes.ui.FadeImageButton android:id="@id/shareInstagram" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/share_instagram_popup" android:scaleType="centerInside" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.livemixtapes.ui.FadeImageButton android:id="@id/shareTumbler" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/share_tumbler_popup" android:scaleType="centerInside" android:layout_weight="1.0" />
+                    <com.livemixtapes.ui.FadeImageButton android:id="@id/shareEmail" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/share_email_popup" android:scaleType="centerInside" android:layout_weight="1.0" />
+                    <com.livemixtapes.ui.FadeImageButton android:id="@id/shareMessage" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/share_message_popup" android:scaleType="centerInside" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="15.0dip" android:layout_weight="1.0">
+                <com.livemixtapes.ui.FadeImageButton android:id="@id/copy_link" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/copy_link_popup_button" android:scaleType="centerInside" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.livemixtapes.ui.FadeImageButton android:layout_gravity="top|right|center" android:id="@id/closeButton" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="-10.0dip" android:src="@drawable/share_dismiss_popup" />
+    </FrameLayout>
+</LinearLayout>

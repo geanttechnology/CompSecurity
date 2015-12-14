@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="center" android:id="@id/grid" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="?selectableItemBackground" android:drawSelectorOnTop="true" android:verticalSpacing="@dimen/space_8dp" android:stretchMode="spacingWidthUniform" android:columnWidth="128.0dip" android:numColumns="auto_fit" android:layout_above="@id/adLayoutId" android:layout_alignParentTop="true" />
+    <RelativeLayout android:gravity="bottom" android:id="@id/adLayoutId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

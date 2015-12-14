@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/membox_creator_layout" android:background="@drawable/membox_info_place_selector" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/membox_creator_image" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="@dimen/space_16dp" android:src="@drawable/si_ui_default_avatar" android:scaleType="centerInside" />
+        <LinearLayout android:gravity="left|center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginTop="@dimen/space_16dp" android:layout_marginRight="@dimen/space_16dp" android:layout_marginBottom="@dimen/space_16dp">
+            <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@color/text_color_black" android:id="@id/membox_creator_uname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/textSize_14" android:textColor="@color/text_color_dark_gray" android:id="@id/membox_creator_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_light_gray" android:ellipsize="end" android:id="@id/membox_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_light_gray" android:id="@id/membox_items_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12dp" android:text="@string/message_no_photos" android:layout_below="@id/membox_creator_layout" android:layout_centerInParent="true" />
+    <android.support.v7.widget.RecyclerView android:id="@id/membox_items" android:background="@color/color_white" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_4dp" android:layout_below="@id/membox_items_message" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/membox_items_message" android:layout_centerHorizontal="true">
+        <include layout="@layout/button_go_to_top_layout" />
+    </RelativeLayout>
+    <include layout="@layout/si_ui_gallery_item_spen_layout" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bc_sharein_background" android:background="#00000000" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/bc_sharein_dialog" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bc_general_radius_white_background_no_border" android:layout_width="@dimen/t320dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t20dp" android:layout_marginTop="@dimen/t10dp" android:layout_marginRight="@dimen/t20dp" android:layout_marginBottom="@dimen/t10dp">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/t40dp">
+                <TextView android:textSize="@dimen/t18dp" android:textStyle="bold" android:textColor="@color/bc_color_main_style_hightlight_ex" android:gravity="center" android:id="@id/bc_sharein_dialog_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bc_sharein_circle_title_pick_circle" />
+                <ImageView android:id="@id/bc_sharein_btn" android:padding="@dimen/t5dp" android:layout_width="@dimen/t50dp" android:layout_height="fill_parent" android:src="@drawable/bc_share_in_exit" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:contentDescription="@string/app_name" />
+                <TextView android:textColor="@color/bc_color_main_edit_text" android:id="@id/bc_sharein_accept" android:background="@drawable/bc_topbar_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/bc_top_bar_done_btn" android:layout_alignParentRight="true" style="@style/BcTopbarRightBtnButtonBasicStyle" />
+                <View android:id="@id/right_seperater" android:background="@color/bc_top_bar_seperator" android:visibility="gone" android:layout_width="@dimen/t1dp" android:layout_height="@dimen/t28dp" android:layout_toLeftOf="@id/bc_sharein_accept" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/bc_sharein_main_page" android:layout_width="fill_parent" android:layout_height="@dimen/t430dp">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bc_sharein_alert_repost" android:background="@color/bc_color_main_style" android:padding="@dimen/t8dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/t14dp" android:textColor="@color/bc_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_share_in_repost_alert" android:includeFontPadding="false" />
+                    <ImageView android:layout_width="@dimen/t12dp" android:layout_height="@dimen/t12dp" android:layout_marginLeft="@dimen/t5dp" android:src="@drawable/bc_celebrity_top_arrow" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:padding="@dimen/t10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/post_cover" android:layout_width="@dimen/t68dp" android:layout_height="@dimen/t68dp" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                    <EditText android:textSize="@dimen/t14dp" android:textColor="@color/bc_color_black" android:gravity="top|left|center" android:id="@id/post_title" android:background="@null" android:padding="@dimen/t2dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/t10dp" android:hint="@string/bc_write_post_title_hint" style="@style/BcDefaultFontStyle" />
+                </LinearLayout>
+                <TextView android:paddingTop="0.0dip" android:text="@string/bc_share_in_all_circles" style="@style/BcShareInRecentPanelStyle" />
+                <View style="@style/BcSaperaterHStyle" />
+                <com.cyberlink.beautycircle.view.widgetpool.common.CirclePager android:id="@id/circle_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/create_circle_btn" android:background="@drawable/bc_write_post_photo_background" android:layout_width="wrap_content" android:layout_height="@dimen/t40dp" android:minWidth="@dimen/t200dp">
+                        <ImageView android:layout_width="@dimen/f30dp" android:layout_height="@dimen/f30dp" android:src="@drawable/bc_btn_top_add_n" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="@dimen/t14dp" android:textColor="@color/bc_color_main_edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t5dp" android:text="@string/bc_me_create_circle" style="@style/BcDefaultFontStyle" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="311" app:guideline_height="152">
+        <LinearLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="311.0">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/paletteMainArea" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="255.0" app:guideline_width="255" app:guideline_height="124">
+                <LinearLayout android:gravity="center" android:id="@id/paletteMoreButton" android:background="@drawable/image_selector_palette_add_more_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="346.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/icon_eyeshadow_more" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="50.0" app:guideline_width="50" app:guideline_height="50" />
+                    <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_More" style="@style/PaletteSaveTextStyle" />
+                </LinearLayout>
+                <View android:id="@id/paletteCheckedBorder" android:background="@drawable/bg_palette_item_border" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <FrameLayout android:id="@id/paletteColors" android:background="@drawable/colorbtn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="246.0">
+                        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioLinearLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="222.0" app:guideline_width="222" app:guideline_height="90">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <ImageView android:id="@id/paletteColorOne" android:background="#ffff0000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/colorbtn_texture_eyeshadow_2" android:scaleType="fitXY" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                            </LinearLayout>
+                        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioLinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="100.0">
+                        <ImageView android:id="@id/paletteNewIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/new_no_border" android:scaleType="fitEnd" android:layout_weight="60.0" android:contentDescription="@null" />
+                    </LinearLayout>
+                </FrameLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="152.0">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/paletteDeleteButton" android:background="@drawable/image_selector_button_close" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="82.0" app:guideline_width="78" app:guideline_height="82" />
+        </LinearLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="311.0">
+        <TextView android:textColor="#ff464646" android:id="@id/paletteName" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="245.0" style="@style/PaletteNameTextStyle" />
+    </LinearLayout>
+</LinearLayout>

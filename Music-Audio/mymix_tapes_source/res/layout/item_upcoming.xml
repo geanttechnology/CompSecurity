@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_white_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/upcoming_thumb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_launcher" android:adjustViewBounds="true" android:contentDescription="@string/description" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/upcoming_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="ARTIST" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/color_red" android:id="@id/upcoming_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Album name" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="coming up" />
+        <LinearLayout android:textSize="40.0sp" android:orientation="horizontal" android:id="@id/upcoming_soon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="32.0dip" android:text="Soon!">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/up_s" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/up_o" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/up_o" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/up_n" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/upcoming_timer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:baselineAligned="false">
+            <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/upcoming_day" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/upcoming_days1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/u0" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/upcoming_days2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/u0" android:layout_weight="1.0" />
+                </LinearLayout>
+                <TextView android:textColor="@color/color_light_gray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Days" android:layout_below="@id/upcoming_day" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/upcoming_hour" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/upcoming_hours1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/u0" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/upcoming_hours2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/u0" android:layout_weight="1.0" />
+                </LinearLayout>
+                <TextView android:textColor="@color/color_light_gray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hours" android:layout_below="@id/upcoming_hour" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/upcoming_minute" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/upcoming_minutes1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/u0" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/upcoming_minutes2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/u0" android:layout_weight="1.0" />
+                </LinearLayout>
+                <TextView android:textColor="@color/color_light_gray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Minutes" android:layout_below="@id/upcoming_minute" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/upcoming_second" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/upcoming_seconds1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/u0" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/upcoming_seconds2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/u0" android:layout_weight="1.0" />
+                </LinearLayout>
+                <TextView android:textColor="@color/color_light_gray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Seconds" android:layout_below="@id/upcoming_second" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

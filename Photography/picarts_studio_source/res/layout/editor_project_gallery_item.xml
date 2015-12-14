@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <android.support.v4.widget.ContentLoadingProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.AppCompat.ProgressBar" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_black" android:layout_gravity="center_vertical" android:id="@id/size_label" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" />
+        <ImageView android:layout_gravity="right" android:id="@id/btn_delete" android:focusable="false" android:focusableInTouchMode="false" android:src="@drawable/ic_action_delete_dark" style="@style/Widget.Picsart.ImageButton.Action.medium" />
+    </LinearLayout>
+    <View android:id="@id/row_state" android:focusable="false" android:focusableInTouchMode="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

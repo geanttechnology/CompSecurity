@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/bc_toast_outter" android:background="@drawable/bc_toast_background" android:paddingLeft="@dimen/t20dp" android:paddingTop="@dimen/t12dp" android:paddingRight="@dimen/t10dp" android:paddingBottom="@dimen/t12dp" android:clickable="true" android:layout_width="@dimen/t320dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/bc_toast_left_outter" android:layout_width="@dimen/t30dp" android:layout_height="@dimen/t30dp" android:layout_marginRight="@dimen/t12dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/bc_toast_left_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" app:bc_circle_bitmap="true" />
+    </FrameLayout>
+    <ImageView android:id="@id/bc_goto_image" android:padding="@dimen/t5dp" android:layout_width="@dimen/t30dp" android:layout_height="@dimen/t30dp" android:src="@drawable/bc_go_to_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bc_toast_desc_outter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/bc_goto_image" android:layout_toRightOf="@id/bc_toast_left_outter" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/t15sp" android:textColor="@color/bc_color_white" android:id="@id/bc_toast_main_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BcDefaultFontStyle" />
+        <TextView android:textSize="@dimen/t14sp" android:textColor="@color/bc_color_white" android:id="@id/bc_toast_sub_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BcDefaultFontStyle" />
+    </LinearLayout>
+</RelativeLayout>

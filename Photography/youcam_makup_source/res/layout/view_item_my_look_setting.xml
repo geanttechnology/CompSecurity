@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/image_selector_save_my_look_item" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1020" app:guideline_height="180"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="60" app:guideline_height="180" />
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="300" app:guideline_height="180">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/MyLookSettingTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/SaveMyLookSettingTitleStyle" />
+                <TextView android:textColor="#ff464646" android:gravity="center_vertical" android:id="@id/MyLookSettingSubtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/SaveMyLookSettingSubtitleStyle" />
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="170" app:guideline_height="180">
+            <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="170" app:guideline_height="180">
+                <ImageView android:layout_gravity="center" android:id="@id/MyLookSettingPatternBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/app_name" app:child_width="161" app:child_height="170" />
+                <ImageView android:layout_gravity="center" android:id="@id/MyLookSettingPatternImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/app_name" app:child_width="161" app:child_height="149" />
+                <TextView android:textSize="@dimen/f9dp" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/skuNameText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/app_name" android:singleLine="true" app:child_width="161" app:child_height="30" app:child_top="140" />
+            </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+            <TextView android:textSize="@dimen/f9dp" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@id/MyLookSettingPatternText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="20" app:guideline_height="180" />
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="120" app:guideline_height="180">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/MyLookSettingFirstProperty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="180.0">
+                <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:weightSum="120.0" android:layout_weight="75.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="80.0" app:guideline_width="80" app:guideline_height="60">
+                        <ImageView android:id="@id/MyLookSettingFirstPropertyImage" android:background="@color/share_menu_item_pressed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                        <com.cyberlink.youcammakeup.widgetpool.common.MultiColorView android:id="@id/MyLookSettingFirstPropertyTwoColorView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        <com.cyberlink.youcammakeup.widgetpool.common.MultiColorView android:id="@id/MyLookSettingFirstPropertyFourColorView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        <com.cyberlink.youcammakeup.widgetpool.common.MultiColorView android:id="@id/MyLookSettingFirstPropertyThreeColorView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        <com.cyberlink.youcammakeup.widgetpool.common.StrokeTextView android:id="@id/MyLookSettingFirstPropertyImageTexture" android:background="@drawable/strenth_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </LinearLayout>
+                <TextView android:textColor="#ff464646" android:gravity="center" android:id="@id/MyLookSettingFirstPropertyIntensity" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="100%" android:layout_weight="45.0" style="@style/SaveMyLookSettingIntensityTextStyle" />
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="10" app:guideline_height="180" />
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/MyLookSettingSecondProperty" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="120" app:guideline_height="180">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="180.0">
+                <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:weightSum="120.0" android:layout_weight="75.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="80.0" app:guideline_width="80" app:guideline_height="60">
+                        <ImageView android:id="@id/MyLookSettingSecondPropertyImage" android:background="@color/share_menu_item_pressed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                        <com.cyberlink.youcammakeup.widgetpool.common.StrokeTextView android:id="@id/MyLookSettingSecondPropertyImageTexture" android:background="@drawable/strenth_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </LinearLayout>
+                <TextView android:textColor="#ff464646" android:gravity="center" android:id="@id/MyLookSettingSecondPropertyIntensity" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="90%" android:layout_weight="45.0" style="@style/SaveMyLookSettingIntensityTextStyle" />
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="10" app:guideline_height="180" />
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/MyLookSettingThirdProperty" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="120" app:guideline_height="180">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="180.0">
+                <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:weightSum="120.0" android:layout_weight="75.0">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="80.0" app:guideline_width="80" app:guideline_height="60">
+                        <ImageView android:id="@id/MyLookSettingThirdPropertyImage" android:background="@color/share_menu_item_pressed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                        <com.cyberlink.youcammakeup.widgetpool.common.StrokeTextView android:id="@id/MyLookSettingThirdPropertyImageTexture" android:background="@drawable/strenth_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </LinearLayout>
+                <TextView android:textColor="#ff464646" android:gravity="center" android:id="@id/MyLookSettingThirdPropertyIntensity" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="80%" android:layout_weight="45.0" style="@style/SaveMyLookSettingIntensityTextStyle" />
+            </LinearLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="70" app:guideline_height="180">
+            <ImageView android:id="@id/MyLookSettingBuyButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_selector_beauty_save_look_buy_btn" android:scaleType="fitCenter" android:contentDescription="@null" />
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="10" app:guideline_height="180" />
+    </LinearLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="1020" app:reference_height="180">
+        <LinearLayout android:layout_gravity="right|center" android:orientation="horizontal" android:id="@id/thumbsContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="660" app:self_height="149" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/brandImageView" android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" app:self_width="370" app:self_height="110" app:self_left="550" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

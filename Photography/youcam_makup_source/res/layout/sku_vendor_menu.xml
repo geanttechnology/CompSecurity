@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1080.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/SkuVendorMenuContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="380.0">
+        <View android:id="@id/SkuVendorMenuBackground" android:background="#bfffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <GridView android:id="@id/SkuVendorMenu" android:background="#bfffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" />
+    </FrameLayout>
+</LinearLayout>

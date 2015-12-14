@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/app_compat_progress_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_compat_progress_dialog_edge_padding" android:layout_marginTop="@dimen/app_compat_progress_dialog_content_padding" android:layout_marginRight="@dimen/app_compat_progress_dialog_edge_padding" android:layout_marginBottom="@dimen/app_compat_progress_dialog_edge_padding" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_compat_progress_dialog_edge_padding" android:layout_marginRight="@dimen/app_compat_progress_dialog_edge_padding" android:layout_marginBottom="@dimen/app_compat_progress_dialog_edge_padding">
+        <ProgressBar android:id="@id/app_compat_progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:progressBarStyleHorizontal" />
+        <TextView android:gravity="left" android:id="@id/app_compat_progress_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/app_compat_progress_bar" android:layout_alignLeft="@id/app_compat_progress_bar" android:textAlignment="5" android:layout_alignStart="@id/app_compat_progress_bar" />
+        <TextView android:gravity="right" android:id="@id/app_compat_progress_min_max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/app_compat_progress_bar" android:layout_alignRight="@id/app_compat_progress_bar" android:textAlignment="6" android:layout_alignEnd="@id/app_compat_progress_bar" />
+    </RelativeLayout>
+</LinearLayout>

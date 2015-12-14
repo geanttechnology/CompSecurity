@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/mainView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/topPanel" android:background="@drawable/panel_left_transparent" android:layout_width="@dimen/bottom_panel_height" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageButton android:id="@id/btnDone" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <include layout="@layout/separator_vertical" />
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/bottom_panel_height" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/mini_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="40.0dip">
+                    <ImageButton android:id="@id/selectBrushBtn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_stretch_selection" style="@style/Widget.Picsart.ImageButton.Action" />
+                    <ImageView android:id="@id/selectBrushDrawable" android:background="@android:color/transparent" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" android:src="@drawable/stretch_bottom_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <View android:background="@color/white_transparent_66" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="40.0dip" android:layout_height="40.0dip">
+                    <ImageButton android:id="@id/deselectBrushBtn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_stretch_deselect" style="@style/Widget.Picsart.ImageButton.Action" />
+                    <ImageView android:id="@id/deselectBrushDrawable" android:background="@android:color/transparent" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="@dimen/space_4dp" android:layout_marginBottom="@dimen/space_4dp" android:src="@drawable/stretch_bottom_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageButton android:id="@id/btnReset" android:src="@drawable/ic_action_refresh" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+        <ImageButton android:id="@id/infoBtn" android:layout_width="48.0dip" android:layout_height="48.0dip" style="@style/Widget.Picsart.InfoBtn" />
+        <include layout="@layout/separator_vertical" />
+        <ImageButton android:id="@id/btnCancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/morphGLSurfaceViewContainer" android:background="@color/color_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/brushsContainerVertical" android:layout_toRightOf="@id/topPanel" android:layout_above="@id/ad" android:keepScreenOn="true" />
+    <FrameLayout android:id="@id/clearSelectionContainer" android:background="@drawable/baloon" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginTop="@dimen/space_4dp" android:layout_toRightOf="@id/topPanel">
+        <ImageButton android:layout_gravity="center" android:id="@id/clearSelectionBtn" android:src="@drawable/ic_stretch_clear_selection" style="@style/Widget.Picsart.ImageButton.Action" />
+    </FrameLayout>
+    <ScrollView android:id="@id/brushsContainerVertical" android:background="@drawable/panel_right_transparent" android:scrollbars="none" android:layout_width="58.0dip" android:layout_height="fill_parent" android:fillViewport="true" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/brushContainerContent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="68.0dip">
+                <RadioButton android:id="@id/brushMoveBtn" android:background="@drawable/si_ui_selector_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" />
+                <ImageView android:id="@id/warpBtnImageView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="@dimen/space_8dp" android:src="@drawable/ic_stretch_wrap" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/textSize_10" android:ellipsize="middle" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/stretch_tool_warp" android:singleLine="true" android:layout_below="@id/warpBtnImageView" />
+                <ImageView android:id="@id/warpTopDrawable" android:background="@android:color/transparent" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/stretch_top_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="68.0dip">
+                <RadioButton android:id="@id/brushSwirlLeftBtn" android:background="@drawable/si_ui_selector_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" />
+                <ImageView android:id="@id/swirlLeftBtnImageView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="@dimen/space_8dp" android:src="@drawable/ic_stretch_swirl_cw" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/textSize_10" android:ellipsize="middle" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/stretch_tool_swirl_cw" android:singleLine="true" android:layout_below="@id/swirlLeftBtnImageView" />
+                <ImageView android:id="@id/swirlLeftTopDrawable" android:background="@android:color/transparent" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/stretch_top_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="68.0dip">
+                <RadioButton android:id="@id/brushSwirlRightBtn" android:background="@drawable/si_ui_selector_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" />
+                <ImageView android:id="@id/swirlRightBtnImageView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="@dimen/space_8dp" android:src="@drawable/ic_stretch_swirl_cww" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/textSize_10" android:ellipsize="middle" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/stretch_tool_swirl_ccw" android:singleLine="true" android:layout_below="@id/swirlRightBtnImageView" />
+                <ImageView android:id="@id/swirlRightTopDrawable" android:background="@android:color/transparent" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/stretch_top_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="68.0dip">
+                <RadioButton android:id="@id/brushSqueezeBtn" android:background="@drawable/si_ui_selector_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" />
+                <ImageView android:id="@id/squeezeBtnImageView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="@dimen/space_8dp" android:src="@drawable/ic_stretch_squeeze" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/textSize_10" android:ellipsize="middle" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/stretch_tool_squeeze" android:singleLine="true" android:layout_below="@id/squeezeBtnImageView" />
+                <ImageView android:id="@id/squeezeTopDrawable" android:background="@android:color/transparent" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/stretch_top_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="68.0dip">
+                <RadioButton android:id="@id/brushInflateBtn" android:background="@drawable/si_ui_selector_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" />
+                <ImageView android:id="@id/inflateBtnImageView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="@dimen/space_8dp" android:src="@drawable/ic_stretch_inflate" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/textSize_10" android:ellipsize="middle" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/stretch_tool_inflate" android:singleLine="true" android:layout_below="@id/inflateBtnImageView" />
+                <ImageView android:id="@id/inflateTopDrawable" android:background="@android:color/transparent" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/stretch_top_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="68.0dip">
+                <RadioButton android:id="@id/brushRestoreBtn" android:background="@drawable/si_ui_selector_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" />
+                <ImageView android:id="@id/restoreBtnImageView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="@dimen/space_8dp" android:src="@drawable/ic_stretch_restore" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/textSize_10" android:ellipsize="middle" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/stretch_tool_restore" android:singleLine="true" android:layout_below="@id/restoreBtnImageView" />
+                <ImageView android:id="@id/restoreTopDrawable" android:background="@android:color/transparent" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/stretch_top_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/ad" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toLeftOf="@id/brushsContainerVertical" android:layout_toRightOf="@id/topPanel" android:layout_alignParentBottom="true" layout="@layout/editor_ad_layout" />
+</RelativeLayout>

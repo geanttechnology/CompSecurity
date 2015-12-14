@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="@dimen/f290dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f40dp" android:layout_marginBottom="@dimen/f40dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bc_general_radius_white_background_no_border_ex" android:paddingBottom="@dimen/t5dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/bc_post_comment_divider" android:dividerHeight="1.0dip" android:showDividers="middle">
+        <TextView android:textSize="@dimen/t16dp" android:textColor="@color/bc_share_dialog_text" android:gravity="center" android:id="@id/bc_dialog_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/t10dp" android:text="@string/bc_share_to_title" style="@style/BcDefaultFontStyle" />
+        <ListView android:layout_gravity="center" android:id="@id/content_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t14dp" android:layout_marginRight="@dimen/t14dp" />
+        <TextView android:textSize="@dimen/t16dp" android:textColor="@color/bc_share_dialog_text" android:gravity="center" android:id="@id/itemMore" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/t10dp" android:text="@string/bc_share_more_option" style="@style/BcDefaultFontStyle" />
+    </LinearLayout>
+</FrameLayout>

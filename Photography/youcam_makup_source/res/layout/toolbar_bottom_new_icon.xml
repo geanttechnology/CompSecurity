@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FitRatioFrameLayout android:layout_gravity="right" android:id="@id/bottomToolBarNewIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" app:guideline_width="140" app:guideline_height="140"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:reference_width="140" app:reference_height="140">
+        <View android:background="@drawable/icon_new_tile" android:layout_width="fill_parent" android:layout_height="fill_parent" app:self_width="50" app:self_height="50" app:self_left="85" app:self_top="5" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FitRatioFrameLayout>

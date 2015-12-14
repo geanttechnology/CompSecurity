@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/shadow_frame" android:background="@drawable/bounded_shadow" android:paddingLeft="@dimen/shadow_padding" android:paddingTop="@dimen/shadow_padding" android:paddingRight="@dimen/shadow_padding" android:layout_width="@dimen/GRID_ALBUM_BOUNDING_WIDTH" android:layout_height="@dimen/GRID_ALBUM_BOUNDING_HEIGHT"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</FrameLayout>

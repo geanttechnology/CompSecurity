@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bottomLayout" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4dp" android:layout_above="@id/adPanelLayout">
+        <ImageButton android:id="@id/cancelBtn" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/cancelBtn">
+            <ImageButton android:id="@id/resetChannelBtn" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_refresh" style="@style/Widget.Picsart.ImageButton.Action" />
+            <ImageButton android:id="@id/deletePointBtn" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_delete_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+        </LinearLayout>
+        <ImageButton android:id="@id/doneBtn" android:layout_width="45.0dip" android:layout_height="@dimen/drawing_top_panel_item_size" android:src="@drawable/ic_action_done_t" android:layout_alignParentRight="true" style="@style/Widget.Picsart.ImageButton.Action" />
+    </RelativeLayout>
+    <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_above="@id/bottomLayout" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginRight="@dimen/space_12dp" android:layout_above="@id/bottomLayout">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioGroup android:gravity="center" android:orientation="vertical" android:id="@id/channelsRadioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/RGBRadio" android:background="@drawable/radio_btn_rgb_selector_t" android:layout_width="40.0dip" android:layout_height="40.0dip" android:checked="true" android:button="@null" style="@style/Widget.Picsart.ImageButton.Action" />
+                <RadioButton android:id="@id/redRadio" android:background="@drawable/rgb_radio_button_selector_holo_dark" android:paddingLeft="@dimen/space_2dp" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/space_4dp" android:button="@null" android:drawableLeft="@drawable/shape_rectangle_red" style="@style/Widget.Picsart.ImageButton.Action" />
+                <RadioButton android:id="@id/greenRadio" android:background="@drawable/rgb_radio_button_selector_holo_dark" android:paddingLeft="@dimen/space_2dp" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/space_4dp" android:checked="false" android:button="@null" android:drawableLeft="@drawable/shape_rectangle_green" style="@style/Widget.Picsart.ImageButton.Action" />
+                <RadioButton android:id="@id/blueRadio" android:background="@drawable/rgb_radio_button_selector_holo_dark" android:paddingLeft="@dimen/space_2dp" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/space_4dp" android:button="@null" android:drawableLeft="@drawable/shape_rectangle_blue" style="@style/Widget.Picsart.ImageButton.Action" />
+            </RadioGroup>
+        </LinearLayout>
+        <com.picsart.studio.editor.view.RGBConvertView android:id="@id/rgbConvertView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_4dp" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/adPanelLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

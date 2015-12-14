@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout android:id="@id/main_observable_root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <FrameLayout android:name="com.cyberlink.beautycircle.controller.fragment.PageHotTopicFragment" android:id="@id/fragment_main_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" />
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fragment_topbar_panel">
+        <TextView android:textStyle="bold" android:textColor="@color/bc_color_white" android:gravity="center" android:id="@id/status_panel" android:background="@color/bc_color_main_style_transparent" android:visibility="gone" android:layout_width="fill_parent" style="@style/BcStatusBarStyle" />
+        <View android:id="@id/updown_shadow_panel" style="@style/BcTopShadowStyle" />
+    </LinearLayout>
+    <com.cyberlink.beautycircle.view.widgetpool.facebook.LoginButton android:id="@id/register_facebook" android:visibility="gone" android:scaleType="fitXY" style="@style/BcRegisterMoreSigninBtnStyle" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/bc_view_toast_panel" />
+    <com.cyberlink.beautycircle.view.widgetpool.common.BCArcMenu android:id="@id/bc_arc_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.cyberlink.beautycircle.view.widgetpool.common.ObservableRelativeLayout>

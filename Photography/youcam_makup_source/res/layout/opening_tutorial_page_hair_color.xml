@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FitRatioFrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="1920">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="1920">
+            <View android:layout_gravity="center_horizontal" android:background="@drawable/image_hair_color" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="708" app:child_height="1166" app:child_top="486" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FitRatioFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="1920">
+        <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:layout_gravity="center_horizontal" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:text="@string/opening_tutorial_hair_color_title" app:child_width="860" app:child_height="140" app:child_top="135" app:text_size_info="360:20:default;360:18:de,pt" style="@style/TutorialMainTextStyle" />
+        <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="#ff595959" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/opening_tutorial_hair_color_description" app:child_width="900" app:child_height="220" app:child_top="286" app:text_size_info="360:14:default" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</FrameLayout>

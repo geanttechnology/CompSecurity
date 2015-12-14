@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ly_filter_cata" android:background="#ff282828" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ToggleButton android:textColor="@color/filter_cata_btn_color" android:id="@id/lomo_btn" android:background="@drawable/filter_cata_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:textOn="@string/lomo" android:textOff="@string/lomo" android:text="@string/lomo" android:layout_weight="1.0" style="@style/FilterCataButton" />
+        <ToggleButton android:textColor="@color/filter_cata_btn_color" android:id="@id/beauty_btn" android:background="@drawable/filter_cata_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:textOn="@string/beauty" android:textOff="@string/beauty" android:text="@string/beauty" android:layout_weight="1.0" style="@style/FilterCataButton" />
+        <ToggleButton android:textColor="@color/filter_cata_btn_color" android:layout_gravity="center_vertical" android:id="@id/arts_btn" android:background="@drawable/filter_cata_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:textOn="@string/arts" android:textOff="@string/arts" android:text="@string/arts" android:layout_weight="1.0" style="@style/FilterCataButton" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/ly_bottom" android:background="@drawable/ui_gr_proeditbg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="2.0dip" android:layout_above="@id/ly_filter_cata" android:layout_alignParentBottom="true">
+        <com.wantu.view.TFilterListScrollView android:id="@id/tFilterListScrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ly_action_bar" android:background="@color/indicate_blue" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.fotoable.fotoproedit.view.ui.ProEidtActionBarView android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ly_imgae_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ly_bottom" android:layout_below="@id/ly_action_bar">
+        <RelativeLayout android:gravity="right" android:layout_gravity="bottom" android:id="@id/opacity_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <SeekBar android:layout_gravity="left" android:id="@id/scn_opacity_seekbar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" />
+            <ToggleButton android:textSize="11.0sp" android:textColor="@color/solid_white" android:id="@id/opacity_btn" android:background="@drawable/opacity_btn" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/buttonStyleSmall" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

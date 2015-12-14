@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rename_dialog" android:paddingLeft="@dimen/rename_margin_width" android:paddingTop="@dimen/rename_margin_top" android:paddingRight="@dimen/rename_margin_width" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/rename_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapWords" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/ExtraDownloadCategoryTopBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="134">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/ExtraDownloadCategoryBackBtnContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="150" app:guideline_height="134">
+                <ImageView android:id="@id/ExtraDownloadCategoryBackBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" style="@style/CameraTopBackBtn" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            <TextView android:textColor="#ff1e1e1e" android:id="@id/ExtraDownloadCategoryTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TopBarTextStyle" />
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/ExtraDownloadCategoryHomeBtnContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" app:guideline_width="150" app:guideline_height="134">
+                <ImageView android:id="@id/ExtraDownloadCategoryHomeBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_selector_camera_gohome_btn" android:contentDescription="@string/app_name" style="@style/GeneralTopBtn" />
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </RelativeLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    <RelativeLayout android:id="@id/ExtraDownloadCategoryTopTabContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ExtraDownloadCategoryTopBar">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/extraDownloadCategoryTopLev1TabContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="140">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="105">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="960" app:guideline_height="105">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0">
+                        <Button android:id="@id/extraDownloadCategoryNaturalBtn" android:background="@drawable/bg_extra_lv1_left_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/more_natural" android:layout_weight="1.0" style="@style/ExtraLev1TabStyle" />
+                        <Button android:id="@id/extraDownloadCategoryCostumeBtn" android:background="@drawable/bg_extra_lv1_right_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/more_costume" android:layout_weight="1.0" style="@style/ExtraLev1TabStyle" />
+                    </LinearLayout>
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+    </RelativeLayout>
+    <com.idunnololz.widgets.AnimatedExpandableListView android:id="@id/ExtraDownloadCategoryExpandableListView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:groupIndicator="@null" android:divider="@android:color/transparent" android:layout_below="@id/ExtraDownloadCategoryTopTabContainer" />
+    <TextView android:textColor="#ff6a6a6a" android:gravity="center" android:id="@id/ExtraDownloadCategoryNoContentView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/more_coming_soon" android:layout_below="@id/ExtraDownloadCategoryTopBar" style="@style/Pixel40CorrespondSize" />
+    <include android:visibility="invisible" layout="@layout/download_look_dialog" />
+    <com.cyberlink.youcammakeup.pages.moreview.PromoteLooksDialog android:id="@id/PromoteLooksDialog" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/dialogContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ExtraDownloadCategoryTopBar" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/extraDownloadRetryDialogContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/stub_auth_id" android:padding="@dimen/space_12dp" android:layout="@layout/stripe_authorize_layout" android:inflatedId="@id/auth_panel_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/stripe_form_parent" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:gravity="center" android:padding="@dimen/space_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stripe_form_title" />
+        <EditText android:id="@id/stripe_card_number" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/stripe_card_number_hint" android:inputType="numberDecimal" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:entries="@array/month_array" android:id="@id/stripe_expire_month" android:padding="@dimen/space_12dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:spinnerMode="dialog" />
+            <Spinner android:id="@id/stripe_expire_year" android:padding="@dimen/space_12dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:spinnerMode="dialog" />
+            <EditText android:id="@id/stripe_cvc" android:padding="@dimen/space_12dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/stripe_cvc_hint" android:layout_weight="1.0" android:inputType="numberDecimal" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/stripe_charge_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stripe_item_charge_button" />
+            <Button android:id="@id/stripe_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stripe_item_charge_cancel_button" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/stripe_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

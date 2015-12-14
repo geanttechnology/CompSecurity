@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <ScrollView android:id="@id/user_profile_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/bc_issue_post_subtext" android:id="@id/user_profile_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_beauty_profile_basic_description" style="@style/BcUserProfileDescriptionStyle" />
+            <LinearLayout style="@style/BcUserProfilePanelStyle">
+                <TextView android:text="@string/bc_beauty_profile_basic_title" style="@style/BcUserProfileOptionTitleStyle" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/user_profile_sex_male" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/t40dp" android:layout_weight="1.0" style="@style/BcUserProfileRadioOptionStyle">
+                        <ImageView android:layout_width="@dimen/t20dp" android:layout_height="@dimen/t20dp" android:src="@drawable/bc_userporfile_radio_selector" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="@dimen/t12dp" android:textColor="@color/bc_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t5dp" android:text="@string/bc_beauty_profile_sex_male" style="@style/BcDefaultFontStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/user_profile_sex_female" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/t40dp" android:layout_weight="1.0" style="@style/BcUserProfileRadioOptionStyle">
+                        <ImageView android:layout_width="@dimen/t20dp" android:layout_height="@dimen/t20dp" android:src="@drawable/bc_userporfile_radio_selector" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="@dimen/t12dp" android:textColor="@color/bc_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t5dp" android:text="@string/bc_beauty_profile_sex_female" style="@style/BcDefaultFontStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/user_profile_sex_unspecified" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/t40dp" android:layout_weight="1.0" style="@style/BcUserProfileRadioOptionStyle">
+                        <ImageView android:layout_width="@dimen/t20dp" android:layout_height="@dimen/t20dp" android:src="@drawable/bc_userporfile_radio_selector" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="@dimen/t12dp" android:textColor="@color/bc_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t5dp" android:text="@string/bc_beauty_profile_sex_unspecified" style="@style/BcDefaultFontStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t5dp">
+                    <TextView android:textColor="@color/bc_color_black" android:id="@id/user_profile_beauty_birthday_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_beauty_profile_birthday" android:layout_centerVertical="true" style="@style/BcUserProfileBirthdayTitleStyle" />
+                    <TextView android:gravity="center" android:id="@id/user_profile_beauty_birthday" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_beauty_profile_birthday_hint" android:layout_toRightOf="@id/user_profile_beauty_birthday_title" android:layout_centerVertical="true" style="@style/BcFreesampleDataFieldStyle" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_profile_private_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_marginTop="@dimen/t10dp" style="@style/BcSaperaterHStyle" />
+                    <TableLayout android:layout_width="@dimen/f280dp" android:layout_marginTop="@dimen/t5dp" style="@style/BcUserTableLayoutFieldStyle">
+                        <TableRow style="@style/BcFreesampleDataTableRowStyle">
+                            <TextView android:text="@string/bc_userinfo_name" style="@style/BcUserInfoExTitleStyle" />
+                            <EditText android:id="@id/user_profile_name" android:hint="@string/bc_userinfo_name_hint" style="@style/BcFreesampleDataFieldStyle" />
+                        </TableRow>
+                        <TableRow style="@style/BcFreesampleDataTableRowStyle">
+                            <TextView android:text="@string/bc_userinfo_mobile" style="@style/BcUserInfoExTitleStyle" />
+                            <EditText android:id="@id/user_profile_phone" android:hint="@string/bc_userinfo_mobile_hint" android:inputType="phone" style="@style/BcFreesampleDataFieldStyle" />
+                        </TableRow>
+                        <TableRow style="@style/BcFreesampleDataTableRowStyle">
+                            <TextView android:text="@string/bc_userinfo_email" style="@style/BcUserInfoExTitleStyle" />
+                            <EditText android:id="@id/user_profile_receiveEmail" android:hint="@string/bc_userinfo_email_hint" style="@style/BcFreesampleDataFieldStyle" />
+                        </TableRow>
+                        <TableRow style="@style/BcFreesampleDataTableRowStyle">
+                            <TextView android:text="@string/bc_userinfo_address" style="@style/BcUserInfoExTitleStyle" />
+                            <EditText android:gravity="top|left|center" android:id="@id/user_profile_address" android:hint="@string/bc_userinfo_address_hint" android:minLines="4" android:singleLine="false" style="@style/BcFreesampleDataFieldStyle" />
+                        </TableRow>
+                    </TableLayout>
+                    <TextView android:textSize="@dimen/t12sp" android:textColor="@color/bc_color_main_pressed_gray" android:id="@id/user_profile_hint" android:layout_width="@dimen/f280dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t10dp" android:text="@string/bc_beauty_profile_hint" style="@style/BcDefaultFontStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/BcUserProfileSaperaterStyle" />
+            <LinearLayout android:id="@id/bc_beauty_profile_skin_panel" style="@style/BcUserProfilePanelStyle">
+                <TextView android:id="@id/bc_beauty_profile_skin_title_text" android:text="@string/bc_beauty_profile_skin_title" style="@style/BcUserProfileOptionTitleStyle" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                    <Button android:id="@id/user_profile_skin_normal" android:background="@drawable/bc_userprofile_editbox_tblr" android:text="@string/bc_beauty_profile_skin_normal" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_skin_dry" android:text="@string/bc_beauty_profile_skin_dry" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_skin_oily" android:text="@string/bc_beauty_profile_skin_oily" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_skin_combo" android:text="@string/bc_beauty_profile_skin_combo" style="@style/BcUserProfileOptionStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/BcUserProfileSaperaterStyle" />
+            <LinearLayout android:id="@id/bc_beauty_profile_skintone_panel" style="@style/BcUserProfilePanelNoPaddingStyle">
+                <TextView android:id="@id/bc_beauty_profile_skintone_title_text" android:text="@string/bc_beauty_profile_skintone_title" style="@style/BcUserProfileOptionTitleWithPaddingStyle" />
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <View style="@style/BcUserProfileMarginSpaceStyle" />
+                        <LinearLayout android:id="@id/user_profile_skintone_fair" style="@style/BcUserProfileOptionPanelStyle">
+                            <ImageView android:id="@id/user_profile_skintone_fair_ico" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionColorStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_skintone_fair" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_skintone_light" style="@style/BcUserProfileOptionPanelStyle">
+                            <ImageView android:id="@id/user_profile_skintone_light_ico" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionColorStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_skintone_light" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_skintone_med" style="@style/BcUserProfileOptionPanelStyle">
+                            <ImageView android:id="@id/user_profile_skintone_med_ico" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionColorStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_skintone_med" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_skintone_deep" style="@style/BcUserProfileOptionPanelStyle">
+                            <ImageView android:id="@id/user_profile_skintone_deep_ico" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionColorStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_skintone_deep" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_skintone_dark" style="@style/BcUserProfileOptionPanelStyle">
+                            <ImageView android:id="@id/user_profile_skintone_dark_ico" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionColorStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_skintone_dark" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <View style="@style/BcUserProfileMarginSpaceStyle" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <View style="@style/BcUserProfileSaperaterStyle" />
+            <LinearLayout android:id="@id/bc_beauty_profile_skinsensitivity_panel" style="@style/BcUserProfilePanelStyle">
+                <TextView android:id="@id/bc_beauty_profile_skinsensitivity_title_text" android:text="@string/bc_beauty_profile_skinsensitivity_title" style="@style/BcUserProfileOptionTitleStyle" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                    <Button android:id="@id/user_profile_skinsensitivity_yes" android:background="@drawable/bc_userprofile_editbox_tblr" android:text="@string/bc_beauty_profile_skinsensitivity_yes" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_skinsensitivity_no" android:text="@string/bc_beauty_profile_skinsensitivity_no" style="@style/BcUserProfileOptionStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/BcUserProfileSaperaterStyle" />
+            <LinearLayout android:id="@id/bc_beauty_profile_eyecolor_panel" style="@style/BcUserProfilePanelNoPaddingStyle">
+                <TextView android:id="@id/bc_beauty_profile_eyecolor_title_text" android:text="@string/bc_beauty_profile_eyecolor_title" style="@style/BcUserProfileOptionTitleWithPaddingStyle" />
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <View style="@style/BcUserProfileMarginSpaceStyle" />
+                        <LinearLayout android:id="@id/user_profile_eyecolor_blue" style="@style/BcUserProfileOptionEyeColorStyle">
+                            <ImageView android:src="@drawable/bc_beauty_profile_eye_colour_blue" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionEyeColorImageStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_eyecolor_blue" style="@style/BcUserProfileOptionEyeColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_eyecolor_green" style="@style/BcUserProfileOptionEyeColorStyle">
+                            <ImageView android:src="@drawable/bc_beauty_profile_eye_colour_green" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionEyeColorImageStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_eyecolor_green" style="@style/BcUserProfileOptionEyeColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_eyecolor_hazel" style="@style/BcUserProfileOptionEyeColorStyle">
+                            <ImageView android:src="@drawable/bc_beauty_profile_eye_colour_hazel" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionEyeColorImageStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_eyecolor_hazel" style="@style/BcUserProfileOptionEyeColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_eyecolor_darkbrown" style="@style/BcUserProfileOptionEyeColorStyle">
+                            <ImageView android:src="@drawable/bc_beauty_profile_eye_colour_dark_brown" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionEyeColorImageStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_eyecolor_darkbrown" style="@style/BcUserProfileOptionEyeColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_eyecolor_gray" style="@style/BcUserProfileOptionEyeColorStyle">
+                            <ImageView android:src="@drawable/bc_beauty_profile_eye_colour_gray" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionEyeColorImageStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_eyecolor_gray" style="@style/BcUserProfileOptionEyeColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_eyecolor_black" style="@style/BcUserProfileOptionEyeColorStyle">
+                            <ImageView android:src="@drawable/bc_beauty_profile_eye_colour_dark_black" android:contentDescription="@string/app_name" style="@style/BcUserProfileOptionEyeColorImageStyle" />
+                            <TextView android:text="@string/bc_beauty_profile_eyecolor_black" style="@style/BcUserProfileOptionEyeColorTextStyle" />
+                        </LinearLayout>
+                        <View style="@style/BcUserProfileMarginSpaceStyle" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <View style="@style/BcUserProfileSaperaterStyle" />
+            <LinearLayout android:id="@id/bc_beauty_profile_lashlength_panel" style="@style/BcUserProfilePanelStyle">
+                <TextView android:id="@id/bc_beauty_profile_lashlength_title_text" android:text="@string/bc_beauty_profile_lashlength_title" style="@style/BcUserProfileOptionTitleStyle" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                    <Button android:id="@id/user_profile_lashlength_short" android:background="@drawable/bc_userprofile_editbox_tblr" android:text="@string/bc_beauty_profile_lashlength_short" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_lashlength_medium" android:text="@string/bc_beauty_profile_lashlength_medium" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_lashlength_long" android:text="@string/bc_beauty_profile_lashlength_long" style="@style/BcUserProfileOptionStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/BcUserProfileSaperaterStyle" />
+            <LinearLayout android:id="@id/bc_beauty_profile_hairtexture_panel" style="@style/BcUserProfilePanelStyle">
+                <TextView android:id="@id/bc_beauty_profile_hairtexture_title_text" android:text="@string/bc_beauty_profile_hairtexture_title" style="@style/BcUserProfileOptionTitleStyle" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                    <Button android:id="@id/user_profile_hairtexture_fine" android:background="@drawable/bc_userprofile_editbox_tblr" android:text="@string/bc_beauty_profile_hairtexture_fine" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_hairtexture_medium" android:text="@string/bc_beauty_profile_hairtexture_medium" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_hairtexture_thick" android:text="@string/bc_beauty_profile_hairtexture_trick" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_hairtexture_coarse" android:text="@string/bc_beauty_profile_hairtexture_coarse" style="@style/BcUserProfileOptionStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/BcUserProfileSaperaterStyle" />
+            <LinearLayout android:id="@id/bc_beauty_profile_haircolor_panel" style="@style/BcUserProfilePanelNoPaddingStyle">
+                <TextView android:id="@id/bc_beauty_profile_haircolor_title_text" android:text="@string/bc_beauty_profile_haircolor_title" style="@style/BcUserProfileOptionTitleWithPaddingStyle" />
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <View style="@style/BcUserProfileMarginSpaceStyle" />
+                        <LinearLayout android:id="@id/user_profile_haircolor_blonde" style="@style/BcUserProfileOptionHairColorStyle">
+                            <include android:id="@id/user_profile_haircolor_blonde_ico" layout="@layout/bc_view_hair_color" />
+                            <TextView android:text="@string/bc_beauty_profile_haircolor_blonde" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_haircolor_red" style="@style/BcUserProfileOptionHairColorStyle">
+                            <include android:id="@id/user_profile_haircolor_red_ico" layout="@layout/bc_view_hair_color" />
+                            <TextView android:text="@string/bc_beauty_profile_haircolor_red" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_haircolor_brown" style="@style/BcUserProfileOptionHairColorStyle">
+                            <include android:id="@id/user_profile_haircolor_brown_ico" layout="@layout/bc_view_hair_color" />
+                            <TextView android:text="@string/bc_beauty_profile_haircolor_brown" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_haircolor_darkbrown" style="@style/BcUserProfileOptionHairColorStyle">
+                            <include android:id="@id/user_profile_haircolor_darkbrown_ico" layout="@layout/bc_view_hair_color" />
+                            <TextView android:text="@string/bc_beauty_profile_haircolor_darkbrown" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_haircolor_gray" style="@style/BcUserProfileOptionHairColorStyle">
+                            <include android:id="@id/user_profile_haircolor_gray_ico" layout="@layout/bc_view_hair_color" />
+                            <TextView android:text="@string/bc_beauty_profile_haircolor_gray" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/user_profile_haircolor_black" style="@style/BcUserProfileOptionHairColorStyle">
+                            <include android:id="@id/user_profile_haircolor_black_ico" layout="@layout/bc_view_hair_color" />
+                            <TextView android:text="@string/bc_beauty_profile_haircolor_black" style="@style/BcUserProfileOptionColorTextStyle" />
+                        </LinearLayout>
+                        <View style="@style/BcUserProfileMarginSpaceStyle" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <View style="@style/BcUserProfileSaperaterStyle" />
+            <LinearLayout android:id="@id/bc_beauty_profile_hairtype_panel" style="@style/BcUserProfilePanelStyle">
+                <TextView android:id="@id/bc_beauty_profile_hairtype_title_text" android:text="@string/bc_beauty_profile_hairtype_title" style="@style/BcUserProfileOptionTitleStyle" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                    <Button android:id="@id/user_profile_hairtype_straight" android:background="@drawable/bc_userprofile_editbox_tblr" android:text="@string/bc_beauty_profile_hairtype_sraight" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_hairtype_wavy" android:text="@string/bc_beauty_profile_hairtype_wavy" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_hairtype_curly" android:text="@string/bc_beauty_profile_hairtype_curly" style="@style/BcUserProfileOptionStyle" />
+                    <Button android:id="@id/user_profile_hairtype_coils" android:text="@string/bc_beauty_profile_hairtype_coils" style="@style/BcUserProfileOptionStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:gravity="center" android:id="@id/user_profile_send_btn" android:layout_marginTop="@dimen/t30dp" android:text="@string/bc_freesample_join_btn_text" style="@style/BcRegisterButtonTextStyle" />
+            <View style="@style/BcUserProfileSaperaterStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+    <com.cyberlink.beautycircle.view.widgetpool.facebook.LoginButton android:id="@id/register_facebook" android:visibility="gone" android:scaleType="fitXY" style="@style/BcRegisterMoreSigninBtnStyle" />
+</RelativeLayout>

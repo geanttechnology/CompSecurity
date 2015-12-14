@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/shareBackButton" android:layout_alignParentTop="true" android:contentDescription="@null" style="@style/CameraTopBackBtn" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/shareAdViewContainer" android:layout_below="@id/shareBackButton">
+        <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:id="@id/shareTitleContent" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="200">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="800" app:guideline_height="200">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="800" app:guideline_height="76">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/ico_save__home" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="76" app:guideline_height="76" />
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="710" app:guideline_height="200">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="710" app:guideline_height="85">
+                        <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:text="@string/camera_navigator_tip" app:text_size_info="360:17:fr;" app:suppress_max="true" style="@style/CameraNavigatorTipTextStyle" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="710" app:guideline_height="115">
+                        <TextView android:id="@id/shareSavedToTextView" android:text="@string/camera_navigator_saved_to" style="@style/CameraNavigatorSavedToTextStyle" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+            </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/shareToUTitleArea" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1080.0" android:layout_below="@id/shareTitleContent">
+            <FrameLayout android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1000.0">
+                <TextView android:textColor="#ff584a7e" android:gravity="left" android:id="@id/autoBackupTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_list_title_U" style="@style/ShareViewTitleStyle" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/shareToUArea" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1080.0" android:layout_below="@id/shareTitleContent">
+            <RelativeLayout android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="920.0">
+                <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/autoBackupDivider" android:background="#ff584a7e" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="878" app:guideline_height="7" />
+                <FrameLayout android:id="@id/UADTile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/autoBackupDivider">
+                    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/btnBackground" android:background="@drawable/promotion_share_dialog_area_border" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="920" app:guideline_height="256">
+                        <ViewFlipper android:id="@id/bigBangViewFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textColor="#ffdd3c71" android:gravity="center_vertical" android:id="@id/shareTitle" android:background="#ffececec" android:paddingLeft="@dimen/f18dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/action_share_to" android:layout_below="@id/shareToUArea" style="@style/ShareViewTitleStyle" />
+        <ListView android:id="@id/shareMenu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:layout_below="@id/shareTitle" />
+        <View android:id="@id/shareAdCloseBtn" android:background="@drawable/state_btn_closead" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="26.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/shareAdViewContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <include android:id="@id/shareWaitingCursor" layout="@layout/waiting_cursor_dialog" />
+</RelativeLayout>

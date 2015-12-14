@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:id="@id/bottomSpace" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentBottom="true" app:guideline_width="268" app:guideline_height="400"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="268" app:guideline_height="400">
+        <ImageView android:id="@id/imageContainer" android:paddingLeft="3.0dip" android:paddingTop="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:child_width="273" app:child_height="336" />
+        <View android:layout_gravity="right" android:id="@id/lock_icon" android:background="@drawable/lock_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="104" app:child_height="104" app:child_top="200" />
+        <View android:id="@id/unlock_frame" android:background="@drawable/thumbnail_fram_new" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="273" app:child_height="336" />
+        <com.cyberlink.youcammakeup.widgetpool.common.MultiLangTextView android:textColor="#ff454545" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/unlock_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Test" android:singleLine="true" app:child_width="200" app:child_height="72" app:child_top="330" app:suppress_max="true" style="@style/UnlockDialogNameText" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>

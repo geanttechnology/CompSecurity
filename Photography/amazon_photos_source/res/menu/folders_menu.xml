@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/f_ic_bulk_edit_dark_24dp" android:id="@id/select_mode_action" android:title="@string/adrive_gallery_common_overflow_menu_select" app:showAsAction="always" />
+    <item android:icon="@drawable/f_ic_sort_dark_24dp" android:id="@id/sort_button" android:title="@string/adrive_gallery_common_actionbar_sort" app:showAsAction="always" />
+</menu>

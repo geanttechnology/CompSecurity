@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridLayout android:layout_gravity="center" android:id="@id/invite_socials_grid" android:padding="@dimen/space_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rowCount="2" android:columnCount="4" />
+    <View android:layout_gravity="center_horizontal" android:background="@color/gray_9b" android:layout_width="348.0dip" android:layout_height="0.5dip" android:layout_marginTop="@dimen/space_8dp" />
+    <Button android:textSize="@dimen/invite_text_medium" android:textColor="@drawable/tab_textview_selector" android:layout_gravity="center_horizontal" android:id="@id/invite_socials_close_btn" android:background="@color/color_transparent" android:padding="@dimen/space_4dp" android:layout_width="348.0dip" android:layout_height="60.0dip" android:text="@string/gen_close" style="?android:attr/buttonBarButtonStyle" />
+</LinearLayout>

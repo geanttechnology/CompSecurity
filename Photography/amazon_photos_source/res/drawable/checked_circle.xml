@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/accent_color" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/f_ic_done_default_dark_24dp" android:left="@dimen/folders_selected_check_padding" android:top="@dimen/folders_selected_check_padding" android:right="@dimen/folders_selected_check_padding" android:bottom="@dimen/folders_selected_check_padding" />
+</layer-list>

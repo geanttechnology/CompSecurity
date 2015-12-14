@@ -1,0 +1,20 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.socialin.android.apiv3.model;
+
+
+public class 
+{
+
+    public static String PERIOD_ANNUAL = "annual";
+    public static String PERIOD_MONTHLY = "monthly";
+    public String name;
+    public String price;
+
+
+    public ()
+    {
+    }
+}

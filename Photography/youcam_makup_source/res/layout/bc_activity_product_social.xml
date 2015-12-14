@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" layout="@layout/bc_view_message_panel" />
+    <com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout android:id="@id/bc_pull_to_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel">
+        <ScrollView android:id="@id/product_scroll_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/bc_product_outter" android:background="@drawable/bc_bg_post" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePostPanelOutsideStyle">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProductSocialPanelInsideStyle">
+                            <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/product_img" android:layout_width="fill_parent" android:scaleType="fitCenter" style="@style/BcProductSocialThumbnailStyle" />
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:id="@id/product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/BcProductListPriceTextStyle" />
+                                <TextView android:id="@id/product_brand" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toLeftOf="@id/product_price" android:layout_alignBaseline="@id/product_price" android:layout_alignParentLeft="true" style="@style/BcProductBrandTextStyle" />
+                            </RelativeLayout>
+                            <TextView android:textColor="@color/bc_color_main_style" android:id="@id/product_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/BcProductCategoryTextStyle" />
+                            <TextView android:id="@id/product_displayname" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProductNameTextStyle" />
+                            <TextView android:ellipsize="end" android:id="@id/product_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BcProductListDescriptionTextStyle" />
+                            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcProductButtonPanelStyle">
+                                <RatingBar android:id="@id/product_rating_star" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BcProductRatingStyle" />
+                                <TextView android:textColor="@color/bc_color_main_style" android:id="@id/product_rating_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/product_rating_star" android:layout_alignBottom="@id/product_rating_star" style="@style/BcProductRatingValueStyle" />
+                            </RelativeLayout>
+                            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:id="@id/product_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_product_info_comment" style="@style/BcProductButtonStyle" />
+                                <TextView android:id="@id/product_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_product_info_buy" android:layout_toRightOf="@id/product_comment" style="@style/BcProductButtonStyle" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <View android:background="@color/bc_product_list_selector_seperator_ex" android:layout_height="1.0dip" android:layout_alignParentBottom="true" style="@style/BcSaperaterHStyle" />
+                            <ImageView android:src="@drawable/bc_product_arrow_text_dialog" style="@style/BcProductArrowStyle" />
+                        </RelativeLayout>
+                        <TextView android:textColor="@color/bc_celebrity_description_text" android:gravity="center" android:id="@id/first_comment_layout" android:background="@color/bc_product_list_comment_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bc_product_first_comment" style="@style/BcProductReviewTextStyle" />
+                        <View android:layout_height="1.0px" style="@style/BcSaperaterHStyle" />
+                        <Button android:textColor="@color/bc_color_black" android:gravity="left|center" android:id="@id/more_comment_btn" android:background="@drawable/bc_post_list_background" android:layout_width="fill_parent" android:text="@string/bc_post_comment_see_more_comments" style="@style/BcLikeCountPanelStyle" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/comment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/bc_post_comment_divider" android:showDividers="middle" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout>
+    <include android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" layout="@layout/bc_view_message_panel" />
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

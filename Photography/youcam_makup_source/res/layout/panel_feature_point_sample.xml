@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/featurePointCloseView" android:visibility="invisible" android:layout_width="@dimen/f30dp" android:layout_height="@dimen/f115dp">
+        <ImageView android:layout_width="@dimen/f22dp" android:layout_height="@dimen/f115dp" android:src="@drawable/fpoint_close" android:contentDescription="@null" />
+    </FrameLayout>
+    <com.cyberlink.youcammakeup.kernelctrl.featurepoints.samplepanel.FeaturePointGuideView android:id="@id/featurePointGuideView" android:visibility="invisible" android:layout_width="@dimen/f115dp" android:layout_height="@dimen/f115dp" android:src="@drawable/fpoint_open" android:contentDescription="@null" />
+</merge>

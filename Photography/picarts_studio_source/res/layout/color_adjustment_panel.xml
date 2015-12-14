@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/btn_resetColorAdjustment" android:src="@drawable/ic_action_refresh" style="@style/Widget.Picsart.ImageButton.Action" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp">
+        <TextView android:id="@id/colorAdjustment_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:gravity="right" android:id="@id/colorAdjustment_value_label" android:layout_width="32.0sp" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <SeekBar android:id="@id/colorAdjustment_seekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="320.0dip" android:layout_weight="1.0" />
+</LinearLayout>

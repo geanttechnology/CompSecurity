@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:contentDescription="@string/adrive_gallery_common_syncing_content" style="?android:attr/progressBarStyleLarge" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/empty_state_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/this_day_view_empty_state_msg_text_size" android:textStyle="bold" android:textColor="@color/primary_text_color" android:gravity="center_horizontal" android:id="@id/empty_state_msg" android:padding="@dimen/this_day_view_padding_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/this_day_view_empty_state_msg_top_margin" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/this_day_view_desktop_client_msg_top_margin" android:layout_marginBottom="@dimen/this_day_view_padding_large" layout="@layout/this_day_upload_from_desktop_layout" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sourceWDP="360"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:id="@id/recommendationTopToolBar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" app:sourceWDP="360" app:useDeviceDP="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/recommendationBackBtn" android:src="@drawable/image_selector_camera_gohome_btn" android:contentDescription="@string/app_name" style="@style/GeneralTopBtn" />
+        <TextView android:textColor="#ff1e1e1e" android:id="@id/recommendationTopBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_recommendation" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TopBarTextStyle" />
+    </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+    <View android:id="@id/recommendationDivider" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/recommendationTopToolBar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/recommendationDivider">
+        <LinearLayout android:orientation="vertical" android:id="@id/recommendationAdArea" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <TextView android:gravity="center" android:id="@id/recommendation_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/more_loading" android:layout_centerVertical="true" />
+</com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>

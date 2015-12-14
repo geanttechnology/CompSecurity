@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" layout="@layout/bc_view_message_panel" />
+    <com.cyberlink.beautycircle.view.widgetpool.common.ObservableScrollView android:id="@id/tag_product_scroller" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_topbar_panel" style="@style/BcTagProductButtomPaddingStyle">
+        <FrameLayout android:background="@drawable/bc_bg_post" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePostPanelOutsideStyle">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcIssuePanelInsideStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_tag_product_title" style="@style/BcTagProductTextStyle" />
+                <FrameLayout android:id="@id/tag_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/tag_photo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:contentDescription="@string/app_name" app:auto_resize_mode="fill_width_auto_height" />
+                </FrameLayout>
+                <HorizontalScrollView android:id="@id/product_tags_scroller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t5dp">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/product_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </HorizontalScrollView>
+            </LinearLayout>
+        </FrameLayout>
+    </com.cyberlink.beautycircle.view.widgetpool.common.ObservableScrollView>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

@@ -1,0 +1,49 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.wantu.imagelib.filter;
+
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import com.crashlytics.android.Crashlytics;
+import com.wantu.imagelib.cximage.CxImage;
+
+// Referenced classes of package com.wantu.imagelib.filter:
+//            commenProcess
+
+class erode extends commenProcess
+{
+
+    public long kSize;
+
+    erode()
+    {
+    }
+
+    public void process(Canvas canvas, Paint paint)
+    {
+        Object obj;
+        try
+        {
+            obj = new CxImage(sourceImage);
+            ((CxImage) (obj)).a(kSize);
+            obj = ((CxImage) (obj)).a();
+        }
+        // Misplaced declaration of an exception variable
+        catch (Canvas canvas)
+        {
+            Crashlytics.logException(canvas);
+            return;
+        }
+        if (obj == null)
+        {
+            break MISSING_BLOCK_LABEL_45;
+        }
+        if (!((Bitmap) (obj)).isRecycled())
+        {
+            canvas.drawBitmap(((Bitmap) (obj)), 0.0F, 0.0F, paint);
+        }
+    }
+}

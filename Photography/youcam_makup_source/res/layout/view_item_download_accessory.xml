@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:sourceWDP="360" app:useDeviceDP="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="130.5dip" android:layout_marginLeft="2.5dip" android:layout_marginTop="2.5dip" android:layout_centerInParent="true" app:sourceWDP="360" app:useDeviceDP="true">
+        <ImageView android:id="@id/downloadThumbnail" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+        <LinearLayout android:gravity="center" android:id="@id/downloadItemProgressContanier" android:background="#99000000" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="100.0dip" android:weightSum="285.0" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <ProgressBar android:layout_gravity="center" android:id="@id/downloadItemProgress" android:layout_width="0.0dip" android:progress="50" android:layout_weight="248.0" style="@style/DownloadGridItemProgressStyle" />
+        </LinearLayout>
+        <Button android:id="@id/downloadBtn" android:focusable="false" android:layout_width="80.0dip" android:layout_height="23.0dip" android:layout_marginBottom="7.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/DownloadBtnStyle" />
+        <ImageView android:id="@id/downloadItemNewIcon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/icon_new_tile" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+    </com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>
+</com.cyberlink.youcammakeup.widgetpool.common.AutoSizeRelativeLayout>

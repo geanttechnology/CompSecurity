@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/IntroBackgroundStyle" />
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:child_height="180" app:child_top="100" app:guideline_width="1080" app:guideline_height="1920">
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:background="@drawable/ico_intro_eyeware" android:layout_width="0.0dip" android:layout_height="fill_parent" app:guideline_width="144" app:guideline_height="160" />
+            <TextView android:text="@string/accessories_eyewear" style="@style/IntroTitleTextStyle" />
+        </LinearLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:child_width="340" app:child_height="510" app:child_left="0" app:child_top="732" app:guideline_width="1080" app:guideline_height="1920">
+        <ImageView android:gravity="left" android:id="@id/introEyeWearImg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" app:child_height="400" app:child_left="400" app:child_top="700" app:guideline_width="1080" app:guideline_height="1920">
+        <TextView android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/intro_eyewear_tap_to_show_control_points" style="@style/IntroTipTextStyle" />
+    </com.cyberlink.youcammakeup.widgetpool.common.ChildPosAndSizeFrameLayout>
+    <com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:guideline_width="1080" app:guideline_height="647">
+        <com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideline_width="1080" app:guideline_height="647">
+            <View android:background="@drawable/introarrow_02" android:layout_width="fill_parent" android:layout_height="fill_parent" app:child_width="88" app:child_height="326" app:child_left="647" app:child_top="204" />
+            <TextView android:gravity="bottom" android:text="@string/intro_hair_select_prefer_style" app:child_width="700" app:child_height="180" app:child_left="275" app:child_top="0" style="@style/IntroTipTextStyle" />
+        </com.cyberlink.youcammakeup.widgetpool.common.ChildProportionLayout>
+    </com.cyberlink.youcammakeup.widgetpool.common.FixedAspectRatioFrameLayout>
+</FrameLayout>

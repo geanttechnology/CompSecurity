@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bc_color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.cyberlink.beautycircle.controller.fragment.TopBarFragment" android:id="@id/fragment_topbar_panel" android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle" />
+    <TextView android:textSize="@dimen/t18sp" android:layout_gravity="top|center" android:id="@id/about_website" android:paddingLeft="@dimen/t20dp" android:paddingRight="@dimen/t20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t20dp" android:layout_marginBottom="@dimen/t60dp" android:minWidth="@dimen/t120dp" android:text="@string/bc_dialog_button_website" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/BcDialogBtnStyleWeight" />
+    <ScrollView android:id="@id/me_plus_about_outter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/about_website" android:layout_below="@id/fragment_topbar_panel" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bc_guideline_backgroud" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcAboutInfoPaddingStyle">
+            <RelativeLayout android:id="@id/avatar_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/thumbnail_panel" android:layout_centerHorizontal="true" style="@style/BcAvertarBigStyle">
+                    <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/about_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bc_avatar_mugshot" android:contentDescription="@string/app_name" app:bc_default_image="@drawable/bc_avatar_mugshot" app:bc_circle_bitmap="true" />
+                </FrameLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.rockerhieu.emojicon.EmojiconTextView android:textSize="@dimen/t24sp" android:textColor="@color/bc_color_main_style" android:gravity="center" android:id="@id/about_displayname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t30dp" android:singleLine="true" style="@style/BcDefaultFontStyle" />
+                <com.cyberlink.beautycircle.view.widgetpool.common.PostContentTextView android:textSize="@dimen/t18sp" android:gravity="top|left|center" android:id="@id/about_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t15dp" app:emojiLineSpacingExtra="3.0dip" style="@style/BcDefaultFontStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+</RelativeLayout>

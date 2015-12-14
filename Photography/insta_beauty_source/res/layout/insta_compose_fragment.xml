@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:background="#ff2c2b2b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="48.0dip" />
+    <com.wantu.imagerender.ImageGLSurfaceView android:layout_gravity="bottom" android:id="@id/gl_image_view" android:layout_width="2.0dip" android:layout_height="2.0dip" />
+    <com.instamag.activity.view.TMagComposeFrameLayout android:layout_gravity="center" android:id="@id/composeFrameLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/backgroundImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:gravity="center" android:id="@id/scrollViewlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" />
+        <ImageView android:id="@id/foreImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.wantu.view.ImagesMovingView android:id="@id/movingView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.instamag.activity.view.TMagComposeFrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/textEditorBar" android:background="@color/solid_semi_black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/textEditor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_toLeftOf="@id/textModifyButton" android:layout_alignParentLeft="true" android:inputType="text">
+            <requestFocus />
+        </EditText>
+        <Button android:id="@id/textModifyButton" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/input_ok" android:layout_alignBottom="@id/textEditor" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <FrameLayout android:gravity="center" android:id="@id/filterContainerLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip">
+        <FrameLayout android:layout_gravity="top|left|center" android:id="@id/actionLayout" android:layout_width="101.0dip" android:layout_height="44.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/beautyEditButton" android:background="@drawable/advanceedit_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <FrameLayout android:layout_gravity="right|center" android:layout_width="68.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/unselected_bg" android:layout_gravity="center" android:id="@id/beautyEditTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:text="@string/Beautify" />
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/progressBarContainer" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

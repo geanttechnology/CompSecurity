@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/component_app_bar" />
+    <my.googlemusic.play.utils.views.RobotoTextView android:textSize="14.0sp" android:textColor="@color/color_red" android:id="@id/favorites_total_songs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/app_bar" android:layout_marginStart="16.0dip" app:typeface="roboto_medium" />
+    <android.support.v7.widget.RecyclerView android:id="@id/favorites_recycle_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" android:layout_below="@id/favorites_total_songs" />
+    <fragment android:name="my.googlemusic.play.services.player.PlayingNow" android:id="@id/favorite_now_playing_fragment" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/favorites_info" android:background="@color/color_white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <my.googlemusic.play.utils.views.RobotoTextView android:textSize="16.0sp" android:textColor="@android:color/tertiary_text_light" android:id="@id/favorites_info_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:typeface="roboto_regular" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nomusic" android:layout_above="@id/favorites_info_message" android:layout_centerHorizontal="true" android:contentDescription="@string/description" />
+    </RelativeLayout>
+    <include layout="@layout/component_loading" />
+</RelativeLayout>

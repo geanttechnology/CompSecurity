@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/tx_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginRight="60.0dip" android:text="Collage" android:singleLine="true" />
+    <Button android:layout_gravity="left|center" android:id="@id/layout_pre" android:background="@drawable/btn_edit_cancel_res" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    <Button android:textSize="18.0sp" android:textColor="@color/black" android:layout_gravity="right|center" android:id="@id/cancel" android:background="@null" android:layout_width="60.0dip" android:layout_height="50.0dip" android:text="@string/cancel" />
+</FrameLayout>

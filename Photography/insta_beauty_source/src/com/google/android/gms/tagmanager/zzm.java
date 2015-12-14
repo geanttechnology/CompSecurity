@@ -1,0 +1,58 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.google.android.gms.tagmanager;
+
+
+// Referenced classes of package com.google.android.gms.tagmanager:
+//            zzcw, zzba, zzl
+
+class zzm
+{
+
+    final zza zzaKw = new _cls1();
+
+    public zzm()
+    {
+    }
+
+    public zzl zza(int i, zza zza1)
+    {
+        if (i <= 0)
+        {
+            throw new IllegalArgumentException("maxSize <= 0");
+        }
+        if (zzyj() < 12)
+        {
+            return new zzcw(i, zza1);
+        } else
+        {
+            return new zzba(i, zza1);
+        }
+    }
+
+    int zzyj()
+    {
+        return android.os.Build.VERSION.SDK_INT;
+    }
+
+    private class _cls1
+        implements zza
+    {
+
+        final zzm zzaKx;
+
+        public int sizeOf(Object obj, Object obj1)
+        {
+            return 1;
+        }
+
+        _cls1()
+        {
+            zzaKx = zzm.this;
+            super();
+        }
+    }
+
+}

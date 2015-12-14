@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/cloneMainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/surfaceViewContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/clone_iconsPanel">
+        <com.picsart.effects.clone.CloneSurfaceView android:id="@id/cloneSurfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/clone_iconsPanel" android:background="@drawable/panel_bottom_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_panel_height" android:layout_above="@id/adPanelLayout">
+        <ImageButton android:id="@id/clone_dashboardCancelId" android:src="@drawable/ic_action_cancel_t" android:layout_alignParentLeft="true" style="@style/Widget.Picsart.ImageButton.Action" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageButton android:enabled="false" android:id="@id/clone_sourceBtn" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/btn_clone_source" style="@style/Widget.Picsart.ImageButton.Action" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/mini_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/clone_dashboardBrushId" android:background="@drawable/on_press" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_action_brush_t" style="@style/Widget.Picsart.ImageButton.Action" />
+                <View android:background="@color/white_transparent_66" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <ImageButton android:id="@id/clone_dashboardDragId" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_action_drag_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton android:id="@id/clone_dashboardDoneId" android:src="@drawable/ic_action_done_t" android:layout_alignParentRight="true" style="@style/Widget.Picsart.ImageButton.Action" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_brush_settings" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp" android:layout_above="@id/clone_iconsPanel" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:id="@id/brush_settings_baloon" android:background="@drawable/baloon" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4dp">
+            <ImageButton android:id="@id/clone_dashboardUndolId" android:src="@drawable/ic_action_undo_selector" style="@style/Widget.Picsart.ImageButton.Action" />
+            <ImageButton android:id="@id/button_brush_ghost" android:src="@drawable/ic_action_brush_ghost_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            <ImageButton android:id="@id/button_brush_clear" android:src="@drawable/ic_action_delete_t" style="@style/Widget.Picsart.ImageButton.Action" />
+            <ToggleButton android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/button_mode_marker_draw" android:background="@drawable/btn_switch_left" android:layout_width="50.0dip" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/space_4dp" android:checked="true" android:textOn="@string/gen_draw" android:textOff="@string/gen_draw" />
+            <ToggleButton android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/button_mode_marker_erase" android:background="@drawable/btn_switch_right" android:layout_width="50.0dip" android:layout_height="32.0dip" android:layout_marginRight="@dimen/space_4dp" android:textOn="@string/gen_erase" android:textOff="@string/gen_erase" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/baloon_pointer_down" android:layout_width="wrap_content" android:layout_height="8.0dip" android:layout_marginLeft="125.0dip" android:layout_marginTop="-8.0dip" android:layout_below="@id/brush_settings_baloon" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/adPanelLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ad_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

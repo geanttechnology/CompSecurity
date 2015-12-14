@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="wrap_content" android:layout_height="wrap_content" android:key="root_preferences"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_layout" android:title="@string/adrive_gallery_common_settings_auto_upload_title" android:key="auto_save_category" android:summary="@string/adrive_gallery_common_settings_auto_upload_summary"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.amazon.gallery.framework.gallery.widget.SwitchPreferenceCompat android:enabled="true" android:title="@string/adrive_gallery_common_settings_auto_upload_photos_title" android:key="auto_upload_photos_key" />
+        <com.amazon.gallery.framework.gallery.widget.SwitchPreferenceCompat android:icon="@null" android:enabled="true" android:title="@string/adrive_gallery_common_settings_auto_upload_videos_title" android:key="auto_upload_videos_key" android:summary="@string/adrive_gallery_common_settings_auto_upload_videos_summary" />
+        <com.amazon.gallery.framework.gallery.widget.SwitchPreferenceCompat android:enabled="false" android:title="@string/adrive_gallery_common_settings_auto_upload_only_when_charging_title" android:key="auto_upload_only_when_charging_key" android:summary="@string/adrive_gallery_common_settings_auto_upload_only_when_charging_summary" />
+        <com.amazon.gallery.framework.gallery.widget.SwitchPreferenceCompat android:enabled="true" android:title="@string/adrive_gallery_common_settings_upload_on_wan_title" android:key="wan_allowed_key" android:summary="@string/adrive_gallery_common_settings_upload_on_wan_summary" android:defaultValue="true" />
+        <PreferenceScreen android:title="@string/adrive_gallery_common_settings_folder_settings_title" android:key="folder_settings_button" android:summary="@string/adrive_gallery_common_settings_folder_settings_summary">
+            <intent android:action="amazon.intent.action.FOLDER_SETTINGS" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/adrive_gallery_common_settings_freetime_settings_title" android:key="freetime_settings_button" android:summary="@string/adrive_gallery_common_settings_freetime_settings_summary">
+            <intent android:action="amazon.intent.action.FREETIME_AUTOSAVE_SETTINGS" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category_layout" android:title="@string/adrive_gallery_common_this_day_title" android:key="this_day_category">
+        <com.amazon.gallery.framework.gallery.widget.SwitchPreferenceCompat android:enabled="true" android:title="@string/adrive_gallery_this_day_preference_title" android:key="this_day_notification_key" android:summary="@string/adrive_gallery_this_day_preference_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category_layout" android:title="@string/adrive_gallery_view_hidden_content_action_bar_title" android:key="hidden_category">
+        <com.amazon.gallery.framework.gallery.widget.SwitchPreferenceCompat android:enabled="true" android:title="@string/adrive_gallery_view_hidden_options" android:key="show_hidden_content_key" android:summary="@string/adrive_gallery_settings_preference_title" />
+        <PreferenceScreen android:title="@string/adrive_gallery_view_hidden_content_settings" android:key="view_hidden_content_button" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category_layout" android:key="sd_card_placeholder_key" />
+    <PreferenceCategory android:layout="@layout/preference_category_layout" android:title="@string/adrive_gallery_common_breadcrumb_local" android:key="device_category">
+        <PreferenceScreen android:title="@string/adrive_gallery_common_settings_image_rewind" android:key="rewind_cleanup_button" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category_layout" android:title="@string/adrive_gallery_common_breadcrumb_folders" android:key="cloud_drive_category">
+        <PreferenceScreen android:title="@string/adrive_gallery_common_settings_manage_storage" android:key="manage_storage_button" android:summary="@string/adrive_gallery_common_settings_manage_storage_summary" />
+        <PreferenceScreen android:title="@string/adrive_gallery_legal_information" android:key="legal_information_button" />
+        <PreferenceScreen android:title="@string/adrive_gallery_send_feedback" android:key="send_feedback_button" />
+        <PreferenceScreen android:title="@string/adrive_gallery_report_issue_string" android:key="report_issue" />
+        <PreferenceScreen android:title="@string/adrive_gallery_rooted_device_disclaimer_text" android:key="root_disclaimer" />
+        <PreferenceScreen android:title="@string/adrive_gallery_signout" android:key="signout_settings_button" />
+    </PreferenceCategory>
+</PreferenceScreen>

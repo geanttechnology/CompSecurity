@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/si_ui_profile_upload_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/si_ui_profile_upload_image_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/si_ui_profile_buttons_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/si_ui_profile_cancel_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:src="@drawable/xml_si_ui_profile_cancel_upload_image" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/si_ui_profile_retry_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:src="@drawable/xml_si_ui_profile_retry_failed_upload" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/si_ui_profile_faild_upload_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:layout_below="@id/si_ui_profile_buttons_layout" android:layout_centerInParent="true" />
+    <SeekBar android:id="@id/si_ui_upload_photo_progress" android:clickable="false" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_12dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/xml_si_ui_upload_item_progress" android:thumb="@null" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

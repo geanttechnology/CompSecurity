@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bc_general_radius_white_background_no_border" android:paddingLeft="@dimen/t10dp" android:paddingTop="@dimen/t20dp" android:paddingRight="@dimen/t10dp" android:paddingBottom="@dimen/t20dp" android:layout_width="@dimen/t320dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <TextView android:textSize="@dimen/t16dp" android:textColor="@color/bc_color_black" android:gravity="top|center" android:id="@id/bc_dialog_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t15dp" android:layout_marginRight="@dimen/t15dp" android:text="@string/bc_freesample_follow_title" android:lineSpacingExtra="@dimen/t3dp" style="@style/BcDefaultFontStyle" />
+    <LinearLayout android:gravity="center" android:background="@drawable/bc_general_radius_white_background_with_border" android:padding="@dimen/t8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t16dp" android:layout_marginTop="@dimen/t30dp" android:layout_marginRight="@dimen/t16dp">
+        <FrameLayout android:layout_width="@dimen/t60dp" android:layout_height="@dimen/t60dp">
+            <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:id="@id/avatar_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" app:bc_default_image="@drawable/bc_avatar_mugshot" />
+            <ImageView android:background="@drawable/bc_avatar_circle_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+            <ImageView android:id="@id/avatar_crown" android:visibility="gone" android:layout_width="@dimen/t20dp" android:layout_height="@dimen/t18dp" android:src="@drawable/bc_user_ico_master" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/t18dp" android:textColor="@color/bc_color_black" android:id="@id/bc_dialog_display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t18dp" style="@style/BcDefaultFontStyle" />
+    </LinearLayout>
+    <TextView android:id="@id/freesample_follow_btn" android:layout_marginTop="@dimen/t20dp" android:text="@string/bc_plus_follow" style="@style/BcDialogBtnStyle" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/t65dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/t50dp" android:layout_height="@dimen/t50dp" android:layout_marginBottom="@dimen/t2dp">
+        <com.cyberlink.beautycircle.view.widgetpool.common.UICImageView android:gravity="center" android:id="@id/bc_discover_category_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bc_category_tag_selector" android:contentDescription="@string/app_name" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/bc_new_alert" android:padding="@dimen/t2dp" android:layout_width="@dimen/t16dp" android:layout_height="@dimen/t16dp" android:src="@drawable/bc_new_alert_inner" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/t12dp" android:textColor="@color/bc_color_main_edit_text" android:gravity="center" android:layout_gravity="center" android:id="@id/bc_discover_category_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:minLines="1" style="@style/BcCategoryTextStyle" />
+</LinearLayout>

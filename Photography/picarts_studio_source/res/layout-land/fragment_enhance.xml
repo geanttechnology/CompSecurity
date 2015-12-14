@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/editor_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.picsart.studio.editor.view.EditorView android:id="@id/editor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad" />
+    <FrameLayout android:id="@id/ad" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toLeftOf="@id/props_panel" android:layout_alignParentBottom="true" layout="@layout/editor_ad_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/props_panel" android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/main_panel">
+        <TextView android:gravity="center" android:id="@id/enhance_param_value_label" android:layout_width="64.0dip" android:layout_height="24.0dip" android:layout_marginTop="@dimen/space_8dp" android:layout_marginBottom="@dimen/space_4dp" android:singleLine="true" />
+        <View android:id="@id/measureView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/btn_reset" android:src="@drawable/ic_action_adjust_reset_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </LinearLayout>
+    <RadioGroup android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/main_panel" android:background="@drawable/panel_right_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/btn_cancel" android:src="@drawable/ic_action_cancel_t" style="@style/Widget.Picsart.ImageButton.Action" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/btn_norm" android:checked="true" android:text="@string/effect_param_normal" android:drawableTop="@drawable/ic_action_enhance_amount_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+        <RadioButton android:id="@id/btn_saturation" android:layout_marginLeft="@dimen/space_4dp" android:layout_marginRight="@dimen/space_4dp" android:text="@string/saturation" android:drawableTop="@drawable/ic_action_saturation_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+        <RadioButton android:id="@id/btn_fade" android:text="@string/effect_param_fade" android:drawableTop="@drawable/ic_action_fade_t" style="@style/Widget.Picsart.RadioButton.EditorTab" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/btn_done" android:src="@drawable/ic_action_done_t" style="@style/Widget.Picsart.ImageButton.Action" />
+    </RadioGroup>
+    <SeekBar android:id="@id/enhance_seekBar" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:maxWidth="320.0dip" android:max="100" android:layout_toLeftOf="@id/props_panel" />
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fb_post_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fb_image_to_post" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ScrollView android:background="@color/black_transparent_80" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/black_transparent_80" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@color/black_transparent_60" android:padding="@dimen/space_12dp" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/fb_user_avatar" style="@style/Widget.Picsart.Avatar" />
+                <TextView android:layout_gravity="center" android:id="@id/fb_user_full_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20dp" android:text="Jack Saqajyan" />
+            </LinearLayout>
+            <FrameLayout android:orientation="horizontal" android:id="@id/fb_location_container" android:background="@color/white_transparent_1A" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:foreground="?selectableItemBackground">
+                <TextView android:textSize="@dimen/textSize_14" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/fb_text_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_48dp" android:layout_marginRight="@dimen/space_48dp" android:text="@string/social_add_location" android:singleLine="true" android:drawableLeft="@drawable/ic_location_network_white" android:drawablePadding="@dimen/space_12dp" />
+                <ImageButton android:layout_gravity="right|center" android:id="@id/fb_btn_clear_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/remove_location" />
+            </FrameLayout>
+            <EditText android:scrollbarStyle="insideInset" android:gravity="top" android:id="@id/fb_image_post_desc" android:background="@color/color_transparent" android:paddingTop="@dimen/space_12dp" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="150.0dip" android:hint="@string/say_something_about_photo" android:inputType="textMultiLine|textImeMultiLine" android:overScrollMode="always" />
+            <View android:background="@color/white_transparent_30" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/space_8dp" />
+            <RelativeLayout android:id="@id/fb_post_tag_layout" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="@string/fb_add_tag" android:maxLines="1" android:layout_centerVertical="true" />
+                <LinearLayout android:visibility="visible" android:layout_width="135.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_4dp" android:layout_toRightOf="@id/textView1" android:layout_centerInParent="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/textSize_12" android:textColor="@color/text_color_light_gray" android:ellipsize="end" android:gravity="center" android:id="@id/fb_post_tags_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="2" />
+                </LinearLayout>
+                <ImageView android:id="@id/fb_post_tag_btn" android:background="@drawable/xml_ic_plus_upload" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/fb_post_to_picsart_layout" android:background="@drawable/selectable_item_overlay_rect_picsart_dark" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/textSize_13" android:textColor="@color/color_white" android:id="@id/fb_post_to_picsin_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4dp" android:text="@string/social_upload_to_picsart" android:maxLines="1" android:layout_centerVertical="true" />
+                <Button android:background="@drawable/ic_action_picsart" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginLeft="@dimen/space_12dp" android:layout_marginRight="@dimen/space_4dp" android:layout_toRightOf="@id/fb_post_to_picsin_text" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/fb_picsin_check" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/divider" android:background="@color/white_transparent_30" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/space_8dp" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/fb_upload_safe_content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_12dp">
+                <CheckBox android:textSize="@dimen/textSize_13" android:textColor="@android:color/white" android:id="@id/mature_content_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/upload_mark_as_sensitive" />
+                <View style="@style/EvenSeparator.Horizontal" />
+                <ImageButton android:gravity="center_vertical" android:id="@id/mature_info_btn" android:clickable="false" android:duplicateParentState="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_action_info" style="@style/Widget.Picsart.ImageButton.Action" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

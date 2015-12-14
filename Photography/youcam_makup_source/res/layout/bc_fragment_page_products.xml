@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/products_ad_container" android:background="@color/bc_ad_default_background" android:layout_width="fill_parent" style="@style/BcProductListAdPanelStyle">
+        <com.cyberlink.beautycircle.view.widgetpool.common.SlideShowView android:id="@id/products_ad_panel" android:background="@color/bc_ad_default_background" android:layout_width="fill_parent" style="@style/BcProductListAdPanelStyle" />
+        <include layout="@layout/bc_view_top_home_panel" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/product_list_selector_panel" android:layout_width="fill_parent" android:baselineAligned="false" android:weightSum="3.0" style="@style/BcProductListSelectorPanelStyle">
+        <RelativeLayout android:id="@id/product_btn_type" android:background="@drawable/bc_product_list_filter_tab" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/product_btn_type_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bc_products_type" style="@style/BcProductListSelectorTextStyle" />
+            <ImageView style="@style/BcProductListIconStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/product_btn_price" android:background="@drawable/bc_product_list_filter_tab_with_sep" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/product_btn_price_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bc_products_price" style="@style/BcProductListSelectorTextStyle" />
+            <ImageView style="@style/BcProductListIconStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/product_btn_brand" android:background="@drawable/bc_product_list_filter_tab_with_sep" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/product_btn_brand_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bc_products_brand" style="@style/BcProductListSelectorTextStyle" />
+            <ImageView style="@style/BcProductListIconStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/products_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/normal_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout android:orientation="vertical" android:id="@id/bc_pull_to_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.cyberlink.beautycircle.view.widgetpool.common.PagingListView android:id="@id/bc_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BcPanelListViewBasicStyle" />
+            </com.cyberlink.beautycircle.view.widgetpool.common.BiDirectionSwipeRefreshLayout>
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/bc_view_top_add_panel" />
+            <View android:layout_below="@id/fragment_topbar_panel" style="@style/BcTopShadowStyle" />
+        </RelativeLayout>
+        <include android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/bc_view_message_panel" />
+    </RelativeLayout>
+</LinearLayout>

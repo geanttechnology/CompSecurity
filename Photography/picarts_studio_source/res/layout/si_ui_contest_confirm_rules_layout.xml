@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_12dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSize_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contest_are_you_agree_with" />
+    <TextView android:textSize="@dimen/textSize_16" android:id="@id/si_ui_text_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Contest Rules" />
+    <TextView android:textSize="@dimen/textSize_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ? " />
+</LinearLayout>

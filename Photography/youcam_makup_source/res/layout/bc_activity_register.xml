@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <RelativeLayout android:background="@drawable/bc_log_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" style="@style/BcTopBarPanelStyle">
+                <com.rockerhieu.emojicon.EmojiconTextView android:textColor="@color/bc_color_white" android:ellipsize="end" android:gravity="center" android:id="@id/top_bar_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" android:layout_centerHorizontal="true" style="@style/BcTopBarTextStyle" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/top_bar_left_panel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                    <ImageView android:id="@id/top_bar_btn_back" android:background="@null" android:src="@drawable/bc_image_selector_top_bar_btn_back_white" style="@style/BcTopBarButtonStyle" />
+                    <View android:layout_gravity="center" android:background="@color/bc_color_white" android:layout_width="@dimen/t1dp" android:layout_height="@dimen/t28dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/bc_me_logo" android:contentDescription="@string/app_name" style="@style/BcRegisterTitleStyle" />
+            <TextView android:id="@id/bc_welcome_desc_text" android:text="@string/bc_welcome_me_desc" style="@style/BcRegisterSubTitleStyle" />
+            <LinearLayout android:gravity="top|center" android:orientation="vertical" android:id="@id/register_info_panel" android:layout_width="@dimen/t300dp" android:layout_height="fill_parent" android:layout_marginTop="@dimen/f170dp" android:layout_centerHorizontal="true">
+                <RelativeLayout android:id="@id/bc_fb_login_panel" style="@style/BcRegisterBtnStyle">
+                    <ImageView android:id="@id/bc_fb_more" android:background="@drawable/bc_register_fb_btn_selector" android:padding="@dimen/t5dp" android:layout_width="@dimen/t42dp" android:layout_height="@dimen/t42dp" android:layout_marginLeft="@dimen/t8dp" android:src="@drawable/bc_icon_dots" android:layout_alignParentRight="true" />
+                    <include android:id="@id/bc_fb_login" android:layout_width="fill_parent" android:layout_height="@dimen/t42dp" android:layout_toLeftOf="@id/bc_fb_more" style="@style/BcRegisterBtnBaseStyle" layout="@layout/bc_view_me_login_fb" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/bc_weibo_login_panel" style="@style/BcRegisterBtnStyle">
+                    <ImageView android:id="@id/bc_weibo_more" android:background="@drawable/bc_register_weibo_btn_selector" android:padding="@dimen/t5dp" android:layout_width="@dimen/t42dp" android:layout_height="@dimen/t42dp" android:layout_marginLeft="@dimen/t8dp" android:src="@drawable/bc_icon_dots" android:layout_alignParentRight="true" />
+                    <include android:id="@id/bc_weibo_login" android:layout_width="fill_parent" android:layout_height="@dimen/t42dp" android:layout_toLeftOf="@id/bc_weibo_more" style="@style/BcRegisterBtnBaseStyle" layout="@layout/bc_view_me_login_weibo" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/bc_wechat_login_panel" style="@style/BcRegisterBtnStyle">
+                    <ImageView android:id="@id/bc_wechat_more" android:background="@drawable/bc_register_wechat_btn_selector" android:padding="@dimen/t5dp" android:layout_width="@dimen/t42dp" android:layout_height="@dimen/t42dp" android:layout_marginLeft="@dimen/t8dp" android:src="@drawable/bc_icon_dots" android:layout_alignParentRight="true" />
+                    <include android:id="@id/bc_wechat_login" android:layout_width="fill_parent" android:layout_height="@dimen/t42dp" android:layout_toLeftOf="@id/bc_wechat_more" style="@style/BcRegisterBtnBaseStyle" layout="@layout/bc_view_me_login_wechat" />
+                </RelativeLayout>
+                <include android:id="@id/bc_email_login" style="@style/BcRegisterBtnStyle" layout="@layout/bc_view_me_login_email" />
+                <TextView android:textSize="@dimen/t14sp" android:textStyle="bold" android:textColor="@color/bc_color_white" android:id="@id/bc_have_an_account" android:paddingLeft="@dimen/t20dp" android:paddingTop="@dimen/t5dp" android:paddingRight="@dimen/t20dp" android:paddingBottom="@dimen/t5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t25dp" android:layout_marginBottom="@dimen/t95dp" android:text="@string/bc_welcome_btn_i_have_an_account" style="@style/BcDefaultFontStyle" />
+                <RelativeLayout android:id="@id/bc_or_saperate" android:layout_width="@dimen/t300dp" android:layout_height="@dimen/t22dp" android:layout_marginTop="@dimen/t16dp">
+                    <TextView android:textSize="@dimen/t14dp" android:textColor="@color/bc_color_main_divider" android:id="@id/bc_or" android:paddingLeft="@dimen/t10dp" android:paddingRight="@dimen/t10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_register_or" android:layout_centerInParent="true" />
+                    <View android:background="@color/bc_color_main_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_toLeftOf="@id/bc_or" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <View android:background="@color/bc_color_main_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_toRightOf="@id/bc_or" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textColor="@color/bc_color_white" android:gravity="center" android:id="@id/register_wrong_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t4dp" android:layout_marginBottom="@dimen/t4dp" style="@style/BcRegisterWrongTextStyle" />
+                <EditText android:id="@id/register_id" android:background="@drawable/bc_register_input_editor_radius" android:layout_width="@dimen/t260dp" android:layout_marginTop="@dimen/t16dp" android:hint="@string/bc_register_id_hint" android:maxLength="200" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/BcRegisterEditorTextStyle" />
+                <EditText android:id="@id/register_password" android:background="@drawable/bc_register_input_editor_radius" android:layout_width="@dimen/t260dp" android:layout_marginTop="@dimen/t16dp" android:hint="@string/bc_register_password_hint" android:maxLength="20" android:inputType="textPassword" android:imeOptions="actionGo" style="@style/BcRegisterEditorTextStyle" />
+                <com.cyberlink.beautycircle.view.widgetpool.common.PostContentTextView android:textColor="@color/bc_color_white" android:textColorLink="@color/bc_color_white" android:gravity="top|center" android:id="@id/register_description_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t20dp" android:layout_marginBottom="@dimen/t35dp" android:text="@string/bc_register_desc_sign_up" android:lineSpacingExtra="@dimen/t3dp" style="@style/BcRegisterDescTextStyle" />
+                <Button android:gravity="center" android:id="@id/register_accept_btn" android:layout_marginTop="@dimen/t16dp" android:text="@string/bc_register_sign_up" style="@style/BcRegisterButtonTextStyle" />
+                <RelativeLayout android:layout_width="@dimen/t260dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/t5dp">
+                    <TextView android:id="@id/register_link_sign_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_register_link_sign_in" android:layout_alignParentRight="true" style="@style/BcRegisterMoreOptionTextStyle" />
+                    <TextView android:id="@id/register_link_forget_password" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_register_link_forgetpassword" android:layout_alignParentLeft="true" style="@style/BcRegisterMoreOptionTextStyle" />
+                    <TextView android:id="@id/register_link_new_account" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc_register_link_sign_up" android:layout_alignParentRight="true" style="@style/BcRegisterMoreOptionTextStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.cyberlink.beautycircle.view.widgetpool.facebook.LoginButton android:id="@id/register_facebook" android:visibility="gone" android:scaleType="fitXY" style="@style/BcRegisterMoreSigninBtnStyle" />
+</RelativeLayout>

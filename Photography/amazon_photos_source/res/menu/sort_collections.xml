@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu android:title="@string/adrive_gallery_common_menu_sort_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:title="@string/adrive_gallery_common_menu_sort_title">
+        <item android:id="@id/sort_photos_by_date_recent" android:title="@string/adrive_gallery_common_sort_date_recent" />
+        <item android:id="@id/sort_photos_by_date_oldest" android:title="@string/adrive_gallery_common_sort_date_oldest" />
+    </group>
+</menu>

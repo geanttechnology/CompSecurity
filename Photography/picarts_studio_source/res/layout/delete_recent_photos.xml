@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/recentPhotosRemovePanel" android:background="?selectableItemBackground" android:paddingBottom="@dimen/space_4dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_margin="@dimen/space_4dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/ic_action_delete_t" android:clickable="false" android:duplicateParentState="true" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <TextView android:textSize="@dimen/textSize_12" android:textColor="@drawable/xml_delete_recent_selector" android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_delete_recent_pics" />
+</LinearLayout>

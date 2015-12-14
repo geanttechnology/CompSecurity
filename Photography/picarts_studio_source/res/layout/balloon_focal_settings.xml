@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/baloon" android:padding="@dimen/space_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/color_white" android:id="@id/shape_hardness_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hardness_50" />
+        <SeekBar android:id="@id/shape_hardness_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invert" />
+            <CheckBox android:id="@id/shape_invert_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20dp" android:text="@string/shape" />
+            <ToggleButton android:gravity="center" android:id="@id/shape_focal_type" android:background="@drawable/btn_switch_left" android:layout_width="34.0dip" android:layout_height="34.0dip" android:button="@drawable/ic_action_shape_circle_t" android:textOn="" android:textOff="" />
+            <ToggleButton android:gravity="center" android:id="@id/shape_rectangle_type" android:background="@drawable/btn_switch_right" android:layout_width="34.0dip" android:layout_height="34.0dip" android:button="@drawable/ic_action_shape_rect_t" android:textOn="" android:textOff="" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

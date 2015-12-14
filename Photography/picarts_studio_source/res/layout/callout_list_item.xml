@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/calloutListItemPanelId" android:layout_width="90.0dip" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.socialin.android.photo.callout.CalloutItemView android:id="@id/calloutItemViewId" android:background="?selectableItemBackground" android:layout_width="90.0dip" android:layout_height="60.0dip" />
+</RelativeLayout>
