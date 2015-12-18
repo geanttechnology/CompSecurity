@@ -1,4 +1,7 @@
- ================== Application: uber/ ===============
+This permission is used by various functions dealing with getting location updates (detecting country based on location etc.), refereshing location,
+Getting state information, canceling location update etc. Some obsolete functions also use this permissions.
+ 
+================== Application: uber/ ===============
  ================== Permission APIs list :  2-COARSE-LOC.txt ===============
 access$100
 access$200
@@ -23,13 +26,15 @@ onResume
 onTouch
 onTransact
 pause
-registerListener
+registerListener - Registering listeners for location updates.
 reload
 resume
 run
 start
 stop
 surfaceChanged
+
+--------------------------- Shopping ---------------------------------------
  ================== Application: alibaba/ ===============
  ================== Permission APIs list :  2-COARSE-LOC.txt ===============
 access$100
@@ -43,35 +48,35 @@ access$300
 access$500
 access$700
 access$900
-dispatchTouchEvent
-getCellLocation
-init
-itemSelected
-listen
-onActionItemClicked
-onBackPressed
-onCheckedChanged
-onClick
-onCreate
-onDestroy
-onItemClick
-onItemSelected
-onMenuItemClick
-onNavigationItemSelected
-onOptionsItemSelected
-onPause
-onReceive
-onResume
-onSharedPreferenceChanged
-onTouch
-onTransact
-onVisibilityChanged
-pause
-reload
-run
-start
-stop
-surfaceChanged
+dispatchTouchEvent - Dispatch touch event.
+getCellLocation - Returns the current location of the device.
+init - Initialized Accessibility service.
+itemSelected - It returns true/false depending on the menu item is present on stack.
+listen - listens to events.
+onActionItemClicked - Just calls onItemSelected to see if menu item is presented on stack.
+onBackPressed - Called when the activity has detected the user's press of the back key.
+onCheckedChanged - Called when checked selection is changed.
+onClick - Called when a view has been clicked.
+onCreate - It is called when activity is started.
+onDestroy - Called when activity is destroyed
+onItemClick - Action to take when activity is clicked
+onItemSelected - Action to be taken when menu item is selected.
+onMenuItemClick - Action to be taken when menu item is clicked.
+onNavigationItemSelected - Render thread locking/Unlocking is done here.
+onOptionsItemSelected - This hook is called whenever an item in your options menu is selected
+onPause - Locking/Unlocking render thread & getting bytes buffer pool.
+onReceive - This is called on receiving an event.
+onResume - Called while resuming.
+onSharedPreferenceChanged - Records Location Preference.
+onTouch - Action to be taken on Touching menu item.
+onTransact - Takes action based on transaction like requestLocationUpdates.
+onVisibilityChanged - Called to inform you of the wallpaper becoming visible or hidden.
+pause - Gets state information.
+reload - Reload the content. Return the current data version.
+run - run the task in service thread after detecting country.
+start - start base status bar.
+stop - Cancels Location refresh.
+surfaceChanged - Obsolete function call.
  ================== Application: 360-security/ ===============
  ================== Permission APIs list :  2-COARSE-LOC.txt ===============
 access$100
