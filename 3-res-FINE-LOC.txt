@@ -1,4 +1,6 @@
- ================== Application: uber/ ===============
+This Permissions is used by the function which need service provider updates based on location and setting timezone
+infromation based on the location. Or returning the Location of Cell to chose a service provider.
+================== Application: uber/ ===============
  ================== Permission APIs list :  3-FINE-LOC.txt ===============
 access$100
 access$300
@@ -38,31 +40,31 @@ access$300
 access$500
 access$700
 access$900
-dispatchTouchEvent
-getCellLocation
-itemSelected
-onActionItemClicked
-onBackPressed
-onCheckedChanged
-onClick
-onCreate
-onItemClick
-onItemSelected
-onMenuItemClick
-onNavigationItemSelected
-onOptionsItemSelected
-onPause
-onReceive
-onResume
-onSharedPreferenceChanged
-onTouch
-onTransact
-onVisibilityChanged
-pause
-reload
-run
-start
-surfaceChanged
+dispatchTouchEvent - Obtains event and set action.
+getCellLocation - Returns the current location of the device. 
+itemSelected - Return true/false based on menu item stack contents.
+onActionItemClicked - Called to report a user click on an action button.
+onBackPressed - Called when the activity has detected the user's press of the back key.
+onCheckedChanged - Called when the activity has detected the user's press of the back key.
+onClick - Execute an activity on clicking.
+onCreate - Themes are set here.
+onItemClick - Callback method to be invoked when an item in this AdapterView has been clicked.
+onItemSelected - Performing the action when item is selected. 
+onMenuItemClick - Execute the functionality from menuExecuter for the menu item clicked.
+onNavigationItemSelected - Lock/Unlock rendered thread.
+onOptionsItemSelected - This hook is called whenever an item in your options menu is selected.
+onPause - Change isActive state.
+onReceive - Updates location as per time Zone.
+onResume - From the radio info, updates Location.
+onSharedPreferenceChanged - Hook when camera preference is changed.
+onTouch - Take action on touching a motion event
+onTransact - Updates service location
+onVisibilityChanged - Start/Stop Rendered on visibility change.
+pause - Set iSResume flag to false.
+reload - Reload the contents. returns the current data version.
+run - Run the task in service thread after getting location.
+start - Track TimeZone and update Location.
+surfaceChanged - Part of SurfaceHolder and not normally called.
  ================== Application: 360-security/ ===============
  ================== Permission APIs list :  3-FINE-LOC.txt ===============
 access$100
@@ -74,8 +76,8 @@ access$700
 access$900
 dispatchTouchEvent
 getCellLocation
-getImage
-getNeighboringCellInfo
+getImage - Get Image and create widget bitmap.
+getNeighboringCellInfo - Get the location of neighbouring Cell.
 onActionItemClicked
 onBackPressed
 onCheckedChanged
@@ -104,11 +106,11 @@ access$500
 access$700
 access$900
 dispatchTouchEvent
-getBestProvider
-getLastKnownLocation
-getProvider
-getProviders
-isProviderEnabled
+getBestProvider - Get best network provider based on loaction.
+getLastKnownLocation - Get the last known location.
+getProvider - Get the service providers.
+getProviders - Get aall available service providers.
+isProviderEnabled - See if service provider is available.
 onBackPressed
 onCheckedChanged
 onClick
@@ -124,9 +126,9 @@ onSharedPreferenceChanged
 onTouch
 onTransact
 pause
-registerListener
+registerListener - Register listerner for location updates.
 reload
-requestLocationUpdates
+requestLocationUpdates - Figure out the provider.
 resume
 run
 start
@@ -316,37 +318,6 @@ registerForLocationUpdates
 registerListener
 reload
 requestLocationUpdates
-resume
-run
-start
-surfaceChanged
- ================== Application: google-photos/ ===============
- ================== Permission APIs list :  3-FINE-LOC.txt ===============
-access$100
-access$1900
-access$300
-access$500
-access$700
-dispatchTouchEvent
-onActionItemClicked
-onBackPressed
-onCheckedChanged
-onClick
-onCreate
-onItemClick
-onItemSelected
-onMenuItemClick
-onOptionsItemSelected
-onPause
-onReceive
-onResume
-onSurfaceChanged
-onTouch
-onTransact
-onVisibilityChanged
-pause
-registerListener
-reload
 resume
 run
 start
@@ -633,53 +604,6 @@ registerListener
 resume
 run
 start
- ================== Application: nbc_source/ ===============
- ================== Permission APIs list :  3-FINE-LOC.txt ===============
-access$100
-access$1000
-access$1300
-access$1600
-access$1700
-access$1900
-access$2100
-access$2500
-access$300
-access$500
-access$700
-access$900
-dispatchTouchEvent
-getBestProvider
-getImage
-getLastKnownLocation
-getProvider
-getProviders
-isProviderEnabled
-onActionItemClicked
-onBackPressed
-onCheckedChanged
-onClick
-onCreate
-onItemClick
-onItemSelected
-onMenuItemClick
-onNavigationItemSelected
-onOptionsItemSelected
-onPause
-onReceive
-onResume
-onTouch
-onTransact
-pause
-recordLocation
-registerListener
-reload
-requestLocationUpdates
-requestSingleUpdate
-resume
-run
-start
-surfaceChanged
-switchState
  ================== Application: photo-grid-source/ ===============
  ================== Permission APIs list :  3-FINE-LOC.txt ===============
 access$100
@@ -997,51 +921,6 @@ requestLocationUpdates
 run
 start
 surfaceChanged
- ================== Application: voice-app_source/ ===============
- ================== Permission APIs list :  3-FINE-LOC.txt ===============
-access$100
-access$1000
-access$1300
-access$1600
-access$1700
-access$1900
-access$2100
-access$2500
-access$300
-access$4300
-access$500
-access$700
-access$900
-dispatchTouchEvent
-executeAndWait
-getBestProvider
-getImage
-getLastKnownLocation
-getProvider
-getProviderInfo
-getProviders
-isProviderEnabled
-onBackPressed
-onClick
-onCreate
-onItemClick
-onOptionsItemSelected
-onPause
-onReceive
-onResume
-onSharedPreferenceChanged
-onTouch
-onTransact
-onVisibilityChanged
-pause
-recordLocation
-registerListener
-reload
-requestLocationUpdates
-resume
-run
-start
-surfaceChanged
  ================== Application: wallmart-source/ ===============
  ================== Permission APIs list :  3-FINE-LOC.txt ===============
 access$100
@@ -1300,6 +1179,8 @@ resume
 run
 start
 surfaceChanged
+
+--------------------  Entertainment -------------------------------
  ================== Application: GooglePlay_source/ ===============
  ================== Permission APIs list :  3-FINE-LOC.txt ===============
 access$100
@@ -1339,6 +1220,98 @@ registerListener
 resume
 run
 start
+ ================== Application: nbc_source/ ===============
+ ================== Permission APIs list :  3-FINE-LOC.txt ===============
+access$100
+access$1000
+access$1300
+access$1600
+access$1700
+access$1900
+access$2100
+access$2500
+access$300
+access$500
+access$700
+access$900
+dispatchTouchEvent
+getBestProvider
+getImage
+getLastKnownLocation
+getProvider
+getProviders
+isProviderEnabled
+onActionItemClicked
+onBackPressed
+onCheckedChanged
+onClick
+onCreate
+onItemClick
+onItemSelected
+onMenuItemClick
+onNavigationItemSelected
+onOptionsItemSelected
+onPause
+onReceive
+onResume
+onTouch
+onTransact
+pause
+recordLocation
+registerListener
+reload
+requestLocationUpdates
+requestSingleUpdate
+resume
+run
+start
+surfaceChanged
+switchState
+ ================== Application: voice-app_source/ ===============
+ ================== Permission APIs list :  3-FINE-LOC.txt ===============
+access$100
+access$1000
+access$1300
+access$1600
+access$1700
+access$1900
+access$2100
+access$2500
+access$300
+access$4300
+access$500
+access$700
+access$900
+dispatchTouchEvent
+executeAndWait
+getBestProvider
+getImage
+getLastKnownLocation
+getProvider
+getProviderInfo
+getProviders
+isProviderEnabled
+onBackPressed
+onClick
+onCreate
+onItemClick
+onOptionsItemSelected
+onPause
+onReceive
+onResume
+onSharedPreferenceChanged
+onTouch
+onTransact
+onVisibilityChanged
+pause
+recordLocation
+registerListener
+reload
+requestLocationUpdates
+resume
+run
+start
+surfaceChanged
  ================== Application: NetFlix_source/ ===============
  ================== Permission APIs list :  3-FINE-LOC.txt ===============
 access$100
@@ -1461,63 +1434,6 @@ resume
 run
 start
 surfaceChanged
- ================== Application: collage-source/ ===============
- ================== Permission APIs list :  3-FINE-LOC.txt ===============
-access$100
-access$1000
-access$1300
-access$1600
-access$1700
-access$1900
-access$2100
-access$2500
-access$300
-access$500
-access$700
-access$900
-dispatchTouchEvent
-executeAndWait
-getImage
-getLastKnownLocation
-getProvider
-getProviders
-isProviderEnabled
-onActionItemClicked
-onBackPressed
-onCheckedChanged
-onClick
-onCreate
-onItemClick
-onItemSelected
-onMenuItemClick
-onNavigationItemSelected
-onOptionsItemSelected
-onPause
-onReceive
-onResume
-onSharedPreferenceChanged
-onSurfaceChanged
-onTouch
-onTransact
-onVisibilityChanged
-pause
-registerListener
-reload
-requestLocationUpdates
-resume
-run
-start
-surfaceChanged
- ================== Application: moments-source/ ===============
- ================== Permission APIs list :  3-FINE-LOC.txt ===============
-getProvider
-onClick
-onCreate
-onPause
-onReceive
-onResume
-run
-start
  ================== Application: Shopping/amazon_prime_source/ ===============
  ================== Permission APIs list :  3-FINE-LOC.txt ===============
 access$100
@@ -2121,6 +2037,95 @@ run
 start
 surfaceChanged
 updateLocation
+-------------------- Photography ------------------------
+ ================== Application: collage-source/ ===============
+ ================== Permission APIs list :  3-FINE-LOC.txt ===============
+access$100
+access$1000
+access$1300
+access$1600
+access$1700
+access$1900
+access$2100
+access$2500
+access$300
+access$500
+access$700
+access$900
+dispatchTouchEvent
+executeAndWait
+getImage
+getLastKnownLocation
+getProvider
+getProviders
+isProviderEnabled
+onActionItemClicked
+onBackPressed
+onCheckedChanged
+onClick
+onCreate
+onItemClick
+onItemSelected
+onMenuItemClick
+onNavigationItemSelected
+onOptionsItemSelected
+onPause
+onReceive
+onResume
+onSharedPreferenceChanged
+onSurfaceChanged
+onTouch
+onTransact
+onVisibilityChanged
+pause
+registerListener
+reload
+requestLocationUpdates
+resume
+run
+start
+surfaceChanged
+ ================== Application: moments-source/ ===============
+ ================== Permission APIs list :  3-FINE-LOC.txt ===============
+getProvider
+onClick
+onCreate
+onPause
+onReceive
+onResume
+run
+start
+ ================== Application: google-photos/ ===============
+ ================== Permission APIs list :  3-FINE-LOC.txt ===============
+access$100
+access$1900
+access$300
+access$500
+access$700
+dispatchTouchEvent
+onActionItemClicked
+onBackPressed
+onCheckedChanged
+onClick
+onCreate
+onItemClick
+onItemSelected
+onMenuItemClick
+onOptionsItemSelected
+onPause
+onReceive
+onResume
+onSurfaceChanged
+onTouch
+onTransact
+onVisibilityChanged
+pause
+registerListener
+reload
+resume
+run
+start
+surfaceChanged
  ================== Application: Photography/amazon_photos_source/ ===============
  ================== Permission APIs list :  3-FINE-LOC.txt ===============
 access$100
